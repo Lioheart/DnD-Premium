@@ -1,0 +1,25 @@
+{
+  "id": "lang-dnd-premium",
+  "title": "Tłumaczenie D&D Premium",
+  "description": "Polskie tłumaczenie modułów D&D Premium",
+  "version": "vDev",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "esmodules": [
+    "src/translator.js"
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "dnd-players-handbook",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "url": "Filled in by the release workflow",
+  "manifest": "Filled in by the release workflow",
+  "download": "Filled in by the release workflow"
+}
