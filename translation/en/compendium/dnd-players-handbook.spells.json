@@ -296,9 +296,6 @@
         "IqxGXju1tYDWoda6": {
             "name": "Nature Guidance"
         },
-        "IrE5td3goSQtcc0U": {
-            "name": "Antilife Shell"
-        },
         "J77AMHW5tROddZQg": {
             "name": "Infected (Wisdom)"
         },
@@ -430,9 +427,6 @@
         },
         "RCuPR9PN6DD1YDFc": {
             "name": "Burial"
-        },
-        "RMeb9TUrFdhXMTzz": {
-            "name": "Dispelling Evil and Good"
         },
         "RZmnRyi6pyjIRN1i": {
             "name": "Blinded"
@@ -1635,7 +1629,7 @@
         },
         "phbsplHuntersMar": {
             "name": "Hunter's Mark",
-            "description": "<p>You magically mark one creature you can see within range as your quarry. Until the spell ends, you deal an extra 1d6 Force damage to the target whenever you hit it with an attack roll. You also have Advantage on any [[/check ability=wis skill=prc]] or [[/check ability=wis skill=sur]] check you make to find it.</p><p>If the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action to move the mark to a new creature you can see within range.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Your Concentration can last longer with a spell slot of level 3–4 (up to 8 hours) or 5+ (up to 24 hours).</p>"
+            "description": "<p>You magically mark one creature you can see within range as your quarry. Until the spell ends, you deal an extra [[/damage]] damage to the target whenever you hit it with an attack roll. You also have Advantage on any [[/check ability=wis skill=prc]] or [[/check ability=wis skill=sur]] check you make to find it.</p><p>If the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action to move the mark to a new creature you can see within range.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Your Concentration can last longer with a spell slot of level 3–4 (up to 8 hours) or 5+ (up to 24 hours).</p>"
         },
         "phbsplHypnoticPa": {
             "name": "Hypnotic Pattern",
@@ -1921,7 +1915,7 @@
         },
         "phbsplPhantasmal": {
             "name": "Phantasmal Killer",
-            "description": "<p>You tap into the nightmares of a creature you can see within range and create an illusion of its deepest fears, visible only to that creature. The target makes a Wisdom saving throw. On a failed save, the target takes 4d10 Psychic damage and has Disadvantage on ability checks and attack rolls for the duration. On a successful save, the target takes half as much damage, and the spell ends.</p><p>For the duration, the target makes a [[/save ability=wis dc=@attributes.spell.dc]] saving throw at the end of each of its turns. On a failed save, it takes the Psychic damage again. On a successful save, the spell ends.</p><p><strong>Using a Higher-Level Spell Slot.</strong>The damage increases by 1d10 for each spell slot level above 4.</p>"
+            "description": "<p>You tap into the nightmares of a creature you can see within range and create an illusion of its deepest fears, visible only to that creature. The target makes a Wisdom saving throw. On a failed save, the target takes 4d10 Psychic damage and has Disadvantage on ability checks and attack rolls for the duration. On a successful save, the target takes half as much damage, and the spell ends.</p><p>For the duration, the target makes a [[/save ability=wis dc=@attributes.spell.dc]] saving throw at the end of each of its turns. On a failed save, it takes the Psychic damage again. On a successful save, the spell ends.</p><p><strong>Using a Higher-Level Spell Slot. </strong>The damage increases by 1d10 for each spell slot level above 4.</p><section id=\"secret-mEqeb4gkG1Itpvh3\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The associated Active Effect does not include changes to provide Disadvantage on attack rolls and should be handled manually.</p></section>"
         },
         "phbsplPhantomSte": {
             "name": "Phantom Steed",
@@ -2162,7 +2156,7 @@
         },
         "phbsplSlow000000": {
             "name": "Slow",
-            "description": "<p>You alter time around up to six creatures of your choice in a 40-foot Cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration.</p><p>An affected target’s Speed is halved, it takes a −2 penalty to AC and Dexterity saving throws, and it can’t take Reactions. On its turns, it can take either an action or a Bonus Action, not both, and it can make only one attack if it takes the Attack action. If it casts a spell with a Somatic component, there is a [[/r 1d100cs&lt;=25#Slowed spell cast success]]{25 percent} chance the spell fails as a result of the target making the spell’s gestures too slowly.</p><p>An affected target repeats the save at the end of each of its turns, ending the spell on itself on a success.</p><section id=\"secret-2RobIVhv3tn7gmU7\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The inline roll above will return 1 if it succeeded or 0 if it failed.</p></section>",
+            "description": "<p>You alter time around up to six creatures of your choice in a 40-foot Cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration.</p><p>An affected target’s Speed is halved, it takes a −2 penalty to AC and Dexterity saving throws, and it can’t take Reactions. On its turns, it can take either an action or a Bonus Action, not both, and it can make only one attack if it takes the Attack action. If it casts a spell with a Somatic component, there is a [[/r 1d100cs&gt;25#Spell cast successfully on 1]]{25 percent} chance the spell fails as a result of the target making the spell’s gestures too slowly.</p><p>An affected target repeats the save at the end of each of its turns, ending the spell on itself on a success.</p><section class=\"secret\" id=\"secret-2RobIVhv3tn7gmU7\"><p><strong>Foundry Note</strong></p><p>The inline roll above will return 1 if it succeeded or 0 if it failed.</p></section>",
             "materials_component": "a drop of molasses"
         },
         "phbsplSorcerousB": {
@@ -2604,6 +2598,9 @@
         },
         "vC7qgyy8cjgi3t0T": {
             "name": "Paralyzed"
+        },
+        "vPkln6UeePHnbLr4": {
+            "name": "Hunter's Mark"
         },
         "vyf4vVVoGkZPyAqa": {
             "name": "Resurrection Sickness (Day 4)"
