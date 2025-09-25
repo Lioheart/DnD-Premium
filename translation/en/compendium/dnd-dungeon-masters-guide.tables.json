@@ -1,38 +1,38 @@
 {
   "label": "Roll Tables",
   "folders": {
-    "Adventure Situations": "Adventure Situations",
-    "Arcana": "Arcana",
-    "Armaments": "Armaments",
-    "Art Objects": "Art Objects",
-    "Artifact Attributes": "Artifact Attributes",
+    "Magic Item Attributes": "Magic Item Attributes",
+    "Gemstones": "Gemstones",
+    "Encounters": "Encounters",
+    "Deck of Many Things": "Deck of Many Things",
+    "Item-Specific Tables": "Item-Specific Tables",
+    "Implements": "Implements",
     "Bag of Tricks": "Bag of Tricks",
+    "Artifact Attributes": "Artifact Attributes",
+    "Arcana": "Arcana",
+    "Sentient Item Attributes": "Sentient Item Attributes",
+    "Monster Attributes": "Monster Attributes",
+    "Adventure Situations": "Adventure Situations",
+    "Art Objects": "Art Objects",
+    "Settlement Attributes": "Settlement Attributes",
+    "Hooks": "Hooks",
+    "Armaments": "Armaments",
+    "NPCs": "NPCs",
+    "Relics": "Relics",
     "Bastion Events": "Bastion Events",
+    "Random Magic Items": "Random Magic Items",
     "Chapter 2: Running the Game": "Chapter 2: Running the Game",
+    "Names": "Names",
+    "Random Magic Item Rarity by Level": "Random Magic Item Rarity by Level",
     "Chapter 3: DM's Toolbox": "Chapter 3: DM's Toolbox",
     "Chapter 4: Creating Adventures": "Chapter 4: Creating Adventures",
     "Chapter 5: Creating Campaigns": "Chapter 5: Creating Campaigns",
     "Chapter 6: Cosmology": "Chapter 6: Cosmology",
     "Chapter 7: Treasure": "Chapter 7: Treasure",
-    "Chapter 8: Bastions": "Chapter 8: Bastions",
-    "Deck of Many Things": "Deck of Many Things",
-    "Encounters": "Encounters",
-    "Gemstones": "Gemstones",
-    "Hooks": "Hooks",
-    "Implements": "Implements",
-    "Item-Specific Tables": "Item-Specific Tables",
-    "Magic Item Attributes": "Magic Item Attributes",
-    "Monster Attributes": "Monster Attributes",
-    "NPCs": "NPCs",
-    "Names": "Names",
-    "Random Magic Item Rarity by Level": "Random Magic Item Rarity by Level",
-    "Random Magic Items": "Random Magic Items",
-    "Relics": "Relics",
-    "Sentient Item Attributes": "Sentient Item Attributes",
-    "Settlement Attributes": "Settlement Attributes"
+    "Chapter 8: Bastions": "Chapter 8: Bastions"
   },
   "entries": {
-    "dmg1000GpGemston": {
+    "1,000 GP Gemstones": {
       "name": "1,000 GP Gemstones",
       "description": "<p><em>See: @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgGemstone1000G]{Gemstone (1,000 GP)}</em></p>",
       "results": {
@@ -46,7 +46,7 @@
         "8-8": "Yellow sapphire (fiery yellow or <span>yellow</span> green)"
       }
     },
-    "dmg100GpGemstone": {
+    "100 GP Gemstones": {
       "name": "100 GP Gemstones",
       "description": "<p><em>See: @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgGemstone100GP]{Gemstone (100 GP)}</em></p>",
       "results": {
@@ -62,7 +62,7 @@
         "10-10": "Tourmaline (pale green, blue, brown, or red)"
       }
     },
-    "dmg10GpGemstones": {
+    "10 GP Gemstones": {
       "name": "10 GP Gemstones",
       "description": "<p><em>See: @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgGemstone10GP0]{Gemstone (10 GP)}</em></p>",
       "results": {
@@ -80,7 +80,7 @@
         "12-12": "Turquoise (light blue green)"
       }
     },
-    "dmg1116Adventure": {
+    "Level 11-16 Adventure Situations": {
       "name": "Level 11-16 Adventure Situations",
       "results": {
         "1-1": "<p>A portal to the Abyss opens in a cursed location and spews demons into the world.</p>",
@@ -97,7 +97,7 @@
         "12-12": "<p>During a drought, low water levels in a lake reveal previously unknown ancient ruins that contain a powerful evil.</p>"
       }
     },
-    "dmg1116RandomMag": {
+    "Level 11-16": {
       "name": "Level 11-16",
       "results": {
         "1-11": "Common",
@@ -107,10 +107,10 @@
         "94-100": "Legendary"
       }
     },
-    "dmg13CardDeckOfM": {
+    "Deck of Many Things: 13 Cards": {
       "name": "Deck of Many Things: 13 Cards"
     },
-    "dmg14AdventureSi": {
+    "Level 1-4 Adventure Situations": {
       "name": "Level 1-4 Adventure Situations",
       "results": {
         "1-1": "<p>A dragon wyrmling has gathered a band of kobolds to help it amass a hoard.</p>",
@@ -135,7 +135,7 @@
         "20-20": "<p>A new captain has taken charge of a band of pirates or bandits and started raiding more frequently.</p>"
       }
     },
-    "dmg14RandomMagic": {
+    "Level 1-4": {
       "name": "Level 1-4",
       "results": {
         "1-54": "Common",
@@ -143,7 +143,7 @@
         "92-100": "Rare"
       }
     },
-    "dmg1720Adventure": {
+    "Level 17-20 Adventure Situations": {
       "name": "Level 17-20 Adventure Situations",
       "results": {
         "1-1": "<p>An ancient dragon is scheming to destroy a god and take the god’s place in the pantheon. The dragon’s minions are searching for Artifacts that can summon and weaken this god.</p>",
@@ -158,7 +158,7 @@
         "10-10": "<p>Five ancient metallic dragons lair in the Pillars of Creation. If all these dragons are killed, the world will collapse into chaos. One has just been slain.</p>"
       }
     },
-    "dmg1720RandomMag": {
+    "Level 17-20": {
       "name": "Level 17-20",
       "results": {
         "1-20": "Rare",
@@ -166,10 +166,10 @@
         "65-100": "Legendary"
       }
     },
-    "dmg22CardDeckOfM": {
+    "Deck of Many Things: 22 Cards": {
       "name": "Deck of Many Things: 22 Cards"
     },
-    "dmg2500GpArtObje": {
+    "2,500 GP Art Objects": {
       "name": "2,500 GP Art Objects",
       "description": "<p><em>See: @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgJewelry2500GP]{Art Object (2,500 GP)}</em></p>",
       "results": {
@@ -185,7 +185,7 @@
         "10-10": "A necklace string of small pink pearls"
       }
     },
-    "dmg250GpArtObjec": {
+    "250 GP Art Objects": {
       "name": "250 GP Art Objects",
       "description": "<p><em>See: @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgJewelry250GP0]{Art Object (250 GP)}</em></p>",
       "results": {
@@ -201,7 +201,7 @@
         "10-10": "Gold birdcage with electrum filigree"
       }
     },
-    "dmg25GpArtObject": {
+    "25 GP Art Objects": {
       "name": "25 GP Art Objects",
       "description": "<p><em>See: @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgJewelry25GP00]{Art Object (25 GP)}</em></p>",
       "results": {
@@ -217,7 +217,7 @@
         "10-10": "Gold locket with a painted portrait inside"
       }
     },
-    "dmg5000GpGemston": {
+    "5,000 GP Gemstones": {
       "name": "5,000 GP Gemstones",
       "description": "<p><em>See: @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgGemstone5000G]{Gemstone (5,000 GP)}</em></p>",
       "results": {
@@ -227,7 +227,7 @@
         "4-4": "Ruby (clear red to deep crimson)"
       }
     },
-    "dmg500GpGemstone": {
+    "500 GP Gemstones": {
       "name": "500 GP Gemstones",
       "description": "<p><em>See: @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgGemstone500GP]{Gemstone (500 GP)}</em></p>",
       "results": {
@@ -239,7 +239,7 @@
         "6-6": "Topaz (golden yellow)"
       }
     },
-    "dmg50GpGemstones": {
+    "50 GP Gemstones": {
       "name": "50 GP Gemstones",
       "description": "<p><em>See: @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgGemstone50GP0]{Gemstone (50 GP)}</em></p>",
       "results": {
@@ -257,7 +257,7 @@
         "12-12": "Zircon (pale blue green)"
       }
     },
-    "dmg510AdventureS": {
+    "Level 5-10 Adventure Situations": {
       "name": "Level 5-10 Adventure Situations",
       "results": {
         "1-1": "<p>A group of cultists has summoned a demon to wreak havoc in the city.</p>",
@@ -282,7 +282,7 @@
         "20-20": "<p>A renowned group of adventurers never returned from an expedition to a famous ruin.</p>"
       }
     },
-    "dmg510RandomMagi": {
+    "Level 5-10": {
       "name": "Level 5-10",
       "results": {
         "1-30": "Common",
@@ -291,7 +291,7 @@
         "99-100": "Very Rare"
       }
     },
-    "dmg7500GpArtObje": {
+    "7,500 GP Art Objects": {
       "name": "7,500 GP Art Objects",
       "description": "<p><em>See: @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgJewelry7500GP]{Art Object (7,500 GP)}</em></p>",
       "results": {
@@ -307,7 +307,7 @@
         "10-10": "Ceremonial gold armor with black pearls"
       }
     },
-    "dmg750GpArtObjec": {
+    "750 GP Art Objects": {
       "name": "750 GP Art Objects",
       "description": "<p><em>See: @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgJewelry750GP0]{Art Object (750 GP)}</em></p>",
       "results": {
@@ -323,7 +323,7 @@
         "10-10": "Painted gold war mask"
       }
     },
-    "dmgAdventureClim": {
+    "Adventure Climax": {
       "name": "Adventure Climax",
       "results": {
         "1-1": "<p>The adventurers confront a villain and a group of minions in a battle to the finish.</p>",
@@ -338,7 +338,7 @@
         "10-10": "<p>Just when the characters think the main threat is defeated, it transforms into a different monster or a more powerful form.</p>"
       }
     },
-    "dmgAdventureConn": {
+    "Adventure Connection": {
       "name": "Adventure Connection",
       "results": {
         "1-1": "<p>Introduce a person, an object, or information that the characters need to transport safely to a location involved in the new adventure.</p>",
@@ -349,7 +349,7 @@
         "6-6": "<p>Give the characters a treasure that’s wrapped in mystery they’ll need to unravel in the new adventure.</p>"
       }
     },
-    "dmgAllIsWell0000": {
+    "All is Well": {
       "name": "All is Well",
       "results": {
         "1-1": "<p>Accident reports are way down.</p>",
@@ -362,7 +362,7 @@
         "8-8": "<p>Someone thought they saw a ghost.</p>"
       }
     },
-    "dmgAmuletOfThePl": {
+    "Amulet of the Planes Destination": {
       "name": "Amulet of the Planes Destination",
       "results": {
         "1-60": "Random location on the plane you named",
@@ -372,7 +372,7 @@
         "91-100": "Random location on the Astral Plane"
       }
     },
-    "dmgAppearance000": {
+    "Appearance": {
       "name": "Appearance",
       "results": {
         "1-1": "<p>Distinctive jewelry</p>",
@@ -389,7 +389,7 @@
         "12-12": "<p>Exceptionally beautiful or ugly</p>"
       }
     },
-    "dmgArcanaCommon0": {
+    "Arcana - Common": {
       "name": "Arcana - Common",
       "results": {
         "1-2": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgBeadOfNourish]{Bead of Nourishment}",
@@ -430,7 +430,7 @@
         "98-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgWandOfPyrotec]{Wand of Pyrotechnics}"
       }
     },
-    "dmgArcanaLegenda": {
+    "Arcana - Legendary": {
       "name": "Arcana - Legendary",
       "results": {
         "1-4": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgApparatusOfKw]{Apparatus of Kwalish}",
@@ -461,7 +461,7 @@
         "97-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgWellOfManyWor]{Well of Many Worlds}"
       }
     },
-    "dmgArcanaRare000": {
+    "Arcana - Rare": {
       "name": "Arcana - Rare",
       "results": {
         "1-1": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgBagOfBeans000]{Bag of Beans}",
@@ -521,7 +521,7 @@
         "99-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgWingsOfFlying]{Wings of Flying}"
       }
     },
-    "dmgArcanaUncommo": {
+    "Arcana - Uncommon": {
       "name": "Arcana - Uncommon",
       "results": {
         "1-1": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgAmuletOfProof]{Amulet of Proof against Detection and Location}",
@@ -588,7 +588,7 @@
         "100-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgWingedBoots00]{Winged Boots}"
       }
     },
-    "dmgArcanaVeryRar": {
+    "Arcana - Very Rare": {
       "name": "Arcana - Very Rare",
       "results": {
         "1-2": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgAmuletOfThePl]{Amulet of the Planes}",
@@ -633,7 +633,7 @@
         "98-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmg1WandOfTheWar]{Wand of the War Mage}, +3"
       }
     },
-    "dmgArmamentsComm": {
+    "Armaments - Common": {
       "name": "Armaments - Common",
       "results": {
         "1-10": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgArmorOfGleami]{Armor of Gleaming}",
@@ -648,7 +648,7 @@
         "91-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgWallopingAmmu]{Walloping Ammunition}"
       }
     },
-    "dmgArmamentsLege": {
+    "Armaments - Legendary": {
       "name": "Armaments - Legendary",
       "results": {
         "1-6": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgArmor12or3000]{Armor}, +3",
@@ -671,7 +671,7 @@
         "96-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgVorpalSword00]{Vorpal Sword}"
       }
     },
-    "dmgArmamentsRare": {
+    "Armaments - Rare": {
       "name": "Armaments - Rare",
       "results": {
         "1-3": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgAmmunition12o]{Ammunition, +2}",
@@ -712,7 +712,7 @@
         "98-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgWrapsOfUnarme]{Wraps of Unarmed Power, +2}"
       }
     },
-    "dmgArmamentsUnco": {
+    "Armaments - Uncommon": {
       "name": "Armaments - Uncommon",
       "results": {
         "1-4": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgAdamantineArm]{Adamantine Armor}",
@@ -738,7 +738,7 @@
         "96-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgWrapsOfUnarme]{Wraps of Unarmed Power}, +1"
       }
     },
-    "dmgArmamentsVery": {
+    "Armaments - Very Rare": {
       "name": "Armaments - Very Rare",
       "results": {
         "1-3": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgAmmunition12o]{Ammunition}, +3",
@@ -776,7 +776,7 @@
         "98-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgWrapsOfUnarme]{Wraps of Unarmed Power}, +3"
       }
     },
-    "dmgArmorOfResist": {
+    "Armor of Resistance Type": {
       "name": "Armor of Resistance Type",
       "results": {
         "1-1": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgArmorOfResist.ActiveEffect.YreDFSu9z9mGCWt1]",
@@ -791,7 +791,7 @@
         "10-10": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgArmorOfResist.ActiveEffect.cbsuJ2tdbBuT5e8U]"
       }
     },
-    "dmgAstralColorPo": {
+    "Astral Color Pools": {
       "name": "Astral Color Pools",
       "results": {
         "Q1t4LjBh3uQYhxKD": "<strong>Plane:</strong> Abyss",
@@ -834,7 +834,7 @@
         "oMdOKaurszkkpa03": "<strong>Pool Color:</strong> Indigo"
       }
     },
-    "dmgBagOfBeansEff": {
+    "Bag of Beans Effect": {
       "name": "Bag of Beans Effect",
       "results": {
         "1-1": "[[/r 5d4#Toadstools]] toadstools sprout. If a creature eats a toadstool, roll [[/r 1d2#Toadstool side-effect]]{any die}. On an odd roll, the eater must succeed on a [[/save ability=con dc=15 format=long]] or take [[/damage 5d6 type=poison]] damage and have the &amp;Reference[Poisoned] condition for 1 hour. On an even roll, the eater gains [[/healing 5d6 type=temphp]] for 1 hour.",
@@ -851,7 +851,7 @@
         "96-100": "A giant beanstalk sprouts, growing to a height of the DM’s choice. The top leads where the DM chooses, such as to a great view, a cloud giant’s castle, or another plane of existence."
       }
     },
-    "dmgBastionEvents": {
+    "Bastion Events": {
       "name": "Bastion Events",
       "results": {
         "1-50": "<p>All Is Well</p>",
@@ -867,7 +867,7 @@
         "99-100": "<p>Treasure</p>"
       }
     },
-    "dmgCandleOfInvoc": {
+    "Candle of Invocation: Outer Plane Destination": {
       "name": "Candle of Invocation: Outer Plane Destination",
       "results": {
         "1-5": "Abyss",
@@ -888,7 +888,7 @@
         "96-100": "Ysgard"
       }
     },
-    "dmgCarpetOfFlyin": {
+    "Carpet of Flying: Size, Capacity, and Speed": {
       "name": "Carpet of Flying: Size, Capacity, and Speed",
       "results": {
         "1-20": "3 × 5 ft. | 200 lb. capacity | 80 ft. Fly speed",
@@ -897,7 +897,7 @@
         "81-100": "6 × 9 ft. | 800 lb. capacity | 30 ft. Fly speed"
       }
     },
-    "dmgClaimsToFame0": {
+    "Claims to Fame": {
       "name": "Claims to Fame",
       "results": {
         "1-1": "Delicious food",
@@ -922,7 +922,7 @@
         "20-20": "Ancient ruins"
       }
     },
-    "dmgCommonNames00": {
+    "Common Names": {
       "name": "Common Names",
       "results": {
         "1-1": "<p><strong>Given Name:</strong> Adrik</p> <p><strong>Surname:</strong> Brightsun</p>",
@@ -939,7 +939,7 @@
         "12-12": "<p><strong>Given Name:</strong> Zorra</p> <p><strong>Surname:</strong> Wren</p>"
       }
     },
-    "dmgCubeOfSummoni": {
+    "Cube of Summoning": {
       "name": "Cube of Summoning",
       "results": {
         "1-1": "@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSummonAber]{Summon Aberration}",
@@ -950,7 +950,7 @@
         "6-6": "@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFey0]{Summon Fey}"
       }
     },
-    "dmgCurrentCalami": {
+    "Current Calamities": {
       "name": "Current Calamities",
       "results": {
         "1-1": "<p>Monsters infest the settlement.</p>",
@@ -967,7 +967,7 @@
         "12-12": "<p>Scandal threatens powerful local families.</p>"
       }
     },
-    "dmgDeckOfIllusio": {
+    "Deck of Illusions": {
       "name": "Deck of Illusions",
       "description": "<p>Stat blocks for these creatures (except the card drawer) appear in the <em>Monster Manual</em>.</p>",
       "results": {
@@ -1007,7 +1007,7 @@
         "34-34": "The card drawer"
       }
     },
-    "dmgDefiningTrait": {
+    "Defining Traits": {
       "name": "Defining Traits",
       "results": {
         "1-2": "Fortified outer wall",
@@ -1023,7 +1023,7 @@
         "19-20": "Impressive structure (such as a keep, temple, circle of standing stones, or ziggurat)"
       }
     },
-    "dmgDungeonDecay0": {
+    "Dungeon Decay": {
       "name": "Dungeon Decay",
       "results": {
         "1-1": "<p><strong>Perilous.</strong> The area is dangerously worn and prone to collapse. Any impacts or damage to the structure, including from spells and other areas of effect, have a 50 percent chance of causing a collapse.</p>",
@@ -1034,7 +1034,7 @@
         "6-6": "<p><strong>Thriving.</strong> The dungeon is heavily populated. Any loud noises draw the attention of nearby creatures.</p>"
       }
     },
-    "dmgDungeonQuirks": {
+    "Dungeon Quirks": {
       "name": "Dungeon Quirks",
       "results": {
         "1-2": "<p>Abandoned after internal strife devastated its population</p>",
@@ -1075,7 +1075,7 @@
         "99-100": "<p>Transformed by multiple events or disasters over the course of centuries</p>"
       }
     },
-    "dmgEfreetiBottle": {
+    "Efreeti Bottle": {
       "name": "Efreeti Bottle",
       "description": "<p>The first time the @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgEfreetiBottle]{bottle} is opened, the DM rolls on the following table to determine what happens.</p>",
       "results": {
@@ -1084,7 +1084,7 @@
         "10-10": "The efreeti understands your languages and can cast <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWish000000]{Wish}</em> once for you. It disappears when it grants the wish or after 1 hour, and the bottle loses its magic."
       }
     },
-    "dmgEtherCyclone0": {
+    "Ether Cyclone": {
       "name": "Ether Cyclone",
       "results": {
         "1-12": "Extended journey. Each character in a group traveling together makes a [[/save cha 15]] saving throw. If at least half the group succeeds, travel is delayed by [[/r 1d10]] hours. Otherwise, the journey’s travel time is doubled.",
@@ -1092,7 +1092,7 @@
         "20-20": "Hurled to a random destination on the @UUID[Compendium.dnd-dungeon-masters-guide.content.JournalEntry.dmgCosmology0000.JournalEntryPage.lNqkZFfXDs9S3sft]{Astral Plane}"
       }
     },
-    "dmgEtherealCurta": {
+    "Ethereal Curtains": {
       "name": "Ethereal Curtains",
       "results": {
         "1-2": "<strong>Plane:</strong> Material Plane. <strong>Curtain Color:</strong> Turquoise",
@@ -1108,7 +1108,7 @@
         "12-12": "<strong>Plane:</strong> Para-elemental Plane of Ooze. <strong>Curtain Color:</strong> Chocolate"
       }
     },
-    "dmgFeywildTimeWa": {
+    "Feywild Time Warp": {
       "name": "Feywild Time Warp",
       "results": {
         "1-2": "Days become minutes",
@@ -1119,7 +1119,7 @@
         "20-20": "Days become years"
       }
     },
-    "dmgGamingHallWin": {
+    "Gaming Hall Winnings": {
       "name": "Gaming Hall Winnings",
       "results": {
         "1-50": "[[/award 1d6*10gp]]",
@@ -1128,10 +1128,10 @@
         "96-100": "[[/award 10d6*10gp]]"
       }
     },
-    "dmgGrayBagOfTric": {
+    "Gray Bag of Tricks": {
       "name": "Gray Bag of Tricks"
     },
-    "dmgGuest00000000": {
+    "Guest": {
       "name": "Guest",
       "results": {
         "1-1": "The guest is an individual of great renown who stays for 7 days. At the end of their stay, the guest gives you a letter of recommendation (see @UUID[Compendium.dnd-dungeon-masters-guide.content.JournalEntry.dmgDmsToolbox000.JournalEntryPage.XpmEG4yalu71L9ed]{Marks of Prestige}).",
@@ -1140,7 +1140,7 @@
         "4-4": "The guest is a Friendly monster, such as a brass dragon or a treant. If your Bastion is attacked while this monster is your guest, it defends your Bastion, and you lose no Bastion Defenders. The monster leaves after it defends your Bastion once or when you send it away."
       }
     },
-    "dmgGutturalNames": {
+    "Guttural Names": {
       "name": "Guttural Names",
       "results": {
         "1-1": "<p><strong>Given Name:</strong> Abzug</p> <p><strong>Surname:</strong> Burska</p>",
@@ -1157,7 +1157,7 @@
         "12-12": "<p><strong>Given Name:</strong> Varka</p> <p><strong>Surname:</strong> Zulrax</p>"
       }
     },
-    "dmgHappenstanceH": {
+    "Happenstance Hooks": {
       "name": "Happenstance Hooks",
       "results": {
         "1-1": "The characters find a letter describing the adventure situation.",
@@ -1168,7 +1168,7 @@
         "6-6": "The characters are attacked after being mistaken for another group of adventurers. They learn about the adventure situation from a clue left behind by their attackers."
       }
     },
-    "dmgHatOfManySpel": {
+    "Hat of Many Spells": {
       "name": "Hat of Many Spells",
       "results": {
         "1-50": "You cast a random spell determined by rolling [[/r 1d10]]: on a 1, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplEnlargeRed]{Enlarge/Reduce} (enlarge effect); on a 2, Enlarge/Reduce (reduce effect); on a 3, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFaerieFire]{Faerie Fire}; on a 4, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireball00]{Fireball}; on a 5, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGustofWind]{Gust of Wind}; on a 6, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplInvisibili]{Invisibility} (cast on yourself); on a 7, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLightningB]{Lightning Bolt}; on an 8, @UUID[Compendium.dnd-players-handbook.spells.Item.phbPhantasmalFor]{Phantasmal Force}; on a 9, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPolymorph0]{Polymorph}; on a 10, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplStinkingCl]{Stinking Cloud}.",
@@ -1184,7 +1184,7 @@
         "96-100": "You pull a magic item out of the hat. Roll [[/r 1d6]] to determine the item’s rarity: on a 1–3, Common; on a 4–5, Uncommon; on a 6, Rare. The DM chooses the item, which disappears after 1 hour if it’s not consumed or destroyed before then."
       }
     },
-    "dmgHornOfValhall": {
+    "Horn of Valhalla: Type and Requirement": {
       "name": "Horn of Valhalla: Type and Requirement",
       "results": {
         "1-40": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgSilverHornOfV]{Silver} (2 spirits); No requirement",
@@ -1193,7 +1193,7 @@
         "91-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgIronHornOfVal]{Iron} (5 spirits); Proficiency with all Martial weapons"
       }
     },
-    "dmgHornsOfTheBea": {
+    "Horns of the Beast": {
       "name": "Horns of the Beast",
       "results": {
         "1-14": "No encounter",
@@ -1205,7 +1205,7 @@
         "20-20": "<p>Four @UUID[Compendium.dnd-monster-manual.actors.Actor.mmMinotaurOfBaph]{Minotaurs of Baphomet} prowl the jungle looking for Humanoids they can capture and bring back to the temple.</p>"
       }
     },
-    "dmgImplementsCom": {
+    "Implements - Common": {
       "name": "Implements - Common",
       "results": {
         "1-2": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgBeadOfNourish]{Bead of Nourishment}",
@@ -1245,7 +1245,7 @@
         "97-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgWandOfPyrotec]{Wand of Pyrotechnics}"
       }
     },
-    "dmgImplementsLeg": {
+    "Implements - Legendary": {
       "name": "Implements - Legendary",
       "results": {
         "1-17": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgEnspelledWeap]{Enspelled Weapon} (level 6, 7, or 8 spell)",
@@ -1256,7 +1256,7 @@
         "84-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgUniversalSolv]{Universal Solvent}"
       }
     },
-    "dmgImplementsRar": {
+    "Implements - Rare": {
       "name": "Implements - Rare",
       "results": {
         "1-4": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgAmmunition12o]{Ammunition}, +2",
@@ -1285,7 +1285,7 @@
         "97-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgWandOfEnemyDe]{Wand of Enemy Detection}"
       }
     },
-    "dmgImplementsUnc": {
+    "Implements - Uncommon": {
       "name": "Implements - Uncommon",
       "results": {
         "1-2": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgAlchemyJug000]{Alchemy Jug}",
@@ -1333,7 +1333,7 @@
         "99-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgWandOfSecrets]{Wand of Secrets}"
       }
     },
-    "dmgImplementsVer": {
+    "Implements - Very Rare": {
       "name": "Implements - Very Rare",
       "results": {
         "1-7": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgAmmunition12o]{Ammunition}, +3",
@@ -1352,7 +1352,7 @@
         "94-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgTomeOfLeaders]{Tome of Leadership and Influence}"
       }
     },
-    "dmgInitialAttitu": {
+    "Initial Attitude": {
       "name": "Initial Attitude",
       "results": {
         "1-4": "Hostile",
@@ -1360,7 +1360,7 @@
         "9-12": "Friendly"
       }
     },
-    "dmgIronFlaskCont": {
+    "Iron Flask Contents": {
       "name": "Iron Flask Contents",
       "results": {
         "1-50": "No creature",
@@ -1395,7 +1395,7 @@
         "100-100": "@UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.2MZNHeOZweXAYbv1]{Xorn}"
       }
     },
-    "dmgLocalLeaders0": {
+    "Local Leaders": {
       "name": "Local Leaders",
       "results": {
         "1-1": "<p>Respected, fair, and just leader or council</p>",
@@ -1412,7 +1412,7 @@
         "12-12": "<p>Religious leader or council</p>"
       }
     },
-    "dmgLyricalNames0": {
+    "Lyrical Names": {
       "name": "Lyrical Names",
       "results": {
         "1-1": "<p><strong>Given Name:</strong> Arannis</p> <p><strong>Surname:</strong> Arvannis</p>",
@@ -1429,7 +1429,7 @@
         "12-12": "<p><strong>Given Name:</strong> Velissa</p> <p><strong>Surname:</strong> Zashir</p>"
       }
     },
-    "dmgMagicItemsCre": {
+    "Creator or Intended User": {
       "name": "Creator or Intended User",
       "results": {
         "1-1": "<p><strong>Aberration.</strong> The item is ancient. At a glance, it seems to be covered with mucus.</p>",
@@ -1450,7 +1450,7 @@
         "20-20": "<p><strong>Undead.</strong> The item incorporates symbols of death, such as bones and skulls, and it might be crafted from parts of corpses. It feels cold to the touch.</p>"
       }
     },
-    "dmgMagicItemsHis": {
+    "History": {
       "name": "History",
       "results": {
         "1-1": "<p><strong>Arcane.</strong> This item was created for an ancient order of spellcasters and bears the order’s symbol.</p>",
@@ -1463,7 +1463,7 @@
         "8-8": "<p><strong>Symbol of Power.</strong> This item was once used as part of royal regalia or as a badge of high office.</p>"
       }
     },
-    "dmgMagicItemsMin": {
+    "Minor Property": {
       "name": "Minor Property",
       "results": {
         "1-2": "<p><strong>Beacon.</strong> You can take a Bonus Action to cause the item to shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, or to extinguish the light.</p>",
@@ -1483,7 +1483,7 @@
         "20-20": "<p>Roll twice, rerolling any additional 20s.</p>"
       }
     },
-    "dmgMagicItemsQui": {
+    "Quirk": {
       "name": "Quirk",
       "results": {
         "1-1": "<p><strong>Blissful.</strong> You feel fortunate and optimistic about what the future holds. Butterflies and other harmless creatures might frolic in the item’s presence.</p>",
@@ -1496,7 +1496,7 @@
         "8-8": "<p><strong>Repulsive.</strong> You feel a sense of distaste when in contact with the item and continue to experience discomfort while bearing it.</p>"
       }
     },
-    "dmgMajorBenefici": {
+    "Major Beneficial Properties": {
       "name": "Major Beneficial Properties",
       "results": {
         "1-20": "<p>While attuned to the Artifact, one of your ability scores (DM’s choice) increases by 2, to a maximum of 24.</p>",
@@ -1510,7 +1510,7 @@
         "91-100": "<p>While attuned to the Artifact, you have Immunity to the Blinded, Deafened, Petrified, and Stunned conditions.</p>"
       }
     },
-    "dmgMajorDetrimen": {
+    "Major Detrimental Properties": {
       "name": "Major Detrimental Properties",
       "results": {
         "1-9": "<p>You can’t attune to other magic items while you’re attuned to the Artifact. When you become attuned to the Artifact, your Attunement to other magic items ends immediately.</p>",
@@ -1527,7 +1527,7 @@
         "97-100": "<p>While attuned to the Artifact, you can’t spend Hit Point Dice or regain Hit Points.</p>"
       }
     },
-    "dmgManualOfGolem": {
+    "Manual of Golems: Type, Time, and Cost": {
       "name": "Manual of Golems: Type, Time, and Cost",
       "results": {
         "1-5": "<strong>Golem:</strong> Clay Golem<br /><strong>Time:</strong> 30 days<br /><strong>Cost:</strong> 65,000 GP",
@@ -1536,7 +1536,7 @@
         "19-20": "<strong>Golem:</strong> Stone Golem<br /><strong>Time:</strong> 90 days<br /><strong>Cost:</strong> 80,000 GP"
       }
     },
-    "dmgMeditationCha": {
+    "Meditation Chamber Saving Throw Advantage": {
       "name": "Meditation Chamber Saving Throw Advantage",
       "results": {
         "1-1": "Strength",
@@ -1547,7 +1547,7 @@
         "6-6": "Charisma"
       }
     },
-    "dmgMinerDifficul": {
+    "Miner Difficulties": {
       "name": "Miner Difficulties",
       "results": {
         "1-1": "<p>Four @UUID[Compendium.dnd-monster-manual.actors.Actor.mmVioletFungus00]{Violet Fungi} and one @UUID[Compendium.dnd-monster-manual.actors.Actor.mmRustMonster000]{Rust Monster}</p>",
@@ -1558,7 +1558,7 @@
         "6-6": "<p>Sounds of Terror (see below)</p>"
       }
     },
-    "dmgMinorBenefici": {
+    "Minor Beneficial Properties": {
       "name": "Minor Beneficial Properties",
       "results": {
         "1-20": "<p>While attuned to the Artifact, you gain proficiency in one skill of the DM’s choice.</p>",
@@ -1572,7 +1572,7 @@
         "91-100": "<p>While attuned to the Artifact, you gain a +1 <span>bonus</span> to Armor Class.</p>"
       }
     },
-    "dmgMinorDetrimen": {
+    "Minor Detrimental Properties": {
       "name": "Minor Detrimental Properties",
       "results": {
         "1-8": "<p>While attuned to the Artifact, you have Disadvantage on any ability check or saving throw that uses Strength or Constitution.</p>",
@@ -1591,7 +1591,7 @@
         "93-100": "<p>While you’re attuned to the Artifact, Beasts within 30 feet of you that have a Challenge Rating of 6 or lower are Hostile toward you.</p>"
       }
     },
-    "dmgMonosyllabicN": {
+    "Monosyllabic Names": {
       "name": "Monosyllabic Names",
       "results": {
         "1-1": "<p><strong>Given Name:</strong> Chen</p> <p><strong>Surname:</strong> Dench</p>",
@@ -1608,7 +1608,7 @@
         "12-12": "<p><strong>Given Name:</strong> Shan</p> <p><strong>Surname:</strong> Quaal</p>"
       }
     },
-    "dmgMonsterPerson": {
+    "Monster Personality": {
       "name": "Monster Personality",
       "results": {
         "1-1": "<p>Cowardly; surrenders easily</p>",
@@ -1621,7 +1621,7 @@
         "8-8": "<p>Orderly; difficult to rattle</p>"
       }
     },
-    "dmgMonsterRelati": {
+    "Monster Relationships": {
       "name": "Monster Relationships",
       "results": {
         "1-1": "<p>Two monsters have a bitter rivalry; each wants the other to suffer.</p>",
@@ -1632,7 +1632,7 @@
         "6-6": "<p>One monster bullies the others; it forces them into danger, but they want it defeated.</p>"
       }
     },
-    "dmgMoonbladeProp": {
+    "Moonblade Properties": {
       "name": "Moonblade Properties",
       "results": {
         "1-60": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgMoonblade0000.ActiveEffect.o2IcKz2aAooQr7EK]<hr />Increase the weapon’s bonus to attack rolls and damage rolls by 1, to a maximum of +3. Reroll if the <em>Moonblade</em> already has a +3 bonus.",
@@ -1644,7 +1644,7 @@
         "100-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgMoonblade0000.ActiveEffect.Qzkx9WVqILq2hG5c]<hr />You can take a Magic action to conjure a spectral entity that resembles a shadowy elf if you don’t already have one serving you. The entity appears in an unoccupied space within 120 feet of you. It uses the <strong>@UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.QGcQYZbVl4bWzi4E]{Shadow}</strong> stat block with these changes: it is a Fey, has a Neutral alignment, and doesn’t create new shadows. You control this entity, deciding how it acts and moves. It remains until it drops to 0 Hit Points or you dismiss it as a Magic action."
       }
     },
-    "dmgNecklaceOfPra": {
+    "Necklace of Prayer Beads Type": {
       "name": "Necklace of Prayer Beads Type",
       "results": {
         "1-6": "Bead of Blessing: @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBless00000]{Bless}",
@@ -1655,7 +1655,7 @@
         "20-20": "Bead of Wind Walking: @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWindWalk00]{Wind Walk}"
       }
     },
-    "dmgNpcSecrets000": {
+    "NPC Secrets": {
       "name": "NPC Secrets",
       "results": {
         "1-1": "<p>The NPC is in disguise, concealing their identity or some aspect of their appearance.</p>",
@@ -1670,7 +1670,7 @@
         "10-10": "<p>The NPC is deeply dissatisfied or unhappy.</p>"
       }
     },
-    "dmgPatronHooks00": {
+    "Patron Hooks": {
       "name": "Patron Hooks",
       "results": {
         "1-1": "<p>A town crier announces that someone is <span>hoping</span> to hire adventurers.</p>",
@@ -1681,7 +1681,7 @@
         "6-6": "<p>The adventurers are arrested (on valid or invented charges) and offered a chance to <span>escape</span> punishment by completing a quest.</p>"
       }
     },
-    "dmgPlanarAdventu": {
+    "Planar Adventure Situations": {
       "name": "Planar Adventure Situations",
       "results": {
         "1-1": "<p>When magic fails to revive a dead person, the only solution is to venture to the Outer Planes to find the person’s spirit and either release it from some prison or convince the person to return to life.</p>",
@@ -1696,7 +1696,7 @@
         "10-10": "<p>An item of legend is being sold at auction in Sigil, the City of Brass, or some other planar metropolis.</p>"
       }
     },
-    "dmgPotionMiscibi": {
+    "Potion Miscibility": {
       "name": "Potion Miscibility",
       "results": {
         "1-1": "Both potions lose their effects, and the mixture creates a magical explosion in a 5-foot-radius Sphere centered on itself. Each creature in that area takes [[/damage 4d10 type=force]] damage.",
@@ -1709,7 +1709,7 @@
         "100-100": "Only one potion works, but its effects are permanent. Choose the simplest effect to make permanent or the one that seems the most fun. For example, a Potion of Healing might increase the drinker’s Hit Point maximum by [[/roll 2d4 + 2]], or a Potion of Invisibility might give the drinker the Invisible condition indefinitely. At your discretion, a Dispel Magic spell or similar magic might end this lasting effect."
       }
     },
-    "dmgPotionOfResis": {
+    "Potion of Resistance Type": {
       "name": "Potion of Resistance Type",
       "results": {
         "1-1": "Acid",
@@ -1724,7 +1724,7 @@
         "10-10": "Thunder"
       }
     },
-    "dmgPsychicWindLo": {
+    "Psychic Wind Location Effects": {
       "name": "Psychic Wind Location Effects",
       "results": {
         "1-8": "<p>Diverted; add 1d6 days to travel time</p>",
@@ -1733,7 +1733,7 @@
         "17-20": "<p>Sent through a random color pool (roll on the Astral Color Pools table)</p>"
       }
     },
-    "dmgPsychicWindPs": {
+    "Psychic Wind Psychic Effects": {
       "name": "Psychic Wind Psychic Effects",
       "results": {
         "1-8": "<p>You have the &amp;Reference[Stunned] condition for 1 minute; you repeat the saving throw at the end of each of your turns, ending the effect on yourself on a success.</p>",
@@ -1742,7 +1742,7 @@
         "18-20": "<p>You have the &amp;Reference[Unconscious] condition for [[/r 1d10]] hours; the effect on you ends if you take damage or if another creature takes an action to shake you awake.</p>"
       }
     },
-    "dmgQuaalsFeather": {
+    "Quaal's Feather Tokens": {
       "name": "Quaal's Feather Tokens",
       "results": {
         "1-20": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgAnchorQuaalsF]{Anchor (Uncommon)}",
@@ -1753,7 +1753,7 @@
         "91-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgWhipQuaalsFea]{Whip (Rare)}"
       }
     },
-    "dmgRandomShops00": {
+    "Random Shops": {
       "name": "Random Shops",
       "results": {
         "1-1": "<p>Pawnshop</p>",
@@ -1768,7 +1768,7 @@
         "10-10": "<p>Chandler</p>"
       }
     },
-    "dmgRelicsCommon0": {
+    "Relics - Common": {
       "name": "Relics - Common",
       "results": {
         "1-1": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgEarHornOfHear]{Ear Horn of Hearing}",
@@ -1782,7 +1782,7 @@
         "9-9": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgStaffOfFlower]{Staff of Flowers}"
       }
     },
-    "dmgRelicsLegenda": {
+    "Relics - Legendary": {
       "name": "Relics - Legendary",
       "results": {
         "1-8": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgArmorOfInvuln]{Armor of Invulnerability}",
@@ -1798,7 +1798,7 @@
         "91-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgTalismanOfUlt]{Talisman of Ultimate Evil}"
       }
     },
-    "dmgRelicsRare000": {
+    "Relics - Rare": {
       "name": "Relics - Rare",
       "results": {
         "1-3": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgAmuletOfHealt]{Amulet of Health}",
@@ -1833,7 +1833,7 @@
         "97-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmg1WandOfTheWar]{Wand of the War Mage}, +2"
       }
     },
-    "dmgRelicsUncommo": {
+    "Relics - Uncommon": {
       "name": "Relics - Uncommon",
       "results": {
         "1-5": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgEnspelledStaf]{Enspelled Staff} (cantrip or level 1 spell)",
@@ -1855,7 +1855,7 @@
         "96-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmg1WandOfTheWar]{Wand of the War Mage}, +1"
       }
     },
-    "dmgRelicsVeryRar": {
+    "Relics - Very Rare": {
       "name": "Relics - Very Rare",
       "results": {
         "1-5": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgArmor12or3000]{Armor}, +2",
@@ -1878,11 +1878,11 @@
         "96-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmg1WandOfTheWar]{Wand of the War Mage}, +3"
       }
     },
-    "dmgRingOfResista": {
+    "Ring of Resistance: Damage Type and Gemstone": {
       "name": "Ring of Resistance: Damage Type and Gemstone",
       "results": {
         "1-1": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgRingOfResista.ActiveEffect.dBl3gfYXWn7YguDb]{Acid (Pearl)}",
-        "2-2": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgRingOfResista.ActiveEffect.P5fYc9OEg5GKGgkR]{Fire (Garnet)}",
+        "2-2": "<p>@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgRingOfResista.ActiveEffect.P5fYc9OEg5GKGgkR]{Cold (Tourmaline)}</p>",
         "3-3": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgRingOfResista.ActiveEffect.8IIAYzI3gqAJIBYo]{Fire (Garnet)}",
         "4-4": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgRingOfResista.ActiveEffect.ivnRnslXhD6UZH0L]{Force (Sapphire)}",
         "5-5": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgRingOfResista.ActiveEffect.96wcenml9tk62g37]{Lightning (Citrine)}",
@@ -1893,7 +1893,7 @@
         "10-10": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgRingOfResista.ActiveEffect.JA9aLSXZ6W3O0W9l]{Thunder (Spinel)}"
       }
     },
-    "dmgRobeOfUsefulI": {
+    "Robe of Useful Items": {
       "name": "Robe of Useful Items",
       "results": {
         "1-8": "Bag of [[/award 100GP]]",
@@ -1911,10 +1911,10 @@
         "97-100": "@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRamPortable]"
       }
     },
-    "dmgRustBagOfTric": {
+    "Rust Bag of Tricks": {
       "name": "Rust Bag of Tricks"
     },
-    "dmgScrollOfProte": {
+    "Scroll of Protection: Creature Type": {
       "name": "Scroll of Protection: Creature Type",
       "results": {
         "1-10": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgScrollOfProte.ActiveEffect.BFfhMUlqxRCc8RVd]",
@@ -1933,10 +1933,10 @@
         "91-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgScrollOfProte.ActiveEffect.JvE43pQh6FVZ42qp]"
       }
     },
-    "dmgScrollOfTitan": {
+    "Scroll of Titan Summoning: Titan": {
       "name": "Scroll of Titan Summoning: Titan",
       "results": {
-        "1-15": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgScrollOfTitan.ActiveEffect.2kCzJvG3VhSaBFZf]{Animal Lord}",
+        "1-15": "<p>@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgScrollOfTitan.ActiveEffect.2kCzJvG3VhSaBFZf]{Animal Lord}</p>",
         "16-30": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgScrollOfTitan.ActiveEffect.L35beXNJk2pc4GnD]{Blob of Annihilation}",
         "31-45": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgScrollOfTitan.ActiveEffect.3JOwtqPsvRPi6PSK]{Colossus}",
         "46-60": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgScrollOfTitan.ActiveEffect.iakdfvlMhgG8Afft]{Elemental Cataclysm}",
@@ -1945,7 +1945,7 @@
         "91-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgScrollOfTitan.ActiveEffect.Pj5GerbF88kGSx3A]{Tarrasque}"
       }
     },
-    "dmgSecondTavernN": {
+    "Tavern Names (Part 2)": {
       "name": "Tavern Names (Part 2)",
       "results": {
         "1-1": "Lyre",
@@ -1970,7 +1970,7 @@
         "20-20": "Dragon"
       }
     },
-    "dmgSenAlignment0": {
+    "Alignment": {
       "name": "Alignment",
       "results": {
         "1-15": "Lawful Good",
@@ -1984,15 +1984,15 @@
         "97-100": "Chaotic Evil"
       }
     },
-    "dmgSenCommunicat": {
+    "Communication": {
       "name": "Communication",
       "results": {
-        "1-6": "The item communicates by transmitting emotion to the creature carrying or wielding it&lt;.",
+        "1-6": "<p>The item communicates by transmitting emotion to the creature carrying or wielding it.</p>",
         "7-9": "The item speaks one or more languages.",
         "10-10": "The item speaks one or more languages. In addition, the item can communicate telepathically with any creature that carries or wields it."
       }
     },
-    "dmgSenSenses0000": {
+    "Senses": {
       "name": "Senses",
       "results": {
         "1-1": "Hearing and standard vision out to 30 feet",
@@ -2001,7 +2001,7 @@
         "4-4": "Hearing and Darkvision out to 120 feet"
       }
     },
-    "dmgSenSpecialPur": {
+    "Special Purpose": {
       "name": "Special Purpose",
       "results": {
         "1-1": "<strong>Aligned.</strong> The item seeks to defeat or destroy those of a diametrically opposed alignment. Such an item is never Neutral.",
@@ -2016,7 +2016,7 @@
         "10-10": "<strong>Templar.</strong> The item seeks to defend the servants and interests of a particular deity."
       }
     },
-    "dmgShadowfellDes": {
+    "Shadowfell Despair": {
       "name": "Shadowfell Despair",
       "results": {
         "1-3": "<strong>Apathy.</strong> The character has Disadvantage on Death Saving Throws and Initiative rolls.",
@@ -2024,7 +2024,7 @@
         "6-6": "<strong>Delusion.</strong> The character has Disadvantage on ability checks and saving throws that use Intelligence, Wisdom, or Charisma."
       }
     },
-    "dmgSinisterNames": {
+    "Sinister Names": {
       "name": "Sinister Names",
       "results": {
         "1-1": "<p><strong>Given Name:</strong> Arachne</p> <p><strong>Surname:</strong> Doomwhisper</p>",
@@ -2041,7 +2041,7 @@
         "12-12": "<p><strong>Given Name:</strong> Vexander</p> <p><strong>Surname:</strong> Zarkynzorn</p>"
       }
     },
-    "dmgSlayingAmmuni": {
+    "Ammunition of Slaying: Creature Type": {
       "name": "Ammunition of Slaying: Creature Type",
       "results": {
         "1-10": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgSlayingAmmuni.ActiveEffect.4GIkMFeZQHZnfjvq]",
@@ -2060,7 +2060,7 @@
         "91-100": "@UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgSlayingAmmuni.ActiveEffect.4NXhqKrNtDQjBcc8]"
       }
     },
-    "dmgSphereOfAnnih": {
+    "Sphere of Annihilation Interaction Results": {
       "name": "Sphere of Annihilation Interaction Results",
       "results": {
         "1-50": "The sphere is destroyed.",
@@ -2068,7 +2068,7 @@
         "86-100": "A spatial rift sends the sphere and each creature and object within 180 feet of the sphere to a random plane of existence."
       }
     },
-    "dmgSupernaturalH": {
+    "Supernatural Hooks": {
       "name": "Supernatural Hooks",
       "results": {
         "1-1": "The characters all have a vivid dream that foreshadows elements of the adventure.",
@@ -2079,10 +2079,10 @@
         "6-6": "Someone who died returns as a ghost and haunts the characters. The ghost prompts the characters to investigate the cause of the ghost’s death and put it to rest."
       }
     },
-    "dmgTanBagOfTrick": {
+    "Tan Bag of Tricks": {
       "name": "Tan Bag of Tricks"
     },
-    "dmgTavernNames00": {
+    "Tavern Names (Part 1)": {
       "name": "Tavern Names (Part 1)",
       "results": {
         "1-1": "<p>The Golden</p>",
@@ -2107,7 +2107,7 @@
         "20-20": "<p>The Witch and</p>"
       }
     },
-    "dmgTreasure00000": {
+    "Treasure": {
       "name": "Treasure",
       "results": {
         "76-90": "Roll on a Common Magic Items table of your choice (@UUID[Compendium.dnd-dungeon-masters-guide.tables.RollTable.dmgArcanaCommon0]{Arcana}, @UUID[Compendium.dnd-dungeon-masters-guide.tables.RollTable.dmgArmamentsComm]{Armaments}, @UUID[Compendium.dnd-dungeon-masters-guide.tables.RollTable.dmgImplementsCom]{Implements}, or @UUID[Compendium.dnd-dungeon-masters-guide.tables.RollTable.dmgRelicsCommon0]{Relics}).",
@@ -2115,7 +2115,7 @@
         "99-100": "Roll on a Rare Magic Items table of your choice (@UUID[Compendium.dnd-dungeon-masters-guide.tables.RollTable.dmgArcanaRare000]{Arcana}, @UUID[Compendium.dnd-dungeon-masters-guide.tables.RollTable.dmgArmamentsRare]{Armaments}, @UUID[Compendium.dnd-dungeon-masters-guide.tables.RollTable.dmgImplementsRar]{Implements}, or @UUID[Compendium.dnd-dungeon-masters-guide.tables.RollTable.dmgRelicsRare000]{Relics})."
       }
     },
-    "dmgUrbanChaseCom": {
+    "Urban Chase Complications": {
       "name": "Urban Chase Complications",
       "results": {
         "1-1": "A cart or another large obstacle blocks your way. Make a [[/save dex dc=10]] saving throw to get past the obstacle. On a failed save, the obstacle counts as 10 feet of &amp;Reference[Difficult Terrain] for you.",
@@ -2127,7 +2127,7 @@
         "7-12": "There is no complication."
       }
     },
-    "dmgWandOfWonderE": {
+    "Wand of Wonder Effects": {
       "name": "Wand of Wonder Effects",
       "description": "<p>A roll table of effects for the @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgWandOfWonder0]{Wand of Wonder} which implements the effects as activities where possible.</p>",
       "results": {
@@ -2151,7 +2151,7 @@
         "98-100": "The creature closest to the chosen point of origin makes a [[/save con 15]] saving throw. On a failed save, the creature has the &amp;Reference[Restrained] condition and begins to turn to stone. While Restrained in this way, the creature repeats the save at the end of its next turn. On a successful save, the effect ends. On a failed save, the creature has the &amp;Reference[Petrified] condition instead of the Restrained condition. The petrification lasts until the creature is freed by the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]{Greater Restoration} spell or similar magic."
       }
     },
-    "dmgWeather000000": {
+    "Weather: Temperature": {
       "name": "Weather: Temperature",
       "results": {
         "1-14": "Normal for the season",
@@ -2159,7 +2159,7 @@
         "18-20": "[[1d4*10]] degrees Fahrenheit hotter"
       }
     },
-    "dmgWhimsicalName": {
+    "Whimsical Names": {
       "name": "Whimsical Names",
       "results": {
         "1-1": "<p><strong>Given Name:</strong> Cricket</p> <p><strong>Surname:</strong> Borogove</p>",
@@ -2176,7 +2176,7 @@
         "12-12": "<p><strong>Given Name:</strong> Sybilwick</p> <p><strong>Surname:</strong> Wimbly</p>"
       }
     },
-    "dmgWildernessCha": {
+    "Wilderness Chase Complications": {
       "name": "Wilderness Chase Complications",
       "results": {
         "1-1": "You pass through a Swarm of Insects (see the Monster Manual, with the DM choosing whichever kind of insects makes the most sense). The swarm uses one of its actions, targeting you.",
@@ -2188,7 +2188,7 @@
         "7-7": "There is no complication."
       }
     },
-    "dmgWindprecipita": {
+    "Weather: Wind/Precipitation": {
       "name": "Weather: Wind/Precipitation",
       "results": {
         "1-12": "<strong>Wind:</strong> None. <strong>Precipitation:</strong> None.",
