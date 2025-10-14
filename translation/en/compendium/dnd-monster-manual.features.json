@@ -79,9 +79,6 @@
         "4qCHz8Y8yHiZVpca": {
             "name": "Charmed"
         },
-        "50cRPnG2UW7IRYOv": {
-            "name": "Poison Resistance"
-        },
         "5ReKSrBu11ume7GP": {
             "name": "Poisoned & Paralyzed"
         },
@@ -127,9 +124,6 @@
         "7dDnUIkH52PMHRsg": {
             "name": "Grappled"
         },
-        "7oUYh0bWAyEFB1Nl": {
-            "name": "Lightning Resistance"
-        },
         "85n0EJTGfngNSLLl": {
             "name": "Dominated"
         },
@@ -138,9 +132,6 @@
         },
         "8SBNBxgUqwEyYJcK": {
             "name": "Berserk"
-        },
-        "8dgy31qm90sVe7OK": {
-            "name": "Thunder Resistance"
         },
         "96f41YwmHtjW8P0o": {
             "name": "Poisoned"
@@ -313,9 +304,6 @@
         "IqfKmepxiah2U3YT": {
             "name": "Poisoned"
         },
-        "JJtFxDMbn2UvH8C5": {
-            "name": "Fire Resistance"
-        },
         "JXXj1j2cUhRFmmaN": {
             "name": "Speed: -10 feet"
         },
@@ -388,9 +376,6 @@
         "OLfqHaVMfzU2ogop": {
             "name": "Forager Appearance"
         },
-        "OUNGKFikPWjtutak": {
-            "name": "Piercing Resistance"
-        },
         "OY3B1NBPgGcFmHGi": {
             "name": "Prone"
         },
@@ -435,9 +420,6 @@
         },
         "Qe2dtffqrJTpcuih": {
             "name": "Stunned"
-        },
-        "QlDCemhw8dOyR2oy": {
-            "name": "Cold Resistance"
         },
         "QyuBYDW1zznn0OS4": {
             "name": "Deafened"
@@ -544,9 +526,6 @@
         "Xy0tzgObrMRF2lHm": {
             "name": "+2 AC"
         },
-        "Y68212k3RMYIR9b5": {
-            "name": "Slashing Resistance"
-        },
         "YDZaZLkQHL0m08r0": {
             "name": "Frightened"
         },
@@ -577,6 +556,9 @@
         "a5kKgU7vfT0v17yF": {
             "name": "Restrained"
         },
+        "aFy0Lna3uqBiEd8b": {
+            "name": "Rallied"
+        },
         "aS5FyMP72vn3OKf1": {
             "name": "Prone"
         },
@@ -592,9 +574,6 @@
         "bmvasmtHPh1gmm77": {
             "name": "Restrained"
         },
-        "boNhrUtzyo91oCNw": {
-            "name": "Acid Resistance"
-        },
         "btTKbwtirBgzDUFw": {
             "name": "Stunned"
         },
@@ -606,6 +585,9 @@
         },
         "cM3NSnDUlURCQP4q": {
             "name": "Restrained"
+        },
+        "cZy1xQV7LOtPpQzc": {
+            "name": "Living Shadow"
         },
         "ca1RtYs4i9JuL9sV": {
             "name": "Self: Attack Adv./0 Speed"
@@ -651,9 +633,6 @@
         },
         "eiPsvHBjVi4pRHqJ": {
             "name": "Unconscious"
-        },
-        "elD7VCUjgujqPraq": {
-            "name": "Bludgeoning Resistance"
         },
         "f04Z8zNXMjMn7x6U": {
             "name": "Unconscious"
@@ -1209,7 +1188,7 @@
         },
         "mmCloudOfInsects": {
             "name": "Cloud of Insects",
-            "description": "<p><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=0OkFhjOM80ipoNKy]], one creature the [[lookup @name lowercase]] can see within [[lookup @range.value activity=0OkFhjOM80ipoNKy]] feet.</p><p><em>Failure:</em> [[/damage average]] damage, and the target has Disadvantage on saving throws to maintain &amp;Reference[Concentration} until the end of its next turn.</p><p><em>Failure or Success:</em> The [[lookup @name lowercase]] can’t take this action again until the start of its next turn.</p>"
+            "description": "<p><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=0OkFhjOM80ipoNKy]], one creature the [[lookup @name lowercase]] can see within [[lookup @range.value activity=0OkFhjOM80ipoNKy]] feet.</p><p><em>Failure:</em> [[/damage average]] damage, and the target has Disadvantage on saving throws to maintain &amp;Reference[Concentration] until the end of its next turn.</p><p><em>Failure or Success:</em> The [[lookup @name lowercase]] can’t take this action again until the start of its next turn.</p>"
         },
         "mmColdBreath0000": {
             "name": "Cold Breath",
@@ -2446,7 +2425,7 @@
         },
         "mmParry000000000": {
             "name": "Parry",
-            "description": "<p><em>Trigger:</em> The [[lookup @name lowercase]] is [[lookup @activation.condition activity=aLG3BRZL7P6OEjwd]]. <em>Response:</em> The [[lookup @name lowercase]] adds [[lookup @roll.formula activity=aLG3BRZL7P6OEjwd]] to its AC against that attack, possibly causing it to miss.</p>"
+            "description": "<p><em>Trigger:</em> The [[lookup @name lowercase]] is [[lookup @activation.condition activity=aLG3BRZL7P6OEjwd]]. <em>Response:</em> The [[lookup @name lowercase]] adds [[lookup @prof]] to its AC against that attack, possibly causing it to miss.</p>"
         },
         "mmPeskySwarm0000": {
             "name": "Pesky Swarm",
@@ -2620,6 +2599,10 @@
             "name": "Rake",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage extended]].</p>"
         },
+        "mmRally000000000": {
+            "name": "Rally",
+            "description": "<p>The [[lookup @name lowercase]] chooses up to three other creatures it can see within 30 feet. Until the start of the [[lookup @name lowercase]]’s next turn, the targets have Advantage on attack rolls and saving throws.</p>"
+        },
         "mmRam00000000000": {
             "name": "Ram",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a [[lookup @target.affects.special activity=z58sUDUmqxECJgT3]] creature, it has the &amp;Reference[Prone apply=false] condition.</p>"
@@ -2731,9 +2714,6 @@
         "mmRunningWater00": {
             "name": "Running Water",
             "description": "<p class=\"feature-trait\">The [[lookup @name lowercase]] takes [[/damage]] damage if it ends its turn in running water.</p>"
-        },
-        "mmSV8uDpDFT54NdX": {
-            "name": "Spectral Claw"
         },
         "mmSacredWeapon00": {
             "name": "Sacred Weapon",
@@ -3579,9 +3559,6 @@
         },
         "ru1Dxgrjeu1wB0QP": {
             "name": "Blinded"
-        },
-        "sCIVgmiviNXLcOgz": {
-            "name": "Necrotic Resistance"
         },
         "sGQwUaOCcVnE2PA7": {
             "name": "Shielded"
