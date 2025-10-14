@@ -403,6 +403,9 @@
             "name": "Pact of the Tome",
             "description": "<p>Stitching together strands of shadow, you conjure forth a book in your hand at the end of a Short or Long Rest. This @UUID[Compendium.dnd-players-handbook.classes.Item.phbwlkBookOfShad]{Book of Shadows} (you determine its appearance) contains eldritch magic that only you can access, granting you the benefits below. The book disappears if you conjure another book with this feature or if you die.</p><p><strong>Cantrips and Rituals.</strong> When the book appears, choose three cantrips, and choose two level 1 spells that have the Ritual tag. The spells can be from any class’s spell list, and they must be spells you don’t already have prepared. While the book is on your person, you have the chosen spells prepared, and they function as Warlock spells for you.</p><p><strong>Spellcasting Focus.</strong> You can use the book as a Spellcasting Focus.</p>"
         },
+        "7U7Pe61lsMZgN7qh": {
+            "name": "Apply Hide Action to Target"
+        },
         "7Uq31tYiauDhNXhZ": {
             "name": "Tinderbox",
             "description": "<p>A Tinderbox is a small container holding flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a Candle, Lamp, Lantern, or Torch—or anything else with exposed fuel—takes a Bonus Action. Lighting any other fire takes 1 minute.</p>"
@@ -614,6 +617,9 @@
         "98rHJrXiyuCX36s2": {
             "name": "Rope",
             "description": "<p>As a Utilize action, you can tie a knot with Rope if you succeed on a DC 10 Dexterity (Sleight of Hand) check. The Rope can be burst with a successful DC 20 Strength (Athletics) check.</p><p>You can bind an unwilling creature with the Rope only if the creature has the &amp;Reference[Grappled], &amp;Reference[Incapacitated], or &amp;Reference[Restrained] condition. If the creature’s legs are bound, the creature has the Restrained condition until it escapes. Escaping the Rope requires the creature to make a successful DC 15 Dexterity (Acrobatics) check as an action.</p>"
+        },
+        "9A6Hpr7hApdISok9": {
+            "name": "Prone"
         },
         "9BbhOXxZx0pNbk0m": {
             "name": "Vicious Mockery",
@@ -912,6 +918,10 @@
         "FAACbIRNk04xz2OS": {
             "name": "Waterskin",
             "description": "<p>A Waterskin holds up to 4 pints. If you don’t drink sufficient water, you risk &amp;Reference[dehydration].</p>"
+        },
+        "FBFgFP2iirQ8hRLd": {
+            "name": "Rend",
+            "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Large or smaller creature, it has the &amp;Reference[Prone apply=false] condition.</p>"
         },
         "FEqB0fGBMJ2L5qW1": {
             "name": "Hooded Lantern",
@@ -1571,6 +1581,10 @@
             "name": "Heroism",
             "description": "<p>A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to the Frightened condition and gains Temporary Hit Points equal to your spellcasting ability modifier at the start of each of its turns.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional creature for each spell slot level above 1.</p>"
         },
+        "WPYOASQsAeqc5wOx": {
+            "name": "Nimble Escape",
+            "description": "<p class=\"feature\">The [[lookup @name lowercase]] takes the &amp;Reference[Disengage] or &amp;Reference[Hide] action.</p>"
+        },
         "WPsKEuoOBRl3jAVa": {
             "name": "Orc",
             "description": "<p>Orcs trace their creation to Gruumsh, a powerful god who roamed the wide open spaces of the Material Plane. Gruumsh equipped his children with gifts to help them wander great plains, vast caverns, and churning seas and to face the monsters that lurk there. Even when they turn their devotion to other gods, orcs retain Gruumsh’s gifts: endurance, determination, and the ability to see in darkness.</p><p>Orcs are, on average, tall and broad. They have gray skin, ears that are sharply pointed, and prominent lower canines that resemble small tusks. Orc youths on some worlds are told about their ancestors’ great travels and travails. Inspired by those tales, many of those orcs wonder when Gruumsh will call on them to match the heroic deeds of old and if they will prove worthy of his favor. Other orcs are happy to leave old tales in the past and find their own way.</p><h3 data-anchor=\"orc-traits\">Orc Traits</h3><p><strong>Creature Type: </strong>Humanoid</p><p><strong>Size: </strong>Medium (about 6–7 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p>As an Orc, you have these special traits.</p><p><strong>Adrenaline Rush. </strong>You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.</p><p><strong>Darkvision.</strong> You have Darkvision with a range of 120 feet.</p><p><strong>Relentless Endurance.</strong> When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you can’t do so again until you finish a Long Rest.</p>",
@@ -1813,6 +1827,10 @@
         "dRzaqkjn2Y6gc5iU": {
             "name": "Cure Wounds",
             "description": "<p>A creature you touch regains a number of Hit Points equal to 2d8 plus your spellcasting ability modifier.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The healing increases by 2d8 for each spell slot level above 1.</p>"
+        },
+        "ddOOLlNTSnyTzlfq": {
+            "name": "Rend",
+            "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "deAdRmSrZ10XUMbj": {
             "name": "Dancing Lights",
@@ -2378,6 +2396,10 @@
             "name": "Water (Pint)",
             "description": "<p>If you don’t drink sufficient water, you risk &amp;Reference[dehydration].</p>"
         },
+        "pf3PDGh40olHVQqI": {
+            "name": "Nimble Escape",
+            "description": "<p class=\"feature\">The [[lookup @name lowercase]] takes the &amp;Reference[Disengage] or &amp;Reference[Hide] action.</p>"
+        },
         "phbBeastoftheLan": {
             "name": "Beast of the Land"
         },
@@ -2650,17 +2672,9 @@
             "name": "Poison Jab",
             "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 10 ft. <em>Hit:</em> 1d6 + 3 plus the spell’s level Piercing damage plus 1d4 Poison damage.</p>"
         },
-        "phbaoiPounce0000": {
-            "name": "Pounce",
-            "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>6 (1d6 + 3) Slashing damage. If the tiger had Advantage on the attack roll, the target takes an extra 3 (1d6) Slashing damage and, if it is Huge or smaller, has the &amp;Reference[prone] condition.</p>"
-        },
         "phbaoiPrimalBond": {
             "name": "Primal Bond",
             "description": "<p>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</p><section class=\"secret\" id=\"secret-beTIv7xucaHGX104\"><p><strong>Foundry Note</strong></p><p>This bonus has been included in the beast's global bonuses.</p></section>"
-        },
-        "phbaoiProwl00000": {
-            "name": "Prowl",
-            "description": "<p>The tiger moves up to half its Speed without provoking Opportunity Attacks. At the end of this movement, the tiger can take the &amp;Reference[hide] action.</p>"
         },
         "phbaoiPsychicSla": {
             "name": "Psychic Slam",
