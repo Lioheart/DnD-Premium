@@ -1,121 +1,593 @@
 {
-  "label": "Scenes",
-  "folders": {
-    "Greyhawk": "Greyhawk",
-    "Greyhawk World": "Greyhawk World",
-    "Greyhawk and Environs": "Greyhawk and Environs",
-    "Encounter Maps": "Encounter Maps"
-  },
-  "entries": {
-    "Barrow Crypt": {
-      "name": "Barrow Crypt"
+    "label": "Scenes",
+    "folders": {
+        "Encounter Maps": "Encounter Maps",
+        "Greyhawk and Environs": "Greyhawk and Environs",
+        "Greyhawk World": "Greyhawk World",
+        "Greyhawk": "Greyhawk"
     },
-    "Caravan Encampment": {
-      "name": "Caravan Encampment"
-    },
-    "Crossroads Village": {
-      "name": "Crossroads Village"
-    },
-    "Dragon's Lair": {
-      "name": "Dragon's Lair"
-    },
-    "Dungeon Hideout": {
-      "name": "Dungeon Hideout"
-    },
-    "Farmstead": {
-      "name": "Farmstead"
-    },
-    "Greyhawk (Blank)": {
-      "name": "Greyhawk (Blank)",
-      "notes": {
-        "Black Dragon Inn": "Black Dragon Inn",
-        "Great Library": "Great Library",
-        "Silver Dragon Inn": "Silver Dragon Inn",
-        "High Tower Inn": "High Tower Inn",
-        "Temple of the Radiant Sun": "Temple of the Radiant Sun",
-        "Temple of the Far Horizon": "Temple of the Far Horizon",
-        "Unearthed Arcana": "Unearthed Arcana",
-        "Grand Citadel": "Grand Citadel"
-      }
-    },
-    "Greyhawk and Environs (Blank)": {
-      "name": "Greyhawk and Environs (Blank)",
-      "notes": {
-        "Cairn Hills": "Cairn Hills",
-        "Midbay": "Midbay",
-        "Nyr Dyv": "Nyr Dyv",
-        "Great South Peninsula": "Great South Peninsula",
-        "Mistmarsh": "Mistmarsh",
-        "Plain of Greyhawk": "Plain of Greyhawk"
-      }
-    },
-    "Greyhawk and Environs (Labeled)": {
-      "name": "Greyhawk and Environs (Labeled)"
-    },
-    "Greyhawk and Environs (Major Locations No Paths)": {
-      "name": "Greyhawk and Environs (Major Locations No Paths)"
-    },
-    "Greyhawk and Environs (Major Locations with Paths)": {
-      "name": "Greyhawk and Environs (Major Locations with Paths)"
-    },
-    "Greyhawk (Labeled)": {
-      "name": "Greyhawk (Labeled)",
-      "notes": {
-        "Black Dragon Inn": "Black Dragon Inn",
-        "Great Library": "Great Library",
-        "Silver Dragon Inn": "Silver Dragon Inn",
-        "High Tower Inn": "High Tower Inn",
-        "Temple of the Radiant Sun": "Temple of the Radiant Sun",
-        "Temple of the Far Horizon": "Temple of the Far Horizon",
-        "Unearthed Arcana": "Unearthed Arcana",
-        "Grand Citadel": "Grand Citadel"
-      }
-    },
-    "Greyhawk (Sites Only)": {
-      "name": "Greyhawk (Sites Only)",
-      "notes": {
-        "Black Dragon Inn": "Black Dragon Inn",
-        "Great Library": "Great Library",
-        "Silver Dragon Inn": "Silver Dragon Inn",
-        "High Tower Inn": "High Tower Inn",
-        "Temple of the Radiant Sun": "Temple of the Radiant Sun",
-        "Temple of the Far Horizon": "Temple of the Far Horizon",
-        "Unearthed Arcana": "Unearthed Arcana",
-        "Grand Citadel": "Grand Citadel"
-      }
-    },
-    "Greyhawk World (Blank)": {
-      "name": "Greyhawk World (Blank)"
-    },
-    "Greyhawk World (Labeled)": {
-      "name": "Greyhawk World (Labeled)"
-    },
-    "Keep": {
-      "name": "Keep"
-    },
-    "Manor": {
-      "name": "Manor"
-    },
-    "Mine": {
-      "name": "Mine"
-    },
-    "Roadside Inn": {
-      "name": "Roadside Inn"
-    },
-    "Ship": {
-      "name": "Ship"
-    },
-    "Spooky House": {
-      "name": "Spooky House"
-    },
-    "Underdark Warren": {
-      "name": "Underdark Warren"
-    },
-    "Volcanic Caves": {
-      "name": "Volcanic Caves"
-    },
-    "Wizards Tower": {
-      "name": "Wizards Tower"
+    "entries": {
+        "01WrxXyOQMpfgklK": {
+            "name": "2nd Level Backstairs"
+        },
+        "0lz0ZuhUKtCpFw5R": {
+            "name": "Teleport Token"
+        },
+        "10Bn1jU7ehksqet7": {
+            "name": "Level 1"
+        },
+        "1OPOVTNP3S3MFxdO": {
+            "name": "Level 1 (Inner Right)"
+        },
+        "1ndQ1CLW4CWAr9TZ": {
+            "name": "3rd Floor Turret (Bottom)"
+        },
+        "29E3Tl1nM2OQ86qh": {
+            "name": "Surface Level (Left)"
+        },
+        "2MecbQmgN28TPVLv": {
+            "name": "Level 4 (Down)"
+        },
+        "2T7FBdH4zQL1rUGv": {
+            "name": "Teleport Token"
+        },
+        "2dOKlD6YNqbR3L0h": {
+            "name": "Teleport Token"
+        },
+        "38x5EGXVBlVVdEfX": {
+            "name": "Teleport Token"
+        },
+        "3GlPSHvTpvpX8JhR": {
+            "name": "Teleport Token"
+        },
+        "44WfijS7AwE1MzIk": {
+            "name": "Teleport Token"
+        },
+        "4YIn5NNC9ouHRi1h": {
+            "name": "Teleport Token"
+        },
+        "51LLRMH35Hr2nYil": {
+            "name": "Teleport Token"
+        },
+        "57edbJ8P4Dm1nIPR": {
+            "name": "4th Level Left Turret"
+        },
+        "64OjGfuBezXpyd9a": {
+            "name": "1st Level Ladder (Center)"
+        },
+        "6GLllg4AmXVvrU8j": {
+            "name": "Teleport Token"
+        },
+        "6dhKExB3zy2HykUX": {
+            "name": "Level 1 (Up)"
+        },
+        "6p4Q3UjI3zcvl1XB": {
+            "name": "Teleport Token"
+        },
+        "7BSQ22N47S9PlDgm": {
+            "name": "2nd Level Stairs (Down)"
+        },
+        "7Hft8jNU20QW9zfK": {
+            "name": "Teleport Token"
+        },
+        "7o0ARhEenAq1mXr7": {
+            "name": "3rd Level (Right)"
+        },
+        "7uDdOOovPXNlt7x4": {
+            "name": "Level 2 (Up)"
+        },
+        "7uNujAnJ7GnuWWpG": {
+            "name": "Level 3"
+        },
+        "8Wqfarc9adc24tl2": {
+            "name": "Teleport Token"
+        },
+        "8sAXlFbgsthSESUr": {
+            "name": "Level 2 (Inner Right)"
+        },
+        "8sg5zBCT5NR7MdJt": {
+            "name": "Dungeons"
+        },
+        "9GE1jG71xBfGo6mT": {
+            "name": "Teleport Token"
+        },
+        "9jZ9PPsXtwELxLuf": {
+            "name": "Surface Level (Right)"
+        },
+        "9lgB21WitCBaH58T": {
+            "name": "Teleport Token"
+        },
+        "APSk9DNpIEMeNgS7": {
+            "name": "Ground Floor Kitchen Staircase"
+        },
+        "AVLJ5moJyAgLUxsu": {
+            "name": "Teleport Token"
+        },
+        "AejNHq3jj2wSmBMw": {
+            "name": "Teleport Token"
+        },
+        "BdbZbCrPTOcHSPNQ": {
+            "name": "Level 1 (Left)"
+        },
+        "Cn9KQA7sorqQSAzp": {
+            "name": "Adjust Darkness Level"
+        },
+        "D1hUNDg5SWTH3GZq": {
+            "name": "2nd Level"
+        },
+        "D3A6DZM17Bbu9DK9": {
+            "name": "Disable Global Illumination"
+        },
+        "DJq6zZIx1C5SDX9L": {
+            "name": "Teleport Token"
+        },
+        "DZwv0s90exc7kfSh": {
+            "name": "Level 1 (Inner Left)"
+        },
+        "DaFMM7W36xiKjmSy": {
+            "name": "1st LevelBarn Stairs"
+        },
+        "EljOug0s6FKx15iR": {
+            "name": "3rd Level Ladder (Middle)"
+        },
+        "FHN4uDsuIc3H6QfP": {
+            "name": "Teleport Token"
+        },
+        "FHivQL1yRUXgqyvB": {
+            "name": "Teleport Token"
+        },
+        "FdpTdqxSuaOo61s0": {
+            "name": "Teleport Token"
+        },
+        "Fsahgo11RPuhBj1G": {
+            "name": "Bottom Level (Left)"
+        },
+        "GCobU5oZWjSxjWc8": {
+            "name": "1st Level Side Stairs"
+        },
+        "H3grGtGuhGole6X7": {
+            "name": "Teleport Token"
+        },
+        "HNw7VpLjnpx6q0vq": {
+            "name": "Teleport Token"
+        },
+        "HavuruaFOWLB2w5U": {
+            "name": "Teleport Token"
+        },
+        "Hk36H0uI5f6CTIkM": {
+            "name": "Bottom Level (Right)"
+        },
+        "IeBC7KF58ot6Jp24": {
+            "name": "Teleport Token"
+        },
+        "JTqVvFMW8Pxo4e4j": {
+            "name": "Teleport Token"
+        },
+        "JcRJOCHv2hXeSc4g": {
+            "name": "Teleport Token"
+        },
+        "JduHGEpmPCvvswKF": {
+            "name": "Teleport Token"
+        },
+        "KAceenPZXJYEtCdN": {
+            "name": "Teleport Token"
+        },
+        "KR87AwBpiYIEUGmW": {
+            "name": "Upstairs Left Main Staircase"
+        },
+        "L4DRL9oKBL3nEio5": {
+            "name": "Teleport Token"
+        },
+        "L7pdjuiUUEZktiMh": {
+            "name": "2nd Level Main Stairs"
+        },
+        "LW3lGiATTV6zvd27": {
+            "name": "Teleport Token"
+        },
+        "LYW4Y10gNiHNcwru": {
+            "name": "Teleport Token"
+        },
+        "LcMuqCEeExjpBE1p": {
+            "name": "Teleport Token"
+        },
+        "Lg1larwAcsds67lD": {
+            "name": "2nd Floor Turret (Top)"
+        },
+        "MfCyaae1s3yP1Ve5": {
+            "name": "Teleport Token"
+        },
+        "Mj2Jy6V3QdiaXo0p": {
+            "name": "Teleport Token"
+        },
+        "MxHrh54IfvawAhUt": {
+            "name": "Teleport Token"
+        },
+        "MxwgxnZHqdRZwy1O": {
+            "name": "2nd Level Right Turret"
+        },
+        "N6RAWjXvtfdmmeJ5": {
+            "name": "Teleport Token"
+        },
+        "NlvxbDx3EuRvALS1": {
+            "name": "Cellar Staircase Right"
+        },
+        "O1H0EjPlqgjqf2Lh": {
+            "name": "3rd Level Left Turret"
+        },
+        "OKThgy9CORdxFip7": {
+            "name": "1st Level Stairs Bottom Left (Up)"
+        },
+        "Oi9ti39fbmobMGMZ": {
+            "name": "5th Level Turret"
+        },
+        "OuhNoCgyzv6OgGv7": {
+            "name": "3rd Level Stairs (Left)"
+        },
+        "OvNKiZGtnIi6xBwD": {
+            "name": "Teleport Token"
+        },
+        "P3kbvCswT6VR45BI": {
+            "name": "Teleport Token"
+        },
+        "PJfsHplUxKBLPdvw": {
+            "name": "Level 1 (Down)"
+        },
+        "PYjWSlX0TxCwC5O2": {
+            "name": "Teleport Token"
+        },
+        "PvZg11VRX1v7xQQd": {
+            "name": "Teleport Token"
+        },
+        "QKOpX1h190oCBGln": {
+            "name": "Teleport Token"
+        },
+        "Qxc6wqheUVOnktMn": {
+            "name": "Teleport Token"
+        },
+        "RCb47lLFPqVh6qsZ": {
+            "name": "Teleport Token"
+        },
+        "Rn46OA9kocSAF1Yo": {
+            "name": "4th Floor Turret (Bottom)"
+        },
+        "S1gy1sxIPMGO4zqv": {
+            "name": "Teleport Token"
+        },
+        "SRFrMJKN6m9v3Eeq": {
+            "name": "Teleport Token"
+        },
+        "SlE2DED5oGRfi4Ey": {
+            "name": "Teleport Token"
+        },
+        "TDE9TYciyQ3btZNF": {
+            "name": "Level 1 (Right)"
+        },
+        "TDEMLvn0TNR3ldUN": {
+            "name": "2nd Floor Turret (Bottom)"
+        },
+        "TI6dNipJwP6ShrLU": {
+            "name": "Top Level (Right)"
+        },
+        "TP5XIObhVqsQfaPJ": {
+            "name": "Teleport Token"
+        },
+        "TP9i0AGqZbFou5gY": {
+            "name": "Top Level (Left)"
+        },
+        "TQdk0Z05N0y2zxSF": {
+            "name": "2nd Level Ladder (Middle)"
+        },
+        "TaDBkHeYTku5FtPx": {
+            "name": "Level 3 (Up)"
+        },
+        "TsLnVBlp1VxKTvac": {
+            "name": "Teleport Token"
+        },
+        "U3GfdY04vaVzlWhZ": {
+            "name": "Teleport Token"
+        },
+        "UKgzU4OdjLpbD1b8": {
+            "name": "1st Level Turret Stairs"
+        },
+        "UdrDRCv7afN1n9C0": {
+            "name": "Upstairs Right Main Staircase"
+        },
+        "V3M3OC4auk3eehRe": {
+            "name": "Teleport Token"
+        },
+        "VCD0e8ugTAXT149s": {
+            "name": "Adjust Darkness Level"
+        },
+        "Wj3idELHnHzvcknM": {
+            "name": "Teleport Token"
+        },
+        "X3HW8qCpTmMQQkcJ": {
+            "name": "1st Level Main Stairs"
+        },
+        "XJMBb97dgntfA0ta": {
+            "name": "Teleport Token"
+        },
+        "XOm7vqJJdrrSN9Ld": {
+            "name": "Teleport Token"
+        },
+        "ZOaor9qPM2xSnN73": {
+            "name": "1st Level Main Stairs"
+        },
+        "ZcAEPSL8H4Q89OS1": {
+            "name": "2nd Floor Side Stairs"
+        },
+        "ZuRM9i8QkZZCVDBx": {
+            "name": "Teleport Token"
+        },
+        "aHQxnZyeMQlVrJ9M": {
+            "name": "Teleport Token"
+        },
+        "aYkmETLn5CUJhNi0": {
+            "name": "1st Level"
+        },
+        "amPctnRre48fDO3P": {
+            "name": "Teleport Token"
+        },
+        "bNcIWfT6FmNsUV1t": {
+            "name": "2nd Level Stairs (Up)"
+        },
+        "bOz3tw2rnvoNI0op": {
+            "name": "Ground Floor Left Main Staircase"
+        },
+        "bV4yCkYmJSu65dCd": {
+            "name": "Cellar Staircase Left"
+        },
+        "cCRdMzZFPMxIn5LY": {
+            "name": "3rd Floor Turret (Top)"
+        },
+        "cid2bYlENnGMwbEA": {
+            "name": "Level 2 (from 3)"
+        },
+        "dmgBarrowCrypt00": {
+            "name": "Barrow Crypt"
+        },
+        "dmgCaravanEncamp": {
+            "name": "Caravan Encampment"
+        },
+        "dmgCrossroadsVil": {
+            "name": "Crossroads Village"
+        },
+        "dmgDragonsLair00": {
+            "name": "Dragon's Lair"
+        },
+        "dmgDungeonHideou": {
+            "name": "Dungeon Hideout"
+        },
+        "dmgFarmstead0000": {
+            "name": "Farmstead"
+        },
+        "dmgGreyhawkBlank": {
+            "name": "Greyhawk (Blank)"
+        },
+        "dmgGreyhawkEBlan": {
+            "name": "Greyhawk and Environs (Blank)"
+        },
+        "dmgGreyhawkELabe": {
+            "name": "Greyhawk and Environs (Labeled)"
+        },
+        "dmgGreyhawkENoPa": {
+            "name": "Greyhawk and Environs (Major Locations No Paths)"
+        },
+        "dmgGreyhawkEPath": {
+            "name": "Greyhawk and Environs (Major Locations with Paths)"
+        },
+        "dmgGreyhawkLabel": {
+            "name": "Greyhawk (Labeled)"
+        },
+        "dmgGreyhawkSites": {
+            "name": "Greyhawk (Sites Only)"
+        },
+        "dmgGreyhawkWBlan": {
+            "name": "Greyhawk World (Blank)"
+        },
+        "dmgGreyhawkWLabe": {
+            "name": "Greyhawk World (Labeled)"
+        },
+        "dmgKeep000000000": {
+            "name": "Keep"
+        },
+        "dmgManor00000000": {
+            "name": "Manor"
+        },
+        "dmgMine000000000": {
+            "name": "Mine"
+        },
+        "dmgRoadsideInn00": {
+            "name": "Roadside Inn"
+        },
+        "dmgShip000000000": {
+            "name": "Ship"
+        },
+        "dmgSpookyHouse00": {
+            "name": "Spooky House"
+        },
+        "dmgUnderdarkWarr": {
+            "name": "Underdark Warren"
+        },
+        "dmgVolcanicCaves": {
+            "name": "Volcanic Caves"
+        },
+        "dmgWizardsTower0": {
+            "name": "Wizards Tower"
+        },
+        "ducvliTwqlyjAPT0": {
+            "name": "Teleport Token"
+        },
+        "dytAxN9FgWWraHW2": {
+            "name": "Teleport Token"
+        },
+        "eaBk1pAZtoiJ0cWE": {
+            "name": "Remove Global Illumination"
+        },
+        "en1a8MVrs0fS2CaW": {
+            "name": "1st Level Stairs Dining Room"
+        },
+        "f9mErJsiI5VtoEFx": {
+            "name": "Level 5"
+        },
+        "fXYVmkFZ1P3VGAsW": {
+            "name": "2nd Level Barn Stairs"
+        },
+        "fcdCtrgq25Ftz9NL": {
+            "name": "Level 2 (Down)"
+        },
+        "ffOlwOuxPPIl0kYB": {
+            "name": "1st Level Ladder Guard Room (Right)"
+        },
+        "fnr7QOh1jH0OLjDY": {
+            "name": "Down"
+        },
+        "gIyL1cdfdxrlmedf": {
+            "name": "2nd Level Ladder (Left)"
+        },
+        "gRtTbTLPUtwqv8Vs": {
+            "name": "Level 2"
+        },
+        "gTP2ztfRAeoyHu9x": {
+            "name": "Level 2"
+        },
+        "gxcECIpBs0d62SUF": {
+            "name": "Level 1"
+        },
+        "hcUcPPQ8BRzCUPfj": {
+            "name": "Teleport Token"
+        },
+        "i6VEOx8GgR8QBMuq": {
+            "name": "Teleport Token"
+        },
+        "iSXt1foxGyiqTXaL": {
+            "name": "2nd Floor Right Stairs"
+        },
+        "ibz7IesK1riPpLAM": {
+            "name": "1st Level Ladder Right Turret"
+        },
+        "ik5JwE9yaBxfmKjI": {
+            "name": "Teleport Token"
+        },
+        "j0w4mStys9DKK6Be": {
+            "name": "3rd Floor Hallway Stairs"
+        },
+        "j1mrIVQ7BHs0hquv": {
+            "name": "Teleport Token"
+        },
+        "jSDQ17lHmvtxEMAm": {
+            "name": "2nd Level Stairs Bedrooms"
+        },
+        "jsEA8Te56AwCguSi": {
+            "name": "Teleport Token"
+        },
+        "lc7FEzjl8N6wZ9qA": {
+            "name": "Level 3 (Down)"
+        },
+        "lqA7lYLCRTiToiRM": {
+            "name": "Level 1"
+        },
+        "lxOK0nHTP58ZLJdY": {
+            "name": "2nd Floor Hallway Stairs"
+        },
+        "mS5zLMiC74gDvgBB": {
+            "name": "2nd Floor Main Stairs"
+        },
+        "mYObZqIDtasTPSxK": {
+            "name": "4th Level Turret (Top)"
+        },
+        "msbuAwj2T3g48HuS": {
+            "name": "2nd Level Ladder (Center)"
+        },
+        "nKKORtq1iWg2yUZ7": {
+            "name": "Teleport Token"
+        },
+        "ntrmZ66ikGLc0Br2": {
+            "name": "Teleport Token"
+        },
+        "nwcRYhrmNEozdRiB": {
+            "name": "1st Level Ladder Guard Room (Left)"
+        },
+        "o1co7iZ2NI0nKmmP": {
+            "name": "3rd Level (Left)"
+        },
+        "o8M9Dd1dtOzFtRhB": {
+            "name": "Teleport Token"
+        },
+        "oBLcfwkV0HGyW7Wk": {
+            "name": "Ground Floor Right Main Staircase"
+        },
+        "oMtt8nUB86yLcfpO": {
+            "name": "Teleport Token"
+        },
+        "oyp7chuwSDZqxllx": {
+            "name": "Teleport Token"
+        },
+        "phWVenbNkNOtF5Yc": {
+            "name": "Teleport Token"
+        },
+        "ppRdtjLN1g3OlHee": {
+            "name": "Teleport Token"
+        },
+        "pqcbhGT6TO8u8eT7": {
+            "name": "Teleport Token"
+        },
+        "q1hmrl4bVDoiSFy1": {
+            "name": "Teleport Token"
+        },
+        "q5krGXDWLyK985iI": {
+            "name": "Teleport Token"
+        },
+        "qTUap1omLKL62OXJ": {
+            "name": "Teleport Token"
+        },
+        "raaEAQ65aefEoZwT": {
+            "name": "Teleport Token"
+        },
+        "rhYeqh3ZGzmaEAzI": {
+            "name": "Teleport Token"
+        },
+        "sRWJWJJ5ZmStyHUD": {
+            "name": "Teleport Token"
+        },
+        "szMpGH0FKZsJSyls": {
+            "name": "Teleport Token"
+        },
+        "t4pkXMTa2XILnPD5": {
+            "name": "1st Level Right Stairs"
+        },
+        "tXagct8Ve4X93ygT": {
+            "name": "Teleport Token"
+        },
+        "uBuylZQPEi3ykdo7": {
+            "name": "Level 4 (Up)"
+        },
+        "uZ8ea8qwsZ8p5DTX": {
+            "name": "Level 2 (Inner Left)"
+        },
+        "upI6PjNB7XpARXvH": {
+            "name": "3rd Level Right Turrent"
+        },
+        "uwTi3oBn8BRGCAgU": {
+            "name": "Level 2 (from 1)"
+        },
+        "vHyegwRSo9fliV5M": {
+            "name": "Secret Stairs"
+        },
+        "vw77hbuPH1TTGONi": {
+            "name": "Teleport Token"
+        },
+        "yFkpjVSaKxYbCYt9": {
+            "name": "2nd Level Ladder (Right)"
+        },
+        "yUmw2l3JqdOJMd2v": {
+            "name": "Teleport Token"
+        },
+        "yl2PaJO5ydYbIaSD": {
+            "name": "1st Level Backstairs"
+        },
+        "yngdzqtfBZXRfWki": {
+            "name": "Up"
+        }
     }
-  }
 }
