@@ -1,0 +1,140 @@
+{
+  "label": "Atuty",
+  "folders": {
+    "Origin Feats": "Atuty pochodzenia",
+    "Epic Boon Feats": "Atuty epickich darów",
+    "Fighting Style Feats": "Atuty stylu walki",
+    "General Feats": "Atuty ogólne"
+  },
+  "entries": {
+    "phbBoonofCombatP": {
+      "name": "Dar bojowej sprawności",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Cel Doskonały.</strong> Gdy nie trafisz wroga w teście ataku, możesz zamiast tego uznać go za trafiony. Gdy skorzystasz z tej korzyści, nie możesz jej użyć ponownie do początku swojej następnej tury.</p>"
+    },
+    "phbBoonofDimensi": {
+      "name": "Dar podróży przez wymiary",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Migoczące kroki.</strong> Natychmiast po wykonaniu Akcji Ataku lub Akcji Magii możesz teleportować się na odległość do 30 stóp do niezajętej przestrzeni, którą widzisz.</p>",
+      "activities": {
+        "Teleport": {
+          "name": "Teleportacja",
+          "condition": "Natychmiast po wykonaniu Akcji Ataku"
+        }
+      }
+    },
+    "phbBoonofFate000": {
+      "name": "Dar przeznaczenia",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cech.</strong> Zwiększ jedną wybraną cechę o 1, maksymalnie do 30.</p><p><strong>Poprawa przeznaczenia.</strong> Gdy ty lub inna istota w odległości do 60 stóp od ciebie odniesie sukces lub poniesie porażkę w Teście K20, możesz rzucić 2k4 i dodać uzyskany wynik jako premię lub karę do rzutu k20. Po użyciu tej korzyści nie możesz z niej skorzystać ponownie, dopóki nie wykonasz rzutu na Inicjatywę lub nie zakończysz Krótkiego albo Długiego Odpoczynku.</p>",
+      "activities": {
+        "Improve Fate": {
+          "name": "Poprawa przeznaczenia",
+          "roll": "Premia/kara",
+          "condition": "Gdy Ty lub inne stworzenie w promieniu 60 stóp odniesie sukces lub porażkę w Teście D20"
+        }
+      }
+    },
+    "phbBoonofIrresis": {
+      "name": "Dar nieodpartej ofensywy",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 30.</p><p><strong>Przełamanie obrony.</strong> Obrażenia obuchowe, kłute i cięte zadawane przez ciebie zawsze ignorują Odporność.</p><p><strong>Overwhelming Strike.</strong> Gdy w teście ataku wyrzucisz 20 na k20, możesz zadać dodatkowe obrażenia równe wartości cechy zwiększonej przez ten atut. Typ dodatkowych obrażeń jest taki sam jak typ ataku.</p><section id=\"secret-B9D2nT6vBjWr9JMV\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Efekty tego atutu nie są zautomatyzowane. Dodatkowe obrażenia można dodać w polu Premii Sytuacyjnej w oknie dialogowym rzutu na obrażenia.</p></section>"
+    },
+    "phbBoonofSpellRe": {
+      "name": "Dar odzyskania czaru",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie wartości cech.</strong> Zwiększ swoją Inteligencję, Mądrość lub Charyzmę o 1, maksymalnie do 30.</p><p><strong>Darmowe rzucanie czarów.</strong> Za każdym razem, gdy rzucasz czar, używając komórki czaru od 1. do 4. kręgu, rzuć [[/r 1k4]]. Jeśli wynik rzutu jest równy kręgowi użytej komórki czaru, komórka nie zostaje zużyta.</p><section class=\"secret\" id=\"secret-KMAFFZCOzi6Cuemh\"><p><strong>Notatka Foundry</strong></p><p>Jeśli wynik jest taki sam, odznacz opcję Zużycia podczas rzucania czaru.</p></section>",
+      "activities": {
+        "Free Cast Roll": {
+          "name": "Rzut darmowego rzucania czarów",
+          "roll": "Rzut kośćmi",
+          "condition": "Za każdym razem, gdy rzucasz czar przy użyciu komórki czaru 1-4 poziomu"
+        }
+      }
+    },
+    "phbBoonofTruesig": {
+      "name": "Dar prawdziwego widzenia",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Prawdziwe widzenie.</strong> Posiadasz Prawdziwe Widzenie w zasięgu 60 stóp.</p><section id=\"secret-MmPASAH8hA8METnP\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha zawiera Aktywny Efekt, który zapewnia ci Prawdziwe Widzenie w zasięgu 60 stóp.</p></section>",
+      "effects": {
+        "Boon of Truesight": {
+          "name": "Dar prawdziwego widzenia"
+        }
+      }
+    },
+    "phbBoonoftheNigh": {
+      "name": "Dar Nocnego widma",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Wtopienie się w cień.</strong> Przebywając w Słabym Świetle lub Ciemności, możesz jako Akcję Dodatkową nadać sobie stan &amp;Reference[Invisible]{Niewidzialny}. Stan ten kończy się natychmiast po wykonaniu Akcji, Akcji Dodatkowej lub Reakcji.</p><p><strong>Cienista postać.</strong> Przebywając w Słabym Świetle lub Ciemności, masz Odporność na wszystkie obrażenia z wyjątkiem obrażeń psychicznych i obrażeń od światłości.</p><section id=\"secret-fpWHPSTNYUeGtg0w\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywny Efekt zdolności <strong>Dar Nocnego widma</strong> obejmuje Odporności, ale musi być ręcznie włączany/wyłączany w zakładce Efekty na twojej karcie postaci.</p><p>Zdolność <strong>Wtopienie się w cień</strong> zawiera Aktywny Efekt nakładający stan Niewidzialności.</p></section>",
+      "activities": {
+        "Merge with the Shadows": {
+          "name": "Wtopienie się w cień"
+        }
+      },
+      "effects": {
+        "Boon of the Night Spirit": {
+          "name": "Dar Nocnego widma"
+        },
+        "Merged with Shadows": {
+          "name": "Wtopiony w cieniu"
+        }
+      }
+    },
+    "phbfstArchery000": {
+      "name": "Strzelectwo",
+      "description": "<p><em>(Wymaganie: Zdolność Styl Walki)</em></p><p>Zyskujesz premię +2 do Testów Ataku, które wykonujesz za pomocą broni dystansowych.</p><section id=\"secret-n13Z6zR2u0CiIA7D\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt, który dodaje premię do Testów Ataku bronią dystansową.</p></section>",
+      "effects": {
+        "Archery Style": {
+          "name": "Styl strzelectwa"
+        }
+      }
+    },
+    "phbfstDefense000": {
+      "name": "Defensywa",
+      "description": "<p><em>(Warunek wstępny: zdolność Styl walki)</em></p><p>Gdy nosisz Lekką, Średnią lub Ciężką zbroję, zyskujesz premię +1 do Klasy Pancerza.</p><section id=\"secret-y8skH0HHunT4I5NR\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha zawiera Aktywny Efekt, który zapewnia premię do Klasy Pancerza. Wyłącz go, gdy nie nosisz zbroi.</p></section>",
+      "effects": {
+        "Defense": {
+          "name": "Defensywa"
+        }
+      }
+    },
+    "phbfstGreatWeapo": {
+      "name": "Walka bronią dwuręczną",
+      "description": "<p><em>(Warunek wstępny: zdolność Styl walki)</em></p><p>Gdy wykonujesz rzut na obrażenia ataku bronią do walki wręcz, którą trzymasz oburącz, możesz traktować każdy wynik 1 lub 2 na kości obrażeń jako 3. Broń musi posiadać cechę Dwuręczna lub Wszechstronna, aby skorzystać z tej korzyści.</p><section id=\"secret-jkbP75uR9eNGIRN0\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ten efekt nie jest zautomatyzowany.</p></section>"
+    },
+    "phbfstTwoWeaponF": {
+      "name": "Walka dwiema broniami",
+      "description": "<p><em>(Wymaganie wstępne: Zdolność Styl walki)</em></p><p>Gdy wykonujesz dodatkowy atak w wyniku użycia broni posiadającej własność Lekka, możesz dodać swój modyfikator cechy do obrażeń tego ataku, jeśli jeszcze go nie dodajesz do obrażeń.</p><section class=\"secret\" id=\"secret-hYptyfGCa0gLDQRT\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha nie jest zautomatyzowana. Możesz dodać swój modyfikator w polu Premii Sytuacyjnej rzutu na obrażenia.</p></section>"
+    },
+    "phbftAbilityScor": {
+      "name": "Zwiększenie Cechy",
+      "description": "<p><em>Atut Ogólny (Wymaganie: Poziom 4+)</em></p><p>Zwiększ jedną wybraną przez ciebie wartość cechy o 2 lub zwiększ dwie wybrane przez ciebie wartości cech o 1. Ten atut nie może podnieść wartości cechy powyżej 20.</p><p><strong>Powtarzalny.</strong> Możesz wybrać ten atut więcej niż raz.</p>"
+    },
+    "phbftAlert000000": {
+      "name": "Czujność",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Biegłość w Inicjatywie.</strong> Gdy wykonujesz rzut na Inicjatywę, możesz dodać swoją Premi ę od Biegłości do wyniku.</p><p><strong>Wymiana Inicjatywy.</strong> Natychmiast po wykonaniu rzutu na Inicjatywę możesz zamienić swoją Inicjatywę z Inicjatywą jednego chętnego sojusznika w tej samej walce. Nie możesz dokonać tej zamiany, jeśli ty lub sojusznik macie stan &amp;Reference[Incapacitated]{Obezwładniony}.</p><section id=\"secret-yzfXk3D5M1jv9ixH\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha automatycznie uwzględnia premię do twojej Inicjatywy.</p></section>",
+      "effects": {
+        "Alert": {
+          "name": "Czujność"
+        }
+      }
+    },
+    "phbftGrappler000": {
+      "name": "Zapaśnik",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cech.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Cios i Chwyt.</strong> Gdy trafisz istotę Uderzeniem bez Broni w ramach Akcji Atak w swojej turze, możesz użyć jednocześnie opcji Obrażenia i Pochwycenie. Z tej korzyści możesz skorzystać tylko raz na turę.</p><p><strong>Ułatwienie Ataku.</strong> Masz Ułatwienie do testów ataku przeciwko istocie &amp;Reference[Grappled]{pochwyconej} przez ciebie.</p><p><strong>Szybki Zapaśnik.</strong> Nie musisz wydawać dodatkowego ruchu, aby poruszać istotę pochwyconą przez ciebie, jeśli jest twojego rozmiaru lub mniejsza.</p><section class=\"secret\" id=\"secret-LAjjGo55LPacAy8v\"><p><strong>Notatka Foundry</strong></p><p>Ułatwienie nie jest zautomatyzowane.</p></section>"
+    },
+    "phbftMagicInitia": {
+      "name": "Wtajemniczony",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Dwie Sztuczki.</strong> Uczysz się dwóch sztuczek według własnego wyboru z listy czarów @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj] (Kleryka), @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU] (Druida) lub @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz] (Maga). Inteligencja, Mądrość lub Charyzma jest twoją cechą bazową przy rzucaniu czarów z tego atutu (wybierz przy wyborze atutu).</p><p><strong>Czar 1. Kręgu.</strong> Wybierz czar 1. kręgu z tej samej listy, z której wybrałeś sztuczki dla tego atutu. Zawsze masz ten czar przygotowany. Możesz rzucić go raz bez użycia komórki czaru, a możliwość takiego rzucenia odzyskujesz po zakończeniu Długiego Odpoczynku. Możesz też rzucać ten czar, używając posiadanych komórek czaru.</p><p><strong>Zmiana Czarów.</strong> Za każdym razem, gdy zdobywasz nowy poziom, możesz wymienić jeden z czarów wybranych dla tego atutu na inny czar tego samego kręgu z wybranej listy czarów.</p><p><strong>Powtarzalny.</strong> Możesz wybrać ten atut więcej niż raz, ale za każdym razem musisz wybrać inną listę czarów.</p>",
+      "advancement": {
+        "Two Cantrips": {
+          "title": "Dwie sztuczki"
+        },
+        "Level 1 Spell": {
+          "title": "Czar 1 kręgu"
+        }
+      }
+    },
+    "phbftSavageAttac": {
+      "name": "Brutalny napastnik",
+      "description": "<p>Wytrenowałeś się w zadawaniu wyjątkowo dotkliwych ciosów. Raz na turę, gdy trafisz cel bronią, możesz rzucić kośćmi obrażeń broni dwukrotnie i wybrać jeden z wyników przeciwko celowi.</p>"
+    },
+    "phbftSkilled0000": {
+      "name": "Uzdolniony",
+      "description": "<p>Zyskujesz biegłość w dowolnej kombinacji trzech wybranych umiejętności lub narzędzi.</p><p><strong>Powtarzalny.</strong> Możesz wybrać ten atut więcej niż raz.</p>"
+    }
+  }
+}
