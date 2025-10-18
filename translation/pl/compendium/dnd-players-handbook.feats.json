@@ -1,0 +1,802 @@
+{
+  "label": "Atuty",
+  "folders": {
+    "Epic Boon Feats": "Atuty epickich darów",
+    "Fighting Style Feats": "Atuty stylu walki",
+    "Origin Feats": "Atuty pochodzenia",
+    "General Feats": "Atuty ogólne"
+  },
+  "entries": {
+    "phbBoonofCombatP": {
+      "name": "Dar bojowej sprawności",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Cel Doskonały.</strong> Gdy nie trafisz wroga w teście ataku, możesz zamiast tego uznać go za trafiony. Gdy skorzystasz z tej korzyści, nie możesz jej użyć ponownie do początku swojej następnej tury.</p>"
+    },
+    "phbBoonofDimensi": {
+      "name": "Dar podróży przez wymiary",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Migoczące kroki.</strong> Natychmiast po wykonaniu Akcji Ataku lub Akcji Magii możesz teleportować się na odległość do 30 stóp do niezajętej przestrzeni, którą widzisz.</p>",
+      "activities": {
+        "Teleport": {
+          "name": "Teleportacja",
+          "condition": "Natychmiast po wykonaniu Akcji Ataku"
+        }
+      }
+    },
+    "phbBoonofEnergyR": {
+      "name": "Dar energetycznej odporności",
+      "description": "<p>Otrzymujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cechy.</strong> Zwiększ jedną wybraną przez siebie cechę o 1, do maksymalnie 30.</p><p><strong>Odporności na Energię.</strong> Zyskujesz odporność na dwa wybrane typy obrażeń: od kwasu, od zimna, od ognia, od elektryczności, nekrotyczne, od trucizn, psychiczne, od światłości lub od dźwięku. Za każdym razem, gdy kończysz Długi Odpoczynek, możesz zmienić swoje wybory.</p><p><strong>Przekierowanie Energii.</strong> Gdy otrzymasz obrażenia jednego z typów wybranych dla korzyści Odporności na Energię, możesz użyć Reakcji, aby skierować obrażenia tego samego typu na inne stworzenie, które widzisz w promieniu 60 stóp i które nie znajduje się za &amp;Reference[Total Cover]. Jeśli to zrobisz, to stworzenie musi wykonać rzut obronny Zręczności (ST 8 plus Twój modyfikator Kondycji i Premia od Biegłości) lub otrzyma obrażenia równe 2k12 plus Twój modyfikator Kondycji.</p><section class=\"secret\" id=\"secret-YvvZOk14Rk8qwLgW\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Wybór Odporności</strong> zawiera Efekt Aktywny dla każdej Odporności, który możesz zastosować na sobie. Przy wyborze nowych Odporności pamiętaj, aby usunąć lub wyłączyć wcześniej wybrane Efekty Aktywne w zakładce „Efekty” swojej karty postaci.</p><p>Aktywność reakcji <strong>Przekierowanie Energii</strong> zawiera rzut obronny, a typ obrażeń możesz wybrać w oknie dialogowym rzutu obrażeń.</p></section>",
+      "activities": {
+        "Choose Resistances": {
+          "name": "Wybierz Odporności",
+          "condition": "Za każdym razem, gdy kończysz Długi Odpoczynek"
+        },
+        "Energy Redirection": {
+          "name": "Przekierowanie energii"
+        }
+      },
+      "effects": {
+        "Acid: Boon of Energy Resistance": {
+          "name": "Kwas: Dar energetycznej odporności"
+        },
+        "Cold: Boon of Energy Resistance": {
+          "name": "Zimno: Dar energetycznej odporności"
+        },
+        "Fire: Boon of Energy Resistance": {
+          "name": "Ogień: Dar energetycznej odporności"
+        },
+        "Lightning: Boon of Energy Resistance": {
+          "name": "Elektryczność: Dar energetycznej odporności"
+        },
+        "Necrotic: Boon of Energy Resistance": {
+          "name": "Nekrotyczne: Dar energetycznej odporności"
+        },
+        "Poison: Boon of Energy Resistance": {
+          "name": "Trucizna: Dar energetycznej odporności"
+        },
+        "Psychic: Boon of Energy Resistance": {
+          "name": "Psychiczne: Dar energetycznej odporności"
+        },
+        "Radiant: Boon of Energy Resistance": {
+          "name": "Światłość: Dar energetycznej odporności"
+        },
+        "Thunder: Boon of Energy Resistance": {
+          "name": "Dźwięk: Dar energetycznej odporności"
+        }
+      }
+    },
+    "phbBoonofFate000": {
+      "name": "Dar przeznaczenia",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Poprawa przeznaczenia.</strong> Gdy ty lub inna istota w promieniu 60 stóp od ciebie odniesie sukces lub poniesie porażkę w Teście k20, możesz rzucić 2k4 i dodać łączny wynik jako premię lub karę do rzutu k20. Gdy skorzystasz z tej korzyści, nie możesz jej użyć ponownie, dopóki nie wykonasz rzutu na Inicjatywę lub nie zakończysz Krótkiego albo Długiego Odpoczynku.</p><section id=\"secret-zl5SPZXJtl1mEKOl\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Poprawa przeznaczenia</strong> obejmuje rzut i automatycznie przywraca użycie po Krótkim lub Długim Odpoczynku. Nie odnawia się jednak automatycznie po rzucie na Inicjatywę.</p></section>",
+      "activities": {
+        "Improve Fate": {
+          "name": "Poprawa przeznaczenia",
+          "roll": "Premia/kara",
+          "condition": "Gdy Ty lub inne stworzenie w promieniu 60 stóp odniesie sukces lub porażkę w Teście D20"
+        }
+      }
+    },
+    "phbBoonofFortitu": {
+      "name": "Dar męstwa",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Wzmocnione zdrowie.</strong> Twoje maksymalne Punkty Wytrzymałości zwiększają się o 40. Dodatkowo, za każdym razem, gdy odzyskujesz Punkty Wytrzymałości, możesz odzyskać dodatkowe Punkty Wytrzymałości równe twojemu modyfikatorowi Kondycji (obecnie [[lookup @abilities.con.mod]]). Gdy odzyskasz te dodatkowe Punkty Wytrzymałości, nie możesz tego zrobić ponownie do początku swojej następnej tury.</p><section id=\"secret-JgTurTuyg5ikUyQq\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ten atut zawiera Aktywny Efekt, który automatycznie zastosuje premię do twoich maksymalnych Punktów Wytrzymałości.</p><p>Zdolność <strong>Wzmocnione zdrowie</strong> obejmuje dodatkowe leczenie.</p></section>",
+      "activities": {
+        "Fortify Health": {
+          "name": "Wzmocnione zdrowie",
+          "condition": "Za każdym razem, gdy odzyskujesz punkty wytrzymałości"
+        }
+      },
+      "effects": {
+        "Boon of Fortitude": {
+          "name": "Dar męstwa"
+        }
+      }
+    },
+    "phbBoonofIrresis": {
+      "name": "Dar nieodpartej ofensywy",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 30.</p><p><strong>Przełamanie Obrony.</strong> Obrażenia obuchowe, kłute i cięte zadawane przez ciebie zawsze ignorują Odporność.</p><p><strong>Overwhelming Strike.</strong> Gdy w teście ataku wyrzucisz 20 na k20, możesz zadać dodatkowe obrażenia równe wartości cechy zwiększonej przez ten atut. Typ dodatkowych obrażeń jest taki sam jak typ ataku.</p><section id=\"secret-B9D2nT6vBjWr9JMV\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Efekty tego atutu nie są zautomatyzowane. Dodatkowe obrażenia można dodać w polu Premii Sytuacyjnej w oknie dialogowym rzutu na obrażenia.</p></section>"
+    },
+    "phbBoonofRecover": {
+      "name": "Dar regeneracji",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Ostatni bastion.</strong> Gdy twoje Punkty Wytrzymałości miałyby spaść do 0, zamiast tego możesz spaść do 1 Punktu Wytrzymałości i odzyskać liczbę Punktów Wytrzymałości równą połowie twoich maksymalnych Punktów Wytrzymałości. Gdy skorzystasz z tej korzyści, nie możesz jej użyć ponownie, dopóki nie zakończysz Długiego Odpoczynku.</p><p><strong>Odzyskiwanie witalności.</strong> Masz pulę dziesięciu k10. Jako Akcję Dodatkową możesz wydać kości z tej puli, rzucić nimi i odzyskać liczbę Punktów Wytrzymałości równą sumie wyrzuconych wyników. Odzyskujesz wszystkie zużyte kości po zakończeniu Długiego Odpoczynku.</p><section class=\"secret\" id=\"secret-I5DVfVmEgr5OF82Q\"><p><strong>Notatka Foundry</strong></p><p>Zdolność <strong>Ostatni bastion</strong> może zostać użyta raz na Długi Odpoczynek i zapewnia leczenie w wysokości połowy twoich maksymalnych Punktów Wytrzymałości.</p><p>Zdolność <strong>Odzyskiwanie witalności</strong> ma 10 użyć na Długi Odpoczynek, reprezentujących twoją pulę k10. Możesz wybrać liczbę kości do użycia, a formuła leczenia zostanie automatycznie zaktualizowana.</p></section>",
+      "activities": {
+        "Last Stand": {
+          "name": "Ostatni bastion",
+          "condition": "Kiedy zostaniesz zredukowany do 0 punktów wytrzymałości"
+        },
+        "Recover Vitality": {
+          "name": "Odzyskiwanie witalności"
+        }
+      }
+    },
+    "phbBoonofSkill00": {
+      "name": "Dar umiejętności",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Wszechstronny mistrz.</strong> Zyskujesz biegłość we wszystkich umiejętnościach.</p><p><strong>Znawstwo.</strong> Wybierz jedną umiejętność, w której nie posiadasz Znawstwa. Zyskujesz Znawstwo w tej umiejętności.</p>",
+      "effects": {
+        "All-Around Adept": {
+          "name": "Wszechstronny mistrz"
+        }
+      }
+    },
+    "phbBoonofSpeed00": {
+      "name": "Dar szybkości",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Mistrz ccieczki.</strong>Akcją Dodatkową możesz wykonać akcję &amp;Reference[Disengage]{Odstąpienie}, która dodatkowo kończy na tobie stan &amp;Reference[Grappled]{Pochwycony}.</p><p><strong>Quickness.</strong> Twoja Szybkość zwiększa się o 30 stóp.</p><section class=\"secret\" id=\"secret-BTieKWSqXALMO8oH\"><p><strong>Notatka Foundry</strong></p><p>Ten atut zawiera Aktywny Efekt, który automatycznie zwiększa twoją Szybkość.</p></section>",
+      "effects": {
+        "Boon of Speed": {
+          "name": "Dar szybkości"
+        }
+      }
+    },
+    "phbBoonofSpellRe": {
+      "name": "Dar odzyskania czaru",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Inteligencję, Mądrość lub Charyzmę o 1, maksymalnie do 30.</p><p><strong>Darmowe rzucanie czarów.</strong> Za każdym razem, gdy rzucasz czar, wykorzystując Komórkę Czarów kręgu 1 - 4, rzuć [[/r 1k4]]. Jeśli wyrzucona liczba jest taka sama jak krąg komórki, komórka nie zostaje zużyta.</p><section id=\"secret-KMAFFZCOzi6Cuemh\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Jeśli wyrzucona liczba jest taka sama, odznacz opcję Zużycia podczas używania czaru.</p></section>",
+      "activities": {
+        "Free Cast Roll": {
+          "name": "Rzut darmowego rzucania czarów",
+          "roll": "Rzut kośćmi",
+          "condition": "Za każdym razem, gdy rzucasz czar przy użyciu komórki czaru 1-4 poziomu"
+        }
+      }
+    },
+    "phbBoonofTruesig": {
+      "name": "Dar prawdziwego widzenia",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Prawdziwe widzenie.</strong> Posiadasz Prawdziwe Widzenie w zasięgu 60 stóp.</p><section id=\"secret-MmPASAH8hA8METnP\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha zawiera Aktywny Efekt, który zapewnia ci Prawdziwe Widzenie w zasięgu 60 stóp.</p></section>",
+      "effects": {
+        "Boon of Truesight": {
+          "name": "Dar prawdziwego widzenia"
+        }
+      }
+    },
+    "phbBoonoftheNigh": {
+      "name": "Dar Nocnego widma",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Wtopienie się w cień.</strong> Przebywając w Słabym Świetle lub Ciemności, możesz jako Akcję Dodatkową nadać sobie stan &amp;Reference[Invisible]{Niewidzialny}. Stan ten kończy się natychmiast po wykonaniu Akcji, Akcji Dodatkowej lub Reakcji.</p><p><strong>Cienista postać.</strong> Przebywając w Słabym Świetle lub Ciemności, masz Odporność na wszystkie obrażenia z wyjątkiem obrażeń psychicznych i obrażeń od światłości.</p><section id=\"secret-fpWHPSTNYUeGtg0w\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywny Efekt zdolności <strong>Dar Nocnego widma</strong> obejmuje Odporności, ale musi być ręcznie włączany/wyłączany w zakładce Efekty na twojej karcie postaci.</p><p>Zdolność <strong>Wtopienie się w cień</strong> zawiera Aktywny Efekt nakładający stan Niewidzialności.</p></section>",
+      "activities": {
+        "Merge with the Shadows": {
+          "name": "Wtopienie się w cień"
+        }
+      },
+      "effects": {
+        "Boon of the Night Spirit": {
+          "name": "Dar Nocnego widma"
+        },
+        "Merged with Shadows": {
+          "name": "Wtopiony w cieniu"
+        }
+      }
+    },
+    "phbfstArchery000": {
+      "name": "Strzelectwo",
+      "description": "<p><em>(Wymaganie: Zdolność Styl Walki)</em></p><p>Zyskujesz premię +2 do Testów Ataku, które wykonujesz za pomocą broni dystansowych.</p><section id=\"secret-n13Z6zR2u0CiIA7D\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt, który dodaje premię do Testów Ataku bronią dystansową.</p></section>",
+      "effects": {
+        "Archery Style": {
+          "name": "Styl strzelectwa"
+        }
+      }
+    },
+    "phbfstBlessedWar": {
+      "name": "Błogosławiony wojownik",
+      "description": "<p>Uczysz się dwóch @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj#cantrip]{sztuczek Kleryka} według twojego wyboru. <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGuidance00]{Wskazówki}</em> oraz <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSacredFlam]</em> są zalecane. Wybrane sztuczki liczą się dla ciebie jako czary Paladyna, a cechą bazową rzucania czarów jest dla nich Charyzma. Za każdym razem, gdy zdobywasz poziom Paladyna, możesz zastąpić jedną z tych sztuczek inną sztuczką Kleryka.</p>",
+      "advancement": {
+        "Choose Cantrips": {
+          "title": "Wybierz sztuczki",
+          "hint": "Uczysz się dwóch sztuczek Kleryka według własnego wyboru. Zalecane są Wskazówki oraz Święty płomień. Wybrane sztuczki liczą się dla ciebie jak czary paladyna, a ich cechą bazową rzucania czarów jest Charyzma. Kiedykolwiek zdobędziesz poziom Paladyna, możesz wymienić jedną, inną sztuczką z listy czarów Kleryka."
+        }
+      }
+    },
+    "phbfstBlindFight": {
+      "name": "Walka na ślepo",
+      "description": "<p><em>(Wymaganie: Cecha Styl Walki)</em></p><p>Posiadasz Ślepowidzenie o zasięgu 10 stóp.</p><section id=\"secret-eG5EudF8gmfHBBul\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha zawiera Efekt Aktywny, który zapewnia Ślepowidzenie.</p></section>",
+      "effects": {
+        "Blind Fighting": {
+          "name": "Walka na ślepo"
+        }
+      }
+    },
+    "phbfstDefense000": {
+      "name": "Defensywa",
+      "description": "<p><em>(Warunek wstępny: zdolność Styl walki)</em></p><p>Gdy nosisz Lekką, Średnią lub Ciężką zbroję, zyskujesz premię +1 do Klasy Pancerza.</p><section id=\"secret-y8skH0HHunT4I5NR\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha zawiera Aktywny Efekt, który zapewnia premię do Klasy Pancerza. Wyłącz go, gdy nie nosisz zbroi.</p></section>",
+      "effects": {
+        "Defense": {
+          "name": "Defensywa"
+        }
+      }
+    },
+    "phbfstDruidicWar": {
+      "name": "Druidyczny wojownik",
+      "description": "<p>Uczysz się dwóch @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU]{sztuczek Druida} według twojego wyboru. @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGuidance00]{Wskazówki} oraz @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplStarryWisp]{Gwiezdny ognik} są zalecane. Wybrane sztuczki liczą się dla ciebie jako czary Łowcy, a ich cechą bazową rzucania czarów jest Mądrość. Za każdym razem, gdy zdobywasz poziom Łowcy, możesz wymienić jedną z tych sztuczek na inną sztuczkę Druida.</p>",
+      "advancement": {
+        "Choose Cantrips": {
+          "title": "Wybierz sztuczki",
+          "hint": "Uczysz się dwóch sztuczek Druida według twojego wyboru. Wskazówki oraz Gwiezdny ognik są zalecane. Wybrane sztuczki liczą się dla ciebie jak czary Łowcy, a ich cechą bazową rzucania czarów jest Mądrość. Kiedykolwiek zdobędziesz poziom Łowcy, możesz wymienić jedną z tych sztuczek na inną z listy czarów Druida."
+        }
+      }
+    },
+    "phbfstDueling000": {
+      "name": "Fechtunek",
+      "description": "<p><em>(Warunek wstępny: zdolność Styl walki)</em></p><p>Gdy trzymasz broń do walki wręcz w jednej ręce i nie masz w drugiej żadnej innej broni, zyskujesz premię +2 do rzutów na obrażenia tą bronią.</p><section id=\"secret-WIcgVLYQvq2Sj87q\" class=\"secret\"><p><strong>Notatka foundry</strong></p><p>Ta cecha zawiera Aktywny Efekt, który zapewnia premię. Wyłącz go, gdy władasz wieloma brońmi.</p></section>",
+      "effects": {
+        "Dueling": {
+          "name": "Fechtunek"
+        }
+      }
+    },
+    "phbfstGreatWeapo": {
+      "name": "Walka bronią dwuręczną",
+      "description": "<p><em>(Warunek wstępny: zdolność Styl walki)</em></p><p>Gdy wykonujesz rzut na obrażenia ataku bronią do walki wręcz, którą trzymasz oburącz, możesz traktować każdy wynik 1 lub 2 na kości obrażeń jako 3. Broń musi posiadać cechę Dwuręczna lub Wszechstronna, aby skorzystać z tej korzyści.</p><section id=\"secret-jkbP75uR9eNGIRN0\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ten efekt nie jest zautomatyzowany.</p></section>"
+    },
+    "phbfstIntercepti": {
+      "name": "Przechwycenie",
+      "description": "<p><em>(Warunek wstępny: Zdolność Styl walki)</em></p><p>Gdy istota, którą widzisz, trafia inną istotę w promieniu 5 stóp od ciebie testem ataku, możesz użyć Reakcji, aby zmniejszyć obrażenia zadane celowi o 1k10 plus twoja Premia od Biegłości. Musisz trzymać Tarczę lub broń Prostą bądź Bojową, aby użyć tej Reakcji.</p><section class=\"secret\" id=\"secret-bOebMMgCjlpqzRnG\"><p><strong>Notatka Foundry</strong></p><p>Zdolność <strong>Przechwycenie</strong> może być użyta do redukcji odpowiedniej ilości obrażeń.</p></section>",
+      "activities": {
+        "Intercept": {
+          "name": "Przechwycenie",
+          "condition": "Gdy istota, którą widzisz, trafi inną istotę w zasięgu 5 stóp od ciebie testem ataku"
+        }
+      }
+    },
+    "phbfstProtection": {
+      "name": "Ochrona",
+      "description": "<p><em>(Warunek wstępny: Zdolność Styl walki)</em></p><p>Gdy istota, którą widzisz, atakuje cel inny niż ty znajdujący się w promieniu 5 stóp od ciebie, możesz użyć Reakcji, aby zasłonić go swoją Tarczą, jeśli ją trzymasz. Nakładasz Utrudnienie na wyzwalający test ataku oraz na wszystkie inne rzuty ataku przeciwko temu celowi do początku twojej następnej tury, jeśli pozostaniesz w promieniu 5 stóp od celu.</p><section id=\"secret-omzqnTg5Wlirj4sK\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt do śledzenia chronionej istoty, ale nie automatyzuje Utrudnienia.</p></section>",
+      "activities": {
+        "Protect": {
+          "name": "Ochrona",
+          "condition": "Gdy istota, którą widzisz, atakuje cel inny niż ty w zasięgu 5 stóp od ciebie"
+        }
+      },
+      "effects": {
+        "Protected": {
+          "name": "Chroniony",
+          "description": "<p>Nakładasz Utrudnienie na wyzwalający test ataku i wszystkie inne testy ataku przeciwko celowi aż do początku twojej następnej tury, jeśli pozostajesz w zasięgu 5 stóp od celu.</p>"
+        }
+      }
+    },
+    "phbfstThrownWeap": {
+      "name": "Walka bronią miotaną",
+      "description": "<p><em>(Wymaganie wstępne: zdolność Styl walki)</em></p><p>Gdy trafisz atakiem dystansowym, wykonując test ataku bronią posiadającą własność Rzucana, zyskujesz premię +2 do rzutu na obrażenia.</p><section class=\"secret\" id=\"secret-bEw60cBL96wx9JH4\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha nie jest zautomatyzowana. Możesz dodać +2 w polu Premii Sytuacyjnej rzutu na obrażenia.</p></section>"
+    },
+    "phbfstTwoWeaponF": {
+      "name": "Walka dwiema broniami",
+      "description": "<p><em>(Wymaganie wstępne: Zdolność Styl walki)</em></p><p>Gdy wykonujesz dodatkowy atak w wyniku użycia broni posiadającej własność Lekka, możesz dodać swój modyfikator cechy do obrażeń tego ataku, jeśli jeszcze go nie dodajesz do obrażeń.</p><section class=\"secret\" id=\"secret-hYptyfGCa0gLDQRT\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha nie jest zautomatyzowana. Możesz dodać swój modyfikator w polu Premii Sytuacyjnej rzutu na obrażenia.</p></section>"
+    },
+    "phbfstUnarmedFig": {
+      "name": "Walka bez broni",
+      "description": "<p><em>(Warunek wstępny: Zdolność Styl walki)</em></p><p>Gdy trafisz Uderzeniem bez broni i zadasz obrażenia, możesz zadać obrażenia obuchowe równe 1k6 plus twój modyfikator Siły zamiast standardowych obrażeń Uderzenia bez broni. Jeśli nie trzymasz żadnej broni ani Tarczy, gdy wykonujesz test ataku, k6 zmienia się na k8.</p><p>Na początku każdej swojej tury możesz zadać 1k4 obrażeń obuchowych jednej istocie &amp;Reference[Grappled] przez ciebie.</p><section id=\"secret-Nv8dMOvrI9GVk4P5\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Zdolność <strong>Uderzenie bez broni (Broń w ręku)</strong> może być użyta zamiast Uderzenia bez broni.</p><p>Zdolność <strong>Uderzenie bez broni  (Pusta ręka)</strong> uwzględnia zwiększone obrażenia.</p><p>Zdolność <strong>Obrażenia zadane Pochwyconemu</strong> zawiera rzut na obrażenia.</p></section>",
+      "activities": {
+        "Unarmed Strike (Weapon in Hand)": {
+          "name": "Uderzenie bez broni (Broń w ręku)"
+        },
+        "Unarmed Strike (Empty Hand)": {
+          "name": "Uderzenie bez broni (Pusta ręka)"
+        },
+        "Grappled Damage": {
+          "name": "Obrażenia zadane Pochwyconemu",
+          "condition": "Na początku każdej twojej tury"
+        }
+      }
+    },
+    "phbftAbilityScor": {
+      "name": "Zwiększenie Cechy",
+      "description": "<p><em>Atut Ogólny (Wymaganie: Poziom 4+)</em></p><p>Zwiększ jedną wybraną przez ciebie wartość cechy o 2 lub zwiększ dwie wybrane przez ciebie wartości cech o 1. Ten atut nie może podnieść wartości cechy powyżej 20.</p><p><strong>Powtarzalny.</strong> Możesz wybrać ten atut więcej niż raz.</p>"
+    },
+    "phbftActor000000": {
+      "name": "Aktor",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cechy.</strong> Zwiększ swoją wartość Charyzmy o 1, do maksymalnie 20.</p><p><strong>Impersonacja.</strong> Gdy jesteś przebrany za prawdziwą lub fikcyjną osobę, masz Ułatwienie przy testach Charyzmy (Oszustwo lub Występy), aby przekonać innych, że jesteś tą osobą.</p><p><strong>Mimikra.</strong> Możesz naśladować dźwięki innych istot, w tym mowę. Istota, która słyszy mimikrę, musi odnieść sukces w teście Mądrości (Intuicja), aby ustalić, że efekt jest fałszywy (ST 8 plus twój modyfikator Charyzmy i premia od biegłości).</p><section class=\"secret\" id=\"secret-tOhwF8l7gqyVJOOB\"><p><strong>Notatka Foundry</strong></p><p>Zdolność <strong>Mimicry</strong> zawiera test z odpowiednim ST.</p><p>Ten atut nie automatyzuje Ułatwienia przy testach.</p></section>",
+      "activities": {
+        "Mimicry": {
+          "name": "Mimikra"
+        }
+      }
+    },
+    "phbftAlert000000": {
+      "name": "Czujność",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Biegłość w Inicjatywie.</strong> Gdy wykonujesz rzut na Inicjatywę, możesz dodać swoją Premi ę od Biegłości do wyniku.</p><p><strong>Wymiana Inicjatywy.</strong> Natychmiast po wykonaniu rzutu na Inicjatywę możesz zamienić swoją Inicjatywę z Inicjatywą jednego chętnego sojusznika w tej samej walce. Nie możesz dokonać tej zamiany, jeśli ty lub sojusznik macie stan &amp;Reference[Incapacitated]{Obezwładniony}.</p><section id=\"secret-yzfXk3D5M1jv9ixH\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha automatycznie uwzględnia premię do twojej Inicjatywy.</p></section>",
+      "effects": {
+        "Alert": {
+          "name": "Czujność"
+        }
+      }
+    },
+    "phbftAthlete0000": {
+      "name": "Atleta",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cechy.</strong> Zwiększ swoją wartość Siły lub Zręczności o 1, do maksymalnie 20.</p><p><strong>Szybkość Wspinaczki.</strong> Zyskujesz Szybkość Wspinaczki równą twojej Szybkości.</p><p><strong>Podskok.</strong> Gdy masz stan &amp;Reference[Prone]{Powalony}, możesz podnieść się, zużywając tylko 5 stóp ruchu.</p><p><strong>Skoki.</strong> Możesz wykonać w biegu &amp;Reference[Long Jump]{Skok w Dal} lub &amp;Reference[High Jump]{Skok Wzwyż} po poruszeniu się tylko o 5 stóp.</p><section id=\"secret-HwMnjjLPfn97FUqL\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ten atut nie automatyzuje efektów. Możesz dodać swoją Szybkość Wspinaczki, przełączając tryb \"Edytuj\" na swojej karcie i klikając ikonę \"Zębatki\" nad \"Chód\" (tuż nad paskiem Punktów Wytrzymałości).</p></section>"
+    },
+    "phbftCharger0000": {
+      "name": "Szarża",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Improved Dash.</strong> Gdy wykonujesz akcję &amp;Reference[Dash]{Sprint}, twoja Szybkość zwiększa się o 10 stóp w trakcie tej akcji.</p><p><strong>Atak Szarży.</strong> Jeśli poruszysz się o co najmniej 10 stóp w prostej linii w kierunku celu bezpośrednio przed trafieniem go testem ataku wręcz jako część Akcji Ataku, wybierz jeden z poniższych efektów: zyskaj premię 1k8 do rzutu na obrażenia ataku, lub pchnij cel do 10 stóp dalej, jeśli nie jest on większy niż o jeden rozmiar od ciebie. Możesz skorzystać z tej korzyści tylko raz w każdej swojej turze.</p><section class=\"secret\" id=\"secret-OP6Qbxc6GyD1OFcH\"><p><strong>Notatka Foundry</strong></p><p>Możesz dodać 1k8 do okna dialogowego rzutu na obrażenia ataku jako Premię Sytuacyjną lub użyć aktywności <strong>Atak Szarży</strong> i wybrać typ obrażeń w oknie dialogowym rzutu.</p></section>",
+      "activities": {
+        "Charge Attack": {
+          "name": "Atak Szarży",
+          "condition": "Jeśli przemieścisz się o co najmniej 10 stóp w linii prostej tuż przed trafieniem jej atakiem wręcz"
+        }
+      }
+    },
+    "phbftChef0000000": {
+      "name": "Kucharz",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Kondycję lub Mądrość o 1, maksymalnie do 20.</p><p><strong>Utensylia kucharza.</strong> Zyskujesz biegłość w @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulCooksUtens]{Utensyliach kucharza}, jeśli już jej nie posiadasz.</p><p><strong>Posiłek regeneracyjny.</strong> Jako część Krótkiego Odpoczynku, możesz ugotować specjalne jedzenie, jeśli masz składniki i Utensylia kucharza. Możesz przygotować wystarczająco dużo jedzenia dla liczby istot równej 4 plus twoja Premia od Biegłości (obecnie [[4 + @prof]]). Na końcu Krótkiego Odpoczynku każda istota, która zje to jedzenie i zużyje jeden lub więcej Kości Wytrzymałości, odzyskuje dodatkowe 1k8 Punktów Wytrzymałości.</p><p><strong>Wzmacniające smakołyki</strong> Po 1 godzinie pracy lub po zakończeniu Długiego Odpoczynku możesz ugotować liczbę smakołyków równą twojej Premii od Biegłości, jeśli masz składniki i Utensylia kucharza. Te specjalne smakołyki zachowują swoje właściwości przez 8 godzin po przygotowaniu. Istota może użyć Akcji Dodatkowej, aby zjeść jeden z tych smakołyków i zyskać liczbę Tymczasowych Punktów Wytrzymałości równą twojej Premii od Biegłości.</p><section class=\"secret\" id=\"secret-onsn880Y02uWVh6N\"><p><strong>Notatka Foundry</strong></p><p>Zdolność <strong>Posiłek regeneracyjny</strong> obejmuje leczenie.</p><p>Zdolność <strong>Wzmacniające smakołyki</strong> przywróci liczbę użyć równą twojej Premii od Biegłości. Gdy istoty je zjedzą, możesz użyć aktywności <strong>Eat Treat</strong>, aby zmniejszyć liczbę użyć lub zarządzać tym ręcznie.</p><p>Ten atut nie dodaje automatycznie biegłości w Utensyliach kucharza. Aby ją dodać, przełącz tryb „Edytuj” na swojej karcie postaci, a poniżej Umiejętności kliknij ikonę „Koło Zębate”, aby dodać tę biegłość.</p></section>",
+      "activities": {
+        "Replenishing Meal": {
+          "name": "Posiłek regeneracyjny",
+          "condition": "Jako część Krótkiego odpoczynku"
+        },
+        "Bolstering Treats": {
+          "name": "Wzmacniające smakołyki"
+        },
+        "Eat Treat": {
+          "name": "Zjedz smakołyk"
+        }
+      }
+    },
+    "phbftCrafter0000": {
+      "name": "Rzemieślnik",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Biegłość w Narzędziach.</strong> Zyskujesz biegłość w posługiwaniu się trzema różnymi Narzędziami Rzemieślniczymi wybranymi przez ciebie z tabeli Szybkiego Rzemiosła.</p><p><strong>Zniżka.</strong> Ilekroć kupujesz niemagiczny przedmiot, otrzymujesz na niego 20-procentową zniżkę.</p><p><strong>Szybkie Rzemiosło.</strong> Kiedy kończysz Długi Odpoczynek, możesz stworzyć jedną sztukę wyposażenia z tabeli Szybkiego Rzemiosła, pod warunkiem, że masz Narzędzia Rzemieślnicze związane z tym przedmiotem i masz w nich biegłość. Przedmiot działa do momentu, aż zakończysz kolejny Długi Odpoczynek, po czym rozpada się.</p><table><caption>Szybkie Rzemiosło</caption><thead><tr><td>Narzędzia Rzemieślnicze</td><td>Wytworzone Wyposażenie</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulCarpenters]</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLadder00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTorch000000]</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulLeatherwor]</td><td>Futerał, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulMasonsTool]</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBlockandTac]</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulPottersToo]</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagJug00000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLamp0000000]</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulSmithsTool]</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBallBearing], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBucket00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCaltrops000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagGrapplingHo], @UUID[Compendium.dnd5e.items.Item.M8xM8BLK4tpUayEE]</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulTinkersToo]</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBell0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagShovel00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00]</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulWeaversToo]</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBasket00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRope0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagNet00000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTent0000000]</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulWoodcarver]</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepClub000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepGreatclub0], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta]</td></tr></tbody></table>",
+      "advancement": {
+        "Tool Proficiency": {
+          "title": "Biegłość w Narzędziach",
+          "hint": "Zyskujesz biegłość w posługiwaniu się trzema różnymi Narzędziami Rzemieślniczymi wybranymi przez ciebie z tabeli Szybkiego Rzemiosła."
+        }
+      }
+    },
+    "phbftCrossbowExp": {
+      "name": "Specjalista kusznik",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie wartości cechy.</strong> Zwiększ swoją wartość Zręczności o 1, do maksimum 20.</p><p><strong>Ignorowanie ładowania.</strong> Ignorujesz właściwość Ładowanie Kuszy Ręcznej, Kuszy Ciężkiej i Kuszy Lekkiej (wszystkie zwane w tym atucie kuszami). Jeśli trzymasz jedną z nich, możesz załadować do niej amunicję, nawet jeśli nie masz wolnej ręki.</p><p><strong>Strzelanie w zwarciu.</strong> Znajdowanie się w zasięgu 5 stóp od wroga nie nakłada Utrudnienia na twoje testy ataku kuszami.</p><p><strong>Walka dwiema broniami.</strong> Kiedy wykonujesz dodatkowy atak właściwości Lekka, możesz dodać swój modyfikator cechy do obrażeń tego dodatkowego ataku, jeśli ten atak jest wykonany za pomocą kuszy, która ma właściwość Lekka i nie dodajesz już tego modyfikatora do obrażeń.</p><section class=\"secret\" id=\"secret-JbCLp7Ez3Fn6zaVJ\"><p><strong>Notatka foundry</strong></p><p>Dodatkowe obrażenia za Walkę dwiema broniami nie są implementowane automatycznie, ale można je dodać do Premii Sytuacyjnej w oknie dialogowym normalnego rzutu obrażeń.</p></section>"
+    },
+    "phbftCrusher0000": {
+      "name": "Miażdzyciel",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Kondycję o 1, maksymalnie do 20.</p><p><strong>Pchnięcie.</strong> Raz na turę, gdy trafisz istotę atakiem, który zadaje obrażenia obuchowe, możesz przesunąć ją o 5 stóp do niezajętej przestrzeni, jeśli nie jest większa od ciebie o więcej niż jeden rozmiar.</p><p><strong>Wzmocnione Trafienie Krytyczne.</strong> Gdy zadasz Trafienie Krytyczne zadające obrażenia obuchowe istocie, testy ataku przeciwko tej istocie mają Ułatwienie aż do początku twojej następnej tury.</p><section id=\"secret-Jx3RkyhIRZ7QLlyM\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha zawiera Aktywny Efekt, który można wykorzystać do śledzenia Ułatwienia, choć nie jest on zautomatyzowany.</p></section>",
+      "effects": {
+        "Crushed": {
+          "name": "Zmiażdzony"
+        }
+      }
+    },
+    "phbftDefensiveDu": {
+      "name": "Mistrz zasłony",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie wartości cechy.</strong> Zwiększ swoją wartość Zręczności o 1, do maksimum 20.</p><p><strong>Parowanie.</strong> Jeśli trzymasz broń finezyjną, a inna istota trafi cię atakiem wręcz, możesz użyć Reakcji, aby dodać swoją Premię od Biegłości (obecnie, [[lookup @prof]]) do twojej Klasy Pancerza, potencjalnie powodując, że atak cię chybi. Zyskujesz tę premię do KP przeciwko atakom wręcz aż do początku twojej następnej tury.</p><section id=\"secret-En8YXJoQaVQXOweT\" class=\"secret\"><p><strong>Notatka foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt, który zwiększy twoją Klasę Pancerza.</p></section>",
+      "activities": {
+        "Parry": {
+          "name": "Parowanie"
+        }
+      },
+      "effects": {
+        "Defensive Duelist": {
+          "name": "Mistrz zasłony"
+        }
+      }
+    },
+    "phbftDualWielder": {
+      "name": "Oburęczny",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie wartości cechy.</strong> Zwiększ swoją wartość Siły lub Zręczności o 1, do maksimum 20.</p><p><strong>Ulepszona walka dwiema broniami.</strong> Kiedy w swojej turze wykonujesz Akcję Ataku i atakujesz bronią z właściwością Lekka, możesz wykonać jeden dodatkowy atak jako Akcję Dodatkową później w tej samej turze inną bronią, która musi być bronią wręcz pozbawioną właściwości Dwuręczna. Nie dodajesz swojego modyfikatora cechy do obrażeń dodatkowego ataku, chyba że ten modyfikator jest ujemny.</p><p><strong>Szybkie dobycie.</strong> Możesz dobyć lub schować dwie bronie pozbawione właściwości Dwuręczna, kiedy normalnie mógłbyś dobyć lub schować tylko jedną.</p><section id=\"secret-EJIyTsTmMlxQDh6V\" class=\"secret\"><p><strong>Notatka foundry</strong></p><p>Usunięcie twojego modyfikatora cechy nie jest zautomatyzowane. Możesz go odjąć w polu Premia Sytuacyjna w oknie dialogowym rzutu obrażeń.</p></section>"
+    },
+    "phbftDurable0000": {
+      "name": "Nie do zdarcia",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie wartości cechy.</strong> Zwiększ swoją wartość Kondycji o 1, do maksimum 20.</p><p><strong>Oporny na śmierć.</strong> Masz Ułatwienie na Rzuty Obronne przeciwko Śmierci.</p><p><strong>Szybka regeneracja.</strong> Jako Akcję Dodatkową, możesz wydać jedną ze swoich Kości Wytrzymałości, rzucić nią i odzyskać liczbę Punktów Wytrzymałości równą wynikowi rzutu.</p><section class=\"secret\" id=\"secret-2mnen4ekEgf4G7tw\"><p><strong>Notatka foundry</strong></p><p>Aktywność <strong>Szybka regeneracja (największa kość)</strong> wydaje twoją największą dostępną Kość Wytrzymałości, a aktywność <strong>(najmniejsza kość)</strong> wydaje najmniejszą dostępną Kość Wytrzymałości (ważne tylko w przypadku multiclassingu, w przeciwnym razie wyniki są takie same).</p></section>",
+      "activities": {
+        "Speedy Recovery (Largest Die)": {
+          "name": "Szybka regeneracja (największa kość)"
+        },
+        "Speedy Recovery (Smallest Die)": {
+          "name": "Szybka regeneracja (najmniejsza kość)"
+        }
+      },
+      "effects": {
+        "Durable": {
+          "name": "Nie do zdarcia",
+          "description": "<p>Masz Ułatwienie w Rzutach obronnych przeciwko śmierci.</p>"
+        }
+      }
+    },
+    "phbftElementalAd": {
+      "name": "Adept żywiołów",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Inteligencję, Mądrość lub Charyzmę o 1, maksymalnie do 20.</p><p><strong>Mistrzostwo Energii.</strong> Wybierz jeden z następujących typów obrażeń: obrażenia od kwasu, obrażenia od zimna, obrażenia od ognia, obrażenia od elektryczności lub obrażenia od dźwięku. Rzucane przez ciebie czary ignorują Odporność na obrażenia wybranego typu. Dodatkowo, gdy rzucasz czar zadający obrażenia tego typu, traktujesz każde wyrzucone 1 na kości obrażeń jak 2.</p><p><strong>Powtarzalne.</strong> Możesz wziąć ten atut więcej niż raz, ale za każdym razem musisz wybrać inny typ obrażeń dla Mistrzostwa Energii.</p><section id=\"secret-9zhg6kpDIUc84DCG\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Efekty tego atutu nie są zautomatyzowane.</p></section>"
+    },
+    "phbftFeyTouched0": {
+      "name": "Dotknięty przez Fey",
+      "description": "<p>Twoje wystawienie na magię Feywild daje ci następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Inteligencję, Mądrość lub Charyzmę o 1, maksymalnie do 20.</p><p><strong>Magia Fey.</strong> Wybierz jeden czar 1. kręgu @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.dWVioXxEGjcPsI9Y]{czar} ze szkoły Wieszczenia lub Uroków. Zawsze masz ten czar oraz czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMistyStep0]{Misty Step} przygotowany. Możesz rzucić każdy z tych czarów bez zużywania Komórki Czarów. Gdy raz rzucisz któryś z tych czarów w ten sposób, nie możesz go ponownie rzucić w ten sposób, dopóki nie zakończysz Długiego Odpoczynku. Możesz też rzucać te czary, używając posiadanych Komórek Czarów odpowiedniego kręgu. Cechą bazową rzucania czarów dla tych zaklęc jest cecha zwiększona przez ten atut.</p><section class=\"secret\" id=\"secret-O8kxBQYKdt4eFJIV\"><p><strong>Notatka Foundry</strong></p><p>Po dodaniu tych czarów do karty postaci należy je ręcznie edytować, aby ustawić odpowiednią cechę zaklinania i dodać darmowe użycie.</p></section>"
+    },
+    "phbftGrappler000": {
+      "name": "Zapaśnik",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cech.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Cios i Chwyt.</strong> Gdy trafisz istotę Uderzeniem bez Broni w ramach Akcji Atak w swojej turze, możesz użyć jednocześnie opcji Obrażenia i Pochwycenie. Z tej korzyści możesz skorzystać tylko raz na turę.</p><p><strong>Ułatwienie Ataku.</strong> Masz Ułatwienie do testów ataku przeciwko istocie &amp;Reference[Grappled]{pochwyconej} przez ciebie.</p><p><strong>Szybki Zapaśnik.</strong> Nie musisz wydawać dodatkowego ruchu, aby poruszać istotę pochwyconą przez ciebie, jeśli jest twojego rozmiaru lub mniejsza.</p><section class=\"secret\" id=\"secret-LAjjGo55LPacAy8v\"><p><strong>Notatka Foundry</strong></p><p>Ułatwienie nie jest zautomatyzowane.</p></section>"
+    },
+    "phbftGreatWeapon": {
+      "name": "Mistrz broni dwuręcznej",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cech.</strong> Zwiększ swoją Siłę o 1, maksymalnie do 20.</p><p><strong>Mistrzostwo w Ciężkiej Broni.</strong> Gdy trafisz istotę bronią o właściwości Ciężka w ramach Akcji Atak w swojej turze, możesz sprawić, że broń zada dodatkowe obrażenia celowi. Dodatkowe obrażenia są równe twojej Premii od Biegłości.</p><p><strong>Rąbanie.</strong> Natychmiast po zadaniu Trafienia Krytycznego bronią do walki wręcz lub po zredukowaniu punktów wytrzymałości istoty do 0 przy jej użyciu, możesz wykonać jeden atak tą samą bronią jako Akcję Dodatkową.</p><section id=\"secret-Mp12ak60ZuPnUCLB\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Obrażenia ciężką bronią</strong> uwzględnia dodatkowe obrażenia.</p></section>",
+      "activities": {
+        "Heavy Weapon Damage": {
+          "name": "Obrażenia ciężką bronią",
+          "condition": "Gdy trafisz istotę bronią o właściwości Ciężka w ramach Akcji Atak w swojej turze"
+        }
+      }
+    },
+    "phbftHealer00000": {
+      "name": "Uzdrowiciel",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Medyk bojowy.</strong> Jeśli posiadasz @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHealersKit0], możesz zużyć jedno jego użycie i opatrzyć istotę w promieniu 5 stóp od siebie jako Akcję Użycia Obiektu. Ta istota może zużyć jedną ze swoich Kości Wytrzymałości, a następnie wykonujesz rzut tą kością. Istota odzyskuje liczbę Punktów Wytrzymałości równą wynikowi rzutu plus twoja Premia od Biegłości.</p><p><strong>Ponowne Rzuty Leczenia.</strong> Za każdym razem, gdy wykonujesz rzut kością, aby określić liczbę Punktów Wytrzymałości, które przywracasz za pomocą czaru lub korzyści Medyk bojowy z tego atutu, możesz przerzucić kość, jeśli wyrzucisz 1, i musisz użyć nowego wyniku.</p><section class=\"secret\" id=\"secret-srSK4HzKeG6v6Fzn\"><p><strong>Notatka Foundry</strong></p><p>Postać zużywająca swoją Kość Wytrzymałości może odjąć ją na swojej karcie postaci i poinformować cię o jej rozmiarze. Następnie możesz użyć umiejętności <strong>Uzdrowienie k6, k8, k10 lub k12</strong>, aby ich uleczyć. Umiejętności te automatycznie przerzucają wynik 1.</p></section>",
+      "activities": {
+        "Heal d6": {
+          "name": "Uzdrowienie k6"
+        },
+        "Heal d8": {
+          "name": "Uzdrowienie k8"
+        },
+        "Heal d10": {
+          "name": "Uzdrowienie k10"
+        },
+        "Heal d12": {
+          "name": "Uzdrowienie k12"
+        }
+      }
+    },
+    "phbftHeavilyArmo": {
+      "name": "Ciężko opancerzony",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Kondycję lub Siłę o 1, maksymalnie do 20.</p><p><strong>Szkolenie w Pancerzu.</strong> Zyskujesz biegłość w Ciężkich pancerzach.</p><section id=\"secret-XrTFBiTrscuZUyTK\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha automatycznie przyznaje biegłość w Ciężkich pancerzach.</p></section>",
+      "effects": {
+        "Heavily Armored": {
+          "name": "Ciężko opancerzony"
+        }
+      }
+    },
+    "phbftHeavyArmorM": {
+      "name": "Mistrz ciężkiego pancerza",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Kondycję lub Siłę o 1, maksymalnie do 20.</p><p><strong>Redukcja Obrażeń.</strong> Gdy zostaniesz trafiony atakiem podczas noszenia Ciężkiego pancerza, wszelkie obrażenia obuchowe, kłute i cięte zadane ci przez ten atak są zmniejszane o wartość równą twojej Premii od Biegłości.</p><section class=\"secret\" id=\"secret-BoU0ql21IXdiGxDw\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt, który automatycznie redukuje te typy obrażeń o twoją Premię od Biegłości. Wyłącz go, gdy nie nosisz Ciężkiego pancerza.</p></section>",
+      "effects": {
+        "Heavy Armor Master": {
+          "name": "Mistrz ciężkiego pancerza"
+        }
+      }
+    },
+    "phbftInspiringLe": {
+      "name": "Przywódca",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cech.</strong> Zwiększ swoją Mądrość lub Charyzmę o 1, maksymalnie do 20.</p><p><strong>Wzmacniający Występ.</strong> Gdy zakończysz Krótki lub Długi Odpoczynek, możesz dać inspirujący występ, przemowę, pieśń lub taniec. Wybierz do sześciu sojuszników (w tym siebie) w odległości do 30 stóp, którzy są świadkami występu. Wybrane istoty zyskują Tymczasowe Punkty Wytrzymałości równe twojemu poziomowi postaci powiększonemu o modyfikator cechy, którą zwiększyłeś dzięki temu atutowi.</p><section class=\"secret\" id=\"secret-QFS7wQGuYgNoa0uR\"><p><strong>Notatka Foundry</strong></p><p>Aktywności leczenia <strong>Zainspiruj …</strong> są dostarczone osobno, dzięki czemu można bezpiecznie usunąć tę odpowiadającą <em>niezwiększonej</em> wartości cechy.</p></section>",
+      "activities": {
+        "Inspire with Wisdom": {
+          "name": "Zainspiruj Mądrością",
+          "condition": "Gdy zakończysz Krótki lub Długi Odpoczynek"
+        },
+        "Inspire with Charisma": {
+          "name": "Zainspiruj Charyzmą",
+          "condition": "Gdy zakończysz Krótki lub Długi Odpoczynek"
+        }
+      }
+    },
+    "phbftKeenMind000": {
+      "name": "Bystry umysł",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cech.</strong> Zwiększ swoją Inteligencję o 1, maksymalnie do 20.</p><p><strong>Wiedza o świecie.</strong> Wybierz jedną z następujących umiejętności: Wiedza Tajemna, Historia, Śledztwo, Przyroda lub Religia. Jeśli nie masz biegłości w wybranej umiejętności, zyskujesz w niej biegłość, a jeśli już ją posiadasz, zyskujesz w niej Mistrzostwo.</p><p><strong>Szybka Nauka.</strong> Możesz wykonać Akcję Nauki jako Akcję Dodatkową.</p>",
+      "advancement": {
+        "Lore Knowledge": {
+          "title": "Wiedza o świecie",
+          "hint": "Wybierz jedną z następujących umiejętności: Wiedza Tajemna, Historia, Śledztwo, Przyroda lub Religia. Jeśli nie masz biegłości w wybranej umiejętności, zyskujesz w niej biegłość, a jeśli już ją posiadasz, zyskujesz w niej Mistrzostwo."
+        }
+      }
+    },
+    "phbftLightlyArmo": {
+      "name": "Lekko opancerzowny",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Szkolenie w Pancerzu.</strong> Zyskujesz biegłość w Lekkich pancerzach i Tarczach.</p><section class=\"secret\" id=\"secret-NpiwUDsdtqRVqwYX\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność automatycznie zapewnia biegłość w Lekkich pancerzach i Tarczach.</p></section>",
+      "effects": {
+        "Lightly Armored": {
+          "name": "Lekko opancerzowny"
+        }
+      }
+    },
+    "phbftLucky000000": {
+      "name": "Szczęściarz",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Punkty Szczęścia.</strong> Masz liczbę Punktów Szczęścia równą twojej Premii od Biegłości i możesz wydawać je na poniższe korzyści. Odzyskujesz zużyte Punkty Szczęścia po zakończeniu Długiego Odpoczynku.</p><p><strong>Ułatwienie.</strong> Gdy wykonujesz rzut k20 w Teście k20, możesz wydać 1 Punkt Szczęścia, aby zapewnić sobie Ułatwienie do rzutu.</p><p><strong>Utrudnienie.</strong> Gdy istota wykonuje rzut k20 na test ataku przeciwko tobie, możesz wydać 1 Punkt Szczęścia, aby nałożyć na ten rzut Utrudnienie.</p><section id=\"secret-6TFD3CUAlQhYUp4d\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność uwzględnia odpowiednią liczbę użyć i skaluje się wraz z poziomem.</p><p>Aktywności <strong>Ułatwienie</strong> i <strong>Utrudnienie</strong> zużywają użycie, ale nie wymuszają automatycznie efektu Ułatwienia/Utrudnienia.</p></section>",
+      "activities": {
+        "Advantage": {
+          "name": "Ułatwienie",
+          "condition": "Gdy wykonujesz rzut k20 w ramach Testu K20"
+        },
+        "Disadvantage": {
+          "name": "Utrudnienie",
+          "condition": "Gdy istota wykonuje rzut k20 na test ataku przeciwko tobie"
+        }
+      }
+    },
+    "phbftMageSlayer0": {
+      "name": "Zabójca magów",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Łamacz koncentracji</strong> Gdy zadasz obrażenia istocie, która koncentruje się na czarze, ma ona Utrudnienie w rzucie obronnym wykonywanym w celu utrzymania Koncentracji.</p><p><strong>Chroniony umysł.</strong> Jeśli nie powiedzie ci się rzut obronny na Inteligencję, Mądrość lub Charyzmę, możesz zamiast tego uznać go za udany. Gdy skorzystasz z tej korzyści, nie możesz użyć jej ponownie, dopóki nie zakończysz Krótkiego lub Długiego Odpoczynku.</p><section class=\"secret\" id=\"secret-eqfhO3l6IgAsZKo4\"><p><strong>Notatka Foundry</strong></p><p>Zdolność <strong>Guarded Mind</strong> zużywa darmowe użycie tej zdolności, które odnawia się po Krótkim lub Długim Odpoczynku.</p></section>",
+      "activities": {
+        "Guard Mind": {
+          "name": "Chroniony umysł",
+          "condition": "Gdy nie powiedzie ci się rzut obronny na Inteligencję, Mądrość lub Charyzmę"
+        }
+      }
+    },
+    "phbftMagicInitia": {
+      "name": "Wtajemniczony",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Dwie Sztuczki.</strong> Uczysz się dwóch sztuczek według własnego wyboru z listy czarów @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj]{Kleryka}, @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU]{Druida} lub @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Maga}. Inteligencja, Mądrość lub Charyzma jest twoją cechą bazową rzucania czarów dla zaklęć z tego atutu (wybierz podczas jego wyboru).</p><p><strong>Czar 1. Kręgu.</strong> Wybierz jeden czar 1. kręgu z tej samej listy, z której wybrałeś sztuczki dla tego atutu. Zawsze masz ten czar przygotowany. Możesz rzucić go raz bez zużywania Komórki Czarów i odzyskujesz tę możliwość po zakończeniu Długiego Odpoczynku. Możesz także rzucać ten czar, używając posiadanych Komórek Czarów.</p><p><strong>Zmiana Czaru.</strong> Za każdym razem, gdy zdobywasz nowy poziom, możesz zastąpić jeden z czarów wybranych dla tego atutu innym czarem tego samego kręgu z wybranej listy czarów.</p><p><strong>Powtarzalne.</strong> Możesz wybrać ten atut więcej niż raz, ale za każdym razem musisz wybrać inną listę czarów.</p><section id=\"secret-7JQCSgnGrtu9huzf\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Czary muszą zostać ręcznie dodane do karty postaci z powyższymi zmianami.</p></section>"
+    },
+    "phbftMartialWeap": {
+      "name": "Trening broni żołnierskiej",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Biegłość w Broniach.</strong> Zyskujesz biegłość w Broniach Żołnierskich.</p><section class=\"secret\" id=\"secret-D09BeCa8lfTgpJ6h\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność automatycznie przyznaje ci biegłość w Broniach Żołnierskich.</p></section>",
+      "effects": {
+        "Martial Weapon Training": {
+          "name": "Trening broni żołnierskiej"
+        }
+      }
+    },
+    "phbftMediumArmor": {
+      "name": "Mistrz średniego pancerza",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Zwinny Noszący.</strong> Gdy nosisz Średni pancerz, możesz dodać 3 zamiast 2 do swojej Klasy Pancerza, jeśli twoja Zręczność wynosi 16 lub więcej.</p><section class=\"secret\" id=\"secret-6pnyGDNgbSDB7FtT\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt, który zapewnia +1 do Klasy Pancerza. Wyłącz go, jeśli twoja Zręczność wynosi 15 lub mniej.</p></section>",
+      "effects": {
+        "Medium Armor Master": {
+          "name": "Mistrz średniego pancerza"
+        }
+      }
+    },
+    "phbftModeratelyA": {
+      "name": "Średnio opancerzony",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Szkolenie w Pancerzu.</strong> Zyskujesz biegłość w Średnich pancerzach.</p><section class=\"secret\" id=\"secret-Q1Odcq8OF5Y3cNci\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność automatycznie przyznaje biegłość w Średnich pancerzach.</p></section>",
+      "effects": {
+        "Moderately Armored": {
+          "name": "Średnio opancerzony"
+        }
+      }
+    },
+    "phbftMountedComb": {
+      "name": "Kawalerzysta",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę, Zręczność lub Mądrość o 1, maksymalnie do 20.</p><p><strong>Uderzenie z wierzchowca.</strong> Gdy znajdujesz się na wierzchowcu, masz Ułatwienie w testach ataku przeciwko każdej istocie nie będącej na wierzchowcu w promieniu 5 stóp od twojego wierzchowca, jeśli jest ona przynajmniej o jeden rozmiar mniejsza od niego.</p><p><strong>Skok w bok.</strong> Jeśli twój wierzchowiec jest poddany efektowi, który pozwala mu wykonać rzut obronny na Zręczność, aby otrzymać tylko połowę obrażeń, zamiast tego nie otrzymuje żadnych obrażeń, jeśli rzut obronny się powiedzie, a tylko połowę obrażeń, jeśli się nie powiedzie. Aby twój wierzchowiec skorzystał z tej korzyści, musisz na nim jechać i żadne z was nie może mieć stanu &amp;Reference[Incapacitated]{Obezwładniony}.</p><p><strong>Zwrot.</strong> Gdy znajdujesz się na wierzchowcu, możesz sprawić, że atak, który trafił w twojego wierzchowca, zamiast tego trafi ciebie, jeśli nie masz stanu Obezwładniony.</p>"
+    },
+    "phbftMusician000": {
+      "name": "Muzyk",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Szkolenie z Instrumentów.</strong> Zyskujesz biegłość w trzech Instrumentach Muzycznych według własnego wyboru.</p><p><strong>Zachęcająca Pieśń.</strong> Gdy kończysz Krótki lub Długi Odpoczynek, możesz zagrać pieśń na Instrumencie Muzycznym, w którym masz biegłość, i obdarzyć sojuszników słyszących pieśń Heroiczną Inspiracją. Liczba sojuszników, których możesz w ten sposób objąć, jest równa twojej Premii od Biegłości (obecnie [[lookup @prof]]).</p>",
+      "advancement": {
+        "Instrument Training": {
+          "title": "Szkolenie z instrumentu",
+          "hint": "Zyskujesz biegłość w trzech Instrumentach Muzycznych według własnego wyboru."
+        }
+      }
+    },
+    "phbftObservant00": {
+      "name": "Spostrzegawczy",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie wartości cech.</strong> Zwiększ swoją Inteligencję lub Mądrość o 1, maksymalnie do 20.</p><p><strong>Bystry obserwator.</strong> Wybierz jedną z następujących umiejętności: Intuicja, Śledztwo lub Percepcja. Jeśli nie masz biegłości w wybranej umiejętności, zyskujesz w niej biegłość, a jeśli już ją posiadasz, zyskujesz w niej Znawstwo.</p><p><strong>Szybkie Przeszukanie.</strong> Możesz wykonać Akcję Przeszukania jako Akcję Dodatkową.</p>",
+      "advancement": {
+        "Keen Observer": {
+          "title": "Bystry obserwator",
+          "hint": "Wybierz jedną z następujących umiejętności: Intuicja, Śledztwo lub Percepcja. Jeśli nie masz biegłości w wybranej umiejętności, zyskujesz w niej biegłość, a jeśli już ją posiadasz, zyskujesz w niej Znawstwo."
+        }
+      }
+    },
+    "phbftPiercer0000": {
+      "name": "Przeszywacz",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Przebicie.</strong> Raz na turę, gdy trafisz istotę atakiem zadającym obrażenia kłute, możesz przerzucić jedną z kości obrażeń ataku i musisz użyć nowego wyniku.</p><p><strong>Wzmocnione Trafienie Krytyczne.</strong> Gdy zadasz Trafienie Krytyczne, które zadaje obrażenia kłute istocie, możesz rzucić jedną dodatkową kością obrażeń, określając dodatkowe obrażenia kłute zadane celowi.</p><section id=\"secret-5tfbQNYlnPoUJ6u0\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Efekty tej zdolności nie są zautomatyzowane.</p></section>"
+    },
+    "phbftPoisoner000": {
+      "name": "Truciciel",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cech.</strong> Zwiększ swoją Zręczność lub Inteligencję o 1, maksymalnie do 20.</p><p><strong>Silna Trucizna.</strong> Gdy wykonujesz rzut na obrażenia zadające obrażenia od trucizn, ignorują one Odporność na obrażenia od trucizn.</p><p><strong>Warzenie trucizny.</strong> Zyskujesz biegłość w Zestawie Truciciela. Po 1 godzinie pracy z użyciem tego zestawu i wydaniu materiałów o wartości 50 sz, możesz stworzyć liczbę dawek trucizny równą twojej Premii od Biegłości. Jako Akcję Dodatkową możesz nałożyć dawkę trucizny na broń lub pocisk. Po nałożeniu trucizna zachowuje swoją moc przez 1 minutę lub do momentu, gdy zadasz obrażenia zatrutym przedmiotem, w zależności od tego, co nastąpi wcześniej. Gdy istota otrzyma obrażenia od zatrutego przedmiotu, musi wykonać rzut obronny na Kondycję (ST = 8 + modyfikator cechy zwiększonej przez ten atut + twoja Premia od Biegłości) lub otrzymuje 2k8 obrażeń od trucizn i staje się &amp;Reference[Poisoned]{Zatruta} do końca twojej następnej tury.</p><section class=\"secret\" id=\"secret-Z0hagCaxOGvVtkkm\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Stwórz dawki trucizny</strong> przywróci liczbę użyć tego przedmiotu równą twojej premii od biegłości.</p><p>Aktywność zaklęcia <strong>Nałóż truciznę</strong> udostępnia opcję rzutu obronnego na Zręczność lub Inteligencję dla celu, którą należy wybrać w zależności od cechy zwiększonej przy wyborze tego atutu.</p><p>Możesz usunąć aktywność <strong>Obrona na truciznę</strong> powiązaną z cechą, która <em>nie</em> została wybrana dla tego atutu.</p><p>Ostatecznie, ST rzutów obronnych dla aktywności zaklęć opiera się na cechach użytkownika broni, ale zawsze należy ją porównywać ze ST właściciela tej zdolności.</p></section>",
+      "activities": {
+        "Create Poison Doses": {
+          "name": "Stwórz dawki trucizny"
+        },
+        "Apply Poison": {
+          "name": "Nałóż truciznę"
+        },
+        "Poison Save (Dexterity)": {
+          "name": "Obrona na truciznę (Zręczność)",
+          "chatFlavor": "&Reference[Poisoned] w przypadku niepowodzenia"
+        },
+        "Poison Save (Intelligence)": {
+          "name": "Obrona na truciznę (Inteligencja)",
+          "chatFlavor": "&Reference[Poisoned] w przypadku niepowodzenia"
+        }
+      },
+      "effects": {
+        "Poisoned (Dex)": {
+          "name": "Zatruty (Zrc)",
+          "description": "<p>Gdy istota otrzyma obrażenia od zatrutego przedmiotu, musi wykonać rzut obronny [[/save ability=con]] (ST = 8 + modyfikator cechy zwiększonej przez ten atut + twoja Premia od Biegłości) lub otrzymuje 2k8 obrażeń od trucizn i do końca twojej następnej tury ma stan &amp;Reference[Poisoned].</p>",
+          "changes": {
+            "name": ", Zatruty"
+          }
+        },
+        "Poisoned (Int)": {
+          "name": "Zatruty (Int)",
+          "description": "<p>Gdy istota otrzyma obrażenia od zatrutego przedmiotu, musi wykonać rzut obronny [[/save ability=con]] (ST = 8 + modyfikator cechy zwiększonej przez ten atut + twoja Premia od Biegłości) lub otrzymuje 2k8 obrażeń od trucizn i do końca twojej następnej tury ma stan &amp;Reference[Poisoned].</p>",
+          "changes": {
+            "name": ", Zatruty"
+          }
+        }
+      }
+    },
+    "phbftPolearmMast": {
+      "name": "Mistrz broni drzewcowej",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Zręczność lub Siłę o 1, maksymalnie do 20.</p><p><strong>Drzewcowe uderzenie.</strong> Natychmiast po wykonaniu Akcji Ataku i zaatakowaniu Kijem Bojowym, Włócznią lub bronią posiadającą cechy Ciężka i Zasięg, możesz użyć Akcji Dodatkowej, aby wykonać atak wręcz przeciwko celowi przeciwległym końcem broni. Atak ten zadaje obrażenia obuchowe, a kość obrażeń tej broni dla tego ataku to k4.</p><p><strong>Reakcyjne uderzenie.</strong> Gdy trzymasz Drąg, Włócznię lub broń posiadającą cechy Ciężka i Zasięg, możesz użyć Reakcji, aby wykonać jeden atak wręcz przeciwko istocie, która wchodzi w zasięg tej broni.</p><section id=\"secret-sXGBEjProoBKCuAz\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Zdolność <strong>Uderzenie drzewcowe</strong> może być użyta do wykonania ataku i obrażeń w ramach Akcji Dodatkowej.</p><p>Zdolność <strong>Reakcyjne uderzenie</strong> może być użyta, jeśli śledzisz zużycie Reakcji.</p></section>",
+      "activities": {
+        "Pole Strike": {
+          "name": "Drzewcowe uderzenie"
+        },
+        "Reactive Strike": {
+          "name": "Reakcyjne uderzenie"
+        }
+      }
+    },
+    "phbftResilient00": {
+      "name": "Odporny",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cech.</strong> Wybierz jedną cechę, w której nie masz biegłości w rzutach obronnych. Zwiększ wybraną cechę o 1, maksymalnie do 20.</p><p><strong>Biegłość w Rzutach Obronych.</strong> Zyskujesz biegłość w rzutach obronnych z wybranej cechy.</p>",
+      "advancement": {
+        "3HD4zhXVzWoIF8Wh": {
+          "hint": "Wybierz jedną cechę, w której nie masz biegłości w rzutach obronnych. Zwiększ wybraną cechę o 1, maksymalnie do 20."
+        },
+        "Saving Throw Proficiency": {
+          "title": "Biegłość w rzutach obronnych",
+          "hint": "Zyskujesz biegłość w rzutach obronnych z cechy, którą zdecydowałeś się zwiększyć."
+        }
+      }
+    },
+    "phbftRitualCaste": {
+      "name": "Znawca rytuałów",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Inteligencję, Mądrość lub Charyzmę o 1, maksymalnie do 20.</p><p><strong>Czary rytualne.</strong> Wybierz liczbę czarów 1. kręgu równą twojej Premii od Biegłości (obecnie [[lookup @prof]]), które posiadają znacznik Rytuał. Zawsze masz te czary przygotowane i możesz je rzucać, używając dowolnych posiadanych Komórek Czarów. Cechą zaklinania dla tych czarów jest cecha zwiększona przez ten atut. Za każdym razem, gdy twoja Premia od Biegłości wzrasta, możesz dodać jeden dodatkowy czar 1. kręgu ze znacznikiem Rytuał do listy zawsze przygotowanych czarów z tej zdolności.</p><p><strong>Szybki rytuał.</strong> Dzięki tej korzyści możesz rzucić czar Rytuałowy, który masz przygotowany, używając jego standardowego czasu rzucania zamiast wydłużonego czasu dla Rytuału. Rzucenie czaru w ten sposób nie wymaga Komórki Czarów. Gdy użyjesz tej korzyści, nie możesz ponownie z niej skorzystać, dopóki nie zakończysz Długiego Odpoczynku.</p><section id=\"secret-k6S1sYFzUtw0k3RK\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Czary muszą zostać dodane ręcznie wraz ze zmianami.</p><p>Zdolność <strong>Szybki rytuał</strong> może być używana do śledzenia ograniczonego użycia między Długimi Odpoczynkami.</p></section>",
+      "activities": {
+        "Fast Ritual Cast": {
+          "name": "Rzut szybkiego rytuału"
+        }
+      }
+    },
+    "phbftSavageAttac": {
+      "name": "Brutalny napastnik",
+      "description": "<p>Wytrenowałeś się w zadawaniu wyjątkowo dotkliwych ciosów. Raz na turę, gdy trafisz cel bronią, możesz rzucić kośćmi obrażeń broni dwukrotnie i użyć dowolnego z wyników przeciwko celowi.</p>"
+    },
+    "phbftSentinel000": {
+      "name": "Wartownik",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Strażnik.</strong> Natychmiast po tym, jak istota w promieniu 5 stóp od ciebie wykona akcję Odstąpienie lub trafi cel inny niż ty atakiem, możesz wykonać przeciwko niej Atak Okazyjny.</p><p><strong>Powstrzymanie.</strong> Gdy trafisz istotę Atakiem Okazyjnym, jej Szybkość wynosi 0 do końca bieżącej tury.</p><section id=\"secret-KBMBiIjYcMO6SlX6\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt, który może być użyty do zmniejszenia Szybkości istoty do 0.</p></section>",
+      "effects": {
+        "Halted": {
+          "name": "Zatrzymany"
+        }
+      }
+    },
+    "phbftShadowTouch": {
+      "name": "Dotknięty przez Cień",
+      "description": "<p><em>Ogólny Atut (Wymaganie: Poziom 4+)</em></p><p>Twoje wystawienie na magię Shadowfell daje ci następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Inteligencję, Mądrość lub Charyzmę o 1, maksymalnie do 20.</p><p><strong>Magia Cienia.</strong> Wybierz jeden czar 1. kręgu ze szkoły Iluzji lub Nekromancji. Zawsze masz ten czar oraz czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplInvisibili]{Invisibility} przygotowany. Możesz rzucić każdy z tych czarów bez zużywania Komórki Czarów. Gdy raz rzucisz któryś z tych czarów w ten sposób, nie możesz go ponownie rzucić w ten sposób, dopóki nie zakończysz Długiego Odpoczynku. Możesz też rzucać te czary, używając posiadanych Komórek Czarów odpowiedniego kręgu. Cecha bazowa rzucania czaru dla tych zaklęć, to cechąazwiększona przez ten atut.</p><section class=\"secret\" id=\"secret-MHCfb0RA6g4rzo6K\"><p><strong>Notatka Foundry</strong></p><p>Czary muszą zostać ręcznie dodane do twojej karty postaci z tymi zmianami.</p><p>Aktywności <strong>Wykorzystaj użycie wybranego czaru</strong> oraz <strong>Wykorzystaj użycie niewidzialności</strong> mogą być używane do śledzenia darmowych użyć.</p></section>",
+      "activities": {
+        "Expend Chosen Spell's Use": {
+          "name": "Wykorzystaj użycie wybranego czaru"
+        },
+        "Expend Invisibility's Use": {
+          "name": "Wykorzystaj użycie niewidzialności"
+        }
+      }
+    },
+    "phbftSharpshoote": {
+      "name": "Strzelec wyborowy",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cechy.</strong> Zwiększ swoją Zręczność o 1, maksymalnie do 20.</p><p><strong>Ignorowanie osłon.</strong> Twoje ataki dystansowe bronią ignorują Połowiczną Osłonę i Trzy Czwarte Osłony.</p><p><strong>Strzelanie w zwarciu.</strong> Przebywanie w odległości 5 stóp od wroga nie nakłada Utrudnienia na twoje testy ataku bronią dystansową.</p><p><strong>Dalekie strzały.</strong> Atakowanie na dalekim zasięgu nie nakłada Utrudnienia na twoje testy ataku bronią dystansową.</p>"
+    },
+    "phbftShieldMaste": {
+      "name": "Mistrz tarczy",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę o 1, maksymalnie do 20.</p><p><strong>Uderzenie tarczą.</strong> Jeśli zaatakujesz istotę w promieniu 5 stóp od siebie jako część Akcji Ataku i trafisz bronią do walki wręcz, możesz natychmiast uderzyć cel Tarczą, jeśli ją trzymasz, zmuszając go do wykonania rzutu obronnego na Siłę (ST 8 + twój modyfikator Siły + Premia od Biegłości). W przypadku niepowodzenia możesz albo odepchnąć cel o 5 stóp od siebie, albo nałożyć na niego stan &amp;Reference[Prone]{Powalony} (twój wybór). Możesz skorzystać z tej korzyści tylko raz w każdej swojej turze.</p><p><strong>Osłona tarczą.</strong> Jeśli jesteś poddany efektowi, który pozwala ci wykonać rzut obronny na Zręczność, aby otrzymać tylko połowę obrażeń, możesz użyć Reakcji, aby nie otrzymać żadnych obrażeń w przypadku udanego rzutu obronnego, pod warunkiem że trzymasz Tarczę.</p><section id=\"secret-u778KRzbKiVH0Qos\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Zdolność <strong>Uderzenie tarczą</strong> zawiera rzut obronny oraz Aktywny Efekt, który może nałożyć stan Powalony.</p><p>Zdolność <strong>Interpose Shield</strong> może być użyta, jeśli śledzisz zużycie Reakcji.</p></section>",
+      "activities": {
+        "Shield Bash": {
+          "name": "Uderzenie tarczą",
+          "condition": "Jeśli trafisz istotę bronią do walki wręcz znajdującą się w odległości 5 stóp od ciebie w ramach Akcji Atak"
+        }
+      },
+      "effects": {
+        "Shield Bashed": {
+          "name": "Uderzony tarczą"
+        }
+      }
+    },
+    "phbftSkillExpert": {
+      "name": "Ekspert umiejętności",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie wartości cech.</strong> Zwiększ jedną wybraną cechę o 1, maksymalnie do 20.</p><p><strong>Biegłość w umiejętności.</strong> Zyskujesz biegłość w jednej wybranej umiejętności.</p><p><strong>Znawstwo.</strong> Wybierz jedną umiejętność, w której masz biegłość, ale nie masz Znawstwa. Zyskujesz Znawstwo w tej umiejętności.</p>",
+      "advancement": {
+        "Skill Proficiency": {
+          "title": "Biegłość w umiejętności",
+          "hint": "Zyskujesz biegłość w jednej umiejętności według własnego wyboru."
+        },
+        "Expertise": {
+          "title": "Znawstwo",
+          "hint": "Wybierz jedną umiejętność, w której masz biegłość, ale nie masz Znawstwa. Zyskujesz Znawstwo w tej umiejętności."
+        }
+      }
+    },
+    "phbftSkilled0000": {
+      "name": "Uzdolniony",
+      "description": "<p>Zyskujesz biegłość w dowolnej kombinacji trzech wybranych umiejętności lub narzędzi.</p><p><strong>Powtarzalny.</strong> Możesz wybrać ten atut więcej niż raz.</p>",
+      "advancement": {
+        "Skilled": {
+          "title": "Uzdolniony",
+          "hint": "Zyskujesz biegłość w dowolnej kombinacji trzech wybranych umiejętności lub narzędzi."
+        }
+      }
+    },
+    "phbftSkulker0000": {
+      "name": "Czatownik",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cech.</strong> Zwiększ swoją Zręczność o 1, maksymalnie do 20.</p><p><strong>Ślepowidzenie.</strong> Masz Ślepowidzenie o zasięgu 10 stóp.</p><p><strong>Mgła Wojny.</strong> Wykorzystujesz zamieszanie bitwy, zyskując Ułatwienie do każdego testu Zręczności (Skradanie się), który wykonujesz w ramach Akcji Ukrycia się podczas walki.</p><p><strong>Snajper.</strong> Jeśli wykonujesz test ataku podczas ukrycia się i rzut nie trafi, wykonanie tego ataku nie ujawnia twojej pozycji.</p><section class=\"secret\" id=\"secret-uYEwLh81hYSCN3nb\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność automatycznie przyznaje zasięg Ślepowidzenia.</p><p>Aktywny Efekt <strong>Mgła wojny</strong> automatyzuje Ułatwienie do testów Skradania się. Może być wyłączony poza walką.</p></section>",
+      "effects": {
+        "Skulker": {
+          "name": "Czatownik"
+        },
+        "Fog of War": {
+          "name": "Mgła wojny",
+          "description": "<p><strong>Mgła Wojny.</strong> Wykorzystujesz zamieszanie bitwy, zyskując Ułatwienie do każdego testu Zręczności (Skradanie się), który wykonujesz w ramach Akcji Ukrycia się podczas walki.</p>"
+        }
+      }
+    },
+    "phbftSlasher0000": {
+      "name": "Siepacz",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Podcięcie.</strong> Raz na turę, gdy trafisz istotę atakiem zadającym obrażenia cięte, możesz zmniejszyć jej Szybkość o 10 stóp do początku twojej następnej tury.</p><p><strong>Wzmocnione Trafienie Krytyczne.</strong> Gdy zadasz Trafienie Krytyczne, które zadaje obrażenia cięte istocie, ma ona Utrudnienie do rzutów ataku do początku twojej następnej tury.</p><section class=\"secret\" id=\"secret-PMVAtAZfo61ryOmO\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt, który może być używany do śledzenia efektów Podcięcia i Wzmocnionego Trafienia Krytycznego. Automatycznie zmniejsza Szybkość istoty o 10 stóp.</p></section>",
+      "effects": {
+        "Slashed": {
+          "name": "Cięty"
+        }
+      }
+    },
+    "phbftSpeedy00000": {
+      "name": "Szybki",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Zręczność lub Kondycję o 1, maksymalnie do 20.</p><p><strong>Zwiększenie Szybkości.</strong> Twoja &amp;Reference[Szybkość] zwiększa się o 10 stóp.</p><p><strong>Dash przez Trudny Teren.</strong> Gdy w swojej turze wykonujesz akcję Sprint, Trudny Teren nie wymaga od ciebie dodatkowego ruchu do końca tej tury.</p><p><strong>Zwinne ruchy.</strong> Ataki okazyjne przeciwko tobie mają Utrudnienie.</p><section class=\"secret\" id=\"secret-mmDZHieZYuvYT5LG\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność automatycznie zwiększa twoją Szybkość ruchu o 10 stóp. Jeśli posiadasz inne typy ruchu, musisz zaktualizować je ręcznie.</p></section>",
+      "effects": {
+        "Speedy": {
+          "name": "Szybki"
+        }
+      }
+    },
+    "phbftSpellSniper": {
+      "name": "Mistyczny strzelec",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Inteligencję, Mądrość lub Charyzmę o 1, maksymalnie do 20.</p><p><strong>Omijanie osłony.</strong> Twoje rzuty ataku dla czarów ignorują stan &amp;Reference[Half Cover] i &amp;Reference[Three-Quarters Cover].</p><p><strong>Rzucanie czarów w zwarciu.</strong> Przebywanie w odległości 5 stóp od wroga nie nakłada Utrudnienia na twoje rzuty ataku czarami.</p><p><strong>Zwiększony zasięg.</strong> Gdy rzucasz czar o zasięgu co najmniej 10 stóp, który wymaga wykonania rzutu ataku, możesz zwiększyć jego zasięg o 60 stóp.</p>"
+    },
+    "phbftTavernBrawl": {
+      "name": "Zabijaka",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Wzmocnione Uderzenie bez broni.</strong> Gdy trafisz Uderzeniem bez broni i zadasz obrażenia, możesz zadać obrażenia obuchowe równe 1k4 plus twój modyfikator Siły zamiast standardowych obrażeń Uderzenia bez broni.</p><p><strong>Przerzucanie obrażeń.</strong> Za każdym razem, gdy rzucasz kością obrażeń dla Uderzenia bez broni, możesz przerzucić kość, jeśli wyrzucisz 1, i musisz użyć nowego wyniku.</p><p><strong>Improwizowana broń.</strong> Masz biegłość w broni improwizowanej.</p><p><strong>Pchnięcie.</strong> Gdy trafisz istotę w Uderzeniem bez broni w ramach Akcji Ataku w swojej turze, możesz zadać jej obrażenia i jednocześnie odepchnąć ją o 5 stóp od siebie. Możesz skorzystać z tej korzyści tylko raz na turę<strong>.</strong></p><section class=\"secret\" id=\"secret-XllUmSpInybNueav\"><p><strong>Notatka Foundry</strong></p><p>Biegłość jest automatycznie przyznawana przez tę zdolność.</p><p>Zdolność <strong>Wzmocnione uderzenie bez broni</strong> uwzględnia zmianę obrażeń.</p></section>",
+      "activities": {
+        "Enhanced Unarmed Strike": {
+          "name": "Wzmocnione uderzenie bez broni"
+        }
+      },
+      "effects": {
+        "Tavern Brawler": {
+          "name": "Zabijaka"
+        }
+      }
+    },
+    "phbftTelekinetic": {
+      "name": "Telekinetyk",
+      "description": "<p></p><p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją wartość cechy Inteligencja, Mądrość lub Charyzma o 1, do maksymalnie 20.</p><p><strong>Mniejsza telekineza.</strong> Uczysz się zaklęcia @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMageHand00]. Możesz rzucić je bez komponentu Werbalnego lub somatycznego, możesz uczynić widmową dłoń niewidzialną, a jej zasięg oraz odległość, na jaką może się od ciebie oddalić, zwiększają się o 30 stóp, gdy go rzucasz. Cecha bazowa rzucania czarów tego zaklęcia to, ta zwiększona przez ten atut.</p><p><strong>Telekinetyczne pchnięcie.</strong> Akcją Dodatkową możesz telekinetycznie odepchnąć jedną istotę, którą widzisz w odległości 30 stóp od siebie. Gdy to robisz, cel musi wykonać rzut obronny na Siłę (ST 8 plus modyfikator cechy zwiększonej przez ten atut i twoja Premia do Biegłości) albo zostać przesunięty o 5 stóp w stronę ciebie lub od ciebie.</p><section class=\"secret\" id=\"secret-FXWRcCRBdJVUHls9\"><p><strong>Notatka Foundry</strong></p><p>Czar będzie musiał zostać ręcznie dodany do twojej karty z wprowadzonymi zmianami.</p><p>Aktywności <strong>Telekinetyczne pchnięcie</strong> mogą być użyte do rzutu obronnego z odpowiednią wartością cechy.</p></section>",
+      "activities": {
+        "Telekinetic Shove: Intelligence": {
+          "name": "Telekinetyczne pchnięcie: Inteligencja"
+        },
+        "Telekinetic Shove: Wisdom": {
+          "name": "Telekinetyczne pchnięcie: Mądrość"
+        },
+        "Telekinetic Shove: Charisma": {
+          "name": "Telekinetyczne pchnięcie: Charyzma"
+        }
+      }
+    },
+    "phbftTelepathic0": {
+      "name": "Telepata",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją wartość cechy Inteligencja, Mądrość lub Charyzma o 1, do maksymalnie 20.</p><p><strong>Wypowiedź telepatyczna.</strong> Możesz mówić telepatycznie do dowolnej istoty, którą widzisz w odległości 60 stóp od siebie. Twoje telepatyczne wypowiedzi są w języku, który znasz, a istota rozumie cię tylko wtedy, gdy zna ten język. Twoja komunikacja nie daje istocie możliwości telepatycznego odpowiadania ci.</p><p><strong>Wykrycie myśli.</strong> Zawsze masz przygotowany czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectThou]. Możesz rzucić go bez użycia komórki czaru lub komponentów czaru, ale musisz zakończyć Długi Odpoczynek, zanim ponownie rzucisz go w ten sposób. Możesz także rzucić go, używając komórek czarów odpowiedniego kręgu, które posiadasz. Twoja cecha bazowa rzucania czarów dla tego zaklęcia to cecha zwiększona przez ten atut.</p><section id=\"secret-unoZ1rgJPaBmd1Dn\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Zdolność <strong>Wykrycie myśli</strong> może być używana do śledzenia twojego darmowego użycia na Długi Odpoczynek. Czar będzie jednak musiał zostać ręcznie dodany do twojej karty.</p></section>",
+      "activities": {
+        "Telepathic Utterance": {
+          "name": "Wypowiedź telepatyczna"
+        },
+        "Expend Use": {
+          "name": "Wykorzystaj użycie"
+        }
+      }
+    },
+    "phbftTough000000": {
+      "name": "Twardziel",
+      "description": "<p>Maksimum twoich Punktów Wytrzymałości zwiększa się o wartość równą dwukrotności twojego poziomu postaci, gdy zyskujesz ten atut. Za każdym razem, gdy później zdobywasz poziom postaci, maksimum twoich Punktów Wytrzymałości zwiększa się o dodatkowe 2 Punkty Wytrzymałości.</p><section class=\"secret\" id=\"secret-DNpQNBPOozLkTF8R\"><p><strong>Notatka Foundry</strong></p><p>Zwiększenie maksimum Punktów Wytrzymałości jest obsługiwane automatycznie, gdy otrzymujesz ten atut i w miarę zdobywania poziomów.</p></section>",
+      "effects": {
+        "Tough": {
+          "name": "Twardziel"
+        }
+      }
+    },
+    "phbftWarCaster00": {
+      "name": "Mag bitewny",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Inteligencję, Mądrość lub Charyzmę o 1, maksymalnie do 20.</p><p><strong>Koncentracja.</strong> Masz Ułatwienie w rzutach obronnych na Kondycję wykonywanych w celu utrzymania Koncentracji.</p><p><strong>Reaktywne Rzucanie Czarów.</strong> Gdy istota prowokuje Atak Okazyjny, opuszczając twój zasięg, możesz użyć Reakcji, aby rzucić czar na tę istotę zamiast wykonywać Atak Okazyjny. Czar musi mieć czas rzucania wynoszący jedną akcję i musi mieć za cel wyłącznie tę istotę.</p><p><strong>Komponenty Somatyczne.</strong> Możesz wykonywać somatyczne komponenty czarów, nawet jeśli trzymasz broń lub Tarczę w jednej lub obu rękach.</p><section class=\"secret\" id=\"secret-jGAKlXdMPlzHFjTa\"><p><strong>Notatka Foundry</strong></p><p>Ten atut automatyzuje Ułatwienie w testach Koncentracji.</p></section>",
+      "effects": {
+        "War Caster": {
+          "name": "Mag bitewny"
+        }
+      }
+    },
+    "phbftWeaponMaste": {
+      "name": "Mistrz oręża",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cech.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Właściwość mistrzostwa.</strong> Twoje szkolenie w posługiwaniu się bronią pozwala ci korzystać z właściwości mistrzostwa jednego rodzaju prostej lub żołnierskiej broni według własnego wyboru, pod warunkiem że masz w niej biegłość. Po każdym Długim Odpoczynku możesz zmienić wybrany rodzaj broni na inny spełniający te warunki.</p>",
+      "advancement": {
+        "Mastery Property": {
+          "title": "Właściwość mistrzostwa",
+          "hint": "Twoje szkolenie w posługiwaniu się bronią pozwala ci korzystać z właściwości mistrzostwa jednego rodzaju prostej lub żołnierskiej broni według własnego wyboru, pod warunkiem, że masz w niej biegłość. Po każdym Długim Odpoczynku możesz zmienić wybrany rodzaj broni na inny spełniający te warunki."
+        }
+      }
+    }
+  }
+}
