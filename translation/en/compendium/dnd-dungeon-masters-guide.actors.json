@@ -1,14 +1,195 @@
 {
   "label": "Actors",
+  "mapping": {
+    "movement": {
+      "path": "system.attributes.movement",
+      "converter": "movement"
+    },
+    "items": {
+      "path": "items",
+      "converter": "items"
+    },
+    "token": {
+      "path": "prototypeToken.sight.range",
+      "converter": "sightRange"
+    },
+    "senses": {
+      "path": "system.attributes.senses",
+      "converter": "senses"
+    },
+    "tokenName": "prototypeToken.name",
+    "effects": {
+      "path": "effects",
+      "converter": "effects"
+    }
+  },
   "folders": {
-    "Hazards": "Hazards",
-    "Traps": "Traps",
     "Bastion Defenders": "Bastion Defenders",
     "Creatures": "Creatures",
-    "Magic Items": "Magic Items"
+    "Hazards": "Hazards",
+    "Magic Items": "Magic Items",
+    "Traps": "Traps"
   },
   "entries": {
-    "9EwAqmtAjtg5X7Lx": {
+    "Animal Lord": {
+      "name": "Animal Lord",
+      "tokenName": "Animal Lord"
+    },
+    "Animated Broom": {
+      "name": "Animated Broom",
+      "tokenName": "Animated Broom"
+    },
+    "Apparatus of Kwalish": {
+      "name": "Apparatus of Kwalish",
+      "tokenName": "Apparatus of Kwalish",
+      "description": "<p>To be used as a vehicle, the @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgApparatusOfKw]{apparatus} requires one pilot. While the apparatus’s hatch is closed, the compartment is airtight and watertight. The compartment holds enough air for 10 hours of breathing, divided by the number of breathing creatures inside.</p><p>The apparatus floats on water. It can also go underwater to a depth of 900 feet. Below that, the vehicle takes 2d6 Bludgeoning damage each minute from pressure.</p><p>A creature in the compartment can take a Utilize action to move as many as two of the apparatus’s levers up or down. After each use, a lever goes back to its neutral position. Each lever, from left to right, functions as shown in the Apparatus of Kwalish <span class=\"no-break\">Levers</span> table.</p><table><caption>Apparatus of Kwalish Levers</caption><thead><tr><td>Lever</td><td>Up</td><td>Down</td></tr></thead><tbody><tr><td>1</td><td>Legs extend, allowing the apparatus to walk and swim.</td><td>Legs retract, reducing the apparatus’s Speed and Swim Speed to 0 and making it unable to benefit from bonuses to speed.</td></tr><tr><td>2</td><td>Forward window shutter opens.</td><td>Forward window shutter closes.</td></tr><tr><td>3</td><td>Side window shutters open (two per side).</td><td>Side window shutters close (two per side).</td></tr><tr><td>4</td><td>Two claws extend from the front side of the apparatus.</td><td>The claws retract.</td></tr><tr><td>5</td><td>Each extended claw makes the following [[/item fmdWz6RQsUCHneZF]]{melee attack}: +8 to hit, reach 5 ft. <em>Hit:</em> 7 (2d6) Bludgeoning damage.</td><td>Each extended claw makes the following [[/item tgIjCBtGCZvMu8ij]]{melee attack}: +8 to hit, reach 5 ft. <em>Hit:</em> The target has the Grappled condition (escape DC 15).</td></tr><tr><td>6</td><td>The apparatus walks or swims forward provided its legs are extended.</td><td>The apparatus walks or swims backward provided its legs are extended.</td></tr><tr><td>7</td><td>The apparatus turns 90 degrees counterclockwise provided its legs are extended.</td><td>The apparatus turns 90 degrees clockwise provided its legs are extended.</td></tr><tr><td>8</td><td>Eyelike fixtures emit Bright Light in a 30-foot radius and Dim Light for an additional 30 feet.</td><td>The light turns off.</td></tr><tr><td>9</td><td>The apparatus sinks up to 20 feet if it’s in liquid.</td><td>The apparatus rises up to 20 feet if it’s in liquid.</td></tr><tr><td>10</td><td>The rear hatch unseals and opens.</td><td>The rear hatch closes and seals.</td></tr></tbody></table>",
+      "items": {
+        "Claw Attack": {
+          "name": "Claw Attack",
+          "description": "<p>Each extended claw makes the following melee attack: +8 to hit, reach 5 ft. <em>Hit:</em> 7 (2d6) Bludgeoning damage.</p>"
+        },
+        "Grapple Attack": {
+          "name": "Grapple Attack",
+          "description": "<p>Each extended claw makes the following melee attack: +8 to hit, reach 5 ft. <em>Hit:</em> The target has the &amp;Reference[Grappled] condition (escape DC 15).</p>",
+          "activities": {
+            "attack": {
+              "chatFlavor": "&Reference[grappled] on hit"
+            },
+            "Grapple Escape Check": {
+              "name": "Grapple Escape Check"
+            }
+          }
+        }
+      },
+      "effects": {
+        "Legs Extended": {
+          "name": "Legs Extended"
+        },
+        "Claws Extended": {
+          "name": "Claws Extended"
+        },
+        "Forward Shutter Open": {
+          "name": "Forward Shutter Open"
+        },
+        "Side Shutters Open": {
+          "name": "Side Shutters Open"
+        },
+        "Rear Hatch Open": {
+          "name": "Rear Hatch Open"
+        },
+        "Lights Activated": {
+          "name": "Lights Activated",
+          "description": "<p>Eyelike fixtures emit Bright Light in a 30-foot radius and Dim Light for an additional 30 feet.</p>"
+        }
+      }
+    },
+    "Avatar of Death": {
+      "name": "Avatar of Death",
+      "tokenName": "Avatar of Death",
+      "description": "<p>@Embed[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgDmtSkull00000]{Skull (Deck of Many Things)}</p>",
+      "items": {
+        "Incorporeal Movement": {
+          "name": "Incorporeal Movement",
+          "description": "<p>The avatar can move through other creatures and objects as if they were &amp;Reference[DifficultTerrain]. It takes 5 (1d10) Force damage if it ends its turn inside <span class=\"no-break\">an object.</span></p>",
+          "activities": {
+            "Self Damage": {
+              "name": "Self Damage",
+              "condition": "the Avatarends its turn inside an object."
+            }
+          }
+        },
+        "Multiattack": {
+          "name": "Multiattack",
+          "description": "<p>The avatar makes a number of [[/item .dmgaoiReapingScy]]{Reaping Scythe} attacks equal to half the summoner’s Proficiency Bonus (ro<span class=\"no-break\">unded up).</span></p><p>[[ceil(@prof/2)]]{Number of Attacks}</p>",
+          "activities": {
+            "Action": {
+              "name": "Action"
+            }
+          }
+        },
+        "Reaping Scythe": {
+          "name": "Reaping Scythe",
+          "description": "<p><em>Melee Attack Roll:</em> Automatic hit, reach 5 ft. <em>Hit:</em> 7 ( <span class=\"no-break\">1d8 + 3</span> ) Slashing damage plus 4 (1d8) <span class=\"no-break\">Necrotic</span> <span class=\"no-break\">damage.</span></p>",
+          "activities": {
+            "Attack": {
+              "name": "Attack",
+              "chatFlavor": "Automatic hit"
+            }
+          }
+        }
+      }
+    },
+    "Badger": {
+      "name": "Badger",
+      "tokenName": "Badger",
+      "items": {
+        "Bite": {
+          "name": "Bite",
+          "description": "<p> <em>Melee Attack Roll:</em> +2, reach 5 ft. <em>Hit:</em> 1 Piercing damage.</p>"
+        }
+      }
+    },
+    "Bastion Defender (Bow)": {
+      "name": "Bastion Defender (Bow)",
+      "tokenName": "Bastion Defender (Bow)",
+      "items": {
+        "Leather Armor": {
+          "name": "Leather Armor",
+          "description": "<p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p>"
+        },
+        "Keen Hearing and Sight": {
+          "name": "Keen Hearing and Sight",
+          "description": "<p>The scout has advantage on Wisdom (Perception) checks that rely on hearing or sight.</p>"
+        },
+        "Multiattack": {
+          "name": "Multiattack",
+          "description": "<p>The scout makes two melee attacks or two ranged attacks.</p>"
+        },
+        "Shortsword": {
+          "name": "Shortsword",
+          "description": "<section class=\"secret\">\n<p><em>Melee Weapon Attack:</em><strong>+4 to hit,</strong>, <strong>5 ft.,</strong> one target. Hit: <strong>5 (1d6 + 2) <em>piercing damage</em></strong>.</p></section>\n<p>The Scout attacks with their Shortsword.</p>"
+        },
+        "Longbow": {
+          "name": "Longbow",
+          "description": "<section class=\"secret\">\n<p>Ranged Weapon Attack: +4 to hit, ranged 150/600 ft., one target. Hit: <strong>6 (1d8 + 2) <em>piercing damage</em></strong>.</p></section>\n<p>The Scout attacks with their Longbow.</p>"
+        }
+      }
+    },
+    "Bastion Defender (Knight)": {
+      "name": "Bastion Defender (Knight)",
+      "tokenName": "Bastion Defender (Knight)",
+      "items": {
+        "Plate Armor": {
+          "name": "Plate Armor",
+          "description": "<p>Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.</p>"
+        },
+        "Multiattack": {
+          "name": "Multiattack",
+          "description": "<p>The knight makes two melee attacks.</p>"
+        },
+        "Greatsword": {
+          "name": "Greatsword",
+          "description": "<section class=\"secret\">\n<p><em>Melee Weapon Attack:</em><strong>+5 to hit,</strong>, <strong>5 ft.,</strong> one target. Hit: <strong>10 (2d6 + 3) <em>slashing damage</em></strong>.</p></section>\n<p>The Knight attacks with its Greatsword.</p>"
+        },
+        "Heavy Crossbow": {
+          "name": "Heavy Crossbow",
+          "description": "<section class=\"secret\">\n<p>Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: <strong>5 (1d10) <em>piercing damage</em></strong>.</p></section>\n<p>The Knight attacks with its Heavy Crossbow.</p>"
+        },
+        "Leadership": {
+          "name": "Leadership",
+          "description": "<p>For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 ft. of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated.</p>"
+        },
+        "Parry": {
+          "name": "Parry",
+          "description": "<section class=\"secret\">\n<p>The knight adds 2 to its <strong>AC</strong> against one melee Attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon.</p>\n</section>\n<p>The knight adds 2 to its <strong>AC</strong> against one melee Attack that would hit it.</p>"
+        },
+        "Brave": {
+          "name": "Brave",
+          "description": "<p>The knight has<strong> advantage </strong>on saving throws against being frightened.</p>"
+        }
+      }
+    },
+    "Bastion Defender (Mounted)": {
       "name": "Bastion Defender (Mounted)",
       "tokenName": "Bastion Defender (Mounted)",
       "items": {
@@ -26,7 +207,25 @@
         }
       }
     },
-    "ACNvyAA9yRo9PJ92": {
+    "Bastion Defender (Shield)": {
+      "name": "Bastion Defender (Shield)",
+      "tokenName": "Guard",
+      "items": {
+        "Chain Shirt": {
+          "name": "Chain Shirt",
+          "description": "<p>Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.</p>"
+        },
+        "Shield": {
+          "name": "Shield",
+          "description": "<p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>"
+        },
+        "Spear": {
+          "name": "Spear",
+          "description": "<section class=\"secret\">\n<p>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: <strong>4 (1d6 + 1) <em>piercing damage</em></strong> or <strong>5 (1d8 + 1) <em>piercing damage</em></strong> if used with two hands to make a melee attack.</p></section>\n<p>The Guard attacks with its Spear.</p>"
+        }
+      }
+    },
+    "Bastion Defender (Spear)": {
       "name": "Bastion Defender (Spear)",
       "tokenName": "Bastion Defender (Spear)",
       "items": {
@@ -44,7 +243,466 @@
         }
       }
     },
-    "BNJCponnrcqBAxpI": {
+    "Bastion Defender (Sword)": {
+      "name": "Bastion Defender (Sword)",
+      "tokenName": "Bastion Defender (Sword)",
+      "items": {
+        "Chain Shirt": {
+          "name": "Chain Shirt",
+          "description": "<p>Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.</p>"
+        },
+        "Longsword": {
+          "name": "Longsword",
+          "description": "<p>A lengthy straight blade designed for slashing foes, the longsword is a highly versatile weapon that may also be wielded with two hands for more punishing strikes.</p>"
+        }
+      }
+    },
+    "Black Bear": {
+      "name": "Black Bear",
+      "tokenName": "Black Bear",
+      "items": {
+        "Multiattack": {
+          "name": "Multiattack",
+          "description": "<p>The bear makes two [[/item Rend]] attacks.</p>",
+          "activities": {
+            "Activate": {
+              "name": "Activate"
+            }
+          }
+        },
+        "Rend": {
+          "name": "Rend",
+          "description": "<p> <em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 5 (1d6 + 2) Slashing damage.</p>"
+        }
+      }
+    },
+    "Blob of Annihilation": {
+      "name": "Blob of Annihilation",
+      "tokenName": "Blob of Annihilation"
+    },
+    "Brown Bear": {
+      "name": "Brown Bear",
+      "tokenName": "Brown Bear",
+      "items": {
+        "Multiattack": {
+          "name": "Multiattack",
+          "description": "<p>The bear makes one [[/item Bite]] attack and one [[/item Claw]] attack.</p>",
+          "activities": {
+            "Activate": {
+              "name": "Activate"
+            }
+          }
+        },
+        "Bite": {
+          "name": "Bite",
+          "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 7 (1d8 + 3) Piercing damage.</p>"
+        },
+        "Claw": {
+          "name": "Claw",
+          "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Slashing damage, and the target has the &amp;Reference[prone] condition if it is Huge or smaller.</p>"
+        }
+      }
+    },
+    "Brown Mold": {
+      "name": "Brown Mold",
+      "tokenName": "Brown Mold",
+      "items": {
+        "Description/Effects": {
+          "name": "Description/Effects",
+          "description": "<p><em>Deadly Hazard (Levels 5–10) or Nuisance Hazard (Levels 11–16)</em></p><p>Brown mold resembles a furry, light-brown carpet. This fungus feeds on warmth, drawing heat from anything around itself. One patch of brown mold covers a 10-foot square, and the temperature within 30 feet of it is always frigid.</p><p>When a creature enters a space within 5 feet of the mold for the first time on a turn or starts its turn there, the creature makes a DC 12 Constitution saving throw, taking 22 (4d10) Cold damage on a failed save or half as much damage on a successful one.</p><p>Brown mold has Immunity to Fire damage, and any source of fire brought within 5 feet of it causes the mold to instantly expand across a surface and toward the fire, creating a new patch that covers a 10-foot square. A patch of brown mold exposed to an effect that deals any amount of Cold damage is destroyed instantly.</p>",
+          "activities": {
+            "10-Foot Square": {
+              "name": "10-Foot Square"
+            }
+          }
+        }
+      }
+    },
+    "Camel": {
+      "name": "Camel",
+      "tokenName": "Camel",
+      "items": {
+        "Bite": {
+          "name": "Bite",
+          "description": "<p> <em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 4 (1d4 + 2) Bludgeoning damage.</p>"
+        }
+      }
+    },
+    "Carpet of Flying (3 by 5 ft.)": {
+      "name": "Carpet of Flying (3 by 5 ft.)",
+      "tokenName": "Carpet of Flying",
+      "description": "<p>@Embed[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgCarpetOfFlyin]</p>",
+      "items": {
+        "Carry Weight Adjustment": {
+          "name": "Carry Weight Adjustment",
+          "description": "<p>This item serves to offset the carpet's computed carry weight capacity in accordance with the carpet's dimensions.</p>"
+        }
+      },
+      "effects": {
+        "Overloaded": {
+          "name": "Overloaded",
+          "description": "<p>The carpet's Fly Speed is halved when carrying more than its normal capacity.</p>"
+        }
+      }
+    },
+    "Carpet of Flying (4 by 6 ft.)": {
+      "name": "Carpet of Flying (4 by 6 ft.)",
+      "tokenName": "Carpet of Flying",
+      "items": {
+        "Carry Weight Adjustment": {
+          "name": "Carry Weight Adjustment",
+          "description": "<p>This item serves to offset the carpet's computed carry weight capacity in accordance with the carpet's dimensions.</p>"
+        }
+      },
+      "effects": {
+        "Overloaded": {
+          "name": "Overloaded",
+          "description": "<p>The carpet's Fly Speed is halved when carrying more than its normal capacity.</p>"
+        }
+      }
+    },
+    "Carpet of Flying (5 by 7 ft.)": {
+      "name": "Carpet of Flying (5 by 7 ft.)",
+      "tokenName": "Carpet of Flying",
+      "effects": {
+        "Overloaded": {
+          "name": "Overloaded",
+          "description": "<p>The carpet's Fly Speed is halved when carrying more than its normal capacity.</p>"
+        }
+      }
+    },
+    "Carpet of Flying (6 by 9 ft.)": {
+      "name": "Carpet of Flying (6 by 9 ft.)",
+      "tokenName": "Carpet of Flying",
+      "items": {
+        "Carry Weight Adjustment": {
+          "name": "Carry Weight Adjustment",
+          "description": "<p>This item serves to offset the carpet's computed carry weight capacity in accordance with the carpet's dimensions.</p>"
+        }
+      },
+      "effects": {
+        "Overloaded": {
+          "name": "Overloaded",
+          "description": "<p>The carpet's Fly Speed is halved when carrying more than its normal capacity.</p>"
+        }
+      }
+    },
+    "Collapsing Roof Trap": {
+      "name": "Collapsing Roof Trap",
+      "tokenName": "Collapsing Roof Trap",
+      "items": {
+        "Trigger Trap": {
+          "name": "Trigger Trap",
+          "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Deadly Trap (Levels 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Trigger:</strong> A creature crosses a trip wire</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Duration:</strong> Instantaneous</p><p>This trap uses a trip wire to collapse an unstable section of ceiling. The trip wire is 3 inches off the ground and stretches between two weak supports that topple when the trip wire is pulled.</p><p>The first creature that crosses the trip wire causes the supports to topple and the unstable section of ceiling to collapse. Each creature beneath the unstable section of ceiling must succeed on a DC 13 Dexterity saving throw, taking 11 (2d10) Bludgeoning damage on a failed save or half as much damage on a successful one. Rubble from the collapse turns the trapped area into &amp;Reference[Difficult Terrain].</p><p><em><strong>Detect and Disarm.</strong></em> As a Search action, a creature can examine the trapped area and make a [[/check prc 11]] check, detecting the trip wire and the unstable section of ceiling on a successful check. Once detected, the trip wire can be easily cut or avoided (no ability check required).</p><p><em><strong>At Higher Levels.</strong></em> You can scale the trap for higher levels by increasing the damage and the save DC, as shown in the following table.</p><table><thead><tr><th><p>Levels</p></th><th><p>Bludgeoning Damage</p></th><th><p>Save DC</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>22 (4d10)</p></td><td><p>15</p></td></tr><tr><td><p>11–16</p></td><td><p>55 (10d10)</p></td><td><p>17</p></td></tr><tr><td><p>17–20</p></td><td><p>99 (18d10)</p></td><td><p>19</p></td></tr></tbody></table></div>",
+          "activities": {
+            "Trigger (1-4)": {
+              "name": "Trigger (1-4)"
+            },
+            "Trigger (5-10)": {
+              "name": "Trigger (5-10)"
+            },
+            "Trigger (11-16)": {
+              "name": "Trigger (11-16)"
+            },
+            "Trigger (17-20)": {
+              "name": "Trigger (17-20)"
+            }
+          }
+        }
+      }
+    },
+    "Colossus": {
+      "name": "Colossus",
+      "tokenName": "Colossus"
+    },
+    "Dancing Sword": {
+      "name": "Dancing Sword",
+      "tokenName": "Dancing Sword",
+      "items": {
+        "Greatsword": {
+          "name": "Greatsword",
+          "activities": {
+            "Command: Move and Attack": {
+              "name": "Command: Move and Attack",
+              "condition": "Bonus Action taken by attuned character"
+            }
+          }
+        },
+        "Longsword": {
+          "name": "Longsword",
+          "activities": {
+            "Command: Move and Attack": {
+              "name": "Command: Move and Attack",
+              "condition": "Bonus Action taken by attuned character"
+            }
+          }
+        },
+        "Rapier": {
+          "name": "Rapier",
+          "activities": {
+            "Command: Move and Attack": {
+              "name": "Command: Move and Attack",
+              "condition": "Bonus Action taken by attuned character"
+            }
+          }
+        },
+        "Scimitar": {
+          "name": "Scimitar",
+          "activities": {
+            "Command: Move and Attack": {
+              "name": "Command: Move and Attack",
+              "condition": "Bonus Action taken by attuned character"
+            }
+          }
+        },
+        "Shortsword": {
+          "name": "Shortsword",
+          "activities": {
+            "Command: Move and Attack": {
+              "name": "Command: Move and Attack",
+              "condition": "Bonus Action taken by attuned character"
+            }
+          }
+        }
+      }
+    },
+    "Dire Wolf": {
+      "name": "Dire Wolf",
+      "tokenName": "Dire Wolf",
+      "items": {
+        "Pack Tactics": {
+          "name": "Pack Tactics",
+          "description": "<p>The wolf has Advantage on an attack roll against a creature if at least one of the wolf’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>"
+        },
+        "Bite": {
+          "name": "Bite",
+          "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit: </em>8 (1d10 + 3) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Huge or smaller.</p>"
+        }
+      }
+    },
+    "Driftglobe (Daylight)": {
+      "name": "Driftglobe (Daylight)",
+      "tokenName": "Driftglobe",
+      "description": "<p>@Embed[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgDriftglobe000 caption=false]</p>"
+    },
+    "Driftglobe (Light)": {
+      "name": "Driftglobe (Light)",
+      "tokenName": "Driftglobe",
+      "description": "<p>@Embed[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgDriftglobe000 caption=false]</p>"
+    },
+    "Elemental Cataclysm": {
+      "name": "Elemental Cataclysm",
+      "tokenName": "Elemental Cataclysm"
+    },
+    "Elephant": {
+      "name": "Elephant",
+      "tokenName": "Elephant",
+      "items": {
+        "Multiattack": {
+          "name": "Multiattack",
+          "description": "<p>The elephant makes two [[/item Gore]] attacks.</p>",
+          "activities": {
+            "Activate": {
+              "name": "Activate"
+            }
+          }
+        },
+        "Gore": {
+          "name": "Gore",
+          "description": "<p><em>Melee Attack Roll: </em>+8, reach 5 ft. <em>Hit:</em> 15 (2d8 + 6) Piercing damage. If the elephant moved at least 20 feet straight toward the target immediately before the hit, the target also has the &amp;Reference[prone] condition.</p>"
+        },
+        "Trample": {
+          "name": "Trample",
+          "description": "<p> <em>Dexterity Saving Throw:</em> DC 16, one creature within 5 feet that has the Prone condition. <em>Failure:</em> 17 (2d10 + 6) Bludgeoning damage. <em>Success:</em> Half damage.</p>"
+        }
+      }
+    },
+    "Empyrean": {
+      "name": "Empyrean",
+      "tokenName": "Empyrean"
+    },
+    "Falling Net Trap": {
+      "name": "Falling Net Trap",
+      "tokenName": "Falling Net Trap",
+      "items": {
+        "Set & Trigger Trap": {
+          "name": "Set & Trigger Trap",
+          "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Nuisance Trap (Levels 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Trigger:</strong> A creature crosses a trip wire</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Duration:</strong> Instantaneous</p><p>A falling net trap uses a trip wire to release a weighted, 10-foot-square Net suspended from the ceiling. The trip wire is 3 inches off the ground and stretches between two columns or trees.</p><p>The first creature that crosses the trip wire causes the Net to fall on it. The target must succeed on a DC 10 Dexterity saving throw or have the &amp;Reference[Restrained] condition until it escapes. The target succeeds automatically if it’s Huge or larger. A creature can take an action to make a DC 10 Strength (Athletics) check, freeing itself or another creature within its reach from the Net on a successful check.</p><p><em><strong>Detect and Disarm.</strong></em> As a Search action, a creature can examine the trapped area and make a [[/check prc 11]] check, detecting the trip wire and the suspended @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagNet00000000]{Net} on a successful check. Once detected, the trip wire can be easily cut or avoided (no ability check required).</p><p><em><strong>Destroy the Net.</strong></em> Reducing the Net to 0 Hit Points frees any creature trapped in it (see the <em>Player’s Handbook</em> for the Net’s statistics).</p><p><em><strong>Set the Trap.</strong></em> A creature that has Thieves’ Tools and all the trap’s components (including a Net) can try to set a falling net trap, doing so with a successful DC 13 Dexterity (Sleight of Hand) check. Each attempt to set this trap takes 10 minutes.</p><p><em><strong>At Higher Levels.</strong></em> You can scale the trap for higher levels by increasing the weight of the Net, which increases the save DC and the DC of the Strength (Athletics) check as follows: DC 12 at levels 5–10, DC 14 at levels 11–16, or DC 16 at levels 17–20.</p></div>",
+          "activities": {
+            "Trigger (1-4)": {
+              "name": "Trigger (1-4)"
+            },
+            "Trigger (5-10)": {
+              "name": "Trigger (5-10)"
+            },
+            "Trigger (11-16)": {
+              "name": "Trigger (11-16)"
+            },
+            "Trigger (17-20)": {
+              "name": "Trigger (17-20)"
+            },
+            "Escape Check (1-4)": {
+              "name": "Escape Check (1-4)"
+            },
+            "Escape Check (5-10)": {
+              "name": "Escape Check (5-10)"
+            },
+            "Escape Check (11-16)": {
+              "name": "Escape Check (11-16)"
+            },
+            "Escape Check (17-20)": {
+              "name": "Escape Check (17-20)"
+            },
+            "Set Trap": {
+              "name": "Set Trap"
+            }
+          },
+          "effects": {
+            "Captured": {
+              "name": "Captured"
+            }
+          }
+        }
+      }
+    },
+    "Fire Casting Statue Trap": {
+      "name": "Fire Casting Statue Trap",
+      "tokenName": "Fire Casting Statue Trap",
+      "items": {
+        "Trigger Trap": {
+          "name": "Trigger Trap",
+          "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Deadly Trap (Levels 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Trigger:</strong> A creature moves onto a pressure plate</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Duration:</strong> Instantaneous, and the trap resets at the start of the next turn</p><p>When a creature moves onto this trap’s pressure plate for the first time on a turn or starts its turn there, a nearby statue exhales a 15-foot Cone of magical flame. The statue can look like anything, such as a dragon or a wizard. Each creature in the Cone must succeed on a DC 15 Dexterity saving throw, taking 11 (2d10) Fire damage on a failed save or half as much damage on a successful one.</p><p><em><strong>Detect and Disarm.</strong></em> A <em>Detect Magic</em> spell reveals an aura of Evocation magic around the statue. As a Search action, a creature within 5 feet of the statue can examine it and make a [[/check DC prc 10]] check, detecting a tiny glyph on the statue on a successful check. Once the glyph is found, a character can take a Study action to examine it and make a [[/check arc 15]] check, ascertaining that the glyph means “fire” on a successful check. As an action, a character can use a sharp tool to deface the glyph, which disarms the trap.</p><p>As a Search action, a creature can examine the section of floor that forms the pressure plate and make a [[/check prc 15]] check, detecting the pressure plate on a successful check. Wedging an Iron Spike or similar object under the pressure plate prevents the trap from triggering.</p><p><em><strong>At Higher Levels.</strong></em> You can scale the trap for higher levels by increasing the damage and the area of effect, as shown in the following table.</p><table><thead><tr><th><p>Levels</p></th><th><p>Fire Damage</p></th><th><p>Area of Effect</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>22 (4d10)</p></td><td><p>30-foot Cone</p></td></tr><tr><td><p>11–16</p></td><td><p>55 (10d10)</p></td><td><p>60-foot Cone</p></td></tr><tr><td><p>17–20</p></td><td><p>99 (18d10)</p></td><td><p>120-foot Cone</p></td></tr></tbody></table></div>",
+          "activities": {
+            "Trigger (1-4)": {
+              "name": "Trigger (1-4)"
+            },
+            "Trigger (5-10)": {
+              "name": "Trigger (5-10)"
+            },
+            "Trigger (11-16)": {
+              "name": "Trigger (11-16)"
+            },
+            "Trigger (17-20)": {
+              "name": "Trigger (17-20)"
+            }
+          }
+        }
+      }
+    },
+    "Fireball Fungus": {
+      "name": "Fireball Fungus",
+      "tokenName": "Fireball Fungus",
+      "items": {
+        "Description/Effects": {
+          "name": "Description/Effects",
+          "description": "<p><em>Deadly Hazard (Levels 5–10)</em></p><p>A fireball fungus is a Small, inanimate mushroom that can grow anywhere fungi are found in abundance. Its luminous, orange cap sheds Bright Light in a 15-foot radius and Dim Light for an additional 15 feet.</p><p>A fireball fungus has AC 10, HP 6, and to Immunity Psychic damage. When it drops to 0 Hit Points, the fungus explodes as if a @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireball00]{Fireball} spell (save DC 15) had been centered on it.</p><p><em><strong>At Higher Levels.</strong></em> The explosion of a fireball fungus causes other fireball fungi in the area of effect to explode as well. You can scale the hazard for higher levels by adding one additional fungus at levels 11–16 or three additional fungi at levels 17–20.</p>"
+        }
+      }
+    },
+    "Floating Whip": {
+      "name": "Floating Whip",
+      "tokenName": "Floating Whip",
+      "items": {
+        "Melee Spell Attack": {
+          "name": "Melee Spell Attack"
+        }
+      }
+    },
+    "Frog": {
+      "name": "Frog",
+      "tokenName": "Frog",
+      "items": {
+        "Amphibious": {
+          "name": "Amphibious",
+          "description": "<p> The frog can breathe air and water.</p>"
+        },
+        "Standing Leap": {
+          "name": "Standing Leap",
+          "description": "<p>The frog’s Long Jump is up to 10 feet and its High Jump is up to 5 feet with or without a running start.</p>"
+        },
+        "Bite": {
+          "name": "Bite",
+          "description": "<p> <em>Melee Attack Roll:</em> +3, reach 5 ft. <em>Hit:</em> 1 Piercing damage.</p>"
+        }
+      }
+    },
+    "Giant Badger": {
+      "name": "Giant Badger",
+      "tokenName": "Giant Badger",
+      "items": {
+        "Bite": {
+          "name": "Bite",
+          "description": "<p> <em>Melee Attack Roll:</em> +3, reach 5 ft. <em>Hit:</em> 6 (2d4 + 1) Piercing damage.</p>"
+        }
+      }
+    },
+    "Giant Fly": {
+      "name": "Giant Fly",
+      "tokenName": "Giant Fly"
+    },
+    "Giant Goat": {
+      "name": "Giant Goat",
+      "tokenName": "Giant Goat",
+      "items": {
+        "Ram": {
+          "name": "Ram",
+          "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>6 (1d6 + 3) Bludgeoning damage. If the goat moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 5 (2d4) Bludgeoning damage and, if it is Huge or smaller, has the &amp;Reference[prone] condition.</p>",
+          "activities": {
+            "Charging Attack": {
+              "name": "Charging Attack"
+            }
+          }
+        }
+      }
+    },
+    "Giant Spider": {
+      "name": "Giant Spider",
+      "tokenName": "Giant Spider",
+      "items": {
+        "Spider Climb": {
+          "name": "Spider Climb",
+          "description": "<p>The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>"
+        },
+        "Web Walker": {
+          "name": "Web Walker",
+          "description": "<p> The spider ignores movement restrictions caused by webs, and it knows the location of any other creature in contact with the same web.</p>"
+        },
+        "Bite": {
+          "name": "Bite",
+          "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit:</em> 7 (1d8 + 3) Piercing damage plus 7 (2d6) Poison damage.</p>"
+        },
+        "Web": {
+          "name": "Web",
+          "description": "<p><em>Dexterity Saving Throw:</em> DC 13, one creature the spider can see within 60 feet. <em>Failure:</em> The target has the &amp;Reference[restrained] condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Poison and Psychic damage).</p>"
+        }
+      }
+    },
+    "Giant Weasel": {
+      "name": "Giant Weasel",
+      "tokenName": "Giant Weasel",
+      "items": {
+        "Bite": {
+          "name": "Bite",
+          "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Piercing damage.</p>"
+        }
+      }
+    },
+    "Goat": {
+      "name": "Goat",
+      "tokenName": "Goat",
+      "items": {
+        "Ram": {
+          "name": "Ram",
+          "description": "<p><em>Melee Attack Roll: </em>+2, reach 5 ft. <em>Hit: </em>1 Bludgeoning damage, or the goat deals 2 (1d4) Bludgeoning damage if it moved at least 20 feet straight toward the target immediately before the hit.</p>",
+          "activities": {
+            "Charging Attack": {
+              "name": "Charging Attack"
+            }
+          }
+        }
+      }
+    },
+    "Goat of Terror": {
       "name": "Goat of Terror",
       "tokenName": "Goat of Terror",
       "items": {
@@ -91,505 +749,7 @@
         }
       }
     },
-    "JTy2PGDMFDnMf2nt": {
-      "name": "Bastion Defender (Shield)",
-      "tokenName": "Guard",
-      "items": {
-        "Chain Shirt": {
-          "name": "Chain Shirt",
-          "description": "<p>Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.</p>"
-        },
-        "Shield": {
-          "name": "Shield",
-          "description": "<p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>"
-        },
-        "Spear": {
-          "name": "Spear",
-          "description": "<section class=\"secret\">\n<p>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: <strong>4 (1d6 + 1) <em>piercing damage</em></strong> or <strong>5 (1d8 + 1) <em>piercing damage</em></strong> if used with two hands to make a melee attack.</p></section>\n<p>The Guard attacks with its Spear.</p>"
-        }
-      }
-    },
-    "YEFJjrSnvnSBFYOe": {
-      "name": "Bastion Defender (Bow)",
-      "tokenName": "Bastion Defender (Bow)",
-      "items": {
-        "Leather Armor": {
-          "name": "Leather Armor",
-          "description": "<p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p>"
-        },
-        "Keen Hearing and Sight": {
-          "name": "Keen Hearing and Sight",
-          "description": "<p>The scout has advantage on Wisdom (Perception) checks that rely on hearing or sight.</p>"
-        },
-        "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The scout makes two melee attacks or two ranged attacks.</p>"
-        },
-        "Shortsword": {
-          "name": "Shortsword",
-          "description": "<section class=\"secret\">\n<p><em>Melee Weapon Attack:</em><strong>+4 to hit,</strong>, <strong>5 ft.,</strong> one target. Hit: <strong>5 (1d6 + 2) <em>piercing damage</em></strong>.</p></section>\n<p>The Scout attacks with their Shortsword.</p>"
-        },
-        "Longbow": {
-          "name": "Longbow",
-          "description": "<section class=\"secret\">\n<p>Ranged Weapon Attack: +4 to hit, ranged 150/600 ft., one target. Hit: <strong>6 (1d8 + 2) <em>piercing damage</em></strong>.</p></section>\n<p>The Scout attacks with their Longbow.</p>"
-        }
-      }
-    },
-    "dmg3x5CarpetofFl": {
-      "name": "Carpet of Flying (3 by 5 ft.)",
-      "tokenName": "Carpet of Flying",
-      "description": "<p>@Embed[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgCarpetOfFlyin]</p>",
-      "items": {
-        "Carry Weight Adjustment": {
-          "name": "Carry Weight Adjustment",
-          "description": "<p>This item serves to offset the carpet's computed carry weight capacity in accordance with the carpet's dimensions.</p>"
-        }
-      },
-      "effects": {
-        "Overloaded": {
-          "name": "Overloaded",
-          "description": "<p>The carpet's Fly Speed is halved when carrying more than its normal capacity.</p>"
-        }
-      }
-    },
-    "dmg4x6CarpetofFl": {
-      "name": "Carpet of Flying (4 by 6 ft.)",
-      "tokenName": "Carpet of Flying",
-      "items": {
-        "Carry Weight Adjustment": {
-          "name": "Carry Weight Adjustment",
-          "description": "<p>This item serves to offset the carpet's computed carry weight capacity in accordance with the carpet's dimensions.</p>"
-        }
-      },
-      "effects": {
-        "Overloaded": {
-          "name": "Overloaded",
-          "description": "<p>The carpet's Fly Speed is halved when carrying more than its normal capacity.</p>"
-        }
-      }
-    },
-    "dmg5x7CarpetofFl": {
-      "name": "Carpet of Flying (5 by 7 ft.)",
-      "tokenName": "Carpet of Flying",
-      "effects": {
-        "Overloaded": {
-          "name": "Overloaded",
-          "description": "<p>The carpet's Fly Speed is halved when carrying more than its normal capacity.</p>"
-        }
-      }
-    },
-    "dmg6x9CarpetofFl": {
-      "name": "Carpet of Flying (6 by 9 ft.)",
-      "tokenName": "Carpet of Flying",
-      "items": {
-        "Carry Weight Adjustment": {
-          "name": "Carry Weight Adjustment",
-          "description": "<p>This item serves to offset the carpet's computed carry weight capacity in accordance with the carpet's dimensions.</p>"
-        }
-      },
-      "effects": {
-        "Overloaded": {
-          "name": "Overloaded",
-          "description": "<p>The carpet's Fly Speed is halved when carrying more than its normal capacity.</p>"
-        }
-      }
-    },
-    "dmgApparatusofKw": {
-      "name": "Apparatus of Kwalish",
-      "tokenName": "Apparatus of Kwalish",
-      "description": "<p>To be used as a vehicle, the @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgApparatusOfKw]{apparatus} requires one pilot. While the apparatus’s hatch is closed, the compartment is airtight and watertight. The compartment holds enough air for 10 hours of breathing, divided by the number of breathing creatures inside.</p><p>The apparatus floats on water. It can also go underwater to a depth of 900 feet. Below that, the vehicle takes 2d6 Bludgeoning damage each minute from pressure.</p><p>A creature in the compartment can take a Utilize action to move as many as two of the apparatus’s levers up or down. After each use, a lever goes back to its neutral position. Each lever, from left to right, functions as shown in the Apparatus of Kwalish <span class=\"no-break\">Levers</span> table.</p><table><caption>Apparatus of Kwalish Levers</caption><thead><tr><td>Lever</td><td>Up</td><td>Down</td></tr></thead><tbody><tr><td>1</td><td>Legs extend, allowing the apparatus to walk and swim.</td><td>Legs retract, reducing the apparatus’s Speed and Swim Speed to 0 and making it unable to benefit from bonuses to speed.</td></tr><tr><td>2</td><td>Forward window shutter opens.</td><td>Forward window shutter closes.</td></tr><tr><td>3</td><td>Side window shutters open (two per side).</td><td>Side window shutters close (two per side).</td></tr><tr><td>4</td><td>Two claws extend from the front side of the apparatus.</td><td>The claws retract.</td></tr><tr><td>5</td><td>Each extended claw makes the following [[/item fmdWz6RQsUCHneZF]]{melee attack}: +8 to hit, reach 5 ft. <em>Hit:</em> 7 (2d6) Bludgeoning damage.</td><td>Each extended claw makes the following [[/item tgIjCBtGCZvMu8ij]]{melee attack}: +8 to hit, reach 5 ft. <em>Hit:</em> The target has the Grappled condition (escape DC 15).</td></tr><tr><td>6</td><td>The apparatus walks or swims forward provided its legs are extended.</td><td>The apparatus walks or swims backward provided its legs are extended.</td></tr><tr><td>7</td><td>The apparatus turns 90 degrees counterclockwise provided its legs are extended.</td><td>The apparatus turns 90 degrees clockwise provided its legs are extended.</td></tr><tr><td>8</td><td>Eyelike fixtures emit Bright Light in a 30-foot radius and Dim Light for an additional 30 feet.</td><td>The light turns off.</td></tr><tr><td>9</td><td>The apparatus sinks up to 20 feet if it’s in liquid.</td><td>The apparatus rises up to 20 feet if it’s in liquid.</td></tr><tr><td>10</td><td>The rear hatch unseals and opens.</td><td>The rear hatch closes and seals.</td></tr></tbody></table>",
-      "items": {
-        "Claw Attack": {
-          "name": "Claw Attack",
-          "description": "<p>Each extended claw makes the following melee attack: +8 to hit, reach 5 ft. <em>Hit:</em> 7 (2d6) Bludgeoning damage.</p>"
-        },
-        "Grapple Attack": {
-          "name": "Grapple Attack",
-          "description": "<p>Each extended claw makes the following melee attack: +8 to hit, reach 5 ft. <em>Hit:</em> The target has the &amp;Reference[Grappled] condition (escape DC 15).</p>",
-          "activities": {
-            "attack": {
-              "chatFlavor": "&Reference[grappled] on hit"
-            },
-            "Grapple Escape Check": {
-              "name": "Grapple Escape Check"
-            }
-          }
-        }
-      },
-      "effects": {
-        "Legs Extended": {
-          "name": "Legs Extended"
-        },
-        "Claws Extended": {
-          "name": "Claws Extended"
-        },
-        "Forward Shutter Open": {
-          "name": "Forward Shutter Open"
-        },
-        "Side Shutters Open": {
-          "name": "Side Shutters Open"
-        },
-        "Rear Hatch Open": {
-          "name": "Rear Hatch Open"
-        },
-        "Lights Activated": {
-          "name": "Lights Activated",
-          "description": "<p>Eyelike fixtures emit Bright Light in a 30-foot radius and Dim Light for an additional 30 feet.</p>"
-        }
-      }
-    },
-    "dmgAvatarofDeath": {
-      "name": "Avatar of Death",
-      "tokenName": "Avatar of Death",
-      "description": "<p>@Embed[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgDmtSkull00000]{Skull (Deck of Many Things)}</p>",
-      "items": {
-        "Incorporeal Movement": {
-          "name": "Incorporeal Movement",
-          "description": "<p>The avatar can move through other creatures and objects as if they were &amp;Reference[DifficultTerrain]. It takes 5 (1d10) Force damage if it ends its turn inside <span class=\"no-break\">an object.</span></p>",
-          "activities": {
-            "Self Damage": {
-              "name": "Self Damage",
-              "condition": "the Avatarends its turn inside an object."
-            }
-          }
-        },
-        "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The avatar makes a number of [[/item .dmgaoiReapingScy]]{Reaping Scythe} attacks equal to half the summoner’s Proficiency Bonus (ro<span class=\"no-break\">unded up).</span></p><p>[[ceil(@prof/2)]]{Number of Attacks}</p>",
-          "activities": {
-            "Action": {
-              "name": "Action"
-            }
-          }
-        },
-        "Reaping Scythe": {
-          "name": "Reaping Scythe",
-          "description": "<p><em>Melee Attack Roll:</em> Automatic hit, reach 5 ft. <em>Hit:</em> 7 ( <span class=\"no-break\">1d8 + 3</span> ) Slashing damage plus 4 (1d8) <span class=\"no-break\">Necrotic</span> <span class=\"no-break\">damage.</span></p>",
-          "activities": {
-            "Attack": {
-              "name": "Attack",
-              "chatFlavor": "Automatic hit"
-            }
-          }
-        }
-      }
-    },
-    "dmgBadger0000000": {
-      "name": "Badger",
-      "tokenName": "Badger",
-      "items": {
-        "Bite": {
-          "name": "Bite",
-          "description": "<p> <em>Melee Attack Roll:</em> +2, reach 5 ft. <em>Hit:</em> 1 Piercing damage.</p>"
-        }
-      }
-    },
-    "dmgBlackBear0000": {
-      "name": "Black Bear",
-      "tokenName": "Black Bear",
-      "items": {
-        "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The bear makes two [[/item Rend]] attacks.</p>",
-          "activities": {
-            "Activate": {
-              "name": "Activate"
-            }
-          }
-        },
-        "Rend": {
-          "name": "Rend",
-          "description": "<p> <em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 5 (1d6 + 2) Slashing damage.</p>"
-        }
-      }
-    },
-    "dmgBrownBear0000": {
-      "name": "Brown Bear",
-      "tokenName": "Brown Bear",
-      "items": {
-        "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The bear makes one [[/item Bite]] attack and one [[/item Claw]] attack.</p>",
-          "activities": {
-            "Activate": {
-              "name": "Activate"
-            }
-          }
-        },
-        "Bite": {
-          "name": "Bite",
-          "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 7 (1d8 + 3) Piercing damage.</p>"
-        },
-        "Claw": {
-          "name": "Claw",
-          "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Slashing damage, and the target has the &amp;Reference[prone] condition if it is Huge or smaller.</p>"
-        }
-      }
-    },
-    "dmgBrownMold0000": {
-      "name": "Brown Mold",
-      "tokenName": "Brown Mold",
-      "items": {
-        "Description/Effects": {
-          "name": "Description/Effects",
-          "description": "<p><em>Deadly Hazard (Levels 5–10) or Nuisance Hazard (Levels 11–16)</em></p><p>Brown mold resembles a furry, light-brown carpet. This fungus feeds on warmth, drawing heat from anything around itself. One patch of brown mold covers a 10-foot square, and the temperature within 30 feet of it is always frigid.</p><p>When a creature enters a space within 5 feet of the mold for the first time on a turn or starts its turn there, the creature makes a DC 12 Constitution saving throw, taking 22 (4d10) Cold damage on a failed save or half as much damage on a successful one.</p><p>Brown mold has Immunity to Fire damage, and any source of fire brought within 5 feet of it causes the mold to instantly expand across a surface and toward the fire, creating a new patch that covers a 10-foot square. A patch of brown mold exposed to an effect that deals any amount of Cold damage is destroyed instantly.</p>",
-          "activities": {
-            "10-Foot Square": {
-              "name": "10-Foot Square"
-            }
-          }
-        }
-      }
-    },
-    "dmgCamel00000000": {
-      "name": "Camel",
-      "tokenName": "Camel",
-      "items": {
-        "Bite": {
-          "name": "Bite",
-          "description": "<p> <em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 4 (1d4 + 2) Bludgeoning damage.</p>"
-        }
-      }
-    },
-    "dmgCollapsingRoo": {
-      "name": "Collapsing Roof Trap",
-      "tokenName": "Collapsing Roof Trap",
-      "items": {
-        "Trigger Trap": {
-          "name": "Trigger Trap",
-          "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Deadly Trap (Levels 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Trigger:</strong> A creature crosses a trip wire</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Duration:</strong> Instantaneous</p><p>This trap uses a trip wire to collapse an unstable section of ceiling. The trip wire is 3 inches off the ground and stretches between two weak supports that topple when the trip wire is pulled.</p><p>The first creature that crosses the trip wire causes the supports to topple and the unstable section of ceiling to collapse. Each creature beneath the unstable section of ceiling must succeed on a DC 13 Dexterity saving throw, taking 11 (2d10) Bludgeoning damage on a failed save or half as much damage on a successful one. Rubble from the collapse turns the trapped area into &amp;Reference[Difficult Terrain].</p><p><em><strong>Detect and Disarm.</strong></em> As a Search action, a creature can examine the trapped area and make a [[/check prc 11]] check, detecting the trip wire and the unstable section of ceiling on a successful check. Once detected, the trip wire can be easily cut or avoided (no ability check required).</p><p><em><strong>At Higher Levels.</strong></em> You can scale the trap for higher levels by increasing the damage and the save DC, as shown in the following table.</p><table><thead><tr><th><p>Levels</p></th><th><p>Bludgeoning Damage</p></th><th><p>Save DC</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>22 (4d10)</p></td><td><p>15</p></td></tr><tr><td><p>11–16</p></td><td><p>55 (10d10)</p></td><td><p>17</p></td></tr><tr><td><p>17–20</p></td><td><p>99 (18d10)</p></td><td><p>19</p></td></tr></tbody></table></div>",
-          "activities": {
-            "Trigger (1-4)": {
-              "name": "Trigger (1-4)"
-            },
-            "Trigger (5-10)": {
-              "name": "Trigger (5-10)"
-            },
-            "Trigger (11-16)": {
-              "name": "Trigger (11-16)"
-            },
-            "Trigger (17-20)": {
-              "name": "Trigger (17-20)"
-            }
-          }
-        }
-      }
-    },
-    "dmgDaylightDrift": {
-      "name": "Driftglobe (Daylight)",
-      "tokenName": "Driftglobe",
-      "description": "<p>@Embed[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgDriftglobe000 caption=false]</p>"
-    },
-    "dmgDireWolf00000": {
-      "name": "Dire Wolf",
-      "tokenName": "Dire Wolf",
-      "items": {
-        "Pack Tactics": {
-          "name": "Pack Tactics",
-          "description": "<p>The wolf has Advantage on an attack roll against a creature if at least one of the wolf’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>"
-        },
-        "Bite": {
-          "name": "Bite",
-          "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit: </em>8 (1d10 + 3) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Huge or smaller.</p>"
-        }
-      }
-    },
-    "dmgElephant00000": {
-      "name": "Elephant",
-      "tokenName": "Elephant",
-      "items": {
-        "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The elephant makes two [[/item Gore]] attacks.</p>",
-          "activities": {
-            "Activate": {
-              "name": "Activate"
-            }
-          }
-        },
-        "Gore": {
-          "name": "Gore",
-          "description": "<p><em>Melee Attack Roll: </em>+8, reach 5 ft. <em>Hit:</em> 15 (2d8 + 6) Piercing damage. If the elephant moved at least 20 feet straight toward the target immediately before the hit, the target also has the &amp;Reference[prone] condition.</p>"
-        },
-        "Trample": {
-          "name": "Trample",
-          "description": "<p> <em>Dexterity Saving Throw:</em> DC 16, one creature within 5 feet that has the Prone condition. <em>Failure:</em> 17 (2d10 + 6) Bludgeoning damage. <em>Success:</em> Half damage.</p>"
-        }
-      }
-    },
-    "dmgFallingNetTra": {
-      "name": "Falling Net Trap",
-      "tokenName": "Falling Net Trap",
-      "items": {
-        "Set & Trigger Trap": {
-          "name": "Set & Trigger Trap",
-          "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Nuisance Trap (Levels 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Trigger:</strong> A creature crosses a trip wire</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Duration:</strong> Instantaneous</p><p>A falling net trap uses a trip wire to release a weighted, 10-foot-square Net suspended from the ceiling. The trip wire is 3 inches off the ground and stretches between two columns or trees.</p><p>The first creature that crosses the trip wire causes the Net to fall on it. The target must succeed on a DC 10 Dexterity saving throw or have the &amp;Reference[Restrained] condition until it escapes. The target succeeds automatically if it’s Huge or larger. A creature can take an action to make a DC 10 Strength (Athletics) check, freeing itself or another creature within its reach from the Net on a successful check.</p><p><em><strong>Detect and Disarm.</strong></em> As a Search action, a creature can examine the trapped area and make a [[/check prc 11]] check, detecting the trip wire and the suspended @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagNet00000000]{Net} on a successful check. Once detected, the trip wire can be easily cut or avoided (no ability check required).</p><p><em><strong>Destroy the Net.</strong></em> Reducing the Net to 0 Hit Points frees any creature trapped in it (see the <em>Player’s Handbook</em> for the Net’s statistics).</p><p><em><strong>Set the Trap.</strong></em> A creature that has Thieves’ Tools and all the trap’s components (including a Net) can try to set a falling net trap, doing so with a successful DC 13 Dexterity (Sleight of Hand) check. Each attempt to set this trap takes 10 minutes.</p><p><em><strong>At Higher Levels.</strong></em> You can scale the trap for higher levels by increasing the weight of the Net, which increases the save DC and the DC of the Strength (Athletics) check as follows: DC 12 at levels 5–10, DC 14 at levels 11–16, or DC 16 at levels 17–20.</p></div>",
-          "activities": {
-            "Trigger (1-4)": {
-              "name": "Trigger (1-4)"
-            },
-            "Trigger (5-10)": {
-              "name": "Trigger (5-10)"
-            },
-            "Trigger (11-16)": {
-              "name": "Trigger (11-16)"
-            },
-            "Trigger (17-20)": {
-              "name": "Trigger (17-20)"
-            },
-            "Escape Check (1-4)": {
-              "name": "Escape Check (1-4)"
-            },
-            "Escape Check (5-10)": {
-              "name": "Escape Check (5-10)"
-            },
-            "Escape Check (11-16)": {
-              "name": "Escape Check (11-16)"
-            },
-            "Escape Check (17-20)": {
-              "name": "Escape Check (17-20)"
-            },
-            "Set Trap": {
-              "name": "Set Trap"
-            }
-          },
-          "effects": {
-            "Captured": {
-              "name": "Captured"
-            }
-          }
-        }
-      }
-    },
-    "dmgFireCastingSt": {
-      "name": "Fire Casting Statue Trap",
-      "tokenName": "Fire Casting Statue Trap",
-      "items": {
-        "Trigger Trap": {
-          "name": "Trigger Trap",
-          "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Deadly Trap (Levels 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Trigger:</strong> A creature moves onto a pressure plate</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Duration:</strong> Instantaneous, and the trap resets at the start of the next turn</p><p>When a creature moves onto this trap’s pressure plate for the first time on a turn or starts its turn there, a nearby statue exhales a 15-foot Cone of magical flame. The statue can look like anything, such as a dragon or a wizard. Each creature in the Cone must succeed on a DC 15 Dexterity saving throw, taking 11 (2d10) Fire damage on a failed save or half as much damage on a successful one.</p><p><em><strong>Detect and Disarm.</strong></em> A <em>Detect Magic</em> spell reveals an aura of Evocation magic around the statue. As a Search action, a creature within 5 feet of the statue can examine it and make a [[/check DC prc 10]] check, detecting a tiny glyph on the statue on a successful check. Once the glyph is found, a character can take a Study action to examine it and make a [[/check arc 15]] check, ascertaining that the glyph means “fire” on a successful check. As an action, a character can use a sharp tool to deface the glyph, which disarms the trap.</p><p>As a Search action, a creature can examine the section of floor that forms the pressure plate and make a [[/check prc 15]] check, detecting the pressure plate on a successful check. Wedging an Iron Spike or similar object under the pressure plate prevents the trap from triggering.</p><p><em><strong>At Higher Levels.</strong></em> You can scale the trap for higher levels by increasing the damage and the area of effect, as shown in the following table.</p><table><thead><tr><th><p>Levels</p></th><th><p>Fire Damage</p></th><th><p>Area of Effect</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>22 (4d10)</p></td><td><p>30-foot Cone</p></td></tr><tr><td><p>11–16</p></td><td><p>55 (10d10)</p></td><td><p>60-foot Cone</p></td></tr><tr><td><p>17–20</p></td><td><p>99 (18d10)</p></td><td><p>120-foot Cone</p></td></tr></tbody></table></div>",
-          "activities": {
-            "Trigger (1-4)": {
-              "name": "Trigger (1-4)"
-            },
-            "Trigger (5-10)": {
-              "name": "Trigger (5-10)"
-            },
-            "Trigger (11-16)": {
-              "name": "Trigger (11-16)"
-            },
-            "Trigger (17-20)": {
-              "name": "Trigger (17-20)"
-            }
-          }
-        }
-      }
-    },
-    "dmgFireballFungu": {
-      "name": "Fireball Fungus",
-      "tokenName": "Fireball Fungus",
-      "items": {
-        "Description/Effects": {
-          "name": "Description/Effects",
-          "description": "<p><em>Deadly Hazard (Levels 5–10)</em></p><p>A fireball fungus is a Small, inanimate mushroom that can grow anywhere fungi are found in abundance. Its luminous, orange cap sheds Bright Light in a 15-foot radius and Dim Light for an additional 15 feet.</p><p>A fireball fungus has AC 10, HP 6, and to Immunity Psychic damage. When it drops to 0 Hit Points, the fungus explodes as if a @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireball00]{Fireball} spell (save DC 15) had been centered on it.</p><p><em><strong>At Higher Levels.</strong></em> The explosion of a fireball fungus causes other fireball fungi in the area of effect to explode as well. You can scale the hazard for higher levels by adding one additional fungus at levels 11–16 or three additional fungi at levels 17–20.</p>"
-        }
-      }
-    },
-    "dmgFrog000000000": {
-      "name": "Frog",
-      "tokenName": "Frog",
-      "items": {
-        "Amphibious": {
-          "name": "Amphibious",
-          "description": "<p> The frog can breathe air and water.</p>"
-        },
-        "Standing Leap": {
-          "name": "Standing Leap",
-          "description": "<p>The frog’s Long Jump is up to 10 feet and its High Jump is up to 5 feet with or without a running start.</p>"
-        },
-        "Bite": {
-          "name": "Bite",
-          "description": "<p> <em>Melee Attack Roll:</em> +3, reach 5 ft. <em>Hit:</em> 1 Piercing damage.</p>"
-        }
-      }
-    },
-    "dmgGiantBadger00": {
-      "name": "Giant Badger",
-      "tokenName": "Giant Badger",
-      "items": {
-        "Bite": {
-          "name": "Bite",
-          "description": "<p> <em>Melee Attack Roll:</em> +3, reach 5 ft. <em>Hit:</em> 6 (2d4 + 1) Piercing damage.</p>"
-        }
-      }
-    },
-    "dmgGiantFly00000": {
-      "name": "Giant Fly",
-      "tokenName": "Giant Fly"
-    },
-    "dmgGiantGoat0000": {
-      "name": "Giant Goat",
-      "tokenName": "Giant Goat",
-      "items": {
-        "Ram": {
-          "name": "Ram",
-          "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>6 (1d6 + 3) Bludgeoning damage. If the goat moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 5 (2d4) Bludgeoning damage and, if it is Huge or smaller, has the &amp;Reference[prone] condition.</p>",
-          "activities": {
-            "Charging Attack": {
-              "name": "Charging Attack"
-            }
-          }
-        }
-      }
-    },
-    "dmgGiantSpider00": {
-      "name": "Giant Spider",
-      "tokenName": "Giant Spider",
-      "items": {
-        "Spider Climb": {
-          "name": "Spider Climb",
-          "description": "<p>The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>"
-        },
-        "Web Walker": {
-          "name": "Web Walker",
-          "description": "<p> The spider ignores movement restrictions caused by webs, and it knows the location of any other creature in contact with the same web.</p>"
-        },
-        "Bite": {
-          "name": "Bite",
-          "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit:</em> 7 (1d8 + 3) Piercing damage plus 7 (2d6) Poison damage.</p>"
-        },
-        "Web": {
-          "name": "Web",
-          "description": "<p><em>Dexterity Saving Throw:</em> DC 13, one creature the spider can see within 60 feet. <em>Failure:</em> The target has the &amp;Reference[restrained] condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Poison and Psychic damage).</p>"
-        }
-      }
-    },
-    "dmgGiantWeasel00": {
-      "name": "Giant Weasel",
-      "tokenName": "Giant Weasel",
-      "items": {
-        "Bite": {
-          "name": "Bite",
-          "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Piercing damage.</p>"
-        }
-      }
-    },
-    "dmgGoat000000000": {
-      "name": "Goat",
-      "tokenName": "Goat",
-      "items": {
-        "Ram": {
-          "name": "Ram",
-          "description": "<p><em>Melee Attack Roll: </em>+2, reach 5 ft. <em>Hit: </em>1 Bludgeoning damage, or the goat deals 2 (1d4) Bludgeoning damage if it moved at least 20 feet straight toward the target immediately before the hit.</p>",
-          "activities": {
-            "Charging Attack": {
-              "name": "Charging Attack"
-            }
-          }
-        }
-      }
-    },
-    "dmgGoatofTraveli": {
+    "Goat of Traveling": {
       "name": "Goat of Traveling",
       "tokenName": "Goat of Traveling",
       "items": {
@@ -599,7 +759,7 @@
         }
       }
     },
-    "dmgGreenSlime000": {
+    "Green Slime": {
       "name": "Green Slime",
       "tokenName": "Green Slime",
       "items": {
@@ -620,7 +780,7 @@
         }
       }
     },
-    "dmgHiddenPitTrap": {
+    "Hidden Pit Trap": {
       "name": "Hidden Pit Trap",
       "tokenName": "Hidden Pit Trap",
       "items": {
@@ -644,11 +804,11 @@
         }
       }
     },
-    "dmgIllusoryCreat": {
+    "Illusory Creature": {
       "name": "Illusory Creature",
       "tokenName": "Illusory Creature"
     },
-    "dmgImp0000000000": {
+    "Imp": {
       "name": "Imp",
       "tokenName": "Imp",
       "items": {
@@ -705,7 +865,7 @@
         }
       }
     },
-    "dmgInferno000000": {
+    "Inferno": {
       "name": "Inferno",
       "tokenName": "Inferno",
       "items": {
@@ -725,12 +885,11 @@
         }
       }
     },
-    "dmgLightDriftglo": {
-      "name": "Driftglobe (Light)",
-      "tokenName": "Driftglobe",
-      "description": "<p>@Embed[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgDriftglobe000 caption=false]</p>"
+    "Larva": {
+      "name": "Larva",
+      "tokenName": "Larva"
     },
-    "dmgLion000000000": {
+    "Lion": {
       "name": "Lion",
       "tokenName": "Lion",
       "items": {
@@ -767,7 +926,7 @@
         }
       }
     },
-    "dmgMastiff000000": {
+    "Mastiff": {
       "name": "Mastiff",
       "tokenName": "Mastiff",
       "items": {
@@ -777,7 +936,7 @@
         }
       }
     },
-    "dmgMule000000000": {
+    "Mule": {
       "name": "Mule",
       "tokenName": "Mule",
       "items": {
@@ -791,7 +950,7 @@
         }
       }
     },
-    "dmgPanther000000": {
+    "Panther": {
       "name": "Panther",
       "tokenName": "Panther",
       "items": {
@@ -825,7 +984,7 @@
         }
       }
     },
-    "dmgPoisonedDarts": {
+    "Poisoned Darts Trap": {
       "name": "Poisoned Darts Trap",
       "tokenName": "Poisoned Darts Trap",
       "items": {
@@ -849,7 +1008,7 @@
         }
       }
     },
-    "dmgPoisonedNeedl": {
+    "Poisoned Needle Trap": {
       "name": "Poisoned Needle Trap",
       "tokenName": "Poisoned Needle Trap",
       "items": {
@@ -878,7 +1037,7 @@
         }
       }
     },
-    "dmgPoisonousGas0": {
+    "Poisonous Gas": {
       "name": "Poisonous Gas",
       "tokenName": "Poisonous Gas",
       "items": {
@@ -905,7 +1064,7 @@
         }
       }
     },
-    "dmgQuicksandPit0": {
+    "Quicksand Pit": {
       "name": "Quicksand Pit",
       "tokenName": "Quicksand Pit",
       "items": {
@@ -926,7 +1085,7 @@
         }
       }
     },
-    "dmgRat0000000000": {
+    "Rat": {
       "name": "Rat",
       "tokenName": "Rat",
       "items": {
@@ -940,7 +1099,7 @@
         }
       }
     },
-    "dmgRaven00000000": {
+    "Raven": {
       "name": "Raven",
       "tokenName": "Raven",
       "items": {
@@ -954,7 +1113,7 @@
         }
       }
     },
-    "dmgRazorvine0000": {
+    "Razorvine": {
       "name": "Razorvine",
       "tokenName": "Razorvine",
       "items": {
@@ -969,7 +1128,7 @@
         }
       }
     },
-    "dmgRidingHorse00": {
+    "Riding Horse": {
       "name": "Riding Horse",
       "tokenName": "Riding Horse",
       "items": {
@@ -979,7 +1138,7 @@
         }
       }
     },
-    "dmgRiverStyx0000": {
+    "River Styx": {
       "name": "River Styx",
       "tokenName": "River Styx",
       "items": {
@@ -995,7 +1154,7 @@
         }
       }
     },
-    "dmgRockslide0000": {
+    "Rockslide": {
       "name": "Rockslide",
       "tokenName": "Rockslide",
       "items": {
@@ -1032,7 +1191,7 @@
         }
       }
     },
-    "dmgRollingStoneT": {
+    "Rolling Stone Trap": {
       "name": "Rolling Stone Trap",
       "tokenName": "Rolling Stone Trap",
       "items": {
@@ -1047,7 +1206,7 @@
         }
       }
     },
-    "dmgSkeleton00000": {
+    "Skeleton": {
       "name": "Skeleton",
       "tokenName": "Skeleton",
       "items": {
@@ -1061,7 +1220,7 @@
         }
       }
     },
-    "dmgSpikedPitTrap": {
+    "Spiked Pit Trap": {
       "name": "Spiked Pit Trap",
       "tokenName": "Spiked Pit Trap",
       "items": {
@@ -1085,7 +1244,7 @@
         }
       }
     },
-    "dmgTiger00000000": {
+    "Tiger": {
       "name": "Tiger",
       "tokenName": "Tiger",
       "items": {
@@ -1119,7 +1278,7 @@
         }
       }
     },
-    "dmgViciousVine00": {
+    "Vicious Vine": {
       "name": "Vicious Vine",
       "tokenName": "Vicious Vine",
       "items": {
@@ -1151,7 +1310,7 @@
         }
       }
     },
-    "dmgWeasel0000000": {
+    "Weasel": {
       "name": "Weasel",
       "tokenName": "Weasel",
       "items": {
@@ -1161,7 +1320,7 @@
         }
       }
     },
-    "dmgWebs000000000": {
+    "Webs": {
       "name": "Webs",
       "tokenName": "Webs",
       "items": {
@@ -1181,7 +1340,7 @@
         }
       }
     },
-    "dmgWolf000000000": {
+    "Wolf": {
       "name": "Wolf",
       "tokenName": "Wolf",
       "items": {
@@ -1195,7 +1354,7 @@
         }
       }
     },
-    "dmgYellowMold000": {
+    "Yellow Mold": {
       "name": "Yellow Mold",
       "tokenName": "Yellow Mold",
       "items": {
@@ -1221,7 +1380,7 @@
         }
       }
     },
-    "dmgZombie0000000": {
+    "Zombie": {
       "name": "Zombie",
       "tokenName": "Zombie",
       "items": {
@@ -1232,142 +1391,6 @@
         "Slam": {
           "name": "Slam",
           "description": "<p> <em>Melee Attack Roll:</em> +3, reach 5 ft. <em>Hit:</em> 4 (1d6 + 1) Bludgeoning damage.</p>"
-        }
-      }
-    },
-    "dmggwsDancingSwo": {
-      "name": "Dancing Sword",
-      "tokenName": "Dancing Sword",
-      "items": {
-        "Greatsword": {
-          "name": "Greatsword",
-          "activities": {
-            "Command: Move and Attack": {
-              "name": "Command: Move and Attack",
-              "condition": "Bonus Action taken by attuned character"
-            }
-          }
-        },
-        "Longsword": {
-          "name": "Longsword",
-          "activities": {
-            "Command: Move and Attack": {
-              "name": "Command: Move and Attack",
-              "condition": "Bonus Action taken by attuned character"
-            }
-          }
-        },
-        "Rapier": {
-          "name": "Rapier",
-          "activities": {
-            "Command: Move and Attack": {
-              "name": "Command: Move and Attack",
-              "condition": "Bonus Action taken by attuned character"
-            }
-          }
-        },
-        "Scimitar": {
-          "name": "Scimitar",
-          "activities": {
-            "Command: Move and Attack": {
-              "name": "Command: Move and Attack",
-              "condition": "Bonus Action taken by attuned character"
-            }
-          }
-        },
-        "Shortsword": {
-          "name": "Shortsword",
-          "activities": {
-            "Command: Move and Attack": {
-              "name": "Command: Move and Attack",
-              "condition": "Bonus Action taken by attuned character"
-            }
-          }
-        }
-      }
-    },
-    "dmgnpcAnimalLord": {
-      "name": "Animal Lord",
-      "tokenName": "Animal Lord"
-    },
-    "dmgnpcAnimatedBr": {
-      "name": "Animated Broom",
-      "tokenName": "Animated Broom"
-    },
-    "dmgnpcBlobofAnni": {
-      "name": "Blob of Annihilation",
-      "tokenName": "Blob of Annihilation"
-    },
-    "dmgnpcColossus00": {
-      "name": "Colossus",
-      "tokenName": "Colossus"
-    },
-    "dmgnpcElementalC": {
-      "name": "Elemental Cataclysm",
-      "tokenName": "Elemental Cataclysm"
-    },
-    "dmgnpcEmpyrean00": {
-      "name": "Empyrean",
-      "tokenName": "Empyrean"
-    },
-    "dmgnpcLarva00000": {
-      "name": "Larva",
-      "tokenName": "Larva"
-    },
-    "dmgqftFloatingWh": {
-      "name": "Floating Whip",
-      "tokenName": "Floating Whip",
-      "items": {
-        "Melee Spell Attack": {
-          "name": "Melee Spell Attack"
-        }
-      }
-    },
-    "hE6VktUlGj5eVRiF": {
-      "name": "Bastion Defender (Knight)",
-      "tokenName": "Bastion Defender (Knight)",
-      "items": {
-        "Plate Armor": {
-          "name": "Plate Armor",
-          "description": "<p>Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.</p>"
-        },
-        "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The knight makes two melee attacks.</p>"
-        },
-        "Greatsword": {
-          "name": "Greatsword",
-          "description": "<section class=\"secret\">\n<p><em>Melee Weapon Attack:</em><strong>+5 to hit,</strong>, <strong>5 ft.,</strong> one target. Hit: <strong>10 (2d6 + 3) <em>slashing damage</em></strong>.</p></section>\n<p>The Knight attacks with its Greatsword.</p>"
-        },
-        "Heavy Crossbow": {
-          "name": "Heavy Crossbow",
-          "description": "<section class=\"secret\">\n<p>Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: <strong>5 (1d10) <em>piercing damage</em></strong>.</p></section>\n<p>The Knight attacks with its Heavy Crossbow.</p>"
-        },
-        "Leadership": {
-          "name": "Leadership",
-          "description": "<p>For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 ft. of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated.</p>"
-        },
-        "Parry": {
-          "name": "Parry",
-          "description": "<section class=\"secret\">\n<p>The knight adds 2 to its <strong>AC</strong> against one melee Attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon.</p>\n</section>\n<p>The knight adds 2 to its <strong>AC</strong> against one melee Attack that would hit it.</p>"
-        },
-        "Brave": {
-          "name": "Brave",
-          "description": "<p>The knight has<strong> advantage </strong>on saving throws against being frightened.</p>"
-        }
-      }
-    },
-    "u86LZa5VG5lwtrMf": {
-      "name": "Bastion Defender (Sword)",
-      "tokenName": "Bastion Defender (Sword)",
-      "items": {
-        "Chain Shirt": {
-          "name": "Chain Shirt",
-          "description": "<p>Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.</p>"
-        },
-        "Longsword": {
-          "name": "Longsword",
-          "description": "<p>A lengthy straight blade designed for slashing foes, the longsword is a highly versatile weapon that may also be wielded with two hands for more punishing strikes.</p>"
         }
       }
     }
