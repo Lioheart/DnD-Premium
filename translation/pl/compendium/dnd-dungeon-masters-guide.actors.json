@@ -1,0 +1,1398 @@
+{
+  "label": "Aktorzy",
+  "mapping": {
+    "movement": {
+      "path": "system.attributes.movement",
+      "converter": "movement"
+    },
+    "items": {
+      "path": "items",
+      "converter": "items"
+    },
+    "token": {
+      "path": "prototypeToken.sight.range",
+      "converter": "sightRange"
+    },
+    "senses": {
+      "path": "system.attributes.senses",
+      "converter": "senses"
+    },
+    "tokenName": "prototypeToken.name",
+    "effects": {
+      "path": "effects",
+      "converter": "effects"
+    }
+  },
+  "folders": {
+    "Bastion Defenders": "Obrońcy Bastionu",
+    "Creatures": "Istoty",
+    "Hazards": "Zagrożenia",
+    "Magic Items": "Magiczne przedmioty",
+    "Traps": "Pułapki"
+  },
+  "entries": {
+    "Animal Lord": {
+      "name": "Animal Lord",
+      "tokenName": "Animal Lord"
+    },
+    "Animated Broom": {
+      "name": "Animated Broom",
+      "tokenName": "Animated Broom"
+    },
+    "Apparatus of Kwalish": {
+      "name": "Apparatus of Kwalish",
+      "tokenName": "Apparatus of Kwalish",
+      "description": "<p>To be used as a vehicle, the @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgApparatusOfKw]{apparatus} requires one pilot. While the apparatus’s hatch is closed, the compartment is airtight and watertight. The compartment holds enough air for 10 hours of breathing, divided by the number of breathing creatures inside.</p><p>The apparatus floats on water. It can also go underwater to a depth of 900 feet. Below that, the vehicle takes 2d6 Bludgeoning damage each minute from pressure.</p><p>A creature in the compartment can take a Utilize action to move as many as two of the apparatus’s levers up or down. After each use, a lever goes back to its neutral position. Each lever, from left to right, functions as shown in the Apparatus of Kwalish <span class=\"no-break\">Levers</span> table.</p><table><caption>Apparatus of Kwalish Levers</caption><thead><tr><td>Lever</td><td>Up</td><td>Down</td></tr></thead><tbody><tr><td>1</td><td>Legs extend, allowing the apparatus to walk and swim.</td><td>Legs retract, reducing the apparatus’s Speed and Swim Speed to 0 and making it unable to benefit from bonuses to speed.</td></tr><tr><td>2</td><td>Forward window shutter opens.</td><td>Forward window shutter closes.</td></tr><tr><td>3</td><td>Side window shutters open (two per side).</td><td>Side window shutters close (two per side).</td></tr><tr><td>4</td><td>Two claws extend from the front side of the apparatus.</td><td>The claws retract.</td></tr><tr><td>5</td><td>Each extended claw makes the following [[/item fmdWz6RQsUCHneZF]]{melee attack}: +8 to hit, reach 5 ft. <em>Hit:</em> 7 (2d6) Bludgeoning damage.</td><td>Each extended claw makes the following [[/item tgIjCBtGCZvMu8ij]]{melee attack}: +8 to hit, reach 5 ft. <em>Hit:</em> The target has the Grappled condition (escape DC 15).</td></tr><tr><td>6</td><td>The apparatus walks or swims forward provided its legs are extended.</td><td>The apparatus walks or swims backward provided its legs are extended.</td></tr><tr><td>7</td><td>The apparatus turns 90 degrees counterclockwise provided its legs are extended.</td><td>The apparatus turns 90 degrees clockwise provided its legs are extended.</td></tr><tr><td>8</td><td>Eyelike fixtures emit Bright Light in a 30-foot radius and Dim Light for an additional 30 feet.</td><td>The light turns off.</td></tr><tr><td>9</td><td>The apparatus sinks up to 20 feet if it’s in liquid.</td><td>The apparatus rises up to 20 feet if it’s in liquid.</td></tr><tr><td>10</td><td>The rear hatch unseals and opens.</td><td>The rear hatch closes and seals.</td></tr></tbody></table>",
+      "items": {
+        "Claw Attack": {
+          "name": "Claw Attack",
+          "description": "<p>Each extended claw makes the following melee attack: +8 to hit, reach 5 ft. <em>Hit:</em> 7 (2d6) Bludgeoning damage.</p>"
+        },
+        "Grapple Attack": {
+          "name": "Grapple Attack",
+          "description": "<p>Each extended claw makes the following melee attack: +8 to hit, reach 5 ft. <em>Hit:</em> The target has the &amp;Reference[Grappled] condition (escape DC 15).</p>",
+          "activities": {
+            "attack": {
+              "chatFlavor": "&Reference[grappled] on hit"
+            },
+            "Grapple Escape Check": {
+              "name": "Grapple Escape Check"
+            }
+          }
+        }
+      },
+      "effects": {
+        "Legs Extended": {
+          "name": "Legs Extended"
+        },
+        "Claws Extended": {
+          "name": "Claws Extended"
+        },
+        "Forward Shutter Open": {
+          "name": "Forward Shutter Open"
+        },
+        "Side Shutters Open": {
+          "name": "Side Shutters Open"
+        },
+        "Rear Hatch Open": {
+          "name": "Rear Hatch Open"
+        },
+        "Lights Activated": {
+          "name": "Lights Activated",
+          "description": "<p>Eyelike fixtures emit Bright Light in a 30-foot radius and Dim Light for an additional 30 feet.</p>"
+        }
+      }
+    },
+    "Avatar of Death": {
+      "name": "Avatar of Death",
+      "tokenName": "Avatar of Death",
+      "description": "<p>@Embed[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgDmtSkull00000]{Skull (Deck of Many Things)}</p>",
+      "items": {
+        "Incorporeal Movement": {
+          "name": "Incorporeal Movement",
+          "description": "<p>The avatar can move through other creatures and objects as if they were &amp;Reference[DifficultTerrain]. It takes 5 (1d10) Force damage if it ends its turn inside <span class=\"no-break\">an object.</span></p>",
+          "activities": {
+            "Self Damage": {
+              "name": "Self Damage",
+              "condition": "the Avatarends its turn inside an object."
+            }
+          }
+        },
+        "Multiattack": {
+          "name": "Atak wielokrotny",
+          "description": "<p>The avatar makes a number of [[/item .dmgaoiReapingScy]]{Reaping Scythe} attacks equal to half the summoner’s Proficiency Bonus (ro<span class=\"no-break\">unded up).</span></p><p>[[ceil(@prof/2)]]{Number of Attacks}</p>",
+          "activities": {
+            "Action": {
+              "name": "Akcja"
+            }
+          }
+        },
+        "Reaping Scythe": {
+          "name": "Reaping Scythe",
+          "description": "<p><em>Melee Attack Roll:</em> Automatic hit, reach 5 ft. <em>Hit:</em> 7 ( <span class=\"no-break\">1d8 + 3</span> ) Slashing damage plus 4 (1d8) <span class=\"no-break\">Necrotic</span> <span class=\"no-break\">damage.</span></p>",
+          "activities": {
+            "Attack": {
+              "name": "Atak",
+              "chatFlavor": "Automatic hit"
+            }
+          }
+        }
+      }
+    },
+    "Badger": {
+      "name": "Badger",
+      "tokenName": "Badger",
+      "items": {
+        "Bite": {
+          "name": "Ugryzienie",
+          "description": "<p><em>Rzut ataku wręcz:</em> +2, zasięg 5 stóp. <em>Trafienie:</em> 1 obrażenie Kłute.</p>"
+        }
+      }
+    },
+    "Bastion Defender (Bow)": {
+      "name": "Obrońca Bastionu (Łuk)",
+      "tokenName": "Obrońca Bastionu (Łuk)",
+      "items": {
+        "Leather Armor": {
+          "name": "Skórznia",
+          "description": "<p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p>"
+        },
+        "Keen Hearing and Sight": {
+          "name": "Keen Hearing and Sight",
+          "description": "<p>The scout has advantage on Wisdom (Perception) checks that rely on hearing or sight.</p>"
+        },
+        "Multiattack": {
+          "name": "Atak wielokrotny",
+          "description": "<p>The scout makes two melee attacks or two ranged attacks.</p>"
+        },
+        "Shortsword": {
+          "name": "Krótki miecz",
+          "description": "<section class=\"secret\">\n<p><em>Melee Weapon Attack:</em><strong>+4 to hit,</strong>, <strong>5 ft.,</strong> one target. Hit: <strong>5 (1d6 + 2) <em>piercing damage</em></strong>.</p></section>\n<p>The Scout attacks with their Shortsword.</p>"
+        },
+        "Longbow": {
+          "name": "Długi łuk",
+          "description": "<section class=\"secret\">\n<p>Ranged Weapon Attack: +4 to hit, ranged 150/600 ft., one target. Hit: <strong>6 (1d8 + 2) <em>piercing damage</em></strong>.</p></section>\n<p>The Scout attacks with their Longbow.</p>"
+        }
+      }
+    },
+    "Bastion Defender (Knight)": {
+      "name": "Obrońca Bastionu (Rycerz)",
+      "tokenName": "Obrońca Bastionu (Rycerz)",
+      "items": {
+        "Plate Armor": {
+          "name": "Zbroja płytowa",
+          "description": "<p>Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.</p>"
+        },
+        "Multiattack": {
+          "name": "Atak wielokrotny",
+          "description": "<p>The knight makes two melee attacks.</p>"
+        },
+        "Greatsword": {
+          "name": "Miecz dwuręczny",
+          "description": "<section class=\"secret\">\n<p><em>Melee Weapon Attack:</em><strong>+5 to hit,</strong>, <strong>5 ft.,</strong> one target. Hit: <strong>10 (2d6 + 3) <em>slashing damage</em></strong>.</p></section>\n<p>The Knight attacks with its Greatsword.</p>"
+        },
+        "Heavy Crossbow": {
+          "name": "Kusza ciężka",
+          "description": "<section class=\"secret\">\n<p>Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: <strong>5 (1d10) <em>piercing damage</em></strong>.</p></section>\n<p>The Knight attacks with its Heavy Crossbow.</p>"
+        },
+        "Leadership": {
+          "name": "Leadership",
+          "description": "<p>For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 ft. of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated.</p>"
+        },
+        "Parry": {
+          "name": "Parowanie",
+          "description": "<section class=\"secret\">\n<p>The knight adds 2 to its <strong>AC</strong> against one melee Attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon.</p>\n</section>\n<p>The knight adds 2 to its <strong>AC</strong> against one melee Attack that would hit it.</p>"
+        },
+        "Brave": {
+          "name": "Odważny",
+          "description": "<p>The knight has<strong> advantage </strong>on saving throws against being frightened.</p>"
+        }
+      }
+    },
+    "Bastion Defender (Mounted)": {
+      "name": "Obrońca Bastionu (Wierzchowiec)",
+      "tokenName": "Obrońca Bastionu (Wierzchowiec)",
+      "items": {
+        "Chain Shirt": {
+          "name": "Koszula kolcza",
+          "description": "<p>Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.</p>"
+        },
+        "Shield": {
+          "name": "Tarcza",
+          "description": "<p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>"
+        },
+        "Spear": {
+          "name": "Włócznia",
+          "description": "<section class=\"secret\">\n<p>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: <strong>4 (1d6 + 1) <em>piercing damage</em></strong> or <strong>5 (1d8 + 1) <em>piercing damage</em></strong> if used with two hands to make a melee attack.</p></section>\n<p>The Guard attacks with its Spear.</p>"
+        }
+      }
+    },
+    "Bastion Defender (Shield)": {
+      "name": "Obrońca Bastionu (Tarcza)",
+      "tokenName": "Strażnik",
+      "items": {
+        "Chain Shirt": {
+          "name": "Koszula kolcza",
+          "description": "<p>Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.</p>"
+        },
+        "Shield": {
+          "name": "Tarcza",
+          "description": "<p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>"
+        },
+        "Spear": {
+          "name": "Włócznia",
+          "description": "<section class=\"secret\">\n<p>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: <strong>4 (1d6 + 1) <em>piercing damage</em></strong> or <strong>5 (1d8 + 1) <em>piercing damage</em></strong> if used with two hands to make a melee attack.</p></section>\n<p>The Guard attacks with its Spear.</p>"
+        }
+      }
+    },
+    "Bastion Defender (Spear)": {
+      "name": "Obrońca Bastionu (Włócznia)",
+      "tokenName": "Obrońca Bastionu (Włócznia)",
+      "items": {
+        "Chain Shirt": {
+          "name": "Koszula kolcza",
+          "description": "<p>Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.</p>"
+        },
+        "Shield": {
+          "name": "Tarcza",
+          "description": "<p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>"
+        },
+        "Spear": {
+          "name": "Włócznia",
+          "description": "<section class=\"secret\">\n<p>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: <strong>4 (1d6 + 1) <em>piercing damage</em></strong> or <strong>5 (1d8 + 1) <em>piercing damage</em></strong> if used with two hands to make a melee attack.</p></section>\n<p>The Guard attacks with its Spear.</p>"
+        }
+      }
+    },
+    "Bastion Defender (Sword)": {
+      "name": "Obrońca bastionu (Miecz)",
+      "tokenName": "Obrońca bastionu (Miecz)",
+      "items": {
+        "Chain Shirt": {
+          "name": "Koszula kolcza",
+          "description": "<p>Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.</p>"
+        },
+        "Longsword": {
+          "name": "Długi miecz",
+          "description": "<p>A lengthy straight blade designed for slashing foes, the longsword is a highly versatile weapon that may also be wielded with two hands for more punishing strikes.</p>"
+        }
+      }
+    },
+    "Black Bear": {
+      "name": "Black Bear",
+      "tokenName": "Black Bear",
+      "items": {
+        "Multiattack": {
+          "name": "Atak wielokrotny",
+          "description": "<p>The bear makes two [[/item Rend]] attacks.</p>",
+          "activities": {
+            "Activate": {
+              "name": "Aktywacja"
+            }
+          }
+        },
+        "Rend": {
+          "name": "Rozdarcie",
+          "description": "<p> <em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 5 (1d6 + 2) Slashing damage.</p>"
+        }
+      }
+    },
+    "Blob of Annihilation": {
+      "name": "Blob of Annihilation",
+      "tokenName": "Blob of Annihilation"
+    },
+    "Brown Bear": {
+      "name": "Brown Bear",
+      "tokenName": "Brown Bear",
+      "items": {
+        "Multiattack": {
+          "name": "Atak wielokrotny",
+          "description": "<p>The bear makes one [[/item Bite]] attack and one [[/item Claw]] attack.</p>",
+          "activities": {
+            "Activate": {
+              "name": "Aktywacja"
+            }
+          }
+        },
+        "Bite": {
+          "name": "Ugryzienie",
+          "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 7 (1d8 + 3) Piercing damage.</p>"
+        },
+        "Claw": {
+          "name": "Pazury",
+          "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Slashing damage, and the target has the &amp;Reference[prone] condition if it is Huge or smaller.</p>"
+        }
+      }
+    },
+    "Brown Mold": {
+      "name": "Brunatna pleśń",
+      "tokenName": "Brunatna pleśń",
+      "items": {
+        "Description/Effects": {
+          "name": "Opis/Efekty",
+          "description": "<p><em>Śmiertelne Zagrożenie (poziomy 5–10) lub Dokuczliwe Zagrożenie (poziomy 11–16)</em></p> <p>Brunatna pleśń przypomina futrzany, jasnobrązowy dywan. Ten grzyb żywi się ciepłem, pochłaniając je ze wszystkiego w swoim otoczeniu. Pojedyncza kolonia brunatnej pleśni zajmuje pole o boku 10 stóp, a temperatura w promieniu 30 stóp od niej jest zawsze lodowata.</p> <p>Gdy istota po raz pierwszy w turze wejdzie w przestrzeń znajdującą się w odległości 5 stóp od pleśni lub zacznie tam swoją turę, wykonuje rzut obronny na Kondycję o ST 12, otrzymując 22 (4k10) obrażeń od Zimna przy nieudanym rzucie albo połowę tej wartości przy udanym.</p> <p>Brunatna pleśń ma Odporność na obrażenia od Ognia, a każde źródło ognia zbliżone do niej na 5 stóp powoduje jej natychmiastowe rozprzestrzenienie się po powierzchni w kierunku ognia, tworząc nową kolonię zajmującą pole o boku 10 stóp. Kolonia brunatnej pleśni wystawiona na działanie efektu zadającego jakąkolwiek ilość obrażeń od Zimna zostaje natychmiast zniszczona.</p>",
+          "activities": {
+            "10-Foot Square": {
+              "name": "Kwadrat o boku 10 stóp"
+            }
+          }
+        }
+      }
+    },
+    "Camel": {
+      "name": "Wielbłąd",
+      "tokenName": "Wielbłąd",
+      "items": {
+        "Bite": {
+          "name": "Ugryzienie",
+          "description": "<p> <em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 4 (1d4 + 2) Bludgeoning damage.</p>"
+        }
+      }
+    },
+    "Carpet of Flying (3 by 5 ft.)": {
+      "name": "Carpet of Flying (3 by 5 ft.)",
+      "tokenName": "Carpet of Flying",
+      "description": "<p>@Embed[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgCarpetOfFlyin]</p>",
+      "items": {
+        "Carry Weight Adjustment": {
+          "name": "Carry Weight Adjustment",
+          "description": "<p>This item serves to offset the carpet's computed carry weight capacity in accordance with the carpet's dimensions.</p>"
+        }
+      },
+      "effects": {
+        "Overloaded": {
+          "name": "Overloaded",
+          "description": "<p>The carpet's Fly Speed is halved when carrying more than its normal capacity.</p>"
+        }
+      }
+    },
+    "Carpet of Flying (4 by 6 ft.)": {
+      "name": "Carpet of Flying (4 by 6 ft.)",
+      "tokenName": "Carpet of Flying",
+      "items": {
+        "Carry Weight Adjustment": {
+          "name": "Carry Weight Adjustment",
+          "description": "<p>This item serves to offset the carpet's computed carry weight capacity in accordance with the carpet's dimensions.</p>"
+        }
+      },
+      "effects": {
+        "Overloaded": {
+          "name": "Overloaded",
+          "description": "<p>The carpet's Fly Speed is halved when carrying more than its normal capacity.</p>"
+        }
+      }
+    },
+    "Carpet of Flying (5 by 7 ft.)": {
+      "name": "Carpet of Flying (5 by 7 ft.)",
+      "tokenName": "Carpet of Flying",
+      "effects": {
+        "Overloaded": {
+          "name": "Overloaded",
+          "description": "<p>The carpet's Fly Speed is halved when carrying more than its normal capacity.</p>"
+        }
+      }
+    },
+    "Carpet of Flying (6 by 9 ft.)": {
+      "name": "Carpet of Flying (6 by 9 ft.)",
+      "tokenName": "Carpet of Flying",
+      "items": {
+        "Carry Weight Adjustment": {
+          "name": "Carry Weight Adjustment",
+          "description": "<p>This item serves to offset the carpet's computed carry weight capacity in accordance with the carpet's dimensions.</p>"
+        }
+      },
+      "effects": {
+        "Overloaded": {
+          "name": "Overloaded",
+          "description": "<p>The carpet's Fly Speed is halved when carrying more than its normal capacity.</p>"
+        }
+      }
+    },
+    "Collapsing Roof Trap": {
+      "name": "Zawalający się strop Pułapka",
+      "tokenName": "Zawalający się strop Pułapka",
+      "items": {
+        "Trigger Trap": {
+          "name": "Wyzwolenie pułapki",
+          "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Śmiertelna Pułapka (Poziomy 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Wyzwalacz:</strong> Istota przechodzi nad potykaczem</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Czas Trwania:</strong> Natychmiastowy</p><p>Ta pułapka wykorzystuje potykacz, aby zawalić niestabilny fragment stropu. Potykacz znajduje się 3 cale nad ziemią i rozciąga się między dwoma słabymi podporami, które przewracają się, gdy potykacz zostaje naruszony.</p><p>Pierwsza istota, która przejdzie nad potykaczem, powoduje przewrócenie się podpór i zawalenie niestabilnego fragmentu stropu. Każda istota znajdująca się pod tym fragmentem musi wykonać rzut obronny na Zręczność o ST 13, otrzymując 11 (2k10) obrażeń obuchowych przy nieudanym rzucie lub połowę tej wartości przy udanym. Rumowisko po zawaleniu zmienia obszar pułapki w &amp;Reference[Difficult Terrain].</p><p><em><strong>Wykrycie i Unieszkodliwienie.</strong></em> Akcją Poszukiwania istota może zbadać obszar pułapki i wykonać test [[/check prc 11]], wykrywając potykacz i niestabilny fragment stropu przy udanym teście. Po wykryciu potykacz można łatwo przeciąć lub obejść (bez potrzeby wykonywania testu).</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować tę pułapkę dla wyższych poziomów, zwiększając obrażenia i ST rzutu obronnego, jak pokazano w poniższej tabeli.</p><table><thead><tr><th><p>Poziomy</p></th><th><p>Obrażenia Obuchowe</p></th><th><p>ST Rzutu</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>22 (4k10)</p></td><td><p>15</p></td></tr><tr><td><p>11–16</p></td><td><p>55 (10k10)</p></td><td><p>17</p></td></tr><tr><td><p>17–20</p></td><td><p>99 (18k10)</p></td><td><p>19</p></td></tr></tbody></table></div>",
+          "activities": {
+            "Trigger (1-4)": {
+              "name": "Wyzwalacz (1-4)"
+            },
+            "Trigger (5-10)": {
+              "name": "Wyzwalacz (5-10)"
+            },
+            "Trigger (11-16)": {
+              "name": "Wyzwalacz (11-16)"
+            },
+            "Trigger (17-20)": {
+              "name": "Wyzwalacz (17-20)"
+            }
+          }
+        }
+      }
+    },
+    "Colossus": {
+      "name": "Colossus",
+      "tokenName": "Colossus"
+    },
+    "Dancing Sword": {
+      "name": "Dancing Sword",
+      "tokenName": "Dancing Sword",
+      "items": {
+        "Greatsword": {
+          "name": "Miecz dwuręczny",
+          "activities": {
+            "Command: Move and Attack": {
+              "name": "Command: Move and Attack",
+              "condition": "Bonus Action taken by attuned character"
+            }
+          }
+        },
+        "Longsword": {
+          "name": "Długi miecz",
+          "activities": {
+            "Command: Move and Attack": {
+              "name": "Command: Move and Attack",
+              "condition": "Bonus Action taken by attuned character"
+            }
+          }
+        },
+        "Rapier": {
+          "name": "Rapier",
+          "activities": {
+            "Command: Move and Attack": {
+              "name": "Command: Move and Attack",
+              "condition": "Bonus Action taken by attuned character"
+            }
+          }
+        },
+        "Scimitar": {
+          "name": "Sejmitar",
+          "activities": {
+            "Command: Move and Attack": {
+              "name": "Command: Move and Attack",
+              "condition": "Bonus Action taken by attuned character"
+            }
+          }
+        },
+        "Shortsword": {
+          "name": "Krótki miecz",
+          "activities": {
+            "Command: Move and Attack": {
+              "name": "Command: Move and Attack",
+              "condition": "Bonus Action taken by attuned character"
+            }
+          }
+        }
+      }
+    },
+    "Dire Wolf": {
+      "name": "Dire Wolf",
+      "tokenName": "Dire Wolf",
+      "items": {
+        "Pack Tactics": {
+          "name": "Atak grupowy",
+          "description": "<p>The wolf has Advantage on an attack roll against a creature if at least one of the wolf’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>"
+        },
+        "Bite": {
+          "name": "Ugryzienie",
+          "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit: </em>8 (1d10 + 3) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Huge or smaller.</p>"
+        }
+      }
+    },
+    "Driftglobe (Daylight)": {
+      "name": "Driftglobe (Daylight)",
+      "tokenName": "Driftglobe",
+      "description": "<p>@Embed[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgDriftglobe000 caption=false]</p>"
+    },
+    "Driftglobe (Light)": {
+      "name": "Driftglobe (Light)",
+      "tokenName": "Driftglobe",
+      "description": "<p>@Embed[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgDriftglobe000 caption=false]</p>"
+    },
+    "Elemental Cataclysm": {
+      "name": "Elemental Cataclysm",
+      "tokenName": "Elemental Cataclysm"
+    },
+    "Elephant": {
+      "name": "Słoń",
+      "tokenName": "Słoń",
+      "items": {
+        "Multiattack": {
+          "name": "Atak wielokrotny",
+          "description": "<p>Słoń wykonuje dwa ataki [[/item Gore]].</p>",
+          "activities": {
+            "Activate": {
+              "name": "Aktywacja"
+            }
+          }
+        },
+        "Gore": {
+          "name": "Nadzianie",
+          "description": "<p><em>Melee Attack Roll: </em>+8, reach 5 ft. <em>Hit:</em> 15 (2d8 + 6) Piercing damage. If the elephant moved at least 20 feet straight toward the target immediately before the hit, the target also has the &amp;Reference[prone] condition.</p>"
+        },
+        "Trample": {
+          "name": "Trample",
+          "description": "<p> <em>Dexterity Saving Throw:</em> DC 16, one creature within 5 feet that has the Prone condition. <em>Failure:</em> 17 (2d10 + 6) Bludgeoning damage. <em>Success:</em> Half damage.</p>"
+        }
+      }
+    },
+    "Empyrean": {
+      "name": "Empyrean",
+      "tokenName": "Empyrean"
+    },
+    "Falling Net Trap": {
+      "name": "Opadająca sieć Pułapka",
+      "tokenName": "Opadająca sieć Pułapka",
+      "items": {
+        "Set & Trigger Trap": {
+          "name": "Set & Trigger Trap",
+          "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Uciążliwa Pułapka (Poziomy 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Wyzwalacz:</strong> Istota przechodzi nad potykaczem</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Czas Trwania:</strong> Natychmiastowy</p><p>Pułapka z opadającą siecią wykorzystuje potykacz, aby uwolnić dociążoną Sieć o wymiarach 10 stóp na 10 stóp, zawieszoną pod stropem. Potykacz znajduje się 3 cale nad ziemią i rozciąga się między dwiema kolumnami lub drzewami.</p><p>Pierwsza istota, która przejdzie nad potykaczem, powoduje, że Sieć spada na nią. Cel musi wykonać rzut obronny na Zręczność o ST 10 albo uzyskuje stan &amp;Reference[Restrained], dopóki nie się uwolni. Istota Duża lub większa automatycznie odnosi sukces. Istota może Akcją wykonać test Siły (Atletyka) o ST 10, aby uwolnić siebie lub inną istotę w swoim zasięgu z Sieci przy udanym teście.</p><p><em><strong>Wykrycie i Unieszkodliwienie.</strong></em> Akcją Poszukiwania istota może zbadać obszar pułapki i wykonać test [[/check prc 11]], wykrywając potykacz i zawieszoną @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagNet00000000]{Net} przy udanym teście. Po wykryciu potykacz można łatwo przeciąć lub obejść (bez potrzeby wykonywania testu).</p><p><em><strong>Zniszczenie Sieci.</strong></em> Zredukowanie Sieci do 0 Punktów Wytrzymałości uwalnia wszystkie uwięzione w niej istoty (zobacz statystyki Sieci w <em>Podręczniku Gracza</em>).</p><p><em><strong>Założenie Pułapki.</strong></em> Istota posiadająca Zestaw Złodziejskich Narzędzi oraz wszystkie elementy pułapki (w tym Sieć) może spróbować założyć pułapkę z opadającą siecią, robiąc to po udanym teście Zręczności (Zwinne Dłonie) o ST 13. Każda próba założenia pułapki trwa 10 minut.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować tę pułapkę dla wyższych poziomów, zwiększając ciężar Sieci, co podnosi ST rzutu obronnego oraz ST testu Siły (Atletyka) następująco: ST 12 na poziomach 5–10, ST 14 na poziomach 11–16 oraz ST 16 na poziomach 17–20.</p></div>",
+          "activities": {
+            "Trigger (1-4)": {
+              "name": "Wyzwalacz (1-4)"
+            },
+            "Trigger (5-10)": {
+              "name": "Wyzwalacz (5-10)"
+            },
+            "Trigger (11-16)": {
+              "name": "Wyzwalacz (11-16)"
+            },
+            "Trigger (17-20)": {
+              "name": "Wyzwalacz (17-20)"
+            },
+            "Escape Check (1-4)": {
+              "name": "Test ucieczki (1-4)"
+            },
+            "Escape Check (5-10)": {
+              "name": "Test ucieczki (5-10)"
+            },
+            "Escape Check (11-16)": {
+              "name": "Test ucieczki (11-16)"
+            },
+            "Escape Check (17-20)": {
+              "name": "Test ucieczki (17-20)"
+            },
+            "Set Trap": {
+              "name": "Ustawienie pułapki"
+            }
+          },
+          "effects": {
+            "Captured": {
+              "name": "Uwięziony"
+            }
+          }
+        }
+      }
+    },
+    "Fire Casting Statue Trap": {
+      "name": "Fire Casting Statue Trap",
+      "tokenName": "Fire Casting Statue Trap",
+      "items": {
+        "Trigger Trap": {
+          "name": "Wyzwolenie pułapki",
+          "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Śmiertelna Pułapka (Poziomy 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Wyzwalacz:</strong> Istota wchodzi na płytkę naciskową</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Czas Trwania:</strong> Natychmiastowy, a pułapka resetuje się na początku następnej tury</p><p>Gdy istota po raz pierwszy w turze wejdzie na płytkę naciskową tej pułapki lub rozpocznie na niej swoją turę, pobliska statua wydycha 15-stopowy Stożek magicznych płomieni. Statua może mieć dowolny wygląd, na przykład przedstawiać smoka lub maga. Każda istota w Stożku musi wykonać rzut obronny na Zręczność o ST 15, otrzymując 11 (2k10) obrażeń od ognia przy nieudanym rzucie lub połowę tej wartości przy udanym.</p><p><em><strong>Wykrycie i Unieszkodliwienie.</strong></em> Czar <em>wykrycie magii</em> ujawnia aurę magii przywołania wokół statuy. Akcją Przeszukiwania istota znajdująca się w odległości 5 stóp od statuy może ją zbadać i wykonać test [[/check DC prc 10]], wykrywając przy udanym teście mały glif na statui. Gdy glif zostanie odnaleziony, postać może wykonać Akcję Nauki, aby go zbadać i wykonać test [[/check arc 15]], ustalając przy sukcesie, że glif oznacza „ogień”. Akcją postać może użyć ostrego narzędzia, aby uszkodzić glif, co unieszkodliwia pułapkę.</p><p>Akcją Przeszukiwania istota może zbadać fragment podłogi tworzący płytkę naciskową i wykonać test [[/check prc 15]], wykrywając płytkę przy udanym teście. Podłożenie Metalowego Kołka lub podobnego przedmiotu pod płytkę naciskową zapobiega wyzwoleniu pułapki.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować tę pułapkę dla wyższych poziomów, zwiększając obrażenia i obszar działania, jak pokazano w poniższej tabeli.</p><table><thead><tr><th><p>Poziomy</p></th><th><p>Obrażenia od Ognia</p></th><th><p>Obszar Działania</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>22 (4k10)</p></td><td><p>Stożek 30 stóp</p></td></tr><tr><td><p>11–16</p></td><td><p>55 (10k10)</p></td><td><p>Stożek 60 stóp</p></td></tr><tr><td><p>17–20</p></td><td><p>99 (18k10)</p></td><td><p>Stożek 120 stóp</p></td></tr></tbody></table></div>",
+          "activities": {
+            "Trigger (1-4)": {
+              "name": "Wyzwalacz (1-4)"
+            },
+            "Trigger (5-10)": {
+              "name": "Wyzwalacz (5-10)"
+            },
+            "Trigger (11-16)": {
+              "name": "Wyzwalacz (11-16)"
+            },
+            "Trigger (17-20)": {
+              "name": "Wyzwalacz (17-20)"
+            }
+          }
+        }
+      }
+    },
+    "Fireball Fungus": {
+      "name": "Grzyb Kuli ognia",
+      "tokenName": "Grzyb Kuli ognia",
+      "items": {
+        "Description/Effects": {
+          "name": "Opis/Efekty",
+          "description": "<p><em>Śmiertelne Zagrożenie (poziomy 5–10)</em></p> <p>Grzyb Kuli Ognia to Niewielki, nieożywiony grzyb, który może rosnąć wszędzie tam, gdzie występują obfite skupiska grzybów. Jego świecący, pomarańczowy kapelusz emituje Jasne światło w promieniu 15 stóp oraz Słabe światło w kolejnych 15 stopach.</p> <p>Grzyb Kuli Ognia ma AC 10, 6 PW oraz Odporność na obrażenia Psychiczne. Gdy jego Punkty Wytrzymałości spadną do 0, grzyb wybucha tak, jakby w jego centrum został rzucony czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireball00] (ST rzutu obronnego 15).</p> <p><em><strong>Na wyższych poziomach.</strong></em> Eksplozja Grzyba Kuli Ognia powoduje również wybuch wszystkich pozostałych grzybów tego rodzaju znajdujących się w obszarze działania. Możesz dostosować to zagrożenie do wyższych poziomów, dodając jeden dodatkowy grzyb na poziomach 11–16 lub trzy dodatkowe grzyby na poziomach 17–20.</p>"
+        }
+      }
+    },
+    "Floating Whip": {
+      "name": "Floating Whip",
+      "tokenName": "Floating Whip",
+      "items": {
+        "Melee Spell Attack": {
+          "name": "Melee Spell Attack"
+        }
+      }
+    },
+    "Frog": {
+      "name": "Żaba",
+      "tokenName": "Żaba",
+      "items": {
+        "Amphibious": {
+          "name": "Ziemno-wodny",
+          "description": "<p> Żaba może oddychać w powietrzu i wodzie.</p>"
+        },
+        "Standing Leap": {
+          "name": "Standing Leap",
+          "description": "<p>Skok w dal żaby wynosi do 10 stóp, a Skok wzwyż do 5 stóp, z rozbiegiem lub bez.</p>"
+        },
+        "Bite": {
+          "name": "Ugryzienie",
+          "description": "<p><em>Rzut ataku wręcz:</em> +3, zasięg 5 ft. <em>Trafienie:</em> 1 obrażenie Kłute.</p>"
+        }
+      }
+    },
+    "Giant Badger": {
+      "name": "Giant Badger",
+      "tokenName": "Giant Badger",
+      "items": {
+        "Bite": {
+          "name": "Ugryzienie",
+          "description": "<p> <em>Melee Attack Roll:</em> +3, reach 5 ft. <em>Hit:</em> 6 (2d4 + 1) Piercing damage.</p>"
+        }
+      }
+    },
+    "Giant Fly": {
+      "name": "Giant Fly",
+      "tokenName": "Giant Fly"
+    },
+    "Giant Goat": {
+      "name": "Giant Goat",
+      "tokenName": "Giant Goat",
+      "items": {
+        "Ram": {
+          "name": "Taran",
+          "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>6 (1d6 + 3) Bludgeoning damage. If the goat moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 5 (2d4) Bludgeoning damage and, if it is Huge or smaller, has the &amp;Reference[prone] condition.</p>",
+          "activities": {
+            "Charging Attack": {
+              "name": "Charging Attack"
+            }
+          }
+        }
+      }
+    },
+    "Giant Spider": {
+      "name": "Giant Spider",
+      "tokenName": "Giant Spider",
+      "items": {
+        "Spider Climb": {
+          "name": "Pajęcza wspinaczka",
+          "description": "<p>The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>"
+        },
+        "Web Walker": {
+          "name": "Web Walker",
+          "description": "<p> The spider ignores movement restrictions caused by webs, and it knows the location of any other creature in contact with the same web.</p>"
+        },
+        "Bite": {
+          "name": "Ugryzienie",
+          "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit:</em> 7 (1d8 + 3) Piercing damage plus 7 (2d6) Poison damage.</p>"
+        },
+        "Web": {
+          "name": "Pajęczyna",
+          "description": "<p><em>Dexterity Saving Throw:</em> DC 13, one creature the spider can see within 60 feet. <em>Failure:</em> The target has the &amp;Reference[restrained] condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Poison and Psychic damage).</p>"
+        }
+      }
+    },
+    "Giant Weasel": {
+      "name": "Giant Weasel",
+      "tokenName": "Giant Weasel",
+      "items": {
+        "Bite": {
+          "name": "Ugryzienie",
+          "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Piercing damage.</p>"
+        }
+      }
+    },
+    "Goat": {
+      "name": "Koza",
+      "tokenName": "Koza",
+      "items": {
+        "Ram": {
+          "name": "Taran",
+          "description": "<p><em>Melee Attack Roll: </em>+2, reach 5 ft. <em>Hit: </em>1 Bludgeoning damage, or the goat deals 2 (1d4) Bludgeoning damage if it moved at least 20 feet straight toward the target immediately before the hit.</p>",
+          "activities": {
+            "Charging Attack": {
+              "name": "Charging Attack"
+            }
+          }
+        }
+      }
+    },
+    "Goat of Terror": {
+      "name": "Goat of Terror",
+      "tokenName": "Goat of Terror",
+      "items": {
+        "Lance (Goat Horn) +1": {
+          "name": "Lance (Goat Horn)",
+          "description": "<p>Removing a horn requires a Magic action, and the weapons disappear and the horns return when the goat reverts to figurine form.</p>",
+          "effects": {
+            "Weapon +1": {
+              "name": "Broń +1",
+              "changes": {
+                "name": "{} +1",
+                "system.description.value": "<p>@Embed[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgWeapon12or300 caption=false]</p>"
+              }
+            }
+          }
+        },
+        "Longsword (Goat Horn) +2": {
+          "name": "Longsword (Goat Horn)",
+          "description": "<p>Removing a horn requires a Magic action, and the weapons disappear and the horns return when the goat reverts to figurine form.</p>",
+          "effects": {
+            "Weapon +2": {
+              "name": "Broń +2",
+              "changes": {
+                "name": "{} +2",
+                "system.description.value": "<p>@Embed[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgWeapon12or300 caption=false]</p>"
+              }
+            }
+          }
+        },
+        "Frightened Emanation": {
+          "name": "Frightened Emanation",
+          "description": "<p>While you ride the goat, any Hostile creature that starts its turn within a 30-foot Emanation originating from the goat must succeed on a DC 15 Wisdom saving throw or have the &amp;Reference[Frightened apply=false] condition for 1 minute, until you are no longer riding the goat, or until the goat reverts to figurine form. The Frightened creature repeats the save at the end of each of its turns, ending the effect on itself on a success. Once it succeeds on the save, a creature is immune to this effect for the next 24 hours.</p>",
+          "activities": {
+            "save": {
+              "condition": "Hostile creature starts its turn within 30 feet"
+            }
+          },
+          "effects": {
+            "Frightened": {
+              "name": "Przerażony",
+              "description": "<p>The &amp;Reference[Frightened apply=false] creature repeats the [[/save ability=wis dc=15]]{save} at the end of each of its turns, ending the effect on itself on a success.</p>"
+            }
+          }
+        }
+      }
+    },
+    "Goat of Traveling": {
+      "name": "Goat of Traveling",
+      "tokenName": "Goat of Traveling",
+      "items": {
+        "Hooves": {
+          "name": "Kopyta",
+          "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>7 (1d8 + 3) Bludgeoning damage.</p>"
+        }
+      }
+    },
+    "Green Slime": {
+      "name": "Zielony szlam",
+      "tokenName": "Zielony szlam",
+      "items": {
+        "Description/Effects": {
+          "name": "Opis/Efekty",
+          "description": "<p><em>Uciążliwe Zagrożenie (Poziomy 1–4)</em></p><p>Kwaśny zielony szlam pożera ciało, materię organiczną i metal przy kontakcie. Jasnozielony, mokry i lepki, przylega do ścian, podłóg i sufitów w postaci plam.</p><p>Jedna plama zielonego szlamu pokrywa kwadrat o boku 5 stóp. Zielony szlam ma Ślepowidzenie o zasięgu 30 stóp i spada ze ścian oraz sufitów, gdy wykryje ruch pod sobą. Poza tym nie może się poruszać. Istota świadoma obecności szlamu może uniknąć trafienia, jeśli zda rzut obronny na Zręczność o ST 10.</p><p>Istota, która wejdzie w kontakt z zielonym szlamem, otrzymuje 5 (1k10) obrażeń od kwasu. Istota otrzymuje te obrażenia ponownie na początku każdej swojej tury, dopóty szlam nie zostanie zeskrobany (wymaga Akcji) lub zniszczony. W przypadku drewna lub metalu zielony szlam zadaje 11 (2k10) obrażeń od kwasu każdą rundę, a każdy niemagiczny drewniany lub metalowy przedmiot użyty do zeskrobania zielonego szlamu zostaje zniszczony.</p><p>Bezpośrednie światło słoneczne lub dowolna ilość obrażeń od zimna, ognia lub światłości niszczy plamę zielonego szlamu.</p>",
+          "activities": {
+            "Avoid": {
+              "name": "Avoid"
+            },
+            "Contact Damage": {
+              "name": "Contact Damage"
+            },
+            "Wood/Metal Damage": {
+              "name": "Wood/Metal Damage"
+            }
+          }
+        }
+      }
+    },
+    "Hidden Pit Trap": {
+      "name": "Ukryty dół Pułapka",
+      "tokenName": "Ukryty dół Pułapka",
+      "items": {
+        "Trigger Trap": {
+          "name": "Wyzwolenie pułapki",
+          "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Uciążliwa Pułapka (Poziomy 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Wyzwalacz:</strong> Istota wchodzi na pokrywę dołu</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Czas Trwania:</strong> Natychmiastowy</p><p>Ten 10-stopowy dół ma zawiasową pokrywę z materiału identycznego jak otaczająca podłoga. Gdy istota wejdzie na pokrywę, ta otwiera się jak zapadnia, powodując, że istota wpada do dołu. Pokrywa pozostaje potem otwarta.</p><p>Istota, która wpada do dołu, otrzymuje 3 (1k6) obrażeń obuchowych od upadku.</p><p><em><strong>Wykrycie i Unieszkodliwienie.</strong></em> Akcją Nauki istota może zbadać fragment podłogi tworzący pokrywę dołu i wykonać test [[/check inv 15]], wykrywając dół przy udanym teście. Po wykryciu dołu Metalowy Kołek lub podobny przedmiot można zaklinować między pokrywą a otaczającą podłogą, uniemożliwiając jej otwarcie i pozwalając bezpiecznie przejść. Pokrywę można też utrzymać zamkniętą za pomocą <em>magicznej blokady</em> lub podobnej magii.</p><p><em><strong>Ucieczka.</strong></em> Istota potrzebuje prędkości wspinaczki, sprzętu wspinaczkowego lub magii takiej jak <em>chodzenie po ścianach</em>, aby wspiąć się po gładkich ścianach dołu. Możesz ułatwić ucieczkę, dodając pęknięcia w ścianach wystarczająco duże, by służyły jako chwyty rąk i nóg.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować tę pułapkę dla wyższych poziomów, zwiększając głębokość dołu i obrażenia, jak pokazano w poniższej tabeli.</p><table><thead><tr><th><p>Poziomy</p></th><th><p>Głębokość Dołu</p></th><th><p>Obrażenia Obuchowe</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>30 stóp</p></td><td><p>10 (3k6)</p></td></tr><tr><td><p>11–16</p></td><td><p>60 stóp</p></td><td><p>21 (6k6)</p></td></tr><tr><td><p>17–20</p></td><td><p>120 stóp</p></td><td><p>42 (12k6)</p></td></tr></tbody></table></div>",
+          "activities": {
+            "Trigger (1-4)": {
+              "name": "Wyzwalacz (1-4)"
+            },
+            "Trigger (5-10)": {
+              "name": "Wyzwalacz (5-10)"
+            },
+            "Trigger (11-16)": {
+              "name": "Wyzwalacz (11-16)"
+            },
+            "Trigger (17-20)": {
+              "name": "Wyzwalacz (17-20)"
+            }
+          }
+        }
+      }
+    },
+    "Illusory Creature": {
+      "name": "Illusory Creature",
+      "tokenName": "Illusory Creature"
+    },
+    "Imp": {
+      "name": "Imp",
+      "tokenName": "Imp",
+      "items": {
+        "Devil’s Sight": {
+          "name": "Devil’s Sight",
+          "description": "<p>Magical Darkness doesn’t impede the imp’s Darkvision.</p>"
+        },
+        "Magic Resistance": {
+          "name": "Odporność na magię",
+          "description": "<p> The imp has Advantage on saving throws against spells and other magical effects.</p>"
+        },
+        "Sting": {
+          "name": "Sting",
+          "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 6 (1d6 + 3) Piercing damage plus 7 (2d6) Poison damage.</p>"
+        },
+        "Invisibility": {
+          "name": "Niewidzialność",
+          "description": "<p>The imp casts [[/item oHafKbzbqYGiL4i1]] on itself, requiring no spell components and using Charisma as the spellcasting ability.</p><hr /><p>@Embed[.oHafKbzbqYGiL4i1 caption=false]</p>"
+        },
+        "Shape-Shift": {
+          "name": "Shape-Shift",
+          "description": "<p> The imp shape-shifts to resemble a rat (Speed 20 ft.), a raven (20 ft., Fly 60 ft.), or a spider (20 ft., Climb 20 ft.), or it returns to its true form. Its statistics are the same in each form, except for its Speed. Any equipment it’s wearing or carrying isn’t transformed.</p>",
+          "activities": {
+            "Change Form": {
+              "name": "Change Form"
+            }
+          },
+          "effects": {
+            "Rat Form": {
+              "name": "Rat Form"
+            },
+            "Raven Form": {
+              "name": "Raven Form"
+            },
+            "Spider Form": {
+              "name": "Spider Form"
+            }
+          }
+        },
+        "oHafKbzbqYGiL4i1": {
+          "name": "Niewidzialność",
+          "description": "<p>A creature you touch has the &amp;Reference[invisible apply=false] condition until the spell ends. The spell ends early immediately after the target makes an attack roll, deals damage, or casts a spell.</p>",
+          "activities": {
+            "Cast": {
+              "name": "Rzucanie"
+            }
+          },
+          "effects": {
+            "Invisibility": {
+              "name": "Niewidzialność",
+              "description": "<p>Czar kończy się natychmiast po tym, jak cel wykona rzut ataku, zada obrażenia lub rzuci zaklęcie.</p>"
+            }
+          }
+        }
+      }
+    },
+    "Inferno": {
+      "name": "Inferno",
+      "tokenName": "Inferno",
+      "items": {
+        "Description/Effects": {
+          "name": "Opis/Efekty",
+          "description": "<p><em>Śmiertelne Zagrożenie (Poziomy 5–10) lub Uciążliwe Zagrożenie (Poziomy 11–16)</em></p><p>Zawsze gdy niekontrolowany ogień się rozprzestrzenia, może utworzyć inferno, które szybko pochłania istoty, obiekty i roślinność.</p><p>Inferno składa się z co najmniej czterech przylegających do siebie 10-stopowych Sześcianów ognia. Każdy 10-stopowy Sześcian inferna można ugasić za pomocą 10 galonów wody. Narażone na silny wiatr przez 1 minutę inferno rośnie, zwiększając swoją objętość o [[/r 1d4]] nowych 10-stopowych Sześcianów. Inferno pozbawione paliwa wypala się po 1k10 minutach.</p><p>Inferno zadaje obrażenia każdej roślinności lub obiektowi, który nie jest noszony ani przenoszony, zadając 22 (4k10) obrażeń od ognia natychmiast oraz ponownie na końcu każdej minuty. Każda istota, która po raz pierwszy w turze wejdzie do inferna lub rozpocznie w nim swoją turę, otrzymuje 22 (4k10) obrażeń od ognia i jest płonąca.</p>",
+          "activities": {
+            "Place Inferno": {
+              "name": "Umieszczenie Inferno"
+            }
+          },
+          "effects": {
+            "Burning": {
+              "name": "Płonący"
+            }
+          }
+        }
+      }
+    },
+    "Larva": {
+      "name": "Larva",
+      "tokenName": "Larva"
+    },
+    "Lion": {
+      "name": "Lew",
+      "tokenName": "Lew",
+      "items": {
+        "Pack Tactics": {
+          "name": "Atak grupowy",
+          "description": "<p>The lion has Advantage on an attack roll against a creature if at least one of the lion’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>"
+        },
+        "Running Leap": {
+          "name": "Running Leap",
+          "description": "<p>Przy 10-stopowym rozbiegu lew może wykonać Skok w dal na odległość do 25 stóp.</p>"
+        },
+        "Multiattack": {
+          "name": "Atak wielokrotny",
+          "description": "<p>Lew wykonuje dwa ataki [[/item Rend]]. Może zastąpić jeden z tych ataków użyciem [[/item Roar]].</p>",
+          "activities": {
+            "Activate": {
+              "name": "Aktywacja"
+            }
+          }
+        },
+        "Rend": {
+          "name": "Rozdarcie",
+          "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>7 (1d8 + 3) Slashing damage.</p>"
+        },
+        "Roar": {
+          "name": "Roar",
+          "description": "<p><em>Wisdom Saving Throw:</em> DC 11, one creature within 15 feet. <em>Failure:</em> The target has the &amp;Reference[frightened apply=false] condition until the start of the lion’s next turn.</p>",
+          "effects": {
+            "Frightened": {
+              "name": "Przerażony",
+              "description": "<p>The target has the &amp;Reference[frightened apply=false] condition until the start of the lion’s next turn.</p>"
+            }
+          }
+        }
+      }
+    },
+    "Mastiff": {
+      "name": "Mastiff",
+      "tokenName": "Mastiff",
+      "items": {
+        "Bite": {
+          "name": "Ugryzienie",
+          "description": "<p><em>Melee Attack Roll:</em> +3, reach 5 ft. <em>Hit: </em>4 (1d6 + 1) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Large or smaller.</p>"
+        }
+      }
+    },
+    "Mule": {
+      "name": "Muł",
+      "tokenName": "Muł",
+      "items": {
+        "Beast of Burden": {
+          "name": "Beast of Burden",
+          "description": "<p> The mule counts as one size larger for the purpose of determining its carrying capacity.</p>"
+        },
+        "Hooves": {
+          "name": "Kopyta",
+          "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>4 (1d4 + 2) Bludgeoning damage.</p>"
+        }
+      }
+    },
+    "Panther": {
+      "name": "Pantera",
+      "tokenName": "Pantera",
+      "items": {
+        "Multiattack": {
+          "name": "Atak wielokrotny",
+          "description": "<p>The panther makes one [[/item Pounce]] attack and uses [[/item Prowl]].</p>",
+          "activities": {
+            "Activate": {
+              "name": "Aktywacja"
+            }
+          }
+        },
+        "Pounce": {
+          "name": "Natarcie",
+          "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>4 (1d4 + 2) Slashing damage, or the panther deals 7 (2d4 + 2) Slashing damage if it had Advantage on the attack roll.</p>",
+          "activities": {
+            "Advantage Attack": {
+              "name": "Advantage Attack",
+              "condition": "has Advantage on this attack"
+            }
+          }
+        },
+        "Prowl": {
+          "name": "Prowl",
+          "description": "<p>The panther moves up to half its Speed without provoking Opportunity Attacks. At the end of this movement, the panther can take the &amp;Reference[hide] action.</p>",
+          "activities": {
+            "Move and Hide": {
+              "name": "Move and Hide"
+            }
+          }
+        }
+      }
+    },
+    "Poisoned Darts Trap": {
+      "name": "Zatrute strzałki Pułapka",
+      "tokenName": "Zatrute strzałki Pułapka",
+      "items": {
+        "Trigger Trap": {
+          "name": "Wyzwolenie pułapki",
+          "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Śmiertelna Pułapka (Poziomy 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Wyzwalacz:</strong> Istota wchodzi na płytkę naciskową</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Czas Trwania:</strong> Natychmiastowy, a pułapka resetuje się na początku następnej tury, jeśli została aktywowana mniej niż trzy razy</p><p>Gdy istota po raz pierwszy w turze wejdzie na płytkę naciskową tej pułapki, zatrute strzałki wystrzeliwują z rurek osadzonych w otaczających ścianach. Otwory mieszczące te rurki są zasłonięte kurzem i pajęczynami lub umiejętnie ukryte wśród płaskorzeźb, malowideł czy fresków.</p><p>Każda istota znajdująca się na drodze strzałek musi wykonać rzut obronny na Zręczność o ST 13, inaczej zostaje trafiona przez [[/r 1d3]] strzałki, otrzymując 3 (1k6) obrażeń od trucizn za każdą strzałkę.</p><p><em><strong>Wykrycie i Unieszkodliwienie.</strong></em> Akcją Przeszukiwania istota może zbadać ściany i wykonać test [[/check prc 15]], wykrywając otwory przy udanym teście. Zatkanie wszystkich otworów woskiem, tkaniną lub gruzem uniemożliwia wystrzelenie strzałek.</p><p>Akcją Przeszukiwania istota może zbadać fragment podłogi tworzący płytkę naciskową i wykonać test [[/check prc 15]], wykrywając płytkę przy udanym teście. Podłożenie Metalowego Kołka lub podobnego przedmiotu pod płytkę naciskową zapobiega wyzwoleniu pułapki.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować tę pułapkę dla wyższych poziomów, zwiększając obrażenia od trucizn zadawane przez każdą strzałkę następująco: 7 (2k6) na poziomach 5–10, 14 (4k6) na poziomach 11–16 oraz 24 (7k6) na poziomach 17–20.</p></div>",
+          "activities": {
+            "Trigger (1-4)": {
+              "name": "Wyzwalacz (1-4)"
+            },
+            "Trigger (5-10)": {
+              "name": "Wyzwalacz (5-10)"
+            },
+            "Trigger (11-16)": {
+              "name": "Wyzwalacz (11-16)"
+            },
+            "Trigger (17-20)": {
+              "name": "Wyzwalacz (17-20)"
+            }
+          }
+        }
+      }
+    },
+    "Poisoned Needle Trap": {
+      "name": "Zatruta igła Pułapka",
+      "tokenName": "Zatruta igła Pułapka",
+      "items": {
+        "Trigger Trap": {
+          "name": "Wyzwolenie pułapki",
+          "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Uciążliwa Pułapka (Poziomy 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Wyzwalacz:</strong> Istota niewłaściwie otwiera zamek pułapki lub nie udaje jej się jej unieszkodliwić</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Czas Trwania:</strong> Natychmiastowy</p><p>Zatruta igła jest ukryta w zamku. Gdy istota otwiera zamek dowolnym przedmiotem innym niż właściwy klucz, igła wyskakuje i rani istotę. Istota wykonuje rzut obronny na Kondycję o ST 11. Przy nieudanym rzucie istota otrzymuje 5 (1k10) obrażeń od trucizn i uzyskuje stan &amp;Reference[Poisoned apply=false] na 1 godzinę. Przy udanym rzucie istota otrzymuje tylko połowę obrażeń.</p><p><em><strong>Ominięcie.</strong></em> Pułapka nie wyzwala się, jeśli zamek zostanie otwarty za pomocą czaru <em>pukanie</em> lub podobnej magii.</p><p><em><strong>Wykrycie i Unieszkodliwienie.</strong></em> Akcją Przeszukiwania istota może zbadać zamek pułapki i wykonać test [[/check prc 15]], wykrywając igłę przy udanym teście. Po wykryciu pułapki postać może wykonać Akcję, aby spróbować ją unieszkodliwić, robiąc to po udanym teście [[/check slt 15]]. Przy nieudanym teście istota wyzwala pułapkę.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować tę pułapkę dla wyższych poziomów, zwiększając obrażenia i ST rzutu obronnego, jak pokazano w poniższej tabeli.</p><table><thead><tr><th><p>Poziomy</p></th><th><p>Obrażenia od Trucizn</p></th><th><p>ST Rzutu</p></th><th></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>11 (2k10)</p></td><td><p>13</p></td><td></td></tr><tr><td><p>11–16</p></td><td><p>22 (4k10)</p></td><td><p>15</p></td><td></td></tr><tr><td><p>17–20</p></td><td><p>55 (10k10)</p></td><td><p>17</p></td><td></td></tr></tbody></table></div>",
+          "activities": {
+            "Trigger (1-4)": {
+              "name": "Wyzwalacz (1-4)"
+            },
+            "Trigger (5-10)": {
+              "name": "Wyzwalacz (5-10)"
+            },
+            "Trigger (11-16)": {
+              "name": "Wyzwalacz (11-16)"
+            },
+            "Trigger (17-20)": {
+              "name": "Wyzwalacz (17-20)"
+            }
+          },
+          "effects": {
+            "Poisoned Needle": {
+              "name": "Zatruta igła"
+            }
+          }
+        }
+      }
+    },
+    "Poisonous Gas": {
+      "name": "Trujący gaz",
+      "tokenName": "Trujący gaz",
+      "items": {
+        "Poisonous Gas": {
+          "name": "Trujący gaz",
+          "description": "<p><em>Uciążliwe Zagrożenie (Poziomy 1–4)</em></p><p>Zatruty gaz zwykle napotyka się w zamkniętej przestrzeni, takiej jak kanał lub zapieczętowany grobowiec. Gaz wypełnia tyle przestrzeni, ile może, maksymalnie do dziesięciu 10-stopowych Sześcianów. Przezroczysty gaz niesie odór zgnilizny. Jest stale lub okresowo uzupełniany przez naturalne lub magiczne źródło, choć silny wiatr rozprasza go na 1 minutę.</p><p>Każda istota, która po raz pierwszy w turze wejdzie w zatruty gaz lub rozpocznie w nim swoją turę, wykonuje rzut obronny na Kondycję o ST 12, otrzymując 5 (1k10) obrażeń od trucizn przy nieudanym rzucie lub połowę tej wartości przy udanym. Istoty znajdujące się w gazie mają także Utrudnienie do Rzutów Obronych przeciwko Śmierci.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować to zagrożenie dla wyższych poziomów, zwiększając obrażenia od trucizn i ST rzutu, jak pokazano w poniższej tabeli.</p><table><thead><tr><th><p>Poziomy</p></th><th><p>Obrażenia od Trucizn</p></th><th><p>ST Rzutu</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>11 (2k10)</p></td><td><p>14</p></td></tr><tr><td><p>11–16</p></td><td><p>22 (4k10)</p></td><td><p>16</p></td></tr><tr><td><p>17–20</p></td><td><p>55 (10k10)</p></td><td><p>18</p></td></tr></tbody></table>",
+          "activities": {
+            "Place Gas": {
+              "name": "Umieszczenie gazu"
+            },
+            "Level 1-4 Save": {
+              "name": "Poziom 1-4 rzut obronny"
+            },
+            "Level 5-10 Save": {
+              "name": "Poziom 5-10 rzut obronny"
+            },
+            "Level 11-16 Save": {
+              "name": "Poziom 11-16 rzut obronny"
+            },
+            "Level 17-20 Save": {
+              "name": "Poziom 17-20 rzut obronny"
+            }
+          }
+        }
+      }
+    },
+    "Quicksand Pit": {
+      "name": "Dół z ruchomym piaskiem",
+      "tokenName": "Dół z ruchomym piaskiem",
+      "items": {
+        "Description/Effects": {
+          "name": "Opis/Efekty",
+          "description": "<p><em>Uciążliwe Zagrożenie (Poziomy 1–4)</em></p><p>Zapadlisko z ruchomymi piaskami ma głębokość 10 stóp i pokrywa obszar o boku 10 stóp. Istota, która wejdzie na ten obszar, zapada się na [[/r 1d4 + 1]] stóp w ruchome piaski i uzyskuje stan &amp;Reference[Restrained]. Na początku każdej swojej tury zapada się o kolejne [[/r 1d4]] stopy. Dopóki istota nie jest całkowicie zanurzona w ruchomych piaskach, może Akcją spróbować się wydostać, robiąc to po udanym teście Siły (Atletyka) o ST równym 10 plus liczba stóp, na jaką zapadła się istota. Istota całkowicie zanurzona w ruchomych piaskach ma &amp;Reference[Total Cover], stan &amp;Reference[Blinded] oraz grozi jej uduszenie.</p><p>Istota może wyciągnąć inną istotę w swoim zasięgu z zapadliska z ruchomymi piaskami, wykonując Akcją i zdając test Siły (Atletyka) o ST 5 plus liczba stóp, na jaką zapadła się istota.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować to zagrożenie dla wyższych poziomów, zwiększając głębokość zapadliska oraz liczbę stóp, o jakie istota zapada się na początku każdej swojej tury, jak pokazano w poniższej tabeli.</p><table><thead><tr><th><p>Poziomy</p></th><th><p>Głębokość Zapadliska</p></th><th><p>Tempo Zapadania</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>15 stóp</p></td><td><p>[[/r 1d6]] stóp</p></td></tr><tr><td><p>11–16</p></td><td><p>20 stóp</p></td><td><p>[[/r 1d8]] stóp</p></td></tr><tr><td><p>17–20</p></td><td><p>30 stóp</p></td><td><p>[[/r 1d10]] stóp</p></td></tr></tbody></table><section class=\"secret\" id=\"secret-AM5gl3rOBGRkGFwA\"><p><strong>Foundry Note</strong></p><p>Działania <strong>Escape Check</strong> i <strong>Pull Another Creature Out</strong> pozwalają wpisać liczbę stóp, na jaką istota się zapadła, i automatycznie zwiększają ST.</p></section>",
+          "activities": {
+            "Place Quicksand Pit": {
+              "name": "Umieszczenie dołu z ruchomym piaskiem"
+            },
+            "Escape Check": {
+              "name": "Test ucieczki"
+            },
+            "Pull Another Creature Out": {
+              "name": "Pull Another Creature Out"
+            }
+          }
+        }
+      }
+    },
+    "Rat": {
+      "name": "Szczur",
+      "tokenName": "Szczur",
+      "items": {
+        "Agile": {
+          "name": "Agile",
+          "description": "<p> The rat doesn’t provoke Opportunity Attacks when it moves out of an enemy’s reach.</p>"
+        },
+        "Bite": {
+          "name": "Ugryzienie",
+          "description": "<p><em>Rzut ataku wręcz:</em> +2, zasięg 5 stóp. <em>Trafienie:</em> 1 obrażenie Kłute.</p>"
+        }
+      }
+    },
+    "Raven": {
+      "name": "Kruk",
+      "tokenName": "Kruk",
+      "items": {
+        "Mimicry": {
+          "name": "Naśladownictwo",
+          "description": "<p>The raven can mimic simple sounds it has heard, such as a whisper or chitter. A hearer can discern the sounds are imitations with a successful [[/check skill=ins dc=10]] check.</p>"
+        },
+        "Beak": {
+          "name": "Dziób",
+          "description": "<p><em>Rzut ataku wręcz:</em> +4, zasięg 5 ft. <em>Trafienie:</em> 1 obrażenie Kłute.</p>"
+        }
+      }
+    },
+    "Razorvine": {
+      "name": "Brzytworośl",
+      "tokenName": "Brzytworośl",
+      "items": {
+        "Description/Effects": {
+          "name": "Opis/Efekty",
+          "description": "<p><em>Uciążliwe Zagrożenie (Poziomy 1–4)</em></p><p>Brzytworośl to roślina, która rośnie w dzikich splątaniach i żywopłotach. Przylega również do ścian budynków i innych powierzchni niczym bluszcz. Ściana lub żywopłot z brzytworośli o wysokości 10 stóp, szerokości 10 stóp i grubości 5 stóp ma KP 11; PW 25 oraz Niewrażliwość na obrażenia obuchowe, kłute i psychiczne.</p><p>Gdy istota wejdzie w kontakt z brzytworoślą po raz pierwszy w turze, musi wykonać rzut obronny na Zręczność o ST 10, inaczej otrzymuje 5 (1k10) obrażeń ciętych od ostrzopodobnych kolców.</p>",
+          "activities": {
+            "Place Razorvine": {
+              "name": "Umieszcznie Brzytworośli"
+            }
+          }
+        }
+      }
+    },
+    "Riding Horse": {
+      "name": "Riding Horse",
+      "tokenName": "Riding Horse",
+      "items": {
+        "Hooves": {
+          "name": "Kopyta",
+          "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>7 (1d8 + 3) Bludgeoning damage.</p>"
+        }
+      }
+    },
+    "River Styx": {
+      "name": "Rzeka Styks",
+      "tokenName": "Rzeka Styks",
+      "items": {
+        "Description/Effects": {
+          "name": "Opis/Efekty",
+          "description": "<p><em>Uciążliwe Zagrożenie (Poziomy 11–16)</em></p><section class=\"secret\" id=\"secret-Q5ErQoKW5KLRi6hd\"><p>Rzeka Styks przepływa przez Sfery Niższe. Skosztowanie lub dotknięcie jej wód może zdruzgotać intelekt i osobowość istoty, a także odebrać jej wspomnienia. Niektóre Czarty są odporne na działanie rzeki.</p><p>O ile nie jest odporna na efekty rzeki, istota, która wypije wodę ze Styksu, wejdzie do rzeki lub rozpocznie w niej swoją turę, wykonuje rzut obronny na Inteligencję o ST 20. Przy nieudanym rzucie istota otrzymuje 19 (3k12) obrażeń psychicznych i przez 30 dni nie może rzucać czarów ani wykonywać Akcji Magii. Dotknięta efektem istota może pić wodę ze Styksu i pływać w niej bez ponoszenia dodatkowych konsekwencji.</p><p>Efekt ten może zostać zakończony tylko przez czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes], @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHeal000000] lub @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWish000000]. Jeśli efekt nie zostanie zakończony przed upływem 30 dni, staje się trwały, a istota traci wszystkie swoje wspomnienia. W tym momencie nic oprócz czaru <em>życzenie</em> lub boskiej interwencji nie może odwrócić tego skutku.</p><p>Woda pobrana z Rzeki Styks traci swoją moc po 24 godzinach, stając się nieszkodliwą, lecz paskudnie smakującą cieczą. Arkanalothy, nocne wiedźmy i inne mroczne istoty mogą znać rytuały pozwalające przedłużyć jej działanie, według twojego uznania.</p></section>",
+          "effects": {
+            "River Styx Effects": {
+              "name": "Efekty rzeki Styks",
+              "description": "<p>Istota nie może rzucać czarów ani wykonywać Akcji Magii przez 30 dni. Dotknięta efektem istota może pić wodę ze Styksu i pływać w niej bez ponoszenia dodatkowych konsekwencji.</p><p>Efekt ten może zostać zakończony tylko przez czar większe przywrócenie, uzdrowienie lub życzenie. Jeśli efekt nie zostanie zakończony przed upływem 30 dni, staje się trwały, a istota traci wszystkie swoje wspomnienia. W tym momencie nic oprócz czaru <em>życzenie</em> lub boskiej interwencji nie może odwrócić tego skutku.</p>"
+            }
+          }
+        }
+      }
+    },
+    "Rockslide": {
+      "name": "Osuwisko skalane",
+      "tokenName": "Osuwisko skalane",
+      "items": {
+        "Description/Effects": {
+          "name": "Opis/Efekty",
+          "description": "<p><em>Śmiertelne Zagrożenie (Poziomy 1–4)</em></p><p>Gdy następuje osuwisko skalne, każda istota znajdująca się na jego drodze wykonuje rzut obronny na Zręczność o ST 15. Przy nieudanym rzucie istota otrzymuje 11 (2k10) obrażeń obuchowych, uzyskuje stan &amp;Reference[Prone apply=false] i przemieszcza się wraz z osuwiskiem. Przy udanym rzucie istota otrzymuje tylko połowę obrażeń.</p><p>Gdy osuwisko ustaje, jego obszar staje się &amp;Reference[Difficult Terrain], a wszystkie Powalone istoty znajdujące się w tym obszarze zostają pogrzebane pod skałami i gruzem. Istota pogrzebana w ten sposób ma stan &amp;Reference[Restrained] oraz &amp;Reference[Total Cover]. Akcją istota może spróbować wyczołgać się spod rumowiska. Jeśli uda jej się test Siły (Atletyka) o ST 15, przestaje być Unieruchomiona; zamiast tego ma stan Powalony i znajduje się na wierzchu rumowiska. Jeśli test się nie powiedzie, istota pozostaje pogrzebana i zyskuje 1 poziom &amp;Reference[Exhaustion].</p><p>Istota, która nie ma stanów &amp;Reference[Incapacitated apply=false] ani Unieruchomiony, może poświęcić 1 minutę, aby oswobodzić inną istotę pogrzebaną przez osuwisko.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować to zagrożenie dla wyższych poziomów, zwiększając obrażenia obuchowe następująco: 22 (4k10) na poziomach 5–10, 55 (10k10) na poziomach 11–16 oraz 99 (18k10) na poziomach 17–20.</p>",
+          "activities": {
+            "Rockslide Level 1-4": {
+              "name": "Osuwisko skalne Poziom 1-4"
+            },
+            "Escape Check": {
+              "name": "Test ucieczki"
+            },
+            "Rockslide Level 5-10": {
+              "name": "Osuwisko skalne Poziom 5-10"
+            },
+            "Rockslide Level 11-16": {
+              "name": "Osuwisko skalne Poziom 11-16"
+            },
+            "Rockslide Level 17-20": {
+              "name": "Osuwisko skalne Poziom 17-20"
+            }
+          },
+          "effects": {
+            "Under Rocks": {
+              "name": "Pod skałami"
+            }
+          }
+        }
+      },
+      "effects": {
+        "Bloodied": {
+          "name": "Zakrwawiony"
+        }
+      }
+    },
+    "Rolling Stone Trap": {
+      "name": "Pułapka Toczący się głaz",
+      "tokenName": "Pułapka Toczący się głaz",
+      "items": {
+        "Trigger Trap": {
+          "name": "Wyzwolenie pułapki",
+          "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Śmiertelna Pułapka (Poziomy 11–16) lub Uciążliwa Pułapka (Poziomy 17–20)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Wyzwalacz:</strong> Istota wchodzi na płytkę naciskową</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Czas Trwania:</strong> Dopóki głaz się toczy</p><p>Gdy istota wejdzie na ukrytą płytkę naciskową, z tajnego schowka uwalnia się kula litego kamienia o promieniu 5 stóp i zaczyna się toczyć. Głaz i wszystkie pobliskie istoty wykonują rzut na Inicjatywę; głaz otrzymuje premię +8 do swojego rzutu ([[/r 1d20 + 8]]).</p><p>W swojej turze głaz przemieszcza się o 60 stóp w jednym kierunku, zmieniając kurs, jeśli napotka przeszkodę. Głaz może poruszać się przez obszary zajmowane przez istoty, a istoty mogą poruszać się przez obszar głazu, traktując go jako &amp;Reference[Difficult Terrain]. Zawsze gdy głaz po raz pierwszy w turze wejdzie w przestrzeń istoty lub istota wejdzie w przestrzeń głazu, gdy ten się toczy, istota musi wykonać rzut obronny na Zręczność o ST 15, inaczej otrzymuje 55 (10k10) obrażeń obuchowych i uzyskuje stan &amp;Reference[Prone apply=false].</p><p>Głaz zatrzymuje się, gdy uderzy w ścianę lub podobną przeszkodę. Nie może skręcać pod kątem prostym, ale pomysłowi konstruktorzy lochów czasem projektują zakrzywione przejścia, które pozwalają głazowi kontynuować ruch.</p><p><em><strong>Wykrycie i Unieszkodliwienie.</strong></em> Akcją Nauki istota może zbadać fragment podłogi tworzący płytkę naciskową i wykonać test [[/check inv 15]], ustalając funkcję płytki przy udanym teście. Podłożenie Metalowego Kołka lub podobnego przedmiotu pod płytkę naciskową uniemożliwia wyzwolenie pułapki.</p><p><em><strong>Zniszczenie Głazu.</strong></em> Głaz jest Dużym obiektem o KP 17, PW 100, Progu Obrażeń równym 10 oraz Niewrażliwości na obrażenia od trucizn i psychiczne.</p><p><em><strong>Spowolnienie Głazu.</strong></em> Akcją istota może spróbować spowolnić głaz, wykonując test Siły (Atletyka) o ST 20. Jeśli test zakończy się sukcesem, dystans, jaki głaz pokonuje w swojej turze, zmniejsza się o 15 stóp. Jeśli dystans ten spadnie do 0, głaz przestaje się poruszać i nie stanowi już zagrożenia.</p></div>",
+          "activities": {
+            "Slow": {
+              "name": "Spowolnienie"
+            }
+          }
+        }
+      }
+    },
+    "Skeleton": {
+      "name": "Szkielet",
+      "tokenName": "Szkielet",
+      "items": {
+        "Shortsword": {
+          "name": "Krótki miecz",
+          "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 6 (1d6 + 3) Piercing damage.</p>"
+        },
+        "Shortbow": {
+          "name": "Krótki łuk",
+          "description": "<p><em>Ranged Attack Roll: </em>+5, range 80/320 ft. <em>Hit:</em> 6 (1d6 + 3) Piercing damage.</p>"
+        }
+      }
+    },
+    "Spiked Pit Trap": {
+      "name": "Dół z kolcami Pułapka",
+      "tokenName": "Dół z kolcami Pułapka",
+      "items": {
+        "Trigger Trap": {
+          "name": "Wyzwolenie pułapki",
+          "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Śmiertelna Pułapka (Poziomy 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Wyzwalacz:</strong> Istota wchodzi na pokrywę dołu</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Czas Trwania:</strong> Natychmiastowy</p><p>Ten 10-stopowy dół ma zawiasową pokrywę z materiału identycznego jak otaczająca podłoga. Gdy istota wejdzie na pokrywę, ta otwiera się jak zapadnia, powodując, że istota wpada do dołu, na dole którego znajdują się zaostrzone drewniane lub metalowe kolce. Pokrywa pozostaje potem otwarta.</p><p>Istota, która wpada do dołu, ląduje na jego dnie i otrzymuje 3 (1k6) obrażeń obuchowych od upadku oraz 9 (2k8) obrażeń kłutych od kolców.</p><p><em><strong>Wykrycie i Unieszkodliwienie.</strong></em> Akcją Nauki istota może zbadać fragment podłogi tworzący pokrywę dołu i wykonać test [[/check inv 15]], wykrywając dół przy udanym teście. Po wykryciu ukrytego dołu Metalowy Kołek lub podobny przedmiot można zaklinować między pokrywą a otaczającą podłogą, uniemożliwiając jej otwarcie i pozwalając bezpiecznie przejść. Pokrywę można też utrzymać zamkniętą za pomocą czaru <em>magiczna blokada</em> lub podobnej magii.</p><p><em><strong>Ucieczka.</strong></em> Istota potrzebuje prędkości wspinaczki, sprzętu wspinaczkowego lub magii takiej jak czar <em>chodzenie po ścianach</em>, aby wspiąć się po gładkich ścianach dołu. Możesz ułatwić ucieczkę, dodając pęknięcia w ścianach wystarczająco duże, by służyły jako chwyty rąk i nóg.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować tę pułapkę dla wyższych poziomów, zwiększając głębokość dołu i obrażenia, jak pokazano w poniższej tabeli.</p><table><thead><tr><th><p>Poziomy</p></th><th><p>Głębokość Dołu</p></th><th><p>Obrażenia</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>30 stóp</p></td><td><p>10 (3k6) obrażeń obuchowych oraz 13 (3k8) obrażeń kłutych</p></td></tr><tr><td><p>11–16</p></td><td><p>60 stóp</p></td><td><p>21 (6k6) obrażeń obuchowych oraz 36 (8k8) obrażeń kłutych</p></td></tr><tr><td><p>17–20</p></td><td><p>120 stóp</p></td><td><p>42 (12k6) obrażeń obuchowych oraz 57 (13k8) obrażeń kłutych</p></td></tr></tbody></table></div>",
+          "activities": {
+            "Trigger (1-4)": {
+              "name": "Wyzwalacz (1-4)"
+            },
+            "Trigger (5-10)": {
+              "name": "Wyzwalacz (5-10)"
+            },
+            "Trigger (11-16)": {
+              "name": "Wyzwalacz (11-16)"
+            },
+            "Trigger (17-20)": {
+              "name": "Wyzwalacz (17-20)"
+            }
+          }
+        }
+      }
+    },
+    "Tiger": {
+      "name": "Tygrys",
+      "tokenName": "Tygrys",
+      "items": {
+        "Multiattack": {
+          "name": "Atak wielokrotny",
+          "description": "<p>Tygrys wykonuje jeden atak [[/item Pounce]] i używa [[/item Prowl]].</p>",
+          "activities": {
+            "Activate": {
+              "name": "Aktywacja"
+            }
+          }
+        },
+        "Pounce": {
+          "name": "Natarcie",
+          "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>6 (1d6 + 3) Slashing damage. If the tiger had Advantage on the attack roll, the target takes an extra 3 (1d6) Slashing damage and, if it is Huge or smaller, has the &amp;Reference[prone] condition.</p>",
+          "activities": {
+            "Advantage Attack": {
+              "name": "Advantage Attack",
+              "condition": "attack made with Advantage"
+            }
+          }
+        },
+        "Prowl": {
+          "name": "Prowl",
+          "description": "<p>The tiger moves up to half its Speed without provoking Opportunity Attacks. At the end of this movement, the tiger can take the &amp;Reference[hide] action.</p>",
+          "activities": {
+            "Move and Hide": {
+              "name": "Move and Hide"
+            }
+          }
+        }
+      }
+    },
+    "Vicious Vine": {
+      "name": "Drapieżne pnącze",
+      "tokenName": "Drapieżne pnącze",
+      "items": {
+        "Description/Effects": {
+          "name": "Opis/Efekty",
+          "description": "<p><em>Uciążliwe Zagrożenie (Poziomy 1–4)</em></p><p>Drapieżne pnącza są ożywiane przez magię. Często przylegają do drzwi, łuków, ścian i posągów. Dopóki drapieżne pnącze się nie poruszy, nic nie odróżnia go od zwykłego, nieożywionego pnącza.</p><p>Każde drapieżne pnącze ma KP 11; PW 16 oraz Niewrażliwość na obrażenia obuchowe, kłute i psychiczne. Gdy istota po raz pierwszy w turze wejdzie w obszar w odległości 5 stóp od pnącza lub rozpocznie tam swoją turę, pnącze próbuje owinąć się wokół tej istoty. Cel musi wykonać rzut obronny na Zręczność o ST 12 albo uzyskuje stan &amp;Reference[Grappled] (ST ucieczki 12). Dopóki istota jest pochwycona w ten sposób, na początku każdej swojej tury otrzymuje 5 (1k10) obrażeń nekrotycznych od wysysających życie kolców pnącza. Pnącze może pochwycić tylko jedną istotę naraz.</p><p>Akcją Wpływu postać znajdująca się pod działaniem czaru <em>rozmawianie z roślinami</em> lub podobnej magii może spróbować nakłonić pnącze, by wypuściło swoją ofiarę, robiąc to po udanym teście Charyzmy (Perswazja) o ST 10. Istota uwolniona w ten sposób nie zostanie ponownie zaatakowana przez to pnącze przez następne 24 godziny.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować to zagrożenie dla wyższych poziomów, zwiększając obrażenia nekrotyczne, ST rzutu obronnego oraz ST ucieczki, jak pokazano w poniższej tabeli.</p><table><thead><tr><th><p>Poziomy</p></th><th><p>Obrażenia Nekrotyczne</p></th><th><p>ST Rzutu / Ucieczki</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>11 (2k10)</p></td><td><p>14</p></td></tr><tr><td><p>11–16</p></td><td><p>22 (4k10)</p></td><td><p>16</p></td></tr><tr><td><p>17–20</p></td><td><p>55 (10k10)</p></td><td><p>18</p></td></tr></tbody></table>",
+          "activities": {
+            "Save Level 1-4": {
+              "name": "Obrona Poziom 1-4"
+            },
+            "Save Level 5-10": {
+              "name": "Obrona Poziom 5-10"
+            },
+            "Save Level 11-16": {
+              "name": "Obrona Poziom 11-16"
+            },
+            "Save Level 17-20": {
+              "name": "Obrona Poziom 17-20"
+            },
+            "Persuade Plant Check": {
+              "name": "Test perswazji rośliny"
+            }
+          },
+          "effects": {
+            "Wrapped in Vines": {
+              "name": "Owinięty pnączami"
+            }
+          }
+        }
+      }
+    },
+    "Weasel": {
+      "name": "Weasel",
+      "tokenName": "Weasel",
+      "items": {
+        "Bite": {
+          "name": "Ugryzienie",
+          "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 1 Piercing damage.</p>"
+        }
+      }
+    },
+    "Webs": {
+      "name": "Pajęczyny",
+      "tokenName": "Pajęczyny",
+      "items": {
+        "Description/Effects": {
+          "name": "Opis/Efekty",
+          "description": "<p><em>Uciążliwe Zagrożenie (Poziomy 1–4)</em></p><p>Olbrzymie pająki tkają grube, lepkie pajęczyny w poprzek korytarzy i na dnie jam, aby usidlać zdobycz. Obszary wypełnione pajęczynami stanowią &amp;Reference[Difficult Terrain].</p><p>Istota, która po raz pierwszy w turze wejdzie do obszaru wypełnionego pajęczynami lub rozpocznie tam swoją turę, musi wykonać rzut obronny na Zręczność o ST 12, inaczej uzyskuje stan &amp;Reference[Restrained apply=false]. Akcją istota unieruchomiona przez pajęczyny może spróbować się z nich wydostać, robiąc to po udanym teście Siły (Atletyka) lub Zręczności (Akrobatyka) o ST 12.</p><p>Każdy 10-stopowy Sześcian pajęczyn ma KP 10; PW 15; Podatność na obrażenia od ognia oraz Niewrażliwość na obrażenia kłute, od trucizn i psychiczne.</p>",
+          "activities": {
+            "Escape Check": {
+              "name": "Test ucieczki"
+            }
+          },
+          "effects": {
+            "Webbed": {
+              "name": "Webbed"
+            }
+          }
+        }
+      }
+    },
+    "Wolf": {
+      "name": "Wilk",
+      "tokenName": "Wilk",
+      "items": {
+        "Pack Tactics": {
+          "name": "Atak grupowy",
+          "description": "<p>Wilk ma Ułatwienie w rzutach ataku przeciwko istocie, jeśli przynajmniej jeden z jego sojuszników znajduje się w odległości 5 stóp od tej istoty i sojusznik nie ma stanu Obezwładniony.</p>"
+        },
+        "Bite": {
+          "name": "Ugryzienie",
+          "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+        }
+      }
+    },
+    "Yellow Mold": {
+      "name": "Żółta pleśń",
+      "tokenName": "Żółta pleśń",
+      "items": {
+        "Description/Effects": {
+          "name": "Opis/Efekty",
+          "description": "<p><em>Śmiertelne Zagrożenie (Poziomy 1–4) lub Uciążliwe Zagrożenie (Poziomy 5–10)</em></p><p>Żółta pleśń rośnie w ciemnych miejscach, a jedna jej plama pokrywa kwadrat o boku 5 stóp. Po dotknięciu pleśń wyrzuca chmurę zarodników wypełniającą 10-stopowy Sześcian. Każda istota w tym obszarze musi wykonać rzut obronny na Kondycję o ST 15, inaczej otrzymuje 11 (2k10) obrażeń od trucizn i zyskuje stan &amp;Reference[Poisoned apply=false] na 1 minutę. Dopóki istota jest zatruta w ten sposób, na początku każdej swojej tury otrzymuje 5 (1k10) obrażeń od trucizn. Istota powtarza rzut obronny na końcu każdej swojej tury, kończąc efekt przy sukcesie.</p><p>Bezpośrednie światło słoneczne lub dowolna ilość obrażeń od ognia niszczy plamę żółtej pleśni.</p>",
+          "activities": {
+            "Place Mold": {
+              "name": "Place Mold"
+            },
+            "Touch Mold": {
+              "name": "Touch Mold"
+            },
+            "Start of Turn Damage": {
+              "name": "Obrażenia na początku tury"
+            }
+          },
+          "effects": {
+            "Poisoned": {
+              "name": "Zatruty"
+            }
+          }
+        }
+      }
+    },
+    "Zombie": {
+      "name": "Zombie",
+      "tokenName": "Zombie",
+      "items": {
+        "Undead Fortitude": {
+          "name": "Undead Fortitude",
+          "description": "<p> If damage reduces the zombie to 0 Hit Points, it must make a Constitution saving throw with a DC of 5 plus the damage taken unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead.</p>"
+        },
+        "Slam": {
+          "name": "Walnięcie",
+          "description": "<p> <em>Melee Attack Roll:</em> +3, reach 5 ft. <em>Hit:</em> 4 (1d6 + 1) Bludgeoning damage.</p>"
+        }
+      }
+    }
+  }
+}
