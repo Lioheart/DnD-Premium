@@ -1,0 +1,388 @@
+{
+  "label": "Tabele losowe",
+  "folders": {
+    "Chapter 2": "Rozdział 2",
+    "Chapter 3": "Rozdział 3",
+    "Chapter 7": "Rozdział 7",
+    "Descriptions by Ability Score": "Descriptions by Ability Score",
+    "Personality Traits by Alignment": "Personality Traits by Alignment",
+    "Reincarnated Lineages": "Reincarnated Lineages"
+  },
+  "entries": {
+    "Cardinal Directions": {
+      "name": "Strony Świata",
+      "results": {
+        "1-1": "Północ",
+        "2-2": "Wschód",
+        "3-3": "Południe",
+        "4-4": "Zachód"
+      }
+    },
+    "Chaotic Traits": {
+      "name": "Chaotyczne cechy",
+      "results": {
+        "1-1": "Chełpliwy",
+        "2-2": "Impulsywny",
+        "3-3": "Zbuntowany",
+        "4-4": "Self-absorbed"
+      }
+    },
+    "Charisma": {
+      "name": "Charyzma",
+      "description": "<p>Ta tabela zawiera cztery określenia, których możesz użyć dla swojej postaci, w zależności od tego, czy jej wartość cechy jest <strong>wysoka</strong> lub<strong>niska</strong>.</p>",
+      "results": {
+        "1-1": "<strong>Wysoka:</strong> Czarujący. <strong>Niska:</strong> Pedantyczny.",
+        "2-2": "<strong>Wysoka:</strong> Władczy. <strong>Niska:</strong> Bez humoru.",
+        "3-3": "<strong>Wysoka:</strong> Zabawny. <strong>Niska:</strong> Powściągliwy.",
+        "4-4": "<strong>Wysoka:</strong> Inspirujący. <strong>Niska:</strong> Nietaktowny."
+      }
+    },
+    "Confusion Behavior": {
+      "name": "Confusion Behavior",
+      "description": "<p>Behavior for the Turn</p>",
+      "results": {
+        "wOokSBLpTsUWBccD": "Cel nie wykonuje żadnej akcji i wykorzystuje cały swój ruch, aby się poruszyć. Rzuć [[/r 1d4]], aby określić kierunek: 1 – północ, 2 – wschód, 3 – południe, 4 – zachód.",
+        "2-6": "Cel nie porusza się ani nie wykonuje akcji.",
+        "7-8": "Cel nie porusza się i wykonuje akcję Atak, aby wykonać jeden atak w zwarciu przeciwko losowej istocie w zasięgu. Jeśli żadna nie znajduje się w zasięgu, cel nie podejmuje żadnej akcji.",
+        "9-10": "Cel wybiera swoje zachowanie."
+      }
+    },
+    "Constitution": {
+      "name": "Kondycja",
+      "description": "<p>Ta tabela zawiera cztery określenia, których możesz użyć dla swojej postaci, w zależności od tego, czy jej wartość cechy jest <strong>wysoka</strong> lub<strong>niska</strong>.</p>",
+      "results": {
+        "1-1": "<strong>Wysoka:</strong> Energiczny. <strong>Niska:</strong> Wątły.",
+        "2-2": "<strong>Wysoka:</strong> Krzepki. <strong>Niska:</strong> Wrażliwy.",
+        "3-3": "<strong>Wysoka:</strong> Żwawy. <strong>Niska:</strong> Letargiczny.",
+        "4-4": "<strong>Wysoka:</strong> Stabilny. <strong>Niska:</strong> Kruchy."
+      }
+    },
+    "Dexterity": {
+      "name": "Zręczność",
+      "description": "<p>Ta tabela zawiera cztery określenia, których możesz użyć dla swojej postaci, w zależności od tego, czy jej wartość cechy jest <strong>wysoka</strong> lub<strong>niska</strong>.</p>",
+      "results": {
+        "1-1": "<strong>Wysoka:</strong> Gibki. <strong>Niska:</strong> Nerwowy.",
+        "2-2": "<strong>Wysoka:</strong> Dynamiczny. <strong>Niska:</strong> Niezdarny.",
+        "3-3": "<strong>Wysoka:</strong> Niespokojny. <strong>Niska:</strong> Niezdecydowany.",
+        "4-4": "<strong>Wysoka:</strong> Pewny siebie. <strong>Niska:</strong> Chwiejny."
+      }
+    },
+    "Elven Lineage": {
+      "name": "Elfi Rodowód",
+      "description": "<p>Jesteś częścią rodu, który obdarza cię nadnaturalnymi zdolnościami.</p>"
+    },
+    "Evil Traits": {
+      "name": "Złe cechy",
+      "results": {
+        "1-1": "Nieuczciwy",
+        "2-2": "Mściwy",
+        "3-3": "Okrutny",
+        "4-4": "Chciwy"
+      }
+    },
+    "Feywild Gifts": {
+      "name": "Dary z Feywild",
+      "results": {
+        "1-1": "Podczas krótkiego lub długiego odpoczynku wokół ciebie trzepoczą iluzoryczne motyle.",
+        "2-2": "Każdego świtu w twoich włosach zakwitają kwiaty.",
+        "3-3": "Pachniesz delikatnie cynamonem, lawendą, gałką muszkatołową lub innym kojącym ziołem bądź przyprawą.",
+        "4-4": "Twój cień tańczy, gdy nikt nie patrzy na niego bezpośrednio.",
+        "5-5": "Z twojej głowy wyrastają rogi lub poroże.",
+        "6-6": "Twoja skóra i włosy zmieniają kolor o każdym świcie."
+      }
+    },
+    "Fiendish Legacy": {
+      "name": "Czarcia spuścizna",
+      "description": "<p>Jesteś spadkobiercą dziedzictwa, które obdarza cię nadnaturalnymi zdolnościami..</p>"
+    },
+    "Gnomish Lineage": {
+      "name": "Gnomi rodowód",
+      "description": "<p>Jesteś częścią rodu, który obdarza cię nadnaturalnymi zdolnościami.</p>"
+    },
+    "Good Traits": {
+      "name": "Dobre cechy",
+      "results": {
+        "1-1": "Współczujący",
+        "2-2": "Pomocny",
+        "3-3": "Uczciwy",
+        "4-4": "Uprzejmy"
+      }
+    },
+    "Intelligence": {
+      "name": "Inteligencja",
+      "description": "<p>Ta tabela zawiera cztery określenia, których możesz użyć dla swojej postaci, w zależności od tego, czy jej wartość cechy jest <strong>wysoka</strong> lub<strong>niska</strong>.</p>",
+      "results": {
+        "1-1": "<strong>Wysokia</strong> Zdecydowany. <strong>Niska</strong>: Bezpretensjonalny.",
+        "2-2": "<strong>Wysoka:</strong> Logiczny. <strong>Niska</strong>: Nielogiczny.",
+        "3-3": "<strong>Wysoka</strong>: Poinformowany. <strong>Niska</strong>: Niedoinformowany.",
+        "4-4": "<strong>Wysokia</strong> Ciekawy. <strong>Niska</strong>: Niepoważny."
+      }
+    },
+    "Lawful Traits": {
+      "name": "Praworządne cechy",
+      "results": {
+        "1-1": "Kooperacyjny",
+        "2-2": "Lojalny",
+        "3-3": "Osądzający",
+        "4-4": "Metodyczny"
+      }
+    },
+    "Manifestations of Order": {
+      "name": "Manifestacje Porządku",
+      "results": {
+        "1-1": "Widmowe koła zębate unoszą się za tobą.",
+        "2-2": "Wskazówki zegara obracają się w twoich oczach.",
+        "3-3": "Twoja skóra lśni mosiężnym połyskiem.",
+        "4-4": "Unoszące się równania i geometryczne wzory otaczają twoje ciało.",
+        "5-5": "Twój magiczny fokus tymczasowo przybiera formę Malutkiego mechanizmu.",
+        "6-6": "Ty oraz istoty dotknięte twoją magią słyszycie tykanie trybików lub dzwonienie zegara."
+      }
+    },
+    "Neutral Traits": {
+      "name": "Neutralne cechy",
+      "results": {
+        "1-1": "Samolubny",
+        "2-2": "Bezinteresowny",
+        "3-3": "Lakoniczny",
+        "4-4": "Pragmatyczny"
+      }
+    },
+    "Prismatic Layers": {
+      "name": "Warstwy pryzmatyczne",
+      "results": {
+        "1-1": "<p><strong>Czerwony.</strong><em> Nieudany rzut obronny:</em> <span><span class=\"roll-link\" data-type=\"damage\" data-formula=\"12d6\" data-damage-type=\"fire\"><a data-action=\"roll\"><i class=\"fa-solid fa-dice-d20\"></i>12d6</a></span> obrażeń od ognia</span>. <em>Udany rzut obronny:</em> Połowa obrażeń. <em>Dodatkowe efekty:</em> Niemagiczne ataki dystansowe nie mogą przeniknąć przez tę warstwę, która zostaje zniszczona, jeśli otrzyma co najmniej 25 obrażeń od zimna.</p>",
+        "2-2": "<p><strong>Pomarańczowy.</strong><em> Nieudany rzut obronny:</em> <span><span class=\"roll-link\" data-type=\"damage\" data-formula=\"12d6\" data-damage-type=\"acid\"><a data-action=\"roll\"><i class=\"fa-solid fa-dice-d20\"></i>12d6</a></span> obrażeń od kwasu</span>. <em>Udany rzut obronny:</em> Połowa obrażeń. <em>Dodatkowe efekty:</em> Magiczne ataki dystansowe nie mogą przeniknąć przez tę warstwę, która zostaje zniszczona przez silny wiatr (taki jak ten wytworzony przez <em>Poryw wiatru</em>).</p>",
+        "3-3": "<p><strong>Żółty.</strong><em> Nieudany rzut obronny:</em> <span><span class=\"roll-link\" data-type=\"damage\" data-formula=\"12d6\" data-damage-type=\"lightning\"><a data-action=\"roll\"><i class=\"fa-solid fa-dice-d20\"></i>12d6</a></span> obrażeń od elektryczności</span>. <em>Udany rzut obronny:</em> Połowa obrażeń. <em>Dodatkowe efekty:</em> Warstwa zostaje zniszczona, jeśli otrzyma co najmniej 60 obrażeń od mocy.</p>",
+        "4-4": "<p><strong>Zielony.</strong><em> Nieudany rzut obronny:</em> <span><span class=\"roll-link\" data-type=\"damage\" data-formula=\"12d6\" data-damage-type=\"poison\"><a data-action=\"roll\"><i class=\"fa-solid fa-dice-d20\"></i>12d6</a></span> obrażeń od trucizny</span>. <em>Udany rzut obronny:</em> Połowa obrażeń. <em>Dodatkowe efekty:</em> Czar <em>Passwall</em> lub inny czar równego bądź wyższego kręgu, który może otworzyć portal na stałej powierzchni, niszczy tę warstwę.</p>",
+        "5-5": "<p><strong>Niebieski.</strong><em> Nieudany rzut obronny:</em> <span><span class=\"roll-link\" data-type=\"damage\" data-formula=\"12d6\" data-damage-type=\"cold\"><a data-action=\"roll\"><i class=\"fa-solid fa-dice-d20\"></i>12d6</a></span> obrażeń od zimna</span>. <em>Udany rzut obronny:</em> Połowa obrażeń. <em>Dodatkowe efekty:</em> Warstwa zostaje zniszczona, jeśli otrzyma co najmniej 25 obrażeń od ognia.</p>",
+        "6-6": "<p><strong>Indigo.</strong><em> Failed Save:</em> The target has the <span class=\"reference-link\"><a class=\"content-link\" draggable=\"true\" data-link data-uuid=\"Compendium.dnd5e.rules.JournalEntry.w7eitkpD7QQTB6j0.JournalEntryPage.cSVcyZyNe2iG1fIc\" data-id=\"cSVcyZyNe2iG1fIc\" data-type=\"JournalEntryPage\" data-pack=\"dnd5e.rules\" data-tooltip=\"Rule Page\"><i class=\"fas fa-book-open\"></i>Restrained</a><a class=\"enricher-action\" data-action=\"apply\" data-status=\"restrained\" data-tooltip=\"EDITOR.DND5E.Inline.ApplyStatus\" aria-label=\"Apply Status to Selected Tokens\"><i class=\"fas fa-fw fa-reply-all fa-flip-horizontal\"></i></a></span> condition and makes a <span class=\"roll-link\" data-type=\"save\" data-ability=\"con\"><a data-action=\"roll\"><i class=\"fa-solid fa-dice-d20\"></i>Constitution</a><a class=\"enricher-action\" data-action=\"request\" data-tooltip=\"EDITOR.DND5E.Inline.RequestRoll\" aria-label=\"Request Roll\"><i class=\"fa-solid fa-comment-dots\"></i></a></span> saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the <span class=\"reference-link\"><a class=\"content-link\" draggable=\"true\" data-link data-uuid=\"Compendium.dnd5e.rules.JournalEntry.w7eitkpD7QQTB6j0.JournalEntryPage.xaNDaW6NwQTgHSmi\" data-id=\"xaNDaW6NwQTgHSmi\" data-type=\"JournalEntryPage\" data-pack=\"dnd5e.rules\" data-tooltip=\"Rule Page\"><i class=\"fas fa-book-open\"></i>Petrified</a><a class=\"enricher-action\" data-action=\"apply\" data-status=\"petrified\" data-tooltip=\"EDITOR.DND5E.Inline.ApplyStatus\" aria-label=\"Apply Status to Selected Tokens\"><i class=\"fas fa-fw fa-reply-all fa-flip-horizontal\"></i></a></span> condition until it is freed by an effect like the <em>Greater Restoration</em> spell. The successes and failures needn’t be consecutive; keep track of both until the target collects three of a kind. <em>Additional Effects:</em> Spells can’t be cast through this layer, which is destroyed by Bright Light shed by the <em>Daylight</em> spell.</p>",
+        "7-7": "<p><strong>Violet.</strong><em> Failed Save:</em> The target has the <span class=\"reference-link\"><a class=\"content-link\" draggable=\"true\" data-link data-uuid=\"Compendium.dnd5e.rules.JournalEntry.w7eitkpD7QQTB6j0.JournalEntryPage.0b8N4FymGGfbZGpJ\" data-id=\"0b8N4FymGGfbZGpJ\" data-type=\"JournalEntryPage\" data-pack=\"dnd5e.rules\" data-tooltip=\"Rule Page\"><i class=\"fas fa-book-open\"></i>Blinded</a><a class=\"enricher-action\" data-action=\"apply\" data-status=\"blinded\" data-tooltip=\"EDITOR.DND5E.Inline.ApplyStatus\" aria-label=\"Apply Status to Selected Tokens\"><i class=\"fas fa-fw fa-reply-all fa-flip-horizontal\"></i></a></span> condition and makes a <span class=\"roll-link\" data-type=\"save\" data-ability=\"wis\"><a data-action=\"roll\"><i class=\"fa-solid fa-dice-d20\"></i>Wisdom</a><a class=\"enricher-action\" data-action=\"request\" data-tooltip=\"EDITOR.DND5E.Inline.RequestRoll\" aria-label=\"Request Roll\"><i class=\"fa-solid fa-comment-dots\"></i></a></span> saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (DM’s choice). <em>Additional Effects:</em> This layer is destroyed by <em>Dispel Magic</em>.</p>"
+      }
+    },
+    "Prismatic Rays": {
+      "name": "Pryzmatyczne promienie",
+      "results": {
+        "1-1": "<p><strong>Czerwony.</strong><em> Nieudany rzut obronny:</em> <span><span class=\"roll-link\" data-type=\"damage\" data-formula=\"12d6\" data-damage-type=\"fire\"><a data-action=\"roll\"><i class=\"fa-solid fa-dice-d20\"></i>12d6</a></span> obrażeń od ognia</span>. <em>Udany rzut obronny:</em> Połowa obrażeń.</p>",
+        "2-2": "<p><strong>Pomarańczowy.</strong><em> Nieudany rzut obronny:</em> <span><span class=\"roll-link\" data-type=\"damage\" data-formula=\"12d6\" data-damage-type=\"acid\"><a data-action=\"roll\"><i class=\"fa-solid fa-dice-d20\"></i>12d6</a></span> obrażeń od kwasu</span>. <em>Udany rzut obronny:</em> Połowa obrażeń.</p>",
+        "3-3": "<p><strong>Żółty.</strong><em> Nieudany rzut obronny:</em> <span><span class=\"roll-link\" data-type=\"damage\" data-formula=\"12d6\" data-damage-type=\"lightning\"><a data-action=\"roll\"><i class=\"fa-solid fa-dice-d20\"></i>12d6</a></span> obrażeń od elektryczności</span>. <em>Udany rzut obronny:</em> Połowa obrażeń.</p>",
+        "4-4": "<p><strong>Green.</strong><em> Failed Save:</em> <span><span class=\"roll-link\" data-type=\"damage\" data-formula=\"12d6\" data-damage-type=\"poison\"><a data-action=\"roll\"><i class=\"fa-solid fa-dice-d20\"></i>12d6</a></span> poison</span> damage. <em>Successful Save:</em> Half as much damage.</p>",
+        "5-5": "<p><strong>Niebieski.</strong><em> Nieudany rzut obronny:</em> <span><span class=\"roll-link\" data-type=\"damage\" data-formula=\"12d6\" data-damage-type=\"cold\"><a data-action=\"roll\"><i class=\"fa-solid fa-dice-d20\"></i>12d6</a></span> obrażeń od zimna</span>. <em>Udany rzut obronny:</em> Połowa obrażeń.</p>",
+        "6-6": "<p><strong>Indigo.</strong><em> Failed Save:</em> The target has the <span class=\"reference-link\"><a class=\"content-link\" draggable=\"true\" data-link data-uuid=\"Compendium.dnd5e.rules.JournalEntry.w7eitkpD7QQTB6j0.JournalEntryPage.cSVcyZyNe2iG1fIc\" data-id=\"cSVcyZyNe2iG1fIc\" data-type=\"JournalEntryPage\" data-pack=\"dnd5e.rules\" data-tooltip=\"Rule Page\"><i class=\"fas fa-book-open\"></i>Restrained</a><a class=\"enricher-action\" data-action=\"apply\" data-status=\"restrained\" data-tooltip=\"EDITOR.DND5E.Inline.ApplyStatus\" aria-label=\"Apply Status to Selected Tokens\"><i class=\"fas fa-fw fa-reply-all fa-flip-horizontal\"></i></a></span> condition and makes a <span class=\"roll-link\" data-type=\"save\" data-ability=\"con\"><a data-action=\"roll\"><i class=\"fa-solid fa-dice-d20\"></i>Constitution</a><a class=\"enricher-action\" data-action=\"request\" data-tooltip=\"EDITOR.DND5E.Inline.RequestRoll\" aria-label=\"Request Roll\"><i class=\"fa-solid fa-comment-dots\"></i></a></span> saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the <span class=\"reference-link\"><a class=\"content-link\" draggable=\"true\" data-link data-uuid=\"Compendium.dnd5e.rules.JournalEntry.w7eitkpD7QQTB6j0.JournalEntryPage.xaNDaW6NwQTgHSmi\" data-id=\"xaNDaW6NwQTgHSmi\" data-type=\"JournalEntryPage\" data-pack=\"dnd5e.rules\" data-tooltip=\"Rule Page\"><i class=\"fas fa-book-open\"></i>Petrified</a><a class=\"enricher-action\" data-action=\"apply\" data-status=\"petrified\" data-tooltip=\"EDITOR.DND5E.Inline.ApplyStatus\" aria-label=\"Apply Status to Selected Tokens\"><i class=\"fas fa-fw fa-reply-all fa-flip-horizontal\"></i></a></span> condition until it is freed by an effect like the <em>Greater Restoration</em> spell. The successes and failures needn’t be consecutive; keep track of both until the target collects three of a kind.</p>",
+        "7-7": "<p><strong>Violet.</strong><em> Failed Save:</em> The target has the <span class=\"reference-link\"><a class=\"content-link\" draggable=\"true\" data-link data-uuid=\"Compendium.dnd5e.rules.JournalEntry.w7eitkpD7QQTB6j0.JournalEntryPage.0b8N4FymGGfbZGpJ\" data-id=\"0b8N4FymGGfbZGpJ\" data-type=\"JournalEntryPage\" data-pack=\"dnd5e.rules\" data-tooltip=\"Rule Page\"><i class=\"fas fa-book-open\"></i>Blinded</a><a class=\"enricher-action\" data-action=\"apply\" data-status=\"blinded\" data-tooltip=\"EDITOR.DND5E.Inline.ApplyStatus\" aria-label=\"Apply Status to Selected Tokens\"><i class=\"fas fa-fw fa-reply-all fa-flip-horizontal\"></i></a></span> condition and makes a <span class=\"roll-link\" data-type=\"save\" data-ability=\"wis\"><a data-action=\"roll\"><i class=\"fa-solid fa-dice-d20\"></i>Wisdom</a><a class=\"enricher-action\" data-action=\"request\" data-tooltip=\"EDITOR.DND5E.Inline.RequestRoll\" aria-label=\"Request Roll\"><i class=\"fa-solid fa-comment-dots\"></i></a></span> saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (DM’s choice).</p>",
+        "8-8": "<p><strong>Special.</strong> The target is struck by two rays. Roll twice, rerolling any 8.</p>"
+      }
+    },
+    "Reincarnated Species": {
+      "name": "Reincarnated Species",
+      "description": "<p>Rzuć [[/r 1d10]] i skorzystaj z poniższej tabeli, aby określić gatunek ciała, lub Mistrz Podziemi wybiera inną grywalną rasę.</p>"
+    },
+    "Standard Languages": {
+      "name": "Języki standardowe",
+      "results": {
+        "rViHFEn5WjhRbElK": "<strong>Język:</strong> Wspólny. <strong>Pochodzenie:</strong> Sigil."
+      }
+    },
+    "Star Map Forms": {
+      "name": "Star Map Forms",
+      "results": {
+        "1-1": "@UUID[Compendium.dnd-players-handbook.equipment.Item.phbStarMapScroll] przedstawiający konstelacje",
+        "2-2": "@UUID[Compendium.dnd-players-handbook.equipment.Item.phbStarMapStoneT] z drobnymi otworami przewierconymi na wylot",
+        "3-3": "@UUID[Compendium.dnd-players-handbook.equipment.Item.phbStarMapOwlbea] obrobiona symbolami gwiezdnymi",
+        "4-4": "@UUID[Compendium.dnd-players-handbook.equipment.Item.phbStarMapBoundI]{zbiór map} oprawiony w hebanową okładkę",
+        "5-5": "A @UUID[Compendium.dnd-players-handbook.equipment.Item.phbStarMapCrysta]{kryształ} z wygrawerowanymi gwiezdnymi wzorami.",
+        "6-6": "@UUID[Compendium.dnd-players-handbook.equipment.Item.phbStarMapGlassD]{szklany dysk} z wygrawerowanymi konstelacjami"
+      }
+    },
+    "Strength": {
+      "name": "Siła",
+      "description": "<p>Ta tabela zawiera cztery określenia, których możesz użyć dla swojej postaci, w zależności od tego, czy jej wartość cechy jest <strong>wysoka</strong> lub<strong>niska</strong>.</p>",
+      "results": {
+        "1-1": "<strong>Wysoka:</strong> Muskularny. <strong>Niska:</strong> Słaby.",
+        "2-2": "<strong>Wysoka:</strong> Żylasty. <strong>Niska:</strong> Wątły.",
+        "3-3": "<strong>Wysoka:</strong> Opiekuńczy. <strong>Niska:</strong> Niepewny siebie.",
+        "4-4": "<strong>Wysoka:</strong> Bezpośredni. <strong>Niska:</strong> Pośredni."
+      }
+    },
+    "Sub-Languages Table": {
+      "name": "Tabela podjęzyków",
+      "results": {
+        "1-1": "<strong>Język:</strong> Wspólny język migowy. <strong>Pochodzenie:</strong> Sigil.",
+        "2-2": "<strong>Język:</strong> Smoczy. <strong>Pochodzenie:</strong> Smoki.",
+        "3-4": "<strong>Język:</strong> Krasnoludzki. <strong>Pochodzenie:</strong> Krasnoludy.",
+        "5-6": "<strong>Język:</strong> Elficki. <strong>Pochodzenie:</strong> Elfy.",
+        "7-7": "<strong>Język:</strong> Olbrzymi. <strong>Pochodzenie:</strong> Olbrzymy.",
+        "8-8": "<strong>Język:</strong> Gnomi. <strong>Pochodzenie:</strong> Gnomy.",
+        "9-9": "<strong>Język:</strong> Goblin. <strong>Pochodzenie:</strong> Goblinoidy.",
+        "10-11": "<strong>Język:</strong> Niziołczy. <strong>Pochodzenie:</strong> Niziołki.",
+        "12-12": "<strong>Język:</strong> Orkowy. <strong>Pochodzenie:</strong> Orkowie."
+      }
+    },
+    "Teleport Mishap": {
+      "name": "Nieudany Teleport",
+      "description": "<p><strong>Mishap damage:</strong> [[/damage 3d10 type=force]]</p><p><strong>Off target distance:</strong> [[/r 2d12#Miles]]{2d12 miles} [[/r 1d8#Direction]]{Direction}</p>",
+      "results": {
+        "RaCnOnLRcJPv11Vf": "<strong>Permanent circle:</strong> On target",
+        "4W9YPHqIIDyt3WbV": "<strong>Linked object:</strong> On target",
+        "1-5": "<strong>Very familiar:</strong> Mishap",
+        "6-13": "<strong>Very familiar:</strong> Similar area",
+        "14-24": "<strong>Very familiar:</strong> Off target",
+        "25-100": "<strong>Very familiar:</strong> On target",
+        "1-33": "<strong>Widziane od niechcenia:</strong> Nieszczęście",
+        "34-43": "<strong>Widziany od niechcenia:</strong> Podobny obszar",
+        "5hV5vL7SYu53EPvb": "<strong>Widziane od niechcenia:</strong> Poza celem",
+        "KShVQqILsbEKwNQ1": "<strong>Widziane od niechcenia:</strong> Poza celem",
+        "1-43": "<strong>Obejrzane lub opisane:</strong> Nieszczęście",
+        "S3FXuqVgRazP23RK": "<strong>Obejrzane lub opisane:</strong> Podobny obszar",
+        "LWWefv3FEwkukueE": "<strong>Wyświetlone lub opisane:</strong> Poza celem",
+        "74-100": "<strong>Wyświetlone lub opisane:</strong> Na celowniku",
+        "1-50": "<strong>Fałszywy cel podróży:</strong> Nieszczęście",
+        "51-100": "<strong>Fałszywy cel podróży:</strong> Podobny obszar"
+      }
+    },
+    "Trinkets": {
+      "name": "Drobiazgi",
+      "results": {
+        "1-1": "Zmumifikowana ręka goblina",
+        "2-2": "Kryształ, który delikatnie świeci w świetle księżyca",
+        "3-3": "Złota moneta wybita w nieznanej krainie",
+        "4-4": "Pamiętnik napisany w języku, którego nie znasz",
+        "5-5": "Mosiężny pierścień, który nigdy nie matowieje",
+        "6-6": "Stare szachy wykonane ze szkła",
+        "7-7": "Para kości do gry w z kostnych stawów, z czaszką na ściance, na której normalnie widniałoby sześć oczek",
+        "8-8": "Mały posążek przedstawiający koszmarne stworzenie, które sprowadza niepokojące sny, gdy śpisz w jego pobliżu",
+        "9-9": "Kosmyk czyichś włosów",
+        "10-10": "Akt własności działki ziemi w krainie, której nie znasz",
+        "11-11": "Bryłka o wadze 1 uncji wykonana z nieznanego materiału",
+        "12-12": "Mała lalka z tkaniny nabijana igłami",
+        "13-13": "Ząb nieznanej bestii",
+        "14-14": "Ogromna łuska, być może pochodząca od smoka",
+        "15-15": "Jaskrawozielone pióro",
+        "16-16": "Stara karta wróżebna przedstawiająca twój wizerunek",
+        "17-17": "Szklana kula wypełniona poruszającym się dymem",
+        "18-18": "Jajko o wadze 1 funta z jasnoczerwoną skorupką",
+        "19-19": "Fajka, z której ulatują bańki mydlane",
+        "20-20": "Szklany słój zawierający kawałek mięsa unoszący się w zalewie konserwującej",
+        "21-21": "Po mistrzowsku wykonana przez gnoma pozytywka, wygrywająca melodię mgliście pamiętaną z dzieciństwa",
+        "22-22": "Drewniana figurka zarozumiałego niziołka",
+        "23-23": "Mosiężna kula pokryta dziwnymi runami",
+        "24-24": "Wielobarwny kamienny dysk",
+        "25-25": "Srebrny wizerunek kruka",
+        "26-26": "Worek zawierający czterdzieści siedem zębów, z których jeden jest zepsuty",
+        "27-27": "Odłamek obsydianu, który zawsze jest ciepły w dotyku",
+        "28-28": "Smoczy pazur zawieszony na skórzanym naszyjniku",
+        "29-29": "Para starych skarpet",
+        "30-30": "Pusta księga, której stron nie da się zapisać atramentem, kredą, grafitem ani żadnym innym środkiem",
+        "31-31": "Srebrna odznaka w kształcie pięcioramiennej gwiazdy",
+        "32-32": "Nóż należący do krewnego",
+        "33-33": "Szklana fiolka wypełniona obciętymi paznokciami",
+        "34-34": "Prostokątne metalowe urządzenie z dwiema małymi miseczkami na jednym końcu, które iskrzy, gdy zamoknie",
+        "35-35": "Biała, cekinowa rękawica w rozmiarze ludzkiej dłoni",
+        "36-36": "Kamizelka ze stu drobnymi kieszonkami",
+        "37-37": "Kamień pozbawiony ciężaru",
+        "38-38": "Szkic przedstawiający goblina",
+        "39-39": "Pusta szklana fiolka o zapachu perfum",
+        "40-40": "Klejnot, który dla wszystkich poza tobą wygląda jak bryła węgla",
+        "41-41": "Strzęp materiału ze starego sztandaru",
+        "42-42": "Insygnia rangi należąca do zaginionego legionisty",
+        "43-43": "Srebrny dzwonek bez kołatki",
+        "44-44": "Mechaniczny kanarek zamknięty w lampie",
+        "45-45": "Miniaturowa szkatułka wyrzeźbiona tak, by wyglądała, jakby miała wiele nóżek u spodu",
+        "46-46": "Martwa chochlikowata istotka zamknięta w przezroczystej szklanej butelce",
+        "47-47": "Metalowa puszka bez żadnego otworu, która wydaje dźwięki, jakby była wypełniona cieczą, piaskiem, pająkami lub potłuczonym szkłem (do wyboru)",
+        "48-48": "Szklana kula wypełniona wodą, w której pływa mechaniczna złota rybka",
+        "49-49": "Srebrna łyżka z wygrawerowaną literą M na trzonku",
+        "50-50": "Gwizdek wykonany ze złocistego drewna",
+        "51-51": "Martwy skarabeusz wielkości twojej dłoni",
+        "52-52": "Dwa ołowiane żołnierzyki, jeden bez głowy",
+        "53-53": "Małe pudełko wypełnione guzikami różnej wielkości",
+        "54-54": "Świeca, której nie da się zapalić",
+        "55-55": "Miniaturowa klatka bez drzwi",
+        "56-56": "Stary klucz",
+        "57-57": "Nieczytelna mapa skarbów",
+        "58-58": "Rękojeść złamanego miecza",
+        "59-59": "Królicza łapka",
+        "60-60": "Szklane oko",
+        "61-61": "Broszka z wizerunkiem ohydnej osoby",
+        "62-62": "Srebrna czaszka wielkości monety",
+        "63-63": "Alebastrowa maska",
+        "64-64": "Stożek lepkiego, czarnego kadzidła o odrażającym zapachu",
+        "65-65": "Czepek nocny, który przynosi przyjemne sny, gdy go nosisz",
+        "66-66": "Pojedyncza kolczatka wykonana z kości",
+        "67-67": "Złota oprawka monoklu bez soczewki",
+        "68-68": "Sześcian o boku 1 cala, z każdą ścianką w innym kolorze",
+        "69-69": "Kryształowa gałka do drzwi",
+        "70-70": "Paczuszka wypełniona różowym pyłem",
+        "71-71": "Fragment pięknej pieśni zapisany nutami na dwóch kawałkach pergaminu",
+        "72-72": "Srebrny kolczyk w kształcie łzy zawierający prawdziwą łzę",
+        "73-73": "Skorupka jajka ozdobiona scenami nędzy ukazanymi w niepokojących detalach",
+        "74-74": "Wachlarz, który po rozłożeniu ukazuje śpiącego kota",
+        "75-75": "Zestaw kościanych fajek",
+        "76-76": "Czterolistna koniczyna wciśnięta między karty książki o manierach i etykiecie",
+        "77-77": "Arkusz pergaminu, na którym widnieje rysunek mechanicznej konstrukcji",
+        "78-78": "Zdobiona pochwa, do której nie pasuje żadna znaleziona przez ciebie broń",
+        "79-79": "Zaproszenie na przyjęcie, podczas którego doszło do morderstwa",
+        "80-80": "Brązowy amulet w kształcie pentagramu z wyrytą w centrum głową szczura",
+        "81-81": "Fioletowa chusteczka z wyhaftowanym imieniem arcymaga",
+        "82-82": "Połowa planu świątyni, zamku lub innej budowli",
+        "83-83": "Kawałek złożonego materiału, który po rozłożeniu zmienia się w stylową czapkę",
+        "84-84": "Pokwitowanie wpłaty w banku w odległym mieście",
+        "85-85": "Dziennik z brakującymi siedmioma stronami",
+        "86-86": "Pusta srebrna tabakierka z napisem „sny” na wieczku",
+        "87-87": "Żelazny święty symbol poświęcony nieznanemu bogu",
+        "88-88": "Księga o wzlocie i upadku legendarnego bohatera, z brakującym ostatnim rozdziałem",
+        "89-89": "Fiolka ze smoczą krwią",
+        "90-90": "Starożytna strzała elfiej roboty",
+        "91-91": "Igła, która nigdy się nie wygina",
+        "92-92": "Ozdobna broszka w krasnoludzkim stylu",
+        "93-93": "Pusta butelka po winie z ozdobną etykietą o treści: „Winnica Maga Win, Tłoczony Czerwony Smok, 331422-W”",
+        "94-94": "Płytka mozaiki z wielobarwną, błyszczącą powierzchnią",
+        "95-95": "Skamieniała mysz",
+        "96-96": "Czarna piracka flaga ozdobiona czaszką smoka i skrzyżowanymi piszczelami",
+        "97-97": "Maleńki mechaniczny krab lub pająk, który porusza się, gdy nikt go nie obserwuje",
+        "98-98": "Szklany słój zawierający smalec z etykietą „Smar Gryfa”",
+        "99-99": "Drewniane pudełko z ceramicznym dnem, w którym znajduje się żywy robak mający głowę na każdym końcu ciała",
+        "100-100": "Metalowa urna zawierająca prochy bohatera"
+      }
+    },
+    "Wild Magic Surge": {
+      "name": "Przypływ dzikiej magii",
+      "results": {
+        "1-4": "Rzuć na tej tabeli na początku każdej ze swoich tur przez następną minutę, ignorując ten wynik przy kolejnych rzutach.",
+        "5-8": "Istota przyjazna wobec ciebie pojawia się w losowym, niezajętym miejscu w promieniu 60 stóp. Istota znajduje się pod kontrolą Mistrza Gry i znika po 1 minucie. Rzuć [[/r 1d4]], aby określić, co to za istota: przy wyniku 1 pojawia się Modron Duodron; przy 2 pojawia się Flumph; przy 3 pojawia się Modron Monodron; przy 4 pojawia się Jednorożec. Statystyki istoty znajdziesz w Księdze Potworów.",
+        "9-12": "Przez następną minutę na początku każdej swojej tury odzyskujesz 5 Punktów Wytrzymałości.",
+        "13-16": "Istoty mają Utrudnienie w rzutach obronnych przeciwko następnemu czarowi, który rzucisz w ciągu następnej minuty, o ile wymaga on rzutu obronnego.",
+        "17-20": "Podlegasz efektowi, który trwa przez 1 minutę, chyba że jego opis stanowi inaczej. Rzuć [[/r 1d8]], aby określić efekt: przy wyniku 1 otacza cię cicha, eteryczna muzyka słyszalna tylko dla ciebie oraz istot w odległości do 5 stóp; przy wyniku 2 twoje rozmiary zwiększają się o jedną kategorię; przy wyniku 3 wyrasta ci długa broda z piór, która pozostaje do momentu, gdy kichniesz – wtedy pióra wybuchają z twojej twarzy i znikają; przy wyniku 4 musisz krzyczeć, gdy mówisz; przy wyniku 5 iluzoryczne motyle trzepoczą skrzydłami w promieniu 10 stóp od ciebie; przy wyniku 6 na twoim czole pojawia się oko, dające Ci Ułatwienie do testów Mądrości (Spostrzegawczość); przy wyniku 7 różowe bańki wypływają z twoich ust, gdy mówisz; przy wyniku 8 twoja skóra przybiera jaskrawy odcień błękitu na 24 godziny lub do czasu, aż efekt zostanie zakończony czarem Zdjęcie klątwy.",
+        "21-24": "Przez następną minutę wszystkie twoje czary o czasie rzucania równym Akcji mają czas rzucania równy Akcji dodatkowej.",
+        "25-28": "Zostajesz przeniesiony na Astralną Sferę do końca swojej następnej tury. Następnie wracasz do przestrzeni, którą wcześniej zajmowałeś, lub do najbliższej wolnej przestrzeni, jeśli ta przestrzeń jest zajęta.",
+        "29-32": "Przy następnym rzuceniu czaru zadającego obrażenia w ciągu najbliższej minuty nie rzucasz kośćmi obrażeń tego czaru. Zamiast tego użyj najwyższej możliwej wartości dla każdej kości obrażeń.",
+        "33-36": "Masz Odporność na wszystkie obrażenia przez następną minutę.",
+        "37-40": "Zmieniasz się w roślinę doniczkową do początku swojej następnej tury. Gdy jesteś rośliną, masz stan &amp;Reference[Incapacitated] oraz Podatność na wszystkie obrażenia. Jeśli spadniesz do 0 Punktów Wytrzymałości, twoja doniczka pęka, a twoja forma wraca do poprzedniej postaci.",
+        "41-44": "Przez następną minutę możesz teleportować się na odległość do 20 stóp jako Akcja dodatkowa w każdej ze swoich tur.",
+        "45-48": "Ty oraz maksymalnie trzy wybrane przez ciebie istoty w promieniu 30 stóp macie stan &amp;Reference[Invisible](Niewidzialny) przez 1 minutę. Ta niewidzialność kończy się dla istoty natychmiast po wykonaniu testu ataku, zadaniu obrażeń lub rzuceniu czaru.",
+        "49-52": "Widmowa tarcza unosi się obok ciebie przez następną minutę, dając ci premię +2 do KP oraz Niewrażliwość na Magiczny pocisk.",
+        "53-56": "Możesz wykonać jedną dodatkową Akcję w tej turze.",
+        "57-60": "Rzucasz losowy czar. Jeśli czar normalnie wymaga Koncentracji, w tym przypadku nie wymaga; czar trwa pełny czas. Rzuć [[/r 1d10]], aby określić czar: przy 1, Zamęt; przy 2, Kula ognia; przy 3, Chmura mgły; przy 4, Lot (rzucane na losową istotę w promieniu 60 stóp); przy 5, Tłuszcz; przy 6, Unoszenie (rzucane na siebie); przy 7, Magiczny pocisk (na poziomie 5); przy 8, Lustrzane odbicie; przy 9, Polimorfia (na siebie), a jeśli nie uda się rzut obronny, zamieniasz się w Kozła; przy 10, Widzenie niewidzialnego.",
+        "61-64": "Przez następne minutę każdy łatwopalny, niemagiczny przedmiot, którego dotkniesz i który nie jest noszony ani przenoszony przez inną istotę, zapala się, otrzymuje 1d4 obrażeń od ognia i płonie.",
+        "65-68": "Jeśli umrzesz w ciągu następnej godziny, natychmiast odradzasz się, jakbyś rzucił czar Reinkarnacja.",
+        "69-72": "Masz stan &Reference[Frightened] do końca swojej następnej tury. Mistrz Podziemi określa źródło twojego strachu.",
+        "73-76": "Teleportujesz się na odległość do 60 stóp do wolnej przestrzeni, którą widzisz.",
+        "77-80": "Losowa istota w promieniu 60 stóp od ciebie ma stan &Reference[Poisoned] przez [[/r 1k4]] godziny.",
+        "81-84": "Przez minutę emitujesz jasne światło w promieniu 30 stóp. Każda istota, która zakończy swoją turę w odległości 5 stóp od ciebie, ma stan &Reference[Blinded] do końca swojej następnej tury.",
+        "85-88": "Do trzech wybranych przez ciebie istot, które widzisz w promieniu 30 stóp, otrzymuje [[/damage 1k10 type=necrotic]] obrażeń nekrotycznych. Odzyskujesz Punkty Wytrzymałości równe sumie zadanych obrażeń nekrotycznych.",
+        "89-92": "Do trzech wybranych przez ciebie istot, które widzisz w promieniu 30 stóp, otrzymuje [[/damage 4k10 type=lightning]] obrażeń od elektryczności.",
+        "93-96": "Ty oraz wszystkie istoty w promieniu 30 stóp od ciebie macie podatność na obrażenia kłute przez minutę.",
+        "97-100": "Rzuć [[/r 1k6]]: przy wyniku 1 odzyskujesz [[/healing 2k10]] Punkty Wytrzymałości; przy wyniku 2 sojusznik twojego wyboru w promieniu 300 stóp odzyskuje [[/healing 2k10]] Punktów Wytrzymałości; przy wyniku 3 odzyskujesz zużytą komórkę czaru najniższego kręgu; przy wyniku 4 sojusznik twojego wyboru w promieniu 300 stóp odzyskuje zużytą komórkę czaru najniższego kręgu; przy wyniku 5 odzyskujesz wszystkie zużyte Punkty Zaklinania; przy wyniku 6 wszystkie efekty z wierszy 17–20 oddziałują na ciebie jednocześnie."
+      }
+    },
+    "Wisdom": {
+      "name": "Mądrość",
+      "description": "<p>Ta tabela zawiera cztery określenia, których możesz użyć dla swojej postaci, w zależności od tego, czy jej wartość cechy jest <strong>wysoka</strong> lub<strong>niska</strong>.</p>",
+      "results": {
+        "1-1": "<strong>High:</strong> Serene. <strong>Low:</strong> Rash.",
+        "2-2": "<strong>High:</strong> Considerate. <strong>Low:</strong> Distracted.",
+        "3-3": "<strong>High:</strong> Attentive. <strong>Low:</strong> Oblivious.",
+        "4-4": "<strong>High:</strong> Wary. <strong>Low:</strong> Naive."
+      }
+    }
+  }
+}
