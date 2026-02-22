@@ -2,6 +2,7 @@
   "label": "Spells",
   "mapping": {
     "materials": "system.materials.value",
+    "activation": "system.activation.condition",
     "range": {
       "path": "system.range",
       "converter": "range"
@@ -14,13 +15,13 @@
       "path": "system.activities",
       "converter": "rangeActivities"
     },
-    "effects": {
-      "path": "effects",
-      "converter": "effects"
-    },
     "activities": {
       "path": "system.activities",
       "converter": "activities"
+    },
+    "effects": {
+      "path": "effects",
+      "converter": "effects"
     }
   },
   "folders": {
@@ -254,7 +255,12 @@
     },
     "Arcane Gate": {
       "name": "Arcane Gate",
-      "description": "<div><p>You create linked teleportation portals. Choose two Large, unoccupied spaces on the ground that you can see, one space within range and the other one within 10 feet of you. A circular portal opens in each of those spaces and remains for the duration.</p><p>The portals are two-dimensional glowing rings filled with mist that blocks sight. They hover inches from the ground and are perpendicular to it.</p><p>A portal is open on only one side (you choose which). Anything entering the open side of a portal exits from the open side of the other portal as if the two were adjacent to each other. As a Bonus Action, you can change the facing of the open sides.</p></div>"
+      "description": "<div><p>You create linked teleportation portals. Choose two Large, unoccupied spaces on the ground that you can see, one space within range and the other one within 10 feet of you. A circular portal opens in each of those spaces and remains for the duration.</p><p>The portals are two-dimensional glowing rings filled with mist that blocks sight. They hover inches from the ground and are perpendicular to it.</p><p>A portal is open on only one side (you choose which). Anything entering the open side of a portal exits from the open side of the other portal as if the two were adjacent to each other. As a Bonus Action, you can change the facing of the open sides.</p></div>",
+      "activities": {
+        "utility": {
+          "target": "Large, unoccupied spaces"
+        }
+      }
     },
     "Arcane Lock": {
       "name": "Arcane Lock",
@@ -388,6 +394,7 @@
     "Banishing Smite": {
       "name": "Banishing Smite",
       "description": "<p>The target hit by the attack roll takes an extra 5d10 Force damage from the attack. If the attack reduces the target to 50 Hit Points or fewer, the target must succeed on a Charisma saving throw or be transported to a harmless demiplane for the duration. While there, the target has the &amp;Reference[Incapacitated apply=false] condition. When the spell ends, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.</p>",
+      "activation": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
       "activities": {
         "Damage and Banish": {
           "name": "Damage and Banish"
@@ -546,6 +553,7 @@
     "Blinding Smite": {
       "name": "Blinding Smite",
       "description": "<p>The target hit by the strike takes an extra 3d8 Radiant damage from the attack, and the target has the &amp;Reference[blinded apply=false] condition until the spell ends. At the end of each of its turns, the Blinded target makes a [[/save ability=con dc=@attributes.spell.dc format=long]], ending the spell on itself on a success.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The extra damage increases by 1d8 for each spell slot level above 3.</p>",
+      "activation": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
       "activities": {
         "End of Turn Save": {
           "name": "End of Turn Save"
@@ -803,7 +811,8 @@
       "description": "<p>You conjure a Medium spirit from the Feywild in an unoccupied space you can see within range. The spirit lasts for the duration, and it looks like a Fey creature of your choice. When the spirit appears, you can make one melee spell attack against a creature within 5 feet of it. On a hit, the target takes Psychic damage equal to 3d12 plus your spellcasting ability modifier, and the target has the &amp;Reference[Frightened] condition until the start of your next turn, with both you and the spirit as the source of the fear.</p><p>As a Bonus Action on your later turns, you can teleport the spirit to an unoccupied space you can see within 30 feet of the space it left and make the attack against a creature within 5 feet of it.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d12 for each spell slot level above 6.</p>",
       "activities": {
         "Teleport and Attack": {
-          "name": "Teleport and Attack"
+          "name": "Teleport and Attack",
+          "target": "within range of spirit"
         }
       }
     },
@@ -937,7 +946,8 @@
     },
     "Counterspell": {
       "name": "Counterspell",
-      "description": "<p>You attempt to interrupt a creature in the process of casting a spell. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn’t expended.</p>"
+      "description": "<p>You attempt to interrupt a creature in the process of casting a spell. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn’t expended.</p>",
+      "activation": "when you see a creature within range casting a spell with Verbal, Somatic, or Material components"
     },
     "Create Food and Water": {
       "name": "Create Food and Water",
@@ -946,6 +956,7 @@
     "Create Undead": {
       "name": "Create Undead",
       "description": "<p>You can cast this spell only at night. Choose up to three corpses of Medium or Small Humanoids within range. Each one becomes a <strong>@UUID[Compendium.dnd5e.monsters.Actor.OBujQLLPSmlJiZnL]{Ghoul}</strong> under your control (see the <em>Monster Manual</em> for its stat block).</p><p>As a Bonus Action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to them). You decide what action the creature will take and where it will move on its next turn, or you can issue a general command, such as to guard a particular place. If you issue no commands, the creature takes the &amp;Reference[Dodge] action and moves only to avoid harm. Once given an order, the creature continues to follow the order until its task is complete.</p><p>The creature is under your control for 24 hours, after which it stops obeying any command you’ve given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell rather than animating new ones.</p><p><strong>Using a Higher-Level Spell Slot.</strong>If you use a level 7 spell slot, you can animate or reassert control over four <strong>Ghouls</strong>. If you use a level 8 spell slot, you can animate or reassert control over five <strong>Ghouls</strong> or two <strong>@UUID[Compendium.dnd5e.monsters.Actor.IyIybE5t2adMEVUM]{Ghasts}</strong> or <strong>@UUID[Compendium.dnd5e.monsters.Actor.rbyp54px2D0ql4QK]{Wights}</strong>. If you use a level 9 spell slot, you can animate or reassert control over six <strong>Ghouls</strong>, three <strong>Ghasts</strong> or <strong>Wights</strong>, or two <strong>@UUID[Compendium.dnd5e.monsters.Actor.t8WYD7ak07X7xpx8]{Mummies}</strong>. See the <em>Monster Manual</em> for these stat blocks.</p>",
+      "activation": "only at night",
       "materials": "one 150+ GP black onyx stone for each corpse",
       "activities": {
         "Animate Corpses": {
@@ -1142,10 +1153,12 @@
       "materials": "powdered silver and iron",
       "activities": {
         "Dismissal": {
-          "name": "Dismissal"
+          "name": "Dismissal",
+          "target": "Celestial, Elemental, Fey, Fiend, or Undead"
         },
         "Break Enchantment": {
-          "name": "Break Enchantment"
+          "name": "Break Enchantment",
+          "target": "Celestial, Elemental, Fey, Fiend, or Undead"
         },
         "Cast": {
           "name": "Cast"
@@ -1177,6 +1190,7 @@
     "Divine Smite": {
       "name": "Divine Smite",
       "description": "<p>The target takes an extra 2d8 Radiant damage from the attack. The damage increases by 1d8 if the target is a Fiend or an Undead.</p><p><strong>Using a Higher-Level Spell Slot. </strong>The damage increases by 1d8 for each spell slot level above 1.</p>",
+      "activation": "Immediately after hitting a target with a Melee weapon or an Unarmed Strike",
       "activities": {
         "Unholy Creature Damage": {
           "name": "Unholy Creature Damage"
@@ -1289,7 +1303,8 @@
         },
         "Collapsing Structure Save": {
           "name": "Collapsing Structure Save",
-          "condition": "when a structure drops to 0 Hit Points"
+          "condition": "when a structure drops to 0 Hit Points",
+          "range": "half of the structure's height"
         }
       },
       "effects": {
@@ -1412,6 +1427,7 @@
     "Ensnaring Strike": {
       "name": "Ensnaring Strike",
       "description": "<p>As you hit the target, grasping vines appear on it, and it makes a Strength saving throw. A Large or larger creature has Advantage on this save. On a failed save, the target has the <span style=\"font-family:Signika, sans-serif\">&amp;Reference[restrained apply=false] </span>condition until the spell ends. On a successful save, the vines shrivel away, and the spell ends.</p><p>While Restrained, the target takes 1d6 Piercing damage at the start of each of its turns. The target or a creature within reach of it can take an action to make a [[/check ability=str skill=ath dc=@attributes.spell.dc]] check against your spell save DC. On a success, the spell ends.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 1.</p>",
+      "activation": "Immediately after hitting a creature with a weapon",
       "activities": {
         "Start of Turn Damage": {
           "name": "Start of Turn Damage"
@@ -1537,6 +1553,7 @@
     "Feather Fall": {
       "name": "Feather Fall",
       "description": "<p>Choose up to five falling creatures within range. A falling creature’s rate of descent slows to 60 feet per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature.</p>",
+      "activation": "when you or a creature you can see within 60 feet of you falls",
       "materials": "a small feather or piece of down"
     },
     "Feign Death": {
@@ -1613,7 +1630,8 @@
       "activities": {
         "Flame Eruption": {
           "name": "Flame Eruption",
-          "condition": "a creature within 5 feet hits you with a melee attack"
+          "condition": "a creature within 5 feet hits you with a melee attack",
+          "target": "attacking creature"
         }
       },
       "effects": {
@@ -1700,7 +1718,8 @@
         },
         "Damage Forbidden Creature": {
           "name": "Damage Forbidden Creature",
-          "condition": "creature of a chosen type enters the spell’s area for the first time on a turn or ends its turn there"
+          "condition": "creature of a chosen type enters the spell’s area for the first time on a turn or ends its turn there",
+          "range": "within the spell's area"
         }
       }
     },
@@ -1971,7 +1990,8 @@
     },
     "Hail of Thorns": {
       "name": "Hail of Thorns",
-      "description": "<p>As you hit the creature, this spell creates a rain of thorns that sprouts from your Ranged weapon or ammunition. The target of the attack and each creature within 5 feet of it make a Dexterity saving throw, taking 1d10 Piercing damage on a failed save or half as much damage on a successful one.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d10 for each spell slot level above 1.</p>"
+      "description": "<p>As you hit the creature, this spell creates a rain of thorns that sprouts from your Ranged weapon or ammunition. The target of the attack and each creature within 5 feet of it make a Dexterity saving throw, taking 1d10 Piercing damage on a failed save or half as much damage on a successful one.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d10 for each spell slot level above 1.</p>",
+      "activation": "immediately after hitting a creature with a Ranged weapon"
     },
     "Hallow": {
       "name": "Hallow",
@@ -2048,7 +2068,8 @@
     },
     "Hellish Rebuke": {
       "name": "Hellish Rebuke",
-      "description": "<p>The creature that damaged you is momentarily surrounded by green flames. It makes a Dexterity saving throw, taking 2d10 Fire damage on a failed save or half as much damage on a successful one.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d10 for each spell slot level above 1.</p>"
+      "description": "<p>The creature that damaged you is momentarily surrounded by green flames. It makes a Dexterity saving throw, taking 2d10 Fire damage on a failed save or half as much damage on a successful one.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d10 for each spell slot level above 1.</p>",
+      "activation": "taking damage from a creature that you can see within 60 feet of yourself"
     },
     "Heroes' Feast": {
       "name": "Heroes' Feast",
@@ -2368,7 +2389,8 @@
     },
     "Lightning Arrow": {
       "name": "Lightning Arrow",
-      "description": "<p>As your attack hits or misses the target, the weapon or ammunition you’re using transforms into a lightning bolt. Instead of taking any damage or other effects from the attack, the target takes 4d8 Lightning damage on a hit or half as much damage on a miss. Each creature within 10 feet of the target then makes a Dexterity saving throw, taking 2d8 Lightning damage on a failed save or half as much damage on a successful one.</p><p>The weapon or ammunition then returns to its normal form.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage for both effects of the spell increases by 1d8 for each spell slot level above 3.</p>"
+      "description": "<p>As your attack hits or misses the target, the weapon or ammunition you’re using transforms into a lightning bolt. Instead of taking any damage or other effects from the attack, the target takes 4d8 Lightning damage on a hit or half as much damage on a miss. Each creature within 10 feet of the target then makes a Dexterity saving throw, taking 2d8 Lightning damage on a failed save or half as much damage on a successful one.</p><p>The weapon or ammunition then returns to its normal form.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage for both effects of the spell increases by 1d8 for each spell slot level above 3.</p>",
+      "activation": "immediately after hitting or missing a target with a ranged attack using a weapon"
     },
     "Lightning Bolt": {
       "name": "Lightning Bolt",
@@ -2431,7 +2453,8 @@
         },
         "Possess Humanoid": {
           "name": "Possess Humanoid",
-          "condition": "your soul inhabits the container"
+          "condition": "your soul inhabits the container",
+          "target": "target is Humanoid"
         },
         "Return from Host": {
           "name": "Return from Host"
@@ -2765,13 +2788,15 @@
         },
         "Freeze Water": {
           "name": "Freeze Water",
-          "condition": "if the globe strikes a body of water"
+          "condition": "if the globe strikes a body of water",
+          "target": "creatures swimming on the surface"
         },
         "Cast and Hold": {
           "name": "Cast and Hold"
         },
         "Throw Held Globe": {
-          "name": "Throw Held Globe"
+          "name": "Throw Held Globe",
+          "range": "if hurled with a sling, use sling's normal range"
         }
       },
       "effects": {
@@ -3005,7 +3030,8 @@
           "name": "Create Globe"
         },
         "Blinding Save": {
-          "name": "Blinding Save"
+          "name": "Blinding Save",
+          "range": "measured from nearest point on wall or globe"
         },
         "Traversal Save": {
           "name": "Traversal Save"
@@ -3368,13 +3394,15 @@
           "name": "Extensive and Body Part"
         },
         "Create Sensor": {
-          "name": "Create Sensor"
+          "name": "Create Sensor",
+          "target": "at target location or within 10 feet of target creature"
         }
       }
     },
     "Searing Smite": {
       "name": "Searing Smite",
       "description": "<p>As you hit the target, it takes an extra 1d6 Fire damage from the attack. At the start of each of its turns until the spell ends, the target takes 1d6 Fire damage and then makes a Constitution saving throw. On a failed save, the spell continues. On a successful save, the spell ends.</p><p><strong>Using a Higher-Level Spell Slot. </strong>All the damage increases by 1d6 for each spell slot level above 1.</p>",
+      "activation": "immediately after hitting a target with a Melee weapon or an Unarmed Strike",
       "activities": {
         "Start of Turn Save": {
           "name": "Start of Turn Save"
@@ -3459,6 +3487,7 @@
     "Shield": {
       "name": "Shield",
       "description": "<p>An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMagicMissi]{Magic Missile}</em>.</p>",
+      "activation": "when you are hit by an attack roll or targeted by the Magic Missile spell",
       "effects": {
         "Imperceptible Barrier": {
           "name": "Imperceptible Barrier",
@@ -3516,6 +3545,7 @@
     "Shining Smite": {
       "name": "Shining Smite",
       "description": "<p>The target hit by the strike takes an extra 2d6 Radiant damage from the attack. Until the spell ends, the target sheds &amp;Reference[BrightLight] in a 5-foot radius, attack rolls against it have Advantage, and it can’t benefit from the &amp;Reference[Invisible] condition.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 2.</p>",
+      "activation": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
       "effects": {
         "Shining": {
           "name": "Shining",
@@ -3546,6 +3576,7 @@
     "Silent Image": {
       "name": "Silent Image",
       "description": "<p>You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 15-foot Cube. The image appears at a spot within range and lasts for the duration. The image is purely visual; it isn’t accompanied by sound, smell, or other sensory effects.</p><p>As a Magic action, you can cause the image to move to any spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking.</p><p>Physical interaction with the image reveals it to be an illusion, since things can pass through it. A creature that takes a Study action to examine the image can determine that it is an illusion with a successful [[/check ability=int skill=inv dc=@attributes.spell.dc]] check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image.</p>",
+      "activation": "a bit of fleece",
       "materials": "a bit of fleece",
       "activities": {
         "Create Illusion": {
@@ -3667,7 +3698,8 @@
     },
     "Staggering Smite": {
       "name": "Staggering Smite",
-      "description": "<p>The target takes an extra 4d6 Psychic damage from the attack, and the target must succeed on a Wisdom saving throw or have the &amp;Reference[Stunned] condition until the end of your next turn.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The extra damage increases by 1d6 for each spell slot level above 4.</p>"
+      "description": "<p>The target takes an extra 4d6 Psychic damage from the attack, and the target must succeed on a Wisdom saving throw or have the &amp;Reference[Stunned] condition until the end of your next turn.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The extra damage increases by 1d6 for each spell slot level above 4.</p>",
+      "activation": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike"
     },
     "Starry Wisp": {
       "name": "Starry Wisp",
@@ -3724,19 +3756,23 @@
         },
         "Turn 2: Acid Rain": {
           "name": "Turn 2: Acid Rain",
-          "condition": "at the start of your turn"
+          "condition": "at the start of your turn",
+          "target": "creatures under the cloud"
         },
         "Turn 3: Lightning": {
           "name": "Turn 3: Lightning",
-          "condition": "at the start of your turn"
+          "condition": "at the start of your turn",
+          "target": "creatures under the cloud"
         },
         "Turn 4: Hailstones": {
           "name": "Turn 4: Hailstones",
-          "condition": "at the start of your turn"
+          "condition": "at the start of your turn",
+          "target": "creatures under the cloud"
         },
         "Turn 5+: Gusts and Rain": {
           "name": "Turn 5+: Gusts and Rain",
-          "condition": "at the start of your turn"
+          "condition": "at the start of your turn",
+          "target": "creatures under the cloud"
         }
       },
       "effects": {
@@ -4055,6 +4091,7 @@
     "Thunderous Smite": {
       "name": "Thunderous Smite",
       "description": "<p>Your strike rings with thunder that is audible within 300 feet of you, and the target takes an extra 2d6 Thunder damage from the attack. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and have the &amp;Reference[prone apply=false] condition.</p><p><strong>Using a Higher-Level Spell Slot. </strong>The damage increases by 1d6 for each spell slot level above 1.</p>",
+      "activation": "immediately after hitting a target with a Melee weapon or an Unarmed Strike",
       "activities": {
         "Save vs. Push": {
           "name": "Save vs. Push"
@@ -4085,10 +4122,12 @@
       "description": "<p>You point at one creature you can see within range, and the single chime of a dolorous bell is audible within 10 feet of the target. The target must succeed on a Wisdom saving throw or take 1d8 Necrotic damage. If the target is missing any of its Hit Points, it instead takes 1d12 Necrotic damage.</p><p><strong>Cantrip Upgrade.</strong> The damage increases by one die when you reach levels 5 (2d8 or 2d12), 11 (3d8 or 3d12), and 17 (4d8 or 4d12).</p>",
       "activities": {
         "Healthy Target": {
-          "name": "Healthy Target"
+          "name": "Healthy Target",
+          "target": "undamaged creature"
         },
         "Damaged Target": {
-          "name": "Damaged Target"
+          "name": "Damaged Target",
+          "target": "creature missing any of its Hit Points"
         }
       }
     },
@@ -4174,7 +4213,8 @@
         },
         "Start of Turn Effects": {
           "name": "Start of Turn Effects",
-          "condition": "start of each of your turns"
+          "condition": "start of each of your turns",
+          "range": "moves away from you"
         }
       }
     },
@@ -4420,6 +4460,7 @@
     "Wrathful Smite": {
       "name": "Wrathful Smite",
       "description": "<p>The target takes an extra 1d6 Necrotic damage from the attack, and it must succeed on a Wisdom saving throw or have the &amp;Reference[frightened apply=false] condition until the spell ends. At the end of each of its turns, the Frightened target repeats the save, ending the spell on itself on a success.</p><p><strong>Using a Higher-Level Spell Slot. </strong>The damage increases by 1d6 for each spell slot level above 1.</p>",
+      "activation": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
       "effects": {
         "Frightened": {
           "name": "Frightened",
