@@ -2935,7 +2935,7 @@
     },
     "Lunar Form": {
       "name": "Księżycowa forma",
-      "description": "<p>Moc księżyca przenika cię, zapewniając poniższe korzyści.</p><p><strong>Ulepszony Księżycowy blask.</strong> Raz na turę możesz zadać dodatkowe 2k10 obrażeń od światłości celowi trafionemu atakiem w Dzikiej Postaci.</p><p><strong>Wspólne światło księżyca.</strong> Za każdym razem, gdy używasz Księżycowego kroku, możesz również teleportować jedną chętną istotę. Istota ta musi znajdować się w odległości do 10 stóp od ciebie, a teleportujesz ją do nie zajętej przestrzeni, którą widzisz, w odległości do 10 stóp od twojego miejsca docelowego.</p><section class=\"secret\" id=\"secret-6Sw7VQQgJ2Ghklrl\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera aktywność służącą do zadawania obrażeń od światłości.</p></section>",
+      "description": "<p>Moc księżyca przenika cię, zapewniając poniższe korzyści.</p><p><strong>Ulepszony Księżycowy blask.</strong> Raz na turę możesz zadać dodatkowe 2k10 obrażeń od światłości celowi trafionemu atakiem w Dzikiej Postaci.</p><p><strong>Wspólny blask księżyca.</strong> Za każdym razem, gdy używasz Kroku w blasku księżyca, możesz również teleportować jedną chętną istotę. Istota ta musi znajdować się w odległości do 10 stóp od ciebie, a teleportujesz ją do nie zajętej przestrzeni, którą widzisz, w odległości do 10 stóp od twojego miejsca docelowego.</p><section class=\"secret\" id=\"secret-6Sw7VQQgJ2Ghklrl\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera aktywność służącą do zadawania obrażeń od światłości.</p></section>",
       "activities": {
         "damage": {
           "condition": "Raz na turę, gdy trafisz cel atakiem Dzikiej Postaci"
@@ -3172,8 +3172,8 @@
       }
     },
     "Moonlight Step": {
-      "name": "Krok w świetle księżyca",
-      "description": "<p>Magicznie przenosisz się, pojawiając się ponownie wśród rozbłysku księżycowego światła. Akcją Dodatkową teleportujesz się na odległość do 30 stóp do nie zajętej przestrzeni, którą widzisz, i zyskujesz Ułatwienie do następnego testu ataku, który wykonasz przed końcem tej tury.</p><p>Możesz użyć tej zdolności liczbę razy równą twojemu modyfikatorowi z Mądrości (minimum raz), a wszystkie zużyte użycia odzyskujesz po zakończeniu Długiego odpoczynku. Możesz także odzyskać użycia, wydając komórkę czaru 2. kręgu lub wyższego za każde użycie, które chcesz przywrócić (nie wymaga Akcji).</p><section class=\"secret\" id=\"secret-fQNfNPvTSXWuXepa\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera aktywność z Aktywnym Efektem do śledzenia, kiedy posiadasz Ułatwienie, jednak nie automatyzuje jego działania.</p><p>Zawiera również aktywność „Odnowienie przez Komórkę czaru”, której można użyć do zamiany komórek czarów na użycia tej zdolności. Możesz wybrać wyższe kręgi, zwiększając skalę.</p></section>",
+      "name": "Krok w blasku księżyca",
+      "description": "<p>Magicznie przenosisz się, pojawiając się ponownie wśród rozbłysku księżycowego światła. Akcją dodatkową teleportujesz się na odległość do 30 stóp do nie zajętej przestrzeni, którą widzisz, i zyskujesz Ułatwienie do następnego testu ataku, który wykonasz przed końcem tej tury.</p><p>Możesz użyć tej zdolności liczbę razy równą twojemu modyfikatorowi z Mądrości (minimum raz), a wszystkie zużyte użycia odzyskujesz po zakończeniu Długiego odpoczynku. Możesz także odzyskać użycia, wydając komórkę czaru 2. kręgu lub wyższego za każde użycie, które chcesz przywrócić (nie wymaga Akcji).</p><section class=\"secret\" id=\"secret-fQNfNPvTSXWuXepa\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera aktywność z Aktywnym Efektem do śledzenia, kiedy posiadasz Ułatwienie, jednak nie automatyzuje jego działania.</p><p>Zawiera również aktywność „Odnowienie przez Komórkę czaru”, której można użyć do zamiany komórek czarów na użycia tej zdolności. Możesz wybrać wyższe kręgi, zwiększając skalę.</p></section>",
       "activities": {
         "Transport": {
           "name": "Transport"
@@ -3184,7 +3184,7 @@
       },
       "effects": {
         "Moonlight Step": {
-          "name": "Krok w świetle księżyca"
+          "name": "Krok w blasku księżyca"
         }
       }
     },
