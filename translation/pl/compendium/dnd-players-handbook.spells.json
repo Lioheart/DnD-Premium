@@ -308,7 +308,7 @@
     },
     "Arms of Hadar": {
       "name": "Ramiona Hadara",
-      "description": "<p>Przyzywając Hadara, sprawiasz, że macki wyrastają z ciebie. Każda istota w promieniu 10 stóp (3m) Emanacji pochodzącym od ciebie wykonuje rzut obronny na Siłę. Przy nieudanym rzucie cel otrzymuje 2k6 obrażeń nekrotycznych i nie może wykonywać reakcji aż do początku twojej następnej tury. Przy udanym rzucie cel otrzymuje tylko połowę tych obrażeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg powyżej 1.</p>",
+      "description": "<p>Przyzywając Hadara, sprawiasz, że macki wyrastają z ciebie. Każda istota w promieniu 10 stóp (3m) Emanacji pochodzącym od ciebie wykonuje rzut obronny na Siłę. Przy nieudanym rzucie cel otrzymuje 2k6 obrażeń nekrotycznych i nie może wykonywać reakcji aż do początku swojej następnej tury. Przy udanym rzucie cel otrzymuje tylko połowę tych obrażeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg powyżej 1.</p>",
       "effects": {
         "No Reactions": {
           "name": "Brak Reakcji",
@@ -582,7 +582,7 @@
     },
     "Blink": {
       "name": "Mignięcie",
-      "description": "<p>Rzuć 1k6 na końcu każdej swojej tury przez czas trwania czaru. Przy wyniku 4–6 znikasz z obecnego planu egzystencji i pojawiasz się w Planie Eterycznym (czar kończy się natychmiast, jeśli już znajdujesz się w tym planie). Przebywając na Planie Eterycznym, możesz postrzegać plan, który opuściłeś, który jest widoczny w odcieniach szarości, ale nie widzisz tam nic oddalonego o więcej niż 60 stóp. Możesz wpływać i być pod wpływem tylko innych istot w Planie Eterycznym, a istoty w innym planie nie mogą cię dostrzec, chyba że posiadają specjalną zdolność pozwalającą im postrzegać rzeczy w Planie Eterycznym.</p><p>Wracasz na inny plan na początku twojej następnej tury oraz gdy czar się zakończy, jeśli jesteś w Planie Eterycznym. Wrócisz do wolnej przestrzeni, którą wybierzesz i możesz zobaczyć w odległości 10 stóp od miejsca, które opuściłeś. Jeśli w tym zasięgu nie ma wolnej przestrzeni, pojawiasz się w najbliższej wolnej przestrzeni.</p>",
+      "description": "<p>Rzuć 1k6 na końcu każdej swojej tury przez czas trwania czaru. Przy wyniku 4–6 znikasz z obecnego planu egzystencji i pojawiasz się w Planie Eterycznym (czar kończy się natychmiast, jeśli już znajdujesz się w tym planie). Przebywając na Planie Eterycznym, możesz postrzegać plan, który opuściłeś, który jest widoczny w odcieniach szarości, ale nie widzisz tam nic oddalonego o więcej niż 60 stóp. Możesz wpływać i być pod wpływem tylko innych istot w Planie Eterycznym, a istoty w innym planie nie mogą cię dostrzec, chyba że posiadają specjalną zdolność pozwalającą im postrzegać rzeczy w Planie Eterycznym.</p><p>Wracasz na inny plan na początku swojej następnej tury oraz gdy czar się zakończy, jeśli jesteś w Planie Eterycznym. Wrócisz do wolnej przestrzeni, którą wybierzesz i możesz zobaczyć w odległości 10 stóp od miejsca, które opuściłeś. Jeśli w tym zasięgu nie ma wolnej przestrzeni, pojawiasz się w najbliższej wolnej przestrzeni.</p>",
       "effects": {
         "Ethereal": {
           "name": "Eteryczny"
@@ -653,11 +653,11 @@
     },
     "Chill Touch": {
       "name": "Przeszywający dotyk",
-      "description": "<p>Tchnij chłód grobu, w cel znajdujący się w zasięgu wykonując test ataku wręcz czarem. Przy trafieniu cel otrzymuje 1k10 obrażeń nekrotycznych i nie może odzyskać Punktów Wytrzymałości do końca twojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k10, gdy osiągniesz poziomy 5 (2k10), 11 (3k10) i 17 (4k10).</p>",
+      "description": "<p>Tchnij chłód grobu, w cel znajdujący się w zasięgu wykonując test ataku wręcz czarem. Przy trafieniu cel otrzymuje 1k10 obrażeń nekrotycznych i nie może odzyskać Punktów Wytrzymałości do końca swojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k10, gdy osiągniesz poziomy 5 (2k10), 11 (3k10) i 17 (4k10).</p>",
       "effects": {
         "Blocked Healing": {
           "name": "Zablokowane leczenie",
-          "description": "<p>Cel nie może odzyskiwać Punktów Wytrzymałości do końca twojej następnej tury.</p>"
+          "description": "<p>Cel nie może odzyskiwać Punktów Wytrzymałości do końca swojej następnej tury.</p>"
         }
       }
     },
@@ -706,7 +706,7 @@
     },
     "Color Spray": {
       "name": "Kolorowy rozprysk",
-      "description": "<p>Wysyłasz olśniewającą wiązkę migającego, kolorowego światła. Każda istota w Stożku o zasięgu 15 stóp wychodzącym od ciebie musi wykonać rzut obronny na Kondycję, w przeciwnym razie otrzyma stan &amp;Reference[blinded apply=false]{Oślepiony} do końca twojej następnej tury.</p>",
+      "description": "<p>Wysyłasz olśniewającą wiązkę migającego, kolorowego światła. Każda istota w Stożku o zasięgu 15 stóp wychodzącym od ciebie musi wykonać rzut obronny na Kondycję, w przeciwnym razie otrzyma stan &amp;Reference[blinded apply=false]{Oślepiony} do końca swojej następnej tury.</p>",
       "materials": "szczypta kolorowego piasku",
       "effects": {
         "Blinded": {
@@ -808,7 +808,7 @@
     },
     "Conjure Fey": {
       "name": "Wyczarowanie fey",
-      "description": "<p>Przywołujesz Średnie widmo z Feywild w niezajętej przestrzeni, którą widzisz w zasięgu. Widmo trwa przez cały czas działania i wygląda jak istota typu Fey wybrana przez ciebie. Gdy widmo się pojawia, możesz wykonać jeden atak wręcz czarem przeciwko istocie w odległości 5 stóp od niego. Przy trafieniu cel otrzymuje Obrażenia Psychiczne równe 3k12 plus twój modyfikator z cechy bazowej rzucania czarów i ma stan &amp;Reference[Frightened] do początku twojej następnej tury, przy czym źródłem strachu jesteś zarówno ty, jak i widmo.</p><p>Akcją Dodatkową w późniejszych turach możesz teleportować widmo do niezajętej przestrzeni, którą widzisz w odległości 30 stóp od przestrzeni, którą opuściło, i wykonać atak przeciwko istocie w odległości 5 stóp od niego.</p><p><strong>Użycie Komórki Czarów Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k12 za każdy krąg czaru powyżej 6.</p>",
+      "description": "<p>Przywołujesz Średnie widmo z Feywild w niezajętej przestrzeni, którą widzisz w zasięgu. Widmo trwa przez cały czas działania i wygląda jak istota typu Fey wybrana przez ciebie. Gdy widmo się pojawia, możesz wykonać jeden atak wręcz czarem przeciwko istocie w odległości 5 stóp od niego. Przy trafieniu cel otrzymuje Obrażenia Psychiczne równe 3k12 plus twój modyfikator z cechy bazowej rzucania czarów i ma stan &amp;Reference[Frightened] do początku swojej następnej tury, przy czym źródłem strachu jesteś zarówno ty, jak i widmo.</p><p>Akcją Dodatkową w późniejszych turach możesz teleportować widmo do niezajętej przestrzeni, którą widzisz w odległości 30 stóp od przestrzeni, którą opuściło, i wykonać atak przeciwko istocie w odległości 5 stóp od niego.</p><p><strong>Użycie Komórki Czarów Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k12 za każdy krąg czaru powyżej 6.</p>",
       "activities": {
         "Teleport and Attack": {
           "name": "Teleportacja i atak",
@@ -907,7 +907,7 @@
     },
     "Control Water": {
       "name": "Kontrola wody",
-      "description": "<p>Dopóki czar trwa, kontrolujesz każdą wodę w wybranym przez ciebie obszarze, który jest sześcianem o boku do 100 stóp, używając jednego z poniższych efektów. Akcją magii w swoich późniejszych turach możesz powtórzyć ten sam efekt lub wybrać inny.</p><p><strong>Powódź.</strong> Sprawiasz, że poziom wody w stojącej wodzie w obszarze podnosi się o 20 stóp. Jeśli wybierzesz obszar w dużym zbiorniku wodnym, zamiast tego tworzysz falę o wysokości 20 stóp, która przemieszcza się z jednej strony obszaru na drugą, a następnie opada. Wszystkie pojazdy o wielkości Olbrzyma lub mniejsze znajdujące się na drodze fali są przenoszone z nią na drugą stronę. Każdy pojazd o wielkości Olbrzyma lub mniejszy, który zostanie uderzony przez falę, ma [[/r 1d100cs&lt;26#Vehicle is capsized]]{25 procent} szans na wywrócenie się.</p><p>Poziom wody pozostaje podwyższony, dopóki czar trwa lub nie wybierzesz innego efektu. Jeśli ten efekt stworzył falę, fala powtarza się na początku twojej następnej tury, dopóki efekt powodzi trwa.</p><p><strong>Rozdzielenie Wody.</strong> Rozdzielasz wodę w obszarze, tworząc rów. Rów rozciąga się na cały obszar czaru, a oddzielona woda tworzy ścianę po obu stronach. Rów pozostaje, dopóki czar trwa lub nie wybierzesz innego efektu. Woda stopniowo wypełnia rów w ciągu następnej tury, aż poziom wody wróci do normy.</p><p><strong>Zmiana Przepływu.</strong> Sprawiasz, że przepływająca woda w obszarze płynie w wybranym przez ciebie kierunku, nawet jeśli musi przepływać przez przeszkody, wspinać się po ścianach lub płynąć w innych, nieprawdopodobnych kierunkach. Woda w obszarze płynie, jak ją pokierujesz, ale gdy opuści obszar czaru, wróci do naturalnego przepływu zależnego od terenu. Woda będzie się przemieszczać w wybranym przez ciebie kierunku, dopóki czar trwa lub nie wybierzesz innego efektu.</p><p><strong>Wir.</strong> Tworzysz wir wodny w centrum obszaru, który musi mieć co najmniej 50 stóp (15m) kwadratowych i 25 stóp (7,5m) głębokości. Wir trwa, dopóki nie wybierzesz innego efektu lub czar nie dobiegnie końca. Wir ma 5 stóp szerokości u podstawy, do 50 stóp (15m) szerokości u góry i 25 stóp (7,5m) wysokości. Każda istota w wodzie i w obrębie 25 stóp (7,5m) od wiru jest przyciągana o 3 metry (10 stóp) w jego stronę. Gdy istota wchodzi do wiru po raz pierwszy w turze lub kończy turę w jego obrębie, musi wykonać rzut obronny na Siłę. W przypadku niepowodzenia istota otrzymuje 2k8 obrażeń obuchowych. W przypadku sukcesu otrzymuje połowę obrażeń. Istota może odpłynąć od wiru tylko wtedy, gdy najpierw użyje akcji, aby się wycofać, i pomyślnie wykona test [[/check ability=str skill=ath dc=@attributes.spelldc]] przeciwko ST twojego rzutu obronnego na czary.</p>",
+      "description": "<p>Dopóki czar trwa, kontrolujesz każdą wodę w wybranym przez ciebie obszarze, który jest sześcianem o boku do 100 stóp, używając jednego z poniższych efektów. Akcją magii w swoich późniejszych turach możesz powtórzyć ten sam efekt lub wybrać inny.</p><p><strong>Powódź.</strong> Sprawiasz, że poziom wody w stojącej wodzie w obszarze podnosi się o 20 stóp. Jeśli wybierzesz obszar w dużym zbiorniku wodnym, zamiast tego tworzysz falę o wysokości 20 stóp, która przemieszcza się z jednej strony obszaru na drugą, a następnie opada. Wszystkie pojazdy o wielkości Olbrzyma lub mniejsze znajdujące się na drodze fali są przenoszone z nią na drugą stronę. Każdy pojazd o wielkości Olbrzyma lub mniejszy, który zostanie uderzony przez falę, ma [[/r 1d100cs&lt;26#Vehicle is capsized]]{25 procent} szans na wywrócenie się.</p><p>Poziom wody pozostaje podwyższony, dopóki czar trwa lub nie wybierzesz innego efektu. Jeśli ten efekt stworzył falę, fala powtarza się na początku swojej następnej tury, dopóki efekt powodzi trwa.</p><p><strong>Rozdzielenie Wody.</strong> Rozdzielasz wodę w obszarze, tworząc rów. Rów rozciąga się na cały obszar czaru, a oddzielona woda tworzy ścianę po obu stronach. Rów pozostaje, dopóki czar trwa lub nie wybierzesz innego efektu. Woda stopniowo wypełnia rów w ciągu następnej tury, aż poziom wody wróci do normy.</p><p><strong>Zmiana Przepływu.</strong> Sprawiasz, że przepływająca woda w obszarze płynie w wybranym przez ciebie kierunku, nawet jeśli musi przepływać przez przeszkody, wspinać się po ścianach lub płynąć w innych, nieprawdopodobnych kierunkach. Woda w obszarze płynie, jak ją pokierujesz, ale gdy opuści obszar czaru, wróci do naturalnego przepływu zależnego od terenu. Woda będzie się przemieszczać w wybranym przez ciebie kierunku, dopóki czar trwa lub nie wybierzesz innego efektu.</p><p><strong>Wir.</strong> Tworzysz wir wodny w centrum obszaru, który musi mieć co najmniej 50 stóp (15m) kwadratowych i 25 stóp (7,5m) głębokości. Wir trwa, dopóki nie wybierzesz innego efektu lub czar nie dobiegnie końca. Wir ma 5 stóp szerokości u podstawy, do 50 stóp (15m) szerokości u góry i 25 stóp (7,5m) wysokości. Każda istota w wodzie i w obrębie 25 stóp (7,5m) od wiru jest przyciągana o 3 metry (10 stóp) w jego stronę. Gdy istota wchodzi do wiru po raz pierwszy w turze lub kończy turę w jego obrębie, musi wykonać rzut obronny na Siłę. W przypadku niepowodzenia istota otrzymuje 2k8 obrażeń obuchowych. W przypadku sukcesu otrzymuje połowę obrażeń. Istota może odpłynąć od wiru tylko wtedy, gdy najpierw użyje akcji, aby się wycofać, i pomyślnie wykona test [[/check ability=str skill=ath dc=@attributes.spelldc]] przeciwko ST twojego rzutu obronnego na czary.</p>",
       "materials": "mieszanka wody i pyłu",
       "activities": {
         "Create Whirlpool": {
@@ -1568,7 +1568,7 @@
     },
     "Find Familiar": {
       "name": "Znalezienie chowańca",
-      "description": "<p>Zyskujesz usługę chowańca, ducha, który przybiera wybraną przez ciebie formę zwierzęcą: <strong>Nietoperz</strong>, <strong>Kot</strong>, <strong>Żaba</strong>, <strong>Jastrząb</strong>, <strong>Jaszczurka</strong>, <strong>Ośmiornica</strong>, <strong>Sowa</strong>, <strong>Szczur</strong>, <strong>Kruk</strong>, <strong>Pająk</strong>, <strong>Łasica</strong> lub inna Bestia o Stopniu Wyzwania 0. Pojawiając się w niezajętym obszarze w zasięgu, chowaniec ma statystyki wybranej formy (patrz dodatek B), choć jest Niebianinem, Fey lub Czartem (według twojego wyboru) zamiast Bestii. Twój chowaniec działa niezależnie od ciebie, ale podporządkowuje się twoim rozkazom.</p><p><strong>Telepatyczne Połączenie.</strong> Gdy twój chowaniec znajduje się w odległości 100 stóp od ciebie, możesz komunikować się z nim telepatycznie. Dodatkowo, Akcją dodatkową, możesz widzieć oczami chowańca i słyszeć to, co on słyszy, do początku twojej następnej tury, zyskując korzyści z wszelkich specjalnych zmysłów, jakie posiada.</p><p>Ponadto, gdy rzucasz czar o zasięgu dotyku, twój chowaniec może dostarczyć ten dotyk. Chowaniec musi znajdować się w odległości 100 stóp od ciebie i musi wykonać Reakcję, aby dostarczyć dotyk, gdy rzucasz czar.</p><p><strong>Walka.</strong> Chowaniec jest sojusznikiem dla ciebie i twoich sprzymierzeńców. Rzuca własną Inicjatywą i działa w swojej turze. Chowaniec nie może atakować, ale może wykonywać inne akcje jak zwykle.</p><p><strong>Zniknięcie Chowańca.</strong> Gdy chowaniec spadnie do 0 Punktów Wytrzymałości, znika. Pojawia się ponownie, gdy rzucisz ten czar jeszcze raz. Akcją Magii możesz tymczasowo odesłać chowańca do kieszonkowego wymiaru. Alternatywnie, możesz odesłać go na zawsze. Akcją Magii, gdy jest tymczasowo odesłany, możesz sprawić, że pojawi się ponownie w niezajętym obszarze w odległości 30 stóp od ciebie. Za każdym razem, gdy chowaniec spadnie do 0 Punktów Wytrzymałości lub zniknie w kieszonkowym wymiarze, pozostawia w swoim miejscu wszystko, co nosił lub niósł.</p><p><strong>Tylko Jeden Chowaniec.</strong> Nie możesz mieć więcej niż jednego chowańca naraz. Jeśli rzucisz ten czar, mając już chowańca, zamiast tego sprawiasz, że przyjmuje nową, kwalifikującą się formę.</p>",
+      "description": "<p>Zyskujesz usługę chowańca, ducha, który przybiera wybraną przez ciebie formę zwierzęcą: <strong>Nietoperz</strong>, <strong>Kot</strong>, <strong>Żaba</strong>, <strong>Jastrząb</strong>, <strong>Jaszczurka</strong>, <strong>Ośmiornica</strong>, <strong>Sowa</strong>, <strong>Szczur</strong>, <strong>Kruk</strong>, <strong>Pająk</strong>, <strong>Łasica</strong> lub inna Bestia o Stopniu Wyzwania 0. Pojawiając się w niezajętym obszarze w zasięgu, chowaniec ma statystyki wybranej formy (patrz dodatek B), choć jest Niebianinem, Fey lub Czartem (według twojego wyboru) zamiast Bestii. Twój chowaniec działa niezależnie od ciebie, ale podporządkowuje się twoim rozkazom.</p><p><strong>Telepatyczne Połączenie.</strong> Gdy twój chowaniec znajduje się w odległości 100 stóp od ciebie, możesz komunikować się z nim telepatycznie. Dodatkowo, Akcją dodatkową, możesz widzieć oczami chowańca i słyszeć to, co on słyszy, do początku swojej następnej tury, zyskując korzyści z wszelkich specjalnych zmysłów, jakie posiada.</p><p>Ponadto, gdy rzucasz czar o zasięgu dotyku, twój chowaniec może dostarczyć ten dotyk. Chowaniec musi znajdować się w odległości 100 stóp od ciebie i musi wykonać Reakcję, aby dostarczyć dotyk, gdy rzucasz czar.</p><p><strong>Walka.</strong> Chowaniec jest sojusznikiem dla ciebie i twoich sprzymierzeńców. Rzuca własną Inicjatywą i działa w swojej turze. Chowaniec nie może atakować, ale może wykonywać inne akcje jak zwykle.</p><p><strong>Zniknięcie Chowańca.</strong> Gdy chowaniec spadnie do 0 Punktów Wytrzymałości, znika. Pojawia się ponownie, gdy rzucisz ten czar jeszcze raz. Akcją Magii możesz tymczasowo odesłać chowańca do kieszonkowego wymiaru. Alternatywnie, możesz odesłać go na zawsze. Akcją Magii, gdy jest tymczasowo odesłany, możesz sprawić, że pojawi się ponownie w niezajętym obszarze w odległości 30 stóp od ciebie. Za każdym razem, gdy chowaniec spadnie do 0 Punktów Wytrzymałości lub zniknie w kieszonkowym wymiarze, pozostawia w swoim miejscu wszystko, co nosił lub niósł.</p><p><strong>Tylko Jeden Chowaniec.</strong> Nie możesz mieć więcej niż jednego chowańca naraz. Jeśli rzucisz ten czar, mając już chowańca, zamiast tego sprawiasz, że przyjmuje nową, kwalifikującą się formę.</p>",
       "materials": "płonące kadzidło warte 10+ GP, które czar zużywa",
       "activities": {
         "summon": {
@@ -1609,7 +1609,7 @@
     },
     "Finger of Death": {
       "name": "Palec śmierci",
-      "description": "<p>Uwalniasz negatywną energię w kierunku istoty, którą widzisz w zasięgu. Cel wykonuje rzut obronny na Kondycję, otrzymując 7k8 + 30 obrażeń nekrotycznych przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p>Humanoid zabity przez ten czar powstaje na początku twojej następnej tury jako <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobZombie0000]{Zombie}</strong> (patrz dodatek B), który wykonuje twoje werbalne rozkazy.</p>",
+      "description": "<p>Uwalniasz negatywną energię w kierunku istoty, którą widzisz w zasięgu. Cel wykonuje rzut obronny na Kondycję, otrzymując 7k8 + 30 obrażeń nekrotycznych przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p>Humanoid zabity przez ten czar powstaje na początku swojej następnej tury jako <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobZombie0000]{Zombie}</strong> (patrz dodatek B), który wykonuje twoje werbalne rozkazy.</p>",
       "activities": {
         "Negative Energy Save": {
           "name": "Rzut obronny energii negatywnej"
@@ -1681,7 +1681,7 @@
     },
     "Flesh to Stone": {
       "name": "Ciało w kamień",
-      "description": "<p>Próbujesz zamienić w kamień jedną istotę, którą widzisz w zasięgu. Cel wykonuje rzut obronny na Kondycję. Przy nieudanej obronie otrzymuje stan &amp;Reference[Restrained apply=false] przez czas trwania. Przy udanej obronie jego Szybkość wynosi 0 do początku twojej następnej tury. Konstrukty automatycznie odnoszą sukces w tej obronie.</p><p>Cel z efektem Unieruchomiony wykonuje kolejny rzut obronny na Kondycję na końcu każdej swojej tury. Jeśli trzykrotnie odniesie sukces w obronie przeciw temu czarowi, czar się kończy. Jeśli trzykrotnie nie powiedzie mu się obrona, zostaje zamieniony w kamień i otrzymuje stan &amp;Reference[Petrified] przez czas trwania. Sukcesy i porażki nie muszą następować po sobie; śledź oba wyniki, aż cel uzbiera trzy tego samego rodzaju.</p><p>Jeśli utrzymasz Koncentrację na tym czarze przez cały możliwy czas trwania, cel pozostaje Skamieniały, dopóki stan nie zostanie zakończony przez czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]</em> lub podobną magię.</p>",
+      "description": "<p>Próbujesz zamienić w kamień jedną istotę, którą widzisz w zasięgu. Cel wykonuje rzut obronny na Kondycję. Przy nieudanej obronie otrzymuje stan &amp;Reference[Restrained apply=false] przez czas trwania. Przy udanej obronie jego Szybkość wynosi 0 do początku swojej następnej tury. Konstrukty automatycznie odnoszą sukces w tej obronie.</p><p>Cel z efektem Unieruchomiony wykonuje kolejny rzut obronny na Kondycję na końcu każdej swojej tury. Jeśli trzykrotnie odniesie sukces w obronie przeciw temu czarowi, czar się kończy. Jeśli trzykrotnie nie powiedzie mu się obrona, zostaje zamieniony w kamień i otrzymuje stan &amp;Reference[Petrified] przez czas trwania. Sukcesy i porażki nie muszą następować po sobie; śledź oba wyniki, aż cel uzbiera trzy tego samego rodzaju.</p><p>Jeśli utrzymasz Koncentrację na tym czarze przez cały możliwy czas trwania, cel pozostaje Skamieniały, dopóki stan nie zostanie zakończony przez czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]</em> lub podobną magię.</p>",
       "materials": "pióro kuroliszka",
       "effects": {
         "Turning to Stone": {
@@ -1690,7 +1690,7 @@
         },
         "Unable to Move": {
           "name": "Niezdolny do ruchu",
-          "description": "<p>Przy udanym rzucie Szybkość celu wynosi 0 do początku twojej następnej tury.</p>"
+          "description": "<p>Przy udanym rzucie Szybkość celu wynosi 0 do początku swojej następnej tury.</p>"
         }
       }
     },
@@ -1754,7 +1754,7 @@
     },
     "Fount of Moonlight": {
       "name": "Źródło blasku księżyca",
-      "description": "<p>Chłodne światło otacza twoje ciało na czas trwania czaru, emitując Jasne Światło w promieniu 20 stóp oraz Słabe Światło w dodatkowym promieniu 20 stóp.</p><p>Dopóki czar trwa, masz Odporność na obrażenia od światłości, a twoje ataki wręcz zadają dodatkowe 2k6 obrażeń od światłości przy trafieniu.</p><p>Dodatkowo, natychmiast po otrzymaniu obrażeń od istoty, którą widzisz w promieniu 60 stóp, możesz wykorzystać Reakcję, aby zmusić tę istotę do wykonania rzutu obronnego na Kondycję [[/save ability=con dc=@attributes.spelldc]]. W przypadku niepowodzenia istota otrzymuje stan &amp;Reference[Blinded]{Oślepiony} do końca twojej następnej tury.</p>",
+      "description": "<p>Chłodne światło otacza twoje ciało na czas trwania czaru, emitując Jasne Światło w promieniu 20 stóp oraz Słabe Światło w dodatkowym promieniu 20 stóp.</p><p>Dopóki czar trwa, masz Odporność na obrażenia od światłości, a twoje ataki wręcz zadają dodatkowe 2k6 obrażeń od światłości przy trafieniu.</p><p>Dodatkowo, natychmiast po otrzymaniu obrażeń od istoty, którą widzisz w promieniu 60 stóp, możesz wykorzystać Reakcję, aby zmusić tę istotę do wykonania rzutu obronnego na Kondycję [[/save ability=con dc=@attributes.spelldc]]. W przypadku niepowodzenia istota otrzymuje stan &amp;Reference[Blinded]{Oślepiony} do końca swojej następnej tury.</p>",
       "activities": {
         "Blinding Reaction": {
           "name": "Oślepiająca reakcja",
@@ -1770,7 +1770,7 @@
         },
         "Blinded": {
           "name": "Oślepiony",
-          "description": "<p>Istota otrzymuje stan &amp;Reference[Blinded apply=false] do końca twojej następnej tury.</p>"
+          "description": "<p>Istota otrzymuje stan &amp;Reference[Blinded apply=false] do końca swojej następnej tury.</p>"
         }
       }
     },
@@ -1975,11 +1975,11 @@
     },
     "Guiding Bolt": {
       "name": "Pocisk wiodący",
-      "description": "<p>Rzucasz pocisk światła w kierunku istoty w zasięgu. Wykonaj atak dystansowy zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 4k6 obrażeń od Światłości, a następny test ataku przeciwko niemu przed końcem twojej następnej tury ma &Reference[Advantage]{Ułatwienie}.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+      "description": "<p>Rzucasz pocisk światła w kierunku istoty w zasięgu. Wykonaj atak dystansowy zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 4k6 obrażeń od Światłości, a następny test ataku przeciwko niemu przed końcem swojej następnej tury ma &Reference[Advantage]{Ułatwienie}.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
       "effects": {
         "Guiding Bolt": {
           "name": "Pocisk wiodący",
-          "description": "<p><span style=\"font-family:Signika, sans-serif\">Następny Test Ataku wykonany przeciwko celowi przed końcem twojej następnej tury ma Ułatwienie.</span></p>"
+          "description": "<p><span style=\"font-family:Signika, sans-serif\">Następny Test Ataku wykonany przeciwko celowi przed końcem swojej następnej tury ma Ułatwienie.</span></p>"
         }
       }
     },
@@ -2046,7 +2046,7 @@
     },
     "Heat Metal": {
       "name": "Rozgrzanie metalu",
-      "description": "<p>Wybierasz wykonany z metalu przedmiot, taki jak metalowa broń lub zbroja ciężka lub średnia, który widzisz w zasięgu. Sprawiasz, że przedmiot rozgrzewa się do czerwoności. Każda istota mająca fizyczny kontakt z przedmiotem otrzymuje 2k8 obrażeń od ognia w momencie rzucenia czaru. Dopóki czar trwa, możesz w każdej swojej kolejnej turze użyć Akcji dodatkowej, aby ponownie zadać te obrażenia, jeśli przedmiot znajduje się w zasięgu.</p><p>Jeśli istota trzyma lub nosi ten przedmiot i otrzymuje od niego obrażenia, musi wykonać rzut obronny na Kondycję. W przypadku niepowodzenia istota musi upuścić przedmiot, jeśli jest to możliwe. Jeśli nie upuści przedmiotu, ma &Reference[Disadvantage]{Utrudnienie} w testach ataku i testach cech do początku twojej następnej tury.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 2. kręgu.</p>",
+      "description": "<p>Wybierasz wykonany z metalu przedmiot, taki jak metalowa broń lub zbroja ciężka lub średnia, który widzisz w zasięgu. Sprawiasz, że przedmiot rozgrzewa się do czerwoności. Każda istota mająca fizyczny kontakt z przedmiotem otrzymuje 2k8 obrażeń od ognia w momencie rzucenia czaru. Dopóki czar trwa, możesz w każdej swojej kolejnej turze użyć Akcji dodatkowej, aby ponownie zadać te obrażenia, jeśli przedmiot znajduje się w zasięgu.</p><p>Jeśli istota trzyma lub nosi ten przedmiot i otrzymuje od niego obrażenia, musi wykonać rzut obronny na Kondycję. W przypadku niepowodzenia istota musi upuścić przedmiot, jeśli jest to możliwe. Jeśli nie upuści przedmiotu, ma &Reference[Disadvantage]{Utrudnienie} w testach ataku i testach cech do początku swojej następnej tury.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 2. kręgu.</p>",
       "materials": "kawałek żelaza i płomień",
       "activities": {
         "On Damage Save": {
@@ -2062,7 +2062,7 @@
       "effects": {
         "Heated Metal": {
           "name": "Rozgrzany metal",
-          "description": "<p>Jeśli istota trzyma lub nosi obiekt i otrzyma od niego obrażenia, musi wykonać udany Rzut Obrony [[/save ability=con format=long]] lub upuścić obiekt, jeśli może. Jeśli nie upuści obiektu, ma Utrudnienie do Testów Ataku i Testów Cech do początku twojej następnej tury.</p>"
+          "description": "<p>Jeśli istota trzyma lub nosi obiekt i otrzyma od niego obrażenia, musi wykonać udany Rzut Obrony [[/save ability=con format=long]] lub upuścić obiekt, jeśli może. Jeśli nie upuści obiektu, ma Utrudnienie do Testów Ataku i Testów Cech do początku swojej następnej tury.</p>"
         }
       }
     },
@@ -2168,7 +2168,7 @@
     },
     "Holy Aura": {
       "name": "Święta aura",
-      "description": "<p>Dopóki czar trwa, emitujesz aurę w promieniu 30 stóp. W obrębie tej aury, istoty wybrane przez ciebie mają &amp;Reference[Advantage]{Ułatwienie} w wszystkich rzutach obronnych, a inne istoty mają &amp;Reference[Disadvantage]{Utrudnienie} w testach ataku przeciwko nim. Dodatkowo, gdy Czart lub Nieumarły trafi istotę objętą aurą atakiem wręcz, napastnik musi wykonać rzut obronny na Kondycję. W przypadku niepowodzenia otrzymuje stan &amp;Reference[Blinded]{Oślepiony} do końca twojej następnej tury.</p>",
+      "description": "<p>Dopóki czar trwa, emitujesz aurę w promieniu 30 stóp. W obrębie tej aury, istoty wybrane przez ciebie mają &amp;Reference[Advantage]{Ułatwienie} w wszystkich rzutach obronnych, a inne istoty mają &amp;Reference[Disadvantage]{Utrudnienie} w testach ataku przeciwko nim. Dodatkowo, gdy Czart lub Nieumarły trafi istotę objętą aurą atakiem wręcz, napastnik musi wykonać rzut obronny na Kondycję. W przypadku niepowodzenia otrzymuje stan &amp;Reference[Blinded]{Oślepiony} do końca swojej następnej tury.</p>",
       "materials": "relikwiarz warty 1 000+ SZ",
       "activities": {
         "Create Aura": {
@@ -2249,7 +2249,7 @@
     },
     "Ice Storm": {
       "name": "Burza lodu",
-      "description": "<p>Grad spada w Walcu o promieniu 20 stóp i wysokości 40 stóp z centrum w punkcie w zasięgu. Każda istota w Walcu wykonuje rzut obronny na Zręczność. Istota otrzymuje 2k10 obrażeń obuchowych i 4k6 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p>Gradziny zamieniają grunt w Walcu w &amp;Reference[DifficultTerrain]{Trudny Teren} do końca twojej następnej tury.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia obuchowe zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 4.</p>",
+      "description": "<p>Grad spada w Walcu o promieniu 20 stóp i wysokości 40 stóp z centrum w punkcie w zasięgu. Każda istota w Walcu wykonuje rzut obronny na Zręczność. Istota otrzymuje 2k10 obrażeń obuchowych i 4k6 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p>Gradziny zamieniają grunt w Walcu w &amp;Reference[DifficultTerrain]{Trudny Teren} do końca swojej następnej tury.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia obuchowe zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 4.</p>",
       "materials": "rękawiczka z jednym palcem"
     },
     "Identify": {
@@ -2611,11 +2611,11 @@
     },
     "Mind Sliver": {
       "name": "Myślowy odłamek",
-      "description": "<p>Próbujesz chwilowo rozszczepić umysł jednej istoty, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Inteligencję, inaczej otrzymuje 1k6 obrażeń psychicznych i odejmuje 1k4 od następnego rzutu obronnego, który wykona przed końcem twojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k6, gdy osiągniesz poziomy 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
+      "description": "<p>Próbujesz chwilowo rozszczepić umysł jednej istoty, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Inteligencję, inaczej otrzymuje 1k6 obrażeń psychicznych i odejmuje 1k4 od następnego rzutu obronnego, który wykona przed końcem swojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k6, gdy osiągniesz poziomy 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
       "effects": {
         "Slivered": {
           "name": "Pocięty",
-          "description": "<p>Cel odejmuje 1k4 od następnego rzutu obronnego, który wykona przed końcem twojej następnej tury.</p>"
+          "description": "<p>Cel odejmuje 1k4 od następnego rzutu obronnego, który wykona przed końcem swojej następnej tury.</p>"
         }
       }
     },
@@ -2968,7 +2968,7 @@
     },
     "Power Word Stun": {
       "name": "Słowo mocy Stój",
-      "description": "<p>Przytłaczasz umysł jednej istoty, którą widzisz w zasięgu. Jeśli cel ma 150 Punktów Wytrzymałości lub mniej, ma stan Ogłuszenia. W przeciwnym razie jego Szybkość wynosi 0 do początku twojej następnej tury.</p><p>Cel z &amp;Reference[Stunned apply=false] wykonuje rzut obronny na Kondycję [[/save ability=con dc=@attributes.spelldc]] na końcu każdej z jego tur, kończąc stan na sukcesie.</p>",
+      "description": "<p>Przytłaczasz umysł jednej istoty, którą widzisz w zasięgu. Jeśli cel ma 150 Punktów Wytrzymałości lub mniej, ma stan Ogłuszenia. W przeciwnym razie jego Szybkość wynosi 0 do początku swojej następnej tury.</p><p>Cel z &amp;Reference[Stunned apply=false] wykonuje rzut obronny na Kondycję [[/save ability=con dc=@attributes.spelldc]] na końcu każdej z jego tur, kończąc stan na sukcesie.</p>",
       "effects": {
         "Stunned": {
           "name": "Ogłuszony",
@@ -2976,7 +2976,7 @@
         },
         "No Movement": {
           "name": "Brak ruchu",
-          "description": "<p>Szybkość celu wynosi 0 do początku twojej następnej tury.</p>"
+          "description": "<p>Szybkość celu wynosi 0 do początku swojej następnej tury.</p>"
         }
       }
     },
@@ -2992,7 +2992,7 @@
     },
     "Prestidigitation": {
       "name": "Kuglarstwo",
-      "description": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć aktywne maksymalnie trzy jego nienatychmiastowe efekty jednocześnie.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt sensoryczny, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 27 litrów.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak do 27 litrów nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że kolor, mały znak lub symbol pojawia się na obiekcie albo powierzchni na 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w dłoni. Trwa on do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>"
+      "description": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć aktywne maksymalnie trzy jego nienatychmiastowe efekty jednocześnie.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt sensoryczny, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 27 litrów.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak do 27 litrów nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że kolor, mały znak lub symbol pojawia się na obiekcie albo powierzchni na 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w dłoni. Trwa on do końca swojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>"
     },
     "Prismatic Spray": {
       "name": "Pryzmatyczny rozprysk",
@@ -3015,13 +3015,13 @@
         },
         "Teleporting (Violet)": {
           "name": "Teleportacja (Fiolet)",
-          "description": "<p>Cel otrzymuje stan &amp;Reference[Blinded apply=false] i wykonuje [[/save ability=wis format=long]] na początku twojej następnej tury. Przy udanym rzucie stan się kończy. Przy nieudanym rzucie stan również się kończy, a istota teleportuje się do innej sfery egzystencji (wybór MP).</p>"
+          "description": "<p>Cel otrzymuje stan &amp;Reference[Blinded apply=false] i wykonuje [[/save ability=wis format=long]] na początku swojej następnej tury. Przy udanym rzucie stan się kończy. Przy nieudanym rzucie stan również się kończy, a istota teleportuje się do innej sfery egzystencji (wybór MP).</p>"
         }
       }
     },
     "Prismatic Wall": {
       "name": "Pryzmatyczny mur",
-      "description": "<p>Migocząca, wielobarwna płaszczyzna światła tworzy pionową, nieprzezroczystą ścianę—o długości do 90 stóp, wysokości 30 stóp i grubości 1 cala (2,5cm)—skoncentrowaną na punkcie w zasięgu. Alternatywnie, możesz ukształtować ścianę w sferę o średnicy do 30 stóp, skoncentrowaną na punkcie w zasięgu. Ściana trwa przez cały czas działania czaru. Jeśli umieścisz ścianę w przestrzeni zajmowanej przez istotę, czar natychmiast się kończy bez efektu.</p><p>Ściana emituje &amp;Reference[BrightLight]{Jasne Światło} w promieniu 100 stóp oraz &amp;Reference[DimLight]{Słabe Światło} na dodatkowe 100 stóp. Ty i istoty, które wskażesz w momencie rzucania czaru, możecie przechodzić przez ścianę i przebywać w jej pobliżu bez szwanku. Jeśli inna istota, która może widzieć ścianę, poruszy się w jej obrębie na odległość 20 stóp lub zacznie tam swoją turę, musi wykonać rzut obronny na Kondycję. W przypadku niepowodzenia otrzymuje stan &amp;Reference[Blinded apply=false]{Oślepiony} na 1 minutę.</p><p>Ściana składa się z siedmiu warstw, każda o innym kolorze. Gdy istota dotknie ściany lub przez nią przejdzie, robi to warstwa po warstwie. Każda warstwa wymusza rzut obronny na Zręczność. W razie niepowodzenia istota zostaje dotknięta efektami danej warstwy zgodnie z tabelą \"Pryzmatyczne Warstwy\".</p><p>Ściana, mająca KP 10, może być niszczona warstwa po warstwie, w kolejności od czerwonej do fioletowej, przy użyciu określonych środków. Jeśli warstwa zostanie zniszczona, znika do końca czasu działania czaru. <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAntimagicF]{Pole Antymagii}</em> nie ma wpływu na ścianę, a <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelMagi]{Rozproszenie Magii}</em> może oddziaływać wyłącznie na warstwę fioletową.</p><table><caption>Pryzmatyczne Warstwy</caption><thead><tr><td>Numer</td><td>Efekty</td></tr></thead><tbody><tr><td>1</td><td><strong>Czerwona.</strong> <em>Nieudany rzut:</em> 12k6 obrażeń od ognia. <em>Udany rzut:</em> Połowa obrażeń. <em>Dodatkowe efekty:</em> Niemagiczne ataki dystansowe nie mogą przejść przez tę warstwę, która zostaje zniszczona, jeśli otrzyma co najmniej 25 obrażeń od zimna.</td></tr><tr><td>2</td><td><strong>Pomarańczowa.</strong> <em>Nieudany rzut:</em> 12k6 obrażeń od kwasu. <em>Udany rzut:</em> Połowa obrażeń. <em>Dodatkowe efekty:</em> Magiczne ataki dystansowe nie mogą przejść przez tę warstwę, która zostaje zniszczona przez silny wiatr (np. stworzony przez <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGustofWind]{Poryw Wiatru}</em>).</td></tr><tr><td>3</td><td><strong>Żółta.</strong> <em>Nieudany rzut:</em> 12k6 obrażeń od elektryczności. <em>Udany rzut:</em> Połowa obrażeń. <em>Dodatkowe efekty:</em> Warstwa zostaje zniszczona, jeśli otrzyma co najmniej 60 obrażeń od mocy.</td></tr><tr><td>4</td><td><strong>Zielona.</strong> <em>Nieudany rzut:</em> 12k6 obrażeń od trucizn. <em>Udany rzut:</em> Połowa obrażeń. <em>Dodatkowe efekty:</em> Czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPasswall00]{Przejście w Murze}</em> lub inny czar tej samej lub wyższej rangi, który może otworzyć portal na solidnej powierzchni, niszczy tę warstwę.</td></tr><tr><td>5</td><td><strong>Niebieska.</strong> <em>Nieudany rzut:</em> 12k6 obrażeń od zimna. <em>Udany rzut:</em> Połowa obrażeń. <em>Dodatkowe efekty:</em> Warstwa zostaje zniszczona, jeśli otrzyma co najmniej 25 obrażeń od ognia.</td></tr><tr><td>6</td><td><strong>Indygo.</strong> <em>Nieudany rzut:</em> Cel otrzymuje stan &amp;Reference[Restrained apply=false]{Unieruchomiony} i wykonuje [[/save ability=con dc=@attributes.spelldc format=long]] na końcu każdej ze swoich tur. Jeśli odniesie trzy sukcesy, efekt ustaje. Jeśli odniesie trzy porażki, otrzymuje stan &amp;Reference[Petrified]{Skamieniały}, dopóki nie zostanie uwolniony przez efekt taki jak czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]{Większe Przywrócenie}</em>. Sukcesy i porażki nie muszą być kolejno – zapisuj oba do momentu uzyskania trzech z jednego rodzaju. <em>Dodatkowe efekty:</em> Czarów nie można rzucać przez tę warstwę, która zostaje zniszczona przez Jasne Światło emitowane przez czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDaylight00]{Światło Dnia}</em>.</td></tr><tr><td>7</td><td><strong>Fioletowa.</strong> <em>Nieudany rzut:</em> Cel otrzymuje stan &amp;Reference[Blinded apply=false]{Oślepiony} i wykonuje [[/save ability=wis dc=@attributes.spelldc format=long]] na początku twojej następnej tury. W przypadku sukcesu efekt się kończy. W przypadku porażki efekt się kończy, a istota zostaje przeniesiona na inną sferę egzystencji (wybór Mistrza Podziemi). <em>Dodatkowe efekty:</em> Warstwa zostaje zniszczona przez <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelMagi]{Rozproszenie Magii}</em>.</td></tr></tbody></table>",
+      "description": "<p>Migocząca, wielobarwna płaszczyzna światła tworzy pionową, nieprzezroczystą ścianę—o długości do 90 stóp, wysokości 30 stóp i grubości 1 cala (2,5cm)—skoncentrowaną na punkcie w zasięgu. Alternatywnie, możesz ukształtować ścianę w sferę o średnicy do 30 stóp, skoncentrowaną na punkcie w zasięgu. Ściana trwa przez cały czas działania czaru. Jeśli umieścisz ścianę w przestrzeni zajmowanej przez istotę, czar natychmiast się kończy bez efektu.</p><p>Ściana emituje &amp;Reference[BrightLight]{Jasne Światło} w promieniu 100 stóp oraz &amp;Reference[DimLight]{Słabe Światło} na dodatkowe 100 stóp. Ty i istoty, które wskażesz w momencie rzucania czaru, możecie przechodzić przez ścianę i przebywać w jej pobliżu bez szwanku. Jeśli inna istota, która może widzieć ścianę, poruszy się w jej obrębie na odległość 20 stóp lub zacznie tam swoją turę, musi wykonać rzut obronny na Kondycję. W przypadku niepowodzenia otrzymuje stan &amp;Reference[Blinded apply=false]{Oślepiony} na 1 minutę.</p><p>Ściana składa się z siedmiu warstw, każda o innym kolorze. Gdy istota dotknie ściany lub przez nią przejdzie, robi to warstwa po warstwie. Każda warstwa wymusza rzut obronny na Zręczność. W razie niepowodzenia istota zostaje dotknięta efektami danej warstwy zgodnie z tabelą \"Pryzmatyczne Warstwy\".</p><p>Ściana, mająca KP 10, może być niszczona warstwa po warstwie, w kolejności od czerwonej do fioletowej, przy użyciu określonych środków. Jeśli warstwa zostanie zniszczona, znika do końca czasu działania czaru. <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAntimagicF]{Pole Antymagii}</em> nie ma wpływu na ścianę, a <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelMagi]{Rozproszenie Magii}</em> może oddziaływać wyłącznie na warstwę fioletową.</p><table><caption>Pryzmatyczne Warstwy</caption><thead><tr><td>Numer</td><td>Efekty</td></tr></thead><tbody><tr><td>1</td><td><strong>Czerwona.</strong> <em>Nieudany rzut:</em> 12k6 obrażeń od ognia. <em>Udany rzut:</em> Połowa obrażeń. <em>Dodatkowe efekty:</em> Niemagiczne ataki dystansowe nie mogą przejść przez tę warstwę, która zostaje zniszczona, jeśli otrzyma co najmniej 25 obrażeń od zimna.</td></tr><tr><td>2</td><td><strong>Pomarańczowa.</strong> <em>Nieudany rzut:</em> 12k6 obrażeń od kwasu. <em>Udany rzut:</em> Połowa obrażeń. <em>Dodatkowe efekty:</em> Magiczne ataki dystansowe nie mogą przejść przez tę warstwę, która zostaje zniszczona przez silny wiatr (np. stworzony przez <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGustofWind]{Poryw Wiatru}</em>).</td></tr><tr><td>3</td><td><strong>Żółta.</strong> <em>Nieudany rzut:</em> 12k6 obrażeń od elektryczności. <em>Udany rzut:</em> Połowa obrażeń. <em>Dodatkowe efekty:</em> Warstwa zostaje zniszczona, jeśli otrzyma co najmniej 60 obrażeń od mocy.</td></tr><tr><td>4</td><td><strong>Zielona.</strong> <em>Nieudany rzut:</em> 12k6 obrażeń od trucizn. <em>Udany rzut:</em> Połowa obrażeń. <em>Dodatkowe efekty:</em> Czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPasswall00]{Przejście w Murze}</em> lub inny czar tej samej lub wyższej rangi, który może otworzyć portal na solidnej powierzchni, niszczy tę warstwę.</td></tr><tr><td>5</td><td><strong>Niebieska.</strong> <em>Nieudany rzut:</em> 12k6 obrażeń od zimna. <em>Udany rzut:</em> Połowa obrażeń. <em>Dodatkowe efekty:</em> Warstwa zostaje zniszczona, jeśli otrzyma co najmniej 25 obrażeń od ognia.</td></tr><tr><td>6</td><td><strong>Indygo.</strong> <em>Nieudany rzut:</em> Cel otrzymuje stan &amp;Reference[Restrained apply=false]{Unieruchomiony} i wykonuje [[/save ability=con dc=@attributes.spelldc format=long]] na końcu każdej ze swoich tur. Jeśli odniesie trzy sukcesy, efekt ustaje. Jeśli odniesie trzy porażki, otrzymuje stan &amp;Reference[Petrified]{Skamieniały}, dopóki nie zostanie uwolniony przez efekt taki jak czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]{Większe Przywrócenie}</em>. Sukcesy i porażki nie muszą być kolejno – zapisuj oba do momentu uzyskania trzech z jednego rodzaju. <em>Dodatkowe efekty:</em> Czarów nie można rzucać przez tę warstwę, która zostaje zniszczona przez Jasne Światło emitowane przez czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDaylight00]{Światło Dnia}</em>.</td></tr><tr><td>7</td><td><strong>Fioletowa.</strong> <em>Nieudany rzut:</em> Cel otrzymuje stan &amp;Reference[Blinded apply=false]{Oślepiony} i wykonuje [[/save ability=wis dc=@attributes.spelldc format=long]] na początku swojej następnej tury. W przypadku sukcesu efekt się kończy. W przypadku porażki efekt się kończy, a istota zostaje przeniesiona na inną sferę egzystencji (wybór Mistrza Podziemi). <em>Dodatkowe efekty:</em> Warstwa zostaje zniszczona przez <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelMagi]{Rozproszenie Magii}</em>.</td></tr></tbody></table>",
       "activities": {
         "Create Wall": {
           "name": "Stwórz ścianę"
@@ -3048,7 +3048,7 @@
         },
         "Blinded (Violet)": {
           "name": "Oślepiony (Fiolet)",
-          "description": "<p>Cel otrzymuje stan &amp;Reference[Blinded apply=false] i wykonuje [[/save ability=wis dc=@attributes.spell.dc format=long]] na początku twojej następnej tury. Przy udanym rzucie stan się kończy. Przy nieudanym rzucie stan również się kończy, a istota teleportuje się do innej sfery egzystencji (wybór MP).</p>"
+          "description": "<p>Cel otrzymuje stan &amp;Reference[Blinded apply=false] i wykonuje [[/save ability=wis dc=@attributes.spell.dc format=long]] na początku swojej następnej tury. Przy udanym rzucie stan się kończy. Przy nieudanym rzucie stan również się kończy, a istota teleportuje się do innej sfery egzystencji (wybór MP).</p>"
         }
       }
     },
@@ -3183,11 +3183,11 @@
     },
     "Ray of Enfeeblement": {
       "name": "Promień osłabienia",
-      "description": "<p>Promień osłabiającej energii wystrzeliwuje od ciebie w kierunku istoty w zasięgu. Cel musi wykonać rzut obronny na Kondycję. W przypadku udanego rzutu cel ma Utrudnienie w następnym teście ataku, który wykona do początku twojej następnej tury.</p><p>W przypadku nieudanego rzutu cel ma Utrudnienie w testach opartych na Sile w rzutach K20 przez cały czas działania czaru. W tym czasie również odejmuje 1k8 od wszystkich swoich rzutów na obrażenia. Cel powtarza rzut obronny na końcu każdej ze swoich tur, kończąc działanie czaru w przypadku sukcesu.</p>",
+      "description": "<p>Promień osłabiającej energii wystrzeliwuje od ciebie w kierunku istoty w zasięgu. Cel musi wykonać rzut obronny na Kondycję. W przypadku udanego rzutu cel ma Utrudnienie w następnym teście ataku, który wykona do początku swojej następnej tury.</p><p>W przypadku nieudanego rzutu cel ma Utrudnienie w testach opartych na Sile w rzutach K20 przez cały czas działania czaru. W tym czasie również odejmuje 1k8 od wszystkich swoich rzutów na obrażenia. Cel powtarza rzut obronny na końcu każdej ze swoich tur, kończąc działanie czaru w przypadku sukcesu.</p>",
       "effects": {
         "Brief Enfeeblement": {
           "name": "Krótkie osłabienie",
-          "description": "<p>Cel ma utrudnienie do następnego testu ataku, który wykona, do początku twojej następnej tury.</p>"
+          "description": "<p>Cel ma utrudnienie do następnego testu ataku, który wykona, do początku swojej następnej tury.</p>"
         },
         "Enervated": {
           "name": "Wyczerpany",
@@ -3197,17 +3197,17 @@
     },
     "Ray of Frost": {
       "name": "Promień mrozu",
-      "description": "<p>Lodowaty promień biało-niebieskiego światła mknie w kierunku istoty w zasięgu. Wykonaj dystansowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia otrzymuje on 1k8 obrażeń od zimna, a jego szybkość zostaje zmniejszona o 10 stóp do początku twojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
+      "description": "<p>Lodowaty promień biało-niebieskiego światła mknie w kierunku istoty w zasięgu. Wykonaj dystansowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia otrzymuje on 1k8 obrażeń od zimna, a jego szybkość zostaje zmniejszona o 10 stóp do początku swojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
       "effects": {
         "Reduced Movement": {
           "name": "Ograniczony ruch",
-          "description": "<p>Szybkość celu zostaje zmniejszona o 10 stóp do początku twojej następnej tury.</p>"
+          "description": "<p>Szybkość celu zostaje zmniejszona o 10 stóp do początku swojej następnej tury.</p>"
         }
       }
     },
     "Ray of Sickness": {
       "name": "Promień zatrucia",
-      "description": "<p>Wystrzeliwujesz zielonkawy promień w kierunku istoty w zasięgu. Wykonaj dystansowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 2k8 obrażeń od trucizn i zyskuje stan &amp;Reference[Poisoned]{Zatruty} do końca twojej następnej tury.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 1. kręgu.</p>"
+      "description": "<p>Wystrzeliwujesz zielonkawy promień w kierunku istoty w zasięgu. Wykonaj dystansowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 2k8 obrażeń od trucizn i zyskuje stan &amp;Reference[Poisoned]{Zatruty} do końca swojej następnej tury.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 1. kręgu.</p>"
     },
     "Regenerate": {
       "name": "Regeneracja",
@@ -3486,12 +3486,12 @@
     },
     "Shield": {
       "name": "Tarcza",
-      "description": "<p>Chroni Cię niedostrzegalna bariera magicznej energii. Do początku twojej następnej tury zyskujesz premię +5 do KP, w tym przeciwko atakowi, który wywołał ten czar oraz nie otrzymujesz obrażeń od <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMagicMissi]</em>.</p>",
+      "description": "<p>Chroni Cię niedostrzegalna bariera magicznej energii. Do początku swojej następnej tury zyskujesz premię +5 do KP, w tym przeciwko atakowi, który wywołał ten czar oraz nie otrzymujesz obrażeń od <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMagicMissi]</em>.</p>",
       "activation": "kiedy zostaniesz trafiony testem ataku lub gdy jesteś celem czaru Magiczny pocisk",
       "effects": {
         "Imperceptible Barrier": {
           "name": "Niedostrzegalna bariera",
-          "description": "<p>Do początku twojej następnej tury masz premię +5 do KP, w tym przeciwko atakowi wywołującemu efekt, i nie otrzymujesz obrażeń od <em>Magic Missile</em>.</p>"
+          "description": "<p>Do początku swojej następnej tury masz premię +5 do KP, w tym przeciwko atakowi wywołującemu efekt, i nie otrzymujesz obrażeń od <em>Magic Missile</em>.</p>"
         }
       }
     },
@@ -3600,7 +3600,7 @@
     },
     "Sleep": {
       "name": "Uśpienie",
-      "description": "<p>Każda wybrana przez ciebie istota w sferze o promieniu 5 stóp, której centrum znajduje się w wybranym punkcie w zasięgu, musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[incapacitated apply=false]{Obezwładniony} do końca twojej następnej tury, po czym musi powtórzyć rzut obronny. Jeśli cel nie powiedzie się w drugim rzucie, otrzymuje stan &amp;Reference[unconscious]{Nieprzytomny} na czas działania czaru. Czar kończy się na celu, jeśli otrzyma on obrażenia lub jeśli ktoś w odległości 5 stóp od niego wykona akcję, aby wybudzić go z efektu czaru.</p><p>Istoty, które nie śpią, takie jak elfy, lub które mają Niewrażliwość na stan Wyczerpany, automatycznie odnoszą sukces w rzutach obronnych przeciwko temu czarowi.</p>",
+      "description": "<p>Każda wybrana przez ciebie istota w sferze o promieniu 5 stóp, której centrum znajduje się w wybranym punkcie w zasięgu, musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[incapacitated apply=false]{Obezwładniony} do końca swojej następnej tury, po czym musi powtórzyć rzut obronny. Jeśli cel nie powiedzie się w drugim rzucie, otrzymuje stan &amp;Reference[unconscious]{Nieprzytomny} na czas działania czaru. Czar kończy się na celu, jeśli otrzyma on obrażenia lub jeśli ktoś w odległości 5 stóp od niego wykona akcję, aby wybudzić go z efektu czaru.</p><p>Istoty, które nie śpią, takie jak elfy, lub które mają Niewrażliwość na stan Wyczerpany, automatycznie odnoszą sukces w rzutach obronnych przeciwko temu czarowi.</p>",
       "materials": "szczypta piasku lub płatków róży",
       "effects": {
         "Sleeping": {
@@ -3698,16 +3698,16 @@
     },
     "Staggering Smite": {
       "name": "Wstrząsające ugodzenie",
-      "description": "<p>Cel otrzymuje dodatkowe 4k6 obrażeń psychicznych w wyniku ataku i musi wykonać rzut obronny na Mądrość albo zostaje objęty stanem &amp;Reference[Stunned] do końca twojej następnej tury.</p><p><strong>Użycie Komórki czaru wyższego kręgu.</strong> Dodatkowe obrażenia wzrastają o 1k6 za każdy krąg powyżej 4.</p>",
+      "description": "<p>Cel otrzymuje dodatkowe 4k6 obrażeń psychicznych w wyniku ataku i musi wykonać rzut obronny na Mądrość albo zostaje objęty stanem &amp;Reference[Stunned] do końca swojej następnej tury.</p><p><strong>Użycie Komórki czaru wyższego kręgu.</strong> Dodatkowe obrażenia wzrastają o 1k6 za każdy krąg powyżej 4.</p>",
       "activation": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni"
     },
     "Starry Wisp": {
       "name": "Gwiezdny ognik",
-      "description": "<p>Wypuszczasz iskrę światła w stronę jednej istoty lub obiektu w zasięgu. Wykonaj test ataku dystansowego czarem przeciwko celowi. Przy trafieniu cel otrzymuje 1k8 obrażeń od światłości, a do końca twojej następnej tury emituje Słabe światło w promieniu 10 stóp i nie może korzystać ze stanu &amp;Reference[Invisible].</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia wzrastają o 1k8, gdy osiągniesz poziomy 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
+      "description": "<p>Wypuszczasz iskrę światła w stronę jednej istoty lub obiektu w zasięgu. Wykonaj test ataku dystansowego czarem przeciwko celowi. Przy trafieniu cel otrzymuje 1k8 obrażeń od światłości, a do końca swojej następnej tury emituje Słabe światło w promieniu 10 stóp i nie może korzystać ze stanu &amp;Reference[Invisible].</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia wzrastają o 1k8, gdy osiągniesz poziomy 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
       "effects": {
         "Illuminated": {
           "name": "Oświetlony",
-          "description": "<p>Do końca twojej następnej tury emituje Słabe Światło w promieniu 10 stóp i nie może korzystać ze stanu &amp;Reference[Invisible].</p>"
+          "description": "<p>Do końca swojej następnej tury emituje Słabe Światło w promieniu 10 stóp i nie może korzystać ze stanu &amp;Reference[Invisible].</p>"
         }
       }
     },
@@ -3899,7 +3899,7 @@
     },
     "Sunbeam": {
       "name": "Promień słońca",
-      "description": "<p>Wybuchasz promień słonecznego światła w linii o szerokości 5 stóp i długości 18m (60 stóp). Każda istota w linii wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia istota otrzymuje 6k8 obrażeń od światłości i otrzymuje stan &Reference[Blinded apply=false]{Oślepiony} do początku twojej następnej tury. W przypadku sukcesu otrzymuje tylko połowę obrażeń.</p><p>Do momentu zakończenia czaru możesz wykonać Akcję Magii, aby stworzyć nową linię promieniowania.</p><p>Przez cały czas trwania czaru nad tobą unosi się drobina świetlistego promienia. Emituje &Reference[BrightLight]{Jasne Światło} w promieniu 9m (30 stóp) i Słabe Światło na dodatkowe 9m (30 stóp). To światło jest światłem słonecznym.</p>",
+      "description": "<p>Wybuchasz promień słonecznego światła w linii o szerokości 5 stóp i długości 18m (60 stóp). Każda istota w linii wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia istota otrzymuje 6k8 obrażeń od światłości i otrzymuje stan &Reference[Blinded apply=false]{Oślepiony} do początku swojej następnej tury. W przypadku sukcesu otrzymuje tylko połowę obrażeń.</p><p>Do momentu zakończenia czaru możesz wykonać Akcję Magii, aby stworzyć nową linię promieniowania.</p><p>Przez cały czas trwania czaru nad tobą unosi się drobina świetlistego promienia. Emituje &Reference[BrightLight]{Jasne Światło} w promieniu 9m (30 stóp) i Słabe Światło na dodatkowe 9m (30 stóp). To światło jest światłem słonecznym.</p>",
       "materials": "szkło powiększające",
       "activities": {
         "Initial Cast": {
@@ -3912,7 +3912,7 @@
       "effects": {
         "Blinded": {
           "name": "Oślepiony",
-          "description": "<p>Cel ma stan &amp;Reference[Blinded apply=false] do początku twojej następnej tury.</p>"
+          "description": "<p>Cel ma stan &amp;Reference[Blinded apply=false] do początku swojej następnej tury.</p>"
         }
       }
     },
@@ -4033,7 +4033,7 @@
     },
     "Telekinesis": {
       "name": "Telekineza",
-      "description": "<p>Zyskujesz zdolność poruszania lub manipulowania istotami lub przedmiotami za pomocą myśli. Gdy rzucasz ten czar, a także jako Akcję Magii w późniejszych turach przed zakończeniem czaru, możesz wywrzeć swoją wolę na jednej istocie lub przedmiocie, który widzisz w zasięgu, powodując odpowiedni efekt poniżej. Możesz wpływać na ten sam cel z tury na turę lub wybrać nowy cel w dowolnym momencie. Jeśli zmienisz cel, poprzedni cel przestaje być objęty czarem.</p><p><strong>Istota.</strong> Możesz spróbować poruszyć Istotę o rozmiarze Ogromnym lub mniejszą. Cel musi wykonać rzut obronny na Siłę, w przeciwnym razie poruszasz ją o maksymalnie 9m (30 stóp) w dowolnym kierunku w zasięgu czaru. Do końca następnej tury istota ma stan &amp;Reference[Restrained], a jeśli uniesiesz ją w powietrze, pozostaje zawieszona. Spada na koniec twojej następnej tury, chyba że użyjesz tej opcji ponownie i cel ponownie nie zda rzutu obronnego.</p><p><strong>Przedmiot.</strong> Możesz spróbować poruszyć Przedmiot o rozmiarze Ogromnym lub mniejszym. Jeśli przedmiot nie jest noszony ani niesiony, automatycznie poruszasz go o maksymalnie 9m (30 stóp) w dowolnym kierunku w zasięgu czaru.</p><p>Jeśli przedmiot jest noszony lub niesiony przez istotę, ta istota musi wykonać rzut obronny na Siłę, w przeciwnym razie zabierasz przedmiot i poruszasz go o maksymalnie 9m (30 stóp) w dowolnym kierunku w zasięgu czaru.</p><p>Możesz wywierać drobną kontrolę nad przedmiotami przy pomocy swojej telekinetycznej chwytki, na przykład manipulując prostym narzędziem, otwierając drzwi lub pojemnik, wkładając lub wyjmując przedmiot z otwartego pojemnika lub wylewając zawartość fiolki.</p>"
+      "description": "<p>Zyskujesz zdolność poruszania lub manipulowania istotami lub przedmiotami za pomocą myśli. Gdy rzucasz ten czar, a także jako Akcję Magii w późniejszych turach przed zakończeniem czaru, możesz wywrzeć swoją wolę na jednej istocie lub przedmiocie, który widzisz w zasięgu, powodując odpowiedni efekt poniżej. Możesz wpływać na ten sam cel z tury na turę lub wybrać nowy cel w dowolnym momencie. Jeśli zmienisz cel, poprzedni cel przestaje być objęty czarem.</p><p><strong>Istota.</strong> Możesz spróbować poruszyć Istotę o rozmiarze Ogromnym lub mniejszą. Cel musi wykonać rzut obronny na Siłę, w przeciwnym razie poruszasz ją o maksymalnie 9m (30 stóp) w dowolnym kierunku w zasięgu czaru. Do końca następnej tury istota ma stan &amp;Reference[Restrained], a jeśli uniesiesz ją w powietrze, pozostaje zawieszona. Spada na koniec swojej następnej tury, chyba że użyjesz tej opcji ponownie i cel ponownie nie zda rzutu obronnego.</p><p><strong>Przedmiot.</strong> Możesz spróbować poruszyć Przedmiot o rozmiarze Ogromnym lub mniejszym. Jeśli przedmiot nie jest noszony ani niesiony, automatycznie poruszasz go o maksymalnie 9m (30 stóp) w dowolnym kierunku w zasięgu czaru.</p><p>Jeśli przedmiot jest noszony lub niesiony przez istotę, ta istota musi wykonać rzut obronny na Siłę, w przeciwnym razie zabierasz przedmiot i poruszasz go o maksymalnie 9m (30 stóp) w dowolnym kierunku w zasięgu czaru.</p><p>Możesz wywierać drobną kontrolę nad przedmiotami przy pomocy swojej telekinetycznej chwytki, na przykład manipulując prostym narzędziem, otwierając drzwi lub pojemnik, wkładając lub wyjmując przedmiot z otwartego pojemnika lub wylewając zawartość fiolki.</p>"
     },
     "Telepathy": {
       "name": "Telepatia",
@@ -4056,7 +4056,7 @@
     },
     "Teleportation Circle": {
       "name": "Krąg teleportacyjny",
-      "description": "<p>Podczas rzucania czaru rysujesz na ziemi krąg o promieniu 5 stóp wyryty sigilami, które łączą twoją lokalizację z permanentnym kręgiem teleportacyjnym według twojego wyboru, którego sekwencję sigilii znasz i który znajduje się na tej samej sferze istnienia co ty. Wewnątrz narysowanego kręgu otwiera się migocząca brama, która pozostaje otwarta do końca twojej następnej tury. Każda istota, która wejdzie do bramy, natychmiast pojawia się w odległości do 5 stóp od docelowego kręgu lub w najbliższej niezajętej przestrzeni, jeśli ta przestrzeń jest zajęta.</p><p>Wiele głównych świątyń, gildii i innych ważnych miejsc posiada stałe kręgi teleportacyjne. Każdy krąg zawiera unikalną sekwencję sigilii – ciąg run ułożonych w określony wzór.</p><p>Gdy po raz pierwszy zdobędziesz zdolność rzucania tego czaru, uczysz się sekwencji sigilii dla dwóch miejsc na Sferze Materialnej, określonych przez Mistrza Gry. Możesz nauczyć się dodatkowych sekwencji sigilii w trakcie swoich przygód. Możesz zapamiętać nową sekwencję sigilii po jej studiowaniu przez 1 minutę.</p><p>Możesz stworzyć stały krąg teleportacyjny, rzucając ten czar w tym samym miejscu codziennie przez 365 dni.</p>",
+      "description": "<p>Podczas rzucania czaru rysujesz na ziemi krąg o promieniu 5 stóp wyryty sigilami, które łączą twoją lokalizację z permanentnym kręgiem teleportacyjnym według twojego wyboru, którego sekwencję sigilii znasz i który znajduje się na tej samej sferze istnienia co ty. Wewnątrz narysowanego kręgu otwiera się migocząca brama, która pozostaje otwarta do końca swojej następnej tury. Każda istota, która wejdzie do bramy, natychmiast pojawia się w odległości do 5 stóp od docelowego kręgu lub w najbliższej niezajętej przestrzeni, jeśli ta przestrzeń jest zajęta.</p><p>Wiele głównych świątyń, gildii i innych ważnych miejsc posiada stałe kręgi teleportacyjne. Każdy krąg zawiera unikalną sekwencję sigilii – ciąg run ułożonych w określony wzór.</p><p>Gdy po raz pierwszy zdobędziesz zdolność rzucania tego czaru, uczysz się sekwencji sigilii dla dwóch miejsc na Sferze Materialnej, określonych przez Mistrza Gry. Możesz nauczyć się dodatkowych sekwencji sigilii w trakcie swoich przygód. Możesz zapamiętać nową sekwencję sigilii po jej studiowaniu przez 1 minutę.</p><p>Możesz stworzyć stały krąg teleportacyjny, rzucając ten czar w tym samym miejscu codziennie przez 365 dni.</p>",
       "materials": "rzadkie atramenty warte 50+ SZ, które czar zużywa"
     },
     "Tenser's Floating Disk": {
@@ -4360,7 +4360,7 @@
     },
     "Web": {
       "name": "Pajęczyna",
-      "description": "<p>Przywołujesz masę lepkiej pajęczyny w punkcie w zasięgu. Pajęczyny wypełniają Sześcian o boku 20 stóp w tym miejscu przez czas trwania czaru. Pajęczyny są &amp;Reference[difficultterrain]{Trudnym Terenem}, a obszar w ich zasięgu jest o &amp;Reference[lightlyobscured]{Ograniczonej widoczności} .</p><p>Jeśli pajęczyny nie są zakotwiczone między dwiema stałymi masami (takimi jak ściany lub drzewa) lub rozłożone na podłodze, ścianie bądź suficie, pajęczyna zapada się w sobie, a czar kończy się na początku twojej następnej tury. Pajęczyny rozłożone na płaskiej powierzchni mają głębokość 5 stóp.</p><p>Gdy istota po raz pierwszy w turze wejdzie w pajęczyny lub rozpocznie w nich swoją turę, musi zdać rzut obronny na Zręczność, w przeciwnym razie uzyskuje stan &amp;Reference[restrained]{Unieruchomiony}, dopóki znajduje się w pajęczynach lub dopóki się nie uwolni.</p><p>Istota Unieruchomiona przez pajęczyny może wykonać akcję, aby wykonać test [[/check ability=str skill=ath dc=@attributes.spelldc]]{Siły (Atletyka)} przeciwko twojemu ST rzutu obronnego na czary. Jeśli jej się uda, przestaje być Unieruchomiona.</p><p>Pajęczyny są łatwopalne. Każdy Sześcian o boku 5 stóp pajęczyn wystawiony na ogień spala się w 1 rundzie, zadając [[/damage 2d4 type=fire]]{2k4 obrażeń od ognia} każdej istocie, która rozpoczyna swoją turę w ogniu.</p>",
+      "description": "<p>Przywołujesz masę lepkiej pajęczyny w punkcie w zasięgu. Pajęczyny wypełniają Sześcian o boku 20 stóp w tym miejscu przez czas trwania czaru. Pajęczyny są &amp;Reference[difficultterrain]{Trudnym Terenem}, a obszar w ich zasięgu jest o &amp;Reference[lightlyobscured]{Ograniczonej widoczności} .</p><p>Jeśli pajęczyny nie są zakotwiczone między dwiema stałymi masami (takimi jak ściany lub drzewa) lub rozłożone na podłodze, ścianie bądź suficie, pajęczyna zapada się w sobie, a czar kończy się na początku swojej następnej tury. Pajęczyny rozłożone na płaskiej powierzchni mają głębokość 5 stóp.</p><p>Gdy istota po raz pierwszy w turze wejdzie w pajęczyny lub rozpocznie w nich swoją turę, musi zdać rzut obronny na Zręczność, w przeciwnym razie uzyskuje stan &amp;Reference[restrained]{Unieruchomiony}, dopóki znajduje się w pajęczynach lub dopóki się nie uwolni.</p><p>Istota Unieruchomiona przez pajęczyny może wykonać akcję, aby wykonać test [[/check ability=str skill=ath dc=@attributes.spelldc]]{Siły (Atletyka)} przeciwko twojemu ST rzutu obronnego na czary. Jeśli jej się uda, przestaje być Unieruchomiona.</p><p>Pajęczyny są łatwopalne. Każdy Sześcian o boku 5 stóp pajęczyn wystawiony na ogień spala się w 1 rundzie, zadając [[/damage 2d4 type=fire]]{2k4 obrażeń od ognia} każdej istocie, która rozpoczyna swoją turę w ogniu.</p>",
       "materials": "trochę pajęczyny"
     },
     "Weird": {
