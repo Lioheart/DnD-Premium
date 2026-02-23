@@ -1399,7 +1399,7 @@
     },
     "Devious Strikes": {
       "name": "Przebiegłe uderzenie",
-      "description": "<p>Wyćwiczyłeś nowe sposoby wykorzystywania swojego Ukradkowego ataku w podstępny sposób. Poniższe efekty są teraz dostępne wśród twoich opcji Chytrego uderzenia.</p><p><strong>Otępienie (Koszt: 2k6).</strong> Cel musi wykonać udany rzut obronny na Kondycję, w przeciwnym razie w swojej następnej turze może wykonać tylko jedną z następujących czynności: poruszyć się, wykonać Akcję lub Akcję dodatkową.</p><p><strong>Znokautowanie (Koszt: 6k6).</strong> Cel musi wykonać udany rzut obronny na Kondycję, w przeciwnym razie otrzymuje stan &amp;Reference[Unconscious] na 1 minutę lub do momentu otrzymania jakichkolwiek obrażeń. Nieprzytomny cel powtarza rzut na końcu każdej swojej tury, kończąc efekt przy udanym rzucie.</p><p><strong>Oślepienie (Koszt: 3k6).</strong> Cel musi wykonać udany rzut obronny na Zręczność, w przeciwnym razie otrzymuje stan &amp;Reference[Blinded] do końca swojej następnej tury.</p><section class=\"secret\" id=\"secret-1jUuw8B9GvVx5ctH\"><p><strong>Notatka Foundry</strong></p><p>Po użyciu efektów Chytrego uderzenia użyj aktywności [[/item Cunning Strike activity=Cunning Sneak Attack]]{Chytre ukradkowe uderzenie}. Zostaniesz poproszony o wybranie liczby kości wykorzystanych na efekty, a następnie zostaną one automatycznie odjęte od twojego rzutu Ukradkowego ataku.</p><p>Możesz kontrolować typ obrażeń w oknie dialogowym rzutu obrażeń.</p><p>Aktywność <strong>Otępienie</strong> zawiera Aktywny Efekt do śledzenia otępionego celu, ale nie automatyzuje efektu.</p><p>Aktywność <strong>Znokautowanie</strong> zawiera Aktywny Efekt, który nakłada stan &amp;Reference[Unconscious].</p><p>Aktywność <strong>Oślepienie</strong> zawiera Aktywny Efekt, który nakłada stan &amp;Reference[Blinded].</p></section>",
+      "description": "<p>Wyćwiczyłeś nowe sposoby wykorzystywania swojego Ukradkowego ataku w podstępny sposób. Poniższe efekty są teraz dostępne wśród twoich opcji Chytrego uderzenia.</p><p><strong>Otępienie (Koszt: 2k6).</strong> Cel musi wykonać udany rzut obronny na Kondycję, w przeciwnym razie w swojej następnej turze może wykonać tylko jedną z następujących czynności: poruszyć się, wykonać Akcję lub Akcję dodatkową.</p><p><strong>Znokautowanie (Koszt: 6k6).</strong> Cel musi wykonać udany rzut obronny na Kondycję, w przeciwnym razie otrzymuje stan &amp;Reference[Unconscious] na 1 minutę lub do momentu otrzymania jakichkolwiek obrażeń. Nieprzytomny cel powtarza rzut na końcu każdej swojej tury, kończąc efekt przy udanym rzucie.</p><p><strong>Oślepienie (Koszt: 3k6).</strong> Cel musi wykonać udany rzut obronny na Zręczność, w przeciwnym razie otrzymuje stan &amp;Reference[Blinded] do końca twojej następnej tury.</p><section class=\"secret\" id=\"secret-1jUuw8B9GvVx5ctH\"><p><strong>Notatka Foundry</strong></p><p>Po użyciu efektów Chytrego uderzenia użyj aktywności [[/item Cunning Strike activity=Cunning Sneak Attack]]{Chytre ukradkowe uderzenie}. Zostaniesz poproszony o wybranie liczby kości wykorzystanych na efekty, a następnie zostaną one automatycznie odjęte od twojego rzutu Ukradkowego ataku.</p><p>Możesz kontrolować typ obrażeń w oknie dialogowym rzutu obrażeń.</p><p>Aktywność <strong>Otępienie</strong> zawiera Aktywny Efekt do śledzenia otępionego celu, ale nie automatyzuje efektu.</p><p>Aktywność <strong>Znokautowanie</strong> zawiera Aktywny Efekt, który nakłada stan &amp;Reference[Unconscious].</p><p>Aktywność <strong>Oślepienie</strong> zawiera Aktywny Efekt, który nakłada stan &amp;Reference[Blinded].</p></section>",
       "activities": {
         "Daze": {
           "name": "Otępienie",
@@ -1770,7 +1770,7 @@
     },
     "Eldritch Strike": {
       "name": "Mistyczne uderzenie",
-      "description": "<p>Uczysz się, jak sprawić, by twoje uderzenia bronią osłabiały zdolność istoty do opierania się twoim zaklęciom. Kiedy trafisz istotę atakiem bronią, ta istota ma Utrudnienie przy następnym rzucie obronnym przeciwko zaklęciu, które rzucisz przed końcem swojej następnej tury.</p><section id=\"secret-jvKDjaltxCLtjiax\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha zawiera Aktywny Efekt, którego można użyć do śledzenia, ale nie automatyzuje nadawania Utrudnienia.</p></section>",
+      "description": "<p>Uczysz się, jak sprawić, by twoje uderzenia bronią osłabiały zdolność istoty do opierania się twoim zaklęciom. Kiedy trafisz istotę atakiem bronią, ta istota ma Utrudnienie przy następnym rzucie obronnym przeciwko zaklęciu, które rzucisz przed końcem twojej następnej tury.</p><section id=\"secret-jvKDjaltxCLtjiax\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha zawiera Aktywny Efekt, którego można użyć do śledzenia, ale nie automatyzuje nadawania Utrudnienia.</p></section>",
       "effects": {
         "Struck": {
           "name": "Uderzony"
@@ -3237,7 +3237,7 @@
     },
     "Nature's Veil": {
       "name": "Zasłona natury",
-      "description": "<p>Przywołujesz widma natury, aby magicznie się ukryć. Jako Akcja dodatkowa możesz nadać sobie stan Niewidzialny do końca swojej następnej tury.</p><p>Możesz użyć tej zdolności liczbę razy równą twojemu modyfikatorowi Mądrości (minimum raz), a wszystkie zużyte użycia odzyskujesz po zakończeniu Długiego Odpoczynku.</p><section id=\"secret-CrVc4y9VaKTGeCuG\" class=\"secret\"><p><strong>Foundry – Notatka</strong></p><p>Ta zdolność obejmuje Aktywny Efekt, który nakłada stan Niewidzialny.</p></section>",
+      "description": "<p>Przywołujesz widma natury, aby magicznie się ukryć. Jako Akcja dodatkowa możesz nadać sobie stan Niewidzialny do końca twojej następnej tury.</p><p>Możesz użyć tej zdolności liczbę razy równą twojemu modyfikatorowi Mądrości (minimum raz), a wszystkie zużyte użycia odzyskujesz po zakończeniu Długiego Odpoczynku.</p><section id=\"secret-CrVc4y9VaKTGeCuG\" class=\"secret\"><p><strong>Foundry – Notatka</strong></p><p>Ta zdolność obejmuje Aktywny Efekt, który nakłada stan Niewidzialny.</p></section>",
       "activities": {
         "Veil": {
           "name": "Zasłona"
@@ -3366,7 +3366,7 @@
     },
     "Open Hand Technique": {
       "name": "Technika otwartej dłoni",
-      "description": "<p>Za każdym razem, gdy trafisz stworzenie atakiem uzyskanym dzięki Gradowi Ciosów, możesz nałożyć na cel jeden z poniższych efektów.</p><p><strong>Zamroczenie.</strong> Cel nie może wykonywać Ataków Okazyjnych do początku swojej następnej tury.</p><p><strong>Popchnięcie.</strong> Cel musi wykonać rzut obronny na Siłę lub zostaje odepchnięty do 15 stóp od ciebie.</p><p><strong>Obalenie.</strong> Cel musi wykonać rzut obronny na Zręczność lub otrzymuje stan &amp;Reference[Prone]{Powalony}.</p><section id=\"secret-4BkgU26V2trst09S\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Otępienie</strong> zawiera Efekt Aktywny do śledzenia zamroczonego celu.</p><p>Aktywność <strong>Obalenie</strong> zawiera Efekt Aktywny, który nakłada stan Powalony.</p></section>",
+      "description": "<p>Za każdym razem, gdy trafisz stworzenie atakiem uzyskanym dzięki Gradowi Ciosów, możesz nałożyć na cel jeden z poniższych efektów.</p><p><strong>Zamroczenie.</strong> Cel nie może wykonywać Ataków Okazyjnych do początku twojej następnej tury.</p><p><strong>Popchnięcie.</strong> Cel musi wykonać rzut obronny na Siłę lub zostaje odepchnięty do 15 stóp od ciebie.</p><p><strong>Obalenie.</strong> Cel musi wykonać rzut obronny na Zręczność lub otrzymuje stan &amp;Reference[Prone]{Powalony}.</p><section id=\"secret-4BkgU26V2trst09S\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Otępienie</strong> zawiera Efekt Aktywny do śledzenia zamroczonego celu.</p><p>Aktywność <strong>Obalenie</strong> zawiera Efekt Aktywny, który nakłada stan Powalony.</p></section>",
       "activities": {
         "Addle": {
           "name": "Zamroczenie",
@@ -4590,7 +4590,7 @@
     },
     "Studied Attacks": {
       "name": "Przemyślane ataki",
-      "description": "<p>Studiujesz swoich przeciwników i uczysz się z każdego ataku, który wykonujesz. Jeśli wykonasz test ataku przeciwko istocie i chybisz, masz Ułatwienie do następnego testu ataku przeciwko tej istocie przed końcem swojej następnej tury.</p><section class=\"secret\" id=\"secret-JB6LwCHybmUrbihQ\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność nie automatyzuje Ułatwienia do następnego testu ataku.</p></section>"
+      "description": "<p>Studiujesz swoich przeciwników i uczysz się z każdego ataku, który wykonujesz. Jeśli wykonasz test ataku przeciwko istocie i chybisz, masz Ułatwienie do następnego testu ataku przeciwko tej istocie przed końcem twojej następnej tury.</p><section class=\"secret\" id=\"secret-JB6LwCHybmUrbihQ\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność nie automatyzuje Ułatwienia do następnego testu ataku.</p></section>"
     },
     "Stunning Strike": {
       "name": "Ogłuszający cios",
