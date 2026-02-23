@@ -82,7 +82,7 @@
     },
     "Boon of Combat Prowess": {
       "name": "Dar bojowej sprawności",
-      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Cel Doskonały.</strong> Gdy nie trafisz wroga w teście ataku, możesz zamiast tego uznać go za trafiony. Gdy skorzystasz z tej korzyści, nie możesz jej użyć ponownie do początku swojej następnej tury.</p>"
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Cel Doskonały.</strong> Gdy nie trafisz wroga w teście ataku, możesz zamiast tego uznać go za trafiony. Gdy skorzystasz z tej korzyści, nie możesz jej użyć ponownie do początku twojej następnej tury.</p>"
     },
     "Boon of Dimensional Travel": {
       "name": "Dar podróży przez wymiary",
@@ -149,7 +149,7 @@
     },
     "Boon of Fortitude": {
       "name": "Dar męstwa",
-      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Wzmocnione zdrowie.</strong> Twoje maksymalne Punkty Wytrzymałości zwiększają się o 40. Dodatkowo, za każdym razem, gdy odzyskujesz Punkty Wytrzymałości, możesz odzyskać dodatkowe Punkty Wytrzymałości równe twojemu modyfikatorowi Kondycji (obecnie [[lookup @abilities.con.mod]]). Gdy odzyskasz te dodatkowe Punkty Wytrzymałości, nie możesz tego zrobić ponownie do początku swojej następnej tury.</p><section id=\"secret-JgTurTuyg5ikUyQq\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ten atut zawiera Aktywny Efekt, który automatycznie zastosuje premię do twoich maksymalnych Punktów Wytrzymałości.</p><p>Zdolność <strong>Wzmocnione zdrowie</strong> obejmuje dodatkowe leczenie.</p></section>",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Wzmocnione zdrowie.</strong> Twoje maksymalne Punkty Wytrzymałości zwiększają się o 40. Dodatkowo, za każdym razem, gdy odzyskujesz Punkty Wytrzymałości, możesz odzyskać dodatkowe Punkty Wytrzymałości równe twojemu modyfikatorowi Kondycji (obecnie [[lookup @abilities.con.mod]]). Gdy odzyskasz te dodatkowe Punkty Wytrzymałości, nie możesz tego zrobić ponownie do początku twojej następnej tury.</p><section id=\"secret-JgTurTuyg5ikUyQq\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ten atut zawiera Aktywny Efekt, który automatycznie zastosuje premię do twoich maksymalnych Punktów Wytrzymałości.</p><p>Zdolność <strong>Wzmocnione zdrowie</strong> obejmuje dodatkowe leczenie.</p></section>",
       "activities": {
         "Fortify Health": {
           "name": "Wzmocnione zdrowie",
