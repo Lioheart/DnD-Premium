@@ -258,7 +258,7 @@
       "description": "<div><p>Tworzysz połączone portale teleportacyjne. Wybierz dwie duże, niezajęte przestrzenie na ziemi, które widzisz – jedną w zasięgu, a drugą w promieniu 10 stóp (3m) od ciebie. Okrągły portal otwiera się w każdej z tych przestrzeni i pozostaje na czas trwania czaru.</p><p>Portale to dwuwymiarowe, świecące pierścienie wypełnione mgłą, która blokuje wzrok. Unoszą się kilka cali nad ziemią i są prostopadłe do niej.</p><p>Portal jest otwarty tylko z jednej strony (ty wybierasz której). Wszystko, co wejdzie na otwartą stronę portalu, wychodzi z otwartej strony drugiego portalu, jakby były one sąsiadujące ze sobą. Akcją dodatkową możesz zmienić kierunek otwartych stron.</p></div>",
       "activities": {
         "utility": {
-          "target": "Large, unoccupied spaces"
+          "target": "Duże, niezajęte przestrzenie"
         }
       }
     },
@@ -394,7 +394,7 @@
     "Banishing Smite": {
       "name": "Wypędzające ugodzenie",
       "description": "<p>Cel trafiony testem ataku otrzymuje dodatkowe 5k10 obrażeń od mocy od tego ataku. Jeśli atak zredukuje cel do 50 Punktów Wytrzymałości lub mniej, cel musi zdać rzut obronny na Charyzmę, inaczej zostaje przeniesiony do nieszkodliwej Demisfery na czas trwania czaru. Przebywając tam, cel ma stan &amp;Reference[Incapacitated apply=false] . Gdy czar się zakończy, cel pojawia się ponownie w miejscu, które opuścił, lub w najbliższej wolnej przestrzeni, jeśli tamto miejsce jest zajęte.</p>",
-      "activation": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
+      "activation": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
       "activities": {
         "Damage and Banish": {
           "name": "Obrażenia i Wypędzenie"
@@ -553,7 +553,7 @@
     "Blinding Smite": {
       "name": "Oślepiające ugodzenie",
       "description": "<p>Cel trafiony ugodzeniem otrzymuje dodatkowe 3k8 obrażeń od światłości od tego ataku i ma stan &amp;Reference[blinded apply=false] dopóki czar się nie zakończy. Na końcu każdej swojej tury Oślepiony cel wykonuje rzut obronny na Kondycję, kończąc czar na sobie przy sukcesie.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Dodatkowe obrażenia zwiększają się o 1k8 za każdy krąg powyżej 3.</p>",
-      "activation": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
+      "activation": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
       "activities": {
         "End of Turn Save": {
           "name": "Rzut obronny na koniec tury"
@@ -812,7 +812,7 @@
       "activities": {
         "Teleport and Attack": {
           "name": "Teleportacja i atak",
-          "target": "within range of spirit"
+          "target": "w zasięgu ducha"
         }
       }
     },
@@ -947,7 +947,7 @@
     "Counterspell": {
       "name": "Przeciwzaklęcie",
       "description": "<p>Próbujesz przerwać istocie proces rzucania czaru. Istota wykonuje rzut obronny na Kondycję. Przy nieudanym rzucie czar rozprasza się bez efektu, a akcja, Akcja dodatkowa lub Reakcja użyta do jego rzucenia zostaje zmarnowana. Jeśli ten czar był rzucony za pomocą komórki czaru, komórka nie zostaje zużyta.</p>",
-      "activation": "when you see a creature within range casting a spell with Verbal, Somatic, or Material components"
+      "activation": "gdy widzisz istotę w zasięgu rzucającą czar z komponentami werbalnymi, somatycznymi lub materialnymi"
     },
     "Create Food and Water": {
       "name": "Stworzenie jadła i wody",
@@ -956,7 +956,7 @@
     "Create Undead": {
       "name": "Stworzenie nieumarłego",
       "description": "<p>Możesz rzucić ten czar tylko w nocy. Wybierz do trzech zwłok Humanoidów o rozmiarze Średnim lub Małym w zasięgu. Każde z nich staje się <strong>@UUID[Compendium.dnd5e.monsters.Actor.OBujQLLPSmlJiZnL]{Ghulem}</strong> pod twoją kontrolą (zobacz <em>Monster Manual</em>, aby sprawdzić ich statystyki).</p><p>Akcją dodatkową w każdej ze swoich tur możesz mentalnie rozkazywać dowolnej istocie, którą ożywiłeś tym czarem, jeśli znajduje się w odległości 120 stóp (36m) od ciebie (jeśli kontrolujesz wiele istot, możesz rozkazywać dowolnej liczbie z nich jednocześnie, wydając im ten sam rozkaz). Decydujesz, jaką akcję istota podejmie i dokąd przemieści się w swojej następnej turze, lub możesz wydać ogólny rozkaz, na przykład strzec określonego miejsca. Jeśli nie wydasz rozkazu, istota wykonuje akcję &amp;Reference[Dodge]{Unik} i porusza się tylko, by uniknąć obrażeń. Po otrzymaniu rozkazu istota kontynuuje jego wykonywanie, aż zadanie zostanie ukończone.</p><p>Istota pozostaje pod twoją kontrolą przez 24 godziny, po czym przestaje wykonywać jakiekolwiek wydane przez ciebie rozkazy. Aby utrzymać kontrolę nad istotą przez kolejne 24 godziny, musisz rzucić ten czar na istotę przed upływem obecnego 24-godzinnego okresu. To użycie czaru odnawia kontrolę nad maksymalnie trzema istotami, które ożywiłeś tym czarem, zamiast ożywiać nowe.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Jeśli użyjesz komórki czaru 7. kręgu, możesz ożywić lub odnowić kontrolę nad czterema <strong>Ghulami</strong>. Jeśli użyjesz komórki czaru 8. kręgu, możesz ożywić lub odnowić kontrolę nad pięcioma <strong>Ghulami</strong> lub dwoma <strong>@UUID[Compendium.dnd5e.monsters.Actor.IyIybE5t2adMEVUM]{Upiorami}</strong> lub <strong>@UUID[Compendium.dnd5e.monsters.Actor.rbyp54px2D0ql4QK]{Duchami}</strong>. Jeśli użyjesz komórki czaru 9. kręgu, możesz ożywić lub odnowić kontrolę nad sześcioma <strong>Ghulami</strong>, trzema <strong>Upiorami</strong> lub <strong>Duchami</strong>, lub dwoma <strong>@UUID[Compendium.dnd5e.monsters.Actor.t8WYD7ak07X7xpx8]{Mumiami}</strong>. Zobacz <em>Monster Manual</em>, aby sprawdzić ich statystyki.</p>",
-      "activation": "only at night",
+      "activation": "tylko w nocy",
       "materials": "jeden czarny onyks wart 150+ SZ za każde ciało",
       "activities": {
         "Animate Corpses": {
@@ -1154,11 +1154,11 @@
       "activities": {
         "Dismissal": {
           "name": "Odprawienie",
-          "target": "Celestial, Elemental, Fey, Fiend, or Undead"
+          "target": "Niebianin, Żywiołak, Fey, Czart lub Nieumarły"
         },
         "Break Enchantment": {
           "name": "Złamanie uroku",
-          "target": "Celestial, Elemental, Fey, Fiend, or Undead"
+          "target": "Niebianin, Żywiołak, Fey, Czart lub Nieumarły"
         },
         "Cast": {
           "name": "Rzucanie"
@@ -1190,7 +1190,7 @@
     "Divine Smite": {
       "name": "Boskie ugodzenie",
       "description": "<p>Cel otrzymuje dodatkowe 2k8 obrażeń od Światłości od ataku. Obrażenia zwiększają się o 1k8, jeśli celem jest Czart lub Nieumarły.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 1. kręgu.</p>",
-      "activation": "Immediately after hitting a target with a Melee weapon or an Unarmed Strike",
+      "activation": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
       "activities": {
         "Unholy Creature Damage": {
           "name": "Obrażenia nieświętego stworzenia"
@@ -1304,7 +1304,7 @@
         "Collapsing Structure Save": {
           "name": "Rzut obronny przy zawalającej się konstrukcji",
           "condition": "gdy konstrukcja spadnie do 0 Punktów Wytrzymałości",
-          "range": "half of the structure's height"
+          "range": "połowę wysokości konstrukcji"
         }
       },
       "effects": {
@@ -1427,7 +1427,7 @@
     "Ensnaring Strike": {
       "name": "Pętające uderzenie",
       "description": "<p>Gdy trafiasz cel, na nim pojawiają się chwytające pnącza, a cel wykonuje rzut obronny na Siłę. Istota o rozmiarze Dużym lub większym ma Ułatwienie w tym rzucie. Przy nieudanym rzucie cel otrzymuje stan <span style=\"font-family:Signika, sans-serif\">&amp;Reference[restrained apply=false]{Unieruchomiony}</span> do końca czaru. Przy udanym rzucie pnącza usychają, a czar się kończy.</p><p>Gdy jest Unieruchomiony, cel otrzymuje 1k6 obrażeń kłutych na początku każdej ze swoich tur. Cel lub istota w jego zasięgu może wykonać akcję, by wykonać test [[/check ability=str skill=ath dc=@attributes.spelldc]] przeciwko twojemu ST rzutu obronnego na czary. Przy sukcesie czar się kończy.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
-      "activation": "Immediately after hitting a creature with a weapon",
+      "activation": "Natychmiast po trafieniu istoty bronią",
       "activities": {
         "Start of Turn Damage": {
           "name": "Obrażenia na początku tury"
@@ -1553,7 +1553,7 @@
     "Feather Fall": {
       "name": "Piórkospadanie",
       "description": "<p>Wybierz do pięciu spadających istot w zasięgu. Szybkość opadania spadającej istoty zwalnia do 60 stóp (18m) na rundę, dopóki czar trwa. Jeśli istota wyląduje przed zakończeniem czaru, nie otrzymuje obrażeń od upadku, a czar kończy się dla tej istoty.</p>",
-      "activation": "when you or a creature you can see within 60 feet of you falls",
+      "activation": "gdy ty lub istota, którą widzisz w odległości do 60 stóp od ciebie, spada",
       "materials": "małe pióro lub kawałek puchu"
     },
     "Feign Death": {
@@ -1631,7 +1631,7 @@
         "Flame Eruption": {
           "name": "Erupcja płomienia",
           "condition": "gdy istota w promieniu 5 stóp trafia cię atakiem wręcz",
-          "target": "attacking creature"
+          "target": "atakująca istota"
         }
       },
       "effects": {
@@ -1719,7 +1719,7 @@
         "Damage Forbidden Creature": {
           "name": "Obrażenia zakazanej istocie",
           "condition": "gdy istota wybranego typu po raz pierwszy w turze wejdzie w obszar działania czaru lub zakończy w nim turę",
-          "range": "within the spell's area"
+          "range": "w obszarze czaru"
         }
       }
     },
@@ -1991,7 +1991,7 @@
     "Hail of Thorns": {
       "name": "Grad cierni",
       "description": "<p>Gdy trafiasz istotę, ten czar tworzy deszcz cierni wyrastających z twojej broni dystansowej lub amunicji. Cel ataku oraz każda istota w promieniu 5 stóp od niego muszą wykonać rzut obronny na Zręczność. W przypadku niepowodzenia otrzymują 1k10 obrażeń kłutych, a w przypadku sukcesu połowę tej wartości.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k10 za każdą komórkę czaru powyżej 1. kręgu.</p>",
-      "activation": "immediately after hitting a creature with a Ranged weapon"
+      "activation": "Natychmiast po trafieniu istoty bronią dystansową"
     },
     "Hallow": {
       "name": "Konsekracja",
@@ -2069,7 +2069,7 @@
     "Hellish Rebuke": {
       "name": "Piekielna reprymenda",
       "description": "<p>Istota, która zadała ci obrażenia, zostaje natychmiastowo otoczona zielonymi płomieniami. Wykonuje rzut obronny na Zręczność. W przypadku niepowodzenia otrzymuje 2k10 obrażeń od Ognia, a w przypadku sukcesu połowę tej wartości.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k10 za każdą komórkę czaru powyżej 1. kręgu.</p>",
-      "activation": "taking damage from a creature that you can see within 60 feet of yourself"
+      "activation": "otrzymując obrażenia od istoty, którą widzisz w odległości do 60 stóp od siebie"
     },
     "Heroes' Feast": {
       "name": "Uczta bohaterów",
@@ -2390,7 +2390,7 @@
     "Lightning Arrow": {
       "name": "Piorunostrzał",
       "description": "<p>Gdy twój atak trafia lub chybia cel, broń lub amunicja, której używasz, przekształca się w piorun. Zamiast otrzymać jakiekolwiek obrażenia lub inne efekty od ataku, cel otrzymuje 4k8 obrażeń od elektryczności przy trafieniu lub połowę tych obrażeń przy chybieniu. Następnie każda istota w promieniu 10 stóp od celu wykonuje rzut obronny na Zręczność, otrzymując 2k8 obrażeń od elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p>Następnie broń lub amunicja wraca do swojej normalnej formy.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia dla obu efektów czaru zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 3.</p>",
-      "activation": "immediately after hitting or missing a target with a ranged attack using a weapon"
+      "activation": "Natychmiast po trafieniu lub chybieniu celu atakiem dystansowym przy użyciu broni"
     },
     "Lightning Bolt": {
       "name": "Piorun",
@@ -2454,7 +2454,7 @@
         "Possess Humanoid": {
           "name": "opętanie humanoida",
           "condition": "twoja dusza zamieszkuje pojemnik",
-          "target": "target is Humanoid"
+          "target": "cel jest Humanoidem"
         },
         "Return from Host": {
           "name": "Powrót od hosta"
@@ -2789,14 +2789,14 @@
         "Freeze Water": {
           "name": "Zamrożenie wody",
           "condition": "jeśli kula uderzy w zbiornik wodny",
-          "target": "creatures swimming on the surface"
+          "target": "istoty pływające po powierzchni"
         },
         "Cast and Hold": {
           "name": "Rzuć i przytrzymaj"
         },
         "Throw Held Globe": {
           "name": "Rzut trzymaną kulą",
-          "range": "if hurled with a sling, use sling's normal range"
+          "range": "jeśli zostanie wystrzelony z procy, użyj normalnego zasięgu procy"
         }
       },
       "effects": {
@@ -3031,7 +3031,7 @@
         },
         "Blinding Save": {
           "name": "Rzut obronny oślepienia",
-          "range": "measured from nearest point on wall or globe"
+          "range": "mierzone od najbliższego punktu ściany lub kuli"
         },
         "Traversal Save": {
           "name": "Rzut obronny przemieszczania"
@@ -3395,14 +3395,14 @@
         },
         "Create Sensor": {
           "name": "Stworzenie sensora",
-          "target": "at target location or within 10 feet of target creature"
+          "target": "w miejscu docelowym lub w odległości do 10 stóp od istoty docelowej"
         }
       }
     },
     "Searing Smite": {
       "name": "Palące ugodzenie",
       "description": "<p>Gdy trafisz cel, otrzymuje on dodatkowe 1k6 obrażeń od ognia w wyniku ataku. Na początku każdej ze swoich tur, aż do zakończenia czaru, cel otrzymuje 1k6 obrażeń od ognia, a następnie wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia czar trwa dalej. W przypadku sukcesu czar się kończy.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Wszystkie obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
-      "activation": "immediately after hitting a target with a Melee weapon or an Unarmed Strike",
+      "activation": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
       "activities": {
         "Start of Turn Save": {
           "name": "rzut obronny na początku tury"
@@ -3487,7 +3487,7 @@
     "Shield": {
       "name": "Tarcza",
       "description": "<p>Chroni Cię niedostrzegalna bariera magicznej energii. Do początku twojej następnej tury zyskujesz premię +5 do KP, w tym przeciwko atakowi, który wywołał ten czar oraz nie otrzymujesz obrażeń od <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMagicMissi]</em>.</p>",
-      "activation": "when you are hit by an attack roll or targeted by the Magic Missile spell",
+      "activation": "gdy trafia cię atak wymagający testu ataku lub gdy jesteś celem czaru Magiczny pocisk",
       "effects": {
         "Imperceptible Barrier": {
           "name": "Niedostrzegalna bariera",
@@ -3545,7 +3545,7 @@
     "Shining Smite": {
       "name": "Lśniące ugodzenie",
       "description": "<p>Cel trafiony uderzeniem otrzymuje dodatkowe 2k6 obrażeń od światłości. Do momentu zakończenia czaru cel emituje &amp;Reference[BrightLight]{Jasne Światło} w promieniu 5 stóp, ataki przeciwko niemu mają Premię, a on sam nie może korzystać ze stanu &amp;Reference[Invisible]{Niewidzialny}.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 2. kręgu.</p>",
-      "activation": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
+      "activation": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
       "effects": {
         "Shining": {
           "name": "Lśniący",
@@ -3699,7 +3699,7 @@
     "Staggering Smite": {
       "name": "Wstrząsające ugodzenie",
       "description": "<p>Cel otrzymuje dodatkowe 4k6 obrażeń psychicznych w wyniku ataku i musi wykonać rzut obronny na Mądrość albo zostaje objęty stanem &amp;Reference[Stunned] do końca twojej następnej tury.</p><p><strong>Użycie Komórki czaru wyższego kręgu.</strong> Dodatkowe obrażenia wzrastają o 1k6 za każdy krąg powyżej 4.</p>",
-      "activation": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike"
+      "activation": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni"
     },
     "Starry Wisp": {
       "name": "Gwiezdny ognik",
@@ -3757,22 +3757,22 @@
         "Turn 2: Acid Rain": {
           "name": "Tura 2: Kwaśny deszcz",
           "condition": "na początku twojej tury",
-          "target": "creatures under the cloud"
+          "target": "istoty znajdujące się pod chmurą"
         },
         "Turn 3: Lightning": {
           "name": "Tura 3: Piorun",
           "condition": "na początku twojej tury",
-          "target": "creatures under the cloud"
+          "target": "istoty znajdujące się pod chmurą"
         },
         "Turn 4: Hailstones": {
           "name": "Tura 4: Grad",
           "condition": "na początku twojej tury",
-          "target": "creatures under the cloud"
+          "target": "istoty znajdujące się pod chmurą"
         },
         "Turn 5+: Gusts and Rain": {
           "name": "Tura 5+: Podmuchy i deszcz",
           "condition": "na początku twojej tury",
-          "target": "creatures under the cloud"
+          "target": "istoty znajdujące się pod chmurą"
         }
       },
       "effects": {
@@ -4091,7 +4091,7 @@
     "Thunderous Smite": {
       "name": "Grzmiące ugodzenie",
       "description": "<p>Twój cios brzmi grzmotem, który jest słyszalny w promieniu 300 stóp od ciebie, a cel otrzymuje dodatkowe 2k6 obrażeń od dźwięku grzmotu. Dodatkowo, jeśli cel jest istotą, musi zdać rzut obronny na Siłę lub zostać odepchnięty o 10 stóp od ciebie i otrzymać stan &amp;Reference[prone]{Powalony}.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy poziom komórki czaru powyżej 1.</p>",
-      "activation": "immediately after hitting a target with a Melee weapon or an Unarmed Strike",
+      "activation": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
       "activities": {
         "Save vs. Push": {
           "name": "Obrona vs Pchnięcie"
@@ -4123,11 +4123,11 @@
       "activities": {
         "Healthy Target": {
           "name": "Zdrowy cel",
-          "target": "undamaged creature"
+          "target": "istota, która nie utraciła żadnych punktów wytrzymałości"
         },
         "Damaged Target": {
           "name": "Zraniony cel",
-          "target": "creature missing any of its Hit Points"
+          "target": "istota, która utraciła jakiekolwiek punkty wytrzymałości"
         }
       }
     },
@@ -4214,7 +4214,7 @@
         "Start of Turn Effects": {
           "name": "Efekty na początku tury",
           "condition": "na początku każdej twojej tury",
-          "range": "moves away from you"
+          "range": "rusza się z dala od ciebie"
         }
       }
     },
@@ -4460,7 +4460,7 @@
     "Wrathful Smite": {
       "name": "Gniewne ugodzenie",
       "description": "<p>Cel otrzymuje dodatkowe 1k6 obrażeń nekrotycznych od ataku i musi zdać rzut obronny na Mądrość, w przeciwnym razie uzyskuje stan &amp;Reference[Frightened apply=false]{Przerażony} do czasu zakończenia czaru. Na końcu każdej ze swoich tur przerażony cel powtarza rzut obronny, kończąc czar na sobie w przypadku powodzenia.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu. </strong>Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
-      "activation": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
+      "activation": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
       "effects": {
         "Frightened": {
           "name": "Przerażony",
