@@ -1,5 +1,5 @@
 {
-  "label": "Character Options",
+  "label": "Opcje postaci",
   "mapping": {
     "materials": "system.materials.value",
     "activation": "system.activation.condition",
@@ -31,7 +31,7 @@
   "folders": {
     "Backgrounds": "Pochodzenia",
     "Banneret (Fighter)": "Banneret (Fighter)",
-    "Bastion Facilities": "Bastion Facilities",
+    "Bastion Facilities": "Placówki bastionu",
     "Bladesinger (Wizard)": "Bladesinger (Wizard)",
     "College of the Moon (Bard)": "College of the Moon (Bard)",
     "Epic Boon Feats": "Atuty epickich darów",
@@ -554,8 +554,8 @@
       }
     },
     "Chondathan Freebooter": {
-      "name": "Chondathan Freebooter",
-      "description": "<p><strong>Ability Scores:</strong> Strength, Dexterity, Wisdom</p><p><strong>Feat:</strong> @UUID[Compendium.dnd-players-handbook.feats.Item.phbftSkilled0000]{Skilled}</p><p><strong>Skill Proficiencies:</strong> Athletics and Sleight of Hand</p><p><strong>Tool Proficiency:</strong> Weaver’s Tools</p><p><strong>Equipment:</strong> Choose A or B: (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000]{Dagger}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulWeaversToo]{Weaver’s Tools}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000]{Backpack}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBallBearing]{Ball Bearings}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBasket00000]{Basket}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000]{Bedroll}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBucket00000]{Bucket}, @UUID[Compendium.dnd-players-handbook.equipment.Item.xP6OWuEaxQbDUfJV]{Rations} (3 days’ worth), @UUID[Compendium.dnd-players-handbook.equipment.Item.x8jC9e00t4cUYiKR]{Rope}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagSignalWhist]{Signal Whistle}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav]{Traveler’s Clothes}, [[/award 38GP]]; or (B) [[/award 50GP]]</p><p>Though most youths in Chondath accept their four-year term of compulsory military service, you bristled at that authoritarian attempt to control your life. You forsook your nationhood, discarded your given name, and worked as a freebooter with the first ship that would have you. Since then, you’ve traveled the Vilhon Reach. Though you’ve never sailed more than a few dozen leagues from land, you make up for it with deep local connections and the breadth of your experiences.</p>",
+      "name": "Chondathański korsarz",
+      "description": "<p><strong>Wartości Cech:</strong> Siła, Zręczność, Mądrość</p><p><strong>Atut:</strong> @UUID[Compendium.dnd-players-handbook.feats.Item.phbftSkilled0000]</p><p><strong>Biegłości w Umiejętnościach:</strong> Atletyka i Zwinne dłonie</p><p><strong>Biegłość w Narzędziach:</strong> Narzędzia tkacza</p><p><strong>Ekwipunek:</strong> Wybierz A lub B: (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulWeaversToo], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBallBearing], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBasket00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBucket00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.xP6OWuEaxQbDUfJV] (zapasy na 3 dni), @UUID[Compendium.dnd-players-handbook.equipment.Item.x8jC9e00t4cUYiKR], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagSignalWhist], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav], [[/award 38GP]]; lub (B) [[/award 50GP]]</p><p>Choć większość młodzieży w Chondath akceptuje czteroletni obowiązek służby wojskowej, buntowałeś się przeciwko tej autorytarnej próbie kontrolowania twojego życia. Wyrzekłeś się obywatelstwa, porzuciłeś nadane ci imię i pracowałeś jako korsarz na pierwszym statku, który chciał cię przyjąć. Od tamtej pory przemierzałeś Przesmyk Vilhon. Choć nigdy nie odpływałeś dalej niż kilkadziesiąt lig od lądu, nadrabiasz to rozległymi lokalnymi kontaktami i szerokim zakresem swoich doświadczeń.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
@@ -563,7 +563,7 @@
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Athletics and Sleight of Hand. It also grants you proficiency in Weaver’s Tools."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Atletyce i Zwinnych dłoniach. Zapewnia ci również biegłość w Narzędziach tkacza."
         },
         "Background Feat": {
           "title": "Atut z pochodzenia",
@@ -680,8 +680,8 @@
       }
     },
     "Dead Magic Dweller": {
-      "name": "Dead Magic Dweller",
-      "description": "<p><strong>Ability Scores: </strong>Strength, Constitution, Wisdom</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftHealer00000]{Healer}</p><p><strong>Skill Proficiencies: </strong>Medicine and Survival</p><p><strong>Tool Proficiency: </strong>Leatherworker’s Tools</p><p><strong>Equipment: </strong><em>Choose A or B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepGreatclub0]{Greatclub}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulLeatherwor]{Leatherworker’s Tools}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000]{Bedroll}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBlanket0000]{Blanket}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHealersKit0]{Healer’s Kit}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPole0000000]{Pole}, @UUID[Compendium.dnd-players-handbook.equipment.Item.xP6OWuEaxQbDUfJV]{Rations} (3 days’ worth), @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTent0000000]{Tent}, @UUID[Compendium.dnd-players-handbook.equipment.Item.rIuY5ZDJh6ctfUwG]{Tinderbox}, 5 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTorch000000]{Torches}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav]{Traveler’s Clothes}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00]{Waterskin}, [[/award 32GP]]; or (B) [[/award 50GP]]</p><p>The dead magic zones of the Anauroch desert are anathema to spellcasters and monsters that rely on magic—which is exactly why you made your life there. Perhaps you’re on the run from Red Wizards, or you ran afoul of a powerful djinni in Calimshan. Whatever the case, you decided that living in Anauroch was your best option. After long months or years, you’re stronger, wiser, and armed with hard-earned knowledge of desert medicine and wasteland survival.</p>",
+      "name": "Mieszkaniec Martwej Magii",
+      "description": "<p><strong>Wartości Cech: </strong>Siła, Kondycja, Mądrość</p><p><strong>Atut: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftHealer00000]</p><p><strong>Biegłości w Umiejętnościach: </strong>Medycyna i Sztuka przetrwania</p><p><strong>Biegłość w Narzędziach: </strong>Narzędzia kaletnika</p><p><strong>Ekwipunek: </strong><em>Wybierz A lub B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepGreatclub0], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulLeatherwor], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBlanket0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHealersKit0], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPole0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.xP6OWuEaxQbDUfJV] (zapasy na 3 dni), @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTent0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.rIuY5ZDJh6ctfUwG], 5 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTorch000000]{Pochodni}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00], [[/award 32GP]]; lub (B) [[/award 50GP]]</p><p>Strefy martwej magii na pustyni Anauroch są przekleństwem dla rzucających czary i potworów polegających na magii - właśnie dlatego uczyniłeś tam swoje miejsce życia. Być może uciekasz przed Czerwonymi Magami albo popadłeś w konflikt z potężnym dżinnem w Calimshan. Niezależnie od okoliczności uznałeś, że życie w Anauroch to twoja najlepsza opcja. Po długich miesiącach lub latach jesteś silniejszy, mądrzejszy i uzbrojony w ciężko zdobytą wiedzę o pustynnej medycynie oraz przetrwaniu na bezdrożach.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
@@ -689,7 +689,7 @@
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Medicine and Survival. It also grants you proficiency in Leatherworker's Tools."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Medycynie i Sztuce przetrwania. Zapewnia ci również biegłość w Narzędziach kaletnika."
         },
         "Choose Languages": {
           "title": "Wybierz języki",
@@ -794,8 +794,8 @@
       }
     },
     "Dragon Cultist": {
-      "name": "Dragon Cultist",
-      "description": "<p><strong>Ability Scores: </strong>Dexterity, Constitution, Intelligence</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-heroes-faerun.options.Item.hofCultoftheDrag]{Cult of the Dragon Initiate} (see “@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]{Feats}” later in this chapter)</p><p><strong>Skill Proficiencies: </strong>Deception and Stealth</p><p><strong>Tool Proficiency: </strong>Calligrapher’s Supplies</p><p><strong>Equipment: </strong><em>Choose A or B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulCalligraph]{Calligrapher’s Supplies}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000]{Dagger}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBottleGlass]{Glass Bottle}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLamp0000000]{Lamp}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagManacles000]{Manacles}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{Oil} (5 flasks), 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]{Pouches}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRobe0000000]{Robe}, @UUID[Compendium.dnd-players-handbook.equipment.Item.x8jC9e00t4cUYiKR]{Rope}, [[/award 30GP]]; or (B) [[/award 50GP]]</p><p>You are an initiate of the Cult of the Dragon. You discovered or were brought to a cell cult, where you exemplified the values honored by dragon cultists: duplicity, secrecy, and determination. In exchange for your oath to serve the cult, the cult offered you the company of fellow dragon worshipers, plus access to resources that might help further your studies in the realms of arcana and occultism.</p>",
+      "name": "Kultysta Smoka",
+      "description": "<p><strong>Wartości Cech: </strong>Zręczność, Kondycja, Inteligencja</p><p><strong>Atut: </strong>@UUID[Compendium.dnd-heroes-faerun.options.Item.hofCultoftheDrag] (zobacz „@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]” w dalszej części tego rozdziału)</p><p><strong>Biegłości w Umiejętnościach: </strong>Oszustwo i Skradanie się</p><p><strong>Biegłość w Narzędziach: </strong>Materiały kaligraficzne</p><p><strong>Ekwipunek: </strong><em>Wybierz A lub B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulCalligraph], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBottleGlass], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLamp0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagManacles000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000] (5 fiolek), 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]{Torby}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRobe0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.x8jC9e00t4cUYiKR], [[/award 30GP]]; lub (B) [[/award 50GP]]</p><p>Jesteś inicjowanym Kultu Smoka. Odkryłeś komórkę kultu lub zostałeś do niej przyprowadzony, gdzie dałeś przykład wartościom cenionym przez kultystów Smoka: podstępności, skrytości i determinacji. W zamian za twoją przysięgę służby kultowi otrzymałeś towarzystwo współwyznawców Smoka oraz dostęp do zasobów, które mogą pomóc ci w dalszych studiach nad wiedzą tajemną i okultyzmem.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
@@ -803,7 +803,7 @@
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Deception and Stealth. It also grants you proficiency in Calligrapher's Supplies."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Oszustwie i Skradaniu się. Zapewnia ci również biegłość w Materiałach kaligraficznych."
         },
         "Choose Languages": {
           "title": "Wybierz języki",
@@ -1010,8 +1010,8 @@
       }
     },
     "Emerald Enclave Caretaker": {
-      "name": "Emerald Enclave Caretaker",
-      "description": "<p><strong>Ability Scores: </strong>Constitution, Intelligence, Wisdom</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-heroes-faerun.options.Item.hofEmeraldEnclav]{Emerald Enclave Fledgling} (see “@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]{Feats}” later in this chapter)</p><p><strong>Skill Proficiencies: </strong>Nature and Survival</p><p><strong>Tool Proficiency: </strong>Herbalism Kit</p><p><strong>Equipment: </strong><em>Choose A or B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepShortbow00]{Shortbow}, 20 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoArrows0000]{Arrows}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulHerbalismK]{Herbalism Kit}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000]{Bedroll}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBlanket0000]{Blanket}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]{Pouch}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTent0000000]{Tent}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav]{Traveler’s Clothes}, [[/award 13GP]]; or (B) [[/award 50GP]]</p><p>As a Caretaker with the Emerald Enclave, you take care of those who care for the world. Either alongside your fellow Emerald Enclave members or by yourself, you’ve learned essential skills for living with the land: how to track game, where to forage for useful herbs, and even how to forecast the weather. You use these talents to maintain the balance between civilization and the wilds and to rid the world of unnatural creatures.</p>",
+      "name": "Opiekun Szmaragdowej Enklawy",
+      "description": "<p><strong>Wartości Cech: </strong>Kondycja, Inteligencja, Mądrość</p><p><strong>Atut: </strong>@UUID[Compendium.dnd-heroes-faerun.options.Item.hofEmeraldEnclav] (zobacz „@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]” w dalszej części tego rozdziału)</p><p><strong>Biegłości w Umiejętnościach: </strong>Przyroda i Sztuka przetrwania</p><p><strong>Biegłość w Narzędziach: </strong>Zestaw zielarza</p><p><strong>Ekwipunek: </strong><em>Wybierz A lub B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepShortbow00], 20 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoArrows0000]{Strzał}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulHerbalismK], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBlanket0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTent0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav], [[/award 13GP]]; lub (B) [[/award 50GP]]</p><p>Jako Opiekun Szmaragdowej Enklawy troszczysz się o tych, którzy troszczą się o świat. Wraz z innymi członkami Szmaragdowej Enklawy albo samodzielnie nauczyłeś się kluczowych umiejętności życia w zgodzie z naturą: jak tropić zwierzynę, gdzie szukać pożytecznych ziół, a nawet jak przewidywać pogodę. Wykorzystujesz te talenty, aby utrzymywać równowagę między cywilizacją a dziczą oraz oczyszczać świat z nienaturalnych istot.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
@@ -1019,7 +1019,7 @@
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Nature and Survival. It also grants you proficiency in  Herbalism Kit's."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Przyrodzie i Sztuce przetrwania. Zapewnia ci również biegłość w Zestawie zielarza."
         },
         "Choose Languages": {
           "title": "Wybierz języki",
@@ -1116,16 +1116,16 @@
       }
     },
     "Flaming Fist Mercenary": {
-      "name": "Flaming Fist Mercenary",
-      "description": "<p><strong>Ability Scores: </strong>Strength, Constitution, Charisma</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftTough000000]{Tough}</p><p><strong>Skill Proficiencies: </strong>Intimidation and Perception</p><p><strong>Tool Proficiency: </strong>Smith’s Tools</p><p><strong>Equipment: </strong><em>Choose A or B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepMace000000]{Mace}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulSmithsTool]{Smith’s Tools}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesFine]{Fine Clothes}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagManacles000]{Manacles},@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRamPortable]{ Portable Ram}, [[/award 4GP]]; or (B) [[/award 50GP]]</p><p>The chief law enforcement branch of Baldur’s Gate is the Flaming Fist, a brawny mercenary guild led by the city’s grand duke. You once served as a Flaming Fist, where you learned how to preempt trouble with your intimidating stare and, when necessary, absorb deadly blows. Flaming Fist mercenaries, active or retired, are known as some of the toughest, most resilient warriors along the Sword Coast, and you seek to maintain that reputation.</p>",
+      "name": "Najemnik Płonącej Pięści",
+      "description": "<p><strong>Wartości Cech: </strong>Siła, Kondycja, Charyzma</p><p><strong>Atut: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftTough000000]</p><p><strong>Biegłości w Umiejętnościach: </strong>Zastraszanie i Percepcja</p><p><strong>Biegłość w Narzędziach: </strong>Narzędzia kowala</p><p><strong>Ekwipunek: </strong><em>Wybierz A lub B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepMace000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulSmithsTool], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesFine], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagManacles000],@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRamPortable], [[/award 4GP]]; lub (B) [[/award 50GP]]</p><p>Główną formacją egzekwującą prawo we Wrotach Baldura jest Płonąca Pięść, potężna gildia najemników dowodzona przez wielkiego księcia miasta. Niegdyś służyłeś w Płonącej Pięści, gdzie nauczyłeś się uprzedzać kłopoty samym zastraszającym spojrzeniem oraz, gdy było to konieczne, przyjmować na siebie śmiercionośne ciosy. Najemnicy Płonącej Pięści, zarówno czynni, jak i w stanie spoczynku, uchodzą za jednych z najtwardszych i najbardziej wytrzymałych wojowników na Wybrzeżu Mieczy, a ty dążysz do podtrzymania tej reputacji.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
-          "hint": "Your background allows you to increase your Strength, Constitution, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+          "hint": "Twoje pochodzenie pozwala ci zwiększyć wartości Siły, Kondycji i Charyzmy; zwiększ jedną z nich o 2, a inną o 1 albo zwiększ wszystkie trzy o 1. Żadne z tych zwiększeń nie może podnieść wartości powyżej 20."
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Intimidation and Perception. It also grants you proficiency in  Smith's Tools."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Zastraszaniu i Percepcji. Zapewnia ci również biegłość w Narzędziach kowala."
         },
         "Choose Languages": {
           "title": "Wybierz języki",
@@ -1232,8 +1232,8 @@
       }
     },
     "Genie Touched": {
-      "name": "Genie Touched",
-      "description": "<p><strong>Ability Scores: </strong>Dexterity, Wisdom, Charisma</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftMagicInitia]{Magic Initiate} (Wizard)</p><p><strong>Skill Proficiencies: </strong>Perception and Persuasion</p><p><strong>Tool Proficiency: </strong>Glassblower’s Tools</p><p><strong>Equipment: </strong><em>Choose A or B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepLightHamme]{Light Hammer}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulGlassblowe]{Glassblower’s Tools}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesFine]{Fine Clothes}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLamp0000000]{Lamp}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{Oil} (3 flasks), @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00]{Waterskin}, [[/award 2GP]]; or (B) [[/award 50GP]]</p><p>Although genies no longer rule Calimshan, genie magic is still common in your homeland. Perhaps you inadvertently summoned a djinni from a magic lamp, or maybe you came upon an oasis guarded by a marid. A dao might have saved you from a landslide, or you bargained with an efreeti for fleeting wealth. However your fate intersected with that of a genie, the experience left you with a keen eye, a silver tongue, and more than a touch of magic.</p>",
+      "name": "Naznaczony przez Dżinna",
+      "description": "<p><strong>Wartości Cech: </strong>Zręczność, Mądrość, Charyzma</p><p><strong>Atut: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftMagicInitia] (Mag)</p><p><strong>Biegłości w Umiejętnościach: </strong>Percepcja i Perswazja</p><p><strong>Biegłość w Narzędziach: </strong>Narzędzia szklarza</p><p><strong>Ekwipunek: </strong><em>Wybierz A lub B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepLightHamme], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulGlassblowe], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesFine], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLamp0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000] (3 fiolki), @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00], [[/award 2GP]]; lub (B) [[/award 50GP]]</p><p>Choć dżinny nie rządzą już Calimshanem, magia dżinnów wciąż jest powszechna w twojej ojczyźnie. Być może nieświadomie przywołałeś dżinna z magicznej lampy, a może natknąłeś się na oazę strzeżoną przez marida. Dao mógł ocalić cię przed osuwiskiem, albo zawarłeś układ z ifrytem w zamian za przelotne bogactwo. Niezależnie od tego, jak twoje przeznaczenie splotło się z losem dżinna, doświadczenie to obdarzyło cię bystrym okiem, elokwencją oraz czymś więcej niż tylko odrobiną magii.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
@@ -1245,11 +1245,11 @@
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Perception and Persuasion. It also grants you proficiency in  Glassblower's Tools."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Percepcji i Perswazji. Zapewnia ci również biegłość w Narzędziach szklarza."
         },
         "Background Feat": {
           "title": "Atut z pochodzenia",
-          "hint": "Your background grants you the Initiate (Wizard) feat."
+          "hint": "Twoje pochodzenie zapewnia ci atut Wtajemniczony (Mag)."
         }
       }
     },
@@ -1283,8 +1283,8 @@
       }
     },
     "Harper": {
-      "name": "Harper",
-      "description": "<p><strong>Ability Scores: </strong>Dexterity, Intelligence, Charisma</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-heroes-faerun.options.Item.hofHarperAgent00]{Harper Agent} (see “@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]{Feats}” later in this chapter)</p><p><strong>Skill Proficiencies: </strong>Performance and Sleight of Hand</p><p><strong>Tool Proficiency: </strong>Disguise Kit</p><p><strong>Equipment: </strong><em>Choose A or B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulDisguiseKi]{Disguise Kit}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000]{Bedroll}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCostume0000]{Costume}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagGrapplingHo]{Grappling Hook}, @UUID[Compendium.dnd-players-handbook.equipment.Item.x8jC9e00t4cUYiKR]{Rope}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav]{Traveler’s Clothes}, [[/award 14GP]]; or (B) [[/award 50GP]]</p><p>You accepted an invitation to join the Harpers, pledging an oath to uphold the Harper code and act in service to the common good. Like all Harpers, you understand the value of teamwork as well as when it’s best to go it alone. Harper veterans have taught you the order’s secrets—magical melodies, special watchwords, and legerdemain—and have entrusted you to use such knowledge to surveil and undermine the forces of evil.</p>",
+      "name": "Harfiarz",
+      "description": "<p><strong>Wartości Cech:</strong> Zręczność, Inteligencja, Charyzma</p><p><strong>Atut:</strong> @UUID[Compendium.dnd-heroes-faerun.options.Item.hofHarperAgent00] (zobacz „@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]” w dalszej części tego rozdziału)</p><p><strong>Biegłości w umiejętnościach:</strong> Występy i Zwinne dłonie</p><p><strong>Biegłość w narzędziach:</strong> Zestaw do charakteryzacji</p><p><strong>Ekwipunek:</strong> <em>Wybierz A lub B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulDisguiseKi], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCostume0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagGrapplingHo], @UUID[Compendium.dnd-players-handbook.equipment.Item.x8jC9e00t4cUYiKR], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav], [[/award 14sz]]; lub (B) [[/award 50sz]]</p><p>Przyjąłeś zaproszenie do dołączenia do Harfiarzy, składając przysięgę przestrzegania kodeksu Harfiarzy i działania w służbie wspólnego dobra. Jak wszyscy Harfiarze, rozumiesz wartość pracy zespołowej oraz wiesz, kiedy najlepiej działać samodzielnie. Weterani Harfiarzy nauczyli cię sekretów zakonu - magicznych melodii, specjalnych haseł i kuglarstwa - oraz powierzyli ci wykorzystywanie tej wiedzy do prowadzenia obserwacji i podkopywania sił zła.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
@@ -1292,7 +1292,7 @@
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Performance and Sleight of Hand. It also grants you proficiency in  Disguise Kit."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Występach i Zwinnych dłoniach. Zapewnia ci również biegłość w Zestawie do charakteryzacji."
         },
         "Choose Languages": {
           "title": "Wybierz języki",
@@ -1300,12 +1300,12 @@
         },
         "Background Feat": {
           "title": "Atut z pochodzenia",
-          "hint": "Your background grants you the Harper Agent feat."
+          "hint": "Twoje pochodzenie zapewnia ci atut Agent Harfiarzy."
         }
       }
     },
     "Harper Agent": {
-      "name": "Harper Agent",
+      "name": "Agent Harfiarzy",
       "description": "<p>You gain the following benefits.</p><p><em><strong>Thieves’ Cant.</strong></em> You know Thieves’ Cant.</p><p><em><strong>Instrument Training.</strong></em> You gain proficiency with a Musical Instrument of your choice.</p><p><em><strong>Distracting Melody.</strong></em> When you take the &amp;Reference[Help] action to assist an ally’s attack roll, the enemy you’re distracting can be within 30 feet of you, rather than within 5 feet of you, provided the enemy can see or hear you.</p>",
       "advancement": {
         "Trait Language & Musical Instrument Proficiency": {
@@ -1315,7 +1315,7 @@
       }
     },
     "Harper Hideout": {
-      "name": "Harper Hideout",
+      "name": "Kryjówka Harfiarzy",
       "description": "<p>Level 5 Bastion Facility</p><p><strong>Prerequisite:</strong> Membership in the Harpers</p><p><strong>Space:</strong> Roomy</p><p><strong>Hirelings:</strong> 1</p><p><strong>Order:</strong> Empower</p><p>You have a safe house hidden near your Bastion and connected to it by a tunnel no more than a quarter mile in length. Your hireling maintains the hideout, using a cover identity that doesn’t link them to your Bastion. You can change the location of your Harper Hideout each time you gain a level.</p><p><em><strong>Hideout Defenses.</strong></em> Your Harper Hideout is constantly protected by the <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplAlarm00000]{Alarm}</em> spell. At level 9, your Harper Hideout can be connected to your Bastion by a magic doorway instead of a tunnel; anyone passing through the door from the Harper Hideout emerges from a specific door in your Bastion or vice versa, and your Harper Hideout can be located anywhere within 100 miles of your Bastion. At level 13, the facility can be located anywhere in Faerûn. At level 17, the magic doorway works across planes, and the facility can be anywhere in the multiverse.</p><p><em><strong>Empower: Harper Training. </strong></em>When you issue the Empower order to this facility, the facility’s hireling extends an invitation to another Harper agent nearby. Roll any die. If the number is odd, no Harper needs your facility and you gain no benefit from having issued the order. If the number rolled is even, a Friendly Harper takes up temporary residence in your hideout.</p><p>The Harper stays for 7 days. While at your Bastion, the Harper can share their knowledge. Any character who trains with the Harper here for at least 8 hours on each of those days gains proficiency in one of the following skills of their choice: Deception, Investigation, or Performance. This benefit lasts for 7 days.</p><p>The Harper won’t defend your Bastion and departs immediately if the Bastion is attacked.</p>",
       "activities": {
         "Train": {
@@ -1410,8 +1410,8 @@
       }
     },
     "Ice Fisher": {
-      "name": "Ice Fisher",
-      "description": "<p><strong>Ability Scores: </strong>Strength, Dexterity, Constitution</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftAlert000000]{Alert}</p><p><strong>Skill Proficiencies: </strong>Animal Handling and Athletics</p><p><strong>Tool Proficiency: </strong>Woodcarver’s Tools</p><p><strong>Equipment: </strong><em>Choose A or B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulWoodcarver]{Woodcarver’s Tools}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBasket00000]{Basket}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBlockandTac]{Block and Tackle}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBucket00000]{Bucket}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagChain000000]{Chain}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHuntingTrap]{Hunting Trap}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagNet00000000]{Net}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPole0000000]{Pole}, @UUID[Compendium.dnd-players-handbook.equipment.Item.xP6OWuEaxQbDUfJV]{Rations} (3 days’ worth), @UUID[Compendium.dnd-players-handbook.equipment.Item.x8jC9e00t4cUYiKR]{Rope}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav]{Traveler’s Clothes}, [[/award 32GP]]; or (B) [[/award 50GP]]</p><p>You come from a proud line of ice fishers out of Ten-Towns in Icewind Dale. Catching knucklehead trout isn’t the most glorious trade in the North, but it’s an honest living. You’ve trained your senses for the slightest tug on the line, wrestled big trout out of ice-covered lakes, and gutted enough knucklehead trout to feed your village many times over. These experiences have toughened your body and mind for a life of adventuring.</p>",
+      "name": "Rybak lodowy",
+      "description": "<p><strong>Wartości Cech: </strong>Siła, Zręczność, Kondycja</p><p><strong>Atut: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftAlert000000]</p><p><strong>Biegłości w Umiejętnościach: </strong>Opieka nad zwierzętami i Atletyka</p><p><strong>Biegłość w Narzędziach: </strong>Narzędzia snycerza</p><p><strong>Ekwipunek: </strong><em>Wybierz A lub B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulWoodcarver], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBasket00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBlockandTac], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBucket00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagChain000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHuntingTrap], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagNet00000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPole0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.xP6OWuEaxQbDUfJV] (zapasy na 3 dni), @UUID[Compendium.dnd-players-handbook.equipment.Item.x8jC9e00t4cUYiKR], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav], [[/award 32GP]]; lub (B) [[/award 50GP]]</p><p>Pochodzisz z dumnego rodu rybaków lodowych z Dziesięciu Miast w Icewind Dale. Połów pstrąga pięściogłowego nie jest najbardziej chwalebnym zajęciem na Północy, ale to uczciwy sposób na życie. Wytrenowałeś swoje zmysły, by wyczuwać najlżejsze szarpnięcie żyłki, siłowałeś się z wielkimi pstrągami wyciąganymi z skutej lodem tafli jezior i wypatroszyłeś tyle pstrągów pięściogłowych, że wielokrotnie wystarczyłyby, by wykarmić twoją wioskę. Te doświadczenia zahartowały twoje ciało i umysł do życia pełnego przygód.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
@@ -1419,7 +1419,7 @@
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Animal Handling and Athletics. It also grants you proficiency in  Woodcarver’s Tools."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Opiece nad zwierzętami i Atletyce. Zapewnia ci również biegłość w Narzędziach snycerza."
         },
         "Choose Languages": {
           "title": "Wybierz języki",
@@ -1441,8 +1441,8 @@
       }
     },
     "Knight of the Gauntlet": {
-      "name": "Knight of the Gauntlet",
-      "description": "<p><strong>Ability Scores: </strong>Strength, Intelligence, Wisdom</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-heroes-faerun.options.Item.hofTyrooftheGaun]{Tyro of the Gauntlet} (see “@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]{Feats}” later in this chapter)</p><p><strong>Skill Proficiencies: </strong>Athletics and Medicine</p><p><strong>Tool Proficiency: </strong>Smith’s Tools</p><p><strong>Equipment: </strong><em>Choose A or B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepSpear00000]{Spear}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulSmithsTool]{Smith’s Tools}, @UUID[Compendium.dnd-players-handbook.equipment.Item.KZUoiZrigDbovEu7]{Bullseye Lantern}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHolySymbolV]{Holy Symbol}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagManacles000]{Manacles}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{Oil} (5 flasks), @UUID[Compendium.dnd-players-handbook.equipment.Item.rIuY5ZDJh6ctfUwG]{Tinderbox}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav]{Traveler’s Clothes}, [[/award 9GP]]; or (B) [[/award 50GP]]</p><p>Not all who answer the call of a higher power are content to pore over scripture in a stuffy temple apse. You chose the path of the holy warrior by joining the Order of the Gauntlet. As a knight of the Gauntlet, you exercise righteous scorn for the forces of evil, unswerving camaraderie for your siblings in arms, and heartfelt compassion for the survivors of war. With weapon and holy symbol in hand, you’ve sworn not to rest until the light of justice has vanquished the shadow of chaos across Faerûn.</p>",
+      "name": "Rycerz Rękawicy",
+      "description": "<p><strong>Wartości Cech: </strong>Siła, Inteligencja, Mądrość</p><p><strong>Atut: </strong>@UUID[Compendium.dnd-heroes-faerun.options.Item.hofTyrooftheGaun] (zobacz „@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]” w dalszej części tego rozdziału)</p><p><strong>Biegłości w Umiejętnościach: </strong>Atletyka i Medycyna</p><p><strong>Biegłość w Narzędziach: </strong>Narzędzia kowala</p><p><strong>Ekwipunek: </strong><em>Wybierz A lub B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepSpear00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulSmithsTool], @UUID[Compendium.dnd-players-handbook.equipment.Item.KZUoiZrigDbovEu7], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHolySymbolV], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagManacles000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000] (5 fiolek), @UUID[Compendium.dnd-players-handbook.equipment.Item.rIuY5ZDJh6ctfUwG], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav], [[/award 9GP]]; lub (B) [[/award 50GP]]</p><p>Nie wszyscy, którzy odpowiadają na wezwanie wyższej mocy, zadowalają się studiowaniem świętych pism w dusznej świątynnej apsydzie. Wybrałeś ścieżkę świętego wojownika, dołączając do Zakonu Rękawicy. Jako Rycerz Rękawicy kierujesz się sprawiedliwą pogardą wobec sił zła, niezłomnym braterstwem wobec towarzyszy broni oraz szczerym współczuciem dla ocalałych z wojny. Z bronią i świętym symbolem w dłoni przysiągłeś nie spocząć, dopóki światło sprawiedliwości nie rozproszy cienia chaosu w całym Faerûnie.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
@@ -1450,7 +1450,7 @@
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Athletics and Medicine. It also grants you proficiency in  Smith's Tools."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Atletyce i Medycynie. Zapewnia ci również biegłość w Narzędziach kowala."
         },
         "Choose Languages": {
           "title": "Wybierz języki",
@@ -1551,8 +1551,8 @@
       "description": "<p>Level 9 Bastion Facility</p><p><strong>Prerequisite:</strong> Membership in the Lords’ Alliance</p><p><strong>Space:</strong> Vast</p><p><strong>Hirelings:</strong> 1</p><p><strong>Order:</strong> Recruit</p><p>You maintain a luxurious apartment fit for the ruler of a city such as Neverwinter, Waterdeep, or Baldur’s Gate. Your hireling is a butler who tends to the resident’s needs.</p><p>After spending a Long Rest in your Noble Residence, you gain &amp;Reference[Inspiration].</p><p><em><strong>Recruit: Visiting Noble.</strong></em> When you issue the Recruit order to your Lords’ Alliance Noble Residence, you forgo sleeping in it for 14 days and instead make it available to a noble from a settlement that is a member of the Lords’ Alliance. Roll any [[/r 1d2]]{die}. If the number rolled is odd, no one accepts your invitation and you gain no benefit from having issued the order. If the number rolled is even, a noble from the settlement you chose accepts your invitation, arriving within 7 days and staying for another 7 days.</p><p>The visiting noble gossips about events and inhabitants in their home settlement, revealing to you the location of any creature familiar to you if that creature is within 50 miles of the settlement from which the noble has come, if that creature isn’t hidden by magic, and if that creature isn’t confined to a location that the DM deems beyond the noble’s ability to know. If the noble knows the location of the individual, they also tell you where that creature was for the 7 days prior to the noble’s departure for your Bastion.</p><p>The visiting noble won’t defend your Bastion and departs immediately if the Bastion is attacked.</p>"
     },
     "Lords' Alliance Vassal": {
-      "name": "Lords' Alliance Vassal",
-      "description": "<p><strong>Ability Scores: </strong>Strength, Intelligence, Charisma</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-heroes-faerun.options.Item.hofLordsAlliance]{Lords’ Alliance Agent} (see “@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]{Feats}” later in this chapter)</p><p><strong>Skill Proficiencies: </strong>Insight and Persuasion</p><p><strong>Tool Proficiency: </strong>Calligrapher’s Supplies</p><p><strong>Equipment: </strong><em>Choose A or B: </em>(A) 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepJavelin000]{Javelins}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulCalligraph]{Calligrapher’s Supplies}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesFine]{Fine Clothes}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInk00000000]{Ink}, 5 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInkPen00000]{Ink Pens}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagParchment00]{Parchment} (9 sheets), [[/award 13GP]]; or (B) [[/award 50GP]]</p><p>You’ve pledged your loyalty to a member-city of the Lords’ Alliance. As an Alliance agent, you must uphold the tenets of the Alliance and seek to increase safety and prosperity along the Sword Coast. You’re sworn to bring honor and glory to your lord’s house, whether that means securing trade roads for a merchant-lord of Waterdeep or vanquishing monsters upriver of Daggerford. You’ve trained in the arts of swordplay and statecraft and are as deft with a blade as you are with a quill.</p>",
+      "name": "Wasal Sojuszu Lordów",
+      "description": "<p><strong>Wartości Cech: </strong>Siła, Inteligencja, Charyzma</p><p><strong>Atut: </strong>@UUID[Compendium.dnd-heroes-faerun.options.Item.hofLordsAlliance] (zobacz „@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]” w dalszej części tego rozdziału)</p><p><strong>Biegłości w Umiejętnościach: </strong>Intuicja i Perswazja</p><p><strong>Biegłość w Narzędziach: </strong>Materiały kaligraficzne</p><p><strong>Ekwipunek: </strong><em>Wybierz A lub B: </em>(A) 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepJavelin000]{Oszczepy}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulCalligraph], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesFine], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInk00000000], 5 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInkPen00000]{Piór atramentowych}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagParchment00] (9 arkuszy), [[/award 13GP]]; lub (B) [[/award 50GP]]</p><p>Złożyłeś przysięgę lojalności wobec jednego z miast członkowskich Sojuszu Lordów. Jako agent Sojuszu musisz przestrzegać jego zasad i dążyć do zwiększenia bezpieczeństwa oraz dobrobytu na Wybrzeżu Mieczy. Przysiągłeś przynieść honor i chwałę rodowi swojego lorda - czy to poprzez zabezpieczanie szlaków handlowych dla kupieckiego lorda z Waterdeep, czy też pokonywanie potworów w górnym biegu rzeki w pobliżu Daggerford. Szkoliłeś się w sztuce walki mieczem i w sztuce rządzenia; jesteś równie sprawny z ostrzem, jak i z piórem.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
@@ -1560,7 +1560,7 @@
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Insight and Persuasion. It also grants you proficiency in  Calligrapher’s Supplies."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Intuicji i Perswazji. Zapewnia ci również biegłość w Materiałach kaligraficznych."
         },
         "Choose Languages": {
           "title": "Wybierz języki",
@@ -1607,8 +1607,8 @@
       }
     },
     "Moonwell Pilgrim": {
-      "name": "Moonwell Pilgrim",
-      "description": "<p><strong>Ability Scores: </strong>Constitution, Wisdom, Charisma</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftMagicInitia]{Magic Initiate} (Druid)</p><p><strong>Skill Proficiencies: </strong>Nature and Performance</p><p><strong>Tool Proficiency: </strong>Painter’s Supplies</p><p><strong>Equipment: </strong><em>Choose A or B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta]{Quarterstaff}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulPaintersSu]{Painter’s Supplies}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000]{Bedroll}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBell0000000]{Bell}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]{Pouch}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRobe0000000]{Robe}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagString00000]{String}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav]{Traveler’s Clothes}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00]{Waterskin}, [[/award 34GP]]; or (B) [[/award 50GP]]</p><p>Like many who hail from the Moonshae Isles, you grew up revering the blessed land, its unique gods, and the mysterious shrines called the moonwells. As a moonwell pilgrim, you undertook a quest to visit and commune with every moonwell on (or off) the map. Along your idyllic journeys, you collected a repertoire of Moonshavian folk songs, painted landscapes of enchanting vistas, and even learned how to wield a bit of primal magic.</p>",
+      "name": "Pielgrzym Księżycowej Studni",
+      "description": "<p><strong>Wartości Cech: </strong>Kondycja, Mądrość, Charyzma</p><p><strong>Atut: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftMagicInitia] (Druid)</p><p><strong>Biegłości w Umiejętnościach: </strong>Przyroda i Występy</p><p><strong>Biegłość w Narzędziach: </strong>Materiały malarskie</p><p><strong>Ekwipunek: </strong><em>Wybierz A lub B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulPaintersSu], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBell0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRobe0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagString00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00], [[/award 34GP]]; lub (B) [[/award 50GP]]</p><p>Podobnie jak wielu mieszkańców Wysp Moonshae, dorastałeś w czci dla błogosławionej ziemi, jej wyjątkowych bóstw oraz tajemniczych sanktuariów zwanych Księżycowymi Studniami. Jako Pielgrzym Księżycowej Studni podjąłeś się wyprawy, by odwiedzić i nawiązać duchową więź z każdą Księżycową Studnią - zaznaczoną na mapie lub nie. Podczas swoich sielankowych wędrówek zgromadziłeś repertuar ludowych pieśni z Moonshae, malowałeś krajobrazy przedstawiające urzekające widoki, a nawet nauczyłeś się władać odrobiną pierwotnej magii.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
@@ -1616,7 +1616,7 @@
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Nature and Performance. It also grants you proficiency in  Painter’s Supplies."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Przyrodzie i Występach. Zapewnia ci również biegłość w Materiałach malarskich."
         },
         "Choose Languages": {
           "title": "Wybierz języki",
@@ -1629,8 +1629,8 @@
       }
     },
     "Mulhorandi Tomb Raider": {
-      "name": "Mulhorandi Tomb Raider",
-      "description": "<p><strong>Ability Scores: </strong>Dexterity, Constitution, Intelligence</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftLucky000000]{Lucky}</p><p><strong>Skill Proficiencies: </strong>Investigation and Religion</p><p><strong>Tool Proficiency: </strong>Mason’s Tools</p><p><strong>Equipment: </strong><em>Choose A or B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000]{Dagger}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepLightHamme]{Light Hammer}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulMasonsTool]{Mason’s Tools}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000]{Backpack}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000]{Bedroll}, @UUID[Compendium.dnd-players-handbook.equipment.Item.rvz6gQc3OcOMgIQz]{Crowbar}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLadder00000]{Ladder}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPole0000000]{Pole}, 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]{Pouches}, @UUID[Compendium.dnd-players-handbook.equipment.Item.x8jC9e00t4cUYiKR]{Rope}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagString00000]{String}, @UUID[Compendium.dnd-players-handbook.equipment.Item.rIuY5ZDJh6ctfUwG]{Tinderbox}, 5 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTorch000000]{Torches}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav]{Traveler’s Clothes}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00]{Waterskin}, [[/award 26GP]]; or (B) [[/award 50GP]]</p><p>You grew up in a land of living god-kings, and as a child you were told countless stories of ancient empires and buried cities. In these tales, Mulhorand was a land overflowing with forgotten riches—priceless treasures awaiting anyone cunning and brave enough to seek them out. You’ve taken it upon yourself to explore your homeland’s crypts, tombs, and pyramids to reclaim your people’s relics.</p>",
+      "name": "Mulhorandyjski łupieżca grobowców",
+      "description": "<p><strong>Wartości Cech: </strong>Zręczność, Kondycja, Inteligencja</p><p><strong>Atut: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftLucky000000]</p><p><strong>Biegłości w Umiejętnościach: </strong>Śledztwo i Religia</p><p><strong>Biegłość w Narzędziach: </strong>Narzędzia kamieniarza</p><p><strong>Ekwipunek: </strong><em>Wybierz A lub B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepLightHamme], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulMasonsTool], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.rvz6gQc3OcOMgIQz], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLadder00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPole0000000], 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]{Torby}, @UUID[Compendium.dnd-players-handbook.equipment.Item.x8jC9e00t4cUYiKR], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagString00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.rIuY5ZDJh6ctfUwG], 5 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTorch000000]{Pochodni}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00], [[/award 26GP]]; lub (B) [[/award 50GP]]</p><p>Dorastałeś w krainie żywych boskich królów, a jako dziecko słuchałeś niezliczonych opowieści o starożytnych imperiach i pogrzebanych miastach. W tych historiach Mulhorand był ziemią przepełnioną zapomnianymi bogactwami - bezcennymi skarbami czekającymi na każdego, kto okaże się wystarczająco sprytny i odważny, by ich poszukać. Postanowiłeś przemierzać krypty, grobowce i piramidy swojej ojczyzny, aby odzyskać relikwie swojego ludu.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
@@ -1638,7 +1638,7 @@
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Investigation and Religion. It also grants you proficiency in  Mason’s Tools."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Śledztwie i Religii. Zapewnia ci również biegłość w Narzędziach kamieniarza."
         },
         "Choose Languages": {
           "title": "Wybierz języki",
@@ -1675,8 +1675,8 @@
       }
     },
     "Mythalkeeper": {
-      "name": "Mythalkeeper",
-      "description": "<p><strong>Ability Scores: </strong>Intelligence, Wisdom, Charisma</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftCrafter0000]{Crafter}</p><p><strong>Skill Proficiencies: </strong>Arcana and History</p><p><strong>Tool Proficiency: </strong>Jeweler’s Tools</p><p><strong>Equipment: </strong><em>Choose A or B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta]{Quarterstaff}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulJewelersTo]{Jeweler’s Tools}, @UUID[Compendium.dnd-players-handbook.equipment.Item.yoRKNd2QddQp1XuX]{Perfume}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]{Pouch}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRobe0000000]{Robe}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagShovel00000]{Shovel}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagString00000]{String}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00]{Waterskin}, [[/award 16GP]]; or (B) [[/award 50GP]]</p><p>Mythals are sources of great magical power that can alter the Weave or even the very nature of reality. Most were constructed in antiquity, and many have since been damaged or gone dormant. As a mythalkeeper from the Dalelands, your first experience with a mythal was likely in the ruins of Myth Drannor. You roam Faerûn in search of other ruined places of power, hoping to learn more about the history and powers of mythals­—or even restore a malfunctioning one.</p>",
+      "name": "Kustosz mythalu",
+      "description": "<p><strong>Wartości Cech: </strong>Inteligencja, Mądrość, Charyzma</p><p><strong>Atut: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftCrafter0000]</p><p><strong>Biegłości w Umiejętnościach: </strong>Wiedza tajemna i Historia</p><p><strong>Biegłość w Narzędziach: </strong>Narzędzia jubilera</p><p><strong>Ekwipunek: </strong><em>Wybierz A lub B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulJewelersTo], @UUID[Compendium.dnd-players-handbook.equipment.Item.yoRKNd2QddQp1XuX], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRobe0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagShovel00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagString00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00], [[/award 16GP]]; lub (B) [[/award 50GP]]</p><p>Mythale są źródłami potężnej magii, zdolnej zmieniać Splot, a nawet samą naturę rzeczywistości. Większość z nich została stworzona w zamierzchłych czasach, a wiele od tamtej pory uległo uszkodzeniu lub zapadło w uśpienie. Jako Strażnik Mythalu z Dalelands twoje pierwsze zetknięcie z mythalem prawdopodobnie miało miejsce w ruinach Myth Drannor. Wędrujesz po Faerûnie w poszukiwaniu innych zrujnowanych miejsc mocy, pragnąc zgłębić historię i potęgę mythali - a może nawet przywrócić do działania jeden z uszkodzonych.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
@@ -1684,7 +1684,7 @@
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Arcana and History. It also grants you proficiency in  Jeweler’s Tools."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Wiedzy tajemnej i Historii. Zapewnia ci również biegłość w Narzędziach jubilera."
         },
         "Choose Languages": {
           "title": "Wybierz języki",
@@ -1798,8 +1798,8 @@
       }
     },
     "Purple Dragon Squire": {
-      "name": "Purple Dragon Squire",
-      "description": "<p><strong>Ability Scores: </strong>Strength, Wisdom, Charisma</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-heroes-faerun.options.Item.hofPurpleDragonR]{Purple Dragon Rook} (see “@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]{Feats}” later in this chapter)</p><p><strong>Skill Proficiencies: </strong>Animal Handling and Insight</p><p><strong>Tool Proficiency: </strong>Navigator’s Tools</p><p><strong>Equipment: </strong><em>Choose A or B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepSpear00000]{Spear}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulNavigators]{Navigator’s Tools}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesFine]{Fine Clothes}, [[/award 9GP]]; or (B) [[/award 50GP]]</p><p>You’ve pledged your life to the safety of Cormyr and sought admission to that realm’s order of elite warriors: the Purple Dragon Knights. But before you have the chance to join the ranks officially, you must first serve as a knight’s squire. You’ve found a liege willing to take you on and teach you the order’s ways. Will you uphold the Purple Dragon Knights’ ideals of glory, honor, and strength and prove yourself worthy of knighthood?</p>",
+      "name": "Giermek Purpurowego Smoka",
+      "description": "<p><strong>Wartości Cech:</strong> Siła, Mądrość, Charyzma</p><p><strong>Atut:</strong> @UUID[Compendium.dnd-heroes-faerun.options.Item.hofPurpleDragonR] (zobacz „@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]” w dalszej części tego rozdziału)</p><p><strong>Biegłości w umiejętnościach:</strong> Opieka nad zwierzętami i Intuicja</p><p><strong>Biegłość w narzędziach:</strong> Narzędzia nawigatora</p><p><strong>Ekwipunek:</strong> <em>Wybierz A lub B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepSpear00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulNavigators], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesFine], [[/award 9sz]]; lub (B) [[/award 50sz]]</p><p>Złożyłeś przysięgę poświęcenia swojego życia bezpieczeństwu Cormyru i starałeś się o przyjęcie do elitarnego zakonu wojowników tego królestwa: Rycerzy Purpurowego Smoka. Zanim jednak będziesz mógł oficjalnie dołączyć do ich szeregów, musisz najpierw służyć jako giermek rycerza. Znalazłeś seniora gotowego przyjąć cię pod swoje skrzydła i nauczyć cię zasad zakonu. Czy będziesz podtrzymywać ideały Rycerzy Purpurowego Smoka - chwałę, honor i siłę - i udowodnisz, że jesteś godzien pasowania na rycerza?</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
@@ -1807,7 +1807,7 @@
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Animal Handling and Insight. It also grants you proficiency in  Navigator’s Tools."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Opiece nad zwierzętami i Intuicji. Zapewnia ci również biegłość w Narzędziach nawigatora."
         },
         "Choose Languages": {
           "title": "Wybierz języki",
@@ -1830,16 +1830,16 @@
       }
     },
     "Rashemi Wanderer": {
-      "name": "Rashemi Wanderer",
-      "description": "<p><strong>Ability Scores: </strong>Strength, Constitution, Charisma</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftTough000000]{Tough}</p><p><strong>Skill Proficiencies: </strong>Intimidation and Perception</p><p><strong>Tool Proficiency: </strong>Cartographer’s Tools</p><p><strong>Equipment: </strong><em>Choose A or B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulCartograph]{Cartographer’s Tools}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000]{Backpack}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000]{Bedroll}, @UUID[Compendium.dnd-players-handbook.equipment.Item.DKYzehYrMUKiFDxt]{Hooded Lantern}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{Oil} (3 flasks), @UUID[Compendium.dnd-players-handbook.equipment.Item.x8jC9e00t4cUYiKR]{Rope}, @UUID[Compendium.dnd-players-handbook.equipment.Item.etKzfLUMWikSsi3R]{Tinderbox}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav]{Traveler’s Clothes}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00]{Waterskin}, [[/award 23GP]]; or (B) [[/award 50GP]]</p><p>You spent years wandering the highlands of Rashemen, a dangerous windswept heath that’s dotted with ancient obelisks enchanted to imprison Fiends and home to dragons, gnolls, and other deadly creatures. Friendships are hard to find in such an isolated land, and you’ve learned to keep strangers at a distance.</p>",
+      "name": "Rashemicki wędrowiec",
+      "description": "<p><strong>Wartości Cech:</strong> Siła, Kondycja, Charyzma</p><p><strong>Atut:</strong> @UUID[Compendium.dnd-players-handbook.feats.Item.phbftTough000000]</p><p><strong>Biegłości w umiejętnościach:</strong> Zastraszanie i Percepcja</p><p><strong>Biegłość w narzędziach:</strong> Narzędzia kartografa</p><p><strong>Ekwipunek:</strong> <em>Wybierz A lub B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulCartograph], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.DKYzehYrMUKiFDxt], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000] (3 fiolki), @UUID[Compendium.dnd-players-handbook.equipment.Item.x8jC9e00t4cUYiKR], @UUID[Compendium.dnd-players-handbook.equipment.Item.etKzfLUMWikSsi3R], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00], [[/award 23sz]]; lub (B) [[/award 50sz]]</p><p>Spędziłeś lata, wędrując po wyżynach Rashemenu - niebezpiecznym, smaganym wiatrem wrzosowisku usianym starożytnymi obeliskami zaczarowanymi, by więzić czarty, oraz będącym domem dla smoków, gnolli i innych śmiercionośnych istot. W tak odizolowanej krainie trudno o przyjaźnie, dlatego nauczyłeś się trzymać obcych na dystans.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
-          "hint": "Your background allows you to increase your Strength, Constitution, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+          "hint": "Twoje pochodzenie pozwala ci zwiększyć wartości Siły, Kondycji i Charyzmy; zwiększ jedną z nich o 2, a inną o 1 albo zwiększ wszystkie trzy o 1. Żadne z tych zwiększeń nie może podnieść wartości powyżej 20."
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Intimidation and Perception. It also grants you proficiency in  Cartographer’s Tools."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Zastraszaniu i Percepcji. Zapewnia ci również biegłość w Narzędziach kartografa."
         },
         "Choose Languages": {
           "title": "Wybierz języki",
@@ -1865,8 +1865,8 @@
       }
     },
     "Shadowmasters Exile": {
-      "name": "Shadowmasters Exile",
-      "description": "<p><strong>Ability Score: </strong>Dexterity, Intelligence, Charisma</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftSavageAttac]{Savage Attacker}</p><p><strong>Skill Proficiencies: </strong>Acrobatics and Stealth</p><p><strong>Tool Proficiency: </strong>Thieves’ Tools</p><p><strong>Equipment: </strong><em>Choose A or B: </em>(A) 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000]{Daggers}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulThievesToo]{Thieves’ Tools}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCaltrops000]{Caltrops}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCostume0000]{Costume}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagGrapplingHo]{Grappling Hook}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagSpikesIron0]{Iron Spikes}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagMirror00000]{Mirror}, 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]{Pouches}, @UUID[Compendium.dnd-players-handbook.equipment.Item.x8jC9e00t4cUYiKR]{Rope}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav]{Traveler’s Clothes}, [[/award 3GP]]; or (B) [[/award 50GP]]</p><p>You trained your whole life to become a member of the Shadowmasters, the mysterious thieves’ guild that controls the realm of Thesk from behind the scenes. Stealth and quick reflexes were just the start of your Shadowmaster education; you also needed to hone your ruthlessness to ensure the safety of the guild’s secrets. But one wrong move led to your expulsion from the order. Now you must walk your own path.</p>",
+      "name": "Wygnaniec Mistrzów Cienia",
+      "description": "<p><strong>Wartości Cech: </strong>Zręczność, Inteligencja, Charyzma</p><p><strong>Atut: </strong>@UUID[Compendium.dnd-players-handbook.feats.Item.phbftSavageAttac]</p><p><strong>Biegłości w Umiejętnościach: </strong>Akrobatyka i Skradanie się</p><p><strong>Biegłość w Narzędziach: </strong>Narzędzia złodziejskie</p><p><strong>Ekwipunek: </strong><em>Wybierz A lub B: </em>(A) 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000]{Sztylety}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulThievesToo], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCaltrops000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCostume0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagGrapplingHo], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagSpikesIron0], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagMirror00000], 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]{Torby}, @UUID[Compendium.dnd-players-handbook.equipment.Item.x8jC9e00t4cUYiKR], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav], [[/award 3GP]]; lub (B) [[/award 50GP]]</p><p>Przez całe życie szkoliłeś się, by zostać członkiem Mistrzów Cienia - tajemniczej gildii złodziei, która zza kulis kontroluje krainę Thesk. Skradanie się i szybki refleks były jedynie początkiem twojej edukacji wśród Mistrzów Cienia; musiałeś również wyostrzyć swoją bezwzględność, by zapewnić bezpieczeństwo sekretom gildii. Jednak jeden błędny ruch doprowadził do twojego wygnania z zakonu. Teraz musisz podążać własną ścieżką.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
@@ -1874,7 +1874,7 @@
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Acrobatics and Stealth. It also grants you proficiency in  Thieves’ Tools."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Akrobatyce i Skradaniu się. Zapewnia ci również biegłość w Narzędziach złodziejskich."
         },
         "Choose Languages": {
           "title": "Wybierz języki",
@@ -1927,38 +1927,38 @@
       "description": "<p>Po rzuceniu czaru, którego czas rzucania to Akcja, możesz wykonać jeden atak bronią Akcją Dodatkową.</p>"
     },
     "Songal's Elemental Suffusion": {
-      "name": "Songal's Elemental Suffusion",
-      "description": "<p>You imbue yourself with the elemental power of genies. You gain the following benefits until the spell ends:</p><p><strong>Elemental Immunity. </strong>When you cast this spell, choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. You have Resistance to the chosen damage type.</p><p><strong>Elemental Pulse. </strong>When you cast this spell and at the start of each of your subsequent turns, you release a burst of elemental energy in a 15-foot Emanation originating from yourself. Each creature of your choice in that area makes a Dexterity saving throw. On a failed save, a creature takes 2d6 Acid, Cold, Fire, Lightning, or Thunder damage (your choice) and has the Prone condition. On a successful save, a creature takes half as much damage only.</p><p><strong>Flight.</strong> You gain a Fly Speed of 30 feet and can hover.</p><p><em><strong>Casting as a Circle Spell.</strong></em> If the spell is cast as a Circle spell, its casting time increases to 1 minute, and its duration increases to Concentration, up to 10 minutes. For each secondary caster who participates in the casting, you can choose one additional creature, to a maximum of nine additional creatures. The chosen creatures also gain the benefits of the spell for its duration.</p><p>When the spell is cast, each secondary caster must expend a level 2+ spell slot; otherwise, the spell fails.</p>",
+      "name": "Żywiołowe nasycenie Songal",
+      "description": "<p>Nasycasz siebie żywiołową mocą dżinów. Zyskujesz następujące korzyści do zakończenia czaru:</p><p><strong>Żywiołowa odporność.</strong> Gdy rzucasz ten czar, wybierz jeden z następujących typów obrażeń: od kwasu, od zimna, od ognia, od elektryczności lub od dźwięku. Masz Odporność na wybrany typ obrażeń.</p><p><strong>Żywiołowy impuls.</strong> Gdy rzucasz ten czar oraz na początku każdej swojej kolejnej tury, uwalniasz wybuch żywiołowej energii w Emanacji o promieniu 15 stóp roztaczającej się od ciebie. Każda wybrana przez ciebie istota w tym obszarze wykonuje rzut obronny na Zręczność. Przy nieudanym rzucie istota otrzymuje 2k6 obrażeń od kwasu, od zimna, od ognia, od elektryczności lub od dźwięku (twój wybór) i ma stan Powalony. Przy udanym rzucie istota otrzymuje tylko połowę obrażeń.</p><p><strong>Lot.</strong> Zyskujesz Szybkość Lotu równą 30 stóp i możesz unosić się w powietrzu.</p><p><em><strong>Rzucanie jako Czar Kręgu.</strong></em> Jeśli czar zostanie rzucony jako Czar Kręgu, jego czas rzucania zwiększa się do 1 minuty, a jego czas trwania zwiększa się do Koncentracja, do 10 minut. Za każdego dodatkowego rzucającego uczestniczącego w rzucaniu możesz wybrać jedną dodatkową istotę, maksymalnie do dziewięciu dodatkowych istot. Wybrane istoty również zyskują korzyści czaru przez czas jego trwania.</p><p>Gdy czar zostaje rzucony, każdy dodatkowy rzucający musi zużyć komórkę czaru 2. kręgu lub wyższego; w przeciwnym razie czar się nie powiedzie.</p>",
       "materials": "perła warta 100+ SZ",
       "activities": {
         "Cast and Save": {
           "name": "Rzuć czar i Obrona"
         },
         "Per Turn Save": {
-          "name": "Per Turn Save",
-          "condition": "at the start of your turn while imbued"
+          "name": "Rzut obronny raz na turę",
+          "condition": "na początku twojej tury, gdy jesteś nasycony"
         }
       },
       "effects": {
         "Acid Suffusion & Flight": {
-          "name": "Acid Suffusion & Flight",
-          "description": "<p>You have &amp;Reference[damageresistance]{Resistance} to the chosen damage type.</p><p>You gain a &amp;Reference[flying]Fly Speed of 30 feet and can hover.</p>"
+          "name": "Nasycenie Kwasem i Lot",
+          "description": "<p>Masz &amp;Reference[damageresistance] na wybrany typ obrażeń.</p><p>Zyskujesz &amp;Reference[flying] Szybkość Lotu równą 30 stóp i możesz unosić się w powietrzu.</p>"
         },
         "Cold Suffusion & Flight": {
-          "name": "Cold Suffusion & Flight",
+          "name": "Nasycenie Zimnem i Lot",
           "description": "<p>You have &amp;Reference[damageresistance]{Resistance} to the chosen damage type.</p><p>You gain a &amp;Reference[flying]Fly Speed of 30 feet and can hover.</p>"
         },
         "Fire Suffusion & Flight": {
-          "name": "Fire Suffusion & Flight",
-          "description": "<p>You have &amp;Reference[damageresistance]{Resistance} to the chosen damage type.</p><p>You gain a &amp;Reference[flying]Fly Speed of 30 feet and can hover.</p>"
+          "name": "Nasycenie Ogniem i Lot",
+          "description": "<p>Masz &amp;Reference[damageresistance] na wybrany typ obrażeń.</p><p>Zyskujesz &amp;Reference[flying] Szybkość Lotu równą 30 stóp i możesz unosić się w powietrzu.</p>"
         },
         "Lightning Suffusion & Flight": {
-          "name": "Lightning Suffusion & Flight",
-          "description": "<p>You have &amp;Reference[damageresistance]{Resistance} to the chosen damage type.</p><p>You gain a &amp;Reference[flying]Fly Speed of 30 feet and can hover.</p>"
+          "name": "Nasycenie Elektrycznością i Lot",
+          "description": "<p>Masz &amp;Reference[damageresistance] na wybrany typ obrażeń.</p><p>Zyskujesz &amp;Reference[flying] Szybkość Lotu równą 30 stóp i możesz unosić się w powietrzu.</p>"
         },
         "Thunder Suffusion & Flight": {
-          "name": "Thunder Suffusion & Flight",
-          "description": "<p>You have &amp;Reference[damageresistance]{Resistance} to the chosen damage type.</p><p>You gain a &amp;Reference[flying]Fly Speed of 30 feet and can hover.</p>"
+          "name": "Nasycenie Gromem i Lot",
+          "description": "<p>Masz &amp;Reference[damageresistance] na wybrany typ obrażeń.</p><p>Zyskujesz &amp;Reference[flying] Szybkość Lotu równą 30 stóp i możesz unosić się w powietrzu.</p>"
         },
         "Prone": {
           "name": "Powalony"
@@ -1994,8 +1994,8 @@
       }
     },
     "Spellfire Flare": {
-      "name": "Spellfire Flare",
-      "description": "<p>You unleash a blast of brilliant fire. Make a ranged spell attack against a target within range; a target gains no benefit from Half Cover or Three-Quarters Cover for this attack roll. On a hit, the target takes 2d10 Radiant damage.</p><p><em><strong>Using a Higher-Level Spell Slot.</strong></em> You create an additional blast for each spell slot level above 1. You can direct the blasts at the same target or at different ones. Make a separate attack roll for each blast.</p><p>[[@item.level]]{Number of blasts}</p>",
+      "name": "Rozbłysk magicznego ognia",
+      "description": "<p>Uwalniasz uderzenie lśniącego ognia. Wykonaj atak dystansowy czarem przeciwko celowi w zasięgu; cel nie czerpie korzyści z Połowicznej osłony ani z Trzech czwartych osłony przy tym teście ataku. Przy trafieniu cel otrzymuje 2k10 obrażeń od światłości.</p><p><em><strong>Użycie komórki czaru wyższego kręgu.</strong></em> Tworzysz dodatkowe uderzenie za każdy krąg czaru powyżej 1. Możesz skierować rozbłyski w ten sam cel lub w różne cele. Wykonaj osobny test ataku dla każdego ruderzenia.</p><p>[[@item.level]]{Liczba uderzeń}</p>",
       "activities": {
         "Cast": {
           "name": "Rzucanie"
@@ -2003,8 +2003,8 @@
       }
     },
     "Spellfire Initiate": {
-      "name": "Spellfire Initiate",
-      "description": "<p><strong>Ability Scores: </strong>Constitution, Intelligence, Charisma</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-heroes-faerun.options.Item.hofSpellfireSpar]{Spellfire Spark} (see “@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]{Feats}” later in this chapter)</p><p><strong>Skill Proficiencies: </strong>Arcana and Perception</p><p><strong>Tool Proficiency: </strong><em>Choose one kind of Gaming Set</em></p><p><strong>Equipment: </strong><em>Choose A or B: </em>(A) Gaming Set (same as above), @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagArcaneFocus]{Arcane Focus} (Crystal or Wand), 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]{Pouches}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav]{Traveler’s Clothes}, [[/award 36GP]]; or (B) [[/award 50GP]]</p><p>You bear the gift of spellfire: a rare form of magic that channels the raw power of the Weave. Wielding spellfire takes a heavy toll on the body. You’ve trained both mind and body to efficiently wield this sacred power.</p>",
+      "name": "Wtajemniczony magicznego ognia",
+      "description": "<p><strong>Wartości Cech:</strong> Kondycja, Inteligencja, Charyzma</p><p><strong>Atut:</strong> @UUID[Compendium.dnd-heroes-faerun.options.Item.hofSpellfireSpar] (zobacz „@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]” w dalszej części tego rozdziału)</p><p><strong>Biegłości w umiejętnościach:</strong> Wiedza tajemna i Percepcja</p><p><strong>Biegłość w narzędziach:</strong> <em>Wybierz jeden rodzaj zestawu do gry</em></p><p><strong>Ekwipunek:</strong> <em>Wybierz A lub B:</em> (A) Zestaw do gry (ten sam co powyżej), @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagArcaneFocus] (Kryształ lub Różdżka), 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav], [[/award 36GP]]; lub (B) [[/award 50GP]]</p><p>Nosisz w sobie dar magicznego ognia: rzadkiej formy magii, która czerpie z surowej mocy Osnowy. Władanie magicznym ogniem wywiera ogromne obciążenie na ciało. Trenowałeś zarówno umysł, jak i ciało, aby sprawnie władać tą świętą mocą.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
@@ -2012,7 +2012,7 @@
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Arcana and Perception. It also grants you proficiency with one kind of Gaming Set."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Wiedzy tajemnej i Percepcji. Zapewnia ci również biegłość z jednym rodzajem Zestawu do gry."
         },
         "Choose Languages": {
           "title": "Wybierz języki",
@@ -2062,8 +2062,8 @@
       }
     },
     "Spellfire Storm": {
-      "name": "Spellfire Storm",
-      "description": "<p>You conjure a pillar of spellfire in a 20-foot-radius, 20-foot-high Cylinder centered on a point within range. The area of the Cylinder is Bright Light, and each creature in it when it appears makes a Constitution saving throw, taking 4d10 Radiant damage on a failed save or half as much damage on a successful one. A creature also makes this save when it enters the spell’s area for the first time on a turn or ends its turn there. A creature makes this save only once per turn.</p><p>In addition, whenever a creature in the Cylinder casts a spell, that creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn’t expended.</p><p>When you cast this spell, you can designate creatures to be unaffected by it.</p><p><em><strong>Casting as a Circle Spell.</strong></em> In addition to the spell’s usual components, you must provide a special component (a blue star sapphire worth 25,000+ GP), which the spell consumes. The spell’s range increases to 1 mile, and it no longer requires Concentration. When the spell is cast, each secondary caster must expend a level 3+ spell slot; otherwise, the spell fails.</p><p><em><strong>Using a Higher-Level Spell Slot.</strong></em> The damage increases by 1d10 for every spell slot level above 4.</p><p>The number of secondary casters determines the spell’s area of effect and duration, as shown in the table below. The spell ends early if any caster who participated in this casting contributes to another casting of <em>Spellfire Storm</em> as a Circle spell.</p><table><thead><tr><th scope=\"col\"><p>Secondary Casters</p></th><th scope=\"col\"><p>Area of Effect</p></th><th scope=\"col\"><p>Duration</p></th></tr></thead><tbody><tr><td><p>1–3</p></td><td><p>40-foot-radius, 40-foot-high Cylinder</p></td><td><p>1 hour</p></td></tr><tr><td><p>4–6</p></td><td><p>60-foot-radius, 60-foot-high Cylinder</p></td><td><p>8 hours</p></td></tr><tr><td><p>7+</p></td><td><p>100-foot-radius, 100-foot-high Cylinder</p></td><td><p>24 hours</p></td></tr></tbody></table>",
+      "name": "Burza magicznego ognia",
+      "description": "<p>Przywołujesz filar magicznego ognia w Walcu o promieniu 20 stóp i wysokości 20 stóp, wyśrodkowanym na punkcie w zasięgu. Obszar Walca jest Jasnym światłem, a każda istota znajdująca się w nim w chwili jego pojawienia się wykonuje rzut obronny na Kondycję, otrzymując 4k10 obrażeń od światłości przy nieudanym rzucie albo połowę obrażeń przy udanym. Istota wykonuje ten rzut obronny również wtedy, gdy po raz pierwszy w turze znajdzie się w obszarze czaru lub zakończy tam swoją turę. Istota wykonuje ten rzut obronny tylko raz na turę.</p><p>Ponadto za każdym razem, gdy istota w Walcu rzuca czar, wykonuje rzut obronny na Kondycję. Przy nieudanym rzucie czar rozprasza się bez efektu, a użyta do jego rzucenia Akcja, Akcja Dodatkowa lub Reakcja zostaje zmarnowana. Jeśli czar został rzucony przy użyciu komórki czaru, komórka nie zostaje zużyta.</p><p>Gdy rzucasz ten czar, możesz wyznaczyć istoty, na które nie będzie on oddziaływał.</p><p><em><strong>Rzucanie jako Czar Kręgu.</strong></em> Oprócz zwykłych komponentów czaru musisz zapewnić specjalny komponent (niebieski szafir gwiaździsty o wartości 25,000+ GP), który zostaje zużyty. Zasięg czaru zwiększa się do 1 mili i nie wymaga on już Koncentracji. Gdy czar zostaje rzucony, każdy dodatkowy rzucający musi zużyć komórkę czaru 3. kręgu lub wyższego; w przeciwnym razie czar się nie powiedzie.</p><p><em><strong>Użycie komórki czaru wyższego kręgu.</strong></em> Obrażenia zwiększają się o 1k10 za każdy krąg czaru powyżej 4.</p><p>Liczba dodatkowych rzucających określa obszar działania czaru i czas jego trwania, jak przedstawiono w poniższej tabeli. Czar kończy się wcześniej, jeśli którykolwiek rzucający uczestniczący w tym rzucaniu weźmie udział w innym rzuceniu <em>Spellfire Storm</em> jako Czar Kręgu.</p><table><thead><tr><th scope=\"col\"><p>Dodatkowi rzucający</p></th><th scope=\"col\"><p>Obszar działania</p></th><th scope=\"col\"><p>Czas trwania</p></th></tr></thead><tbody><tr><td><p>1–3</p></td><td><p>Walec o promieniu 40 stóp i wysokości 40 stóp</p></td><td><p>1 godzina</p></td></tr><tr><td><p>4–6</p></td><td><p>Walec o promieniu 60 stóp i wysokości 60 stóp</p></td><td><p>8 godzin</p></td></tr><tr><td><p>7+</p></td><td><p>Walec o promieniu 100 stóp i wysokości 100 stóp</p></td><td><p>24 godziny</p></td></tr></tbody></table>",
       "activities": {
         "Cast and Save": {
           "name": "Rzuć czar i Obrona"
@@ -2215,8 +2215,8 @@
       }
     },
     "Zhentarim Mercenary": {
-      "name": "Zhentarim Mercenary",
-      "description": "<p><strong>Ability Scores: </strong>Strength, Dexterity, Charisma</p><p><strong>Feat: </strong>@UUID[Compendium.dnd-heroes-faerun.options.Item.hofZhentarimRuff]{Zhentarim Ruffian} (see “@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]{Feats}” later in this chapter)</p><p><strong>Skill Proficiencies: </strong>Intimidation and Perception</p><p><strong>Tool Proficiency: </strong>Forgery Kit</p><p><strong>Equipment: </strong><em>Choose A or B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepClub000000]{Club}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000]{Dagger}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulForgeryKit]{Forgery Kit}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesFine]{Fine Clothes}, @UUID[Compendium.dnd-players-handbook.equipment.Item.DKYzehYrMUKiFDxt]{Hooded Lantern}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{Oil} (3 flasks), 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]{Pouches}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagString00000]{String}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00]{Tinderbox}, [[/award 11GP]]; or (B) [[/award 50GP]]</p><p>Maybe you needed the money. Maybe you longed for a family, no matter how dubious. Or maybe you’re just good at getting the job done by any means necessary. Whatever your reason, you enlisted with the Zhentarim, the most notorious mercenary guild in the Realms. Though the Zhentarim’s leaders insist the organization is more like a family than a shadowy syndicate, few families exhibit as much dishonesty, nepotism, and corruption as this one. You’ve honed your cunning, reflexes, and blade to climb the guild’s ranks.</p>",
+      "name": "Najemnik Zhentarimów",
+      "description": "<p><strong>Wartości Cech: </strong>Siła, Zręczność, Charyzma</p><p><strong>Atut: </strong>@UUID[Compendium.dnd-heroes-faerun.options.Item.hofZhentarimRuff] (zobacz „@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]” w dalszej części tego rozdziału)</p><p><strong>Biegłości w Umiejętnościach: </strong>Zastraszanie i Percepcja</p><p><strong>Biegłość w Narzędziach: </strong>Zestaw fałszerza</p><p><strong>Ekwipunek: </strong><em>Wybierz A lub B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepClub000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulForgeryKit], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesFine], @UUID[Compendium.dnd-players-handbook.equipment.Item.DKYzehYrMUKiFDxt], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000] (3 fiolki), 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]{Torby}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagString00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00], [[/award 11GP]]; lub (B) [[/award 50GP]]</p><p>Może potrzebowałeś pieniędzy. Może pragnąłeś rodziny, niezależnie od tego, jak bardzo byłaby podejrzana. A może po prostu jesteś dobry w doprowadzaniu spraw do końca wszelkimi dostępnymi środkami. Niezależnie od powodu zaciągnąłeś się do Zhentarimów - najbardziej niesławnej gildii najemników w Krainach. Choć przywódcy Zhentarimów utrzymują, że organizacja jest bardziej rodziną niż mrocznym syndykatem, niewiele rodzin przejawia tyle nieuczciwości, nepotyzmu i korupcji co ta. Doskonaliłeś swoją przebiegłość, refleks i władanie ostrzem, by wspinać się po szczeblach gildii.</p>",
       "advancement": {
         "Background Ability Score Improvement": {
           "title": "Zwiększenie cechy z pochodzenia",
@@ -2224,7 +2224,7 @@
         },
         "Background Proficiencies": {
           "title": "Biegłość z pochodzenia",
-          "hint": "Your background grants you proficiency in Intimidation and Perception. It also grants you proficiency with Forgery Kit's."
+          "hint": "Twoje pochodzenie zapewnia ci biegłość w Zastraszaniu i Percepcji. Zapewnia ci również biegłość w Zestawie fałszerza."
         },
         "Choose Languages": {
           "title": "Wybierz języki",
@@ -2237,7 +2237,7 @@
       }
     },
     "Zhentarim Ruffian": {
-      "name": "Zhentarim Ruffian",
+      "name": "Oprych Zhentarimów",
       "description": "<p>You gain the following benefits.</p><p><em><strong>Exploit Opening.</strong></em> When you roll damage for an &amp;Reference[Opportunity Attacks]{Opportunity Attack}, you can roll the damage dice twice and use either roll against the target.</p><p><em><strong>Family First.</strong></em> If you have Heroic Inspiration when you roll Initiative, you can expend it to give yourself and your allies Advantage on that Initiative roll.</p>"
     },
     "Zhentarim Tactics": {
