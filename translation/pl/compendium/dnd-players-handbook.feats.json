@@ -276,7 +276,7 @@
     },
     "Crusher": {
       "name": "Miażdzyciel",
-      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Kondycję o 1, maksymalnie do 20.</p><p><strong>Pchnięcie.</strong> Raz na turę, gdy trafisz istotę atakiem, który zadaje obrażenia obuchowe, możesz przesunąć ją o 5 stóp do niezajętej przestrzeni, jeśli nie jest większa od ciebie o więcej niż jeden rozmiar.</p><p><strong>Wzmocnione Trafienie Krytyczne.</strong> Gdy zadasz Trafienie Krytyczne zadające obrażenia obuchowe istocie, testy ataku przeciwko tej istocie mają Ułatwienie aż do początku twojej następnej tury.</p><section id=\"secret-Jx3RkyhIRZ7QLlyM\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha zawiera Aktywny Efekt, który można wykorzystać do śledzenia Ułatwienia, choć nie jest on zautomatyzowany.</p></section>",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Kondycję o 1, maksymalnie do 20.</p><p><strong>Pchnięcie.</strong> Raz na turę, gdy trafisz istotę atakiem, który zadaje obrażenia obuchowe, możesz przesunąć ją o 5 stóp do niezajętej przestrzeni, jeśli nie jest większa od ciebie o więcej niż jeden rozmiar.</p><p><strong>Wzmocnione Trafienie Krytyczne.</strong> Gdy zadasz Trafienie Krytyczne zadające obrażenia obuchowe istocie, testy ataku przeciwko tej istocie mają Ułatwienie aż do początku swojej następnej tury.</p><section id=\"secret-Jx3RkyhIRZ7QLlyM\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha zawiera Aktywny Efekt, który można wykorzystać do śledzenia Ułatwienia, choć nie jest on zautomatyzowany.</p></section>",
       "effects": {
         "Crushed": {
           "name": "Zmiażdzony"
@@ -294,7 +294,7 @@
     },
     "Defensive Duelist": {
       "name": "Mistrz zasłony",
-      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie wartości cechy.</strong> Zwiększ swoją wartość Zręczności o 1, do maksimum 20.</p><p><strong>Parowanie.</strong> Jeśli trzymasz broń finezyjną, a inna istota trafi cię atakiem wręcz, możesz użyć Reakcji, aby dodać swoją Premię od Biegłości (obecnie, [[lookup @prof]]) do twojej Klasy Pancerza, potencjalnie powodując, że atak cię chybi. Zyskujesz tę premię do KP przeciwko atakom wręcz aż do początku twojej następnej tury.</p><section id=\"secret-En8YXJoQaVQXOweT\" class=\"secret\"><p><strong>Notatka foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt, który zwiększy twoją Klasę Pancerza.</p></section>",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie wartości cechy.</strong> Zwiększ swoją wartość Zręczności o 1, do maksimum 20.</p><p><strong>Parowanie.</strong> Jeśli trzymasz broń finezyjną, a inna istota trafi cię atakiem wręcz, możesz użyć Reakcji, aby dodać swoją Premię od Biegłości (obecnie, [[lookup @prof]]) do twojej Klasy Pancerza, potencjalnie powodując, że atak cię chybi. Zyskujesz tę premię do KP przeciwko atakom wręcz aż do początku swojej następnej tury.</p><section id=\"secret-En8YXJoQaVQXOweT\" class=\"secret\"><p><strong>Notatka foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt, który zwiększy twoją Klasę Pancerza.</p></section>",
       "activities": {
         "Parry": {
           "name": "Parowanie"
@@ -537,7 +537,7 @@
     },
     "Poisoner": {
       "name": "Truciciel",
-      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cech.</strong> Zwiększ swoją Zręczność lub Inteligencję o 1, maksymalnie do 20.</p><p><strong>Silna Trucizna.</strong> Gdy wykonujesz rzut na obrażenia zadające obrażenia od trucizn, ignorują one Odporność na obrażenia od trucizn.</p><p><strong>Warzenie trucizny.</strong> Zyskujesz biegłość w Zestawie Truciciela. Po 1 godzinie pracy z użyciem tego zestawu i wydaniu materiałów o wartości 50 sz, możesz stworzyć liczbę dawek trucizny równą twojej Premii od Biegłości. Jako Akcję Dodatkową możesz nałożyć dawkę trucizny na broń lub pocisk. Po nałożeniu trucizna zachowuje swoją moc przez 1 minutę lub do momentu, gdy zadasz obrażenia zatrutym przedmiotem, w zależności od tego, co nastąpi wcześniej. Gdy istota otrzyma obrażenia od zatrutego przedmiotu, musi wykonać rzut obronny na Kondycję (ST = 8 + modyfikator cechy zwiększonej przez ten atut + twoja Premia od Biegłości) lub otrzymuje 2k8 obrażeń od trucizn i staje się &amp;Reference[Poisoned]{Zatruta} do końca twojej następnej tury.</p><section class=\"secret\" id=\"secret-Z0hagCaxOGvVtkkm\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Stwórz dawki trucizny</strong> przywróci liczbę użyć tego przedmiotu równą twojej premii od biegłości.</p><p>Aktywność zaklęcia <strong>Nałóż truciznę</strong> udostępnia opcję rzutu obronnego na Zręczność lub Inteligencję dla celu, którą należy wybrać w zależności od cechy zwiększonej przy wyborze tego atutu.</p><p>Możesz usunąć aktywność <strong>Obrona na truciznę</strong> powiązaną z cechą, która <em>nie</em> została wybrana dla tego atutu.</p><p>Ostatecznie, ST rzutów obronnych dla aktywności zaklęć opiera się na cechach użytkownika broni, ale zawsze należy ją porównywać ze ST właściciela tej zdolności.</p></section>",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cech.</strong> Zwiększ swoją Zręczność lub Inteligencję o 1, maksymalnie do 20.</p><p><strong>Silna Trucizna.</strong> Gdy wykonujesz rzut na obrażenia zadające obrażenia od trucizn, ignorują one Odporność na obrażenia od trucizn.</p><p><strong>Warzenie trucizny.</strong> Zyskujesz biegłość w Zestawie Truciciela. Po 1 godzinie pracy z użyciem tego zestawu i wydaniu materiałów o wartości 50 sz, możesz stworzyć liczbę dawek trucizny równą twojej Premii od Biegłości. Jako Akcję Dodatkową możesz nałożyć dawkę trucizny na broń lub pocisk. Po nałożeniu trucizna zachowuje swoją moc przez 1 minutę lub do momentu, gdy zadasz obrażenia zatrutym przedmiotem, w zależności od tego, co nastąpi wcześniej. Gdy istota otrzyma obrażenia od zatrutego przedmiotu, musi wykonać rzut obronny na Kondycję (ST = 8 + modyfikator cechy zwiększonej przez ten atut + twoja Premia od Biegłości) lub otrzymuje 2k8 obrażeń od trucizn i staje się &amp;Reference[Poisoned]{Zatruta} do końca swojej następnej tury.</p><section class=\"secret\" id=\"secret-Z0hagCaxOGvVtkkm\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Stwórz dawki trucizny</strong> przywróci liczbę użyć tego przedmiotu równą twojej premii od biegłości.</p><p>Aktywność zaklęcia <strong>Nałóż truciznę</strong> udostępnia opcję rzutu obronnego na Zręczność lub Inteligencję dla celu, którą należy wybrać w zależności od cechy zwiększonej przy wyborze tego atutu.</p><p>Możesz usunąć aktywność <strong>Obrona na truciznę</strong> powiązaną z cechą, która <em>nie</em> została wybrana dla tego atutu.</p><p>Ostatecznie, ST rzutów obronnych dla aktywności zaklęć opiera się na cechach użytkownika broni, ale zawsze należy ją porównywać ze ST właściciela tej zdolności.</p></section>",
       "activities": {
         "Create Poison Doses": {
           "name": "Stwórz dawki trucizny"
@@ -557,14 +557,14 @@
       "effects": {
         "Poisoned (Dex)": {
           "name": "Zatruty (Zrc)",
-          "description": "<p>Gdy istota otrzyma obrażenia od zatrutego przedmiotu, musi wykonać rzut obronny [[/save ability=con]] (ST = 8 + modyfikator cechy zwiększonej przez ten atut + twoja Premia od Biegłości) lub otrzymuje 2k8 obrażeń od trucizn i do końca twojej następnej tury ma stan &amp;Reference[Poisoned].</p>",
+          "description": "<p>Gdy istota otrzyma obrażenia od zatrutego przedmiotu, musi wykonać rzut obronny [[/save ability=con]] (ST = 8 + modyfikator cechy zwiększonej przez ten atut + twoja Premia od Biegłości) lub otrzymuje 2k8 obrażeń od trucizn i do końca swojej następnej tury ma stan &amp;Reference[Poisoned].</p>",
           "changes": {
             "name": ", Zatruty"
           }
         },
         "Poisoned (Int)": {
           "name": "Zatruty (Int)",
-          "description": "<p>Gdy istota otrzyma obrażenia od zatrutego przedmiotu, musi wykonać rzut obronny [[/save ability=con]] (ST = 8 + modyfikator cechy zwiększonej przez ten atut + twoja Premia od Biegłości) lub otrzymuje 2k8 obrażeń od trucizn i do końca twojej następnej tury ma stan &amp;Reference[Poisoned].</p>",
+          "description": "<p>Gdy istota otrzyma obrażenia od zatrutego przedmiotu, musi wykonać rzut obronny [[/save ability=con]] (ST = 8 + modyfikator cechy zwiększonej przez ten atut + twoja Premia od Biegłości) lub otrzymuje 2k8 obrażeń od trucizn i do końca swojej następnej tury ma stan &amp;Reference[Poisoned].</p>",
           "changes": {
             "name": ", Zatruty"
           }
@@ -585,7 +585,7 @@
     },
     "Protection": {
       "name": "Ochrona",
-      "description": "<p><em>(Warunek wstępny: Zdolność Styl walki)</em></p><p>Gdy istota, którą widzisz, atakuje cel inny niż ty znajdujący się w promieniu 5 stóp od ciebie, możesz użyć Reakcji, aby zasłonić go swoją Tarczą, jeśli ją trzymasz. Nakładasz Utrudnienie na wyzwalający test ataku oraz na wszystkie inne rzuty ataku przeciwko temu celowi do początku twojej następnej tury, jeśli pozostaniesz w promieniu 5 stóp od celu.</p><section id=\"secret-omzqnTg5Wlirj4sK\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt do śledzenia chronionej istoty, ale nie automatyzuje Utrudnienia.</p></section>",
+      "description": "<p><em>(Warunek wstępny: Zdolność Styl walki)</em></p><p>Gdy istota, którą widzisz, atakuje cel inny niż ty znajdujący się w promieniu 5 stóp od ciebie, możesz użyć Reakcji, aby zasłonić go swoją Tarczą, jeśli ją trzymasz. Nakładasz Utrudnienie na wyzwalający test ataku oraz na wszystkie inne rzuty ataku przeciwko temu celowi do początku swojej następnej tury, jeśli pozostaniesz w promieniu 5 stóp od celu.</p><section id=\"secret-omzqnTg5Wlirj4sK\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt do śledzenia chronionej istoty, ale nie automatyzuje Utrudnienia.</p></section>",
       "activities": {
         "Protect": {
           "name": "Ochrona",
@@ -595,7 +595,7 @@
       "effects": {
         "Protected": {
           "name": "Chroniony",
-          "description": "<p>Nakładasz Utrudnienie na wyzwalający test ataku i wszystkie inne testy ataku przeciwko celowi aż do początku twojej następnej tury, jeśli pozostajesz w zasięgu 5 stóp od celu.</p>"
+          "description": "<p>Nakładasz Utrudnienie na wyzwalający test ataku i wszystkie inne testy ataku przeciwko celowi aż do początku swojej następnej tury, jeśli pozostajesz w zasięgu 5 stóp od celu.</p>"
         }
       }
     },
@@ -704,7 +704,7 @@
     },
     "Slasher": {
       "name": "Siepacz",
-      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Podcięcie.</strong> Raz na turę, gdy trafisz istotę atakiem zadającym obrażenia cięte, możesz zmniejszyć jej Szybkość o 10 stóp do początku twojej następnej tury.</p><p><strong>Wzmocnione Trafienie Krytyczne.</strong> Gdy zadasz Trafienie Krytyczne, które zadaje obrażenia cięte istocie, ma ona Utrudnienie do rzutów ataku do początku twojej następnej tury.</p><section class=\"secret\" id=\"secret-PMVAtAZfo61ryOmO\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt, który może być używany do śledzenia efektów Podcięcia i Wzmocnionego Trafienia Krytycznego. Automatycznie zmniejsza Szybkość istoty o 10 stóp.</p></section>",
+      "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Podcięcie.</strong> Raz na turę, gdy trafisz istotę atakiem zadającym obrażenia cięte, możesz zmniejszyć jej Szybkość o 10 stóp do początku swojej następnej tury.</p><p><strong>Wzmocnione Trafienie Krytyczne.</strong> Gdy zadasz Trafienie Krytyczne, które zadaje obrażenia cięte istocie, ma ona Utrudnienie do rzutów ataku do początku swojej następnej tury.</p><section class=\"secret\" id=\"secret-PMVAtAZfo61ryOmO\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt, który może być używany do śledzenia efektów Podcięcia i Wzmocnionego Trafienia Krytycznego. Automatycznie zmniejsza Szybkość istoty o 10 stóp.</p></section>",
       "effects": {
         "Slashed": {
           "name": "Cięty"
