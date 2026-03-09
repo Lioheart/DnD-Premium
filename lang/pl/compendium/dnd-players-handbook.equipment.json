@@ -930,7 +930,7 @@
     },
     "Rope": {
       "name": "Lina",
-      "description": "<p>Akcją Użycia Obiektu wiążesz węzeł za pomocą liny, jeśli uda ci się test Zręczności (Zwinne dłonie) ST 10. Linę można zerwać, wykonując udany test Siły (Atletyka) ST 20.</p><p>Możesz związać niechcącą tego istotę liną tylko wtedy, gdy ma ona stan &amp;Reference[Grappled], &amp;Reference[Incapacitated] lub &amp;Reference[Restrained]. Jeśli nogi istoty zostaną związane, otrzymuje ona stan Restrained do momentu uwolnienia się. Uwolnienie się z liny wymaga od istoty wykonania udanego testu Zręczności (Akrobatyka) ST 15 jako akcji.</p>",
+      "description": "<p>Akcją Użycia Obiektu wiążesz węzeł za pomocą liny, jeśli uda ci się test Zręczności (Zwinne dłonie) ST 10. Linę można zerwać, wykonując udany test Siły (Atletyka) ST 20.</p><p>Możesz związać niechcącą tego istotę liną tylko wtedy, gdy ma ona stan &amp;Reference[Grappled], &amp;Reference[Incapacitated] lub &amp;Reference[Unieruchomiony]. Jeśli nogi istoty zostaną związane, otrzymuje ona stan Unieruchomiony do momentu uwolnienia się. Uwolnienie się z liny wymaga od istoty wykonania udanego testu Zręczności (Akrobatyka) ST 15 jako akcji.</p>",
       "activities": {
         "Tie Knot": {
           "name": "Zawiąż węzeł"
