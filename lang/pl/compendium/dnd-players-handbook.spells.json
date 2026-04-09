@@ -409,7 +409,7 @@
     },
     "Banishment": {
       "name": "Wypędzenie",
-      "description": "<p>Jedna istota, którą widzisz w zasięgu, musi zdać rzut obronny na Charyzmę, inaczej zostaje przeniesiona do nieszkodliwej Demisfery na czas trwania czaru. Przebywając tam, cel ma stan &amp;Reference[Incapacitated apply=false]. Gdy czar się zakończy, cel pojawia się ponownie w miejscu, które opuścił, lub w najbliższej wolnej przestrzeni, jeśli tamto miejsce jest zajęte.</p><p>Jeśli cel jest Aberracją, Niebianinem, Żywiołakiem, Fey lub Czartem, nie powraca, jeśli czar trwa przez 1 minutę. Zamiast tego cel zostaje przeniesiony do losowego miejsca w sferze (wybór MG) związanej z jego typem istoty.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 4.</p>",
+      "description": "<p>Jedna istota, którą widzisz w zasięgu, musi wykonać rzut obronny na Charyzmę; w przypadku porażki zostaje ona przeniesiona do nieszkodliwej Demisfery na czas trwania czaru. Przebywając tam, cel zyskuje stan &Reference[Incapacitated apply=false]. Po zakończeniu działania czaru cel pojawia się ponownie w przestrzeni, którą opuścił, lub w najbliższej wolnej przestrzeni, jeśli tamta przestrzeń jest zajęta.</p><p>Jeśli cel jest Wynaturzeniem, Niebianinem, Żywiołakiem, Fey lub Czartem, nie powraca on, jeśli działanie czaru trwa przez pełną 1 minutę. Zamiast tego zostaje on odesłany do losowej przestrzeni w sferze (wybór MP) związanej z jego typem istoty.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 4.</p>",
       "materials": "pentakl",
       "effects": {
         "Banished": {
