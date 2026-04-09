@@ -393,7 +393,7 @@
     },
     "Banishing Smite": {
       "name": "Wypędzające ugodzenie",
-      "description": "<p>Cel trafiony testem ataku otrzymuje dodatkowe 5k10 obrażeń od mocy. Jeśli atak sprowadzi liczbę Punktów Wytrzymałości celu do 50 lub mniej, musi on wykonać rzut obronny na Charyzmę; w przypadku porażki zostaje przeniesiony do nieszkodliwej Demisfery na czas trwania czaru. Przebywając tam, cel zyskuje stan &Reference[Incapacitated apply=false]. Po zakończeniu działania czaru cel pojawia się ponownie w miejscu, które opuścił, lub w najbliższym wolnym miejscu, jeśli tamto jest zajęte.</p>",
+      "description": "<p>Cel trafiony testem ataku otrzymuje dodatkowe 5k10 obrażeń od mocy. Jeśli atak sprowadzi liczbę Punktów Wytrzymałości celu do 50 lub mniej, musi on wykonać rzut obronny na Charyzmę; w przypadku porażki zostaje przeniesiony do nieszkodliwej Demisfery na czas trwania czaru. Przebywając tam, cel zyskuje stan &Reference[Incapacitated apply=false]. Po zakończeniu działania czaru cel pojawia się ponownie w przestrzeni, którą opuścił, lub w najbliższej wolnej przestrzeni, jeśli tamta przestrzeń jest zajęta.</p>",
       "activation": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
       "activities": {
         "Damage and Banish": {
