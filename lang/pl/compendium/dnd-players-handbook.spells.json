@@ -240,7 +240,7 @@
         },
         "Frightened": {
           "name": "Przerażony",
-          "description": "<p>Istota zyskuje stan &amp;Reference[Frightened apply=false]. Przerażona istota musi w każdej ze swoich tur wykorzystywać swój ruch, aby oddalić się od celu tak daleko, jak to możliwe, poruszając się najbezpieczniejszą dostępną drogą.</p><p><strong>Zakończenie efektu.</strong> Jeśli Przerażona lub Zauroczona istota zakończy swoją turę w odległości większej niż 120 stóp od celu, wykonuje [[/save ability=wis format=long]]. Przy udanym rzucie istota przestaje być pod wpływem celu. Istota, której uda się rzut obronny przeciwko temu efektowi, jest na niego odporna przez 1 minutę, po czym może zostać nim dotknięta ponownie.</p>"
+          "description": "<p>Istota zyskuje stan &amp;Reference[Frightened apply=false]. Przerażona istota musi w każdej ze swoich tur wykorzystywać swój ruch, aby oddalić się od celu tak daleko, jak to możliwe, poruszając się najbezpieczniejszą dostępną drogą.</p><p><strong>Zakończenie efektu.</strong> Jeśli Przerażona lub Zauroczona istota kończy swoją turę w odległości większej niż 120 stóp od celu, musi wykonać rzut obronny na Mądrość. W przypadku sukcesu efekt przestaje na nią oddziaływać. Istota, która odniesie sukces w rzucie obronnym przeciwko temu działaniu, staje się na nie odporna przez 1 minutę, po upływie której może ponownie ulec jego wpływowi.</p>"
         },
         "Charmed": {
           "name": "Zauroczony",
