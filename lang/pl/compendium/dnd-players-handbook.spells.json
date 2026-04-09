@@ -444,7 +444,7 @@
     },
     "Befuddlement": {
       "name": "Otępienie umysłu",
-      "description": "<p>Atakujesz umysł istoty, którą widzisz w zasięgu. Cel wykonuje rzut obronny na Inteligencję.</p><p>Przy nieudanym rzucie cel otrzymuje 10k12 obrażeń psychicznych i nie może rzucać czarów ani wykonywać Akcji Magii. Pod koniec każdych 30 dni cel powtarza rzut obronny, kończąc efekt przy sukcesie. Efekt może zostać zakończony przez czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHeal000000]</em> lub <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWish000000]</em>.</p><p>Przy udanym rzucie cel otrzymuje tylko połowę tych obrażeń.</p>",
+      "description": "<p>Atakujesz umysł istoty, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Inteligencję.</p><p>W przypadku porażki cel otrzymuje 10k12 obrażeń psychicznych oraz nie może rzucać czarów ani wykonywać Akcji Magii. Na koniec każdych 30 dni cel ponawia ten rzut obronny, kończąc działanie efektu w przypadku sukcesu. Efekt może zostać również zakończony przez czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHeal000000]</em> lub <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWish000000]</em>.</p><p>Przy udanym rzucie cel otrzymuje tylko połowę tych obrażeń.</p>",
       "materials": "brelok na klucze bez kluczy",
       "effects": {
         "Befuddled": {
