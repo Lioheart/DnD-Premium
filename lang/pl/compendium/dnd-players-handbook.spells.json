@@ -44,40 +44,40 @@
     },
     "Aid": {
       "name": "Pomoc",
-      "description": "<p>Wybierz do trzech istot w zasięgu. Maksymalne PW i bieżące  PW każdego celu wzrastają o 5 na czas trwania.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Punkty Wytrzymałości każdego celu wzrastają o 5 za każdy krąg powyżej 2.</p><section id=\"secret-u9DpSmufNhFMDGmN\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Domyślna aktywność <strong>Uleczenie</strong> jest skonfigurowana z wieloma Aktywnymi Efektami reprezentującymi tymczasowe maksymalne PW zapewniane przez ten czar.</p><p>Użytkownicy powinni zastosować odpowiedni Aktywny Efekt dla kręgu czaru użytego przy rzuceniu tego czaru.</p></section>",
+      "description": "<p>Wybierz do trzech istot w zasięgu. Maksymalne Punkty Wytrzymałości i bieżące Punkty Wytrzymałości każdego celu wzrastają o 5 na czas trwania.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Punkty Wytrzymałości każdego celu wzrastają o 5 za każdy krąg powyżej 2.</p><section id=\"secret-u9DpSmufNhFMDGmN\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Domyślna aktywność <strong>Uleczenie</strong> jest skonfigurowana z wieloma Aktywnymi Efektami reprezentującymi tymczasowe maksymalne Punkty Wytrzymałości zapewniane przez ten czar.</p><p>Użytkownicy powinni zastosować odpowiedni Aktywny Efekt dla kręgu czaru użytego przy rzuceniu tego czaru.</p></section>",
       "materials": "pasek białej tkaniny",
       "effects": {
         "Level 2: +5 Max HP": {
-          "name": "Krąg 2: +5 maks. PW",
-          "description": "<p>Maksymalna liczba Punktów Wytrzymałości celu jest zwiększona na czas trwania czaru.</p>"
+          "name": "Poziom 2: +5 maks. PW",
+          "description": "<p>Maksymalna liczba Punktów Wytrzymałości celu jest zwiększona na czas trwania.</p>"
         },
         "Level 3: +10 Max HP": {
-          "name": "Krąg 3: +10 maks. PW",
+          "name": "Poziom 3: +10 maks. PW",
           "description": "<p>Maksymalna liczba Punktów Wytrzymałości celu jest zwiększona na czas trwania.</p>"
         },
         "Level 4: +15 Max HP": {
-          "name": "Krąg 4: +15 maks. PW",
-          "description": "<p>Maksymalna liczba Punktów Wytrzymałości celu jest zwiększona na czas trwania czaru.</p>"
+          "name": "Poziom 4: +15 maks. PW",
+          "description": "<p>Maksymalna liczba Punktów Wytrzymałości celu jest zwiększona na czas trwania.</p>"
         },
         "Level 5: +20 Max HP": {
-          "name": "Krąg 5: +20 maks. PW",
-          "description": "<p>Maksymalna liczba Punktów Wytrzymałości celu jest zwiększona na czas trwania czaru.</p>"
+          "name": "Poziom 5: +20 maks. PW",
+          "description": "<p>Maksymalna liczba Punktów Wytrzymałości celu jest zwiększona na czas trwania.</p>"
         },
         "Level 6: +25 Max HP": {
-          "name": "Krąg 6: +25 maksymalnych PW",
-          "description": "<p>Maksymalna liczba Punktów Wytrzymałości celu jest zwiększona na czas trwania czaru.</p>"
+          "name": "Poziom 6: +25 maksymalnych PW",
+          "description": "<p>Maksymalna liczba Punktów Wytrzymałości celu jest zwiększona na czas trwania.</p>"
         },
         "Level 7: +30 Max HP": {
-          "name": "Krąg 7: +30 maksymalnych PW",
-          "description": "<p>Maksymalna liczba Punktów Wytrzymałości celu jest zwiększona na czas trwania czaru.</p>"
+          "name": "Poziom 7: +30 maksymalnych PW",
+          "description": "<p>Maksymalna liczba Punktów Wytrzymałości celu jest zwiększona na czas trwania.</p>"
         },
         "Level 8: +35 Max HP": {
-          "name": "Krąg 8: +35 maks. PW",
-          "description": "<p>Maksymalna liczba Punktów Wytrzymałości celu jest zwiększona na czas trwania czaru.</p>"
+          "name": "Poziom 8: +35 maks. PW",
+          "description": "<p>Maksymalna liczba Punktów Wytrzymałości celu jest zwiększona na czas trwania.</p>"
         },
         "Level 9: +40 Max HP": {
-          "name": "Krąg 9: +40 maksymalnych PW",
-          "description": "<p>Maksymalna liczba Punktów Wytrzymałości celu jest zwiększona na czas trwania czaru.</p>"
+          "name": "Poziom 9: +40 maksymalnych PW",
+          "description": "<p>Maksymalna liczba Punktów Wytrzymałości celu jest zwiększona na czas trwania.</p>"
         }
       }
     },
@@ -96,7 +96,7 @@
     },
     "Alter Self": {
       "name": "Zmiana siebie",
-      "description": "<p>Zmieniasz swoją fizyczną formę. Wybierz jedną z poniższych opcji. Efekty te trwają przez czas trwania czaru, podczas którego możesz Akcją Magii zastąpić wybraną opcję inną.</p><p><strong>Adaptacja wodna.</strong> Wyrastają ci skrzela i błony między palcami. Możesz oddychać pod wodą i zyskujesz Szybkość Pływania równą twojej Szybkości.</p><section class=\"secret\" id=\"secret-7sTILHJaR1io7TWi\"><p><strong>Notatka Foundry</strong></p><p>Aktywny Efekt zapewniany przez aktywność <strong>Adaptacja wodna</strong> ustawia Szybkość Pływania postaci na wartość „1”, aby wskazać równość ze Szybkością chodzenia.</p></section><p><strong>Zmiana wyglądu.</strong> Zmieniasz swój wygląd. Decydujesz o szczegółach swojej nowej formy, w tym o wzroście, wadze, rysach twarzy, brzmieniu głosu, długości włosów, ubarwieniu oraz innych cechach szczególnych. Możesz upodobnić się do przedstawiciela innego gatunku, choć twoje statystyki pozostają bez zmian. Nie możesz przybrać postaci istoty o innym rozmiarze, a twoja podstawowa budowa ciała musi pozostać taka sama – przykładowo, jeśli jesteś dwunogiem, nie możesz użyć tego czaru, aby stać się czworonogiem. Przez czas trwania czaru możesz ponownie zmienić swój wygląd, wykonując Akcję Magii..</p><p><strong>Naturalne bronie.</strong> Wyrastają ci pazury (cięte), kły (kłute), rogi (kłute) lub kopyta (obuchowe). Kiedy wykonujesz uderzenie bez broni przy użyciu swojego nowego oręża, zadaje ono 1k6 obrażeń właściwego typu zamiast standardowych obrażeń dla uderzenia bez broni. Do rzutów ataku i obrażeń tym orężem używasz modyfikatora swojej cechy bazowej rzucania czarów zamiast Siły.</p>",
+      "description": "<p>Zmieniasz swoją fizyczną formę. Wybierz jedną z poniższych opcji. Jej efekty trwają przez czas trwania, podczas którego możesz Akcją Magii zastąpić wybraną opcję inną.</p><p><strong>Adaptacja wodna.</strong> Wyrastają ci skrzela i błony między palcami. Możesz oddychać pod wodą i zyskujesz Szybkość Pływania równą twojej Szybkości.</p><section class=\"secret\" id=\"secret-7sTILHJaR1io7TWi\"><p><strong>Notatka Foundry</strong></p><p>Aktywny Efekt zapewniany przez aktywność <strong>Adaptacja wodna</strong> ustawia Szybkość Pływania postaci na wartość „1”, aby wskazać równość ze Szybkością chodzenia.</p></section><p><strong>Zmiana wyglądu.</strong> Zmieniasz swój wygląd. Decydujesz, jak wyglądasz, w tym o swoim wzroście, wadze, rysach twarzy, brzmieniu głosu, długości włosów, kolorystyce i innych cechach szczególnych. Możesz sprawić, że będziesz wyglądać jak przedstawiciel innego gatunku, choć twoje statystyki się nie zmieniają. Nie możesz wyglądać jak istota o innym rozmiarze, a twoja podstawowa sylwetka pozostaje taka sama; np. jeśli jesteś dwunożny, nie możesz użyć tego czaru, aby stać się czworonożnym. Przez czas trwania możesz Akcją Magii w ten sposób ponownie zmienić swój wygląd.</p><p><strong>Naturalne bronie.</strong> Wyrastają ci pazury (cięte), kły (kłute), rogi (kłute) lub kopyta (obuchowe). Gdy używasz Uderzenia bez broni, aby zadać obrażenia swoim swoim nowym przyrostem, zadaje on 1k6 obrażeń odpowiedniego typu zamiast normalnych obrażeń Uderzenia bez broni, a do rzutów ataku i obrażeń używasz swojego modyfikatora cechy bazowej zamiast Siły.</p>",
       "activities": {
         "Aquatic Adaptation": {
           "name": "Adaptacja wodna"
@@ -144,7 +144,7 @@
     },
     "Animal Messenger": {
       "name": "Zwierzęcy posłaniec",
-      "description": "<p>Wybrana przez ciebie Malutka Bestia, którą widzisz w zasięgu czaru musi wykonać rzut obronny na Charyzmę. W przypadku porażki podejmuje się ona dostarczenia wiadomości w Twoim imieniu (istota o Stopniu Wyzwania wyższym niż 0 automatycznie odnosi sukces w tym rzucie). Wskazujesz odwiedzone wcześniej miejsce oraz odbiorcę pasującego do ogólnego opisu, takiego jak „osoba w mundurze straży miejskiej” lub „rudowłosy krasnolud w spiczastym kapeluszu”. Przekazujesz także wiadomość liczącą do dwudziestu pięciu słów. Przez czas trwania czaru bestia zmierza ku wyznaczonemu miejscu, pokonując około 25 mil na każde 24 godziny lub 50 mil, jeśli potrafi latać.</p><p>Kiedy Bestia dotrze na miejsce, przekazuje twoją wiadomość opisanej przez ciebie istocie, naśladując twój sposób komunikacji. Jeśli Bestia nie dotrze do celu przed upływem czasu trwania czaru, wiadomość zostaje utracona, a Bestia wraca do miejsca, w którym rzucono zaklęcie.</p><p><strong>Użycie Komórki czaru wyższego kręgu.</strong> Czas trwania czaru wydłuża się o 48 godzin za każdy krąg powyżej 2.</p>",
+      "description": "<p>Malutka Bestia twojego wyboru, którą widzisz w zasięgu, musi wykonać rzut obronny na Charyzmę, albo podejmuje próbę dostarczenia wiadomości dla ciebie (jeśli Stopień Wyzwania celu nie wynosi 0, automatycznie odnosi sukces). Określasz miejsce, które odwiedziłeś, oraz odbiorcę odpowiadającego ogólnemu opisowi, takiemu jak „osoba ubrana w mundur straży miejskiej” lub „rudy krasnolud w spiczastym kapeluszu”. Przekazujesz również wiadomość liczącą do dwudziestu pięciu słów. Bestia podróżuje przez czas trwania w kierunku określonego miejsca, pokonując około 25 mil na 24 godziny lub 50 mil, jeśli potrafi latać.</p><p>Kiedy Bestia dotrze, dostarcza twoją wiadomość istocie, którą opisałeś, naśladując twoją komunikację. Jeśli Bestia nie dotrze do celu, zanim czar się skończy, wiadomość zostaje utracona, a Bestia wraca do miejsca, w którym rzuciłeś czar.</p><p><strong>Użycie Komórki czaru wyższego kręgu.</strong> Czas trwania czaru wydłuża się o 48 godzin za każdy krąg powyżej 2.</p>",
       "materials": "Kęs jedzenia",
       "effects": {
         "Carrying Message": {
@@ -155,7 +155,7 @@
     },
     "Animal Shapes": {
       "name": "Zwierzęce kształty",
-      "description": "<p>Wybierz dowolną liczbę przychylny istot, które widzisz w zasięgu. Każdy cel przemienia się w wybraną przez ciebie Bestię o rozmiarze Dużym lub mniejszym i Stopniu Wyzwania 4 lub niższym. Możesz wybrać inną formę dla każdego celu. W kolejnych turach możesz użyć Akcji Magii, aby ponownie przemienić cele..</p><p>Statystyki gry celu zostają zastąpione statystykami wybranej Bestii, jednak cel zachowuje swój typ istoty, Punkty Wytrzymałości, Kości Wytrzymałości, charakter, zdolność komunikacji oraz wartości Inteligencji, Mądrości i Charyzmy. Akcje celu są ograniczone przez anatomię nowej formy; nie może on również rzucać czarów. Ekwipunek celu wtapia się w nową postać, a cel nie może korzystać z żadnego elementu swojego wyposażenia, dopóki w niej pozostaje..</p><p>Cel zyskuje liczbę Tymczasowych Punktów Wytrzymałości równą Punktom Wytrzymałości pierwszej formy, w którą się przemienia. Wszelkie pozostałe punkty tego rodzaju znikają w momencie zakończenia działania czaru. Przemiana trwa przez cały czas działania zaklęcia lub do chwili, gdy cel zakończy ją Akcją Dodatkową.</p>",
+      "description": "<p>Wybierz dowolną liczbę przychylnych stworzeń, które widzisz w zasięgu. Każdy cel przekształca się w Dużą lub mniejszą Bestię wybraną przez ciebie o Stopniu Wyzwania 4 lub niższym. Możesz wybrać inną formę dla każdego celu. W późniejszych turach możesz Akcją Magii ponownie przekształcić cele.</p><p>Statystyki gry celu zostają zastąpione statystykami wybranej Bestii, ale cel zachowuje swój typ stworzenia; Punkty Wytrzymałości; Kości Wytrzymałości; światopogląd; zdolność komunikacji oraz wartości Inteligencji, Mądrości i Charyzmy. Akcje celu są ograniczone anatomią formy Bestii i nie może on rzucać czarów. Wyposażenie celu stapia się z nową formą i cel nie może korzystać z żadnego elementu tego wyposażenia podczas przebywania w tej formie.</p><p>Cel zyskuje liczbę Tymczasowych Punktów Wytrzymałości równą Punktom Wytrzymałości pierwszej formy, w którą się przekształca. Te Tymczasowe Punkty Wytrzymałości znikają, jeśli jakiekolwiek pozostaną po zakończeniu działania czaru. Przekształcenie trwa przez cały czas działania lub do chwili, gdy cel zakończy je Akcją Dodatkową.</p>",
       "activities": {
         "Initial Transformation": {
           "name": "Początkowa przemiana"
@@ -167,7 +167,7 @@
     },
     "Animate Dead": {
       "name": "Animowanie zmarłego",
-      "description": "<p>Wybierz znajdujący się w zasięgu stos kości lub zwłoki Średniego albo Małego Humanoida. Cel staje się Nieumarłą istotą: <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobSkeleton00]{Szkieletem}</strong>, jeśli wybierzesz kości, lub <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobZombie0000]{Zombi}</strong>, jeśli wybierzesz zwłoki.</p><p>W każdej swojej turze możesz użyć Akcji dodatkowej, aby wydać mentalny rozkaz dowolnej istocie stworzonej tym czarem, o ile znajduje się ona w zasięgu 60 stóp od ciebie (jeśli kontrolujesz wiele istot, możesz wydać rozkaz wszystkim jednocześnie, o ile jest on taki sam). Decydujesz, jaką akcję istota podejmie i dokąd się przemieści w swojej następnej turze, albo wydajesz ogólny rozkaz, taki jak pilnowanie konkretnej komnaty lub korytarza. Jeśli nie wydasz żadnych rozkazów, istota podejmuje Akcję Uniku i porusza się tylko po to, by uniknąć krzywdy. Raz wydany rozkaz istota wykonuje do momentu jego wypełnienia.</p><p>Istota pozostaje pod twoją kontrolą przez 24 godziny, po czym przestaje wykonywać twoje rozkazy. Aby utrzymać kontrolę nad istotą przez kolejne 24 godziny, musisz rzucić ten czar ponownie na tę istotę przed upływem obecnego okresu 24 godzin. Takie użycie czaru odnawia twoją kontrolę nad maksymalnie czterema istotami stworzonymi tym zaklęciem, zamiast tworzyć nową istotę.</p><p><strong>Użycie Komórki czaru wyższego kręgu.</strong> Animujesz lub odnawiasz kontrolę nad dwiema dodatkowymi Nieumarłymi istotami za każdy krąg powyżej 3. Każda z tych istot musi powstać z osobnych zwłok lub stosu kości.</p>",
+      "description": "<p>Wybierz stos kości lub ciało Średniego albo Małego Humanoida w zasięgu. Cel staje się Nieumarłą istotą: <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobSkeleton00]{Szkielet}</strong>, jeśli wybierzesz kości, lub <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobZombie0000]{Zombi}</strong>, jeśli wybierzesz ciało.</p><p>Na początku każdej ze swoich tur możesz Akcją dodatkową wydać mentalny rozkaz dowolnej istocie stworzonej tym czarem, jeśli znajduje się w odległości 60 stóp od ciebie (jeśli kontrolujesz wiele istot, możesz rozkazać dowolnej z nich jednocześnie, wydając im ten sam rozkaz). Decydujesz, jaką akcję istota podejmie i dokąd się przemieści w swojej następnej turze, albo możesz wydać ogólny rozkaz, taki jak pilnowanie komnaty lub korytarza. Jeśli nie wydasz żadnych rozkazów, istota podejmuje Akcję Uniku i porusza się jedynie, aby uniknąć krzywdy. Po wydaniu rozkazu istota wykonuje go do czasu jego zakończenia.</p><p>Istota pozostaje pod twoją kontrolą przez 24 godziny, po czym przestaje wykonywać jakiekolwiek twoje rozkazy. Aby utrzymać kontrolę nad istotą przez kolejne 24 godziny, musisz ponownie rzucić ten czar na istotę, zanim upłynie obecny okres 24 godzin. To użycie czaru odnawia twoją kontrolę nad maksymalnie czterema istotami stworzonymi tym czarem zamiast tworzenia nowej istoty.</p><p><strong>Użycie Komórki czaru wyższego kręgu.</strong> Animujesz lub odnawiasz kontrolę nad dwiema dodatkowymi Nieumarłymi istotami za każdy krąg powyżej 3. Każda z istot musi pochodzić z innego ciała lub stosu kości.</p>",
       "materials": "kropla krwi, kawałek ciała i szczypta pyłu z kości",
       "activities": {
         "summon": {
@@ -184,7 +184,7 @@
     },
     "Animate Objects": {
       "name": "Animowanie obiektów",
-      "description": "<p>Obiekty ożywają na twoje polecenie. Wybierz w zasięgu dowolną liczbę niemagicznych obiektów, które nie są noszone ani przenoszone, nie są przymocowane do żadnej powierzchni i nie mają rozmiaru Gigantycznego. Maksymalna liczba obiektów, jaką możesz ożywić, jest równa twojemu modyfikatorowi cechy bazowej. Na potrzeby tego limitu obiekt Średni lub mniejszy liczy się jako jeden, Duży jako dwa, a Wielki jako trzy.</p><p>Każdy wybrany obiekt ożywa, wyrastają mu nogi i staje się Konstruktem korzystającym z bloku statystyk <strong>Ożywiony obiekt</strong>; ta istota pozostaje pod twoją kontrolą przez cały czas trwania czaru lub dopóki jej Punkty Wytrzymałości nie spadną do 0. Każda istota stworzona tym czarem jest sojusznikiem twoim oraz twoich towarzyszy. W walce dzieli ona twoją inicjatywę i wykonuje swoją turę bezpośrednio po twojej.</p><p>Przez cały czas trwania czaru możesz użyć Akcji dodatkowej, aby wydać mentalny rozkaz dowolnej istocie stworzonej tym zaklęciem, o ile znajduje się ona w zasięgu 500 stóp od ciebie (jeśli kontrolujesz wiele istot, możesz wydać rozkaz wszystkim jednocześnie, o ile jest on taki sam). Jeśli nie wydasz żadnych rozkazów, istota podejmuje Akcję Uniku i porusza się tylko po to, by uniknąć krzywdy. Gdy Punkty Wytrzymałości istoty spadną do 0, powraca ona do swojej postaci obiektu, a wszelkie pozostałe obrażenia przechodzą na tę formę.</p><p><strong>Użycie Komórki czaru wyższego kręgu.</strong> Obrażenia zadawane przez Uderzenie zwiększają się o 1k4 (Średni lub mniejszy), 1k6 (Duży) lub 1k12 (Wielki) za każdy krąg powyżej 5.</p><h3>Rozmiary Ożywionych obiektów</h3><p>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbtaoAnimatedOb]{Malutki}, @UUID[Compendium.dnd-players-handbook.actors.Actor.phbsaoAnimatedOb]{Mały}, @UUID[Compendium.dnd-players-handbook.actors.Actor.phbmaoAnimatedOb]{Średni}, @UUID[Compendium.dnd-players-handbook.actors.Actor.phblaoAnimatedOb]{Duży}, @UUID[Compendium.dnd-players-handbook.actors.Actor.phbhaoAnimatedOb]{Wielki}</p>",
+      "description": "<p>Obiekty ożywają na twoje polecenie. Wybierz dowolną liczbę niemagicznych obiektów w zasięgu, które nie są noszone ani przenoszone, nie są przymocowane do powierzchni i nie są Gigantyczne. Maksymalna liczba obiektów jest równa twojemu modyfikatorowi cechy bazowej; dla tej liczby obiekt Średni lub mniejszy liczy się jako jeden, Duży jako dwa, a Wielki jako trzy.</p><p>Każdy wybrany obiekt ożywa, wyrastają mu nogi i staje się Konstruktem korzystającym z bloku statystyk <strong>Ożywiony obiekt</strong>; ta istota pozostaje pod twoją kontrolą do końca czasu trwania czaru lub do momentu, gdy jej Punkty Wytrzymałości spadną do 0. Każda istota stworzona tym czarem jest sojusznikiem twoim i twoich sojuszników. W walce dzieli z tobą wynik Inicjatywy i wykonuje swoją turę bezpośrednio po twojej.</p><p>Do końca czasu trwania czaru możesz Akcją dodatkową wydać mentalny rozkaz dowolnej istocie stworzonej tym czarem, jeśli znajduje się w odległości do 500 stóp od ciebie (jeśli kontrolujesz wiele istot, możesz rozkazać dowolnej z nich jednocześnie, wydając im ten sam rozkaz). Jeśli nie wydasz żadnych rozkazów, istota podejmuje Akcję Uniku i porusza się jedynie, aby uniknąć krzywdy. Kiedy Punkty Wytrzymałości istoty spadną do 0, powraca ona do swojej formy obiektu, a wszelkie pozostałe obrażenia przenoszą się na tę formę.</p><p><strong>Użycie Komórki czaru wyższego kręgu.</strong> Obrażenia zadawane przez Uderzenie zwiększają się o 1k4 (Średni lub mniejszy), 1k6 (Duży) lub 1k12 (Wielki) za każdy krąg powyżej 5.</p><h3>Rozmiary Ożywionych obiektów</h3><p>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbtaoAnimatedOb]{Malutki}, @UUID[Compendium.dnd-players-handbook.actors.Actor.phbsaoAnimatedOb]{Mały}, @UUID[Compendium.dnd-players-handbook.actors.Actor.phbmaoAnimatedOb]{Średni}, @UUID[Compendium.dnd-players-handbook.actors.Actor.phblaoAnimatedOb]{Duży}, @UUID[Compendium.dnd-players-handbook.actors.Actor.phbhaoAnimatedOb]{Wielki}</p>",
       "activities": {
         "summon": {
           "profiles": {
@@ -209,16 +209,16 @@
     },
     "Antilife Shell": {
       "name": "Bariera przeciw życiu",
-      "description": "<p>Przez czas trwania czaru aura otacza cię emanacją o promieniu 10 stóp. Uniemożliwia ona istotom innym niż Konstrukty i Nieumarli przechodzenie przez nią lub sięganie przez jej obszar. Istota objęta działaniem aury może jednak rzucać czary oraz wykonywać ataki bronią dystansową lub bronią Dalekosiężną przez barierę.</p><p>Jeśli poruszysz się w taki sposób, że istota objęta działaniem aury zostanie zmuszona do przejścia przez barierę, działanie czaru natychmiast kończy się.</p>"
+      "description": "<p>Aura rozciąga się od ciebie w emanacji o promieniu 10 stóp przez czas trwania. Aura uniemożliwia istotom innym niż Konstrukty i Nieumarli przechodzenie przez nią lub sięganie przez nią. Dotknięta istota może rzucać czary lub wykonywać ataki bronią dystansową albo bronią Dalekosiężną przez barierę.</p><p>Jeśli poruszysz się tak, że dotknięta istota zostaje zmuszona do przejścia przez barierę, czar się kończy.</p>"
     },
     "Antimagic Field": {
       "name": "Pole Antymagii",
-      "description": "<p>Aura antymagii otacza cię emanacją o promieniu 10 stóp. Wewnątrz aury żadna istota nie może rzucać czarów, wykonywać Akcji Magii ani tworzyć innych efektów magicznych. Efekty te nie mogą również brać za cel ani w żaden sposób oddziaływać na cokolwiek znajdującego się wewnątrz obszaru. Magiczne właściwości przedmiotów magicznych zostają stłumione w obrębie aury i nie działają na nic, co się w niej znajduje.</p><p>Obszary działania czarów lub innych efektów magicznych nie mogą przenikać do wnętrza aury. Żadna istota nie może teleportować się do lub z jej obszaru ani korzystać w nim z podróży międzysferalnej. Portale znajdujące się wewnątrz aury zostają tymczasowo zamknięte.</p><p>Aktywne czary, z wyjątkiem rzuconych przez Bóstwo lub pochodzących z Artefaktu, zostają stłumione wewnątrz tego obszaru. Stłumiony efekt nie wywiera żadnego wpływu, jednak czas spędzony w stanie tłumienia wlicza się do jego czasu trwania.</p><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelMagi]</em>  nie wywiera żadnego wpływu na tę aurę. Ponadto aury stworzone przez różne rzucenia czaru <em>Pole Antymagii</em> nie znoszą się wzajemnie.</p>",
+      "description": "<p>Aura antymagii otacza cię emanacją o promieniu 10 stóp. Nikt nie może rzucać czarów, wykonywać Akcji Magii ani tworzyć innych efektów magicznych wewnątrz aury, a te rzeczy nie mogą celować ani w żaden sposób oddziaływać na cokolwiek wewnątrz niej. Magiczne właściwości przedmiotów magicznych nie działają wewnątrz aury ani na nic, co się w niej znajduje.</p><p>Obszary działania stworzone przez czary lub inną magię nie mogą rozciągać się do wnętrza aury i nikt nie może teleportować się do niej lub z niej, ani korzystać tam z podróży międzysferalnej. Portale zamykają się tymczasowo, gdy znajdują się w aurze.</p><p>Trwające czary, z wyjątkiem tych rzuconych przez Artefakt lub bóstwo, są w obszarze tłumione. Gdy efekt jest tłumiony, nie działa, ale czas spędzony w stanie tłumienia wlicza się do jego czasu trwania.</p><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelMagi]</em> nie ma żadnego wpływu na aurę, a aury stworzone przez różne czary <em>Pole Antymagii</em> nie znoszą się wzajemnie.</p>",
       "materials": "opiłki żelaza"
     },
     "Antipathy/Sympathy": {
       "name": "Antypatia/Sympatia",
-      "description": "<p>W momencie rzucania czaru wybierz, czy wywołuje on Antypatię, czy Sympatię, a następnie wskaż jako cel jedną istotę lub obiekt o rozmiarze Wielkim lub mniejszym. Określ również rodzaj istot, na które czar ma wpływać (na przykład czerwone smoki, gobliny lub wampiry). Każda istota wybranego rodzaju musi wykonać rzut obronny na Mądrość, gdy znajdzie się w promieniu 120 stóp od celu. Twój wybór określa efekt, jakiemu ulegnie istota w przypadku nieudanego rzutu obronnego:</p><p><strong>Antypatia.</strong> Istota zyskuje stan &amp;Reference[Frightened apply=false]. Przerażona istota musi w każdej ze swoich tur wykorzystywać swój ruch, aby oddalić się od celu tak daleko, jak to możliwe, poruszając się najbezpieczniejszą dostępną drogą.</p><p><strong>Sympatia.</strong>Istota zyskuje stan &amp;Reference[Charmed apply=false]. Zauroczona istota musi w każdej ze swoich tur wykorzystywać swój ruch, aby przemieścić się jak najbliżej celu, wybierając najbezpieczniejszą dostępną drogę. Jeśli istota znajduje się w promieniu 5 stóp od celu, nie może dobrowolnie się od niego oddalić. Jeśli cel zada Zauroczonej istocie obrażenia, może ona wykonać rzut obronny na Mądrość, aby zakończyć działanie efektu w sposób opisany poniżej.</p><p><strong>Zakończenie efektu.</strong> Jeśli Przerażona lub Zauroczona istota kończy swoją turę w odległości większej niż 120 stóp od celu, musi wykonać rzut obronny na Mądrość. W przypadku sukcesu efekt przestaje na nią oddziaływać. Istota, która odniesie sukces w rzucie obronnym przeciwko temu działaniu, staje się na nie odporna przez 1 minutę, po upływie której może ponownie ulec jego wpływowi.</p>",
+      "description": "<p>Podczas rzucania czaru wybierz, czy tworzy on antypatię czy sympatię, a następnie wybierz jedną istotę lub obiekt o rozmiarze Wielkim lub mniejszym. Następnie określ rodzaj istoty, taki jak czerwone smoki, gobliny lub wampiry. Istota wybranego rodzaju wykonuje rzut obronny na Mądrość, gdy znajdzie się w odległości 120 stóp od celu. Twój wybór antypatii lub sympatii określa, co dzieje się z istotą, gdy nie powiedzie się jej rzut obronny:</p><p><strong>Antypatia.</strong> Istota otrzymuje stan &amp;Reference[Frightened apply=false]. Przerażona istota musi w swoich turach używać swojego ruchu, aby oddalić się od celu tak daleko, jak to możliwe, poruszając się najbezpieczniejszą drogą.</p><p><strong>Sympatia.</strong> Istota otrzymuje stan &amp;Reference[Charmed apply=false]. Zauroczona istota musi w swoich turach używać swojego ruchu, aby zbliżyć się do celu tak bardzo, jak to możliwe, poruszając się najbezpieczniejszą drogą. Jeśli istota znajduje się w odległości 5 stóp od celu, nie może dobrowolnie się oddalić. Jeśli cel zada obrażenia Zauroczonej istocie, ta istota może wykonać rzut obronny na Mądrość, aby zakończyć efekt, jak opisano poniżej.</p><p><strong>Zakończenie efektu.</strong> Jeśli Przerażona lub Zauroczona istota zakończy swoją turę w odległości większej niż 120 stóp od celu, wykonuje rzut obronny na Mądrość. Przy udanym rzucie istota przestaje być pod wpływem celu. Istota, której uda się rzut obronny przeciwko temu efektowi, jest na niego odporna przez 1 minutę, po czym może zostać nim dotknięta ponownie.</p>",
       "materials": "mieszanka octu i miodu",
       "activities": {
         "Cast": {
@@ -240,22 +240,22 @@
         },
         "Frightened": {
           "name": "Przerażony",
-          "description": "<p>Istota zyskuje stan &amp;Reference[Frightened apply=false]. Przerażona istota musi w każdej ze swoich tur wykorzystywać swój ruch, aby oddalić się od celu tak daleko, jak to możliwe, poruszając się najbezpieczniejszą dostępną drogą.</p><p><strong>Zakończenie efektu.</strong> Jeśli Przerażona lub Zauroczona istota kończy swoją turę w odległości większej niż 120 stóp od celu, musi wykonać rzut obronny na Mądrość. W przypadku sukcesu efekt przestaje na nią oddziaływać. Istota, która odniesie sukces w rzucie obronnym przeciwko temu działaniu, staje się na nie odporna przez 1 minutę, po upływie której może ponownie ulec jego wpływowi.</p>"
+          "description": "<p>Istota otrzymuje stan &amp;Reference[Frightened apply=false]. Przerażona istota musi w swoich turach używać swojego ruchu, aby oddalić się od celu tak daleko, jak to możliwe, poruszając się najbezpieczniejszą drogą.</p><p><strong>Zakończenie efektu.</strong> Jeśli Przerażona lub Zauroczona istota zakończy swoją turę w odległości większej niż 120 stóp od celu, wykonuje [[/save ability=wis format=long]]. Przy udanym rzucie istota przestaje być pod wpływem celu. Istota, której uda się rzut obronny przeciwko temu efektowi, jest na niego odporna przez 1 minutę, po czym może zostać nim dotknięta ponownie.</p>"
         },
         "Charmed": {
           "name": "Zauroczony",
-          "description": "<p>Istota zyskuje stan &amp;Reference[Charmed apply=false]. Zauroczona istota musi w każdej ze swoich tur wykorzystywać swój ruch, aby przemieścić się jak najbliżej celu, wybierając najbezpieczniejszą dostępną drogę. Jeśli istota znajduje się w promieniu 5 stóp od celu, nie może dobrowolnie się od niego oddalić. Jeśli cel zada Zauroczonej istocie obrażenia, może ona wykonać rzut obronny na Mądrość, aby zakończyć działanie efektu w sposób opisany poniże.</p><p><strong>Zakończenie efektu.</strong> Jeśli Przerażona lub Zauroczona istota kończy swoją turę w odległości większej niż 120 stóp od celu, musi wykonać rzut obronny na Mądrość. W przypadku sukcesu efekt przestaje na nią oddziaływać. Istota, która odniesie sukces w rzucie obronnym przeciwko temu działaniu, staje się na nie odporna przez 1 minutę, po upływie której może ponownie ulec jego wpływowi.</p>"
+          "description": "<p>Istota otrzymuje stan &amp;Reference[Charmed apply=false]. Zauroczona istota musi używać swojego ruchu w turach, aby zbliżyć się jak najbardziej do celu, poruszając się najbezpieczniejszą drogą. Jeśli istota znajduje się w odległości 5 stóp od celu, nie może dobrowolnie się oddalić. Jeśli cel zada obrażenia Zauroczonej istocie, ta istota może wykonać rzut obronny na Mądrość, aby zakończyć efekt, jak opisano poniżej.</p><p><strong>Zakończenie efektu.</strong> Jeśli Przerażona lub Zauroczona istota zakończy swoją turę w odległości większej niż 120 stóp od celu, wykonuje rzut obronny na Mądrość. Przy udanym rzucie istota nie jest już pod wpływem celu. Istota, która skutecznie obroni się przed tym efektem, jest na niego niewrażliwa przez 1 minutę, po czym może zostać nim ponownie dotknięta.</p>"
         }
       }
     },
     "Arcane Eye": {
       "name": "Magiczne oko",
-      "description": "<p>Tworzysz w zasięgu Niewidzialne, niewrażliwe oko, które unosi się w powietrzu przez czas trwania czaru. Odbierasz mentalnie obraz z oka, które widzi we wszystkich kierunkach. Posiada ono również Widzenie w ciemności o zasięgu 30 stóp.</p><p>Możesz użyć Akcji dodatkowej, aby przesunąć oko o maksymalnie 30 stóp w dowolnym kierunku. Lita bariera blokuje ruch oka, jednak może ono przejść przez otwór o średnicy zaledwie 1 cala.</p>",
+      "description": "<p>Tworzysz Niewidzialne, niewrażliwe oko w zasięgu, które unosi się przez czas trwania czaru. Mentalnie otrzymujesz informacje wizualne od oka, które widzi we wszystkich kierunkach. Ma ono także Widzenie w ciemności o zasięgu 30 stóp (9m).</p><p>Akcją dodatkową możesz przesunąć oko o maksymalnie 30 stóp (9m) w dowolnym kierunku. Solidna bariera blokuje ruch oka, ale oko może przejść przez otwór o średnicy zaledwie 1 cala (2,5cm).</p>",
       "materials": "kawałek futra nietoperza"
     },
     "Arcane Gate": {
       "name": "Magiczne wrota",
-      "description": "<div><p>Tworzysz połączone portale teleportacyjne. Wybierz na podłożu dwie niezajęte przestrzenie o rozmiarze Dużym, które widzisz – jedną w zasięgu, a drugą w promieniu 10 stóp od ciebie. W każdej z tych przestrzeni otwiera się okrągły portal, który pozostaje otwarty przez cały czas trwania czaru.</p><p>Portale mają postać dwuwymiarowych, świecących pierścieni wypełnionych mgłą, która blokuje linię wzroku. Unoszą się one kilka cali nad podłożem i są do niego prostopadłe.</p><p>Portal jest aktywny tylko z jednej strony (wybierasz której w momencie rzucania czaru). Każda istota lub obiekt, który wkroczy w aktywną stronę jednego portalu, natychmiast wyłania się z aktywnej strony drugiego, tak jakby te przestrzenie sąsiadowały ze sobą. Możesz użyć Akcji dodatkowej, aby zmienić orientację aktywnych stron obu portali.</p></div>",
+      "description": "<div><p>Tworzysz połączone portale teleportacyjne. Wybierz dwie duże, niezajęte przestrzenie na ziemi, które widzisz – jedną w zasięgu, a drugą w promieniu 10 stóp (3m) od ciebie. Okrągły portal otwiera się w każdej z tych przestrzeni i pozostaje na czas trwania czaru.</p><p>Portale to dwuwymiarowe, świecące pierścienie wypełnione mgłą, która blokuje wzrok. Unoszą się kilka cali nad ziemią i są prostopadłe do niej.</p><p>Portal jest otwarty tylko z jednej strony (ty wybierasz której). Wszystko, co wejdzie na otwartą stronę portalu, wychodzi z otwartej strony drugiego portalu, jakby były one sąsiadujące ze sobą. Akcją dodatkową możesz zmienić kierunek otwartych stron.</p></div>",
       "activities": {
         "utility": {
           "target": "Duże, niezajęte przestrzenie"
@@ -264,12 +264,12 @@
     },
     "Arcane Lock": {
       "name": "Magiczny zamek",
-      "description": "<p>Dotykasz zamkniętych drzwi, okna, bramy, pojemnika lub klapy i magicznie zabezpieczasz je na czas trwania czaru. Tak powstałej blokady nie można otworzyć żadnymi niemagicznymi metodami. Ty oraz dowolne istoty wskazane przez ciebie w momencie rzucania czaru możecie normalnie otwierać i zamykać dany obiekt. Możesz również wyznaczyć hasło, którego wypowiedzenie w promieniu 5 stóp od obiektu odblokuje go na 1 minutę.</p>",
+      "description": "<p>Dotykasz zamkniętych drzwi, okna, bramy, pojemnika lub klapy i magicznie je zamykasz na czas trwania czaru. Tego zamka nie można otworzyć żadnymi niemagicznymi sposobami. Ty oraz dowolne istoty, które wskażesz podczas rzucania czaru, mogą otwierać i zamykać ten przedmiot pomimo zamka. Możesz także ustalić hasło, które, wypowiedziane w promieniu 5 stóp od przedmiotu, odblokowuje go na 1 minutę.</p>",
       "materials": "złoty pył warty 25+ SZ, który czar zużywa"
     },
     "Arcane Vigor": {
       "name": "Magiczna krzepa",
-      "description": "<p>Czerpiesz ze swojej energii życiowej, aby uleczyć odniesione rany. Wydaj jedną lub dwie swoje niewykorzystane Kości Wytrzymałości i rzuć nimi; odzyskujesz liczbę PW równą sumie wyników na kościach powiększonej o twój modyfikator cechy bazowej rzucania czarów. Kości te zostają w ten sposób wydane.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Liczba Kości Wytrzymałości, które możesz wydać, zwiększa się o 1 za każdy krąg czaru powyżej 2.</p><section id=\"secret-boiIVpDiaDqivdaw\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywności <strong>Wykorzystaj Kości Wytrzymałości</strong> są skonfigurowane tak, aby zużywać minimum 2 Kości Wytrzymałości, dodając twój modyfikator tylko raz.</p><p>Jeśli chcesz wykorzystać <em>pojedynczą</em> Kość Wytrzymałości, proszę odjąć, rzucić i uleczyć się ręcznie.</p></section><p></p>",
+      "description": "<p>Wykorzystujesz swoją siłę życiową, aby się uleczyć. Rzuć jedną lub dwiema niewykorzystanymi Kośćmi Wytrzymałości i odzyskaj liczbę Punktów Wytrzymałości równą sumie rzutu plus twój modyfikator zdolności rzucania czarów. Te kości są następnie wykorzystane.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Liczba niewykorzystanych Kości Wytrzymałości, które możesz rzucić, zwiększa się o jedną za każdy krąg powyżej 2.</p><section id=\"secret-boiIVpDiaDqivdaw\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywności <strong>Wykorzystaj Kości Wytrzymałości dN</strong> są skonfigurowane tak, aby zużywać minimum 2 Kości Wytrzymałości, dodając twój modyfikator tylko raz.</p><p>Jeśli chcesz wykorzystać <em>pojedynczą</em> Kość Wytrzymałości, proszę odjąć, rzucić i uleczyć ręcznie.</p></section><p></p>",
       "activities": {
         "Cast": {
           "name": "Rzucanie",
@@ -294,7 +294,7 @@
     },
     "Armor of Agathys": {
       "name": "Zbroja Agathys",
-      "description": "<p>Otacza cię warstwa ochronnego, magicznego szronu. Zyskujesz 5 Tymczasowych Punktów Wytrzymałości. Jeśli istota trafi cię atakiem wręcz, zanim czar dobiegnie końca, otrzymuje ona 5 obrażeń od zimna. Działanie czaru kończy się przedwcześnie, jeśli stracisz wszystkie te Tymczasowe Punkty Wytrzymałości.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Tymczasowe Punkty Wytrzymałości i obrażenia od zimna zwiększają się o 5 za każdy krąg powyżej 1.</p>",
+      "description": "<p>Ochronny magiczny szron otacza cię. Zyskujesz 5 Tymczasowych Punktów Wytrzymałości. Jeśli istota trafi cię Testem ataku w walce wręcz przed zakończeniem czaru, istota otrzymuje 5 obrażeń od zimna. Czar kończy się wcześniej, jeśli nie masz już Tymczasowych Punktów Wytrzymałości.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Tymczasowe Punkty Wytrzymałości i obrażenia od zimna zwiększają się o 5 za każdy krąg powyżej 1.</p>",
       "materials": "odłamek niebieskiego szkła",
       "activities": {
         "Cast": {
@@ -308,7 +308,7 @@
     },
     "Arms of Hadar": {
       "name": "Ramiona Hadara",
-      "description": "<p>Przywołując moc Hadara, sprawiasz, że wyrastają z ciebie macki. Każda istota znajdująca się w twojej Emanacji o promieniu 10 stóp musi wykonać rzut obronny na Siłę. W przypadku nieudanego rzutu cel otrzymuje 2k6 obrażeń nekrotycznych i nie może wykonywać reakcji do początku swojej następnej tury. W przypadku sukcesu cel otrzymuje tylko połowę tych obrażeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg powyżej 1.</p>",
+      "description": "<p>Przyzywając Hadara, sprawiasz, że macki wyrastają z ciebie. Każda istota w promieniu 10 stóp (3m) Emanacji pochodzącym od ciebie wykonuje rzut obronny na Siłę. Przy nieudanym rzucie cel otrzymuje 2k6 obrażeń nekrotycznych i nie może wykonywać reakcji aż do początku swojej następnej tury. Przy udanym rzucie cel otrzymuje tylko połowę tych obrażeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg powyżej 1.</p>",
       "effects": {
         "No Reactions": {
           "name": "Brak Reakcji",
@@ -317,24 +317,24 @@
       }
     },
     "Astral Projection": {
-      "name": "Projekcja astralna",
-      "description": "<p>Ty oraz do ośmiu chętnych istot w zasięgu projektujecie swoje ciała astralne na Sferę Astralną (działanie czaru kończy się natychmiast, jeśli już znajdujesz się na tej sferze). Materialne ciało każdego celu pozostaje w stanie zawieszenia; zyskuje ono stan &Reference[Unconscious apply=false], nie potrzebuje pożywienia ani powietrza i nie starzeje się.</p><p>Astralna forma celu pod niemal każdym względem przypomina jego postać fizyczną, wykorzystując te same statystyki oraz posiadany ekwipunek. Główną różnicą jest obecność srebrzystego sznura, który wyłania się spomiędzy łopatek astralnej formy i staje się niewidoczny w odległości 1 stopy. Jeśli sznur zostanie przecięty – co następuje wyłącznie wtedy, gdy dany efekt wyraźnie to określa – zarówno materialne ciało celu, jak i jego astralna forma natychmiast umierają.</p><p>Astralna forma celu może podróżować przez Sferę Astralną. W momencie, gdy opuszcza ona tę sferę, materialne ciało celu wraz z jego ekwipunkiem zostają przeciągnięte wzdłuż srebrzystego sznura, sprawiając, że cel materializuje się w swoim ciele na nowej sferze.</p><p>Wszelkie obrażenia lub inne efekty oddziałujące na formę astralną nie mają wpływu na materialne ciało celu i na odwrót. Jeśli Punkty Wytrzymałości ciała materialnego lub formy astralnej spadną do 0, działanie czaru kończy się dla tego celu. Działanie czaru kończy się dla wszystkich celów, jeśli użyjesz Akcji Magii, aby go przerwać.</p><p>Gdy działanie czaru kończy się dla celu, który nie zginął, powraca on do swojego materialnego ciała, a stan zawieszenia dobiega końca.</p>",
-      "materials": "Dla każdego celu czaru: jeden hiacynt o wartości co najmniej 1000 SZ oraz jedna srebrna sztaba o wartości co najmniej 100 SZ; wszystkie składniki czar zużywa",
+      "name": "Projekcja Astralna",
+      "description": "<p>Ty oraz maksymalnie osiem chętnych istot w zasięgu projektujecie swoje astralne ciała na Plan Astralny (czar kończy się natychmiast, jeśli już jesteś na tym planie). Ciało każdego celu pozostaje w stanie zawieszonej animacji; ma stan &amp;Reference[Unconscious apply=false], nie potrzebuje jedzenia ani powietrza i nie starzeje się.</p><p>Astralna forma celu przypomina jego ciało niemal pod każdym względem, odwzorowując jego statystyki gry i posiadane przedmioty. Główną różnicą jest dodanie srebrzystej nici, która ciągnie się zza łopatek astralnej formy. Nić znika z pola widzenia po 1 stopie. Jeśli nić zostanie przecięta – co zdarza się tylko wtedy, gdy efekt wyraźnie to określa – ciało celu i jego astralna forma umierają.</p><p>Astralna forma celu może podróżować przez Plan Astralny. W chwili, gdy astralna forma opuszcza ten plan, ciało celu i jego posiadane przedmioty przemieszczają się wzdłuż srebrzystej nici, powodując, że cel wraca do swojego ciała na nowym planie.</p><p>Wszelkie obrażenia lub inne efekty działające na astralną formę nie wpływają na ciało celu i odwrotnie. Jeśli ciało celu lub jego astralna forma spadnie do 0 Punktów Wytrzymałości, czar kończy się dla tego celu. Czar kończy się dla wszystkich celów, jeśli wykonasz Akcję Magii, aby go odwołać.</p><p>Gdy czar kończy się dla celu, który nie jest martwy, cel pojawia się ponownie w swoim ciele i opuszcza stan zawieszonej animacji.</p>",
+      "materials": "dla każdego celu czaru jeden hiacynt wart 1 000+ SZ i jeden srebrny sztab wart 100+ SZ, które czar zużywa",
       "effects": {
         "Suspended Animation": {
-          "name": "Stan zawieszenia",
-          "description": "<p>Materialne ciało każdego celu pozostaje w stanie zawieszenia; zyskuje ono stan &amp;Reference[Unconscious apply=false], nie potrzebuje pożywienia ani powietrza i nie starzeje się.</p>"
+          "name": "Zawieszona animacja",
+          "description": "<p>Ciało każdego celu pozostaje w stanie zawieszonej animacji; otrzymuje stan &amp;Reference[Unconscious apply=false], nie potrzebuje jedzenia ani powietrza i nie starzeje się.</p>"
         }
       }
     },
     "Augury": {
       "name": "Wróżba",
-      "description": "<p>Odbierasz od nieziemskiej istoty omen dotyczący skutków działania, które planujesz podjąć w ciągu najbliższych 30 minut. MP wybiera odpowiedni omen z tabeli Omenów.</p><table><thead><tr><td>Omen</td><td>Dla wyników, które będą …</td></tr></thead><tbody><tr><td>Pomyślność</td><td>Dobre</td></tr><tr><td>Nieszczęście</td><td>Złe</td></tr><tr><td>Pomyślność i nieszczęście</td><td>Dobre i złe</td></tr><tr><td>Obojętność</td><td>Ani dobre, ani złe</td></tr></tbody></table><p>Czar nie uwzględnia okoliczności, takich jak inne czary, które mogą zmienić wyniki.</p><p>Jeśli rzucisz ten czar więcej niż raz przed ukończeniem Długiego Odpoczynku, przy każdym kolejnym rzuceniu po pierwszym istnieje kumulująca się 25% szansy na to, że nie otrzymasz żadnej odpowiedzi.</p>",
+      "description": "<p>Otrzymujesz omen od pozaziemskiej istoty dotyczący wyników planowanego działania, które zamierzasz podjąć w ciągu najbliższych 30 minut. MG wybiera omen z tabeli Omenów.</p><table><thead><tr><td>Omen</td><td>Dla wyników, które będą …</td></tr></thead><tbody><tr><td>Pomyślność</td><td>Dobre</td></tr><tr><td>Nieszczęście</td><td>Złe</td></tr><tr><td>Pomyślność i nieszczęście</td><td>Dobre i złe</td></tr><tr><td>Obojętność</td><td>Ani dobre, ani złe</td></tr></tbody></table><p>Czar nie uwzględnia okoliczności, takich jak inne czary, które mogą zmienić wyniki.</p><p>Jeśli rzucisz ten czar więcej niż raz przed zakończeniem Długiego Odpoczynku, istnieje kumulująca się 25-procentowa szansa dla każdego rzucenia po pierwszym, że nie otrzymasz odpowiedzi.</p>",
       "materials": "specjalnie oznaczone patyczki, kości, karty lub inne wróżebne tokeny warte 25+ SZ"
     },
     "Aura of Life": {
       "name": "Aura życia",
-      "description": "<p>Przez czas trwania czaru roztaczasz wokół siebie aurę w Emanacji o promieniu 30 stóp. Ty oraz twoi sojusznicy znajdujący się wewnątrz aury zyskujecie Odporność na obrażenia nekrotyczne, a wasze maksymalne Punkty Wytrzymałości nie mogą zostać zmniejszone. Ponadto, jeśli sojusznik mający 0 Punktów Wytrzymałości rozpoczyna swoją turę w aurze, odzyskuje on 1 Punkt Wytrzymałości.</p>",
+      "description": "<p>Aura promieniuje od ciebie w promieniu 30 stóp (9m) Emanacji przez czas trwania czaru. Przebywając w aurze, ty i twoi sojusznicy macie Odporność na obrażenia nekrotyczne, a wasze maksymalne Punkty Wytrzymałości nie mogą zostać zredukowane. Jeśli sojusznik z 0 Punktami Wytrzymałości rozpoczyna swoją turę w aurze, odzyskuje 1 Punkt Wytrzymałości.</p>",
       "activities": {
         "Create Aura": {
           "name": "Utwórz aurę"
@@ -343,13 +343,13 @@
       "effects": {
         "Aura of Life": {
           "name": "Aura życia",
-          "description": "<p>Znajdując się wewnątrz aury, ty oraz twoi sojusznicy zyskujecie Odporność na obrażenia nekrotyczne, a wasze maksymalne Punkty Wytrzymałości nie mogą zostać zmniejszone. Jeśli sojusznik mający 0 Punktów Wytrzymałości rozpoczyna swoją turę w aurze, odzyskuje [[/healing 1 type=healing]]{1 Punkt Wytrzymałości}.</p>"
+          "description": "<p>Będąc w aurze, ty i twoi sojusznicy macie Odporność na obrażenia nekrotyczne, a wasze maksymalne Punkty Wytrzymałości nie mogą zostać zredukowane. Jeśli sojusznik z 0 Punktami Wytrzymałości rozpocznie swoją turę w aurze, odzyskuje [[/healing 1 type=healing]]{1 Punkt Wytrzymałości}.</p>"
         }
       }
     },
     "Aura of Purity": {
       "name": "Aura czystości",
-      "description": "<p>Przez czas trwania czaru roztaczasz wokół siebie aurę w Emanacji o promieniu 30 stóp. Ty oraz twoi sojusznicy znajdujący się wewnątrz aury zyskujecie Odporność na obrażenia od trucizn oraz Ułatwienie w rzutach obronnych przeciwko efektom nakładającym następujące stany: &amp;Reference[Blinded apply=false], &amp;Reference[Charmed apply=false], &amp;Reference[Deafened apply=false], &amp;Reference[Frightened apply=false], &amp;Reference[Paralyzed apply=false], &amp;Reference[Poisoned apply=false] lub &amp;Reference[Stunned apply=false].</p>",
+      "description": "<p>Aura emanuje z Ciebie w promieniu 30 stóp przez czas trwania czaru. Gdy jesteście w aurze, ty i twoi sojusznicy macie Odporność na obrażenia od trucizn i Ułatwienie w rzutach obronnych, aby uniknąć lub zakończyć efekty, które zawierają stan &amp;Reference[Blinded apply=false], &amp;Reference[Charmed apply=false], &amp;Reference[Deafened apply=false], &amp;Reference[Frightened apply=false], &amp;Reference[Paralyzed apply=false], &amp;Reference[Poisoned apply=false] lub &amp;Reference[Stunned apply=false].</p>",
       "activities": {
         "Create Aura": {
           "name": "Utwórz aurę"
@@ -358,31 +358,31 @@
       "effects": {
         "Aura of Purity": {
           "name": "Aura czystości",
-          "description": "<p>Znajdując się wewnątrz aury, ty oraz twoi sojusznicy zyskujecie Odporność na obrażenia od trucizn oraz Ułatwienie w rzutach obronnych wykonywanych w celu uniknięcia lub zakończenia efektów nakładających następujące stany: &amp;Reference[Blinded apply=false], &amp;Reference[Charmed apply=false], &amp;Reference[Deafened apply=false], &amp;Reference[Frightened apply=false], &amp;Reference[Paralyzed apply=false], &amp;Reference[Poisoned apply=false] lub &amp;Reference[Stunned apply=false].</p>"
+          "description": "<p>Będąc w aurze, ty i twoi sojusznicy macie Odporność na obrażenia od trucizn oraz Ułatwienie w rzutach obronnych, aby uniknąć lub zakończyć efekty obejmujące stan &amp;Reference[Blinded apply=false], &amp;Reference[Charmed apply=false], &amp;Reference[Deafened apply=false], &amp;Reference[Frightened apply=false], &amp;Reference[Paralyzed apply=false], &amp;Reference[Poisoned apply=false] lub &amp;Reference[Stunned apply=false].</p>"
         }
       }
     },
     "Aura of Vitality": {
       "name": "Aura witalności",
-      "description": "<p>Przez czas trwania czaru roztaczasz wokół siebie aurę w Emanacji o promieniu 30 stóp. W momencie rzucenia czaru oraz na początku każdej swojej tury, dopóki aura trwa, możesz przywrócić [[/healing 2d6 type=healing]]{2k6 Punktów Wytrzymałości} jednej istocie znajdującej się wewnątrz aury.</p>",
+      "description": "<p>Aura promieniuje od ciebie w promieniu 30 stóp Emanacji przez czas trwania czaru. Gdy tworzysz aurę oraz na początku każdej twojej tury w której aura jest podtrzymywana, możesz przywrócić 2k6 Punktów Wytrzymałości jednej istocie w jej zasięgu.</p>",
       "activities": {
         "Create Aura": {
           "name": "Utwórz aurę"
         },
         "Start of Turn Heal": {
           "name": "Leczenie na początku tury",
-          "condition": "na początku twojej tury"
+          "condition": "początek twojej tury"
         }
       }
     },
     "Awaken": {
       "name": "Przebudzenie",
-      "description": "<p>Tkając zaklęcie, podążasz magicznymi ścieżkami wewnątrz drogocennego kamienia szlachetnego, a następnie dotykasz celu. Cel musi być Bestią lub Rośliną o Inteligencji 3 lub niższej, albo zwyczajną rośliną, która nie jest istotą. Cel zyskuje Inteligencję o wartości 10 oraz zdolność mówienia w jednym znanym ci języku. Jeśli cel jest zwyczajną rośliną, staje się on istotą typu Roślina i zyskuje zdolność poruszania swoimi kończynami, korzeniami, pnączami czy gałęziami, a także otrzymuje zmysły zbliżone do ludzkich. MP wybiera statystyki odpowiednie dla przebudzonej Rośliny, takie jak statystyki dla<strong>@UUID[Compendium.dnd5e.monsters.Actor.gaSTr7DFZJLmgI2J]</strong> lub <strong>@UUID[Compendium.dnd5e.monsters.Actor.UR2gWLFHmFwG7ReH]</strong> w <em>Księdze Potworów</em>.</p><p>Przebudzony cel zyskuje stan &Reference[Charmed]{Zauroczony} na 30 dni lub do momentu, w którym otrzyma on obrażenia od ciebie lub twoich sojuszników. Po zakończeniu tego stanu przebudzona istota sama decyduje o swoim nastawieniu wobec ciebie.</p>",
+      "description": "<p>Tkając czar, śledzisz magiczne ścieżki wewnątrz drogocennego szlachetnego kamienia, a następnie dotykasz celu. Cel musi być Bestią lub Rośliną o Inteligencji 3 lub niższej, albo naturalną rośliną, która nie jest istotą. Cel zyskuje Inteligencję na poziomie 10 oraz zdolność mówienia w jednym języku, który znasz. Jeśli cel jest naturalną rośliną, staje się istotą typu Roślina i zyskuje zdolność poruszania swoimi kończynami, korzeniami, pnączami, pełzaczami i tak dalej, a także zmysły podobne do ludzkich. MG wybiera statystyki odpowiednie dla przebudzonej Rośliny, takie jak statystyki dla <strong>@UUID[Compendium.dnd5e.monsters.Actor.gaSTr7DFZJLmgI2J]</strong> or <strong>@UUID[Compendium.dnd5e.monsters.Actor.UR2gWLFHmFwG7ReH]</strong> w <em>Podręczniku Potworów</em>.</p><p>Przebudzony cel ma stan &amp;Reference[Charmed]{Zauroczony} przez 30 dni lub do momentu, gdy otrzyma obrażenia od ciebie lub twoich sojuszników. Gdy ten stan się zakończy, przebudzona istota sama wybiera swoje nastawienie wobec ciebie.</p>",
       "materials": "agat warty 1 000+ SZ, który czar zużywa"
     },
     "Bane": {
       "name": "Zguba",
-      "description": "<p>Do trzech wybranych przez ciebie istot, które widzisz w zasięgu, musi wykonać rzut obronny na Charyzmę. Za każdym razem, gdy cel, któremu nie powiódł się ten rzut, wykonuje test ataku lub rzut obronny przed zakończeniem czaru, musi odjąć 1k4 od testu ataku lub rzutu obronnego.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 1.</p>",
+      "description": "<p>Maksymalnie trzy istoty twojego wyboru, które widzisz w zasięgu, muszą każda wykonać rzut obronny na Charyzmę. Za każdym razem, gdy cel, który nie zdał tego rzutu, wykonuje test ataku lub rzut obronny przed zakończeniem czaru, musi odjąć 1k4 od testu ataku lub rzutu obronnego.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 1.</p>",
       "materials": "kropla krwi",
       "effects": {
         "Bane": {
@@ -393,7 +393,7 @@
     },
     "Banishing Smite": {
       "name": "Wypędzające ugodzenie",
-      "description": "<p>Cel trafiony testem ataku otrzymuje dodatkowe 5k10 obrażeń od mocy. Jeśli atak sprowadzi liczbę Punktów Wytrzymałości celu do 50 lub mniej, musi on wykonać rzut obronny na Charyzmę; w przypadku porażki zostaje przeniesiony do nieszkodliwej Demisfery na czas trwania czaru. Przebywając tam, cel zyskuje stan &Reference[Incapacitated apply=false]. Po zakończeniu działania czaru cel pojawia się ponownie w przestrzeni, którą opuścił, lub w najbliższej wolnej przestrzeni, jeśli tamta przestrzeń jest zajęta.</p>",
+      "description": "<p>Cel trafiony testem ataku otrzymuje dodatkowe 5k10 obrażeń od mocy od tego ataku. Jeśli atak zredukuje cel do 50 Punktów Wytrzymałości lub mniej, cel musi zdać rzut obronny na Charyzmę, inaczej zostaje przeniesiony do nieszkodliwej Demisfery na czas trwania czaru. Przebywając tam, cel ma stan &amp;Reference[Incapacitated apply=false] . Gdy czar się zakończy, cel pojawia się ponownie w miejscu, które opuścił, lub w najbliższej wolnej przestrzeni, jeśli tamto miejsce jest zajęte.</p>",
       "activation": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
       "activities": {
         "Damage and Banish": {
@@ -409,12 +409,12 @@
     },
     "Banishment": {
       "name": "Wypędzenie",
-      "description": "<p>Jedna istota, którą widzisz w zasięgu, musi wykonać rzut obronny na Charyzmę; w przypadku porażki zostaje ona przeniesiona do nieszkodliwej Demisfery na czas trwania czaru. Przebywając tam, cel zyskuje stan &Reference[Incapacitated apply=false]. Po zakończeniu działania czaru cel pojawia się ponownie w przestrzeni, którą opuścił, lub w najbliższej wolnej przestrzeni, jeśli tamta przestrzeń jest zajęta.</p><p>Jeśli cel jest Wynaturzeniem, Niebianinem, Żywiołakiem, Fey lub Czartem, nie powraca on, jeśli działanie czaru trwa przez pełną 1 minutę. Zamiast tego zostaje on odesłany do losowej przestrzeni w sferze (wybór MP) związanej z jego typem istoty.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 4.</p>",
+      "description": "<p>Jedna istota, którą widzisz w zasięgu, musi zdać rzut obronny na Charyzmę, inaczej zostaje przeniesiona do nieszkodliwej Demisfery na czas trwania czaru. Przebywając tam, cel ma stan &amp;Reference[Incapacitated apply=false]. Gdy czar się zakończy, cel pojawia się ponownie w miejscu, które opuścił, lub w najbliższej wolnej przestrzeni, jeśli tamto miejsce jest zajęte.</p><p>Jeśli cel jest Aberracją, Niebianinem, Żywiołakiem, Fey lub Czartem, nie powraca, jeśli czar trwa przez 1 minutę. Zamiast tego cel zostaje przeniesiony do losowego miejsca w sferze (wybór MG) związanej z jego typem istoty.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 4.</p>",
       "materials": "pentakl",
       "effects": {
         "Banished": {
           "name": "Wypędzony",
-          "description": "<p>Przebywając tam, cel zyskuje stan &Reference[Incapacitated apply=false]. Po zakończeniu działania czaru cel pojawia się ponownie w przestrzeni, którą opuścił, lub w najbliższej wolnej przestrzeni, jeśli tamta przestrzeń jest zajęta.</p><p>Jeśli celem jest Wynaturzenie, Niebianin, Żywiołak, Fey lub Czart, cel nie wraca, jeśli czar trwa przez 1 minutę. Zamiast tego zostaje przeniesiony do losowej lokalizacji na sferze (wybór MP) związanej z jego typem istoty.</p>"
+          "description": "<p>Będąc tam, cel otrzymuje stan &amp;Reference[Incapacitated apply=false]. Kiedy czar się kończy, cel pojawia się ponownie w przestrzeni, którą opuścił, lub w najbliższej niezajętej przestrzeni, jeśli ta jest zajęta.</p><p>Jeśli celem jest Wynaturzenie, Niebianin, Żywiołak, Fey lub Czart, cel nie wraca, jeśli czar trwa przez 1 minutę. Zamiast tego zostaje przeniesiony do losowej lokalizacji na sferze (wybór MP) związanej z jego typem istoty.</p>"
         }
       }
     },
@@ -430,11 +430,11 @@
     },
     "Beacon of Hope": {
       "name": "Promień nadziei",
-      "description": "<p>Wybierz dowolną liczbę istot w zasięgu. Przez czas trwania czaru każdy cel ma Ułatwienie w rzutach obronnych na Mądrość oraz rzutach obronnych przeciwko śmierci, a także odzyskuje maksymalną możliwą liczbę Punktów Wytrzymałości z każdego źródła leczenia.</p>",
+      "description": "<p>Wybierz dowolną liczbę istot w zasięgu. Przez czas trwania czaru każdy cel ma Ułatwienie w rzutach obronnych na Mądrość i Rzutach przeciwko śmierci oraz odzyskuje maksymalną możliwą liczbę Punktów Wytrzymałości z każdego źródła uzdrowenia.</p>",
       "effects": {
         "Hopeful": {
           "name": "Pełen nadziei",
-          "description": "<p>Cel ma Ułatwienie w rzutach obronnych na Mądrość oraz w rzutach obronnych przeciwko śmierci, a także odzyskuje maksymalną możliwą liczbę Punktów Wytrzymałości z każdego leczenia.</p>"
+          "description": "<p>Cel ma Ułatwienie w rzutach obronnych na Mądrość i rzutach obronnych przeciwko śmierci oraz odzyskuje maksymalną możliwą liczbę Punktów Wytrzymałości z każdego uzdrowienia.</p>"
         }
       }
     },
@@ -444,18 +444,18 @@
     },
     "Befuddlement": {
       "name": "Otępienie umysłu",
-      "description": "<p>Atakujesz umysł istoty, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Inteligencję.</p><p>W przypadku porażki cel otrzymuje 10k12 obrażeń psychicznych oraz nie może rzucać czarów ani wykonywać Akcji Magii. Na koniec każdych 30 dni cel ponawia ten rzut obronny, kończąc działanie efektu w przypadku sukcesu. Efekt może zostać również zakończony przez czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHeal000000]</em> lub <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWish000000]</em>.</p><p>Przy udanym rzucie cel otrzymuje tylko połowę tych obrażeń.</p>",
+      "description": "<p>Atakujesz umysł istoty, którą widzisz w zasięgu. Cel wykonuje rzut obronny na Inteligencję.</p><p>Przy nieudanym rzucie cel otrzymuje 10k12 obrażeń psychicznych i nie może rzucać czarów ani wykonywać Akcji Magii. Pod koniec każdych 30 dni cel powtarza rzut obronny, kończąc efekt przy sukcesie. Efekt może zostać zakończony przez czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHeal000000]</em> lub <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWish000000]</em>.</p><p>Przy udanym rzucie cel otrzymuje tylko połowę tych obrażeń.</p>",
       "materials": "brelok na klucze bez kluczy",
       "effects": {
         "Befuddled": {
           "name": "Osłabiony umysł",
-          "description": "<p>Przy nieudanym rzucie cel otrzymuje 10k12 obrażeń psychicznych i nie może rzucać czarów ani wykonywać Akcji Magii. Pod koniec każdych 30 dni cel powtarza [[/save ability=int]] rzut obronny, kończąc efekt w przypadku sukcesu. Efekt może też zostać zakończony przez czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHeal000000]</em> lub <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWish000000]</em>.</p>"
+          "description": "<p>Przy nieudanym rzucie cel otrzymuje 10k12 obrażeń psychicznych i nie może rzucać czarów ani wykonywać Akcji Magii. Pod koniec każdych 30 dni cel powtarza [[/save ability=wis]] rzut, kończąc efekt przy sukcesie. Efekt może też zostać zakończony przez czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHeal000000]</em> lub <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWish000000]</em>.</p>"
         }
       }
     },
     "Bestow Curse": {
       "name": "Nałożenie klątwy",
-      "description": "<p>Dotykasz istotę, która musi wykonać rzut obronny na Mądrość; w przypadku porażki staje się ona Przeklęta przez czas trwania czaru. Dopóki klątwa się nie zakończy, cel cierpi z powodu jednego z poniższych efektów do wyboru:</p><ul><li>Wybierz jedną cechę. Cel ma Utrudnienie w testach cech i rzutach obronnych wykonywanych na tę cechę (aktywność <strong>Przeklęta cecha</strong>).</li><li>Cel ma Utrudnienie w Testach ataku przeciwko tobie (aktywność <strong>Przeklęte ataki</strong>).</li><li>W walce cel musi wykonać rzut obronny na Mądrość na początku każdej swojej tury; w przypadku porażki jest on zmuszony wykonać akcję &Reference[Dodge] w tej turze (aktywność <strong>Przeklęte akcje</strong>).</li><li>Jeśli zadasz celowi obrażenia za pomocą Testu ataku lub czaru, cel otrzymuje dodatkowe 1k8 obrażeń nekrotycznych (aktywność <strong>Przeklęta odporność</strong>).</li></ul><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Jeśli rzucisz ten czar, używając komórki czaru kręgu 4, możesz utrzymywać na nim Koncentrację przez maksymalnie 10 minut. Jeśli użyjesz komórki czaru kręgu 5 lub wyższego, czar nie wymaga Koncentracji, a czas trwania wynosi 8 godzin (komórka kręgu 5–6) lub 24 godziny (komórka kręgu 7–8). Jeśli użyjesz komórki czaru kręgu 9, czar trwa, dopóki nie zostanie rozproszony.</p>",
+      "description": "<p>Dotykasz istotę. która musi zdać rzut obronny na Mądrość, inaczej staje się Przeklęta przez czas trwania czaru. Dopóki klątwa się nie zakończy, cel cierpi z powodu jednego z poniższych efektów do wyboru:</p><ul><li>Wybierz jedną cechę. Cel ma Utrudnienie w testach cech i rzutach obronnych wykonywanych na tę cechą (umiejętność <strong>Curse Ability</strong>).</li><li>Cel ma Utrudnienie w Testach ataku przeciwko tobie (umiejętność <strong>Curse Attacks</strong>).</li><li>W walce cel musi zdać rzut obronny na Mądrość na początku każdej swojej tury, inaczej jest zmuszony wykonać akcję &amp;Reference[Dodge] w tej turze (umiejętność <strong>Curse Actions</strong>).</li><li>Jeśli zadasz celowi obrażenia za pomocą Testu ataku lub czaru, cel otrzymuje dodatkowe 1k8 obrażeń nekrotycznych (umiejętność<strong>Curse Resilience</strong>).</li></ul><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Jeśli rzucisz ten czar, używając komórki czaru kręgu 4, możesz utrzymywać na nim Koncentrację przez maksymalnie 10 minut. Jeśli użyjesz komórki czaru kręgu 5 lub wyższego, czar nie wymaga Koncentracji, a czas trwania wynosi 8 godzin (komórka kręgu 5–6) lub 24 godziny (komórka kręgu 7–8). Jeśli użyjesz komórki czaru kręgu 9, czar trwa, dopóki nie zostanie rozproszony.</p>",
       "activities": {
         "Curse Ability": {
           "name": "Przeklęta cecha"
@@ -807,7 +807,7 @@
       }
     },
     "Conjure Fey": {
-      "name": "Wyczarowanie Fey",
+      "name": "Wyczarowanie fey",
       "description": "<p>Przywołujesz Średnie widmo z Feywild w niezajętej przestrzeni, którą widzisz w zasięgu. Widmo trwa przez cały czas działania i wygląda jak istota typu Fey wybrana przez ciebie. Gdy widmo się pojawia, możesz wykonać jeden atak wręcz czarem przeciwko istocie w odległości 5 stóp od niego. Przy trafieniu cel otrzymuje Obrażenia Psychiczne równe 3k12 plus twój modyfikator z cechy bazowej rzucania czarów i ma stan &amp;Reference[Frightened] do początku swojej następnej tury, przy czym źródłem strachu jesteś zarówno ty, jak i widmo.</p><p>Akcją Dodatkową w późniejszych turach możesz teleportować widmo do niezajętej przestrzeni, którą widzisz w odległości 30 stóp od przestrzeni, którą opuściło, i wykonać atak przeciwko istocie w odległości 5 stóp od niego.</p><p><strong>Użycie Komórki Czarów Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k12 za każdy krąg czaru powyżej 6.</p>",
       "activities": {
         "Teleport and Attack": {
@@ -1214,7 +1214,7 @@
           "name": "Oślepiony, Ogłuchły"
         },
         "Deafened": {
-          "name": "Ogłuchły"
+          "name": "Głuchy"
         }
       }
     },
@@ -1516,7 +1516,7 @@
       }
     },
     "Fabricate": {
-      "name": "Produkcja",
+      "name": "Wytworzenie",
       "description": "<p>Przekształcasz surowce w produkty z tego samego materiału. Na przykład, możesz wytworzyć drewniany most z kępy drzew, linę z łanu konopi lub ubrania z lnu lub wełny.</p><p>Wybierz surowce, które widzisz w zasięgu. Możesz wytworzyć obiekt o rozmiarze Duży lub mniejszy (zawarty w Sześcianie o boku 10 stóp lub ośmiu połączonych Sześcianach o boku 5 stóp), jeśli masz wystarczającą ilość materiału. Jeśli jednak pracujesz z metalem, kamieniem lub inną substancją mineralną, wytworzony obiekt nie może być większy niż Średni (zawarty w Sześcianie o boku 5 stóp). Jakość wszelkich wytworzonych obiektów zależy od jakości surowców.</p><p>Istoty i magiczne przedmioty nie mogą być stworzone tym czarem. Nie możesz też użyć go do tworzenia przedmiotów wymagających wysokiego stopnia umiejętności — takich jak bronie i zbroje — chyba że posiadasz biegłość w typie Narzędzi Rzemieślniczych użytych do wytwarzania takich obiektów.</p>"
     },
     "Faerie Fire": {
@@ -3777,7 +3777,7 @@
       },
       "effects": {
         "Deafened": {
-          "name": "Ogłuchły"
+          "name": "Głuchy"
         }
       }
     },
@@ -3798,7 +3798,7 @@
       "materials": "marynowana macka i gałka oczna w pojemniku wyłożonym platyną wartym 400+ GP"
     },
     "Summon Beast": {
-      "name": "Przyzwanie bestii",
+      "name": "Przyzwanie Bestii",
       "description": "<p>Przywołujesz bestialne widmo, które manifestuje się w niezajętej przestrzeni, którą widzisz w zasięgu, i używa statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobBestialSpi]{Bestialnego Ducha}</strong>. Gdy rzucasz ten czar, wybierz środowisko: Powietrze, Ląd lub Woda. Stworzenie przypomina zwierzę twojego wyboru, które jest rodzime dla wybranego środowiska, co determinuje pewne szczegóły w jego bloku statystyk. Istota znika, gdy spadnie do 0 Punktów Wytrzymałości lub gdy czar się skończy.</p><p>Stworzenie jest sojusznikiem twoim oraz twoich sprzymierzeńców. W walce dzieli z tobą inicjatywę, ale wykonuje swoją turę natychmiast po tobie. Słucha twoich poleceń werbalnych (nie wymagając od ciebie Akcji). Jeśli nie wydasz żadnych poleceń, wykonuje Akcję Uniku i wykorzystuje swój ruch, by unikać zagrożeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Poziom komórki czaru określa poziom czaru w statystykach ducha.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>Oprócz wymienionych zastosowań poziomu czaru w cechach i akcjach ducha, następujące atrybuty również ulegają zmianie.</p><table><caption>Bestialne Widmo</caption><tbody><tr><td><strong>KP</strong></td><td>11 + poziom czaru</td></tr><tr><td><strong>Punkty Wytrzymałości</strong></td><td>20 (tylko Powietrze) lub 30 (tylko Ląd i Woda) + 5 za każdy poziom czaru powyżej 2.</td></tr><tr><td><strong>Szybkość</strong></td><td>30 stóp; Wspinaczka 30 stóp (tylko Ląd); Lot 60 stóp (tylko Powietrze); Pływanie 30 stóp (tylko Woda)</td></tr><tr><td><strong>Premia do Biegłości</strong></td><td>równa się twojej Premii do Biegłości</td></tr></tbody></table></article></section>",
       "materials": "pióro, kępa futra i ogon ryby w pozłacanym żołędziu wartym 200+ GP"
     },
@@ -3868,12 +3868,12 @@
       }
     },
     "Summon Fey": {
-      "name": "Przyzwanie Fey",
+      "name": "Przyzwanie fey",
       "description": "<p>Przywołujesz Widmo Fey, które manifestuje się w niezajętej przestrzeni, którą widzisz w zasięgu, i używa statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobFeySpirit0]{Ducha Fey}</strong>. Gdy rzucasz ten czar, wybierz nastrój: Wściekły, Wesoły lub Podstępny. Stworzenie przypomina istotę Fey twojego wyboru, naznaczoną wybranym nastrojem, co determinuje pewne szczegóły w jego bloku statystyk. Istota znika, gdy spadnie do 0 Punktów Wytrzymałości lub gdy czar się skończy.</p><p>Stworzenie jest sojusznikiem twoim oraz twoich sprzymierzeńców. W walce dzieli z tobą inicjatywę, ale wykonuje swoją turę natychmiast po tobie. Słucha twoich poleceń werbalnych (nie wymagając od ciebie Akcji). Jeśli nie wydasz żadnych poleceń, wykonuje Akcję &amp;Reference[dodge]{Unik} i wykorzystuje swój ruch, by unikać zagrożeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Poziom komórki czaru określa poziom czaru w statystykach ducha.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>Oprócz wymienionych zastosowań poziomu czaru w cechach i akcjach ducha, następujące atrybuty również ulegają zmianie.</p><table><caption>Widmo Fey</caption><tbody><tr><td><strong>KP</strong></td><td>12 + poziom czaru</td></tr><tr><td><strong>Punkty Wytrzymałości</strong></td><td>30 + 10 za każdy poziom czaru powyżej 3.</td></tr><tr><td><strong>Premia do Biegłości</strong></td><td>równa się twojej Premii do Biegłości</td></tr></tbody></table></article></section>",
       "materials": "pozłacany kwiat wart 300+ GP"
     },
     "Summon Fiend": {
-      "name": "Przyzwanie Czarta",
+      "name": "Przyzwanie czarta",
       "description": "<p>Przywołujesz Plugawne Widmo, które manifestuje się w niezajętej przestrzeni, którą widzisz w zasięgu, i używa statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobFiendishSp]{Plugawnego Ducha}</strong>. Gdy rzucasz ten czar, wybierz Demona, Diabła lub Yugolotha. Stworzenie przypomina Plugawego istotę wybranego typu, co determinuje pewne szczegóły w jego bloku statystyk. Istota znika, gdy spadnie do 0 Punktów Wytrzymałości lub gdy czar się skończy.</p><p>Stworzenie jest sojusznikiem twoim oraz twoich sprzymierzeńców. W walce dzieli z tobą inicjatywę, ale wykonuje swoją turę natychmiast po tobie. Słucha twoich poleceń werbalnych (nie wymagając od ciebie Akcji). Jeśli nie wydasz żadnych poleceń, wykonuje Akcję &amp;Reference[Dodge] i wykorzystuje swój ruch, by unikać zagrożeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Poziom komórki czaru określa poziom czaru w statystykach ducha.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>Oprócz wymienionych zastosowań poziomu czaru w cechach i akcjach ducha, następujące atrybuty również ulegają zmianie.</p><table><caption>Plugawne Widmo</caption><tbody><tr><td><strong>KP</strong></td><td>12 + poziom czaru</td></tr><tr><td><strong>Punkty Wytrzymałości</strong></td><td>50 (tylko Demon) lub 40 (tylko Diabeł) lub 60 (tylko Yugoloth) + 15 za każdy poziom czaru powyżej 6.</td></tr><tr><td><strong>Szybkość</strong></td><td>40 stóp; Wspinaczka 40 stóp (tylko Demon); Lot 60 stóp (tylko Diabeł)</td></tr><tr><td><strong>Premia do Biegłości</strong></td><td>równa się twojej Premii do Biegłości</td></tr></tbody></table></article></section>",
       "materials": "krwawy flakon wart 600+ GP",
       "activities": {
@@ -4146,7 +4146,7 @@
       "description": "<p>Ten czar tworzy magiczną więź między dużą lub większą nieożywioną rośliną w zasięgu a inną rośliną, w dowolnej odległości, na tej samej sferze istnienia. Musisz przynajmniej raz widzieć lub dotknąć rośliny docelowej. Przez czas trwania czaru każda istota może wejść w roślinę docelową i wyjść z rośliny przeznaczenia, wykorzystując 5 stóp ruchu.</p>"
     },
     "Tree Stride": {
-      "name": "Spacer między drzewami",
+      "name": "Podróż przez rośliny",
       "description": "<p>Zyskujesz zdolność wchodzenia do drzewa i przemieszczania się z wnętrza jednego drzewa do wnętrza innego drzewa tego samego typu w odległości do 150m (500 stóp). Oba drzewa muszą być żywe i przynajmniej tej samej wielkości co ty. Musisz użyć 5 stóp ruchu, aby wejść do drzewa. Natychmiastowo poznajesz lokalizację wszystkich innych drzew tego samego typu w promieniu 150m (500 stóp) i w ramach ruchu, który wykorzystujesz, aby wejść do drzewa, możesz przejść do jednego z tych drzew lub wyjść z drzewa, w którym się znajdujesz. Pojawiasz się w wybranym miejscu w odległości do 5 stóp od drzewa docelowego, wykorzystując kolejne 5 stóp ruchu. Jeśli nie masz już ruchu, pojawiasz się w odległości do 5 stóp od drzewa, do którego wszedłeś.</p><p>Możesz użyć tej zdolności transportu tylko raz w każdej turze. Musisz zakończyć każdą turę poza drzewem.</p>"
     },
     "True Polymorph": {
@@ -4267,7 +4267,7 @@
       }
     },
     "Wall of Force": {
-      "name": "Ściana energii",
+      "name": "Ściana Energii",
       "description": "<p>Niewidzialna ściana energii pojawia się w punkcie wybranym przez ciebie w zasięgu. Ściana pojawia się w dowolnej orientacji, jaką wybierzesz — jako pozioma lub pionowa bariera albo pod kątem. Może unosić się swobodnie lub opierać się na solidnej powierzchni. Możesz nadać jej kształt hemisferycznej kopuły lub kuli o promieniu do 10 stóp albo stworzyć płaską powierzchnię złożoną z maksymalnie dziesięciu paneli o wymiarach 10 stóp na 10 stóp (3m na 3m). Każdy panel musi stykać się z przynajmniej jednym innym panelem. W każdej formie ściana ma grubość 1/4 cala (0,6 cm) i trwa przez czas działania czaru. Jeśli ściana przecina przestrzeń zajmowaną przez istotę w chwili pojawienia się, istota zostaje wypchnięta na jedną stronę ściany (ty wybierasz, na którą).</p><p>Nic nie może fizycznie przeniknąć przez ścianę. Jest ona niewrażliwa na wszystkie obrażenia i nie może zostać rozproszona przez czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelMagi]{Rozproszenie magii}</em>. Czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDisintegra]{Dezintegracja}</em> niszczy ścianę natychmiast. Ściana rozciąga się także na Sferę Eteryczną, blokując eteryczne podróże przez nią.</p>",
       "materials": "odłamek szkła",
       "activities": {
@@ -4280,7 +4280,7 @@
       }
     },
     "Wall of Ice": {
-      "name": "Ściana lodu",
+      "name": "Ściana Lodu",
       "description": "<p>Tworzysz ścianę lodu na solidnej powierzchni w zasięgu. Możesz uformować ją w hemisferyczną kopułę lub kulę o promieniu do 10 stóp albo stworzyć płaską powierzchnię złożoną z maksymalnie dziesięciu paneli o wymiarach 10 stóp na 10 stóp (3m na 3m). Każdy panel musi stykać się z przynajmniej jednym innym panelem. W każdej formie ściana ma grubość 1 stopy (30 cm) i trwa przez czas działania czaru.</p><p>Jeśli ściana przecina przestrzeń zajmowaną przez istotę w chwili pojawienia się, istota zostaje wypchnięta na jedną stronę ściany (ty wybierasz, na którą) i wykonuje rzut obronny na Zręczność, otrzymując 10k6 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p>Ściana jest obiektem, który może zostać uszkodzony i tym samym przebity. Ma KP 12 i 30 Punktów Wytrzymałości na każde 10 stóp sekcji, posiada Niewrażliwość na obrażenia od zimna, trucizn i psychiczne oraz Podatność na obrażenia od ognia. Zmniejszenie sekcji 10 stóp ściany do 0 Punktów Wytrzymałości niszczy ją i pozostawia w miejscu, które zajmowała, warstwę lodowatego powietrza.</p><p>Istota przechodząca przez warstwę lodowatego powietrza po raz pierwszy w turze wykonuje rzut obronny na Kondycję, otrzymując 5k6 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zadawane przez ścianę w chwili pojawienia się zwiększają się o 2k6, a obrażenia od przejścia przez warstwę lodowatego powietrza zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 6.</p>",
       "materials": "kawałek kwarcu",
       "activities": {
@@ -4391,7 +4391,7 @@
       "effects": {
         "Cloud Form": {
           "name": "Forma chmury",
-          "description": "<p>Jedynymi akcjami, które cel może wykonać w tej formie, są akcja &amp;Reference[Dash] lub akcja Magiczna, aby rozpocząć powrót do normalnej formy. Powrót trwa 1 minutę, podczas której cel ma stan &amp;Reference[Stunned apply=false]. Do końca działania czaru cel może powrócić do formy chmury, co również wymaga akcji Magii, po której następuje 1-minutowa transformacja.</p>"
+          "description": "<p>Jedynymi akcjami, które cel może wykonać w tej formie, są akcja &amp;Reference[Dash] lub akcja Magiczna, aby rozpocząć powrót do normalnej formy. Powrót trwa 1 minutę, podczas której cel ma stan &amp;Reference[Stunned apply=false]. Do końca działania czaru cel może powrócić do formy chmury, co również wymaga akcji Magicznej, po której następuje 1-minutowa transformacja.</p>"
         }
       }
     },
