@@ -706,7 +706,7 @@
     },
     "Color Spray": {
       "name": "Kolorowy rozprysk",
-      "description": "<p>Wysyłasz olśniewającą wiązkę migającego, kolorowego światła. Każda istota w Stożku o zasięgu 15 stóp wychodzącym od ciebie musi wykonać rzut obronny na Kondycję, w przeciwnym razie otrzyma stan &amp;Reference[blinded apply=false]{Oślepiony} do końca swojej następnej tury.</p>",
+      "description": "<p>Wysyłasz olśniewającą wiązkę migającego, kolorowego światła. Każda istota w Stożku o zasięgu 15 stóp wychodzącym z ciebie musi wykonać rzut obronny na Kondycję. W przypadku porażki ma stan &Reference[blinded apply=false] do końca swojej następnej tury.</p>",
       "materials": "szczypta kolorowego piasku",
       "effects": {
         "Blinded": {
