@@ -568,7 +568,7 @@
     },
     "Blindness/Deafness": {
       "name": "Głuchota/Ślepota",
-      "description": "<p>Jedna istota, którą widzisz w zasięgu, musi zdać rzut obronny na Kondycję, inaczej ma stan &amp;Reference[Blinded apply=false] lub &amp;Reference[Deafened apply=false] (twój wybór) przez czas trwania czaru. Na końcu każdej swojej tury cel powtarza rzut obronny, kończąc czar na sobie przy sukcesie.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 2.</p>",
+      "description": "<p>Jedna istota, którą widzisz w zasięgu, musi wykonać rzut obronny na Kondycję. W przypadku porażki ma stan &Reference[Blinded apply=false] lub &Reference[Deafened apply=false] (twój wybór) przez czas trwania czaru. Na koniec każdej swojej tury cel powtarza ten rzut obronny; w przypadku sukcesu kończy on ten efekt na sobie.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 2.</p>",
       "effects": {
         "Blindness": {
           "name": "Ślepota",
