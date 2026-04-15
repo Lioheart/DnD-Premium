@@ -334,7 +334,7 @@
     },
     "Aura of Life": {
       "name": "Aura życia",
-      "description": "<p>Przez czas trwania czaru roztaczasz wokół siebie aurę w Emanacji o promieniu 30 stóp. Ty oraz twoi sojusznicy znajdujący się wewnątrz aury zyskujecie Odporność na obrażenia nekrotyczne, a wasze maksymalne Punkty Wytrzymałości nie mogą zostać zmniejszone. Ponadto, jeśli sojusznik mający 0 Punktów Wytrzymałości rozpoczyna swoją turę w aurze, odzyskuje on 1 Punkt Wytrzymałości.</p>",
+      "description": "<p>Przez czas trwania czaru roztaczasz wokół siebie aurę w Emanacji o zasięgu 30 stóp. Ty oraz twoi sojusznicy znajdujący się wewnątrz aury zyskujecie Odporność na obrażenia nekrotyczne, a wasze maksymalne Punkty Wytrzymałości nie mogą zostać zmniejszone. Ponadto, jeśli sojusznik mający 0 Punktów Wytrzymałości rozpoczyna swoją turę w aurze, odzyskuje on 1 Punkt Wytrzymałości.</p>",
       "activities": {
         "Create Aura": {
           "name": "Utwórz aurę"
@@ -349,7 +349,7 @@
     },
     "Aura of Purity": {
       "name": "Aura czystości",
-      "description": "<p>Przez czas trwania czaru roztaczasz wokół siebie aurę w Emanacji o promieniu 30 stóp. Ty oraz twoi sojusznicy znajdujący się wewnątrz aury zyskujecie Odporność na obrażenia od trucizn oraz Ułatwienie w rzutach obronnych przeciwko efektom nakładającym następujące stany: &amp;Reference[Blinded apply=false], &amp;Reference[Charmed apply=false], &amp;Reference[Deafened apply=false], &amp;Reference[Frightened apply=false], &amp;Reference[Paralyzed apply=false], &amp;Reference[Poisoned apply=false] lub &amp;Reference[Stunned apply=false].</p>",
+      "description": "<p>Przez czas trwania czaru roztaczasz wokół siebie aurę w Emanacji o zasięgu 30 stóp. Ty oraz twoi sojusznicy znajdujący się wewnątrz aury zyskujecie Odporność na obrażenia od trucizn oraz Ułatwienie w rzutach obronnych przeciwko efektom nakładającym następujące stany: &amp;Reference[Blinded apply=false], &amp;Reference[Charmed apply=false], &amp;Reference[Deafened apply=false], &amp;Reference[Frightened apply=false], &amp;Reference[Paralyzed apply=false], &amp;Reference[Poisoned apply=false] lub &amp;Reference[Stunned apply=false].</p>",
       "activities": {
         "Create Aura": {
           "name": "Utwórz aurę"
@@ -364,7 +364,7 @@
     },
     "Aura of Vitality": {
       "name": "Aura witalności",
-      "description": "<p>Przez czas trwania czaru roztaczasz wokół siebie aurę w Emanacji o promieniu 30 stóp. W momencie rzucenia czaru oraz na początku każdej swojej tury, dopóki aura trwa, możesz przywrócić [[/healing 2d6 type=healing]]{2k6 Punktów Wytrzymałości} jednej istocie znajdującej się wewnątrz aury.</p>",
+      "description": "<p>Przez czas trwania czaru roztaczasz wokół siebie aurę w Emanacji o zasięgu 30 stóp. W momencie rzucenia czaru oraz na początku każdej swojej tury, dopóki aura trwa, możesz przywrócić [[/healing 2d6 type=healing]]{2k6 Punktów Wytrzymałości} jednej istocie znajdującej się wewnątrz aury.</p>",
       "activities": {
         "Create Aura": {
           "name": "Utwórz aurę"
@@ -818,7 +818,7 @@
     },
     "Conjure Minor Elementals": {
       "name": "Wyczarowanie mniejszych żywiołaków",
-      "description": "<p>Przywołujesz Widma z Sfer Żywiołów, które krążą wokół ciebie w Emanacji o promieniu 15 stóp przez cały czas działania. Do końca trwania czaru każdy twój atak zadaje dodatkowe 2k8 obrażeń, gdy trafi istotę w tej Emanacji. Te obrażenia są od kwasu, od zimna, od ognia lub od elektryczności (twój wybór, gdy wykonujesz atak).</p><p>Dodatkowo podłoże w Emanacji stanowi dla twoich wrogów &amp;Reference[DifficultTerrain].</p><p><strong>Użycie Komórki Czarów Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg czaru powyżej 4.</p>",
+      "description": "<p>Przywołujesz Widma z Sfer Żywiołów, które krążą wokół ciebie w Emanacji o zasięgu 15 stóp przez cały czas działania. Do końca trwania czaru każdy twój atak zadaje dodatkowe 2k8 obrażeń, gdy trafi istotę w tej Emanacji. Te obrażenia są od kwasu, od zimna, od ognia lub od elektryczności (twój wybór, gdy wykonujesz atak).</p><p>Dodatkowo podłoże w Emanacji stanowi dla twoich wrogów &amp;Reference[DifficultTerrain].</p><p><strong>Użycie Komórki Czarów Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg czaru powyżej 4.</p>",
       "activities": {
         "Bonus Attack Damage": {
           "name": "Dodatkowe obrażenia od ataku"
@@ -992,7 +992,7 @@
     },
     "Crusader's Mantle": {
       "name": "Płaszcz krzyżowca",
-      "description": "<p>Promieniujesz magiczną aurą w Emanacji o promieniu 30 stóp. Będąc w aurze, ty i twoi sojusznicy zadajecie dodatkowe 1k4 obrażeń od Światłości przy trafieniu bronią lub Walką bez Broni.</p>",
+      "description": "<p>Promieniujesz magiczną aurą w Emanacji o zasięgu 30 stóp. Będąc w aurze, ty i twoi sojusznicy zadajecie dodatkowe 1k4 obrażeń od Światłości przy trafieniu bronią lub Walką bez Broni.</p>",
       "effects": {
         "Crusader’s Mantle": {
           "name": "Płaszcz krzyżowca"
@@ -4442,7 +4442,7 @@
     },
     "Word of Radiance": {
       "name": "Słowo blasku",
-      "description": "<p>Płonąca światłość wybucha z ciebie w Emanacji o promieniu 5 stóp. Każda wybrana przez Ciebie istota, którą widzisz w jej zasięgu, musi zdać rzut obronny na Kondycję, w przeciwnym razie otrzymuje 1k6 obrażeń od światłości.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k6, gdy osiągniesz poziomy 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
+      "description": "<p>Płonąca światłość wybucha z ciebie w Emanacji o zasięgu 5 stóp. Każda wybrana przez Ciebie istota, którą widzisz w jej zasięgu, musi zdać rzut obronny na Kondycję, w przeciwnym razie otrzymuje 1k6 obrażeń od światłości.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k6, gdy osiągniesz poziomy 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
       "materials": "żeton w kształcie rozbłysku słońca"
     },
     "Word of Recall": {
@@ -4470,7 +4470,7 @@
     },
     "Yolande's Regal Presence": {
       "name": "Królewska obecność Yolandy",
-      "description": "<p>Otaczasz się nieziemskim majestatem w Emanacji o promieniu 10 stóp. Za każdym razem, gdy Emanacja znajdzie się w przestrzeni istoty, którą widzisz, oraz gdy istota, którą widzisz, znajdzie się w Emanacji lub zakończy w niej swoją turę, możesz zmusić ją do wykonania rzutu obronnego na Mądrość. Przy nieudanym rzucie cel otrzymuje 4k6 obrażeń psychicznych, ma stan &amp;Reference[Prone] oraz możesz odepchnąć go do 10 stóp od siebie. Przy udanym rzucie cel otrzymuje tylko połowę tych obrażeń. Istota wykonuje ten rzut tylko raz na turę.</p>",
+      "description": "<p>Otaczasz się nieziemskim majestatem w Emanacji o zasięgu 10 stóp. Za każdym razem, gdy Emanacja znajdzie się w przestrzeni istoty, którą widzisz, oraz gdy istota, którą widzisz, znajdzie się w Emanacji lub zakończy w niej swoją turę, możesz zmusić ją do wykonania rzutu obronnego na Mądrość. Przy nieudanym rzucie cel otrzymuje 4k6 obrażeń psychicznych, ma stan &amp;Reference[Prone] oraz możesz odepchnąć go do 10 stóp od siebie. Przy udanym rzucie cel otrzymuje tylko połowę tych obrażeń. Istota wykonuje ten rzut tylko raz na turę.</p>",
       "materials": "miniaturowa tiara",
       "activities": {
         "Surround Self": {
