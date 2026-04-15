@@ -647,7 +647,7 @@
       "effects": {
         "Charmed": {
           "name": "Zauroczony",
-          "description": "<p>Cel otrzymuje stan &amp;Reference[charmed apply=false] do momentu zakończenia działania czaru lub do chwili, gdy ty lub twoi sojusznicy zadacie mu obrażenia. Zauroczona istota jest wobec ciebie Przyjazna. Gdy czar się kończy, cel wie, że został przez ciebie Zauroczony.</p>"
+          "description": "<p>Cel ma stan &Reference[charmed apply=false]{Zauroczony} do czasu zakończenia czaru lub do momentu, w którym ty lub twoi sojusznicy zadacie mu obrażenia. Zauroczona istota jest wobec ciebie Przyjazna. Kiedy działanie czaru dobiega końca, cel wie, że został przez ciebie Zauroczony.</p>"
         }
       }
     },
