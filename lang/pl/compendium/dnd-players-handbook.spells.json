@@ -633,7 +633,7 @@
     },
     "Charm Monster": {
       "name": "Zauroczenie potwora",
-      "description": "<p>Jedna istota, którą widzisz w zasięgu, wykonuje rzut obronny na Mądrość. Robi to z Ułatwieniem, jeśli ty lub twoi sojusznicy z nią walczycie. Przy nieudanym rzucie cel ma stan &amp;Reference[Charmed apply=false]{Zauroczony} do czasu zakończenia czaru lub do momentu, gdy ty lub twoi sojusznicy ją zranią. Zauroczona istota jest wobec ciebie Przyjazna. Gdy czar się kończy, cel wie, że został przez Ciebie Zauroczony.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wskazać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 4.</p>",
+      "description": "<p>Jedna istota, którą widzisz w zasięgu, musi wykonać rzut obronny na Mądrość. Wykonuje go z Ułatwieniem, jeśli walczy z tobą lub z twoimi sojusznikami. W przypadku porażki ma stan &Reference[Charmed apply=false]{Zauroczony} do czasu zakończenia czaru lub do momentu, w którym otrzyma obrażenia od ciebie lub twoich sojuszników. Zauroczona istota jest wobec ciebie Przyjazna. Kiedy działanie czaru dobiega końca, cel wie, że został przez ciebie Zauroczony..</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wskazać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 4.</p>",
       "effects": {
         "Charmed": {
           "name": "Zauroczony",
