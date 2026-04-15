@@ -643,7 +643,7 @@
     },
     "Charm Person": {
       "name": "Zauroczenie osoby",
-      "description": "<p>Jeden Humanoid, którego widzisz w zasięgu, wykonuje rzut obronny na Mądrość. Robi to z Ułatwieniem, jeśli ty lub twoi sojusznicy z nim walczycie. Przy nieudanym rzucie cel ma stan &amp;Reference[charmed apply=false]{Zauroczony} do czasu zakończenia czaru lub do momentu, gdy ty lub twoi sojusznicy go zranią. Zauroczona istota jest wobec ciebie Przyjazna. Gdy czar się kończy, cel wie, że został przez ciebie Zauroczony.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wskazać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
+      "description": "<p>Jeden humanoid, którego widzisz w zasięgu, musi wykonać rzut obronny na Mądrość. Wykonuje go z Ułatwieniem, jeśli walczy z tobą lub twoimi sojuszników. W przypadku porażki ma stan &Reference[charmed apply=false]{Zauroczony} do czasu zakończenia czaru lub do momentu, w którym ty lub twoi sojusznicy zadacie mu obrażenia. Zauroczona istota jest wobec ciebie Przyjazna. Kiedy działanie czaru dobiega końca, cel wie, że został przez ciebie Zauroczony.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wskazać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
       "effects": {
         "Charmed": {
           "name": "Zauroczony",
