@@ -577,7 +577,7 @@
     },
     "Bardic Inspiration": {
       "name": "Bardowska inspiracja",
-      "description": "<p>Możesz nadnaturalnie inspirować innych słowami, muzyką lub tańcem. Inspiracja ta jest reprezentowana przez twoją kość Bardowskiej Inspiracji, która początkowo jest k6 (obecnie [[lookup @scale.bard.inspiration.die]]).</p><p><strong>Użycie Bardowskiej Inspiracji.</strong> Akcją Dodatkową możesz zainspirować inną istotę w promieniu 60 stóp, która cię widzi lub słyszy. Ta istota otrzymuje jedną z twoich kości Bardowskiej Inspiracji. Istota może mieć tylko jedną kość Bardowskiej Inspiracji naraz.</p><p>Raz w ciągu następnej godziny, gdy istocie nie powiedzie się w test k20, może rzucić kością Bardowskiej Inspiracji i dodać wynik do k20, co może zamienić niepowodzenie w sukces. Kość Bardowskiej Inspiracji zostaje zużyta w momencie jej rzucenia.</p><p><strong>Liczba Użyć.</strong> Możesz przyznać kość Bardowskiej Inspiracji liczbę razy równą swojemu modyfikatorowi Charyzmy (minimum raz). Odzyskujesz wszystkie zużyte użycia po zakończeniu Długiego odpoczynku.</p><p><strong>Na wyższych poziomach.</strong> Twoja kość Bardowskiej Inspiracji zmienia się, gdy osiągasz określone poziomy Barda, jak pokazano w kolumnie „Kość Inspiracji” w tabeli Zdolności Barda. Kość staje się k8 na 5. poziomie, k10 na 10. poziomie i k12 na 15. poziomie.</p><section class=\"secret\" id=\"secret-PtUXhUXS84HSdaew\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt do śledzenia, kiedy postać ma dostępną Bardowską Inspirację do użycia.</p><p>Odzyskiwanie jest ustawione na długi odpoczynek (dla poziomów przed uzyskaniem @UUID[Compendium.dnd-players-handbook.classes.Item.phbbrdFontOfInsp]). Dostosuj ręcznie w razie potrzeby.</p></section>",
+      "description": "<p>Możesz nadnaturalnie inspirować innych słowami, muzyką lub tańcem. Inspiracja ta jest reprezentowana przez twoją kość Bardowskiej inspiracji, która początkowo jest k6 (obecnie [[lookup @scale.bard.inspiration.die]]).</p><p><strong>Użycie Bardowskiej inspiracji.</strong> Akcją Dodatkową możesz zainspirować inną istotę w promieniu 60 stóp, która cię widzi lub słyszy. Ta istota otrzymuje jedną z twoich kości Bardowskiej inspiracji. Istota może mieć tylko jedną kość Bardowskiej inspiracji naraz.</p><p>Raz w ciągu następnej godziny, gdy istocie nie powiedzie się w test k20, może rzucić kością Bardowskiej inspiracji i dodać wynik do k20, co może zamienić niepowodzenie w sukces. Kość Bardowskiej inspiracji zostaje zużyta w momencie jej rzucenia.</p><p><strong>Liczba Użyć.</strong> Możesz przyznać kość Bardowskiej inspiracji liczbę razy równą swojemu modyfikatorowi Charyzmy (minimum raz). Odzyskujesz wszystkie zużyte użycia po zakończeniu Długiego odpoczynku.</p><p><strong>Na wyższych poziomach.</strong> Twoja kość Bardowskiej inspiracji zmienia się, gdy osiągasz określone poziomy Barda, jak pokazano w kolumnie „Kość Inspiracji” w tabeli Zdolności Barda. Kość staje się k8 na 5. poziomie, k10 na 10. poziomie i k12 na 15. poziomie.</p><section class=\"secret\" id=\"secret-PtUXhUXS84HSdaew\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt do śledzenia, kiedy postać ma dostępną Bardowską Inspirację do użycia.</p><p>Odzyskiwanie jest ustawione na długi odpoczynek (dla poziomów przed uzyskaniem @UUID[Compendium.dnd-players-handbook.classes.Item.phbbrdFontOfInsp]). Dostosuj ręcznie w razie potrzeby.</p></section>",
       "activities": {
         "Inspire": {
           "name": "Inspiruj",
@@ -587,7 +587,7 @@
       "effects": {
         "Inspired": {
           "name": "Zainspirowany",
-          "description": "<p>Otrzymujesz Bardowską Inspirację. Raz w ciągu następnej godziny, gdy nie powiedzie ci się test k20, możesz rzucić kością Bardowskiej Inspiracji i dodać wyrzucony wynik do k20, co może zamienić niepowodzenie w sukces. Kość Bardowskiej Inspiracji zostaje zużyta w momencie jej rzucenia.</p>"
+          "description": "<p>Otrzymujesz Bardowską Inspirację. Raz w ciągu następnej godziny, gdy nie powiedzie ci się test k20, możesz rzucić kością Bardowskiej inspiracji i dodać wyrzucony wynik do k20, co może zamienić niepowodzenie w sukces. Kość Bardowskiej inspiracji zostaje zużyta w momencie jej rzucenia.</p>"
         }
       }
     },
@@ -1093,7 +1093,7 @@
         },
         "Dazzling Footwork": {
           "title": "Olśniewająca praca nóg",
-          "hint": "Ten przedmiot do Walki bez broni wykorzystuje Zręczność lub Siłę (w zależności od tego, która jest wyższa) i używa twojej Kości Bardowskiej Inspiracji do zadawania obrażeń zamiast normalnych obrażeń."
+          "hint": "Ten przedmiot do Walki bez broni wykorzystuje Zręczność lub Siłę (w zależności od tego, która jest wyższa) i używa twojej Kości Bardowskiej inspiracji do zadawania obrażeń zamiast normalnych obrażeń."
         }
       }
     },
@@ -1278,7 +1278,7 @@
     },
     "Cutting Words": {
       "name": "Cięta riposta",
-      "description": "<p>Uczysz się wykorzystywać swoje poczucie humoru, by w nadnaturalny sposób rozpraszać, dezorientować i osłabiać pewność siebie oraz kompetencje innych. Gdy stworzenie, które widzisz w odległości do 60 stóp od siebie, wykonuje rzut na obrażenia lub odnosi sukces w teście cechy albo teście ataku, możesz Reakcją zużyć jedno użycie swojej Bardowskiej Inspiracji; rzuć kością Bardowskiej Inspiracji i odejmij uzyskany wynik od rzutu stworzenia, zmniejszając zadane obrażenia lub potencjalnie zamieniając sukces w porażkę</p>",
+      "description": "<p>Uczysz się wykorzystywać swoje poczucie humoru, by w nadnaturalny sposób rozpraszać, dezorientować i osłabiać pewność siebie oraz kompetencje innych. Gdy stworzenie, które widzisz w odległości do 60 stóp od siebie, wykonuje rzut na obrażenia lub odnosi sukces w teście cechy albo teście ataku, możesz Reakcją zużyć jedno użycie swojej Bardowskiej inspiracji; rzuć kością Bardowskiej inspiracji i odejmij uzyskany wynik od rzutu stworzenia, zmniejszając zadane obrażenia lub potencjalnie zamieniając sukces w porażkę</p>",
       "activities": {
         "Cut with Words": {
           "name": "Cięta riposta",
@@ -1319,7 +1319,7 @@
     },
     "Dazzling Footwork": {
       "name": "Olśniewająca praca nóg",
-      "description": "<p>Gdy nie nosisz pancerza ani nie dzierżysz Tarczy, zyskujesz następujące korzyści.</p><p><strong>Wirtuoz Tańca.</strong> Masz Ułatwienie na każdym teście Charyzmy (Występy), który wykonujesz i który obejmuje twój taniec.</p><p><strong>Obrona bez pancerza.</strong> Twoja podstawowa Klasa Pancerza wynosi 10 plus modyfikatory Zręczności i Charyzmy.</p><p><strong>Zwinne uderzenia.</strong> Gdy zużyjesz użycie swojej Bardowskiej Inspiracji jako część Akcji, Akcji Dodatkowej lub Reakcji, możesz wykonać jedno Uderzenie bez broni jako część tej Akcji, Akcji Dodatkowej lub Reakcji.</p><p><strong>Bardowskie obrażenia.</strong> Możesz używać Zręczności zamiast Siły do testów ataku Uderzeń bez broni. Gdy zadajesz obrażenia Uderzeniem bez broni, możesz zadać obrażenia obuchowe równe rzutowi twoją Kością Bardowskiej Inspiracji plus modyfikator Zręczności, zamiast normalnych obrażeń uderzenia. Ten rzut nie zużywa kości.</p><section class=\"secret\" id=\"secret-edFgTVLwqcuabKeK\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha zawiera Efekt Aktywny, który ustawia twoją Obronę bez pancerza i może być wyłączony, jeśli wolisz używać pancerza.</p><p>Aktywność <strong>Uderzenie bez broni</strong> używa Zręczności i Kości Bardowskiej Inspiracji do obrażeń.</p><p>Otrzymujesz także przedmiot <strong>Uderzenie bez broni</strong>, który zawiera te zmiany.</p></section>",
+      "description": "<p>Gdy nie nosisz pancerza ani nie dzierżysz Tarczy, zyskujesz następujące korzyści.</p><p><strong>Wirtuoz Tańca.</strong> Masz Ułatwienie na każdym teście Charyzmy (Występy), który wykonujesz i który obejmuje twój taniec.</p><p><strong>Obrona bez pancerza.</strong> Twoja podstawowa Klasa Pancerza wynosi 10 plus modyfikatory Zręczności i Charyzmy.</p><p><strong>Zwinne uderzenia.</strong> Gdy zużyjesz użycie swojej Bardowskiej inspiracji jako część Akcji, Akcji Dodatkowej lub Reakcji, możesz wykonać jedno Uderzenie bez broni jako część tej Akcji, Akcji Dodatkowej lub Reakcji.</p><p><strong>Bardowskie obrażenia.</strong> Możesz używać Zręczności zamiast Siły do testów ataku Uderzeń bez broni. Gdy zadajesz obrażenia Uderzeniem bez broni, możesz zadać obrażenia obuchowe równe rzutowi twoją Kością Bardowskiej inspiracji plus modyfikator Zręczności, zamiast normalnych obrażeń uderzenia. Ten rzut nie zużywa kości.</p><section class=\"secret\" id=\"secret-edFgTVLwqcuabKeK\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha zawiera Efekt Aktywny, który ustawia twoją Obronę bez pancerza i może być wyłączony, jeśli wolisz używać pancerza.</p><p>Aktywność <strong>Uderzenie bez broni</strong> używa Zręczności i Kości Bardowskiej inspiracji do obrażeń.</p><p>Otrzymujesz także przedmiot <strong>Uderzenie bez broni</strong>, który zawiera te zmiany.</p></section>",
       "activities": {
         "Unarmed Strike": {
           "name": "Uderzenie bez broni"
@@ -2243,7 +2243,7 @@
     },
     "Font of Inspiration": {
       "name": "Źródło inspiracji",
-      "description": "<p>Teraz odzyskujesz wszystkie zużyte użycia Bardowskiej Inspiracji po zakończeniu Krótkiego lub Długiego Odpoczynku.</p><p>Dodatkowo możesz zużyć komórkę czaru (bez konieczności użycia akcji), aby odzyskać jedno zużyte użycie Bardowskiej Inspiracji.</p><section class=\"secret\" id=\"secret-KgQeVfHTLTrKK1s0\"><p><strong>Notatka Foundry</strong></p><p>Musisz zaktualizować zdolność Bardowskiej Inspiracji na swojej karcie postaci, aby odnawiała się po Krótkim Odpoczynku, ponieważ domyślnie jest ustawiona na Długi Odpoczynek.</p><p>Aktywność <strong>Odnowa za pomocą Komórki Czaru</strong> zużyje komórkę czaru i przyzna dodatkowe użycie Bardowskiej Inspiracji.</p></section>",
+      "description": "<p>Teraz odzyskujesz wszystkie zużyte użycia Bardowskiej inspiracji po zakończeniu Krótkiego lub Długiego Odpoczynku.</p><p>Dodatkowo możesz zużyć komórkę czaru (bez konieczności użycia akcji), aby odzyskać jedno zużyte użycie Bardowskiej inspiracji.</p><section class=\"secret\" id=\"secret-KgQeVfHTLTrKK1s0\"><p><strong>Notatka Foundry</strong></p><p>Musisz zaktualizować zdolność Bardowskiej inspiracji na swojej karcie postaci, aby odnawiała się po Krótkim Odpoczynku, ponieważ domyślnie jest ustawiona na Długi Odpoczynek.</p><p>Aktywność <strong>Odnowa za pomocą Komórki Czaru</strong> zużyje komórkę czaru i przyzna dodatkowe użycie Bardowskiej inspiracji.</p></section>",
       "activities": {
         "Recharge with Spell Slot": {
           "name": "Odnów za pomocą Komórki czarów"
@@ -2696,7 +2696,7 @@
     },
     "Inspiring Movement": {
       "name": "Inspirujący ruch",
-      "description": "<p>Kiedy wróg, którego widzisz, kończy swoją turę w odległości 5 stóp od ciebie, możesz wykorzystać Reakcję i zużyć jedno użycie swojej Bardowskiej Inspiracji, aby poruszyć się do połowy swojej Szybkości (obecnie [[lookup @attributes.movement.walk]]). Następnie jeden sojusznik twojego wyboru w promieniu 30 stóp również może poruszyć się do połowy swojej Szybkości, używając swojej Reakcji.</p><p>Żaden ruch wynikający z tej zdolności nie prowokuje Ataków okazyjnych.</p>",
+      "description": "<p>Kiedy wróg, którego widzisz, kończy swoją turę w odległości 5 stóp od ciebie, możesz wykorzystać Reakcję i zużyć jedno użycie swojej Bardowskiej inspiracji, aby poruszyć się do połowy swojej Szybkości (obecnie [[lookup @attributes.movement.walk]]). Następnie jeden sojusznik twojego wyboru w promieniu 30 stóp również może poruszyć się do połowy swojej Szybkości, używając swojej Reakcji.</p><p>Żaden ruch wynikający z tej zdolności nie prowokuje Ataków okazyjnych.</p>",
       "activities": {
         "Move": {
           "name": "Przesuń",
@@ -2988,7 +2988,7 @@
     },
     "Mantle of Inspiration": {
       "name": "Opończa inspiracji",
-      "description": "<p>Potrafisz tkać magię fey w pieśń lub taniec, aby napełnić innych wigorem. Akcją Dodatkową możesz zużyć jedno użycie Bardowskiej Inspiracji, rzucając kością Bardowskiej Inspiracji. Gdy to zrobisz, wybierz liczbę innych stworzeń w promieniu 60 stóp od siebie, równą twojemu modyfikatorowi Charyzmy (minimum jedno stworzenie, obecnie [[lookup @abilities.cha.mod]]). Każde z tych stworzeń zyskuje liczbę Tymczasowych Punktów Wytrzymałości równą dwukrotności wyniku rzutu kością Bardowskiej Inspiracji, a następnie każde może użyć swojej Reakcji, aby poruszyć się do swojej Szybkości, nie prowokując Ataków Okazyjnych.</p>"
+      "description": "<p>Potrafisz tkać magię fey w pieśń lub taniec, aby napełnić innych wigorem. Akcją Dodatkową możesz zużyć jedno użycie Bardowskiej inspiracji, rzucając kością Bardowskiej inspiracji. Gdy to zrobisz, wybierz liczbę innych stworzeń w promieniu 60 stóp od siebie, równą twojemu modyfikatorowi Charyzmy (minimum jedno stworzenie, obecnie [[lookup @abilities.cha.mod]]). Każde z tych stworzeń zyskuje liczbę Tymczasowych Punktów Wytrzymałości równą dwukrotności wyniku rzutu kością Bardowskiej inspiracji, a następnie każde może użyć swojej Reakcji, aby poruszyć się do swojej Szybkości, nie prowokując Ataków Okazyjnych.</p>"
     },
     "Mantle of Majesty": {
       "name": "Opończa majestatu",
@@ -3569,7 +3569,7 @@
     },
     "Peerless Skill": {
       "name": "Niezrównana umiejętność",
-      "description": "<p>Gdy wykonasz test cechy lub test ataku i poniesiesz porażkę, możesz zużyć jedno użycie Bardowskiej Inspiracji; rzuć kością Bardowskiej Inspiracji i dodaj uzyskany wynik do rzutu k20, co może zamienić porażkę w sukces. Jeśli mimo to test zakończy się niepowodzeniem, użycie Bardowskiej Inspiracji nie zostaje zużyte.</p>",
+      "description": "<p>Gdy wykonasz test cechy lub test ataku i poniesiesz porażkę, możesz zużyć jedno użycie Bardowskiej inspiracji; rzuć kością Bardowskiej inspiracji i dodaj uzyskany wynik do rzutu k20, co może zamienić porażkę w sukces. Jeśli mimo to test zakończy się niepowodzeniem, użycie Bardowskiej inspiracji nie zostaje zużyte.</p>",
       "activities": {
         "utility": {
           "roll": "Bardowska inspiracja",
@@ -4699,7 +4699,7 @@
     },
     "Superior Inspiration": {
       "name": "Pierwszorzędna inspiracja",
-      "description": "<p>Kiedy wykonujesz rzut na Inicjatywę, odzyskujesz zużyte użycia Bardowskiej Inspiracji, maksymalnie do dwóch, jeśli masz ich mniej.</p>"
+      "description": "<p>Kiedy wykonujesz rzut na Inicjatywę, odzyskujesz zużyte użycia Bardowskiej inspiracji, maksymalnie do dwóch, jeśli masz ich mniej.</p>"
     },
     "Supreme Healing": {
       "name": "Niezwykłe uzdrawianie",
@@ -4769,7 +4769,7 @@
     },
     "Tandem Footwork": {
       "name": "Synchroniczna praca nóg",
-      "description": "<p>Kiedy wykonujesz rzut na Inicjatywę, możesz zużyć jedno użycie swojej Bardowskiej Inspiracji, jeśli nie masz stanu &amp;Reference[Incapacitated]{Obezwładniony}. Gdy to zrobisz, rzuć kością swojej Bardowskiej Inspiracji; ty oraz każdy sojusznik w promieniu 30 stóp, który cię widzi lub słyszy, otrzymuje premię do Inicjatywy równą wyrzuconej wartości.</p><section class=\"secret\" id=\"secret-nQrxfDcx2JC1jNO2\"><p><strong>Foundry – Notatka</strong></p><p>Użycie tej zdolności zużyje jedno użycie twojej Bardowskiej Inspiracji.</p></section>",
+      "description": "<p>Kiedy wykonujesz rzut na Inicjatywę, możesz zużyć jedno użycie swojej Bardowskiej inspiracji, jeśli nie masz stanu &amp;Reference[Incapacitated]{Obezwładniony}. Gdy to zrobisz, rzuć kością swojej Bardowskiej inspiracji; ty oraz każdy sojusznik w promieniu 30 stóp, który cię widzi lub słyszy, otrzymuje premię do Inicjatywy równą wyrzuconej wartości.</p><section class=\"secret\" id=\"secret-nQrxfDcx2JC1jNO2\"><p><strong>Foundry – Notatka</strong></p><p>Użycie tej zdolności zużyje jedno użycie twojej Bardowskiej inspiracji.</p></section>",
       "activities": {
         "Initiative Bonus": {
           "name": "Premia do Inicjatywy",
