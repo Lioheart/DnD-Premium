@@ -764,7 +764,7 @@
     },
     "Confusion": {
       "name": "Zamęt",
-      "description": "<p>Każda istota w Sferze o promieniu 10 stóp, skupionej na punkcie wybranym przez ciebie w zasięgu, musi wykonać rzut obronny na Mądrość, w przeciwnym razie ten cel nie może wykonywać Akcji Dodatkowych ani Reakcji i musi rzucić 1k10 na początku każdej swojej tury, aby określić swoje zachowanie w tej turze, odwołując się do poniższej tabeli.</p><p>@Embed[Compendium.dnd-players-handbook.tables.RollTable.phbsplConfusionB rollable cite=false classes=\"caption-top\"]{Zachowanie w turze}</p><p>Pod koniec każdej swojej tury dotknięty cel powtarza rzut obronny, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Promień Sfery zwiększa się o 5 stóp za każdy krąg komórki czaru powyżej 4.</p>",
+      "description": "<p>Każda istota znajdująca się wewnątrz sfery o promieniu 10 stóp, wyznaczonej wokół wskazanego przez ciebie punktu w zasięgu czaru, musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia cel traci możliwość wykonywania Akcji dodatkowej oraz Reakcji oraz na początku każdej swojej tury musi rzucić 1k10, aby określić swoje zachowanie, korzystając z poniższej tabeli.</p><p>@@Embed[Compendium.dnd5e.tables24.RollTable.phbsplConfusionB rollable cite=false classes=\"caption-top\"]{Behavior for the Turn}{Zachowanie w turze}</p><p>Pod koniec każdej swojej tury dotknięty czarem cel powtarza rzut obronny, kończąc działanie efektu na sobie w przypadku sukcesu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu</strong> Promień sfery zwiększa się o 5 stóp za każdy krąg komórki czaru powyżej 4.</p>",
       "materials": "trzy skorupki orzechów",
       "effects": {
         "Confused": {
