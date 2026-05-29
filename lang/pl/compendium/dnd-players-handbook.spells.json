@@ -1541,7 +1541,7 @@
     },
     "Fear": {
       "name": "Strach",
-      "description": "<p>Każda istota w Stożku o zasięgu 30 stóp musi wykonać rzut obronny na Mądrość, w przeciwnym razie upuszcza wszystko, co trzyma, i otrzymuje stan &amp;Reference[frightened apply=false]{Przerażony} przez czas trwania.</p><p>Przerażona istota wykonuje akcję &amp;Reference[dash]{Sprint} i oddala się od ciebie najbezpieczniejszą trasą w każdej ze swoich tur, chyba że nie ma dokąd się poruszyć. Jeśli istota zakończy swoją turę w miejscu, gdzie nie ma linii wzroku do ciebie, wykonuje rzut obronny na Mądrość. Przy udanym rzucie czar kończy się na tej istocie.</p>",
+      "description": "<p>Każda istota w stożku 30 stóp musi wykonać rzut obronny na Mądrość, w przeciwnym razie upuszcza wszystko, co trzyma, i otrzymuje stan &amp;Reference[frightened apply=false]{Przerażony} przez czas trwania.</p><p>Przerażona istota w każdej swojej turze wykonuje akcję &amp;Reference[dash]{Sprint} i oddala się od ciebie najbezpieczniejszą drogą, chyba że nie ma dokąd się udać. Jeśli istota kończy swoją turę w miejscu, z którego nie ma linii wzroku na ciebie, wykonuje rzut obronny na Mądrość. Przy udanym rzucie czar kończy się na tej istocie.</p>",
       "materials": "białe pióro",
       "effects": {
         "Fear": {
