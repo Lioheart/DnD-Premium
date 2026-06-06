@@ -80,7 +80,7 @@
     "Ranger": "Łowca",
     "Rogue": "Łotr",
     "Sorcerer": "Zaklinacz",
-    "Soulknife": "Ostrze duszy",
+    "Soulknife": "Duszostrze",
     "Subclass Features": "Zdolności Podklasy",
     "Thief": "Złodziej",
     "Trickery Domain": "Domena oszustwa",
@@ -577,7 +577,7 @@
     },
     "Bardic Inspiration": {
       "name": "Bardowska inspiracja",
-      "description": "<p>Możesz nadnaturalnie inspirować innych słowami, muzyką lub tańcem. Inspiracja ta jest reprezentowana przez twoją kość Bardowskiej Inspiracji, która początkowo jest k6 (obecnie [[lookup @scale.bard.inspiration.die]]).</p><p><strong>Użycie Bardowskiej Inspiracji.</strong> Akcją Dodatkową możesz zainspirować inną istotę w promieniu 60 stóp, która cię widzi lub słyszy. Ta istota otrzymuje jedną z twoich kości Bardowskiej Inspiracji. Istota może mieć tylko jedną kość Bardowskiej Inspiracji naraz.</p><p>Raz w ciągu następnej godziny, gdy istocie nie powiedzie się w test k20, może rzucić kością Bardowskiej Inspiracji i dodać wynik do k20, co może zamienić niepowodzenie w sukces. Kość Bardowskiej Inspiracji zostaje zużyta w momencie jej rzucenia.</p><p><strong>Liczba Użyć.</strong> Możesz przyznać kość Bardowskiej Inspiracji liczbę razy równą swojemu modyfikatorowi Charyzmy (minimum raz). Odzyskujesz wszystkie zużyte użycia po zakończeniu Długiego odpoczynku.</p><p><strong>Na wyższych poziomach.</strong> Twoja kość Bardowskiej Inspiracji zmienia się, gdy osiągasz określone poziomy Barda, jak pokazano w kolumnie „Kość Inspiracji” w tabeli Zdolności Barda. Kość staje się k8 na 5. poziomie, k10 na 10. poziomie i k12 na 15. poziomie.</p><section class=\"secret\" id=\"secret-PtUXhUXS84HSdaew\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt do śledzenia, kiedy postać ma dostępną Bardowską Inspirację do użycia.</p><p>Odzyskiwanie jest ustawione na długi odpoczynek (dla poziomów przed uzyskaniem @UUID[Compendium.dnd-players-handbook.classes.Item.phbbrdFontOfInsp]). Dostosuj ręcznie w razie potrzeby.</p></section>",
+      "description": "<p>Możesz nadnaturalnie inspirować innych słowami, muzyką lub tańcem. Inspiracja ta jest reprezentowana przez twoją kość Bardowskiej inspiracji, która początkowo jest k6 (obecnie [[lookup @scale.bard.inspiration.die]]).</p><p><strong>Użycie Bardowskiej inspiracji.</strong> Akcją Dodatkową możesz zainspirować inną istotę w promieniu 60 stóp, która cię widzi lub słyszy. Ta istota ma jedną z twoich kości Bardowskiej inspiracji. Istota może mieć tylko jedną kość Bardowskiej inspiracji naraz.</p><p>Raz w ciągu następnej godziny, gdy istocie nie powiedzie się w Teście k20, może ona rzucić kością Bardowskiej inspiracji i dodać wynik do rzutu k20, co może zamienić niepowodzenie w sukces. Kość Bardowskiej inspiracji zostaje zużyta w momencie jej rzucenia.</p><p><strong>Liczba Użyć.</strong> Możesz przyznać kość Bardowskiej inspiracji liczbę razy równą swojemu modyfikatorowi Charyzmy (minimum raz). Odzyskujesz wszystkie zużyte użycia po zakończeniu Długiego odpoczynku.</p><p><strong>Na wyższych poziomach.</strong> Twoja kość Bardowskiej inspiracji zmienia się, gdy osiągasz określone poziomy Barda, jak pokazano w kolumnie „Kość Inspiracji” w tabeli Zdolności Barda. Kość staje się k8 na 5. poziomie, k10 na 10. poziomie i k12 na 15. poziomie.</p><section class=\"secret\" id=\"secret-PtUXhUXS84HSdaew\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt do śledzenia, kiedy postać ma dostępną Bardowską Inspirację do użycia.</p><p>Odzyskiwanie jest ustawione na długi odpoczynek (dla poziomów przed uzyskaniem @UUID[Compendium.dnd-players-handbook.classes.Item.phbbrdFontOfInsp]). Dostosuj ręcznie w razie potrzeby.</p></section>",
       "activities": {
         "Inspire": {
           "name": "Inspiruj",
@@ -587,7 +587,7 @@
       "effects": {
         "Inspired": {
           "name": "Zainspirowany",
-          "description": "<p>Otrzymujesz Bardowską Inspirację. Raz w ciągu następnej godziny, gdy nie powiedzie ci się test k20, możesz rzucić kością Bardowskiej Inspiracji i dodać wyrzucony wynik do k20, co może zamienić niepowodzenie w sukces. Kość Bardowskiej Inspiracji zostaje zużyta w momencie jej rzucenia.</p>"
+          "description": "<p>Otrzymujesz Bardowską Inspirację. Raz w ciągu następnej godziny, gdy nie powiedzie ci się test k20, możesz rzucić kością Bardowskiej inspiracji i dodać wyrzucony wynik do k20, co może zamienić niepowodzenie w sukces. Kość Bardowskiej inspiracji zostaje zużyta w momencie jej rzucenia.</p>"
         }
       }
     },
@@ -764,7 +764,7 @@
     },
     "Branches of the Tree": {
       "name": "Gałęzie Drzewa",
-      "description": "<p>Ilekroć istota, którą widzisz, rozpoczyna swoją turę w promieniu 30 stóp od ciebie, gdy twój Szał jest aktywny, możesz użyć Reakcji, aby przywołać widmowe gałęzie Drzewa Świata wokół niej. Cel musi wykonać rzut obronny na Siłę (ST 8 + twój modyfikator z Siły + Premia od Biegłości) albo zostaje teleportowany do niezajętej przestrzeni, które widzisz, w promieniu 5 stóp od ciebie, lub do najbliższej wolnej przestrzeni, którą widzisz. Po teleportacji celu możesz zmniejszyć jego Szybkość do 0 do końca bieżącej tury.</p><section id=\"secret-iHFpYS3WUCeaQIVP\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt, który można zastosować na celu i który zmniejsza jego Szybkość.</p></section>",
+      "description": "<p>Ilekroć istota, którą widzisz, rozpoczyna swoją turę w promieniu 30 stóp od ciebie, gdy twój Szał jest aktywny, możesz użyć Reakcji, aby zamanifestować widmowe gałęzie Drzewa Świata wokół niej. Cel musi wykonać rzut obronny na Siłę (ST 8 + twój modyfikator z Siły + Premia od Biegłości) albo zostaje teleportowany do niezajętej przestrzeni, którą widzisz, w promieniu 5 stóp od ciebie, lub do najbliższej wolnej przestrzeni, którą widzisz. Po teleportacji celu możesz zmniejszyć jego Szybkość do 0 do końca bieżącej tury.</p><section id=\"secret-iHFpYS3WUCeaQIVP\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt, który można zastosować na celu i który zmniejsza jego Szybkość.</p></section>",
       "activities": {
         "save": {
           "condition": "Ilekroć stworzenie, które widzisz, rozpoczyna swoją turę w odległości do 30 stóp od ciebie, gdy jesteś w Szale"
@@ -779,7 +779,7 @@
     },
     "Brutal Strike": {
       "name": "Brutalne uderzenie",
-      "description": "<p>Jeśli użyjesz [[/item Reckless Attack]], możesz zrezygnować z Ułatwienia przy jednym wybranym teście ataku opartym na Sile w swojej turze. Wybrany test ataku nie może mieć Utrudnienia. Jeśli wybrany atak trafi, cel otrzymuje dodatkowe [[lookup @scale.barbarian.brutal-strike]] obrażeń tego samego typu, co zadane przez broń lub Uderzenie bez Broni, a ty możesz wywołać jeden efekt Brutalnego Ciosu według wyboru. Masz następujące opcje efektów.</p><p><strong>Potężny Cios.</strong> Cel zostaje odepchnięty na 15 stóp prosto od ciebie. Następnie możesz przesunąć się o maksymalnie połowę swojej Szybkości prosto w stronę celu, nie prowokując &Reference[Opportunity Attacks].</p><p><strong>Podcinający Cios.</strong> Szybkość celu zostaje zmniejszona o 15 stóp do początku swojej następnej tury. Na cel może działać tylko jeden Podcinający Cios naraz – ten najnowszy.</p><section class=\"secret\" id=\"secret-vLb1SoKHWW2796Ko\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt dla Podcinającego Ciosu, który może być zastosowany wobec celu.</p><p>Aktywność <strong>obrażeń</strong> automatycznie zwiększa się, gdy zyskasz Ulepszony Brutalny Cios (2).</p></section>",
+      "description": "<p>Jeśli użyjesz [[/item Reckless Attack]]{Szaleńczy atak}, możesz zrezygnować z Ułatwienia przy jednym wybranym teście ataku opartym na Sile w swojej turze. Wybrany test ataku nie może mieć Utrudnienia. Jeśli wybrany atak trafi, cel otrzymuje dodatkowe [[lookup @scale.barbarian.brutal-strike]] obrażeń tego samego typu, co zadane przez broń lub Uderzenie bez Broni, a ty możesz wywołać jeden efekt Brutalnego Ciosu według wyboru. Masz następujące opcje efektów.</p><p><strong>Potężny Cios.</strong> Cel zostaje odepchnięty na 15 stóp prosto od ciebie. Następnie możesz przesunąć się o maksymalnie połowę swojej Szybkości prosto w stronę celu, nie prowokując &Reference[Opportunity Attacks].</p><p><strong>Podcinający Cios.</strong> Szybkość celu zostaje zmniejszona o 15 stóp do początku swojej następnej tury. Na cel może działać tylko jeden Podcinający Cios naraz – ten najnowszy.</p><section class=\"secret\" id=\"secret-vLb1SoKHWW2796Ko\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt dla Podcinającego Ciosu, który może być zastosowany wobec celu.</p><p>Aktywność <strong>obrażeń</strong> automatycznie zwiększa się, gdy zyskasz Ulepszony Brutalny Cios (2).</p></section>",
       "activities": {
         "Brutal Strike": {
           "name": "Brutalne uderzenie"
@@ -1093,7 +1093,7 @@
         },
         "Dazzling Footwork": {
           "title": "Olśniewająca praca nóg",
-          "hint": "Ten przedmiot do Walki bez broni wykorzystuje Zręczność lub Siłę (w zależności od tego, która jest wyższa) i używa twojej Kości Bardowskiej Inspiracji do zadawania obrażeń zamiast normalnych obrażeń."
+          "hint": "Ten przedmiot do Walki bez broni wykorzystuje Zręczność lub Siłę (w zależności od tego, która jest wyższa) i używa twojej Kości Bardowskiej inspiracji do zadawania obrażeń zamiast normalnych obrażeń."
         }
       }
     },
@@ -1278,7 +1278,7 @@
     },
     "Cutting Words": {
       "name": "Cięta riposta",
-      "description": "<p>Uczysz się wykorzystywać swoje poczucie humoru, by w nadnaturalny sposób rozpraszać, dezorientować i osłabiać pewność siebie oraz kompetencje innych. Gdy stworzenie, które widzisz w odległości do 60 stóp od siebie, wykonuje rzut na obrażenia lub odnosi sukces w teście cechy albo teście ataku, możesz Reakcją zużyć jedno użycie swojej Bardziej Inspiracji; rzuć kością Bardziej Inspiracji i odejmij uzyskany wynik od rzutu stworzenia, zmniejszając zadane obrażenia lub potencjalnie zamieniając sukces w porażkę</p>",
+      "description": "<p>Uczysz się wykorzystywać swoje poczucie humoru, by w nadnaturalny sposób rozpraszać, dezorientować i osłabiać pewność siebie oraz kompetencje innych. Gdy stworzenie, które widzisz w odległości do 60 stóp od siebie, wykonuje rzut na obrażenia lub odnosi sukces w teście cechy albo teście ataku, możesz Reakcją zużyć jedno użycie swojej Bardowskiej inspiracji; rzuć kością Bardowskiej inspiracji i odejmij uzyskany wynik od rzutu stworzenia, zmniejszając zadane obrażenia lub potencjalnie zamieniając sukces w porażkę</p>",
       "activities": {
         "Cut with Words": {
           "name": "Cięta riposta",
@@ -1319,7 +1319,7 @@
     },
     "Dazzling Footwork": {
       "name": "Olśniewająca praca nóg",
-      "description": "<p>Gdy nie nosisz pancerza ani nie dzierżysz Tarczy, zyskujesz następujące korzyści.</p><p><strong>Wirtuoz Tańca.</strong> Masz Ułatwienie na każdym teście Charyzmy (Występy), który wykonujesz i który obejmuje twój taniec.</p><p><strong>Obrona bez pancerza.</strong> Twoja podstawowa Klasa Pancerza wynosi 10 plus modyfikatory Zręczności i Charyzmy.</p><p><strong>Zwinne uderzenia.</strong> Gdy zużyjesz użycie swojej Bardowskiej Inspiracji jako część Akcji, Akcji Dodatkowej lub Reakcji, możesz wykonać jedno Uderzenie bez broni jako część tej Akcji, Akcji Dodatkowej lub Reakcji.</p><p><strong>Bardowskie obrażenia.</strong> Możesz używać Zręczności zamiast Siły do testów ataku Uderzeń bez broni. Gdy zadajesz obrażenia Uderzeniem bez broni, możesz zadać obrażenia obuchowe równe rzutowi twoją Kością Bardowskiej Inspiracji plus modyfikator Zręczności, zamiast normalnych obrażeń uderzenia. Ten rzut nie zużywa kości.</p><section class=\"secret\" id=\"secret-edFgTVLwqcuabKeK\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha zawiera Efekt Aktywny, który ustawia twoją Obronę bez pancerza i może być wyłączony, jeśli wolisz używać pancerza.</p><p>Aktywność <strong>Uderzenie bez broni</strong> używa Zręczności i Kości Bardowskiej Inspiracji do obrażeń.</p><p>Otrzymujesz także przedmiot <strong>Uderzenie bez broni</strong>, który zawiera te zmiany.</p></section>",
+      "description": "<p>Gdy nie nosisz pancerza ani nie dzierżysz Tarczy, zyskujesz następujące korzyści.</p><p><strong>Wirtuoz Tańca.</strong> Masz Ułatwienie na każdym teście Charyzmy (Występy), który wykonujesz i który obejmuje twój taniec.</p><p><strong>Obrona bez pancerza.</strong> Twoja podstawowa Klasa Pancerza wynosi 10 plus modyfikatory Zręczności i Charyzmy.</p><p><strong>Zwinne uderzenia.</strong> Gdy zużyjesz użycie swojej Bardowskiej inspiracji jako część Akcji, Akcji Dodatkowej lub Reakcji, możesz wykonać jedno Uderzenie bez broni jako część tej Akcji, Akcji Dodatkowej lub Reakcji.</p><p><strong>Bardowskie obrażenia.</strong> Możesz używać Zręczności zamiast Siły do testów ataku Uderzeń bez broni. Gdy zadajesz obrażenia Uderzeniem bez broni, możesz zadać obrażenia obuchowe równe rzutowi twoją Kością Bardowskiej inspiracji plus modyfikator Zręczności, zamiast normalnych obrażeń uderzenia. Ten rzut nie zużywa kości.</p><section class=\"secret\" id=\"secret-edFgTVLwqcuabKeK\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha zawiera Efekt Aktywny, który ustawia twoją Obronę bez pancerza i może być wyłączony, jeśli wolisz używać pancerza.</p><p>Aktywność <strong>Uderzenie bez broni</strong> używa Zręczności i Kości Bardowskiej inspiracji do obrażeń.</p><p>Otrzymujesz także przedmiot <strong>Uderzenie bez broni</strong>, który zawiera te zmiany.</p></section>",
       "activities": {
         "Unarmed Strike": {
           "name": "Uderzenie bez broni"
@@ -2026,7 +2026,7 @@
     },
     "Fast Hands": {
       "name": "Szybkie dłonie",
-      "description": "<p>Akcją Dodatkową możesz wykonać jedną z następujących czynności.</p><p><strong>Zwinne Dłonie.</strong> Wykonaj test Zręczności (Zwinne Dłonie), aby otworzyć zamek lub rozbroić pułapkę przy użyciu Narzędzi Złodziejskich albo okraść kieszeń.</p><p><strong>Użycie Przedmiotu.</strong> Wykonaj Akcję Wykorzystania lub Akcję Magii, aby użyć magicznego przedmiotu wymagającego tej akcji.</p><section id=\"secret-jnQLm5F5Pq3fBPRp\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywności <strong>Zwinne dłonie</strong> i <strong>Narzędzia Złodziejskie</strong> zawierają odpowiednie testy.</p><p>Aktywność <strong>Użycie obiektu</strong> może być używana do śledzenia wykorzystania Akcji Dodatkowej.</p></section>",
+      "description": "<p>Akcją Dodatkową możesz wykonać jedną z następujących czynności.</p><p><strong>Zwinne Dłonie.</strong> Wykonaj test Zręczności (Zwinne Dłonie), aby otworzyć zamek lub rozbroić pułapkę przy użyciu Narzędzi Złodziejskich albo okraść kieszeń.</p><p><strong>Użycie Obiektu.</strong> Wykonaj akcję Użycia Obiektu lub Akcję Magii, aby użyć magicznego przedmiotu wymagającego tej akcji.</p><section id=\"secret-jnQLm5F5Pq3fBPRp\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywności <strong>Zwinne dłonie</strong> i <strong>Narzędzia Złodziejskie</strong> zawierają odpowiednie testy.</p><p>Aktywność <strong>Użycie obiektu</strong> może być używana do śledzenia wykorzystania Akcji Dodatkowej.</p></section>",
       "activities": {
         "Sleight of Hand": {
           "name": "Zwinne dłonie"
@@ -2243,7 +2243,7 @@
     },
     "Font of Inspiration": {
       "name": "Źródło inspiracji",
-      "description": "<p>Teraz odzyskujesz wszystkie zużyte użycia Bardowskiej Inspiracji po zakończeniu Krótkiego lub Długiego Odpoczynku.</p><p>Dodatkowo możesz zużyć komórkę czaru (bez konieczności użycia akcji), aby odzyskać jedno zużyte użycie Bardowskiej Inspiracji.</p><section class=\"secret\" id=\"secret-KgQeVfHTLTrKK1s0\"><p><strong>Notatka Foundry</strong></p><p>Musisz zaktualizować zdolność Bardowskiej Inspiracji na swojej karcie postaci, aby odnawiała się po Krótkim Odpoczynku, ponieważ domyślnie jest ustawiona na Długi Odpoczynek.</p><p>Aktywność <strong>Odnowa za pomocą Komórki Czaru</strong> zużyje komórkę czaru i przyzna dodatkowe użycie Bardowskiej Inspiracji.</p></section>",
+      "description": "<p>Teraz odzyskujesz wszystkie zużyte użycia Bardowskiej inspiracji po zakończeniu Krótkiego lub Długiego Odpoczynku.</p><p>Dodatkowo możesz zużyć komórkę czaru (bez konieczności użycia akcji), aby odzyskać jedno zużyte użycie Bardowskiej inspiracji.</p><section class=\"secret\" id=\"secret-KgQeVfHTLTrKK1s0\"><p><strong>Notatka Foundry</strong></p><p>Musisz zaktualizować zdolność Bardowskiej inspiracji na swojej karcie postaci, aby odnawiała się po Krótkim Odpoczynku, ponieważ domyślnie jest ustawiona na Długi Odpoczynek.</p><p>Aktywność <strong>Odnowa za pomocą Komórki Czaru</strong> zużyje komórkę czaru i przyzna dodatkowe użycie Bardowskiej inspiracji.</p></section>",
       "activities": {
         "Recharge with Spell Slot": {
           "name": "Odnów za pomocą Komórki czarów"
@@ -2696,7 +2696,7 @@
     },
     "Inspiring Movement": {
       "name": "Inspirujący ruch",
-      "description": "<p>Kiedy wróg, którego widzisz, kończy swoją turę w odległości 5 stóp od ciebie, możesz wykorzystać Reakcję i zużyć jedno użycie swojej Bardowskiej Inspiracji, aby poruszyć się do połowy swojej Szybkości (obecnie [[lookup @attributes.movement.walk]]). Następnie jeden sojusznik twojego wyboru w promieniu 30 stóp również może poruszyć się do połowy swojej Szybkości, używając swojej Reakcji.</p><p>Żaden ruch wynikający z tej zdolności nie prowokuje Ataków okazyjnych.</p>",
+      "description": "<p>Kiedy wróg, którego widzisz, kończy swoją turę w odległości 5 stóp od ciebie, możesz wykorzystać Reakcję i zużyć jedno użycie swojej Bardowskiej inspiracji, aby poruszyć się do połowy swojej Szybkości (obecnie [[lookup @attributes.movement.walk]]). Następnie jeden sojusznik twojego wyboru w promieniu 30 stóp również może poruszyć się do połowy swojej Szybkości, używając swojej Reakcji.</p><p>Żaden ruch wynikający z tej zdolności nie prowokuje Ataków okazyjnych.</p>",
       "activities": {
         "Move": {
           "name": "Przesuń",
@@ -2988,7 +2988,7 @@
     },
     "Mantle of Inspiration": {
       "name": "Opończa inspiracji",
-      "description": "<p>Potrafisz tkać magię fey w pieśń lub taniec, aby napełnić innych wigorem. Akcją Dodatkową możesz zużyć jedno użycie Bardowskiej Inspiracji, rzucając kością Bardowskiej Inspiracji. Gdy to zrobisz, wybierz liczbę innych stworzeń w promieniu 60 stóp od siebie, równą twojemu modyfikatorowi Charyzmy (minimum jedno stworzenie, obecnie [[lookup @abilities.cha.mod]]). Każde z tych stworzeń zyskuje liczbę Tymczasowych Punktów Wytrzymałości równą dwukrotności wyniku rzutu kością Bardowskiej Inspiracji, a następnie każde może użyć swojej Reakcji, aby poruszyć się do swojej Szybkości, nie prowokując Ataków Okazyjnych.</p>"
+      "description": "<p>Potrafisz tkać magię fey w pieśń lub taniec, aby napełnić innych wigorem. Akcją Dodatkową możesz zużyć jedno użycie Bardowskiej inspiracji, rzucając kością Bardowskiej inspiracji. Gdy to zrobisz, wybierz liczbę innych stworzeń w promieniu 60 stóp od siebie, równą twojemu modyfikatorowi Charyzmy (minimum jedno stworzenie, obecnie [[lookup @abilities.cha.mod]]). Każde z tych stworzeń zyskuje liczbę Tymczasowych Punktów Wytrzymałości równą dwukrotności wyniku rzutu kością Bardowskiej inspiracji, a następnie każde może użyć swojej Reakcji, aby poruszyć się do swojej Szybkości, nie prowokując Ataków Okazyjnych.</p>"
     },
     "Mantle of Majesty": {
       "name": "Opończa majestatu",
@@ -3569,7 +3569,7 @@
     },
     "Peerless Skill": {
       "name": "Niezrównana umiejętność",
-      "description": "<p>Gdy wykonasz test cechy lub test ataku i poniesiesz porażkę, możesz zużyć jedno użycie Bardziej Inspiracji; rzuć kością Bardziej Inspiracji i dodaj uzyskany wynik do rzutu k20, co może zamienić porażkę w sukces. Jeśli mimo to test zakończy się niepowodzeniem, użycie Bardziej Inspiracji nie zostaje zużyte.</p>",
+      "description": "<p>Gdy wykonasz test cechy lub test ataku i poniesiesz porażkę, możesz zużyć jedno użycie Bardowskiej inspiracji; rzuć kością Bardowskiej inspiracji i dodaj uzyskany wynik do rzutu k20, co może zamienić porażkę w sukces. Jeśli mimo to test zakończy się niepowodzeniem, użycie Bardowskiej inspiracji nie zostaje zużyte.</p>",
       "activities": {
         "utility": {
           "roll": "Bardowska inspiracja",
@@ -3596,7 +3596,7 @@
       "description": "<p>Zawsze masz przygotowane czary @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSummonBeas] oraz @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFey0]. Za każdym razem, gdy rzucasz którykolwiek z tych czarów, możesz zmienić jego szkołę na Iluzję, co sprawia, że przywołana istota wygląda na spektralną. Możesz rzucać wersję Iluzji każdego z tych czarów bez zużycia komórki czaru, ale rzucenie go w ten sposób zmniejsza punkty wytrzymałości przywołanej istoty o połowę. Po rzuceniu któregokolwiek z tych czarów bez komórki czaru musisz zakończyć Długi Odpoczynek, zanim będziesz mógł ponownie rzucić go w ten sposób.</p><section id=\"secret-ukMltDlAucTigpPa\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywności <strong>Przyzwij iluzoryczną Bestię</strong> oraz <strong>Fey</strong> mogą być używane do darmowego rzucenia czaru na podstawowym poziomie, automatycznie zmniejszając punkty wytrzymałości przywołanej istoty o połowę.</p></section>",
       "activities": {
         "Summon Illusionary Beast": {
-          "name": "Przyzwij iluzoryczną Bestię"
+          "name": "Przyzwij iluzoryczną bestię"
         },
         "Summon Illusionary Fey": {
           "name": "Przyzwij iluzorycznego Fey"
@@ -3785,7 +3785,7 @@
     },
     "Psychic Blade": {
       "name": "Psychiczne ostrze",
-      "description": "<p>Ujawniłeś migoczące ostrza psychicznej energii. Za każdym razem, gdy wykonujesz akcję Ataku lub Atak Okazyjny, możesz ujawnić Psychic Blade w swojej wolnej ręce i wykonać atak tym ostrzem.</p><p>Ostrze znika natychmiast po trafieniu lub chybieniu celu, nie zostawiając żadnego śladu, jeśli zadaje obrażenia.</p><p>Po ataku wykonanym ostrzem w swojej turze, możesz wykonać atak wręcz lub dystansowy drugim ostrzem psychicznym jako Akcję Dodatkową w tej samej turze, jeśli twoja druga ręka jest wolna, aby je stworzyć. Kość obrażeń tego dodatkowego ataku to 1k4 zamiast 1k6.</p>",
+      "description": "<p>Manifestujesz migoczące ostrza psychicznej energii. Za każdym razem, gdy wykonujesz akcję Ataku lub Atak Okazyjny, możesz zamanifestować Psychiczne ostrze w swojej wolnej ręce i wykonać atak tym ostrzem.</p><p>Ostrze znika natychmiast po trafieniu lub chybieniu celu, nie zostawiając żadnego śladu, jeśli zadaje obrażenia.</p><p>Po ataku wykonanym ostrzem w swojej turze, możesz wykonać atak wręcz lub dystansowy drugim Psychicznym ostrzem jako Akcję Dodatkową w tej samej turze, jeśli twoja druga ręka jest wolna, aby je zamanifestować. Kość obrażeń tego dodatkowego ataku to 1k4 zamiast 1k6.</p>",
       "activities": {
         "Bonus Attack": {
           "name": "Atak dodatkowy"
@@ -3794,7 +3794,7 @@
     },
     "Psychic Blades": {
       "name": "Psychiczne ostrza",
-      "description": "<p>Możesz przywołać migoczące ostrza psychicznej energii. Za każdym razem, gdy wykonujesz Akcję Ataku lub Atak Okazyjny, możesz zmaterializować Psychiczne ostrze w wolnej dłoni i wykonać nim atak. Magiczne ostrze ma następujące cechy:</p><p><strong>Kategoria broni:</strong> Prosta biała</p><p><strong>Obrażenia przy trafieniu:</strong> 1k6 psychicznych plus modyfikator cechy użytej do testu ataku</p><p><strong>Właściwości:</strong> Finezyjna, Rzucana (zasięg 60/120 stóp)</p><p><strong>Mistrzostwo:</strong> Nękanie (możesz korzystać z tej właściwości, a nie liczy się ona do liczby właściwości, których możesz używać dzięki Mistrzostwu w Broni)</p><p>Ostrze znika natychmiast po tym, jak trafi lub chybi cel, i nie pozostawia śladu, jeśli zada obrażenia.</p><p>Po wykonaniu ataku tym ostrzem w swojej turze możesz Akcją Dodatkową wykonać atak wręcz lub dystansowy drugim Psychicznym ostrzem w tej samej turze, jeśli druga dłoń jest wolna, aby je stworzyć. Kość obrażeń tego ataku dodatkowego to 1k4 zamiast 1k6.</p><section class=\"secret\" id=\"secret-meNYJzRDvyQRD9xs\"><p><strong>Notatka Foundry</strong></p><p>Kiedy zyskujesz tę zdolność, otrzymujesz przedmiot [[/item Psychic Blade]], który pojawia się w twoim ekwipunku i zawiera powyższe właściwości.</p></section>"
+      "description": "<p>Możesz zamanifestować migoczące ostrza psychicznej energii. Za każdym razem, gdy wykonujesz Akcję Ataku lub Atak Okazyjny, możesz zamanifestować Psychiczne ostrze w wolnej dłoni i wykonać nim atak. Magiczne ostrze ma następujące cechy:</p><p><strong>Kategoria broni:</strong> Prosta biała</p><p><strong>Obrażenia przy trafieniu:</strong> 1k6 psychicznych plus modyfikator cechy użytej do testu ataku</p><p><strong>Właściwości:</strong> Finezyjna, Rzucana (zasięg 60/120 stóp)</p><p><strong>Mistrzostwo:</strong> Nękanie (możesz korzystać z tej właściwości, a nie wlicza się ona do liczby właściwości, z których możesz korzystać dzięki Mistrzostwu w Broni)</p><p>Ostrze znika natychmiast po tym, jak trafi lub chybi cel, i nie pozostawia śladu, jeśli zada obrażenia.</p><p>Po wykonaniu ataku tym ostrzem w swojej turze, możesz Akcją Dodatkową wykonać atak wręcz lub dystansowy drugim Psychicznym ostrzem w tej samej turze, jeśli druga dłoń jest wolna, aby je zamanifestować. Kość obrażeń tego ataku dodatkowego to 1k4 zamiast 1k6.</p><section class=\"secret\" id=\"secret-meNYJzRDvyQRD9xs\"><p><strong>Notatka Foundry</strong></p><p>Kiedy zyskujesz tę zdolność, otrzymujesz przedmiot [[/item Psychic Blade]]{Psychiczne ostrze}, który pojawia się w twoim ekwipunku i zawiera powyższe właściwości.</p></section>"
     },
     "Psychic Defenses": {
       "name": "Obrona psychiczna",
@@ -3987,7 +3987,7 @@
       }
     },
     "Reckless Attack": {
-      "name": "Sza|eńczy atak",
+      "name": "Szaleńczy atak",
       "description": "<p>Możesz odrzucić wszelką troskę o obronę, aby atakować z większą zaciekłością. Kiedy wykonujesz swój pierwszy test ataku w turze, możesz zdecydować się na Szaleńczy Atak. Decydując się na to, zyskujesz Ułatwienie przy testach ataku używających Siły do początku swojej następnej tury, ale w tym czasie testy ataku przeciwko tobie również mają Ułatwienie.</p><section id=\"secret-W7MI2ZVKsMQcSW6d\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt do śledzenia, czy korzystasz z Szaleńczego Ataku, ale nie automatyzuje Ułatwienia twoich ataków ani ataków przeciwko tobie.</p></section>",
       "effects": {
         "Reckless": {
@@ -4424,8 +4424,8 @@
       "description": "<p>Natychmiast po tym, jak stworzenie objęte działaniem twojej Przysięgi wrogości trafi lub nie trafi w ataku, możesz użyć Reakcji, aby wykonać atak w zwarciu przeciwko temu stworzeniu, jeśli znajduje się w zasięgu.</p>"
     },
     "Soulknife": {
-      "name": "Ostrze duszy",
-      "description": "<blockquote><p>Uderz Wrogów Psionicznymi Ostrzami</p></blockquote><p>Soulknife atakuje umysłem, przecinając bariery zarówno fizyczne, jak i psychiczne. Ci Łotrzy odkrywają psioniczną moc w sobie i kanalizują ją do wykonywania swoich złodziejskich działań. Jako Soulknife, twoje psioniczne zdolności mogły cię prześladować od dzieciństwa, ujawniając pełny potencjał dopiero, gdy doświadczyłeś stresu przygody. Możliwe, że poszukiwałeś zakonu psychicznych adeptów i spędziłeś lata ucząc się, jak manifestować swoją moc.</p>",
+      "name": "Duszostrze",
+      "description": "<blockquote><p>Uderz Wrogów Psionicznymi Ostrzami</p></blockquote><p>Duszostrze atakuje umysłem, przecinając bariery zarówno fizyczne, jak i psychiczne. Ci Łotrzy odkrywają psioniczną moc w sobie i kanalizują ją do wykonywania swoich złodziejskich działań. Jako Duszostrze, twoje psioniczne zdolności mogły cię prześladować od dzieciństwa, ujawniając pełny potencjał dopiero, gdy doświadczyłeś stresu przygody. Możliwe, że poszukiwałeś zakonu psychicznych adeptów i spędziłeś lata ucząc się, jak manifestować swoją moc.</p>",
       "advancement": {
         "Subclass Features": {
           "title": "Zdolności Podklasy"
@@ -4467,7 +4467,7 @@
     },
     "Spell Thief": {
       "name": "Złodziej zaklęć",
-      "description": "<p>Zyskujesz zdolność magicznego kradzenia wiedzy o tym, jak rzucać czar od innego rzucającego czary.</p><p>Natychmiast po tym, jak istota rzuci czar, który cię wskazuje jako cel lub obejmuje cię swoim obszarem działania, możesz użyć Reakcji, aby zmusić ją do wykonania rzutu obronnego na Inteligencję. ST jest równe twojemu ST rzutu przeciw czarom. Przy nieudanym rzucie negujesz działanie czaru wobec siebie i kradniesz wiedzę o tym czarze, jeśli jest to czar co najmniej 1. kręgu i poziomu, który możesz rzucać (nie musi to być czar Maga). Przez następne 8 godzin masz ten czar przygotowany. Istota nie może go rzucać, dopóki nie minie te 8 godzin.</p><p>Po kradzieży czaru przy użyciu tej zdolności nie możesz użyć jej ponownie, dopóki nie zakończysz Długiego odpoczynku.</p>",
+      "description": "<p>Zyskujesz zdolność magicznej kradzieży wiedzy o rzucaniu czaru od innego rzucającego czary.</p><p>Natychmiast po tym, jak istota rzuci czar, który bierze cię za cel lub zawiera cię w swoim obszarze działania, możesz użyć reakcji, aby zmusić ją do wykonania rzutu obronnego na Inteligencję. Stopień trudności (ST) rzutu jest równy twojemu ST rzutu obronnego przeciwko czarom. W przypadku porażki czar nie wywiera na ciebie żadnego efektu, a ty kradniesz wiedzę na temat tego zaklęcia, o ile jest to czar co najmniej 1. kręgu i poziomu, na którym potrafisz rzucać czary (nie musi to być czar z listy maga). Przez następne 8 godzin czar ten traktujesz jako przygotowany. W tym samym czasie rzucająca go istota traci zdolność rzucania tego czaru, dopóki nie upłynie wspomniane 8 godzin.</p><p>Po kradzieży czaru przy użyciu tej zdolności nie możesz użyć jej ponownie, dopóki nie zakończysz Długiego odpoczynku.</p>",
       "activities": {
         "Spell Thief": {
           "name": "Złodziej zaklęć",
@@ -4699,7 +4699,7 @@
     },
     "Superior Inspiration": {
       "name": "Pierwszorzędna inspiracja",
-      "description": "<p>Kiedy wykonujesz rzut na Inicjatywę, odzyskujesz zużyte użycia Bardowskiej Inspiracji, maksymalnie do dwóch, jeśli masz ich mniej.</p>"
+      "description": "<p>Kiedy wykonujesz rzut na Inicjatywę, odzyskujesz zużyte użycia Bardowskiej inspiracji, maksymalnie do dwóch, jeśli masz ich mniej.</p>"
     },
     "Supreme Healing": {
       "name": "Niezwykłe uzdrawianie",
@@ -4769,7 +4769,7 @@
     },
     "Tandem Footwork": {
       "name": "Synchroniczna praca nóg",
-      "description": "<p>Kiedy wykonujesz rzut na Inicjatywę, możesz zużyć jedno użycie swojej Bardowskiej Inspiracji, jeśli nie masz stanu &amp;Reference[Incapacitated]{Obezwładniony}. Gdy to zrobisz, rzuć kością swojej Bardowskiej Inspiracji; ty oraz każdy sojusznik w promieniu 30 stóp, który cię widzi lub słyszy, otrzymuje premię do Inicjatywy równą wyrzuconej wartości.</p><section class=\"secret\" id=\"secret-nQrxfDcx2JC1jNO2\"><p><strong>Foundry – Notatka</strong></p><p>Użycie tej zdolności zużyje jedno użycie twojej Bardowskiej Inspiracji.</p></section>",
+      "description": "<p>Kiedy wykonujesz rzut na Inicjatywę, możesz zużyć jedno użycie swojej Bardowskiej inspiracji, jeśli nie masz stanu &amp;Reference[Incapacitated]{Obezwładniony}. Gdy to zrobisz, rzuć kością swojej Bardowskiej inspiracji; ty oraz każdy sojusznik w promieniu 30 stóp, który cię widzi lub słyszy, otrzymuje premię do Inicjatywy równą wyrzuconej wartości.</p><section class=\"secret\" id=\"secret-nQrxfDcx2JC1jNO2\"><p><strong>Foundry – Notatka</strong></p><p>Użycie tej zdolności zużyje jedno użycie twojej Bardowskiej inspiracji.</p></section>",
       "activities": {
         "Initiative Bonus": {
           "name": "Premia do Inicjatywy",
@@ -5602,7 +5602,7 @@
     },
     "phbrgePsionicPow": {
       "name": "Moc psioniczna",
-      "description": "<p>Nosząc w sobie niewyczerpane źródło energii psionicznej, korzystasz z Kości Energii Psionicznej, które zasilają niektóre moce tej podklasy. Tabela Kości Energii Psionicznej Ostrza Duszy pokazuje liczbę tych kości, którą masz na określonych poziomach Łotra, oraz rozmiar kości.</p><table><caption>Kości Energii Psionicznej Ostrza Duszy</caption><thead><tr><td>Poziom Łotra</td><td>Rozmiar kości</td><td>Liczba</td></tr></thead><tbody><tr><td>3</td><td>k6</td><td>4</td></tr><tr><td>5</td><td>k8</td><td>6</td></tr><tr><td>9</td><td>k8</td><td>8</td></tr><tr><td>11</td><td>k10</td><td>8</td></tr><tr><td>13</td><td>k10</td><td>10</td></tr><tr><td>17</td><td>k12</td><td>12</td></tr></tbody></table><p>Wszelkie zdolności w tej podklasie, które używają Kości Energii Psionicznej, korzystają wyłącznie z kości tej podklasy. Niektóre z twoich mocy zużywają Kość Energii Psionicznej, zgodnie z opisem danej mocy. Nie możesz użyć mocy, jeśli wymaga ona zużycia kości, a wszystkie twoje Kości Energii Psionicznej są już zużyte.</p><p>Odzyskujesz jedną zużytą Kość Energii Psionicznej po ukończeniu Krótkiego odpoczynku, a wszystkie odzyskujesz po ukończeniu Długiego odpoczynku.</p><p><strong>Psionicznie wzmocniony dryg.</strong> Jeśli nie powiedzie ci się test cechy z użyciem umiejętności lub narzędzi, w których masz biegłość, możesz rzucić jedną Kością Energii Psionicznej i dodać wynik do testu, potencjalnie zmieniając porażkę w sukces. Kość jest zużywana tylko, jeśli test się powiedzie.</p><p><strong>Psychiczne szepty.</strong> Możesz ustanawiać telepatyczną komunikację między sobą a innymi. Akcją Magii wybierz jedną lub więcej istot, które widzisz, do liczby równej twojej premii z biegłości, a następnie rzuć jedną Kością Energii Psionicznej. Przez liczbę godzin równą wynikowi wybrane istoty mogą rozmawiać telepatycznie z tobą, a ty z nimi. Aby wysłać lub odebrać wiadomość (bez Akcji), ty i druga istota musicie znajdować się w odległości 1 mili od siebie. Istota może zakończyć telepatyczne połączenie w dowolnym momencie (bez Akcji).</p><p>Przy pierwszym użyciu tej mocy po każdym Długim odpoczynku nie zużywasz Kości Energii Psionicznej. Przy każdym kolejnym użyciu mocy zużywasz kość.</p><section class=\"secret\" id=\"secret-mhJXgkN4LKUlFHGh\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność automatycznie odzyskuje jedno użycie podczas Krótkiego odpoczynku i wszystkie podczas Długiego odpoczynku.</p><p>Aktywność <strong>Psionicznie wzmocniony dryg</strong> zużywa kość i zawiera dodatkowy rzut. Jeśli się mimo to nie powiedzie, możesz odzyskać zużyta kość.</p><p>Ta zdolność zawiera aktywność <strong>Psychiczne szepty</strong> oraz aktywność <strong>Psychiczne szepty (Darmowe)</strong>. Obie zawierają Aktywny Efekt, którego można użyć do śledzenia istot, które wybrałeś.</p></section>",
+      "description": "<p>Nosząc w sobie niewyczerpane źródło energii psionicznej, korzystasz z Kości Energii Psionicznej, które zasilają niektóre moce tej podklasy. Tabela Kości Energii Psionicznej Duszostrza pokazuje liczbę tych kości, którą masz na określonych poziomach Łotra, oraz rozmiar kości.</p><table><caption>Kości Energii Psionicznej Duszostrza</caption><thead><tr><td>Poziom Łotra</td><td>Rozmiar kości</td><td>Liczba</td></tr></thead><tbody><tr><td>3</td><td>k6</td><td>4</td></tr><tr><td>5</td><td>k8</td><td>6</td></tr><tr><td>9</td><td>k8</td><td>8</td></tr><tr><td>11</td><td>k10</td><td>8</td></tr><tr><td>13</td><td>k10</td><td>10</td></tr><tr><td>17</td><td>k12</td><td>12</td></tr></tbody></table><p>Wszelkie zdolności w tej podklasie, które używają Kości Energii Psionicznej, korzystają wyłącznie z kości tej podklasy. Niektóre z twoich mocy zużywają Kość Energii Psionicznej, zgodnie z opisem danej mocy. Nie możesz użyć mocy, jeśli wymaga ona zużycia kości, a wszystkie twoje Kości Energii Psionicznej są już zużyte.</p><p>Odzyskujesz jedną zużytą Kość Energii Psionicznej po ukończeniu Krótkiego odpoczynku, a wszystkie odzyskujesz po ukończeniu Długiego odpoczynku.</p><p><strong>Psionicznie wzmocniony dryg.</strong> Jeśli nie powiedzie ci się test cechy z użyciem umiejętności lub narzędzi, w których masz biegłość, możesz rzucić jedną Kością Energii Psionicznej i dodać wynik do testu, potencjalnie zmieniając porażkę w sukces. Kość jest zużywana tylko, jeśli test się powiedzie.</p><p><strong>Psychiczne szepty.</strong> Możesz ustanawiać telepatyczną komunikację między sobą a innymi. Akcją Magii wybierz jedną lub więcej istot, które widzisz, do liczby równej twojej premii z biegłości, a następnie rzuć jedną Kością Energii Psionicznej. Przez liczbę godzin równą wynikowi wybrane istoty mogą rozmawiać telepatycznie z tobą, a ty z nimi. Aby wysłać lub odebrać wiadomość (bez Akcji), ty i druga istota musicie znajdować się w odległości 1 mili od siebie. Istota może zakończyć telepatyczne połączenie w dowolnym momencie (bez Akcji).</p><p>Przy pierwszym użyciu tej mocy po każdym Długim odpoczynku nie zużywasz Kości Energii Psionicznej. Przy każdym kolejnym użyciu mocy zużywasz kość.</p><section class=\"secret\" id=\"secret-mhJXgkN4LKUlFHGh\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność automatycznie odzyskuje jedno użycie podczas Krótkiego odpoczynku i wszystkie podczas Długiego odpoczynku.</p><p>Aktywność <strong>Psionicznie wzmocniony dryg</strong> zużywa kość i zawiera dodatkowy rzut. Jeśli się mimo to nie powiedzie, możesz odzyskać zużyta kość.</p><p>Ta zdolność zawiera aktywność <strong>Psychiczne szepty</strong> oraz aktywność <strong>Psychiczne szepty (Darmowe)</strong>. Obie zawierają Aktywny Efekt, którego można użyć do śledzenia istot, które wybrałeś.</p></section>",
       "activities": {
         "Psi-Bolstered Knack": {
           "name": "Psionicznie wzmocniony dryg",

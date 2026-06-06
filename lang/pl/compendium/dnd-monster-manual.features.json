@@ -238,7 +238,7 @@
       }
     },
     "Arcane Sword": {
-      "name": "Arcane Sword",
+      "name": "Magiczny miecz",
       "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
     },
     "Arcane Tentacles": {
@@ -551,7 +551,7 @@
       "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
     },
     "Bolster": {
-      "name": "Bolster",
+      "name": "Wzmocnienie",
       "description": "<p>The [[lookup @name lowercase]] gains [[lookup @healing.formula activity=v5km8Vio4N6HgkF6]] Temporary Hit Points, and the [[lookup @name lowercase]] and each ally within [[lookup @range.value activity=v5km8Vio4N6HgkF6]] feet of it gain Advantage on D20 Tests until the end of the [[lookup @name lowercase]]'s next turn. The [[lookup @name lowercase]] can’t take this action again until the start of its next turn.</p>",
       "effects": {
         "Bolstered: Test Advantage": {
@@ -1200,7 +1200,7 @@
       },
       "effects": {
         "Cursed": {
-          "name": "Cursed",
+          "name": "Przeklęty",
           "description": "<p>The target is cursed with a riddle. The cursed target has Disadvantage on ability checks and attack rolls.</p>"
         }
       }
@@ -1210,7 +1210,7 @@
       "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a creature, it is cursed. While cursed, the target gains no benefit from finishing a Short or Long Rest.</p>",
       "effects": {
         "Cursed": {
-          "name": "Cursed",
+          "name": "Przeklęty",
           "description": "<p>While cursed, the target gains no benefit from finishing a Short or Long Rest.</p>"
         }
       }
@@ -1454,7 +1454,7 @@
           "name": "Odporność na ogień"
         },
         "Poison Resistance": {
-          "name": "Poison Resistance"
+          "name": "Odporność na trucizny"
         },
         "Lightning Resistance": {
           "name": "Odporność na błyskawice"
@@ -2069,7 +2069,7 @@
       },
       "effects": {
         "Cursed": {
-          "name": "Cursed",
+          "name": "Przeklęty",
           "description": "<p>The target is &amp;Reference[cursed apply=false] until it finishes a Short or Long Rest. While cursed, the target can’t benefit from the Invisible condition, its Speed decreases by 10 feet, and all Fiends within 120 feet of the target can sense its location regardless of interposing obstacles.</p>"
         }
       }
@@ -2241,7 +2241,7 @@
       "description": "<p class=\"feature\">If the [[lookup @name lowercase]] takes Cold damage, its Speed decreases by 20 feet until the end of its next turn.</p>",
       "activities": {
         "Use": {
-          "name": "Use",
+          "name": "Użycie",
           "condition": "takes Cold damage"
         }
       },
@@ -2922,7 +2922,7 @@
       },
       "effects": {
         "Cursed": {
-          "name": "Cursed",
+          "name": "Przeklęty",
           "description": "<p>The target is cursed.</p>"
         }
       }
@@ -3475,7 +3475,7 @@
       },
       "effects": {
         "Cursed": {
-          "name": "Cursed",
+          "name": "Przeklęty",
           "description": "<p>While the cursed creature is outside a body of water, the creature takes [[/damage 1d12 Acid average]] damage at the end of every 10 minutes unless moisture is applied to its skin before those minutes have passed.</p>"
         }
       }
@@ -3500,7 +3500,7 @@
       "description": "<p>The [[lookup @name lowercase]] makes {count} [[/item]] attacks and uses [[/item]].</p>",
       "activities": {
         "Use": {
-          "name": "Use"
+          "name": "Użycie"
         }
       }
     },
@@ -3535,7 +3535,7 @@
       },
       "effects": {
         "Cursed": {
-          "name": "Cursed",
+          "name": "Przeklęty",
           "description": "<p>On failing a Constitution save, the target is cursed.</p><p>The cursed target can’t regain Hit Points, and its Hit Point maximum decreases by [[/r 3d6#HP Max Decrease]]{10 (3d6)} after every 24 hours and doesn’t return to normal after finishing a Long Rest.</p>"
         }
       }
@@ -3805,7 +3805,7 @@
       "description": "<p><em>Trigger:</em> The [[lookup @name lowercase]] is [[lookup @activation.condition activity=aLG3BRZL7P6OEjwd]]. <em>Response:</em> The [[lookup @name lowercase]] adds [[lookup @prof]] to its AC against that attack, possibly causing it to miss.</p>",
       "activities": {
         "Use": {
-          "name": "Use",
+          "name": "Użycie",
           "roll": "Bonus AC",
           "condition": "hit by a melee attack roll while holding a weapon"
         }
@@ -4240,7 +4240,7 @@
       "description": "<p class=\"feature\">The [[lookup @name lowercase]] expels spores in a [[lookup @target.template.size activity=WohqBNidY6nmDuum]]-foot Emanation originating from itself. Creatures in that area with an Intelligence score of 2 or higher that aren’t Constructs, Elementals, or Undead gain telepathy with a range of 30 feet for [[lookup @duration.value activity=WohqBNidY6nmDuum]] [[lookup @duration.units activity=WohqBNidY6nmDuum]].</p>",
       "activities": {
         "Use": {
-          "name": "Use"
+          "name": "Użycie"
         }
       },
       "effects": {
@@ -4343,7 +4343,7 @@
       "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target is cursed for 24 hours or until the [[lookup @name lowercase]] dies. Until the curse ends, the target gains no benefit from finishing Short Rests.</p>",
       "effects": {
         "Cursed": {
-          "name": "Cursed",
+          "name": "Przeklęty",
           "description": "<p>The target is cursed for 24 hours or until the attacking creature dies. Until the curse ends, the target gains no benefit from finishing Short Rests.</p>"
         }
       }
@@ -4437,7 +4437,7 @@
       },
       "effects": {
         "Cursed": {
-          "name": "Cursed",
+          "name": "Przeklęty",
           "description": "<p>If the target is a creature, it is cursed. While cursed, the target can’t regain Hit Points, its Hit Point maximum doesn’t return to normal when finishing a Long Rest, and its Hit Point maximum decreases by [[/r 3d6#HP Max Decrease]]{10 (3d6)} every 24 hours that elapse. A creature dies and turns to dust if reduced to 0 Hit Points by this attack.</p>"
         }
       }
@@ -4764,7 +4764,7 @@
       "description": "<p class=\"feature\"><em>Trigger:</em> A [[lookup @target.affects.type activity=Tlv3gcYk5KfdtV7c]] or a source of Bright Light moves within [[lookup @range.value activity=Tlv3gcYk5KfdtV7c]] feet of the [[lookup @name lowercase]]. <em>Response:</em> The [[lookup @name lowercase]] emits a shriek audible within [[lookup @target.template.size activity=Tlv3gcYk5KfdtV7c]] feet of itself for [[lookup @duration.value activity=Tlv3gcYk5KfdtV7c]] minute or until the [[lookup @name lowercase]] dies.</p>",
       "activities": {
         "Use": {
-          "name": "Use"
+          "name": "Użycie"
         }
       }
     },
@@ -5441,7 +5441,7 @@
       }
     },
     "Telepathic Bond": {
-      "name": "Telepathic Bond",
+      "name": "Telepatia",
       "description": "<p class=\"feature\">While the [[lookup @name lowercase]] is on the same plane of existence as its master, the two of them can communicate telepathically with each other.</p>"
     },
     "Telepathic Shroud": {
@@ -5610,7 +5610,7 @@
       },
       "effects": {
         "Deafened": {
-          "name": "Głuchy",
+          "name": "Ogłuchły",
           "description": "<p>Cel ma stan &amp;Reference[Deafened apply=long] do końca swojej następnej tury.</p>"
         }
       }
@@ -5658,7 +5658,7 @@
       },
       "effects": {
         "Cursed": {
-          "name": "Cursed",
+          "name": "Przeklęty",
           "description": "<p>If the target fails its saving throw, it is cursed until the end of its next turn. Until the curse ends, the target can’t cast spells with a Verbal component, and when it speaks, it says the opposite of what it means.</p>"
         }
       }
@@ -5759,7 +5759,7 @@
       }
     },
     "Tree Stride": {
-      "name": "Podróż przez rośliny",
+      "name": "Spacer między drzewami",
       "description": "<p>If within [[lookup @range.value activity=8av8Lh1jNLCrOJny]] feet of a [[lookup @range.special activity=8av8Lh1jNLCrOJny]], the [[lookup @name lowercase]] teleports to an unoccupied space within [[lookup @range.value activity=8av8Lh1jNLCrOJny]] feet of a second [[lookup @target.affects.special activity=8av8Lh1jNLCrOJny]] that is within 60 feet of the previous tree.</p>",
       "activities": {
         "Expend Use": {
@@ -6009,7 +6009,7 @@
       },
       "effects": {
         "Cursed": {
-          "name": "Cursed"
+          "name": "Przeklęty"
         }
       }
     },
