@@ -717,7 +717,7 @@
     },
     "Blessed Strikes: Divine Strike": {
       "name": "Błogosławione uderzenia: Boskie uderzenie",
-      "description": "<p>Raz na każdą swoją turę, gdy trafisz istotę Testem ataku używając broni, możesz spowodować, że cel otrzyma dodatkowe 1k8 obrażeń Nekrotycznych lub Światłości (do wyboru).</p><section id=\"secret-iZHQe1DZBrtcFZCk\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Obrażenia tej zdolności automatycznie wzrosną, gdy zyskasz @UUID[Compendium.dnd-players-handbook.classes.Item.phbclcImprovedBl]{Improved Blessed Strikes}.</p></section>",
+      "description": "<p>Raz na każdą swoją turę, gdy trafisz istotę Testem ataku używając broni, możesz spowodować, że cel otrzyma dodatkowe 1k8 obrażeń Nekrotycznych lub Światłości (do wyboru).</p><section id=\"secret-iZHQe1DZBrtcFZCk\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Obrażenia tej zdolności automatycznie wzrosną, gdy zyskasz @UUID[Compendium.dnd-players-handbook.classes.Item.phbclcImprovedBl].</p></section>",
       "activities": {
         "Necrotic Divine Strike": {
           "name": "Nekrotyczne Boskie uderzenie"
@@ -1492,7 +1492,7 @@
     },
     "Divine Intervention": {
       "name": "Boska interwencja",
-      "description": "<p>Możesz wezwać swoje bóstwo lub panteon, by wstawił się za tobą. Akcją Magii wybierasz dowolny @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj] (czar Kleryka) 5. kręgu lub niższego, który nie wymaga Reakcji do rzucenia. W ramach tej samej akcji rzucasz ten czar bez wydawania komórki czaru ani potrzeby posiadania komponentów materialnych. Nie możesz użyć tej zdolności ponownie, dopóki nie zakończysz Długiego Odpoczynku.</p><section id=\"secret-LP7yqqobTjOqeswv\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Odznacz pole „Zużycie” podczas rzucania czaru w ramach darmowego użycia. Ta zdolność może służyć do śledzenia dostępnych użyć.</p></section>"
+      "description": "<p>Możesz wezwać swoje bóstwo lub panteon, by wstawił się za tobą. Akcją Magii wybierasz dowolny @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj]{czar Kleryka} 5. kręgu lub niższego, który nie wymaga Reakcji do rzucenia. W ramach tej samej akcji rzucasz ten czar bez wydawania komórki czaru ani potrzeby posiadania komponentów materialnych. Nie możesz użyć tej zdolności ponownie, dopóki nie zakończysz Długiego odpoczynku.</p><section id=\"secret-LP7yqqobTjOqeswv\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Odznacz pole „Zużycie” podczas rzucania czaru w ramach darmowego użycia. Ta zdolność może służyć do śledzenia dostępnych użyć.</p></section>"
     },
     "Divine Order": {
       "name": "Boski porządek",
@@ -1884,7 +1884,7 @@
     },
     "Elemental Fury: Primal Strike": {
       "name": "Furia żywiołów: Pierwotne uderzenie",
-      "description": "<p>Raz na każdą ze swoich tur, gdy trafisz istotę testem ataku przy użyciu broni lub ataku formy Bestii w Wild Shape, możesz sprawić, że cel otrzyma dodatkowe 1k8 [[/damage 1k8 type=cold]]{obrażeń od zimna}, [[/damage 1k8 type=fire]]{obrażeń od ognia}, [[/damage 1k8 type=lightning]]{obrażeń od elektryczności} lub [[/damage 1k8 type=thunder]]{obrażeń od dźwięku} (wybierz w momencie trafienia).</p><section class=\"secret\" id=\"secret-teMMREyPGTtod1kP\"><p><strong>Notatka Foundry</strong></p><p>Obrażenia tej funkcji zostaną automatycznie zwiększone, gdy zdobędziesz @UUID[Compendium.dnd-players-handbook.classes.Item.phbdrdImprovedEl]{Improved Elemental Fury}. Jeśli używasz tej aktywności, będziesz mógł wybrać typ obrażeń podczas rzutu. Domyślnie zostanie użyty ostatnio wybrany typ obrażeń.</p></section>",
+      "description": "<p>Raz na każdą ze swoich tur, gdy trafisz istotę testem ataku przy użyciu broni lub ataku formy Bestii w Dzikiej postaci, możesz sprawić, że cel otrzyma dodatkowe 1k8 [[/damage 1k8 type=cold]]{obrażeń od zimna}, [[/damage 1k8 type=fire]]{obrażeń od ognia}, [[/damage 1k8 type=lightning]]{obrażeń od elektryczności} lub [[/damage 1k8 type=thunder]]{obrażeń od dźwięku} (wybierz w momencie trafienia).</p><section class=\"secret\" id=\"secret-teMMREyPGTtod1kP\"><p><strong>Notatka Foundry</strong></p><p>Obrażenia tej funkcji zostaną automatycznie zwiększone, gdy zdobędziesz @UUID[Compendium.dnd-players-handbook.classes.Item.phbdrdImprovedEl]. Jeśli używasz tej aktywności, będziesz mógł wybrać typ obrażeń podczas rzutu. Domyślnie zostanie użyty ostatnio wybrany typ obrażeń.</p></section>",
       "activities": {
         "Primal Strike": {
           "name": "Pierwotne uderzenie"
@@ -2843,7 +2843,7 @@
     },
     "Lay on Hands": {
       "name": "Nakładanie rąk",
-      "description": "<p>Twój błogosławiony dotyk może leczyć rany. Masz pulę mocy leczącej, która odnawia się, gdy zakończysz Długi Odpoczynek. Z tej puli możesz przywrócić łączną liczbę Punktów Wytrzymałości równą pięciokrotności twojego poziomu paladyna.</p><p>Jako Akcja dodatkowa możesz dotknąć istoty (możesz to być ty sam) i zaczerpnąć mocy z puli leczącej, aby przywrócić tej istocie liczbę Punktów Wytrzymałości, do maksymalnej ilości pozostałej w puli.</p><p>Możesz też zużyć 5 Punktów Wytrzymałości z puli mocy leczącej, aby usunąć stan zatruty z istoty; te punkty nie przywracają jednocześnie Punktów Wytrzymałości tej istocie.</p><section id=\"secret-CgxYFHh5PcKwwbwk\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Heal</strong> pozwala ci wybrać liczbę Punktów Wytrzymałości, którą chcesz przywrócić, i zmniejsza twoją pulę Nakładania rąk o tę ilość.</p><p>Aktywność <strong>Remove Poison</strong> zmniejsza twoją pulę o 5, ale nie usuwa automatycznie stanu Zatruty.</p></section>",
+      "description": "<p>Twój błogosławiony dotyk może leczyć rany. Masz pulę mocy leczącej, która odnawia się, gdy zakończysz Długi Odpoczynek. Z tej puli możesz przywrócić łączną liczbę Punktów Wytrzymałości równą pięciokrotności twojego poziomu paladyna.</p><p>Jako Akcja dodatkowa możesz dotknąć istoty (możesz to być ty sam) i zaczerpnąć mocy z puli leczącej, aby przywrócić tej istocie liczbę Punktów Wytrzymałości, do maksymalnej ilości pozostałej w puli.</p><p>Możesz też zużyć 5 Punktów Wytrzymałości z puli mocy leczącej, aby usunąć stan zatruty z istoty; te punkty nie przywracają jednocześnie Punktów Wytrzymałości tej istocie.</p><section id=\"secret-CgxYFHh5PcKwwbwk\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Uzdrowienie</strong> pozwala ci wybrać liczbę Punktów Wytrzymałości, którą chcesz przywrócić, i zmniejsza twoją pulę Nakładania rąk o tę ilość.</p><p>Aktywność <strong>Usuń zatrucie</strong> zmniejsza twoją pulę o 5, ale nie usuwa automatycznie stanu Zatruty.</p></section>",
       "activities": {
         "Remove Poison": {
           "name": "Usuń zatrucie"
