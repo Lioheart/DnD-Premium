@@ -1,9 +1,7 @@
-Hooks.once('init', () => {
-  if (typeof Babele !== 'undefined') {
-    game.babele.register({
-      module: 'lang-dnd-premium', // Identyfikator twojego modułu
-      lang: 'pl', // Język
-      dir: 'lang/pl/compendium', // Katalog z tłumaczeniami
-    });
-  }
+Hooks.once('babele.init', (babele) => {
+  babele.register({
+    module: 'lang-dnd-premium',
+    lang: 'pl',
+    dir: 'lang/pl/compendium'
+  });
 });
