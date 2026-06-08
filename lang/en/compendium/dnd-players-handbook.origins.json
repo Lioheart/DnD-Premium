@@ -5,6 +5,11 @@
         "requirements": "system.requirements",
         "materials": "system.materials.value",
         "chat": "system.description.chat",
+        "unidentified": "system.description.unidentified",
+        "activation": "system.activation.condition",
+        "activationCondition": "system.activation.condition",
+        "activationValue": "system.activation.value",
+        "targetAffects": "system.target.affects.special",
         "activities": {
             "path": "system.activities",
             "converter": "structured",
@@ -18,8 +23,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
+                "activationCondition": "activation.condition",
+                "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
+                "targetAffects": "target.affects.special",
                 "roll": "roll.name",
                 "range": {
                     "path": "range",
@@ -274,7 +282,8 @@
             "activities": {
                 "Cloud's Jaunt": {
                     "name": "Cloud's Jaunt",
-                    "target": "Unoccupied space"
+                    "target": "Unoccupied space",
+                    "targetAffects": "Unoccupied space"
                 }
             }
         },
@@ -552,7 +561,8 @@
             "activities": {
                 "Burn": {
                     "name": "Burn",
-                    "condition": "When you hit a target with an attack roll and deal damage to it"
+                    "condition": "When you hit a target with an attack roll and deal damage to it",
+                    "activationCondition": "When you hit a target with an attack roll and deal damage to it"
                 }
             }
         },
@@ -563,7 +573,8 @@
             "activities": {
                 "Chill": {
                     "name": "Chill",
-                    "condition": "When you hit a target with an attack roll and deal damage to it"
+                    "condition": "When you hit a target with an attack roll and deal damage to it",
+                    "activationCondition": "When you hit a target with an attack roll and deal damage to it"
                 }
             },
             "effects": {
@@ -755,7 +766,8 @@
             "activities": {
                 "Hill's Tumble": {
                     "name": "Hill's Tumble",
-                    "condition": "When you hit a Large or smaller creature with an attack roll and deal damage to it"
+                    "condition": "When you hit a Large or smaller creature with an attack roll and deal damage to it",
+                    "activationCondition": "When you hit a Large or smaller creature with an attack roll and deal damage to it"
                 }
             }
         },
@@ -934,7 +946,8 @@
             "activities": {
                 "Relentlessly Endure": {
                     "name": "Relentlessly Endure",
-                    "condition": "When you are reduced to 0 Hit Points but not killed outright"
+                    "condition": "When you are reduced to 0 Hit Points but not killed outright",
+                    "activationCondition": "When you are reduced to 0 Hit Points but not killed outright"
                 }
             }
         },
@@ -1042,7 +1055,8 @@
             "requirements": "Goliath (Stone Giant)",
             "activities": {
                 "heal": {
-                    "condition": "When you take damage"
+                    "condition": "When you take damage",
+                    "activationCondition": "When you take damage"
                 }
             }
         },
@@ -1068,7 +1082,8 @@
             "activities": {
                 "Storm's Thunder": {
                     "name": "Storm's Thunder",
-                    "condition": "When you take damage from a creature within 60 feet of you"
+                    "condition": "When you take damage from a creature within 60 feet of you",
+                    "activationCondition": "When you take damage from a creature within 60 feet of you"
                 }
             }
         },

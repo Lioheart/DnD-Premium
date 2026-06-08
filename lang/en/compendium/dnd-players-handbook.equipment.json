@@ -5,6 +5,11 @@
         "requirements": "system.requirements",
         "materials": "system.materials.value",
         "chat": "system.description.chat",
+        "unidentified": "system.description.unidentified",
+        "activation": "system.activation.condition",
+        "activationCondition": "system.activation.condition",
+        "activationValue": "system.activation.value",
+        "targetAffects": "system.target.affects.special",
         "activities": {
             "path": "system.activities",
             "converter": "structured",
@@ -18,8 +23,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
+                "activationCondition": "activation.condition",
+                "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
+                "targetAffects": "target.affects.special",
                 "roll": "roll.name",
                 "range": {
                     "path": "range",
@@ -105,7 +113,8 @@
             "activities": {
                 "Throw Acid": {
                     "name": "Throw Acid",
-                    "target": "You can see"
+                    "target": "You can see",
+                    "targetAffects": "You can see"
                 }
             }
         },
@@ -312,7 +321,8 @@
             "activities": {
                 "Wrap Chain Check": {
                     "name": "Wrap Chain Check",
-                    "target": "Has the Grappled, Incapacitated, or Restrained condition"
+                    "target": "Has the Grappled, Incapacitated, or Restrained condition",
+                    "targetAffects": "Has the Grappled, Incapacitated, or Restrained condition"
                 },
                 "Escape Check": {
                     "name": "Escape Check"
@@ -570,7 +580,8 @@
             "activities": {
                 "Stabilize": {
                     "name": "Stabilize",
-                    "target": "Unconscious"
+                    "target": "Unconscious",
+                    "targetAffects": "Unconscious"
                 }
             }
         },
@@ -623,7 +634,8 @@
             "description": "<p>As a Utilize action, you can set a Hunting Trap, which is a sawtooth steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 Piercing damage and have its Speed reduced to 0 until the start of its next turn. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet). A creature can use its action to make a DC 13 Strength (Athletics) check, freeing itself or another creature within its reach on a success. Each failed check deals [[/damage 1 type=piercing]] damage to the trapped creature.</p>",
             "activities": {
                 "save": {
-                    "condition": "Steps on the plate"
+                    "condition": "Steps on the plate",
+                    "activationCondition": "Steps on the plate"
                 },
                 "Escape": {
                     "name": "Escape"
@@ -762,7 +774,8 @@
             "activities": {
                 "Bind": {
                     "name": "Bind",
-                    "target": "Grappled, Incapacitated, or Restrained"
+                    "target": "Grappled, Incapacitated, or Restrained",
+                    "targetAffects": "Grappled, Incapacitated, or Restrained"
                 },
                 "Escape Check": {
                     "name": "Escape Check"

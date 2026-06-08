@@ -45,7 +45,9 @@
                     "activities": {
                         "attack": {
                             "condition": "action taken by controller",
-                            "target": "a target within 5 feet after movement"
+                            "activationCondition": "action taken by controller",
+                            "target": "a target within 5 feet after movement",
+                            "targetAffects": "a target within 5 feet after movement"
                         }
                     }
                 }
@@ -62,11 +64,13 @@
                     "activities": {
                         "Clockwork Force": {
                             "name": "Clockwork Force",
-                            "condition": "action taken by controller"
+                            "condition": "action taken by controller",
+                            "activationCondition": "action taken by controller"
                         },
                         "Orderly Ward": {
                             "name": "Orderly Ward",
-                            "condition": "action taken by controller"
+                            "condition": "action taken by controller",
+                            "activationCondition": "action taken by controller"
                         }
                     }
                 }

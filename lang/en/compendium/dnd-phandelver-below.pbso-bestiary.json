@@ -269,6 +269,8 @@
                 "Shield": {
                     "name": "Shield",
                     "description": "<p>An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.</p>",
+                    "activation": "Which you take when you are hit by an attack or targeted by the magic missile spell",
+                    "activationCondition": "Which you take when you are hit by an attack or targeted by the magic missile spell",
                     "effects": {
                         "Shield": {
                             "name": "Shield",
@@ -297,7 +299,9 @@
                 },
                 "Counterspell": {
                     "name": "Counterspell",
-                    "description": "<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p><p><strong>Higher Levels. </strong>When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>"
+                    "description": "<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p><p><strong>Higher Levels. </strong>When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>",
+                    "activation": "which you take when you see a creature within 60 feet of you casting a spell",
+                    "activationCondition": "which you take when you see a creature within 60 feet of you casting a spell"
                 },
                 "Fear": {
                     "name": "Fear",
@@ -407,7 +411,8 @@
                     "description": "<p>The first time the [[lookup @name]] takes damage, any living creature within 5 feet of the zombie must succeed on a DC 10 Constitution saving throw or gain disadvantage on attack rolls, saving throws, and ability checks for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on it early with a successful save.</p>",
                     "activities": {
                         "save": {
-                            "condition": "When the zombie takes damage"
+                            "condition": "When the zombie takes damage",
+                            "activationCondition": "When the zombie takes damage"
                         }
                     },
                     "effects": {
@@ -462,7 +467,8 @@
                     "description": "<p>The banshee can magically sense the presence of creatures up to 5 miles away that aren’t undead or constructs. She knows the general direction they’re in but not their exact locations.</p>",
                     "activities": {
                         "utility": {
-                            "target": "not undead or constructs"
+                            "target": "not undead or constructs",
+                            "targetAffects": "not undead or constructs"
                         }
                     }
                 },
@@ -613,9 +619,12 @@
                 "Antimagic Cone": {
                     "name": "Antimagic Cone",
                     "description": "<p>The beholder’s central eye creates an area of antimagic, as in the @UUID[Compendium.dnd5e.spells.Item.Eon0jzGzQRNluTPQ]{antimagic field} spell, in a 150-foot-cone. At the start of each of its turns, the beholder decides which way the cone faces and whether the cone is active. The area works against the beholder’s own eye rays.</p>",
+                    "activation": "Start of each turn",
+                    "activationCondition": "Start of each turn",
                     "activities": {
                         "utility": {
-                            "condition": "Start of each turn"
+                            "condition": "Start of each turn",
+                            "activationCondition": "Start of each turn"
                         }
                     }
                 },
@@ -670,9 +679,12 @@
                 "Legendary Actions": {
                     "name": "Legendary Actions",
                     "description": "<section class=\"secret\" id=\"secret-86sNxVGAgcTMHDDK\"><p>The beholder can take 3 legendary actions, using the Eye Ray option below. It can take only one legendary action at a time and only at the end of another creature’s turn. The beholder regains spent legendary actions at the start of its turn.</p></section><p>The beholder can take 3 legendary actions.</p>",
+                    "activation": "End of another creature's turn",
+                    "activationCondition": "End of another creature's turn",
                     "activities": {
                         "utility": {
-                            "condition": "End of another creature's turn"
+                            "condition": "End of another creature's turn",
+                            "activationCondition": "End of another creature's turn"
                         }
                     }
                 },
@@ -757,7 +769,8 @@
                     "description": "<section class=\"secret\" id=\"secret-GXCJtfYlMBKXWzUe\"><p><em>Melee Weapon Attack:</em> +6 to hit, reach 30 ft., one target. <em>Hit:</em> 15 (3d8 + 2) bludgeoning damage. If the target is a Huge or smaller creature, it has the grappled condition (escape DC 14) and takes 9 (1d8 + 5) psychic damage at the start of each of its turns until the grapple ends. The brain breaker can have up to four targets grappled at a time.</p></section><p>The brain breaker makes a tentacle attack. If the target is a Huge or smaller creature it also has the &amp;Reference[grappled]{grappled} condition (escape [[/check ability=strength dc=14]]).</p>",
                     "activities": {
                         "damage": {
-                            "target": "Grappled"
+                            "target": "Grappled",
+                            "targetAffects": "Grappled"
                         }
                     }
                 },
@@ -772,9 +785,12 @@
                 "Psychic Link": {
                     "name": "Psychic Link",
                     "description": "<section id=\"secret-xGJgOYyo3JJPtZV2\" class=\"secret\"><p>The brain breaker targets one creature with the &amp;Reference[incapacitated]{incapacitated}</p><p>condition that the brain breaker senses with its Creature Sense trait and establishes a psychic link with the target. Until the link ends, the brain breaker can perceive everything the target senses. The target becomes aware that something is linked to its mind once it no longer has the incapacitated condition, and the brain breaker can terminate the link at any time (no action required). The target can use an action on its turn to attempt to break the link, doing so with a successful [[/check ability=cha dc=17]] check. If the target breaks the link this way, the target takes 10 (3d6) psychic damage. The link also ends if the target and the brain breaker are more than 1 mile apart. The brain breaker can form psychic links with up to ten creatures at a time.</p></section><p>The brain breaker creates a psychic link.</p>",
+                    "activation": "senses an incapacitated creature",
+                    "activationCondition": "senses an incapacitated creature",
                     "activities": {
                         "damage": {
-                            "condition": "senses an incapacitated creature"
+                            "condition": "senses an incapacitated creature",
+                            "activationCondition": "senses an incapacitated creature"
                         }
                     }
                 },
@@ -925,9 +941,12 @@
                 "Warp Reality": {
                     "name": "Warp Reality",
                     "description": "<p>When hit by an attack roll, the mind flayer gains a +4 bonus to its AC against that attack roll, potentially causing it to miss. Then the mind flayer, along with any equipment it is wearing or carrying, magically teleports up to 60 feet to an unoccupied space it can see.</p>",
+                    "activation": "Hit by an attack roll",
+                    "activationCondition": "Hit by an attack roll",
                     "activities": {
                         "utility": {
-                            "condition": "Hit by an attack roll"
+                            "condition": "Hit by an attack roll",
+                            "activationCondition": "Hit by an attack roll"
                         }
                     }
                 },
@@ -1147,7 +1166,8 @@
                     "description": "<section class=\"secret\" id=\"secret-7AB3pcWORCu44Vm6\"><p>The mutate lets out a moan charged with psychic energy. Each creature within 60 feet of the mutate that isn’t an Aberration must succeed on a DC 16 Wisdom saving throw or take 17 (5d6) psychic damage and have the &amp;Reference[frightened]{frightened} condition until the end of the mutate’s next turn.</p></section><p>The mutate lets out a moan charged with psychic energy.</p>",
                     "activities": {
                         "save": {
-                            "target": "non-aberration"
+                            "target": "non-aberration",
+                            "targetAffects": "non-aberration"
                         }
                     },
                     "effects": {
@@ -1569,9 +1589,12 @@
                 "Death Burst": {
                     "name": "Death Burst",
                     "description": "<section class=\"secret\" id=\"secret-O1zTnCZg22PbWl4h\"><p>When the mephit dies, it explodes in a burst of dust. Each creature within <strong>5 ft.</strong> of it must then succeed on a <strong>DC 10 Constitution saving throw</strong> or be &amp;Reference[blinded]{blinded} for <strong>1 minute</strong>. A blinded creature can repeat the saving throw on each of its turns, ending the effect on itself on a success.</p></section><p>When the mephit dies, it explodes in a burst of dust. Each creature within <strong>5 ft.</strong> of it must make a <strong>Constitution</strong> saving throw.</p>",
+                    "activation": "on death",
+                    "activationCondition": "on death",
                     "activities": {
                         "save": {
-                            "condition": "on death"
+                            "condition": "on death",
+                            "activationCondition": "on death"
                         }
                     },
                     "effects": {
@@ -1690,9 +1713,12 @@
                 "Aggressive Hunger": {
                     "name": "Aggressive Hunger",
                     "description": "<p>Immediately after being hit by an attack, the cluster moves up to its speed toward the attacker. This movement doesn’t provoke opportunity attacks. If the cluster ends this movement within 5 feet of the attacker, it then makes one [[/item Slam]] attack against that attacker.</p>",
+                    "activation": "Immediately after being hit by an attack",
+                    "activationCondition": "Immediately after being hit by an attack",
                     "activities": {
                         "utility": {
-                            "condition": "Immediately after being hit by an attack"
+                            "condition": "Immediately after being hit by an attack",
+                            "activationCondition": "Immediately after being hit by an attack"
                         }
                     }
                 }
@@ -1796,6 +1822,8 @@
                 "Shield": {
                     "name": "Shield",
                     "description": "<p>An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.</p>",
+                    "activation": "Which you take when you are hit by an attack or targeted by the magic missile spell",
+                    "activationCondition": "Which you take when you are hit by an attack or targeted by the magic missile spell",
                     "effects": {
                         "Shield": {
                             "name": "Shield",
@@ -1855,9 +1883,12 @@
                 "Consume Creature": {
                     "name": "Consume Creature",
                     "description": "<p>The flesh meld targets one Large or smaller creature within 5 feet of itself that it’s grappling. The target must succeed on a DC 15 Dexterity saving throw or be swallowed by the flesh meld. The flesh meld can have one creature swallowed at a time.</p><p>A swallowed creature no longer has the &amp;Reference[grappled]{grappled} condition. While swallowed, it has the &amp;Reference[blinded]{blinded} and &amp;Reference[restrained]{restrained} conditions, has total cover against attacks and other effects outside the flesh meld, and takes 10 (3d6) necrotic damage at the start of each of the flesh meld’s turns. If this damage reduces a swallowed creature to 0 hit points, the creature dies, and the flesh meld consumes its body.</p><p>If the flesh meld takes 30 damage or more on a single turn from the swallowed creature, the flesh meld must succeed on a [[/save ability=constitution dc=15]] saving throw at the end of that turn or regurgitate the creature, which falls with the &amp;Reference[prone]{prone} condition in a space within 5 feet of the flesh meld. If the flesh meld dies, the swallowed creature is no longer restrained by it and can escape from the corpse by using 10 feet of movement, exiting with the prone condition.</p>",
+                    "activation": "Grappling a creature",
+                    "activationCondition": "Grappling a creature",
                     "activities": {
                         "save": {
-                            "condition": "Grappling a creature"
+                            "condition": "Grappling a creature",
+                            "activationCondition": "Grappling a creature"
                         }
                     }
                 }
@@ -1939,12 +1970,16 @@
                 "Rolling Charge": {
                     "name": "Rolling Charge",
                     "description": "<section class=\"secret\" id=\"secret-8E4bf80mRpxRC4ll\"><p>If the galeb duhr rolls at least 20 feet straight toward a target and then hits it with a slam attack on the same turn, the target takes an extra 7 (2d6) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be knocked prone.</p></section><p>The Galeb Duhr rolls towards its target.</p>",
+                    "activation": "Rolls at least 20 feet and attacks with a slam",
+                    "activationCondition": "Rolls at least 20 feet and attacks with a slam",
                     "activities": {
                         "damage": {
-                            "condition": "Rolls at least 20 feet and attacks with a slam"
+                            "condition": "Rolls at least 20 feet and attacks with a slam",
+                            "activationCondition": "Rolls at least 20 feet and attacks with a slam"
                         },
                         "save": {
-                            "condition": "Rolls at least 20 feet and attacks with a slam"
+                            "condition": "Rolls at least 20 feet and attacks with a slam",
+                            "activationCondition": "Rolls at least 20 feet and attacks with a slam"
                         }
                     }
                 }
@@ -1976,7 +2011,8 @@
                     "description": "<section class=\"secret\" id=\"secret-PS1xFPnqQ6wyNqRE\"><p>Each non-undead creature within 60 ft. of the ghost that can see it must succeed on a <strong>DC 13 Wisdom</strong> saving throw or be &amp;Reference[frightened]{frightened} for 1 minute. If the save fails by 5 or more, the target also ages [[/gmroll 1d4*10]] years.</p><p>A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a @UUID[Compendium.dnd5e.spells.Item.WzvJ7G3cqvIubsLk]{greater restoration} spell, but only within 24 hours of it occurring.</p></section><p>Each non-undead creature within 60 ft. of the ghost that can see it must succeed make a <strong>Wisdom</strong> saving throw. A target can repeat the saving throw at the end of each of its turns, ending the condition on itself on a success.</p>",
                     "activities": {
                         "save": {
-                            "target": "each non-undead creature it can see"
+                            "target": "each non-undead creature it can see",
+                            "targetAffects": "each non-undead creature it can see"
                         }
                     },
                     "effects": {
@@ -2006,7 +2042,8 @@
                     "description": "<section class=\"secret\" id=\"secret-LrtNppOiP1xiVkPN\"><p><em>Melee Weapon Attack:</em><strong>+4 to hit,</strong>, <strong>5 ft.,</strong> one target. Hit: <strong>7 (2d4 + 2) </strong><em><strong>slashing damage</strong></em>.</p><p>If the target is a creature other than an elf or undead, it must succeed on a <strong>DC 10 Constitution</strong> saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p></section><p>The Ghoul attacks with its Claws. If the target is a creature other than an elf or undead, it must make a <strong>Constitution</strong> saving throw. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>",
                     "activities": {
                         "save": {
-                            "target": "not an elf or undead"
+                            "target": "not an elf or undead",
+                            "targetAffects": "not an elf or undead"
                         }
                     },
                     "effects": {
@@ -2180,7 +2217,8 @@
                     "description": "<section class=\"secret\" id=\"secret-7ycKutFvlFOGUvnZ\"><p><em>Melee Weapon Attack:</em><strong>+2 to hit,</strong>, <strong>5 ft.,</strong> one creature. Hit: <strong>17 (5d6) </strong><em><strong>piercing damage</strong></em>.</p><p>If the target is Medium or smaller, it must succeed on a <strong>DC 10 Strength</strong> saving throw or be knocked &amp;Reference[prone]{prone}. If the target is killed by this damage, it is absorbed into the mouther.</p></section><p>The Gibbering Mouther attacks with its Bites. If the target is Medium or smaller, it must make a <strong>Strength</strong> saving throw or be knocked prone.</p>",
                     "activities": {
                         "save": {
-                            "target": "Medium or smaller"
+                            "target": "Medium or smaller",
+                            "targetAffects": "Medium or smaller"
                         }
                     }
                 },
@@ -2425,9 +2463,12 @@
                 "Redirect Attack": {
                     "name": "Redirect Attack",
                     "description": "<p>When a creature the goblin can see targets it with an attack, the goblin chooses another goblin within 5 feet of it. The two goblins swap places, and the chosen goblin becomes the target instead.</p>",
+                    "activation": "When a creature the goblin can see targets it with an attack",
+                    "activationCondition": "When a creature the goblin can see targets it with an attack",
                     "activities": {
                         "utility": {
-                            "condition": "When a creature the goblin can see targets it with an attack"
+                            "condition": "When a creature the goblin can see targets it with an attack",
+                            "activationCondition": "When a creature the goblin can see targets it with an attack"
                         }
                     }
                 },
@@ -2461,9 +2502,12 @@
                 "Mental Burst": {
                     "name": "Mental Burst",
                     "description": "<section id=\"secret-xftgxhUkNlHvXEUX\" class=\"secret\"><p>When the goblin dies, its pent-up mental energy explodes in a psychic blast. Each creature within 5 feet of it must succeed on a DC 13 Intelligence saving throw or take 5 (2d4) psychic damage.</p></section><p>The goblin's pent-up mental energy explodes in a psychic blast.</p>",
+                    "activation": "When the goblin dies",
+                    "activationCondition": "When the goblin dies",
                     "activities": {
                         "save": {
-                            "condition": "When the goblin dies"
+                            "condition": "When the goblin dies",
+                            "activationCondition": "When the goblin dies"
                         }
                     }
                 },
@@ -2498,9 +2542,12 @@
                 "Mental Burst": {
                     "name": "Mental Burst",
                     "description": "<section class=\"secret\" id=\"secret-xftgxhUkNlHvXEUX\"><p>When the goblin dies, its pent-up mental energy explodes in a psychic blast. Each creature within 5 feet of it must succeed on a DC 13 Intelligence saving throw or take 10 (4d4) psychic damage.</p></section><p>The goblin's pent-up mental energy explodes in a psychic blast.</p>",
+                    "activation": "When the goblin dies",
+                    "activationCondition": "When the goblin dies",
                     "activities": {
                         "save": {
-                            "condition": "When the goblin dies"
+                            "condition": "When the goblin dies",
+                            "activationCondition": "When the goblin dies"
                         }
                     }
                 },
@@ -2549,9 +2596,12 @@
                 "Psionic Shield": {
                     "name": "Psionic Shield",
                     "description": "<p>When the goblin or one of its allies within 15 feet of it is hit by an attack roll, the goblin conjures a shield of force. The target of the attack gains a +3 bonus to its AC against the triggering attack roll, potentially causing it to miss.</p>",
+                    "activation": "When the goblin or one of its allies within 15 feet is hit by an attack roll",
+                    "activationCondition": "When the goblin or one of its allies within 15 feet is hit by an attack roll",
                     "activities": {
                         "utility": {
-                            "condition": "When the goblin or one of its allies within 15 feet is hit by an attack roll"
+                            "condition": "When the goblin or one of its allies within 15 feet is hit by an attack roll",
+                            "activationCondition": "When the goblin or one of its allies within 15 feet is hit by an attack roll"
                         }
                     }
                 },
@@ -3166,6 +3216,8 @@
                 "Shield": {
                     "name": "Shield",
                     "description": "<p>An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.</p>",
+                    "activation": "Which you take when you are hit by an attack or targeted by the magic missile spell",
+                    "activationCondition": "Which you take when you are hit by an attack or targeted by the magic missile spell",
                     "effects": {
                         "Shield": {
                             "name": "Shield",
@@ -3184,7 +3236,9 @@
                 },
                 "Counterspell": {
                     "name": "Counterspell",
-                    "description": "<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p><p><strong>Higher Levels. </strong>When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>"
+                    "description": "<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p><p><strong>Higher Levels. </strong>When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>",
+                    "activation": "which you take when you see a creature within 60 feet of you casting a spell",
+                    "activationCondition": "which you take when you see a creature within 60 feet of you casting a spell"
                 },
                 "Fireball": {
                     "name": "Fireball",
@@ -3254,9 +3308,12 @@
                 "Warp Reality": {
                     "name": "Warp Reality",
                     "description": "<p>When hit by an attack roll, the mind flayer gains a +4 bonus to its AC against that attack roll, potentially causing it to miss. Then the mind flayer, along with any equipment it is wearing or carrying, magically teleports up to 60 feet to an unoccupied space it can see.</p>",
+                    "activation": "Hit by an attack roll",
+                    "activationCondition": "Hit by an attack roll",
                     "activities": {
                         "utility": {
-                            "condition": "Hit by an attack roll"
+                            "condition": "Hit by an attack roll",
+                            "activationCondition": "Hit by an attack roll"
                         }
                     }
                 },
@@ -3458,7 +3515,8 @@
                     "description": "<section class=\"secret\" id=\"secret-Ungd9fhpDTGDI5PE\"><p>When a creature that can see the medusa's eyes starts its turn within <strong>30 ft.</strong> of the medusa, the medusa can force it to make a <strong>DC 14 Constitution saving throw</strong> if the medusa isn't incapacitated and can see the creature. If the saving throw fails by 5 or more, the creature is instantly petrified. Otherwise, a creature that fails the save begins to turn to stone and is restrained. The restrained creature must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the @UUID[Compendium.dnd5e.spells.Item.WzvJ7G3cqvIubsLk]{greater restoration} spell or other magic.</p><p>Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save<strong>. I</strong>f the medusa sees itself reflected on a polished surface within <strong>30 ft.</strong> of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze.</p></section><p>The medusa can force it to make a <strong>Constitution</strong> saving throw. The &amp;Reference[restrained]{restrained} creature must repeat the saving throw at the end of its next turn, becoming &amp;Reference[petrified]{petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the greater restoration spell or other magic. Unless &amp;Reference[surprised]{surprised}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save. If the medusa sees itself reflected on a polished surface within <strong>30 ft.</strong> of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze.</p>",
                     "activities": {
                         "save": {
-                            "target": "that can see it"
+                            "target": "that can see it",
+                            "targetAffects": "that can see it"
                         }
                     },
                     "effects": {
@@ -3543,7 +3601,9 @@
                 },
                 "Defensive Flight": {
                     "name": "Defensive Flight",
-                    "description": "<p>Immediately after taking damage, the mutate flies up to its speed. This movement doesn’t provoke opportunity attacks.</p>"
+                    "description": "<p>Immediately after taking damage, the mutate flies up to its speed. This movement doesn’t provoke opportunity attacks.</p>",
+                    "activation": "After taking damage",
+                    "activationCondition": "After taking damage"
                 }
             }
         },
@@ -3648,6 +3708,8 @@
                 "Shield": {
                     "name": "Shield",
                     "description": "<p>An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.</p>",
+                    "activation": "Which you take when you are hit by an attack or targeted by the magic missile spell",
+                    "activationCondition": "Which you take when you are hit by an attack or targeted by the magic missile spell",
                     "effects": {
                         "Shield": {
                             "name": "Shield",
@@ -3672,9 +3734,12 @@
                 "Psychic Link": {
                     "name": "Psychic Link",
                     "description": "<section id=\"secret-aN9DwaAinkx64Soj\" class=\"secret\"><p>The elder brain targets one creature with the &amp;Reference[incapacitated]{incapacitated} condition that the elder brain senses with its @UUID[.Nqrkn6ZV0Z7RXSC6]{Creature Sense} trait and establishes a psychic link with the target. Until the link ends, the elder brain can perceive everything the target senses. The target becomes aware that something is linked to its mind once it no longer has the incapacitated condition, and the elder brain can terminate the link at any time (no action required). The target can use an action on its turn to attempt to break the link, doing so with a successful [[/check ability=charisma dc=17]] check. If the target breaks the link this way, the target takes 10 (3d6) psychic damage. The link also ends if the target and the elder brain are more than 1 mile apart. The elder brain can form psychic links with up to ten creatures at a time.</p></section><p>The infected elder brain makes a psychic link.</p>",
+                    "activation": "senses an incapacitated creature",
+                    "activationCondition": "senses an incapacitated creature",
                     "activities": {
                         "damage": {
-                            "condition": "senses an incapacitated creature"
+                            "condition": "senses an incapacitated creature",
+                            "activationCondition": "senses an incapacitated creature"
                         }
                     }
                 },
@@ -3806,9 +3871,12 @@
                 "Siphon Thoughts": {
                     "name": "Siphon Thoughts",
                     "description": "<p>The intellect snare targets one creature it is &amp;Reference[grappled]{grappling}. The target must make a DC 17 Intelligence saving throw, taking 21 (6d6) psychic damage on a failed save, or half as much damage on a successful one. The intellect snare then regains a number of hit points equal to the amount of damage taken.</p>",
+                    "activation": "Grappling a creature",
+                    "activationCondition": "Grappling a creature",
                     "activities": {
                         "save": {
-                            "condition": "Grappling a creature"
+                            "condition": "Grappling a creature",
+                            "activationCondition": "Grappling a creature"
                         }
                     }
                 }
@@ -3974,7 +4042,9 @@
                 },
                 "Shield": {
                     "name": "Shield",
-                    "description": "<p>An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.</p>"
+                    "description": "<p>An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.</p>",
+                    "activation": "Which you take when you are hit by an attack or targeted by the magic missile spell",
+                    "activationCondition": "Which you take when you are hit by an attack or targeted by the magic missile spell"
                 },
                 "Misty Step": {
                     "name": "Misty Step",
@@ -3987,7 +4057,9 @@
                 },
                 "Counterspell": {
                     "name": "Counterspell",
-                    "description": "<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p><p><strong>Higher Levels. </strong>When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>"
+                    "description": "<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p><p><strong>Higher Levels. </strong>When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>",
+                    "activation": "which you take when you see a creature within 60 feet of you casting a spell",
+                    "activationCondition": "which you take when you see a creature within 60 feet of you casting a spell"
                 },
                 "Fireball": {
                     "name": "Fireball",
@@ -4221,9 +4293,12 @@
                 "Warp Reality": {
                     "name": "Warp Reality",
                     "description": "<p>When hit by an attack roll, the mind flayer gains a +4 bonus to its AC against that attack roll, potentially causing it to miss. Then the mind flayer, along with any equipment it is wearing or carrying, magically teleports up to 60 feet to an unoccupied space it can see.</p>",
+                    "activation": "Hit by an attack roll",
+                    "activationCondition": "Hit by an attack roll",
                     "activities": {
                         "utility": {
-                            "condition": "Hit by an attack roll"
+                            "condition": "Hit by an attack roll",
+                            "activationCondition": "Hit by an attack roll"
                         }
                     }
                 },
@@ -4438,7 +4513,8 @@
                     "description": "<section class=\"secret\" id=\"secret-kCI5tSH17b9JEo2e\"><p>The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently.</p><p>The target's spirit rises as a @UUID[Compendium.dnd-phandelver-below.pbso-bestiary.Actor.PuPo4H4Dcxigf0fY]{specter} in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.</p></section><p>The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space.</p>",
                     "activities": {
                         "summon": {
-                            "target": "creature dead no longer than 1 minute"
+                            "target": "creature dead no longer than 1 minute",
+                            "targetAffects": "creature dead no longer than 1 minute"
                         }
                     }
                 },
@@ -4846,9 +4922,12 @@
                 "Obsessive Rebuke": {
                     "name": "Obsessive Rebuke",
                     "description": "<p>When the oculorb is damaged by a creature it can see within 60 feet of itself, it forces the creature to make a DC 16 Wisdom saving throw. The creature takes 10 (3d6) psychic damage on a failed save, or half as much damage on a successful one.</p>",
+                    "activation": "When the oculorb is damaged by a creature it can see within 60 feet",
+                    "activationCondition": "When the oculorb is damaged by a creature it can see within 60 feet",
                     "activities": {
                         "save": {
-                            "condition": "When the oculorb is damaged by a creature it can see within 60 feet"
+                            "condition": "When the oculorb is damaged by a creature it can see within 60 feet",
+                            "activationCondition": "When the oculorb is damaged by a creature it can see within 60 feet"
                         }
                     }
                 }
@@ -4904,7 +4983,9 @@
                 },
                 "Defensive Flight": {
                     "name": "Defensive Flight",
-                    "description": "<p>Immediately after taking damage, the mutate flies up to its speed. This movement doesn’t provoke opportunity attacks.</p>"
+                    "description": "<p>Immediately after taking damage, the mutate flies up to its speed. This movement doesn’t provoke opportunity attacks.</p>",
+                    "activation": "After taking damage",
+                    "activationCondition": "After taking damage"
                 },
                 "Unarmed Strike": {
                     "name": "Unarmed Strike",
@@ -4969,9 +5050,12 @@
                 "Negate Spell": {
                     "name": "Negate Spell",
                     "description": "<p>Oshundo targets one creature it can perceive within 60 feet of itself that is casting a spell. If the spell is 3rd level or lower, the spell fails, but any spell slots or charges aren’t wasted.</p>",
+                    "activation": "A creature it can see that is casting a spell within 60 feet",
+                    "activationCondition": "A creature it can see that is casting a spell within 60 feet",
                     "activities": {
                         "utility": {
-                            "condition": "A creature it can see that is casting a spell within 60 feet"
+                            "condition": "A creature it can see that is casting a spell within 60 feet",
+                            "activationCondition": "A creature it can see that is casting a spell within 60 feet"
                         }
                     }
                 },
@@ -5154,10 +5238,14 @@
                 "Chitin Slam": {
                     "name": "Chitin Slam",
                     "description": "<p>The mutate targets one creature it is grappling, slamming the creature against its chitinous plating. </p><p>The creature must succeed on a DC 15 Constitution saving throw or take 3d10 bludgeoning damage and have the &amp;Reference[stunned]{stunned} condition until the end of the mutate’s next turn.</p>",
+                    "activation": "An already grappled creature",
+                    "activationCondition": "An already grappled creature",
                     "activities": {
                         "save": {
                             "condition": "An already grappled creature",
-                            "target": "already grappled"
+                            "activationCondition": "An already grappled creature",
+                            "target": "already grappled",
+                            "targetAffects": "already grappled"
                         }
                     },
                     "effects": {
@@ -5341,9 +5429,12 @@
                 "Wounded Fury": {
                     "name": "Wounded Fury",
                     "description": "<section class=\"secret\" id=\"secret-6ip9qz1cAHIhDdij\"><p><strong>Foundry Tip:</strong> Activate the Wounded Fury Active Effect to add the 2d6 damage automatically.</p></section><p>While it has 10 hit points or fewer, the quaggoth has <strong>advantage</strong> on attack rolls. In addition, it deals an extra 7 (2d6) damage to any target it hits with a melee attack.</p>",
+                    "activation": "While it has less than 10 hit points",
+                    "activationCondition": "While it has less than 10 hit points",
                     "activities": {
                         "utility": {
-                            "condition": "While it has less than 10 hit points"
+                            "condition": "While it has less than 10 hit points",
+                            "activationCondition": "While it has less than 10 hit points"
                         }
                     },
                     "effects": {
@@ -5371,9 +5462,12 @@
                 "Wounded Fury": {
                     "name": "Wounded Fury",
                     "description": "<section class=\"secret\" id=\"secret-6ip9qz1cAHIhDdij\"><p><strong>Foundry Tip:</strong> Activate the Wounded Fury Active Effect to add the 2d6 damage automatically.</p></section><p>While it has 10 hit points or fewer, the quaggoth has <strong>advantage</strong> on attack rolls. In addition, it deals an extra 7 (2d6) damage to any target it hits with a melee attack.</p>",
+                    "activation": "While it has less than 10 hit points",
+                    "activationCondition": "While it has less than 10 hit points",
                     "activities": {
                         "utility": {
-                            "condition": "While it has less than 10 hit points"
+                            "condition": "While it has less than 10 hit points",
+                            "activationCondition": "While it has less than 10 hit points"
                         }
                     },
                     "effects": {
@@ -5390,6 +5484,8 @@
                     "name": "Feather Fall",
                     "description": "<p>Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.</p>",
                     "materials": "A small feather or piece of down",
+                    "activation": "which you take when you or a creature within 60 feet of you falls",
+                    "activationCondition": "which you take when you or a creature within 60 feet of you falls",
                     "effects": {
                         "Spell Changes": {
                             "name": "Spell Changes"
@@ -5951,9 +6047,12 @@
                 "Vengeful Glare": {
                     "name": "Vengeful Glare",
                     "description": "<p>The revenant targets one creature it can see within 30 feet of it and against which it has sworn vengeance. The target must make a <strong>DC 15 Wisdom saving throw</strong>. On a failure, the target is &amp;Reference[paralyzed]{paralyzed} until the revenant deals damage to it, or until the end of the revenant’s next turn. When the paralysis ends, the target is &amp;Reference[frightened]{frightened} of the revenant for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if it can see the revenant, ending the frightened condition on itself on a success.</p>",
+                    "activation": "Can see a creature against which it has sworn vengeance",
+                    "activationCondition": "Can see a creature against which it has sworn vengeance",
                     "activities": {
                         "save": {
-                            "condition": "Can see a creature against which it has sworn vengeance"
+                            "condition": "Can see a creature against which it has sworn vengeance",
+                            "activationCondition": "Can see a creature against which it has sworn vengeance"
                         }
                     },
                     "effects": {
@@ -5969,7 +6068,8 @@
                     "activities": {
                         "Vengeance Damage": {
                             "name": "Vengeance Damage",
-                            "target": "that they have sworn vengeance against"
+                            "target": "that they have sworn vengeance against",
+                            "targetAffects": "that they have sworn vengeance against"
                         }
                     }
                 }
@@ -6333,9 +6433,12 @@
                 "Spell Reflection": {
                     "name": "Spell Reflection",
                     "description": "<p>If the spectator makes a successful saving throw against a spell, or a spell attack misses it, the spectator can choose another creature (including the spellcaster) it can see within 30 feet of it. The spell targets the chosen creature instead of the spectator. If the spell forced a saving throw, the chosen creature makes its own save. If the spell was an attack, the attack roll is rerolled against the chosen creature.</p>",
+                    "activation": "The spectator has made a successful save against a spell attack or a spell attack misses it.",
+                    "activationCondition": "The spectator has made a successful save against a spell attack or a spell attack misses it.",
                     "activities": {
                         "utility": {
-                            "condition": "The spectator has made a successful save against a spell attack or a spell attack misses it."
+                            "condition": "The spectator has made a successful save against a spell attack or a spell attack misses it.",
+                            "activationCondition": "The spectator has made a successful save against a spell attack or a spell attack misses it."
                         }
                     }
                 }
@@ -6568,9 +6671,12 @@
                 "Warp Reality": {
                     "name": "Warp Reality",
                     "description": "<p>When hit by an attack roll, the mind flayer gains a +4 bonus to its AC against that attack roll, potentially causing it to miss. Then the mind flayer, along with any equipment it is wearing or carrying, magically teleports up to 60 feet to an unoccupied space it can see.</p>",
+                    "activation": "Hit by an attack roll",
+                    "activationCondition": "Hit by an attack roll",
                     "activities": {
                         "utility": {
-                            "condition": "Hit by an attack roll"
+                            "condition": "Hit by an attack roll",
+                            "activationCondition": "Hit by an attack roll"
                         }
                     }
                 },
@@ -6768,7 +6874,8 @@
                     "description": "<section class=\"secret\" id=\"secret-kCI5tSH17b9JEo2e\"><p>The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently.</p><p>The target's spirit rises as a @UUID[Compendium.dnd-phandelver-below.pbso-bestiary.Actor.PuPo4H4Dcxigf0fY]{specter} in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.</p></section><p>The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space.</p>",
                     "activities": {
                         "summon": {
-                            "target": "creature dead no longer than 1 minute"
+                            "target": "creature dead no longer than 1 minute",
+                            "targetAffects": "creature dead no longer than 1 minute"
                         }
                     }
                 }

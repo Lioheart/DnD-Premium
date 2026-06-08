@@ -5,6 +5,11 @@
         "requirements": "system.requirements",
         "materials": "system.materials.value",
         "chat": "system.description.chat",
+        "unidentified": "system.description.unidentified",
+        "activation": "system.activation.condition",
+        "activationCondition": "system.activation.condition",
+        "activationValue": "system.activation.value",
+        "targetAffects": "system.target.affects.special",
         "activities": {
             "path": "system.activities",
             "converter": "structured",
@@ -18,8 +23,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
+                "activationCondition": "activation.condition",
+                "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
+                "targetAffects": "target.affects.special",
                 "roll": "roll.name",
                 "range": {
                     "path": "range",
@@ -169,7 +177,9 @@
                 "Teleport": {
                     "name": "Teleport",
                     "condition": "Immediately after you take the Attack action",
-                    "target": "Unocuppied space"
+                    "activationCondition": "Immediately after you take the Attack action",
+                    "target": "Unocuppied space",
+                    "targetAffects": "Unocuppied space"
                 }
             }
         },
@@ -180,11 +190,13 @@
             "activities": {
                 "Choose Resistances": {
                     "name": "Choose Resistances",
-                    "condition": "Whenever you finish a Long Rest"
+                    "condition": "Whenever you finish a Long Rest",
+                    "activationCondition": "Whenever you finish a Long Rest"
                 },
                 "Energy Redirection": {
                     "name": "Energy Redirection",
-                    "target": "Isn't behind Total Cover"
+                    "target": "Isn't behind Total Cover",
+                    "targetAffects": "Isn't behind Total Cover"
                 }
             },
             "effects": {
@@ -225,6 +237,7 @@
                 "Improve Fate": {
                     "name": "Improve Fate",
                     "condition": "When you or another creature within 60 feet of you succeeds or fails a D20 Test",
+                    "activationCondition": "When you or another creature within 60 feet of you succeeds or fails a D20 Test",
                     "roll": "Bonus/Penalty"
                 }
             }
@@ -236,7 +249,8 @@
             "activities": {
                 "Fortify Health": {
                     "name": "Fortify Health",
-                    "condition": "Whenever you regain Hit Points"
+                    "condition": "Whenever you regain Hit Points",
+                    "activationCondition": "Whenever you regain Hit Points"
                 }
             },
             "effects": {
@@ -257,7 +271,8 @@
             "activities": {
                 "Last Stand": {
                     "name": "Last Stand",
-                    "condition": "When you would be reduced to 0 Hit Points"
+                    "condition": "When you would be reduced to 0 Hit Points",
+                    "activationCondition": "When you would be reduced to 0 Hit Points"
                 },
                 "Recover Vitality": {
                     "name": "Recover Vitality"
@@ -292,6 +307,7 @@
                 "Free Cast Roll": {
                     "name": "Free Cast Roll",
                     "condition": "Whenever you cast a spell with a level 1-4 spell slot",
+                    "activationCondition": "Whenever you cast a spell with a level 1-4 spell slot",
                     "roll": "Roll"
                 }
             }
@@ -331,7 +347,8 @@
             "activities": {
                 "Charge Attack": {
                     "name": "Charge Attack",
-                    "condition": "If you move at least 10 feete in a straight line immediately before hitting it with a melee attack"
+                    "condition": "If you move at least 10 feete in a straight line immediately before hitting it with a melee attack",
+                    "activationCondition": "If you move at least 10 feete in a straight line immediately before hitting it with a melee attack"
                 }
             }
         },
@@ -342,7 +359,9 @@
                 "Replenishing Meal": {
                     "name": "Replenishing Meal",
                     "condition": "As part of a Short Rest",
-                    "target": "Who ate the food"
+                    "activationCondition": "As part of a Short Rest",
+                    "target": "Who ate the food",
+                    "targetAffects": "Who ate the food"
                 },
                 "Bolstering Treats": {
                     "name": "Bolstering Treats"
@@ -468,7 +487,8 @@
             "activities": {
                 "Heavy Weapon Damage": {
                     "name": "Heavy Weapon Damage",
-                    "condition": "When you hit a creature with a weapon that has the Heavy property as part of the Attack action on your turn"
+                    "condition": "When you hit a creature with a weapon that has the Heavy property as part of the Attack action on your turn",
+                    "activationCondition": "When you hit a creature with a weapon that has the Heavy property as part of the Attack action on your turn"
                 }
             }
         },
@@ -517,11 +537,13 @@
             "activities": {
                 "Inspire with Wisdom": {
                     "name": "Inspire with Wisdom",
-                    "condition": "When you finish a Short or Long Rest"
+                    "condition": "When you finish a Short or Long Rest",
+                    "activationCondition": "When you finish a Short or Long Rest"
                 },
                 "Inspire with Charisma": {
                     "name": "Inspire with Charisma",
-                    "condition": "When you finish a Short or Long Rest"
+                    "condition": "When you finish a Short or Long Rest",
+                    "activationCondition": "When you finish a Short or Long Rest"
                 }
             }
         },
@@ -531,7 +553,8 @@
             "activities": {
                 "Intercept": {
                     "name": "Intercept",
-                    "condition": "When a creature you can see hits another creature within 5 feet of you with an attack roll"
+                    "condition": "When a creature you can see hits another creature within 5 feet of you with an attack roll",
+                    "activationCondition": "When a creature you can see hits another creature within 5 feet of you with an attack roll"
                 }
             }
         },
@@ -561,11 +584,13 @@
             "activities": {
                 "Advantage": {
                     "name": "Advantage",
-                    "condition": "When you roll a d20 for a D20 Test"
+                    "condition": "When you roll a d20 for a D20 Test",
+                    "activationCondition": "When you roll a d20 for a D20 Test"
                 },
                 "Disadvantage": {
                     "name": "Disadvantage",
-                    "condition": "When a creature rolls a d20 for an attack roll against you"
+                    "condition": "When a creature rolls a d20 for an attack roll against you",
+                    "activationCondition": "When a creature rolls a d20 for an attack roll against you"
                 }
             }
         },
@@ -575,7 +600,8 @@
             "activities": {
                 "Guard Mind": {
                     "name": "Guard Mind",
-                    "condition": "When you fail an Intelligence, Wisdom, or Charisma saving throw"
+                    "condition": "When you fail an Intelligence, Wisdom, or Charisma saving throw",
+                    "activationCondition": "When you fail an Intelligence, Wisdom, or Charisma saving throw"
                 }
             }
         },
@@ -690,7 +716,8 @@
             "activities": {
                 "Protect": {
                     "name": "Protect",
-                    "condition": "When a creature you can see attacks a target other than you within 5 feet of you"
+                    "condition": "When a creature you can see attacks a target other than you within 5 feet of you",
+                    "activationCondition": "When a creature you can see attacks a target other than you within 5 feet of you"
                 }
             },
             "effects": {
@@ -761,7 +788,8 @@
             "activities": {
                 "Shield Bash": {
                     "name": "Shield Bash",
-                    "condition": "If you hit a creature with a Melee weapon within 5 feet of you as part of the Attack action"
+                    "condition": "If you hit a creature with a Melee weapon within 5 feet of you as part of the Attack action",
+                    "activationCondition": "If you hit a creature with a Melee weapon within 5 feet of you as part of the Attack action"
                 }
             },
             "effects": {
@@ -852,15 +880,18 @@
             "activities": {
                 "Telekinetic Shove: Intelligence": {
                     "name": "Telekinetic Shove: Intelligence",
-                    "target": "You can see"
+                    "target": "You can see",
+                    "targetAffects": "You can see"
                 },
                 "Telekinetic Shove: Wisdom": {
                     "name": "Telekinetic Shove: Wisdom",
-                    "target": "You can see"
+                    "target": "You can see",
+                    "targetAffects": "You can see"
                 },
                 "Telekinetic Shove: Charisma": {
                     "name": "Telekinetic Shove: Charisma",
-                    "target": "You can see"
+                    "target": "You can see",
+                    "targetAffects": "You can see"
                 }
             }
         },
@@ -906,7 +937,9 @@
                 "Grappled Damage": {
                     "name": "Grappled Damage",
                     "condition": "At the start of each of your turns",
-                    "target": "Grappled by you"
+                    "activationCondition": "At the start of each of your turns",
+                    "target": "Grappled by you",
+                    "targetAffects": "Grappled by you"
                 }
             }
         },

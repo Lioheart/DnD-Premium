@@ -5,6 +5,11 @@
         "requirements": "system.requirements",
         "materials": "system.materials.value",
         "chat": "system.description.chat",
+        "unidentified": "system.description.unidentified",
+        "activation": "system.activation.condition",
+        "activationCondition": "system.activation.condition",
+        "activationValue": "system.activation.value",
+        "targetAffects": "system.target.affects.special",
         "activities": {
             "path": "system.activities",
             "converter": "structured",
@@ -18,8 +23,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
+                "activationCondition": "activation.condition",
+                "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
+                "targetAffects": "target.affects.special",
                 "roll": "roll.name",
                 "range": {
                     "path": "range",
@@ -125,7 +133,8 @@
             "description": "<p>As a Magic action, you can expend one use of this class’s Channel Divinity to overwhelm foes with awe. As you present your Holy Symbol or weapon, you can target a number of creatures equal to your Charisma modifier (minimum of one creature) that you can see within 60 feet of yourself. Each target must succeed on a Wisdom saving throw or have the &amp;Reference[Frightened] condition for 1 minute or until it takes any damage. While Frightened in this way, a target can do only one of the following on its turns: move, take an action, or take a Bonus Action.</p><section class=\"secret\" id=\"secret-lu2BuwFj2pnJ367b\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which applies the Frightened condition.</p></section>",
             "activities": {
                 "save": {
-                    "target": "That you can see"
+                    "target": "That you can see",
+                    "targetAffects": "That you can see"
                 }
             },
             "effects": {
@@ -227,14 +236,16 @@
             "activities": {
                 "Create Ward": {
                     "name": "Create Ward",
-                    "condition": "When you cast an Abjuration spell with a spell slot"
+                    "condition": "When you cast an Abjuration spell with a spell slot",
+                    "activationCondition": "When you cast an Abjuration spell with a spell slot"
                 },
                 "Damage Ward": {
                     "name": "Damage Ward"
                 },
                 "Restore Ward HP After Casting Spell": {
                     "name": "Restore Ward HP After Casting Spell",
-                    "condition": "When you cast an Abjuration spell with a spell slot"
+                    "condition": "When you cast an Abjuration spell with a spell slot",
+                    "activationCondition": "When you cast an Abjuration spell with a spell slot"
                 },
                 "Expend Spell Slot for Ward": {
                     "name": "Expend Spell Slot for Ward"
@@ -313,7 +324,8 @@
             "description": "<p>You’re adept at ambushing a target, granting you the following benefits.</p><p><strong>Initiative.</strong> You have Advantage on Initiative rolls.</p><p><strong>Surprising Strikes.</strong> During the first round of each combat, you have Advantage on attack rolls against any creature that hasn’t taken a turn. If your Sneak Attack hits any target during that round, the target takes extra damage of the weapon’s type equal to your Rogue level.</p><section class=\"secret\" id=\"secret-roKwXDEMg8PmZo8U\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which automates the advantage on Initiative rolls.</p><p>The <strong>Damage</strong> activity can be used to apply extra damage equal to your level. You can choose the damage type in the roll's dialog box. Alternatively, you could add your level ([[lookup @classes.rogue.levels]]) as a situational bonus to your normal damage roll.</p></section>",
             "activities": {
                 "damage": {
-                    "condition": "Your Sneak Attack hits any target during the first round"
+                    "condition": "Your Sneak Attack hits any target during the first round",
+                    "activationCondition": "Your Sneak Attack hits any target during the first round"
                 }
             },
             "effects": {
@@ -418,7 +430,8 @@
                 },
                 "Frightful Aura": {
                     "name": "Frightful Aura",
-                    "condition": "Whenever an enemy starts its turn in your Aura of Protection"
+                    "condition": "Whenever an enemy starts its turn in your Aura of Protection",
+                    "activationCondition": "Whenever an enemy starts its turn in your Aura of Protection"
                 },
                 "Restore Use": {
                     "name": "Restore Use"
@@ -449,6 +462,7 @@
                 "Switch Places": {
                     "name": "Switch Places",
                     "condition": "When you're within 5 feet of a creature on your turn",
+                    "activationCondition": "When you're within 5 feet of a creature on your turn",
                     "roll": "Armor Class Bonus"
                 }
             },
@@ -672,7 +686,8 @@
             "activities": {
                 "Beguiling Reaction": {
                     "name": "Beguiling Reaction",
-                    "condition": "Immediately after a creature you can see hits you with an attack roll"
+                    "condition": "Immediately after a creature you can see hits you with an attack roll",
+                    "activationCondition": "Immediately after a creature you can see hits you with an attack roll"
                 }
             }
         },
@@ -682,7 +697,8 @@
             "requirements": "College of Glamour",
             "activities": {
                 "save": {
-                    "condition": "After casting an enchantment or illusion spell using a spell slot"
+                    "condition": "After casting an enchantment or illusion spell using a spell slot",
+                    "activationCondition": "After casting an enchantment or illusion spell using a spell slot"
                 },
                 "Recharge with Inspiration": {
                     "name": "Recharge with Inspiration"
@@ -708,6 +724,7 @@
                 "Bend Luck": {
                     "name": "Bend Luck",
                     "condition": "Immediately after another creature you can see rolls the d20 for a D20 Test",
+                    "activationCondition": "Immediately after another creature you can see rolls the d20 for a D20 Test",
                     "roll": "Bonus/Penalty"
                 }
             }
@@ -737,11 +754,13 @@
             "activities": {
                 "Necrotic Divine Strike": {
                     "name": "Necrotic Divine Strike",
-                    "target": "When you a hit a creature with an attack roll using a weapon once per turn"
+                    "target": "When you a hit a creature with an attack roll using a weapon once per turn",
+                    "targetAffects": "When you a hit a creature with an attack roll using a weapon once per turn"
                 },
                 "Radiant Divine Strike": {
                     "name": "Radiant Divine Strike",
-                    "target": "When you a hit a creature with an attack roll using a weapon once per turn"
+                    "target": "When you a hit a creature with an attack roll using a weapon once per turn",
+                    "targetAffects": "When you a hit a creature with an attack roll using a weapon once per turn"
                 }
             }
         },
@@ -751,7 +770,8 @@
             "requirements": "Cleric",
             "activities": {
                 "damage": {
-                    "condition": "Deal damage with any Cleric cantrip"
+                    "condition": "Deal damage with any Cleric cantrip",
+                    "activationCondition": "Deal damage with any Cleric cantrip"
                 }
             }
         },
@@ -789,7 +809,8 @@
             "requirements": "Path of the World Tree",
             "activities": {
                 "save": {
-                    "condition": "Whenever a creature you can see starts its turn within 30 feet of you while your Raging"
+                    "condition": "Whenever a creature you can see starts its turn within 30 feet of you while your Raging",
+                    "activationCondition": "Whenever a creature you can see starts its turn within 30 feet of you while your Raging"
                 }
             },
             "effects": {
@@ -838,7 +859,8 @@
             "activities": {
                 "Careful Spell": {
                     "name": "Careful Spell",
-                    "condition": "When you cast a spell that forces other creatures to make a saving throw"
+                    "condition": "When you cast a spell that forces other creatures to make a saving throw",
+                    "activationCondition": "When you cast a spell that forces other creatures to make a saving throw"
                 }
             }
         },
@@ -865,12 +887,15 @@
             "activities": {
                 "Your Temporary Hit Points": {
                     "name": "Your Temporary Hit Points",
-                    "condition": "Whenever you use your Magical Cunning or finish a Short or Long Rest"
+                    "condition": "Whenever you use your Magical Cunning or finish a Short or Long Rest",
+                    "activationCondition": "Whenever you use your Magical Cunning or finish a Short or Long Rest"
                 },
                 "Chosen Creatures Hit Points": {
                     "name": "Chosen Creatures Hit Points",
                     "condition": "Whenever you use your Magical Cunning or finish a Short or Long Rest",
-                    "target": "You can see when you gain the points"
+                    "activationCondition": "Whenever you use your Magical Cunning or finish a Short or Long Rest",
+                    "target": "You can see when you gain the points",
+                    "targetAffects": "You can see when you gain the points"
                 }
             }
         },
@@ -997,7 +1022,8 @@
             "description": "<p>When you form a telepathic bond with a creature using your Awakened Mind, you can force that creature to make a Wisdom saving throw against your spell save DC. On a failed save, the creature has Disadvantage on attack rolls against you, and you have Advantage on attack rolls against that creature for the duration of the bond.</p><p>Once you use this feature, you can’t use it again until you finish a Short or Long Rest unless you expend a Pact Magic spell slot (no action required) to restore your use of it.</p><section class=\"secret\" id=\"secret-MrXcYF7ER0OTT4q2\"><p><strong>Foundry Note</strong></p><p>The <strong>Save</strong> activity includes an Active Effect which can be used for tracking the Disadvantage but it does not automate the Advantage/Disadvantage.</p><p>The <strong>Regain Use</strong> activity will deduct a Pact Magic spell slot and restore a use of this feature.</p></section>",
             "activities": {
                 "save": {
-                    "condition": "When you form a telepathic bond using Awakened Mind"
+                    "condition": "When you form a telepathic bond using Awakened Mind",
+                    "activationCondition": "When you form a telepathic bond using Awakened Mind"
                 },
                 "Regain Use": {
                     "name": "Regain Use"
@@ -1062,7 +1088,8 @@
             "activities": {
                 "Shroud": {
                     "name": "Shroud",
-                    "condition": "While entirely within Dim Light or Darkness"
+                    "condition": "While entirely within Dim Light or Darkness",
+                    "activationCondition": "While entirely within Dim Light or Darkness"
                 }
             },
             "effects": {
@@ -1168,7 +1195,9 @@
                 "Directed Attack": {
                     "name": "Directed Attack",
                     "condition": "When you take the Attack action on your turn",
-                    "target": "Can see or hear you"
+                    "activationCondition": "When you take the Attack action on your turn",
+                    "target": "Can see or hear you",
+                    "targetAffects": "Can see or hear you"
                 }
             }
         },
@@ -1178,6 +1207,7 @@
             "activities": {
                 "utility": {
                     "condition": "When you make a Charisma (Intimidation, Performance, or Persuasion) check",
+                    "activationCondition": "When you make a Charisma (Intimidation, Performance, or Persuasion) check",
                     "roll": "Bonus"
                 }
             }
@@ -1213,11 +1243,13 @@
                 "Weal (Even)": {
                     "name": "Weal (Even)",
                     "condition": "Whenever a creature you can see within 30 feet is about to make a D20 Test",
+                    "activationCondition": "Whenever a creature you can see within 30 feet is about to make a D20 Test",
                     "roll": "Add"
                 },
                 "Woe (Odd)": {
                     "name": "Woe (Odd)",
                     "condition": "Whenever a creature you can see within 30 feet of you is about to make a D20 Test",
+                    "activationCondition": "Whenever a creature you can see within 30 feet of you is about to make a D20 Test",
                     "roll": "Subtract"
                 }
             }
@@ -1228,7 +1260,8 @@
             "requirements": "Bard",
             "activities": {
                 "utility": {
-                    "condition": "You or a creature within 30 feet of you fails a saving throw against an effect that applies the Charmed or Frightened condition"
+                    "condition": "You or a creature within 30 feet of you fails a saving throw against an effect that applies the Charmed or Frightened condition",
+                    "activationCondition": "You or a creature within 30 feet of you fails a saving throw against an effect that applies the Charmed or Frightened condition"
                 }
             }
         },
@@ -1238,11 +1271,13 @@
             "activities": {
                 "Hex Damage": {
                     "name": "Hex Damage",
-                    "condition": "When your thrall hits a creature under the effect of your Hex"
+                    "condition": "When your thrall hits a creature under the effect of your Hex",
+                    "activationCondition": "When your thrall hits a creature under the effect of your Hex"
                 },
                 "Thrall Temporary HP": {
                     "name": "Thrall Temporary HP",
-                    "condition": "When you cast Hex without Concentration"
+                    "condition": "When you cast Hex without Concentration",
+                    "activationCondition": "When you cast Hex without Concentration"
                 }
             }
         },
@@ -1272,20 +1307,25 @@
             "activities": {
                 "Poison": {
                     "name": "Poison",
-                    "condition": "When you deal Sneak Attack damage"
+                    "condition": "When you deal Sneak Attack damage",
+                    "activationCondition": "When you deal Sneak Attack damage"
                 },
                 "Trip": {
                     "name": "Trip",
                     "condition": "When you deal Snack Attack damage",
-                    "target": "Larger or smaller"
+                    "activationCondition": "When you deal Snack Attack damage",
+                    "target": "Larger or smaller",
+                    "targetAffects": "Larger or smaller"
                 },
                 "Cunning Sneak Attack": {
                     "name": "Cunning Sneak Attack",
-                    "condition": "When you deal Sneak Attack damage"
+                    "condition": "When you deal Sneak Attack damage",
+                    "activationCondition": "When you deal Sneak Attack damage"
                 },
                 "Withdraw": {
                     "name": "Withdraw",
-                    "condition": "When you deal Sneak Attack damage"
+                    "condition": "When you deal Sneak Attack damage",
+                    "activationCondition": "When you deal Sneak Attack damage"
                 }
             },
             "effects": {
@@ -1306,6 +1346,7 @@
                 "Cut with Words": {
                     "name": "Cut with Words",
                     "condition": "Creature you can see within 60 feet makes a damage roll or succeeds on an ability check or attack roll",
+                    "activationCondition": "Creature you can see within 60 feet makes a damage roll or succeeds on an ability check or attack roll",
                     "roll": "Bardic Inspiration"
                 }
             }
@@ -1326,7 +1367,8 @@
             "description": "<p>When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to your Charisma modifier plus your Warlock level (minimum of 1 Temporary Hit Point). You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points.</p>",
             "activities": {
                 "heal": {
-                    "condition": "When you reduce an enemy to 0 Hit Points or  an enemy within 10 feet of you is reduced to 0 Hit Points"
+                    "condition": "When you reduce an enemy to 0 Hit Points or  an enemy within 10 feet of you is reduced to 0 Hit Points",
+                    "activationCondition": "When you reduce an enemy to 0 Hit Points or  an enemy within 10 feet of you is reduced to 0 Hit Points"
                 }
             }
         },
@@ -1337,6 +1379,7 @@
                 "Luck": {
                     "name": "Luck",
                     "condition": "When you make an ability check or saving throw",
+                    "activationCondition": "When you make an ability check or saving throw",
                     "roll": "Bonus"
                 }
             }
@@ -1362,7 +1405,8 @@
             "activities": {
                 "Death Strike": {
                     "name": "Death Strike",
-                    "condition": "When you hit with your Sneak Attack on the first round of a combat"
+                    "condition": "When you hit with your Sneak Attack on the first round of a combat",
+                    "activationCondition": "When you hit with your Sneak Attack on the first round of a combat"
                 }
             }
         },
@@ -1372,7 +1416,8 @@
             "activities": {
                 "Multiattack Defense": {
                     "name": "Multiattack Defense",
-                    "condition": "When a creature hits you with an attack roll"
+                    "condition": "When a creature hits you with an attack roll",
+                    "activationCondition": "When a creature hits you with an attack roll"
                 }
             },
             "effects": {
@@ -1387,12 +1432,15 @@
             "activities": {
                 "Reduce": {
                     "name": "Reduce",
-                    "condition": "When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage"
+                    "condition": "When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage",
+                    "activationCondition": "When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage"
                 },
                 "Redirect": {
                     "name": "Redirect",
                     "condition": "If you reduce the damage to 0",
+                    "activationCondition": "If you reduce the damage to 0",
                     "target": "Isn't behind Total Cover",
+                    "targetAffects": "Isn't behind Total Cover",
                     "range": "5 feet for melee attacks or 60 feet for ranged attacks"
                 }
             }
@@ -1403,12 +1451,15 @@
             "activities": {
                 "Reduce": {
                     "name": "Reduce",
-                    "condition": "When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage"
+                    "condition": "When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage",
+                    "activationCondition": "When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage"
                 },
                 "Redirect": {
                     "name": "Redirect",
                     "condition": "If you reduce the damage to 0",
+                    "activationCondition": "If you reduce the damage to 0",
                     "target": "Isn't behind Total Cover",
+                    "targetAffects": "Isn't behind Total Cover",
                     "range": "5 feet for melee attacks or 60 feet for ranged attacks"
                 }
             }
@@ -1432,15 +1483,18 @@
             "activities": {
                 "Daze": {
                     "name": "Daze",
-                    "condition": "When you deal Sneak Attack damage"
+                    "condition": "When you deal Sneak Attack damage",
+                    "activationCondition": "When you deal Sneak Attack damage"
                 },
                 "Knock Out": {
                     "name": "Knock Out",
-                    "condition": "When you deal Sneak Attack damage"
+                    "condition": "When you deal Sneak Attack damage",
+                    "activationCondition": "When you deal Sneak Attack damage"
                 },
                 "Obscure": {
                     "name": "Obscure",
-                    "condition": "When you deal Sneak Attack damage"
+                    "condition": "When you deal Sneak Attack damage",
+                    "activationCondition": "When you deal Sneak Attack damage"
                 }
             },
             "effects": {
@@ -1468,7 +1522,8 @@
             "description": "<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to disarm the target. Add the Superiority Die roll to the attack's damage roll. The target must succeed on a Strength saving throw or drop one object of your choice that it's holding, with the object landing in its space.</p><section class=\"secret\" id=\"secret-OIeqhDE1w3MxjygU\"><p><strong>Foundry Note</strong></p><p>This feature will automatically use the higher of your Strength/Dexterity for the save.</p><p>The Damage included in the save allows you to select the type of damage it should deal in the roll dialog. It will remember your choice going forwards.</p></section>",
             "activities": {
                 "save": {
-                    "condition": "When you hit a creature with an attack roll"
+                    "condition": "When you hit a creature with an attack roll",
+                    "activationCondition": "When you hit a creature with an attack roll"
                 }
             }
         },
@@ -1478,7 +1533,8 @@
             "requirements": "Life Domain",
             "activities": {
                 "heal": {
-                    "target": "Create you cast a healing spell on"
+                    "target": "Create you cast a healing spell on",
+                    "targetAffects": "Create you cast a healing spell on"
                 }
             }
         },
@@ -1497,7 +1553,8 @@
             "activities": {
                 "Distant Spell": {
                     "name": "Distant Spell",
-                    "condition": "When you cast a spell that has a range of at least 5 feet or when you cast a spell that has a range of Touch"
+                    "condition": "When you cast a spell that has a range of at least 5 feet or when you cast a spell that has a range of Touch",
+                    "activationCondition": "When you cast a spell that has a range of at least 5 feet or when you cast a spell that has a range of Touch"
                 }
             }
         },
@@ -1521,11 +1578,13 @@
             "activities": {
                 "Necrotic Divine Fury": {
                     "name": "Necrotic Divine Fury",
-                    "target": "First creature you hit with a weapon or an Unarmed Strike"
+                    "target": "First creature you hit with a weapon or an Unarmed Strike",
+                    "targetAffects": "First creature you hit with a weapon or an Unarmed Strike"
                 },
                 "Radiant Divine Fury": {
                     "name": "Radiant Divine Fury",
-                    "target": "First creature you hit with a weapon or an Unarmed Strike"
+                    "target": "First creature you hit with a weapon or an Unarmed Strike",
+                    "targetAffects": "First creature you hit with a weapon or an Unarmed Strike"
                 }
             }
         },
@@ -1632,11 +1691,13 @@
             "activities": {
                 "Dreadful Strike": {
                     "name": "Dreadful Strike",
-                    "condition": "When you attack and hit a creature with a weapon"
+                    "condition": "When you attack and hit a creature with a weapon",
+                    "activationCondition": "When you attack and hit a creature with a weapon"
                 },
                 "Ambusher's Leap": {
                     "name": "Ambusher's Leap",
-                    "condition": "At the start of your first turn of each combat"
+                    "condition": "At the start of your first turn of each combat",
+                    "activationCondition": "At the start of your first turn of each combat"
                 }
             },
             "effects": {
@@ -1653,7 +1714,8 @@
             "description": "<p>You can augment your weapon strikes with mind-scarring magic drawn from the murky hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 Psychic damage to the target, which can take this extra damage only once per turn. The extra damage increases to 1d6 when you reach Ranger level 11.</p><section id=\"secret-4bJV0nAffRomytFv\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Damage</strong> activity includes the extra damage. It automatically scales as you level up.</p></section>",
             "activities": {
                 "damage": {
-                    "condition": "When you hit a creature with a weapon"
+                    "condition": "When you hit a creature with a weapon",
+                    "activationCondition": "When you hit a creature with a weapon"
                 }
             }
         },
@@ -1767,7 +1829,8 @@
             "activities": {
                 "Eldritch Master": {
                     "name": "Eldritch Master",
-                    "condition": "When you use Magical Cunning"
+                    "condition": "When you use Magical Cunning",
+                    "activationCondition": "When you use Magical Cunning"
                 }
             }
         },
@@ -1786,7 +1849,8 @@
             "activities": {
                 "Smite": {
                     "name": "Smite",
-                    "condition": "Hit a creature with your pact weapon"
+                    "condition": "Hit a creature with your pact weapon",
+                    "activationCondition": "Hit a creature with your pact weapon"
                 }
             }
         },
@@ -1821,23 +1885,28 @@
             "activities": {
                 "Acid": {
                     "name": "Acid",
-                    "condition": "When you cast a spell that deals damage of your elemental affinity"
+                    "condition": "When you cast a spell that deals damage of your elemental affinity",
+                    "activationCondition": "When you cast a spell that deals damage of your elemental affinity"
                 },
                 "Cold": {
                     "name": "Cold",
-                    "condition": "When you cast a spell that deals damage of your elemental affinity"
+                    "condition": "When you cast a spell that deals damage of your elemental affinity",
+                    "activationCondition": "When you cast a spell that deals damage of your elemental affinity"
                 },
                 "Fire": {
                     "name": "Fire",
-                    "condition": "When you cast a spell that deals damage of your elemental affinity"
+                    "condition": "When you cast a spell that deals damage of your elemental affinity",
+                    "activationCondition": "When you cast a spell that deals damage of your elemental affinity"
                 },
                 "Lightning": {
                     "name": "Lightning",
-                    "condition": "When you cast a spell that deals damage of your elemental affinity"
+                    "condition": "When you cast a spell that deals damage of your elemental affinity",
+                    "activationCondition": "When you cast a spell that deals damage of your elemental affinity"
                 },
                 "Poison": {
                     "name": "Poison",
-                    "condition": "When you cast a spell that deals damage of your elemental affinity"
+                    "condition": "When you cast a spell that deals damage of your elemental affinity",
+                    "activationCondition": "When you cast a spell that deals damage of your elemental affinity"
                 }
             }
         },
@@ -1851,7 +1920,9 @@
                 "Elemental Save": {
                     "name": "Elemental Save",
                     "condition": "When you deal Elemental Strike damage",
+                    "activationCondition": "When you deal Elemental Strike damage",
                     "target": "hit by elemental damage from imbued strike",
+                    "targetAffects": "hit by elemental damage from imbued strike",
                     "range": "pushed or pulled up to 10 feet"
                 },
                 "Activate Attunement": {
@@ -1879,15 +1950,18 @@
             "activities": {
                 "Destructive Stride": {
                     "name": "Destructive Stride",
-                    "condition": "When you use your Step of the Wind"
+                    "condition": "When you use your Step of the Wind",
+                    "activationCondition": "When you use your Step of the Wind"
                 },
                 "Empowered Strike": {
                     "name": "Empowered Strike",
-                    "condition": "Once on each of your turns when you hit with an Unarmed Strike"
+                    "condition": "Once on each of your turns when you hit with an Unarmed Strike",
+                    "activationCondition": "Once on each of your turns when you hit with an Unarmed Strike"
                 },
                 "Damage Resistance": {
                     "name": "Damage Resistance",
-                    "condition": "While your Elemental Attunement is active"
+                    "condition": "While your Elemental Attunement is active",
+                    "activationCondition": "While your Elemental Attunement is active"
                 }
             },
             "effects": {
@@ -1928,7 +2002,8 @@
             "activities": {
                 "Primal Strike": {
                     "name": "Primal Strike",
-                    "target": "When you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape"
+                    "target": "When you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape",
+                    "targetAffects": "When you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape"
                 }
             }
         },
@@ -1941,7 +2016,8 @@
             "description": "<p>Whenever you cast a Wizard spell from the Evocation school, you can add your Intelligence modifier to one damage roll of that spell.</p><section class=\"secret\" id=\"secret-3cdT0RlurgG5XV4o\"><p><strong>Foundry Note</strong></p><p>You can add your Intelligence modifier to the spell's Situational Bonus in the damage dialog or use this feature's <strong>Damage</strong> activity which allows you to select the type in the damage dialog.</p></section>",
             "activities": {
                 "damage": {
-                    "condition": "Whenever you cast a Wizard spell from the Evocation school"
+                    "condition": "Whenever you cast a Wizard spell from the Evocation school",
+                    "activationCondition": "Whenever you cast a Wizard spell from the Evocation school"
                 }
             }
         },
@@ -1951,7 +2027,8 @@
             "activities": {
                 "Empowered Spell": {
                     "name": "Empowered Spell",
-                    "condition": "When you roll damage for a spell"
+                    "condition": "When you roll damage for a spell",
+                    "activationCondition": "When you roll damage for a spell"
                 }
             }
         },
@@ -1970,7 +2047,8 @@
             "activities": {
                 "Poison": {
                     "name": "Poison",
-                    "condition": "When you deal Sneak Attack damage"
+                    "condition": "When you deal Sneak Attack damage",
+                    "activationCondition": "When you deal Sneak Attack damage"
                 }
             }
         },
@@ -2017,12 +2095,15 @@
             "activities": {
                 "Command Companion": {
                     "name": "Command Companion",
-                    "target": "Primal Companion"
+                    "target": "Primal Companion",
+                    "targetAffects": "Primal Companion"
                 },
                 "Train Companion": {
                     "name": "Train Companion",
                     "condition": "As needed to add Force damage option",
-                    "target": "Primal Companion's Attack features"
+                    "activationCondition": "As needed to add Force damage option",
+                    "target": "Primal Companion's Attack features",
+                    "targetAffects": "Primal Companion's Attack features"
                 }
             },
             "effects": {
@@ -2051,7 +2132,8 @@
             "activities": {
                 "Extended Spell": {
                     "name": "Extended Spell",
-                    "condition": "When you cast a spell that has a duration of 1 minute or longer"
+                    "condition": "When you cast a spell that has a duration of 1 minute or longer",
+                    "activationCondition": "When you cast a spell that has a duration of 1 minute or longer"
                 }
             }
         },
@@ -2330,7 +2412,8 @@
             "activities": {
                 "Gaze of Two Minds": {
                     "name": "Gaze of Two Minds",
-                    "target": "Touch"
+                    "target": "Touch",
+                    "targetAffects": "Touch"
                 }
             }
         },
@@ -2351,7 +2434,8 @@
             "activities": {
                 "Protect": {
                     "name": "Protect",
-                    "condition": "When any creature whose name is on the page is reduced to 0 Hit Points but not killed outright"
+                    "condition": "When any creature whose name is on the page is reduced to 0 Hit Points but not killed outright",
+                    "activationCondition": "When any creature whose name is on the page is reduced to 0 Hit Points but not killed outright"
                 },
                 "Write Name": {
                     "name": "Write Name"
@@ -2391,6 +2475,7 @@
                 "Glorious Defense": {
                     "name": "Glorious Defense",
                     "condition": "When you or another creature you can see within 10 feet of you is hit by an attack roll",
+                    "activationCondition": "When you or another creature you can see within 10 feet of you is hit by an attack roll",
                     "roll": "AC Bonus"
                 }
             }
@@ -2400,7 +2485,8 @@
             "description": "<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to goad the target into attacking you. Add the [[/damage @scale.battle-master.superiority.die]]{Superiority Die} to the attack's damage roll. The target must succeed on a Wisdom saving throw or have Disadvantage on attack rolls against targets other than you until the end of your next turn.</p><section class=\"secret\" id=\"secret-BS37R5kndzjT5lCr\"><p><strong>Foundry Note</strong></p><p>This feature includes activities for saving against your <strong>Strength</strong> or <strong>Dexterity</strong>. You can use the inline damage roll for the extra damage or the <strong>Damage</strong> activity.</p><p>The <strong>Damage</strong> activity allows you to select the type of damage it should deal in the roll dialog.</p></section>",
             "activities": {
                 "save": {
-                    "condition": "When you hit a creature with an attack roll"
+                    "condition": "When you hit a creature with an attack roll",
+                    "activationCondition": "When you hit a creature with an attack roll"
                 }
             },
             "effects": {
@@ -2459,11 +2545,13 @@
             "activities": {
                 "Guide Yourself": {
                     "name": "Guide Yourself",
-                    "condition": "When you miss with an attack roll"
+                    "condition": "When you miss with an attack roll",
+                    "activationCondition": "When you miss with an attack roll"
                 },
                 "Guide Another Creature": {
                     "name": "Guide Another Creature",
-                    "condition": "When you or a creature within 30 feet of you misses with an attack roll"
+                    "condition": "When you or a creature within 30 feet of you misses with an attack roll",
+                    "activationCondition": "When you or a creature within 30 feet of you misses with an attack roll"
                 }
             }
         },
@@ -2472,7 +2560,8 @@
             "description": "<p>Once per turn when you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Focus Point to deal extra Necrotic damage equal to one roll of your Martial Arts die plus your Wisdom modifier.</p>",
             "activities": {
                 "damage": {
-                    "condition": "Once per turn when you hit a creature with an Unarmed Strike and deal damage"
+                    "condition": "Once per turn when you hit a creature with an Unarmed Strike and deal damage",
+                    "activationCondition": "Once per turn when you hit a creature with an Unarmed Strike and deal damage"
                 }
             }
         },
@@ -2490,7 +2579,8 @@
             "description": "<p>Your mastery of life energy opens the door to the ultimate mercy. As a Magic action, you can touch the corpse of a creature that died within the past 24 hours and expend 5 Focus Points. The creature then returns to life with a number of Hit Points equal to 4d10 plus your Wisdom modifier. If the creature died with any of the following conditions, the creature revives with the conditions removed: Blinded, Deafened, Paralyzed, Poisoned, and Stunned.</p><p>Once you use this feature, you can't use it again until you finish a Long Rest.</p><section id=\"secret-qP8GEBd6nXKTiRMj\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature includes a single use per Long Rest and a healing roll.</p></section>",
             "activities": {
                 "heal": {
-                    "target": "died within the past 24 hours"
+                    "target": "died within the past 24 hours",
+                    "targetAffects": "died within the past 24 hours"
                 }
             }
         },
@@ -2507,7 +2597,8 @@
                 },
                 "Patient Defense": {
                     "name": "Patient Defense",
-                    "condition": "When you expend a Focus Point to use Patient Defense"
+                    "condition": "When you expend a Focus Point to use Patient Defense",
+                    "activationCondition": "When you expend a Focus Point to use Patient Defense"
                 }
             }
         },
@@ -2517,7 +2608,8 @@
             "activities": {
                 "Heightened Spell": {
                     "name": "Heightened Spell",
-                    "condition": "When you cast a spell that forces a creature to make a saving throw"
+                    "condition": "When you cast a spell that forces a creature to make a saving throw",
+                    "activationCondition": "When you cast a spell that forces a creature to make a saving throw"
                 }
             }
         },
@@ -2560,7 +2652,8 @@
             "description": "<p>You gain one of the following feature options of your choice. Whenever you finish a Short or Long Rest, you can replace the chosen option with the other one.</p><p><strong>Colossus Slayer.</strong> Your tenacity can wear down even the most resilient foes. When you hit a creature with a weapon, the weapon deals an extra 1d8 damage to the target if it’s missing any of its Hit Points. You can deal this extra damage only once per turn.</p><p><strong>Horde Breaker.</strong> Once on each of your turns when you make an attack with a weapon, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target, that is within the weapon’s range, and that you haven’t attacked this turn.</p><section class=\"secret\" id=\"secret-I2q5Nm7g6mkLjH5Y\"><p><strong>Foundry Note</strong></p><p>This feature includes a <strong>Colossus Slayer</strong> activity for the additional damage. You can select the correct damage type in the roll dialog.</p><p>For the <strong>Horde Breaker</strong> option simply make another attack.</p></section>",
             "activities": {
                 "damage": {
-                    "condition": "Once per turn when you hit a creature with a weapon"
+                    "condition": "Once per turn when you hit a creature with a weapon",
+                    "activationCondition": "Once per turn when you hit a creature with a weapon"
                 }
             }
         },
@@ -2570,7 +2663,8 @@
             "activities": {
                 "Hurl Through Hell": {
                     "name": "Hurl Through Hell",
-                    "condition": "Once per turn when you hit a creature with an attack roll"
+                    "condition": "Once per turn when you hit a creature with an attack roll",
+                    "activationCondition": "Once per turn when you hit a creature with an attack roll"
                 },
                 "Regain Use": {
                     "name": "Regain Use"
@@ -2612,7 +2706,8 @@
             "activities": {
                 "Interpose": {
                     "name": "Interpose",
-                    "condition": "When a creature hits you with an attack roll"
+                    "condition": "When a creature hits you with an attack roll",
+                    "activationCondition": "When a creature hits you with an attack roll"
                 },
                 "Restore Use": {
                     "name": "Restore Use"
@@ -2630,7 +2725,8 @@
             "activities": {
                 "Potent Spellcasting: Heal": {
                     "name": "Potent Spellcasting: Heal",
-                    "condition": "When you cast a Cleric cantrip and deal damage to a creature with it"
+                    "condition": "When you cast a Cleric cantrip and deal damage to a creature with it",
+                    "activationCondition": "When you cast a Cleric cantrip and deal damage to a creature with it"
                 }
             }
         },
@@ -2697,7 +2793,9 @@
                 "Healing Illusion": {
                     "name": "Healing Illusion",
                     "condition": "When the illusion ends",
-                    "target": "Within 5 feet of the duplicate"
+                    "activationCondition": "When the illusion ends",
+                    "target": "Within 5 feet of the duplicate",
+                    "targetAffects": "Within 5 feet of the duplicate"
                 }
             }
         },
@@ -2716,7 +2814,8 @@
             "activities": {
                 "Improved Shadow Step": {
                     "name": "Improved Shadow Step",
-                    "target": "Unoccupied space"
+                    "target": "Unoccupied space",
+                    "targetAffects": "Unoccupied space"
                 }
             }
         },
@@ -2730,7 +2829,8 @@
             "requirements": "Light Domain",
             "activities": {
                 "heal": {
-                    "target": "Target of the triggering attack"
+                    "target": "Target of the triggering attack",
+                    "targetAffects": "Target of the triggering attack"
                 }
             }
         },
@@ -2774,7 +2874,8 @@
             "activities": {
                 "Move": {
                     "name": "Move",
-                    "condition": "When an enemy you can see ends it turns within 5 feet o fyou"
+                    "condition": "When an enemy you can see ends it turns within 5 feet o fyou",
+                    "activationCondition": "When an enemy you can see ends it turns within 5 feet o fyou"
                 }
             }
         },
@@ -2783,7 +2884,8 @@
             "description": "<p>Immediately after you cast @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDivineSmit]{Divine Smite}, you can expend one use of your Channel Divinity and distribute Temporary Hit Points to creatures of your choice within 30 feet of yourself, which can include you. The total number of Temporary Hit Points equals 2d8 plus your Paladin level, divided among the chosen creatures however you like.</p>",
             "activities": {
                 "heal": {
-                    "condition": "Immediately after you cast Divine Smite"
+                    "condition": "Immediately after you cast Divine Smite",
+                    "activationCondition": "Immediately after you cast Divine Smite"
                 }
             }
         },
@@ -2830,7 +2932,8 @@
                 },
                 "Invest with Resistance": {
                     "name": "Invest with Resistance",
-                    "target": "Your familiar"
+                    "target": "Your familiar",
+                    "targetAffects": "Your familiar"
                 }
             },
             "effects": {
@@ -2888,7 +2991,8 @@
             "activities": {
                 "Move Duplicate": {
                     "name": "Move Duplicate",
-                    "target": "within 30 feet"
+                    "target": "within 30 feet",
+                    "targetAffects": "within 30 feet"
                 }
             }
         },
@@ -2912,7 +3016,8 @@
             "activities": {
                 "Discern Strengths and Weaknesses": {
                     "name": "Discern Strengths and Weaknesses",
-                    "target": "Creature you can see"
+                    "target": "Creature you can see",
+                    "targetAffects": "Creature you can see"
                 },
                 "Recharge with Superiority Die": {
                     "name": "Recharge with Superiority Die"
@@ -2970,15 +3075,18 @@
             "requirements": "Pact of the Blade Invocation",
             "activities": {
                 "damage": {
-                    "condition": "Once per turn when you hit a creature with your pact weapon"
+                    "condition": "Once per turn when you hit a creature with your pact weapon",
+                    "activationCondition": "Once per turn when you hit a creature with your pact weapon"
                 },
                 "Heal (Largest Hit Die)": {
                     "name": "Heal (Largest Hit Die)",
-                    "condition": "Once per turn when you hit a creature with your pact weapon"
+                    "condition": "Once per turn when you hit a creature with your pact weapon",
+                    "activationCondition": "Once per turn when you hit a creature with your pact weapon"
                 },
                 "Heal (Smallest Hit Die)": {
                     "name": "Heal (Smallest Hit Die)",
-                    "condition": "Once per turn when you hit a creature with your pact weapon"
+                    "condition": "Once per turn when you hit a creature with your pact weapon",
+                    "activationCondition": "Once per turn when you hit a creature with your pact weapon"
                 }
             }
         },
@@ -3026,7 +3134,8 @@
             "requirements": "Circle of Moon",
             "activities": {
                 "damage": {
-                    "condition": "Once per turn when you hit a target with a Wild Shape form's attack"
+                    "condition": "Once per turn when you hit a target with a Wild Shape form's attack",
+                    "activationCondition": "Once per turn when you hit a target with a Wild Shape form's attack"
                 }
             }
         },
@@ -3068,7 +3177,9 @@
                 "Maneuver": {
                     "name": "Maneuver",
                     "condition": "When you hit a creature with an attack roll",
+                    "activationCondition": "When you hit a creature with an attack roll",
                     "target": "Can see or hear you",
+                    "targetAffects": "Can see or hear you",
                     "roll": "Attack Bonus"
                 }
             }
@@ -3140,7 +3251,8 @@
             "description": "<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to frighten the target. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or have the Frightened condition until the end of your next turn.</p><section class=\"secret\" id=\"secret-sPNAs2sYsogCvvxn\"><p><strong>Foundry Note</strong></p><p>This feature includes a <strong>Strength Save</strong> activity and a <strong>Dexterity Save</strong> activity which will consume a use of your Superiority Die.</p><p>The <strong>Damage</strong> activity allows you to select the type of damage it should deal in the roll dialog.</p></section>",
             "activities": {
                 "save": {
-                    "condition": "When you hit a creature with an attack roll"
+                    "condition": "When you hit a creature with an attack roll",
+                    "activationCondition": "When you hit a creature with an attack roll"
                 }
             },
             "effects": {
@@ -3169,16 +3281,20 @@
             "activities": {
                 "Disappearing Step": {
                     "name": "Disappearing Step",
-                    "condition": "After teleporting"
+                    "condition": "After teleporting",
+                    "activationCondition": "After teleporting"
                 },
                 "Dreadful Step": {
                     "name": "Dreadful Step",
                     "condition": "After teleporting",
+                    "activationCondition": "After teleporting",
                     "target": "That you choose",
+                    "targetAffects": "That you choose",
                     "range": "Of the space you just left"
                 },
                 "cast": {
-                    "condition": "After taking damage"
+                    "condition": "After taking damage",
+                    "activationCondition": "After taking damage"
                 }
             },
             "effects": {
@@ -3273,7 +3389,8 @@
             "activities": {
                 "Transport": {
                     "name": "Transport",
-                    "target": "Unoccupied space"
+                    "target": "Unoccupied space",
+                    "targetAffects": "Unoccupied space"
                 },
                 "Recharge with Spell Slot": {
                     "name": "Recharge with Spell Slot"
@@ -3299,7 +3416,8 @@
                 },
                 "Recover Spell Slots": {
                     "name": "Recover Spell Slots",
-                    "condition": "When you finish a Short Rest"
+                    "condition": "When you finish a Short Rest",
+                    "activationCondition": "When you finish a Short Rest"
                 }
             }
         },
@@ -3475,15 +3593,18 @@
             "activities": {
                 "Addle": {
                     "name": "Addle",
-                    "condition": "Whenever you hit a creature with an attack granted by your Flurry of Blows"
+                    "condition": "Whenever you hit a creature with an attack granted by your Flurry of Blows",
+                    "activationCondition": "Whenever you hit a creature with an attack granted by your Flurry of Blows"
                 },
                 "Push": {
                     "name": "Push",
-                    "condition": "Whenever you hit a creature with an attack granted by your Flurry of Blows"
+                    "condition": "Whenever you hit a creature with an attack granted by your Flurry of Blows",
+                    "activationCondition": "Whenever you hit a creature with an attack granted by your Flurry of Blows"
                 },
                 "Topple": {
                     "name": "Topple",
-                    "condition": "Whenever you hit a creature with an attack granted by your Flurry of Blows"
+                    "condition": "Whenever you hit a creature with an attack granted by your Flurry of Blows",
+                    "activationCondition": "Whenever you hit a creature with an attack granted by your Flurry of Blows"
                 }
             },
             "effects": {
@@ -3514,11 +3635,13 @@
             "activities": {
                 "Second+ Use": {
                     "name": "Second+ Use",
-                    "condition": "When you cast a Wizard spell with a spell slot of levels 1-5 that deals damage"
+                    "condition": "When you cast a Wizard spell with a spell slot of levels 1-5 that deals damage",
+                    "activationCondition": "When you cast a Wizard spell with a spell slot of levels 1-5 that deals damage"
                 },
                 "First Use": {
                     "name": "First Use",
-                    "condition": "When you cast a Wizard spell with a spell slot of levels 1-5 that deals damage"
+                    "condition": "When you cast a Wizard spell with a spell slot of levels 1-5 that deals damage",
+                    "activationCondition": "When you cast a Wizard spell with a spell slot of levels 1-5 that deals damage"
                 }
             }
         },
@@ -3612,7 +3735,8 @@
             "description": "<p>When another creature damages you with a melee attack roll, you can take a Reaction and expend one Superiority Die to reduce the damage by the number you roll on your Superiority Die plus your Strength or Dexterity modifier (your choice).</p><section class=\"secret\" id=\"secret-0wY3O9dAMQDKj066\"><p><strong>Foundry Note</strong></p><p>This feature includes a Healing Reaction activity which can be used to retroactively recover the received damage.</p></section>",
             "activities": {
                 "heal": {
-                    "condition": "When another creature damages you with a melee attack roll"
+                    "condition": "When another creature damages you with a melee attack roll",
+                    "activationCondition": "When another creature damages you with a melee attack roll"
                 }
             }
         },
@@ -3676,6 +3800,7 @@
             "activities": {
                 "utility": {
                     "condition": "When you fail an ability check or attack roll",
+                    "activationCondition": "When you fail an ability check or attack roll",
                     "roll": "Bardic Inspiration"
                 }
             }
@@ -3691,7 +3816,8 @@
             "activities": {
                 "Recharge Rage on Initiative": {
                     "name": "Recharge Rage on Initiative",
-                    "condition": "When you roll initiative"
+                    "condition": "When you roll initiative",
+                    "activationCondition": "When you roll initiative"
                 }
             }
         },
@@ -3713,7 +3839,8 @@
             "activities": {
                 "Hand of Harm": {
                     "name": "Hand of Harm",
-                    "condition": "Once per turn when you hit a creature with an Unarmed Strike and deal damage"
+                    "condition": "Once per turn when you hit a creature with an Unarmed Strike and deal damage",
+                    "activationCondition": "Once per turn when you hit a creature with an Unarmed Strike and deal damage"
                 },
                 "Healing Hand": {
                     "name": "Healing Hand"
@@ -3747,7 +3874,8 @@
                 },
                 "Ram": {
                     "name": "Ram",
-                    "condition": "When you a Large or smaller creature with a melee attack"
+                    "condition": "When you a Large or smaller creature with a melee attack",
+                    "activationCondition": "When you a Large or smaller creature with a melee attack"
                 }
             },
             "effects": {
@@ -3766,6 +3894,7 @@
             "activities": {
                 "utility": {
                     "condition": "When you miss with an attack roll",
+                    "activationCondition": "When you miss with an attack roll",
                     "roll": "Bonus"
                 }
             }
@@ -3776,7 +3905,8 @@
             "requirements": "Life Domain",
             "activities": {
                 "heal": {
-                    "target": "Blooed creatures"
+                    "target": "Blooed creatures",
+                    "targetAffects": "Blooed creatures"
                 }
             }
         },
@@ -3791,15 +3921,18 @@
             "activities": {
                 "Summon Companion": {
                     "name": "Summon Companion",
-                    "target": "Unoccupied"
+                    "target": "Unoccupied",
+                    "targetAffects": "Unoccupied"
                 },
                 "Command": {
                     "name": "Command",
-                    "target": "Primal Companion"
+                    "target": "Primal Companion",
+                    "targetAffects": "Primal Companion"
                 },
                 "Restore Companion": {
                     "name": "Restore Companion",
-                    "target": "Primal Companion that has died within the last hour"
+                    "target": "Primal Companion that has died within the last hour",
+                    "targetAffects": "Primal Companion that has died within the last hour"
                 }
             }
         },
@@ -3845,7 +3978,9 @@
                 "Project Ward": {
                     "name": "Project Ward",
                     "condition": "When a creature that you can see within 30 feet of yourself takes damage",
-                    "target": "That you can see"
+                    "activationCondition": "When a creature that you can see within 30 feet of yourself takes damage",
+                    "target": "That you can see",
+                    "targetAffects": "That you can see"
                 }
             }
         },
@@ -3871,20 +4006,24 @@
         "Psionic Power": {
             "name": "Psionic Power",
             "description": "<p>You harbor a wellspring of psionic energy within yourself. It is represented by your Psionic Energy Dice, which fuel certain powers you have from this subclass. The Soulknife Energy Dice table shows the number of these dice you have when you reach certain Rogue levels, and the table shows the die size.</p><table><caption>Soulknife Energy Dice</caption><thead><tr><td>Rogue Level</td><td>Die Size</td><td>Number</td></tr></thead><tbody><tr><td>3</td><td>D6</td><td>4</td></tr><tr><td>5</td><td>D8</td><td>6</td></tr><tr><td>9</td><td>D8</td><td>8</td></tr><tr><td>11</td><td>D10</td><td>8</td></tr><tr><td>13</td><td>D10</td><td>10</td></tr><tr><td>17</td><td>D12</td><td>12</td></tr></tbody></table><p>Any features in this subclass that use a Psionic Energy Die use only the dice from this subclass. Some of your powers expend a Psionic Energy Die, as specified in a power’s description, and you can’t use a power if it requires you to use a die when your Psionic Energy Dice are all expended.</p><p>You regain one of your expended Psionic Energy Dice when you finish a Short Rest, and you regain all of them when you finish a Long Rest.</p><p><strong>Psi-Bolstered Knack.</strong> If you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy Die and add the number rolled to the check, potentially turning failure into success. The die is expended only if the roll then succeeds.</p><p><strong>Psychic Whispers.</strong> You can establish telepathic communication between yourself and others. As a Magic action, choose one or more creatures you can see, up to a number of creatures equal to your Proficiency Bonus, and then roll one Psionic Energy Die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can end the telepathic connection at any time (no action required).</p><p>The first time you use this power after each Long Rest, you don’t expend the Psionic Energy Die. All other times you use the power, you expend the die.</p><section class=\"secret\" id=\"secret-mhJXgkN4LKUlFHGh\"><p><strong>Foundry Note</strong></p><p>This feature automatically regains a use on a Short Rest and all on a Long Rest.</p><p>The <strong>Psi-Bolstered Knack</strong> activity expends a die and includes a bonus roll. If it still fails you can refund the expended die.</p><p>This feature includes a <strong>Psychic Whispers</strong> activity and a <strong>Psychic Whispers (Free)</strong> activity. They both include an Active Effect which can be used for tracking creatures you've included.</p></section>",
+            "chat": "<p><strong>Psi-Bolstered Knack.</strong> If you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy Die and add the number rolled to the check, potentially turning failure into success. The die is expended only if the roll then succeeds.</p><p><strong>Psychic Whispers.</strong> You can establish telepathic communication between yourself and others. As a Magic action, choose one or more creatures you can see, up to a number of creatures equal to your Proficiency Bonus, and then roll one Psionic Energy Die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can end the telepathic connection at any time (no action required).</p><p>The first time you use this power after each Long Rest, you don’t expend the Psionic Energy Die. All other times you use the power, you expend the die.</p><section class=\"secret\" id=\"secret-ShQ1I0W2QeCUkBUx\"><p><strong>Foundry Note</strong></p><p>This feature automatically regains a use on a Short Rest and all on a Long Rest.</p><p>The <strong>Psi-Bolstered Knack</strong> activity expends a die and includes a bonus roll. If it still fails you can refund the expended die.</p><p>This feature includes a <strong>Psychic Whispers</strong> activity and a <strong>Psychic Whispers (Free)</strong> activity. They both include an Active Effect which can be used for tracking creatures you've included.</p></section>",
             "activities": {
                 "Psi-Bolstered Knack": {
                     "name": "Psi-Bolstered Knack",
                     "condition": "When you fail an ability check using a skill or tool with which you're proficient",
+                    "activationCondition": "When you fail an ability check using a skill or tool with which you're proficient",
                     "roll": "Bonus"
                 },
                 "Psychic Whispers (Free)": {
                     "name": "Psychic Whispers (Free)",
                     "target": "Creatures you can see",
+                    "targetAffects": "Creatures you can see",
                     "roll": "Psionic Energy Die"
                 },
                 "Psychic Whispers": {
                     "name": "Psychic Whispers",
                     "target": "Creatures you can see",
+                    "targetAffects": "Creatures you can see",
                     "roll": "Psionic Energy Die"
                 }
             },
@@ -3952,7 +4091,8 @@
             "description": "<p>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to drive the target back. Add the Superiority Die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or be pushed up to 15 feet directly away from you.</p><section id=\"secret-S6d1XbWlRjPp1t0t\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature includes a <strong>Strength Save</strong> activity and a <strong>Dexterity Save</strong> activity which will consume a use of your Superiority Die.</p><p>The <strong>Damage</strong> activity allows you to select the type of damage it should deal in the roll dialog.</p></section>",
             "activities": {
                 "save": {
-                    "condition": "When you hit a creature with an attack roll"
+                    "condition": "When you hit a creature with an attack roll",
+                    "activationCondition": "When you hit a creature with an attack roll"
                 }
             }
         },
@@ -3962,7 +4102,8 @@
             "activities": {
                 "Quickened Spell": {
                     "name": "Quickened Spell",
-                    "condition": "When you cast a spell that has a casting time of an action"
+                    "condition": "When you cast a spell that has a casting time of an action",
+                    "activationCondition": "When you cast a spell that has a casting time of an action"
                 }
             }
         },
@@ -3972,11 +4113,13 @@
             "activities": {
                 "End Vibrations": {
                     "name": "End Vibrations",
-                    "condition": "When you take the Attack action on your turn"
+                    "condition": "When you take the Attack action on your turn",
+                    "activationCondition": "When you take the Attack action on your turn"
                 },
                 "Instill Vibrations": {
                     "name": "Instill Vibrations",
-                    "condition": "When you hit a creature with an Unarmed Strike"
+                    "condition": "When you hit a creature with an Unarmed Strike",
+                    "activationCondition": "When you hit a creature with an Unarmed Strike"
                 }
             },
             "effects": {
@@ -4027,11 +4170,13 @@
                 "Revivification": {
                     "name": "Revivification",
                     "condition": "When a creature within 30 feet of you would drop to 0 Hit Points",
+                    "activationCondition": "When a creature within 30 feet of you would drop to 0 Hit Points",
                     "roll": "Barbarian Level"
                 },
                 "Rage of the Gods": {
                     "name": "Rage of the Gods",
-                    "condition": "When you activate your Rage"
+                    "condition": "When you activate your Rage",
+                    "activationCondition": "When you activate your Rage"
                 }
             },
             "effects": {
@@ -4071,7 +4216,8 @@
             "description": "<p>As a Bonus Action, you can expend one Superiority Die to bolster the resolve of a companion. Choose an ally of yours within 30 feet of yourself who can see or hear you. That creature gains Temporary Hit Points equal to the Superiority Die roll plus half your Fighter level (round down).</p>",
             "activities": {
                 "heal": {
-                    "target": "Can see or hear you"
+                    "target": "Can see or hear you",
+                    "targetAffects": "Can see or hear you"
                 }
             }
         },
@@ -4181,11 +4327,13 @@
             "activities": {
                 "Rend Mind (Free)": {
                     "name": "Rend Mind (Free)",
-                    "condition": "When you deal Sneak Attack damage with your Psychic Blades"
+                    "condition": "When you deal Sneak Attack damage with your Psychic Blades",
+                    "activationCondition": "When you deal Sneak Attack damage with your Psychic Blades"
                 },
                 "Rend Mind": {
                     "name": "Rend Mind",
-                    "condition": "When you deal Sneak Attack damage with your Psychic Blades"
+                    "condition": "When you deal Sneak Attack damage with your Psychic Blades",
+                    "activationCondition": "When you deal Sneak Attack damage with your Psychic Blades"
                 }
             },
             "effects": {
@@ -4218,7 +4366,9 @@
                 "Prevent Advantage/Disadvantage": {
                     "name": "Prevent Advantage/Disadvantage",
                     "condition": "When a creature you can see within 60 feet is about to roll d20 with Advantage/Disadvantage",
-                    "target": "You can see"
+                    "activationCondition": "When a creature you can see within 60 feet is about to roll d20 with Advantage/Disadvantage",
+                    "target": "You can see",
+                    "targetAffects": "You can see"
                 }
             }
         },
@@ -4233,7 +4383,8 @@
             "activities": {
                 "Retaliate": {
                     "name": "Retaliate",
-                    "condition": "When you take damage from a creature within 5 feet of you"
+                    "condition": "When you take damage from a creature within 5 feet of you",
+                    "activationCondition": "When you take damage from a creature within 5 feet of you"
                 }
             }
         },
@@ -4266,7 +4417,8 @@
             "activities": {
                 "Riposte Damage": {
                     "name": "Riposte Damage",
-                    "condition": "When a creature misses you with a melee attack roll"
+                    "condition": "When a creature misses you with a melee attack roll",
+                    "activationCondition": "When a creature misses you with a melee attack roll"
                 }
             }
         },
@@ -4350,7 +4502,8 @@
             "activities": {
                 "Channel Divinity: Turn Undead": {
                     "name": "Channel Divinity: Turn Undead",
-                    "target": "Undead"
+                    "target": "Undead",
+                    "targetAffects": "Undead"
                 }
             },
             "effects": {
@@ -4364,7 +4517,8 @@
             "description": "<p>When you or an ally within 60 feet of you is about to make a Death Saving Throw, you can unleash radiant energy to save the creature. The creature regains Hit Points equal to half its Hit Point maximum and can end the &amp;Reference[Prone] condition on itself. Each creature of your choice that is within 30 feet of the creature takes Radiant damage equal to 2d8 plus your Charisma modifier, and each has the &amp;Reference[Blinded] condition until the end of the current turn.</p><p>Once you use this feature, you can’t use it again until you finish a Long Rest.</p><section id=\"secret-fOSDxWyY7FdboIM7\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>Healing up to half their Hit Point maximum is not automated but the <strong>Damage</strong> activity includes the relevant targeting template and damage roll. It also includes an Active Effect which applies the Blinded condition.</p></section>",
             "activities": {
                 "damage": {
-                    "condition": "When you or an ally within 60 feet of you is about to make a Death Saving Throw"
+                    "condition": "When you or an ally within 60 feet of you is about to make a Death Saving Throw",
+                    "activationCondition": "When you or an ally within 60 feet of you is about to make a Death Saving Throw"
                 }
             },
             "effects": {
@@ -4387,7 +4541,8 @@
             "activities": {
                 "Seeking Spell": {
                     "name": "Seeking Spell",
-                    "condition": "When you make an attack roll for a spell and miss"
+                    "condition": "When you make an attack roll for a spell and miss",
+                    "activationCondition": "When you make an attack roll for a spell and miss"
                 }
             }
         },
@@ -4416,7 +4571,9 @@
                 "Shadow Step": {
                     "name": "Shadow Step",
                     "condition": "While entirely within Dim Light or Darkness",
-                    "target": "Unoccupied space"
+                    "activationCondition": "While entirely within Dim Light or Darkness",
+                    "target": "Unoccupied space",
+                    "targetAffects": "Unoccupied space"
                 }
             }
         },
@@ -4427,7 +4584,9 @@
                 "Shadowy Dodge": {
                     "name": "Shadowy Dodge",
                     "condition": "When a creature makes an attack roll against you",
-                    "target": "Unoccupied"
+                    "activationCondition": "When a creature makes an attack roll against you",
+                    "target": "Unoccupied",
+                    "targetAffects": "Unoccupied"
                 }
             }
         },
@@ -4541,11 +4700,13 @@
                 "Homing Strikes": {
                     "name": "Homing Strikes",
                     "condition": "Miss an Attack Roll with your Psychic Blades",
+                    "activationCondition": "Miss an Attack Roll with your Psychic Blades",
                     "roll": "Psionic Bonus"
                 },
                 "Psychic Teleportation": {
                     "name": "Psychic Teleportation",
                     "target": "Unoccupied space",
+                    "targetAffects": "Unoccupied space",
                     "roll": "Max Throw Distance"
                 }
             }
@@ -4599,7 +4760,8 @@
             "activities": {
                 "Spell Thief": {
                     "name": "Spell Thief",
-                    "condition": "Immediately after a creature casts a spell that targets you or includes you in its area of effect"
+                    "condition": "Immediately after a creature casts a spell that targets you or includes you in its area of effect",
+                    "activationCondition": "Immediately after a creature casts a spell that targets you or includes you in its area of effect"
                 }
             },
             "effects": {
@@ -4619,7 +4781,8 @@
             "activities": {
                 "Mass Fear": {
                     "name": "Mass Fear",
-                    "condition": "When you use the Dreadful Strike effect"
+                    "condition": "When you use the Dreadful Strike effect",
+                    "activationCondition": "When you use the Dreadful Strike effect"
                 }
             }
         },
@@ -4643,7 +4806,8 @@
                 },
                 "Chalice": {
                     "name": "Chalice",
-                    "condition": "Whenever you cast a spell using a spell slot that restores Hit Points"
+                    "condition": "Whenever you cast a spell using a spell slot that restores Hit Points",
+                    "activationCondition": "Whenever you cast a spell using a spell slot that restores Hit Points"
                 },
                 "Dragon": {
                     "name": "Dragon"
@@ -4678,11 +4842,14 @@
                 "Refreshing Step": {
                     "name": "Refreshing Step",
                     "condition": "Immediately after you teleport",
-                    "target": "That you can see"
+                    "activationCondition": "Immediately after you teleport",
+                    "target": "That you can see",
+                    "targetAffects": "That you can see"
                 },
                 "Taunting Step": {
                     "name": "Taunting Step",
                     "condition": "After teleporting",
+                    "activationCondition": "After teleporting",
                     "range": "Of the space you just left"
                 }
             },
@@ -4713,7 +4880,8 @@
             "activities": {
                 "Stroke of Luck": {
                     "name": "Stroke of Luck",
-                    "condition": "When you fail a D20 Test"
+                    "condition": "When you fail a D20 Test",
+                    "activationCondition": "When you fail a D20 Test"
                 }
             }
         },
@@ -4730,7 +4898,8 @@
             "description": "<p>Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus Point to attempt a stunning strike. The target must make a Constitution saving throw. On a failed save, the target has the Stunned condition until the start of your next turn. On a successful save, the target's Speed is halved until the start of your next turn, and the next attack roll made against the target before then has Advantage.</p><section class=\"secret\" id=\"secret-bfJBOqZfcoIiBtoP\"><p><strong>Foundry Note</strong></p><p>This feature includes the Saving Throw and a Stunned Active Effect which applies the Stunned status if they fail and a Slowed Active Effect for tracking that their Speed is halved and that the next attack roll made against them has Advantage if they succeed.</p></section>",
             "activities": {
                 "save": {
-                    "condition": "Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike"
+                    "condition": "Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike",
+                    "activationCondition": "Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike"
                 }
             },
             "effects": {
@@ -4748,7 +4917,8 @@
             "activities": {
                 "Subtle Spell": {
                     "name": "Subtle Spell",
-                    "condition": "When you cast a spell"
+                    "condition": "When you cast a spell",
+                    "activationCondition": "When you cast a spell"
                 }
             }
         },
@@ -4766,7 +4936,8 @@
             "description": "<p>At the start of your turn, you can expend 3 Focus Points to bolster yourself against harm for 1 minute or until you have the Incapacitated condition. During that time, you have Resistance to all damage except Force damage.</p><section id=\"secret-jojCvqn1dDjsyTzI\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature will expend 3 Focus Points and includes an Active Effect which will apply the relevant Resistances.</p></section>",
             "activities": {
                 "utility": {
-                    "condition": "At the start of your turn"
+                    "condition": "At the start of your turn",
+                    "activationCondition": "At the start of your turn"
                 }
             },
             "effects": {
@@ -4781,7 +4952,8 @@
             "activities": {
                 "Resistances": {
                     "name": "Resistances",
-                    "condition": "When you take damage"
+                    "condition": "When you take damage",
+                    "activationCondition": "When you take damage"
                 }
             },
             "effects": {
@@ -4855,7 +5027,8 @@
             "activities": {
                 "Heroic Rally": {
                     "name": "Heroic Rally",
-                    "condition": "if Bloodied"
+                    "condition": "if Bloodied",
+                    "activationCondition": "if Bloodied"
                 }
             },
             "effects": {
@@ -4870,7 +5043,8 @@
             "description": "<p>When you hit a creature with a melee attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to damage another creature. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your Superiority Die. The damage is of the same type dealt by the original attack.</p><section id=\"secret-p0vnnA6PRSzYVHVf\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Damage</strong> activity allows you to select the type of damage it should deal in the roll dialog and consumes a use of your Superiority Die.</p></section>",
             "activities": {
                 "damage": {
-                    "target": "Within 5 feet of the original target and within your reach"
+                    "target": "Within 5 feet of the original target and within your reach",
+                    "targetAffects": "Within 5 feet of the original target and within your reach"
                 }
             }
         },
@@ -4880,6 +5054,7 @@
             "activities": {
                 "utility": {
                     "condition": "When you make an Intelligence (History or Investigation) check or a Wisdom (Insight) check",
+                    "activationCondition": "When you make an Intelligence (History or Investigation) check or a Wisdom (Insight) check",
                     "roll": "Bonus"
                 }
             }
@@ -4901,6 +5076,7 @@
                 "Expend Second Wind": {
                     "name": "Expend Second Wind",
                     "condition": "When you fail an ability check",
+                    "activationCondition": "When you fail an ability check",
                     "roll": "Bonus"
                 }
             }
@@ -4921,7 +5097,9 @@
                 "Initiative Bonus": {
                     "name": "Initiative Bonus",
                     "condition": "When rolling initiative and not Incapacitated.",
+                    "activationCondition": "When rolling initiative and not Incapacitated.",
                     "target": "Ally who can see or hear you",
+                    "targetAffects": "Ally who can see or hear you",
                     "roll": "Bardic Inspiration"
                 }
             }
@@ -4935,7 +5113,8 @@
                 },
                 "Telekinetic Thrust": {
                     "name": "Telekinetic Thrust",
-                    "condition": "When you deal damage to a target with your Psionic Strike"
+                    "condition": "When you deal damage to a target with your Psionic Strike",
+                    "activationCondition": "When you deal damage to a target with your Psionic Strike"
                 },
                 "Psi-Powered Leap Using Psionic Energy": {
                     "name": "Psi-Powered Leap Using Psionic Energy"
@@ -4957,7 +5136,8 @@
             "activities": {
                 "Telepathic Speech": {
                     "name": "Telepathic Speech",
-                    "target": "You can see"
+                    "target": "You can see",
+                    "targetAffects": "You can see"
                 }
             }
         },
@@ -5038,7 +5218,8 @@
                 },
                 "Decrease Exhaustion": {
                     "name": "Decrease Exhaustion",
-                    "condition": "Whenever you finish a Short Rest"
+                    "condition": "Whenever you finish a Short Rest",
+                    "activationCondition": "Whenever you finish a Short Rest"
                 }
             }
         },
@@ -5066,7 +5247,8 @@
             "activities": {
                 "Transmuted Spell": {
                     "name": "Transmuted Spell",
-                    "condition": "When you cast a spell that deals Acid, Cold, Fire, Lightning, Poison, or Thunder damage"
+                    "condition": "When you cast a spell that deals Acid, Cold, Fire, Lightning, Poison, or Thunder damage",
+                    "activationCondition": "When you cast a spell that deals Acid, Cold, Fire, Lightning, Poison, or Thunder damage"
                 }
             }
         },
@@ -5080,7 +5262,8 @@
                 },
                 "Extended Teleport": {
                     "name": "Extended Teleport",
-                    "target": "within 10 feet of you"
+                    "target": "within 10 feet of you",
+                    "targetAffects": "within 10 feet of you"
                 }
             }
         },
@@ -5107,7 +5290,8 @@
             "activities": {
                 "Transpose": {
                     "name": "Transpose",
-                    "target": "Your duplicate"
+                    "target": "Your duplicate",
+                    "targetAffects": "Your duplicate"
                 }
             }
         },
@@ -5116,7 +5300,8 @@
             "description": "<p>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die and add the die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or have the &amp;Reference[Prone] condition.</p><section class=\"secret\" id=\"secret-QeXYRpr665AxyLvo\"><p><strong>Foundry Note</strong></p><p>This feature will automatically use the higher of your Strength/Dexterity for the save.</p><p>The Damage included in the save allows you to select the type of damage it should deal in the roll dialog. It will remember your choice going forwards.</p></section>",
             "activities": {
                 "save": {
-                    "condition": "When you hit a creature with an attack roll"
+                    "condition": "When you hit a creature with an attack roll",
+                    "activationCondition": "When you hit a creature with an attack roll"
                 }
             },
             "effects": {
@@ -5136,7 +5321,8 @@
             "activities": {
                 "Twinned Spell": {
                     "name": "Twinned Spell",
-                    "condition": "When you cast a spell that can be upcast to target an additional creature"
+                    "condition": "When you cast a spell that can be upcast to target an additional creature",
+                    "activationCondition": "When you cast a spell that can be upcast to target an additional creature"
                 }
             }
         },
@@ -5200,7 +5386,8 @@
             "activities": {
                 "Recoil Save": {
                     "name": "Recoil Save",
-                    "condition": "a creature hits you with an attack roll for the first time on a turn"
+                    "condition": "a creature hits you with an attack roll for the first time on a turn",
+                    "activationCondition": "a creature hits you with an attack roll for the first time on a turn"
                 },
                 "Assume Majestic Presence": {
                     "name": "Assume Majestic Presence"
@@ -5218,7 +5405,8 @@
             "activities": {
                 "Uncanny Dodge": {
                     "name": "Uncanny Dodge",
-                    "condition": "When an attacker that you can see hits you with an attack roll"
+                    "condition": "When an attacker that you can see hits you with an attack roll",
+                    "activationCondition": "When an attacker that you can see hits you with an attack roll"
                 }
             }
         },
@@ -5228,7 +5416,8 @@
             "activities": {
                 "Uncanny Metabolism": {
                     "name": "Uncanny Metabolism",
-                    "condition": "When you roll initiative"
+                    "condition": "When you roll initiative",
+                    "activationCondition": "When you roll initiative"
                 }
             }
         },
@@ -5237,7 +5426,8 @@
             "description": "<p>When you are reduced to 0 Hit Points and not killed outright, you can drop to 1 Hit Point instead, and you regain a number of Hit Points equal to three times your Paladin level. Once you use this feature, you can’t do so again until you finish a Long Rest.</p><p>Additionally, you can’t be aged magically, and you cease visibly aging.</p>",
             "activities": {
                 "heal": {
-                    "condition": "When you are reduced to 0 Hit Points"
+                    "condition": "When you are reduced to 0 Hit Points",
+                    "activationCondition": "When you are reduced to 0 Hit Points"
                 }
             }
         },
@@ -5266,11 +5456,13 @@
             "activities": {
                 "Vitality Surge": {
                     "name": "Vitality Surge",
-                    "condition": "When you activate your Rage"
+                    "condition": "When you activate your Rage",
+                    "activationCondition": "When you activate your Rage"
                 },
                 "Life-Giving Force": {
                     "name": "Life-Giving Force",
-                    "condition": "Start of each of your turns while your Rage is active"
+                    "condition": "Start of each of your turns while your Rage is active",
+                    "activationCondition": "Start of each of your turns while your Rage is active"
                 }
             }
         },
@@ -5279,7 +5471,8 @@
             "description": "<p>When you take the Attack action, you can expend one use of your Channel Divinity to utter a vow of enmity against a creature you can see within 30 feet of yourself. You have Advantage on attack rolls against the creature for 1 minute or until you use this feature again.</p><p>If the creature drops to 0 Hit Points before the vow ends, you can transfer the vow to a different creature within 30 feet of yourself (no action required).</p><section class=\"secret\" id=\"secret-Y9AmNgpQoEkUuCHU\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect for tracking the creature you have vowed against but it does not automate the Advantage.</p></section>",
             "activities": {
                 "utility": {
-                    "condition": "When you take the Attack action"
+                    "condition": "When you take the Attack action",
+                    "activationCondition": "When you take the Attack action"
                 }
             },
             "effects": {
@@ -5295,12 +5488,15 @@
                 "Summon Weapon": {
                     "name": "Summon Weapon",
                     "target": "bonded weapon",
+                    "targetAffects": "bonded weapon",
                     "range": "same plane of existence"
                 },
                 "Bond with Weapon": {
                     "name": "Bond with Weapon",
                     "condition": "or 1 Hour",
-                    "target": "currently unbound weapon"
+                    "activationCondition": "or 1 Hour",
+                    "target": "currently unbound weapon",
+                    "targetAffects": "currently unbound weapon"
                 }
             },
             "effects": {
@@ -5358,7 +5554,8 @@
             "activities": {
                 "Flare": {
                     "name": "Flare",
-                    "condition": "When a creature you can see within 30 feet makes an attack roll"
+                    "condition": "When a creature you can see within 30 feet makes an attack roll",
+                    "activationCondition": "When a creature you can see within 30 feet makes an attack roll"
                 }
             }
         },
@@ -5527,11 +5724,13 @@
             "activities": {
                 "Regain Spell Slot": {
                     "name": "Regain Spell Slot",
-                    "condition": "Once on each of your turns"
+                    "condition": "Once on each of your turns",
+                    "activationCondition": "Once on each of your turns"
                 },
                 "Regain Wild Shape": {
                     "name": "Regain Wild Shape",
-                    "condition": "Once on each of your turns"
+                    "condition": "Once on each of your turns",
+                    "activationCondition": "Once on each of your turns"
                 }
             }
         },

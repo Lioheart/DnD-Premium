@@ -5,6 +5,11 @@
         "requirements": "system.requirements",
         "materials": "system.materials.value",
         "chat": "system.description.chat",
+        "unidentified": "system.description.unidentified",
+        "activation": "system.activation.condition",
+        "activationCondition": "system.activation.condition",
+        "activationValue": "system.activation.value",
+        "targetAffects": "system.target.affects.special",
         "activities": {
             "path": "system.activities",
             "converter": "structured",
@@ -18,8 +23,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
+                "activationCondition": "activation.condition",
+                "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
+                "targetAffects": "target.affects.special",
                 "roll": "roll.name",
                 "range": {
                     "path": "range",
@@ -115,6 +123,7 @@
                 "1st and 2nd Command": {
                     "name": "1st and 2nd Command",
                     "target": "folded boat",
+                    "targetAffects": "folded boat",
                     "profiles": {
                         "First Command Word (Rowboat)": {
                             "name": "First Command Word (Rowboat)"
@@ -126,7 +135,8 @@
                 },
                 "3rd Command": {
                     "name": "3rd Command",
-                    "target": "unfolded Rowboat or Keelboat"
+                    "target": "unfolded Rowboat or Keelboat",
+                    "targetAffects": "unfolded Rowboat or Keelboat"
                 }
             }
         },
@@ -178,7 +188,8 @@
             "activities": {
                 "Elemental Compulsion": {
                     "name": "Elemental Compulsion",
-                    "target": "Elemental"
+                    "target": "Elemental",
+                    "targetAffects": "Elemental"
                 }
             },
             "effects": {
@@ -201,7 +212,9 @@
                 "Slaying Save": {
                     "name": "Slaying Save",
                     "condition": "when the specified creature type is damaged by this ammunition",
-                    "target": "specific creature type"
+                    "activationCondition": "when the specified creature type is damaged by this ammunition",
+                    "target": "specific creature type",
+                    "targetAffects": "specific creature type"
                 },
                 "Ammunition of Slaying": {
                     "name": "Ammunition of Slaying"
@@ -490,8 +503,10 @@
                 "Intercept Attack": {
                     "name": "Intercept Attack",
                     "condition": "an attacker makes a ranged attack roll against a target within 5 feet of you",
+                    "activationCondition": "an attacker makes a ranged attack roll against a target within 5 feet of you",
                     "chatFlavor": "You become the target of the ranged attack.",
-                    "target": "attack roll made against target"
+                    "target": "attack roll made against target",
+                    "targetAffects": "attack roll made against target"
                 }
             },
             "effects": {
@@ -585,6 +600,7 @@
                 "Animate": {
                     "name": "Animate",
                     "target": "An unoccupied space",
+                    "targetAffects": "An unoccupied space",
                     "range": "As close to you as possible."
                 },
                 "Render Broom Inanimate": {
@@ -600,17 +616,22 @@
                 "Count Beans": {
                     "name": "Count Beans",
                     "condition": "Upon discovering the bag.",
+                    "activationCondition": "Upon discovering the bag.",
                     "chatFlavor": "3d4 dry beans found in bag.",
-                    "target": "Held Bag of Beans"
+                    "target": "Held Bag of Beans",
+                    "targetAffects": "Held Bag of Beans"
                 },
                 "Dump Beans": {
                     "name": "Dump Beans",
-                    "condition": "Object interaction"
+                    "condition": "Object interaction",
+                    "activationCondition": "Object interaction"
                 },
                 "Plant Bean": {
                     "name": "Plant Bean",
                     "condition": "Object interaction",
-                    "target": "Dirt or sand"
+                    "activationCondition": "Object interaction",
+                    "target": "Dirt or sand",
+                    "targetAffects": "Dirt or sand"
                 }
             }
         },
@@ -628,7 +649,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             }
         },
@@ -769,10 +791,12 @@
             "activities": {
                 "attack": {
                     "chatFlavor": "<em>Devour Soul</em> on kill",
-                    "target": "self damage if Undead"
+                    "target": "self damage if Undead",
+                    "targetAffects": "self damage if Undead"
                 },
                 "cast": {
-                    "condition": "Blackrazor decides when to cast the spell, which takes effect at the start of your turn."
+                    "condition": "Blackrazor decides when to cast the spell, which takes effect at the start of your turn.",
+                    "activationCondition": "Blackrazor decides when to cast the spell, which takes effect at the start of your turn."
                 }
             },
             "effects": {
@@ -819,7 +843,8 @@
             "activities": {
                 "Summon Warriors": {
                     "name": "Summon Warriors",
-                    "target": "unoccupied spaces"
+                    "target": "unoccupied spaces",
+                    "targetAffects": "unoccupied spaces"
                 }
             }
         },
@@ -886,7 +911,8 @@
                 "Vile Speech": {
                     "name": "Vile Speech",
                     "chatFlavor": "[[/damage 1d12 type=psychic]] to self",
-                    "target": "Fiends and Undead excluded"
+                    "target": "Fiends and Undead excluded",
+                    "targetAffects": "Fiends and Undead excluded"
                 }
             },
             "effects": {
@@ -953,7 +979,8 @@
             "description": "<div><p><em>Wondrous Item, Rare</em></p></div><p>While this bowl is filled with water and you are within 5 feet of it, you can take a Magic action to summon a <strong>@UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.namJz755U1EhvEJa]{Water Elemental}</strong>. The elemental appears in an unoccupied space as close to the bowl as possible, understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action. The bowl can’t be used this way again until the next dawn.</p><p>The bowl is about 1 foot in diameter and half as deep. It holds about 3 gallons.</p>",
             "activities": {
                 "summon": {
-                    "target": "unoccupied space as close to the bowl as possible"
+                    "target": "unoccupied space as close to the bowl as possible",
+                    "targetAffects": "unoccupied space as close to the bowl as possible"
                 }
             }
         },
@@ -985,7 +1012,8 @@
             "activities": {
                 "Summon Warriors": {
                     "name": "Summon Warriors",
-                    "target": "unoccupied spaces"
+                    "target": "unoccupied spaces",
+                    "targetAffects": "unoccupied spaces"
                 }
             },
             "effects": {
@@ -1000,7 +1028,8 @@
             "description": "<div><p><em>Wondrous Item, Rare</em></p></div><p>While you are within 5 feet of this brazier, you can take a Magic action to summon a <strong>@UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.8SMQl75HLjhuSeau]{Fire Elemental}</strong>. The elemental appears in an unoccupied space as close to the brazier as possible, understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action. The brazier can’t be used this way again until the next dawn.</p>",
             "activities": {
                 "summon": {
-                    "target": "unoccupied space as close to the brazier as possible"
+                    "target": "unoccupied space as close to the brazier as possible",
+                    "targetAffects": "unoccupied space as close to the brazier as possible"
                 }
             }
         },
@@ -1009,7 +1038,8 @@
             "description": "<p><em>See @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgFigurineOfWon]{Figurine of Wondrous Power}</em></p><p>This bronze statuette is of a griffon rampant. It can become a <strong>@UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.h052EIIUmRwJum65]{Griffon}</strong> for up to 6 hours. Once it has been used, it can’t be used again until 5 days have passed.</p><section class=\"secret\" id=\"secret-CyXRwZfsh4tOiRUf\"><p><strong>Foundry Note</strong></p><p>This item's limited uses represent the 5 days required before the figurine can be used again.</p></section>",
             "activities": {
                 "summon": {
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 }
             }
         },
@@ -1019,7 +1049,8 @@
             "activities": {
                 "Summon Warriors": {
                     "name": "Summon Warriors",
-                    "target": "unoccupied spaces"
+                    "target": "unoccupied spaces",
+                    "targetAffects": "unoccupied spaces"
                 }
             },
             "effects": {
@@ -1049,6 +1080,7 @@
                 "Send Alone or Recall": {
                     "name": "Send Alone or Recall",
                     "target": "the Broom of Flying",
+                    "targetAffects": "the Broom of Flying",
                     "range": "a familiar destination you have named"
                 }
             },
@@ -1141,7 +1173,8 @@
             "activities": {
                 "Create Air Bubble": {
                     "name": "Create Air Bubble",
-                    "condition": "user is under water"
+                    "condition": "user is under water",
+                    "activationCondition": "user is under water"
                 }
             },
             "effects": {
@@ -1166,19 +1199,23 @@
             "activities": {
                 "Activate (3 by 5 ft.)": {
                     "name": "Activate (3 by 5 ft.)",
-                    "target": "The Carpet of Flying"
+                    "target": "The Carpet of Flying",
+                    "targetAffects": "The Carpet of Flying"
                 },
                 "Activate (4 by 6 ft.)": {
                     "name": "Activate (4 by 6 ft.)",
-                    "target": "The Carpet of Flying"
+                    "target": "The Carpet of Flying",
+                    "targetAffects": "The Carpet of Flying"
                 },
                 "Activate (5 by 7 ft.)": {
                     "name": "Activate (5 by 7 ft.)",
-                    "target": "The Carpet of Flying"
+                    "target": "The Carpet of Flying",
+                    "targetAffects": "The Carpet of Flying"
                 },
                 "Activate (6 by 9 ft.)": {
                     "name": "Activate (6 by 9 ft.)",
-                    "target": "The Carpet of Flying"
+                    "target": "The Carpet of Flying",
+                    "targetAffects": "The Carpet of Flying"
                 }
             }
         },
@@ -1217,11 +1254,13 @@
                 "Brew Potion": {
                     "name": "Brew Potion",
                     "condition": "When you finish a Long Rest",
+                    "activationCondition": "When you finish a Long Rest",
                     "chatFlavor": "Creates one @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgGreaterPotion]{Potion of Healing (greater)}"
                 },
                 "Enlarge Cauldron": {
                     "name": "Enlarge Cauldron",
-                    "target": "The Cauldron of Rebirth"
+                    "target": "The Cauldron of Rebirth",
+                    "targetAffects": "The Cauldron of Rebirth"
                 }
             }
         },
@@ -1230,7 +1269,8 @@
             "description": "<div><p><em>Wondrous Item, Rare</em></p></div><p>While gently swinging this censer, you can take a Magic action to summon an <strong>@UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.banHjKDMCegbUwYE]{Air Elemental}</strong>. The elemental appears in an unoccupied space as close to the censer as possible, understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action. The censer can’t be used this way again until the next dawn.</p>",
             "activities": {
                 "summon": {
-                    "target": "unoccupied space as close to the brazier as possible"
+                    "target": "unoccupied space as close to the brazier as possible",
+                    "targetAffects": "unoccupied space as close to the brazier as possible"
                 }
             }
         },
@@ -1345,7 +1385,8 @@
                 "Billow": {
                     "name": "Billow",
                     "chatFlavor": "The cloak billows dramatically.",
-                    "target": "The Cloak of Billowing"
+                    "target": "The Cloak of Billowing",
+                    "targetAffects": "The Cloak of Billowing"
                 }
             }
         },
@@ -1389,7 +1430,8 @@
             "activities": {
                 "Use": {
                     "name": "Use",
-                    "target": "The Cloak of Many Fasions"
+                    "target": "The Cloak of Many Fasions",
+                    "targetAffects": "The Cloak of Many Fasions"
                 }
             }
         },
@@ -1409,10 +1451,13 @@
                 "Grip Edges": {
                     "name": "Grip Edges",
                     "condition": "in an area of Dim Light or Darkness",
-                    "target": "edges of the cloak"
+                    "activationCondition": "in an area of Dim Light or Darkness",
+                    "target": "edges of the cloak",
+                    "targetAffects": "edges of the cloak"
                 },
                 "cast": {
-                    "condition": "in an area of Dim Light or Darkness"
+                    "condition": "in an area of Dim Light or Darkness",
+                    "activationCondition": "in an area of Dim Light or Darkness"
                 }
             },
             "effects": {
@@ -1441,6 +1486,7 @@
                 "Forgo Roll": {
                     "name": "Forgo Roll",
                     "condition": "you make an attack roll while wearing the amulet",
+                    "activationCondition": "you make an attack roll while wearing the amulet",
                     "roll": "d20 Result"
                 }
             }
@@ -1473,11 +1519,13 @@
             "activities": {
                 "Card Effect: Start": {
                     "name": "Card Effect: Start",
-                    "condition": "The next time you enter combat against one or more Hostile creatures"
+                    "condition": "The next time you enter combat against one or more Hostile creatures",
+                    "activationCondition": "The next time you enter combat against one or more Hostile creatures"
                 },
                 "Card Effect: Resolve": {
                     "name": "Card Effect: Resolve",
-                    "condition": "when the selected Hostile creature dies during this combat"
+                    "condition": "when the selected Hostile creature dies during this combat",
+                    "activationCondition": "when the selected Hostile creature dies during this combat"
                 }
             },
             "effects": {
@@ -1545,11 +1593,13 @@
             "activities": {
                 "Grow Tower": {
                     "name": "Grow Tower",
-                    "target": "The adamantine"
+                    "target": "The adamantine",
+                    "targetAffects": "The adamantine"
                 },
                 "Open Fortress Door": {
                     "name": "Open Fortress Door",
-                    "target": "The tower's door"
+                    "target": "The tower's door",
+                    "targetAffects": "The tower's door"
                 }
             }
         },
@@ -1559,7 +1609,8 @@
             "activities": {
                 "Coat Blade with Poison": {
                     "name": "Coat Blade with Poison",
-                    "target": "The Dagger of Venom"
+                    "target": "The Dagger of Venom",
+                    "targetAffects": "The Dagger of Venom"
                 },
                 "Poison Save": {
                     "name": "Poison Save"
@@ -1614,17 +1665,20 @@
                 "Splash": {
                     "name": "Splash",
                     "chatFlavor": "1 gallon of water",
-                    "target": "The Decanter of Endless Water"
+                    "target": "The Decanter of Endless Water",
+                    "targetAffects": "The Decanter of Endless Water"
                 },
                 "Fountain": {
                     "name": "Fountain",
                     "chatFlavor": "5 gallon of water",
-                    "target": "The Decanter of Endless Water"
+                    "target": "The Decanter of Endless Water",
+                    "targetAffects": "The Decanter of Endless Water"
                 },
                 "Geyser": {
                     "name": "Geyser",
                     "chatFlavor": "30 gallons; save vs &Reference[prone]",
-                    "target": "One creature or object of your choice in the Line"
+                    "target": "One creature or object of your choice in the Line",
+                    "targetAffects": "One creature or object of your choice in the Line"
                 }
             }
         },
@@ -1635,7 +1689,8 @@
                 "Count Number of Cards": {
                     "name": "Count Number of Cards",
                     "chatFlavor": "You find the deck missing some cards.",
-                    "target": "The Deck of Illusions"
+                    "target": "The Deck of Illusions",
+                    "targetAffects": "The Deck of Illusions"
                 },
                 "Draw Card": {
                     "name": "Draw Card"
@@ -1649,7 +1704,9 @@
                 "Check Deck Size": {
                     "name": "Check Deck Size",
                     "condition": "when determining the number of cards in this Deck",
+                    "activationCondition": "when determining the number of cards in this Deck",
                     "target": "The Deck of Many Things",
+                    "targetAffects": "The Deck of Many Things",
                     "roll": "Deck Size"
                 },
                 "Draw Cards": {
@@ -1710,17 +1767,20 @@
                     "name": "Containment",
                     "chatFlavor": "The Fiend makes the saving throw with Disadvantage. Deduct one item use on successful containment.",
                     "target": "visible Fiend trapped within a Magic Circle",
+                    "targetAffects": "visible Fiend trapped within a Magic Circle",
                     "range": "within sight"
                 },
                 "Ensnarement: Magic Circle": {
                     "name": "Ensnarement: Magic Circle",
                     "chatFlavor": "The Fiend has Disadvantage on its saving throw",
-                    "target": "Chosen creature type must be Fiend"
+                    "target": "Chosen creature type must be Fiend",
+                    "targetAffects": "Chosen creature type must be Fiend"
                 },
                 "Ensnarement: Planar Binding": {
                     "name": "Ensnarement: Planar Binding",
                     "chatFlavor": "The Fiend has Disadvantage on its saving throw",
-                    "target": "Chosen creature type must be Fiend"
+                    "target": "Chosen creature type must be Fiend",
+                    "targetAffects": "Chosen creature type must be Fiend"
                 },
                 "Plane Shift (Abyss)": {
                     "name": "Plane Shift (Abyss)",
@@ -1734,13 +1794,16 @@
             "activities": {
                 "Place Shackles": {
                     "name": "Place Shackles",
-                    "target": "Small to Large creature with the Incapacitated condition"
+                    "target": "Small to Large creature with the Incapacitated condition",
+                    "targetAffects": "Small to Large creature with the Incapacitated condition"
                 },
                 "Attempt Escape": {
                     "name": "Attempt Escape",
                     "condition": "is bound by Dimensional Shackles",
+                    "activationCondition": "is bound by Dimensional Shackles",
                     "chatFlavor": "Can be attempted once every 30 days",
-                    "target": "Dimensional Shackles binding self"
+                    "target": "Dimensional Shackles binding self",
+                    "targetAffects": "Dimensional Shackles binding self"
                 }
             },
             "effects": {
@@ -1757,6 +1820,7 @@
                 "Card Effect": {
                     "name": "Card Effect",
                     "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw",
                     "chatFlavor": "You draw no more cards"
                 }
             },
@@ -1841,11 +1905,13 @@
             "activities": {
                 "Hover as Light": {
                     "name": "Hover as Light",
-                    "target": "The Driftglobe"
+                    "target": "The Driftglobe",
+                    "targetAffects": "The Driftglobe"
                 },
                 "Hover as Daylight": {
                     "name": "Hover as Daylight",
-                    "target": "The Driftglobe"
+                    "target": "The Driftglobe",
+                    "targetAffects": "The Driftglobe"
                 }
             }
         },
@@ -1874,11 +1940,13 @@
                 },
                 "Sprinkle over Water": {
                     "name": "Sprinkle over Water",
-                    "target": "water"
+                    "target": "water",
+                    "targetAffects": "water"
                 },
                 "Sprinkle on Elemental": {
                     "name": "Sprinkle on Elemental",
-                    "target": "Elemental composed mostly of water"
+                    "target": "Elemental composed mostly of water",
+                    "targetAffects": "Elemental composed mostly of water"
                 }
             }
         },
@@ -1899,6 +1967,7 @@
                 "Reduce Unwilling Movement": {
                     "name": "Reduce Unwilling Movement",
                     "condition": "an effect moves you against your will along the ground",
+                    "activationCondition": "an effect moves you against your will along the ground",
                     "chatFlavor": "Distance moved reduced by up to 10 feet"
                 },
                 "Dwarven Plate": {
@@ -1956,7 +2025,8 @@
             "activities": {
                 "Elemental Compulsion": {
                     "name": "Elemental Compulsion",
-                    "target": "Elemental"
+                    "target": "Elemental",
+                    "targetAffects": "Elemental"
                 }
             },
             "effects": {
@@ -1973,7 +2043,8 @@
             "description": "<p><em>See @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgFigurineOfWon]{Figurine of Wondrous Power}</em></p><p>This ebony statuette, carved in the likeness of a horsefly, can become a <strong>@UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.dmgGiantFly00000]{Giant Fly}</strong> for up to 12 hours and can be ridden as a mount. Once it has been used, it can’t be used again until 2 days have passed.</p><section class=\"secret\" id=\"secret-50TFh1zOfnv1SBKO\"><p><strong>Foundry Note</strong></p><p>This item's limited uses represent the 2 days required before the figurine can be used again.</p></section>",
             "activities": {
                 "summon": {
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 }
             }
         },
@@ -1987,16 +2058,19 @@
                 },
                 "2—9: Obeys Commands": {
                     "name": "2—9: Obeys Commands",
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 },
                 "10: Casts Wish": {
                     "name": "10: Casts Wish",
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 },
                 "1: Attacks You": {
                     "name": "1: Attacks You",
                     "chatFlavor": "A Hostile @UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.LTomFUTBrkRi0Pj5]{Efreeti} appears",
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 }
             }
         },
@@ -2024,19 +2098,23 @@
             "activities": {
                 "Blue Sapphire": {
                     "name": "Blue Sapphire",
-                    "target": "unoccupied space as close to the broken gem as possible"
+                    "target": "unoccupied space as close to the broken gem as possible",
+                    "targetAffects": "unoccupied space as close to the broken gem as possible"
                 },
                 "Emerald": {
                     "name": "Emerald",
-                    "target": "unoccupied space as close to the broken gem as possible"
+                    "target": "unoccupied space as close to the broken gem as possible",
+                    "targetAffects": "unoccupied space as close to the broken gem as possible"
                 },
                 "Red Corundum": {
                     "name": "Red Corundum",
-                    "target": "unoccupied space as close to the broken gem as possible"
+                    "target": "unoccupied space as close to the broken gem as possible",
+                    "targetAffects": "unoccupied space as close to the broken gem as possible"
                 },
                 "Yellow Diamond": {
                     "name": "Yellow Diamond",
-                    "target": "unoccupied space as close to the broken gem as possible"
+                    "target": "unoccupied space as close to the broken gem as possible",
+                    "targetAffects": "unoccupied space as close to the broken gem as possible"
                 }
             }
         },
@@ -2046,7 +2124,8 @@
             "activities": {
                 "Utilize": {
                     "name": "Utilize",
-                    "target": "unoccupied space as close to the broken gem as possible"
+                    "target": "unoccupied space as close to the broken gem as possible",
+                    "targetAffects": "unoccupied space as close to the broken gem as possible"
                 }
             }
         },
@@ -2056,7 +2135,8 @@
             "activities": {
                 "Utilize": {
                     "name": "Utilize",
-                    "target": "unoccupied space as close to the broken gem as possible"
+                    "target": "unoccupied space as close to the broken gem as possible",
+                    "targetAffects": "unoccupied space as close to the broken gem as possible"
                 }
             }
         },
@@ -2066,7 +2146,8 @@
             "activities": {
                 "Utilize": {
                     "name": "Utilize",
-                    "target": "unoccupied space as close to the broken gem as possible"
+                    "target": "unoccupied space as close to the broken gem as possible",
+                    "targetAffects": "unoccupied space as close to the broken gem as possible"
                 }
             }
         },
@@ -2076,7 +2157,8 @@
             "activities": {
                 "Utilize": {
                     "name": "Utilize",
-                    "target": "unoccupied space as close to the broken gem as possible"
+                    "target": "unoccupied space as close to the broken gem as possible",
+                    "targetAffects": "unoccupied space as close to the broken gem as possible"
                 }
             }
         },
@@ -2114,12 +2196,14 @@
                 "Arrow of Transport": {
                     "name": "Arrow of Transport",
                     "chatFlavor": "Willing target teleported to within 10 feet of you",
-                    "target": "Medium or smaller willing creature or object"
+                    "target": "Medium or smaller willing creature or object",
+                    "targetAffects": "Medium or smaller willing creature or object"
                 },
                 "Energy Ladder": {
                     "name": "Energy Ladder",
                     "chatFlavor": "Creates a magical ladder 60 feet high",
-                    "target": "a wall"
+                    "target": "a wall",
+                    "targetAffects": "a wall"
                 },
                 "Energy Bow": {
                     "name": "Energy Bow"
@@ -2127,6 +2211,7 @@
                 "Arrow of Restraint": {
                     "name": "Arrow of Restraint",
                     "condition": "instead of dealing damage",
+                    "activationCondition": "instead of dealing damage",
                     "chatFlavor": "Save Fail: &Reference[restrained]<br>Escape: [[/check ability=str skill=ath dc=20]]"
                 }
             },
@@ -2318,6 +2403,7 @@
                 "Card Effect": {
                     "name": "Card Effect",
                     "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw",
                     "chatFlavor": "Card's effect occurs immediately upon draw"
                 }
             },
@@ -2357,7 +2443,8 @@
             "activities": {
                 "Regeneration": {
                     "name": "Regeneration",
-                    "condition": "start your turn with at least 1 Hit Point"
+                    "condition": "start your turn with at least 1 Hit Point",
+                    "activationCondition": "start your turn with at least 1 Hit Point"
                 },
                 "cast": {
                     "chatFlavor": "Can be used once every 30 days"
@@ -2365,7 +2452,8 @@
                 "Necrotic Reduction": {
                     "name": "Necrotic Reduction",
                     "chatFlavor": "A creature reduced to 0 Hit Points by this damage is transformed into green slime",
-                    "target": "creature you can see"
+                    "target": "creature you can see",
+                    "targetAffects": "creature you can see"
                 }
             },
             "effects": {
@@ -2454,7 +2542,9 @@
                 "Card Effect": {
                     "name": "Card Effect",
                     "condition": "Card's effect occurs upon draw or at any other time before you die",
-                    "target": "One event that has occured"
+                    "activationCondition": "Card's effect occurs upon draw or at any other time before you die",
+                    "target": "One event that has occured",
+                    "targetAffects": "One event that has occured"
                 }
             }
         },
@@ -2468,7 +2558,8 @@
             "activities": {
                 "Elemental Compulsion": {
                     "name": "Elemental Compulsion",
-                    "target": "Elemental"
+                    "target": "Elemental",
+                    "targetAffects": "Elemental"
                 }
             },
             "effects": {
@@ -2528,7 +2619,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             },
             "effects": {
@@ -2566,7 +2658,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             },
             "effects": {
@@ -2618,11 +2711,13 @@
                 "Card Effect: Jewelry": {
                     "name": "Card Effect: Jewelry",
                     "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw",
                     "chatFlavor": "Creates 25 pieces of @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgJewelry2000GP]{Jewelry}"
                 },
                 "Card Effect: Gems": {
                     "name": "Card Effect: Gems",
                     "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw",
                     "chatFlavor": "Creates 50 @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgGemstone1000G]{Gemstones}"
                 }
             }
@@ -2714,6 +2809,7 @@
                 "Snare Missile": {
                     "name": "Snare Missile",
                     "condition": "Hit by an attack roll with a Ranged or Thrown weapon",
+                    "activationCondition": "Hit by an attack roll with a Ranged or Thrown weapon",
                     "roll": "Snare Missile"
                 }
             }
@@ -2752,11 +2848,13 @@
             "activities": {
                 "Use First Lion": {
                     "name": "Use First Lion",
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 },
                 "Use Second Lion": {
                     "name": "Use Second Lion",
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 }
             }
         },
@@ -2848,6 +2946,7 @@
                     "name": "Hurl Hammer",
                     "chatFlavor": "On Hit: [[/save ability=con dc=17]] vs Stunned",
                     "target": "Excluding self",
+                    "targetAffects": "Excluding self",
                     "range": "long range of 60 feet"
                 },
                 "Giants' Bane (On Crit)": {
@@ -2933,14 +3032,16 @@
             "activities": {
                 "Diamond Light": {
                     "name": "Diamond Light",
-                    "target": "Undead"
+                    "target": "Undead",
+                    "targetAffects": "Undead"
                 },
                 "Fire Opal Flames": {
                     "name": "Fire Opal Flames"
                 },
                 "Explosive Emanation": {
                     "name": "Explosive Emanation",
-                    "condition": "Take Fire damage from failing a saving throw"
+                    "condition": "Take Fire damage from failing a saving throw",
+                    "activationCondition": "Take Fire damage from failing a saving throw"
                 }
             },
             "effects": {
@@ -3056,7 +3157,8 @@
             "activities": {
                 "Summon Warriors": {
                     "name": "Summon Warriors",
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 }
             },
             "effects": {
@@ -3163,6 +3265,7 @@
                 "Utilize (Scale by Spell Level)": {
                     "name": "Utilize (Scale by Spell Level)",
                     "condition": "when a creature you can see casts a spell of 4th level or lower",
+                    "activationCondition": "when a creature you can see casts a spell of 4th level or lower",
                     "roll": "Spell Level Canceled"
                 }
             }
@@ -3204,6 +3307,7 @@
                 "Utilize (Scale by Spell Level)": {
                     "name": "Utilize (Scale by Spell Level)",
                     "condition": "when a creature you can see casts a spell of 8th level or lower",
+                    "activationCondition": "when a creature you can see casts a spell of 8th level or lower",
                     "roll": "Spell Level Canceled"
                 }
             }
@@ -3264,7 +3368,8 @@
             "activities": {
                 "Regeneration": {
                     "name": "Regeneration",
-                    "condition": "once per hour if you have at least 1 Hit Point"
+                    "condition": "once per hour if you have at least 1 Hit Point",
+                    "activationCondition": "once per hour if you have at least 1 Hit Point"
                 }
             }
         },
@@ -3303,7 +3408,8 @@
             "activities": {
                 "Throw Bands": {
                     "name": "Throw Bands",
-                    "target": "Huge or smaller you can see"
+                    "target": "Huge or smaller you can see",
+                    "targetAffects": "Huge or smaller you can see"
                 },
                 "Break Check": {
                     "name": "Break Check"
@@ -3336,7 +3442,8 @@
             "activities": {
                 "Summon Warriors": {
                     "name": "Summon Warriors",
-                    "target": "unoccupied spaces"
+                    "target": "unoccupied spaces",
+                    "targetAffects": "unoccupied spaces"
                 }
             },
             "effects": {
@@ -3352,20 +3459,24 @@
             "activities": {
                 "Goat of Terror": {
                     "name": "Goat of Terror",
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 },
                 "Goat of Traveling": {
                     "name": "Goat of Traveling",
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 },
                 "Revert or Recall Goat of Traveling": {
                     "name": "Revert or Recall Goat of Traveling",
                     "chatFlavor": "Each hour or portion thereof it spends in goat form costs 1 charge.",
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 },
                 "Goat of Travail": {
                     "name": "Goat of Travail",
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 }
             }
         },
@@ -3384,11 +3495,13 @@
             "activities": {
                 "Card Effect: Advantage": {
                     "name": "Card Effect: Advantage",
-                    "condition": "Card's chosen effect occurs immediately upon draw"
+                    "condition": "Card's chosen effect occurs immediately upon draw",
+                    "activationCondition": "Card's chosen effect occurs immediately upon draw"
                 },
                 "Card Effect: Draw Two": {
                     "name": "Card Effect: Draw Two",
                     "condition": "Card's chosen effect occurs immediately upon draw",
+                    "activationCondition": "Card's chosen effect occurs immediately upon draw",
                     "chatFlavor": "You draw two additional cards"
                 }
             }
@@ -3426,7 +3539,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             }
         },
@@ -3436,7 +3550,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             }
         },
@@ -3504,6 +3619,7 @@
                 "Luck": {
                     "name": "Luck",
                     "condition": "failed D20 Test",
+                    "activationCondition": "failed D20 Test",
                     "roll": "Roll D20"
                 }
             },
@@ -3538,7 +3654,8 @@
                     "chatFlavor": "Bonus Damage: 2d6 Radiant vs Fiend/Undead"
                 },
                 "save": {
-                    "target": "Fiend or Undead"
+                    "target": "Fiend or Undead",
+                    "targetAffects": "Fiend or Undead"
                 }
             },
             "effects": {
@@ -3678,7 +3795,8 @@
             "description": "<p><em>See @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgFigurineOfWon]{Figurine of Wondrous Power}</em></p><p>This marble statuette resembles a trumpeting elephant. It can become an <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobElephant00]{Elephant}</strong> for up to 24 hours. Once it has been used, it can’t be used again until 7 days have passed.</p><section class=\"secret\" id=\"secret-RHHx3aKcpKsHN2aK\"><p><strong>Foundry Note</strong></p><p>This item's limited uses represent the 7 days required before the figurine can be used again.</p></section>",
             "activities": {
                 "summon": {
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 }
             }
         },
@@ -3688,7 +3806,8 @@
             "activities": {
                 "Underwater Recovery": {
                     "name": "Underwater Recovery",
-                    "condition": "you start your turn underwater with 0 Hit Points"
+                    "condition": "you start your turn underwater with 0 Hit Points",
+                    "activationCondition": "you start your turn underwater with 0 Hit Points"
                 },
                 "Mariner's Armor": {
                     "name": "Mariner's Armor"
@@ -3729,7 +3848,8 @@
             "description": "<p><em>Wondrous Item, Very Rare</em></p><p>When this 4-foot-tall, 2-foot-wide mirror is viewed indirectly, its surface shows faint images of creatures. The mirror weighs 50 pounds, and it has AC 11, HP 10, Immunity to Poison and Psychic damage, and Vulnerability to Bludgeoning damage. It shatters and is destroyed when reduced to 0 Hit Points.</p><p>If the mirror is hanging on a vertical surface and you are within 5 feet of it, you can take a Magic action and use a command word to activate it. It remains activated until you take a Magic action and repeat the command word to deactivate it.</p><p>Any creature other than you that sees its reflection in the activated mirror while within 30 feet of the mirror must succeed on a DC 15 Charisma saving throw or be trapped, along with anything it is wearing or carrying, in one of the mirror’s twelve extradimensional cells. A creature that knows the mirror’s nature makes the save with Advantage, and Constructs succeed on the save automatically.</p><p>An extradimensional cell is an infinite expanse filled with thick fog that reduces visibility to 10 feet. Creatures trapped in the mirror’s cells don’t age, and they don’t need to eat, drink, or sleep. A creature trapped within a cell can escape using magic that permits planar travel. Otherwise, the creature is confined to the cell until freed.</p><p>If the mirror traps a creature but its twelve extradimensional cells are already occupied, the mirror frees one trapped creature at random to accommodate the new prisoner. A freed creature appears in an unoccupied space within sight of the mirror but facing away from it. If the mirror is shattered, all creatures it contains are freed and appear in unoccupied spaces near it.</p><p>While within 5 feet of the mirror, you can take a Magic action to name one creature trapped in it or call out a particular cell by number. The creature named or contained in the named cell appears as an image on the mirror’s surface. You and the creature can then communicate.</p><p>In a similar way, you can take a Magic action and use a second command word to free one creature trapped in the mirror. The freed creature appears, along with its possessions, in the unoccupied space nearest to the mirror and facing away from it.</p><p>Placing the mirror inside an extradimensional space created by a <em>Bag of Holding</em>, <em>Portable Hole</em>, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate and not behind Total Cover is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way only and can’t be reopened.</p><section id=\"secret-wD2MAubhr1RWqA6v\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This item has a max uses of 12 which can be used to track the number of creatures trapped within the mirror. The <strong>Add/Free Trapped Creature</strong> activities can be used to increment/decrement that number.</p></section>",
             "activities": {
                 "save": {
-                    "condition": "Sees its reflection"
+                    "condition": "Sees its reflection",
+                    "activationCondition": "Sees its reflection"
                 },
                 "Add Trapped Creature": {
                     "name": "Add Trapped Creature"
@@ -3870,7 +3990,8 @@
             "activities": {
                 "Life Stealing": {
                     "name": "Life Stealing",
-                    "condition": "when you roll a 20 on an attack against a creature with fewer than 100 Hit Points"
+                    "condition": "when you roll a 20 on an attack against a creature with fewer than 100 Hit Points",
+                    "activationCondition": "when you roll a 20 on an attack against a creature with fewer than 100 Hit Points"
                 },
                 "Nine Lives Stealer": {
                     "name": "Nine Lives Stealer"
@@ -3907,7 +4028,8 @@
                 },
                 "Swear Oath": {
                     "name": "Swear Oath",
-                    "condition": "when you make a ranged attack with this weapon"
+                    "condition": "when you make a ranged attack with this weapon",
+                    "activationCondition": "when you make a ranged attack with this weapon"
                 }
             },
             "effects": {
@@ -3930,7 +4052,8 @@
             "activities": {
                 "summon": {
                     "chatFlavor": "[[/r 1d10cs1]]{10 percent chance} of ignoring your orders.",
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 }
             }
         },
@@ -4003,7 +4126,8 @@
             "description": "<p><em>See @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgFigurineOfWon]{Figurine of Wondrous Power}</em></p><p>This onyx statuette of a dog can become a <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobMastiff000]{Mastiff}</strong> for up to 6 hours. The mastiff has an Intelligence of 8 and can speak Common. It also has Blindsight with a range of 60 feet. Once it has been used, it can’t be used again until 7 days have passed.</p><section class=\"secret\" id=\"secret-61PsF1VxjiD2gq06\"><p><strong>Foundry Note</strong></p><p>This item's limited uses represent the 7 days required before the figurine can be used again.</p></section>",
             "activities": {
                 "summon": {
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 }
             },
             "effects": {
@@ -4026,7 +4150,8 @@
                 },
                 "Call Dragons": {
                     "name": "Call Dragons",
-                    "target": "Chromatic Dragons"
+                    "target": "Chromatic Dragons",
+                    "targetAffects": "Chromatic Dragons"
                 }
             },
             "effects": {
@@ -4133,7 +4258,8 @@
             "activities": {
                 "Call Swarm of Rats": {
                     "name": "Call Swarm of Rats",
-                    "target": "rats"
+                    "target": "rats",
+                    "targetAffects": "rats"
                 },
                 "Sway Rats": {
                     "name": "Sway Rats"
@@ -4618,6 +4744,7 @@
                 "Card Effect": {
                     "name": "Card Effect",
                     "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw",
                     "roll": "Ability Score Reduction"
                 }
             }
@@ -4671,7 +4798,8 @@
             "activities": {
                 "Use": {
                     "name": "Use",
-                    "target": "body of water at least 60 feet in diameter"
+                    "target": "body of water at least 60 feet in diameter",
+                    "targetAffects": "body of water at least 60 feet in diameter"
                 }
             }
         },
@@ -4681,7 +4809,8 @@
             "activities": {
                 "Use": {
                     "name": "Use",
-                    "target": "unoccupied space on the ground"
+                    "target": "unoccupied space on the ground",
+                    "targetAffects": "unoccupied space on the ground"
                 }
             }
         },
@@ -4827,7 +4956,8 @@
             "description": "<p><em>Ring, Very Rare (Requires Attunement)</em></p><p>While wearing this ring, you regain 1d6 Hit Points every 10 minutes if you have at least 1 Hit Point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after [[/r 1d6 + 1]] days if you have at least 1 Hit Point the whole time.</p><section class=\"secret\" id=\"secret-N3RMelHP7jT5vBMy\"><p><strong>Foundry Note</strong></p><p>The <strong>Heal</strong> activity allows you to enter the number of 10 minute increments that have passed and will automatically scale the healing formula. For example, if it's been an hour, you can enter 6 and it will roll 6d6.</p></section>",
             "activities": {
                 "heal": {
-                    "condition": "Every 10 minutes"
+                    "condition": "Every 10 minutes",
+                    "activationCondition": "Every 10 minutes"
                 }
             }
         },
@@ -4985,7 +5115,8 @@
             "activities": {
                 "Heads": {
                     "name": "Heads",
-                    "target": "you can see"
+                    "target": "you can see",
+                    "targetAffects": "you can see"
                 },
                 "Tails": {
                     "name": "Tails"
@@ -5029,7 +5160,8 @@
             "description": "<p><em>Wondrous Item, Very Rare (Requires Attunement)</em></p><p>This robe has 3 charges, and it regains 1d3 expended charges daily at dawn. While you wear it, you can take a Magic action and expend 1 charge to cause the garment to display a shifting pattern of dazzling hues until the end of your next turn. During this time, the robe sheds Bright Light in a 30-foot radius and Dim Light for an additional 30 feet, and creatures that can see you have Disadvantage on attack rolls against you. Any creature in the Bright Light that can see you when the robe’s power is activated must succeed on a DC 15 Wisdom saving throw or have the Stunned condition until the effect ends.</p><section id=\"secret-fHn9nt3cSF0lOwcT\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Display Dazzling Hues</strong> activity includes a measured template which can be used for tracking the area of Bright Light.</p></section>",
             "activities": {
                 "save": {
-                    "target": "can see you"
+                    "target": "can see you",
+                    "targetAffects": "can see you"
                 },
                 "Display Dazzling Hues": {
                     "name": "Display Dazzling Hues"
@@ -5163,7 +5295,8 @@
                 },
                 "Terrify": {
                     "name": "Terrify",
-                    "target": "you can see"
+                    "target": "you can see",
+                    "targetAffects": "you can see"
                 },
                 "Button 2 Versatile Attack": {
                     "name": "Button 2 Versatile Attack"
@@ -5202,7 +5335,8 @@
             "activities": {
                 "Transport to Demiplane": {
                     "name": "Transport to Demiplane",
-                    "target": "you can see"
+                    "target": "you can see",
+                    "targetAffects": "you can see"
                 }
             }
         },
@@ -5247,7 +5381,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             },
             "effects": {
@@ -5328,7 +5463,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             }
         },
@@ -5383,7 +5519,8 @@
             "description": "<p><em>Weapon (@UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepScimitar00]{Scimitar}), Very Rare (Requires Attunement)</em></p><p>You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. In addition, you can make one attack with it as a Bonus Action on each of your turns.</p>",
             "activities": {
                 "attack": {
-                    "condition": "Action or Bonus Action"
+                    "condition": "Action or Bonus Action",
+                    "activationCondition": "Action or Bonus Action"
                 }
             }
         },
@@ -5457,7 +5594,8 @@
                 "Summon Titan": {
                     "name": "Summon Titan",
                     "chatFlavor": "The titan is Hostile toward all other creatures and disappears when it drops to 0 Hit Points.",
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 },
                 "Scroll of Titan Summoning": {
                     "name": "Scroll of Titan Summoning"
@@ -5526,7 +5664,8 @@
             "description": "<p><em>See @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgFigurineOfWon]{Figurine of Wondrous Power}</em></p><p>This serpentine statuette of an owl can become a <strong>@UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.VVXly3ue0i3YgGrB]{Giant Owl}</strong> for up to 8 hours. The owl can communicate telepathically with you at any range if you and it are on the same plane of existence. Once it has been used, it can’t be used again until 2 days have passed.</p><section class=\"secret\" id=\"secret-lvDPI4uyHQj4dE5a\"><p><strong>Foundry Note</strong></p><p>This item's limited uses represent the 2 days required before the figurine can be used again.</p></section>",
             "activities": {
                 "summon": {
-                    "target": "unoccupied space"
+                    "target": "unoccupied space",
+                    "targetAffects": "unoccupied space"
                 }
             }
         },
@@ -5606,7 +5745,8 @@
             "activities": {
                 "Summon Warriors": {
                     "name": "Summon Warriors",
-                    "target": "unoccupied spaces"
+                    "target": "unoccupied spaces",
+                    "targetAffects": "unoccupied spaces"
                 }
             },
             "effects": {
@@ -5622,7 +5762,8 @@
             "activities": {
                 "cast": {
                     "chatFlavor": "Can target only the Silver Raven",
-                    "target": "The Silver Raven in raven form"
+                    "target": "The Silver Raven in raven form",
+                    "targetAffects": "The Silver Raven in raven form"
                 }
             }
         },
@@ -5647,7 +5788,8 @@
                 "Card Effect": {
                     "name": "Card Effect",
                     "chatFlavor": "Card's effect occurs immediately upon draw",
-                    "target": "nearest unoccupied space"
+                    "target": "nearest unoccupied space",
+                    "targetAffects": "nearest unoccupied space"
                 }
             }
         },
@@ -5847,7 +5989,8 @@
             "activities": {
                 "Transform into Snake": {
                     "name": "Transform into Snake",
-                    "target": "Unoccupied"
+                    "target": "Unoccupied",
+                    "targetAffects": "Unoccupied"
                 }
             }
         },
@@ -5936,7 +6079,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             }
         },
@@ -5964,7 +6108,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             },
             "effects": {
@@ -6002,6 +6147,7 @@
                 "Attack Reaction": {
                     "name": "Attack Reaction",
                     "condition": "creature within reach deals damage to you",
+                    "activationCondition": "creature within reach deals damage to you",
                     "chatFlavor": "Damage ignores immunity or resistance"
                 }
             }
@@ -6168,7 +6314,9 @@
                 "Card Effect": {
                     "name": "Card Effect",
                     "condition": "Card's effect occurs immediately upon draw",
-                    "target": "all magic items you wear or carry"
+                    "activationCondition": "Card's effect occurs immediately upon draw",
+                    "target": "all magic items you wear or carry",
+                    "targetAffects": "all magic items you wear or carry"
                 }
             }
         },
@@ -6206,7 +6354,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             }
         },
@@ -6433,6 +6582,7 @@
                 "Card Effect": {
                     "name": "Card Effect",
                     "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw",
                     "chatFlavor": "You draw no more cards"
                 }
             },
@@ -6464,6 +6614,7 @@
                 "Walloping Save": {
                     "name": "Walloping Save",
                     "condition": "on hit with this ammunition",
+                    "activationCondition": "on hit with this ammunition",
                     "chatFlavor": "Target creature is &Reference[prone] on a failed saving throw."
                 },
                 "Walloping Ammunition": {
@@ -6571,7 +6722,8 @@
             "activities": {
                 "Detect Secret Door/Trap": {
                     "name": "Detect Secret Door/Trap",
-                    "target": "secret doors/traps"
+                    "target": "secret doors/traps",
+                    "targetAffects": "secret doors/traps"
                 }
             }
         },
@@ -6640,7 +6792,8 @@
             "activities": {
                 "Elemental Compulsion": {
                     "name": "Elemental Compulsion",
-                    "target": "Elemental"
+                    "target": "Elemental",
+                    "targetAffects": "Elemental"
                 }
             },
             "effects": {

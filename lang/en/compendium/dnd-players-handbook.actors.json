@@ -34,7 +34,8 @@
                     "requirements": "Slaad Only",
                     "activities": {
                         "heal": {
-                            "condition": "start of its turn, if it has at least 1 Hit Point"
+                            "condition": "start of its turn, if it has at least 1 Hit Point",
+                            "activationCondition": "start of its turn, if it has at least 1 Hit Point"
                         }
                     }
                 },
@@ -44,7 +45,8 @@
                     "requirements": "Mind Flayer Only",
                     "activities": {
                         "save": {
-                            "condition": "start of its turn"
+                            "condition": "start of its turn",
+                            "activationCondition": "start of its turn"
                         }
                     }
                 },
@@ -141,7 +143,8 @@
                     "description": "<p>As a Bonus Action, you can move the eye up to 30 feet in any direction. A solid barrier blocks the eye’s movement, but the eye can pass through an opening as small as 1 inch in diameter.</p>",
                     "activities": {
                         "utility": {
-                            "condition": "Bonus Action used by summoner"
+                            "condition": "Bonus Action used by summoner",
+                            "activationCondition": "Bonus Action used by summoner"
                         }
                     }
                 }
@@ -231,7 +234,8 @@
                     "activities": {
                         "Storm's Thunder": {
                             "name": "Storm's Thunder",
-                            "condition": "When you take damage from a creature within 60 feet of you"
+                            "condition": "When you take damage from a creature within 60 feet of you",
+                            "activationCondition": "When you take damage from a creature within 60 feet of you"
                         }
                     }
                 },
@@ -790,10 +794,12 @@
                 "Beast's Strike": {
                     "name": "Beast's Strike",
                     "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 2 plus your Wisdom modifier Bludgeoning, Piercing, or Slashing damage (your choice when you summon the beast). If the beast moved at least 20 feet straight toward the target before the hit, the target takes an extra 1d6 damage of the same type, and the target has the &amp;Reference[prone] condition if it is a Large or smaller creature.</p><section class=\"secret\" id=\"secret-fxROphHp3AaFzUXp\"><p><strong>Foundry Note</strong></p><p>The <strong>Attack</strong> and <strong>Charging Attack</strong> activities will allow you to choose the damage type in the roll dialog. You should choose one damage type and use it consistently until resummoning your companion.</p><p>The <strong>Charging Attack</strong> activity includes the additional damage.</p></section>",
+                    "chat": "<p>[[/attack extended]]. [[/damage extended]].  If the beast moved at least 20 feet straight toward the target before the hit, the target takes an extra 1d6 damage of the same type, and the target has the &amp;Reference[prone] condition if it is a Large or smaller creature.</p>",
                     "activities": {
                         "Charge": {
                             "name": "Charge",
-                            "condition": "has moved at least 20 feet straight toward the target"
+                            "condition": "has moved at least 20 feet straight toward the target",
+                            "activationCondition": "has moved at least 20 feet straight toward the target"
                         }
                     },
                     "effects": {
@@ -821,10 +827,12 @@
                 "Beast's Strike": {
                     "name": "Beast's Strike",
                     "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d6 + 2 plus your Wisdom modifier Bludgeoning or Piercing damage (your choice when you summon the beast), and the target has the &amp;Reference[grappled] condition (escape DC equals your spell save DC).</p><section class=\"secret\" id=\"secret-AoVM7zkUrdX0Ny38\"><p><strong>Foundry Note</strong></p><p>The <strong>Attack</strong> activity will allow you to choose the damage type in the roll dialog. You should choose one damage type and use it consistently until resummoning your companion.</p></section>",
+                    "chat": "<p>[[/attack extended]]. [[/damage extended]], and the target has the &amp;Reference[grappled] condition (escape [[/check]]).</p>",
                     "activities": {
                         "Escape Check": {
                             "name": "Escape Check",
-                            "condition": "Taken by Grappled creature to Escape"
+                            "condition": "Taken by Grappled creature to Escape",
+                            "activationCondition": "Taken by Grappled creature to Escape"
                         }
                     },
                     "effects": {
@@ -851,7 +859,8 @@
                 },
                 "Beast's Strike": {
                     "name": "Beast's Strike",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d4 + 3 plus your Wisdom modifier Slashing damage.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d4 + 3 plus your Wisdom modifier Slashing damage.</p>",
+                    "chat": "<p>[[/attack extended]]. [[/damage extended]].</p>"
                 }
             }
         },
@@ -1019,7 +1028,8 @@
                         },
                         "Crush": {
                             "name": "Crush",
-                            "condition": "has a creature grappled"
+                            "condition": "has a creature grappled",
+                            "activationCondition": "has a creature grappled"
                         }
                     }
                 },
@@ -1204,7 +1214,8 @@
                     "activities": {
                         "Attack or Move": {
                             "name": "Attack or Move",
-                            "condition": "The spirit takes damage from a creature."
+                            "condition": "The spirit takes damage from a creature.",
+                            "activationCondition": "The spirit takes damage from a creature."
                         }
                     }
                 }
@@ -1323,7 +1334,8 @@
                     "activities": {
                         "Bind": {
                             "name": "Bind",
-                            "target": "Grappled, Incapacitated, or Restrained"
+                            "target": "Grappled, Incapacitated, or Restrained",
+                            "targetAffects": "Grappled, Incapacitated, or Restrained"
                         },
                         "Escape Check": {
                             "name": "Escape Check"
@@ -1597,11 +1609,13 @@
                     "activities": {
                         "Initial Save": {
                             "name": "Initial Save",
-                            "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
                         },
                         "Save while Restrained": {
                             "name": "Save while Restrained",
-                            "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
                         }
                     },
                     "effects": {
@@ -1622,7 +1636,8 @@
                     "description": "<p>Whenever the pack moves within 10 feet of a creature you can see and whenever a creature you can see enters a space within 10 feet of the pack or ends its turn there, you can force that creature to make a Dexterity saving throw. On a failed save, the creature takes 3d10 Slashing damage. A creature makes this save only once per turn.</p>",
                     "activities": {
                         "save": {
-                            "condition": "visible creature moves or ends its turn within 10 feet of the pack"
+                            "condition": "visible creature moves or ends its turn within 10 feet of the pack",
+                            "activationCondition": "visible creature moves or ends its turn within 10 feet of the pack"
                         }
                     }
                 }
@@ -1638,11 +1653,13 @@
                     "activities": {
                         "Initial Save": {
                             "name": "Initial Save",
-                            "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
                         },
                         "Save while Restrained": {
                             "name": "Save while Restrained",
-                            "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
                         }
                     },
                     "effects": {
@@ -1663,7 +1680,8 @@
                     "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplConjureFey caption=false]</p>",
                     "activities": {
                         "attack": {
-                            "condition": "upon appearing"
+                            "condition": "upon appearing",
+                            "activationCondition": "upon appearing"
                         },
                         "Teleport and Attack": {
                             "name": "Teleport and Attack"
@@ -1688,11 +1706,13 @@
                     "activities": {
                         "Initial Save": {
                             "name": "Initial Save",
-                            "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
                         },
                         "Save while Restrained": {
                             "name": "Save while Restrained",
-                            "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
                         }
                     },
                     "effects": {
@@ -1714,11 +1734,13 @@
                     "activities": {
                         "Initial Save": {
                             "name": "Initial Save",
-                            "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
                         },
                         "Save while Restrained": {
                             "name": "Save while Restrained",
-                            "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
                         }
                     },
                     "effects": {
@@ -1743,7 +1765,8 @@
                     "description": "<p><em>Strength Saving Throw:</em> DC 12, one Medium or smaller creature the snake can see within 5 feet. <em>Failure:</em> 7 (3d4) Bludgeoning damage, and the target has the &amp;Reference[grappled] condition (escape DC 12).</p>",
                     "activities": {
                         "save": {
-                            "target": "Medium or smaller creature"
+                            "target": "Medium or smaller creature",
+                            "targetAffects": "Medium or smaller creature"
                         }
                     }
                 }
@@ -1795,7 +1818,8 @@
                     "activities": {
                         "Attack or Move": {
                             "name": "Attack or Move",
-                            "condition": "The spirit takes damage from a creature."
+                            "condition": "The spirit takes damage from a creature.",
+                            "activationCondition": "The spirit takes damage from a creature."
                         }
                     }
                 }
@@ -1883,7 +1907,8 @@
                     "activities": {
                         "Explode": {
                             "name": "Explode",
-                            "condition": "when the spirit drops to 0 Hit Points or the spell ends"
+                            "condition": "when the spirit drops to 0 Hit Points or the spell ends",
+                            "activationCondition": "when the spirit drops to 0 Hit Points or the spell ends"
                         }
                     }
                 },
@@ -1969,23 +1994,28 @@
                     "activities": {
                         "Share Acid Resistance": {
                             "name": "Share Acid Resistance",
-                            "target": "the spirit's summoner"
+                            "target": "the spirit's summoner",
+                            "targetAffects": "the spirit's summoner"
                         },
                         "Share Cold Resistance": {
                             "name": "Share Cold Resistance",
-                            "target": "the spirit's summoner"
+                            "target": "the spirit's summoner",
+                            "targetAffects": "the spirit's summoner"
                         },
                         "Share Fire Resistance": {
                             "name": "Share Fire Resistance",
-                            "target": "the spirit's summoner"
+                            "target": "the spirit's summoner",
+                            "targetAffects": "the spirit's summoner"
                         },
                         "Share Lightning Resistance": {
                             "name": "Share Lightning Resistance",
-                            "target": "the spirit's summoner"
+                            "target": "the spirit's summoner",
+                            "targetAffects": "the spirit's summoner"
                         },
                         "Share Poison Resistance": {
                             "name": "Share Poison Resistance",
-                            "target": "the spirit's summoner"
+                            "target": "the spirit's summoner",
+                            "targetAffects": "the spirit's summoner"
                         }
                     },
                     "effects": {
@@ -2124,7 +2154,8 @@
                     "activities": {
                         "Stabilize": {
                             "name": "Stabilize",
-                            "target": "Unconscious"
+                            "target": "Unconscious",
+                            "targetAffects": "Unconscious"
                         }
                     }
                 },
@@ -2439,7 +2470,8 @@
                     "requirements": "Target is Prone",
                     "activities": {
                         "save": {
-                            "target": "has the Prone condition"
+                            "target": "has the Prone condition",
+                            "targetAffects": "has the Prone condition"
                         }
                     }
                 }
@@ -2585,7 +2617,8 @@
                     "activities": {
                         "Explode": {
                             "name": "Explode",
-                            "condition": "when the spirit drops to 0 Hit Points or the spell ends"
+                            "condition": "when the spirit drops to 0 Hit Points or the spell ends",
+                            "activationCondition": "when the spirit drops to 0 Hit Points or the spell ends"
                         }
                     }
                 },
@@ -2733,7 +2766,8 @@
                     "activities": {
                         "Stabilize": {
                             "name": "Stabilize",
-                            "target": "Unconscious"
+                            "target": "Unconscious",
+                            "targetAffects": "Unconscious"
                         }
                     }
                 },
@@ -2931,7 +2965,8 @@
                     "description": "<p>You create a 5-foot-diameter sphere of fire in an unoccupied space on the ground within range. It lasts for the duration. Any creature that ends its turn within 5 feet of the sphere makes a Dexterity saving throw, taking 2d6 Fire damage on a failed save or half as much damage on a successful one.</p>",
                     "activities": {
                         "save": {
-                            "condition": "Any creature ends its turn within range"
+                            "condition": "Any creature ends its turn within range",
+                            "activationCondition": "Any creature ends its turn within range"
                         }
                     }
                 },
@@ -3537,7 +3572,8 @@
                     "requirements": "Mind Flayer Only",
                     "activities": {
                         "save": {
-                            "condition": "start of its turn"
+                            "condition": "start of its turn",
+                            "activationCondition": "start of its turn"
                         }
                     }
                 },
@@ -3912,7 +3948,8 @@
                     "activities": {
                         "Obscure Area": {
                             "name": "Obscure Area",
-                            "condition": "a creature ends its turn within 5 feet of the octopus while underwater"
+                            "condition": "a creature ends its turn within 5 feet of the octopus while underwater",
+                            "activationCondition": "a creature ends its turn within 5 feet of the octopus while underwater"
                         }
                     }
                 },
@@ -4030,7 +4067,8 @@
                     "activities": {
                         "Relentlessly Endure": {
                             "name": "Relentlessly Endure",
-                            "condition": "When you are reduced to 0 Hit Points but not killed outright"
+                            "condition": "When you are reduced to 0 Hit Points but not killed outright",
+                            "activationCondition": "When you are reduced to 0 Hit Points but not killed outright"
                         }
                     }
                 },
@@ -4084,6 +4122,8 @@
                 "Searing Smite": {
                     "name": "Searing Smite",
                     "description": "<p>As you hit the target, it takes an extra 1d6 Fire damage from the attack. At the start of each of its turns until the spell ends, the target takes 1d6 Fire damage and then makes a Constitution saving throw. On a failed save, the spell continues. On a successful save, the spell ends.</p><p><strong>Using a Higher-Level Spell Slot. </strong>All the damage increases by 1d6 for each spell slot level above 1.</p>",
+                    "activation": "immediately after hitting a target with a Melee weapon or an Unarmed Strike",
+                    "activationCondition": "immediately after hitting a target with a Melee weapon or an Unarmed Strike",
                     "effects": {
                         "Seared": {
                             "name": "Seared",
@@ -4277,7 +4317,9 @@
                     "activities": {
                         "save": {
                             "condition": "any other creature that starts its turn within range",
-                            "target": "other than you"
+                            "activationCondition": "any other creature that starts its turn within range",
+                            "target": "other than you",
+                            "targetAffects": "other than you"
                         }
                     },
                     "effects": {
@@ -4405,11 +4447,13 @@
                     "activities": {
                         "Advantage": {
                             "name": "Advantage",
-                            "condition": "When you roll a d20 for a D20 Test"
+                            "condition": "When you roll a d20 for a D20 Test",
+                            "activationCondition": "When you roll a d20 for a D20 Test"
                         },
                         "Disadvantage": {
                             "name": "Disadvantage",
-                            "condition": "When a creature rolls a d20 for an attack roll against you"
+                            "condition": "When a creature rolls a d20 for an attack roll against you",
+                            "activationCondition": "When a creature rolls a d20 for an attack roll against you"
                         }
                     }
                 },
@@ -4523,6 +4567,8 @@
                 "Ensnaring Strike": {
                     "name": "Ensnaring Strike",
                     "description": "<p>As you hit the target, grasping vines appear on it, and it makes a Strength saving throw. A Large or larger creature has Advantage on this save. On a failed save, the target has the <span style=\"font-family:Signika, sans-serif\">&amp;Reference[restrained apply=false] </span>condition until the spell ends. On a successful save, the vines shrivel away, and the spell ends.</p><p>While Restrained, the target takes [[/damage (@item.level)d6 type=piercing]] Piercing damage at the start of each of its turns. The target or a creature within reach of it can take an action to make a [[/check ability=str skill=ath dc=@attributes.spell.dc]] check against your spell save DC. On a success, the spell ends.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 1.</p>",
+                    "activation": "Immediately after hitting a creature with a weapon",
+                    "activationCondition": "Immediately after hitting a creature with a weapon",
                     "activities": {
                         "Start of Turn Damage": {
                             "name": "Start of Turn Damage"
@@ -4673,7 +4719,8 @@
                         },
                         "Move Mark": {
                             "name": "Move Mark",
-                            "condition": "when the currently marked target drops to 0 Hit Points"
+                            "condition": "when the currently marked target drops to 0 Hit Points",
+                            "activationCondition": "when the currently marked target drops to 0 Hit Points"
                         },
                         "Mark Creature (free casting)": {
                             "name": "Mark Creature (free casting)"
@@ -5078,7 +5125,8 @@
                     "requirements": "Slaad Only",
                     "activities": {
                         "heal": {
-                            "condition": "start of its turn, if it has at least 1 Hit Point"
+                            "condition": "start of its turn, if it has at least 1 Hit Point",
+                            "activationCondition": "start of its turn, if it has at least 1 Hit Point"
                         }
                     }
                 },
@@ -5437,6 +5485,7 @@
                     "activities": {
                         "utility": {
                             "condition": "the sphinx or another creature within 30 feet makes an ability check or a saving throw",
+                            "activationCondition": "the sphinx or another creature within 30 feet makes an ability check or a saving throw",
                             "roll": "Roll Bonus"
                         }
                     }
@@ -5634,7 +5683,9 @@
                     "activities": {
                         "save": {
                             "condition": "any other creature that starts its turn within range",
-                            "target": "other than you"
+                            "activationCondition": "any other creature that starts its turn within range",
+                            "target": "other than you",
+                            "targetAffects": "other than you"
                         }
                     },
                     "effects": {
@@ -5879,7 +5930,8 @@
                     "activities": {
                         "Bonus Hex Damage": {
                             "name": "Bonus Hex Damage",
-                            "condition": "whenever you hit the target with an attack roll"
+                            "condition": "whenever you hit the target with an attack roll",
+                            "activationCondition": "whenever you hit the target with an attack roll"
                         },
                         "Place Curse": {
                             "name": "Place Curse"
@@ -5951,11 +6003,13 @@
                     "activities": {
                         "Healthy Target": {
                             "name": "Healthy Target",
-                            "target": "undamaged creature"
+                            "target": "undamaged creature",
+                            "targetAffects": "undamaged creature"
                         },
                         "Damaged Target": {
                             "name": "Damaged Target",
-                            "target": "creature missing any of its Hit Points"
+                            "target": "creature missing any of its Hit Points",
+                            "targetAffects": "creature missing any of its Hit Points"
                         }
                     }
                 },
@@ -6344,7 +6398,9 @@
                 "Feather Fall": {
                     "name": "Feather Fall",
                     "description": "<p>Choose up to five falling creatures within range. A falling creature’s rate of descent slows to 60 feet per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature.</p>",
-                    "materials": "a small feather or piece of down"
+                    "materials": "a small feather or piece of down",
+                    "activation": "when you or a creature you can see within 60 feet of you falls",
+                    "activationCondition": "when you or a creature you can see within 60 feet of you falls"
                 },
                 "Mage Armor": {
                     "name": "Mage Armor",

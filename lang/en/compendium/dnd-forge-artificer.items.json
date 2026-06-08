@@ -5,6 +5,11 @@
         "requirements": "system.requirements",
         "materials": "system.materials.value",
         "chat": "system.description.chat",
+        "unidentified": "system.description.unidentified",
+        "activation": "system.activation.condition",
+        "activationCondition": "system.activation.condition",
+        "activationValue": "system.activation.value",
+        "targetAffects": "system.target.affects.special",
         "activities": {
             "path": "system.activities",
             "converter": "structured",
@@ -18,8 +23,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
+                "activationCondition": "activation.condition",
+                "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
+                "targetAffects": "target.affects.special",
                 "roll": "roll.name",
                 "range": {
                     "path": "range",
@@ -123,7 +131,8 @@
             "description": "<p><em>Wondrous Item, Uncommon (Requires Attunement)</em></p><p>While wearing these boots, you can take a Bonus Action to teleport up to 15 feet to an unoccupied space you can see. You must have occupied that space at some point during the current turn.</p>",
             "activities": {
                 "utility": {
-                    "target": "Unoccupied"
+                    "target": "Unoccupied",
+                    "targetAffects": "Unoccupied"
                 }
             }
         },
@@ -178,20 +187,25 @@
             "activities": {
                 "Drive": {
                     "name": "Drive",
-                    "condition": "Requires Mark of Storm"
+                    "condition": "Requires Mark of Storm",
+                    "activationCondition": "Requires Mark of Storm"
                 },
                 "Shift Engine": {
                     "name": "Shift Engine",
-                    "condition": "Requires Mark of Storm"
+                    "condition": "Requires Mark of Storm",
+                    "activationCondition": "Requires Mark of Storm"
                 },
                 "Attempt Command": {
                     "name": "Attempt Command",
-                    "condition": "As part of the Action used to take the Drive or Shift action."
+                    "condition": "As part of the Action used to take the Drive or Shift action.",
+                    "activationCondition": "As part of the Action used to take the Drive or Shift action."
                 },
                 "Tilt and Roll": {
                     "name": "Tilt and Roll",
                     "condition": "Taking the Drive action and spending half of the ship's Fly Speed",
+                    "activationCondition": "Taking the Drive action and spending half of the ship's Fly Speed",
                     "target": "not anchored",
+                    "targetAffects": "not anchored",
                     "range": "within the ship"
                 }
             },
@@ -301,7 +315,8 @@
             "activities": {
                 "Repulse": {
                     "name": "Repulse",
-                    "target": "The Attacker"
+                    "target": "The Attacker",
+                    "targetAffects": "The Attacker"
                 }
             }
         },
@@ -333,7 +348,8 @@
                 "Activate Shields": {
                     "name": "Activate Shields",
                     "chatFlavor": "Requires Elemental Core and Calibrate",
-                    "target": "the airship and all creatures on the ship's deck"
+                    "target": "the airship and all creatures on the ship's deck",
+                    "targetAffects": "the airship and all creatures on the ship's deck"
                 }
             },
             "effects": {
@@ -353,6 +369,7 @@
                 "Charge": {
                     "name": "Charge",
                     "condition": "crew member expends one level 1+ spell slot",
+                    "activationCondition": "crew member expends one level 1+ spell slot",
                     "chatFlavor": "Requires Elemental Core"
                 },
                 "Cloak": {
@@ -388,11 +405,13 @@
                 "Reel": {
                     "name": "Reel",
                     "chatFlavor": "Requires Elemental Core",
-                    "target": "harpooned target"
+                    "target": "harpooned target",
+                    "targetAffects": "harpooned target"
                 },
                 "Release Target": {
                     "name": "Release Target",
-                    "target": "harpooned target"
+                    "target": "harpooned target",
+                    "targetAffects": "harpooned target"
                 }
             },
             "effects": {
