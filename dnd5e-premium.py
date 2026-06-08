@@ -1573,7 +1573,13 @@ def add_activities_to_item(entry: dict, item: dict) -> None:
 
         condition = activity.get("activation", {}).get("condition")
         if isinstance(condition, str) and condition.strip():
-            activity_entry["condition"] = condition.strip()
+            condition_text = condition.strip()
+            activity_entry["condition"] = condition_text
+            activity_entry["activationCondition"] = condition_text
+
+        activation_value = activity.get("activation", {}).get("value")
+        if isinstance(activation_value, str) and activation_value.strip():
+            activity_entry["activationValue"] = activation_value.strip()
 
         chat_flavor = activity.get("description", {}).get("chatFlavor")
         if isinstance(chat_flavor, str) and chat_flavor.strip():
@@ -1585,7 +1591,9 @@ def add_activities_to_item(entry: dict, item: dict) -> None:
             if isinstance(affects, dict):
                 special = affects.get("special")
                 if isinstance(special, str) and special.strip():
-                    activity_entry["target"] = special.strip()
+                    target_text = special.strip()
+                    activity_entry["target"] = target_text
+                    activity_entry["targetAffects"] = target_text
             template = target.get("template")
             if "target" not in activity_entry and isinstance(template, dict):
                 special = template.get("special")
@@ -1669,6 +1677,13 @@ def populate_dnd5e_item(entry: dict, item: dict, id_index: dict | None = None) -
     materials = extract_materials(item)
     if materials:
         entry["materials"] = materials
+
+    add_nested_string(entry, "chat", item, "system.description.chat")
+    add_nested_string(entry, "unidentified", item, "system.description.unidentified")
+    add_nested_string(entry, "activation", item, "system.activation.condition")
+    add_nested_string(entry, "activationCondition", item, "system.activation.condition")
+    add_nested_string(entry, "activationValue", item, "system.activation.value")
+    add_nested_string(entry, "targetAffects", item, "system.target.affects.special")
 
     add_activities_to_item(entry, item)
     add_effects_to_entry(entry, item.get("effects"), id_index)
@@ -1808,12 +1823,46 @@ def extract_requirements(record: dict) -> str:
     return ""
 
 
+def get_nested_value(record: dict, path: str):
+    if not isinstance(record, dict) or not isinstance(path, str) or not path:
+        return None
+
+    current = record
+    for part in path.split("."):
+        if not isinstance(current, dict) or part not in current:
+            return None
+        current = current[part]
+
+    return current
+
+
+def get_nested_string(record: dict, path: str) -> str:
+    value = get_nested_value(record, path)
+    if isinstance(value, str) and value.strip():
+        return value.strip()
+    return ""
+
+
+
+
+def add_nested_string(entry: dict, key: str, record: dict, path: str) -> None:
+    value = get_nested_string(record, path)
+    if value:
+        entry[key] = value
+
+
+
 def default_item_mapping() -> dict:
     return {
         "description": "system.description.value",
         "requirements": "system.requirements",
         "materials": "system.materials.value",
         "chat": "system.description.chat",
+        "unidentified": "system.description.unidentified",
+        "activation": "system.activation.condition",
+        "activationCondition": "system.activation.condition",
+        "activationValue": "system.activation.value",
+        "targetAffects": "system.target.affects.special",
         "activities": {
             "path": "system.activities",
             "converter": "structured",
@@ -1823,8 +1872,11 @@ def default_item_mapping() -> dict:
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
+                "activationCondition": "activation.condition",
+                "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
+                "targetAffects": "target.affects.special",
                 "roll": "roll.name",
                 "range": {
                     "path": "range",
@@ -1906,6 +1958,9 @@ def spells_legacy_mapping() -> dict:
     return {
         "materials": "system.materials.value",
         "activation": "system.activation.condition",
+        "activationCondition": "system.activation.condition",
+        "activationValue": "system.activation.value",
+        "targetAffects": "system.target.affects.special",
         "range": {
             "path": "system.range",
             "converter": "range"
