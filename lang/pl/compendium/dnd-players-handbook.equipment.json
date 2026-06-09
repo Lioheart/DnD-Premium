@@ -1,1192 +1,1280 @@
 {
-  "label": "Wyposażenie",
-  "mapping": {
-    "materials": "system.materials.value",
-    "weight": {
-      "path": "system.weight",
-      "converter": "weight"
-    },
-    "activities": {
-      "path": "system.activities",
-      "converter": "activities"
-    },
-    "capacityWeight": {
-      "path": "system.capacity.weight",
-      "converter": "weight"
-    },
-    "rangeActivities": {
-      "path": "system.activities",
-      "converter": "rangeActivities"
-    },
-    "effects": {
-      "path": "effects",
-      "converter": "effects"
-    },
-    "range": {
-      "path": "system.range",
-      "converter": "range"
-    }
-  },
-  "folders": {
-    "Adventuring Gear": "Wyposażenie podróżne",
-    "Ammunition": "Amunicja",
-    "Arcane Focus": "Fokus magii wtajemniczeń",
-    "Armor": "Pancerz",
-    "Artisan": "Rzemieślnik",
-    "Druidic Focus": "Druidyczny fetysz",
-    "Gaming Set": "Zestaw do gry",
-    "Heavy": "Ciężki",
-    "Holy Symbol": "Święty symbol",
-    "Light": "Światło",
-    "Martial Melee": "Żołnierska do walki wręcz",
-    "Martial Ranged": "Żołnierskie zasięgowe",
-    "Medium": "Średni",
-    "Musical Instrument": "Muzyczny instrument",
-    "Other": "Inne",
-    "Simple Melee": "Prosta do walki wręcz",
-    "Simple Ranged": "Proste zasięgowe",
-    "Spellcasting Focuses": "Magiczne fokusy",
-    "Star Maps": "Mapy gwiazd",
-    "Tools": "Narzędzia",
-    "Weapons": "Bronie"
-  },
-  "entries": {
-    "Acid": {
-      "name": "Kwas",
-      "description": "<p>Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem fiolką Kwasu. Wybierz jedną istotę lub obiekt, które widzisz w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo otrzymuje 2k6 obrażeń od kwasu.</p>",
-      "activities": {
-        "Throw Acid": {
-          "name": "Rzuć kwas"
+    "label": "Wyposażenie",
+    "mapping": {
+        "description": "system.description.value",
+        "requirements": "system.requirements",
+        "materials": "system.materials.value",
+        "chat": "system.description.chat",
+        "unidentified": "system.description.unidentified",
+        "activation": "system.activation.condition",
+        "activationCondition": "system.activation.condition",
+        "activationValue": "system.activation.value",
+        "targetAffects": "system.target.affects.special",
+        "activities": {
+            "path": "system.activities",
+            "converter": "structured",
+            "cardinality": "many",
+            "container": "keyed",
+            "keys": [
+                "_id",
+                "name",
+                "type"
+            ],
+            "mapping": {
+                "name": "name",
+                "condition": "activation.condition",
+                "activationCondition": "activation.condition",
+                "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
+                "duration": "duration.special",
+                "targetAffects": "target.affects.special",
+                "roll": "roll.name",
+                "range": {
+                    "path": "range",
+                    "converter": "imperialToMetric"
+                },
+                "target": {
+                    "path": "target",
+                    "converter": "imperialToMetric"
+                },
+                "profiles": {
+                    "path": "profiles",
+                    "converter": "nameCollection"
+                }
+            }
+        },
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        },
+        "advancement": {
+            "path": "system.advancement",
+            "converter": "structured",
+            "cardinality": "many",
+            "container": "keyed",
+            "keys": [
+                "_id",
+                "title"
+            ],
+            "mapping": {
+                "title": "title",
+                "hint": "hint",
+                "_variants": [
+                    {
+                        "_when": {
+                            "path": "type",
+                            "equals": "ScaleValue"
+                        },
+                        "distance": {
+                            "path": "configuration.distance",
+                            "converter": "imperialToMetric"
+                        },
+                        "scale": {
+                            "path": "configuration.scale",
+                            "converter": "imperialToMetric"
+                        }
+                    }
+                ]
+            }
+        },
+        "movement": {
+            "path": "system.movement",
+            "converter": "imperialToMetric"
+        },
+        "weight": {
+            "path": "system.weight",
+            "converter": "imperialToMetric"
+        },
+        "range": {
+            "path": "system.range",
+            "converter": "imperialToMetric"
+        },
+        "capacityWeight": {
+            "path": "system.capacity.weight",
+            "converter": "imperialToMetric"
+        },
+        "senses": {
+            "path": "system.senses",
+            "converter": "imperialToMetric"
+        },
+        "target": {
+            "path": "system.target",
+            "converter": "imperialToMetric"
+        },
+        "volume": {
+            "path": "system.capacity.volume",
+            "converter": "imperialToMetric"
         }
-      }
     },
-    "Alchemist's Fire": {
-      "name": "Ogień alchemiczny",
-      "description": "<p>Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką Ognia alchemicznego. Wybierz jedną istotę lub obiekt, które widzisz w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo otrzymuje [[/damage 1k4 type=fire]] obrażenia od ognia i otrzymuje status &amp;Reference[burning].</p>",
-      "effects": {
-        "Burning.": {
-          "name": "Płonący",
-          "description": "<p>Odwołanie do zasad: &amp;Reference[burning].</p>"
-        }
-      }
-    },
-    "Alchemist's Supplies": {
-      "name": "Materiały alchemiczne",
-      "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Inteligencja</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Identyfikacja substancji (ST 15) lub rozpalenie ognia (ST 15)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAcid0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAlchemistsF], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagComponentPo], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPaper000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPerfume0000]</p>"
-    },
-    "Ammunition (Varies)": {
-      "name": "Amunicja (Różne)",
-      "description": "<p>Amunicja jest wymagana przez broń, która ma właściwość Amunicja. Opis broni określa typ amunicji używanej przez broń. Poniższa tabela Amunicja zawiera różne typy oraz ilość, którą otrzymujesz, gdy je kupujesz. Tabela zawiera również przedmiot, który jest zazwyczaj używany do przechowywania każdego typu; magazynowanie musi być kupione osobno.</p><table><caption>Amunicja</caption><thead><tr><td>Typ</td><td>Ilość</td><td>Przechowywanie</td><td>Waga</td><td>Koszt</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoArrows0000]</td><td>20</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagQuiver00000]</td><td>1½ lb.</td><td>1 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoBolts00000]</td><td>20</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCaseCrossbo]</td><td>1½ lb.</td><td>1 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoBulletsFir]</td><td>10</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]</td><td>2 lb.</td><td>3 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoBulletsSli]</td><td>20</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]</td><td>1½ lb.</td><td>4 CP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoNeedles000]</td><td>50</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]</td><td>1 lb.</td><td>1 GP</td></tr></tbody></table>"
-    },
-    "Amulet": {
-      "name": "Amulet",
-      "description": "<p><em><strong>Wymóg użycia: </strong>Noszony lub trzymany</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHolySymbolV] przybiera jedną z form z tabeli świętych symboli i jest wysadzany klejnotami lub malowany, aby ukierunkowywać boską magię. Kleryk lub Paladyn może używać Świętego symbolu jako Magicznego fokusu.</p>"
-    },
-    "Antitoxin": {
-      "name": "Antidotum",
-      "description": "<p>Akcją dodatkową wypijasz fiolkę Antidotum, aby uzyskać Ułatwienie do rzutów obronnych mających na celu uniknięcie lub zakończenie stanu &amp;Reference[Poisoned] na 1 godzinę.</p>",
-      "effects": {
+    "entries": {
+        "Acid": {
+            "name": "Kwas",
+            "description": "<p>Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem fiolką Kwasu. Wybierz jedną istotę lub obiekt, które widzisz w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo otrzymuje 2k6 obrażeń od kwasu.</p>",
+            "activities": {
+                "Throw Acid": {
+                    "name": "Rzuć kwas",
+                    "target": "Widzisz",
+                    "targetAffects": "Widzisz"
+                }
+            }
+        },
+        "Alchemist's Fire": {
+            "name": "Ogień alchemiczny",
+            "description": "<p>Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką Ognia alchemicznego. Wybierz jedną istotę lub obiekt, które widzisz w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo otrzymuje [[/damage 1k4 type=fire]] obrażenia od ognia i otrzymuje status &amp;Reference[burning].</p>",
+            "effects": {
+                "Burning.": {
+                    "name": "Płonący",
+                    "description": "<p>Odwołanie do zasad: &amp;Reference[burning].</p>"
+                }
+            }
+        },
+        "Alchemist's Supplies": {
+            "name": "Materiały alchemiczne",
+            "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Inteligencja</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Identyfikacja substancji (ST 15) lub rozpalenie ognia (ST 15)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAcid0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAlchemistsF], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagComponentPo], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPaper000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPerfume0000]</p>"
+        },
+        "Ammunition (Varies)": {
+            "name": "Amunicja (Różne)",
+            "description": "<p>Amunicja jest wymagana przez broń, która ma właściwość Amunicja. Opis broni określa typ amunicji używanej przez broń. Poniższa tabela Amunicja zawiera różne typy oraz ilość, którą otrzymujesz, gdy je kupujesz. Tabela zawiera również przedmiot, który jest zazwyczaj używany do przechowywania każdego typu; magazynowanie musi być kupione osobno.</p><table><caption>Amunicja</caption><thead><tr><td>Typ</td><td>Ilość</td><td>Przechowywanie</td><td>Waga</td><td>Koszt</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoArrows0000]</td><td>20</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagQuiver00000]</td><td>1½ lb.</td><td>1 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoBolts00000]</td><td>20</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCaseCrossbo]</td><td>1½ lb.</td><td>1 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoBulletsFir]</td><td>10</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]</td><td>2 lb.</td><td>3 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoBulletsSli]</td><td>20</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]</td><td>1½ lb.</td><td>4 CP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoNeedles000]</td><td>50</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]</td><td>1 lb.</td><td>1 GP</td></tr></tbody></table>"
+        },
+        "Amulet": {
+            "name": "Amulet",
+            "description": "<p><em><strong>Wymóg użycia: </strong>Noszony lub trzymany</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHolySymbolV] przybiera jedną z form z tabeli świętych symboli i jest wysadzany klejnotami lub malowany, aby ukierunkowywać boską magię. Kleryk lub Paladyn może używać Świętego symbolu jako Magicznego fokusu.</p>"
+        },
         "Antitoxin": {
-          "name": "Antidotum"
-        }
-      }
-    },
-    "Arcane Focus (Varies)": {
-      "name": "Fokus magii wtajemniczeń (Różne)",
-      "description": "<p>Fokus magii wtajemniczeń przybiera jedną z form z tabeli Fokusów magii wtajemniczeń i jest ozdobiony klejnotami lub rzeźbiony, aby kanalizować magię wtajemniczeń. Zaklinacz, Czarownik lub Mag może używać takiego przedmiotu jako Magicznego Fokusa.</p><table><caption>Fokusy magii wtajemniczeń</caption><thead><tr><td>Fokus</td><td>Waga</td><td>Koszt</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcCrystal000]</td><td>1 lb.</td><td>10 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcOrb0000000]</td><td>3 lb.</td><td>20 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcRod0000000]</td><td>2 lb.</td><td>10 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcStaffalsoa] (także @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta])</td><td>4 lb.</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcWand000000]</td><td>1 lb.</td><td>10 GP</td></tr></tbody></table>"
-    },
-    "Arrows": {
-      "name": "Strzały",
-      "description": "<p><em><strong>Przechowywanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagQuiver00000]</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAmmunitionV] jest wymagana przez broń posiadającą właściwość Amunicja. Opis broni określa typ amunicji używanej przez tę broń. Tabela Amunicji wymienia różne typy oraz ilości, jakie otrzymujesz przy zakupie. Tabela zawiera również przedmiot, który jest zazwyczaj używany do przechowywania każdego typu; przechowywanie należy kupić osobno.</p>"
-    },
-    "Backpack": {
-      "name": "Plecak",
-      "description": "<p>Plecak mieści do 30 funtów w objętości 1 stopy sześciennej. Może również służyć jako torba do siodła.</p>"
-    },
-    "Bagpipes": {
-      "name": "Dudy",
-      "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
-      "activities": {
-        "Play a Known Tune": {
-          "name": "Zagraj znaną melodię"
+            "name": "Antidotum",
+            "description": "<p>Akcją dodatkową wypijasz fiolkę Antidotum, aby uzyskać Ułatwienie do rzutów obronnych mających na celu uniknięcie lub zakończenie stanu &amp;Reference[Poisoned] na 1 godzinę.</p>",
+            "effects": {
+                "Antitoxin": {
+                    "name": "Antidotum"
+                }
+            }
         },
-        "Improvise a Song": {
-          "name": "Improvizuj piosenkę"
-        }
-      }
-    },
-    "Ball Bearings": {
-      "name": "Kulki metalowe",
-      "description": "<p>Akcją Użycia Obiektu wysypujesz kulki metalowe z ich sakiewki. Rozsypują się, pokrywając płaski obszar o wymiarach 10 na 10 stóp w odległości do 10 stóp od ciebie. Istota, która wejdzie w ten obszar po raz pierwszy w danej turze, musi wykonać rzut obronny na Zręczność (ST 10) lub otrzymuje stan &amp;Reference[Prone]. Odzyskanie kulek metalowych zajmuje 10 minut.</p><section id=\"secret-bbcC5syRGw0PCZnG\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Czynność <strong>Odzyskanie kulek metalowych</strong> zapewnia kolejne użycie tego przedmiotu.</p></section>",
-      "activities": {
-        "Spill Ball Bearings": {
-          "name": "Rozsyp kulki metalowe"
+        "Arcane Focus (Varies)": {
+            "name": "Fokus magii wtajemniczeń (Różne)",
+            "description": "<p>Fokus magii wtajemniczeń przybiera jedną z form z tabeli Fokusów magii wtajemniczeń i jest ozdobiony klejnotami lub rzeźbiony, aby kanalizować magię wtajemniczeń. Zaklinacz, Czarownik lub Mag może używać takiego przedmiotu jako Magicznego Fokusa.</p><table><caption>Fokusy magii wtajemniczeń</caption><thead><tr><td>Fokus</td><td>Waga</td><td>Koszt</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcCrystal000]</td><td>1 lb.</td><td>10 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcOrb0000000]</td><td>3 lb.</td><td>20 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcRod0000000]</td><td>2 lb.</td><td>10 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcStaffalsoa] (także @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta])</td><td>4 lb.</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcWand000000]</td><td>1 lb.</td><td>10 GP</td></tr></tbody></table>"
         },
-        "Recover Ball Bearings": {
-          "name": "Zbierz łożyska kulkowe"
-        }
-      },
-      "effects": {
-        "Tripped": {
-          "name": "Obalony"
-        }
-      }
-    },
-    "Barrel": {
-      "name": "Beczka",
-      "description": "<p>Beczka mieści do 40 galonów cieczy lub do 4 stóp sześciennych suchych towarów.</p>"
-    },
-    "Basket": {
-      "name": "Koszyk",
-      "description": "<p>Kosz mieści do 40 funtów w objętości 2 stóp sześciennych.</p>"
-    },
-    "Battleaxe": {
-      "name": "Topór bojowy"
-    },
-    "Bedroll": {
-      "name": "Śpiwór",
-      "description": "<p>Śpiwór mieści jedną Małą lub Średnią istotę. Leżąc w śpiworze, automatycznie odnoszisz sukces w rzutach obronnych przeciwko ekstremalnemu zimnu (zobacz <em>Przewodnik Mistrza</em> <em> Podziemi</em>).</p>"
-    },
-    "Bell": {
-      "name": "Dzwonek",
-      "description": "<p> Gdy rozbrzmi w ramach akcji \"Użycie obiektu\", wydaje dźwięk słyszalny w odległości do 60 stóp.</p>"
-    },
-    "Blanket": {
-      "name": "Koc",
-      "description": "<p>Będąc owiniętym w koc, masz Ułatwienie do rzutów obronnych przeciwko ekstremalnemu zimnu (zobacz <em>Przewodnik Mistrza</em><em>Podziemi</em>).</p>"
-    },
-    "Block and Tackle": {
-      "name": "Bloczek z blokadą",
-      "description": "<p>Bloczek z blokadą pozwala Ci podnieść ciężar czterokrotnie większy niż normalnie jesteś wstanie.</p>"
-    },
-    "Blowgun": {
-      "name": "Dmuchawka"
-    },
-    "Bolts": {
-      "name": "Bełty",
-      "description": "<p><em><strong>Przechowywanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCaseCrossbo]</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAmmunitionV] jest wymagana przez broń posiadającą właściwość Amunicja. Opis broni określa typ amunicji używanej przez tę broń. Tabela Amunicji wymienia różne typy oraz ilości, jakie otrzymujesz przy zakupie. Tabela zawiera również przedmiot, który jest zazwyczaj używany do przechowywania każdego typu; przechowywanie należy kupić osobno.</p>"
-    },
-    "Book": {
-      "name": "Książka",
-      "description": "<p>Księga zawiera treści fikcyjne lub literaturę faktu. Jeśli korzystasz z wiarygodnej, faktograficznej Książki dotyczącej danego tematu, zyskujesz premię +5 do testów Inteligencji (Wiedza tajemna, Historia, Przyroda lub Religia), które wykonujesz na ten temat.</p>"
-    },
-    "Bottle, Glass": {
-      "name": "Butla (szklana)",
-      "description": "<p>Szklana butla mieści do 1½ pintY.</p>"
-    },
-    "Breastplate": {
-      "name": "Napierśnik"
-    },
-    "Brewer's Supplies": {
-      "name": "Materiały piwowarskie",
-      "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Inteligencja</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Wykrycie zatrutego napoju (ST 15) lub identyfikacja alkoholu (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAntitoxin00]</p>",
-      "activities": {
-        "Detect Poisoned Drink": {
-          "name": "Wykryj zatruty napój"
+        "Arrows": {
+            "name": "Strzały",
+            "description": "<p><em><strong>Przechowywanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagQuiver00000]</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAmmunitionV] jest wymagana przez broń posiadającą właściwość Amunicja. Opis broni określa typ amunicji używanej przez tę broń. Tabela Amunicji wymienia różne typy oraz ilości, jakie otrzymujesz przy zakupie. Tabela zawiera również przedmiot, który jest zazwyczaj używany do przechowywania każdego typu; przechowywanie należy kupić osobno.</p>"
         },
-        "Identify Alcohol": {
-          "name": "Zidentyfikuj alkohol"
-        }
-      }
-    },
-    "Bucket": {
-      "name": "Wiadro",
-      "description": "<p>Wiadro mieści do pół stopy sześciennej (do 14 litrów) zawartości.</p>"
-    },
-    "Bullets, Firearm": {
-      "name": "Pociski, Broń palna",
-      "description": "<p><em><strong>Przechowywanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAmmunitionV] jest wymagana przez broń posiadającą właściwość Amunicja. Opis broni określa typ amunicji używanej przez tę broń. Tabela Amunicji wymienia różne typy oraz ilości, jakie otrzymujesz przy zakupie. Tabela zawiera również przedmiot, który jest zazwyczaj używany do przechowywania każdego typu; przechowywanie należy kupić osobno.</p>"
-    },
-    "Bullets, Sling": {
-      "name": "Pociski, Proca",
-      "description": "<p><em><strong>Przechowywanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAmmunitionV] jest wymagana przez broń posiadającą właściwość Amunicja. Opis broni określa typ amunicji używanej przez tę broń. Tabela Amunicji wymienia różne typy oraz ilości, jakie otrzymujesz przy zakupie. Tabela zawiera również przedmiot, który jest zazwyczaj używany do przechowywania każdego typu; przechowywanie należy kupić osobno.</p>"
-    },
-    "Bullseye Lantern": {
-      "name": "Latarnia kierunkowa",
-      "description": "<p>Latarnia kierunkowa rzuca Jasne światło w stożku o promieniu 60 stóp i Słabe światło w promieniu kolejnych 60 stóp. Po zapaleniu pali się przez 6 godzin na jednej kolbie (1 pinta) oleju.</p>"
-    },
-    "Burglar's Pack": {
-      "name": "Zestaw włamywacza",
-      "description": "<p>Zestaw włamywacza zawiera następujące przedmioty: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBallBearing], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBell0000000], 10 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCandle00000]{świec}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCrowbar0000], @UUID[Compendium.dnd5e.items.Item.wjHtGnd05SPdURqE], 7 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{flaszek oleju}, 5 dni @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRations0000]{racji żywnościowych}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRope0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00], oraz @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00].</p>"
-    },
-    "Calligrapher's Supplies": {
-      "name": "Materiały kaligraficzne",
-      "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Zręczność</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Napisanie tekstu z efektownymi zawijasami, które chronią przed fałszerstwem (ST 15)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInk00000000], <em>Magiczny zwój</em></p>"
-    },
-    "Caltrops": {
-      "name": "Kolczatki",
-      "description": "<p>Akcją Użycia Obiektu możesz rozsypać kolczatki z ich torby, aby pokryć obszar o boku 5 stóp w odległości do 5 stóp od siebie. Istota, która wejdzie w ten obszar po raz pierwszy w danej turze, musi wykonać rzut obronny na Zręczność (ST 15) lub otrzymuje 1 obrażenie kłute i jej szybkość zostaje zredukowana do 0 do początku jej następnej tury. Odzyskanie kolczatek zajmuje 10 minut.</p>",
-      "effects": {
-        "Slowed": {
-          "name": "Spowolniony"
-        }
-      }
-    },
-    "Candle": {
-      "name": "Świeca",
-      "description": "<p>Przez 1 godzinę zapalona świeca rzuca Jasne Światło w promieniu 5 stóp i Słabe Światło na dodatkowe 5 stóp.</p>",
-      "activities": {
-        "Light": {
-          "name": "Światło"
-        }
-      }
-    },
-    "Carpenter's Tools": {
-      "name": "Narzędzia cieśli",
-      "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Siła</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Zabezpieczenie lub podważenie drzwi albo pojemnika (ST 20)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepClub000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepGreatclub0], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBarrel00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagChest000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLadder00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPole0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRamPortable], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTorch000000]</p>",
-      "activities": {
-        "Seal or Pry Open": {
-          "name": "Zapieczętuj lub podważ"
-        }
-      }
-    },
-    "Cartographer's Tools": {
-      "name": "Narzędzia kartografa",
-      "description": "<p class=\"phb-meta\"><strong>Cecha:</strong> Mądrość</p><p class=\"phb-meta\"><strong>Użycie:</strong> Sporządzenie mapy małego obszaru (ST 15)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagMap00000000]</p>",
-      "activities": {
-        "Draft a Map": {
-          "name": "Sporządź mapę"
-        }
-      }
-    },
-    "Case, Crossbow Bolt": {
-      "name": "Pojemnik na bełty",
-      "description": "<p>Futerał na bełty mieści do 20 bełtów.</p>"
-    },
-    "Case, Map or Scroll": {
-      "name": "Tuba na mapy lub zwoje",
-      "description": "<p>Futerał na mapy lub zwoje mieści do 10 arkuszy papieru lub 5 arkuszy pergaminu.</p>"
-    },
-    "Chain": {
-      "name": "Łańcuch",
-      "description": "<p>Akcją Użycia Obiektu możesz owinąć łańcuchem niechcącą tego istotę w odległości do 5 stóp od siebie, która ma stan &amp;Reference[Grappled], &amp;Reference[Incapacitated] lub &amp;Reference[Restrained], jeśli odniesiesz sukces w teście Siły (Atletyka) ST 13. Jeśli nogi istoty zostaną skrępowane, otrzymuje ona stan &amp;Reference[Restrained] do momentu uwolnienia się. Uwolnienie się z łańcucha wymaga od istoty udanego testu Zręczności (Akrobatyka) ST 18 jako akcji. Rozerwanie łańcucha wymaga udanego testu Siły (Atletyka) ST 20 jako akcji.</p>",
-      "activities": {
-        "Wrap Chain Check": {
-          "name": "Test owijania łańcucha"
+        "Backpack": {
+            "name": "Plecak",
+            "description": "<p>Plecak mieści do 30 funtów w objętości 1 stopy sześciennej. Może również służyć jako torba do siodła.</p>"
         },
-        "Escape Check": {
-          "name": "Test ucieczki"
+        "Bagpipes": {
+            "name": "Dudy",
+            "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
+            "activities": {
+                "Play a Known Tune": {
+                    "name": "Zagraj znaną melodię"
+                },
+                "Improvise a Song": {
+                    "name": "Improvizuj piosenkę"
+                }
+            }
         },
-        "Burst Chain Check": {
-          "name": "Test przerwania łańcucha"
-        }
-      }
-    },
-    "Chain Mail": {
-      "name": "Kolczuga"
-    },
-    "Chain Shirt": {
-      "name": "Koszula kolcza"
-    },
-    "Chest": {
-      "name": "Kufer",
-      "description": "<p>Kufer mieści do 12 stóp sześciennych (340 litrów) zawartości.</p>"
-    },
-    "Climber's Kit": {
-      "name": "Zestaw wspinaczkowy",
-      "description": "<p>Zestaw wspinaczkowy zawiera końcówki do butów, rękawice, haki wspinaczkowe i uprząż. Akcją Użycia Obiektu możesz użyć zestawu wspinaczkowego, aby się zakotwiczyć; gdy to zrobisz, nie możesz spaść dalej niż 25 stóp od punktu zakotwiczenia i nie możesz oddalić się dalej niż 25 stóp bez odkotwiczenia się akcją dodatkową.</p>"
-    },
-    "Clothes, Fine": {
-      "name": "Ubrania dobrej jakości",
-      "description": "<p>Wykwintne Ubrania są wykonane z drogich tkanin i ozdobione mistrzowsko wykonanymi detalami. Niektóre wydarzenia i miejsca przyjmują tylko osoby noszące te ubrania.</p>"
-    },
-    "Clothes, Traveler's": {
-      "name": "Ubrania podróżne",
-      "description": "<p>Ubrania podróżne to odporna odzież zaprojektowana do podróżowania w różnych warunkach.</p>"
-    },
-    "Club": {
-      "name": "Pałka"
-    },
-    "Cobbler's Tools": {
-      "name": "Narzędzia szewca",
-      "description": "<p class=\"phb-meta\"><strong>Cecha:</strong> Zręczność</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zmodyfikowanie obuwia, aby dać Ułatwienie przy następnym teście Zręczności (Akrobatyka) noszącego (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClimbersKit]</p>",
-      "activities": {
-        "Modify Footwear": {
-          "name": "Zmodyfikuj obuwie"
-        }
-      }
-    },
-    "Component Pouch": {
-      "name": "Torba na komponenty",
-      "description": "<p>Torba na komponenty jest wodoszczelna i wypełniona przegródkami, które przechowują wszystkie darmowe materialne komponenty twoich czarów.</p>"
-    },
-    "Constellations Scroll": {
-      "name": "Zwój konstelacji",
-      "description": "<p>Zwoje przedstawiające konstelacje, które mogą być używane jako Magiczny fokus przez Druidów z Kręgu Gwiazdy. To Malutki obiekt.</p>"
-    },
-    "Cook's Utensils": {
-      "name": "Utensylia kucharza",
-      "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Mądrość</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Poprawienie smaku jedzenia (ST 10) lub wykrycie zepsutego lub zatrutego jedzenia (ST 15)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRations0000]</p>",
-      "activities": {
-        "Improve Flavor": {
-          "name": "Popraw smak"
+        "Ball Bearings": {
+            "name": "Kulki metalowe",
+            "description": "<p>Akcją Użycia Obiektu wysypujesz kulki metalowe z ich sakiewki. Rozsypują się, pokrywając płaski obszar o wymiarach 10 na 10 stóp w odległości do 10 stóp od ciebie. Istota, która wejdzie w ten obszar po raz pierwszy w danej turze, musi wykonać rzut obronny na Zręczność (ST 10) lub otrzymuje stan &amp;Reference[Prone]. Odzyskanie kulek metalowych zajmuje 10 minut.</p><section id=\"secret-bbcC5syRGw0PCZnG\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Czynność <strong>Odzyskanie kulek metalowych</strong> zapewnia kolejne użycie tego przedmiotu.</p></section>",
+            "activities": {
+                "Spill Ball Bearings": {
+                    "name": "Rozsyp kulki metalowe"
+                },
+                "Recover Ball Bearings": {
+                    "name": "Zbierz łożyska kulkowe"
+                }
+            },
+            "effects": {
+                "Tripped": {
+                    "name": "Obalony"
+                }
+            }
         },
-        "Detect Spoiled or Poisoned Food": {
-          "name": "Wykryj zepsute lub zatrute jedzenie"
-        }
-      }
-    },
-    "Costume": {
-      "name": "Kostium",
-      "description": "<p>Nosząc Kostium, masz Ułatwienie do każdego testu cechy, który wykonujesz, aby podszywać się pod osobę lub typ osoby, którą reprezentuje.</p>"
-    },
-    "Crowbar": {
-      "name": "Łom",
-      "description": "<p>Użycie łomu zapewnia Ułatwienie do testów Siły, w których można wykorzystać go jako dźwignię.</p>"
-    },
-    "Crystal": {
-      "name": "Kryształ",
-      "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagArcaneFocus]{Fokus magii wtajemniczeń} jest wysadzany klejnotami lub rzeźbiony w sposób umożliwiający kanalizowanie magii wtajemniczeń. Zaklinacz, Czarownik lub Mag może używać takiego przedmiotu jako Magicznego fokusu.</p>"
-    },
-    "Dagger": {
-      "name": "Sztylet"
-    },
-    "Dart": {
-      "name": "Strzałka"
-    },
-    "Dice": {
-      "name": "Kości",
-      "description": "<p><strong>Cecha:</strong> Mądrość</p><p class=\"phb-meta\"><strong>Użycie:</strong> Rozpoznanie, czy ktoś oszukuje (ST 10) lub wygranie gry (ST 20)</p>",
-      "activities": {
-        "Catch Cheating": {
-          "name": "Przyłap na oszustwie"
+        "Barrel": {
+            "name": "Beczka",
+            "description": "<p>Beczka mieści do 40 galonów cieczy lub do 4 stóp sześciennych suchych towarów.</p>"
         },
-        "Play to Win": {
-          "name": "Graj, by wygrać"
-        }
-      }
-    },
-    "Diplomat's Pack": {
-      "name": "Zestaw dyplomaty",
-      "description": "<p>Zestaw dyplomaty zawiera następujące przedmioty: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagChest000000], @UUID[Compendium.dnd5e.items.Item.FqFmdzIBUSxFKKfi], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInk00000000], 5x @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInkPen00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLamp0000000], 2x @UUID[Compendium.dnd5e.items.Item.5mIeX824uMklU3xq], 4 fiolki @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{Oleju}, 5 arkuszy @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPaper000000]{Papieru}, 5 arkuszy @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagParchment00]{Pergaminu}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPerfume0000] oraz @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00].</p>"
-    },
-    "Disguise Kit": {
-      "name": "Zestaw do charakteryzacji",
-      "description": "<p class=\"phb-meta\"><strong>Cechą:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Nałożenie makijażu (DC 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCostume0000]{Costume}</p>",
-      "activities": {
-        "Apply Makeup": {
-          "name": "Nałóż makijaż"
-        }
-      }
-    },
-    "Dragonchess": {
-      "name": "Smokoszachy",
-      "description": "<p><strong>Cecha:</strong> Mądrość</p><p class=\"phb-meta\"><strong>Użycie:</strong> Rozpoznanie, czy ktoś oszukuje (ST 10) lub wygranie gry (ST 20)</p>",
-      "activities": {
-        "Catch Cheating": {
-          "name": "Przyłap na oszustwie"
+        "Basket": {
+            "name": "Koszyk",
+            "description": "<p>Kosz mieści do 40 funtów w objętości 2 stóp sześciennych.</p>"
         },
-        "Play to Win": {
-          "name": "Graj, by wygrać"
-        }
-      }
-    },
-    "Druidic Focus (Varies)": {
-      "name": "Druidyczny fetysz (Różne)",
-      "description": "<p>Druidyczny fetysz przybiera jedną z form wymienionych w tabeli Druidyczne fetysze i jest rzeźbiony, przewiązany wstążką lub pomalowany, by kanalizować pierwotną magię. Druid lub Łowca może używać takiego obiektu jako Magicznego fokusu.</p><table><caption>Druidyczne fetysze</caption><thead><tr><td>Fetysz</td><td>Waga</td><td>Koszt</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbdfcSprigofmis]</td><td>—</td><td>1 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbdfcWoodenstaf] (również @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta]</td><td>4 lb.</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbdfcYewwand000]</td><td>1 lb.</td><td>10 GP</td></tr></tbody></table>"
-    },
-    "Drum": {
-      "name": "Bęben",
-      "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
-      "activities": {
-        "Play a Known Tune": {
-          "name": "Zagraj znaną melodię"
+        "Battleaxe": {
+            "name": "Topór bojowy"
         },
-        "Improvise a Song": {
-          "name": "Improvizuj piosenkę"
-        }
-      }
-    },
-    "Dulcimer": {
-      "name": "Cymbały",
-      "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
-      "activities": {
-        "Play a Known Tune": {
-          "name": "Zagraj znaną melodię"
+        "Bedroll": {
+            "name": "Śpiwór",
+            "description": "<p>Śpiwór mieści jedną Małą lub Średnią istotę. Leżąc w śpiworze, automatycznie odnoszisz sukces w rzutach obronnych przeciwko ekstremalnemu zimnu (zobacz <em>Przewodnik Mistrza</em> <em> Podziemi</em>).</p>"
         },
-        "Improvise a Song": {
-          "name": "Improvizuj piosenkę"
-        }
-      }
-    },
-    "Dungeoneer's Pack": {
-      "name": "Zestaw badacza podziemi",
-      "description": "<p>Zestaw badacza podziemi zawiera następujące przedmioty: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCaltrops000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCrowbar0000], 2 fiolki @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{Oleju}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRations0000] na 10 dni, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRope0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00], 10 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTorch000000]{Pochodni} oraz @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00].</p>"
-    },
-    "Ebony-bound Atlas": {
-      "name": "Atlas w ebonowej oprawie",
-      "description": "<p>Zbiór map oprawionych w hebanową okładkę, który może być używany jako Magiczny Fokus przez Druidów z Kręgu Gwiazdy. To Malutki obiekt.</p>"
-    },
-    "Emblem": {
-      "name": "Emblemat",
-      "description": "<p><em><strong>Wymóg użycia: </strong>Umieszczony na tkaninie lub tarczy</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHolySymbolV] przybiera jedną z form z tabeli świętych symboli i jest wysadzany klejnotami lub malowany, aby ukierunkowywać boską magię. Kleryk lub Paladyn może używać Świętego symbolu jako Magicznego fokusu.</p>"
-    },
-    "Engraved Crystal": {
-      "name": "Grawerowany kryształ",
-      "description": "<p>Kryształ grawerowany gwiezdnymi wzorami, który może być używany jako Magiczny fokus przez Druidów z Kręgu Gwiazdy. To Malutki obiekt.</p>"
-    },
-    "Entertainer's Pack": {
-      "name": "Zestaw artysty",
-      "description": "<p>Zestaw artysty zawiera następujące przedmioty: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBell0000000], @UUID[Compendium.dnd5e.items.Item.UkWdyJYQTfVX2cJW], 3x @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCostume0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagMirror00000], 8 flakonów @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{Oleju}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRations0000] na 9 dni, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00] i @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00].</p>"
-    },
-    "Etched Glass Disk": {
-      "name": "Grawerowany szklany dysk",
-      "description": "<p>Szklany dysk z wytrawionymi konstelacjami, który może być używany jako Magiczny fokus przez Druidów z Kręgu Gwiazdy. To Malutki obiekt.</p>"
-    },
-    "Explorer's Pack": {
-      "name": "Zestaw odkrywcy",
-      "description": "<p>Zestaw odkrywcy zawiera następujące przedmioty: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000], 2 fiolki @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{Oleju}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRations0000] na 10 dni, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRope0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00], 10 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTorch000000]{Pochodni} oraz @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00].</p>"
-    },
-    "Fine Clothes": {
-      "name": "Ubrania dobrej jakości",
-      "description": "<p>Zestaw ubrań zaprojektowanych specjalnie tak, aby były drogie i to pokazywać..</p>"
-    },
-    "Flail": {
-      "name": "Kiścień"
-    },
-    "Flask": {
-      "name": "Flaszka",
-      "description": "<p>Flaszka mieści do 1 pinta.</p>"
-    },
-    "Flute": {
-      "name": "Flet",
-      "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
-      "activities": {
-        "Play a Known Tune": {
-          "name": "Zagraj znaną melodię"
+        "Bell": {
+            "name": "Dzwonek",
+            "description": "<p> Gdy rozbrzmi w ramach akcji \"Użycie obiektu\", wydaje dźwięk słyszalny w odległości do 60 stóp.</p>"
         },
-        "Improvise a Song": {
-          "name": "Improvizuj piosenkę"
-        }
-      }
-    },
-    "Forgery Kit": {
-      "name": "Zestaw fałszerza",
-      "description": "<p class=\"phb-meta\"><strong>Cechą:</strong> Zręczność</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Naśladowanie do 10 słów czyjegoś pisma odręcznego (ST 15) lub powielenie pieczęci woskowej (ST 20)</p>",
-      "activities": {
-        "Mimic Handwriting": {
-          "name": "Naśladuj pismo"
+        "Blanket": {
+            "name": "Koc",
+            "description": "<p>Będąc owiniętym w koc, masz Ułatwienie do rzutów obronnych przeciwko ekstremalnemu zimnu (zobacz <em>Przewodnik Mistrza</em><em>Podziemi</em>).</p>"
         },
-        "Duplicate Wax Seal": {
-          "name": "Zduplikuj pieczęć woskową"
-        }
-      }
-    },
-    "Glaive": {
-      "name": "Glewia"
-    },
-    "Glassblower's Tools": {
-      "name": "Narzędzia szklarza",
-      "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Inteligencja</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Ustalenie, jaki szklany przedmiot był trzymany w ciągu ostatnich 24 godzin (ST 15)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd5e.items.Item.HZp69hhyNZUUCipF], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagMagnifyingG], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagSpyglass100], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagVial0000000]</p>",
-      "activities": {
-        "Discern Previous Contents": {
-          "name": "Ustal wcześniejszą zawartość"
-        }
-      }
-    },
-    "Grappling Hook": {
-      "name": "Hak wspinaczkowy",
-      "description": "<p>Jako Akcja Użycie Obiektu możesz rzucić Hakiem wspinaczkowym w poręcz, występ lub inne zaczepienie w promieniu 50 stóp od siebie, a hak się zaczepi, jeśli uda ci się wykonać test Zręczności (Akrobatyka) o ST 13. Jeśli przywiązałeś Linę do haka, możesz się po niej wspiąć.</p>",
-      "activities": {
-        "Throw": {
-          "name": "Rzuć"
-        }
-      }
-    },
-    "Greataxe": {
-      "name": "Topór dwuręczny"
-    },
-    "Greatclub": {
-      "name": "Maczuga"
-    },
-    "Greatsword": {
-      "name": "Miecz dwuręczny"
-    },
-    "Halberd": {
-      "name": "Halabarda"
-    },
-    "Half Plate Armor": {
-      "name": "Zbroja półpłytowa"
-    },
-    "Hand Crossbow": {
-      "name": "Kusza ręczna"
-    },
-    "Handaxe": {
-      "name": "Toporek"
-    },
-    "Healer's Kit": {
-      "name": "Torba lekarska",
-      "description": "<p>Torba lekarska ma dziesięć użyć. Akcją Użycie obiektu możesz wydać jedno z jej użyć, aby ustabilizować Nieprzytomną istotę, która ma 0 Punktów Wytrzymałości, bez potrzeby wykonania testu Mądrości (Medycyna).</p>",
-      "activities": {
-        "Stabilize": {
-          "name": "Stabilizuj"
-        }
-      }
-    },
-    "Heavy Crossbow": {
-      "name": "Kusza ciężka"
-    },
-    "Herbalism Kit": {
-      "name": "Zestaw zielarza",
-      "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Inteligencja</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Identyfikacja rośliny (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAntitoxin00], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCandle00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHealersKit0], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPotionofHea]</p>",
-      "activities": {
-        "Identify Plant": {
-          "name": "Zidentyfikuj roślinę"
-        }
-      }
-    },
-    "Hide Armor": {
-      "name": "Zbroja skórzana"
-    },
-    "Holy Symbol (Varies)": {
-      "name": "Święty symbol (Różne)",
-      "description": "<p>Święty symbol przybiera jedną z form wymienionych w tabeli Święte symbole i jest ozdobiony klejnotami lub pomalowany, by skupiać boską magię. Kleryk lub Paladyn może używać Świętego symbolu jako Magicznego fokusu.</p><p>W tabeli wskazano, czy Święty symbol musi być trzymany, noszony, czy umieszczony na tkaninie (takiej jak tabard lub sztandar) albo na Tarczy.</p><table><caption>Święte symbole</caption><thead><tr><td>Symbol</td><td>Waga</td><td>Koszt</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyAmuletworn]{Amulet} (noszony lub trzymany)</td><td>1 lb.</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyEmblemborn]{Emblemat} (umieszczony na tkaninie lub Tarczy)</td><td>—</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyReliquaryh]{Relikwiarz} (trzymany)</td><td>2 lb.</td><td>5 GP</td></tr></tbody></table>"
-    },
-    "Holy Water": {
-      "name": "Woda święcona",
-      "description": "<p>Gdy wykonujesz Akcję Atak, możesz zastąpić jeden ze swoich ataków rzuceniem fiolki Wody Święconej. Wyceluj w jedną istotę, którą widzisz w promieniu 20 stóp od siebie. Cel musi wykonać udany rzut obronny na Zręczność (ST 8 plus twój modyfikator Zręczności i Premia od Biegłości) lub otrzymać 2k8 obrażenia od światłości, jeśli jest to Czart lub Nieumarły.</p>",
-      "activities": {
-        "Throw": {
-          "name": "Rzuć"
-        }
-      }
-    },
-    "Hooded Lantern": {
-      "name": "Latarnia zamykana",
-      "description": "<p>Latarnia zamykana spala Olej jako paliwo, rzucając Jasne światło w promieniu 30 stóp i Słabe światło na dodatkowe 30 stóp. Zapalona, pali się przez 6 godzin na na jednym flakonie (1 pinta)  Oleju. Akcją dodatkową możesz opuścić kaptur, zmniejszając światło do Przyciemnionego światła w promieniu 5 stóp, lub podnieść go ponownie.</p>"
-    },
-    "Horn": {
-      "name": "Róg",
-      "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
-      "activities": {
-        "Play a Known Tune": {
-          "name": "Zagraj znaną melodię"
+        "Block and Tackle": {
+            "name": "Bloczek z blokadą",
+            "description": "<p>Bloczek z blokadą pozwala Ci podnieść ciężar czterokrotnie większy niż normalnie jesteś wstanie.</p>"
         },
-        "Improvise a Song": {
-          "name": "Improvizuj piosenkę"
-        }
-      }
-    },
-    "Hunting Trap": {
-      "name": "Potrzask",
-      "description": "<p>Akcją Użycie Obiektu możesz ustawić Potrzask. Jest to stalowy pierścieniem z zębami, który zatrzaskuje się, gdy istota nastąpi na płytę nacisku w centrum. Pułapka jest przymocowana ciężkim łańcuchem do nieruchomego obiektu, takiego jak drzewo lub pal wbity w ziemię. Istota, która nastąpi na płytę, musi wykonać udany rzut obronny na Zręczność o ST 13 lub otrzyma 1k4 obrażeń kłutych a jej Szybkość zostanie zredukowana do 0 do początku jej następnej tury. Następnie, dopóki istota nie uwolni się z pułapki, jej ruch jest ograniczony długością łańcucha (zazwyczaj 3 stopy). Istota może użyć swojej akcji, aby wykonać test Siły (Atletyka) o ST 13, uwalniając siebie lub inną istotę w swoim zasięgu w przypadku sukcesu. Każdy nieudany test zadaje [[/damage 1 type=piercing]] obrażenia schwytanej istocie.</p>",
-      "activities": {
-        "save": {
-          "condition": "Nadepnięcie na płytę"
+        "Blowgun": {
+            "name": "Dmuchawka"
         },
-        "Escape": {
-          "name": "Ucieczka"
-        }
-      },
-      "effects": {
-        "Trapped": {
-          "name": "Uwięziony"
-        }
-      }
-    },
-    "Improvised Weapon": {
-      "name": "Broń improwizowana",
-      "description": "<p>@Embed[Compendium.dnd-players-handbook.content.JournalEntry.phbAppendixCRule.JournalEntryPage.Dyw6b9rQIdbkIIQD inline]</p>"
-    },
-    "Ink": {
-      "name": "Atrament",
-      "description": "<p>Atrament jest dostarczany w butelce o pojemności 1 uncji, która zapewnia wystarczającą ilość atramentu do zapisania około 500 stron.</p>"
-    },
-    "Ink Pen": {
-      "name": "Pióro atramentowe",
-      "description": "<p>Pióro maczane w atramencie służy do pisania i rysowania</p>"
-    },
-    "Javelin": {
-      "name": "Oszczep"
-    },
-    "Jeweler's Tools": {
-      "name": "Narzędzia jubilera",
-      "description": "<p class=\"phb-meta\"><strong>Cechą:</strong> Inteligencja</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Określenie wartości klejnotu (ST 15)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> Magiczny fokus, Święty symbol</p>",
-      "activities": {
-        "Discern Value": {
-          "name": "Oceń wartość"
-        }
-      }
-    },
-    "Jug": {
-      "name": "Dzban",
-      "description": "<p>Dzban mieści do 1 galona.</p>"
-    },
-    "Ladder": {
-      "name": "Drabina",
-      "description": "<p>Drabina ma wysokość 10 stóp. Aby po niej zejść lub wejść, należy się wspiąć.</p>"
-    },
-    "Lamp": {
-      "name": "Lampa",
-      "description": "<p>Lampa spala @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000] jako paliwo, emitując Jasne światło w promieniu 15 stóp i Słabe światło na dodatkowe 30 stóp.</p>",
-      "activities": {
-        "Light": {
-          "name": "Światło"
-        }
-      }
-    },
-    "Lance": {
-      "name": "Lanca"
-    },
-    "Lantern, Bullseye": {
-      "name": "Latarnia, Kierunkowa",
-      "description": "<p>Latarnia kierunkowa spala Olej jako paliwo do rzucania Jasnego światła w stożku 60 stóp i Słabe światło na dodatkowe 60 stóp.</p>",
-      "activities": {
-        "Light": {
-          "name": "Światło"
-        }
-      }
-    },
-    "Lantern, Hooded": {
-      "name": "Latarnia, Zamykana",
-      "description": "<p>Latarnia zamykana spala Olej jako paliwo, rzucając Jasne światło w promieniu 30 stóp i Słabe światło na dodatkowe 30 stóp. Akcją dodatkową możesz opuścić kaptur, zmniejszając światło do Przyciemnionego światła w promieniu 5 stóp, lub podnieść go ponownie.</p>",
-      "activities": {
-        "Light": {
-          "name": "Światło"
-        }
-      }
-    },
-    "Leather Armor": {
-      "name": "Skórznia"
-    },
-    "Leatherworker's Tools": {
-      "name": "Narzędzia kaletnika",
-      "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Zręczność</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Dodanie wzoru do skórzanego przedmiotu (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepSling00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepWhip000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmHideArmor0], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmLeatherArm], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmStuddedLea], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCaseCrossbo], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCaseMaporSc], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagParchment00], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagQuiver00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00]</p>",
-      "activities": {
-        "Add Design": {
-          "name": "Dodaj wzór"
-        }
-      }
-    },
-    "Light Crossbow": {
-      "name": "Kusza lekka"
-    },
-    "Light Hammer": {
-      "name": "Lekki młot"
-    },
-    "Lock": {
-      "name": "Zamek",
-      "description": "<p>Zamek jest dostarczany z kluczem. Bez klucza istota może użyć @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulThievesToo]{Zestaw narzędzi złodziejskich} do otwarcia tego zamka przy udanym [[/tool thief dex 15]] teście.</p>"
-    },
-    "Longbow": {
-      "name": "Długi łuk"
-    },
-    "Longsword": {
-      "name": "Długi miecz"
-    },
-    "Lute": {
-      "name": "Lutnia",
-      "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
-      "activities": {
-        "Play a Known Tune": {
-          "name": "Zagraj znaną melodię"
+        "Bolts": {
+            "name": "Bełty",
+            "description": "<p><em><strong>Przechowywanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCaseCrossbo]</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAmmunitionV] jest wymagana przez broń posiadającą właściwość Amunicja. Opis broni określa typ amunicji używanej przez tę broń. Tabela Amunicji wymienia różne typy oraz ilości, jakie otrzymujesz przy zakupie. Tabela zawiera również przedmiot, który jest zazwyczaj używany do przechowywania każdego typu; przechowywanie należy kupić osobno.</p>"
         },
-        "Improvise a Song": {
-          "name": "Improvizuj piosenkę"
-        }
-      }
-    },
-    "Lyre": {
-      "name": "Lira",
-      "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
-      "activities": {
-        "Play a Known Tune": {
-          "name": "Zagraj znaną melodię"
+        "Book": {
+            "name": "Książka",
+            "description": "<p>Księga zawiera treści fikcyjne lub literaturę faktu. Jeśli korzystasz z wiarygodnej, faktograficznej Książki dotyczącej danego tematu, zyskujesz premię +5 do testów Inteligencji (Wiedza tajemna, Historia, Przyroda lub Religia), które wykonujesz na ten temat.</p>"
         },
-        "Improvise a Song": {
-          "name": "Improvizuj piosenkę"
-        }
-      }
-    },
-    "Mace": {
-      "name": "Buława"
-    },
-    "Magnifying Glass": {
-      "name": "Szkło powiększające",
-      "description": "<p>Szkło powiększające zapewnia Ułatwienie przy dowolnym teście cechy wykonywanym w celu oszacowania lub zbadania bardzo szczegółowego przedmiotu. Rozpalenie ognia za pomocą szkła powiększającego wymaga światła jasnego jak światło słoneczne do skupienia, hubki do zapalenia oraz około 5 minut, aby ogień się zapalił.</p>"
-    },
-    "Manacles": {
-      "name": "Kajdany",
-      "description": "<p>Jako Akcję Użycie Obiektu możesz użyć Kajdan, aby skuć niechętną do tego Małą lub Średnią istotę w odległości 5 stóp od siebie, która znajduje się w stanie &amp;Reference[Grappled], &amp;Reference[Incapacitated] lub &amp;Reference[Restrained], jeśli powiedzie ci się test Zręczności (Zwinne dłonie) o ST 13. Gdy istota jest skuta, ma Utrudnienie do testów ataku, a jeśli Kajdany są przymocowane do łańcucha lub haka umocowanego na stałe, istota staje się Unieruchomiona. Ucieczka z Kajdan wymaga udanego testu Zręczności (Zwinne dłonie) o ST 20, wykonanego jako Akcja. Rozerwanie Kajdan wymaga udanego testu Siły (Atletyka) o ST 25, również wykonanego jako Akcja.</p><p>Każdy zestaw Kajdan zawiera klucz. Bez klucza istota może użyć Narzędzi złodziejskich, aby otworzyć zamek Kajdan za pomocą udanego testu [[/tool thief dex 15]].</p>",
-      "activities": {
-        "Bind": {
-          "name": "Zwiąż"
+        "Bottle, Glass": {
+            "name": "Butla (szklana)",
+            "description": "<p>Szklana butla mieści do 1½ pintY.</p>"
         },
-        "Escape Check": {
-          "name": "Test ucieczki"
+        "Breastplate": {
+            "name": "Napierśnik"
         },
-        "Burst Check": {
-          "name": "Test przerwania"
-        }
-      },
-      "effects": {
-        "Manacled": {
-          "name": "Zakuty w kajdany"
-        }
-      }
-    },
-    "Map": {
-      "name": "Mapa",
-      "description": "<p>Jeśli korzystasz z dokładnej Mapy, zyskujesz premię +5 do testów Mądrości (Sztuka przetrwania), które wykonujesz, aby odnaleźć drogę w miejscu przedstawionym na mapie.</p>"
-    },
-    "Map or Scroll Case": {
-      "name": "Torba na mapy lub zwoje",
-      "description": "<p>Ten cylindryczny skórzany futerał może pomieścić do dziesięciu zwiniętych arkuszy papieru lub pięciu zwiniętych arkuszy pergaminu.</p>"
-    },
-    "Mason's Tools": {
-      "name": "Narzędzia kamieniarza",
-      "description": "<p class=\"phb-meta\"><strong>Cechą:</strong> Siła</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Wygrawerowanie symbolu lub otworu w kamieniu (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBlockandTac]</p>",
-      "activities": {
-        "Chisel a Symbol or Hole": {
-          "name": "Wyrzeźb symbol lub otwór"
-        }
-      }
-    },
-    "Maul": {
-      "name": "Młot dwuręczny"
-    },
-    "Mirror": {
-      "name": "Lustro",
-      "description": "<p>Lustro ręczne ze stali jest przydatne do celów kosmetycznych, ale także do zaglądania za rogi i odbijania światła jako sygnału.</p>"
-    },
-    "Morningstar": {
-      "name": "Morgensztern"
-    },
-    "Musket": {
-      "name": "Muszkiet"
-    },
-    "Navigator's Tools": {
-      "name": "Narzędzia nawigatora",
-      "description": "<p class=\"phb-meta\"><strong>Cechą:</strong> Mądrość</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Wyznaczenie kursu (ST 10) lub określenie pozycji poprzez obserwację gwiazd (ST 15)</p>",
-      "activities": {
-        "Plot a Course": {
-          "name": "Wyznacz kurs"
+        "Brewer's Supplies": {
+            "name": "Materiały piwowarskie",
+            "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Inteligencja</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Wykrycie zatrutego napoju (ST 15) lub identyfikacja alkoholu (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAntitoxin00]</p>",
+            "activities": {
+                "Detect Poisoned Drink": {
+                    "name": "Wykryj zatruty napój"
+                },
+                "Identify Alcohol": {
+                    "name": "Zidentyfikuj alkohol"
+                }
+            }
         },
-        "Determine Position by Stargazing": {
-          "name": "Ustal pozycję poprzez obserwację gwiazd"
-        }
-      }
-    },
-    "Needles": {
-      "name": "Igły",
-      "description": "<p><em><strong>Przechowywanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAmmunitionV] jest wymagana przez broń posiadającą właściwość Amunicja. Opis broni określa typ amunicji używanej przez tę broń. Tabela Amunicji wymienia różne typy oraz ilości, jakie otrzymujesz przy zakupie. Tabela zawiera również przedmiot, który jest zazwyczaj używany do przechowywania każdego typu; przechowywanie należy kupić osobno.</p>"
-    },
-    "Net": {
-      "name": "Sieć",
-      "description": "<p>Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem siecią. Wybierz istotę, którą widzisz, w odległości do 15 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo otrzymuje stan &amp;Reference[Restrained] do momentu, aż się uwolni. Cel automatycznie odnosi sukces, jeśli jest Wielki lub większy.</p><p>Aby się uwolnić, cel lub istota w odległości do 5 stóp od niego musi wykonać akcję, aby przeprowadzić test [[/skill ath 10]], uwalniając istotę ze stanem Restrained w przypadku sukcesu. Zniszczenie sieci (KP 10; 5 PW; Niewrażliwość na obrażenia obuchowe, od trucizn i psychiczne) również uwalnia cel, kończąc efekt.</p>",
-      "effects": {
-        "Caught in Net": {
-          "name": "Złapany w sieć"
-        }
-      }
-    },
-    "Oil": {
-      "name": "Olej",
-      "description": "<p>Możesz oblać istotę, obiekt lub obszar olejem albo użyć go jako paliwa, jak opisano poniżej.</p><p><strong>Oblanie istoty lub obiektu.</strong> Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką oleju. Wybierz jedną istotę lub obiekt w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo zostaje pokryty olejem. Jeśli cel otrzyma obrażenia od ognia, zanim olej wyschnie (po 1 minucie), otrzymuje dodatkowe [[/damage 5 type=fire]] obrażenia od płonącego oleju.</p><p><strong>Oblanie obszaru.</strong> Możesz wykonać akcję Użycie Obiektu, aby wylać flaszkę oleju na płaski grunt, pokrywając obszar o boku 5 stóp w odległości do 5 stóp od siebie. Jeśli zostanie podpalony, olej pali się do końca tury 2 rundy od momentu podpalenia (czyli 12 sekund) i zadaje 5 obrażeń od ognia każdej istocie, która wejdzie w ten obszar lub zakończy w nim turę. Istota może otrzymać te obrażenia tylko raz na turę.</p><p><strong>Paliwo.</strong> Olej służy jako paliwo do lamp i latarni. Po podpaleniu, flaszka oleju pali się przez 6 godzin w lampie lub latarni. Ten czas nie musi być ciągły; możesz zgasić płonący olej (jako akcję Użycie Obiektu) i ponownie go zapalić, aż do łącznego czasu spalania wynoszącego 6 godzin.</p>",
-      "activities": {
-        "Throw": {
-          "name": "Rzuć"
+        "Bucket": {
+            "name": "Wiadro",
+            "description": "<p>Wiadro mieści do pół stopy sześciennej (do 14 litrów) zawartości.</p>"
         },
-        "Douse Space": {
-          "name": "Zgaś przestrzeń"
-        }
-      }
-    },
-    "Orb": {
-      "name": "Kula",
-      "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagArcaneFocus]{Fokus magii wtajemniczeń} jest wysadzany klejnotami lub rzeźbiony w sposób umożliwiający kanalizowanie magii wtajemniczeń. Zaklinacz, Czarownik lub Mag może używać takiego przedmiotu jako Magicznego fokusu.</p>"
-    },
-    "Padded Armor": {
-      "name": "Przeszywanica"
-    },
-    "Painter's Supplies": {
-      "name": "Materiały malarskie",
-      "description": "<p class=\"phb-meta\"><strong>Cechą:</strong> Mądrość</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Namalowanie rozpoznawalnego obrazu czegoś, co się widziało (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> Druidyczny fetysz, Święty symbol</p>",
-      "activities": {
-        "Paint a Recognizable Image": {
-          "name": "Namaluj rozpoznawalny obraz"
-        }
-      }
-    },
-    "Pan Flute": {
-      "name": "Syrynga",
-      "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
-      "activities": {
-        "Play a Known Tune": {
-          "name": "Zagraj znaną melodię"
+        "Bullets, Firearm": {
+            "name": "Pociski, Broń palna",
+            "description": "<p><em><strong>Przechowywanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAmmunitionV] jest wymagana przez broń posiadającą właściwość Amunicja. Opis broni określa typ amunicji używanej przez tę broń. Tabela Amunicji wymienia różne typy oraz ilości, jakie otrzymujesz przy zakupie. Tabela zawiera również przedmiot, który jest zazwyczaj używany do przechowywania każdego typu; przechowywanie należy kupić osobno.</p>"
         },
-        "Improvise a Song": {
-          "name": "Improvizuj piosenkę"
-        }
-      }
-    },
-    "Paper": {
-      "name": "Papier",
-      "description": "<p>Jedna kartka Papieru może pomieścić około 250 ręcznie napisanych słów.</p>"
-    },
-    "Parchment": {
-      "name": "Pergamin",
-      "description": "<p>Jedna karta pergaminu może pomieścić około 250 słów pisanych odręcznie.</p>"
-    },
-    "Perfume": {
-      "name": "Perfumy",
-      "description": "<p>Perfumy znajdują się w fiolce o pojemności 4 uncji. Przez 1 godzinę po zastosowaniu perfum na sobie masz Ułatwienie do testów Charyzmy (Perswazja) wykonywanych w celu wpłynięcia na obojętnego Humanoida w odległości do 5 stóp od siebie.</p>"
-    },
-    "Pike": {
-      "name": "Pika"
-    },
-    "Pistol": {
-      "name": "Pistolet"
-    },
-    "Plate Armor": {
-      "name": "Zbroja płytowa"
-    },
-    "Playing Cards": {
-      "name": "Karty",
-      "description": "<p><strong>Cecha:</strong> Mądrość</p><p class=\"phb-meta\"><strong>Użycie:</strong> Rozpoznanie, czy ktoś oszukuje (ST 10) lub wygranie gry (ST 20)</p>",
-      "activities": {
-        "Catch Cheating": {
-          "name": "Przyłap na oszustwie"
+        "Bullets, Sling": {
+            "name": "Pociski, Proca",
+            "description": "<p><em><strong>Przechowywanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAmmunitionV] jest wymagana przez broń posiadającą właściwość Amunicja. Opis broni określa typ amunicji używanej przez tę broń. Tabela Amunicji wymienia różne typy oraz ilości, jakie otrzymujesz przy zakupie. Tabela zawiera również przedmiot, który jest zazwyczaj używany do przechowywania każdego typu; przechowywanie należy kupić osobno.</p>"
         },
-        "Play to Win": {
-          "name": "Graj, by wygrać"
-        }
-      }
-    },
-    "Poison, Basic": {
-      "name": "Trucizna, Podstawowa",
-      "description": "<p>Akcją dodatkową możesz użyć fiolki Podstawowej Trucizny, aby pokryć nią jedną broń lub maksymalnie trzy sztuki amunicji. Istota, która otrzyma obrażenia kłute lub cięte od zatrutej broni lub amunicji, otrzymuje dodatkowe 1k4 obrażenia od trucizn. Po nałożeniu trucizna zachowuje swoją skuteczność przez 1 minutę lub do momentu zadania obrażeń, w zależności od tego, co nastąpi wcześniej.</p><section id=\"secret-YwO5GX35V4XweNWL\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera rzut na obrażenia od trucizn.</p></section>"
-    },
-    "Poisoner's Kit": {
-      "name": "Zestaw truciciela",
-      "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Inteligencja</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Wykrycie zatrutego obiektu (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPoisonBasic]</p>",
-      "activities": {
-        "Detect Poisoned Object": {
-          "name": "Wykryj zatruty przedmiot"
-        }
-      }
-    },
-    "Pole": {
-      "name": "Tyczka",
-      "description": "<p>Tyczka ma 10 stóp długości. Możesz jej użyć, aby dosięgnąć czegoś w odległości do 10 stóp. Jeśli musisz wykonać test Siły (Atletyka) w ramach skoku wzwyż lub w dal, możesz użyć tyczki do wybicia się, zyskując Ułatwienie do tego testu.</p>"
-    },
-    "Pot, Iron": {
-      "name": "Garnek, Żelazny",
-      "description": "<p>Żelazny garnek mieści do 1 galona.</p>"
-    },
-    "Potion of Healing": {
-      "name": "Mikstura leczenia",
-      "description": "<p>Ta mikstura jest magicznym przedmiotem. Akcją dodatkową możesz ją wypić lub wlać do ust innej istocie znajdującej się w odległości do 5 stóp od ciebie. Istota, która wypije magiczny czerwony płyn z tej fiolki, odzyskuje 2k4 + 2 Punktów Wytrzymałości.</p>"
-    },
-    "Potter's Tools": {
-      "name": "Narzędzia garncarza",
-      "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Inteligencja <strong>Waga:</strong> 3 funty</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Ustalenie, jaki ceramiczny przedmiot był trzymany w ciągu ostatnich 24 godzin (ST 15)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagJug00000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLamp0000000]</p>",
-      "activities": {
-        "Discern Previous Contents": {
-          "name": "Ustal wcześniejszą zawartość"
-        }
-      }
-    },
-    "Pouch": {
-      "name": "Torba",
-      "description": "<p>Torba mieści do 6 funtów w objętości jednej piątej stopy sześciennej.</p>"
-    },
-    "Priest's Pack": {
-      "name": "Zestaw kapłana",
-      "description": "<p>Zestaw kapłana zawiera następujące przedmioty: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBlanket0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHolyWater00], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLamp0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRations0000] na 7 dni, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRobe0000000] oraz @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00].</p>"
-    },
-    "Quarterstaff": {
-      "name": "Drąg"
-    },
-    "Quiver": {
-      "name": "Kołczan",
-      "description": "<p>Kołczan mieści do 20 Strzał.</p>"
-    },
-    "Ram, Portable": {
-      "name": "Taran, Przenośny",
-      "description": "<p>Możesz użyć przenośnego tarana do wyważania drzwi. Podczas tego działania zyskujesz premię +4 do testu Siły. Inna postać może ci pomóc w użyciu tarana, dając ci Ułatwienie w tym teście.</p>"
-    },
-    "Rapier": {
-      "name": "Rapier"
-    },
-    "Rations": {
-      "name": "Racje żywnościowe",
-      "description": "<p>Racje żywnościowe składają się z jedzenia gotowego do podróży, w tym suszonego mięsa, suszonych owoców, sucharów i orzechów. Zobacz &amp;Reference[Malnutrition] w glosariuszu zasad, aby poznać ryzyko niejedzenia.</p>"
-    },
-    "Reliquary": {
-      "name": "Relikwiarz",
-      "description": "<p><em><strong>Wymóg użycia: </strong>Trzymany</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHolySymbolV] przybiera jedną z form z tabeli świętych symboli i jest wysadzany klejnotami lub malowany, aby ukierunkowywać boską magię. Kleryk lub Paladyn może używać Świętego symbolu jako Magicznego fokusu.</p>"
-    },
-    "Ring Mail": {
-      "name": "Zbroja pierścieniowa"
-    },
-    "Robe": {
-      "name": "Szaty",
-      "description": "<p>Szata ma znaczenie zawodowe lub ceremonialne. Niektóre wydarzenia i miejsca wpuszczają tylko osoby noszące szatę w określonych kolorach lub z określonymi symbolami.</p>"
-    },
-    "Rod": {
-      "name": "Berło",
-      "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagArcaneFocus]{Fokus magii wtajemniczeń} jest wysadzany klejnotami lub rzeźbiony w sposób umożliwiający kanalizowanie magii wtajemniczeń. Zaklinacz, Czarownik lub Mag może używać takiego przedmiotu jako Magicznego fokusu.</p>"
-    },
-    "Rope": {
-      "name": "Lina",
-      "description": "<p>Akcją Użycia Obiektu wiążesz węzeł za pomocą liny, jeśli uda ci się test Zręczności (Zwinne dłonie) ST 10. Linę można zerwać, wykonując udany test Siły (Atletyka) ST 20.</p><p>Możesz związać niechcącą tego istotę liną tylko wtedy, gdy ma ona stan &amp;Reference[Grappled], &amp;Reference[Incapacitated] lub &amp;Reference[Unieruchomiony]. Jeśli nogi istoty zostaną związane, otrzymuje ona stan Unieruchomiony do momentu uwolnienia się. Uwolnienie się z liny wymaga od istoty wykonania udanego testu Zręczności (Akrobatyka) ST 15 jako akcji.</p>",
-      "activities": {
-        "Tie Knot": {
-          "name": "Zawiąż węzeł"
+        "Bullseye Lantern": {
+            "name": "Latarnia kierunkowa",
+            "description": "<p>Latarnia kierunkowa rzuca Jasne światło w stożku o promieniu 60 stóp i Słabe światło w promieniu kolejnych 60 stóp. Po zapaleniu pali się przez 6 godzin na jednej kolbie (1 pinta) oleju.</p>"
         },
-        "Burst Rope": {
-          "name": "Przerwij linę"
+        "Burglar's Pack": {
+            "name": "Zestaw włamywacza",
+            "description": "<p>Zestaw włamywacza zawiera następujące przedmioty: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBallBearing], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBell0000000], 10 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCandle00000]{świec}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCrowbar0000], @UUID[Compendium.dnd5e.items.Item.wjHtGnd05SPdURqE], 7 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{flaszek oleju}, 5 dni @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRations0000]{racji żywnościowych}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRope0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00], oraz @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00].</p>"
         },
-        "Escape Check": {
-          "name": "Test ucieczki"
-        }
-      }
-    },
-    "Sack": {
-      "name": "Worek",
-      "description": "<p>Worek mieści do 30 funtów w objętości 1 stopy sześciennej.</p>"
-    },
-    "Scale Mail": {
-      "name": "Zbroja łuskowa"
-    },
-    "Scholar's Pack": {
-      "name": "Zestaw uczonego",
-      "description": "<p>Zestaw uczonego zawiera następujące przedmioty: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBook0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInk00000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInkPen00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLamp0000000], 10 flaszek @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{oleju}, 10 arkuszy @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagParchment00]{pergaminu} oraz @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00].</p>"
-    },
-    "Scimitar": {
-      "name": "Sejmitar"
-    },
-    "Shawm": {
-      "name": "Szałamaja",
-      "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
-      "activities": {
-        "Play a Known Tune": {
-          "name": "Zagraj znaną melodię"
+        "Calligrapher's Supplies": {
+            "name": "Materiały kaligraficzne",
+            "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Zręczność</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Napisanie tekstu z efektownymi zawijasami, które chronią przed fałszerstwem (ST 15)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInk00000000], <em>Magiczny zwój</em></p>"
         },
-        "Improvise a Song": {
-          "name": "Improvizuj piosenkę"
-        }
-      }
-    },
-    "Shield": {
-      "name": "Tarcza",
-      "description": "<p>Zyskujesz Klasę pancerza dzięki tarczy tylko wtedy, gdy jesteś w jej używaniu wyszkolony.</p>"
-    },
-    "Shortbow": {
-      "name": "Krótki łuk"
-    },
-    "Shortsword": {
-      "name": "Krótki miecz"
-    },
-    "Shovel": {
-      "name": "Łopata",
-      "description": "<p>Pracując przez 1 godzinę, możesz użyć Łopaty, aby wykopać dół o wymiarach 5 stóp na każdą stronę w ziemi lub podobnym materiale.</p>"
-    },
-    "Sickle": {
-      "name": "Sierp"
-    },
-    "Signal Whistle": {
-      "name": "Gwizdek",
-      "description": "<p>Gdy zostanie użyty jako Akcja Użycie Obiektu, Gwizdek sygnałowy wydaje dźwięk słyszalny z odległości do 600 stóp.</p>",
-      "activities": {
-        "Whistle": {
-          "name": "Zagwiżdż"
-        }
-      }
-    },
-    "Sling": {
-      "name": "Proca"
-    },
-    "Smith's Tools": {
-      "name": "Narzędzia kowala",
-      "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Siła</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Podważenie drzwi lub pojemnika (ST 20)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> Dowolna broń do walki wręcz (z wyjątkiem pałki, maczugi, kostura i bicza), średnia zbroja (z wyjątkiem skórzanej), ciężka zbroja, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBallBearing], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBucket00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCaltrops000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagChain000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCrowbar0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoBulletsFir], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagGrapplingHo], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPotIron0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagSpikesIron0], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoBulletsSli]</p>",
-      "activities": {
-        "Pry Open": {
-          "name": "Podważ"
-        }
-      }
-    },
-    "Spear": {
-      "name": "Włócznia"
-    },
-    "Spell Scroll, Cantrip": {
-      "name": "Magiczny zwój, Sztuczka",
-      "description": "<p><em>Magiczny zwój</em> (Sztuczka) lub @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagSpellScroll] to magiczny przedmiot zawierający słowa odpowiednio sztuczki lub czaru 1. kręgu, określonego przez twórcę zwoju. Jeśli czar znajduje się na liście czarów twojej klasy, możesz odczytać zwój i rzucić czar, używając jego normalnego czasu rzucania i bez dostarczania komponentów materialnych.</p><p>Jeśli czar wymaga rzutu obronnego lub testu ataku, ST rzutu obronnego wynosi 13, a premia do ataku +5. Zwój rozpada się po zakończeniu rzucania.</p>"
-    },
-    "Spell Scroll, Level 1": {
-      "name": "Magiczny zwój, 1. krąg",
-      "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCantripScro] lub <em>Magiczny zwój</em> (1. krąg) to magiczny przedmiot zawierający słowa odpowiednio sztuczki lub czaru 1. kręgu, określonego przez twórcę zwoju. Jeśli czar znajduje się na liście czarów twojej klasy, możesz odczytać zwój i rzucić czar, używając jego normalnego czasu rzucania i bez dostarczania komponentów materialnych.</p><p>Jeśli czar wymaga rzutu obronnego lub testu ataku, ST rzutu obronnego wynosi 13, a premia do ataku +5. Zwój rozpada się po zakończeniu rzucania.</p>"
-    },
-    "Spikes, Iron": {
-      "name": "Kolce żelazne",
-      "description": "<p>Żelazne kolce są sprzedawane w pęczkach po dziesięć. Akcją Użycia Obiektu możesz użyć tępego przedmiotu, takiego jak młotek lekki, aby wbić kolec w drewno, ziemię lub podobny materiał. Możesz to zrobić, aby zablokować drzwi lub przywiązać linę albo łańcuch do kolca.</p>"
-    },
-    "Splint Armor": {
-      "name": "Zbroja płytkowa"
-    },
-    "Sprig of mistletoe": {
-      "name": "Gałązka jemioły",
-      "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagDruidicFocu] przybiera jedną z form z tabeli druidycznych fetyszy i jest rzeźbiony, obwiązany wstążką lub malowany, aby ukierunkowywać pierwotną magię. Druid lub Łowca może używać takiego przedmiotu jako Magicznego fokusu.</p>"
-    },
-    "Spyglass": {
-      "name": "Lunetka",
-      "description": "<p>Obiekty oglądane przez lunetkę są powiększone dwukrotnie.</p>"
-    },
-    "Staff": {
-      "name": "Kostury",
-      "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagArcaneFocus] jest wysadzany klejnotami lub rzeźbiony w celu ukierunkowania magii wtajemniczeń. Zaklinacz, Czarownik lub Mag mogą używać takiego przedmiotu jako Magicznego fokusu.</p><p>Ten przedmiot działa również jako @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta]</p><section class=\"secret\" id=\"secret-wJ4SJVg9unbYSBJb\"><p><strong>Notatka Foundry</strong></p><p>Ten przedmiot został skonfigurowany z dodatkowymi właściwościami kostura.</p></section>"
-    },
-    "Stone Tablet": {
-      "name": "Kamienna tabliczka",
-      "description": "<p>Kamienna tabliczka z drobnymi otworami, która może być używana jako Magiczny fokus przez Druidów z Kręgu Gwiazdy. To Malutki obiekt.</p>"
-    },
-    "String": {
-      "name": "Sznurek",
-      "description": "<p>Sznurek ma 10 stóp długości. Akcją Użycia Obiektu możesz zawiązać na nim węzeł.</p>"
-    },
-    "Studded Leather Armor": {
-      "name": "Ćwiekowana skóra"
-    },
-    "Tent": {
-      "name": "Namiot",
-      "description": "<p>Namiot może pomieścić do dwóch Małych lub Średnich istot.</p>"
-    },
-    "Thieves' Tools": {
-      "name": "Narzędzia złodziejskie",
-      "description": "<p class=\"phb-meta\"><strong>Cechą:</strong> Zręczność</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Otworzenie zamka (ST 15) lub rozbrojenie pułapki (ST 15)</p>",
-      "activities": {
-        "Pick a Lock/Disarm a Trap": {
-          "name": "Otwórz zamek lub rozbrój pułapkę"
-        }
-      }
-    },
-    "Three-dragon ante": {
-      "name": "Stawka Trzech Smoków",
-      "description": "<p><strong>Cecha:</strong> Mądrość</p><p class=\"phb-meta\"><strong>Użycie:</strong> Rozpoznanie, czy ktoś oszukuje (ST 10) lub wygranie gry (ST 20)</p>",
-      "activities": {
-        "Catch Cheating": {
-          "name": "Przyłap na oszustwie"
+        "Caltrops": {
+            "name": "Kolczatki",
+            "description": "<p>Akcją Użycia Obiektu możesz rozsypać kolczatki z ich torby, aby pokryć obszar o boku 5 stóp w odległości do 5 stóp od siebie. Istota, która wejdzie w ten obszar po raz pierwszy w danej turze, musi wykonać rzut obronny na Zręczność (ST 15) lub otrzymuje 1 obrażenie kłute i jej szybkość zostaje zredukowana do 0 do początku jej następnej tury. Odzyskanie kolczatek zajmuje 10 minut.</p>",
+            "effects": {
+                "Slowed": {
+                    "name": "Spowolniony"
+                }
+            }
         },
-        "Play to Win": {
-          "name": "Graj, by wygrać"
-        }
-      }
-    },
-    "Tinderbox": {
-      "name": "Zestaw do rozpalania ognia",
-      "description": "<p>Zestaw do rozpalania ognia to mały pojemnik zawierający krzesiwo, stal do krzesania iskier oraz hubkę (zwykle suchą tkaninę nasączoną lekkim olejem) używaną do rozpalania ognia. Użycie go do zapalenia świecy, lampy, latarni lub pochodni — lub czegokolwiek innego z odkrytym paliwem — zajmuje Akcję Dodatkową. Rozpalenie innego rodzaju ognia zajmuje 1 minutę.</p>",
-      "activities": {
-        "Light": {
-          "name": "Światło"
-        }
-      }
-    },
-    "Tinker's Tools": {
-      "name": "Narzędzia majsterkowicza",
-      "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Zręczność</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Złożenie malutkiego przedmiotu ze złomu, który rozpada się po 1 minucie (ST 20)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepMusket0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepPistol0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBell0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.KZUoiZrigDbovEu7], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagFlask000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.DKYzehYrMUKiFDxt], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHuntingTrap], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLock0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagManacles000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagMirror00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagShovel00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagSignalWhist], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00]</p>",
-      "activities": {
-        "Assemble a Tiny Item": {
-          "name": "Złóż drobny przedmiot"
-        }
-      }
-    },
-    "Tooled Owlbear Hide": {
-      "name": "Wytłaczana skóra sowoniedźwiedzia",
-      "description": "<p>Skóra sowoniedźwiedzia zdobiona gwiezdnymi symbolami, która może być używana jako Magiczny fokus przez Druidów z Kręgu Gwiazdy. To Malutki obiekt.</p>"
-    },
-    "Torch": {
-      "name": "Pochodnia",
-      "description": "<p>Pochodnia pali się przez 1 godzinę, emitując Jasne światło w promieniu 20 stóp i Słabe światło na dodatkowe 20 stóp. Wykonując akcję Atak, możesz zaatakować pochodnią, używając jej jako prostej broni do walki wręcz. Przy trafieniu cel otrzymuje 1 obrażenie od ognia.</p>"
-    },
-    "Trident": {
-      "name": "Trójząb"
-    },
-    "Unarmed Strike": {
-      "name": "Uderzenie bez broni",
-      "description": "<p><em>Zobacz: &amp;Reference[unarmedstrike]</em></p>",
-      "activities": {
-        "Grapple/Shove": {
-          "name": "Pochwycenie/Pchnięcie",
-          "chatFlavor": "Próba pochwycenia lub popchnięcia"
-        }
-      },
-      "effects": {
-        "Grappled": {
-          "name": "Pochwycony"
+        "Candle": {
+            "name": "Świeca",
+            "description": "<p>Przez 1 godzinę zapalona świeca rzuca Jasne Światło w promieniu 5 stóp i Słabe Światło na dodatkowe 5 stóp.</p>",
+            "activities": {
+                "Light": {
+                    "name": "Światło"
+                }
+            }
         },
-        "Prone": {
-          "name": "Powalony"
-        }
-      }
-    },
-    "Vial": {
-      "name": "Fiolka",
-      "description": "<p>Fiolka mieści do 4 uncji.</p>"
-    },
-    "Viol": {
-      "name": "Viola",
-      "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
-      "activities": {
-        "Play a Known Tune": {
-          "name": "Zagraj znaną melodię"
+        "Carpenter's Tools": {
+            "name": "Narzędzia cieśli",
+            "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Siła</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Zabezpieczenie lub podważenie drzwi albo pojemnika (ST 20)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepClub000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepGreatclub0], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBarrel00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagChest000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLadder00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPole0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRamPortable], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTorch000000]</p>",
+            "activities": {
+                "Seal or Pry Open": {
+                    "name": "Zapieczętuj lub podważ"
+                }
+            }
         },
-        "Improvise a Song": {
-          "name": "Improvizuj piosenkę"
+        "Cartographer's Tools": {
+            "name": "Narzędzia kartografa",
+            "description": "<p class=\"phb-meta\"><strong>Cecha:</strong> Mądrość</p><p class=\"phb-meta\"><strong>Użycie:</strong> Sporządzenie mapy małego obszaru (ST 15)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagMap00000000]</p>",
+            "activities": {
+                "Draft a Map": {
+                    "name": "Sporządź mapę"
+                }
+            }
+        },
+        "Case, Crossbow Bolt": {
+            "name": "Pojemnik na bełty",
+            "description": "<p>Futerał na bełty mieści do 20 bełtów.</p>"
+        },
+        "Case, Map or Scroll": {
+            "name": "Tuba na mapy lub zwoje",
+            "description": "<p>Futerał na mapy lub zwoje mieści do 10 arkuszy papieru lub 5 arkuszy pergaminu.</p>"
+        },
+        "Chain": {
+            "name": "Łańcuch",
+            "description": "<p>Akcją Użycia Obiektu możesz owinąć łańcuchem niechcącą tego istotę w odległości do 5 stóp od siebie, która ma stan &amp;Reference[Grappled], &amp;Reference[Incapacitated] lub &amp;Reference[Restrained], jeśli odniesiesz sukces w teście Siły (Atletyka) ST 13. Jeśli nogi istoty zostaną skrępowane, otrzymuje ona stan &amp;Reference[Restrained] do momentu uwolnienia się. Uwolnienie się z łańcucha wymaga od istoty udanego testu Zręczności (Akrobatyka) ST 18 jako akcji. Rozerwanie łańcucha wymaga udanego testu Siły (Atletyka) ST 20 jako akcji.</p>",
+            "activities": {
+                "Wrap Chain Check": {
+                    "name": "Test owijania łańcucha",
+                    "target": "Has the Grappled, Incapacitated, or Restrained condition",
+                    "targetAffects": "Has the Grappled, Incapacitated, or Restrained condition"
+                },
+                "Escape Check": {
+                    "name": "Test ucieczki"
+                },
+                "Burst Chain Check": {
+                    "name": "Test przerwania łańcucha"
+                }
+            }
+        },
+        "Chain Mail": {
+            "name": "Kolczuga"
+        },
+        "Chain Shirt": {
+            "name": "Koszula kolcza"
+        },
+        "Chest": {
+            "name": "Kufer",
+            "description": "<p>Kufer mieści do 12 stóp sześciennych (340 litrów) zawartości.</p>"
+        },
+        "Climber's Kit": {
+            "name": "Zestaw wspinaczkowy",
+            "description": "<p>Zestaw wspinaczkowy zawiera końcówki do butów, rękawice, haki wspinaczkowe i uprząż. Akcją Użycia Obiektu możesz użyć zestawu wspinaczkowego, aby się zakotwiczyć; gdy to zrobisz, nie możesz spaść dalej niż 25 stóp od punktu zakotwiczenia i nie możesz oddalić się dalej niż 25 stóp bez odkotwiczenia się akcją dodatkową.</p>"
+        },
+        "Clothes, Fine": {
+            "name": "Ubrania dobrej jakości",
+            "description": "<p>Wykwintne Ubrania są wykonane z drogich tkanin i ozdobione mistrzowsko wykonanymi detalami. Niektóre wydarzenia i miejsca przyjmują tylko osoby noszące te ubrania.</p>"
+        },
+        "Clothes, Traveler's": {
+            "name": "Ubrania podróżne",
+            "description": "<p>Ubrania podróżne to odporna odzież zaprojektowana do podróżowania w różnych warunkach.</p>"
+        },
+        "Club": {
+            "name": "Pałka"
+        },
+        "Cobbler's Tools": {
+            "name": "Narzędzia szewca",
+            "description": "<p class=\"phb-meta\"><strong>Cecha:</strong> Zręczność</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zmodyfikowanie obuwia, aby dać Ułatwienie przy następnym teście Zręczności (Akrobatyka) noszącego (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClimbersKit]</p>",
+            "activities": {
+                "Modify Footwear": {
+                    "name": "Zmodyfikuj obuwie"
+                }
+            }
+        },
+        "Component Pouch": {
+            "name": "Torba na komponenty",
+            "description": "<p>Torba na komponenty jest wodoszczelna i wypełniona przegródkami, które przechowują wszystkie darmowe materialne komponenty twoich czarów.</p>"
+        },
+        "Constellations Scroll": {
+            "name": "Zwój konstelacji",
+            "description": "<p>Zwoje przedstawiające konstelacje, które mogą być używane jako Magiczny fokus przez Druidów z Kręgu Gwiazdy. To Malutki obiekt.</p>"
+        },
+        "Cook's Utensils": {
+            "name": "Utensylia kucharza",
+            "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Mądrość</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Poprawienie smaku jedzenia (ST 10) lub wykrycie zepsutego lub zatrutego jedzenia (ST 15)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRations0000]</p>",
+            "activities": {
+                "Improve Flavor": {
+                    "name": "Popraw smak"
+                },
+                "Detect Spoiled or Poisoned Food": {
+                    "name": "Wykryj zepsute lub zatrute jedzenie"
+                }
+            }
+        },
+        "Costume": {
+            "name": "Kostium",
+            "description": "<p>Nosząc Kostium, masz Ułatwienie do każdego testu cechy, który wykonujesz, aby podszywać się pod osobę lub typ osoby, którą reprezentuje.</p>"
+        },
+        "Crowbar": {
+            "name": "Łom",
+            "description": "<p>Użycie łomu zapewnia Ułatwienie do testów Siły, w których można wykorzystać go jako dźwignię.</p>"
+        },
+        "Crystal": {
+            "name": "Kryształ",
+            "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagArcaneFocus]{Fokus magii wtajemniczeń} jest wysadzany klejnotami lub rzeźbiony w sposób umożliwiający kanalizowanie magii wtajemniczeń. Zaklinacz, Czarownik lub Mag może używać takiego przedmiotu jako Magicznego fokusu.</p>"
+        },
+        "Dagger": {
+            "name": "Sztylet"
+        },
+        "Dart": {
+            "name": "Strzałka"
+        },
+        "Dice": {
+            "name": "Kości",
+            "description": "<p><strong>Cecha:</strong> Mądrość</p><p class=\"phb-meta\"><strong>Użycie:</strong> Rozpoznanie, czy ktoś oszukuje (ST 10) lub wygranie gry (ST 20)</p>",
+            "activities": {
+                "Catch Cheating": {
+                    "name": "Przyłap na oszustwie"
+                },
+                "Play to Win": {
+                    "name": "Graj, by wygrać"
+                }
+            }
+        },
+        "Diplomat's Pack": {
+            "name": "Zestaw dyplomaty",
+            "description": "<p>Zestaw dyplomaty zawiera następujące przedmioty: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagChest000000], @UUID[Compendium.dnd5e.items.Item.FqFmdzIBUSxFKKfi], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInk00000000], 5x @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInkPen00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLamp0000000], 2x @UUID[Compendium.dnd5e.items.Item.5mIeX824uMklU3xq], 4 fiolki @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{Oleju}, 5 arkuszy @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPaper000000]{Papieru}, 5 arkuszy @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagParchment00]{Pergaminu}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPerfume0000] oraz @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00].</p>"
+        },
+        "Disguise Kit": {
+            "name": "Zestaw do charakteryzacji",
+            "description": "<p class=\"phb-meta\"><strong>Cechą:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Nałożenie makijażu (DC 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCostume0000]{Costume}</p>",
+            "activities": {
+                "Apply Makeup": {
+                    "name": "Nałóż makijaż"
+                }
+            }
+        },
+        "Dragonchess": {
+            "name": "Smokoszachy",
+            "description": "<p><strong>Cecha:</strong> Mądrość</p><p class=\"phb-meta\"><strong>Użycie:</strong> Rozpoznanie, czy ktoś oszukuje (ST 10) lub wygranie gry (ST 20)</p>",
+            "activities": {
+                "Catch Cheating": {
+                    "name": "Przyłap na oszustwie"
+                },
+                "Play to Win": {
+                    "name": "Graj, by wygrać"
+                }
+            }
+        },
+        "Druidic Focus (Varies)": {
+            "name": "Druidyczny fetysz (Różne)",
+            "description": "<p>Druidyczny fetysz przybiera jedną z form wymienionych w tabeli Druidyczne fetysze i jest rzeźbiony, przewiązany wstążką lub pomalowany, by kanalizować pierwotną magię. Druid lub Łowca może używać takiego obiektu jako Magicznego fokusu.</p><table><caption>Druidyczne fetysze</caption><thead><tr><td>Fetysz</td><td>Waga</td><td>Koszt</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbdfcSprigofmis]</td><td>—</td><td>1 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbdfcWoodenstaf] (również @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta]</td><td>4 lb.</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbdfcYewwand000]</td><td>1 lb.</td><td>10 GP</td></tr></tbody></table>"
+        },
+        "Drum": {
+            "name": "Bęben",
+            "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
+            "activities": {
+                "Play a Known Tune": {
+                    "name": "Zagraj znaną melodię"
+                },
+                "Improvise a Song": {
+                    "name": "Improvizuj piosenkę"
+                }
+            }
+        },
+        "Dulcimer": {
+            "name": "Cymbały",
+            "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
+            "activities": {
+                "Play a Known Tune": {
+                    "name": "Zagraj znaną melodię"
+                },
+                "Improvise a Song": {
+                    "name": "Improvizuj piosenkę"
+                }
+            }
+        },
+        "Dungeoneer's Pack": {
+            "name": "Zestaw badacza podziemi",
+            "description": "<p>Zestaw badacza podziemi zawiera następujące przedmioty: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCaltrops000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCrowbar0000], 2 fiolki @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{Oleju}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRations0000] na 10 dni, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRope0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00], 10 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTorch000000]{Pochodni} oraz @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00].</p>"
+        },
+        "Ebony-bound Atlas": {
+            "name": "Atlas w ebonowej oprawie",
+            "description": "<p>Zbiór map oprawionych w hebanową okładkę, który może być używany jako Magiczny Fokus przez Druidów z Kręgu Gwiazdy. To Malutki obiekt.</p>"
+        },
+        "Emblem": {
+            "name": "Emblemat",
+            "description": "<p><em><strong>Wymóg użycia: </strong>Umieszczony na tkaninie lub tarczy</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHolySymbolV] przybiera jedną z form z tabeli świętych symboli i jest wysadzany klejnotami lub malowany, aby ukierunkowywać boską magię. Kleryk lub Paladyn może używać Świętego symbolu jako Magicznego fokusu.</p>"
+        },
+        "Engraved Crystal": {
+            "name": "Grawerowany kryształ",
+            "description": "<p>Kryształ grawerowany gwiezdnymi wzorami, który może być używany jako Magiczny fokus przez Druidów z Kręgu Gwiazdy. To Malutki obiekt.</p>"
+        },
+        "Entertainer's Pack": {
+            "name": "Zestaw artysty",
+            "description": "<p>Zestaw artysty zawiera następujące przedmioty: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBell0000000], @UUID[Compendium.dnd5e.items.Item.UkWdyJYQTfVX2cJW], 3x @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCostume0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagMirror00000], 8 flakonów @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{Oleju}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRations0000] na 9 dni, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00] i @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00].</p>"
+        },
+        "Etched Glass Disk": {
+            "name": "Grawerowany szklany dysk",
+            "description": "<p>Szklany dysk z wytrawionymi konstelacjami, który może być używany jako Magiczny fokus przez Druidów z Kręgu Gwiazdy. To Malutki obiekt.</p>"
+        },
+        "Explorer's Pack": {
+            "name": "Zestaw odkrywcy",
+            "description": "<p>Zestaw odkrywcy zawiera następujące przedmioty: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000], 2 fiolki @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{Oleju}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRations0000] na 10 dni, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRope0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00], 10 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTorch000000]{Pochodni} oraz @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00].</p>"
+        },
+        "Fine Clothes": {
+            "name": "Ubrania dobrej jakości",
+            "description": "<p>Zestaw ubrań zaprojektowanych specjalnie tak, aby były drogie i to pokazywać..</p>"
+        },
+        "Flail": {
+            "name": "Kiścień"
+        },
+        "Flask": {
+            "name": "Flaszka",
+            "description": "<p>Flaszka mieści do 1 pinta.</p>"
+        },
+        "Flute": {
+            "name": "Flet",
+            "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
+            "activities": {
+                "Play a Known Tune": {
+                    "name": "Zagraj znaną melodię"
+                },
+                "Improvise a Song": {
+                    "name": "Improvizuj piosenkę"
+                }
+            }
+        },
+        "Forgery Kit": {
+            "name": "Zestaw fałszerza",
+            "description": "<p class=\"phb-meta\"><strong>Cechą:</strong> Zręczność</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Naśladowanie do 10 słów czyjegoś pisma odręcznego (ST 15) lub powielenie pieczęci woskowej (ST 20)</p>",
+            "activities": {
+                "Mimic Handwriting": {
+                    "name": "Naśladuj pismo"
+                },
+                "Duplicate Wax Seal": {
+                    "name": "Zduplikuj pieczęć woskową"
+                }
+            }
+        },
+        "Glaive": {
+            "name": "Glewia"
+        },
+        "Glassblower's Tools": {
+            "name": "Narzędzia szklarza",
+            "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Inteligencja</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Ustalenie, jaki szklany przedmiot był trzymany w ciągu ostatnich 24 godzin (ST 15)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd5e.items.Item.HZp69hhyNZUUCipF], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagMagnifyingG], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagSpyglass100], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagVial0000000]</p>",
+            "activities": {
+                "Discern Previous Contents": {
+                    "name": "Ustal wcześniejszą zawartość"
+                }
+            }
+        },
+        "Grappling Hook": {
+            "name": "Hak wspinaczkowy",
+            "description": "<p>Jako Akcja Użycie Obiektu możesz rzucić Hakiem wspinaczkowym w poręcz, występ lub inne zaczepienie w promieniu 50 stóp od siebie, a hak się zaczepi, jeśli uda ci się wykonać test Zręczności (Akrobatyka) o ST 13. Jeśli przywiązałeś Linę do haka, możesz się po niej wspiąć.</p>",
+            "activities": {
+                "Throw": {
+                    "name": "Rzuć"
+                }
+            }
+        },
+        "Greataxe": {
+            "name": "Topór dwuręczny"
+        },
+        "Greatclub": {
+            "name": "Maczuga"
+        },
+        "Greatsword": {
+            "name": "Miecz dwuręczny"
+        },
+        "Halberd": {
+            "name": "Halabarda"
+        },
+        "Half Plate Armor": {
+            "name": "Zbroja półpłytowa"
+        },
+        "Hand Crossbow": {
+            "name": "Kusza ręczna"
+        },
+        "Handaxe": {
+            "name": "Toporek"
+        },
+        "Healer's Kit": {
+            "name": "Torba lekarska",
+            "description": "<p>Torba lekarska ma dziesięć użyć. Akcją Użycie obiektu możesz wydać jedno z jej użyć, aby ustabilizować Nieprzytomną istotę, która ma 0 Punktów Wytrzymałości, bez potrzeby wykonania testu Mądrości (Medycyna).</p>",
+            "activities": {
+                "Stabilize": {
+                    "name": "Stabilizuj",
+                    "target": "Nieprzytomny",
+                    "targetAffects": "Nieprzytomny"
+                }
+            }
+        },
+        "Heavy Crossbow": {
+            "name": "Kusza ciężka"
+        },
+        "Herbalism Kit": {
+            "name": "Zestaw zielarza",
+            "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Inteligencja</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Identyfikacja rośliny (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAntitoxin00], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCandle00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHealersKit0], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPotionofHea]</p>",
+            "activities": {
+                "Identify Plant": {
+                    "name": "Zidentyfikuj roślinę"
+                }
+            }
+        },
+        "Hide Armor": {
+            "name": "Zbroja skórzana"
+        },
+        "Holy Symbol (Varies)": {
+            "name": "Święty symbol (Różne)",
+            "description": "<p>Święty symbol przybiera jedną z form wymienionych w tabeli Święte symbole i jest ozdobiony klejnotami lub pomalowany, by skupiać boską magię. Kleryk lub Paladyn może używać Świętego symbolu jako Magicznego fokusu.</p><p>W tabeli wskazano, czy Święty symbol musi być trzymany, noszony, czy umieszczony na tkaninie (takiej jak tabard lub sztandar) albo na Tarczy.</p><table><caption>Święte symbole</caption><thead><tr><td>Symbol</td><td>Waga</td><td>Koszt</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyAmuletworn]{Amulet} (noszony lub trzymany)</td><td>1 lb.</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyEmblemborn]{Emblemat} (umieszczony na tkaninie lub Tarczy)</td><td>—</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyReliquaryh]{Relikwiarz} (trzymany)</td><td>2 lb.</td><td>5 GP</td></tr></tbody></table>"
+        },
+        "Holy Water": {
+            "name": "Woda święcona",
+            "description": "<p>Gdy wykonujesz Akcję Atak, możesz zastąpić jeden ze swoich ataków rzuceniem fiolki Wody Święconej. Wyceluj w jedną istotę, którą widzisz w promieniu 20 stóp od siebie. Cel musi wykonać udany rzut obronny na Zręczność (ST 8 plus twój modyfikator Zręczności i Premia od Biegłości) lub otrzymać 2k8 obrażenia od światłości, jeśli jest to Czart lub Nieumarły.</p>",
+            "activities": {
+                "Throw": {
+                    "name": "Rzuć"
+                }
+            }
+        },
+        "Hooded Lantern": {
+            "name": "Latarnia zamykana",
+            "description": "<p>Latarnia zamykana spala Olej jako paliwo, rzucając Jasne światło w promieniu 30 stóp i Słabe światło na dodatkowe 30 stóp. Zapalona, pali się przez 6 godzin na na jednym flakonie (1 pinta)  Oleju. Akcją dodatkową możesz opuścić kaptur, zmniejszając światło do Przyciemnionego światła w promieniu 5 stóp, lub podnieść go ponownie.</p>"
+        },
+        "Horn": {
+            "name": "Róg",
+            "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
+            "activities": {
+                "Play a Known Tune": {
+                    "name": "Zagraj znaną melodię"
+                },
+                "Improvise a Song": {
+                    "name": "Improvizuj piosenkę"
+                }
+            }
+        },
+        "Hunting Trap": {
+            "name": "Potrzask",
+            "description": "<p>Akcją Użycie Obiektu możesz ustawić Potrzask. Jest to stalowy pierścieniem z zębami, który zatrzaskuje się, gdy istota nastąpi na płytę nacisku w centrum. Pułapka jest przymocowana ciężkim łańcuchem do nieruchomego obiektu, takiego jak drzewo lub pal wbity w ziemię. Istota, która nastąpi na płytę, musi wykonać udany rzut obronny na Zręczność o ST 13 lub otrzyma 1k4 obrażeń kłutych a jej Szybkość zostanie zredukowana do 0 do początku jej następnej tury. Następnie, dopóki istota nie uwolni się z pułapki, jej ruch jest ograniczony długością łańcucha (zazwyczaj 3 stopy). Istota może użyć swojej akcji, aby wykonać test Siły (Atletyka) o ST 13, uwalniając siebie lub inną istotę w swoim zasięgu w przypadku sukcesu. Każdy nieudany test zadaje [[/damage 1 type=piercing]] obrażenia schwytanej istocie.</p>",
+            "activities": {
+                "save": {
+                    "condition": "Nadepnięcie na płytę",
+                    "activationCondition": "Nadepnięcie na płytę"
+                },
+                "Escape": {
+                    "name": "Ucieczka"
+                }
+            },
+            "effects": {
+                "Trapped": {
+                    "name": "Uwięziony"
+                }
+            }
+        },
+        "Improvised Weapon": {
+            "name": "Broń improwizowana",
+            "description": "<p>@Embed[Compendium.dnd-players-handbook.content.JournalEntry.phbAppendixCRule.JournalEntryPage.Dyw6b9rQIdbkIIQD inline]</p>"
+        },
+        "Ink": {
+            "name": "Atrament",
+            "description": "<p>Atrament jest dostarczany w butelce o pojemności 1 uncji, która zapewnia wystarczającą ilość atramentu do zapisania około 500 stron.</p>"
+        },
+        "Ink Pen": {
+            "name": "Pióro atramentowe",
+            "description": "<p>Pióro maczane w atramencie służy do pisania i rysowania</p>"
+        },
+        "Javelin": {
+            "name": "Oszczep"
+        },
+        "Jeweler's Tools": {
+            "name": "Narzędzia jubilera",
+            "description": "<p class=\"phb-meta\"><strong>Cechą:</strong> Inteligencja</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Określenie wartości klejnotu (ST 15)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> Magiczny fokus, Święty symbol</p>",
+            "activities": {
+                "Discern Value": {
+                    "name": "Oceń wartość"
+                }
+            }
+        },
+        "Jug": {
+            "name": "Dzban",
+            "description": "<p>Dzban mieści do 1 galona.</p>"
+        },
+        "Ladder": {
+            "name": "Drabina",
+            "description": "<p>Drabina ma wysokość 10 stóp. Aby po niej zejść lub wejść, należy się wspiąć.</p>"
+        },
+        "Lamp": {
+            "name": "Lampa",
+            "description": "<p>Lampa spala @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000] jako paliwo, emitując Jasne światło w promieniu 15 stóp i Słabe światło na dodatkowe 30 stóp.</p>",
+            "activities": {
+                "Light": {
+                    "name": "Światło"
+                }
+            }
+        },
+        "Lance": {
+            "name": "Lanca"
+        },
+        "Lantern, Bullseye": {
+            "name": "Latarnia, Kierunkowa",
+            "description": "<p>Latarnia kierunkowa spala Olej jako paliwo do rzucania Jasnego światła w stożku 60 stóp i Słabe światło na dodatkowe 60 stóp.</p>",
+            "activities": {
+                "Light": {
+                    "name": "Światło"
+                }
+            }
+        },
+        "Lantern, Hooded": {
+            "name": "Latarnia, Zamykana",
+            "description": "<p>Latarnia zamykana spala Olej jako paliwo, rzucając Jasne światło w promieniu 30 stóp i Słabe światło na dodatkowe 30 stóp. Akcją dodatkową możesz opuścić kaptur, zmniejszając światło do Przyciemnionego światła w promieniu 5 stóp, lub podnieść go ponownie.</p>",
+            "activities": {
+                "Light": {
+                    "name": "Światło"
+                }
+            }
+        },
+        "Leather Armor": {
+            "name": "Skórznia"
+        },
+        "Leatherworker's Tools": {
+            "name": "Narzędzia kaletnika",
+            "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Zręczność</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Dodanie wzoru do skórzanego przedmiotu (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepSling00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepWhip000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmHideArmor0], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmLeatherArm], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmStuddedLea], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCaseCrossbo], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCaseMaporSc], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagParchment00], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagQuiver00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00]</p>",
+            "activities": {
+                "Add Design": {
+                    "name": "Dodaj wzór"
+                }
+            }
+        },
+        "Light Crossbow": {
+            "name": "Kusza lekka"
+        },
+        "Light Hammer": {
+            "name": "Lekki młot"
+        },
+        "Lock": {
+            "name": "Zamek",
+            "description": "<p>Zamek jest dostarczany z kluczem. Bez klucza istota może użyć @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulThievesToo]{Zestaw narzędzi złodziejskich} do otwarcia tego zamka przy udanym [[/tool thief dex 15]] teście.</p>"
+        },
+        "Longbow": {
+            "name": "Długi łuk"
+        },
+        "Longsword": {
+            "name": "Długi miecz"
+        },
+        "Lute": {
+            "name": "Lutnia",
+            "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
+            "activities": {
+                "Play a Known Tune": {
+                    "name": "Zagraj znaną melodię"
+                },
+                "Improvise a Song": {
+                    "name": "Improvizuj piosenkę"
+                }
+            }
+        },
+        "Lyre": {
+            "name": "Lira",
+            "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
+            "activities": {
+                "Play a Known Tune": {
+                    "name": "Zagraj znaną melodię"
+                },
+                "Improvise a Song": {
+                    "name": "Improvizuj piosenkę"
+                }
+            }
+        },
+        "Mace": {
+            "name": "Buława"
+        },
+        "Magnifying Glass": {
+            "name": "Szkło powiększające",
+            "description": "<p>Szkło powiększające zapewnia Ułatwienie przy dowolnym teście cechy wykonywanym w celu oszacowania lub zbadania bardzo szczegółowego przedmiotu. Rozpalenie ognia za pomocą szkła powiększającego wymaga światła jasnego jak światło słoneczne do skupienia, hubki do zapalenia oraz około 5 minut, aby ogień się zapalił.</p>"
+        },
+        "Manacles": {
+            "name": "Kajdany",
+            "description": "<p>Jako Akcję Użycie Obiektu możesz użyć Kajdan, aby skuć niechętną do tego Małą lub Średnią istotę w odległości 5 stóp od siebie, która znajduje się w stanie &amp;Reference[Grappled], &amp;Reference[Incapacitated] lub &amp;Reference[Restrained], jeśli powiedzie ci się test Zręczności (Zwinne dłonie) o ST 13. Gdy istota jest skuta, ma Utrudnienie do testów ataku, a jeśli Kajdany są przymocowane do łańcucha lub haka umocowanego na stałe, istota staje się Unieruchomiona. Ucieczka z Kajdan wymaga udanego testu Zręczności (Zwinne dłonie) o ST 20, wykonanego jako Akcja. Rozerwanie Kajdan wymaga udanego testu Siły (Atletyka) o ST 25, również wykonanego jako Akcja.</p><p>Każdy zestaw Kajdan zawiera klucz. Bez klucza istota może użyć Narzędzi złodziejskich, aby otworzyć zamek Kajdan za pomocą udanego testu [[/tool thief dex 15]].</p>",
+            "activities": {
+                "Bind": {
+                    "name": "Zwiąż",
+                    "target": "Grappled, Incapacitated, or Restrained",
+                    "targetAffects": "Grappled, Incapacitated, or Restrained"
+                },
+                "Escape Check": {
+                    "name": "Test ucieczki"
+                },
+                "Burst Check": {
+                    "name": "Test przerwania"
+                }
+            },
+            "effects": {
+                "Manacled": {
+                    "name": "Zakuty w kajdany"
+                }
+            }
+        },
+        "Map": {
+            "name": "Mapa",
+            "description": "<p>Jeśli korzystasz z dokładnej Mapy, zyskujesz premię +5 do testów Mądrości (Sztuka przetrwania), które wykonujesz, aby odnaleźć drogę w miejscu przedstawionym na mapie.</p>"
+        },
+        "Map or Scroll Case": {
+            "name": "Torba na mapy lub zwoje",
+            "description": "<p>Ten cylindryczny skórzany futerał może pomieścić do dziesięciu zwiniętych arkuszy papieru lub pięciu zwiniętych arkuszy pergaminu.</p>"
+        },
+        "Mason's Tools": {
+            "name": "Narzędzia kamieniarza",
+            "description": "<p class=\"phb-meta\"><strong>Cechą:</strong> Siła</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Wygrawerowanie symbolu lub otworu w kamieniu (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBlockandTac]</p>",
+            "activities": {
+                "Chisel a Symbol or Hole": {
+                    "name": "Wyrzeźb symbol lub otwór"
+                }
+            }
+        },
+        "Maul": {
+            "name": "Młot dwuręczny"
+        },
+        "Mirror": {
+            "name": "Lustro",
+            "description": "<p>Lustro ręczne ze stali jest przydatne do celów kosmetycznych, ale także do zaglądania za rogi i odbijania światła jako sygnału.</p>"
+        },
+        "Morningstar": {
+            "name": "Morgensztern"
+        },
+        "Musket": {
+            "name": "Muszkiet"
+        },
+        "Navigator's Tools": {
+            "name": "Narzędzia nawigatora",
+            "description": "<p class=\"phb-meta\"><strong>Cechą:</strong> Mądrość</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Wyznaczenie kursu (ST 10) lub określenie pozycji poprzez obserwację gwiazd (ST 15)</p>",
+            "activities": {
+                "Plot a Course": {
+                    "name": "Wyznacz kurs"
+                },
+                "Determine Position by Stargazing": {
+                    "name": "Ustal pozycję poprzez obserwację gwiazd"
+                }
+            }
+        },
+        "Needles": {
+            "name": "Igły",
+            "description": "<p><em><strong>Przechowywanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagAmmunitionV] jest wymagana przez broń posiadającą właściwość Amunicja. Opis broni określa typ amunicji używanej przez tę broń. Tabela Amunicji wymienia różne typy oraz ilości, jakie otrzymujesz przy zakupie. Tabela zawiera również przedmiot, który jest zazwyczaj używany do przechowywania każdego typu; przechowywanie należy kupić osobno.</p>"
+        },
+        "Net": {
+            "name": "Sieć",
+            "description": "<p>Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem siecią. Wybierz istotę, którą widzisz, w odległości do 15 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo otrzymuje stan &amp;Reference[Restrained] do momentu, aż się uwolni. Cel automatycznie odnosi sukces, jeśli jest Wielki lub większy.</p><p>Aby się uwolnić, cel lub istota w odległości do 5 stóp od niego musi wykonać akcję, aby przeprowadzić test [[/skill ath 10]], uwalniając istotę ze stanem Restrained w przypadku sukcesu. Zniszczenie sieci (KP 10; 5 PW; Niewrażliwość na obrażenia obuchowe, od trucizn i psychiczne) również uwalnia cel, kończąc efekt.</p>",
+            "effects": {
+                "Caught in Net": {
+                    "name": "Złapany w sieć"
+                }
+            }
+        },
+        "Oil": {
+            "name": "Olej",
+            "description": "<p>Możesz oblać istotę, obiekt lub obszar olejem albo użyć go jako paliwa, jak opisano poniżej.</p><p><strong>Oblanie istoty lub obiektu.</strong> Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką oleju. Wybierz jedną istotę lub obiekt w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo zostaje pokryty olejem. Jeśli cel otrzyma obrażenia od ognia, zanim olej wyschnie (po 1 minucie), otrzymuje dodatkowe [[/damage 5 type=fire]] obrażenia od płonącego oleju.</p><p><strong>Oblanie obszaru.</strong> Możesz wykonać akcję Użycie Obiektu, aby wylać flaszkę oleju na płaski grunt, pokrywając obszar o boku 5 stóp w odległości do 5 stóp od siebie. Jeśli zostanie podpalony, olej pali się do końca tury 2 rundy od momentu podpalenia (czyli 12 sekund) i zadaje 5 obrażeń od ognia każdej istocie, która wejdzie w ten obszar lub zakończy w nim turę. Istota może otrzymać te obrażenia tylko raz na turę.</p><p><strong>Paliwo.</strong> Olej służy jako paliwo do lamp i latarni. Po podpaleniu, flaszka oleju pali się przez 6 godzin w lampie lub latarni. Ten czas nie musi być ciągły; możesz zgasić płonący olej (jako akcję Użycie Obiektu) i ponownie go zapalić, aż do łącznego czasu spalania wynoszącego 6 godzin.</p>",
+            "activities": {
+                "Throw": {
+                    "name": "Rzuć"
+                },
+                "Douse Space": {
+                    "name": "Zgaś przestrzeń"
+                }
+            }
+        },
+        "Orb": {
+            "name": "Kula",
+            "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagArcaneFocus]{Fokus magii wtajemniczeń} jest wysadzany klejnotami lub rzeźbiony w sposób umożliwiający kanalizowanie magii wtajemniczeń. Zaklinacz, Czarownik lub Mag może używać takiego przedmiotu jako Magicznego fokusu.</p>"
+        },
+        "Padded Armor": {
+            "name": "Przeszywanica"
+        },
+        "Painter's Supplies": {
+            "name": "Materiały malarskie",
+            "description": "<p class=\"phb-meta\"><strong>Cechą:</strong> Mądrość</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Namalowanie rozpoznawalnego obrazu czegoś, co się widziało (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> Druidyczny fetysz, Święty symbol</p>",
+            "activities": {
+                "Paint a Recognizable Image": {
+                    "name": "Namaluj rozpoznawalny obraz"
+                }
+            }
+        },
+        "Pan Flute": {
+            "name": "Syrynga",
+            "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
+            "activities": {
+                "Play a Known Tune": {
+                    "name": "Zagraj znaną melodię"
+                },
+                "Improvise a Song": {
+                    "name": "Improvizuj piosenkę"
+                }
+            }
+        },
+        "Paper": {
+            "name": "Papier",
+            "description": "<p>Jedna kartka Papieru może pomieścić około 250 ręcznie napisanych słów.</p>"
+        },
+        "Parchment": {
+            "name": "Pergamin",
+            "description": "<p>Jedna karta pergaminu może pomieścić około 250 słów pisanych odręcznie.</p>"
+        },
+        "Perfume": {
+            "name": "Perfumy",
+            "description": "<p>Perfumy znajdują się w fiolce o pojemności 4 uncji. Przez 1 godzinę po zastosowaniu perfum na sobie masz Ułatwienie do testów Charyzmy (Perswazja) wykonywanych w celu wpłynięcia na obojętnego Humanoida w odległości do 5 stóp od siebie.</p>"
+        },
+        "Pike": {
+            "name": "Pika"
+        },
+        "Pistol": {
+            "name": "Pistolet"
+        },
+        "Plate Armor": {
+            "name": "Zbroja płytowa"
+        },
+        "Playing Cards": {
+            "name": "Karty",
+            "description": "<p><strong>Cecha:</strong> Mądrość</p><p class=\"phb-meta\"><strong>Użycie:</strong> Rozpoznanie, czy ktoś oszukuje (ST 10) lub wygranie gry (ST 20)</p>",
+            "activities": {
+                "Catch Cheating": {
+                    "name": "Przyłap na oszustwie"
+                },
+                "Play to Win": {
+                    "name": "Graj, by wygrać"
+                }
+            }
+        },
+        "Poison, Basic": {
+            "name": "Trucizna, Podstawowa",
+            "description": "<p>Akcją dodatkową możesz użyć fiolki Podstawowej Trucizny, aby pokryć nią jedną broń lub maksymalnie trzy sztuki amunicji. Istota, która otrzyma obrażenia kłute lub cięte od zatrutej broni lub amunicji, otrzymuje dodatkowe 1k4 obrażenia od trucizn. Po nałożeniu trucizna zachowuje swoją skuteczność przez 1 minutę lub do momentu zadania obrażeń, w zależności od tego, co nastąpi wcześniej.</p><section id=\"secret-YwO5GX35V4XweNWL\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera rzut na obrażenia od trucizn.</p></section>"
+        },
+        "Poisoner's Kit": {
+            "name": "Zestaw truciciela",
+            "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Inteligencja</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Wykrycie zatrutego obiektu (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPoisonBasic]</p>",
+            "activities": {
+                "Detect Poisoned Object": {
+                    "name": "Wykryj zatruty przedmiot"
+                }
+            }
+        },
+        "Pole": {
+            "name": "Tyczka",
+            "description": "<p>Tyczka ma 10 stóp długości. Możesz jej użyć, aby dosięgnąć czegoś w odległości do 10 stóp. Jeśli musisz wykonać test Siły (Atletyka) w ramach skoku wzwyż lub w dal, możesz użyć tyczki do wybicia się, zyskując Ułatwienie do tego testu.</p>"
+        },
+        "Pot, Iron": {
+            "name": "Garnek, Żelazny",
+            "description": "<p>Żelazny garnek mieści do 1 galona.</p>"
+        },
+        "Potion of Healing": {
+            "name": "Mikstura leczenia",
+            "description": "<p>Ta mikstura jest magicznym przedmiotem. Akcją dodatkową możesz ją wypić lub wlać do ust innej istocie znajdującej się w odległości do 5 stóp od ciebie. Istota, która wypije magiczny czerwony płyn z tej fiolki, odzyskuje 2k4 + 2 Punktów Wytrzymałości.</p>"
+        },
+        "Potter's Tools": {
+            "name": "Narzędzia garncarza",
+            "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Inteligencja <strong>Waga:</strong> 3 funty</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Ustalenie, jaki ceramiczny przedmiot był trzymany w ciągu ostatnich 24 godzin (ST 15)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagJug00000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLamp0000000]</p>",
+            "activities": {
+                "Discern Previous Contents": {
+                    "name": "Ustal wcześniejszą zawartość"
+                }
+            }
+        },
+        "Pouch": {
+            "name": "Torba",
+            "description": "<p>Torba mieści do 6 funtów w objętości jednej piątej stopy sześciennej.</p>"
+        },
+        "Priest's Pack": {
+            "name": "Zestaw kapłana",
+            "description": "<p>Zestaw kapłana zawiera następujące przedmioty: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBlanket0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHolyWater00], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLamp0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRations0000] na 7 dni, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRobe0000000] oraz @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00].</p>"
+        },
+        "Quarterstaff": {
+            "name": "Drąg"
+        },
+        "Quiver": {
+            "name": "Kołczan",
+            "description": "<p>Kołczan mieści do 20 Strzał.</p>"
+        },
+        "Ram, Portable": {
+            "name": "Taran, Przenośny",
+            "description": "<p>Możesz użyć przenośnego tarana do wyważania drzwi. Podczas tego działania zyskujesz premię +4 do testu Siły. Inna postać może ci pomóc w użyciu tarana, dając ci Ułatwienie w tym teście.</p>"
+        },
+        "Rapier": {
+            "name": "Rapier"
+        },
+        "Rations": {
+            "name": "Racje żywnościowe",
+            "description": "<p>Racje żywnościowe składają się z jedzenia gotowego do podróży, w tym suszonego mięsa, suszonych owoców, sucharów i orzechów. Zobacz &amp;Reference[Malnutrition] w glosariuszu zasad, aby poznać ryzyko niejedzenia.</p>"
+        },
+        "Reliquary": {
+            "name": "Relikwiarz",
+            "description": "<p><em><strong>Wymóg użycia: </strong>Trzymany</em></p><p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHolySymbolV] przybiera jedną z form z tabeli świętych symboli i jest wysadzany klejnotami lub malowany, aby ukierunkowywać boską magię. Kleryk lub Paladyn może używać Świętego symbolu jako Magicznego fokusu.</p>"
+        },
+        "Ring Mail": {
+            "name": "Zbroja pierścieniowa"
+        },
+        "Robe": {
+            "name": "Szaty",
+            "description": "<p>Szata ma znaczenie zawodowe lub ceremonialne. Niektóre wydarzenia i miejsca wpuszczają tylko osoby noszące szatę w określonych kolorach lub z określonymi symbolami.</p>"
+        },
+        "Rod": {
+            "name": "Berło",
+            "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagArcaneFocus]{Fokus magii wtajemniczeń} jest wysadzany klejnotami lub rzeźbiony w sposób umożliwiający kanalizowanie magii wtajemniczeń. Zaklinacz, Czarownik lub Mag może używać takiego przedmiotu jako Magicznego fokusu.</p>"
+        },
+        "Rope": {
+            "name": "Lina",
+            "description": "<p>Akcją Użycia Obiektu wiążesz węzeł za pomocą liny, jeśli uda ci się test Zręczności (Zwinne dłonie) ST 10. Linę można zerwać, wykonując udany test Siły (Atletyka) ST 20.</p><p>Możesz związać niechcącą tego istotę liną tylko wtedy, gdy ma ona stan &amp;Reference[Grappled], &amp;Reference[Incapacitated] lub &amp;Reference[Unieruchomiony]. Jeśli nogi istoty zostaną związane, otrzymuje ona stan Unieruchomiony do momentu uwolnienia się. Uwolnienie się z liny wymaga od istoty wykonania udanego testu Zręczności (Akrobatyka) ST 15 jako akcji.</p>",
+            "activities": {
+                "Tie Knot": {
+                    "name": "Zawiąż węzeł"
+                },
+                "Burst Rope": {
+                    "name": "Przerwij linę"
+                },
+                "Escape Check": {
+                    "name": "Test ucieczki"
+                }
+            }
+        },
+        "Sack": {
+            "name": "Worek",
+            "description": "<p>Worek mieści do 30 funtów w objętości 1 stopy sześciennej.</p>"
+        },
+        "Scale Mail": {
+            "name": "Zbroja łuskowa"
+        },
+        "Scholar's Pack": {
+            "name": "Zestaw uczonego",
+            "description": "<p>Zestaw uczonego zawiera następujące przedmioty: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBook0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInk00000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInkPen00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLamp0000000], 10 flaszek @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{oleju}, 10 arkuszy @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagParchment00]{pergaminu} oraz @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00].</p>"
+        },
+        "Scimitar": {
+            "name": "Sejmitar"
+        },
+        "Shawm": {
+            "name": "Szałamaja",
+            "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
+            "activities": {
+                "Play a Known Tune": {
+                    "name": "Zagraj znaną melodię"
+                },
+                "Improvise a Song": {
+                    "name": "Improvizuj piosenkę"
+                }
+            }
+        },
+        "Shield": {
+            "name": "Tarcza",
+            "description": "<p>Zyskujesz Klasę pancerza dzięki tarczy tylko wtedy, gdy jesteś w jej używaniu wyszkolony.</p>"
+        },
+        "Shortbow": {
+            "name": "Krótki łuk"
+        },
+        "Shortsword": {
+            "name": "Krótki miecz"
+        },
+        "Shovel": {
+            "name": "Łopata",
+            "description": "<p>Pracując przez 1 godzinę, możesz użyć Łopaty, aby wykopać dół o wymiarach 5 stóp na każdą stronę w ziemi lub podobnym materiale.</p>"
+        },
+        "Sickle": {
+            "name": "Sierp"
+        },
+        "Signal Whistle": {
+            "name": "Gwizdek",
+            "description": "<p>Gdy zostanie użyty jako Akcja Użycie Obiektu, Gwizdek sygnałowy wydaje dźwięk słyszalny z odległości do 600 stóp.</p>",
+            "activities": {
+                "Whistle": {
+                    "name": "Zagwiżdż"
+                }
+            }
+        },
+        "Sling": {
+            "name": "Proca"
+        },
+        "Smith's Tools": {
+            "name": "Narzędzia kowala",
+            "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Siła</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Podważenie drzwi lub pojemnika (ST 20)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> Dowolna broń do walki wręcz (z wyjątkiem pałki, maczugi, kostura i bicza), średnia zbroja (z wyjątkiem skórzanej), ciężka zbroja, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBallBearing], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBucket00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCaltrops000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagChain000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCrowbar0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoBulletsFir], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagGrapplingHo], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPotIron0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagSpikesIron0], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoBulletsSli]</p>",
+            "activities": {
+                "Pry Open": {
+                    "name": "Podważ"
+                }
+            }
+        },
+        "Spear": {
+            "name": "Włócznia"
+        },
+        "Spell Scroll, Cantrip": {
+            "name": "Magiczny zwój, Sztuczka",
+            "description": "<p><em>Magiczny zwój</em> (Sztuczka) lub @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagSpellScroll] to magiczny przedmiot zawierający słowa odpowiednio sztuczki lub czaru 1. kręgu, określonego przez twórcę zwoju. Jeśli czar znajduje się na liście czarów twojej klasy, możesz odczytać zwój i rzucić czar, używając jego normalnego czasu rzucania i bez dostarczania komponentów materialnych.</p><p>Jeśli czar wymaga rzutu obronnego lub testu ataku, ST rzutu obronnego wynosi 13, a premia do ataku +5. Zwój rozpada się po zakończeniu rzucania.</p>"
+        },
+        "Spell Scroll, Level 1": {
+            "name": "Magiczny zwój, 1. krąg",
+            "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCantripScro] lub <em>Magiczny zwój</em> (1. krąg) to magiczny przedmiot zawierający słowa odpowiednio sztuczki lub czaru 1. kręgu, określonego przez twórcę zwoju. Jeśli czar znajduje się na liście czarów twojej klasy, możesz odczytać zwój i rzucić czar, używając jego normalnego czasu rzucania i bez dostarczania komponentów materialnych.</p><p>Jeśli czar wymaga rzutu obronnego lub testu ataku, ST rzutu obronnego wynosi 13, a premia do ataku +5. Zwój rozpada się po zakończeniu rzucania.</p>"
+        },
+        "Spikes, Iron": {
+            "name": "Kolce żelazne",
+            "description": "<p>Żelazne kolce są sprzedawane w pęczkach po dziesięć. Akcją Użycia Obiektu możesz użyć tępego przedmiotu, takiego jak młotek lekki, aby wbić kolec w drewno, ziemię lub podobny materiał. Możesz to zrobić, aby zablokować drzwi lub przywiązać linę albo łańcuch do kolca.</p>"
+        },
+        "Splint Armor": {
+            "name": "Zbroja płytkowa"
+        },
+        "Sprig of mistletoe": {
+            "name": "Gałązka jemioły",
+            "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagDruidicFocu] przybiera jedną z form z tabeli druidycznych fetyszy i jest rzeźbiony, obwiązany wstążką lub malowany, aby ukierunkowywać pierwotną magię. Druid lub Łowca może używać takiego przedmiotu jako Magicznego fokusu.</p>"
+        },
+        "Spyglass": {
+            "name": "Lunetka",
+            "description": "<p>Obiekty oglądane przez lunetkę są powiększone dwukrotnie.</p>"
+        },
+        "Staff": {
+            "name": "Kostury",
+            "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagArcaneFocus] jest wysadzany klejnotami lub rzeźbiony w celu ukierunkowania magii wtajemniczeń. Zaklinacz, Czarownik lub Mag mogą używać takiego przedmiotu jako Magicznego fokusu.</p><p>Ten przedmiot działa również jako @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta]</p><section class=\"secret\" id=\"secret-wJ4SJVg9unbYSBJb\"><p><strong>Notatka Foundry</strong></p><p>Ten przedmiot został skonfigurowany z dodatkowymi właściwościami kostura.</p></section>"
+        },
+        "Stone Tablet": {
+            "name": "Kamienna tabliczka",
+            "description": "<p>Kamienna tabliczka z drobnymi otworami, która może być używana jako Magiczny fokus przez Druidów z Kręgu Gwiazdy. To Malutki obiekt.</p>"
+        },
+        "String": {
+            "name": "Sznurek",
+            "description": "<p>Sznurek ma 10 stóp długości. Akcją Użycia Obiektu możesz zawiązać na nim węzeł.</p>"
+        },
+        "Studded Leather Armor": {
+            "name": "Ćwiekowana skóra"
+        },
+        "Tent": {
+            "name": "Namiot",
+            "description": "<p>Namiot może pomieścić do dwóch Małych lub Średnich istot.</p>"
+        },
+        "Thieves' Tools": {
+            "name": "Narzędzia złodziejskie",
+            "description": "<p class=\"phb-meta\"><strong>Cechą:</strong> Zręczność</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Otworzenie zamka (ST 15) lub rozbrojenie pułapki (ST 15)</p>",
+            "activities": {
+                "Pick a Lock/Disarm a Trap": {
+                    "name": "Otwórz zamek lub rozbrój pułapkę"
+                }
+            }
+        },
+        "Three-dragon ante": {
+            "name": "Stawka Trzech Smoków",
+            "description": "<p><strong>Cecha:</strong> Mądrość</p><p class=\"phb-meta\"><strong>Użycie:</strong> Rozpoznanie, czy ktoś oszukuje (ST 10) lub wygranie gry (ST 20)</p>",
+            "activities": {
+                "Catch Cheating": {
+                    "name": "Przyłap na oszustwie"
+                },
+                "Play to Win": {
+                    "name": "Graj, by wygrać"
+                }
+            }
+        },
+        "Tinderbox": {
+            "name": "Zestaw do rozpalania ognia",
+            "description": "<p>Zestaw do rozpalania ognia to mały pojemnik zawierający krzesiwo, stal do krzesania iskier oraz hubkę (zwykle suchą tkaninę nasączoną lekkim olejem) używaną do rozpalania ognia. Użycie go do zapalenia świecy, lampy, latarni lub pochodni — lub czegokolwiek innego z odkrytym paliwem — zajmuje Akcję Dodatkową. Rozpalenie innego rodzaju ognia zajmuje 1 minutę.</p>",
+            "activities": {
+                "Light": {
+                    "name": "Światło"
+                }
+            }
+        },
+        "Tinker's Tools": {
+            "name": "Narzędzia majsterkowicza",
+            "description": "<p class=\"phb-meta\"><strong>Cechy:</strong> Zręczność</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Złożenie malutkiego przedmiotu ze złomu, który rozpada się po 1 minucie (ST 20)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepMusket0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepPistol0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBell0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.KZUoiZrigDbovEu7], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagFlask000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.DKYzehYrMUKiFDxt], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHuntingTrap], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLock0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagManacles000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagMirror00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagShovel00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagSignalWhist], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00]</p>",
+            "activities": {
+                "Assemble a Tiny Item": {
+                    "name": "Złóż drobny przedmiot"
+                }
+            }
+        },
+        "Tooled Owlbear Hide": {
+            "name": "Wytłaczana skóra sowoniedźwiedzia",
+            "description": "<p>Skóra sowoniedźwiedzia zdobiona gwiezdnymi symbolami, która może być używana jako Magiczny fokus przez Druidów z Kręgu Gwiazdy. To Malutki obiekt.</p>"
+        },
+        "Torch": {
+            "name": "Pochodnia",
+            "description": "<p>Pochodnia pali się przez 1 godzinę, emitując Jasne światło w promieniu 20 stóp i Słabe światło na dodatkowe 20 stóp. Wykonując akcję Atak, możesz zaatakować pochodnią, używając jej jako prostej broni do walki wręcz. Przy trafieniu cel otrzymuje 1 obrażenie od ognia.</p>"
+        },
+        "Trident": {
+            "name": "Trójząb"
+        },
+        "Unarmed Strike": {
+            "name": "Uderzenie bez broni",
+            "description": "<p><em>Zobacz: &amp;Reference[unarmedstrike]</em></p>",
+            "activities": {
+                "Grapple/Shove": {
+                    "name": "Pochwycenie/Pchnięcie",
+                    "chatFlavor": "Próba pochwycenia lub popchnięcia"
+                }
+            },
+            "effects": {
+                "Grappled": {
+                    "name": "Pochwycony"
+                },
+                "Prone": {
+                    "name": "Powalony"
+                }
+            }
+        },
+        "Vial": {
+            "name": "Fiolka",
+            "description": "<p>Fiolka mieści do 4 uncji.</p>"
+        },
+        "Viol": {
+            "name": "Viola",
+            "description": "<p><strong>Cecha:</strong> Charyzma</p><p class=\"phb-meta\"><strong>Użycie:</strong> Zagranie znanej melodii (ST 10) lub improwizacja utworu (ST 15)</p>",
+            "activities": {
+                "Play a Known Tune": {
+                    "name": "Zagraj znaną melodię"
+                },
+                "Improvise a Song": {
+                    "name": "Improvizuj piosenkę"
+                }
+            }
+        },
+        "Wand": {
+            "name": "Różdzka",
+            "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagArcaneFocus]{Fokus magii wtajemniczeń} jest wysadzany klejnotami lub rzeźbiony w sposób umożliwiający kanalizowanie magii wtajemniczeń. Zaklinacz, Czarownik lub Mag może używać takiego przedmiotu jako Magicznego fokusu.</p>"
+        },
+        "War Pick": {
+            "name": "Nadziak"
+        },
+        "Warhammer": {
+            "name": "Młot bojowy"
+        },
+        "Water (Pint)": {
+            "name": "Woda (Pinta)",
+            "description": "<p>Jeśli nie wypijesz wystarczającej ilości wody, ryzykujesz &amp;Reference[dehydration].</p>",
+            "activities": {
+                "Consume": {
+                    "name": "Spożyj"
+                }
+            }
+        },
+        "Waterskin": {
+            "name": "Bukłak",
+            "description": "<p>Bukłak mieści do 4 pint (0,5 gallon). Jeśli nie wypijesz wystarczającej ilości wody, grozi ci &Reference[dehydration]. </p>"
+        },
+        "Weaver's Tools": {
+            "name": "Narzędzia tkacza",
+            "description": "<p class=\"phb-meta\"><strong>Cecha:</strong> Zręczność</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Zaszywanie dziury w ubraniu (ST 10), lub wyszywanie Malutkich wzorów (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmPaddedArmo], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBasket00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBlanket0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesFine], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagNet00000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRobe0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRope0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagSack0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagString00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTent0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav]</p>",
+            "activities": {
+                "Mend or Sew": {
+                    "name": "Napraw lub zszyj"
+                }
+            }
+        },
+        "Whip": {
+            "name": "Bicz"
+        },
+        "Woodcarver's Tools": {
+            "name": "Narzędzia snycerza",
+            "description": "<p class=\"phb-meta\"><strong>Cechą:</strong> Zręczność</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Wyrycie wzoru w drewnie (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepClub000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepGreatclub0], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta], Bronie dystansowe (z wyjątkiem Pistol, Musket i Sling), Magiczny fokus, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoArrows0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoBolts00000], Druidyczny fetysz, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInkPen00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoNeedles000]</p>",
+            "activities": {
+                "Carve Pattern": {
+                    "name": "Wyryj wzór"
+                }
+            }
+        },
+        "Wooden staff": {
+            "name": "Drewniany kostur",
+            "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagDruidicFocu] przybiera jedną z form z tabeli Druidycznych fetyszy i jest rzeźbiony, przewiązywany wstążką lub malowany w celu ukierunkowania magii prymitywnej. Druid lub Łowca mogą używać takiego obiektu jako Druidycznego fetyszu.</p><p>Ten przedmiot działa również jako @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta]</p><section class=\"secret\" id=\"secret-XEbhgCaozZsnw6QT\"><p><strong>Notatka Foundry</strong></p><p>Ten przedmiot został skonfigurowany z dodatkowymi właściwościami kostura.</p></section>"
+        },
+        "Yew wand": {
+            "name": "Cisowa różdzka",
+            "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagDruidicFocu] przybiera jedną z form z tabeli druidycznych fetyszy i jest rzeźbiony, obwiązany wstążką lub malowany, aby ukierunkowywać pierwotną magię. Druid lub Łowca może używać takiego przedmiotu jako Magicznego fokusu.</p>"
         }
-      }
     },
-    "Wand": {
-      "name": "Różdzka",
-      "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagArcaneFocus]{Fokus magii wtajemniczeń} jest wysadzany klejnotami lub rzeźbiony w sposób umożliwiający kanalizowanie magii wtajemniczeń. Zaklinacz, Czarownik lub Mag może używać takiego przedmiotu jako Magicznego fokusu.</p>"
-    },
-    "War Pick": {
-      "name": "Nadziak"
-    },
-    "Warhammer": {
-      "name": "Młot bojowy"
-    },
-    "Water (Pint)": {
-      "name": "Woda (Pinta)",
-      "description": "<p>Jeśli nie wypijesz wystarczającej ilości wody, ryzykujesz &amp;Reference[dehydration].</p>",
-      "activities": {
-        "Consume": {
-          "name": "Spożyj"
-        }
-      }
-    },
-    "Waterskin": {
-      "name": "Bukłak",
-      "description": "<p>Bukłak mieści do 4 pint (0,5 gallon). Jeśli nie wypijesz wystarczającej ilości wody, grozi ci &Reference[dehydration]. </p>"
-    },
-    "Weaver's Tools": {
-      "name": "Narzędzia tkacza",
-      "description": "<p class=\"phb-meta\"><strong>Cecha:</strong> Zręczność</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Zaszywanie dziury w ubraniu (ST 10), lub wyszywanie Malutkich wzorów (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmPaddedArmo], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBasket00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBlanket0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesFine], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagNet00000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRobe0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRope0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagSack0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagString00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTent0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagClothesTrav]</p>",
-      "activities": {
-        "Mend or Sew": {
-          "name": "Napraw lub zszyj"
-        }
-      }
-    },
-    "Whip": {
-      "name": "Bicz"
-    },
-    "Woodcarver's Tools": {
-      "name": "Narzędzia snycerza",
-      "description": "<p class=\"phb-meta\"><strong>Cechą:</strong> Zręczność</p><p class=\"phb-meta\"><strong>Użycie Obiektu:</strong> Wyrycie wzoru w drewnie (ST 10)</p><p class=\"phb-meta\"><strong>Wytwarzanie:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepClub000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepGreatclub0], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta], Bronie dystansowe (z wyjątkiem Pistol, Musket i Sling), Magiczny fokus, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoArrows0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoBolts00000], Druidyczny fetysz, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInkPen00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoNeedles000]</p>",
-      "activities": {
-        "Carve Pattern": {
-          "name": "Wyryj wzór"
-        }
-      }
-    },
-    "Wooden staff": {
-      "name": "Drewniany kostur",
-      "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagDruidicFocu] przybiera jedną z form z tabeli Druidycznych fetyszy i jest rzeźbiony, przewiązywany wstążką lub malowany w celu ukierunkowania magii prymitywnej. Druid lub Łowca mogą używać takiego obiektu jako Druidycznego fetyszu.</p><p>Ten przedmiot działa również jako @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta]</p><section class=\"secret\" id=\"secret-XEbhgCaozZsnw6QT\"><p><strong>Notatka Foundry</strong></p><p>Ten przedmiot został skonfigurowany z dodatkowymi właściwościami kostura.</p></section>"
-    },
-    "Yew wand": {
-      "name": "Cisowa różdzka",
-      "description": "<p>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagDruidicFocu] przybiera jedną z form z tabeli druidycznych fetyszy i jest rzeźbiony, obwiązany wstążką lub malowany, aby ukierunkowywać pierwotną magię. Druid lub Łowca może używać takiego przedmiotu jako Magicznego fokusu.</p>"
+    "folders": {
+        "Adventuring Gear": "Wyposażenie podróżne",
+        "Ammunition": "Amunicja",
+        "Arcane Focus": "Fokus magii wtajemniczeń",
+        "Armor": "Pancerz",
+        "Artisan": "Rzemieślnik",
+        "Druidic Focus": "Druidyczny fetysz",
+        "Gaming Set": "Zestaw do gry",
+        "Heavy": "Ciężki",
+        "Holy Symbol": "Święty symbol",
+        "Light": "Światło",
+        "Martial Melee": "Żołnierska do walki wręcz",
+        "Martial Ranged": "Żołnierskie zasięgowe",
+        "Medium": "Średni",
+        "Musical Instrument": "Muzyczny instrument",
+        "Other": "Inne",
+        "Simple Melee": "Prosta do walki wręcz",
+        "Simple Ranged": "Proste zasięgowe",
+        "Spellcasting Focuses": "Magiczne fokusy",
+        "Star Maps": "Mapy gwiazd",
+        "Tools": "Narzędzia",
+        "Weapons": "Bronie"
     }
-  }
 }
