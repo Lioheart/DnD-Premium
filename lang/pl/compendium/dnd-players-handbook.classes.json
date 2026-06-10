@@ -1,5 +1,5 @@
 {
-    "label": "Classes (SRD)",
+    "label": "Klasy (SRD)",
     "mapping": {
         "description": "system.description.value",
         "requirements": "system.requirements",
@@ -894,8 +894,8 @@
                     "name": "Punkty Wytrzymałości Wybranych Istot",
                     "condition": "Zawsze, gdy użyjesz swojego Magicznego sprytu lub zakończysz Krótki albo Długi Odpoczynek",
                     "activationCondition": "Zawsze, gdy użyjesz swojego Magicznego sprytu lub zakończysz Krótki albo Długi Odpoczynek",
-                    "target": "You can see when you gain the points",
-                    "targetAffects": "You can see when you gain the points"
+                    "target": "Widzisz, kiedy zyskujesz te punkty",
+                    "targetAffects": "Widzisz, kiedy zyskujesz te punkty"
                 }
             }
         },
@@ -1037,7 +1037,7 @@
         },
         "Cleric": {
             "name": "Kleryk",
-            "description": "<blockquote><p>A Miraculous Priest of Divine Power</p></blockquote><h3>Podstawowe Cechy Kleryka</h3><table class=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p><strong>Cecha Podstawowa</strong></p></th><td><p>Mądrość</p></td></tr><tr><th scope=\"row\"><p><strong>Kość Punktów Wytrzymałości</strong></p></th><td><p>K8 na poziom Kleryka</p></td></tr><tr><th scope=\"row\"><p><strong>Biegłości w Rzutach Obrony</strong></p></th><td><p>Mądrość i Charyzma</p></td></tr><tr><th scope=\"row\"><p><strong>Biegłości w Umiejętnościach</strong></p></th><td><p><em>Wybierz 2: </em>Historia, Intuicja, Medycyna, Perswazja lub Religia</p></td></tr><tr><th scope=\"row\"><p><strong>Biegłości w Broniach</strong></p></th><td><p>Broń prosta</p></td></tr><tr><th scope=\"row\"><p><strong>Armor Training</strong></p></th><td><p>Lekki i Średni pancerz oraz Tarcze</p></td></tr><tr><th scope=\"row\"><p><strong>Początkowy Ekwipunek</strong></p></th><td><p><em>Wybierz A lub B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmChainShirt]{Koszula kolcza}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmShield0000]{Tarcza}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepMace000000]{Buława}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHolySymbolV]{Święty symbol}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPriestsPack], i [[/award 7GP]]; lub (B) [[/award 110GP]]</p></td></tr></tbody></table><p>Klerycy czerpią moc z boskich sfer i wykorzystują ją do czynienia cudów. Obdarzeni błogosławieństwem bóstwa, panteonu lub innej nieśmiertelnej istoty, Klerycy mogą sięgnąć po boską magię Zewnętrznych Planów—gdzie rezydują bogowie—i używać jej do wspierania innych oraz walki z wrogami.</p><p>Ponieważ ich moc jest boskim darem, Klerycy zazwyczaj związani są ze świątyniami poświęconymi bóstwu lub innej nieśmiertelnej sile, która odblokowała ich magię. Czerpanie z boskiej mocy nie wymaga specyficznego szkolenia, choć Klerycy mogą uczyć się modlitw i rytuałów, które pomagają im czerpać moc z Zewnętrznych Planów.</p><p>Nie każdy członek świątyni czy sanktuarium jest Klerykiem. Niektórzy kapłani prowadzą proste życie służby w świątyni, oddając cześć poprzez modlitwy i rytuały, a nie poprzez magię. Wielu śmiertelników twierdzi, że przemawia w imieniu bogów, ale tylko nieliczni potrafią władać ich mocą tak, jak Klerycy.</p><h2>Zostanie Klerykiem…</h2><h3>Jako Postać 1. Poziomu</h3><ul><li>Zdobądź wszystkie cechy z tabeli Podstawowych Cech Kleryka.</li><li>Zdobądź cechy Kleryka na poziomie 1, które są wymienione w tabeli Cech Kleryka.</li></ul><h3>Jako Postać Wieloklasowa</h3><ul><li>Zdobądź następujące cechy z tabeli Podstawowych Cech Kleryka: Kość Punktów Wytrzymałości oraz trening w Lekkiej i Średniej Zbroi oraz Tarczach.</li><li>Zdobądź cechy Kleryka na poziomie 1, które są wymienione w tabeli Cech Kleryka. Zobacz zasady wieloklasowości w rozdziale 2, aby określić dostępne Komórki Czarów.</li></ul>",
+            "description": "<blockquote><p>Czyniący cuda kapłan o boskiej mocy</p></blockquote><h3>Podstawowe Cechy Kleryka</h3><table class=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p><strong>Cecha Podstawowa</strong></p></th><td><p>Mądrość</p></td></tr><tr><th scope=\"row\"><p><strong>Kość Punktów Wytrzymałości</strong></p></th><td><p>K8 na poziom Kleryka</p></td></tr><tr><th scope=\"row\"><p><strong>Biegłości w Rzutach Obrony</strong></p></th><td><p>Mądrość i Charyzma</p></td></tr><tr><th scope=\"row\"><p><strong>Biegłości w Umiejętnościach</strong></p></th><td><p><em>Wybierz 2: </em>Historia, Intuicja, Medycyna, Perswazja lub Religia</p></td></tr><tr><th scope=\"row\"><p><strong>Biegłości w Broniach</strong></p></th><td><p>Broń prosta</p></td></tr><tr><th scope=\"row\"><p><strong>Armor Training</strong></p></th><td><p>Lekki i Średni pancerz oraz Tarcze</p></td></tr><tr><th scope=\"row\"><p><strong>Początkowy Ekwipunek</strong></p></th><td><p><em>Wybierz A lub B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmChainShirt]{Koszula kolcza}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmShield0000]{Tarcza}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepMace000000]{Buława}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHolySymbolV]{Święty symbol}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPriestsPack], i [[/award 7GP]]; lub (B) [[/award 110GP]]</p></td></tr></tbody></table><p>Klerycy czerpią moc z boskich sfer i wykorzystują ją do czynienia cudów. Obdarzeni błogosławieństwem bóstwa, panteonu lub innej nieśmiertelnej istoty, Klerycy mogą sięgnąć po boską magię Zewnętrznych Planów—gdzie rezydują bogowie—i używać jej do wspierania innych oraz walki z wrogami.</p><p>Ponieważ ich moc jest boskim darem, Klerycy zazwyczaj związani są ze świątyniami poświęconymi bóstwu lub innej nieśmiertelnej sile, która odblokowała ich magię. Czerpanie z boskiej mocy nie wymaga specyficznego szkolenia, choć Klerycy mogą uczyć się modlitw i rytuałów, które pomagają im czerpać moc z Zewnętrznych Planów.</p><p>Nie każdy członek świątyni czy sanktuarium jest Klerykiem. Niektórzy kapłani prowadzą proste życie służby w świątyni, oddając cześć poprzez modlitwy i rytuały, a nie poprzez magię. Wielu śmiertelników twierdzi, że przemawia w imieniu bogów, ale tylko nieliczni potrafią władać ich mocą tak, jak Klerycy.</p><h2>Zostanie Klerykiem…</h2><h3>Jako Postać 1. Poziomu</h3><ul><li>Zdobądź wszystkie cechy z tabeli Podstawowych Cech Kleryka.</li><li>Zdobądź cechy Kleryka na poziomie 1, które są wymienione w tabeli Cech Kleryka.</li></ul><h3>Jako Postać Wieloklasowa</h3><ul><li>Zdobądź następujące cechy z tabeli Podstawowych Cech Kleryka: Kość Punktów Wytrzymałości oraz trening w Lekkiej i Średniej Zbroi oraz Tarczach.</li><li>Zdobądź cechy Kleryka na poziomie 1, które są wymienione w tabeli Cech Kleryka. Zobacz zasady wieloklasowości w rozdziale 2, aby określić dostępne Komórki Czarów.</li></ul>",
             "advancement": {
                 "Class Features": {
                     "title": "Zdolności Klasy"
@@ -1196,8 +1196,8 @@
                     "name": "Kierowane uderzenie",
                     "condition": "Kiedy wykonujesz Akcję Ataku w swojej turze",
                     "activationCondition": "Kiedy wykonujesz Akcję Ataku w swojej turze",
-                    "target": "Can see or hear you",
-                    "targetAffects": "Can see or hear you"
+                    "target": "Widzi cię lub słyszy",
+                    "targetAffects": "Widzi cię lub słyszy"
                 }
             }
         },
@@ -1515,7 +1515,7 @@
         "Devouring Blade": {
             "name": "Pożerające ostrze",
             "description": "<blockquote><p>Wymagania: Czarownik poziomu 12 lub wyższy, inwokacja @UUID[Compendium.dnd-players-handbook.classes.Item.phbinvThirstingB]</p></blockquote><p>Dodatkowy Atak twojej inwokacji Spragnione ostrze zapewnia dwa dodatkowe ataki zamiast jednego.</p>",
-            "requirements": "Thirsting Blade Invocation"
+            "requirements": "inwokacja Spragnione ostrze"
         },
         "Disarming Attack": {
             "name": "Rozbrojenie",
@@ -1578,13 +1578,13 @@
             "activities": {
                 "Necrotic Divine Fury": {
                     "name": "Nekrotyczna Boska furia",
-                    "target": "First creature you hit with a weapon or an Unarmed Strike",
-                    "targetAffects": "First creature you hit with a weapon or an Unarmed Strike"
+                    "target": "Pierwsza istota, którą trafisz bronią albo Uderzeniem bez broni",
+                    "targetAffects": "Pierwsza istota, którą trafisz bronią albo Uderzeniem bez broni"
                 },
                 "Radiant Divine Fury": {
                     "name": "Świetlista Boska furia",
-                    "target": "First creature you hit with a weapon or an Unarmed Strike",
-                    "targetAffects": "First creature you hit with a weapon or an Unarmed Strike"
+                    "target": "Pierwsza istota, którą trafisz bronią albo Uderzeniem bez broni",
+                    "targetAffects": "Pierwsza istota, którą trafisz bronią albo Uderzeniem bez broni"
                 }
             }
         },
@@ -1921,9 +1921,9 @@
                     "name": "Rzut obronny na żywioły",
                     "condition": "Kiedy zadasz obrażenia Uderzeniem żywiołu",
                     "activationCondition": "Kiedy zadasz obrażenia Uderzeniem żywiołu",
-                    "target": "hit by elemental damage from imbued strike",
-                    "targetAffects": "hit by elemental damage from imbued strike",
-                    "range": "pushed or pulled up to 10 feet"
+                    "target": "trafiony obrażeniami od żywiołów nasyconym uderzeniem",
+                    "targetAffects": "trafiony obrażeniami od żywiołów nasyconym uderzeniem",
+                    "range": "popchnięta albo przyciągnięta do 10 stóp"
                 },
                 "Activate Attunement": {
                     "name": "Aktywacja Harmonii"
@@ -2102,8 +2102,8 @@
                     "name": "Trenowanie towarzysza",
                     "condition": "W razie potrzeby, aby dodać opcję obrażeń od mocy",
                     "activationCondition": "W razie potrzeby, aby dodać opcję obrażeń od mocy",
-                    "target": "Primal Companion's Attack features",
-                    "targetAffects": "Primal Companion's Attack features"
+                    "target": "zdolność ataku Pierwotnego towarzysza",
+                    "targetAffects": "zdolność ataku Pierwotnego towarzysza"
                 }
             },
             "effects": {
@@ -2430,7 +2430,7 @@
         "Gift of the Protectors": {
             "name": "Dar obrońców",
             "description": "<blockquote><p>Wymagania: Czarownik poziomu 9 lub wyższy, inwokacja @UUID[Compendium.dnd-players-handbook.classes.Item.phbinvPactTome00]</p></blockquote><p>Nowa strona pojawia się w twojej @UUID[Compendium.dnd5e.items.Item.CwWbeQ6XyqFzbMYw] podczas przywołania Księgi Cieni. Za twoją zgodą istota może użyć Akcji, aby zapisać na niej swoje imię, a strona może zawierać liczbę imion równą twojemu modyfikatorowi Charyzmy (minimum jedno imię).</p><p>Kiedy jakakolwiek istota, której imię znajduje się na stronie, zostanie zredukowana do 0 Punktów Wytrzymałości, ale nie zostanie od razu zabita, magia powoduje, że istota spada do 1 Punktu Wytrzymałości zamiast tego. Po aktywowaniu tej magii żadna istota nie może z niej korzystać, dopóki nie zakończysz Długiego Odpoczynku.</p><p>Jako Akcję Magiczną możesz zmazać imię ze strony, dotykając jej.</p><section id=\"secret-VzLQ7nRPLs0fIkvE\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Ochrona</strong> zużywa użycie swojej aktywności, które odnawia się po Długim Odpoczynku.</p><p>Aktywność <strong>Zapisz Imię</strong> zużywa użycie przedmiotu i może służyć do śledzenia liczby zapisanych imion.</p><p>Aktywność <strong>Wymaż Imię</strong> przywraca użycie przedmiotu i pozwala dodać kolejne imię.</p></section>",
-            "requirements": "Pact of the Tome Invocation",
+            "requirements": "inwokacja Pakt księgi",
             "activities": {
                 "Protect": {
                     "name": "Ochrona",
@@ -2579,8 +2579,8 @@
             "description": "<p>Twoje mistrzostwo nad energią życia otwiera drzwi do najwyższego miłosierdzia. Akcją Magii możesz dotknąć zwłok istoty, która zginęła w ciągu ostatnich 24 godzin, i wydać 5 Punktów skupienia. Istota powraca do życia z liczbą Punktów Wytrzymałości równą 4k10 plus twój modyfikator Mądrości. Jeśli istota zmarła z którymkolwiek z następujących stanów, zostają one usunięte po wskrzeszeniu: Oślepiony, Ogłuchły, Sparaliżowany, Zatruty i Ogłuszony.</p><p>Po użyciu tej zdolności nie możesz jej użyć ponownie aż do zakończenia Długiego Odpoczynku.</p><section id=\"secret-qP8GEBd6nXKTiRMj\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność obejmuje jedno użycie na Długi Odpoczynek oraz rzut leczenia.</p></section>",
             "activities": {
                 "heal": {
-                    "target": "died within the past 24 hours",
-                    "targetAffects": "died within the past 24 hours"
+                    "target": "zmarła w ciągu ostatnich 24 godzin",
+                    "targetAffects": "zmarła w ciągu ostatnich 24 godzin"
                 }
             }
         },
@@ -2794,8 +2794,8 @@
                     "name": "Uzdrawiająca iluzja",
                     "condition": "Kiedy iluzja się kończy",
                     "activationCondition": "Kiedy iluzja się kończy",
-                    "target": "Within 5 feet of the duplicate",
-                    "targetAffects": "Within 5 feet of the duplicate"
+                    "target": "w obrębie 5 stóp od sobowtóra",
+                    "targetAffects": "w obrębie 5 stóp od sobowtóra"
                 }
             }
         },
@@ -2829,8 +2829,8 @@
             "requirements": "Domena światła",
             "activities": {
                 "heal": {
-                    "target": "Target of the triggering attack",
-                    "targetAffects": "Target of the triggering attack"
+                    "target": "cel ataku wywołującego",
+                    "targetAffects": "cel ataku wywołującego"
                 }
             }
         },
@@ -2912,7 +2912,7 @@
         "Investment of the Chain Master": {
             "name": "Inwestycja Mistrza Łańcucha",
             "description": "<blockquote><p>Wymagania: Czarownik poziomu 5 lub wyższy, inwokacja @UUID[Compendium.dnd-players-handbook.classes.Item.phbinvPactChain0]</p></blockquote><p>Kiedy rzucasz @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFindFamili], napełniasz przywołanego chowańca odrobiną swojej nieziemskiej mocy, przyznając mu następujące korzyści.</p><p><strong>Latanie lub Pływanie.</strong> Chowaniec zyskuje Szybkość Latania lub Szybkość Pływania (do wyboru) 40 stóp.</p><p><strong>Szybki Atak.</strong> Jako Akcję Dodatkową możesz nakazać chowańcowi wykonanie Akcji Ataku.</p><p><strong>Obrażenia Nekrotyczne lub od Światłości.</strong> Za każdym razem, gdy chowaniec zadaje obrażenia obuchowe, kłute lub cięte, możesz sprawić, że zada obrażenia nekrotyczne lub od światłości zamiast nich.</p><p><strong>Twój ST rzutu przeciw czarom.</strong> Jeśli chowaniec zmusza istotę do rzutu obronnego, używa twojego ST rzutu przeciw czarom.</p><p><strong>Odporność.</strong> Kiedy chowaniec otrzymuje obrażenia, możesz użyć Reakcji, aby nadać mu odporność na ten typ obrażeń.</p><section class=\"secret\" id=\"secret-D3vSCo0uEG4Kp1X6\"><p><strong>Notatka Foundry</strong></p><p>Aktywności <strong>Znajdź Chowańca z Latanie</strong> i <strong>z Pływaniem</strong> pozwalają przywołać chowańca z odpowiednim bonusem do ruchu. Obie aktywności zużywają komórkę czaru Magii Paktu.</p><p>Aktywność <strong>Nadaj Odporność</strong> zawiera Efekt Aktywny dla odporności na każdy typ obrażeń, który można zastosować, aby uzyskać odpowiednią odporność. Upewnij się, że wyłączysz/usuniesz poprzedni Efekt Aktywny w zakładce „Efekty” twojej karty, gdy zmieniasz odporności.</p><p>Chowaniec automatycznie używa twojego ST rzutu przeciw czarom.</p></section>",
-            "requirements": "Pact of the Chain Invocation",
+            "requirements": "inwokacja Pakt łańcucha",
             "activities": {
                 "Find Familiar with Flight": {
                     "name": "Znajdź Chowańca z Lataniem",
@@ -2991,8 +2991,8 @@
             "activities": {
                 "Move Duplicate": {
                     "name": "Przesuń sobowtóra",
-                    "target": "within 30 feet",
-                    "targetAffects": "within 30 feet"
+                    "target": "w obrębie 30 stóp",
+                    "targetAffects": "w obrębie 30 stóp"
                 }
             }
         },
@@ -3016,8 +3016,8 @@
             "activities": {
                 "Discern Strengths and Weaknesses": {
                     "name": "Rozpoznanie Sił i Słabości",
-                    "target": "Creature you can see",
-                    "targetAffects": "Creature you can see"
+                    "target": "istota, którą widzisz",
+                    "targetAffects": "istota, którą widzisz"
                 },
                 "Recharge with Superiority Die": {
                     "name": "Odnowa za pomocą Kości Przewagi"
@@ -3178,8 +3178,8 @@
                     "name": "Manewr",
                     "condition": "Gdy trafiasz istotę w teście ataku",
                     "activationCondition": "Gdy trafiasz istotę w teście ataku",
-                    "target": "Can see or hear you",
-                    "targetAffects": "Can see or hear you",
+                    "target": "Widzi cię lub słyszy",
+                    "targetAffects": "Widzi cię lub słyszy",
                     "roll": "Premia do ataku"
                 }
             }
@@ -3288,9 +3288,9 @@
                     "name": "Przerażający krok",
                     "condition": "Po teleportacji",
                     "activationCondition": "Po teleportacji",
-                    "target": "That you choose",
-                    "targetAffects": "That you choose",
-                    "range": "Of the space you just left"
+                    "target": "wybrana przez ciebie",
+                    "targetAffects": "wybrana przez ciebie",
+                    "range": "przestrzeni, którą właśnie opuściłeś"
                 },
                 "cast": {
                     "condition": "Po otrzymaniu obrażeń",
@@ -3569,11 +3569,11 @@
             "activities": {
                 "Manifest Single Emanation": {
                     "name": "Stwórz pojedynczą Emanację",
-                    "range": "One willing creature"
+                    "range": "Jedna chętna istota"
                 },
                 "Manifest Double Emanation": {
                     "name": "Stwórz podwójną Emanację",
-                    "range": "One willing creature"
+                    "range": "Jedna chętna istota"
                 }
             },
             "effects": {
@@ -3585,7 +3585,7 @@
         "One with Shadows": {
             "name": "Jedność z cieniem",
             "description": "<blockquote><p>Wymagania: Czarownik poziomu 5 lub wyższego</p></blockquote><p>Kiedy znajdujesz się w obszarze &amp;Reference[Dim Light] lub &amp;Reference[Darkness], możesz rzucić na siebie czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplInvisibili] bez zużywania komórki czaru.</p><hr /><p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplInvisibili inline]</p>",
-            "requirements": "In Dim Light or Darkness"
+            "requirements": "w Słabym Świetle albo Ciemności"
         },
         "Open Hand Technique": {
             "name": "Technika otwartej dłoni",
@@ -3931,8 +3931,8 @@
                 },
                 "Restore Companion": {
                     "name": "Przywrócenie towarzysza",
-                    "target": "Primal Companion that has died within the last hour",
-                    "targetAffects": "Primal Companion that has died within the last hour"
+                    "target": "Towarzysz pierwotny, który zginął w ciągu ostatniej godziny",
+                    "targetAffects": "Towarzysz pierwotny, który zginął w ciągu ostatniej godziny"
                 }
             }
         },
@@ -4016,14 +4016,14 @@
                 },
                 "Psychic Whispers (Free)": {
                     "name": "Psychiczne szepty (Darmowe)",
-                    "target": "Creatures you can see",
-                    "targetAffects": "Creatures you can see",
+                    "target": "Istoty, które widzisz",
+                    "targetAffects": "Istoty, które widzisz",
                     "roll": "Kości Energii Psionicznej"
                 },
                 "Psychic Whispers": {
                     "name": "Psychiczne szepty",
-                    "target": "Creatures you can see",
-                    "targetAffects": "Creatures you can see",
+                    "target": "Istoty, które widzisz",
+                    "targetAffects": "Istoty, które widzisz",
                     "roll": "Kości Energii Psionicznej"
                 }
             },
@@ -4216,8 +4216,8 @@
             "description": "<p>Jako Akcję Dodatkową możesz zużyć jedną Kość Przewagi, aby wzmocnić determinację towarzysza. Wybierz swojego sojusznika w odległości do 30 stóp od siebie, który może cię widzieć lub słyszeć. Ta istota zyskuje Tymczasowe Punkty Wytrzymałości równe wynikowi rzutu Kością Przewagi powiększonemu o połowę twojego poziomu Wojownika (zaokrąglając w dół).</p>",
             "activities": {
                 "heal": {
-                    "target": "Can see or hear you",
-                    "targetAffects": "Can see or hear you"
+                    "target": "Widzi cię lub słyszy",
+                    "targetAffects": "Widzi cię lub słyszy"
                 }
             }
         },
@@ -4850,7 +4850,7 @@
                     "name": "Prowokujący krok",
                     "condition": "Po teleportacji",
                     "activationCondition": "Po teleportacji",
-                    "range": "Of the space you just left"
+                    "range": "przestrzeni, którą właśnie opuściłeś"
                 }
             },
             "effects": {
@@ -5043,8 +5043,8 @@
             "description": "<p>Kiedy trafisz istotę testem ataku w zwarciu bronią lub Uderzeniem bez broni, możesz zużyć jedną Kość Przewagi, aby spróbować zadać obrażenia innej istocie. Wybierz inną istotę w odległości 5 stóp od pierwotnego celu i w zasięgu twojego ataku. Jeśli pierwotny rzut ataku trafiłby również drugą istotę, otrzymuje ona obrażenia równe wynikowi rzutu twoją Kością Przewagi. Obrażenia mają ten sam typ, co obrażenia zadane pierwotnemu celowi.</p><section id=\"secret-p0vnnA6PRSzYVHVf\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Obrażenia</strong> pozwala wybrać typ obrażeń, jakie powinny zostać zadane, w oknie dialogowym rzutu i zużywa jedno użycie twojej Kości Przewagi.</p></section>",
             "activities": {
                 "damage": {
-                    "target": "Within 5 feet of the original target and within your reach",
-                    "targetAffects": "Within 5 feet of the original target and within your reach"
+                    "target": "W obrębie 5 stóp od pierwotnego celu i w twoim zasięgu",
+                    "targetAffects": "W obrębie 5 stóp od pierwotnego celu i w twoim zasięgu"
                 }
             }
         },
@@ -5098,8 +5098,8 @@
                     "name": "Premia do Inicjatywy",
                     "condition": "Podczas wykonywania rzutu na inicjatywę, jeśli nie jesteś Obezwładniony.",
                     "activationCondition": "Podczas wykonywania rzutu na inicjatywę, jeśli nie jesteś Obezwładniony.",
-                    "target": "Ally who can see or hear you",
-                    "targetAffects": "Ally who can see or hear you",
+                    "target": "Sprzymierzeniec, który cię widzi lub słyszy",
+                    "targetAffects": "Sprzymierzeniec, który cię widzi lub słyszy",
                     "roll": "Bardowska inspiracja"
                 }
             }
@@ -5262,8 +5262,8 @@
                 },
                 "Extended Teleport": {
                     "name": "Zwiększona teleportacja",
-                    "target": "within 10 feet of you",
-                    "targetAffects": "within 10 feet of you"
+                    "target": "W obrębie 10 stóp od ciebie",
+                    "targetAffects": "W obrębie 10 stóp od ciebie"
                 }
             }
         },
@@ -5487,16 +5487,16 @@
             "activities": {
                 "Summon Weapon": {
                     "name": "Przyzwanie broni",
-                    "target": "bonded weapon",
-                    "targetAffects": "bonded weapon",
-                    "range": "same plane of existence"
+                    "target": "związana broń",
+                    "targetAffects": "związana broń",
+                    "range": "ta sama sfera istnienia"
                 },
                 "Bond with Weapon": {
                     "name": "Więź z bronią",
                     "condition": "lub 1 godzina",
                     "activationCondition": "lub 1 godzina",
-                    "target": "currently unbound weapon",
-                    "targetAffects": "currently unbound weapon"
+                    "target": "obecnie niezwiązana broń",
+                    "targetAffects": "obecnie niezwiązana broń"
                 }
             },
             "effects": {
