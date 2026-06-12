@@ -1,12 +1,13 @@
 {
-    "label": "Content",
+    "label": "Monster Manual",
     "mapping": {
         "pages": {
             "path": "pages",
             "converter": "document",
             "documentType": "JournalEntryPage",
             "cardinality": "many"
-        }
+        },
+        "chapterTitle": "flags.dnd5e.title"
     },
     "entries": {
         "Animals": {
@@ -400,7 +401,8 @@
                     "name": "Appendix A",
                     "text": "<aside class=\"notable\"><h4>Fantastic Animals</h4><p>The following stat blocks in this appendix represent fantastical versions of real-world animals:</p><p><strong>@UUID[.FJ5occovKENUe5Oq]{Blood Hawk}:</strong> Excessively aggressive hawklike avians known for stealing gems</p><p><strong>@UUID[.IO3FQv6plccdlyiN]{Flying Snake}:</strong> Winged, venomous snakes often trained to serve as messengers</p><p><strong>@UUID[.elcWGQGyU3lvuU5z]{Giant Eagle}:</strong> Mighty eagles that aid heroes</p><p><strong>@UUID[.neFAvivqaFHAKD49]{Giant Elk}:</strong> Mystical guardians of the forest</p><p><strong>@UUID[.4pciwmCodavbh37k]{Giant Fire Beetle}:</strong> Glowing, cave-dwelling beetles</p><p><strong>@UUID[.445bqbUoIKHvwBlJ]{Giant Owl}:</strong> Avian sages and soothsayers</p><p><strong>@UUID[.Uv5sBiJUmczYDNTf]{Giant Vulture}:</strong> Vicious vultures that serve villains</p></aside><p>This appendix provides stat blocks for animals of the Beast type—along with many of their gigantic or mythologized kin—in alphabetical order. Most represent versions of animals that exist (or existed) in the real world. You can find descriptions of these creatures in dictionaries or other educational sources, or you might create new roles for them in your D&amp;D worlds.</p><p>Use these stat blocks to represent the creatures they’re named for or other similar creatures. For example, the Panther stat block can also represent a mountain lion, while the Giant Goat stat block might represent a buffalo. Any of these stat blocks might also serve as fantastical animals with distinctive names and cosmetic details unique to your D&amp;D adventures.</p><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmArtHandouts000.JournalEntryPage.bNVLyJe2MXY4EIqR classes=\"size-three float-right top-frame\"]</p>"
                 }
-            }
+            },
+            "chapterTitle": "App. A: Animals"
         },
         "Appendix: Monster Details": {
             "name": "Appendix: Monster Details",
@@ -4029,7 +4031,8 @@
                     "name": "CR 30",
                     "text": "<ul class=\"word-list\"><li>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmTarrasque00000]{Tarrasque}</li></ul>"
                 }
-            }
+            },
+            "chapterTitle": "App. B: Monster Lists"
         },
         "Monster Manual Changelog": {
             "name": "Monster Manual Changelog",
@@ -4050,7 +4053,8 @@
                     "name": "1.3.0",
                     "text": "<h1>Feature Enhancements</h1><ul><li><p>The @UUID[Compendium.dnd-monster-manual.actors.Actor.mmJuvenileShadow]{Juvenile Shadow Dragon} and @UUID[Compendium.dnd-monster-manual.actors.Actor.mmShadowDragon00]{Shadow Dragon} uses only one Active Effect to handle Resistances. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1382\">#1382</a>]</p></li></ul><h2>Bug Fixes</h2><ul><li><p>Priest Acolyte's description now reflects the correct list of spells. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1093\">#1903</a>]</p></li><li><p>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmSalamander0000]{Salamander}, @UUID[Compendium.dnd-monster-manual.actors.Actor.mmSalamanderInfe]{Salamander Inferno Master}, and @UUID[Compendium.dnd-monster-manual.actors.Actor.mmSalamanderFire]{Salamander Fire Snake}'s artwork is now all correct. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1055\">#1055</a>]</p></li><li><p>The @UUID[Compendium.dnd-monster-manual.actors.Actor.mmVampire0000000]{Vampire} and @UUID[Compendium.dnd-monster-manual.actors.Actor.mmVampireUmbralL]{Vampire Umbral Lord}'s <strong>Stake to the Heart</strong> description has been corrected. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1391\">#1391</a>]</p></li><li><p>The @UUID[Compendium.dnd-monster-manual.actors.Actor.mmYuantiMalison3]{Yuan-ti Malison (Type 3)}'s Constrict feature now lists the correct size for targets. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1388\">#1388</a>]</p></li><li><p>Removed extra Active Effects from the @UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobLion000000]{Lion}'s Roar feature. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1381\">#1381</a>]</p></li><li><p>The Warrior Infantry's Chain Shirt now uses the official icon. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1380\">#1380</a>]</p></li><li><p>The @UUID[Compendium.dnd-monster-manual.actors.Actor.mmOctopus0000000]{Octopus}' Tentacles feature no longer includes incorrect Grappling/Escape activities/effects. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1379\">#1379</a>]</p></li><li><p>The @UUID[Compendium.dnd-monster-manual.actors.Actor.mmAboleth0000000]{Aboleth}'s Tentacle feature is now 14. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1377\">#1377</a>]</p></li><li><p>Added @UUID[Compendium.dnd-monster-manual.features.Item.mmRally000000000]{Rally} feature to @UUID[Compendium.dnd-monster-manual.actors.Actor.mmPirateAdmiral0]{Pirate Admiral}. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1376\">#1376</a>]</p></li><li><p>Removed unused duplicate Spectral Claw feature. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1375\">#1375</a>]</p></li><li><p>The @UUID[Compendium.dnd-monster-manual.actors.Actor.mmBadger00000000]{Badger} and @UUID[Compendium.dnd-monster-manual.actors.Actor.mmGiantBadger000]{Giant Badger} now have resistance to Poison. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1373\">#1373</a>]</p></li><li><p>The @UUID[Compendium.dnd-monster-manual.actors.Actor.mmCultistHieroph]{Cultist Hierophant} no longer includes Mage Armor and instead includes a Breastplate. The @UUID[Compendium.dnd-monster-manual.actors.Actor.mmPseudodragon00]{Pseudodragon}'s Sting feature's description and Active Effects have been updated. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1352\">#1352</a>]</p></li><li><p>The @UUID[Compendium.dnd-monster-manual.features.Item.mmParry000000000]{Parry} feature now uses proficiency. All of the creature's which had the Parry feature now have the updated version: @UUID[Compendium.dnd-monster-manual.actors.Actor.mmBanditCaptain0]{Bandit Captain}, @UUID[Compendium.dnd-monster-manual.actors.Actor.mmDeathKnight000]{Death Knight}, @UUID[Compendium.dnd-monster-manual.actors.Actor.mmDeathKnightAsp]{Death Knight Aspirant}, @UUID[Compendium.dnd-monster-manual.actors.Actor.mmErinyes0000000]{Erinyes}, @UUID[Compendium.dnd-monster-manual.actors.Actor.mmGladiator00000]{Gladiator}, @UUID[Compendium.dnd-monster-manual.actors.Actor.mmHobgoblinWarlo]{Hobgoblin Warlord}, @UUID[Compendium.dnd-monster-manual.actors.Actor.mmKnight00000000]{Knight}, @UUID[Compendium.dnd-monster-manual.actors.Actor.mmMarilith000000]{Marilith}, @UUID[Compendium.dnd-monster-manual.actors.Actor.mmNoble000000000]{Noble}, @UUID[Compendium.dnd-monster-manual.actors.Actor.mmWarriorVeteran]{Warrior Veteran} [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1347\">#1347</a>]</p></li><li><p>The @UUID[Compendium.dnd-monster-manual.actors.Actor.mmGnollWarrior00]{Gnoll Warrior} now includes the Rampage feature. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1300\">#1300</a>]</p></li><li><p>The @UUID[Compendium.dnd-monster-manual.actors.Actor.mmLizardfolkGeom]{Lizardfolk Geomancer}'s Token no longer has a stray shadow [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1287\">#1287</a>]</p></li><li><p>The @UUID[Compendium.dnd-monster-manual.actors.Actor.mmPriest00000000]{Priest}'s Radiant Flame ability now only utilizes the base damage rather than overriding it with the same values in the Activity. There is no material impact in use though. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1273\">#1273</a>]</p></li><li><p>The @UUID[Compendium.dnd-monster-manual.actors.Actor.mmOwl00000000000]{Owl}'s Talon now deals slashing damage, not radiant.</p></li></ul>"
                 }
-            }
+            },
+            "chapterTitle": "Changelog"
         },
         "Monsters A to Z": {
             "name": "Monsters A to Z",

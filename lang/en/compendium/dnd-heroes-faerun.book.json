@@ -1,5 +1,5 @@
 {
-    "label": "Book",
+    "label": "Heroes of Faerûn",
     "mapping": {
         "pages": {
             "path": "pages",
@@ -7,17 +7,10 @@
             "documentType": "JournalEntryPage",
             "cardinality": "many",
             "mapping": {
-                "_variants": [
-                    {
-                        "_when": {
-                            "path": "system.description.value",
-                            "exists": true
-                        },
-                        "description": "system.description.value"
-                    }
-                ]
+                "description": "system.description.value"
             }
-        }
+        },
+        "chapterTitle": "flags.dnd5e.title"
     },
     "entries": {
         "A Guide to the Realms": {
@@ -43,7 +36,8 @@
                     "name": "Regions of the Realms",
                     "text": "<p>Faerûn is frequently divided into various regions that share common cultural characteristics. The ten regions of the Forgotten Realms setting are broken down in @UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofRegionsOfTheR]{Regions of the Realms}.</p>"
                 }
-            }
+            },
+            "chapterTitle": "Chapter 2: A Guide to the Realms"
         },
         "Art Handouts": {
             "name": "Art Handouts",
@@ -801,7 +795,8 @@
                     "name": "Moonshae Isles Wares",
                     "text": "<div class=\"flex-around\"><p>@Embed[Compendium.dnd-heroes-faerun.book.JournalEntry.hofArtHandouts00.JournalEntryPage.yEHwt32TUPlDFSF8 caption=false inline]</p><p>@Embed[Compendium.dnd-heroes-faerun.book.JournalEntry.hofArtHandouts00.JournalEntryPage.laxWtxphRACVf1A3 caption=false inline]</p><p>@Embed[Compendium.dnd-heroes-faerun.book.JournalEntry.hofArtHandouts00.JournalEntryPage.0CgmamFVVw8cGmcv caption=false inline]</p></div><div class=\"flex-around\"><p>@Embed[Compendium.dnd-heroes-faerun.items.Item.hofYarting000000 classes=\"item-card\"]{40 GP}</p><p>@Embed[Compendium.dnd-heroes-faerun.items.Item.hofBandore000000 classes=\"item-card\"]{65 GP}</p><p>@Embed[Compendium.dnd-heroes-faerun.items.Item.hofCittern000000 classes=\"item-card\"]{65 GP}</p></div><div class=\"flex-around\"><p>@Embed[Compendium.dnd-heroes-faerun.book.JournalEntry.hofArtHandouts00.JournalEntryPage.E5FGr9N1HPeHAaIK caption=false inline]</p><p>@Embed[Compendium.dnd-heroes-faerun.items.Item.hofGarbofLightan classes=\"item-card\"]{50 GP}</p></div><p>@Embed[Compendium.dnd-heroes-faerun.items.Item.hofWindskiff4000 classes=\"item-card\"]{4,000 GP}</p><p>@Embed[Compendium.dnd-heroes-faerun.book.JournalEntry.hofArtHandouts00.JournalEntryPage.reC2mlGzCbPjPJZp caption=false cite=false inline]</p>"
                 }
-            }
+            },
+            "chapterTitle": "Chapter 4: Aurora's Whole Realms Catalog"
         },
         "Backgrounds": {
             "name": "Backgrounds",
@@ -891,7 +886,8 @@
                     "name": "Introduction",
                     "text": "<p>@Embed[Compendium.dnd-heroes-faerun.book.JournalEntry.hofArtHandouts00.JournalEntryPage.93QDkX5i9iC6R9Yf]</p><p>This chapter is full of character options you can use to make characters unique to the Realms: new and revised subclasses, new backgrounds, and new feats. The chapter begins with information on the species of the Forgotten Realms.</p><ul><li><p>@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofCharacterSpec]{Character Species}</p></li><li><p>@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofSubclasses000]{Subclasses}</p></li><li><p>@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofBackgrounds00]{Backgrounds}</p></li><li><p>@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofFeats00000000]{Feats}</p></li></ul>"
                 }
-            }
+            },
+            "chapterTitle": "Chapter 1: Character Options"
         },
         "Character Species": {
             "name": "Character Species",
@@ -1324,7 +1320,8 @@
                     "name": "Faction Relationships",
                     "text": "<p>The Faction Attitudes table summarizes the sentiments shared between the factions described in this chapter. Faction pairs marked with an<em> F</em> consider each other allies, and their members have a default attitude of Friendly toward one another. Faction pairs marked with an <em>H</em> consider each other rivals, and their members have a default attitude of Hostile toward one another. Members of factions marked with an <em>I</em> begin Indifferent toward one another. Exceptions might exist on an individual level.</p><p>The Cult of the Dragon is a centuries-old cabal of evil mages, doomsayers, and dragon worshipers. Its members believe in apocalyptic prophecies that center on dragons as the world’s inevitable destroyers (or, rarely, its saviors). To hasten the end times, cultists enact elaborate rituals to empower or summon evil dragons.</p><table><caption>Faction Attitudes</caption><thead><tr><th></th><th scope=\"col\"><p>Cult of the Dragon</p></th><th scope=\"col\"><p>Emerald Enclave</p></th><th scope=\"col\"><p>Harpers</p></th><th scope=\"col\"><p>Lords’ Alliance</p></th><th scope=\"col\"><p>Order of <br />the Gauntlet</p></th><th scope=\"col\"><p>Purple Dragon Knights</p></th><th scope=\"col\"><p>Red Wizards</p></th><th scope=\"col\"><p>Zhentarim</p></th></tr></thead><tbody><tr><td><p>@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofCultOfTheDrag]{Cult of the Dragon}</p></td><td><p>F</p></td><td><p>H</p></td><td><p>H</p></td><td><p>H</p></td><td><p>H</p></td><td><p>H</p></td><td><p>I</p></td><td><p>F</p></td></tr><tr><td><p>@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofEmeraldEnclav]{Emerald Enclave}</p></td><td><p>H</p></td><td><p>F</p></td><td><p>F</p></td><td><p>I</p></td><td><p>F</p></td><td><p>I</p></td><td><p>H</p></td><td><p>H</p></td></tr><tr><td><p>@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofHarpers000000]{Harpers}</p></td><td><p>H</p></td><td><p>F</p></td><td><p>F</p></td><td><p>F</p></td><td><p>F</p></td><td><p>I</p></td><td><p>H</p></td><td><p>H</p></td></tr><tr><td><p>@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofLordsAlliance]{Lords’ Alliance}</p></td><td><p>H</p></td><td><p>I</p></td><td><p>F</p></td><td><p>F</p></td><td><p>F</p></td><td><p>F</p></td><td><p>H</p></td><td><p>H</p></td></tr><tr><td><p>@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofOrderOfTheGau]{Order of the Gauntlet}</p></td><td><p>H</p></td><td><p>F</p></td><td><p>F</p></td><td><p>F</p></td><td><p>F</p></td><td><p>F</p></td><td><p>H</p></td><td><p>H</p></td></tr><tr><td><p>@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofPurpleDragonK]{Purple Dragon Knights}</p></td><td><p>H</p></td><td><p>I</p></td><td><p>I</p></td><td><p>F</p></td><td><p>F</p></td><td><p>F</p></td><td><p>H</p></td><td><p>I</p></td></tr><tr><td><p>@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofRedWizards000]{Red Wizards}</p></td><td><p>I</p></td><td><p>H</p></td><td><p>H</p></td><td><p>H</p></td><td><p>H</p></td><td><p>H</p></td><td><p>I</p></td><td><p>F</p></td></tr><tr><td><p>@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofZhentarim0000]{Zhentarim}</p></td><td><p>F</p></td><td><p>H</p></td><td><p>H</p></td><td><p>H</p></td><td><p>H</p></td><td><p>I</p></td><td><p>F</p></td><td><p>F</p></td></tr></tbody></table>"
                 }
-            }
+            },
+            "chapterTitle": "Chapter 6: Factions of the Realm"
         },
         "Feats": {
             "name": "Feats",
@@ -1362,7 +1359,8 @@
                     "name": "Cover",
                     "text": "<p>@Embed[Compendium.dnd-heroes-faerun.book.JournalEntry.hofArtHandouts00.JournalEntryPage.K2QGtgJfh4v0bRlZ]</p>"
                 }
-            }
+            },
+            "chapterTitle": "Introduction: A World of Epic Heroes"
         },
         "Gods of Faerûn": {
             "name": "Gods of Faerûn",
@@ -1415,7 +1413,8 @@
                     "name": "Chosen",
                     "text": "<p>When a @UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofDeitiesOfFaer]{deity} wants to take direct action, they turn to their Chosen, powerful mortal agents of a deity. Some deities rely more heavily on Chosen than others, but it’s unusual for a deity to go without a Chosen, and most deities imbue several Chosen at the same time.</p><p>How a deity selects their Chosen, and the unique magic they grant to those Chosen, varies by deity. In rare cases, an individual might not realize they’re Chosen.</p>"
                 }
-            }
+            },
+            "chapterTitle": "Chapter 3: Gods of Faerûn"
         },
         "Harpers": {
             "name": "Harpers",
@@ -1461,7 +1460,8 @@
                     "name": "1.1.0",
                     "text": "<h1>Bug Fixes</h1>\n<ul>\n<li>The <strong>Items</strong> and <strong>Character Options</strong> packs now grant the <strong>Player</strong> role <em>Observer</em> access by default. If an existing world still doesn’t show the packs for players, your world may be using a saved Compendium configuration override. You can right click on each pack, select <strong>Configure Ownership</strong> and give the <strong>Player</strong> role the <em>Observer</em> permission.\n[<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1441\">#1441</a>]</li>\n<li>Updated prototype token scaling for the @UUID[Compendium.dnd-heroes-faerun.actors.Actor.hofAxeBeak000000]{Axe Beak}. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1440\">#1440</a>]</li>\n<li>Updated the Unarmored AC implementation of the Genie’s Splendor feature (Oath of the Noble Genies) to match the published errata on <a href=\"https://www.dndbeyond.com/forums/d-d-beyond-general/release-issues-support/231469-forgotten-realms-heroes-of-faerun-issues-and\">D&amp;D Beyond</a> (10 + Dex mod + Cha mod, shields still apply). Replaced the Barbarian-style Dex+Con calculation with a custom AC formula Active Effect. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1435\">#1435</a>]</li>\n<li>Corrected missing class spell list identifiers in the HoF spell list journal pages. Spells now display the proper class tags (and multi-class tags where applicable) instead of incorrectly showing BARD on every spell. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1487\">#1487</a>]</li>\n<li>Removed an unintended area-of-effect line template that was overlapping the distance legend at the bottom of the Faerûn DM scene. [<a href=\"https://github.com/foundryvtt/foundryvtt-premium-content/issues/1488\">#1488</a>]<br /><br /><br /></li>\n</ul>"
                 }
-            }
+            },
+            "chapterTitle": "Changelog"
         },
         "Lords' Alliance": {
             "name": "Lords' Alliance",
@@ -1503,7 +1503,8 @@
                     "name": "Introduction",
                     "text": "<p>@Embed[Compendium.dnd-heroes-faerun.book.JournalEntry.hofArtHandouts00.JournalEntryPage.xEX3hpmp71R1qYzR]</p><p>From the simplest cantrip to the mightiest workings of high magic, from a humble <em>Cure Wounds</em> spell to the raising of mighty heroes from the dead, magic permeates the Realms. And any understanding of magic in Faerûn begins with understanding the Weave.</p><ul><li><p>@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofTheWeave00000]{The Weave}</p></li><li><p>@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofCircleMagic00]{Circle Magic}</p></li><li><p>@UUID[Compendium.dnd-heroes-faerun.book.JournalEntry.hofSpells0000000]{Spells}</p></li></ul>"
                 }
-            }
+            },
+            "chapterTitle": "Chapter 5: Magic of Faerûn"
         },
         "Order of the Gauntlet": {
             "name": "Order of the Gauntlet",
@@ -1889,5 +1890,13 @@
                 }
             }
         }
+    },
+    "folders": {
+        "Chapter 01": "Chapter 01",
+        "Chapter 02": "Chapter 02",
+        "Chapter 03": "Chapter 03",
+        "Chapter 04": "Chapter 04",
+        "Chapter 05": "Chapter 05",
+        "Chapter 06": "Chapter 06"
     }
 }
