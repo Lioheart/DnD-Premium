@@ -5,11 +5,6 @@
         "requirements": "system.requirements",
         "materials": "system.materials.value",
         "chat": "system.description.chat",
-        "unidentified": "system.description.unidentified",
-        "activation": "system.activation.condition",
-        "activationCondition": "system.activation.condition",
-        "activationValue": "system.activation.value",
-        "targetAffects": "system.target.affects.special",
         "activities": {
             "path": "system.activities",
             "converter": "structured",
@@ -23,11 +18,8 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
-                "activationCondition": "activation.condition",
-                "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
-                "targetAffects": "target.affects.special",
                 "roll": "roll.name",
                 "range": {
                     "path": "range",
