@@ -1340,7 +1340,6 @@ def extract_plain_description(record: dict) -> str:
     return ""
 
 
-
 def extract_journal_page_text(page: dict) -> str:
     """
     Pobiera standardową treść JournalEntryPage.
@@ -1491,6 +1490,15 @@ def process_rules_pack(
         pack_name: str,
         pack_label: str | None = None
 ) -> dict:
+    """
+    Eksportuje paczkę JournalEntry w kształcie zgodnym z eksportem Babele.
+
+    Zachowuje standardowe pola Babele i dodaje pola specyficzne dla D&D 5e,
+    których domyślne mapowanie Babele nie obejmuje:
+        - flags.dnd5e.title na JournalEntry,
+        - flags.dnd5e.title na JournalEntryPage,
+        - system.description.* na JournalEntryPage.
+    """
     id_index = build_id_index(data)
     folders = collect_journal_folder_names(data)
 
@@ -1502,16 +1510,11 @@ def process_rules_pack(
         isinstance(record, dict)
         and isinstance(record.get("pages"), list)
         and isinstance(
-            record.get("flags", {})
-            .get("dnd5e", {})
-            .get("title"),
+            record.get("flags", {}).get("dnd5e", {}).get("title"),
             str
         )
         and bool(
-            record.get("flags", {})
-            .get("dnd5e", {})
-            .get("title")
-            .strip()
+            record.get("flags", {}).get("dnd5e", {}).get("title").strip()
         )
         for record in data
     )
@@ -1522,17 +1525,108 @@ def process_rules_pack(
     transifex_dict = {
         "label": (
                 pack_label
-                or JOURNAL_LABEL_OVERRIDES.get(
-            pack_name,
-            pack_name.title()
-        )
+                or JOURNAL_LABEL_OVERRIDES.get(pack_name, pack_name.title())
         ),
         "mapping": mapping,
-        "entries": {}
+        "entries": {},
     }
 
     if folders:
         transifex_dict["folders"] = folders
+
+    for record in data:
+        if not isinstance(record, dict):
+            continue
+
+        if is_folder_record(record):
+            continue
+
+        pages_value = record.get("pages")
+        if not isinstance(pages_value, list):
+            continue
+
+        entry_name = (record.get("name") or "").strip()
+        if not entry_name:
+            continue
+
+        entry = {
+            "name": entry_name,
+            "pages": {},
+        }
+
+        chapter_title = (
+            record.get("flags", {})
+            .get("dnd5e", {})
+            .get("title")
+        )
+
+        if isinstance(chapter_title, str) and chapter_title.strip():
+            entry["chapterTitle"] = chapter_title.strip()
+
+        journal_content = record.get("content")
+        if isinstance(journal_content, str) and journal_content.strip():
+            entry["description"] = journal_content.strip()
+
+        for page in resolve_journal_pages(pages_value, id_index):
+            page_name = (page.get("name") or "").strip()
+            if not page_name:
+                continue
+
+            page_entry = {
+                "name": page_name
+            }
+
+            text = extract_journal_page_text(page)
+            if text:
+                page_entry["text"] = text
+
+            page_entry.update(
+                extract_journal_page_descriptions(page)
+            )
+
+            page_title = (
+                page.get("flags", {})
+                .get("dnd5e", {})
+                .get("title")
+            )
+
+            if isinstance(page_title, str) and page_title.strip():
+                page_entry["chapterTitle"] = page_title.strip()
+
+            image = page.get("image")
+            if isinstance(image, dict):
+                caption = image.get("caption")
+                if isinstance(caption, str) and caption.strip():
+                    page_entry["caption"] = caption.strip()
+
+            src = page.get("src")
+            if isinstance(src, str) and src.strip():
+                page_entry["src"] = src.strip()
+
+            video = page.get("video")
+            if isinstance(video, dict):
+                width = video.get("width")
+                height = video.get("height")
+
+                if width not in (None, ""):
+                    page_entry["width"] = width
+
+                if height not in (None, ""):
+                    page_entry["height"] = height
+
+            entry["pages"][page_name] = page_entry
+
+        if entry["pages"]:
+            transifex_dict["entries"][entry_name] = entry
+
+    transifex_dict["entries"] = dict(
+        sorted(
+            transifex_dict["entries"].items(),
+            key=lambda item: item[0].casefold()
+        )
+    )
+
+    return remove_empty_keys(transifex_dict)
 
 
 TOKEN_ARTWORK_DESCRIPTION = '<p><em>Token artwork by <a href="https://www.forgotten-adventures.net/" target="_blank" rel="noopener">Forgotten Adventures</a>.</em></p>'
