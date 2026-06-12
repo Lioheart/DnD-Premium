@@ -13,7 +13,6 @@ import os
 import pathlib
 import shutil
 import zipfile
-from urllib.request import urlretrieve
 
 import plyvel
 import requests
@@ -985,10 +984,33 @@ TABLE_LABEL_OVERRIDES = {
 }
 
 JOURNAL_LABEL_OVERRIDES = {
-    "rules": "Zasady (SRD)",
+    "rules": "Rules (SRD)",
     "content": "Content",
     "content24": "Rules",
 }
+
+
+def looks_like_journal_pack(data: list[dict]) -> bool:
+    """
+    Rozpoznaje paczkę JournalEntry niezależnie od jej nazwy.
+
+    Obsługuje między innymi:
+    - rules
+    - content
+    - content24
+    - book
+    - inne paczki zawierające JournalEntry z listą pages
+    """
+    if not isinstance(data, list):
+        return False
+
+    return any(
+        isinstance(record, dict)
+        and isinstance(record.get("pages"), list)
+        and isinstance(record.get("name"), str)
+        and bool(record["name"].strip())
+        for record in data
+    )
 
 
 def is_folder_record(record: dict) -> bool:
@@ -1334,6 +1356,138 @@ def extract_journal_page_text(page: dict) -> str:
     return ""
 
 
+def extract_journal_page_text(page: dict) -> str:
+    """
+    Pobiera standardową treść JournalEntryPage.
+
+    Według domyślnego mapowania Babele:
+        text -> text.content
+
+    Pole to jest niezależne od system.description.value.
+    Jeżeli strona ma oba pola, oba zostaną zapisane.
+    """
+    if not isinstance(page, dict):
+        return ""
+
+    text_value = page.get("text")
+
+    if isinstance(text_value, dict):
+        content = text_value.get("content")
+        if isinstance(content, str) and content.strip():
+            return content.strip()
+
+    elif isinstance(text_value, str) and text_value.strip():
+        return text_value.strip()
+
+    # Fallback dla starszych lub niestandardowych struktur.
+    content = page.get("content")
+    if isinstance(content, str) and content.strip():
+        return content.strip()
+
+    return ""
+
+
+def extract_journal_page_descriptions(page: dict) -> dict:
+    """
+    Pobiera dodatkowe pola tekstowe z system.description strony dziennika.
+
+    system.description.value jest eksportowane jako description.
+
+    Pozostałe pola tekstowe zachowują swoją nazwę, np.:
+        system.description.subclass -> subclass
+        system.description.additionalHitPoints -> additionalHitPoints
+    """
+    if not isinstance(page, dict):
+        return {}
+
+    system = page.get("system")
+    if not isinstance(system, dict):
+        return {}
+
+    description = system.get("description")
+    if not isinstance(description, dict):
+        return {}
+
+    result = {}
+
+    for source_key, value in description.items():
+        if not isinstance(value, str):
+            continue
+
+        value = value.strip()
+        if not value:
+            continue
+
+        output_key = "description" if source_key == "value" else source_key
+        result[output_key] = value
+
+    return result
+
+
+def build_journal_pages_mapping(data: list[dict]) -> dict:
+    """
+    Buduje mapowanie dodatkowych pól JournalEntryPage.
+
+    Domyślne mapowanie Babele, w tym:
+        text -> text.content
+        caption -> image.caption
+        src -> src
+
+    nadal obowiązuje. Inline mapping tylko je rozszerza.
+    """
+    description_keys: set[str] = set()
+
+    for record in data:
+        if not isinstance(record, dict):
+            continue
+
+        # JournalEntry ma pages. Interesują nas rekordy JournalEntryPage.
+        if isinstance(record.get("pages"), list):
+            continue
+
+        system = record.get("system")
+        if not isinstance(system, dict):
+            continue
+
+        description = system.get("description")
+        if not isinstance(description, dict):
+            continue
+
+        for source_key, value in description.items():
+            if isinstance(value, str) and value.strip():
+                description_keys.add(source_key)
+
+    page_variants = []
+
+    for source_key in sorted(description_keys):
+        source_path = f"system.description.{source_key}"
+        output_key = "description" if source_key == "value" else source_key
+
+        page_variants.append({
+            "_when": {
+                "path": source_path,
+                "exists": True
+            },
+            output_key: source_path
+        })
+
+    pages_mapping = {
+        "path": "pages",
+        "converter": "document",
+        "documentType": "JournalEntryPage",
+        "cardinality": "many"
+    }
+
+    if page_variants:
+        pages_mapping["mapping"] = {
+            "_variants": page_variants
+        }
+
+    return {
+        "pages": pages_mapping
+    }
+
+
 def resolve_journal_pages(pages_value, id_index: dict) -> list[dict]:
     pages = []
     if not isinstance(pages_value, list):
@@ -1352,12 +1506,19 @@ def resolve_journal_pages(pages_value, id_index: dict) -> list[dict]:
 
 def process_rules_pack(data: list[dict], pack_name: str) -> dict:
     """
-    JournalEntry rules exportujemy bez mapping i bez folders:
-    entries[JournalEntry.name].pages[JournalEntryPage.name].text.
+    Eksportuje paczkę JournalEntry zgodnie z mapowaniem Babele.
+
+    Obsługuje jednocześnie:
+    - JournalEntryPage.text.content jako text,
+    - JournalEntryPage.system.description.value jako description,
+    - pozostałe tekstowe pola system.description,
+    - treść JournalEntry.content jako description.
     """
     id_index = build_id_index(data)
+
     transifex_dict = {
         "label": JOURNAL_LABEL_OVERRIDES.get(pack_name, pack_name.title()),
+        "mapping": build_journal_pages_mapping(data),
         "entries": {},
     }
 
@@ -1376,19 +1537,60 @@ def process_rules_pack(data: list[dict], pack_name: str) -> dict:
         if not entry_name:
             continue
 
-        entry = {"name": entry_name, "pages": {}}
+        entry = {
+            "name": entry_name,
+            "pages": {}
+        }
+
+        # Standardowe pole JournalEntry:
+        # description -> content
+        journal_content = record.get("content")
+        if isinstance(journal_content, str) and journal_content.strip():
+            entry["description"] = journal_content.strip()
+
         for page in resolve_journal_pages(pages_value, id_index):
             page_name = (page.get("name") or "").strip()
             if not page_name:
                 continue
 
-            entry["pages"][page_name] = {
-                "name": page_name,
-                "text": extract_journal_page_text(page),
+            page_entry = {
+                "name": page_name
             }
+
+            # Standardowa treść strony:
+            # text -> text.content
+            text = extract_journal_page_text(page)
+            if text:
+                page_entry["text"] = text
+
+            # Dodatkowe pola D&D 5e:
+            # description -> system.description.value
+            page_entry.update(
+                extract_journal_page_descriptions(page)
+            )
+
+            # Standardowe pole obrazka JournalEntryPage.
+            image = page.get("image")
+            if isinstance(image, dict):
+                caption = image.get("caption")
+                if isinstance(caption, str) and caption.strip():
+                    page_entry["caption"] = caption.strip()
+
+            src = page.get("src")
+            if isinstance(src, str) and src.strip():
+                page_entry["src"] = src.strip()
+
+            entry["pages"][page_name] = page_entry
 
         if entry["pages"]:
             transifex_dict["entries"][entry_name] = entry
+
+    transifex_dict["entries"] = dict(
+        sorted(
+            transifex_dict["entries"].items(),
+            key=lambda item: item[0].casefold()
+        )
+    )
 
     return remove_empty_keys(transifex_dict)
 
@@ -1843,13 +2045,10 @@ def get_nested_string(record: dict, path: str) -> str:
     return ""
 
 
-
-
 def add_nested_string(entry: dict, key: str, record: dict, path: str) -> None:
     value = get_nested_string(record, path)
     if value:
         entry[key] = value
-
 
 
 def default_item_mapping() -> dict:
@@ -1858,11 +2057,8 @@ def default_item_mapping() -> dict:
         "requirements": "system.requirements",
         "materials": "system.materials.value",
         "chat": "system.description.chat",
-        "unidentified": "system.description.unidentified",
         "activation": "system.activation.condition",
-        "activationCondition": "system.activation.condition",
         "activationValue": "system.activation.value",
-        "targetAffects": "system.target.affects.special",
         "activities": {
             "path": "system.activities",
             "converter": "structured",
@@ -1872,11 +2068,9 @@ def default_item_mapping() -> dict:
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
-                "activationCondition": "activation.condition",
-                "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
+                "activationValue": "activation.value",
                 "duration": "duration.special",
-                "targetAffects": "target.affects.special",
                 "roll": "roll.name",
                 "range": {
                     "path": "range",
@@ -1958,9 +2152,6 @@ def spells_legacy_mapping() -> dict:
     return {
         "materials": "system.materials.value",
         "activation": "system.activation.condition",
-        "activationCondition": "system.activation.condition",
-        "activationValue": "system.activation.value",
-        "targetAffects": "system.target.affects.special",
         "range": {
             "path": "system.range",
             "converter": "range"
@@ -2203,7 +2394,7 @@ def process_files(folders: str, output_dir: str, filename_prefix: str | None = N
                     json.dump(transifex_dict, outfile, ensure_ascii=False, indent=4)
                 continue
 
-            if pack_name in JOURNAL_LABEL_OVERRIDES:
+            if pack_name in JOURNAL_LABEL_OVERRIDES or looks_like_journal_pack(data):
                 transifex_dict = process_rules_pack(data, pack_name)
                 with open(new_name, "w", encoding="utf-8") as outfile:
                     json.dump(transifex_dict, outfile, ensure_ascii=False, indent=4)
@@ -2265,18 +2456,6 @@ def process_files(folders: str, output_dir: str, filename_prefix: str | None = N
 
                 # foldery
                 if is_folder_record(new_data):
-                    continue
-
-                # Specjalna obsługa rules - tylko rekordy z pages są entry
-                if pack_name == 'rules':
-                    # foldery rules są już łapane wyżej przez color+folder
-                    # pomijamy rekordy kategorii i stron
-                    if not isinstance(new_data.get("pages"), list):
-                        continue
-
-                    transifex_dict["entries"].setdefault(name, {})
-                    entry = transifex_dict["entries"][name]
-                    populate_rules_entry(entry, new_data, id_index, transifex_dict)
                     continue
 
                 # Dla pozostałych pakietów tworzymy zwykły entry
@@ -2449,8 +2628,8 @@ def find_local_dnd_folders(base_dir: pathlib.Path) -> list[pathlib.Path]:
         (
             path for path in base_dir.iterdir()
             if path.is_dir()
-            and path.name.startswith("dnd")
-            and (path / "packs").is_dir()
+               and path.name.startswith("dnd")
+               and (path / "packs").is_dir()
         ),
         key=lambda path: path.name.casefold()
     )
