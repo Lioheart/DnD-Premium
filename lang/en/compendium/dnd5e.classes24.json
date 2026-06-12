@@ -44,7 +44,33 @@
         },
         "advancement": {
             "path": "system.advancement",
-            "converter": "translateAdvancement"
+            "converter": "structured",
+            "cardinality": "many",
+            "container": "keyed",
+            "keys": [
+                "_id",
+                "title"
+            ],
+            "mapping": {
+                "title": "title",
+                "hint": "hint",
+                "_variants": [
+                    {
+                        "_when": {
+                            "path": "type",
+                            "equals": "ScaleValue"
+                        },
+                        "distance": {
+                            "path": "configuration.distance",
+                            "converter": "imperialToMetric"
+                        },
+                        "scale": {
+                            "path": "configuration.scale",
+                            "converter": "imperialToMetric"
+                        }
+                    }
+                ]
+            }
         },
         "movement": {
             "path": "system.movement",
@@ -214,6 +240,39 @@
                 "Class Features": {
                     "title": "Class Features"
                 },
+                "vbNdqiHqN2qTbnUw": {
+                    "title": "Class Features"
+                },
+                "MUU3y634K3edUdyL": {
+                    "title": "Class Features"
+                },
+                "49KNhnvoZJduJaOI": {
+                    "title": "Class Features"
+                },
+                "ALO7yStJ7IHDxOss": {
+                    "title": "Class Features"
+                },
+                "JNtXQqEZhCUM1NLJ": {
+                    "title": "Class Features"
+                },
+                "5S7821U8Dtg9egZu": {
+                    "title": "Class Features"
+                },
+                "zqXib0MKbaqrTTVR": {
+                    "title": "Class Features"
+                },
+                "YYXyPXHTKRgnPswF": {
+                    "title": "Class Features"
+                },
+                "e5XIkDQYhqNDImgs": {
+                    "title": "Class Features"
+                },
+                "WlOoBbYeEoCTcD0t": {
+                    "title": "Class Features"
+                },
+                "vsCiTVHhgLseNJjr": {
+                    "title": "Class Features"
+                },
                 "Primal Knowledge": {
                     "title": "Primal Knowledge",
                     "hint": "You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1."
@@ -233,7 +292,21 @@
                 "Armor Training": {
                     "title": "Armor Training"
                 },
+                "yj2VgvjKystoRCK6": {
+                    "title": "Weapon Proficiencies"
+                },
+                "oxhsE5PIGxe6mO4s": {
+                    "title": "Armor Training"
+                },
                 "Weapon Mastery": {
+                    "title": "Weapon Mastery",
+                    "hint": "Your training with weapons allows you to use the mastery properties of additional weapons."
+                },
+                "WYkWGiSyjLN4WC4x": {
+                    "title": "Weapon Mastery",
+                    "hint": "Your training with weapons allows you to use the mastery properties of additional weapons."
+                },
+                "EUfvF7zVF9ooQGUg": {
                     "title": "Weapon Mastery",
                     "hint": "Your training with weapons allows you to use the mastery properties of additional weapons."
                 },
@@ -247,6 +320,24 @@
             "description": "<h3>Core Bard Traits</h3><table class=\"core-class-traits\"><tbody><tr><th><p><strong>Primary Ability</strong></p></th><td><p>Charisma</p></td></tr><tr><th><p><strong>Hit Point Die</strong></p></th><td><p>D8 per Bard level</p></td></tr><tr><th><p><strong>Saving Throw Proficiencies</strong></p></th><td><p>Dexterity and Charisma</p></td></tr><tr><th><p><strong>Skill Proficiencies</strong></p></th><td><p><em>Choose any 3 skills</em></p></td></tr><tr><th><p><strong>Weapon Proficiencies</strong></p></th><td><p>Simple weapons</p></td></tr><tr><th><p><strong>Tool Proficiencies</strong></p></th><td><p><em>Choose 3 Musical Instruments</em></p></td></tr><tr><th><p><strong>Armor Training</strong></p></th><td><p>Light armor</p></td></tr><tr><th><p><strong>Starting Equipment</strong></p></th><td><p><em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbarmLeatherArm]{Leather Armor}, 2 @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers}, Musical Instrument of your choice, @UUID[Compendium.dnd5e.equipment24.Item.phbagEntertainer]{Entertainer's Pack}, and [[/award 19gp]]; or (B) [[/award 90GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbbrdBard000000 inline classes=\"free-rules-embed\"]</p><h2>Becoming a Bard …</h2><h3>As a Level 1 Character</h3><ul><li>Gain all the traits in the Core Bard Traits table.</li><li>Gain the Bard's level 1 features, which are listed in the Bard Features table.</li></ul><h3>As a Multiclass Character</h3><ul><li>Gain the following traits from the Core Bard Traits table: Hit Point Die, proficiency in one skill of your choice, proficiency with one Musical Instrument of your choice, and training with Light armor.</li><li>Gain the Bard's level 1 features, which are listed in the Bard Features table. See the multiclassing rules in chapter 2 to determine your available spell slots.</li></ul>",
             "advancement": {
                 "Class Features": {
+                    "title": "Class Features"
+                },
+                "eHieMgibvVLqVjY8": {
+                    "title": "Class Features"
+                },
+                "L3wEIpgyQxfW3Cbu": {
+                    "title": "Class Features"
+                },
+                "hqCCMUsYBCaBxjd1": {
+                    "title": "Class Features"
+                },
+                "GXUFneKrn7jWh8FI": {
+                    "title": "Class Features"
+                },
+                "9n9yDwqtG7foinNB": {
+                    "title": "Class Features"
+                },
+                "G2PRnWVCjP5c3Cm7": {
                     "title": "Class Features"
                 },
                 "Max Prepared Spells": {
@@ -278,6 +369,12 @@
                 },
                 "Armor Training": {
                     "title": "Armor Training"
+                },
+                "kPeKGxUo8GJygCJG": {
+                    "title": "Skill Proficiencies"
+                },
+                "n0aMUQr79P5Pkjpf": {
+                    "title": "Tool Proficiencies"
                 }
             }
         },
@@ -394,6 +491,18 @@
                 "Subclass Features": {
                     "title": "Subclass Features"
                 },
+                "WS2baKDHOKdTHvn4": {
+                    "title": "Subclass Features"
+                },
+                "ifmHcVXF9ZqyVhXa": {
+                    "title": "Subclass Features"
+                },
+                "DNwHuSG5CFe5o94z": {
+                    "title": "Subclass Features"
+                },
+                "nAg9H5fvgytySqaf": {
+                    "title": "Subclass Features"
+                },
                 "Fighting Style": {
                     "title": "Fighting Style"
                 }
@@ -420,6 +529,15 @@
                 "Subclass Features": {
                     "title": "Subclass Features"
                 },
+                "9l1ICcnaGx27bdOp": {
+                    "title": "Subclass Features"
+                },
+                "tQpnSPCulIWNV3ZV": {
+                    "title": "Subclass Features"
+                },
+                "tdzTZSOWJgyhnk5X": {
+                    "title": "Subclass Features"
+                },
                 "Lands Aid Damage": {
                     "title": "Lands Aid Damage"
                 }
@@ -435,6 +553,21 @@
             "description": "<h3>Core Cleric Traits</h3><table class=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p>Primary Ability</p></th><td><p>Wisdom</p></td></tr><tr><th scope=\"row\"><p>Hit Point Die</p></th><td><p>D8 per Cleric level</p></td></tr><tr><th scope=\"row\"><p>Saving Throw Proficiencies</p></th><td><p>Wisdom and Charisma</p></td></tr><tr><th scope=\"row\"><p>Skill Proficiencies</p></th><td><p><em>Choose 2: </em>History, Insight, Medicine, Persuasion, or Religion</p></td></tr><tr><th scope=\"row\"><p>Weapon Proficiencies</p></th><td><p>Simple weapons</p></td></tr><tr><th scope=\"row\"><p>Armor Training</p></th><td><p>Light and Medium armor and Shields</p></td></tr><tr><th scope=\"row\"><p>Starting Equipment</p></th><td><p><em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbarmChainShirt]{Chain Shirt}, @UUID[Compendium.dnd5e.equipment24.Item.phbarmShield0000]{Shield}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepMace000000]{Mace}, @UUID[Compendium.dnd5e.equipment24.Item.phbagHolySymbolV]{Holy Symbol}, @UUID[Compendium.dnd5e.equipment24.Item.phbagPriestsPack]{Priest's Pack}, and [[/award 7GP]]; or (B) [[/award 110GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbclcCleric0000 inline classes=\"free-rules-embed\"]</p><h2>Becoming a Cleric …</h2><h3>As a Level 1 Character</h3><ul><li>Gain all the traits in the Core Cleric Traits table.</li><li>Gain the Cleric's level 1 features, which are listed in the Cleric Features table.</li></ul><h3>As a Multiclass Character</h3><ul><li>Gain the following traits from the Core Cleric Traits table: Hit Point Die and training with Light and Medium armor and Shields.</li><li>Gain the Cleric's level 1 features, which are listed in the Cleric Features table. See the multiclassing rules in chapter 2 to determine your available spell slots.</li></ul>",
             "advancement": {
                 "Class Features": {
+                    "title": "Class Features"
+                },
+                "sbC9gYqIKyBudLEX": {
+                    "title": "Class Features"
+                },
+                "iyByIlgOSTkVdiIb": {
+                    "title": "Class Features"
+                },
+                "fMMlnS7XNj4jHolA": {
+                    "title": "Class Features"
+                },
+                "db2RJZ0xSSbbOPIk": {
+                    "title": "Class Features"
+                },
+                "ilTop8eaoKLL9KVJ": {
                     "title": "Class Features"
                 },
                 "Channel Divinity Uses": {
@@ -479,6 +612,12 @@
             "description": "<blockquote><p>Plumb the Depths of Magical Knowledge</p></blockquote><p>Bards of the College of Lore collect spells and secrets from diverse sources, such as scholarly tomes, mystical rites, and peasant tales. The college's members gather in libraries and universities to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority.</p>",
             "advancement": {
                 "Subclass Features": {
+                    "title": "Subclass Features"
+                },
+                "yiYMrVRwPpGHPk0N": {
+                    "title": "Subclass Features"
+                },
+                "P34BmKnqAYXUdYol": {
                     "title": "Subclass Features"
                 },
                 "Bonus Proficiencies": {
@@ -774,7 +913,28 @@
                 "Subclass Features": {
                     "title": "Subclass Features"
                 },
+                "3ptQZs8Z30J3e8MH": {
+                    "title": "Subclass Features"
+                },
+                "Rr3BfHIS9JdX6c5X": {
+                    "title": "Subclass Features"
+                },
+                "zWNxZUTJugO6duSj": {
+                    "title": "Subclass Features"
+                },
                 "Draconic Spells": {
+                    "title": "Draconic Spells",
+                    "hint": "When you reach a Sorcerer level specified in the Draconic Spells table, you thereafter always have the listed spells prepared."
+                },
+                "VLhcXqbjyXnCbXTP": {
+                    "title": "Draconic Spells",
+                    "hint": "When you reach a Sorcerer level specified in the Draconic Spells table, you thereafter always have the listed spells prepared."
+                },
+                "nQwB2GYHgvg5IRhf": {
+                    "title": "Draconic Spells",
+                    "hint": "When you reach a Sorcerer level specified in the Draconic Spells table, you thereafter always have the listed spells prepared."
+                },
+                "zKCculAFWxVPXhnA": {
                     "title": "Draconic Spells",
                     "hint": "When you reach a Sorcerer level specified in the Draconic Spells table, you thereafter always have the listed spells prepared."
                 },
@@ -821,6 +981,24 @@
                 "Class Features": {
                     "title": "Class Features"
                 },
+                "hmO24ovOBpmXAb4U": {
+                    "title": "Class Features"
+                },
+                "J2JpbQEZhVD3Dnjz": {
+                    "title": "Class Features"
+                },
+                "2G5tFifGdMns95Jw": {
+                    "title": "Class Features"
+                },
+                "uNjxqZQ9lZuOKmU7": {
+                    "title": "Class Features"
+                },
+                "3DZ1Olv41g5BzP4z": {
+                    "title": "Class Features"
+                },
+                "K72jypxSpzVJRXDh": {
+                    "title": "Class Features"
+                },
                 "Cantrips Known": {
                     "title": "Cantrips Known"
                 },
@@ -844,6 +1022,10 @@
                     "hint": "You have dedicated yourself to one of the following sacred roles of your choice."
                 },
                 "Elemental Fury": {
+                    "title": "Elemental Fury",
+                    "hint": "The might of the elements flows through you. You gain one of the following options of your choice."
+                },
+                "W0d3c6X31SgnFFYM": {
                     "title": "Elemental Fury"
                 },
                 "Saving Throw Proficiencies": {
@@ -1031,6 +1213,15 @@
             "advancement": {
                 "Subclass Features": {
                     "title": "Subclass Features"
+                },
+                "MnGUHDUfl1pqbwJK": {
+                    "title": "Subclass Features"
+                },
+                "vyrvNKiCAYyJcR9l": {
+                    "title": "Subclass Features"
+                },
+                "GeBj8GgEaEGUkxxL": {
+                    "title": "Subclass Features"
                 }
             }
         },
@@ -1111,7 +1302,28 @@
                 "Subclass Features": {
                     "title": "Subclass Features"
                 },
+                "pkjDsDeyI1xHOSDb": {
+                    "title": "Subclass Features"
+                },
+                "hEHLXeuzpfLUyPbb": {
+                    "title": "Subclass Features"
+                },
+                "BXdX73NWYsGIrZyc": {
+                    "title": "Subclass Features"
+                },
                 "Fiend Spells": {
+                    "title": "Fiend Spells",
+                    "hint": "The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Fiend Spells table, you thereafter always have the listed spells prepared."
+                },
+                "RQGbS50hbBG90d1e": {
+                    "title": "Fiend Spells",
+                    "hint": "The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Fiend Spells table, you thereafter always have the listed spells prepared."
+                },
+                "HI0odgqJuVranhPH": {
+                    "title": "Fiend Spells",
+                    "hint": "The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Fiend Spells table, you thereafter always have the listed spells prepared."
+                },
+                "Aqu6VkaM9Z70GTtM": {
                     "title": "Fiend Spells",
                     "hint": "The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Fiend Spells table, you thereafter always have the listed spells prepared."
                 }
@@ -1179,6 +1391,24 @@
                 "Class Features": {
                     "title": "Class Features"
                 },
+                "T2FovyKDjcIGMPCW": {
+                    "title": "Class Features"
+                },
+                "9UkcNtQ0HwJhmwKQ": {
+                    "title": "Class Features"
+                },
+                "wKoM6KOIKl1HWVpR": {
+                    "title": "Class Features"
+                },
+                "gxbvTuKFKDsuzCmp": {
+                    "title": "Class Features"
+                },
+                "pUT3XfEF6U1xeY18": {
+                    "title": "Class Features"
+                },
+                "knLMZh9N1O50qEcV": {
+                    "title": "Class Features"
+                },
                 "Action Surge": {
                     "title": "Action Surge"
                 },
@@ -1200,6 +1430,12 @@
                 "Armor Training": {
                     "title": "Armor Training"
                 },
+                "fK62ORkG9cOsa3XL": {
+                    "title": "Weapon Proficiencies"
+                },
+                "Nl6NkDxsiWjv7MfC": {
+                    "title": "Armor Training"
+                },
                 "Weapon Mastery": {
                     "title": "Weapon Mastery"
                 },
@@ -1208,6 +1444,15 @@
                 },
                 "Weapon Masteries Known": {
                     "title": "Weapon Masteries Known"
+                },
+                "oQeuiFaWAVOPtJPt": {
+                    "title": "Weapon Mastery"
+                },
+                "4QKhDAuuM8x78quv": {
+                    "title": "Weapon Mastery"
+                },
+                "YSAbsXV9zn9eX9p7": {
+                    "title": "Weapon Mastery"
                 }
             }
         },
@@ -1349,6 +1594,15 @@
             "description": "<blockquote><p>Protect Nature and People from Destruction</p></blockquote><p>You stalk prey in the wilds and elsewhere, using your abilities as a Hunter to protect nature and people everywhere from forces that would destroy them.</p>",
             "advancement": {
                 "Subclass Features": {
+                    "title": "Subclass Features"
+                },
+                "4nA7C6uQhBJBtWdS": {
+                    "title": "Subclass Features"
+                },
+                "gBE1JZA0jf6dglQu": {
+                    "title": "Subclass Features"
+                },
+                "1P4RbYyrzFoutFrj": {
                     "title": "Subclass Features"
                 }
             }
@@ -1593,7 +1847,22 @@
                 "Subclass Features": {
                     "title": "Subclass Features"
                 },
+                "Qkx3Cd07TGIwBX91": {
+                    "title": "Subclass Features"
+                },
+                "fke7bQihEBwKmOXP": {
+                    "title": "Subclass Features"
+                },
                 "Life Domain Spells": {
+                    "title": "Life Domain Spells"
+                },
+                "zfcT1xCvqRLRZXiH": {
+                    "title": "Life Domain Spells"
+                },
+                "1FttAn0lw9lBpofn": {
+                    "title": "Life Domain Spells"
+                },
+                "iYrz7E0p8N6pp5Uy": {
                     "title": "Life Domain Spells"
                 }
             }
@@ -1734,6 +2003,45 @@
             "description": "<h3>Core Monk Traits</h3><table class=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p>Primary Ability</p></th><td><p>Dexterity and Wisdom</p></td></tr><tr><th scope=\"row\"><p>Hit Point Die</p></th><td><p>D8 per Monk level</p></td></tr><tr><th scope=\"row\"><p>Saving Throw Proficiencies</p></th><td><p>Strength and Dexterity</p></td></tr><tr><th scope=\"row\"><p>Skill Proficiencies</p></th><td><p><em>Choose 2:</em> Acrobatics, Athletics, History, Insight, Religion, or Stealth</p></td></tr><tr><th scope=\"row\"><p>Weapon Proficiencies</p></th><td><p>Simple weapons and Martial weapons that have the Light property</p></td></tr><tr><th scope=\"row\"><p>Tool Proficiencies</p></th><td><p><em>Choose one type of Artisan's Tools or Musical Instrument</em></p></td></tr><tr><th scope=\"row\"><p>Armor Training</p></th><td><p>None</p></td></tr><tr><th scope=\"row\"><p>Starting Equipment</p></th><td><p><em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear}, 5 @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers}, Artisan's Tools or Musical Instrument chosen for the tool proficiency above, @UUID[Compendium.dnd5e.equipment24.Item.phbagExplorersPa]{Explorer's Pack}, and [[/award 11GP]]; or (B) [[/award 50GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbmnkMonk000000 inline classes=\"free-rules-embed\"]</p><h2>Becoming a Monk …</h2><h3>As a Level 1 Character</h3><ul><li>Gain all the traits in the Core Monk Traits table.</li><li>Gain the Monk's level 1 features, which are listed in the Monk Features table.</li></ul><h3>As a Multiclass Character</h3><ul><li>Gain the Hit Point Die trait from the Core Monk Traits table.</li><li>Gain the Monk's level 1 features, which are listed in the Monk Features table.</li></ul>",
             "advancement": {
                 "Class Features": {
+                    "title": "Class Features"
+                },
+                "mrRoW8wNhjYbeqH1": {
+                    "title": "Class Features"
+                },
+                "ms2HaCjkdW9DV3KG": {
+                    "title": "Class Features"
+                },
+                "8tQG3hCcquAKQaPI": {
+                    "title": "Class Features"
+                },
+                "W4pBCGfpgL3LjHT0": {
+                    "title": "Class Features"
+                },
+                "TIzNw6t61wYmtj6V": {
+                    "title": "Class Features"
+                },
+                "Rfq6ZXQhdFm3Zmjx": {
+                    "title": "Class Features"
+                },
+                "26AlznyWcDuaFTCY": {
+                    "title": "Class Features"
+                },
+                "H32KYn1ozuG9jgYH": {
+                    "title": "Class Features"
+                },
+                "p4M4GK8yYVPY4Nsc": {
+                    "title": "Class Features"
+                },
+                "l5WJg41iXSVd88sd": {
+                    "title": "Class Features"
+                },
+                "9EzbkaZcskpZqLAv": {
+                    "title": "Class Features"
+                },
+                "BJBdi5OYKS2pvCeV": {
+                    "title": "Class Features"
+                },
+                "DOmTqz4RzFr3Scvj": {
                     "title": "Class Features"
                 },
                 "Body and Mind": {
@@ -1896,7 +2204,28 @@
                 "Subclass Features": {
                     "title": "Subclass Features"
                 },
+                "jix1tV556sLlpGYr": {
+                    "title": "Subclass Features"
+                },
+                "3t0heVzpZV6AClAz": {
+                    "title": "Subclass Features"
+                },
+                "1Koj8mZO5gVtRril": {
+                    "title": "Subclass Features"
+                },
                 "Oath of Devotion Spells": {
+                    "title": "Oath of Devotion Spells"
+                },
+                "9rAVikjK0DFEkhXH": {
+                    "title": "Oath of Devotion Spells"
+                },
+                "K8RRsq7vmiYuKAAv": {
+                    "title": "Oath of Devotion Spells"
+                },
+                "VuZSFzUklRDrpP5g": {
+                    "title": "Oath of Devotion Spells"
+                },
+                "Qji0iHmIWmCZcKt8": {
                     "title": "Oath of Devotion Spells"
                 }
             }
@@ -2017,6 +2346,33 @@
                 "Class Features": {
                     "title": "Class Features"
                 },
+                "AKkVlHKAVYHNqf6q": {
+                    "title": "Class Features"
+                },
+                "8I26b7hyVhhTyCho": {
+                    "title": "Class Features"
+                },
+                "ETE0AFEPZYVKhGeV": {
+                    "title": "Class Features"
+                },
+                "4ZvtY8dxJGz7VaDN": {
+                    "title": "Class Features"
+                },
+                "S2e43900sVur7sOK": {
+                    "title": "Class Features"
+                },
+                "7Nhpo9BJt103peym": {
+                    "title": "Class Features"
+                },
+                "sBD0PwAIuNSCs9Px": {
+                    "title": "Class Features"
+                },
+                "G6XicWkWUTdMTmC9": {
+                    "title": "Class Features"
+                },
+                "dChGldRqBZQFRIoP": {
+                    "title": "Class Features"
+                },
                 "Aura Distance": {
                     "title": "Aura Distance"
                 },
@@ -2038,6 +2394,12 @@
                 "Armor Training": {
                     "title": "Armor Training"
                 },
+                "dSjz0J0F5cQLvWTd": {
+                    "title": "Weapon Proficiencies"
+                },
+                "TZP9M5VqcBv8D313": {
+                    "title": "Armor Training"
+                },
                 "Fighting Style": {
                     "title": "Fighting Style"
                 },
@@ -2055,6 +2417,15 @@
             "description": "<blockquote><p>Channel Rage into Violent Fury</p></blockquote><p>Barbarians who walk the Path of the Berserker direct their Rage primarily toward violence. Their path is one of untrammeled fury, and they thrill in the chaos of battle as they allow their Rage to seize and empower them.</p>",
             "advancement": {
                 "Subclass Features": {
+                    "title": "Subclass Features"
+                },
+                "2AGvW4P2FHYxDTmU": {
+                    "title": "Subclass Features"
+                },
+                "HPirEn8oG5KFLosG": {
+                    "title": "Subclass Features"
+                },
+                "GouI4YrjO1nFz4uM": {
                     "title": "Subclass Features"
                 }
             }
@@ -2288,7 +2659,38 @@
                 "Class Features": {
                     "title": "Class Features"
                 },
+                "MWgIb29krlDy6YW6": {
+                    "title": "Class Features"
+                },
+                "py3wJiuRo9A5PlZb": {
+                    "title": "Class Features"
+                },
+                "hsOIIBWwSrWJvTuc": {
+                    "title": "Class Features"
+                },
+                "6lgPpApxgrLKsNdH": {
+                    "title": "Class Features"
+                },
+                "G8gk2pfQ2FIn6lX9": {
+                    "title": "Class Features"
+                },
+                "bUBIV36rJZHw5GKr": {
+                    "title": "Class Features"
+                },
+                "mC2Y1MpLlQ7uSnvk": {
+                    "title": "Class Features"
+                },
+                "n1IVdZzKh3PPG915": {
+                    "title": "Class Features"
+                },
+                "Rb7qWhNRuua2brG0": {
+                    "title": "Class Features"
+                },
                 "Expertise": {
+                    "title": "Expertise",
+                    "hint": "You gain Expertise in two of your skill proficiencies of your choice. Sleight of Hand and Stealth are recommended if you have proficiency in them."
+                },
+                "sqWH6tnUg7jiGaEj": {
                     "title": "Expertise"
                 },
                 "Sneak Attack": {
@@ -2318,6 +2720,9 @@
                 },
                 "Armor Training": {
                     "title": "Armor Training"
+                },
+                "tSxdQdTxlNVE1kdD": {
+                    "title": "Skill Proficiencies"
                 }
             }
         },
@@ -2449,6 +2854,18 @@
             "description": "<h3>Core Sorcerer Traits</h3><table class=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p><strong>Primary Ability</strong></p></th><td><p>Charisma</p></td></tr><tr><th scope=\"row\"><p><strong>Hit Point Die</strong></p></th><td><p>D6 per Sorcerer level</p></td></tr><tr><th scope=\"row\"><p><strong>Saving Throw Proficiencies</strong></p></th><td><p>Constitution and Charisma</p></td></tr><tr><th scope=\"row\"><p><strong>Skill Proficiencies</strong></p></th><td><p><em>Choose 2:</em> Arcana, Deception, Insight, Intimidation, Persuasion, or Religion</p></td></tr><tr><th scope=\"row\"><p><strong>Weapon Proficiencies</strong></p></th><td><p>Simple weapons</p></td></tr><tr><th scope=\"row\"><p><strong>Armor Training</strong></p></th><td><p>None</p></td></tr><tr><th scope=\"row\"><p><strong>Starting Equipment</strong></p></th><td><p><em>Choose A or B: </em>(A) @UUID[Compendium.dnd5e.equipment24.Item.phbwepSpear00000]{Spear}, 2 @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers}, @UUID[Compendium.dnd5e.equipment24.Item.phbagArcaneFocus]{Arcane Focus} (@UUID[Compendium.dnd5e.equipment24.Item.phbafcCrystal000]{crystal}), @UUID[Compendium.dnd5e.equipment24.Item.phbagDungeoneers]{Dungeoneer's Pack}, and [[/award 28GP]]; or (B) [[/award 50GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbscrSorcerer00 inline classes=\"free-rules-embed\"]</p><h2>Becoming a Sorcerer …</h2><h3>As a Level 1 Character</h3><ul><li>Gain all the traits in the Core Sorcerer Traits table.</li><li>Gain the Sorcerer's level 1 features, which are listed in the @UUID[Compendium.dnd5e.content24.JournalEntry.phbSorcerer00000.JournalEntryPage.fsqRUA4acVXH4I3O#class-features]{Sorcerer Features table}.</li></ul><h3>As a Multiclass Character</h3><ul><li>Gain the Hit Point Die from the Core Sorcerer Traits table.</li><li>Gain the Sorcerer's level 1 features, which are listed in the Sorcerer Features table. See the @UUID[Compendium.dnd5e.content24.JournalEntry.phbCreatingAChar.JournalEntryPage.vcs4jfEKRxPCsgXm]{multiclassing rules} to determine your available spell slots.</li></ul>",
             "advancement": {
                 "Class Features": {
+                    "title": "Class Features"
+                },
+                "c5fRAxTbRHamZM7M": {
+                    "title": "Class Features"
+                },
+                "SihgGDvXjAktGkt1": {
+                    "title": "Class Features"
+                },
+                "vGoDRNITjHNqxW1z": {
+                    "title": "Class Features"
+                },
+                "g3PLJU1zYyUrHCY0": {
                     "title": "Class Features"
                 },
                 "Max Prepared Spells": {
@@ -2701,6 +3118,15 @@
             "advancement": {
                 "Subclass Features": {
                     "title": "Subclass Features"
+                },
+                "MlEcUhyGRGitfiUJ": {
+                    "title": "Subclass Features"
+                },
+                "aNcqA4J0puHsYiyv": {
+                    "title": "Subclass Features"
+                },
+                "Q45sJX4IS3NbsrtV": {
+                    "title": "Subclass Features"
                 }
             }
         },
@@ -2835,6 +3261,18 @@
                 "Class Features": {
                     "title": "Class Features"
                 },
+                "IUkGspfJYbVXFLjw": {
+                    "title": "Class Features"
+                },
+                "sDYsem2WwWHtRGj9": {
+                    "title": "Class Features"
+                },
+                "T6SDpQI1L8qivGUw": {
+                    "title": "Class Features"
+                },
+                "E698BngQ7tgxYG9T": {
+                    "title": "Class Features"
+                },
                 "bwCLOdauuzoHofil": {
                     "hint": "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Warlock levels 8, 12, and 16."
                 },
@@ -2886,6 +3324,15 @@
             "description": "<blockquote><p>Master Unarmed Combat Techniques</p></blockquote><p>Warriors of the Open Hand are masters of unarmed combat. They learn techniques to push and trip their opponents and manipulate their own energy to protect themselves from harm.</p>",
             "advancement": {
                 "Subclass Features": {
+                    "title": "Subclass Features"
+                },
+                "KKc6VtzWsSGh2NnC": {
+                    "title": "Subclass Features"
+                },
+                "M7cvHrnI6p0Yo150": {
+                    "title": "Subclass Features"
+                },
+                "1kqB8Z5f6UcgmGjY": {
                     "title": "Subclass Features"
                 }
             }
@@ -2970,6 +3417,18 @@
             "description": "<h3>Core Wizard Traits</h3><table class=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p><strong>Primary Ability</strong></p></th><td><p>Intelligence</p></td></tr><tr><th scope=\"row\"><p><strong>Hit Point Die</strong></p></th><td><p>D6 per Wizard level</p></td></tr><tr><th scope=\"row\"><p><strong>Saving Throw Proficiencies</strong></p></th><td><p>Intelligence and Wisdom</p></td></tr><tr><th scope=\"row\"><p><strong>Skill Proficiencies</strong></p></th><td><p><em>Choose 2:</em>Arcana, History, Insight, Investigation, Medicine, Nature, or Religion</p></td></tr><tr><th scope=\"row\"><p><strong>Weapon Proficiencies</strong></p></th><td><p>Simple weapons</p></td></tr><tr><th scope=\"row\"><p><strong>Armor Training</strong></p></th><td><p>None</p></td></tr><tr><th scope=\"row\"><p><strong>Starting Equipment</strong></p></th><td><p><em>Choose A or B:</em> (A) 2 @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers}, @UUID[Compendium.dnd5e.equipment24.Item.phbagArcaneFocus]{Arcane Focus} (@UUID[Compendium.dnd5e.equipment24.Item.phbwepQuartersta]{Quarterstaff}), @UUID[Compendium.dnd5e.equipment24.Item.phbagRobe0000000]{Robe}, @UUID[Compendium.dnd5e.items.Item.LBajgahniRJbAgDr]{Spellbook}, @UUID[Compendium.dnd5e.equipment24.Item.phbagScholarsPac]{Scholar's Pack}, and [[/award 5GP]]; or (B) [[/award 55GP]]</p></td></tr></tbody></table><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixClass.JournalEntryPage.phbwzdWizard0000 inline classes=\"free-rules-embed\"]</p><h2>Becoming a Wizard …</h2><h3>As a Level 1 Character</h3><ul><li>Gain all the traits in the Core Wizard Traits table.</li><li>Gain the Wizard's level 1 features, which are listed in the Wizard Features table.</li></ul><h3>As a Multiclass Character</h3><ul><li>Gain the Hit Point Die from the Core Wizard Traits table.</li><li>Gain the Wizard's level 1 features, which are listed in the @UUID[Compendium.dnd5e.content24.JournalEntry.phbWizard0000000.JournalEntryPage.g7cMRWzsgAsEF7zC#class-features]{Wizard Features table}. See the @UUID[Compendium.dnd5e.content24.JournalEntry.phbCreatingAChar.JournalEntryPage.vcs4jfEKRxPCsgXm]{multiclassing rules} to determine your available spell slots.</li></ul><aside class=\"notable\"><p><strong>Expanding and Replacing a Spellbook</strong></p><p>The spells you add to your spellbook as you gain levels reflect your ongoing magical research, but you might find other spells during your adventures that you can add to the book. You could discover a Wizard spell on a Spell Scroll, for example, and then copy it into your spellbook.</p><p><strong>Copying a Spell into the Book.</strong> When you find a level 1+ Wizard spell, you can copy it into your spellbook if it's of a level you can prepare and if you have time to copy it. For each level of the spell, the transcription takes 2 hours and costs 50 GP. Afterward you can prepare the spell like the other spells in your spellbook.</p><p><strong>Copying the Book.</strong> You can copy a spell from your spellbook into another book. This is like copying a new spell into your spellbook but faster, since you already know how to cast the spell. You need spend only 1 hour and 10 GP for each level of the copied spell.</p><p>If you lose your spellbook, you can use the same procedure to transcribe the Wizard spells that you have prepared into a new spellbook. Filling out the remainder of the new book requires you to find new spells to do so. For this reason, many wizards keep a backup spellbook.</p></aside>",
             "advancement": {
                 "Class Features": {
+                    "title": "Class Features"
+                },
+                "JTCSb4dfm8Auy6WD": {
+                    "title": "Class Features"
+                },
+                "tQSiUAW1DhfY3Idi": {
+                    "title": "Class Features"
+                },
+                "rZqSZS149KxDBwjI": {
+                    "title": "Class Features"
+                },
+                "ssLPH7qn9DUncfJ1": {
                     "title": "Class Features"
                 },
                 "Max Prepared Spells": {
