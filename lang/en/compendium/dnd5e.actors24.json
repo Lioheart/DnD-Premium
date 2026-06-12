@@ -2856,6 +2856,7 @@
                     "name": "Create Undead",
                     "description": "<p>You can cast this spell only at night. Choose up to three corpses of Medium or Small Humanoids within range. Each one becomes a <strong>@UUID[Compendium.dnd5e.monsters.Actor.OBujQLLPSmlJiZnL]{Ghoul}</strong> under your control (see the <em>Monster Manual</em> for its stat block).</p><p>As a Bonus Action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to them). You decide what action the creature will take and where it will move on its next turn, or you can issue a general command, such as to guard a particular place. If you issue no commands, the creature takes the &amp;Reference[Dodge] action and moves only to avoid harm. Once given an order, the creature continues to follow the order until its task is complete.</p><p>The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell rather than animating new ones.</p><p><strong>Using a Higher-Level Spell Slot.</strong>If you use a level 7 spell slot, you can animate or reassert control over four <strong>Ghouls</strong>. If you use a level 8 spell slot, you can animate or reassert control over five <strong>Ghouls</strong> or two <strong>@UUID[Compendium.dnd5e.monsters.Actor.IyIybE5t2adMEVUM]{Ghasts}</strong> or <strong>@UUID[Compendium.dnd5e.monsters.Actor.rbyp54px2D0ql4QK]{Wights}</strong>. If you use a level 9 spell slot, you can animate or reassert control over six <strong>Ghouls</strong>, three <strong>Ghasts</strong> or <strong>Wights</strong>, or two <strong>@UUID[Compendium.dnd5e.monsters.Actor.t8WYD7ak07X7xpx8]{Mummies}</strong>. See the <em>Monster Manual</em> for these stat blocks.</p>",
                     "materials": "one 150+ GP black onyx stone for each corpse",
+                    "activation": "only at night",
                     "activities": {
                         "Animate Corpses": {
                             "name": "Animate Corpses"
@@ -5732,6 +5733,7 @@
                 "Counterspell": {
                     "name": "Counterspell",
                     "description": "<p>You attempt to interrupt a creature in the process of casting a spell. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.</p>",
+                    "activation": "when you see a creature within range casting a spell with Verbal, Somatic, or Material components",
                     "effects": {
                         "Spell Changes": {
                             "name": "Spell Changes"
@@ -5741,6 +5743,7 @@
                 "Shield": {
                     "name": "Shield",
                     "description": "<p>An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic Missile}</em>.</p>",
+                    "activation": "when you are hit by an attack roll or targeted by the Magic Missile spell",
                     "activities": {
                         "Cast": {
                             "name": "Cast"
@@ -6518,6 +6521,7 @@
                 "Shield": {
                     "name": "Shield",
                     "description": "<p>An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic Missile}</em>.</p>",
+                    "activation": "when you are hit by an attack roll or targeted by the Magic Missile spell",
                     "activities": {
                         "(free casting)": {
                             "name": "(free casting)"
@@ -6975,6 +6979,7 @@
                     "name": "Feather Fall",
                     "description": "<p>Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature.</p>",
                     "materials": "a small feather or piece of down",
+                    "activation": "when you or a creature you can see within 60 feet of you falls",
                     "effects": {
                         "Spell Changes": {
                             "name": "Spell Changes"
@@ -7128,6 +7133,7 @@
                 "Jxs1ABhUAKrPIoMY": {
                     "name": "Shield",
                     "description": "<p>An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic Missile}</em>.</p>",
+                    "activation": "when you are hit by an attack roll or targeted by the Magic Missile spell",
                     "effects": {
                         "Imperceptible Barrier": {
                             "name": "Imperceptible Barrier",
@@ -14432,6 +14438,7 @@
                 "Searing Smite": {
                     "name": "Searing Smite",
                     "description": "<p>As you hit the target, it takes an extra 1d6 Fire damage from the attack. At the start of each of its turns until the spell ends, the target takes 1d6 Fire damage and then makes a Constitution saving throw. On a failed save, the spell continues. On a successful save, the spell ends.</p><p><strong>Using a Higher-Level Spell Slot. </strong>All the damage increases by 1d6 for each spell slot level above 1.</p>",
+                    "activation": "immediately after hitting a target with a Melee weapon or an Unarmed Strike",
                     "activities": {
                         "Start of Turn Save": {
                             "name": "Start of Turn Save"
@@ -14458,6 +14465,7 @@
                 "Divine Smite": {
                     "name": "Divine Smite",
                     "description": "<p>The target takes an extra 2d8 Radiant damage from the attack. The damage increases by 1d8 if the target is a Fiend or an Undead.</p><p><strong>Using a Higher-Level Spell Slot. </strong>The damage increases by 1d8 for each spell slot level above 1.</p>",
+                    "activation": "Immediately after hitting a target with a Melee weapon or an Unarmed Strike",
                     "activities": {
                         "Unholy Creature Damage": {
                             "name": "Unholy Creature Damage"
@@ -14622,6 +14630,7 @@
                 "Shining Smite": {
                     "name": "Shining Smite",
                     "description": "<p>The target hit by the strike takes an extra 2d6 Radiant damage from the attack. Until the spell ends, the target sheds &amp;Reference[BrightLight] in a 5-foot radius, attack rolls against it have Advantage, and it can't benefit from the &amp;Reference[Invisible] condition.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 2.</p>",
+                    "activation": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
                     "effects": {
                         "Shining": {
                             "name": "Shining",
@@ -14854,6 +14863,7 @@
                 "QH0AgPkivU83QkKR": {
                     "name": "Shining Smite",
                     "description": "<p>The target hit by the strike takes an extra 2d6 Radiant damage from the attack. Until the spell ends, the target sheds &amp;Reference[BrightLight] in a 5-foot radius, attack rolls against it have Advantage, and it can't benefit from the &amp;Reference[Invisible] condition.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 2.</p>",
+                    "activation": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
                     "effects": {
                         "Shining": {
                             "name": "Shining",
@@ -15514,6 +15524,7 @@
                 "Counterspell": {
                     "name": "Counterspell",
                     "description": "<p>You attempt to interrupt a creature in the process of casting a spell. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.</p>",
+                    "activation": "when you see a creature within range casting a spell with Verbal, Somatic, or Material components",
                     "effects": {
                         "Spell Changes": {
                             "name": "Spell Changes"
@@ -15523,6 +15534,7 @@
                 "Shield": {
                     "name": "Shield",
                     "description": "<p>An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic Missile}</em>.</p>",
+                    "activation": "when you are hit by an attack roll or targeted by the Magic Missile spell",
                     "activities": {
                         "Cast": {
                             "name": "Cast"
@@ -15717,6 +15729,7 @@
                 "Counterspell": {
                     "name": "Counterspell",
                     "description": "<p>You attempt to interrupt a creature in the process of casting a spell. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.</p>",
+                    "activation": "when you see a creature within range casting a spell with Verbal, Somatic, or Material components",
                     "effects": {
                         "Spell Changes": {
                             "name": "Spell Changes"
@@ -15726,6 +15739,7 @@
                 "Shield": {
                     "name": "Shield",
                     "description": "<p>An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic Missile}</em>.</p>",
+                    "activation": "when you are hit by an attack roll or targeted by the Magic Missile spell",
                     "activities": {
                         "Cast": {
                             "name": "Cast"
@@ -17125,6 +17139,7 @@
                 "Hellish Rebuke": {
                     "name": "Hellish Rebuke",
                     "description": "<p>The creature that damaged you is momentarily surrounded by green flames. It makes a Dexterity saving throw, taking 2d10 Fire damage on a failed save or half as much damage on a successful one.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d10 for each spell slot level above 1.</p>",
+                    "activation": "taking damage from a creature that you can see within 60 feet of yourself",
                     "activities": {
                         "Save (free casting)": {
                             "name": "Save (free casting)"
@@ -17255,7 +17270,8 @@
                 },
                 "Counterspell": {
                     "name": "Counterspell",
-                    "description": "<p>You attempt to interrupt a creature in the process of casting a spell. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.</p>"
+                    "description": "<p>You attempt to interrupt a creature in the process of casting a spell. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.</p>",
+                    "activation": "when you see a creature within range casting a spell with Verbal, Somatic, or Material components"
                 },
                 "Fireball": {
                     "name": "Fireball",
@@ -17294,6 +17310,7 @@
                 "Shield": {
                     "name": "Shield",
                     "description": "<p>An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic Missile}</em>.</p>",
+                    "activation": "when you are hit by an attack roll or targeted by the Magic Missile spell",
                     "activities": {
                         "(free casting)": {
                             "name": "(free casting)"
@@ -17364,6 +17381,7 @@
                     "name": "Feather Fall",
                     "description": "<p>Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature.</p>",
                     "materials": "a small feather or piece of down",
+                    "activation": "when you or a creature you can see within 60 feet of you falls",
                     "effects": {
                         "Spell Changes": {
                             "name": "Spell Changes"
@@ -17734,6 +17752,7 @@
                 "BuEDVtKlcxUjnyUT": {
                     "name": "Shield",
                     "description": "<p>An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic Missile}</em>.</p>",
+                    "activation": "when you are hit by an attack roll or targeted by the Magic Missile spell",
                     "effects": {
                         "Imperceptible Barrier": {
                             "name": "Imperceptible Barrier",
@@ -20747,6 +20766,7 @@
                 "Ensnaring Strike": {
                     "name": "Ensnaring Strike",
                     "description": "<p>As you hit the target, grasping vines appear on it, and it makes a Strength saving throw. A Large or larger creature has Advantage on this save. On a failed save, the target has the <span style=\"font-family:Signika, sans-serif\">&amp;Reference[restrained apply=false] </span>condition until the spell ends. On a successful save, the vines shrivel away, and the spell ends.</p><p>While Restrained, the target takes 1d6 Piercing damage at the start of each of its turns. The target or a creature within reach of it can take an action to make a [[/check ability=str skill=ath dc=@attributes.spell.dc]] check against your spell save DC. On a success, the spell ends.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 1.</p>",
+                    "activation": "Immediately after hitting a creature with a weapon",
                     "activities": {
                         "Start of Turn Damage": {
                             "name": "Start of Turn Damage"
@@ -22849,6 +22869,7 @@
                 "Shield": {
                     "name": "Shield",
                     "description": "<p>An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic Missile}</em>.</p>",
+                    "activation": "when you are hit by an attack roll or targeted by the Magic Missile spell",
                     "effects": {
                         "Imperceptible Barrier": {
                             "name": "Imperceptible Barrier",
@@ -24660,6 +24681,7 @@
                     "name": "Create Undead",
                     "description": "<p>You can cast this spell only at night. Choose up to three corpses of Medium or Small Humanoids within range. Each one becomes a <strong>@UUID[Compendium.dnd5e.monsters.Actor.OBujQLLPSmlJiZnL]{Ghoul}</strong> under your control (see the <em>Monster Manual</em> for its stat block).</p><p>As a Bonus Action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to them). You decide what action the creature will take and where it will move on its next turn, or you can issue a general command, such as to guard a particular place. If you issue no commands, the creature takes the &amp;Reference[Dodge] action and moves only to avoid harm. Once given an order, the creature continues to follow the order until its task is complete.</p><p>The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell rather than animating new ones.</p><p><strong>Using a Higher-Level Spell Slot.</strong>If you use a level 7 spell slot, you can animate or reassert control over four <strong>Ghouls</strong>. If you use a level 8 spell slot, you can animate or reassert control over five <strong>Ghouls</strong> or two <strong>@UUID[Compendium.dnd5e.monsters.Actor.IyIybE5t2adMEVUM]{Ghasts}</strong> or <strong>@UUID[Compendium.dnd5e.monsters.Actor.rbyp54px2D0ql4QK]{Wights}</strong>. If you use a level 9 spell slot, you can animate or reassert control over six <strong>Ghouls</strong>, three <strong>Ghasts</strong> or <strong>Wights</strong>, or two <strong>@UUID[Compendium.dnd5e.monsters.Actor.t8WYD7ak07X7xpx8]{Mummies}</strong>. See the <em>Monster Manual</em> for these stat blocks.</p>",
                     "materials": "one 150+ GP black onyx stone for each corpse",
+                    "activation": "only at night",
                     "activities": {
                         "Animate Corpses": {
                             "name": "Animate Corpses"
@@ -28958,7 +28980,8 @@
                 "Feather Fall": {
                     "name": "Feather Fall",
                     "description": "<p>Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature.</p>",
-                    "materials": "a small feather or piece of down"
+                    "materials": "a small feather or piece of down",
+                    "activation": "when you or a creature you can see within 60 feet of you falls"
                 },
                 "Magic Missile": {
                     "name": "Magic Missile",
@@ -28982,6 +29005,7 @@
                 "Shield": {
                     "name": "Shield",
                     "description": "<p>An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic Missile}</em>.</p>",
+                    "activation": "when you are hit by an attack roll or targeted by the Magic Missile spell",
                     "activities": {
                         "(free casting)": {
                             "name": "(free casting)"
