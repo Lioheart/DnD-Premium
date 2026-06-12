@@ -5,6 +5,11 @@
         "requirements": "system.requirements",
         "materials": "system.materials.value",
         "chat": "system.description.chat",
+        "unidentified": "system.description.unidentified",
+        "activation": "system.activation.condition",
+        "activationCondition": "system.activation.condition",
+        "activationValue": "system.activation.value",
+        "targetAffects": "system.target.affects.special",
         "activities": {
             "path": "system.activities",
             "converter": "structured",
@@ -18,8 +23,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
+                "activationCondition": "activation.condition",
+                "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
+                "targetAffects": "target.affects.special",
                 "roll": "roll.name",
                 "range": {
                     "path": "range",
@@ -169,7 +177,9 @@
                 "Teleport": {
                     "name": "Teleportacja",
                     "condition": "Natychmiast po wykonaniu Akcji Ataku",
-                    "target": "Niezajęta przestrzeń"
+                    "activationCondition": "Natychmiast po wykonaniu Akcji Ataku",
+                    "target": "Niezajęta przestrzeń",
+                    "targetAffects": "Niezajęta przestrzeń"
                 }
             }
         },
@@ -180,11 +190,13 @@
             "activities": {
                 "Choose Resistances": {
                     "name": "Wybierz Odporności",
-                    "condition": "Za każdym razem, gdy kończysz Długi Odpoczynek"
+                    "condition": "Za każdym razem, gdy kończysz Długi Odpoczynek",
+                    "activationCondition": "Za każdym razem, gdy kończysz Długi Odpoczynek"
                 },
                 "Energy Redirection": {
                     "name": "Przekierowanie energii",
-                    "target": "Nie jest za Całkowitą osłoną"
+                    "target": "Nie jest za Całkowitą osłoną",
+                    "targetAffects": "Nie jest za Całkowitą osłoną"
                 }
             },
             "effects": {
@@ -225,6 +237,7 @@
                 "Improve Fate": {
                     "name": "Poprawa przeznaczenia",
                     "condition": "Gdy Ty lub inne stworzenie w promieniu 60 stóp odniesie sukces lub porażkę w Teście D20",
+                    "activationCondition": "Gdy Ty lub inne stworzenie w promieniu 60 stóp odniesie sukces lub porażkę w Teście D20",
                     "roll": "Premia/kara"
                 }
             }
@@ -236,7 +249,8 @@
             "activities": {
                 "Fortify Health": {
                     "name": "Wzmocnione zdrowie",
-                    "condition": "Za każdym razem, gdy odzyskujesz punkty wytrzymałości"
+                    "condition": "Za każdym razem, gdy odzyskujesz punkty wytrzymałości",
+                    "activationCondition": "Za każdym razem, gdy odzyskujesz punkty wytrzymałości"
                 }
             },
             "effects": {
@@ -257,7 +271,8 @@
             "activities": {
                 "Last Stand": {
                     "name": "Ostatni bastion",
-                    "condition": "Kiedy zostaniesz zredukowany do 0 punktów wytrzymałości"
+                    "condition": "Kiedy zostaniesz zredukowany do 0 punktów wytrzymałości",
+                    "activationCondition": "Kiedy zostaniesz zredukowany do 0 punktów wytrzymałości"
                 },
                 "Recover Vitality": {
                     "name": "Odzyskiwanie witalności"
@@ -292,6 +307,7 @@
                 "Free Cast Roll": {
                     "name": "Rzut darmowego rzucania czarów",
                     "condition": "Za każdym razem, gdy rzucasz czar przy użyciu komórki czaru 1-4 poziomu",
+                    "activationCondition": "Za każdym razem, gdy rzucasz czar przy użyciu komórki czaru 1-4 poziomu",
                     "roll": "Rzut kośćmi"
                 }
             }
@@ -331,7 +347,8 @@
             "activities": {
                 "Charge Attack": {
                     "name": "Atak Szarży",
-                    "condition": "Jeśli przemieścisz się o co najmniej 10 stóp w linii prostej tuż przed trafieniem jej atakiem wręcz"
+                    "condition": "Jeśli przemieścisz się o co najmniej 10 stóp w linii prostej tuż przed trafieniem jej atakiem wręcz",
+                    "activationCondition": "Jeśli przemieścisz się o co najmniej 10 stóp w linii prostej tuż przed trafieniem jej atakiem wręcz"
                 }
             }
         },
@@ -342,7 +359,9 @@
                 "Replenishing Meal": {
                     "name": "Posiłek regeneracyjny",
                     "condition": "Jako część Krótkiego odpoczynku",
-                    "target": "Kto zjadł jedzenie"
+                    "activationCondition": "Jako część Krótkiego odpoczynku",
+                    "target": "Kto zjadł jedzenie",
+                    "targetAffects": "Kto zjadł jedzenie"
                 },
                 "Bolstering Treats": {
                     "name": "Wzmacniające smakołyki"
@@ -353,7 +372,7 @@
             }
         },
         "Crafter": {
-            "name": "Rzemieślnik",
+            "name": "Wytwórca",
             "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Biegłość w Narzędziach.</strong> Zyskujesz biegłość w posługiwaniu się trzema różnymi Narzędziami Rzemieślniczymi wybranymi przez ciebie z tabeli Szybkiego Rzemiosła.</p><p><strong>Zniżka.</strong> Ilekroć kupujesz niemagiczny przedmiot, otrzymujesz na niego 20-procentową zniżkę.</p><p><strong>Szybkie Rzemiosło.</strong> Kiedy kończysz Długi Odpoczynek, możesz stworzyć jedną sztukę wyposażenia z tabeli Szybkiego Rzemiosła, pod warunkiem, że masz Narzędzia Rzemieślnicze związane z tym przedmiotem i masz w nich biegłość. Przedmiot działa do momentu, aż zakończysz kolejny Długi Odpoczynek, po czym rozpada się.</p><table><caption>Szybkie Rzemiosło</caption><thead><tr><td>Narzędzia Rzemieślnicze</td><td>Wytworzone Wyposażenie</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulCarpenters]</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLadder00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTorch000000]</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulLeatherwor]</td><td>Futerał, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000]</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulMasonsTool]</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBlockandTac]</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulPottersToo]</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagJug00000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagLamp0000000]</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulSmithsTool]</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBallBearing], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBucket00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCaltrops000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagGrapplingHo], @UUID[Compendium.dnd5e.items.Item.M8xM8BLK4tpUayEE]</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulTinkersToo]</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBell0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagShovel00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00]</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulWeaversToo]</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBasket00000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRope0000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagNet00000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTent0000000]</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulWoodcarver]</td><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepClub000000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepGreatclub0], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepQuartersta]</td></tr></tbody></table>",
             "advancement": {
                 "Tool Proficiency": {
@@ -468,7 +487,8 @@
             "activities": {
                 "Heavy Weapon Damage": {
                     "name": "Obrażenia ciężką bronią",
-                    "condition": "Gdy trafisz istotę bronią o właściwości Ciężka w ramach Akcji Atak w swojej turze"
+                    "condition": "Gdy trafisz istotę bronią o właściwości Ciężka w ramach Akcji Atak w swojej turze",
+                    "activationCondition": "Gdy trafisz istotę bronią o właściwości Ciężka w ramach Akcji Atak w swojej turze"
                 }
             }
         },
@@ -517,11 +537,13 @@
             "activities": {
                 "Inspire with Wisdom": {
                     "name": "Zainspiruj Mądrością",
-                    "condition": "Gdy zakończysz Krótki lub Długi Odpoczynek"
+                    "condition": "Gdy zakończysz Krótki lub Długi Odpoczynek",
+                    "activationCondition": "Gdy zakończysz Krótki lub Długi Odpoczynek"
                 },
                 "Inspire with Charisma": {
                     "name": "Zainspiruj Charyzmą",
-                    "condition": "Gdy zakończysz Krótki lub Długi Odpoczynek"
+                    "condition": "Gdy zakończysz Krótki lub Długi Odpoczynek",
+                    "activationCondition": "Gdy zakończysz Krótki lub Długi Odpoczynek"
                 }
             }
         },
@@ -531,7 +553,8 @@
             "activities": {
                 "Intercept": {
                     "name": "Przechwycenie",
-                    "condition": "Gdy istota, którą widzisz, trafi inną istotę w zasięgu 5 stóp od ciebie testem ataku"
+                    "condition": "Gdy istota, którą widzisz, trafi inną istotę w zasięgu 5 stóp od ciebie testem ataku",
+                    "activationCondition": "Gdy istota, którą widzisz, trafi inną istotę w zasięgu 5 stóp od ciebie testem ataku"
                 }
             }
         },
@@ -561,11 +584,13 @@
             "activities": {
                 "Advantage": {
                     "name": "Ułatwienie",
-                    "condition": "Gdy wykonujesz rzut k20 w ramach Testu K20"
+                    "condition": "Gdy wykonujesz rzut k20 w ramach Testu K20",
+                    "activationCondition": "Gdy wykonujesz rzut k20 w ramach Testu K20"
                 },
                 "Disadvantage": {
                     "name": "Utrudnienie",
-                    "condition": "Gdy istota wykonuje rzut k20 na test ataku przeciwko tobie"
+                    "condition": "Gdy istota wykonuje rzut k20 na test ataku przeciwko tobie",
+                    "activationCondition": "Gdy istota wykonuje rzut k20 na test ataku przeciwko tobie"
                 }
             }
         },
@@ -575,7 +600,8 @@
             "activities": {
                 "Guard Mind": {
                     "name": "Chroniony umysł",
-                    "condition": "Gdy nie powiedzie ci się rzut obronny na Inteligencję, Mądrość lub Charyzmę"
+                    "condition": "Gdy nie powiedzie ci się rzut obronny na Inteligencję, Mądrość lub Charyzmę",
+                    "activationCondition": "Gdy nie powiedzie ci się rzut obronny na Inteligencję, Mądrość lub Charyzmę"
                 }
             }
         },
@@ -690,7 +716,8 @@
             "activities": {
                 "Protect": {
                     "name": "Ochrona",
-                    "condition": "Gdy istota, którą widzisz, atakuje cel inny niż ty w zasięgu 5 stóp od ciebie"
+                    "condition": "Gdy istota, którą widzisz, atakuje cel inny niż ty w zasięgu 5 stóp od ciebie",
+                    "activationCondition": "Gdy istota, którą widzisz, atakuje cel inny niż ty w zasięgu 5 stóp od ciebie"
                 }
             },
             "effects": {
@@ -761,7 +788,8 @@
             "activities": {
                 "Shield Bash": {
                     "name": "Uderzenie tarczą",
-                    "condition": "Jeśli trafisz istotę bronią do walki wręcz znajdującą się w odległości 5 stóp od ciebie w ramach Akcji Atak"
+                    "condition": "Jeśli trafisz istotę bronią do walki wręcz znajdującą się w odległości 5 stóp od ciebie w ramach Akcji Atak",
+                    "activationCondition": "Jeśli trafisz istotę bronią do walki wręcz znajdującą się w odległości 5 stóp od ciebie w ramach Akcji Atak"
                 }
             },
             "effects": {
@@ -852,15 +880,18 @@
             "activities": {
                 "Telekinetic Shove: Intelligence": {
                     "name": "Telekinetyczne pchnięcie: Inteligencja",
-                    "target": "Widzisz"
+                    "target": "Widzisz",
+                    "targetAffects": "Widzisz"
                 },
                 "Telekinetic Shove: Wisdom": {
                     "name": "Telekinetyczne pchnięcie: Mądrość",
-                    "target": "Widzisz"
+                    "target": "Widzisz",
+                    "targetAffects": "Widzisz"
                 },
                 "Telekinetic Shove: Charisma": {
                     "name": "Telekinetyczne pchnięcie: Charyzma",
-                    "target": "Widzisz"
+                    "target": "Widzisz",
+                    "targetAffects": "Widzisz"
                 }
             }
         },
@@ -906,7 +937,9 @@
                 "Grappled Damage": {
                     "name": "Obrażenia zadane Pochwyconemu",
                     "condition": "Na początku każdej twojej tury",
-                    "target": "Pochwycony przez ciebie"
+                    "activationCondition": "Na początku każdej twojej tury",
+                    "target": "Pochwycony przez ciebie",
+                    "targetAffects": "Pochwycony przez ciebie"
                 }
             }
         },

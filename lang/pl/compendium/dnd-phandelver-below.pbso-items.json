@@ -1,0 +1,946 @@
+{
+    "label": "Pbso-Items",
+    "folders": {
+        "Blessings": "Błogosławieństwa",
+        "Containers": "Pojemniki",
+        "Equipment": "Wyposażenie",
+        "Food": "Jedzenie",
+        "Loot": "Przedmiot",
+        "Potions": "Mikstury",
+        "Quest": "Quest",
+        "Scrolls": "Zwoje",
+        "Spells": "Czary",
+        "Tools": "Narzędzia",
+        "Trade Goods": "Trade Goods",
+        "Trinkets": "Drobiazgi",
+        "Wands": "Różdzki",
+        "Weapons": "Bronie"
+    },
+    "entries": {
+        "Agate": {
+            "name": "Agate"
+        },
+        "Alchemy Jug": {
+            "name": "Alchemiczny gąsior",
+            "description": {
+                "value": "<div><p><strong>Found in @UUID[JournalEntry.pbsoCh6talhunder.JournalEntryPage.7yykJG22FtRRTJmV]{T11.}</strong></p><p><em>Wondrous item</em></p></div><div><p>This ceramic jug appears to be able to hold a gallon of liquid and weighs 12 pounds whether full or empty. Sloshing sounds can be heard from within the jug when it is shaken, even if the jug is empty.</p></div><div><p>You can use an action and name one liquid from the table below to cause the jug to produce the chosen liquid. Afterward, you can uncork the jug as an action and pour that liquid out, up to 2 gallons per minute. The maximum amount of liquid the jug can produce depends on the liquid you named.</p></div><div><p>Once the jug starts producing a liquid, it can't produce a different one, or more of one that has reached its maximum, until the next dawn.</p><table><tbody><tr><th><p>Liquid</p></th><th><p>Max Amount</p></th></tr><tr><td><p>Acid</p></td><td><p>8 ounces</p></td></tr><tr><td><p>Basic poison</p></td><td><p>1/2 ounce</p></td></tr><tr><td><p>Beer</p></td><td><p>4 gallons</p></td></tr><tr><td><p>Honey</p></td><td><p>1 gallon</p></td></tr><tr><td><p>Mayonnaise</p></td><td><p>2 gallons</p></td></tr><tr><td><p>Oil</p></td><td><p>1 quart</p></td></tr><tr><td><p>Vinegar</p></td><td><p>2 gallons</p></td></tr><tr><td><p>Water, fresh</p></td><td><p>8 gallons</p></td></tr><tr><td><p>Water, salt</p></td><td><p>12 gallons</p></td></tr><tr><td><p>Wine</p></td><td><p>1 gallon</p></td></tr></tbody></table></div>"
+            }
+        },
+        "Amber Inkwell": {
+            "name": "Amber Inkwell"
+        },
+        "Amethysts": {
+            "name": "Amethysts",
+            "description": {
+                "value": "<p><strong>Found in @UUID[JournalEntry.pbsoCh6gibbetcro.JournalEntryPage.CNHEaWPdgnXVAhCl]{G10.}</strong></p>"
+            }
+        },
+        "Amulet of Proof against Detection and Location": {
+            "name": "Amulet niewykrywalności",
+            "description": {
+                "value": "<div><div><p><em>Wondrous Item (requires attunement)</em></p></div><div><p>While wearing this amulet, you are hidden from divination magic. You can't be targeted by such magic or perceived through magical scrying sensors.</p></div></div>"
+            }
+        },
+        "Antique Maps": {
+            "name": "Antique Maps",
+            "description": {
+                "value": "<p>A collection of historical, antique maps of the Underdark. Valuable to a historian or collector.</p>"
+            }
+        },
+        "Barrel of Oil": {
+            "name": "Barrel of Oil",
+            "description": {
+                "value": "<p>A barrel containing about 50 flasks of oil from the supplies being brought to Phandalin.</p>"
+            }
+        },
+        "Basilisk Figurine": {
+            "name": "Basilisk Figurine",
+            "description": {
+                "value": "<p>Platinum figurine of a basilisk.</p>"
+            }
+        },
+        "Bead of Force": {
+            "name": "Koralik mocy",
+            "description": {
+                "value": "<p><em>Cudowny przedmiot</em></p>\n<p>Ta mała czarna kulka ma 2 cm średnicy i waży 30 gramów. Zazwyczaj znajduje się 1k4 + 4 koralików mocy na raz.</p>\n<p>W ramach akcji możesz rzucić kulką na odległość do 18 metrów. Koralik eksploduje przy uderzeniu i zostaje zniszczony. Każda istota w promieniu 3 metrów od miejsca, w którym wylądował koralik, musi wykonać rzut obronny na Zręczność o ST 15. W przypadku niepowodzenia otrzymuje 5k4 obrażeń od mocy. Następnie obszar ten przez 1 minutę otacza sfera przezroczystej mocy. Każde stworzenie, które poniosło porażkę w rzucie obronnym i znajduje się całkowicie wewnątrz obszaru, zostaje uwięzione w tej sferze. Istoty, które odniosły sukces albo przebywają częściowo w obszarze, zostają wypchnięte na zewnątrz sfery. Przez ściany sfery może przeniknąć tylko powietrze nadające się do oddychania. Nie może przeniknąć żaden atak ani inny efekt.</p>\n<p>Zamknięte stworzenie może użyć swojej akcji, aby naprzeć na ścianę sfery, turlając ją z połową swojej szybkości chodzenia. Sferę można podnieść, a jej magia sprawia, że waży tylko 0,5 kilograma, niezależnie od wagi uwięzionych istot w środku.</p>"
+            }
+        },
+        "Beaver Pelt": {
+            "name": "Beaver Pelt"
+        },
+        "Beholder Statuette": {
+            "name": "Beholder Statuette",
+            "description": {
+                "value": "<p>A statuette of a beholder with emeralds at the ends of the eyestalks and a huge diamond for a central eye.</p>"
+            }
+        },
+        "Blessing of Dumathoin": {
+            "name": "Blessing of Dumathoin",
+            "description": {
+                "value": "<p>Your eyes become keen enough to pick out hidden secrets. You gain &amp;Reference[darkvision]. If you already had darkvision, you can see in color in the dark.</p><p>In addition, you can use an action to gain &amp;Reference[truesight] for 1 minute. Once you gain truesight in this way, you can’t do so again until you finish a long rest.</p>"
+            }
+        },
+        "Blessing of the Solipsistic Mind": {
+            "name": "Blessing of the Solipsistic Mind",
+            "description": "<p><span style=\"font-family:Signika, sans-serif\">For the duration, when you make an Intelligence check, Wisdom check, Intelligence saving throw, or Wisdom saving throw, you can roll a d8 and add the number rolled to the ability check or saving throw.</span></p>"
+        },
+        "Bloody Chain Mail": {
+            "name": "Bloody Chain Mail",
+            "description": {
+                "value": "<p>Wykonana jest ze splecionych ze sobą metalowych pierścieni i noszona pomiędzy warstwami miękkiej skóry lub płótna, dzięki czemu wytłumiony zostaje dźwięk trącego o siebie metalu. Koszulka kolcza oferuje przeciętny poziom ochrony górnych partii ciała. Zbroja zawiera karwasze</p>"
+            }
+        },
+        "Book": {
+            "name": "Książka",
+            "description": {
+                "value": "<p>Unused book with blank pages.</p>"
+            }
+        },
+        "Box of Silver Forks": {
+            "name": "Box of Silver Forks",
+            "description": {
+                "value": "<p>Box containing a set of several silver, six-pronged forks.</p>"
+            }
+        },
+        "Bracers of Archery": {
+            "name": "Karwasze łucznictwa"
+        },
+        "Bracers of Celerity": {
+            "name": "Bracers of Celerity",
+            "description": {
+                "value": "<p><em>Wondrous Item, Rare (Requires Attunement)</em></p><p>This pair of lightweight bronze bracers is lined with soft, purple velvet and engraved with swirling designs.</p><p>While you’re wearing these bracers, all your speeds increase by 10 feet, and you have <strong>advantage</strong> on saving throws you make to avoid or end the &amp;Reference[paralyzed] or &amp;Reference[restrained] condition on yourself.</p>"
+            }
+        },
+        "Brass Dragon Scales": {
+            "name": "Brass Dragon Scales",
+            "description": {
+                "value": "<p>A strange, diamond-shaped plate of a brown-gold color. Each is about half the size of a human hand, light in weight, and as tough as iron.</p>"
+            }
+        },
+        "Bronze Breastplate": {
+            "name": "Bronze Breastplate",
+            "description": {
+                "value": "<p>Bronze @UUID[Compendium.dnd5e.items.Item.SK2HATQ4abKUlV8i]{breastplate} studded with quartz.</p>"
+            }
+        },
+        "Calligrapher's Supplies": {
+            "name": "Materiały kaligraficzne",
+            "description": {
+                "value": "<p>Te specjalistyczne narzędzia zawierają przedmioty niezbędne do uprawiania rzemiosła i sztuki kaligrafii.</p>\n<p>Biegłość w zestawie narzędzi rzemieślniczych pozwala dodać premię z biegłości do dowolnych testów cech, które wykonujesz podczas używania zestawu. Każdy rodzaj narzędzi rzemieślniczych wymaga odrębnej biegłości.</p>"
+            }
+        },
+        "Cape of Enlargement": {
+            "name": "Cape of Enlargement",
+            "description": "<ul><li><p>Your size increases by one category—from Medium to Large, for example. If there isn’t enough room for your size to increase by one category, you instead become the maximum possible size in the space available.</p></li><li><p>You have advantage on Strength checks and Strength saving throws.</p></li><li><p>When you hit with an attack roll using a weapon or an unarmed strike, you can add your proficiency bonus to the attack’s damage.</p></li></ul>"
+        },
+        "Careful Mind Crystal": {
+            "name": "Careful Mind Crystal",
+            "description": {
+                "value": "<p><em>Wondrous Item, Uncommon</em></p><p>These gemstones contain a crystallized bit of spellcasting magic. Different types of mind crystals exist, each with a different single-use effect.</p><p>When you cast a spell that has a casting time of 1 action while holding a mind crystal, you can modify the spell in a specific way that has an effect described below. You can use only a single mind crystal to modify the spell, and you can’t use a mind crystal and a Metamagic option on the same spell. Once you use a mind crystal, it becomes a nonmagical gem worth 50 gp.</p><p><strong>Effect.</strong> Choose up to three creatures affected by the spell. The chosen creatures automatically succeed on their saving throws against the spell.</p>"
+            }
+        },
+        "Carnelian": {
+            "name": "Carnelian"
+        },
+        "Cartographer's Tools": {
+            "name": "Narzędzia kartografa",
+            "description": {
+                "value": "<p>Te specjalistyczne narzędzia zawierają przedmioty niezbędne do uprawiania rzemiosła i sztuki kartografii.</p>\n<p>Biegłość w zestawie narzędzi rzemieślniczych pozwala dodać premię z biegłości do dowolnych testów cech, które wykonujesz podczas używania zestawu. Każdy rodzaj narzędzi rzemieślniczych wymaga odrębnej biegłości.</p>"
+            }
+        },
+        "Carved Wooden Pendant": {
+            "name": "Carved Wooden Pendant",
+            "description": {
+                "value": "<p>A carved wooden pendant shaped like a unicorn's head found on a skeleton in the bottom of the crevasse in the Redbrand's Hideout.</p>"
+            }
+        },
+        "Cask of Salted Pork": {
+            "name": "Cask of Salted Pork",
+            "description": {
+                "value": "<p>A cask of salted pork from the provisions being brought to Phandalin.</p>"
+            }
+        },
+        "Censer": {
+            "name": "Kadzielnica",
+            "description": {
+                "value": "<p>A beautiful censer found in the goblin shrine of Cragmaw Castle.</p>"
+            }
+        },
+        "Chalice": {
+            "name": "Kielich",
+            "description": {
+                "value": "<p>A masterfully crafted chalice found in the goblin shrine of Cragmaw Castle.</p>"
+            }
+        },
+        "Chunk of Blue Quartz": {
+            "name": "Chunk of Blue Quartz"
+        },
+        "Collapsable Cage": {
+            "name": "Collapsable Cage",
+            "description": {
+                "value": "<p><strong>Found in @UUID[JournalEntry.pbsoCh6gibbetcro.JournalEntryPage.y37U98syx1IS7rV4]{G3.}</strong></p><p>It can be folded flat with 1 minute of work. It weighs 50 pounds. Although much of the cage is made of iron, it has reinforcing bars and hinges made of mithral, and inward-pointing spikes. The cage doesn’t have a lock; customers paid extra for locks manufactured elsewhere.</p>"
+            }
+        },
+        "Crystal Pitcher": {
+            "name": "Crystal Pitcher",
+            "description": {
+                "value": "<p>Fragile.</p>"
+            }
+        },
+        "Dagger of Venom": {
+            "name": "Sztylet jadu",
+            "description": {
+                "value": "<p>Zyskujesz premię +1 do testów ataku i rzutów na obrażenia zadawane za pomocą tej magicznej broni.</p>\n<p>W ramach akcji możesz spowodować, że ostrze pokryje gęsta, czarna trucizna. Trucizna pozostaje na ostrzu przez 1 minutę lub do momentu, kiedy trafisz inne stworzenie atakiem przy użyciu tej broni. Trafione stworzenie musi wykonać rzut obronny na Kondycję o ST 15. W przypadku niepowodzenia otrzymuje 2k10 obrażeń od trucizny i zostaje zatruta na 1 minutę. Sztyletu nie można w ten sposób użyć ponownie do następnego świtu</p>"
+            }
+        },
+        "Decorated Longsword": {
+            "name": "Decorated Longsword",
+            "description": {
+                "value": "<p>@UUID[Compendium.dnd5e.items.Item.10ZP2Bu3vnCuYMIB]{Longsword} decorated with shimmering filigree.</p>"
+            }
+        },
+        "Deurgar Tapestry": {
+            "name": "Deurgar Tapestry",
+            "description": {
+                "value": "<p><em>Richly woven but dusty duergar tapestry</em></p>"
+            }
+        },
+        "Diamond(s)": {
+            "name": "Diamond(s)",
+            "description": {
+                "value": "<p><strong>Found in @UUID[JournalEntry.pbsoIlvaashsAnim.JournalEntryPage.GlgP94R4ncHIWPlD]{A3.}</strong></p>"
+            }
+        },
+        "Distant Mind Crystal": {
+            "name": "Distant Mind Crystal",
+            "description": {
+                "value": "<p><em>Wondrous Item, Uncommon</em></p><p>These gemstones contain a crystallized bit of spellcasting magic. Different types of mind crystals exist, each with a different single-use effect.</p><p>When you cast a spell that has a casting time of 1 action while holding a mind crystal, you can modify the spell in a specific way that has an effect described below. You can use only a single mind crystal to modify the spell, and you can’t use a mind crystal and a Metamagic option on the same spell. Once you use a mind crystal, it becomes a nonmagical gem worth 50 gp.</p><p><strong>Effect</strong><em><strong>.</strong></em> If the spell has a range of 5 feet or more and doesn’t have a range of self, the spell’s range increases by 100 feet. If the spell has a range of touch, its range becomes 30 feet.</p>"
+            }
+        },
+        "Dragon Bile": {
+            "name": "Dragon Bile"
+        },
+        "Dragonguard": {
+            "name": "Dragonguard",
+            "description": {
+                "value": "<section class=\"secret\" id=\"secret-Q26D5eHK5Wr390yw\"><p><span style=\"font-family:Roboto, Helvetica, sans-serif\">You have a +1 bonus to AC while wearing this armor.</span></p><p><span style=\"font-family:Roboto, Helvetica, sans-serif\">This breastplate has a gold dragon motif worked into its design. Created for a human hero of old Neverwinter named Tergon, it grants its wearer advantage on saving throws against the breath weapons of Dragons.</span></p></section><p>This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered.</p>"
+            }
+        },
+        "Dragonguard Armor Boost": {
+            "name": "Dragonguard Armor Boost",
+            "description": "<p>You have a +1 bonus to AC while wearing this armor.</p>"
+        },
+        "Dusty Gemstone": {
+            "name": "Dusty Gemstone",
+            "description": {
+                "value": "<p><strong>Found in @UUID[JournalEntry.pbsoCh6crypttalh.JournalEntryPage.iY12gUH289TDQ9oA]{P17.}</strong></p>"
+            }
+        },
+        "Dwarven Ale Mug": {
+            "name": "Dwarven Ale Mug",
+            "description": {
+                "value": "<p>A Dwarven ale mug made of hammered electrum.</p>"
+            }
+        },
+        "Emboldening Brandy": {
+            "name": "Emboldening Brandy",
+            "description": {
+                "value": "<section class=\"secret\" id=\"secret-8hB0iy2aWhb2fnzL\"><p>A character who imbibes a glass of brandy receives 1 &amp;Reference[temporary-hit-points], but a character who drinks two glasses or more within 1 hour has the &amp;Reference[condition=poisoned]{poisoned} condition for 1 hour.</p></section><p>A small cask filled with an exceptional dwarven brandy. Contains the equivalent of twenty glasses.</p>"
+            }
+        },
+        "Emerald": {
+            "name": "Emerald"
+        },
+        "Emerald Elemental Gem": {
+            "name": "Emerald Elemental Gem",
+            "description": {
+                "value": "<p><em>Wondrous item</em></p>\n<p>This emerald contains a mote of elemental energy. When you use an action to break the gem, a @Compendium[dnd5e.monsters.namJz755U1EhvEJa]{Water Elemental} is summoned as if you had cast the @Compendium[dnd5e.spells.1LkZvINag7KqBmDR]{Conjure Elemental} spell, and the gem's magic is lost.</p>"
+            }
+        },
+        "Empowered Mind Crystal": {
+            "name": "Empowered Mind Crystal",
+            "description": {
+                "value": "<p><em>Wondrous Item, Uncommon</em></p><p>These gemstones contain a crystallized bit of spellcasting magic. Different types of mind crystals exist, each with a different single-use effect.</p><p>When you cast a spell that has a casting time of 1 action while holding a mind crystal, you can modify the spell in a specific way that has an effect described below. You can use only a single mind crystal to modify the spell, and you can’t use a mind crystal and a Metamagic option on the same spell. Once you use a mind crystal, it becomes a nonmagical gem worth 50 gp.</p><p><strong>Effect</strong><em><strong>.</strong></em> When you roll damage for the spell, you can reroll up to three damage dice. You must use the new rolls.</p>"
+            }
+        },
+        "Energized Shard": {
+            "name": "Energized Shard",
+            "description": {
+                "value": "<p><em>The iridescent crystal spires that cover the cavern spark with magical energy.</em></p><p>Can be used as a spellcasting focus.</p>"
+            }
+        },
+        "Extended Mind Crystal": {
+            "name": "Extended Mind Crystal",
+            "description": {
+                "value": "<p><em>Wondrous Item, Uncommon</em></p><p>These gemstones contain a crystallized bit of spellcasting magic. Different types of mind crystals exist, each with a different single-use effect.</p><p>When you cast a spell that has a casting time of 1 action while holding a mind crystal, you can modify the spell in a specific way that has an effect described below. You can use only a single mind crystal to modify the spell, and you can’t use a mind crystal and a Metamagic option on the same spell. Once you use a mind crystal, it becomes a nonmagical gem worth 50 gp.</p><p><strong>Effect.</strong> If the spell has a duration of 1 minute or longer, double the spell’s duration, to a maximum duration of 24 hours.</p>"
+            }
+        },
+        "Eyes of Minute Seeing": {
+            "name": "Szkła śledczego",
+            "description": {
+                "value": "<p><em>Wondrous item</em></p><p>These crystal lenses fit over the eyes. While wearing them, you can see much better than normal out to a range of 1 foot. You have <strong>advantage</strong> on &amp;Reference[investigation] checks that rely on sight while searching an area or studying an object within that range.</p>"
+            }
+        },
+        "Flayer Slayer": {
+            "name": "Flayer Slayer",
+            "description": {
+                "value": "<p><em>Weapon (Greataxe), Rare (Requires Attunement)</em></p><p><em>Carvings of decapitated mind flayers adorn this greataxe’s metal blade.</em></p><p>You gain a +1 bonus to attack and damage rolls made with this greataxe.</p><p>An Aberration hit with this greataxe takes an extra 1d12 slashing damage. If the Aberration is currently grappling a creature, the Aberration must succeed on a DC 15 Strength saving throw or release each creature it is grappling.</p>"
+            }
+        },
+        "Funerary Armor": {
+            "name": "Funerary Armor",
+            "description": {
+                "value": "<p><em>As this armor is funerary plate armor for the Talhund, Dumathoin’s faithful are reluctant to attack its wearer.</em> </p><p><strong>Undead dwarves</strong> in the Crypt of the Talhund have disadvantage on attack rolls against anyone wearing this armor.</p>",
+                "chat": "<p><span style=\"font-family:Signika, sans-serif\">Undead dwarves in the Crypt of the Talhund have disadvantage on attack rolls against anyone the wearer.</span></p>"
+            }
+        },
+        "Garnet": {
+            "name": "Garnet",
+            "description": {
+                "value": "<p>A beautiful garnet gemstone.</p>"
+            }
+        },
+        "Gem of Brightness": {
+            "name": "Klejnot blasku",
+            "description": {
+                "value": "<p><em>Cudowny przedmiot</em></p>\n<p>Ten pryzmat ma 50 ładunków. Kiedy go trzymasz, możesz w ramach akcji wypowiedzieć jedno z trzech słów rozkazu, aby wywołać jeden z następujących efektów:</p>\n<ul>\n<li>Pierwsze słowo rozkazu powoduje, że klejnot rzuca jasne światło w promieniu 9 metrów i słabe światło na dodatkowe 9 metrów. Ten efekt nie zużywa ładunku. Trwa, do chwili kiedy w ramach akcji dodatkowej powtórzysz słowo rozkazu lub aż użyjesz innego efektu klejnotu.</li>\n<li>Drugie słowo rozkazu zużywa 1 ładunek i powoduje, że klejnot wystrzeliwuje jasną wiązkę światła w jedną istotę, którą widzisz w obrębie 18 metrów od siebie. Stworzenie musi wykonać rzut obronny na Kondycję o ST 15. W przypadku niepowodzenia zostaje oślepione na 1 minutę. Istota może powtórzyć rzut obronny na koniec każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu.</li>\n<li>Trzecie słowo rozkazu zużywa 5 ładunków i powoduje, że klejnot rozbłyskuje oślepiającym światłem w kształcie stożka o długości 9 metrów. Każda istota na tym obszarze musi wykonać rzut obronny, tak jakby została trafiona promieniem utworzonym za pomocą drugiego słowa rozkazu.</li>\n</ul>\n<p>Gdy wszystkie ładunki zostaną zużyte, klejnot staje się niemagicznym kamieniem szlachetnym o wartości 50 sz.</p>"
+            }
+        },
+        "Gemstone": {
+            "name": "Gemstone",
+            "description": {
+                "value": "<p><strong>Found throughout the @UUID[JournalEntry.pbsoChapter60000.JournalEntryPage.ehkrLPV6v2RkToDl]{Crypt of the Talhund}.</strong></p>"
+            }
+        },
+        "Gnawble": {
+            "name": "Gnawble",
+            "description": {
+                "value": "<p><strong>See @UUID[JournalEntry.pbsoCh7rifts0000.JournalEntryPage.Amm4kRqrWbHTf56Y#gnawbles]{Gnawbles (Far Realm Rifts Features)} for further information.</strong></p><p>This fuzzy orb is palm-sized and bears a mouth with sharp teeth.</p>"
+            }
+        },
+        "Goblet Set With Moonstones": {
+            "name": "Goblet Set With Moonstones",
+            "description": {
+                "value": "<p>A silver goblet set with moonstones found in the Old Tower in the Ruins of Thundertree.</p>"
+            }
+        },
+        "Gold Cask Stopper": {
+            "name": "Gold Cask Stopper"
+        },
+        "Gold Feather": {
+            "name": "Gold Feather"
+        },
+        "Gold Necklace with Emerald Pendant": {
+            "name": "Gold Necklace with Emerald Pendant",
+            "description": {
+                "value": "<p>A gold necklace with a fine emerald pendant.</p>"
+            }
+        },
+        "Gold Wedding Ring": {
+            "name": "Gold Wedding Ring"
+        },
+        "Golden Earring": {
+            "name": "Golden Earring",
+            "description": {
+                "value": "<p>A simple golden earring set with a tiny ruby.</p>"
+            }
+        },
+        "Golden Elf Statuette": {
+            "name": "Golden Elf Statuette",
+            "description": {
+                "value": "<section id=\"secret-WmW0xwczQtZl3QaN\" class=\"secret\"><p>A detect magic spell reveals that the statuette is imbued with divination magic. A non-evil creature grasping the statue can ask it a question and receive a telepathic response, as though the creature had cast augury. Once a creature has asked its question and received a response, it can never activate the statuette again.</p></section><p>A gold statuette of an elf, wrapped in crimson cloth.</p>"
+            }
+        },
+        "Golden Statuette": {
+            "name": "Golden Statuette",
+            "description": {
+                "value": "<p>Golden statuette of a dwarf warrior.</p>"
+            }
+        },
+        "Heavy Crossbow": {
+            "name": "Ciężka kusza",
+            "description": {
+                "value": "<p>Duża kusza osadzona na solidnym, drewnianym łożu, napinana za pomocą ręcznej korby i wystrzeliwująca grube stalowe bełty z zabójczą siłą, zdolną przebijać pancerz i ciało.</p>"
+            }
+        },
+        "Heightened Mind Crystal": {
+            "name": "Heightened Mind Crystal",
+            "description": {
+                "value": "<p><em>Wondrous Item, Rare</em></p><p>These gemstones contain a crystallized bit of spellcasting magic. Different types of mind crystals exist, each with a different single-use effect.</p><p>When you cast a spell that has a casting time of 1 action while holding a mind crystal, you can modify the spell in a specific way that has an effect described below. You can use only a single mind crystal to modify the spell, and you can’t use a mind crystal and a Metamagic option on the same spell. Once you use a mind crystal, it becomes a nonmagical gem worth 50 gp.</p><p><strong>Effect.</strong> Choose one creature affected by the spell. That creature has <strong>disadvantage</strong> on the first saving throw it makes against the spell.</p>"
+            }
+        },
+        "Hew": {
+            "name": "Hew",
+            "description": {
+                "value": "<p><em>Whether through demonic blessing, celestial bequeathment, crazed experiment, or skillful craft, this weapon has been enhanced to bring more bloodshed by the bearer.</em></p><p>You have a bonus to attack and damage rolls made with this magic weapon.</p><p>Runes spell out “Hew” in Dwarvish on the axe head and the rust is misleading. Hew deals maximum damage when the wielder attacks a Plant creature or an object made of wood. The axe’s creator used it for protection in the forest while he cut firewood.</p>"
+            }
+        },
+        "Heward's Handy Haversack": {
+            "name": "Heward's Handy Haversack",
+            "description": {
+                "value": "<p><em>Cudowny przedmiot</em></p>\n<p>Ten plecak ma główną komorę i dwie boczne kieszenie; każda jest przestrzenią międzywymiarową. Każda boczna kieszeń może pomieścić do 10 kilogramów zawartości, nie przekraczając objętości 60 litrów. Duża główna komora może pomieścić do 240 litrów lub 40 kilogramów zawartości. Plecak zawsze waży 2,5 kilograma, niezależnie od jego zawartości.</p>\n<p>Umieszczanie przedmiotu w plecaku podlega normalnym zasadom interakcji z przedmiotami. Wyjęcie przedmiotu z plecaka wymaga poświęcenia na to akcji. Kiedy sięgasz do plecaka po określony przedmiot, to dzięki magii ta rzecz zawsze znajduje się na wierzchu.</p>\n<p>Plecak ma kilka ograniczeń. Jeśli zostanie przeładowany lub ostry przedmiot przebije go lub rozerwie, plecak pruje się i zostaje zniszczony. Jeśli plecak zostanie zniszczony, jego zawartość jest utracona na zawsze, chociaż artefakty zawsze gdzieś się pojawią. Jeśli plecak zostanie wywrócony na lewą stronę, to jego zawartość wypadnie nieuszkodzona, ale przed ponownym użyciem plecak należy przełożyć z powrotem. Jeśli w plecaku zostanie umieszczona oddychająca istota, to może ona przeżyć w środku do 10 minut, po czym zaczyna się dusić.</p>\n<p>Umieszczenie plecaka wewnątrz międzywymiarowej sfery stworzonej przez przenośną dziurę, torbę przechowywania albo podobny przedmiot natychmiast niszczy oba przedmioty i otwiera bramę do Sfery Astralnej. Brama powstaje tam, gdzie jeden przedmiot został umieszczony wewnątrz drugiego. Każda istota znajdująca się w promieniu 3 metrów od bramy zostaje przez nią wciągnięta i pojawia się w przypadkowym miejscu w Sferze Astralnej. Następnie brama się zamyka. Brama prowadzi tylko w jedną stronę i nie można jej ponownie otworzyć.</p>"
+            }
+        },
+        "Holy Symbol of Dumathoin": {
+            "name": "Holy Symbol of Dumathoin",
+            "description": {
+                "value": "<p>A platinum holy symbol of Dumathoin through which a true believer can call forth their power and in doing so spread the faith.</p><p><strong>Spellcasting Focus</strong>. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.</p>"
+            }
+        },
+        "Illustrated Book on Ropers": {
+            "name": "Illustrated Book on Ropers",
+            "description": {
+                "value": "<p>Książka zawierająca relacje historyczne, informacje dotyczące określonej dziedziny wiedzy, mitów lub legend.</p>"
+            }
+        },
+        "Immovable Greataxe": {
+            "name": "Immovable Greataxe",
+            "description": {
+                "value": "<p>This greataxe is not magical, but it has an @UUID[Compendium.dnd5e.items.Item.eQNXan0zp279jDtk]{immovable rod} as its shaft. The button to control the rod is within easy reach of anyone using the greataxe as a weapon.</p><p>You can use an action to press the button, which causes the greataxe to become magically fixed in place. Until you or another creature uses an action to push the button again, the axe doesn't move, even if it is defying gravity. The axe can hold up to 8,000 pounds of weight. More weight causes the axe to deactivate and fall. A creature can use an action to make a [[/check ability=str dc=30]] check, moving the fixed axe up to 10 feet on a success.</p>"
+            }
+        },
+        "Iron Ingot": {
+            "name": "Iron Ingot",
+            "description": {
+                "value": "<p>Often the workhorse of the metalworker, iron is appreciated for its relative abundence and ease of attainment. Surface iron can be found from fallen meteors and xenoliths, but is much more commonly mined underground. However, care must be given otherwise rust will take its toll.</p>"
+            }
+        },
+        "Ironquill's Journal and Bookplate": {
+            "name": "Ironquill's Journal and Bookplate",
+            "description": {
+                "value": "<p><strong>Found in @UUID[JournalEntry.pbsoCh7tunnelsde.JournalEntryPage.doMvucAxNgnTscja]{J2.}</strong>@Embed[JournalEntry.pbsoCh7art000000.JournalEntryPage.epqj8hlUZJ3wuFKg]{ }</p><blockquote><p>The ornate bookplate bears the name “Thorgran Ironquill, Historian.” Only the first few pages of the journal remain. They include rumors of rising mind flayer activity beneath the Sword Mountains. The journal’s author plans to spy on a mind flayer stronghold called Illithinoch deep underground. The author hopes this information will allow him to warn nearby dwarven enclaves, including the temple at Talhundereth.</p></blockquote><p>While the ornate silver bookplate alone is valuable, what remains of the journal may be of great interest to particular scholars.</p>"
+            }
+        },
+        "Jacinths": {
+            "name": "Jacinths"
+        },
+        "Jade": {
+            "name": "Jade"
+        },
+        "Jade Statuette": {
+            "name": "Jade Statuette",
+            "description": {
+                "value": "<p>A jade statuette of a frog with tiny golden orbs for eyes.</p>"
+            }
+        },
+        "Javelin of Lightning": {
+            "name": "Oszczep błyskawicy",
+            "description": {
+                "value": "<p><em>Gold-tipped javelin of lightning.</em></p><p>This javelin is a magic weapon. When you hurl it and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage.</p><p>The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon.</p>",
+                "chat": "<p>Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. </p><p>Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage.</p>"
+            }
+        },
+        "Jeweled Dagger": {
+            "name": "Jeweled Dagger",
+            "description": {
+                "value": "<p>Krótkie metalowe ostrze zamontowane do małej rękojeści z jelcem. Sztylet stanowi skuteczną broń boczną dla zatwardziałych wojowników lub ukryte ostrze dla zabójców i złodziei.</p>"
+            }
+        },
+        "Jeweled Gold Bracelet": {
+            "name": "Jeweled Gold Bracelet",
+            "description": {
+                "value": "<p>A jeweled gold bracelet found amidst the bones of a sarcophagus in the Redbrands' Hideout in Phandalin.</p>"
+            }
+        },
+        "Jeweled Ring": {
+            "name": "Jeweled Ring"
+        },
+        "Jeweled Silver Comb": {
+            "name": "Jeweled Silver Comb",
+            "description": {
+                "value": "<p>A jeweled silver comb from @UUID[JournalEntry.pbsoPhandalinVil.JournalEntryPage.2NFsevkbevf8r0ZP#sister-garaeles-bargain]{Sister Garaele} at the Shrine of Luck to offer to the banshee Agatha in @UUID[JournalEntry.pbsoConyberryAnd]{Conyberry}.</p>"
+            }
+        },
+        "Jeweler's Tools": {
+            "name": "Narzędzia jubilera",
+            "description": {
+                "value": "<p>Te specjalistyczne narzędzia zawierają przedmioty niezbędne do uprawiania rzemiosła i sztuki jubilerstwa.</p>\n<p>Biegłość w zestawie narzędzi rzemieślniczych pozwala dodać premię z biegłości do dowolnych testów cech, które wykonujesz podczas używania zestawu. Każdy rodzaj narzędzi rzemieślniczych wymaga odrębnej biegłości.</p>"
+            }
+        },
+        "Keg of Strong Ale": {
+            "name": "Keg of Strong Ale",
+            "description": {
+                "value": "<p>A keg of strong ale from the supplies being brought to Phandalin.</p>"
+            }
+        },
+        "Keoghtom's Ointment": {
+            "name": "Keoghtom's Ointment",
+            "description": {
+                "value": "<p><em>Wondrous item</em></p><p>This glass jar, 3 inches in diameter, contains 4 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound.</p><p>As an action, one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease.</p>"
+            }
+        },
+        "Lantern of Revealing": {
+            "name": "Ujawniająca latarnia",
+            "description": {
+                "value": "<p><em>Cudowny przedmiot</em></p>\n<p>Ta zamykana latarnia może świecić przez 6 godzin, zużywając 0,5 litra oleju. Emanuje wtedy jasnym światłem w promieniu 9 metrów i słabym światłem w promieniu dalszych 9 metrów. Niewidzialne istoty i obiekty, które znajdą się w obszarze jej jasnego światła, są widoczne. W ramach akcji możesz opuścić zasłonę, ograniczając obszar świecenia do słabego światła o promieniu 1,5 metra.</p>"
+            }
+        },
+        "Large Amethyst": {
+            "name": "Large Amethyst"
+        },
+        "Large Collapsable Cage": {
+            "name": "Large Collapsable Cage",
+            "description": {
+                "value": "<p><strong>Found in @UUID[JournalEntry.pbsoCh6gibbetcro.JournalEntryPage.xXHsGkGDLo7YqHpD]{G6.}</strong></p><p>It can be folded flat with 2 minutes of work. It weighs 500 pounds and is sized for Large creature. Although much of the cage is made of iron, it has reinforcing bars and hinges made of mithral, and inward-pointing spikes. The cage doesn’t have a lock; customers paid extra for locks manufactured elsewhere.</p>"
+            }
+        },
+        "Large Peridot": {
+            "name": "Large Peridot"
+        },
+        "Light Feathered Quarterstaff": {
+            "name": "Light Feathered Quarterstaff",
+            "description": {
+                "value": "<p>A thick shaft of wood wrapped with a sturdy grip makes a highly functional weapon in addition to a stout walking stick. This quarterstaff is surprisingly light and engraved with stylized feathers.</p>"
+            }
+        },
+        "Lightbringer": {
+            "name": "Lightbringer",
+            "description": {
+                "value": "<section class=\"secret\" id=\"secret-vSzDTMGvNqi4xrqv\"><p>This weapon, known as Lightbringer, was made for a cleric of Lathander, the god of dawn. The head of the mace is shaped like a sunburst and is made of solid brass. The mace glows as bright as a torch when its wielder commands. While glowing, the mace deals an extra 1d6 damage to Undead creatures.</p></section>"
+            }
+        },
+        "Luminous Daylight": {
+            "name": "Luminous Daylight",
+            "description": {
+                "value": "<p>A 60-foot-radius sphere of light spreads out from a point on the war pick you choose. The sphere is bright light and sheds dim light for an additional 60 feet.</p><p>If you chose a point on an object you are holding or one that isn't being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light.</p><p>If any of this spell's area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.</p>"
+            }
+        },
+        "Luminous War Pick": {
+            "name": "Luminous War Pick",
+            "description": {
+                "value": "<p><em>Weapon (War Pick), Rare (Requires Attunement)</em></p><p>The haft of this war pick is inlaid with crushed pearlescent stones that imbue the weapon with a faint luminescence. You gain a +1 bonus to attack and damage rolls made with this war pick.</p><p>While wielding the war pick, you can use a bonus action to cast the @UUID[Item.s9ZNjlUlDN5fztnW]{daylight} spell, choosing a point on the war pick. Once you use this bonus action, it can’t be used again until the next dawn.</p>"
+            }
+        },
+        "Lustrous Amethysts": {
+            "name": "Lustrous Amethysts",
+            "description": {
+                "value": "<p>A lustrous amethyst.</p>"
+            }
+        },
+        "Malachite": {
+            "name": "Malachite"
+        },
+        "Marthungrim's Journal": {
+            "name": "Marthungrim's Journal",
+            "description": {
+                "value": "<p>Found near a dwarf skeleton and shrine to Dumathoin, it contains the following information:</p><table class=\"fvtt\"><tbody><tr><td><p>Marthungrim was a paladin of Dumathoin who excavated this home more than 60 years ago. Dumathoin tasked Marthungrim with returning spirits to rest when a crypt for the god’s faithful was corrupted.</p></td></tr><tr><td><p>Marthungrim learned that the crypt lies beneath a temple called Talhundereth, but the temple teemed with dangerous monsters. The crypt is protected by a lock with a puzzle that Dumathoin’s faithful could solve easier than others. (The puzzle’s answer isn’t included in the journal.)</p></td></tr><tr><td><p>Marthungrim planned to destroy the restless ghosts that haunt the crypt so they could rest in peace.</p></td></tr><tr><td><p>Badly wounded by a creature he described as “roiling heaps of tentacles,” Marthungrim returned here. His last entry describes his wounds getting worse.</p></td></tr></tbody></table>"
+            }
+        },
+        "Mercury": {
+            "name": "Mercury"
+        },
+        "Metal Tongue": {
+            "name": "Metal Tongue",
+            "description": {
+                "value": "<p><strong>Found in @UUID[JournalEntry.pbsoOccludingMia.JournalEntryPage.GzuBwWdyY2ELY48g]{Occluding Miasma.}</strong></p><p>The tongue is about 1 foot long and half as wide.</p>"
+            }
+        },
+        "Mind Crystal": {
+            "name": "Mind Crystal",
+            "description": {
+                "value": "<p><em>Wondrous Item, Rarity Varies</em></p><p>These gemstones contain a crystallized bit of spellcasting magic. Different types of mind crystals exist, each with a different single-use effect.</p><p>When you cast a spell that has a casting time of 1 action while holding a mind crystal, you can modify the spell in a specific way that has an effect described below. You can use only a single mind crystal to modify the spell, and you can’t use a mind crystal and a Metamagic option on the same spell. Once you use a mind crystal, it becomes a nonmagical gem worth 50 gp.</p><p><strong>Careful (</strong><em><strong>Uncommon</strong></em><strong>).</strong> Choose up to three creatures affected by the spell. The chosen creatures automatically succeed on their saving throws against the spell.</p><p><strong>Distant (</strong><em><strong>Uncommon</strong></em><strong>).</strong> If the spell has a range of 5 feet or more and doesn’t have a range of self, the spell’s range increases by 100 feet. If the spell has a range of touch, its range becomes 30 feet.</p><p><strong>Empowered (</strong><em><strong>Uncommon</strong></em><strong>).</strong> When you roll damage for the spell, you can reroll up to three damage dice. You must use the new rolls.</p><p><strong>Extended (</strong><em><strong>Uncommon</strong></em><strong>).</strong> If the spell has a duration of 1 minute or longer, double the spell’s duration, to a maximum duration of 24 hours.</p><p><strong>Heightened (</strong><em><strong>Rare</strong></em><strong>).</strong> Choose one creature affected by the spell. That creature has disadvantage on the first saving throw it makes against the spell.</p><p><strong>Quickened (</strong><em><strong>Rare</strong></em><strong>).</strong> You change the spell’s casting time to 1 bonus action for this casting.</p><p><strong>Subtle (</strong><em><strong>Common</strong></em><strong>)</strong>. You cast the spell without any somatic or verbal components for this casting.</p>"
+            }
+        },
+        "Mindblasting Cap": {
+            "name": "Mindblasting Cap",
+            "description": {
+                "value": "<p><strong>Found in @UUID[JournalEntry.pbsoCh8brinymaze.JournalEntryPage.eJUjJD548m7pElFP]{B21.}</strong></p><p><em>Wondrous Item, Very Rare (Requires Attunement)</em></p><p><em>This soft, violet cap bears stitching in the pattern of folds on a brain.</em></p><p>As a bonus action while wearing the cap, you can project psychic energy in a 60-foot cone. Each creature in that area must make a DC 15 Intelligence saving throw. On a failed save, a creature takes 5d8 psychic damage and has the &amp;Reference[stunned] condition for 1 minute. On a successful save, the creature takes half as much damage only. At the end of each of its turns, a stunned creature can repeat the saving throw, ending the stunned condition on itself on a success.</p><p>Once this bonus action is used, it can’t be used again until the next dawn.</p><p></p>"
+            }
+        },
+        "Mindguard Crown": {
+            "name": "Mindguard Crown",
+            "description": {
+                "value": "<p><em>Wondrous Item, Very Rare (Requires Attunement)</em></p><p>While you wear this adamantine crown, you have <strong>advantage</strong> on Intelligence, Wisdom, and Charisma saving throws, and you have resistance to psychic damage.</p>"
+            }
+        },
+        "Mucus Fortification": {
+            "name": "Mucus Fortification",
+            "description": "<p>Any character who ingests the liquid gains resistance to psychic damage for 10 minutes.</p>"
+        },
+        "Mudslick Tower": {
+            "name": "Mudslick Tower",
+            "description": {
+                "value": "<p><em>Wondrous Item, Very Rare</em></p><p>You can use an action to place this 1-inch-diameter granite sphere on the ground and speak its command word, which is “petrification” in Terran. The sphere rapidly grows into a stout tower that remains until you use an action to touch the tower and speak the command word again, whereupon the tower shrinks back to a 1-inch-diameter granite sphere. The tower must be empty to shrink in this way. The tower bristles with muddy knobs that constantly extrude and retract across its surface, as though the tower were breathing through a coating of thick mud.</p><p>Each creature in the area where the tower appears must make a DC 15 Dexterity saving throw, taking 10d10 bludgeoning damage on a failed save, or half as much damage on a successful one. In either case, the creature is pushed to an unoccupied space outside but next to the tower. Objects in the area that aren’t being worn or carried take this damage and are pushed automatically.</p><p>Whenever it expands, the mudslick tower merges with any natural stone it touches, awkwardly tipping and wedging itself to touch as much natural stone as it can.</p><p>The tower is 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Its interior is divided into two floors, with a ladder running along one wall to connect them. The ladder ends at a trapdoor leading to the roof. When activated, the tower has a small door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the knock spell and similar magic, such as that of a chime of opening.</p><p>Although it looks like stone, the tower is made of adamantine, and its magic prevents creatures from tipping it over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. While merged with natural stone, the mudslick tower has immunity to all damage. Only a wish spell can repair the tower (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points.</p>"
+            }
+        },
+        "Obelisk Fragment": {
+            "name": "Obelisk Fragment",
+            "description": {
+                "value": "<p>Each of these fragments is larger than the shards in Phandalin, weighing 50 pounds and measuring more than a foot square. The fragments are supernaturally hardened and can’t be damaged by any means.</p>"
+            }
+        },
+        "Oil Flask": {
+            "name": "Butelka oleju",
+            "description": {
+                "value": "<p>Olej zwykle jest dostarczany w glinianej kolbie, która mieści 0,5 litra. W ramach akcji możesz rozlać olej na stworzenie znajdujące się w obrębie 1,5 metra od ciebie lub rzucić butelkę na odległość do 6 metrów, rozbijając ją przy uderzeniu. Wykonaj atak dystansowy przeciwko wybranemu stworzeniu lub obiektowi, traktując olej jako improwizowaną broń.</p>\n<p>Przy trafieniu cel staje się pokryty olejem. Jeśli cel otrzyma jakiekolwiek obrażenia od ognia przed wyschnięciem oleju (po 1 minucie), cel otrzymuje 5 dodatkowych obrażeń od ognia. Możesz również opróżnić kolbę z olejem na ziemię, aby pokryć nim powierzchnię równą kwadratowi o boku 1,5 metra, pod warunkiem, że powierzchnia jest równa.</p>\n<p>Jeśli zapali się, olej płonie przez 2 rundy i zadaje 5 obrażeń od ognia każdemu stworzeniu, które wejdzie na obszar lub zakończy na tym obszarze swoją turę. Stworzenie może otrzymać te obrażenia raz na turę.</p>"
+            }
+        },
+        "Ornamental Crystal Daggers": {
+            "name": "Ornamental Crystal Daggers",
+            "description": {
+                "value": "<p><strong>Found in @UUID[JournalEntry.pbsoCh7rifts0000.JournalEntryPage.26QfiOYclNf5AUna]{L4.}</strong></p>"
+            }
+        },
+        "Periapt of Health": {
+            "name": "Talizman zdrowia",
+            "description": {
+                "value": "<p><em>Cudowny przedmiot</em></p>\n<p>Kiedy nosisz ten talizman, masz niepodatność na wszelkie choroby. Jeżeli już chorujesz, to noszenie talizmanu zawiesza objawy choroby.</p>"
+            }
+        },
+        "Peridot": {
+            "name": "Peridot"
+        },
+        "Platinum Music Box": {
+            "name": "Platinum Music Box",
+            "description": {
+                "value": "<p>Plays music inaudible to dwarves.</p>"
+            }
+        },
+        "Potion of Climbing": {
+            "name": "Mikstura wspinaczki",
+            "description": {
+                "value": "<p><em>Mikstura ma brązowe, srebrne i szare warstwy przypominające pasma w skał. Potrząśnięcie butelką nie powoduje wymieszania kolorów.</em></p>\n<p>Kiedy wypijesz tę miksturę, zyskujesz szybkość wspinania się równą twojej szybkości chodzenia na 1 godzinę. W tym czasie masz ułatwienie w testach Siły (Atletyka), które wykonujesz podczas wspinaczki.</p>"
+            }
+        },
+        "Potion of Invisibility": {
+            "name": "Mikstura niewidzialności",
+            "description": {
+                "value": "<p><em>Fiolka z tą miksturą wygląda na pustą, ale można wyczuć, że zawiera płyn.</em></p>\n<p>Kiedy ją wypijesz, stajesz się niewidzialny na 1 godzinę. Wszystko, co nosisz lub trzymasz, staje się niewidzialne wraz z tobą. Efekt kończy się wcześniej, jeśli zaatakujesz lub rzucisz czar.</p>\n<p></p>"
+            }
+        },
+        "Potion of Invulnerability": {
+            "name": "Potion of Invulnerability",
+            "description": {
+                "value": "<p>For 1 minute after you drink this potion, you have &amp;Reference[damageresistance]{resistance} to all damage. The potion's syrupy liquid looks like liquefied iron.</p>"
+            }
+        },
+        "Potion of Psionic Fortitude": {
+            "name": "Potion of Psionic Fortitude",
+            "description": {
+                "value": "<p><em>Potion, Uncommon</em></p><p>When you drink this potion, you have advantage for 1 hour on saving throws you make to avoid or end the charmed or stunned condition on yourself.</p><p>This black potion swirls with shimmering flecks of pink and purple.</p>"
+            }
+        },
+        "Potion of Supreme Healing": {
+            "name": "Mikstura pierwszorzędnego leczenia",
+            "description": {
+                "value": "<p><em>Czerwony płyn mikstury mieni się po wstrząśnięciu.</em></p>\n<p>Po wypiciu tej mikstury odzyskujesz 10k4 + 20 punktów wytrzymałości.</p>"
+            }
+        },
+        "Powdered Nightshade": {
+            "name": "Powdered Nightshade"
+        },
+        "Projected Voice": {
+            "name": "Projected Voice"
+        },
+        "Quickened Mind Crystal": {
+            "name": "Quickened Mind Crystal",
+            "description": {
+                "value": "<p><em>Wondrous Item, Rare</em></p><p>These gemstones contain a crystallized bit of spellcasting magic. Different types of mind crystals exist, each with a different single-use effect.</p><p>When you cast a spell that has a casting time of 1 action while holding a mind crystal, you can modify the spell in a specific way that has an effect described below. You can use only a single mind crystal to modify the spell, and you can’t use a mind crystal and a Metamagic option on the same spell. Once you use a mind crystal, it becomes a nonmagical gem worth 50 gp.</p><p><strong>Effect.</strong> You change the spell’s casting time to 1 bonus action for this casting.</p>"
+            }
+        },
+        "Rare Perfume": {
+            "name": "Rare Perfume",
+            "description": {
+                "value": "<p>Especially rare bottle of perfume.</p>"
+            }
+        },
+        "Ribcage Gem": {
+            "name": "Ribcage Gem",
+            "description": {
+                "value": "<p><strong>Found in @UUID[JournalEntry.pbsoCh6crypttalh.JournalEntryPage.OttQ9p536P2tpWIk]{P8}, @UUID[JournalEntry.pbsoCh6crypttalh.JournalEntryPage.R9pBC836TtWultCR]{P10}, and @UUID[JournalEntry.pbsoCh6crypttalh.JournalEntryPage.9XygTO6hd7IGLkYN]{P11.}</strong></p>"
+            }
+        },
+        "Ring of Mind Shielding": {
+            "name": "Pierścień osłony umysłu",
+            "description": {
+                "value": "<p><em>(Wymaga zestrojenia)</em></p>\n<p>Gdy nosisz ten pierścień, jesteś odporny na magię, która pozwala innym stworzeniom czytać twoje myśli, określać, czy kłamiesz, wykrywać twój charakter lub rozpoznać jakiego rodzaju istotą jesteś. Istoty mogą komunikować się z tobą telepatycznie tylko wtedy, gdy na to pozwolisz.</p>\n<p>W ramach akcji możesz sprawić, że pierścień stanie się niewidzialny do chwili, w której uczynisz go na powrót widzialnym w ramach akcji, zdejmiesz go albo umrzesz.</p>\n<p>Jeśli umrzesz, nosząc pierścień, twoja dusza wejdzie w niego, chyba że jest już zamieszkany przez inną. Możesz pozostać w pierścieniu lub odejść w zaświaty. Dopóki twoja dusza jest w pierścieniu, możesz telepatycznie komunikować się z każdą istotą, która go nosi. Osoba nosząca pierścień nie może zapobiec tej telepatycznej komunikacji.</p>"
+            }
+        },
+        "Ring of Protection": {
+            "name": "Pierścień ochrony",
+            "description": {
+                "value": "<p><em>(Requires attunement)</em></p><p>You gain a +1 bonus to AC and saving throws while wearing this ring. The wearer also receives a +4 bonus to saving throws or checks made to avoid dropping or being disarmed of any item held in that hand.</p>"
+            }
+        },
+        "Ruby Eyeball": {
+            "name": "Ruby Eyeball",
+            "description": {
+                "value": "<p>Ruby carved to look like an eyeball.</p>"
+            }
+        },
+        "Scarlet Cloak": {
+            "name": "Scarlet Cloak",
+            "description": {
+                "value": "<p>A dirty scarlet cloak worn by the Redbrand Ruffians in Phandalin.</p>"
+            }
+        },
+        "Scroll of Fireball": {
+            "name": "Scroll of Fireball",
+            "description": {
+                "value": "<p><em>3rd Level &amp;Reference[Spell Scroll]</em></p><p>@Embed[Compendium.dnd5e.spells.Item.ztgcdrWPshKRpFd0 inline]</p>"
+            }
+        },
+        "Scroll of Hold Person": {
+            "name": "Scroll of Hold Person",
+            "description": {
+                "value": "<p><em>2nd Level &amp;Reference[Spell Scroll], Requires Concentration</em></p><p>@Embed[Compendium.dnd5e.spells.Item.3Lo9boi7P2ro6QV4 inline]</p>"
+            }
+        },
+        "Semiprecious Stones": {
+            "name": "Semiprecious Stones",
+            "description": {
+                "value": "<p>Some semiprecious stones.</p>"
+            }
+        },
+        "Shalfi's Ivory Pipes": {
+            "name": "Shalfi's Ivory Pipes",
+            "description": {
+                "value": "<p><strong>Found in @UUID[JournalEntry.pbsoCh8brinymaze.JournalEntryPage.7k8feoLXpOlFIsEw]{B9.}</strong></p>"
+            }
+        },
+        "Shortsword": {
+            "name": "Krótki miecz",
+            "description": {
+                "value": "<p>Średniej wielkości ostrze z solidnym jelcem i rękojeścią owiniętą skórą. Broń, która brak zasięgu nadrabia wszechstronnością.</p>"
+            }
+        },
+        "Shrubbery Opal": {
+            "name": "Shrubbery Opal",
+            "description": {
+                "value": "<p><strong>Found in @UUID[JournalEntry.pbsoMireOfDoubt0.JournalEntryPage.ZL2iVKS028oq5UTN]{M3.}</strong></p>"
+            }
+        },
+        "Sildar's Longsword": {
+            "name": "Sildar's Longsword",
+            "description": {
+                "value": "<p>A lengthy stright blade designed for slashing foes, the longsword is a highly versatile weapon that may also be wielded with two hands for more punishing strikes. It has the emblem of Neverwinter worked into its hilt.</p>"
+            }
+        },
+        "Silk Rope (50 ft.)": {
+            "name": "Lina jedwabna (15 metrów)",
+            "description": {
+                "value": "<p>Lina ma 2 PW i może zostać rozerwana za pomocą testu Siły o ST 17, niezależnie od tego, czy jest wykonana z konopi, czy z jedwabiu.</p>"
+            }
+        },
+        "Silver Bracers of Archery": {
+            "name": "Silver Bracers of Archery",
+            "description": {
+                "value": "<p><em>Wondrous item, (requires attunement)</em></p><p><em>Set of delicate silver bracers of archery.</em></p><p>While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons.</p>"
+            }
+        },
+        "Silver Great Sword": {
+            "name": "Silver Great Sword",
+            "description": {
+                "value": "<section class=\"secret\" id=\"secret-HkgaY7gUdgF78zNG\"><p><em>Melee Weapon Attack:</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (2d6 + 6) slashing damage plus 10 (3d6) psychic damage. This is a magic weapon attack. On a critical hit against a target in an astral body (as with the @UUID[Compendium.dnd5e.spells.Item.TIoadMIsUKD4edXi]{astral projection} spell), the githyanki can cut the silvery cord that tethers the target to its material body, instead of dealing damage.</p></section><p>The knight attacks with its silver greatsword.</p>"
+            }
+        },
+        "Silver Medallion": {
+            "name": "Silver Medallion",
+            "description": {
+                "value": "<p>A silver medallion displaying a lizard’s head with a quill behind it.</p>"
+            }
+        },
+        "Silver Tiara": {
+            "name": "Silver Tiara"
+        },
+        "Small Gems": {
+            "name": "Small Gems"
+        },
+        "Small Gemstone": {
+            "name": "Small Gemstone",
+            "description": {
+                "value": "<p>A small gemstone.</p>"
+            }
+        },
+        "Snow Globe": {
+            "name": "Snow Globe",
+            "description": {
+                "value": "<p>Snow globe containing a miniature street market.</p>"
+            }
+        },
+        "Spell Scroll of Darkness": {
+            "name": "Spell Scroll of Darkness",
+            "description": {
+                "value": "<p><em>2nd Level &amp;Reference[Spell Scroll], Requires Concentration</em></p><p>@Embed[Compendium.dnd5e.spells.Item.S7VbUetIfVT7B6Eq inline]</p>"
+            }
+        },
+        "Spell Scroll of Lightning Bolt": {
+            "name": "Spell Scroll of Lightning Bolt",
+            "description": {
+                "value": "<p><em>3rd Level &amp;Reference[Spell Scroll]</em></p><p>@Embed[Compendium.dnd5e.spells.Item.IyikgTEOTv701jgQ inline]</p>"
+            }
+        },
+        "Spell Scroll of Misty Step": {
+            "name": "Spell Scroll of Misty Step",
+            "description": {
+                "value": "<p><em>2nd Level &amp;Reference[Spell Scroll]</em></p><p>@Embed[Compendium.dnd5e.spells.Item.wqfAVANuQonNBgnL inline]</p>"
+            }
+        },
+        "Spell Scroll of Revivify": {
+            "name": "Spell Scroll of Revivify",
+            "description": {
+                "value": "<p><em>3rd Level &amp;Reference[Spell Scroll]</em></p><p>@Embed[Compendium.dnd5e.spells.Item.LmRHHMtplpxr9fX6 inline]</p>"
+            }
+        },
+        "Spell Scroll of Silence": {
+            "name": "Spell Scroll of Silence",
+            "description": {
+                "value": "<p><em>2nd Level &amp;Reference[Spell Scroll], Requires Concentration</em></p><p>@Embed[Compendium.dnd5e.spells.Item.5VhqFROQYjr1P9lp inline]</p>"
+            }
+        },
+        "Spell Scroll: Comprehend Languages": {
+            "name": "Spell Scroll: Comprehend Languages",
+            "description": {
+                "value": "<p><em>1st Level &amp;Reference[Spell Scroll]</em></p><p>@Embed[Compendium.dnd5e.spells.Item.4dSvfvTy2ZIJ3K4k inline]</p>"
+            }
+        },
+        "Spell Scroll: Cone of Cold": {
+            "name": "Spell Scroll: Cone of Cold",
+            "description": {
+                "value": "<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>\n      <hr /><h3>Cone of Cold (Level 5)</h3>\n      \n      <hr /><p>A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.</p><p>A creature killed by this spell becomes a frozen statue until it thaws.</p><p><strong>Higher Levels. </strong>When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.</p><hr />\n      <h3>Scroll Details</h3><hr />\n<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make a DC 15 ability check using your spellcasting ability to determine whether you cast it successfully. On a failed check, the spell disappears from the scroll with no other effect.</p>\n<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity.</p>\n<p><strong>Save DC</strong>: 17<br /><strong>Attack Bonus</strong>: +9.</p>\n<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on a DC 15 Intelligence (Arcana) check. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>"
+            }
+        },
+        "Spell Scroll: Freedom of Movement": {
+            "name": "Spell Scroll: Freedom of Movement",
+            "description": {
+                "value": "<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>\n      <hr /><h3>Freedom of Movement (Level 4)</h3>\n      \n      <hr /><p>You touch a willing creature. For the Duration, the target's Movement is unaffected by difficult terrain, and Spells and other magical Effects can neither reduce the target's speed nor cause the target to be Paralyzed or Restrained.</p><p>The target can also spend 5 feet of Movement to automatically escape from nonmagical restraints, such as Manacles or a creature that has it Grappled. Finally, being Underwater imposes no penalties on the target's movement or attacks.</p><hr />\n      <h3>Scroll Details</h3><hr />\n<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make a DC 14 ability check using your spellcasting ability to determine whether you cast it successfully. On a failed check, the spell disappears from the scroll with no other effect.</p>\n<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity.</p>\n<p><strong>Save DC</strong>: 15<br /><strong>Attack Bonus</strong>: +7.</p>\n<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on a DC 14 Intelligence (Arcana) check. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>"
+            }
+        },
+        "Spell Scroll: Tongues": {
+            "name": "Spell Scroll: Tongues",
+            "description": {
+                "value": "<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>\n      <hr /><h3>Tongues (Level 3)</h3>\n      \n      <hr /><p>This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.</p><hr />\n      <h3>Scroll Details</h3><hr />\n<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make a DC 13 ability check using your spellcasting ability to determine whether you cast it successfully. On a failed check, the spell disappears from the scroll with no other effect.</p>\n<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity.</p>\n<p><strong>Save DC</strong>: 15<br /><strong>Attack Bonus</strong>: +7.</p>\n<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on a DC 13 Intelligence (Arcana) check. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>"
+            }
+        },
+        "Spider Staff": {
+            "name": "Spider Staff",
+            "description": {
+                "value": "<section id=\"secret-Qz4cjfTxw3uIy85w\" class=\"secret\"><p>The top of this black, adamantine staff is shaped like a spider. The staff weighs 6 pounds. You must be attuned to the staff to gain its benefits and cast its spells.</p><p>The staff can be wielded as a quarterstaff. It deals 1d6 extra poison damage on a hit when used to make a weapon attack.</p><p>The staff has 10 charges, which are used to fuel the spells within it. With the staff in hand, you can use your action to cast one of the following spells from the staff if the spell is on your class’s spell list: spider climb (1 charge) or web (2 charges, spell save DC 15). No components are required.</p><p>The staff regains [[/r 1d6 + 4]] expended charges each day at dusk. If you expend the staff’s last charge, roll a [[/gmroll d20]]. On a 1, the staff crumbles to dust and is destroyed.</p></section><p>Nezznar attacks with the Spider Staff.</p>"
+            }
+        },
+        "Staff of Defense": {
+            "name": "Staff of Defense",
+            "description": {
+                "value": "<section class=\"secret\" id=\"secret-Gnb48Fg1PWHF63xD\"><p><em>Requires attunement.</em></p><p>This slender, hollow staff is made of glass yet is as strong as oak. It weighs 3 pounds. While holding the staff, you have a +1 bonus to your Armor Class.</p><p>Spells. The staff has 10 charges. While holding it, you can expend the requisite number of charges to cast one of the following spells from the staff: [[/item Mage Armor]] (1 charge) or [[/item Shield]] (2 charges).</p><p>The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the staff’s last charge, roll a d20. On a 1, the staff shatters and is destroyed.</p></section><p>This slender, hollow staff is made of glass yet is as strong as oak. It weighs 3 pounds.</p>"
+            }
+        },
+        "Staff of Defense: AC Boost": {
+            "name": "Staff of Defense: AC Boost",
+            "description": "<p>While holding the staff, you have a +1 bonus to your Armor Class.</p>"
+        },
+        "Statue Mucus": {
+            "name": "Statue Mucus",
+            "description": {
+                "value": "<p>The mucus is bland but nutritious, and oddly mentally fortifying. Any character who ingests the liquid gains &amp;Reference[rule=damagevulnerability]{resistance} to psychic damage for 10 minutes. The brain drippings lose their potency after 1 hour.</p>"
+            }
+        },
+        "Statue's Emerald Eyes": {
+            "name": "Statue's Emerald Eyes",
+            "description": {
+                "value": "<p>An emerald eye from the statue of Dumathoin in Wave Echo Cave.</p>"
+            }
+        },
+        "Subtle Mind Crystal": {
+            "name": "Subtle Mind Crystal",
+            "description": {
+                "value": "<p><em>Wondrous Item, Common</em></p><p>These gemstones contain a crystallized bit of spellcasting magic. Different types of mind crystals exist, each with a different single-use effect.</p><p>When you cast a spell that has a casting time of 1 action while holding a mind crystal, you can modify the spell in a specific way that has an effect described below. You can use only a single mind crystal to modify the spell, and you can’t use a mind crystal and a Metamagic option on the same spell. Once you use a mind crystal, it becomes a nonmagical gem worth 50 gp.</p><p><strong>Effect.</strong> <span style=\"font-family:Signika, sans-serif\">You cast the spell without any somatic or verbal components for this casting.</span></p>"
+            }
+        },
+        "Talon": {
+            "name": "Talon",
+            "description": {
+                "value": "<p><em>Whether through demonic blessing, celestial bequeathment, crazed experiment, or skillful craft, this weapon has been enhanced to bring more bloodshed by the bearer.</em></p><p>This longsword rests in a dusty silver-chased scabbard and is inscribed with the name \"Talon\" with a hilt shaped like a bird of prey with outspread wings.</p><p>You have a bonus to attack and damage rolls made with this magic weapon.</p>"
+            }
+        },
+        "The Granite Ledger": {
+            "name": "The Granite Ledger",
+            "description": {
+                "value": "<p><strong>Found in @UUID[JournalEntry.pbsoCh6talhunder.JournalEntryPage.IzrwA51W0euRYVZh]{T16.}</strong></p><p>Has metal pages and a cover made of thin plates of granite. This book is The Granite Ledger, a compendium of Talhundereth’s secrets.</p>"
+            }
+        },
+        "Thieves' Tools": {
+            "name": "Narzędzia złodziejskie",
+            "description": {
+                "value": "<p>W skład tego zestawu narzędzi wchodzi mały pilnik, zestaw wytrychów do zamków, małe lusterko zamontowane na metalowym uchwycie, zestaw nożyczek z wąskimi ostrzami oraz para szczypiec. Biegłość w tych narzędziach pozwala dodać premię z biegłości do dowolnych testów umiejętności, które wykonujesz, aby rozbroić pułapki lub otworzyć zamki.</p>"
+            }
+        },
+        "Traveler's Clothes": {
+            "name": "Ubranie podróżnika",
+            "description": {
+                "value": "<p>Zestaw ubrań noszonych przez podróżnych.</p>"
+            }
+        },
+        "Truths of the Inward Facing Mind": {
+            "name": "Truths of the Inward Facing Mind",
+            "description": {
+                "value": "<p>A book bearing the title <em>Truths of the Inward Facing Mind</em>.</p>"
+            }
+        },
+        "Unrefined Iron Ore": {
+            "name": "Unrefined Iron Ore",
+            "description": {
+                "value": "<p>Thirty pounds of this unrefined ore is sufficient raw material for a skilled smith to produce @UUID[Item.IoJIJdOLKSpminMe]{seven iron ingots} worth 25 gp each.</p>"
+            }
+        },
+        "Urmon's Journal": {
+            "name": "Urmon's Journal",
+            "description": {
+                "value": "<p>The journal of an adventurer named Urmon, found in the Redbrand's Hideout and written in Dwarvish. It conveys the following information:</p><blockquote><p>More than five hundred years ago, clans of dwarves and gnomes made an agreement known as the Phandelver Pact, by which they would share a rich mine in a wondrous cavern known as Wave Echo Cave. In addition to its mineral wealth, the mine contained great magical power. Human spellcasters allied themselves with dwarves and gnomes to channel and bind that energy into a great forge called the Forge of Spells, where magic items could be crafted. Times were good, and the nearby town of Phandalin prospered as well. But disaster struck when bandits swept through the North and laid waste to all in their path.</p><p>A powerful bandit force reinforced by evil mercenary wizards attacked Wave Echo Cave to seize its riches and magic treasures. Human wizards fought alongside their dwarf and gnome allies to defend the Forge of Spells, and the ensuing spell battle destroyed much of the cavern. Few survived the cave-ins and tremors, and knowledge of the location of Wave Echo Cave was lost.</p></blockquote>"
+            }
+        },
+        "Velvet Brocade": {
+            "name": "Velvet Brocade"
+        },
+        "Vial of Perfume": {
+            "name": "Vial of Perfume",
+            "description": {
+                "value": "<p>A fragrant commodity typically used by the wealthy.</p>"
+            }
+        },
+        "Wand of Magic Detection": {
+            "name": "Różdżka wykrywania magii",
+            "description": {
+                "value": "<p>This wand has 3 charges. While holding it, you can expend 1 charge as an action to cast the @Compendium[dnd5e.spells.ghXTfe7sgCbgf1Q8]{Detect Magic} spell from it. The wand regains 1d3 expended charges daily at dawn.</p>"
+            }
+        },
+        "Wand of Magic Missiles": {
+            "name": "Różdżka magicznych pocisków",
+            "description": {
+                "value": "<p>This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the @Compendium[dnd5e.spells.41JIhpDyM9Anm7cs]{Magic Missile} spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.</p>\n<p>The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.</p>"
+            }
+        },
+        "Well Made Light Crossbow": {
+            "name": "Well Made Light Crossbow",
+            "description": {
+                "value": "<p>A small crossbow with a wooden haft and a tense cord which is capable of firing a single bolt which can puncture even heavy armor at close range. The woodwork is inlaid with silver.</p>"
+            }
+        },
+        "Well Made Shortsword": {
+            "name": "Well Made Shortsword",
+            "description": {
+                "value": "<p>A medium sized blade with a firm crossguard and a leather-wrapped handle. A versatile weapon which makes up in versatility what it lacks in reach. Its pommel and guard are set with semiprecious stones.</p>"
+            }
+        },
+        "Well-Made Spectacles": {
+            "name": "Well-Made Spectacles"
+        },
+        "Wooden Pipe": {
+            "name": "Wooden Pipe",
+            "description": {
+                "value": "<p>A wooden pipe adorned with platinum filigree.</p>"
+            }
+        }
+    },
+    "mapping": {
+        "description": {
+            "path": "system.description",
+            "converter": "structured",
+            "cardinality": "one",
+            "mapping": {
+                "value": "value",
+                "chat": "chat",
+                "unidentified": "unidentified"
+            }
+        }
+    }
+}

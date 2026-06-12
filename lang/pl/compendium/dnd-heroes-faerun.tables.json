@@ -1,207 +1,432 @@
 {
-  "label": "Tabele losowe",
-  "folders": {
-    "Factions": "Frakcje",
-    "Feats": "Atuty",
-    "The Realms": "Krainy"
-  },
-  "entries": {
-    "Amethyst Dragon Quests": {
-      "name": "Zadania Ametystowego Smoka",
-      "description": "<p>Jeśli twoja postać aspiruje do dołączenia do Rycerzy Purpurowego Smoka i otrzymała zadanie od ametystowego smoka, możesz rzucić na tabelę Zadań Ametystowego Smoka, aby określić to zadanie.</p>",
-      "results": {
-        "1-1": "„Zniszcz komórkę Kultu Smoka i przynieś mi głowę przywódcy kultu.”",
-        "2-2": "„Znajdź lancę godną mojego majestatu.”",
-        "3-3": "„Udaj się do innego świata. Wróć do mnie dopiero, gdy będziesz mieć coś wartego pokazania.”",
-        "4-4": "„Dręczy mnie psychiczne zaburzenie. Odnajdź potwora, który je powoduje, i zabij go.”",
-        "5-5": "„Pragnę ujrzeć gniazdo na szczycie góry o niezrównanym pięknie. Zabierz ten ametyst w takie miejsce.”",
-        "6-6": "„Wyczuwam obecność zagubionego flamfa gdzieś na tym świecie. Pomóż mu odnaleźć swój klasztor.”"
-      }
-    },
-    "Cheese Bag Contents": {
-      "name": "Zawartość torby z serem",
-      "description": "<p>Kiedy postać kupuje torbę z serem, rzuć na tabelę Zawartości torby z serem, aby określić, jaki rodzaj sera znajduje się w środku.</p>",
-      "results": {
-        "1-1": "Arabelski cheddar",
-        "2-2": "Chessentański ser lotosowy",
-        "3-3": "Damarański czerwony",
-        "4-4": "Elturiański szary",
-        "5-5": "Ser farmerski",
-        "6-6": "Kaliszycki zielony",
-        "7-7": "Mglisty ser",
-        "8-8": "Ser orzechowy",
-        "9-9": "Ser pieprzowy",
-        "10-10": "Turmińska cegła",
-        "11-11": "Vilhoński blanc",
-        "12-12": "Waterdhavian"
-      }
-    },
-    "Cult of the Dragon Trinkets": {
-      "name": "Drobiazgi Kultu Smoka",
-      "description": "<p>Rzuć na tabelę Drobiazgów Kultu Smoka, aby określić, jaki drobiazg masz z czasu spędzonego w Kulcie Smoka.</p>",
-      "results": {
-        "1-1": "Wisiorek ze smoczym pazurem na skórzanym sznurku",
-        "2-2": "Prochy dracolicha w małym mosiężnym pojemniku",
-        "3-3": "Mapa nieznanego legowiska smoka",
-        "4-4": "Czarna perła z wyrytą drakońską runą",
-        "5-5": "Kropla smoczej krwi zakonserwowana w bursztynie",
-        "6-6": "Skrawek fioletowego jedwabiu"
-      }
-    },
-    "Dragonscarred Blessings": {
-      "name": "Błogosławieństwa Smoczego znamienia",
-      "description": "<p>Jeśli twoja postać przeszła rytuał ofiarny, a jednak przeżyła, możesz rzucić na tabelę Smoczego znamienia, aby losowo określić cechę fizyczną, jaką nosi po tej próbie.</p>",
-      "results": {
-        "1-1": "Nosisz bliznę na twarzy w kształcie smoka.",
-        "2-2": "Masz szczątkowe smocze rogi, szczątkowe skrzydła lub szczątkowy ogon.",
-        "3-3": "Twoje oczy mają wąskie źrenice i tęczówki w żywych kolorach.",
-        "4-4": "Część twojej skóry pokryta jest plamami gadzich łusek.",
-        "5-5": "Twoja krew jest lodowato zimna.",
-        "6-6": "Płomień trzaska w twojej klatce piersiowej, a ty wydychasz kawałki popiołu z każdym oddechem.",
-        "7-7": "Pożądasz i możesz trawić pokarmy, które normalnie byłyby dla ciebie niejadalne, takie jak całe jajka, surowy drób, brud lub kości.",
-        "8-8": "Włosy stają dęba i trzeszczą od elektryczności statycznej."
-      }
-    },
-    "Emerald Enclave Trinkets": {
-      "name": "Drobiazgi Szmaragdowej Enklawy",
-      "results": {
-        "1-1": "Para kolczyków wykonanych z liści dębu, które nigdy nie więdną",
-        "2-2": "Miniaturowy model domku wykonany z gałązek",
-        "3-3": "Świecący na zielono świetlik w butelce",
-        "4-4": "Tykwa, która brzmi jak szelest liści, gdy trzyma się ją przy uchu.",
-        "5-5": "Zakonserwowana łapa królika na skórzanym pasku",
-        "6-6": "Poroże w kształcie elfickiej runy"
-      }
-    },
-    "Harper Personas": {
-      "name": "Persony Harfiarzy",
-      "description": "<p>Postać z zestawem do charakteryzacji może przyjąć personę Harfiarzy, zdając test [[/check cha 10 format=long]], aby nałożyć makijaż. Gdy w ten sposób poznasz personę, możesz rzucić na tabelę Person Harfiarzy, aby losowo określić, jaką personę poznajesz.</p>",
-      "results": {
-        "1-1": "Rusty Riba, awanturniczy kowal z ludowym akcentem, brudnymi paznokciami i szybkim temperamentem",
-        "2-2": "Ojciec Temino, ponury kapłan Amaunatora, Helma, Chauntei lub innego znanego bóstwa, który monotonnym głosem udziela ponurych rad.",
-        "3-3": "Pippi Toobs, utalentowany, ale nadgorliwy busker, którego występy obejmują gwizdanie, sztuczki manualne i żonglowanie stopami.",
-        "4-4": "Aargus, pozbawiony poczucia humoru patriarcha, który zawsze narzeka na siódemkę swoich nic niewartych dzieci, które uciekły, by zostać poszukiwaczami przygód.",
-        "5-5": "Ciotka Cecylia, cichy mędrzec, przyjaciel zwierząt i zagorzały mędrzec, który nigdy nie jest bez torby z nasionami dla ptaków",
-        "6-6": "Johann Overbridge, roztrzepany początkujący strażnik w źle dopasowanej zbroi, który nigdy nie ma uporządkowanych dokumentów.",
-        "7-7": "Vincent, młody poszukiwacz wrażeń i bezwstydny łamacz serc ze świeżym czarnym okiem i zarozumiałym uśmiechem",
-        "8-8": "Liza Lily, sprzedawczyni kwiatów z zatroskanym wyrazem twarzy i chronicznym kaszlem, która wygląda jeszcze bardziej żałośnie niż jej zwiędłe kwiaty"
-      }
-    },
-    "Harper Trinkets": {
-      "name": "Drobiazgi Harfiarzy",
-      "description": "<p>Rzuć na tabelę Drobiazgów Harfiarzy, aby określić, jaki drobiazg masz z czasu spędzonego wśród Harfiarzy.</p>",
-      "results": {
-        "1-1": "Zepsuta harmonijka ustna",
-        "2-2": "Puder w kompakcie z ukrytą przegródką",
-        "3-3": "Pawie pióro o długości 2 stóp",
-        "4-4": "Podstępna moneta, która ma głowę po obu stronach",
-        "5-5": "Para okularów z czerwonymi szkłami",
-        "6-6": "Zwój nut na nieznany instrument"
-      }
-    },
-    "Lords' Alliance Trinkets": {
-      "name": "Drobiazgi Sojuszu Lordów",
-      "description": "<p>Rzuć na tabelę Drobiazgów Sojuszu Lordów, aby określić, jaki drobiazg masz z czasu spędzonego w Sojuszu Lordów.</p>",
-      "results": {
-        "1-1": "Skrawek sztandaru pokonanej armii",
-        "2-2": "Gryzak i uzda z wygrawerowanym imieniem słynnego rumaka",
-        "3-3": "Złamane ostrze miecza użytego w słynnej bitwie",
-        "4-4": "Lewa rękawica lorda, który zaginął w tajemniczych okolicznościach",
-        "5-5": "Przegubowy zabawkowy koń i rycerz",
-        "6-6": "Szpulak z insygniami niezidentyfikowanego władcy"
-      }
-    },
-    "Mythal-Touched Magic": {
-      "name": "Magia Dotkniętego przez mythal",
-      "description": "<p>Jeśli trafi cię atak czarem albo nie zdasz rzutu obronnego przeciw czarowi, możesz wykorzystać &amp;Reference[Reaction]{Reakcję}, aby rzucić na tabelę Magii Dotkniętego przez mythal i stworzyć efekt magiczny. Jeśli efekt wymaga rzutu obronnego, ST wynosi 8 plus modyfikator cechy zwiększonej przez ten atut oraz twoją Premię z biegłości.</p>",
-      "results": {
-        "1-2": "<p>Ty i każda istota w promieniu 15 stóp od ciebie wykonujecie rzut obronny [[/save Dexterity]], otrzymując obrażenia od mocy równe [[/damage 1d8 type=force]]{1k8} razy poziom czaru wyzwalającego przy nieudanym rzucie obronnym albo połowę tych obrażeń przy udanym.</p>",
-        "3-7": "Ty i rzucający wyzwalający czar tworzycie telepatyczną więź na 1 godzinę.",
-        "8-10": "<p>Grawitacja zostaje odwrócona w Walcu o promieniu 15 stóp i wysokości 60 stóp, którego środkiem jesteś ty, na 1 minutę, zgodnie z czarem @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplReverseGra].</p>",
-        "11-13": "<p>Ty i rzucający wyzwalający czar wykonujecie rzut obronny [[/save Constitution]]. Przy nieudanym rzucie obronnym istota zyskuje stan &amp;Reference[Stunned] do końca swojej następnej tury.</p>",
-        "14-17": "<p>Zyskujesz premię +2 do KP na 1 minutę, co może sprawić, że wyzwalający czar spudłuje, jeśli był atakiem czarem.</p>",
-        "18-19": "<p>Każdy łatwopalny, niemagiczny obiekt w promieniu 10 stóp od rzucającego wyzwalający czar, który nie jest noszony ani trzymany przez inną istotę, staje w płomieniach, otrzymuje [[/damage 1d4 type=fire]] obrażenia od ognia i płonie.</p>",
-        "20-20": "<p>Wyzwalający czar rozprasza się bez efektu, a Akcja, Akcja dodatkowa lub reakcja użyta do jego rzucenia przepada. Jeśli ten czar został rzucony z użyciem komórki czaru, ta komórka nie zostaje zużyta.</p>"
-      }
-    },
-    "Order of the Gauntlet Trinkets": {
-      "name": "Drobiazgi Zakonu Rękawicy",
-      "description": "<p>Rzuć na tabelę Drobiazgów Zakonu Rękawicy, aby określić, jaki drobiazg masz z czasu spędzonego w Zakonie Rękawicy.</p>",
-      "results": {
-        "1-1": "Białe pióro ciężkie jak ołów",
-        "2-2": "Pusta fiolka wykonana ze szkła witrażowego",
-        "3-3": "Pojedynczy stożek złotego kadzidła",
-        "4-4": "Jedwabna opaska na oczy",
-        "5-5": "Jedna połowa pary kajdan",
-        "6-6": "Zmatowiony aspergillum"
-      }
-    },
-    "Purple Dragon Knight Trinkets": {
-      "name": "Drobiazgi Rycerzy Purpurowego Smoka",
-      "description": "<p>Rzuć na tabelę Drobiazgów Rycerzy Purpurowego Smoka, aby określić, jaki drobiazg masz z czasu spędzonego wśród Rycerzy Purpurowego Smoka.</p>",
-      "results": {
-        "1-1": "Ametystowy pazur smoczego pisklęcia",
-        "2-2": "Zwykły fioletowy kwarc cięty na kształt smoczego oka",
-        "3-3": "Gwizd sygnałowy słyszalny tylko dla ametystowych smoków",
-        "4-4": "Jajo rudzika zamknięte w bursztynie",
-        "5-5": "Osełka, która pozostawia lekko błyszczące ostrze.",
-        "6-6": "Napierśnik zabrany zabitemu zawodnikowi."
-      }
-    },
-    "Red Wizard Trinkets": {
-      "name": "Drobiazgi Czerwonych Magów",
-      "description": "<p>Rzuć na tabelę Drobiazgów Czerwonych Magów, aby określić, jaki drobiazg masz z czasu spędzonego wśród Czerwonych Magów.</p>",
-      "results": {
-        "1-1": "Sękata różdżka wykonana ze skamieniałego cisu",
-        "2-2": "Szklany słoik zawierający zakonserwowane serce nieznanego zwierzęcia",
-        "3-3": "Figurka jednorożca wyrzeźbiona z obsydianu",
-        "4-4": "Igła do tatuażu wykonana z jednej z twoich kości",
-        "5-5": "Amulet z brązu w kształcie skorpiona",
-        "6-6": "Brzytwa z karmazynowej stali"
-      }
-    },
-    "Standard Languages of Faerûn": {
-      "name": "Standardowe języki Faerûnu",
-      "results": {
-        "1-3": "<p><strong>Język</strong>: aglarondzki</p><p><strong>Pochodzenie</strong>: Aglarond</p>",
-        "4-6": "<p><strong>Język</strong>: Alzhedo</p><p><strong>Pochodzenie</strong>: Calimshan</p>",
-        "7-9": "<p><strong>Język</strong>: Bothii</p><p><strong>Pochodzenie</strong>: nomadzi Uthgardt</p>",
-        "10-12": "<p><strong>Język</strong>: Chessentski</p><p><strong>Pochodzenie</strong>: Chessenta</p>",
-        "13-15": "<p><strong>Język</strong>: Chondathski</p><p><strong>Pochodzenie</strong>: Chondath</p>",
-        "16-18": "<p><strong>Język</strong>: Wspólny język migowy</p><p><strong>Pochodzenie</strong>: Sigil</p>",
-        "19-21": "<p><strong>Język</strong>: Damarski</p><p><strong>Pochodzenie</strong>: Damara</p>",
-        "22-26": "<p><strong>Język</strong>: Smoczy</p><p><strong>Pochodzenie</strong>: Smoki</p>",
-        "27-33": "<p><strong>Język</strong>: Krasnoludzki</p><p><strong>Pochodzenie</strong>: Krasnoludy</p>",
-        "34-40": "<p><strong>Język</strong>: Elficki</p><p><strong>Pochodzenie</strong>: Elfy</p>",
-        "41-45": "<p><strong>Język</strong>: olbrzymi</p><p><strong>Pochodzenie</strong>: giganci</p>",
-        "46-50": "<p><strong>Język</strong>: Gnomi</p><p><strong>Pochodzenie</strong>: Gnomy</p>",
-        "51-55": "<p><strong>Język</strong>: gobliński</p><p><strong>Pochodzenie</strong>: goblinoidy</p>",
-        "56-62": "<p><strong>Język</strong>: Niziołczy</p><p><strong>Pochodzenie</strong>: Niziołki</p>",
-        "63-65": "<p><strong>Język</strong>: Illuskański</p><p><strong>Pochodzenie</strong>: Północ</p>",
-        "66-68": "<p><strong>Język</strong>: Lantański</p><p><strong>Pochodzenie</strong>: Lantan</p>",
-        "69-71": "<p><strong>Język</strong>: Midani</p><p><strong>Pochodzenie</strong>: nomadzi Bedine</p>",
-        "72-74": "<p><strong>Język</strong>: mulhorandzki</p><p><strong>Pochodzenie</strong>: Mulhorand</p>",
-        "75-77": "<p><strong>Język</strong>: Netheryjski</p><p><strong>Pochodzenie</strong>: Netheril</p>",
-        "78-82": "<p><strong>Język</strong>: Orczy</p><p><strong>Pochodzenie</strong>: Orki</p>",
-        "83-85": "<p><strong>Język</strong>: Rashemi</p><p><strong>Pochodzenie</strong>: Rashemen</p>",
-        "86-88": "<p><strong>Język</strong>: Reghedjic</p><p><strong>Pochodzenie</strong>: nomadzi Reghed</p>",
-        "89-91": "<p><strong>Język</strong>: Sespech</p><p><strong>Pochodzenie</strong>: Sespech</p>",
-        "92-94": "<p><strong>Język</strong>: Thayański</p><p><strong>Pochodzenie</strong>: Thay</p>",
-        "95-97": "<p><strong>Język</strong>: Turmski</p><p><strong>Pochodzenie</strong>: Turmish</p>",
-        "98-100": "<p><strong>Język</strong>: Untherski</p><p><strong>Pochodzenie</strong>: Unther</p>"
-      }
-    },
-    "Zhentarim Trinkets": {
-      "name": "Drobiazgi Zhentarimów",
-      "description": "<p>Rzuć na tabelę Drobiazgów Zhentarimów, aby określić, jaki drobiazg masz z czasu spędzonego w Zhentarim.</p>",
-      "results": {
-        "1-1": "Złamany sztylet z twoim imieniem",
-        "2-2": "Szklane oko, które zawsze odwraca się w twoją stronę",
-        "3-3": "Złoty ząb węża",
-        "4-4": "Fałszywa złota moneta",
-        "5-5": "Kryształowa igła do tatuażu",
-        "6-6": "Kontrakt na kawałku pergaminu, który jest odporny na zagniecenia, rozdarcia i ogień."
-      }
+    "label": "Tables (SRD)",
+    "entries": {
+        "Amethyst Dragon Quests": {
+            "name": "Zadania Ametystowego Smoka",
+            "description": "<p>Jeśli twoja postać aspiruje do dołączenia do Rycerzy Purpurowego Smoka i otrzymała zadanie od ametystowego smoka, możesz rzucić na tabelę Zadań Ametystowego Smoka, aby określić to zadanie.</p>",
+            "results": {
+                "1-1": {
+                    "description": "„Zniszcz komórkę Kultu Smoka i przynieś mi głowę przywódcy kultu.”"
+                },
+                "2-2": {
+                    "description": "„Znajdź lancę godną mojego majestatu.”"
+                },
+                "3-3": {
+                    "description": "„Udaj się do innego świata. Wróć do mnie dopiero, gdy będziesz mieć coś wartego pokazania.”"
+                },
+                "4-4": {
+                    "description": "„Dręczy mnie psychiczne zaburzenie. Odnajdź potwora, który je powoduje, i zabij go.”"
+                },
+                "5-5": {
+                    "description": "„Pragnę ujrzeć gniazdo na szczycie góry o niezrównanym pięknie. Zabierz ten ametyst w takie miejsce.”"
+                },
+                "6-6": {
+                    "description": "„Wyczuwam obecność zagubionego flamfa gdzieś na tym świecie. Pomóż mu odnaleźć swój klasztor.”"
+                }
+            }
+        },
+        "Cheese Bag Contents": {
+            "name": "Zawartość torby z serem",
+            "description": "<p>Kiedy postać kupuje torbę z serem, rzuć na tabelę Zawartości torby z serem, aby określić, jaki rodzaj sera znajduje się w środku.</p>",
+            "results": {
+                "1-1": {
+                    "description": "Arabelski cheddar"
+                },
+                "2-2": {
+                    "description": "Chessentański ser lotosowy"
+                },
+                "3-3": {
+                    "description": "Damarański czerwony"
+                },
+                "4-4": {
+                    "description": "Elturiański szary"
+                },
+                "5-5": {
+                    "description": "Ser farmerski"
+                },
+                "6-6": {
+                    "description": "Kaliszycki zielony"
+                },
+                "7-7": {
+                    "description": "Mglisty ser"
+                },
+                "8-8": {
+                    "description": "Ser orzechowy"
+                },
+                "9-9": {
+                    "description": "Ser pieprzowy"
+                },
+                "10-10": {
+                    "description": "Turmińska cegła"
+                },
+                "11-11": {
+                    "description": "Vilhoński blanc"
+                },
+                "12-12": {
+                    "description": "Waterdhavian"
+                }
+            }
+        },
+        "Cult of the Dragon Trinkets": {
+            "name": "Drobiazgi Kultu Smoka",
+            "description": "<p>Rzuć na tabelę Drobiazgów Kultu Smoka, aby określić, jaki drobiazg masz z czasu spędzonego w Kulcie Smoka.</p>",
+            "results": {
+                "1-1": {
+                    "description": "A dragon claw pendant on a leather cord"
+                },
+                "2-2": {
+                    "description": "Ashes of a dracolich in a small brass canister"
+                },
+                "3-3": {
+                    "description": "A map of an unknown dragon’s lair"
+                },
+                "4-4": {
+                    "description": "Czarna perła z wyrytą drakońską runą"
+                },
+                "5-5": {
+                    "description": "A drop of dragon’s blood preserved in amber"
+                },
+                "6-6": {
+                    "description": "A scrap of purple silk"
+                }
+            }
+        },
+        "Dragonscarred Blessings": {
+            "name": "Błogosławieństwa Smoczego znamienia",
+            "description": "<p>Jeśli twoja postać przeszła rytuał ofiarny, a jednak przeżyła, możesz rzucić na tabelę Smoczego znamienia, aby losowo określić cechę fizyczną, jaką nosi po tej próbie.</p>",
+            "results": {
+                "1-1": {
+                    "description": "You bear a facial scar in the shape of a dragon."
+                },
+                "2-2": {
+                    "description": "You have vestigial dragon horns, vestigial wings, or a vestigial tail."
+                },
+                "3-3": {
+                    "description": "Your eyes have slitted pupils and vividly colored irises."
+                },
+                "4-4": {
+                    "description": "Parts of your skin are covered in patches of reptilian scales."
+                },
+                "5-5": {
+                    "description": "Your blood is icy cold."
+                },
+                "6-6": {
+                    "description": "A flame crackles inside your chest, and you exhale bits of ash with every breath."
+                },
+                "7-7": {
+                    "description": "You crave and can digest foods your species would normally find inedible, such as whole eggs, raw poultry, dirt, or bones."
+                },
+                "8-8": {
+                    "description": "Your hair stands on end and crackles with static electricity."
+                }
+            }
+        },
+        "Emerald Enclave Trinkets": {
+            "name": "Drobiazgi Szmaragdowej Enklawy",
+            "results": {
+                "1-1": {
+                    "description": "A pair of earrings made from oak leaves that never wilt"
+                },
+                "2-2": {
+                    "description": "A miniature model cottage made of twigs"
+                },
+                "3-3": {
+                    "description": "A green-glowing firefly in a bottle"
+                },
+                "4-4": {
+                    "description": "A gourd that sounds like rustling leaves when held to one’s ear"
+                },
+                "5-5": {
+                    "description": "A preserved rabbit’s foot on a leather strap"
+                },
+                "6-6": {
+                    "description": "An antler shaped like an Elvish rune"
+                }
+            }
+        },
+        "Harper Personas": {
+            "name": "Persony Harfiarzy",
+            "description": "<p>Postać z zestawem do charakteryzacji może przyjąć personę Harfiarzy, zdając test [[/check cha 10 format=long]], aby nałożyć makijaż. Gdy w ten sposób poznasz personę, możesz rzucić na tabelę Person Harfiarzy, aby losowo określić, jaką personę poznajesz.</p>",
+            "results": {
+                "1-1": {
+                    "description": "Rusty Riba, a rowdy smith with a folksy accent, filthy fingernails, and a quick temper"
+                },
+                "2-2": {
+                    "description": "Father Temino, a morose priest of Amaunator, Helm, Chauntea, or another well-known deity, who offers somber counsel in a monotone"
+                },
+                "3-3": {
+                    "description": "Pippi Toobs, a talented but overeager busker, whose performances include whistling, sleight of hand, and foot juggling"
+                },
+                "4-4": {
+                    "description": "Aargus, a humorless patriarch who’s always complaining about his seven good-for-nothing kids who ran off to become adventurers"
+                },
+                "5-5": {
+                    "description": "Aunt Cecilia, a silent sage, friend of animals, and inveterate winker, who’s never without a bag of birdseed"
+                },
+                "6-6": {
+                    "description": "Johann Overbridge, a scatterbrained rookie guard in ill-fitting armor who never has his papers in order"
+                },
+                "7-7": {
+                    "description": "Vincent, a young thrill seeker and shameless heartbreaker with a fresh black eye and a cocky grin"
+                },
+                "8-8": {
+                    "description": "Liza Lily, a flower seller with worried expression and a chronic cough, who looks even more pathetic than her wilted posies"
+                }
+            }
+        },
+        "Harper Trinkets": {
+            "name": "Drobiazgi Harfiarzy",
+            "description": "<p>Rzuć na tabelę Drobiazgów Harfiarzy, aby określić, jaki drobiazg masz z czasu spędzonego wśród Harfiarzy.</p>",
+            "results": {
+                "1-1": {
+                    "description": "A broken harmonica"
+                },
+                "2-2": {
+                    "description": "A powder compact with a hidden compartment"
+                },
+                "3-3": {
+                    "description": "A 2-foot-long peacock feather"
+                },
+                "4-4": {
+                    "description": "A trick coin that’s heads on both sides"
+                },
+                "5-5": {
+                    "description": "A pair of red-tinted spectacles"
+                },
+                "6-6": {
+                    "description": "A scroll of sheet music for an unknown instrument"
+                }
+            }
+        },
+        "Lords' Alliance Trinkets": {
+            "name": "Drobiazgi Sojuszu Lordów",
+            "description": "<p>Rzuć na tabelę Drobiazgów Sojuszu Lordów, aby określić, jaki drobiazg masz z czasu spędzonego w Sojuszu Lordów.</p>",
+            "results": {
+                "1-1": {
+                    "description": "A scrap from a defeated army’s banner"
+                },
+                "2-2": {
+                    "description": "A bit and bridle engraved with the name of a famous steed"
+                },
+                "3-3": {
+                    "description": "The broken blade of a sword used in a famous battle"
+                },
+                "4-4": {
+                    "description": "The left glove of a lord who went mysteriously missing"
+                },
+                "5-5": {
+                    "description": "An articulated toy horse and knight"
+                },
+                "6-6": {
+                    "description": "A spaulder emblazoned with the insignia of an unidentified lord"
+                }
+            }
+        },
+        "Mythal-Touched Magic": {
+            "name": "Magia Dotkniętego przez mythal",
+            "description": "<p>Jeśli trafi cię atak czarem albo nie zdasz rzutu obronnego przeciw czarowi, możesz wykorzystać &amp;Reference[Reaction]{Reakcję}, aby rzucić na tabelę Magii Dotkniętego przez mythal i stworzyć efekt magiczny. Jeśli efekt wymaga rzutu obronnego, ST wynosi 8 plus modyfikator cechy zwiększonej przez ten atut oraz twoją Premię z biegłości.</p>",
+            "results": {
+                "1-2": {
+                    "description": "<p>Ty i każda istota w promieniu 15 stóp od ciebie wykonujecie rzut obronny [[/save Dexterity]], otrzymując obrażenia od mocy równe [[/damage 1d8 type=force]]{1k8} razy poziom czaru wyzwalającego przy nieudanym rzucie obronnym albo połowę tych obrażeń przy udanym.</p>"
+                },
+                "3-7": {
+                    "description": "Ty i rzucający wyzwalający czar tworzycie telepatyczną więź na 1 godzinę."
+                },
+                "8-10": {
+                    "description": "<p>Grawitacja zostaje odwrócona w Walcu o promieniu 15 stóp i wysokości 60 stóp, którego środkiem jesteś ty, na 1 minutę, zgodnie z czarem @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplReverseGra].</p>"
+                },
+                "11-13": {
+                    "description": "<p>Ty i rzucający wyzwalający czar wykonujecie rzut obronny [[/save Constitution]]. Przy nieudanym rzucie obronnym istota zyskuje stan &amp;Reference[Stunned] do końca swojej następnej tury.</p>"
+                },
+                "14-17": {
+                    "description": "<p>Zyskujesz premię +2 do KP na 1 minutę, co może sprawić, że wyzwalający czar spudłuje, jeśli był atakiem czarem.</p>"
+                },
+                "18-19": {
+                    "description": "<p>Każdy łatwopalny, niemagiczny obiekt w promieniu 10 stóp od rzucającego wyzwalający czar, który nie jest noszony ani trzymany przez inną istotę, staje w płomieniach, otrzymuje [[/damage 1d4 type=fire]] obrażenia od ognia i płonie.</p>"
+                },
+                "20-20": {
+                    "description": "<p>Wyzwalający czar rozprasza się bez efektu, a Akcja, Akcja dodatkowa lub reakcja użyta do jego rzucenia przepada. Jeśli ten czar został rzucony z użyciem komórki czaru, ta komórka nie zostaje zużyta.</p>"
+                }
+            }
+        },
+        "Order of the Gauntlet Trinkets": {
+            "name": "Drobiazgi Zakonu Rękawicy",
+            "description": "<p>Rzuć na tabelę Drobiazgów Zakonu Rękawicy, aby określić, jaki drobiazg masz z czasu spędzonego w Zakonie Rękawicy.</p>",
+            "results": {
+                "1-1": {
+                    "description": "A white feather as heavy as lead"
+                },
+                "2-2": {
+                    "description": "An empty vial made from stained glass"
+                },
+                "3-3": {
+                    "description": "A single cone of gold-flecked incense"
+                },
+                "4-4": {
+                    "description": "A silken blindfold"
+                },
+                "5-5": {
+                    "description": "One half of a pair of manacles"
+                },
+                "6-6": {
+                    "description": "A tarnished aspergillum"
+                }
+            }
+        },
+        "Purple Dragon Knight Trinkets": {
+            "name": "Drobiazgi Rycerzy Purpurowego Smoka",
+            "description": "<p>Rzuć na tabelę Drobiazgów Rycerzy Purpurowego Smoka, aby określić, jaki drobiazg masz z czasu spędzonego wśród Rycerzy Purpurowego Smoka.</p>",
+            "results": {
+                "1-1": {
+                    "description": "Ametystowy pazur smoczego pisklęcia"
+                },
+                "2-2": {
+                    "description": "A common purple quartz cut to resemble a dragon’s eye"
+                },
+                "3-3": {
+                    "description": "A signal whistle audible only to amethyst dragons"
+                },
+                "4-4": {
+                    "description": "A robin’s egg encased in amber"
+                },
+                "5-5": {
+                    "description": "A whetstone that leaves any blade it hones faintly glittery"
+                },
+                "6-6": {
+                    "description": "A vamplate taken from a slain rival jouster"
+                }
+            }
+        },
+        "Red Wizard Trinkets": {
+            "name": "Drobiazgi Czerwonych Magów",
+            "description": "<p>Rzuć na tabelę Drobiazgów Czerwonych Magów, aby określić, jaki drobiazg masz z czasu spędzonego wśród Czerwonych Magów.</p>",
+            "results": {
+                "1-1": {
+                    "description": "A gnarled wand made from petrified yew"
+                },
+                "2-2": {
+                    "description": "A glass jar containing the preserved heart of an unknown animal"
+                },
+                "3-3": {
+                    "description": "A unicorn figurine carved from obsidian"
+                },
+                "4-4": {
+                    "description": "Igła do tatuażu wykonana z jednej z twoich kości"
+                },
+                "5-5": {
+                    "description": "A bronze amulet in the shape of a scorpion"
+                },
+                "6-6": {
+                    "description": "A razor made of crimson steel"
+                }
+            }
+        },
+        "Standard Languages of Faerûn": {
+            "name": "Standardowe języki Faerûnu",
+            "results": {
+                "1-3": {
+                    "description": "<p><strong>Język</strong>: aglarondzki</p><p><strong>Pochodzenie</strong>: Aglarond</p>"
+                },
+                "4-6": {
+                    "description": "<p><strong>Język</strong>: Alzhedo</p><p><strong>Pochodzenie</strong>: Calimshan</p>"
+                },
+                "7-9": {
+                    "description": "<p><strong>Język</strong>: Bothii</p><p><strong>Pochodzenie</strong>: nomadzi Uthgardt</p>"
+                },
+                "10-12": {
+                    "description": "<p><strong>Język</strong>: Chessentski</p><p><strong>Pochodzenie</strong>: Chessenta</p>"
+                },
+                "13-15": {
+                    "description": "<p><strong>Język</strong>: Chondathski</p><p><strong>Pochodzenie</strong>: Chondath</p>"
+                },
+                "16-18": {
+                    "description": "<p><strong>Język</strong>: Wspólny język migowy</p><p><strong>Pochodzenie</strong>: Sigil</p>"
+                },
+                "19-21": {
+                    "description": "<p><strong>Język</strong>: Damarski</p><p><strong>Pochodzenie</strong>: Damara</p>"
+                },
+                "22-26": {
+                    "description": "<p><strong>Język</strong>: Smoczy</p><p><strong>Pochodzenie</strong>: Smoki</p>"
+                },
+                "27-33": {
+                    "description": "<p><strong>Język</strong>: Krasnoludzki</p><p><strong>Pochodzenie</strong>: Krasnoludy</p>"
+                },
+                "34-40": {
+                    "description": "<p><strong>Język</strong>: Elficki</p><p><strong>Pochodzenie</strong>: Elfy</p>"
+                },
+                "41-45": {
+                    "description": "<p><strong>Język</strong>: olbrzymi</p><p><strong>Pochodzenie</strong>: giganci</p>"
+                },
+                "46-50": {
+                    "description": "<p><strong>Język</strong>: Gnomi</p><p><strong>Pochodzenie</strong>: Gnomy</p>"
+                },
+                "51-55": {
+                    "description": "<p><strong>Język</strong>: gobliński</p><p><strong>Pochodzenie</strong>: goblinoidy</p>"
+                },
+                "56-62": {
+                    "description": "<p><strong>Język</strong>: Niziołczy</p><p><strong>Pochodzenie</strong>: Niziołki</p>"
+                },
+                "63-65": {
+                    "description": "<p><strong>Język</strong>: Illuskański</p><p><strong>Pochodzenie</strong>: Północ</p>"
+                },
+                "66-68": {
+                    "description": "<p><strong>Język</strong>: Lantański</p><p><strong>Pochodzenie</strong>: Lantan</p>"
+                },
+                "69-71": {
+                    "description": "<p><strong>Język</strong>: Midani</p><p><strong>Pochodzenie</strong>: nomadzi Bedine</p>"
+                },
+                "72-74": {
+                    "description": "<p><strong>Język</strong>: mulhorandzki</p><p><strong>Pochodzenie</strong>: Mulhorand</p>"
+                },
+                "75-77": {
+                    "description": "<p><strong>Język</strong>: Netheryjski</p><p><strong>Pochodzenie</strong>: Netheril</p>"
+                },
+                "78-82": {
+                    "description": "<p><strong>Język</strong>: Orczy</p><p><strong>Pochodzenie</strong>: Orki</p>"
+                },
+                "83-85": {
+                    "description": "<p><strong>Język</strong>: Rashemi</p><p><strong>Pochodzenie</strong>: Rashemen</p>"
+                },
+                "86-88": {
+                    "description": "<p><strong>Język</strong>: Reghedjic</p><p><strong>Pochodzenie</strong>: nomadzi Reghed</p>"
+                },
+                "89-91": {
+                    "description": "<p><strong>Język</strong>: Sespech</p><p><strong>Pochodzenie</strong>: Sespech</p>"
+                },
+                "92-94": {
+                    "description": "<p><strong>Język</strong>: Thayański</p><p><strong>Pochodzenie</strong>: Thay</p>"
+                },
+                "95-97": {
+                    "description": "<p><strong>Język</strong>: Turmski</p><p><strong>Pochodzenie</strong>: Turmish</p>"
+                },
+                "98-100": {
+                    "description": "<p><strong>Język</strong>: Untherski</p><p><strong>Pochodzenie</strong>: Unther</p>"
+                }
+            }
+        },
+        "Zhentarim Trinkets": {
+            "name": "Drobiazgi Zhentarimów",
+            "description": "<p>Rzuć na tabelę Drobiazgów Zhentarimów, aby określić, jaki drobiazg masz z czasu spędzonego w Zhentarim.</p>",
+            "results": {
+                "1-1": {
+                    "description": "A broken dagger etched with your name"
+                },
+                "2-2": {
+                    "description": "A glass eye that always turns to face you"
+                },
+                "3-3": {
+                    "description": "A gold-colored serpent’s tooth"
+                },
+                "4-4": {
+                    "description": "A counterfeit gold coin"
+                },
+                "5-5": {
+                    "description": "A crystal tattoo needle"
+                },
+                "6-6": {
+                    "description": "Kontrakt na kawałku pergaminu, który jest odporny na zagniecenia, rozdarcia i ogień."
+                }
+            }
+        }
     }
-  }
 }

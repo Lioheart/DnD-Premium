@@ -5,6 +5,11 @@
         "requirements": "system.requirements",
         "materials": "system.materials.value",
         "chat": "system.description.chat",
+        "unidentified": "system.description.unidentified",
+        "activation": "system.activation.condition",
+        "activationCondition": "system.activation.condition",
+        "activationValue": "system.activation.value",
+        "targetAffects": "system.target.affects.special",
         "activities": {
             "path": "system.activities",
             "converter": "structured",
@@ -18,8 +23,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
+                "activationCondition": "activation.condition",
+                "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
+                "targetAffects": "target.affects.special",
                 "roll": "roll.name",
                 "range": {
                     "path": "range",
@@ -178,7 +186,7 @@
                 },
                 "Background Feat": {
                     "title": "Atut z pochodzenia",
-                    "hint": "Twoje Pochodzenie zapewnia ci atut Rzemieślnik."
+                    "hint": "Twoje Pochodzenie zapewnia ci atut Wytwórca."
                 },
                 "Background Ability Score Improvement": {
                     "title": "Zwiększenie cechy z pochodzenia",
@@ -274,7 +282,8 @@
             "activities": {
                 "Cloud's Jaunt": {
                     "name": "Wędrówka chmur",
-                    "target": "Niezajęta przestrzeń"
+                    "target": "Niezajęta przestrzeń",
+                    "targetAffects": "Niezajęta przestrzeń"
                 }
             }
         },
@@ -552,7 +561,8 @@
             "activities": {
                 "Burn": {
                     "name": "Żar",
-                    "condition": "Gdy trafisz cel testem ataku i zadasz mu obrażenia"
+                    "condition": "Gdy trafisz cel testem ataku i zadasz mu obrażenia",
+                    "activationCondition": "Gdy trafisz cel testem ataku i zadasz mu obrażenia"
                 }
             }
         },
@@ -563,7 +573,8 @@
             "activities": {
                 "Chill": {
                     "name": "Chłód",
-                    "condition": "Gdy trafisz cel testem ataku i zadasz mu obrażenia"
+                    "condition": "Gdy trafisz cel testem ataku i zadasz mu obrażenia",
+                    "activationCondition": "Gdy trafisz cel testem ataku i zadasz mu obrażenia"
                 }
             },
             "effects": {
@@ -755,7 +766,8 @@
             "activities": {
                 "Hill's Tumble": {
                     "name": "Upadek wzgórza",
-                    "condition": "Gdy trafisz Duże lub mniejsze stworzenie testem ataku i zadasz mu obrażenia"
+                    "condition": "Gdy trafisz Duże lub mniejsze stworzenie testem ataku i zadasz mu obrażenia",
+                    "activationCondition": "Gdy trafisz Duże lub mniejsze stworzenie testem ataku i zadasz mu obrażenia"
                 }
             }
         },
@@ -934,7 +946,8 @@
             "activities": {
                 "Relentlessly Endure": {
                     "name": "Wola życia",
-                    "condition": "Gdy twoje Punkty Wytrzymałości zostaną zredukowane do 0, ale nie zostaniesz od razu zabity"
+                    "condition": "Gdy twoje Punkty Wytrzymałości zostaną zredukowane do 0, ale nie zostaniesz od razu zabity",
+                    "activationCondition": "Gdy twoje Punkty Wytrzymałości zostaną zredukowane do 0, ale nie zostaniesz od razu zabity"
                 }
             }
         },
@@ -1042,7 +1055,8 @@
             "requirements": "Goliat (Gigant kamienny)",
             "activities": {
                 "heal": {
-                    "condition": "Gdy otrzymujesz obrażenia"
+                    "condition": "Gdy otrzymujesz obrażenia",
+                    "activationCondition": "Gdy otrzymujesz obrażenia"
                 }
             }
         },
@@ -1068,7 +1082,8 @@
             "activities": {
                 "Storm's Thunder": {
                     "name": "Grzmot burzy",
-                    "condition": "Gdy otrzymujesz obrażenia od stworzenia znajdującego się w odległości do 60 stóp od ciebie"
+                    "condition": "Gdy otrzymujesz obrażenia od stworzenia znajdującego się w odległości do 60 stóp od ciebie",
+                    "activationCondition": "Gdy otrzymujesz obrażenia od stworzenia znajdującego się w odległości do 60 stóp od ciebie"
                 }
             }
         },

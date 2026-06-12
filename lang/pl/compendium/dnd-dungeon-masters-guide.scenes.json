@@ -1,121 +1,341 @@
 {
-  "label": "Sceny",
-  "folders": {
-    "Encounter Maps": "Encounter Maps",
-    "Greyhawk": "Greyhawk",
-    "Greyhawk World": "Greyhawk World",
-    "Greyhawk and Environs": "Greyhawk and Environs"
-  },
-  "entries": {
-    "Barrow Crypt": {
-      "name": "Barrow Crypt"
+    "label": "Sceny",
+    "folders": {
+        "Encounter Maps": "Encounter Maps",
+        "Greyhawk": "Greyhawk",
+        "Greyhawk and Environs": "Greyhawk and Environs",
+        "Greyhawk World": "Greyhawk World"
     },
-    "Caravan Encampment": {
-      "name": "Caravan Encampment"
+    "entries": {
+        "1st Level": {
+            "name": "1. Krąg"
+        },
+        "1st Level Backstairs": {
+            "name": "1st Level Backstairs"
+        },
+        "1st Level Ladder (Center)": {
+            "name": "1st Level Ladder (Center)"
+        },
+        "1st Level Ladder Guard Room (Left)": {
+            "name": "1st Level Ladder Guard Room (Left)"
+        },
+        "1st Level Ladder Guard Room (Right)": {
+            "name": "1st Level Ladder Guard Room (Right)"
+        },
+        "1st Level Ladder Right Turret": {
+            "name": "1st Level Ladder Right Turret"
+        },
+        "1st Level Main Stairs": {
+            "name": "1st Level Main Stairs"
+        },
+        "1st Level Right Stairs": {
+            "name": "1st Level Right Stairs"
+        },
+        "1st Level Side Stairs": {
+            "name": "1st Level Side Stairs"
+        },
+        "1st Level Stairs Bottom Left (Up)": {
+            "name": "1st Level Stairs Bottom Left (Up)"
+        },
+        "1st Level Stairs Dining Room": {
+            "name": "1st Level Stairs Dining Room"
+        },
+        "1st Level Turret Stairs": {
+            "name": "1st Level Turret Stairs"
+        },
+        "1st LevelBarn Stairs": {
+            "name": "1st LevelBarn Stairs"
+        },
+        "2nd Floor Hallway Stairs": {
+            "name": "2nd Floor Hallway Stairs"
+        },
+        "2nd Floor Main Stairs": {
+            "name": "2nd Floor Main Stairs"
+        },
+        "2nd Floor Right Stairs": {
+            "name": "2nd Floor Right Stairs"
+        },
+        "2nd Floor Side Stairs": {
+            "name": "2nd Floor Side Stairs"
+        },
+        "2nd Floor Turret (Bottom)": {
+            "name": "2nd Floor Turret (Bottom)"
+        },
+        "2nd Floor Turret (Top)": {
+            "name": "2nd Floor Turret (Top)"
+        },
+        "2nd Level": {
+            "name": "2. Krąg"
+        },
+        "2nd Level Backstairs": {
+            "name": "2nd Level Backstairs"
+        },
+        "2nd Level Barn Stairs": {
+            "name": "2nd Level Barn Stairs"
+        },
+        "2nd Level Ladder (Center)": {
+            "name": "2nd Level Ladder (Center)"
+        },
+        "2nd Level Ladder (Left)": {
+            "name": "2nd Level Ladder (Left)"
+        },
+        "2nd Level Ladder (Middle)": {
+            "name": "2nd Level Ladder (Middle)"
+        },
+        "2nd Level Ladder (Right)": {
+            "name": "2nd Level Ladder (Right)"
+        },
+        "2nd Level Main Stairs": {
+            "name": "2nd Level Main Stairs"
+        },
+        "2nd Level Right Turret": {
+            "name": "2nd Level Right Turret"
+        },
+        "2nd Level Stairs (Down)": {
+            "name": "2nd Level Stairs (Down)"
+        },
+        "2nd Level Stairs (Up)": {
+            "name": "2nd Level Stairs (Up)"
+        },
+        "2nd Level Stairs Bedrooms": {
+            "name": "2nd Level Stairs Bedrooms"
+        },
+        "3rd Floor Hallway Stairs": {
+            "name": "3rd Floor Hallway Stairs"
+        },
+        "3rd Floor Turret (Bottom)": {
+            "name": "3rd Floor Turret (Bottom)"
+        },
+        "3rd Floor Turret (Top)": {
+            "name": "3rd Floor Turret (Top)"
+        },
+        "3rd Level (Left)": {
+            "name": "3rd Level (Left)"
+        },
+        "3rd Level (Right)": {
+            "name": "3rd Level (Right)"
+        },
+        "3rd Level Ladder (Middle)": {
+            "name": "3rd Level Ladder (Middle)"
+        },
+        "3rd Level Left Turret": {
+            "name": "3rd Level Left Turret"
+        },
+        "3rd Level Right Turrent": {
+            "name": "3rd Level Right Turrent"
+        },
+        "3rd Level Stairs (Left)": {
+            "name": "3rd Level Stairs (Left)"
+        },
+        "4th Floor Turret (Bottom)": {
+            "name": "4th Floor Turret (Bottom)"
+        },
+        "4th Level Left Turret": {
+            "name": "4th Level Left Turret"
+        },
+        "4th Level Turret (Top)": {
+            "name": "4th Level Turret (Top)"
+        },
+        "5th Level Turret": {
+            "name": "5th Level Turret"
+        },
+        "Adjust Darkness Level": {
+            "name": "Adjust Darkness Level"
+        },
+        "Barrow Crypt": {
+            "name": "Barrow Crypt"
+        },
+        "Bottom Level (Left)": {
+            "name": "Bottom Level (Left)"
+        },
+        "Bottom Level (Right)": {
+            "name": "Bottom Level (Right)"
+        },
+        "Caravan Encampment": {
+            "name": "Caravan Encampment"
+        },
+        "Cellar Staircase Left": {
+            "name": "Cellar Staircase Left"
+        },
+        "Cellar Staircase Right": {
+            "name": "Cellar Staircase Right"
+        },
+        "Crossroads Village": {
+            "name": "Crossroads Village"
+        },
+        "Disable Global Illumination": {
+            "name": "Disable Global Illumination"
+        },
+        "Down": {
+            "name": "Down"
+        },
+        "Dragon's Lair": {
+            "name": "Dragon's Lair"
+        },
+        "Dungeon Hideout": {
+            "name": "Dungeon Hideout"
+        },
+        "Dungeons": {
+            "name": "Dungeons"
+        },
+        "Farmstead": {
+            "name": "Farmstead"
+        },
+        "Greyhawk (Blank)": {
+            "name": "Greyhawk (Blank)"
+        },
+        "Greyhawk (Labeled)": {
+            "name": "Greyhawk (Labeled)"
+        },
+        "Greyhawk (Sites Only)": {
+            "name": "Greyhawk (Sites Only)"
+        },
+        "Greyhawk World (Blank)": {
+            "name": "Greyhawk World (Blank)"
+        },
+        "Greyhawk World (Labeled)": {
+            "name": "Greyhawk World (Labeled)"
+        },
+        "Greyhawk and Environs (Blank)": {
+            "name": "Greyhawk and Environs (Blank)"
+        },
+        "Greyhawk and Environs (Labeled)": {
+            "name": "Greyhawk and Environs (Labeled)"
+        },
+        "Greyhawk and Environs (Major Locations No Paths)": {
+            "name": "Greyhawk and Environs (Major Locations No Paths)"
+        },
+        "Greyhawk and Environs (Major Locations with Paths)": {
+            "name": "Greyhawk and Environs (Major Locations with Paths)"
+        },
+        "Ground Floor Kitchen Staircase": {
+            "name": "Ground Floor Kitchen Staircase"
+        },
+        "Ground Floor Left Main Staircase": {
+            "name": "Ground Floor Left Main Staircase"
+        },
+        "Ground Floor Right Main Staircase": {
+            "name": "Ground Floor Right Main Staircase"
+        },
+        "Keep": {
+            "name": "Keep"
+        },
+        "Level 1": {
+            "name": "Level 1"
+        },
+        "Level 1 (Down)": {
+            "name": "Level 1 (Down)"
+        },
+        "Level 1 (Inner Left)": {
+            "name": "Level 1 (Inner Left)"
+        },
+        "Level 1 (Inner Right)": {
+            "name": "Level 1 (Inner Right)"
+        },
+        "Level 1 (Left)": {
+            "name": "Level 1 (Left)"
+        },
+        "Level 1 (Right)": {
+            "name": "Level 1 (Right)"
+        },
+        "Level 1 (Up)": {
+            "name": "Level 1 (Up)"
+        },
+        "Level 2": {
+            "name": "Level 2"
+        },
+        "Level 2 (Down)": {
+            "name": "Level 2 (Down)"
+        },
+        "Level 2 (Inner Left)": {
+            "name": "Level 2 (Inner Left)"
+        },
+        "Level 2 (Inner Right)": {
+            "name": "Level 2 (Inner Right)"
+        },
+        "Level 2 (Up)": {
+            "name": "Level 2 (Up)"
+        },
+        "Level 2 (from 1)": {
+            "name": "Level 2 (from 1)"
+        },
+        "Level 2 (from 3)": {
+            "name": "Level 2 (from 3)"
+        },
+        "Level 3": {
+            "name": "Level 3"
+        },
+        "Level 3 (Down)": {
+            "name": "Level 3 (Down)"
+        },
+        "Level 3 (Up)": {
+            "name": "Level 3 (Up)"
+        },
+        "Level 4 (Down)": {
+            "name": "Level 4 (Down)"
+        },
+        "Level 4 (Up)": {
+            "name": "Level 4 (Up)"
+        },
+        "Level 5": {
+            "name": "Level 5"
+        },
+        "Manor": {
+            "name": "Manor"
+        },
+        "Mine": {
+            "name": "Mine"
+        },
+        "Remove Global Illumination": {
+            "name": "Remove Global Illumination"
+        },
+        "Roadside Inn": {
+            "name": "Roadside Inn"
+        },
+        "Secret Stairs": {
+            "name": "Secret Stairs"
+        },
+        "Ship": {
+            "name": "Ship"
+        },
+        "Spooky House": {
+            "name": "Spooky House"
+        },
+        "Surface Level (Left)": {
+            "name": "Surface Level (Left)"
+        },
+        "Surface Level (Right)": {
+            "name": "Surface Level (Right)"
+        },
+        "Teleport Token": {
+            "name": "Teleport Token"
+        },
+        "Top Level (Left)": {
+            "name": "Top Level (Left)"
+        },
+        "Top Level (Right)": {
+            "name": "Top Level (Right)"
+        },
+        "Underdark Warren": {
+            "name": "Underdark Warren"
+        },
+        "Up": {
+            "name": "Do góry"
+        },
+        "Upstairs Left Main Staircase": {
+            "name": "Upstairs Left Main Staircase"
+        },
+        "Upstairs Right Main Staircase": {
+            "name": "Upstairs Right Main Staircase"
+        },
+        "Volcanic Caves": {
+            "name": "Volcanic Caves"
+        },
+        "Wizards Tower": {
+            "name": "Wizards Tower"
+        }
     },
-    "Crossroads Village": {
-      "name": "Crossroads Village"
-    },
-    "Dragon's Lair": {
-      "name": "Dragon's Lair"
-    },
-    "Dungeon Hideout": {
-      "name": "Dungeon Hideout"
-    },
-    "Farmstead": {
-      "name": "Farmstead"
-    },
-    "Greyhawk (Blank)": {
-      "name": "Greyhawk (Blank)",
-      "notes": {
-        "Black Dragon Inn": "Black Dragon Inn",
-        "Great Library": "Great Library",
-        "Silver Dragon Inn": "Silver Dragon Inn",
-        "High Tower Inn": "High Tower Inn",
-        "Temple of the Radiant Sun": "Temple of the Radiant Sun",
-        "Temple of the Far Horizon": "Temple of the Far Horizon",
-        "Unearthed Arcana": "Unearthed Arcana",
-        "Grand Citadel": "Grand Citadel"
-      }
-    },
-    "Greyhawk (Labeled)": {
-      "name": "Greyhawk (Labeled)",
-      "notes": {
-        "Black Dragon Inn": "Black Dragon Inn",
-        "Great Library": "Great Library",
-        "Silver Dragon Inn": "Silver Dragon Inn",
-        "High Tower Inn": "High Tower Inn",
-        "Temple of the Radiant Sun": "Temple of the Radiant Sun",
-        "Temple of the Far Horizon": "Temple of the Far Horizon",
-        "Unearthed Arcana": "Unearthed Arcana",
-        "Grand Citadel": "Grand Citadel"
-      }
-    },
-    "Greyhawk (Sites Only)": {
-      "name": "Greyhawk (Sites Only)",
-      "notes": {
-        "Black Dragon Inn": "Black Dragon Inn",
-        "Great Library": "Great Library",
-        "Silver Dragon Inn": "Silver Dragon Inn",
-        "High Tower Inn": "High Tower Inn",
-        "Temple of the Radiant Sun": "Temple of the Radiant Sun",
-        "Temple of the Far Horizon": "Temple of the Far Horizon",
-        "Unearthed Arcana": "Unearthed Arcana",
-        "Grand Citadel": "Grand Citadel"
-      }
-    },
-    "Greyhawk World (Blank)": {
-      "name": "Greyhawk World (Blank)"
-    },
-    "Greyhawk World (Labeled)": {
-      "name": "Greyhawk World (Labeled)"
-    },
-    "Greyhawk and Environs (Blank)": {
-      "name": "Greyhawk and Environs (Blank)",
-      "notes": {
-        "Cairn Hills": "Cairn Hills",
-        "Midbay": "Midbay",
-        "Nyr Dyv": "Nyr Dyv",
-        "Great South Peninsula": "Great South Peninsula",
-        "Mistmarsh": "Mistmarsh",
-        "Plain of Greyhawk": "Plain of Greyhawk"
-      }
-    },
-    "Greyhawk and Environs (Labeled)": {
-      "name": "Greyhawk and Environs (Labeled)"
-    },
-    "Greyhawk and Environs (Major Locations No Paths)": {
-      "name": "Greyhawk and Environs (Major Locations No Paths)"
-    },
-    "Greyhawk and Environs (Major Locations with Paths)": {
-      "name": "Greyhawk and Environs (Major Locations with Paths)"
-    },
-    "Keep": {
-      "name": "Keep"
-    },
-    "Manor": {
-      "name": "Manor"
-    },
-    "Mine": {
-      "name": "Mine"
-    },
-    "Roadside Inn": {
-      "name": "Roadside Inn"
-    },
-    "Ship": {
-      "name": "Ship"
-    },
-    "Spooky House": {
-      "name": "Spooky House"
-    },
-    "Underdark Warren": {
-      "name": "Underdark Warren"
-    },
-    "Volcanic Caves": {
-      "name": "Volcanic Caves"
-    },
-    "Wizards Tower": {
-      "name": "Wizards Tower"
+    "mapping": {
+        "description": "description"
     }
-  }
 }
