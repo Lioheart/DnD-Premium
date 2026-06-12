@@ -1340,21 +1340,6 @@ def extract_plain_description(record: dict) -> str:
     return ""
 
 
-def extract_journal_page_text(page: dict) -> str:
-    text_value = page.get("text")
-    if isinstance(text_value, dict):
-        content = text_value.get("content")
-        if isinstance(content, str):
-            return content
-    if isinstance(text_value, str):
-        return text_value
-
-    content = page.get("content")
-    if isinstance(content, str):
-        return content
-
-    return ""
-
 
 def extract_journal_page_text(page: dict) -> str:
     """
@@ -1426,50 +1411,46 @@ def extract_journal_page_descriptions(page: dict) -> dict:
 
 def build_journal_pages_mapping(data: list[dict]) -> dict:
     """
-    Buduje mapowanie dodatkowych pól JournalEntryPage.
+    Dodaje pola specyficzne dla stron dziennika D&D 5e Premium.
 
-    Domyślne mapowanie Babele, w tym:
-        text -> text.content
-        caption -> image.caption
-        src -> src
-
-    nadal obowiązuje. Inline mapping tylko je rozszerza.
+    Pola name, text, caption, src, width i height są już obsługiwane
+    przez domyślne mapowanie Babele.
     """
-    description_keys: set[str] = set()
+    page_mapping: dict[str, str] = {}
 
     for record in data:
         if not isinstance(record, dict):
             continue
 
-        # JournalEntry ma pages. Interesują nas rekordy JournalEntryPage.
+        # JournalEntry ma listę pages. Interesują nas rekordy JournalEntryPage.
         if isinstance(record.get("pages"), list):
             continue
 
-        system = record.get("system")
-        if not isinstance(system, dict):
-            continue
+        description = record.get("system", {}).get("description")
 
-        description = system.get("description")
-        if not isinstance(description, dict):
-            continue
+        if isinstance(description, dict):
+            for source_key, value in description.items():
+                if not isinstance(value, str) or not value.strip():
+                    continue
 
-        for source_key, value in description.items():
-            if isinstance(value, str) and value.strip():
-                description_keys.add(source_key)
+                output_key = (
+                    "description"
+                    if source_key == "value"
+                    else source_key
+                )
 
-    page_variants = []
+                page_mapping[output_key] = (
+                    f"system.description.{source_key}"
+                )
 
-    for source_key in sorted(description_keys):
-        source_path = f"system.description.{source_key}"
-        output_key = "description" if source_key == "value" else source_key
+        dnd5e_title = (
+            record.get("flags", {})
+            .get("dnd5e", {})
+            .get("title")
+        )
 
-        page_variants.append({
-            "_when": {
-                "path": source_path,
-                "exists": True
-            },
-            output_key: source_path
-        })
+        if isinstance(dnd5e_title, str) and dnd5e_title.strip():
+            page_mapping["chapterTitle"] = "flags.dnd5e.title"
 
     pages_mapping = {
         "path": "pages",
@@ -1478,14 +1459,15 @@ def build_journal_pages_mapping(data: list[dict]) -> dict:
         "cardinality": "many"
     }
 
-    if page_variants:
-        pages_mapping["mapping"] = {
-            "_variants": page_variants
-        }
+    if page_mapping:
+        pages_mapping["mapping"] = dict(
+            sorted(
+                page_mapping.items(),
+                key=lambda item: item[0].casefold()
+            )
+        )
 
-    return {
-        "pages": pages_mapping
-    }
+    return pages_mapping
 
 
 def resolve_journal_pages(pages_value, id_index: dict) -> list[dict]:
@@ -1504,95 +1486,53 @@ def resolve_journal_pages(pages_value, id_index: dict) -> list[dict]:
     return pages
 
 
-def process_rules_pack(data: list[dict], pack_name: str) -> dict:
-    """
-    Eksportuje paczkę JournalEntry zgodnie z mapowaniem Babele.
-
-    Obsługuje jednocześnie:
-    - JournalEntryPage.text.content jako text,
-    - JournalEntryPage.system.description.value jako description,
-    - pozostałe tekstowe pola system.description,
-    - treść JournalEntry.content jako description.
-    """
+def process_rules_pack(
+        data: list[dict],
+        pack_name: str,
+        pack_label: str | None = None
+) -> dict:
     id_index = build_id_index(data)
+    folders = collect_journal_folder_names(data)
 
-    transifex_dict = {
-        "label": JOURNAL_LABEL_OVERRIDES.get(pack_name, pack_name.title()),
-        "mapping": build_journal_pages_mapping(data),
-        "entries": {},
+    mapping = {
+        "pages": build_journal_pages_mapping(data)
     }
 
-    for record in data:
-        if not isinstance(record, dict):
-            continue
-
-        if is_folder_record(record):
-            continue
-
-        pages_value = record.get("pages")
-        if not isinstance(pages_value, list):
-            continue
-
-        entry_name = (record.get("name") or "").strip()
-        if not entry_name:
-            continue
-
-        entry = {
-            "name": entry_name,
-            "pages": {}
-        }
-
-        # Standardowe pole JournalEntry:
-        # description -> content
-        journal_content = record.get("content")
-        if isinstance(journal_content, str) and journal_content.strip():
-            entry["description"] = journal_content.strip()
-
-        for page in resolve_journal_pages(pages_value, id_index):
-            page_name = (page.get("name") or "").strip()
-            if not page_name:
-                continue
-
-            page_entry = {
-                "name": page_name
-            }
-
-            # Standardowa treść strony:
-            # text -> text.content
-            text = extract_journal_page_text(page)
-            if text:
-                page_entry["text"] = text
-
-            # Dodatkowe pola D&D 5e:
-            # description -> system.description.value
-            page_entry.update(
-                extract_journal_page_descriptions(page)
-            )
-
-            # Standardowe pole obrazka JournalEntryPage.
-            image = page.get("image")
-            if isinstance(image, dict):
-                caption = image.get("caption")
-                if isinstance(caption, str) and caption.strip():
-                    page_entry["caption"] = caption.strip()
-
-            src = page.get("src")
-            if isinstance(src, str) and src.strip():
-                page_entry["src"] = src.strip()
-
-            entry["pages"][page_name] = page_entry
-
-        if entry["pages"]:
-            transifex_dict["entries"][entry_name] = entry
-
-    transifex_dict["entries"] = dict(
-        sorted(
-            transifex_dict["entries"].items(),
-            key=lambda item: item[0].casefold()
+    has_entry_title = any(
+        isinstance(record, dict)
+        and isinstance(record.get("pages"), list)
+        and isinstance(
+            record.get("flags", {})
+            .get("dnd5e", {})
+            .get("title"),
+            str
         )
+        and bool(
+            record.get("flags", {})
+            .get("dnd5e", {})
+            .get("title")
+            .strip()
+        )
+        for record in data
     )
 
-    return remove_empty_keys(transifex_dict)
+    if has_entry_title:
+        mapping["chapterTitle"] = "flags.dnd5e.title"
+
+    transifex_dict = {
+        "label": (
+                pack_label
+                or JOURNAL_LABEL_OVERRIDES.get(
+            pack_name,
+            pack_name.title()
+        )
+        ),
+        "mapping": mapping,
+        "entries": {}
+    }
+
+    if folders:
+        transifex_dict["folders"] = folders
 
 
 TOKEN_ARTWORK_DESCRIPTION = '<p><em>Token artwork by <a href="https://www.forgotten-adventures.net/" target="_blank" rel="noopener">Forgotten Adventures</a>.</em></p>'
@@ -1835,8 +1775,11 @@ def add_activities_to_item(entry: dict, item: dict) -> None:
 
 def add_advancement_to_item(entry: dict, item: dict) -> None:
     advancement = item.get("system", {}).get("advancement")
+
     if not isinstance(advancement, list):
         return
+
+    translated_entries = {}
 
     for advancement_entry in advancement:
         if not isinstance(advancement_entry, dict):
@@ -1846,21 +1789,51 @@ def add_advancement_to_item(entry: dict, item: dict) -> None:
         hint = advancement_entry.get("hint")
         advancement_id = advancement_entry.get("_id")
 
-        clean_title = title.strip() if isinstance(title, str) and title.strip() else ""
-        clean_hint = hint.strip() if isinstance(hint, str) and hint.strip() else ""
-        key = clean_title or advancement_id
+        clean_title = (
+            title.strip()
+            if isinstance(title, str) and title.strip()
+            else ""
+        )
 
-        if not key or (not clean_title and not clean_hint):
+        clean_hint = (
+            hint.strip()
+            if isinstance(hint, str) and hint.strip()
+            else ""
+        )
+
+        clean_id = (
+            advancement_id.strip()
+            if isinstance(advancement_id, str) and advancement_id.strip()
+            else ""
+        )
+
+        # Pomijamy wpisy, które nie zawierają tekstu do tłumaczenia.
+        if not clean_title and not clean_hint:
             continue
 
-        entry.setdefault("advancement", {})
-        translated_advancement = {}
-        if clean_title:
-            translated_advancement["title"] = clean_title
-        if clean_hint:
-            translated_advancement["hint"] = clean_hint
+        # Pierwszy wpis może być kluczowany po title.
+        # Kolejne wpisy o identycznym title muszą być kluczowane po _id,
+        # aby nie nadpisywały wcześniejszych advancementów.
+        key = clean_title or clean_id
 
-        entry["advancement"][key] = translated_advancement
+        if key in translated_entries:
+            key = clean_id
+
+        if not key or key in translated_entries:
+            continue
+
+        translated_entry = {}
+
+        if clean_title:
+            translated_entry["title"] = clean_title
+
+        if clean_hint:
+            translated_entry["hint"] = clean_hint
+
+        translated_entries[key] = translated_entry
+
+    if translated_entries:
+        entry["advancement"] = translated_entries
 
 
 def populate_dnd5e_item(entry: dict, item: dict, id_index: dict | None = None) -> None:
@@ -2306,6 +2279,42 @@ def collect_folder_names(data: list[dict]) -> dict[str, str]:
     return dict(sorted(folders.items(), key=lambda item: item[0].casefold()))
 
 
+def collect_journal_folder_names(data: list[dict]) -> dict[str, str]:
+    """
+    Zwraca foldery JournalEntry w kolejności wynikającej z pola sort.
+    """
+    folder_records = []
+
+    for record in data:
+        if not isinstance(record, dict):
+            continue
+
+        if not is_folder_record(record):
+            continue
+
+        name = (record.get("name") or "").strip()
+        if not name:
+            continue
+
+        sort_value = record.get("sort")
+
+        if not isinstance(sort_value, (int, float)):
+            sort_value = 0
+
+        folder_records.append(
+            (sort_value, name.casefold(), name)
+        )
+
+    folder_records.sort(
+        key=lambda item: (item[0], item[1])
+    )
+
+    return {
+        name: name
+        for _, _, name in folder_records
+    }
+
+
 def process_item_pack(data: list[dict], pack_name: str) -> dict:
     """
     Standardowy eksport paczek Foundry typu Item.
@@ -2343,8 +2352,14 @@ def process_item_pack(data: list[dict], pack_name: str) -> dict:
     return remove_empty_keys(transifex_dict)
 
 
-def process_files(folders: str, output_dir: str, filename_prefix: str | None = None) -> None:
+def process_files(
+        folders: str,
+        output_dir: str,
+        filename_prefix: str | None = None,
+        pack_labels: dict[str, str] | None = None
+) -> None:
     dict_key = []
+    pack_labels = pack_labels or {}
     output_path = pathlib.Path(output_dir).resolve()
     output_path.mkdir(parents=True, exist_ok=True)
 
@@ -2395,7 +2410,11 @@ def process_files(folders: str, output_dir: str, filename_prefix: str | None = N
                 continue
 
             if pack_name in JOURNAL_LABEL_OVERRIDES or looks_like_journal_pack(data):
-                transifex_dict = process_rules_pack(data, pack_name)
+                transifex_dict = process_rules_pack(
+                    data,
+                    pack_name,
+                    pack_label=pack_labels.get(pack_name)
+                )
                 with open(new_name, "w", encoding="utf-8") as outfile:
                     json.dump(transifex_dict, outfile, ensure_ascii=False, indent=4)
                 continue
@@ -2648,12 +2667,68 @@ def copy_local_en_json(source_folder: pathlib.Path, target_folder: pathlib.Path)
     print(f"Skopiowano: {source_file} -> {destination_file}")
 
 
+def load_pack_labels(
+        source_folder: pathlib.Path
+) -> dict[str, str]:
+    for manifest_name in ("module.json", "system.json"):
+        manifest_path = source_folder / manifest_name
+
+        if not manifest_path.is_file():
+            continue
+
+        try:
+            with open(
+                    manifest_path,
+                    "r",
+                    encoding="utf-8"
+            ) as manifest_file:
+                manifest = json.load(manifest_file)
+        except (OSError, json.JSONDecodeError) as error:
+            print(
+                f"Nie udało się odczytać "
+                f"{manifest_path}: {error}"
+            )
+            return {}
+
+        labels: dict[str, str] = {}
+
+        for pack in manifest.get("packs", []):
+            if not isinstance(pack, dict):
+                continue
+
+            pack_name = pack.get("name")
+
+            if (
+                    not isinstance(pack_name, str)
+                    or not pack_name.strip()
+            ):
+                pack_path = pack.get("path")
+
+                if isinstance(pack_path, str) and pack_path.strip():
+                    pack_name = pathlib.Path(pack_path).name
+
+            label = pack.get("label")
+
+            if (
+                    isinstance(pack_name, str)
+                    and pack_name.strip()
+                    and isinstance(label, str)
+                    and label.strip()
+            ):
+                labels[pack_name.strip()] = label.strip()
+
+        return labels
+
+    return {}
+
+
 def process_local_dnd_folder(source_folder: pathlib.Path) -> None:
     source_folder = source_folder.resolve()
     filename_prefix = source_folder.name
     packs_dir = source_folder / "packs"
     raw_output_dir = source_folder / "output"
     compendium_dir = source_folder / "compendium"
+    pack_labels = load_pack_labels(source_folder)
 
     print()
     print(f"*** Przetwarzam lokalny folder: {filename_prefix} ***")
@@ -2672,6 +2747,7 @@ def process_local_dnd_folder(source_folder: pathlib.Path) -> None:
         folders=str(raw_output_dir),
         output_dir=str(compendium_dir),
         filename_prefix=filename_prefix,
+        pack_labels=pack_labels
     )
 
     copy_local_en_json(source_folder, source_folder)
