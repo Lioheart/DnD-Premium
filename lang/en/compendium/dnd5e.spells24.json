@@ -44,33 +44,7 @@
         },
         "advancement": {
             "path": "system.advancement",
-            "converter": "structured",
-            "cardinality": "many",
-            "container": "keyed",
-            "keys": [
-                "_id",
-                "title"
-            ],
-            "mapping": {
-                "title": "title",
-                "hint": "hint",
-                "_variants": [
-                    {
-                        "_when": {
-                            "path": "type",
-                            "equals": "ScaleValue"
-                        },
-                        "distance": {
-                            "path": "configuration.distance",
-                            "converter": "imperialToMetric"
-                        },
-                        "scale": {
-                            "path": "configuration.scale",
-                            "converter": "imperialToMetric"
-                        }
-                    }
-                ]
-            }
+            "converter": "translateAdvancement"
         },
         "movement": {
             "path": "system.movement",
