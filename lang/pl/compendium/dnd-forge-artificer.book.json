@@ -144,13 +144,13 @@
                     "name": "Płatnerz"
                 },
                 "Artillerist": {
-                    "name": "Artillerist"
+                    "name": "Artylerzysta"
                 },
                 "Battle Smith": {
                     "name": "Kowal bitewny"
                 },
                 "Cartographer": {
-                    "name": "Cartographer"
+                    "name": "Kartograf"
                 }
             }
         },
@@ -173,7 +173,7 @@
                 },
                 "Artificer": {
                     "name": "Wynalazca",
-                    "caption": "The Artificers of Eberron are responsible for many amazing inventions, but none more miraculous than the Warforged.",
+                    "caption": "Wynalazcy z Eberronu odpowiadają za wiele niezwykłych wynalazków, ale żaden z nich nie jest bardziej cudowny niż Zbrojnokuci.",
                     "src": "modules/dnd-forge-artificer/assets/journal-art/artificer.webp"
                 },
                 "Alchemist Subclass": {
@@ -476,7 +476,7 @@
                     "description": "<p>@Embed[Compendium.dnd-forge-artificer.options.Item.efaArmorer000000 inline]</p><p>@Embed[Compendium.dnd-forge-artificer.book.JournalEntry.efaArtHandouts00.JournalEntryPage.2IWmQ1iDzRUyi2j8 caption=false]</p>"
                 },
                 "Artillerist": {
-                    "name": "Artillerist",
+                    "name": "Artylerzysta",
                     "description": "<p>@Embed[Compendium.dnd-forge-artificer.options.Item.efaArtillerist00 inline]</p><p>@Embed[Compendium.dnd-forge-artificer.book.JournalEntry.efaArtHandouts00.JournalEntryPage.E8m7TmK2fvHukTYw caption=false]</p>"
                 },
                 "Battle Smith": {
@@ -484,7 +484,7 @@
                     "description": "<p>@Embed[Compendium.dnd-forge-artificer.options.Item.efaBattleSmith00 inline]</p><p>@Embed[Compendium.dnd-forge-artificer.book.JournalEntry.efaArtHandouts00.JournalEntryPage.QpaMREQ39ZWlQKhW caption=false]</p>"
                 },
                 "Cartographer": {
-                    "name": "Cartographer",
+                    "name": "Kartograf",
                     "description": "<p>@Embed[Compendium.dnd-forge-artificer.options.Item.efaCartographer0 inline]</p><p>@Embed[Compendium.dnd-forge-artificer.book.JournalEntry.efaArtHandouts00.JournalEntryPage.MVP1UbbTyX9FxvoK caption=false classes=\"float-right size-three\"]</p>"
                 }
             }
@@ -497,7 +497,7 @@
                     "text": "<p>@Embed[Compendium.dnd-forge-artificer.book.JournalEntry.efaArtHandouts00.JournalEntryPage.eMSdFFrdMxymgxFL caption=false]</p><h1>@UUID[Compendium.dnd-forge-artificer.options.Item.efaAberrantHeir0]</h1><p>@Embed[Compendium.dnd-forge-artificer.options.Item.efaAberrantHeir0 inline]</p>"
                 },
                 "Archaeologist": {
-                    "name": "Archaeologist",
+                    "name": "Archeolog",
                     "text": "<p>@Embed[Compendium.dnd-forge-artificer.book.JournalEntry.efaArtHandouts00.JournalEntryPage.52REeEQ9Rt4pTlSX caption=false]</p><h1>@UUID[Compendium.dnd-forge-artificer.options.Item.efaArchaeologist]</h1><p>@Embed[Compendium.dnd-forge-artificer.options.Item.efaArchaeologist inline]</p>"
                 },
                 "House Cannith Heir": {
@@ -576,7 +576,7 @@
                 },
                 "Mobile Bastions": {
                     "name": "Mobile Bastions",
-                    "text": "<p>The Bastion rules in the <em>Dungeon Master’s Guide</em> assume that characters establish their Bastions in a fixed location and that their adventures might take them away from their Bastions at times, perhaps even for long periods. But in Eberron (and perhaps other settings), characters might establish a permanent base of operations that isn’t linked to a fixed location—maybe on a sailing ship, a lightning rail cart, or even an airship. The DM decides whether to allow characters to establish a mobile Bastion, which uses the following alterations to the normal Bastion rules.</p><p>A mobile Bastion has two basic requirements: it must be built in a vehicle form, and one of its special facilities must allow for propulsion. (The @UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaBastionsinKho.JournalEntryPage.RBNyY6dfn2QFW0g2]{Lyrandar Helm}, @UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaBastionsinKho.JournalEntryPage.Sn4PMLbooEXCg16h]{Navigator’s Helm}, and @UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaBastionsinKho.JournalEntryPage.b2U378P21NWhtaGh]{Orien Helm} described in this chapter fulfill that requirement.) If multiple characters combine their Bastions into a single vehicle, each Bastion must include the same kind of special facility that allows for propulsion, and in order for the vehicle to travel, the characters must all issue the Empower order to those facilities at the same time. In this case, however, the combined Bastion can travel more than 8 hours per day; the facility hirelings can operate the vehicle in shifts. Thus, a combined Bastion with at least three Navigator’s Helm facilities can sail for 24 hours a day as the three hirelings trade off navigation in 8-hour shifts.</p><p>If characters are traveling with their mobile Bastions, they can also have encounters and face obstacles just as if they were traveling away from their Bastions. When the DM is planning obstacles for such a journey (as described in the <em>Dungeon Master’s Guide</em>), a potential consequence of an encounter or obstacle is the temporary loss of access to one or more of the Bastion’s facilities, including the facility that allows propulsion.</p><p>Players and the DM should work together to create a Bastion map that fits within the chosen vehicle. Facilities can be slightly larger or smaller than the rules in the <em>Dungeon Master’s Guide</em> specify, at the DM’s discretion, in order to fit. A mobile Bastion can’t have defensive walls.</p>"
+                    "text": "<p>Zasady Bastionów w <em>Podręczniku Mistrza Podziemi</em> zakładają, że postacie zakładają swoje Bastiony w stałym miejscu oraz że ich przygody mogą czasami odciągać je od Bastionów, być może nawet na długi czas. Jednak w Eberronie (i być może w innych światach) postacie mogą ustanowić stałą bazę operacyjną, która nie jest związana z jednym miejscem — być może na żaglowcu, w wagonie lightning rail, a nawet na sterowcu. MP decyduje, czy pozwolić postaciom założyć mobilny Bastion, który korzysta z poniższych zmian względem zwykłych zasad Bastionów.</p><p>Mobilny Bastion ma dwa podstawowe wymagania: musi zostać zbudowany w formie pojazdu, a jedna z jego specjalnych placówek musi umożliwiać napęd. (@UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaBastionsinKho.JournalEntryPage.RBNyY6dfn2QFW0g2], @UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaBastionsinKho.JournalEntryPage.Sn4PMLbooEXCg16h] i @UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaBastionsinKho.JournalEntryPage.b2U378P21NWhtaGh] opisane w tym rozdziale spełniają ten wymóg.) Jeśli wiele postaci połączy swoje Bastiony w jeden pojazd, każdy Bastion musi zawierać ten sam rodzaj specjalnej placówki umożliwiającej napęd, a aby pojazd mógł podróżować, wszystkie postacie muszą jednocześnie wydać tym placówkom rozkaz Empower. W takim przypadku połączony Bastion może jednak podróżować dłużej niż 8 godzin dziennie; zatrudnieni przy placówce pracownicy mogą obsługiwać pojazd zmianowo. Tak więc połączony Bastion mający co najmniej trzy placówki Navigator’s Helm może żeglować przez 24 godziny na dobę, gdy trzech pracowników zmienia się przy nawigacji w 8-godzinnych zmianach.</p><p>Jeśli postacie podróżują wraz ze swoimi mobilnymi Bastionami, mogą również mieć spotkania i stawiać czoła przeszkodom tak samo, jak gdyby podróżowały z dala od swoich Bastionów. Gdy MP planuje przeszkody dla takiej podróży (jak opisano w <em>Podręczniku Mistrza Podziemi</em>), możliwą konsekwencją spotkania albo przeszkody jest tymczasowa utrata dostępu do jednej lub większej liczby placówek Bastionu, w tym placówki umożliwiającej napęd.</p><p>Gracze i MP powinni współpracować przy tworzeniu mapy Bastionu, która zmieści się w wybranym pojeździe. Placówki mogą być nieco większe albo mniejsze, niż określają to zasady w <em>Podręczniku Mistrza Podziemi</em>, według uznania MP, aby dało się je dopasować. Mobilny Bastion nie może mieć murów obronnych.</p>"
                 },
                 "Special Facilities": {
                     "name": "Special Facilities",
@@ -1386,7 +1386,7 @@
                     "subclass": "<p>You gain an Artificer subclass of your choice. The Alchemist, Armorer, Artillerist, Battle Smith, and Cartographer subclasses are detailed in the @UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaArtieSubclass]{Artificer Subclasses} journal. A subclass is a specialization that grants you features at certain Artificer levels. For the rest of your career, you gain each of your subclass’s features that are of your Artificer level or lower.</p>"
                 },
                 "Magic Item Plans": {
-                    "name": "Magic Item Plans",
+                    "name": "Schematy magicznych przedmiotów",
                     "text": "<p>@Embed[Compendium.dnd-forge-artificer.tables.RollTable.efaMagicItemPlan rangeLabel=\"Artificer Level\" resultLabel=\"Magic Item Plan Options\" inline]</p>"
                 },
                 "Artificer Spell List": {
