@@ -26,7 +26,7 @@
         "Aberrant Spirit": {
             "name": "Aberrant Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonAber caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Regeneration": {
                     "name": "Regeneracja",
@@ -85,7 +85,7 @@
             "name": "Air Elemental Spirit",
             "tokenName": "Elemental Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonElem caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Amorphous Form": {
                     "name": "Amorphous Form",
@@ -113,7 +113,7 @@
         },
         "Ape": {
             "name": "Małpa",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -160,7 +160,7 @@
             "name": "Avenger Spirit",
             "tokenName": "Celestial Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCele caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -183,7 +183,7 @@
         },
         "Badger": {
             "name": "Mastif",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
@@ -194,7 +194,7 @@
         "Barbarian": {
             "name": "Barbarzyńca",
             "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{Step 1: Choose a Class}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Likes</th><th scope=\"col\">Primary Ability</th><th scope=\"col\">Complexity</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbBarbarian0000]{Barbarian}</td><td>Battle</td><td>Strength</td><td>Average</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{Step 2: Determine Origin}</caption><thead><tr><th scope=\"col\">Background</th><th scope=\"col\">Species</th><th scope=\"col\">Languages</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgSailor00000]{Sailor}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspGoliath0000]{Goliath}</td><td>Giant, Goblin</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{Step 3: Determine Ability Scores}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Str.</th><th scope=\"col\">Dex.</th><th scope=\"col\">Con.</th><th scope=\"col\">Int.</th><th scope=\"col\">Wis.</th><th scope=\"col\">Cha.</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbbrbBarbarian0]{Barbarian}</td><td>15</td><td>13</td><td>14</td><td>10</td><td>12</td><td>8</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{Step 4: Choose an Alignment}</caption><thead><tr><th scope=\"col\">Alignment</th><th scope=\"col\">Personality</th></tr></thead><tbody><tr><td>Chaotic</td><td>Rebellious</td></tr><tr><td>Evil</td><td>Vengeful</td></tr></tbody></table>",
-            "alignment": "Chaotic Evil",
+            "alignment": "Chaotyczny Zły",
             "items": {
                 "Goliath": {
                     "name": "Goliat",
@@ -517,7 +517,7 @@
         "Bard": {
             "name": "Bard",
             "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{Step 1: Choose a Class}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Likes</th><th scope=\"col\">Primary Ability</th><th scope=\"col\">Complexity</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbBard000000000]{Bard}</td><td>Performing</td><td>Charisma</td><td>High</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{Step 2: Determine Origin}</caption><thead><tr><th scope=\"col\">Background</th><th scope=\"col\">Species</th><th scope=\"col\">Languages</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgEntertainer]{Entertainer}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspChthonicTie]{Tiefling, Chthonic}</td><td>Halfling, Giant</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{Step 3: Determine Ability Scores}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Str.</th><th scope=\"col\">Dex.</th><th scope=\"col\">Con.</th><th scope=\"col\">Int.</th><th scope=\"col\">Wis.</th><th scope=\"col\">Cha.</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbbrdBard000000]{Bard}</td><td>8</td><td>14</td><td>12</td><td>13</td><td>10</td><td>15</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{Step 4: Choose an Alignment}</caption><thead><tr><th scope=\"col\">Alignment</th><th scope=\"col\">Personality</th></tr></thead><tbody><tr><td>Neutral</td><td>Selfish</td></tr><tr><td>Evil</td><td>Greedy</td></tr></tbody></table>",
-            "alignment": "Neutral Evil",
+            "alignment": "Neutralny Zły",
             "items": {
                 "Lute": {
                     "name": "Lutnia",
@@ -857,7 +857,7 @@
         },
         "Bat": {
             "name": "Nietoperz",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
@@ -868,7 +868,7 @@
         "Beast of the Land": {
             "name": "Bestia Ziemi",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.classes.Item.phbrgrPrimalComp caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Primal Bond": {
                     "name": "Pierwotna więź",
@@ -897,7 +897,7 @@
         "Beast of the Sea": {
             "name": "Bestia Morza",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.classes.Item.phbrgrPrimalComp caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Amphibious": {
                     "name": "Ziemno-wodny",
@@ -930,7 +930,7 @@
         "Beast of the Sky": {
             "name": "Bestia Nieba",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.classes.Item.phbrgrPrimalComp caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Flyby": {
                     "name": "Przelot",
@@ -951,7 +951,7 @@
             "name": "Beholderkin Spirit",
             "tokenName": "Aberrant Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonAber caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -973,7 +973,7 @@
             "name": "Bestial Air Spirit",
             "tokenName": "Bestial Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonBeas caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Flyby": {
                     "name": "Przelot",
@@ -999,7 +999,7 @@
             "name": "Bestial Land Spirit",
             "tokenName": "Bestial Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonBeas caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Pack Tactics": {
                     "name": "Atak grupowy",
@@ -1024,7 +1024,7 @@
         "Bestial Spirit": {
             "name": "Bestial Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonBeas caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Flyby": {
                     "name": "Przelot",
@@ -1059,7 +1059,7 @@
             "name": "Bestial Water Spirit",
             "tokenName": "Bestial Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonBeas caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Pack Tactics": {
                     "name": "Atak grupowy",
@@ -1110,7 +1110,7 @@
                             "name": "Pochwycenie"
                         },
                         "Crush": {
-                            "name": "Crush",
+                            "name": "Miażdzenie",
                             "condition": "has a creature grappled",
                             "activationCondition": "has a creature grappled"
                         }
@@ -1137,8 +1137,8 @@
             }
         },
         "Black Bear": {
-            "name": "Black Bear",
-            "alignment": "Unaligned",
+            "name": "Niedźwiedź czarny",
+            "alignment": "Bez charakteru",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -1157,7 +1157,7 @@
         },
         "Boar": {
             "name": "Dzik",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Bloodied Fury": {
                     "name": "Bloodied Fury",
@@ -1170,8 +1170,8 @@
             }
         },
         "Brown Bear": {
-            "name": "Brown Bear",
-            "alignment": "Unaligned",
+            "name": "Niedźwiedź brunatny",
+            "alignment": "Bez charakteru",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -1194,7 +1194,7 @@
         },
         "Camel": {
             "name": "Wielbłąd",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
@@ -1204,7 +1204,7 @@
         },
         "Cat": {
             "name": "Kot",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Jumper": {
                     "name": "Skoczek",
@@ -1219,7 +1219,7 @@
         "Celestial Spirit": {
             "name": "Celestial Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCele caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -1254,7 +1254,7 @@
             "name": "Celestial Steed",
             "tokenName": "Nieziemski wierzchowiec",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplFindSteed0 caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Life Bond": {
                     "name": "Life Bond",
@@ -1275,7 +1275,7 @@
             "name": "Clay Construct Spirit",
             "tokenName": "Construct Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCons caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -1307,7 +1307,7 @@
         "Cleric": {
             "name": "Kleryk",
             "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{Step 1: Choose a Class}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Likes</th><th scope=\"col\">Primary Ability</th><th scope=\"col\">Complexity</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCleric0000000]{Cleric}</td><td>Gods</td><td>Wisdom</td><td>Average</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{Step 2: Determine Origin}</caption><thead><tr><th scope=\"col\">Background</th><th scope=\"col\">Species</th><th scope=\"col\">Languages</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgGuard000000]{Guard}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspDwarf000000]{Dwarf}</td><td>Common Sign Language, Dwarvish</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{Step 3: Determine Ability Scores}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Str.</th><th scope=\"col\">Dex.</th><th scope=\"col\">Con.</th><th scope=\"col\">Int.</th><th scope=\"col\">Wis.</th><th scope=\"col\">Cha.</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbclcCleric0000]{Cleric}</td><td>14</td><td>8</td><td>13</td><td>10</td><td>15</td><td>12</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{Step 4: Choose an Alignment}</caption><thead><tr><th scope=\"col\">Alignment</th><th scope=\"col\">Personality</th></tr></thead><tbody><tr><td>Lawful</td><td>Loyal</td></tr><tr><td>Good</td><td>Helpful</td></tr></tbody></table>",
-            "alignment": "Lawful Good",
+            "alignment": "Praworządny Dobry",
             "items": {
                 "Guard": {
                     "name": "Strażnik",
@@ -1851,8 +1851,8 @@
             }
         },
         "Constrictor Snake": {
-            "name": "Constrictor Snake",
-            "alignment": "Unaligned",
+            "name": "Wąż dusiciel",
+            "alignment": "Bez charakteru",
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
@@ -1863,8 +1863,8 @@
                     "description": "<p><em>Strength Saving Throw:</em> DC 12, one Medium or smaller creature the snake can see within 5 feet. <em>Failure:</em> 7 (3d4) Bludgeoning damage, and the target has the &amp;Reference[grappled] condition (escape DC 12).</p>",
                     "activities": {
                         "save": {
-                            "target": "Medium or smaller creature",
-                            "targetAffects": "Medium or smaller creature"
+                            "target": "Średnia lub mniejsza istota",
+                            "targetAffects": "Średnia lub mniejsza istota"
                         }
                     }
                 }
@@ -1873,7 +1873,7 @@
         "Construct Spirit": {
             "name": "Construct Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCons caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Stony Lethargy": {
                     "name": "Stony Lethargy",
@@ -1925,7 +1925,7 @@
         },
         "Crab": {
             "name": "Krab",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Amphibious": {
                     "name": "Ziemno-wodny",
@@ -1939,7 +1939,7 @@
         },
         "Crocodile": {
             "name": "Krokodyl",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Hold Breath": {
                     "name": "Wstrzymanie oddechu",
@@ -1965,7 +1965,7 @@
             "name": "Defender Spirit",
             "tokenName": "Celestial Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCele caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -1996,7 +1996,7 @@
             "name": "Demon Spirit",
             "tokenName": "Fiendish Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFien caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Death Throes": {
                     "name": "Death Throes",
@@ -2033,7 +2033,7 @@
             "name": "Devil Spirit",
             "tokenName": "Fiendish Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFien caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Devil’s Sight": {
                     "name": "Devil’s Sight",
@@ -2067,8 +2067,8 @@
             }
         },
         "Dire Wolf": {
-            "name": "Dire Wolf",
-            "alignment": "Unaligned",
+            "name": "Straszliwy wilk",
+            "alignment": "Bez charakteru",
             "items": {
                 "Pack Tactics": {
                     "name": "Atak grupowy",
@@ -2084,7 +2084,7 @@
         "Draconic Spirit": {
             "name": "Draconic Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonDrag caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Shared Resistances": {
                     "name": "Shared Resistances",
@@ -2155,7 +2155,7 @@
         },
         "Draft Horse": {
             "name": "Koń pociągowy",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Hooves": {
                     "name": "Kopyta",
@@ -2166,7 +2166,7 @@
         "Druid": {
             "name": "Druid",
             "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{Step 1: Choose a Class}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Likes</th><th scope=\"col\">Primary Ability</th><th scope=\"col\">Complexity</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbDruid00000000]{Druid}</td><td>Nature</td><td>Wisdom</td><td>High</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{Step 2: Determine Origin}</caption><thead><tr><th scope=\"col\">Background</th><th scope=\"col\">Species</th><th scope=\"col\">Languages</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgFarmer00000]{Farmer}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspHuman000000]{Human}</td><td>Elvish, Halfling</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{Step 3: Determine Ability Scores}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Str.</th><th scope=\"col\">Dex.</th><th scope=\"col\">Con.</th><th scope=\"col\">Int.</th><th scope=\"col\">Wis.</th><th scope=\"col\">Cha.</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbdrdDruid00000]{Druid}</td><td>8</td><td>12</td><td>14</td><td>13</td><td>15</td><td>10</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{Step 4: Choose an Alignment}</caption><thead><tr><th scope=\"col\">Alignment</th><th scope=\"col\">Personality</th></tr></thead><tbody><tr><td>Neutral</td><td>Disinterested</td></tr><tr><td>Good</td><td>Honest</td></tr></tbody></table>",
-            "alignment": "Neutral Good",
+            "alignment": "Neutralny Dobry",
             "items": {
                 "Farmer": {
                     "name": "Rolnik",
@@ -2525,7 +2525,7 @@
             "name": "Earth Elemental Spirit",
             "tokenName": "Elemental Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonElem caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -2545,7 +2545,7 @@
         "Elemental Spirit": {
             "name": "Elemental Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonElem caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Amorphous Form": {
                     "name": "Amorphous Form",
@@ -2569,7 +2569,7 @@
         },
         "Elephant": {
             "name": "Słoń",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -2599,7 +2599,7 @@
         },
         "Elk": {
             "name": "Łoś",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Ram": {
                     "name": "Taran",
@@ -2631,7 +2631,7 @@
         "Fey Spirit": {
             "name": "Fey Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFey0 caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -2677,7 +2677,7 @@
             "name": "Fey Steed",
             "tokenName": "Nieziemski wierzchowiec",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplFindSteed0 caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Life Bond": {
                     "name": "Life Bond",
@@ -2703,7 +2703,7 @@
             "name": "Fiend Steed",
             "tokenName": "Nieziemski wierzchowiec",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplFindSteed0 caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Life Bond": {
                     "name": "Life Bond",
@@ -2728,7 +2728,7 @@
         "Fiendish Spirit": {
             "name": "Fiendish Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFien caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Death Throes": {
                     "name": "Death Throes",
@@ -2789,7 +2789,7 @@
         "Fighter": {
             "name": "Wojownik",
             "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{Step 1: Choose a Class}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Likes</th><th scope=\"col\">Primary Ability</th><th scope=\"col\">Complexity</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbFighter000000]{Fighter}</td><td>Weapons</td><td>Strength or Dexterity</td><td>Low</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{Step 2: Determine Origin}</caption><thead><tr><th scope=\"col\">Background</th><th scope=\"col\">Species</th><th scope=\"col\">Languages</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgSoldier0000]{Soldier}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspDwarf000000]{Dwarf}</td><td>Orc, Dwarvish</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{Step 3: Determine Ability Scores}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Str.</th><th scope=\"col\">Dex.</th><th scope=\"col\">Con.</th><th scope=\"col\">Int.</th><th scope=\"col\">Wis.</th><th scope=\"col\">Cha.</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbftrFighter000]{Fighter}</td><td>15</td><td>14</td><td>13</td><td>8</td><td>10</td><td>12</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{Step 4: Choose an Alignment}</caption><thead><tr><th scope=\"col\">Alignment</th><th scope=\"col\">Personality</th></tr></thead><tbody><tr><td>Neutral</td><td>Pragmatic</td></tr><tr><td>Good</td><td>Kind</td></tr></tbody></table>",
-            "alignment": "Neutral Good",
+            "alignment": "Neutralny Dobry",
             "items": {
                 "Soldier": {
                     "name": "Żołnierz",
@@ -3087,7 +3087,7 @@
             "name": "Fire Elemental Spirit",
             "tokenName": "Elemental Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonElem caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Amorphous Form": {
                     "name": "Amorphous Form",
@@ -3146,7 +3146,7 @@
         },
         "Frog": {
             "name": "Żaba",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Amphibious": {
                     "name": "Ziemno-wodny",
@@ -3166,7 +3166,7 @@
             "name": "Fuming Fey Spirit",
             "tokenName": "Fey Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFey0 caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -3200,7 +3200,7 @@
             "name": "Ghostly Spirit",
             "tokenName": "Undead Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonUnde caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Incorporeal Passage": {
                     "name": "Incorporeal Passage",
@@ -3228,8 +3228,8 @@
             }
         },
         "Giant Badger": {
-            "name": "Giant Badger",
-            "alignment": "Unaligned",
+            "name": "Olbrzymi borsuk",
+            "alignment": "Bez charakteru",
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
@@ -3238,10 +3238,10 @@
             }
         },
         "Giant Centipede": {
-            "name": "Giant Centipede",
+            "name": "Olbrzymia stonoga",
             "tokenName": "Olbrzymie owady",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplGiantInsec caption=false]</p>",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Spider Climb": {
                     "name": "Pajęcza wspinaczka",
@@ -3275,7 +3275,7 @@
         },
         "Giant Crab": {
             "name": "Olbrzymi krab",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Amphibious": {
                     "name": "Ziemno-wodny",
@@ -3288,8 +3288,8 @@
             }
         },
         "Giant Goat": {
-            "name": "Giant Goat",
-            "alignment": "Unaligned",
+            "name": "Olbrzymi kozioł",
+            "alignment": "Bez charakteru",
             "items": {
                 "Ram": {
                     "name": "Taran",
@@ -3305,7 +3305,7 @@
         "Giant Insect": {
             "name": "Olbrzymie owady",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplGiantInsec caption=false]</p>",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Spider Climb": {
                     "name": "Pajęcza wspinaczka",
@@ -3349,8 +3349,8 @@
             }
         },
         "Giant Seahorse": {
-            "name": "Giant Seahorse",
-            "alignment": "Unaligned",
+            "name": "Gigant konik morski",
+            "alignment": "Bez charakteru",
             "items": {
                 "Water Breathing": {
                     "name": "Oddychanie pod wodą",
@@ -3373,14 +3373,14 @@
         },
         "Giant Spider": {
             "name": "Olbrzymi pająk",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Spider Climb": {
                     "name": "Pajęcza wspinaczka",
                     "description": "<p>The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>"
                 },
                 "Web Walker": {
-                    "name": "Web Walker",
+                    "name": "Chodzenie po sieci",
                     "description": "<p> The spider ignores movement restrictions caused by webs, and the spider knows the location of any other creature in contact with the same web.</p>"
                 },
                 "Bite": {
@@ -3394,10 +3394,10 @@
             }
         },
         "Giant Wasp": {
-            "name": "Giant Wasp",
+            "name": "Olbrzymia osa",
             "tokenName": "Olbrzymie owady",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplGiantInsec caption=false]</p>",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Spider Climb": {
                     "name": "Pajęcza wspinaczka",
@@ -3420,7 +3420,7 @@
         },
         "Giant Weasel": {
             "name": "Olbrzymia łasica",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
@@ -3430,7 +3430,7 @@
         },
         "Goat": {
             "name": "Koza",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Ram": {
                     "name": "Taran",
@@ -3475,10 +3475,10 @@
         },
         "Hawk": {
             "name": "Jastrząb",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Talons": {
-                    "name": "Talons",
+                    "name": "Szpony",
                     "description": "<p><em>Rzut ataku wręcz:</em> +3, zasięg 5 ft.. <em>Trafienie:</em> 1 obrażenie Cięte.</p>"
                 }
             }
@@ -3487,7 +3487,7 @@
             "name": "Huge Animated Object",
             "tokenName": "Animated Object",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplAnimateObj caption=false]</p>",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Slam": {
                     "name": "Walnięcie",
@@ -3505,8 +3505,8 @@
             "name": "Illusory Phenomenon"
         },
         "Imp": {
-            "name": "Imp",
-            "alignment": "Lawful Evil",
+            "name": "Diablik",
+            "alignment": "Praworządny Zły",
             "items": {
                 "Devil’s Sight": {
                     "name": "Devil’s Sight",
@@ -3517,7 +3517,7 @@
                     "description": "<p> The sphinx has Advantage on saving throws against spells and other magical effects.</p>"
                 },
                 "Sting": {
-                    "name": "Sting",
+                    "name": "Żądło",
                     "description": "<p><em>Melee Attack Roll:</em> +2, reach 5 ft. <em>Hit: </em>1 Piercing damage plus 3 (1d6) Poison damage.</p>"
                 },
                 "Invisibility": {
@@ -3530,7 +3530,7 @@
                     }
                 },
                 "Shape-Shift": {
-                    "name": "Shape-Shift",
+                    "name": "Zmiana Kształtu",
                     "description": "<p> The quasit shape-shifts to resemble a bat (Speed 10 ft., Fly 40 ft.), a centipede (40 ft., Climb 40 ft.), or a toad (40 ft., Swim 40 ft.), or it returns to its true form. Its statistics are the same in each form, except for its Speed. Any equipment it’s wearing or carrying isn’t transformed.</p>",
                     "activities": {
                         "Change Form": {
@@ -3589,7 +3589,7 @@
             "name": "Large Animated Object",
             "tokenName": "Animated Object",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplAnimateObj caption=false]</p>",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Slam": {
                     "name": "Walnięcie",
@@ -3602,7 +3602,7 @@
         },
         "Lion": {
             "name": "Lew",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Pack Tactics": {
                     "name": "Atak grupowy",
@@ -3627,7 +3627,7 @@
                     "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage.</p>"
                 },
                 "Roar": {
-                    "name": "Roar",
+                    "name": "Ryk",
                     "description": "<p><em>Wisdom Saving Throw:</em> DC 11, one creature within 15 feet. <em>Failure:</em> The target has the &amp;Reference[frightened apply=false] condition until the start of the lion’s next turn.</p>",
                     "effects": {
                         "Frightened": {
@@ -3640,7 +3640,7 @@
         },
         "Lizard": {
             "name": "Jaszczurka",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Spider Climb": {
                     "name": "Pajęcza wspinaczka",
@@ -3662,7 +3662,7 @@
         },
         "Mastiff": {
             "name": "Mastif",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
@@ -3674,7 +3674,7 @@
             "name": "Medium Animated Object",
             "tokenName": "Animated Object",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplAnimateObj caption=false]</p>",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Slam": {
                     "name": "Walnięcie",
@@ -3686,7 +3686,7 @@
             "name": "Metal Construct Spirit",
             "tokenName": "Construct Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCons caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Heated Body": {
                     "name": "Heated Body",
@@ -3717,7 +3717,7 @@
             "name": "Mind Flayer Spirit",
             "tokenName": "Aberrant Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonAber caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Whispering Aura": {
                     "name": "Szeptająca aura",
@@ -3750,7 +3750,7 @@
             "name": "Mirthful Fey Spirit",
             "tokenName": "Fey Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFey0 caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -3779,7 +3779,7 @@
         "Monk": {
             "name": "Mnich",
             "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{Step 1: Choose a Class}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Likes</th><th scope=\"col\">Primary Ability</th><th scope=\"col\">Complexity</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbMonk000000000]{Monk}</td><td>Unarmed combat</td><td>Dexterity and Wisdom</td><td>High</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{Step 2: Determine Origin}</caption><thead><tr><th scope=\"col\">Background</th><th scope=\"col\">Species</th><th scope=\"col\">Choose Languages</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgGuide000000]{Guide}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspDragonborn0]{Dragonborn}</td><td>Dwarvish, Draconic</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{Step 3: Determine Ability Scores}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Str.</th><th scope=\"col\">Dex.</th><th scope=\"col\">Con.</th><th scope=\"col\">Int.</th><th scope=\"col\">Wis.</th><th scope=\"col\">Cha.</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbmnkMonk000000]{Monk}</td><td>12</td><td>15</td><td>13</td><td>10</td><td>14</td><td>8</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{Step 4: Choose an Alignment}</caption><thead><tr><th scope=\"col\">Alignment</th><th scope=\"col\">Personality</th></tr></thead><tbody><tr><td>Lawful</td><td>Methodical</td></tr><tr><td>Neutral</td><td>Laconic</td></tr></tbody></table><p></p>",
-            "alignment": "Lawful Neutral",
+            "alignment": "Praworządny Neutralny",
             "items": {
                 "Guide": {
                     "name": "Przewodnik",
@@ -4110,7 +4110,7 @@
         },
         "Mule": {
             "name": "Muł",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Beast of Burden": {
                     "name": "Beast of Burden",
@@ -4124,7 +4124,7 @@
         },
         "Octopus": {
             "name": "Ośmiornica",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Compression": {
                     "name": "Compression",
@@ -4135,7 +4135,7 @@
                     "description": "<p>The shark can breathe only underwater.</p>"
                 },
                 "Ink Cloud": {
-                    "name": "Ink Cloud",
+                    "name": "Chmura atramentu",
                     "description": "<p><em>Trigger:</em> A creature ends its turn within 5 feet of the octopus while underwater. <em>Response:</em> The octopus releases ink that fills a 5-foot Cube centered on itself, and the octopus moves up to its Swim Speed. The Cube is &amp;Reference[heavilyobscured] for 1 minute or until a strong current or similar effect disperses the ink.</p>",
                     "activities": {
                         "Obscure Area": {
@@ -4154,7 +4154,7 @@
         "Otherworldly Steed": {
             "name": "Nieziemski wierzchowiec",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplFindSteed0 caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Life Bond": {
                     "name": "Life Bond",
@@ -4191,14 +4191,14 @@
         },
         "Owl": {
             "name": "Sowa",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Flyby": {
                     "name": "Przelot",
                     "description": "<p>Sowa nie wywołuje Ataków okazyjnych, gdy wylatuje poza zasięg wroga.</p>"
                 },
                 "Talons": {
-                    "name": "Talons",
+                    "name": "Szpony",
                     "description": "<p><em>Rzut ataku wręcz:</em> +3, zasięg 5 ft.. <em>Trafienie:</em> 1 obrażenie Cięte.</p>"
                 }
             }
@@ -4206,7 +4206,7 @@
         "Paladin": {
             "name": "Paladyn",
             "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{Step 1: Choose a Class}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Likes</th><th scope=\"col\">Primary Ability</th><th scope=\"col\">Complexity</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbPaladin000000]{Paladin}</td><td>Defense</td><td>Strength and Charisma</td><td>Average</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{Step 2: Determine Origin}</caption><thead><tr><th scope=\"col\">Background</th><th scope=\"col\">Species</th><th scope=\"col\">Choose Languages</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgNoble000000]{Noble}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspOrc00000000]{Orc}</td><td>Dwarvish, Orc</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{Step 3: Determine Ability Scores}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Str.</th><th scope=\"col\">Dex.</th><th scope=\"col\">Con.</th><th scope=\"col\">Int.</th><th scope=\"col\">Wis.</th><th scope=\"col\">Cha.</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbpdnPaladin000]{Paladin}</td><td>15</td><td>10</td><td>13</td><td>8</td><td>12</td><td>14</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{Step 4: Choose an Alignment}</caption><thead><tr><th scope=\"col\">Alignment</th><th scope=\"col\">Personality</th></tr></thead><tbody><tr><td>Lawful</td><td>Judgmental</td></tr><tr><td>Good</td><td>Honest</td></tr></tbody></table>",
-            "alignment": "Lawful Good",
+            "alignment": "Praworządny Dobry",
             "items": {
                 "Noble": {
                     "name": "Szlachcic",
@@ -4459,7 +4459,7 @@
         },
         "Panther": {
             "name": "Pantera",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Rend": {
                     "name": "Rozdarcie",
@@ -4475,7 +4475,7 @@
                     },
                     "effects": {
                         "Apply Hide Action to Target": {
-                            "name": "Apply Hide Action to Target"
+                            "name": "Zastosuj Akcję ukrycia się na celu"
                         }
                     }
                 }
@@ -4485,7 +4485,7 @@
             "name": "Widmowy wierzchowiec",
             "tokenName": "Koń wierzchowy",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplPhantomSte caption=false]</p>",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Hooves": {
                     "name": "Kopyta",
@@ -4495,7 +4495,7 @@
         },
         "Pony": {
             "name": "Kucyk",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Hooves": {
                     "name": "Kopyta",
@@ -4504,8 +4504,8 @@
             }
         },
         "Pseudodragon": {
-            "name": "Pseudodragon",
-            "alignment": "Neutral Good",
+            "name": "Pseudosmok",
+            "alignment": "Neutralny Dobry",
             "items": {
                 "Magic Resistance": {
                     "name": "Odporność na magię",
@@ -4525,7 +4525,7 @@
                     "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
                 },
                 "Sting": {
-                    "name": "Sting",
+                    "name": "Żądło",
                     "description": "<p><em>Melee Attack Roll:</em> +2, reach 5 ft. <em>Hit: </em>1 Piercing damage plus 3 (1d6) Poison damage.</p>"
                 }
             }
@@ -4534,7 +4534,7 @@
             "name": "Putrid Spirit",
             "tokenName": "Undead Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonUnde caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Festering Aura": {
                     "name": "Festering Aura",
@@ -4577,7 +4577,7 @@
         },
         "Quasit": {
             "name": "Quasit",
-            "alignment": "Chaotic Evil",
+            "alignment": "Chaotyczny Zły",
             "items": {
                 "Magic Resistance": {
                     "name": "Odporność na magię",
@@ -4607,7 +4607,7 @@
                     }
                 },
                 "Shape-Shift": {
-                    "name": "Shape-Shift",
+                    "name": "Zmiana Kształtu",
                     "description": "<p> The quasit shape-shifts to resemble a bat (Speed 10 ft., Fly 40 ft.), a centipede (40 ft., Climb 40 ft.), or a toad (40 ft., Swim 40 ft.), or it returns to its true form. Its statistics are the same in each form, except for its Speed. Any equipment it’s wearing or carrying isn’t transformed.</p>",
                     "activities": {
                         "Change Form": {
@@ -4646,7 +4646,7 @@
         "Ranger": {
             "name": "Łowca",
             "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{Step 1: Choose a Class}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Likes</th><th scope=\"col\">Primary Ability</th><th scope=\"col\">Complexity</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbRanger0000000]{Ranger}</td><td>Survival</td><td>Dexterity and Wisdom</td><td>Average</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{Step 2: Determine Origin}</caption><thead><tr><th scope=\"col\">Background</th><th scope=\"col\">Species</th><th scope=\"col\">Choose Languages</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgWayfarer000]{Wayfarer}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspWoodElf0000]{Elf, Wood}</td><td>Gnomish, Elvish</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{Step 3: Determine Ability Scores}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Str.</th><th scope=\"col\">Dex.</th><th scope=\"col\">Con.</th><th scope=\"col\">Int.</th><th scope=\"col\">Wis.</th><th scope=\"col\">Cha.</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbrgrRanger0000]{Ranger}</td><td>12</td><td>15</td><td>13</td><td>8</td><td>14</td><td>10</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{Step 4: Choose an Alignment}</caption><thead><tr><th scope=\"col\">Alignment</th><th scope=\"col\">Personality</th></tr></thead><tbody><tr><td>Chaotic</td><td>Self-absorbed</td></tr><tr><td>Good</td><td>Honest</td></tr></tbody></table>",
-            "alignment": "Chaotic Good",
+            "alignment": "Chaotyczny Dobry",
             "items": {
                 "Wayfarer": {
                     "name": "Wędrowiec",
@@ -5011,7 +5011,7 @@
         },
         "Rat": {
             "name": "Szczur",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Agile": {
                     "name": "Agile",
@@ -5025,7 +5025,7 @@
         },
         "Raven": {
             "name": "Kruk",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Mimicry": {
                     "name": "Naśladownictwo",
@@ -5038,8 +5038,8 @@
             }
         },
         "Reef Shark": {
-            "name": "Reef Shark",
-            "alignment": "Unaligned",
+            "name": "Rekin rafowy",
+            "alignment": "Bez charakteru",
             "items": {
                 "Pack Tactics": {
                     "name": "Atak grupowy",
@@ -5058,7 +5058,7 @@
         },
         "Riding Horse": {
             "name": "Koń wierzchowy",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Hooves": {
                     "name": "Kopyta",
@@ -5069,7 +5069,7 @@
         "Rogue": {
             "name": "Łotr",
             "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{Step 1: Choose a Class}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Likes</th><th scope=\"col\">Primary Ability</th><th scope=\"col\">Complexity</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbRogue00000000]{Rogue}</td><td>Stealth</td><td>Dexterity</td><td>Low</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{Step 2: Determine Origin}</caption><thead><tr><th scope=\"col\">Background</th><th scope=\"col\">Species</th><th scope=\"col\">Choose Languages</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgCriminal000]{Criminal}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspHalfling000]{Halfling}</td><td>Common Sign Language, Halfling</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{Step 3: Determine Ability Scores}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Str.</th><th scope=\"col\">Dex.</th><th scope=\"col\">Con.</th><th scope=\"col\">Int.</th><th scope=\"col\">Wis.</th><th scope=\"col\">Cha.</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbrgeRogue00000]{Rogue}</td><td>12</td><td>15</td><td>13</td><td>14</td><td>10</td><td>8</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{Step 4: Choose an Alignment}</caption><thead><tr><th scope=\"col\">Alignment</th><th scope=\"col\">Personality</th></tr></thead><tbody><tr><td>Lawful</td><td>Loyal</td></tr><tr><td>Evil</td><td>Dishonest</td></tr></tbody></table>",
-            "alignment": "Lawful Evil",
+            "alignment": "Praworządny Zły",
             "items": {
                 "Criminal": {
                     "name": "Przestępca",
@@ -5374,10 +5374,10 @@
         },
         "Scorpion": {
             "name": "Skorpion",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Sting": {
-                    "name": "Sting",
+                    "name": "Żądło",
                     "description": "<p><em>Melee Attack Roll:</em> +2, reach 5 ft. <em>Hit: </em>1 Piercing damage plus 3 (1d6) Poison damage.</p>"
                 }
             }
@@ -5390,7 +5390,7 @@
             "name": "Skeletal Spirit",
             "tokenName": "Undead Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonUnde caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -5409,7 +5409,7 @@
         },
         "Skeleton": {
             "name": "Szkielet",
-            "alignment": "Lawful Evil",
+            "alignment": "Praworządny Zły",
             "items": {
                 "Shortsword": {
                     "name": "Krótki miecz",
@@ -5425,7 +5425,7 @@
             "name": "Slaad Spirit",
             "tokenName": "Aberrant Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonAber caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Regeneration": {
                     "name": "Regeneracja",
@@ -5461,7 +5461,7 @@
         },
         "Slaad Tadpole": {
             "name": "Slaad Tadpole",
-            "alignment": "Chaotic Neutral",
+            "alignment": "Chaotyczny Neutralny",
             "items": {
                 "Magic Resistance": {
                     "name": "Odporność na magię",
@@ -5477,7 +5477,7 @@
             "name": "Mały animowany objekt",
             "tokenName": "Animated Object",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplAnimateObj caption=false]</p>",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Slam": {
                     "name": "Walnięcie",
@@ -5488,7 +5488,7 @@
         "Sorcerer": {
             "name": "Zaklinacz",
             "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{Step 1: Choose a Class}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Likes</th><th scope=\"col\">Primary Ability</th><th scope=\"col\">Complexity</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSorcerer00000]{Sorcerer}</td><td>Power</td><td>Charisma</td><td>High</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{Step 2: Determine Origin}</caption><thead><tr><th scope=\"col\">Background</th><th scope=\"col\">Species</th><th scope=\"col\">Choose Languages</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgCharlatan00]{Charlatan}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspDrow0000000]{Elf, Drow}</td><td>Giant, Elvish</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{Step 3: Determine Ability Scores}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Str.</th><th scope=\"col\">Dex.</th><th scope=\"col\">Con.</th><th scope=\"col\">Int.</th><th scope=\"col\">Wis.</th><th scope=\"col\">Cha.</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbscrSorcerer00]{Sorcerer}</td><td>10</td><td>13</td><td>14</td><td>8</td><td>12</td><td>15</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{Step 4: Choose an Alignment}</caption><thead><tr><th scope=\"col\">Alignment</th><th scope=\"col\">Personality</th></tr></thead><tbody><tr><td>Chaotic</td><td>Impulsive</td></tr><tr><td>Neutral</td><td>Laconic</td></tr></tbody></table>",
-            "alignment": "Chaotic Neutral",
+            "alignment": "Chaotyczny Neutralny",
             "items": {
                 "Charlatan": {
                     "name": "Szarlatan",
@@ -5797,7 +5797,7 @@
         },
         "Sphinx of Wonder": {
             "name": "Sphinx of Wonder",
-            "alignment": "Lawful Good",
+            "alignment": "Praworządny Dobry",
             "items": {
                 "Magic Resistance": {
                     "name": "Odporność na magię",
@@ -5822,14 +5822,14 @@
         },
         "Spider": {
             "name": "Pająk",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Spider Climb": {
                     "name": "Pajęcza wspinaczka",
                     "description": "<p>The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>"
                 },
                 "Web Walker": {
-                    "name": "Web Walker",
+                    "name": "Chodzenie po sieci",
                     "description": "<p> The spider ignores movement restrictions caused by webs, and the spider knows the location of any other creature in contact with the same web.</p>"
                 },
                 "Bite": {
@@ -5849,8 +5849,8 @@
             }
         },
         "Sprite": {
-            "name": "Sprite",
-            "alignment": "Neutral Good",
+            "name": "Chochlik",
+            "alignment": "Neutralny Dobry",
             "items": {
                 "Needle Sword": {
                     "name": "Needle Sword",
@@ -5900,7 +5900,7 @@
             "name": "Stone Construct Spirit",
             "tokenName": "Construct Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCons caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Stony Lethargy": {
                     "name": "Stony Lethargy",
@@ -5930,7 +5930,7 @@
         },
         "Tiger": {
             "name": "Tygrys",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Rend": {
                     "name": "Rozdarcie",
@@ -5952,7 +5952,7 @@
                     },
                     "effects": {
                         "Apply Hide Action to Target": {
-                            "name": "Apply Hide Action to Target"
+                            "name": "Zastosuj Akcję ukrycia się na celu"
                         }
                     }
                 }
@@ -5962,7 +5962,7 @@
             "name": "Malutki animowany objekt",
             "tokenName": "Animated Object",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplAnimateObj caption=false]</p>",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Slam": {
                     "name": "Walnięcie",
@@ -5974,7 +5974,7 @@
             "name": "Tricksy Fey Spirit",
             "tokenName": "Fey Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFey0 caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -6003,7 +6003,7 @@
         "Undead Spirit": {
             "name": "Undead Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonUnde caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Festering Aura": {
                     "name": "Festering Aura",
@@ -6073,8 +6073,8 @@
             }
         },
         "Venomous Snake": {
-            "name": "Venomous Snake",
-            "alignment": "Unaligned",
+            "name": "Jadowity wąż",
+            "alignment": "Bez charakteru",
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
@@ -6084,7 +6084,7 @@
         },
         "Warhorse": {
             "name": "Rumak bojowy",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Hooves": {
                     "name": "Kopyta",
@@ -6095,7 +6095,7 @@
         "Warlock": {
             "name": "Czarownik",
             "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{Step 1: Choose a Class}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Likes</th><th scope=\"col\">Primary Ability</th><th scope=\"col\">Complexity</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbWarlock000000]{Warlock}</td><td>Occult lore</td><td>Charisma</td><td>High</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{Step 2: Determine Origin}</caption><thead><tr><th scope=\"col\">Background</th><th scope=\"col\">Species</th><th scope=\"col\">Choose Languages</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgAcolyte0000]{Acolyte}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspRockGnome00]{Gnome, Rock}</td><td>Dwarvish, Gnomish</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{Step 3: Determine Ability Scores}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Str.</th><th scope=\"col\">Dex.</th><th scope=\"col\">Con.</th><th scope=\"col\">Int.</th><th scope=\"col\">Wis.</th><th scope=\"col\">Cha.</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbwlkWarlock000]{Warlock}</td><td>8</td><td>14</td><td>13</td><td>12</td><td>10</td><td>15</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{Step 4: Choose an Alignment}</caption><thead><tr><th scope=\"col\">Alignment</th><th scope=\"col\">Personality</th></tr></thead><tbody><tr><td>Neutral</td><td>Laconic and Disinterested</td></tr></tbody></table>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Acolyte": {
                     "name": "Akolita",
@@ -6556,7 +6556,7 @@
             "name": "Water Elemental Spirit",
             "tokenName": "Elemental Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonElem caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Amorphous Form": {
                     "name": "Amorphous Form",
@@ -6580,7 +6580,7 @@
         },
         "Weasel": {
             "name": "Łasica",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
@@ -6591,7 +6591,7 @@
         "Wizard": {
             "name": "Mag",
             "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{Step 1: Choose a Class}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Likes</th><th scope=\"col\">Primary Ability</th><th scope=\"col\">Complexity</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbWizard0000000]{Wizard}</td><td>Spellbooks</td><td>Intelligence</td><td>Average</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{Step 2: Determine Origin}</caption><thead><tr><th scope=\"col\">Background</th><th scope=\"col\">Species</th><th scope=\"col\">Choose Languages</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgScribe00000]{Scribe}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspAasimar0000]{Aasimar}</td><td>Draconic, Common Sign Language</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{Step 3: Determine Ability Scores}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Str.</th><th scope=\"col\">Dex.</th><th scope=\"col\">Con.</th><th scope=\"col\">Int.</th><th scope=\"col\">Wis.</th><th scope=\"col\">Cha.</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbwzdWizard0000]{Wizard}</td><td>8</td><td>12</td><td>13</td><td>15</td><td>14</td><td>10</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{Step 4: Choose an Alignment}</caption><thead><tr><th scope=\"col\">Alignment</th><th scope=\"col\">Personality</th></tr></thead><tbody><tr><td>Lawful</td><td>Methodical</td></tr><tr><td>Neutral</td><td>Selfish</td></tr></tbody></table>",
-            "alignment": "Lawful Neutral",
+            "alignment": "Praworządny Neutralny",
             "items": {
                 "Scribe": {
                     "name": "Skryba",
@@ -6649,7 +6649,7 @@
                     "description": "<p>Jedna karta pergaminu może pomieścić około 250 słów pisanych odręcznie.</p>"
                 },
                 "Aasimar": {
-                    "name": "Aasimarowie",
+                    "name": "Aasimar",
                     "description": "<p>Aasimar (wymawiane AH-sih-mar) to śmiertelnicy, którzy noszą w swoich duszach iskrę Wyższych Planów. Niezależnie od tego, czy pochodzą od anielskiej istoty, czy są nasyceni mocą Niebianina, potrafią rozniecić tę iskrę, aby nieść światło, uzdrawiać i wyzwalać niebiański gniew.</p><p>Aasimar mogą pojawić się wśród każdej populacji śmiertelników. Przypominają swoich rodziców, jednak żyją nawet do 160 lat i posiadają cechy zdradzające ich niebiańskie dziedzictwo, takie jak metaliczne piegi, świetliste oczy, aureolę lub kolor skóry anioła (srebrny, opalizujący zielony bądź miedzianoczerwony). Cechy te początkowo są subtelne, a stają się bardziej oczywiste, gdy aasimar nauczy się w pełni ukazywać swoją anielską naturę.</p><h3 data-anchor=\"aasimar-traits\">Cechy Aasimara</h3><p class=\"phb-meta\"><strong>Typ stworzenia: </strong>Humanoid</p><p class=\"phb-meta\"><strong>Rozmiar: </strong>Średni (około 4–7 stóp wzrostu) lub Mały (około 2–4 stóp wzrostu), wybierany przy wyborze tej rasy</p><p class=\"phb-meta\"><strong>Szybkość:</strong> 30 stóp</p><p>Jako Aasimar posiadasz następujące cechy szczególne.</p><p><strong>Niebiańska odporność.</strong> Masz Odporność na obrażenia nekrotyczne oraz obrażenia od światłości.</p><p><strong>Widzenie w ciemności.</strong> Posiadasz Widzenie w ciemności o zasięgu 60 stóp.</p><p><strong>Uzdrawiające dłonie.</strong> Akcją magii możesz dotknąć stworzenia i wykonać rzut tyloma kośćmi k4, ile wynosi Twoja Premia z Biegłości. Stworzenie to odzyskuje liczbę Punktów Wytrzymałości równą sumie wyrzuconych oczek. Po użyciu tej cechy nie możesz jej użyć ponownie, dopóki nie zakończysz Długiego Odpoczynku.</p><p><strong>Niosący światło.</strong> Znasz sztuczkę <em>Światło</em>. Charyzma jest Twoją cechą bazową rzucania czarów dla tego zaklęcia.</p><p><strong>Niebiańskie objawienie.</strong> Gdy osiągniesz 3. Poziom Postaci, możesz się transformować jako Akcję Dodatkową, korzystając z jednej z poniższych opcji (za każdym razem wybierasz opcję, gdy się transformujesz). Transformacja trwa 1 minutę lub do chwili, gdy ją zakończysz (nie wymaga to akcji). Po transformacji nie możesz się ponownie transformować, dopóki nie zakończysz Długiego Odpoczynku.</p><p>Raz na każdą twoją turę przed końcem tej transformacji możesz zadać dodatkowe obrażenia jednemu celowi, gdy zadajesz mu obrażenia atakiem lub zaklęciem. Te dodatkowe obrażenia są równe Twojej Premii z biegłości, a ich typ to obrażenia nekrotyczne w przypadku Nekrotycznego całuna lub obrażenia od światłości w przypadku Niebiańskich skrzydeł i Wewnętrznego blasku.</p><p>Oto opcje transformacji:</p><p><strong>Niebiańskie skrzydła.</strong> Z twoich pleców tymczasowo wyrastają widmowe skrzydła. Dopóki transformacja trwa, masz Szybkość Lotu równą twojej Szybkości.</p><p><strong>Wewnętrzny blask.</strong> Palące światło tymczasowo bije z twoich oczu i ust. Na czas trwania promieniujesz Jasnym Światłem w promieniu 10 stóp oraz Słabym Światłem w dodatkowym promieniu 10 stóp, a na koniec każdej twojej tury każde stworzenie w odległości 10 stóp od ciebie otrzymuje obrażenia od światłości równe Twojej Premii z biegłości.</p><p><strong>Nekrotyczny całun.</strong> Twoje oczy przejściowo stają się otchłaniami ciemności, a z twoich pleców wyrastają skrzydła bez zdolności latania. Stworzenia inne niż twoi sojusznicy w odległości 10 stóp od ciebie muszą wykonać udany rzut obronny na Charyzmę (ST 8 + twój modyfikator z Charyzmy + twoja Premia z Biegłości) albo zyskują stan Przerażony do końca twojej następnej tury.</p>",
                     "advancement": {
                         "1P6xFzbXPoDqJUwf": {
@@ -6673,17 +6673,17 @@
                 "Celestial Resistance": {
                     "name": "Niebiańska odporność",
                     "description": "<p>Masz &amp;Reference[Resistance]{Odporność} na obrażenia nekrotyczne i obrażenia od światłości.</p>",
-                    "requirements": "Aasimarowie"
+                    "requirements": "Aasimar"
                 },
                 "Healing Hands": {
                     "name": "Uzdrawiające dłonie",
                     "description": "<p>Akcją magii możesz dotknąć istoty i rzucić liczbę k4 równą twojej Premii od biegłości. Istota odzyskuje liczbę Punktów Wytrzymałości równą sumie wyrzuconych oczek. Po użyciu tej cechy nie możesz jej użyć ponownie, dopóki nie zakończysz Długiego Odpoczynku.</p>",
-                    "requirements": "Aasimarowie"
+                    "requirements": "Aasimar"
                 },
                 "Light Bearer": {
                     "name": "Niosący światło",
                     "description": "<p>Znasz sztuczkę @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLight00000]{Światło}. Charyzma jest twoją cechą bazową rzucania czarów dla tego zaklęcia.</p>",
-                    "requirements": "Aasimarowie"
+                    "requirements": "Aasimar"
                 },
                 "Light": {
                     "name": "Światło",
@@ -6894,7 +6894,7 @@
         },
         "Wolf": {
             "name": "Wilk",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Pack Tactics": {
                     "name": "Atak grupowy",
@@ -6911,7 +6911,7 @@
             "name": "Yugoloth Spirit",
             "tokenName": "Fiendish Spirit",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFien caption=false]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Magic Resistance": {
                     "name": "Odporność na magię",
@@ -6938,8 +6938,8 @@
             }
         },
         "Zombie": {
-            "name": "Zombie",
-            "alignment": "Neutral Evil",
+            "name": "Zombi",
+            "alignment": "Neutralny Zły",
             "items": {
                 "Undead Fortitude": {
                     "name": "Undead Fortitude",
