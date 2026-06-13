@@ -1,11 +1,11 @@
 {
-    "label": "Adventures",
+    "label": "Przygody",
     "entries": {
         "Race for the Crab Temple": {
             "name": "Race for the Crab Temple",
             "description": "<p>Not one but two expeditions from Morgrave University launch this week to explore the so-called Crab Temple, discovered last month near Stormreach. Which team will be the first to cross the deadly Straits of Shargon, cut through the jungles of the Skyfall Peninsula, and discover the great crab’s secrets?</p>",
             "folders": {
-                "Forge of the Artificer": "Forge of the Artificer",
+                "Forge of the Artificer": "Kuźnia Wynalazcy",
                 "Race for the Crab Temple": "Race for the Crab Temple"
             },
             "journals": {
@@ -30,8 +30,8 @@
             },
             "actors": {
                 "Giant Crab": {
-                    "name": "Giant Crab",
-                    "tokenName": "Giant Crab",
+                    "name": "Olbrzymi krab",
+                    "tokenName": "Olbrzymi krab",
                     "items": {
                         "Amphibious": {
                             "name": "Ziemno-wodny",
@@ -87,8 +87,8 @@
                     }
                 },
                 "Kuo-toa Archpriest": {
-                    "name": "Kuo-toa Archpriest",
-                    "tokenName": "Kuo-toa Archpriest",
+                    "name": "Kuo-toa arcykapłan",
+                    "tokenName": "Kuo-toa arcykapłan",
                     "items": {
                         "Amphibious": {
                             "name": "Ziemno-wodny",
@@ -174,8 +174,8 @@
                     }
                 },
                 "Kuo-toa Monitor": {
-                    "name": "Kuo-toa Monitor",
-                    "tokenName": "Kuo-toa Monitor",
+                    "name": "Kuo-toa monitor",
+                    "tokenName": "Kuo-toa monitor",
                     "items": {
                         "Amphibious": {
                             "name": "Ziemno-wodny",
@@ -207,8 +207,8 @@
                     }
                 },
                 "Kuo-toa Whip": {
-                    "name": "Kuo-toa Whip",
-                    "tokenName": "Kuo-toa Whip",
+                    "name": "Kuo-toa bicz",
+                    "tokenName": "Kuo-toa bicz",
                     "items": {
                         "Amphibious": {
                             "name": "Ziemno-wodny",
@@ -251,7 +251,7 @@
             "name": "The Enemy of My Enemy",
             "description": "<section class=\"sharn-newspaper\"><p class=\"subheading\">The peaceful Gold Dragon Inn nestled in the lower towers of Terminus is ablaze, and vicious marauders are attacking patrons fleeing the burning building!</p><p>Will the Sharn Watch investigate this vicious assault not just upon our city, but upon the dragonmarked houses themselves? Or will they continue to ignore the crime running rampant in our lower wards? Or, as too often seems to happen these days, will some disreputable inquisitives, working for a private agency, accomplish more than the Watch does in a month, raising the question once again of why our tax money is being spent on such an ineffectual organization?</p></section>",
             "folders": {
-                "Forge of the Artificer": "Forge of the Artificer",
+                "Forge of the Artificer": "Kuźnia Wynalazcy",
                 "The Enemy of My Enemy": "The Enemy of My Enemy"
             },
             "journals": {
@@ -351,7 +351,7 @@
         "actors": {
             "path": "actors",
             "converter": "document",
-            "documentType": "Aktor",
+            "documentType": "Actor",
             "cardinality": "many",
             "mapping": {
                 "tokenName": {
