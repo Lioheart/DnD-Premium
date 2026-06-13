@@ -26,7 +26,7 @@
         "Boromar Smuggler": {
             "name": "Boromar Smuggler",
             "description": "<p>Smugglers employed by the Boromar Clan (mostly halflings) are notoriously hard to catch. These speedy criminals traffic everything from narcotics to illegal arcane weaponry across Sharn.</p>",
-            "alignment": "Neutral Evil",
+            "alignment": "Neutralny Zły",
             "items": {
                 "Hustle": {
                     "name": "Hustle",
@@ -48,7 +48,7 @@
         "Boromar Underboss": {
             "name": "Boromar Underboss",
             "description": "<p>Underbosses supervise larger clan operations, such as gambling halls and warehouses of smuggled goods awaiting transport. Accustomed to the criminal lifestyle, these hardy individuals (mostly halflings) dismiss and dispose of threats with calculated ease.</p>",
-            "alignment": "Lawful Evil",
+            "alignment": "Praworządny Zły",
             "items": {
                 "Hustle": {
                     "name": "Hustle",
@@ -80,8 +80,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Wykorzystaj użycie",
-                            "condition": "hit by an attack roll",
-                            "activationCondition": "hit by an attack roll"
+                            "condition": "trafiony testem ataku",
+                            "activationCondition": "trafiony testem ataku"
                         }
                     }
                 }
@@ -90,7 +90,7 @@
         "Cannith Artificer": {
             "name": "Cannith Artificer",
             "description": "<p>Dragonmarked artificers of House Cannith (typically human) often wield compact devices similar to eldritch cannons that can produce a variety of devastating effects. Both these cannons and the artificers’ force-empowered maces function only in their creator’s hands.</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Chain Mail": {
                     "name": "Koszulka kolcza"
@@ -108,7 +108,7 @@
                     "description": "<p>Cienka płachta płomieni wystrzeliwuje z ciebie. Każda istota w Stożku o długości 15 stóp musi wykonać rzut obronny na Zręczność. W przypadku porażki otrzymuje ona 3k6 obrażeń od ognia, a w przypadku sukcesu połowę tych obrażeń.</p><p>Łatwopalne obiekty w Stożku, które nie są noszone ani niesione, zaczynają płonąć.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -118,7 +118,7 @@
                     "materials": "dwa kamienie magnetyczne",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -127,7 +127,7 @@
                     "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -136,7 +136,7 @@
                     "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -150,7 +150,7 @@
                             "description": "<p>Czar kończy się natychmiast po tym, jak cel wykona rzut ataku, zada obrażenia lub rzuci zaklęcie.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -181,7 +181,7 @@
         "Daask Bruiser": {
             "name": "Daask Bruiser",
             "description": "<p>Intimidating and powerful, bruisers lead Daask operations when more violent and decisive shows of force are needed. These enforcers relish the brutality of their work.</p>",
-            "alignment": "Neutral Evil",
+            "alignment": "Neutralny Zły",
             "items": {
                 "Blood Frenzy": {
                     "name": "Krwawa furia",
@@ -220,7 +220,7 @@
         "Daask Raider": {
             "name": "Daask Raider",
             "description": "<p>Raiders use guerrilla tactics to ambush warehouses and beat down opponents. These skilled fistfighters work in tandem to claim goods and territory for Daask. </p>",
-            "alignment": "Neutral Evil",
+            "alignment": "Neutralny Zły",
             "items": {
                 "Pack Tactics": {
                     "name": "Atak grupowy",
@@ -245,7 +245,7 @@
         "Dreaming Dark Infiltrator": {
             "name": "Dreaming Dark Infiltrator",
             "description": "<p>Dreaming Dark infiltrators are spies sent to gather intelligence. They plant psychic seeds in their minds of their foes that enhance the infiltrators’ combat prowess against those enemies.</p>",
-            "alignment": "Lawful Evil",
+            "alignment": "Praworządny Zły",
             "items": {
                 "Chain Shirt": {
                     "name": "Koszulka kolcza"
@@ -266,7 +266,7 @@
                     "name": "Szum synaptyczny",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -300,7 +300,7 @@
                     },
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -313,7 +313,7 @@
                             "description": "<p>Cel odejmuje 1k6 od wszystkich swoich testów ataku i testów cech, a także od rzutów obronnych na Konstytucję, aby utrzymać Koncentrację. Cel wykonuje [[/save ability=int format=long]] na końcu każdej swojej tury, kończąc efekt na sobie w przypadku powodzenia.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 }
@@ -322,7 +322,7 @@
         "Dreaming Dark Mindkiller": {
             "name": "Dreaming Dark Mindkiller",
             "description": "<p>Mindkillers are the assassins of the Dreaming Dark, sent to terrify their foes before striking to kill. Mindkillers force foes to attack their own allies, causing physical and emotional devastation to grow the power of the Dreaming Dark.</p>",
-            "alignment": "Lawful Evil",
+            "alignment": "Praworządny Zły",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -366,7 +366,7 @@
                             "description": "<p>Ilekroć cel ze stanem &amp;Reference[charmed apply=false] otrzymuje obrażenia, powtarza Rzut Obrony [[/save ability=wis]], kończąc działanie czaru na sobie w przypadku sukcesu.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 }
@@ -403,7 +403,7 @@
         "Emerald Claw Commander": {
             "name": "Emerald Claw Commander",
             "description": "<p>Emerald Claw commanders lead large groups of soldiers, inspiring the fanatical devotion of Humanoids and Undead alike.</p>",
-            "alignment": "Lawful Evil",
+            "alignment": "Praworządny Zły",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -450,7 +450,7 @@
         "Emerald Claw Knight": {
             "name": "Emerald Claw Knight",
             "description": "<p>Knights of the Emerald Claw command squads of Humanoid or Undead soldiers. As they draw nearer to death, the chill of the grave suffuses their weapon attacks.</p>",
-            "alignment": "Lawful Evil",
+            "alignment": "Praworządny Zły",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -529,7 +529,7 @@
         "Ghallanda Troubleshooter": {
             "name": "Ghallanda Troubleshooter",
             "description": "<p>The inns of House Ghallanda are meant to be places of safe refuge and quiet rest, so the house employs troubleshooters (mostly halflings) to protect the safety and serenity of its guests.</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
@@ -567,7 +567,7 @@
                             "description": "<p>The creature affected by this spell falls Unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -577,7 +577,7 @@
                     "materials": "A bit of string and of wood",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -591,7 +591,7 @@
                             "description": "<p>Cel ma stan &amp;Reference[incapacitated apply=false] do końca swojej następnej tury, po czym musi powtórzyć rzut obronny. Jeśli cel nie powiedzie drugiego rzutu, ma stan &amp;Reference[unconscious] przez czas trwania czaru. Czar kończy działanie na celu, jeśli otrzyma obrażenia lub jeśli ktoś w promieniu 5 stóp wykona akcję, aby go obudzić z efektu czaru.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -601,7 +601,7 @@
                     "materials": "kawałek sznurka i drewna",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -615,7 +615,7 @@
                     },
                     "effects": {
                         "Apply Hide Action to Target": {
-                            "name": "Apply Hide Action to Target"
+                            "name": "Zastosuj Akcję ukrycia się na celu"
                         }
                     }
                 }
@@ -623,7 +623,7 @@
         },
         "Giant Crab": {
             "name": "Olbrzymi krab",
-            "alignment": "Unaligned",
+            "alignment": "Bez charakteru",
             "items": {
                 "Amphibious": {
                     "name": "Ziemno-wodny",
@@ -636,9 +636,9 @@
             }
         },
         "Harpy": {
-            "name": "Harpy",
+            "name": "Harpia",
             "description": "<h1>Harpy</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.g8rZSNVG7tURaQgk caption=false cite=false classes=\"no-embed mm\"]</p>",
-            "alignment": "Chaotic Evil",
+            "alignment": "Chaotyczny Zły",
             "items": {
                 "Claw": {
                     "name": "Pazury",
@@ -650,13 +650,13 @@
                     "activities": {
                         "Save": {
                             "name": "Obrona",
-                            "target": "Humanoid and Giant",
-                            "targetAffects": "Humanoid and Giant"
+                            "target": "Humanoid i Gigant",
+                            "targetAffects": "Humanoid i Gigant"
                         }
                     },
                     "effects": {
                         "Charmed & Incapacitated": {
-                            "name": "Charmed & Incapacitated",
+                            "name": "Zauroczony i Obezwładniony",
                             "description": "<p>The target has the &amp;Reference[Charmed apply=false] condition until the song ends and repeats the save at the end of each of its turns.</p><p>While Charmed, the target has the &amp;Reference[Incapacitated apply=false] condition.</p>"
                         }
                     }
@@ -664,9 +664,9 @@
             }
         },
         "Hell Hound": {
-            "name": "Hell Hound",
+            "name": "Piekielny ogar",
             "description": "<h1>Hell Hound</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.sTelJLU6cHPQ8gzx caption=false cite=false classes=\"no-embed mm\"]</p>",
-            "alignment": "Lawful Evil",
+            "alignment": "Praworządny Zły",
             "items": {
                 "Pack Tactics": {
                     "name": "Atak grupowy",
@@ -694,7 +694,7 @@
         },
         "Homunculus Servant": {
             "name": "Homunculus Servant",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Force Strike": {
                     "name": "Force Strike",
@@ -723,7 +723,7 @@
         "Improved Steel Defender": {
             "name": "Improved Steel Defender",
             "tokenName": "Stalowy obrońca",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Force-Empowered Rend": {
                     "name": "Rozdarcie wzmocnione mocą",
@@ -752,7 +752,7 @@
         "Jorasco Medic": {
             "name": "Jorasco Medic",
             "description": "<p>Dragonmarked heirs of House Jorasco served alongside every nation’s armies in the Last War, providing medical care and magical healing to the injured. Though the warring nations treated Jorasco medics as sacrosanct, these medics also learned to channel their healing power into dazzling light to help them reach the wounded and escape from the thick of combat when necessary.</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -790,7 +790,7 @@
                     "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -799,7 +799,7 @@
                     "description": "<p>Dotykasz istoty i kończysz jeden stan który posiada: &amp;Reference[blinded]{Oślepiony}, &amp;Reference[deafened]{Ogłuchły}, &amp;Reference[paralyzed]{Sparaliżowany} lub &amp;Reference[poisoned]{Zatruty}.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 }
@@ -808,7 +808,7 @@
         "Kundarak Warden": {
             "name": "Kundarak Warden",
             "description": "<p>Some dragonmarked heirs (mostly dwarves) of House Kundarak serve as personal guardians for the house’s vaults and storehouses, and even its infamous prison, Dreadhold. Some also serve as agents of the mysterious Ghorad’din, a secretive group of assassins and spies little known beyond the members of the house. Kundarak wardens are adept at bypassing security measures as well as reinforcing them.</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
@@ -843,7 +843,7 @@
                     },
                     "effects": {
                         "Grappled & Restrained": {
-                            "name": "Grappled & Restrained"
+                            "name": "Pochwycony i Unieruchomiony"
                         }
                     }
                 },
@@ -875,7 +875,7 @@
                     },
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -889,7 +889,7 @@
                             "description": "<p>Podstawowa Klasa Pancerza celu staje się równa 13 + modyfikator Zręczności.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -898,7 +898,7 @@
                     "description": "<p>Wybierz jedną istotę, obiekt lub efekt magiczny w zasięgu. Każdy trwający czar 3. kręgu lub niższego na celu zostaje zakończony. W przypadku każdego trwającego czaru 4. kręgu lub wyższego na celu wykonaj test atrybutu, używając swojej cechy zaklinania (ST 10 + poziom tego czaru). W przypadku udanego testu czar zostaje zakończony.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Automatycznie kończysz działanie czaru na celu, jeśli jego krąg jest równy lub niższy niż krąg użytej komórki czaru.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -913,7 +913,7 @@
                             "description": "<p>Do początku twojej następnej tury masz premię +5 do KP, w tym przeciwko atakowi wywołującemu efekt, i nie otrzymujesz obrażeń od <em>Magic Missile</em>.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -924,7 +924,7 @@
                     "activationCondition": "gdy widzisz istotę w zasięgu rzucającą czar z komponentami werbalnymi, somatycznymi lub materialnymi",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 }
@@ -933,7 +933,7 @@
         "Kuo-toa": {
             "name": "Kuo-toa",
             "description": "<div class=\"gear\"><p><strong>Gear:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepSpear00000]{Spear}</p></div><h1>Kuo-toa</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.5cWxPFYWZSjJw6ih caption=false cite=false classes=\"no-embed mm\"]</p><h2>Kuo-toa</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.XEDbrbc4fOsasH55 caption=false cite=false classes=\"no-embed mm\"]</p>",
-            "alignment": "Neutral Evil",
+            "alignment": "Neutralny Zły",
             "items": {
                 "Spear": {
                     "name": "Włócznia",
@@ -946,7 +946,7 @@
                 "Sunlight Sensitivity": {
                     "name": "Wrażliwość na światło słoneczne",
                     "description": "<p>While in sunlight, the [[lookup @name lowercase]] has Disadvantage on ability checks and attack rolls.</p>",
-                    "requirements": "While in sunlight"
+                    "requirements": "W świetle słonecznym"
                 },
                 "Sticky Shield": {
                     "name": "Sticky Shield",
@@ -956,13 +956,13 @@
                             "name": "Obrona",
                             "condition": "A creature misses the kuo-toa with a melee attack roll using a weapon.",
                             "activationCondition": "A creature misses the kuo-toa with a melee attack roll using a weapon.",
-                            "target": "the triggering creature",
-                            "targetAffects": "the triggering creature"
+                            "target": "wyzwalająca istota",
+                            "targetAffects": "wyzwalająca istota"
                         },
                         "Free Weapon Check": {
                             "name": "Free Weapon Check",
-                            "target": "the triggering creature",
-                            "targetAffects": "the triggering creature"
+                            "target": "wyzwalająca istota",
+                            "targetAffects": "wyzwalająca istota"
                         },
                         "Escape Check": {
                             "name": "Test ucieczki"
@@ -999,7 +999,7 @@
         "Kuo-toa Archpriest": {
             "name": "Kuo-toa arcykapłan",
             "description": "<h1>Kuo-toa</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.5cWxPFYWZSjJw6ih caption=false cite=false classes=\"no-embed mm\"]</p><h2>Kuo-toa Archpriest</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.jVLHLrDcjEGUhZmp caption=false cite=false classes=\"no-embed mm\"]</p>",
-            "alignment": "Neutral Evil",
+            "alignment": "Neutralny Zły",
             "items": {
                 "Amphibious": {
                     "name": "Ziemno-wodny",
@@ -1008,7 +1008,7 @@
                 "Sunlight Sensitivity": {
                     "name": "Wrażliwość na światło słoneczne",
                     "description": "<p>While in sunlight, the [[lookup @name lowercase]] has Disadvantage on ability checks and attack rolls.</p>",
-                    "requirements": "While in sunlight"
+                    "requirements": "W świetle słonecznym"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -1040,7 +1040,7 @@
                             "name": "Wykrycie magii"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1054,7 +1054,7 @@
                     },
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1066,7 +1066,7 @@
                             "name": "Powalony"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1081,7 +1081,7 @@
                     },
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1095,7 +1095,7 @@
                             "description": "<p>Na końcu każdej swojej tury cel powtarza Rzut Obrony [[/save ability=wis]], kończąc działanie czaru na sobie w przypadku sukcesu.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1140,7 +1140,7 @@
                     },
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1153,7 +1153,7 @@
                             "name": "Uniwersalna komunikacja"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1171,7 +1171,7 @@
                             "description": "<p>Cel otrzymuje premię +2 do Klasy Pancerza na czas trwania czaru.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 }
@@ -1180,7 +1180,7 @@
         "Kuo-toa Monitor": {
             "name": "Kuo-toa monitor",
             "description": "<h1>Kuo-toa</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.5cWxPFYWZSjJw6ih caption=false cite=false classes=\"no-embed mm\"]</p><h2>Kuo-toa Monitor</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.N6Prinvb9ppnSZub caption=false cite=false classes=\"no-embed mm\"]</p>",
-            "alignment": "Neutral Evil",
+            "alignment": "Neutralny Zły",
             "items": {
                 "Amphibious": {
                     "name": "Ziemno-wodny",
@@ -1189,7 +1189,7 @@
                 "Sunlight Sensitivity": {
                     "name": "Wrażliwość na światło słoneczne",
                     "description": "<p>While in sunlight, the [[lookup @name lowercase]] has Disadvantage on ability checks and attack rolls.</p>",
-                    "requirements": "While in sunlight"
+                    "requirements": "W świetle słonecznym"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -1205,7 +1205,7 @@
                     "description": "<p>[[/attack extended]]. [[/damage average extended]], and the target can’t make &amp;Reference[OpportunityAttacks] until the start of the [[lookup @name lowercase]]’s next turn.</p>",
                     "effects": {
                         "Whipped: No Opportunity Attacks": {
-                            "name": "Whipped: No Opportunity Attacks",
+                            "name": "Zbiczowany: Brak Atakiów okazyjnych",
                             "description": "<p>The target can’t make Opportunity Attacks until the start of the user’s next turn.</p>"
                         }
                     }
@@ -1215,7 +1215,7 @@
         "Kuo-toa Whip": {
             "name": "Kuo-toa bicz",
             "description": "<h1>Kuo-toa</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.5cWxPFYWZSjJw6ih caption=false cite=false classes=\"no-embed mm\"]</p><h2>Kuo-toa Whip</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.VEYcunqNbjyhHOwB caption=false cite=false classes=\"no-embed mm\"]</p>",
-            "alignment": "Neutral Evil",
+            "alignment": "Neutralny Zły",
             "items": {
                 "Amphibious": {
                     "name": "Ziemno-wodny",
@@ -1224,7 +1224,7 @@
                 "Sunlight Sensitivity": {
                     "name": "Wrażliwość na światło słoneczne",
                     "description": "<p>While in sunlight, the [[lookup @name lowercase]] has Disadvantage on ability checks and attack rolls.</p>",
-                    "requirements": "While in sunlight"
+                    "requirements": "W świetle słonecznym"
                 },
                 "Pincer Staff": {
                     "name": "Drąg ze szczypcami",
@@ -1259,7 +1259,7 @@
                             "description": "<p>Cel otrzymuje premię +2 do Klasy Pancerza na czas trwania czaru.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 }
@@ -1393,7 +1393,7 @@
         "Lyrandar Scion": {
             "name": "Lyrandar Scion",
             "description": "<p>The Khoravar dragonmarked scions of House Lyrandar include swashbuckling sky captains, seafaring adventurers, and sinister cultists of the Hurricane Harvest. The power of their dragonmarks manifests as easy control of wind, thunder, and lightning, which they wield as readily in combat as in navigating the sea and sky.</p><p>Members of the Hurricane Harvest believe that the Mark of Storm is not a gift of the Sovereign Host, as others in their house teach, but the sign of the Devourer. They maintain that the greatest ancestors of their house live on as krakens in the deep and guide the cult through visions to use their power for destruction and domination. They sometimes partner with kuo-toa, sahuagin, and other monsters of the deep.</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
@@ -1438,7 +1438,7 @@
                     },
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1448,7 +1448,7 @@
                     "materials": "nasiono rośliny strączkowej",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1457,7 +1457,7 @@
                     "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1469,7 +1469,7 @@
                     "activationCondition": "gdy ty lub istota, którą widzisz w odległości do 60 stóp od ciebie, spada",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1483,7 +1483,7 @@
                             "description": "<p>Raz w każdej swojej turze, do momentu zakończenia działania czaru, istota może skoczyć do 30 stóp, zużywając 10 stóp ruchu.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 }
@@ -1562,7 +1562,7 @@
         "Medani Inquisitive": {
             "name": "Medani Inquisitive",
             "description": "<p>The most prized inquisitives of House Medani, a house of mostly Khoravar, employ their dragonmarks and their keen intellects to anticipate threats from any quarter. Some are part of a secretive order called the Basilisk’s Gaze, dedicated to hunting down fugitive war criminals who committed atrocities during the Last War.</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
@@ -1612,7 +1612,7 @@
                     "description": "<p>You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1622,7 +1622,7 @@
                     "materials": "A copper piece",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1632,7 +1632,7 @@
                     "materials": "A pinch of talc and a small sprinkling of silver powder",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1698,7 +1698,7 @@
                             "name": "Wskazówki szt. przetrwania"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1716,7 +1716,7 @@
                     },
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1729,7 +1729,7 @@
                             "name": "Widzenie niewidzialnego"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 }
@@ -1738,7 +1738,7 @@
         "Ogre": {
             "name": "Ogr",
             "description": "<div class=\"gear\"><p><strong>Gear:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepGreatclub0]{Greatclub}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepJavelin000]{Javelins (3)}</p></div><h1>Ogres</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.1Hp2MOUaAODie8ex caption=false cite=false classes=\"no-embed mm\"]</p><h2>Ogre</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.kqE5GUlHs8pLCwvw caption=false cite=false classes=\"no-embed mm\"]</p>",
-            "alignment": "Chaotic Evil",
+            "alignment": "Chaotyczny Zły",
             "items": {
                 "Greatclub": {
                     "name": "Maczuga",
@@ -1753,7 +1753,7 @@
         "Orien Enforcer": {
             "name": "Orien Enforcer",
             "description": "<p>Whether riding on an Orien cart, guarding the lightning rail on a cross-continental journey, or using Orien Teleportation Circles to transport precious parcels in an instant, dragonmarked enforcers of House Orien (mostly humans) protect their house’s interests and maintain its reputation for dependability.</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -1789,7 +1789,7 @@
                     "description": "<p>Chwilowo otoczony srebrzystą mgłą, teleportujesz się do 30 stóp na niezajętą przestrzeń, którą widzisz.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1798,7 +1798,7 @@
                     "description": "<p>Chwilowo otoczony srebrzystą mgłą, teleportujesz się do 30 stóp na niezajętą przestrzeń, którą widzisz.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 }
@@ -1807,7 +1807,7 @@
         "Sahuagin Priest": {
             "name": "Sahuagin Priest",
             "description": "<h1>Sahuagin</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.6GoEsoHTiVUdeAKu caption=false cite=false classes=\"no-embed mm\"]</p><h2>Sahuagin Priest</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.iAneRFTJ1QnBA0JK caption=false cite=false classes=\"no-embed mm\"]</p>",
-            "alignment": "Lawful Evil",
+            "alignment": "Praworządny Zły",
             "items": {
                 "Blood Frenzy": {
                     "name": "Krwawa furia",
@@ -1852,7 +1852,7 @@
                             "description": "<p>Za każdym razem, gdy cel wykona test ataku lub rzut obronny przed zakończeniem czaru, dodaje 1k4 do testu ataku lub rzutu obronnego.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1861,7 +1861,7 @@
                     "description": "<p>Istota wybrana przez ciebie, którą widzisz w zasięgu, odzyskuje Punkty Wytrzymałości równe 2k4 + twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Leczenie zwiększa się o 2k4 za każdą komórkę czaru powyżej 1. kręgu.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1875,7 +1875,7 @@
                     },
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1889,7 +1889,7 @@
                             "description": "<p>Na końcu każdej swojej tury cel powtarza Rzut Obrony [[/save ability=wis]], kończąc działanie czaru na sobie w przypadku sukcesu.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -1902,7 +1902,7 @@
                             "name": "Uniwersalna komunikacja"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 }
@@ -1911,7 +1911,7 @@
         "Sahuagin Warrior": {
             "name": "Sahuagin Warrior",
             "description": "<h1>Sahuagin</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.6GoEsoHTiVUdeAKu caption=false cite=false classes=\"no-embed mm\"]</p><h2>Sahuagin Warrior</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.e7E1JhVR2AaUl70T caption=false cite=false classes=\"no-embed mm\"]</p>",
-            "alignment": "Lawful Evil",
+            "alignment": "Praworządny Zły",
             "items": {
                 "Blood Frenzy": {
                     "name": "Krwawa furia",
@@ -1944,8 +1944,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Wykorzystaj użycie",
-                            "target": "target is visible",
-                            "targetAffects": "target is visible"
+                            "target": "cel jest widoczny",
+                            "targetAffects": "cel jest widoczny"
                         }
                     }
                 }
@@ -1954,7 +1954,7 @@
         "Sentinel Marshal": {
             "name": "Sentinel Marshal",
             "description": "<p>The Sentinel Marshals of House Deneith, who are typically human, hold the honor of the house in their hands. The Treaty of Thronehold upheld their authority to pursue criminals across international borders, giving them the unique privilege and responsibility of upholding the law across Khorvaire.</p><p>Only the most trusted heirs of the house are honored with a position in the Sentinel Marshals, either after serving in the house’s other guilds for several years (as bodyguards in the Defenders Guild and mercenary officers in the Blademarks Guild) or by special dispensation of House Deneith.</p><p>Sentinel Marshals are never authorized to break local or international laws, but neither are they accountable to the legal authorities of any nation. A rogue marshal can be punished only by the leadership of House Deneith, but some nations (such as Darguun and Droaam) ignore these conventions.</p>",
-            "alignment": "Lawful Neutral",
+            "alignment": "Praworządny Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -1992,7 +1992,7 @@
                             "description": "<p>Do początku twojej następnej tury masz premię +5 do KP, w tym przeciwko atakowi wywołującemu efekt, i nie otrzymujesz obrażeń od <em>Magic Missile</em>.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 }
@@ -2001,7 +2001,7 @@
         "Shadow-Marked Agent": {
             "name": "Shadow-Marked Agent",
             "description": "<p>Agents of House Phiarlan and House Thuranni, who are primarily elves, combine stealth and espionage with mastery of the performing arts—and dragonmarked heirs augment those skills with shadow magic. This stat block can serve for an agent of either house.</p><p>Even though House Phiarlan agents don’t typically work as entertainers or artists in addition to their espionage activities, they receive extensive training in those arts alongside other members of their house. House Thuranni agents, in contrast, are always both artists and spies.</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
@@ -2058,7 +2058,7 @@
                             "description": "<p><span style=\"font-family:Signika, sans-serif\">Aby rozpoznać, że jesteś przebrany, istota musi wykonać Akcję Badania, by przyjrzeć się twojemu wyglądowi, i odnieść sukces w Teście [[/check ability=int skill=inv]] przeciwko ST twojego rzutu obronnego na czar.</span></p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2081,7 +2081,7 @@
                     },
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2095,7 +2095,7 @@
                             "description": "<p>Podczas przebywania w aurze ty oraz każda wybrana przez ciebie istota otrzymujecie premię +10 do [[/check ability=dex skill=ste]] Testów Skradania się i nie pozostawiacie śladów.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 }
@@ -2104,7 +2104,7 @@
         "Sivis Scribe": {
             "name": "Sivis Scribe",
             "description": "<p>The dragonmarked heirs of House Sivis are typically accomplished gnome scholars of magic. In addition to the might that comes with their marks, they favor magical sigils and words of power.</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
@@ -2141,7 +2141,7 @@
                             "name": "Zrozumienie"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2151,7 +2151,7 @@
                     "materials": "drut miedziany",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2161,7 +2161,7 @@
                     "materials": "drut miedziany",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2175,7 +2175,7 @@
                             "description": "<p>Podstawowa Klasa Pancerza celu staje się równa 13 + modyfikator Zręczności.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2188,7 +2188,7 @@
                             "name": "Zrozumienie"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2198,7 +2198,7 @@
                     "materials": "drut miedziany",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2208,7 +2208,7 @@
                     "materials": "drut miedziany",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 }
@@ -2217,7 +2217,7 @@
         "Skeleton": {
             "name": "Szkielet",
             "description": "<div class=\"gear\"><p><strong>Gear:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepShortbow00]{Shortbow}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepShortsword]{Shortsword}</p></div><h1>Skeletons</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.w1RMyPzpjolhQMVX caption=false cite=false classes=\"no-embed mm\"]</p><h2>Skeleton</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.pm1ZyudVsOl0ve5C caption=false cite=false classes=\"no-embed mm\"]</p>",
-            "alignment": "Lawful Evil",
+            "alignment": "Praworządny Zły",
             "items": {
                 "Shortsword": {
                     "name": "Krótki miecz",
@@ -2230,9 +2230,9 @@
             }
         },
         "Spy": {
-            "name": "Spy",
+            "name": "Szpieg",
             "description": "<div class=\"gear\"><p><strong>Gear:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepHandCrossb]{Hand Crossbow}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepShortsword]{Shortsword}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulThievesToo]{Thieves' Tools}</p></div><h1>Spies</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.VCqqHnYYkh2Hn5w6 caption=false cite=false classes=\"no-embed mm\"]</p><h2>Spy</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.O5k5Yo9UowcBfqiB caption=false cite=false classes=\"no-embed mm\"]</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Shortsword": {
                     "name": "Krótki miecz",
@@ -2255,7 +2255,7 @@
         },
         "Steel Defender": {
             "name": "Stalowy obrońca",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Force-Empowered Rend": {
                     "name": "Rozdarcie wzmocnione mocą",
@@ -2364,7 +2364,7 @@
         "Tarkanan Marauder": {
             "name": "Tarkanan Marauder",
             "description": "<p>This powerful assassin relies on teleportation to catch targets unaware and deal out rapid death.</p>",
-            "alignment": "Chaotic Evil",
+            "alignment": "Chaotyczny Zły",
             "items": {
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
@@ -2410,7 +2410,7 @@
                     "materials": "drut miedziany",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2421,7 +2421,7 @@
                     "targetAffects": "stworzenie, niemagiczny obiekt albo twór magicznej mocy",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2435,7 +2435,7 @@
                     "materials": "drut miedziany",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2446,7 +2446,7 @@
                     "targetAffects": "stworzenie, niemagiczny obiekt albo twór magicznej mocy",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 }
@@ -2455,7 +2455,7 @@
         "Tarkanan Ruffian": {
             "name": "Tarkanan Ruffian",
             "description": "<p>This rank-and-file gang member, recruited off the streets of Sharn, uses sinister lightning powers to supplement ordinary weaponry.</p>",
-            "alignment": "Chaotic Evil",
+            "alignment": "Chaotyczny Zły",
             "items": {
                 "Studded Leather Armor": {
                     "name": "Ćwiekowana skóra"
@@ -2475,7 +2475,7 @@
                     "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2483,7 +2483,7 @@
                     "name": "Wiedźmi pocisk",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2496,7 +2496,7 @@
                     "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2504,7 +2504,7 @@
                     "name": "Wiedźmi pocisk",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2526,7 +2526,7 @@
                             "description": "<p>Do końca twojej następnej tury emituje Słabe Światło w promieniu 10 stóp i nie może korzystać ze stanu &amp;Reference[Invisible].</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2545,7 +2545,7 @@
                             "description": "<p>W każdej z twoich kolejnych tur możesz wykonać Akcję Dodatkową, aby automatycznie zadać [[/damage 1k12 type=lightning]] obrażeń piorunem celowi, nawet jeśli pierwszy atak chybił.</p><p>Czar kończy działanie, jeśli cel znajdzie się poza zasięgiem czaru lub ma &amp;Reference[totalcover] względem ciebie.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 }
@@ -2554,7 +2554,7 @@
         "Tharashk Hunter": {
             "name": "Tharashk Hunter",
             "description": "<p>House Tharashk’s heirs include inquisitives, dragonshard prospectors, and bounty hunters. They are more at home in the trackless wilds than in crowded city streets, but they are quite capable of tracking and pursuing their prey in any environment.</p><p>Tharashk hunters, typically humans or orcs, often work alongside Druids of the Gatekeepers, and occasionally with Aberrant Cultists of the Dragon Below.</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -2588,7 +2588,7 @@
                     "description": "<p>[[/attack extended]]. [[/damage average extended]], and the target’s Speed is reduced by 10 feet until the end of its next turn.</p><section id=\"secret-6u903XRA0g04utLW\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>An <strong>Active Effect (AE)</strong> is available to apply the speed reduction to their character sheet from the chat card.</p></section>",
                     "effects": {
                         "Speed -10 ft.": {
-                            "name": "Speed -10 ft.",
+                            "name": "Szybkość -10 stóp",
                             "description": "<p>The target’s Speed is reduced by 10 feet until the end of its next turn.</p>"
                         }
                     }
@@ -2599,8 +2599,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Wykorzystaj użycie",
-                            "condition": "hit by an attack roll",
-                            "activationCondition": "hit by an attack roll"
+                            "condition": "trafiony testem ataku",
+                            "activationCondition": "trafiony testem ataku"
                         }
                     }
                 }
@@ -2609,7 +2609,7 @@
         "Umbragen Shadow Walker": {
             "name": "Umbragen Shadow Walker",
             "description": "<p>Umbragen drow are the descendants of drow who fled the giants and found refuge underground. For countless generations, they have lived in the lightless caverns of Khyber. There, they tapped into a mysterious magical shadow they called the Umbra. Though some have emerged to haunt the surface in the wake of the giant empire’s fall, they retain a spiritual and physical connection to the darkness below. Umbragen shadow walkers weave shadow magic to confound foes.</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -2650,7 +2650,7 @@
                     },
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2660,7 +2660,7 @@
                     "materials": "futro nietoperza i kawałek węgla",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2683,14 +2683,14 @@
                     },
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
                 "Sunlight Sensitivity": {
                     "name": "Wrażliwość na światło słoneczne",
                     "description": "<p>While in sunlight, the [[lookup @name lowercase]] has Disadvantage on ability checks and attack rolls.</p>",
-                    "requirements": "While in sunlight"
+                    "requirements": "W świetle słonecznym"
                 },
                 "wkbIT6sEpgH36JVM": {
                     "name": "Tańczące światła",
@@ -2706,7 +2706,7 @@
                     },
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2716,7 +2716,7 @@
                     "materials": "futro nietoperza i kawałek węgla",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2739,7 +2739,7 @@
                     },
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2772,7 +2772,7 @@
                     },
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2782,7 +2782,7 @@
                     "materials": "futro nietoperza i kawałek węgla",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2805,7 +2805,7 @@
                     },
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 }
@@ -2814,7 +2814,7 @@
         "Vadalis Heir": {
             "name": "Vadalis Heir",
             "description": "<p>Combining druidic magic with skill at handling natural and monstrous animals, the dragonmarked heirs of House Vadalis, most of whom are human, are more fearsome than their innocuous-seeming house suggests—especially when accompanied by a @UUID[Compendium.dnd-monster-manual.actors.Actor.mmGiantBoar00000]{Giant Boar}, @UUID[Compendium.dnd-monster-manual.actors.Actor.mmPolarBear00000]{Polar Bear}, or @UUID[Compendium.dnd-monster-manual.actors.Actor.mmRhinoceros0000]{Rhinoceros}.</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
@@ -2865,7 +2865,7 @@
                     "description": "<p>Szeptając do duchów natury, tworzysz jeden z poniższych efektów w zasięgu.</p><p><strong>Czujnik pogody.</strong> Tworzysz Mały, nieszkodliwy efekt sensoryczny, który przewiduje, jaka będzie pogoda w twojej lokalizacji przez najbliższe 24 godziny. Efekt może objawiać się jako złota kula dla bezchmurnego nieba, chmura dla deszczu, spadające płatki śniegu dla śniegu i tak dalej. Ten efekt trwa przez 1 rundę.</p><p><strong>Kwitnienie.</strong> Natychmiast sprawiasz, że kwiat rozkwita, strąk nasienny się otwiera lub pączek liścia zakwita.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz nieszkodliwy efekt sensoryczny, taki jak spadające liście, widmowe tańczące wróżki, łagodny powiew, dźwięk zwierzęcia lub słaby zapach skunksa. Efekt musi zmieścić się w Sześcianie o boku 5 stóp.</p><p><strong>Zabawa z ogniem.</strong> Zapalasz lub gasisz świecę, pochodnię albo ognisko.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2875,7 +2875,7 @@
                     "materials": "świetlik lub fosforyzujący mech",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2887,7 +2887,7 @@
                             "name": "Bestialska komunikacja"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2901,7 +2901,7 @@
                             "description": "<p><span style=\"font-family:Signika, sans-serif\">Cel otrzymuje stan &amp;Reference[charmed apply=false] na czas trwania. Jeśli ty lub jeden z twoich sojuszników zada celowi obrażenia, czar się kończy.</span></p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2915,7 +2915,7 @@
                             "description": "<p>Bestia podróżuje przez czas trwania w stronę określonej lokalizacji, pokonując około 25 mil na 24 godziny lub 50 mil, jeśli potrafi latać.</p><p>Kiedy Bestia dotrze, przekazuje twoją wiadomość opisanej istocie, naśladując twoją komunikację. Jeśli Bestia nie dotrze do celu przed zakończeniem czaru, wiadomość przepada, a Bestia wraca do miejsca, w którym rzuciłeś czar.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2925,7 +2925,7 @@
                     "materials": "rękawiczka z jednym palcem",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -2943,7 +2943,7 @@
         "Vulkoori Stingblade": {
             "name": "Vulkoori Stingblade",
             "description": "<p>Vulkoori drow warriors coat their weapons with the same deadly scorpion venom they use to tattoo their skin. Thanks to their extensive use of poison, they are resistant to the scorpion venom’s full effects.</p>",
-            "alignment": "Neutral",
+            "alignment": "Neutralny",
             "items": {
                 "Stingblade": {
                     "name": "Stingblade",
@@ -2965,7 +2965,7 @@
         "Vulkoori Venom Priest": {
             "name": "Vulkoori Venom Priest",
             "description": "<p>Vulkoori Venom Priest. Vulkoori venom priests delight in inflicting suffering through poison. Their weaponry and magic are carefully crafted to evoke the presence of the scorpion-god and strike terror into their enemies’ hearts</p>",
-            "alignment": "Neutral Evil",
+            "alignment": "Neutralny Zły",
             "items": {
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
@@ -3032,7 +3032,7 @@
                     },
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -3041,7 +3041,7 @@
                     "description": "<p>Wystrzeliwujesz zielonkawy promień w kierunku istoty w zasięgu. Wykonaj dystansowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 2k8 obrażeń od trucizn i zyskuje stan &amp;Reference[Poisoned]{Zatruty} do końca twojej następnej tury.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 1. kręgu.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -3050,7 +3050,7 @@
                     "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -3059,7 +3059,7 @@
                     "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -3073,7 +3073,7 @@
                             "description": "<p>Na końcu każdej swojej tury cel powtarza Rzut Obrony [[/save ability=wis]], kończąc działanie czaru na sobie w przypadku sukcesu.</p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -3086,7 +3086,7 @@
                             "description": "<p><span style=\"font-family:Signika, sans-serif\">Przez czas trwania czaru, cel ma ułatwienie do rzutów obronnych, aby uniknąć lub zakończyć stan Zatruty, oraz posiada odporność na obrażenia od trucizn.</span></p>"
                         },
                         "Spell Changes": {
-                            "name": "Spell changes"
+                            "name": "Zmiany czaru"
                         }
                     }
                 },
@@ -3099,7 +3099,7 @@
         "Warforged Titan": {
             "name": "Warforged Titan",
             "description": "<p>Warforged titans are hulking constructs built to wreak paths of destruction through enemy armies. Some of the most feared combatants of the Last War, warforged titans are barely sentient, with just enough intelligence to follow commands.</p><p><em><strong>Legacy of Giants</strong></em>. In the Age of Giants, giant artificers built mindless war golems to aid them in their war against the quori. Millennia later, some of these golems were unearthed by adventurers searching for the secrets of that age, then turned over to artificers working for the dragonmarked houses during the Last War. House Cannith studied these designs, and in the course of uncovering the secrets of the golems and the giant artificers who made them, House Cannith created the first warforged titans.</p>",
-            "alignment": "Lawful Neutral",
+            "alignment": "Praworządny Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -3143,9 +3143,9 @@
             }
         },
         "Zombie": {
-            "name": "Zombie",
+            "name": "Zombi",
             "description": "<h1>Zombies</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.2xCqDBEM46bLXD4q caption=false cite=false classes=\"no-embed mm\"]</p><h2>Zombie</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.WuSY8kEg0E7DusN5 caption=false cite=false classes=\"no-embed mm\"]</p>",
-            "alignment": "Neutral Evil",
+            "alignment": "Neutralny Zły",
             "items": {
                 "Undead Fortitude": {
                     "name": "Undead Fortitude",
