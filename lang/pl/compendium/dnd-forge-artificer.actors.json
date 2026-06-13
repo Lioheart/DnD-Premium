@@ -71,7 +71,7 @@
                     "name": "Ćwiekowana skóra"
                 },
                 "Arcane Firearm": {
-                    "name": "Arcane Firearm",
+                    "name": "Magiczna broń palna",
                     "description": "<p><em>Ranged Attack Roll:</em> [[/attack]], range 30/90 ft. Hit: [[/damage average]] damage.</p>"
                 },
                 "Uncanny Dodge": {
@@ -373,26 +373,26 @@
             }
         },
         "Eldritch Cannon": {
-            "name": "Eldritch Cannon",
+            "name": "Mistyczne działo",
             "items": {
                 "Mend Cannon": {
-                    "name": "Mend Cannon",
-                    "description": "<p>Casting <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]{Mending}</em> on the cannon restores [[/healing]] (Hit Points) to this cannon.</p>"
+                    "name": "Naprawa działa",
+                    "description": "<p>Rzucenie <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]</em> na działo przywraca mu [[/healing]] (PW).</p>"
                 },
                 "Flame Thrower": {
-                    "name": "Flame Thrower",
-                    "description": "<p>The cannon blasts fire in a 15-foot Cone. Each creature in that area makes a Dexterity saving throw against your spell save DC, taking [[/damage]] damage on a failed save or half as much damage on a successful one. Flammable objects in the Cone that aren't being worn or carried start burning.</p>"
+                    "name": "Miotacz ognia",
+                    "description": "<p>Działo wypluwa ogień w Stożku o długości 15 stóp. Każde stworzenie w tym obszarze wykonuje rzut obronny na Zręczność przeciw twojemu ST rzutu przeciw czarom, otrzymując [[/damage]] obrażeń przy nieudanym rzucie albo połowę tych obrażeń przy udanym. Łatwopalne obiekty w Stożku, które nie są noszone ani trzymane, zaczynają płonąć.</p>"
                 },
                 "Force Ballista": {
-                    "name": "Force Ballista",
-                    "description": "<p>Make a ranged spell attack originating from the cannon at one creature or object within 120 feet of it. On a hit, the target takes [[/damage]] damage, and if the target is a creature, it is pushed up to 5 feet away from the cannon.</p>"
+                    "name": "Balista mocy",
+                    "description": "<p>Wykonaj dystansowy atak czarem pochodzący z działa przeciw jednemu stworzeniu albo obiektowi w obrębie 120 stóp od niego. Przy trafieniu cel otrzymuje [[/damage]] obrażeń, a jeśli celem jest stworzenie, zostaje odepchnięte do 5 stóp od działa.</p>"
                 },
                 "Protector": {
-                    "name": "Protector",
+                    "name": "Obrońca",
                     "description": "<p>The cannon emits a burst of positive energy that grants itself and each creature of your choice within 10 feet of the cannon a number of Temporary Hit Points equal to 1d8 plus your Intelligence modifier (minimum of +1).</p>",
                     "activities": {
                         "Protector": {
-                            "name": "Protector",
+                            "name": "Obrońca",
                             "target": "of your choice",
                             "targetAffects": "of your choice"
                         }
@@ -494,27 +494,27 @@
             }
         },
         "Explosive Cannon": {
-            "name": "Explosive Cannon",
-            "tokenName": "Eldritch Cannon",
+            "name": "Wybuchowe działo",
+            "tokenName": "Mistyczne działo",
             "items": {
                 "Mend Cannon": {
-                    "name": "Mend Cannon",
-                    "description": "<p>Casting <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]{Mending}</em> on the cannon restores [[/healing]] (Hit Points) to this cannon.</p>"
+                    "name": "Naprawa działa",
+                    "description": "<p>Rzucenie <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]</em> na działo przywraca mu [[/healing]] (PW).</p>"
                 },
                 "Flame Thrower": {
-                    "name": "Flame Thrower",
-                    "description": "<p>The cannon blasts fire in a 15-foot Cone. Each creature in that area makes a Dexterity saving throw against your spell save DC, taking [[/damage]] damage on a failed save or half as much damage on a successful one. Flammable objects in the Cone that aren't being worn or carried start burning.</p>"
+                    "name": "Miotacz ognia",
+                    "description": "<p>Działo wypluwa ogień w Stożku o długości 15 stóp. Każde stworzenie w tym obszarze wykonuje rzut obronny na Zręczność przeciw twojemu ST rzutu przeciw czarom, otrzymując [[/damage]] obrażeń przy nieudanym rzucie albo połowę tych obrażeń przy udanym. Łatwopalne obiekty w Stożku, które nie są noszone ani trzymane, zaczynają płonąć.</p>"
                 },
                 "Force Ballista": {
-                    "name": "Force Ballista",
-                    "description": "<p>Make a ranged spell attack originating from the cannon at one creature or object within 120 feet of it. On a hit, the target takes [[/damage]] damage, and if the target is a creature, it is pushed up to 5 feet away from the cannon.</p>"
+                    "name": "Balista mocy",
+                    "description": "<p>Wykonaj dystansowy atak czarem pochodzący z działa przeciw jednemu stworzeniu albo obiektowi w obrębie 120 stóp od niego. Przy trafieniu cel otrzymuje [[/damage]] obrażeń, a jeśli celem jest stworzenie, zostaje odepchnięte do 5 stóp od działa.</p>"
                 },
                 "Protector": {
-                    "name": "Protector",
+                    "name": "Obrońca",
                     "description": "<p>The cannon emits a burst of positive energy that grants itself and each creature of your choice within 10 feet of the cannon a number of Temporary Hit Points equal to 1d8 plus your Intelligence modifier (minimum of +1).</p>",
                     "activities": {
                         "Protector": {
-                            "name": "Protector",
+                            "name": "Obrońca",
                             "target": "of your choice",
                             "targetAffects": "of your choice"
                         }
@@ -622,7 +622,7 @@
             }
         },
         "Giant Crab": {
-            "name": "Giant Crab",
+            "name": "Olbrzymi krab",
             "alignment": "Unaligned",
             "items": {
                 "Amphibious": {
@@ -722,11 +722,11 @@
         },
         "Improved Steel Defender": {
             "name": "Improved Steel Defender",
-            "tokenName": "Steel Defender",
+            "tokenName": "Stalowy obrońca",
             "alignment": "Neutral",
             "items": {
                 "Force-Empowered Rend": {
-                    "name": "Force-Empowered Rend",
+                    "name": "Rozdarcie wzmocnione mocą",
                     "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit</em>: 1d8 + 2 plus your Intelligence modifier Force damage.</p>"
                 },
                 "Repair": {
@@ -980,8 +980,8 @@
                     "description": "<p><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.formula activity=MxEs7KnCVGemObHx]], one [[lookup @target.affects.special activity=MxEs7KnCVGemObHx]] [[lookup @target.affects.type activity=MxEs7KnCVGemObHx]] the kuo-toa can see within [[lookup @range.value activity=MxEs7KnCVGemObHx]] feet.</p><p><em>Failure:</em> The target has the &amp;Reference[Restrained apply=false] condition until the net is destroyed (AC 10; HP 5; Immunity to Bludgeoning, Poison, and Psychic damage). A creature can take an action to make a [[/skill ath 10]] check to free itself or another creature in a net within 5 feet, destroying the net on a success.</p>",
                     "activities": {
                         "save": {
-                            "target": "Large or smaller",
-                            "targetAffects": "Large or smaller"
+                            "target": "Duży lub mniejszy",
+                            "targetAffects": "Duży lub mniejszy"
                         },
                         "Escape Check": {
                             "name": "Test ucieczki"
@@ -997,7 +997,7 @@
             }
         },
         "Kuo-toa Archpriest": {
-            "name": "Kuo-toa Archpriest",
+            "name": "Kuo-toa arcykapłan",
             "description": "<h1>Kuo-toa</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.5cWxPFYWZSjJw6ih caption=false cite=false classes=\"no-embed mm\"]</p><h2>Kuo-toa Archpriest</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.jVLHLrDcjEGUhZmp caption=false cite=false classes=\"no-embed mm\"]</p>",
             "alignment": "Neutral Evil",
             "items": {
@@ -1103,7 +1103,7 @@
                     "name": "Wizja",
                     "description": "<p>Możesz widzieć i słyszeć istotę, którą wybierzesz, pod warunkiem że znajduje się na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, który jest modyfikowany (patrz poniższe tabele) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przeciwko czemu wykonuje rzut, odczuwa jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Drugoręczna (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Pierwszoręczna (spotkałeś cel)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia</td><td>−10</td></tr></tbody></table><p>W przypadku udanego rzutu obronnego cel nie jest dotknięty efektem czaru i nie możesz ponownie użyć tego czaru na nim przez 24 godziny.</p><p>W przypadku nieudanego rzutu czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Możesz widzieć i słyszeć przez sensor tak, jakbyś tam był. Sensor porusza się wraz z celem, pozostając w odległości 10 stóp od niego przez cały czas działania czaru. Jeśli coś może zobaczyć sensor, pojawia się on jako świetlista kula wielkości pięści.</p><p>Zamiast wybrać istotę, możesz wybrać miejsce, które widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje tam nieruchomy.</p>",
                     "materials": "fokus warty 1 000+ SZ, taki jak kryształowa kula, lustro lub misa wypełniona wodą",
-                    "targetAffects": "creature on same plane of existence or a location you have seen",
+                    "targetAffects": "istota na tej samej sferze egzystencji lub lokacji która widziałeś",
                     "activities": {
                         "Secondhand and Picture": {
                             "name": "Druga ręka i obraz"
@@ -1178,7 +1178,7 @@
             }
         },
         "Kuo-toa Monitor": {
-            "name": "Kuo-toa Monitor",
+            "name": "Kuo-toa monitor",
             "description": "<h1>Kuo-toa</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.5cWxPFYWZSjJw6ih caption=false cite=false classes=\"no-embed mm\"]</p><h2>Kuo-toa Monitor</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.N6Prinvb9ppnSZub caption=false cite=false classes=\"no-embed mm\"]</p>",
             "alignment": "Neutral Evil",
             "items": {
@@ -1213,7 +1213,7 @@
             }
         },
         "Kuo-toa Whip": {
-            "name": "Kuo-toa Whip",
+            "name": "Kuo-toa bicz",
             "description": "<h1>Kuo-toa</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.5cWxPFYWZSjJw6ih caption=false cite=false classes=\"no-embed mm\"]</p><h2>Kuo-toa Whip</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.VEYcunqNbjyhHOwB caption=false cite=false classes=\"no-embed mm\"]</p>",
             "alignment": "Neutral Evil",
             "items": {
@@ -2254,11 +2254,11 @@
             }
         },
         "Steel Defender": {
-            "name": "Steel Defender",
+            "name": "Stalowy obrońca",
             "alignment": "Neutral",
             "items": {
                 "Force-Empowered Rend": {
-                    "name": "Force-Empowered Rend",
+                    "name": "Rozdarcie wzmocnione mocą",
                     "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit</em>: 1d8 + 2 plus your Intelligence modifier Force damage.</p>"
                 },
                 "Repair": {
@@ -2418,7 +2418,7 @@
                     "name": "Dezintegracja",
                     "description": "<p>Wypuszczasz zielony promień w cel, który widzisz w zasięgu. Celem może być istota, niemagiczny obiekt lub tworzenie magicznej energii, takie jak ściana stworzona przez <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofForc]{Ścianę energii}</em>.</p><p>Istota będąca celem tego czaru wykonuje rzut obronny na Zręczność. W przypadku niepowodzenia cel otrzymuje 10k6 + 40 obrażeń od mocy. Jeśli obrażenia te zredukują jego Punkty Wytrzymałości do 0, istota oraz wszystkie niemagiczne przedmioty, które nosi i posiada, zostają zdezintegrowane w szary pył. Cel może zostać wskrzeszony jedynie za pomocą czaru <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplTrueResurr]{Prawdziwe zmartwychwstanie}</em> lub <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Życzenie}</em>.</p><p>Ten czar automatycznie dezintegruje niemagiczny obiekt o rozmiarze Dużym lub mniejszym albo tworzenie magicznej energii. Jeśli taki cel jest Ogromny lub większy, czar dezintegruje jego fragment o wymiarach 10 stóp sześciennych.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 3k6 za każdy krąg komórki czaru powyżej 6.</p>",
                     "materials": "magnetyt i pył",
-                    "targetAffects": "a creature, a nonmagical object, or a creation of magical force,",
+                    "targetAffects": "stworzenie, niemagiczny obiekt albo twór magicznej mocy",
                     "effects": {
                         "Spell Changes": {
                             "name": "Spell changes"
@@ -2443,7 +2443,7 @@
                     "name": "Dezintegracja",
                     "description": "<p>Wypuszczasz zielony promień w cel, który widzisz w zasięgu. Celem może być istota, niemagiczny obiekt lub tworzenie magicznej energii, takie jak ściana stworzona przez <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofForc]{Ścianę energii}</em>.</p><p>Istota będąca celem tego czaru wykonuje rzut obronny na Zręczność. W przypadku niepowodzenia cel otrzymuje 10k6 + 40 obrażeń od mocy. Jeśli obrażenia te zredukują jego Punkty Wytrzymałości do 0, istota oraz wszystkie niemagiczne przedmioty, które nosi i posiada, zostają zdezintegrowane w szary pył. Cel może zostać wskrzeszony jedynie za pomocą czaru <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplTrueResurr]{Prawdziwe zmartwychwstanie}</em> lub <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Życzenie}</em>.</p><p>Ten czar automatycznie dezintegruje niemagiczny obiekt o rozmiarze Dużym lub mniejszym albo tworzenie magicznej energii. Jeśli taki cel jest Ogromny lub większy, czar dezintegruje jego fragment o wymiarach 10 stóp sześciennych.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 3k6 za każdy krąg komórki czaru powyżej 6.</p>",
                     "materials": "magnetyt i pył",
-                    "targetAffects": "a creature, a nonmagical object, or a creation of magical force,",
+                    "targetAffects": "stworzenie, niemagiczny obiekt albo twór magicznej mocy",
                     "effects": {
                         "Spell Changes": {
                             "name": "Spell changes"
