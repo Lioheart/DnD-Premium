@@ -1,8 +1,18 @@
 {
-    "label": "Podręcznik Gracza",
+    "label": "Monster Manual",
+    "mapping": {
+        "pages": {
+            "path": "pages",
+            "converter": "document",
+            "documentType": "JournalEntryPage",
+            "cardinality": "many"
+        },
+        "chapterTitle": "flags.dnd5e.title"
+    },
     "entries": {
         "Animals": {
             "name": "Zwierzęta",
+            "chapterTitle": "App. A: Animals",
             "pages": {
                 "Allosaurus": {
                     "name": "Allosaurus",
@@ -121,7 +131,7 @@
                     "text": "<p>@Embed[Compendium.dnd-monster-manual.actors.Actor.mmGiantCentipede statblock caption=false cite=true]</p>"
                 },
                 "Giant Crab": {
-                    "name": "Giant Crab",
+                    "name": "Olbrzymi krab",
                     "text": "<p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmArtHandouts000.JournalEntryPage.bIg0vixy1PerLFKR classes=\"float-right size-three lift-50\" caption=false]</p><p>@Embed[Compendium.dnd-monster-manual.actors.Actor.mmGiantCrab00000 statblock caption=false cite=true]</p>"
                 },
                 "Giant Constrictor Snake": {
@@ -396,6 +406,7 @@
         },
         "Monster Lists": {
             "name": "Monster Lists",
+            "chapterTitle": "App. B: Monster Lists",
             "pages": {
                 "Appendix B": {
                     "name": "Appendix B",
@@ -631,7 +642,7 @@
                     "text": "<p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmArtHandouts000.JournalEntryPage.YfapgsndlLNMhyr5 caption=false classes=\"float-right size-three lift-50\"]</p><p class=\"creature-flavor\"><em>Flightless Avian Predators</em></p><p class=\"habitat-treasure\"><strong>Habitat:</strong> Arctic, Grassland, Hill; <strong>Treasure:</strong> None</p><p>Axe beaks are flightless, birdlike creatures with distinctive axe-shaped beaks. Swift predators, they chase down prey and use their beaks to hack through foliage protecting their quarry. Axe beaks live in varied environments. Colorfully plumed axe beaks race across tropical plains, while axe beaks with snowy feathers hunt the tundra.</p><p>Axe beaks are difficult to train, but those hatched and raised in captivity can become reliable mounts.</p>"
                 },
                 "Axe Beak": {
-                    "name": "Axe Beak",
+                    "name": "Toporodziób",
                     "text": "<p>Alone or in small groups, axe beaks stalk prey to feed their flocks. When working together, axe beaks use rudimentary tactics, with some distracting threats while others strike vulnerable targets or rush young axe beaks to safety.</p>"
                 },
                 "Giant Axe Beak": {
@@ -863,11 +874,11 @@
                     "text": "<p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmArtHandouts000.JournalEntryPage.EJk5FMiDOaByFxxx caption=false classes=\"float-right size-two lift-50\"]</p><p class=\"creature-flavor\"><em>Lurking Goblinoid Brutes</em></p><p class=\"habitat-treasure\"><strong>Habitat:</strong> Forest, Grassland, Planar (Feywild), Underdark; <strong>Treasure:</strong> Armaments, Individual</p><p>Bugbears embody fear of the wilds and the menace of natural places. They’re notoriously stealthy, and foes that venture into their territories often vanish without a trace.</p>"
                 },
                 "Bugbear Stalker": {
-                    "name": "Bugbear Stalker",
+                    "name": "Strachun prześladowca",
                     "text": "<p>Bugbear stalkers frequently take their victims hostage, relishing opportunities to imprison and terrorize other creatures.</p>"
                 },
                 "Bugbear Warrior": {
-                    "name": "Bugbear Warrior",
+                    "name": "Strachun wojownik",
                     "text": "<p>Bugbear warriors serve those who offer them treasure, food, or the chance to hunt challenging prey.</p>"
                 },
                 "Bulettes": {
@@ -1635,15 +1646,15 @@
                     "text": "<p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmArtHandouts000.JournalEntryPage.F8Xi8TJrdthU6mKz caption=false classes=\"float-right size-two float-clear right-cradle-frame\"]</p><p>Kuo-toa loot ruins and raid communities near their dwellings in the Underdark. Their shields are coated in sticky slime, which they use to disarm their foes, and they employ slimy nets to entrap victims. They usually strive to take their enemies alive and drag captives to their hidden lairs.</p><p>Most kuo-toa follow the orders of their more powerful leaders out of a combination of faith and fear. In rare cases, a kuo-toa might abandon its community to live as a hermit or wanderer. Such kuo-toa might know much about the Underdark, but they live in fear of the strange gods they forsook.</p>"
                 },
                 "Kuo-toa Whip": {
-                    "name": "Kuo-toa Whip",
+                    "name": "Kuo-toa bicz",
                     "text": "<p>The servants of kuo-toa archpriests, kuo-toa whips—so named for their role in enforcing order among other kuo-toa—lead war bands in carrying out the commands of their superiors. In return for their zeal, these kuo-toa are granted minor magical abilities and pincerlike weapons for subduing foes. In battle, whips drive on other kuo-toa with threats of violence and burbling chants.</p>"
                 },
                 "Kuo-toa Monitor": {
-                    "name": "Kuo-toa Monitor",
+                    "name": "Kuo-toa monitor",
                     "text": "<p>Kuo-toa monitors control the day-to-day life of weaker kuo-toa, directing their work and worship. They also train beasts or monsters in the kuo-toa’s service—such as chuuls or giant crabs—and command them in battle. Archpriests bless monitors with the power to control their underlings and to subdue foes with electricity channeled through their bizarre whips.</p><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmArtHandouts000.JournalEntryPage.nXzjI9SJmrkDWovI classes=\"top-frame\"]</p>"
                 },
                 "Kuo-toa Archpriest": {
-                    "name": "Kuo-toa Archpriest",
+                    "name": "Kuo-toa arcykapłan",
                     "text": "<p>Kuo-toa archpriests lead kuo-toa communities by interpreting omens and messages from their strange gods. They wear grotesque ceremonial regalia honoring their deities. Archpriests channel their faith into spells to support their followers.</p>"
                 },
                 "Kuo-toa Deities": {
@@ -2636,972 +2647,1358 @@
             "name": " Materiały ilustracyjne",
             "pages": {
                 "Aboleth": {
-                    "name": "Aboleth"
+                    "name": "Aboleth",
+                    "caption": "A gnome cultist consults an all-knowing aboleth",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/aboleth.webp"
                 },
                 "Air Elemental": {
-                    "name": "Air Elemental"
+                    "name": "Air Elemental",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/air-elemental.webp"
                 },
                 "Animal Lord": {
-                    "name": "Animal Lord"
+                    "name": "Animal Lord",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/animal-lord.webp"
                 },
                 "Aarakocra": {
-                    "name": "Aarakocra"
+                    "name": "Aarakocra",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/aarakocra.webp"
                 },
                 "Animated Objects": {
-                    "name": "Animowane obiekty"
+                    "name": "Animowane obiekty",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/animated-rug-smothering.webp"
                 },
                 "Ankheg": {
-                    "name": "Ankheg"
+                    "name": "Ankheg",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ankheg.webp"
                 },
                 "Arcanaloth": {
-                    "name": "Arcanaloth"
+                    "name": "Arcanaloth",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/arcanaloth.webp"
                 },
                 "Assassin": {
-                    "name": "Skrytobójca"
+                    "name": "Skrytobójca",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/assassin.webp"
                 },
                 "Awakened Tree": {
-                    "name": "Awakened Tree"
+                    "name": "Awakened Tree",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/awakened-tree.webp"
                 },
                 "Axe Beak": {
-                    "name": "Axe Beak"
+                    "name": "Toporodziób",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/axe-beak.webp"
                 },
                 "Azer": {
-                    "name": "Azer"
+                    "name": "Azer",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/azer.webp"
                 },
                 "Balor": {
-                    "name": "Balor"
+                    "name": "Balor",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/balor.webp"
                 },
                 "Bandits": {
-                    "name": "Bandyci"
+                    "name": "Bandyci",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/bandits.webp"
                 },
                 "Banshee": {
-                    "name": "Banshee"
+                    "name": "Banshee",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/banshee.webp"
                 },
                 "Barbed Devil": {
-                    "name": "Barbed Devil"
+                    "name": "Barbed Devil",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/barbed-devil.webp"
                 },
                 "Barlgura": {
-                    "name": "Barlgura"
+                    "name": "Barlgura",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/barlgura.webp"
                 },
                 "Basilisk": {
-                    "name": "Bazyliszek"
+                    "name": "Bazyliszek",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/basilisk.webp"
                 },
                 "Bearded Devil": {
-                    "name": "Bearded Devil"
+                    "name": "Bearded Devil",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/bearded-devil.webp"
                 },
                 "Behir": {
-                    "name": "Behir"
+                    "name": "Behir",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/behir.webp"
                 },
                 "Beholder": {
-                    "name": "Beholder"
+                    "name": "Beholder",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/beholder.webp"
                 },
                 "Berserker": {
-                    "name": "Berserker"
+                    "name": "Berserker",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/berserker.webp"
                 },
                 "Black Dragon Wyrmling": {
-                    "name": "Black Dragon Wyrmling"
+                    "name": "Black Dragon Wyrmling",
+                    "caption": "Black Dragon Wyrmling",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/black-dragon-wyrmling.webp"
                 },
                 "Adult Black Dragon": {
-                    "name": "Adult Black Dragon"
+                    "name": "Adult Black Dragon",
+                    "caption": "An adult black dragon uses its acid breath to melt the construct defenders of a clockwork fortress.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/adult-black-dragon.webp"
                 },
                 "Ancient Black Dragon": {
-                    "name": "Ancient Black Dragon"
+                    "name": "Ancient Black Dragon",
+                    "caption": "As terrifying as it is titanic, an ancient black dragon eradicates unwanted life in its despoiled territoy.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ancient-black-dragon.webp"
                 },
                 "Black Pudding": {
-                    "name": "Black Pudding"
+                    "name": "Black Pudding",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/black-pudding.webp"
                 },
                 "Twig Blights": {
-                    "name": "Twig Blights"
+                    "name": "Twig Blights",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/blights.webp"
                 },
                 "Blights": {
-                    "name": "Blights"
+                    "name": "Blights",
+                    "caption": "Left to Right: Vine Blight, Tree Blight, and Needle Blight",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/vine-blight-tree-blight.webp"
                 },
                 "Gulthias Blight": {
-                    "name": "Gulthias Blight"
+                    "name": "Gulthias Blight",
+                    "caption": "Gulthias Blight",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/gulthias-blight.webp"
                 },
                 "Blink Dog": {
-                    "name": "Blink Dog"
+                    "name": "Blink Dog",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/blink-dog.webp"
                 },
                 "Blob Of Annihilation": {
-                    "name": "Blob Of Annihilation"
+                    "name": "Blob Of Annihilation",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/blob-of-annihilation.webp"
                 },
                 "Blue Dragon Wyrmling": {
-                    "name": "Blue Dragon Wyrmling"
+                    "name": "Blue Dragon Wyrmling",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/blue-dragon-wyrmling.webp"
                 },
                 "Adult Blue Dragon": {
-                    "name": "Adult Blue Dragon"
+                    "name": "Adult Blue Dragon",
+                    "caption": "An adult blue dragon invades the territory of a silver dragon rival.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/adult-blue-dragon.webp"
                 },
                 "Ancient Blue Dragon": {
-                    "name": "Ancient Blue Dragon"
+                    "name": "Ancient Blue Dragon",
+                    "caption": "Shattering the enemy's defenses, an ancient blue dragon leads its armies in conquest.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ancient-blue-dragon.webp"
                 },
                 "Bone Devil": {
-                    "name": "Bone Devil"
+                    "name": "Bone Devil",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/bone-devil.webp"
                 },
                 "Bone Naga": {
-                    "name": "Bone Naga"
+                    "name": "Bone Naga",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/bone-naga.webp"
                 },
                 "Brass Dragon Wyrmling": {
-                    "name": "Brass Dragon Wyrmling"
+                    "name": "Brass Dragon Wyrmling",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/brass-dragon-wyrmling.webp"
                 },
                 "Adult Brass Dragon": {
-                    "name": "Adult Brass Dragon"
+                    "name": "Adult Brass Dragon",
+                    "caption": "An adult brass dragon rids its new lair of unwelcome undead.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/adult-brass-dragon.webp"
                 },
                 "Ancient Brass Dragon": {
-                    "name": "Ancient Brass Dragon"
+                    "name": "Ancient Brass Dragon",
+                    "caption": "An ancient brass dragon protects travelers from an oncoming sandstorm.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ancient-brass-dragon.webp"
                 },
                 "Bronze Dragon Wyrmling": {
-                    "name": "Bronze Dragon Wyrmling"
+                    "name": "Bronze Dragon Wyrmling",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/bronze-dragon-wyrmling.webp"
                 },
                 "Adult Bronze Dragon": {
-                    "name": "Adult Bronze Dragon"
+                    "name": "Adult Bronze Dragon",
+                    "caption": "An adult bronze dragon defends the deep from a ravenous giant shark.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/adult-bronze-dragon.webp"
                 },
                 "Ancient Bronze Dragon": {
-                    "name": "Ancient Bronze Dragon"
+                    "name": "Ancient Bronze Dragon",
+                    "caption": "An ancient bronze dragon uses its repulsion breath to protect a community from rampaging water elementals.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ancient-bronze-dragon.webp"
                 },
                 "Bugbears": {
-                    "name": "Strachuny"
+                    "name": "Strachuny",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/bugbears.webp"
                 },
                 "Bulettes": {
-                    "name": "Bulettes"
+                    "name": "Bulettes",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/bulettes.webp"
                 },
                 "Bullywugs": {
-                    "name": "Bullywugs"
+                    "name": "Bullywugs",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/bullywugs.webp"
                 },
                 "Cambion": {
-                    "name": "Cambion"
+                    "name": "Cambion",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/cambion.webp"
                 },
                 "Carrion Crawler": {
-                    "name": "Carrion Crawler"
+                    "name": "Carrion Crawler",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/carrion-crawler.webp"
                 },
                 "Centaurs": {
-                    "name": "Centaurs"
+                    "name": "Centaurs",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/centaurs.webp"
                 },
                 "Chain Devil": {
-                    "name": "Chain Devil"
+                    "name": "Chain Devil",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/chain-devil.webp"
                 },
                 "Chasme": {
-                    "name": "Chasme"
+                    "name": "Chasme",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/chasme.webp"
                 },
                 "Chimera": {
-                    "name": "Chimera"
+                    "name": "Chimera",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/chimera.webp"
                 },
                 "Chuul": {
-                    "name": "Chuul"
+                    "name": "Chuul",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/chuul.webp"
                 },
                 "Clay Golem": {
-                    "name": "Clay Golem"
+                    "name": "Clay Golem",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/clay-golem.webp"
                 },
                 "Cloaker": {
-                    "name": "Cloaker"
+                    "name": "Cloaker",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/cloaker.webp"
                 },
                 "Cloud Giant": {
-                    "name": "Gigant chmurowy"
+                    "name": "Gigant chmurowy",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/cloud-giant.webp"
                 },
                 "Cockatrice": {
-                    "name": "Cockatrice"
+                    "name": "Cockatrice",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/cockatrice.webp"
                 },
                 "Cockatrice Cropped": {
-                    "name": "Cockatrice Cropped"
+                    "name": "Cockatrice Cropped",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/cockatrice-cropped.webp"
                 },
                 "Colossus": {
-                    "name": "Colossus"
+                    "name": "Colossus",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/colossus.webp"
                 },
                 "Commoners": {
-                    "name": "Commoners"
+                    "name": "Commoners",
+                    "caption": "Commoners of varied species and professions go about their day.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/commoners.webp"
                 },
                 "Copper Dragon Wymrling": {
-                    "name": "Copper Dragon Wymrling"
+                    "name": "Copper Dragon Wymrling",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/copper-dragon-wymrling.webp"
                 },
                 "Adult Copper Dragon": {
-                    "name": "Adult Copper Dragon"
+                    "name": "Adult Copper Dragon",
+                    "caption": "Surrounded by guardians of the forest, an adult copper dragon bequeaths a magic sword to a worthy hero.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/adult-copper-dragon.webp"
                 },
                 "Ancient Copper Dragon": {
-                    "name": "Ancient Copper Dragon"
+                    "name": "Ancient Copper Dragon",
+                    "caption": "An ancient copper dragon watches over its allies' boisterous young.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ancient-copper-dragon.webp"
                 },
                 "Couatl": {
-                    "name": "Couatl"
+                    "name": "Couatl",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/couatl.webp"
                 },
                 "Crawling Claws": {
-                    "name": "Crawling Claws"
+                    "name": "Crawling Claws",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/crawling-claws.webp"
                 },
                 "Cultists": {
-                    "name": "Kultyści"
+                    "name": "Kultyści",
+                    "caption": "A death cultist and his followers summon Orcus, Demon Lord of Undeath.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/cultists.webp"
                 },
                 "Elemental Cultist": {
-                    "name": "Elemental Cultist"
+                    "name": "Elemental Cultist",
+                    "caption": "An aberrant cultist and an elemental cultist clash, unleashing the magic of their otherworldly patrons.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/elemental-cultist.webp"
                 },
                 "Cyclopes": {
-                    "name": "Cyclopes"
+                    "name": "Cyclopes",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/cyclopes.webp"
                 },
                 "Dao": {
-                    "name": "Dao"
+                    "name": "Dao",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/dao.webp"
                 },
                 "Darkmantle": {
-                    "name": "Darkmantle"
+                    "name": "Darkmantle",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/darkmantle.webp"
                 },
                 "Death Dog": {
-                    "name": "Death Dog"
+                    "name": "Death Dog",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/death-dog.webp"
                 },
                 "Death Knight with Aspirants": {
-                    "name": "Death Knight with Aspirants"
+                    "name": "Death Knight with Aspirants",
+                    "caption": "A death knight and its Aspirants march to war against the living.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/death-knight-aspirant.webp"
                 },
                 "Death Tyrant": {
-                    "name": "Death Tyrant"
+                    "name": "Death Tyrant",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/death-tyrant.webp"
                 },
                 "Demilich": {
-                    "name": "Demilich"
+                    "name": "Demilich",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/demilich.webp"
                 },
                 "Deva": {
-                    "name": "Deva"
+                    "name": "Deva",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/deva.webp"
                 },
                 "Displacer Beast": {
-                    "name": "Displacer Beast"
+                    "name": "Displacer Beast",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/displacer-beast.webp"
                 },
                 "Djinni": {
-                    "name": "Djinni"
+                    "name": "Djinni",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/djinni.webp"
                 },
                 "Doppelganger": {
-                    "name": "Doppelganger"
+                    "name": "Doppelganger",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/doppelganger.webp"
                 },
                 "Dracolich": {
-                    "name": "Dracolich"
+                    "name": "Dracolich",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/dracolich.webp"
                 },
                 "Dragon Turtle": {
-                    "name": "Dragon Turtle"
+                    "name": "Dragon Turtle",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/dragon-turtle.webp"
                 },
                 "Dretches": {
-                    "name": "Dretches"
+                    "name": "Dretches",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/dretches.webp"
                 },
                 "Drider": {
-                    "name": "Drider"
+                    "name": "Drider",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/drider.webp"
                 },
                 "Druid": {
-                    "name": "Druid"
+                    "name": "Druid",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/druid.webp"
                 },
                 "Dryad": {
-                    "name": "Dryad"
+                    "name": "Dryad",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/dryad.webp"
                 },
                 "Earth Elemental": {
-                    "name": "Żywiołak ziemi"
+                    "name": "Żywiołak ziemi",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/earth-elemental.webp"
                 },
                 "Efreeti": {
-                    "name": "Efreeti"
+                    "name": "Efreeti",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/efreeti.webp"
                 },
                 "Elemental Cataclysm": {
-                    "name": "Elemental Cataclysm"
+                    "name": "Elemental Cataclysm",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/elemental-cataclysm.webp"
                 },
                 "Mountains": {
-                    "name": "Mountains"
+                    "name": "Mountains",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/mountains.webp"
                 },
                 "Empyrean": {
-                    "name": "Empyrean"
+                    "name": "Empyrean",
+                    "caption": "Celestial and fiendish empyreans observe the cosmos attended by sigil-like empyrean iotas.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/empyrean.webp"
                 },
                 "Erinyes": {
-                    "name": "Erinyes"
+                    "name": "Erinyes",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/erinyes.webp"
                 },
                 "Ettercap": {
-                    "name": "Ettercap"
+                    "name": "Ettercap",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ettercap.webp"
                 },
                 "Ettin": {
-                    "name": "Ettin"
+                    "name": "Ettin",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ettin.webp"
                 },
                 "Faerie Dragons": {
-                    "name": "Faerie Dragons"
+                    "name": "Faerie Dragons",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/faerie-dragons.webp"
                 },
                 "Fire Elemental": {
-                    "name": "Fire Elemental"
+                    "name": "Fire Elemental",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/fire-elemental.webp"
                 },
                 "Fire Giant": {
-                    "name": "Gigant ogniowy"
+                    "name": "Gigant ogniowy",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/fire-giant.webp"
                 },
                 "Flameskull": {
-                    "name": "Flameskull"
+                    "name": "Flameskull",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/flameskull.webp"
                 },
                 "Flesh Golem": {
-                    "name": "Flesh Golem"
+                    "name": "Flesh Golem",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/flesh-golem.webp"
                 },
                 "Flumph": {
-                    "name": "Flumph"
+                    "name": "Flumph",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/flumph.webp"
                 },
                 "Fomorian": {
-                    "name": "Fomorian"
+                    "name": "Fomorian",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/fomorian.webp"
                 },
                 "Frost Giant": {
-                    "name": "Gigant lodowy"
+                    "name": "Gigant lodowy",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/frost-giant.webp"
                 },
                 "Fungi": {
-                    "name": "Fungi"
+                    "name": "Fungi",
+                    "caption": "A gas spore and clusters of shriekers and violet fungi grow in the Underdark.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/fungi.webp"
                 },
                 "Violet Fungus Necrohulk": {
-                    "name": "Violet Fungus Necrohulk"
+                    "name": "Violet Fungus Necrohulk",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/violet-fungus.webp"
                 },
                 "Galeb Duhr": {
-                    "name": "Galeb Duhr"
+                    "name": "Galeb Duhr",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/galeb-duhr.webp"
                 },
                 "Gargoyle": {
-                    "name": "Gargoyle"
+                    "name": "Gargoyle",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/gargoyle.webp"
                 },
                 "Gelatinous Cube": {
-                    "name": "Gelatinous Cube"
+                    "name": "Gelatinous Cube",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/gelatinous-cube.webp"
                 },
                 "Ghasts": {
-                    "name": "Ghasts"
+                    "name": "Ghasts",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ghasts.webp"
                 },
                 "Ghost": {
-                    "name": "Ghost"
+                    "name": "Ghost",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ghost.webp"
                 },
                 "Ghouls": {
-                    "name": "Ghouls"
+                    "name": "Ghouls",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ghouls.webp"
                 },
                 "Gibbering Mouther": {
-                    "name": "Gibbering Mouther"
+                    "name": "Gibbering Mouther",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/gibbering-mouther.webp"
                 },
                 "Githyanki": {
-                    "name": "Githyanki"
+                    "name": "Githyanki",
+                    "caption": "Left to Right: Githyanki Dracomancer, Githyanki Knight, and Githyanki Warrior",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/githyanki.webp"
                 },
                 "Githzerai": {
-                    "name": "Githzerai"
+                    "name": "Githzerai",
+                    "caption": "Left to Right: Githzerai Zerth, Githzerai Psion, and Githzerai Monk",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/githzerai.webp"
                 },
                 "Glabrezu": {
-                    "name": "Glabrezu"
+                    "name": "Glabrezu",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/glabrezu.webp"
                 },
                 "Gladiator": {
-                    "name": "Gladiator"
+                    "name": "Gladiator",
+                    "caption": "In an undersea arena, the crowd goes wild as a gladiator triumphs over a giant squid",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/gladiator.webp"
                 },
                 "Gnolls": {
-                    "name": "Gnolls"
+                    "name": "Gnolls",
+                    "caption": "Gnoll warriors rampage after a gnoll pack lord, a gnoll fang of Yeenoghu, and a gnoll demoniac.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/gnolls.webp"
                 },
                 "Goblins": {
-                    "name": "Gobliny"
+                    "name": "Gobliny",
+                    "caption": "A goblin boss, a goblin hexer, and a goblin warrior prepare to strike against a bitter foe.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/goblins.webp"
                 },
                 "Gold Dragon Wyrmling": {
-                    "name": "Gold Dragon Wyrmling"
+                    "name": "Gold Dragon Wyrmling",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/gold-dragon-wyrmling.webp"
                 },
                 "Adult Gold Dragon": {
-                    "name": "Adult Gold Dragon"
+                    "name": "Adult Gold Dragon",
+                    "caption": "An adult gold dragon guards the site of a mysterious seal from intruders.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/adult-gold-dragon.webp"
                 },
                 "Ancient Gold Dragon": {
-                    "name": "Ancient Gold Dragon"
+                    "name": "Ancient Gold Dragon",
+                    "caption": "The pure of heart have nothing to fear in the presence of an ancient gold dragon.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ancient-gold-dragon.webp"
                 },
                 "Gorgons": {
-                    "name": "Gorgons"
+                    "name": "Gorgons",
+                    "caption": "A gorgon petrifies victims with its deadly breath, then tramples to pieces.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/gorgons.webp"
                 },
                 "Goristro": {
-                    "name": "Goristro"
+                    "name": "Goristro",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/goristro.webp"
                 },
                 "Gray Ooze": {
-                    "name": "Szary szlam"
+                    "name": "Szary szlam",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/gray-ooze.webp"
                 },
                 "Green Dragon Wyrmling": {
-                    "name": "Green Dragon Wyrmling"
+                    "name": "Green Dragon Wyrmling",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/green-dragon-wyrmling.webp"
                 },
                 "Adult Green Dragon": {
-                    "name": "Adult Green Dragon"
+                    "name": "Adult Green Dragon",
+                    "caption": "An adult green dragon shadows its prey.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/adult-green-dragon.webp"
                 },
                 "Ancient Green Dragon": {
-                    "name": "Ancient Green Dragon"
+                    "name": "Ancient Green Dragon",
+                    "caption": "An ancient green dragon manipulates the fates of its pawns from deep within its forest lair.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ancient-green-dragon.webp"
                 },
                 "Green Hag": {
-                    "name": "Green Hag"
+                    "name": "Green Hag",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/green-hag.webp"
                 },
                 "Grell": {
-                    "name": "Grell"
+                    "name": "Grell",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/grell.webp"
                 },
                 "Gricks": {
-                    "name": "Gricks"
+                    "name": "Gricks",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/gricks.webp"
                 },
                 "Griffon": {
-                    "name": "Griffon"
+                    "name": "Griffon",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/griffon.webp"
                 },
                 "Grimlock": {
-                    "name": "Grimlock"
+                    "name": "Grimlock",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/grimlock.webp"
                 },
                 "Guardian Naga": {
-                    "name": "Guardian Naga"
+                    "name": "Guardian Naga",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/guardian-naga.webp"
                 },
                 "Guards": {
-                    "name": "Strażnicy"
+                    "name": "Strażnicy",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/guards.webp"
                 },
                 "Half Dragon": {
-                    "name": "Half Dragon"
+                    "name": "Half Dragon",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/half-dragon.webp"
                 },
                 "Harpy": {
-                    "name": "Harpy"
+                    "name": "Harpy",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/harpy.webp"
                 },
                 "Hell Hound": {
-                    "name": "Hell Hound"
+                    "name": "Hell Hound",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/hell-hound.webp"
                 },
                 "Helmed Horror": {
-                    "name": "Helmed Horror"
+                    "name": "Helmed Horror",
+                    "caption": "A helmed horror proves immune to a mage's Lightning Bolt spell.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/helmed-horror.webp"
                 },
                 "Hezrou": {
-                    "name": "Hezrou"
+                    "name": "Hezrou",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/hezrou.webp"
                 },
                 "Hill Giant": {
-                    "name": "Gigant wzgórzowy"
+                    "name": "Gigant wzgórzowy",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/hill-giant.webp"
                 },
                 "Hippogriff": {
-                    "name": "Hippogriff"
+                    "name": "Hippogriff",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/hippogriff.webp"
                 },
                 "Hobgoblins": {
-                    "name": "Hobgoblins"
+                    "name": "Hobgoblins",
+                    "caption": "A hobgoblin warlord oversees a hobgoblin captain and hobgoblin warriors marching to war.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/hobgoblins.webp"
                 },
                 "Homunculus": {
-                    "name": "Homunculus"
+                    "name": "Homunculus",
+                    "caption": "Homunculus are as varied as the magic-users who create them.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/homunculus.webp"
                 },
                 "Hook Horror": {
-                    "name": "Hook Horror"
+                    "name": "Hook Horror",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/hook-horror.webp"
                 },
                 "Horned Devil": {
-                    "name": "Horned Devil"
+                    "name": "Horned Devil",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/horned-devil.webp"
                 },
                 "Hydra": {
-                    "name": "Hydra"
+                    "name": "Hydra",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/hydra.webp"
                 },
                 "Ice Devil": {
-                    "name": "Ice Devil"
+                    "name": "Ice Devil",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ice-devil.webp"
                 },
                 "Imp": {
-                    "name": "Imp"
+                    "name": "Imp",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/imp.webp"
                 },
                 "Incubus": {
-                    "name": "Incubus"
+                    "name": "Incubus",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/incubus.webp"
                 },
                 "Intellect Devourer": {
-                    "name": "Intellect Devourer"
+                    "name": "Intellect Devourer",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/intellect-devourer.webp"
                 },
                 "Invisible Stalker": {
-                    "name": "Invisible Stalker"
+                    "name": "Invisible Stalker",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/invisible-stalker.webp"
                 },
                 "Iron Golem": {
-                    "name": "Iron Golem"
+                    "name": "Iron Golem",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/iron-golem.webp"
                 },
                 "Jackalwere": {
-                    "name": "Jackalwere"
+                    "name": "Jackalwere",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/jackalwere.webp"
                 },
                 "Kenku": {
-                    "name": "Kenku"
+                    "name": "Kenku",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/kenku.webp"
                 },
                 "Knights": {
-                    "name": "Rycerze"
+                    "name": "Rycerze",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/knights.webp"
                 },
                 "Knights Borderless": {
-                    "name": "Knights Borderless"
+                    "name": "Knights Borderless",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/knights-borderless.webp"
                 },
                 "Kobolds": {
-                    "name": "Koboldy"
+                    "name": "Koboldy",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/kobolds.webp"
                 },
                 "Kraken": {
-                    "name": "Kraken"
+                    "name": "Kraken",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/kraken.webp"
                 },
                 "Kuo Toa Archpriest": {
-                    "name": "Kuo Toa Archpriest"
+                    "name": "Kuo Toa Archpriest",
+                    "caption": "An adventurer stumbles on a kuo-toa archpriest and servants of its strange gods.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/kuo-toa-archpriest.webp"
                 },
                 "Kuo Toa": {
-                    "name": "Kuo Toa"
+                    "name": "Kuo Toa",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/kuo-toa.webp"
                 },
                 "Kuo Toa Whip": {
-                    "name": "Kuo Toa Whip"
+                    "name": "Kuo Toa Whip",
+                    "caption": "A kuo-toa whip and kuo-toa monitor lead a midnight raid.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/kuo-toa-whip.webp"
                 },
                 "Lamia": {
-                    "name": "Lamia"
+                    "name": "Lamia",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/lamia.webp"
                 },
                 "Larvae": {
-                    "name": "Larvae"
+                    "name": "Larvae",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/larvae.webp"
                 },
                 "Lemure": {
-                    "name": "Lemure"
+                    "name": "Lemure",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/lemure.webp"
                 },
                 "Lich": {
-                    "name": "Lich"
+                    "name": "Lich",
+                    "caption": "An ancient lich and her ghast gravecaller attendants wrap reality with forbidden magic.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/lich.webp"
                 },
                 "Lizardfolk": {
-                    "name": "Lizardfolk"
+                    "name": "Lizardfolk",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/lizardfolk.webp"
                 },
                 "Mages": {
-                    "name": "Magowie"
+                    "name": "Magowie",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/mages.webp"
                 },
                 "Magmin": {
-                    "name": "Magmin"
+                    "name": "Magmin",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/magmin.webp"
                 },
                 "Manes": {
-                    "name": "Manes"
+                    "name": "Manes",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/manes.webp"
                 },
                 "Manticore": {
-                    "name": "Manticore"
+                    "name": "Manticore",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/manticore.webp"
                 },
                 "Marid": {
-                    "name": "Marid"
+                    "name": "Marid",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/marid.webp"
                 },
                 "Marilith": {
-                    "name": "Marilith"
+                    "name": "Marilith",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/marilith.webp"
                 },
                 "Medusa": {
-                    "name": "Medusa"
+                    "name": "Medusa",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/medusa.webp"
                 },
                 "Mephits": {
-                    "name": "Mephits"
+                    "name": "Mephits",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/mephits.webp"
                 },
                 "Smoke Mephit": {
-                    "name": "Smoke Mephit"
+                    "name": "Smoke Mephit",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/smoke-mephit.webp"
                 },
                 "Merfolk": {
-                    "name": "Merfolk"
+                    "name": "Merfolk",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/merfolk.webp"
                 },
                 "Merrow": {
-                    "name": "Merrow"
+                    "name": "Merrow",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/merrow.webp"
                 },
                 "Mezzoloth": {
-                    "name": "Mezzoloth"
+                    "name": "Mezzoloth",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/mezzoloth.webp"
                 },
                 "Mimic": {
-                    "name": "Mimik"
+                    "name": "Mimik",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/mimic.webp"
                 },
                 "Mind Flayers": {
-                    "name": "Mind Flayers"
+                    "name": "Mind Flayers",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/mind-flayers.webp"
                 },
                 "Minotaur Of Baphomet": {
-                    "name": "Minotaur Of Baphomet"
+                    "name": "Minotaur Of Baphomet",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/minotaur-of-baphomet.webp"
                 },
                 "Modrons": {
-                    "name": "Modrons"
+                    "name": "Modrons",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/modrons.webp"
                 },
                 "Duodrone": {
-                    "name": "Duodrone"
+                    "name": "Duodrone",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/duodrone.webp"
                 },
                 "Tridrone": {
-                    "name": "Tridrone"
+                    "name": "Tridrone",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/tridrone.webp"
                 },
                 "Quadrone": {
-                    "name": "Quadrone"
+                    "name": "Quadrone",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/quadrone.webp"
                 },
                 "Pentadrone": {
-                    "name": "Pentadrone"
+                    "name": "Pentadrone",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/pentadrone.webp"
                 },
                 "Mummies": {
-                    "name": "Mummies"
+                    "name": "Mummies",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/mummies.webp"
                 },
                 "Mummy Lord": {
-                    "name": "Mummy Lord"
+                    "name": "Mummy Lord",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/mummy-lord.webp"
                 },
                 "Myconids": {
-                    "name": "Myconids"
+                    "name": "Myconids",
+                    "caption": "Myconids tend to the fungi in their hidden gardens, whether mysterious mushrooms or their own community members.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/myconids.webp"
                 },
                 "Nalfeshnee": {
-                    "name": "Nalfeshnee"
+                    "name": "Nalfeshnee",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/nalfeshnee.webp"
                 },
                 "Night Hag": {
-                    "name": "Night Hag"
+                    "name": "Night Hag",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/night-hag.webp"
                 },
                 "Nightmare": {
-                    "name": "Nightmare"
+                    "name": "Nightmare",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/nightmare.webp"
                 },
                 "Nobles": {
-                    "name": "Szlachta"
+                    "name": "Szlachta",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/nobles.webp"
                 },
                 "Nothic": {
-                    "name": "Nothic"
+                    "name": "Nothic",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/nothic.webp"
                 },
                 "Nycaloth": {
-                    "name": "Nycaloth"
+                    "name": "Nycaloth",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/nycaloth.webp"
                 },
                 "Ochre Jelly": {
-                    "name": "Ochre Jelly"
+                    "name": "Ochre Jelly",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ochre-jelly.webp"
                 },
                 "Ogres": {
-                    "name": "Ogry"
+                    "name": "Ogry",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ogres.webp"
                 },
                 "Oni": {
-                    "name": "Oni"
+                    "name": "Oni",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/oni.webp"
                 },
                 "Otyugh": {
-                    "name": "Otyugh"
+                    "name": "Otyugh",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/otyugh.webp"
                 },
                 "Owlbears": {
-                    "name": "Sowodźwiedzie"
+                    "name": "Sowodźwiedzie",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/owlbears.webp"
                 },
                 "Pegasus": {
-                    "name": "Pegasus"
+                    "name": "Pegasus",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/pegasus.webp"
                 },
                 "Performers": {
-                    "name": "Performers"
+                    "name": "Performers",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/performers.webp"
                 },
                 "Peryton": {
-                    "name": "Peryton"
+                    "name": "Peryton",
+                    "caption": "A peryton's humanoid-shaped shadow suggests the monster's supernatural origin.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/peryton.webp"
                 },
                 "Phase Spider": {
-                    "name": "Pająk fazowy"
+                    "name": "Pająk fazowy",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/phase-spider.webp"
                 },
                 "Piercer": {
-                    "name": "Przeszywacz"
+                    "name": "Przeszywacz",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/piercer.webp"
                 },
                 "Pirates": {
-                    "name": "Piraci"
+                    "name": "Piraci",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/pirates.webp"
                 },
                 "Pit Fiend": {
-                    "name": "Pit Fiend"
+                    "name": "Pit Fiend",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/pit-fiend.webp"
                 },
                 "Pixies": {
-                    "name": "Pixies"
+                    "name": "Pixies",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/pixies.webp"
                 },
                 "Planetar": {
-                    "name": "Planetar"
+                    "name": "Planetar",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/planetar.webp"
                 },
                 "Poltergeist": {
-                    "name": "Poltergeist"
+                    "name": "Poltergeist",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/poltergeist.webp"
                 },
                 "Priests": {
-                    "name": "Priests"
+                    "name": "Priests",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/priests.webp"
                 },
                 "Pseudodragon": {
-                    "name": "Pseudodragon"
+                    "name": "Pseudodragon",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/pseudodragon.webp"
                 },
                 "Purple Worm": {
-                    "name": "Purple Worm"
+                    "name": "Purple Worm",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/purple-worm.webp"
                 },
                 "Quaggoths": {
-                    "name": "Quaggoths"
+                    "name": "Quaggoths",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/quaggoths.webp"
                 },
                 "Quasit": {
-                    "name": "Quasit"
+                    "name": "Quasit",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/quasit.webp"
                 },
                 "Rakshasa": {
-                    "name": "Rakshasa"
+                    "name": "Rakshasa",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/rakshasa.webp"
                 },
                 "Red Dragon Wyrmling": {
-                    "name": "Red Dragon Wyrmling"
+                    "name": "Red Dragon Wyrmling",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/red-dragon-wyrmling.webp"
                 },
                 "Adult Red Dragon": {
-                    "name": "Adult Red Dragon"
+                    "name": "Adult Red Dragon",
+                    "caption": "An adult red dragon unleashes its fury, reducing a city to ruin.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/adult-red-dragon.webp"
                 },
                 "Ancient Red Dragon": {
-                    "name": "Ancient Red Dragon"
+                    "name": "Ancient Red Dragon",
+                    "caption": "Even the bravest souls flee the onslaught of an ancient red dragon.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ancient-red-dragon.webp"
                 },
                 "Remorhazes": {
-                    "name": "Remorhazes"
+                    "name": "Remorhazes",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/remorhazes.webp"
                 },
                 "Revenant and Graveyard Revenant": {
-                    "name": "Revenant and Graveyard Revenant"
+                    "name": "Revenant and Graveyard Revenant",
+                    "caption": "Revenant Followed by a Graveyard Revenant.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/revenant.webp"
                 },
                 "Haunting Revenant": {
-                    "name": "Haunting Revenant"
+                    "name": "Haunting Revenant",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/haunting-revenant.webp"
                 },
                 "Roc": {
-                    "name": "Roc"
+                    "name": "Roc",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/roc.webp"
                 },
                 "Roper": {
-                    "name": "Roper"
+                    "name": "Roper",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/roper.webp"
                 },
                 "Rust Monster": {
-                    "name": "Rust Monster"
+                    "name": "Rust Monster",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/rust-monster.webp"
                 },
                 "Sahuagin": {
-                    "name": "Sahuagin"
+                    "name": "Sahuagin",
+                    "caption": "A sahuagin baron and sahuagin priest lead sahuagin warriors on an aquatic raid.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/sahuagin.webp"
                 },
                 "Salamanders": {
-                    "name": "Salamanders"
+                    "name": "Salamanders",
+                    "caption": "A salamander inferno master drives its salamander and fire snake minions to burn all they encounter.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/salamanders.webp"
                 },
                 "Satyr": {
-                    "name": "Satyr"
+                    "name": "Satyr",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/satyr.webp"
                 },
                 "Scarecrow": {
-                    "name": "Scarecrow"
+                    "name": "Scarecrow",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/scarecrow.webp"
                 },
                 "Scouts": {
-                    "name": "Scouts"
+                    "name": "Scouts",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/scouts.webp"
                 },
                 "Sea Hag": {
-                    "name": "Sea Hag"
+                    "name": "Sea Hag",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/sea-hag.webp"
                 },
                 "Shadow": {
-                    "name": "Shadow"
+                    "name": "Shadow",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/shadow.webp"
                 },
                 "Shadow Demon": {
-                    "name": "Shadow Demon"
+                    "name": "Shadow Demon",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/shadow-demon.webp"
                 },
                 "Shadow Dragons": {
-                    "name": "Shadow Dragons"
+                    "name": "Shadow Dragons",
+                    "caption": "A shadow dragon lurks among haunted ruins, attended by shadows raised by its life-draining breath.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/shadow-dragons.webp"
                 },
                 "Shambling Mound": {
-                    "name": "Shambling Mound"
+                    "name": "Shambling Mound",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/shambling-mound.webp"
                 },
                 "Shield Guardian": {
-                    "name": "Shield Guardian"
+                    "name": "Shield Guardian",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/shield-guardian.webp"
                 },
                 "Silver Dragon Wyrmling": {
-                    "name": "Silver Dragon Wyrmling"
+                    "name": "Silver Dragon Wyrmling",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/silver-dragon-wyrmling.webp"
                 },
                 "Adult Silver Dragon": {
-                    "name": "Adult Silver Dragon"
+                    "name": "Adult Silver Dragon",
+                    "caption": "An adult silver dragon relaxes in camp alongside its fellow adventurers.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/adult-silver-dragon.webp"
                 },
                 "Ancient Silver Dragon": {
-                    "name": "Ancient Silver Dragon"
+                    "name": "Ancient Silver Dragon",
+                    "caption": "The sight of an ancient silver dragon can panic despicable evil-doers.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ancient-silver-dragon.webp"
                 },
                 "Skeletons": {
-                    "name": "Szkielety"
+                    "name": "Szkielety",
+                    "caption": "Adventurers face an onslaught from all manner of skeletons.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/skeletons.webp"
                 },
                 "Slaadi": {
-                    "name": "Slaadi"
+                    "name": "Slaadi",
+                    "caption": "A red slaad and blue slaad, along with several slaad tadpole, burst from a portal on the plane of Limbo.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/slaadi.webp"
                 },
                 "Death Slaad": {
-                    "name": "Death Slaad"
+                    "name": "Death Slaad",
+                    "caption": "A gray slaad, a death slaad, and a green slaad spread chaos in their wake.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/death-slaad.webp"
                 },
                 "Solar": {
-                    "name": "Solar"
+                    "name": "Solar",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/solar.webp"
                 },
                 "Spectator": {
-                    "name": "Spectator"
+                    "name": "Spectator",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/spectator.webp"
                 },
                 "Specter": {
-                    "name": "Specter"
+                    "name": "Specter",
+                    "caption": "Specters are loath to attack a cleric surrounded by divine light.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/specter.webp"
                 },
                 "Sphinxes": {
-                    "name": "Sphinxes"
+                    "name": "Sphinxes",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/sphinxes.webp"
                 },
                 "Sphinx in Shadow": {
-                    "name": "Sphinx in Shadow"
+                    "name": "Sphinx in Shadow",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/sphinx-of-secrets.webp"
                 },
                 "Sphinx in Air": {
-                    "name": "Sphinx in Air"
+                    "name": "Sphinx in Air",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/sphinx-of-lore.webp"
                 },
                 "Sphinx Roaring": {
-                    "name": "Sphinx Roaring"
+                    "name": "Sphinx Roaring",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/sphinx-of-valor.webp"
                 },
                 "Spies": {
-                    "name": "Spies"
+                    "name": "Spies",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/spies.webp"
                 },
                 "Spined Devil": {
-                    "name": "Spined Devil"
+                    "name": "Spined Devil",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/spined-devil.webp"
                 },
                 "Spirit Naga": {
-                    "name": "Spirit Naga"
+                    "name": "Spirit Naga",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/spirit-naga.webp"
                 },
                 "Sprite": {
-                    "name": "Sprite"
+                    "name": "Sprite",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/sprite.webp"
                 },
                 "Stirges": {
-                    "name": "Stirges"
+                    "name": "Stirges",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/stirges.webp"
                 },
                 "Stone Giant": {
-                    "name": "Gigant kamienny"
+                    "name": "Gigant kamienny",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/stone-giant.webp"
                 },
                 "Stone Golem": {
-                    "name": "Stone Golem"
+                    "name": "Stone Golem",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/stone-golem.webp"
                 },
                 "Storm Giant": {
-                    "name": "Gigant burzowy"
+                    "name": "Gigant burzowy",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/storm-giant.webp"
                 },
                 "Succubus": {
-                    "name": "Succubus"
+                    "name": "Succubus",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/succubus-incubus.webp"
                 },
                 "Tarrasque": {
-                    "name": "Tarrasque"
+                    "name": "Tarrasque",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/tarrasque.webp"
                 },
                 "Thri Kreen": {
-                    "name": "Thri Kreen"
+                    "name": "Thri Kreen",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/thri-kreen.webp"
                 },
                 "Toughs": {
-                    "name": "Toughs"
+                    "name": "Toughs",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/toughs.webp"
                 },
                 "Treant": {
-                    "name": "Treant"
+                    "name": "Treant",
+                    "caption": "A treant evicts adventurers from a city it has reclaimed for nature.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/treant.webp"
                 },
                 "Troglodyte": {
-                    "name": "Troglodyte"
+                    "name": "Troglodyte",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/troglodyte.webp"
                 },
                 "Troll": {
-                    "name": "Troll"
+                    "name": "Troll",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/troll.webp"
                 },
                 "Ultroloth": {
-                    "name": "Ultroloth"
+                    "name": "Ultroloth",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ultroloth.webp"
                 },
                 "Umber Hulk": {
-                    "name": "Umber Hulk"
+                    "name": "Umber Hulk",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/umber-hulk.webp"
                 },
                 "Unicorn": {
-                    "name": "Unicorn"
+                    "name": "Unicorn",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/unicorn.webp"
                 },
                 "Vampires": {
-                    "name": "Vampires"
+                    "name": "Vampires",
+                    "caption": "A vampire familiar provides a meal for a vampire spawn.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/vampires.webp"
                 },
                 "Vampire Nightbringer": {
-                    "name": "Vampire Nightbringer"
+                    "name": "Vampire Nightbringer",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/vampire-spawn.webp"
                 },
                 "Vampires Prepare for a midnight meal.": {
-                    "name": "Vampires Prepare for a midnight meal."
+                    "name": "Vampires Prepare for a midnight meal.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/vampires-prepare.webp"
                 },
                 "Vampire Umbral Lord": {
-                    "name": "Vampire Umbral Lord"
+                    "name": "Vampire Umbral Lord",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/vampire-umbral-lord.webp"
                 },
                 "Vrock": {
-                    "name": "Vrock"
+                    "name": "Vrock",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/vrock.webp"
                 },
                 "Warrior Commander": {
-                    "name": "Warrior Commander"
+                    "name": "Warrior Commander",
+                    "caption": "An aasimar commander leads warriors charging into battle.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/warrior-commander.webp"
                 },
                 "Water Elemental": {
-                    "name": "Żywiołak wody"
+                    "name": "Żywiołak wody",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/water-elemental.webp"
                 },
                 "Water Weird": {
-                    "name": "Water Weird"
+                    "name": "Water Weird",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/water-weird.webp"
                 },
                 "Werebear": {
-                    "name": "Werebear"
+                    "name": "Werebear",
+                    "caption": "A werebear chases a wereboar and wererat out of its territory.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/werebear.webp"
                 },
                 "Weretiger": {
-                    "name": "Weretiger"
+                    "name": "Weretiger",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/weretiger.webp"
                 },
                 "Werewolf": {
-                    "name": "Wilkołak"
+                    "name": "Wilkołak",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/werewolf.webp"
                 },
                 "White Dragon Wyrmling": {
-                    "name": "White Dragon Wyrmling"
+                    "name": "White Dragon Wyrmling",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/white-dragon-wyrmling.webp"
                 },
                 "Adult White Dragon": {
-                    "name": "Adult White Dragon"
+                    "name": "Adult White Dragon",
+                    "caption": "An adult white dragon views all creatures in its territory as prey.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/adult-white-dragon.webp"
                 },
                 "Ancient White Dragon": {
-                    "name": "Ancient White Dragon"
+                    "name": "Ancient White Dragon",
+                    "caption": "An ancient white dragon freezes a ship full of trespassers before they set foot in its territory.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ancient-white-dragon.webp"
                 },
                 "Wight": {
-                    "name": "Wight"
+                    "name": "Wight",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/wight.webp"
                 },
                 "Will O' Wisp": {
-                    "name": "Will O' Wisp"
+                    "name": "Will O' Wisp",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/will-o-wisp.webp"
                 },
                 "Winter Wolf": {
-                    "name": "Winter Wolf"
+                    "name": "Winter Wolf",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/winter-wolf.webp"
                 },
                 "Worg": {
-                    "name": "Worg"
+                    "name": "Worg",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/worg.webp"
                 },
                 "Wraith": {
-                    "name": "Wraith"
+                    "name": "Wraith",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/wraith.webp"
                 },
                 "Wyvern": {
-                    "name": "Wyvern"
+                    "name": "Wyvern",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/wyvern.webp"
                 },
                 "Xorn": {
-                    "name": "Xorn"
+                    "name": "Xorn",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/xorn.webp"
                 },
                 "Yeti": {
-                    "name": "Yeti"
+                    "name": "Yeti",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/yeti.webp"
                 },
                 "Yochlol": {
-                    "name": "Yochlol"
+                    "name": "Yochlol",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/yochlol.webp"
                 },
                 "Yuan-Ti Infiltrators": {
-                    "name": "Yuan-Ti Infiltrators"
+                    "name": "Yuan-Ti Infiltrators",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/yuan-ti.webp"
                 },
                 "Yuan Ti Malison Types": {
-                    "name": "Yuan Ti Malison Types"
+                    "name": "Yuan Ti Malison Types",
+                    "caption": "Yuan-ti Malison Type 2 (Left) and Type 1 (Right)",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/yuan-ti-malison-type-1.webp"
                 },
                 "Yuan Ti Malison Type 3": {
-                    "name": "Yuan Ti Malison Type 3"
+                    "name": "Yuan Ti Malison Type 3",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/yuan-ti-malison-type-3.webp"
                 },
                 "Yuan Ti Abomination": {
-                    "name": "Yuan Ti Abomination"
+                    "name": "Yuan Ti Abomination",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/yuan-ti-abomination.webp"
                 },
                 "Zombies": {
-                    "name": "Zombies"
+                    "name": "Zombies",
+                    "caption": "A tiefling tries to hide in the midst of a zombie horde.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/zombies.webp"
                 },
                 "Ankylosaurus": {
-                    "name": "Ankylosaurus"
+                    "name": "Ankylosaurus",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/ankylosaurus.webp"
                 },
                 "Archelon": {
-                    "name": "Archelon"
+                    "name": "Archelon",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/archelon.webp"
                 },
                 "Druid With Animals": {
-                    "name": "Druid With Animals"
+                    "name": "Druid With Animals",
+                    "caption": "A druid calls on animals of the hills and mountains to aid her cause.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/druid-with-animals.webp"
                 },
                 "Camel": {
-                    "name": "Wielbłąd"
+                    "name": "Wielbłąd",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/camel.webp"
                 },
                 "Constrictor Snake": {
-                    "name": "Constrictor Snake"
+                    "name": "Constrictor Snake",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/constrictor-snake.webp"
                 },
                 "Dire Wolf": {
-                    "name": "Dire Wolf"
+                    "name": "Dire Wolf",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/dire-wolf.webp"
                 },
                 "Elephant": {
-                    "name": "Słoń"
+                    "name": "Słoń",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/elephant.webp"
                 },
                 "Giant Ape Giant Bats": {
-                    "name": "Giant Ape Giant Bats"
+                    "name": "Giant Ape Giant Bats",
+                    "caption": "A giant ape defends its territory from giant bats.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/giant-ape-giant-bats.webp"
                 },
                 "Giant Boar": {
-                    "name": "Giant Boar"
+                    "name": "Giant Boar",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/giant-boar.webp"
                 },
                 "Giant Crab": {
-                    "name": "Giant Crab"
+                    "name": "Olbrzymi krab",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/giant-crab.webp"
                 },
                 "Giant Goat": {
-                    "name": "Giant Goat"
+                    "name": "Giant Goat",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/giant-goat.webp"
                 },
                 "Giant Lizard": {
-                    "name": "Giant Lizard"
+                    "name": "Giant Lizard",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/giant-lizard.webp"
                 },
                 "Giant Squid": {
-                    "name": "Giant Squid"
+                    "name": "Giant Squid",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/giant-squid.webp"
                 },
                 "Giant Weasel": {
-                    "name": "Olbrzymia łasica"
+                    "name": "Olbrzymia łasica",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/giant-weasel.webp"
                 },
                 "Giant Wasps": {
-                    "name": "Giant Wasps"
+                    "name": "Giant Wasps",
+                    "caption": "A gnome rogue distracts a hive of giant wasps while Sheila the thief sneaks by.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/giant-wasps.webp"
                 },
                 "Giant Wolf Spider": {
-                    "name": "Olbrzymi pogoniec (pająk)"
+                    "name": "Olbrzymi pogoniec (pająk)",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/giant-wolf-spider.webp"
                 },
                 "Hawk": {
-                    "name": "Jastrząb"
+                    "name": "Jastrząb",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/hawk.webp"
                 },
                 "Aquatic Animals": {
-                    "name": "Aquatic Animals"
+                    "name": "Aquatic Animals",
+                    "caption": "Aquatic animals swim alongside a druid exploring the sea.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/aquatic-animals.webp"
                 },
                 "Lion": {
-                    "name": "Lew"
+                    "name": "Lew",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/lion.webp"
                 },
                 "Octopus": {
-                    "name": "Ośmiornica"
+                    "name": "Ośmiornica",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/octopus.webp"
                 },
                 "Owl": {
-                    "name": "Sowa"
+                    "name": "Sowa",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/owl.webp"
                 },
                 "Rats": {
-                    "name": "Rats"
+                    "name": "Rats",
+                    "caption": "An adventurer underestimates the extent of a tavern's giant rat infestation.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/rats.webp"
                 },
                 "Rhinoceros": {
-                    "name": "Nosorożec"
+                    "name": "Nosorożec",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/rhinoceros.webp"
                 },
                 "Scorpion": {
-                    "name": "Skorpion"
+                    "name": "Skorpion",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/scorpion.webp"
                 },
                 "Swarm Of Ravens": {
-                    "name": "Swarm Of Ravens"
+                    "name": "Swarm Of Ravens",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/swarm-of-ravens.webp"
                 },
                 "Tyrannosaurus Rex": {
-                    "name": "Tyrannosaurus Rex"
+                    "name": "Tyrannosaurus Rex",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/tyrannosaurus-rex.webp"
                 },
                 "Rain Forest Summons": {
-                    "name": "Rain Forest Summons"
+                    "name": "Rain Forest Summons",
+                    "caption": "Inhabitants of the rain forest answer a druid's summons.",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/rain-forest-summons.webp"
                 },
                 "Arch-hag": {
-                    "name": "Arch-hag"
+                    "name": "Arch-hag",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/arch-hag.webp"
                 },
                 "Abominable Yeti": {
-                    "name": "Abominable Yeti"
+                    "name": "Abominable Yeti",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/abominable-yeti.webp"
                 },
                 "Reading Book in Forest": {
-                    "name": "Reading Book in Forest"
+                    "name": "Reading Book in Forest",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/reading-book-in-forest.webp"
                 },
                 "Statblock Overview": {
-                    "name": "Statblock Overview"
+                    "name": "Statblock Overview",
+                    "src": "modules/dnd-monster-manual/assets/journal-art/statblock-overview.webp"
                 }
             }
         },
         "Monster Manual Changelog": {
             "name": "Monster Manual Changelog",
+            "chapterTitle": "Changelog",
             "pages": {
                 "1.0.0": {
                     "name": "1.0.0",
