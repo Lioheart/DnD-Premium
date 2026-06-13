@@ -683,7 +683,7 @@
                     "name": "Wizja",
                     "description": "<p>Możesz widzieć i słyszeć istotę, którą wybierzesz, pod warunkiem że znajduje się na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, który jest modyfikowany (patrz poniższe tabele) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przeciwko czemu wykonuje rzut, odczuwa jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Drugoręczna (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Pierwszoręczna (spotkałeś cel)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia</td><td>−10</td></tr></tbody></table><p>W przypadku udanego rzutu obronnego cel nie jest dotknięty efektem czaru i nie możesz ponownie użyć tego czaru na nim przez 24 godziny.</p><p>W przypadku nieudanego rzutu czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Możesz widzieć i słyszeć przez sensor tak, jakbyś tam był. Sensor porusza się wraz z celem, pozostając w odległości 10 stóp od niego przez cały czas działania czaru. Jeśli coś może zobaczyć sensor, pojawia się on jako świetlista kula wielkości pięści.</p><p>Zamiast wybrać istotę, możesz wybrać miejsce, które widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje tam nieruchomy.</p>",
                     "materials": "fokus warty 1 000+ SZ, taki jak kryształowa kula, lustro lub misa wypełniona wodą",
-                    "targetAffects": "creature on same plane of existence or a location you have seen",
+                    "targetAffects": "istota na tej samej sferze egzystencji lub lokacji która widziałeś",
                     "activities": {
                         "Secondhand and Picture": {
                             "name": "Druga ręka i obraz"
@@ -913,7 +913,7 @@
                     "name": "Kontrola pogody",
                     "description": "<p>Przejmujesz kontrolę nad pogodą w promieniu 5 mil (8km) od siebie na czas trwania czaru. Musisz znajdować się na zewnątrz, aby rzucić ten czar, a kończy się on wcześniej, jeśli wejdziesz do środka.</p><p>Gdy rzucasz czar, zmieniasz aktualne warunki pogodowe, które ustala MG. Możesz zmienić opady, temperaturę i wiatr. Nowe warunki zaczynają działać po 1k4 × 10 minutach. Gdy już się pojawią, możesz ponownie zmienić warunki. Gdy czar się kończy, pogoda stopniowo wraca do normy.</p><p>Gdy zmieniasz warunki pogodowe, znajdź aktualny stan w poniższych tabelach i zmień jego stopień o jeden w górę lub w dół. Zmieniając wiatr, możesz zmienić jego kierunek.</p><details><summary><strong>Opady</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Bezchmurne</td></tr><tr><td>2</td><td>Lekkie zachmurzenie</td></tr><tr><td>3</td><td>Zachmurzenie lub mgła przy ziemi</td></tr><tr><td>4</td><td>Deszcz, grad lub śnieg</td></tr><tr><td>5</td><td>Ulewny deszcz, intensywny grad lub zamieć</td></tr></tbody></table></details><details><summary><strong>Temperatura</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Fala upałów</td></tr><tr><td>2</td><td>Gorąco</td></tr><tr><td>3</td><td>Ciepło</td></tr><tr><td>4</td><td>Chłodno</td></tr><tr><td>5</td><td>Zimno</td></tr><tr><td>6</td><td>Mróz</td></tr></tbody></table></details><details><summary><strong>Wiatr</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Spokój</td></tr><tr><td>2</td><td>Umiarkowany wiatr</td></tr><tr><td>3</td><td>Silny wiatr</td></tr><tr><td>4</td><td>Sztorm</td></tr><tr><td>5</td><td>Burza</td></tr></tbody></table></details>",
                     "materials": "płonące kadzidło",
-                    "targetAffects": "weather within 5 miles",
+                    "targetAffects": "pogoda w promieniu 5 mil",
                     "activities": {
                         "Cast and Control": {
                             "name": "Rzuć i kontroluj",
@@ -2185,7 +2185,7 @@
                     "materials": "jeden czarny onyks wart 150+ SZ za każde ciało",
                     "activation": "tylko w nocy",
                     "activationCondition": "tylko w nocy",
-                    "targetAffects": "corpse of Medium or Small Humanoid or previously created undead",
+                    "targetAffects": "zwłoki Średniego lub Małego Humanoida albo wcześniej stworzonego nieumarłego",
                     "activities": {
                         "Animate Corpses": {
                             "name": "Animowanie zwłok"
@@ -2362,7 +2362,7 @@
                     "name": "Wizja",
                     "description": "<p>Możesz widzieć i słyszeć istotę, którą wybierzesz, pod warunkiem że znajduje się na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, który jest modyfikowany (patrz poniższe tabele) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przeciwko czemu wykonuje rzut, odczuwa jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Drugoręczna (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Pierwszoręczna (spotkałeś cel)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia</td><td>−10</td></tr></tbody></table><p>W przypadku udanego rzutu obronnego cel nie jest dotknięty efektem czaru i nie możesz ponownie użyć tego czaru na nim przez 24 godziny.</p><p>W przypadku nieudanego rzutu czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Możesz widzieć i słyszeć przez sensor tak, jakbyś tam był. Sensor porusza się wraz z celem, pozostając w odległości 10 stóp od niego przez cały czas działania czaru. Jeśli coś może zobaczyć sensor, pojawia się on jako świetlista kula wielkości pięści.</p><p>Zamiast wybrać istotę, możesz wybrać miejsce, które widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje tam nieruchomy.</p>",
                     "materials": "fokus warty 1 000+ SZ, taki jak kryształowa kula, lustro lub misa wypełniona wodą",
-                    "targetAffects": "creature on same plane of existence or a location you have seen",
+                    "targetAffects": "istota na tej samej sferze egzystencji lub lokacji która widziałeś",
                     "activities": {
                         "Secondhand and Picture": {
                             "name": "Druga ręka i obraz"
@@ -2597,7 +2597,7 @@
                     "name": "Kontrola pogody",
                     "description": "<p>Przejmujesz kontrolę nad pogodą w promieniu 5 mil (8km) od siebie na czas trwania czaru. Musisz znajdować się na zewnątrz, aby rzucić ten czar, a kończy się on wcześniej, jeśli wejdziesz do środka.</p><p>Gdy rzucasz czar, zmieniasz aktualne warunki pogodowe, które ustala MG. Możesz zmienić opady, temperaturę i wiatr. Nowe warunki zaczynają działać po 1k4 × 10 minutach. Gdy już się pojawią, możesz ponownie zmienić warunki. Gdy czar się kończy, pogoda stopniowo wraca do normy.</p><p>Gdy zmieniasz warunki pogodowe, znajdź aktualny stan w poniższych tabelach i zmień jego stopień o jeden w górę lub w dół. Zmieniając wiatr, możesz zmienić jego kierunek.</p><details><summary><strong>Opady</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Bezchmurne</td></tr><tr><td>2</td><td>Lekkie zachmurzenie</td></tr><tr><td>3</td><td>Zachmurzenie lub mgła przy ziemi</td></tr><tr><td>4</td><td>Deszcz, grad lub śnieg</td></tr><tr><td>5</td><td>Ulewny deszcz, intensywny grad lub zamieć</td></tr></tbody></table></details><details><summary><strong>Temperatura</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Fala upałów</td></tr><tr><td>2</td><td>Gorąco</td></tr><tr><td>3</td><td>Ciepło</td></tr><tr><td>4</td><td>Chłodno</td></tr><tr><td>5</td><td>Zimno</td></tr><tr><td>6</td><td>Mróz</td></tr></tbody></table></details><details><summary><strong>Wiatr</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Spokój</td></tr><tr><td>2</td><td>Umiarkowany wiatr</td></tr><tr><td>3</td><td>Silny wiatr</td></tr><tr><td>4</td><td>Sztorm</td></tr><tr><td>5</td><td>Burza</td></tr></tbody></table></details>",
                     "materials": "płonące kadzidło",
-                    "targetAffects": "weather within 5 miles",
+                    "targetAffects": "pogoda w promieniu 5 mil",
                     "activities": {
                         "Cast and Control": {
                             "name": "Rzuć i kontroluj",
@@ -2839,7 +2839,7 @@
                     "name": "Wizja",
                     "description": "<p>Możesz widzieć i słyszeć istotę, którą wybierzesz, pod warunkiem że znajduje się na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, który jest modyfikowany (patrz poniższe tabele) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przeciwko czemu wykonuje rzut, odczuwa jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Drugoręczna (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Pierwszoręczna (spotkałeś cel)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia</td><td>−10</td></tr></tbody></table><p>W przypadku udanego rzutu obronnego cel nie jest dotknięty efektem czaru i nie możesz ponownie użyć tego czaru na nim przez 24 godziny.</p><p>W przypadku nieudanego rzutu czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Możesz widzieć i słyszeć przez sensor tak, jakbyś tam był. Sensor porusza się wraz z celem, pozostając w odległości 10 stóp od niego przez cały czas działania czaru. Jeśli coś może zobaczyć sensor, pojawia się on jako świetlista kula wielkości pięści.</p><p>Zamiast wybrać istotę, możesz wybrać miejsce, które widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje tam nieruchomy.</p>",
                     "materials": "fokus warty 1 000+ SZ, taki jak kryształowa kula, lustro lub misa wypełniona wodą",
-                    "targetAffects": "creature on same plane of existence or a location you have seen",
+                    "targetAffects": "istota na tej samej sferze egzystencji lub lokacji która widziałeś",
                     "activities": {
                         "Secondhand and Picture": {
                             "name": "Druga ręka i obraz"
@@ -3285,7 +3285,7 @@
                 "Word of Recall": {
                     "name": "Słowo powrotu",
                     "description": "<p>Ty i maksymalnie pięć chętnych istot w odległości 5 stóp od ciebie natychmiast teleportujecie się do wcześniej wyznaczonego sanktuarium. Ty i wszelkie istoty, które teleportują się z tobą, pojawiacie się w najbliższej wolnej przestrzeni od miejsca, które wyznaczyłeś, przygotowując swoje sanktuarium (patrz poniżej). Jeśli rzucisz ten czar bez wcześniejszego przygotowania sanktuarium, czar nie działa.</p><p>Musisz wyznaczyć lokalizację, taką jak świątynia, jako sanktuarium, rzucając ten czar w tym miejscu.</p>",
-                    "targetAffects": "you and five other creatures",
+                    "targetAffects": "ty i pięć innych istot",
                     "activities": {
                         "Teleport to Sanctuary": {
                             "name": "Teleportacja do Sanktuarium"
@@ -3569,7 +3569,7 @@
                     "name": "Wizja",
                     "description": "<p>Możesz widzieć i słyszeć istotę, którą wybierzesz, pod warunkiem że znajduje się na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, który jest modyfikowany (patrz poniższe tabele) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przeciwko czemu wykonuje rzut, odczuwa jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Drugoręczna (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Pierwszoręczna (spotkałeś cel)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia</td><td>−10</td></tr></tbody></table><p>W przypadku udanego rzutu obronnego cel nie jest dotknięty efektem czaru i nie możesz ponownie użyć tego czaru na nim przez 24 godziny.</p><p>W przypadku nieudanego rzutu czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Możesz widzieć i słyszeć przez sensor tak, jakbyś tam był. Sensor porusza się wraz z celem, pozostając w odległości 10 stóp od niego przez cały czas działania czaru. Jeśli coś może zobaczyć sensor, pojawia się on jako świetlista kula wielkości pięści.</p><p>Zamiast wybrać istotę, możesz wybrać miejsce, które widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje tam nieruchomy.</p>",
                     "materials": "fokus warty 1 000+ SZ, taki jak kryształowa kula, lustro lub misa wypełniona wodą",
-                    "targetAffects": "creature on same plane of existence or a location you have seen",
+                    "targetAffects": "istota na tej samej sferze egzystencji lub lokacji która widziałeś",
                     "activities": {
                         "Secondhand and Picture": {
                             "name": "Druga ręka i obraz"
@@ -3755,7 +3755,7 @@
                     "name": "Kontrola pogody",
                     "description": "<p>Przejmujesz kontrolę nad pogodą w promieniu 5 mil (8km) od siebie na czas trwania czaru. Musisz znajdować się na zewnątrz, aby rzucić ten czar, a kończy się on wcześniej, jeśli wejdziesz do środka.</p><p>Gdy rzucasz czar, zmieniasz aktualne warunki pogodowe, które ustala MG. Możesz zmienić opady, temperaturę i wiatr. Nowe warunki zaczynają działać po 1k4 × 10 minutach. Gdy już się pojawią, możesz ponownie zmienić warunki. Gdy czar się kończy, pogoda stopniowo wraca do normy.</p><p>Gdy zmieniasz warunki pogodowe, znajdź aktualny stan w poniższych tabelach i zmień jego stopień o jeden w górę lub w dół. Zmieniając wiatr, możesz zmienić jego kierunek.</p><details><summary><strong>Opady</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Bezchmurne</td></tr><tr><td>2</td><td>Lekkie zachmurzenie</td></tr><tr><td>3</td><td>Zachmurzenie lub mgła przy ziemi</td></tr><tr><td>4</td><td>Deszcz, grad lub śnieg</td></tr><tr><td>5</td><td>Ulewny deszcz, intensywny grad lub zamieć</td></tr></tbody></table></details><details><summary><strong>Temperatura</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Fala upałów</td></tr><tr><td>2</td><td>Gorąco</td></tr><tr><td>3</td><td>Ciepło</td></tr><tr><td>4</td><td>Chłodno</td></tr><tr><td>5</td><td>Zimno</td></tr><tr><td>6</td><td>Mróz</td></tr></tbody></table></details><details><summary><strong>Wiatr</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Spokój</td></tr><tr><td>2</td><td>Umiarkowany wiatr</td></tr><tr><td>3</td><td>Silny wiatr</td></tr><tr><td>4</td><td>Sztorm</td></tr><tr><td>5</td><td>Burza</td></tr></tbody></table></details>",
                     "materials": "płonące kadzidło",
-                    "targetAffects": "weather within 5 miles",
+                    "targetAffects": "pogoda w promieniu 5 mil",
                     "activities": {
                         "Cast and Control": {
                             "name": "Rzuć i kontroluj",
@@ -3785,7 +3785,7 @@
                 "Teleport": {
                     "name": "Teleportacja",
                     "description": "<p>Ten czar natychmiastowo transportuje ciebie i do ośmiu istot wyrażających zgodę, które widzisz w zasięgu, lub pojedynczy obiekt, który widzisz w zasięgu, do wybranego celu. Jeśli wybierzesz obiekt, musi on mieć rozmiar Ogromny lub mniejszy, i nie może być trzymany ani niesiony przez niechętną istotę.</p><p>Wybrany cel musi być ci znany i musi znajdować się na tej samej sferze istnienia co ty. Twoja znajomość celu decyduje o tym, czy dotrzesz tam pomyślnie. Mistrz Gry rzuca [[/gmr 1d100]] i sprawdza Wyniki Teleportacji oraz wyjaśnienia poniżej.</p><details><summary><strong>@UUID[Compendium.dnd-players-handbook.tables.RollTable.phbsplTeleportMi]{Wyniki Teleportacji}</strong></summary><table><thead><tr><td>Znajomość</td><td>Wypadek</td><td>Podobny Obszar</td><td>Poza celem</td><td>Na Celu</td></tr></thead><tbody><tr><td>Stały krąg</td><td>—</td><td>—</td><td>—</td><td>01–00</td></tr><tr><td>Połączony obiekt</td><td>—</td><td>—</td><td>—</td><td>01–00</td></tr><tr><td>Bardzo znajomy</td><td>01–05</td><td>06–13</td><td>14–24</td><td>25–00</td></tr><tr><td>Widziany przypadkowo</td><td>01–33</td><td>34–43</td><td>44–53</td><td>54–00</td></tr><tr><td>Widziany raz lub opisany</td><td>01–43</td><td>44–53</td><td>54–73</td><td>74–00</td></tr><tr><td>Fałszywy cel</td><td>01–50</td><td>51–00</td><td>—</td><td>—</td></tr></tbody></table></details><p><strong>Znajomość.</strong> Oto znaczenie terminów w kolumnie Znajomość w tabeli:</p><ul><li>„Stały krąg” oznacza stały krąg teleportacyjny, którego sekwencję sigilii znasz.</li><li>„Połączony obiekt” oznacza, że posiadasz przedmiot wzięty z docelowego miejsca w ciągu ostatnich sześciu miesięcy, taki jak książka z biblioteki maga.</li><li>„Bardzo znajomy” to miejsce, które odwiedzałeś wielokrotnie, miejsce, które dokładnie badałeś, lub miejsce, które możesz zobaczyć podczas rzucania czaru.</li><li>„Widziany przypadkowo” to miejsce, które widziałeś więcej niż raz, ale nie znasz go dobrze.</li><li>„Widziany raz lub opisany” to miejsce, które widziałeś raz, być może przy użyciu magii, lub miejsce, które znasz dzięki opisie kogoś innego, na przykład z mapy.</li><li>„Fałszywy cel” to miejsce, które nie istnieje. Może próbowałeś wyśledzić sanktuarium wroga, ale zamiast tego zobaczyłeś iluzję, lub próbujesz teleportować się do miejsca, które już nie istnieje.</li></ul><p><strong>Wypadek.</strong> Nieprzewidywalna magia czaru skutkuje trudną podróżą. Każda teleportująca się istota (lub cel) otrzymuje [[/damage 3d10 type=force]] obrażeń, a Mistrz Gry ponownie rzuca na tabeli, aby sprawdzić, gdzie traficie (wielokrotne wypadki mogą wystąpić, zadając obrażenia za każdym razem).</p><p><strong>Podobny Obszar.</strong> Ty i twoja grupa (lub obiekt) pojawiacie się w innym obszarze, który wizualnie lub tematycznie przypomina docelowy obszar. Pojawiacie się w najbliższym podobnym miejscu. Jeśli zmierzacie do swojej domowej pracowni, na przykład, możecie pojawić się w cudzej pracowni w tym samym mieście.</p><p><strong>Poza celem.</strong> Ty i twoja grupa (lub obiekt) pojawiacie się [[/r 2d12]] mil od celu w losowym kierunku. Rzuć [[/r 1d8]] dla kierunku: 1, wschód; 2, południowy wschód; 3, południe; 4, południowy zachód; 5, zachód; 6, północny zachód; 7, północ; lub 8, północny wschód.</p><p><strong>Na Celu.</strong> Ty i twoja grupa (lub obiekt) pojawiacie się dokładnie tam, gdzie planowałeś.</p>",
-                    "targetAffects": "you and up to eight creatures or one object",
+                    "targetAffects": "ty oraz do ośmiu stworzeń albo jeden obiekt",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -4162,8 +4162,8 @@
                             "name": "Moving Attack",
                             "condition": "moved 20+ feet",
                             "activationCondition": "moved 20+ feet",
-                            "target": "Large or smaller",
-                            "targetAffects": "Large or smaller"
+                            "target": "Duży lub mniejszy",
+                            "targetAffects": "Duży lub mniejszy"
                         }
                     }
                 }
@@ -4276,11 +4276,11 @@
                     }
                 },
                 "Fist": {
-                    "name": "Fist",
+                    "name": "Pięść",
                     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Rock": {
-                    "name": "Rock",
+                    "name": "Kamień",
                     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
                 }
             }
@@ -4592,7 +4592,7 @@
                     "name": "Wizja",
                     "description": "<p>Możesz widzieć i słyszeć istotę, którą wybierzesz, pod warunkiem że znajduje się na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, który jest modyfikowany (patrz poniższe tabele) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przeciwko czemu wykonuje rzut, odczuwa jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Drugoręczna (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Pierwszoręczna (spotkałeś cel)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia</td><td>−10</td></tr></tbody></table><p>W przypadku udanego rzutu obronnego cel nie jest dotknięty efektem czaru i nie możesz ponownie użyć tego czaru na nim przez 24 godziny.</p><p>W przypadku nieudanego rzutu czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Możesz widzieć i słyszeć przez sensor tak, jakbyś tam był. Sensor porusza się wraz z celem, pozostając w odległości 10 stóp od niego przez cały czas działania czaru. Jeśli coś może zobaczyć sensor, pojawia się on jako świetlista kula wielkości pięści.</p><p>Zamiast wybrać istotę, możesz wybrać miejsce, które widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje tam nieruchomy.</p>",
                     "materials": "fokus warty 1 000+ SZ, taki jak kryształowa kula, lustro lub misa wypełniona wodą",
-                    "targetAffects": "creature on same plane of existence or a location you have seen",
+                    "targetAffects": "istota na tej samej sferze egzystencji lub lokacji która widziałeś",
                     "activities": {
                         "Secondhand and Picture": {
                             "name": "Druga ręka i obraz"
@@ -4868,7 +4868,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -5152,7 +5152,7 @@
                     "name": "Wizja",
                     "description": "<p>Możesz widzieć i słyszeć istotę, którą wybierzesz, pod warunkiem że znajduje się na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, który jest modyfikowany (patrz poniższe tabele) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przeciwko czemu wykonuje rzut, odczuwa jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Drugoręczna (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Pierwszoręczna (spotkałeś cel)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia</td><td>−10</td></tr></tbody></table><p>W przypadku udanego rzutu obronnego cel nie jest dotknięty efektem czaru i nie możesz ponownie użyć tego czaru na nim przez 24 godziny.</p><p>W przypadku nieudanego rzutu czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Możesz widzieć i słyszeć przez sensor tak, jakbyś tam był. Sensor porusza się wraz z celem, pozostając w odległości 10 stóp od niego przez cały czas działania czaru. Jeśli coś może zobaczyć sensor, pojawia się on jako świetlista kula wielkości pięści.</p><p>Zamiast wybrać istotę, możesz wybrać miejsce, które widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje tam nieruchomy.</p>",
                     "materials": "fokus warty 1 000+ SZ, taki jak kryształowa kula, lustro lub misa wypełniona wodą",
-                    "targetAffects": "creature on same plane of existence or a location you have seen",
+                    "targetAffects": "istota na tej samej sferze egzystencji lub lokacji która widziałeś",
                     "activities": {
                         "Secondhand and Picture": {
                             "name": "Druga ręka i obraz"
@@ -5196,7 +5196,7 @@
                 "Teleport": {
                     "name": "Teleportacja",
                     "description": "<p>Ten czar natychmiastowo transportuje ciebie i do ośmiu istot wyrażających zgodę, które widzisz w zasięgu, lub pojedynczy obiekt, który widzisz w zasięgu, do wybranego celu. Jeśli wybierzesz obiekt, musi on mieć rozmiar Ogromny lub mniejszy, i nie może być trzymany ani niesiony przez niechętną istotę.</p><p>Wybrany cel musi być ci znany i musi znajdować się na tej samej sferze istnienia co ty. Twoja znajomość celu decyduje o tym, czy dotrzesz tam pomyślnie. Mistrz Gry rzuca [[/gmr 1d100]] i sprawdza Wyniki Teleportacji oraz wyjaśnienia poniżej.</p><details><summary><strong>@UUID[Compendium.dnd-players-handbook.tables.RollTable.phbsplTeleportMi]{Wyniki Teleportacji}</strong></summary><table><thead><tr><td>Znajomość</td><td>Wypadek</td><td>Podobny Obszar</td><td>Poza celem</td><td>Na Celu</td></tr></thead><tbody><tr><td>Stały krąg</td><td>—</td><td>—</td><td>—</td><td>01–00</td></tr><tr><td>Połączony obiekt</td><td>—</td><td>—</td><td>—</td><td>01–00</td></tr><tr><td>Bardzo znajomy</td><td>01–05</td><td>06–13</td><td>14–24</td><td>25–00</td></tr><tr><td>Widziany przypadkowo</td><td>01–33</td><td>34–43</td><td>44–53</td><td>54–00</td></tr><tr><td>Widziany raz lub opisany</td><td>01–43</td><td>44–53</td><td>54–73</td><td>74–00</td></tr><tr><td>Fałszywy cel</td><td>01–50</td><td>51–00</td><td>—</td><td>—</td></tr></tbody></table></details><p><strong>Znajomość.</strong> Oto znaczenie terminów w kolumnie Znajomość w tabeli:</p><ul><li>„Stały krąg” oznacza stały krąg teleportacyjny, którego sekwencję sigilii znasz.</li><li>„Połączony obiekt” oznacza, że posiadasz przedmiot wzięty z docelowego miejsca w ciągu ostatnich sześciu miesięcy, taki jak książka z biblioteki maga.</li><li>„Bardzo znajomy” to miejsce, które odwiedzałeś wielokrotnie, miejsce, które dokładnie badałeś, lub miejsce, które możesz zobaczyć podczas rzucania czaru.</li><li>„Widziany przypadkowo” to miejsce, które widziałeś więcej niż raz, ale nie znasz go dobrze.</li><li>„Widziany raz lub opisany” to miejsce, które widziałeś raz, być może przy użyciu magii, lub miejsce, które znasz dzięki opisie kogoś innego, na przykład z mapy.</li><li>„Fałszywy cel” to miejsce, które nie istnieje. Może próbowałeś wyśledzić sanktuarium wroga, ale zamiast tego zobaczyłeś iluzję, lub próbujesz teleportować się do miejsca, które już nie istnieje.</li></ul><p><strong>Wypadek.</strong> Nieprzewidywalna magia czaru skutkuje trudną podróżą. Każda teleportująca się istota (lub cel) otrzymuje [[/damage 3d10 type=force]] obrażeń, a Mistrz Gry ponownie rzuca na tabeli, aby sprawdzić, gdzie traficie (wielokrotne wypadki mogą wystąpić, zadając obrażenia za każdym razem).</p><p><strong>Podobny Obszar.</strong> Ty i twoja grupa (lub obiekt) pojawiacie się w innym obszarze, który wizualnie lub tematycznie przypomina docelowy obszar. Pojawiacie się w najbliższym podobnym miejscu. Jeśli zmierzacie do swojej domowej pracowni, na przykład, możecie pojawić się w cudzej pracowni w tym samym mieście.</p><p><strong>Poza celem.</strong> Ty i twoja grupa (lub obiekt) pojawiacie się [[/r 2d12]] mil od celu w losowym kierunku. Rzuć [[/r 1d8]] dla kierunku: 1, wschód; 2, południowy wschód; 3, południe; 4, południowy zachód; 5, zachód; 6, północny zachód; 7, północ; lub 8, północny wschód.</p><p><strong>Na Celu.</strong> Ty i twoja grupa (lub obiekt) pojawiacie się dokładnie tam, gdzie planowałeś.</p>",
-                    "targetAffects": "you and up to eight creatures or one object",
+                    "targetAffects": "ty oraz do ośmiu stworzeń albo jeden obiekt",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -5315,7 +5315,7 @@
                     "name": "Wskrzeszenie",
                     "description": "<p>Dotykiem wskrzeszasz martwą istotę, jeśli nie minęło więcej niż 10 dni od jej śmierci i nie była Nieumarłym w chwili zgonu.</p><p>Istota wraca do życia z 1 Punktem Wytrzymałości. Czar również neutralizuje wszelkie trucizny, które wpływały na istotę w momencie śmierci.</p><p>Czar zamyka wszystkie śmiertelne rany, ale nie przywraca utraconych części ciała. Jeśli istota nie ma części ciała lub organów niezbędnych do przeżycia—na przykład głowy—czar automatycznie kończy się niepowodzeniem.</p><p>Powrót z martwych jest trudnym doświadczeniem. Cel otrzymuje karę −4 do testów na k20. Za każdym razem, gdy ukończy Pełny Odpoczynek, kara zmniejsza się o 1, aż osiągnie 0.</p>",
                     "materials": "diament warty 500+ SZ, który czar zużywa",
-                    "targetAffects": "a dead creature",
+                    "targetAffects": "martwa istota",
                     "activities": {
                         "Revive": {
                             "name": "Ożywienie"
@@ -5472,7 +5472,7 @@
             }
         },
         "Axe Beak": {
-            "name": "Axe Beak",
+            "name": "Toporodziób",
             "description": "<h1>Axe Beaks</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.HbA0tUgLR0NxiPyW caption=false cite=false classes=\"no-embed mm\"]</p><h2>Axe Beak</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.kB9xuOKJSZ9Dnp98 caption=false cite=false classes=\"no-embed mm\"]</p>",
             "alignment": "Unaligned",
             "items": {
@@ -7170,7 +7170,7 @@
             }
         },
         "Bugbear Stalker": {
-            "name": "Bugbear Stalker",
+            "name": "Strachun prześladowca",
             "description": "<div class=\"gear\"><p><strong>Gear:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmChainShirt]{Chain Shirt}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepJavelin000]{Javelins (6)}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepMorningsta]{Morningstar}</p></div><h1>Bugbears</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.gzTUYPi9wHg0WMP0 caption=false cite=false classes=\"no-embed mm\"]</p><h2>Bugbear Stalker</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.lMvm5fxnuHBDhxD2 caption=false cite=false classes=\"no-embed mm\"]</p>",
             "alignment": "Chaotic Evil",
             "items": {
@@ -7227,7 +7227,7 @@
             }
         },
         "Bugbear Warrior": {
-            "name": "Bugbear Warrior",
+            "name": "Strachun wojownik",
             "description": "<div class=\"gear\"><p><strong>Gear:</strong> @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmHideArmor0]{Hide Armor}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepLightHamme]{Light Hammers (3)}</p></div><h1>Bugbears</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.gzTUYPi9wHg0WMP0 caption=false cite=false classes=\"no-embed mm\"]</p><h2>Bugbear Warrior</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.aZNE3q6npBVVLIa1 caption=false cite=false classes=\"no-embed mm\"]</p>",
             "alignment": "Chaotic Evil",
             "items": {
@@ -7593,7 +7593,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -7667,7 +7667,7 @@
                     "description": "<p class=\"feature\">The [[lookup @name lowercase]]’s jump distance is determined using its Dexterity rather than its Strength.</p>"
                 },
                 "Scratch": {
-                    "name": "Scratch",
+                    "name": "Zadrapanie",
                     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
                 }
             }
@@ -8247,7 +8247,7 @@
                     "name": "Kontrola pogody",
                     "description": "<p>Przejmujesz kontrolę nad pogodą w promieniu 5 mil (8km) od siebie na czas trwania czaru. Musisz znajdować się na zewnątrz, aby rzucić ten czar, a kończy się on wcześniej, jeśli wejdziesz do środka.</p><p>Gdy rzucasz czar, zmieniasz aktualne warunki pogodowe, które ustala MG. Możesz zmienić opady, temperaturę i wiatr. Nowe warunki zaczynają działać po 1k4 × 10 minutach. Gdy już się pojawią, możesz ponownie zmienić warunki. Gdy czar się kończy, pogoda stopniowo wraca do normy.</p><p>Gdy zmieniasz warunki pogodowe, znajdź aktualny stan w poniższych tabelach i zmień jego stopień o jeden w górę lub w dół. Zmieniając wiatr, możesz zmienić jego kierunek.</p><details><summary><strong>Opady</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Bezchmurne</td></tr><tr><td>2</td><td>Lekkie zachmurzenie</td></tr><tr><td>3</td><td>Zachmurzenie lub mgła przy ziemi</td></tr><tr><td>4</td><td>Deszcz, grad lub śnieg</td></tr><tr><td>5</td><td>Ulewny deszcz, intensywny grad lub zamieć</td></tr></tbody></table></details><details><summary><strong>Temperatura</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Fala upałów</td></tr><tr><td>2</td><td>Gorąco</td></tr><tr><td>3</td><td>Ciepło</td></tr><tr><td>4</td><td>Chłodno</td></tr><tr><td>5</td><td>Zimno</td></tr><tr><td>6</td><td>Mróz</td></tr></tbody></table></details><details><summary><strong>Wiatr</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Spokój</td></tr><tr><td>2</td><td>Umiarkowany wiatr</td></tr><tr><td>3</td><td>Silny wiatr</td></tr><tr><td>4</td><td>Sztorm</td></tr><tr><td>5</td><td>Burza</td></tr></tbody></table></details>",
                     "materials": "płonące kadzidło",
-                    "targetAffects": "weather within 5 miles",
+                    "targetAffects": "pogoda w promieniu 5 mil",
                     "activities": {
                         "Cast and Control": {
                             "name": "Rzuć i kontroluj",
@@ -8674,7 +8674,7 @@
                     "name": "Wizja",
                     "description": "<p>Możesz widzieć i słyszeć istotę, którą wybierzesz, pod warunkiem że znajduje się na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, który jest modyfikowany (patrz poniższe tabele) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przeciwko czemu wykonuje rzut, odczuwa jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Drugoręczna (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Pierwszoręczna (spotkałeś cel)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia</td><td>−10</td></tr></tbody></table><p>W przypadku udanego rzutu obronnego cel nie jest dotknięty efektem czaru i nie możesz ponownie użyć tego czaru na nim przez 24 godziny.</p><p>W przypadku nieudanego rzutu czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Możesz widzieć i słyszeć przez sensor tak, jakbyś tam był. Sensor porusza się wraz z celem, pozostając w odległości 10 stóp od niego przez cały czas działania czaru. Jeśli coś może zobaczyć sensor, pojawia się on jako świetlista kula wielkości pięści.</p><p>Zamiast wybrać istotę, możesz wybrać miejsce, które widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje tam nieruchomy.</p>",
                     "materials": "fokus warty 1 000+ SZ, taki jak kryształowa kula, lustro lub misa wypełniona wodą",
-                    "targetAffects": "creature on same plane of existence or a location you have seen",
+                    "targetAffects": "istota na tej samej sferze egzystencji lub lokacji która widziałeś",
                     "activities": {
                         "Secondhand and Picture": {
                             "name": "Druga ręka i obraz"
@@ -9060,7 +9060,7 @@
                     }
                 },
                 "Rock": {
-                    "name": "Rock",
+                    "name": "Kamień",
                     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Limited Foresight": {
@@ -9259,7 +9259,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -9862,7 +9862,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -10183,7 +10183,7 @@
                     "name": "Wskrzeszenie",
                     "description": "<p>Dotykiem wskrzeszasz martwą istotę, jeśli nie minęło więcej niż 10 dni od jej śmierci i nie była Nieumarłym w chwili zgonu.</p><p>Istota wraca do życia z 1 Punktem Wytrzymałości. Czar również neutralizuje wszelkie trucizny, które wpływały na istotę w momencie śmierci.</p><p>Czar zamyka wszystkie śmiertelne rany, ale nie przywraca utraconych części ciała. Jeśli istota nie ma części ciała lub organów niezbędnych do przeżycia—na przykład głowy—czar automatycznie kończy się niepowodzeniem.</p><p>Powrót z martwych jest trudnym doświadczeniem. Cel otrzymuje karę −4 do testów na k20. Za każdym razem, gdy ukończy Pełny Odpoczynek, kara zmniejsza się o 1, aż osiągnie 0.</p>",
                     "materials": "diament warty 500+ SZ, który czar zużywa",
-                    "targetAffects": "a dead creature",
+                    "targetAffects": "martwa istota",
                     "activities": {
                         "Revive": {
                             "name": "Ożywienie"
@@ -10442,7 +10442,7 @@
                     "name": "Spacer na wietrze",
                     "description": "<p>Ty i maksymalnie dziesięć chętnych istot twojego wyboru w zasięgu przybieracie gazowe formy na czas trwania czaru, wyglądając jak smugi chmur. W tej formie chmury cel ma Szybkość Lotu 300 stóp i może unosić się; ma odporność na stan &amp;Reference[Prone]{Powalony}; oraz ma Odporność na obrażenia obuchowe, kłute i cięte. Jedynymi akcjami, jakie cel może wykonać w tej formie, są akcja &amp;Reference[Dash] lub Akcja Magii, aby rozpocząć powrót do normalnej formy. Powrót trwa 1 minutę, podczas której cel ma stan &amp;Reference[Stunned apply=false]{Ogłuszony}. Do czasu zakończenia czaru cel może ponownie przybrać formę chmury, co również wymaga Akcji Magii i 1-minutowej transformacji.</p><p>Jeśli cel jest w formie chmury i lata, gdy efekt się kończy, cel opada 60 stóp na rundę przez 1 minutę, aż wyląduje, co robi bezpiecznie. Jeśli nie może wylądować po 1 minucie, spada na pozostałą odległość.</p>",
                     "materials": "świeca",
-                    "targetAffects": "you and up to ten other creatures",
+                    "targetAffects": "ty oraz do dziesięciu innych istot",
                     "activities": {
                         "Transform to Cloud": {
                             "name": "Transformacja do chmury"
@@ -10510,7 +10510,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -10760,7 +10760,7 @@
                     "materials": "jeden czarny onyks wart 150+ SZ za każde ciało",
                     "activation": "tylko w nocy",
                     "activationCondition": "tylko w nocy",
-                    "targetAffects": "corpse of Medium or Small Humanoid or previously created undead",
+                    "targetAffects": "zwłoki Średniego lub Małego Humanoida albo wcześniej stworzonego nieumarłego",
                     "activities": {
                         "Animate Corpses": {
                             "name": "Animowanie zwłok"
@@ -11452,7 +11452,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -11587,7 +11587,7 @@
                     "name": "Kontrola pogody",
                     "description": "<p>Przejmujesz kontrolę nad pogodą w promieniu 5 mil (8km) od siebie na czas trwania czaru. Musisz znajdować się na zewnątrz, aby rzucić ten czar, a kończy się on wcześniej, jeśli wejdziesz do środka.</p><p>Gdy rzucasz czar, zmieniasz aktualne warunki pogodowe, które ustala MG. Możesz zmienić opady, temperaturę i wiatr. Nowe warunki zaczynają działać po 1k4 × 10 minutach. Gdy już się pojawią, możesz ponownie zmienić warunki. Gdy czar się kończy, pogoda stopniowo wraca do normy.</p><p>Gdy zmieniasz warunki pogodowe, znajdź aktualny stan w poniższych tabelach i zmień jego stopień o jeden w górę lub w dół. Zmieniając wiatr, możesz zmienić jego kierunek.</p><details><summary><strong>Opady</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Bezchmurne</td></tr><tr><td>2</td><td>Lekkie zachmurzenie</td></tr><tr><td>3</td><td>Zachmurzenie lub mgła przy ziemi</td></tr><tr><td>4</td><td>Deszcz, grad lub śnieg</td></tr><tr><td>5</td><td>Ulewny deszcz, intensywny grad lub zamieć</td></tr></tbody></table></details><details><summary><strong>Temperatura</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Fala upałów</td></tr><tr><td>2</td><td>Gorąco</td></tr><tr><td>3</td><td>Ciepło</td></tr><tr><td>4</td><td>Chłodno</td></tr><tr><td>5</td><td>Zimno</td></tr><tr><td>6</td><td>Mróz</td></tr></tbody></table></details><details><summary><strong>Wiatr</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Spokój</td></tr><tr><td>2</td><td>Umiarkowany wiatr</td></tr><tr><td>3</td><td>Silny wiatr</td></tr><tr><td>4</td><td>Sztorm</td></tr><tr><td>5</td><td>Burza</td></tr></tbody></table></details>",
                     "materials": "płonące kadzidło",
-                    "targetAffects": "weather within 5 miles",
+                    "targetAffects": "pogoda w promieniu 5 mil",
                     "activities": {
                         "Cast and Control": {
                             "name": "Rzuć i kontroluj",
@@ -11935,7 +11935,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -12933,8 +12933,8 @@
                             "name": "Moving Attack",
                             "condition": "moved 20+ feet",
                             "activationCondition": "moved 20+ feet",
-                            "target": "Large or smaller",
-                            "targetAffects": "Large or smaller"
+                            "target": "Duży lub mniejszy",
+                            "targetAffects": "Duży lub mniejszy"
                         }
                     }
                 },
@@ -13310,7 +13310,7 @@
                     }
                 },
                 "Fist": {
-                    "name": "Fist",
+                    "name": "Pięść",
                     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Boulder Toss": {
@@ -13472,7 +13472,7 @@
             }
         },
         "Giant Crab": {
-            "name": "Giant Crab",
+            "name": "Olbrzymi krab",
             "alignment": "Unaligned",
             "items": {
                 "Amphibious": {
@@ -14189,7 +14189,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -14293,7 +14293,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -14536,7 +14536,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -14665,7 +14665,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -15710,7 +15710,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -15850,7 +15850,7 @@
                     "name": "Wizja",
                     "description": "<p>Możesz widzieć i słyszeć istotę, którą wybierzesz, pod warunkiem że znajduje się na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, który jest modyfikowany (patrz poniższe tabele) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przeciwko czemu wykonuje rzut, odczuwa jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Drugoręczna (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Pierwszoręczna (spotkałeś cel)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia</td><td>−10</td></tr></tbody></table><p>W przypadku udanego rzutu obronnego cel nie jest dotknięty efektem czaru i nie możesz ponownie użyć tego czaru na nim przez 24 godziny.</p><p>W przypadku nieudanego rzutu czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Możesz widzieć i słyszeć przez sensor tak, jakbyś tam był. Sensor porusza się wraz z celem, pozostając w odległości 10 stóp od niego przez cały czas działania czaru. Jeśli coś może zobaczyć sensor, pojawia się on jako świetlista kula wielkości pięści.</p><p>Zamiast wybrać istotę, możesz wybrać miejsce, które widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje tam nieruchomy.</p>",
                     "materials": "fokus warty 1 000+ SZ, taki jak kryształowa kula, lustro lub misa wypełniona wodą",
-                    "targetAffects": "creature on same plane of existence or a location you have seen",
+                    "targetAffects": "istota na tej samej sferze egzystencji lub lokacji która widziałeś",
                     "activities": {
                         "Secondhand and Picture": {
                             "name": "Druga ręka i obraz"
@@ -17160,7 +17160,7 @@
                     "name": "Ściana lodu",
                     "description": "<p>Tworzysz ścianę lodu na solidnej powierzchni w zasięgu. Możesz uformować ją w hemisferyczną kopułę lub kulę o promieniu do 10 stóp albo stworzyć płaską powierzchnię złożoną z maksymalnie dziesięciu paneli o wymiarach 10 stóp na 10 stóp (3m na 3m). Każdy panel musi stykać się z przynajmniej jednym innym panelem. W każdej formie ściana ma grubość 1 stopy (30 cm) i trwa przez czas działania czaru.</p><p>Jeśli ściana przecina przestrzeń zajmowaną przez istotę w chwili pojawienia się, istota zostaje wypchnięta na jedną stronę ściany (ty wybierasz, na którą) i wykonuje rzut obronny na Zręczność, otrzymując 10k6 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p>Ściana jest obiektem, który może zostać uszkodzony i tym samym przebity. Ma KP 12 i 30 Punktów Wytrzymałości na każde 10 stóp sekcji, posiada Niewrażliwość na obrażenia od zimna, trucizn i psychiczne oraz Podatność na obrażenia od ognia. Zmniejszenie sekcji 10 stóp ściany do 0 Punktów Wytrzymałości niszczy ją i pozostawia w miejscu, które zajmowała, warstwę lodowatego powietrza.</p><p>Istota przechodząca przez warstwę lodowatego powietrza po raz pierwszy w turze wykonuje rzut obronny na Kondycję, otrzymując 5k6 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zadawane przez ścianę w chwili pojawienia się zwiększają się o 2k6, a obrażenia od przejścia przez warstwę lodowatego powietrza zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 6.</p>",
                     "materials": "kawałek kwarcu",
-                    "targetAffects": "solid surface",
+                    "targetAffects": "stała powierzchnia",
                     "activities": {
                         "Create Globe": {
                             "name": "Stwórz kulę"
@@ -17992,8 +17992,8 @@
                     "description": "<p><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.formula activity=MxEs7KnCVGemObHx]], one [[lookup @target.affects.special activity=MxEs7KnCVGemObHx]] [[lookup @target.affects.type activity=MxEs7KnCVGemObHx]] the kuo-toa can see within [[lookup @range.value activity=MxEs7KnCVGemObHx]] feet.</p><p><em>Failure:</em> The target has the &amp;Reference[Restrained apply=false] condition until the net is destroyed (AC 10; HP 5; Immunity to Bludgeoning, Poison, and Psychic damage). A creature can take an action to make a [[/skill ath 10]] check to free itself or another creature in a net within 5 feet, destroying the net on a success.</p>",
                     "activities": {
                         "save": {
-                            "target": "Large or smaller",
-                            "targetAffects": "Large or smaller"
+                            "target": "Duży lub mniejszy",
+                            "targetAffects": "Duży lub mniejszy"
                         },
                         "Escape Check": {
                             "name": "Test ucieczki"
@@ -18009,7 +18009,7 @@
             }
         },
         "Kuo-toa Archpriest": {
-            "name": "Kuo-toa Archpriest",
+            "name": "Kuo-toa arcykapłan",
             "description": "<h1>Kuo-toa</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.5cWxPFYWZSjJw6ih caption=false cite=false classes=\"no-embed mm\"]</p><h2>Kuo-toa Archpriest</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.jVLHLrDcjEGUhZmp caption=false cite=false classes=\"no-embed mm\"]</p>",
             "alignment": "Neutral Evil",
             "items": {
@@ -18115,7 +18115,7 @@
                     "name": "Wizja",
                     "description": "<p>Możesz widzieć i słyszeć istotę, którą wybierzesz, pod warunkiem że znajduje się na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, który jest modyfikowany (patrz poniższe tabele) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przeciwko czemu wykonuje rzut, odczuwa jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Drugoręczna (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Pierwszoręczna (spotkałeś cel)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia</td><td>−10</td></tr></tbody></table><p>W przypadku udanego rzutu obronnego cel nie jest dotknięty efektem czaru i nie możesz ponownie użyć tego czaru na nim przez 24 godziny.</p><p>W przypadku nieudanego rzutu czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Możesz widzieć i słyszeć przez sensor tak, jakbyś tam był. Sensor porusza się wraz z celem, pozostając w odległości 10 stóp od niego przez cały czas działania czaru. Jeśli coś może zobaczyć sensor, pojawia się on jako świetlista kula wielkości pięści.</p><p>Zamiast wybrać istotę, możesz wybrać miejsce, które widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje tam nieruchomy.</p>",
                     "materials": "fokus warty 1 000+ SZ, taki jak kryształowa kula, lustro lub misa wypełniona wodą",
-                    "targetAffects": "creature on same plane of existence or a location you have seen",
+                    "targetAffects": "istota na tej samej sferze egzystencji lub lokacji która widziałeś",
                     "activities": {
                         "Secondhand and Picture": {
                             "name": "Druga ręka i obraz"
@@ -18190,7 +18190,7 @@
             }
         },
         "Kuo-toa Monitor": {
-            "name": "Kuo-toa Monitor",
+            "name": "Kuo-toa monitor",
             "description": "<h1>Kuo-toa</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.5cWxPFYWZSjJw6ih caption=false cite=false classes=\"no-embed mm\"]</p><h2>Kuo-toa Monitor</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.N6Prinvb9ppnSZub caption=false cite=false classes=\"no-embed mm\"]</p>",
             "alignment": "Neutral Evil",
             "items": {
@@ -18225,7 +18225,7 @@
             }
         },
         "Kuo-toa Whip": {
-            "name": "Kuo-toa Whip",
+            "name": "Kuo-toa bicz",
             "description": "<h1>Kuo-toa</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.5cWxPFYWZSjJw6ih caption=false cite=false classes=\"no-embed mm\"]</p><h2>Kuo-toa Whip</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.VEYcunqNbjyhHOwB caption=false cite=false classes=\"no-embed mm\"]</p>",
             "alignment": "Neutral Evil",
             "items": {
@@ -18429,7 +18429,7 @@
                     "name": "Wizja",
                     "description": "<p>Możesz widzieć i słyszeć istotę, którą wybierzesz, pod warunkiem że znajduje się na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, który jest modyfikowany (patrz poniższe tabele) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przeciwko czemu wykonuje rzut, odczuwa jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Drugoręczna (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Pierwszoręczna (spotkałeś cel)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia</td><td>−10</td></tr></tbody></table><p>W przypadku udanego rzutu obronnego cel nie jest dotknięty efektem czaru i nie możesz ponownie użyć tego czaru na nim przez 24 godziny.</p><p>W przypadku nieudanego rzutu czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Możesz widzieć i słyszeć przez sensor tak, jakbyś tam był. Sensor porusza się wraz z celem, pozostając w odległości 10 stóp od niego przez cały czas działania czaru. Jeśli coś może zobaczyć sensor, pojawia się on jako świetlista kula wielkości pięści.</p><p>Zamiast wybrać istotę, możesz wybrać miejsce, które widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje tam nieruchomy.</p>",
                     "materials": "fokus warty 1 000+ SZ, taki jak kryształowa kula, lustro lub misa wypełniona wodą",
-                    "targetAffects": "creature on same plane of existence or a location you have seen",
+                    "targetAffects": "istota na tej samej sferze egzystencji lub lokacji która widziałeś",
                     "activities": {
                         "Secondhand and Picture": {
                             "name": "Druga ręka i obraz"
@@ -18695,7 +18695,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -18711,7 +18711,7 @@
                     "name": "Łańcuch błyskawic",
                     "description": "<p>Wypuszczasz błyskawicę w stronę celu, który widzisz w zasięgu. Następnie od tego celu przeskakują trzy kolejne błyskawice do maksymalnie trzech innych wybranych przez ciebie celów. Każdy z nich musi znajdować się w promieniu 30 stóp od pierwotnego celu. Celem może być istota lub obiekt, a każdy z nich może zostać trafiony tylko przez jedną z tych błyskawic.</p><p>Każdy cel musi wykonać rzut obronny na Zręczność. W przypadku porażki otrzymuje on 10k8 obrażeń od elektryczności, a w przypadku sukcesu połowę tych obrażeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Jedna dodatkowa błyskawica przeskakuje od pierwszego celu do kolejnego celu za każdy krąg komórki czaru powyżej 6.</p>",
                     "materials": "trzy srebrne szpilki",
-                    "targetAffects": "secondary targets must be within 30 feet of initial target",
+                    "targetAffects": "cele dodatkowe muszą znajdować się w obrębie 30 stóp od pierwotnego celu",
                     "effects": {
                         "Spell Changes": {
                             "name": "Spell Changes"
@@ -18753,7 +18753,7 @@
                     "name": "Wizja",
                     "description": "<p>Możesz widzieć i słyszeć istotę, którą wybierzesz, pod warunkiem że znajduje się na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, który jest modyfikowany (patrz poniższe tabele) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przeciwko czemu wykonuje rzut, odczuwa jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Drugoręczna (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Pierwszoręczna (spotkałeś cel)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia</td><td>−10</td></tr></tbody></table><p>W przypadku udanego rzutu obronnego cel nie jest dotknięty efektem czaru i nie możesz ponownie użyć tego czaru na nim przez 24 godziny.</p><p>W przypadku nieudanego rzutu czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Możesz widzieć i słyszeć przez sensor tak, jakbyś tam był. Sensor porusza się wraz z celem, pozostając w odległości 10 stóp od niego przez cały czas działania czaru. Jeśli coś może zobaczyć sensor, pojawia się on jako świetlista kula wielkości pięści.</p><p>Zamiast wybrać istotę, możesz wybrać miejsce, które widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje tam nieruchomy.</p>",
                     "materials": "fokus warty 1 000+ SZ, taki jak kryształowa kula, lustro lub misa wypełniona wodą",
-                    "targetAffects": "creature on same plane of existence or a location you have seen",
+                    "targetAffects": "istota na tej samej sferze egzystencji lub lokacji która widziałeś",
                     "activities": {
                         "Secondhand and Picture": {
                             "name": "Druga ręka i obraz"
@@ -19749,7 +19749,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -20299,7 +20299,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -20452,7 +20452,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -21317,7 +21317,7 @@
                     "name": "Wizja",
                     "description": "<p>Możesz widzieć i słyszeć istotę, którą wybierzesz, pod warunkiem że znajduje się na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, który jest modyfikowany (patrz poniższe tabele) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przeciwko czemu wykonuje rzut, odczuwa jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Drugoręczna (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Pierwszoręczna (spotkałeś cel)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia</td><td>−10</td></tr></tbody></table><p>W przypadku udanego rzutu obronnego cel nie jest dotknięty efektem czaru i nie możesz ponownie użyć tego czaru na nim przez 24 godziny.</p><p>W przypadku nieudanego rzutu czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Możesz widzieć i słyszeć przez sensor tak, jakbyś tam był. Sensor porusza się wraz z celem, pozostając w odległości 10 stóp od niego przez cały czas działania czaru. Jeśli coś może zobaczyć sensor, pojawia się on jako świetlista kula wielkości pięści.</p><p>Zamiast wybrać istotę, możesz wybrać miejsce, które widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje tam nieruchomy.</p>",
                     "materials": "fokus warty 1 000+ SZ, taki jak kryształowa kula, lustro lub misa wypełniona wodą",
-                    "targetAffects": "creature on same plane of existence or a location you have seen",
+                    "targetAffects": "istota na tej samej sferze egzystencji lub lokacji która widziałeś",
                     "activities": {
                         "Secondhand and Picture": {
                             "name": "Druga ręka i obraz"
@@ -21492,7 +21492,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -21729,7 +21729,7 @@
                     "name": "Wizja",
                     "description": "<p>Możesz widzieć i słyszeć istotę, którą wybierzesz, pod warunkiem że znajduje się na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, który jest modyfikowany (patrz poniższe tabele) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przeciwko czemu wykonuje rzut, odczuwa jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Drugoręczna (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Pierwszoręczna (spotkałeś cel)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia</td><td>−10</td></tr></tbody></table><p>W przypadku udanego rzutu obronnego cel nie jest dotknięty efektem czaru i nie możesz ponownie użyć tego czaru na nim przez 24 godziny.</p><p>W przypadku nieudanego rzutu czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Możesz widzieć i słyszeć przez sensor tak, jakbyś tam był. Sensor porusza się wraz z celem, pozostając w odległości 10 stóp od niego przez cały czas działania czaru. Jeśli coś może zobaczyć sensor, pojawia się on jako świetlista kula wielkości pięści.</p><p>Zamiast wybrać istotę, możesz wybrać miejsce, które widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje tam nieruchomy.</p>",
                     "materials": "fokus warty 1 000+ SZ, taki jak kryształowa kula, lustro lub misa wypełniona wodą",
-                    "targetAffects": "creature on same plane of existence or a location you have seen",
+                    "targetAffects": "istota na tej samej sferze egzystencji lub lokacji która widziałeś",
                     "activities": {
                         "Secondhand and Picture": {
                             "name": "Druga ręka i obraz"
@@ -23241,7 +23241,7 @@
                     "name": "Kontrola pogody",
                     "description": "<p>Przejmujesz kontrolę nad pogodą w promieniu 5 mil (8km) od siebie na czas trwania czaru. Musisz znajdować się na zewnątrz, aby rzucić ten czar, a kończy się on wcześniej, jeśli wejdziesz do środka.</p><p>Gdy rzucasz czar, zmieniasz aktualne warunki pogodowe, które ustala MG. Możesz zmienić opady, temperaturę i wiatr. Nowe warunki zaczynają działać po 1k4 × 10 minutach. Gdy już się pojawią, możesz ponownie zmienić warunki. Gdy czar się kończy, pogoda stopniowo wraca do normy.</p><p>Gdy zmieniasz warunki pogodowe, znajdź aktualny stan w poniższych tabelach i zmień jego stopień o jeden w górę lub w dół. Zmieniając wiatr, możesz zmienić jego kierunek.</p><details><summary><strong>Opady</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Bezchmurne</td></tr><tr><td>2</td><td>Lekkie zachmurzenie</td></tr><tr><td>3</td><td>Zachmurzenie lub mgła przy ziemi</td></tr><tr><td>4</td><td>Deszcz, grad lub śnieg</td></tr><tr><td>5</td><td>Ulewny deszcz, intensywny grad lub zamieć</td></tr></tbody></table></details><details><summary><strong>Temperatura</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Fala upałów</td></tr><tr><td>2</td><td>Gorąco</td></tr><tr><td>3</td><td>Ciepło</td></tr><tr><td>4</td><td>Chłodno</td></tr><tr><td>5</td><td>Zimno</td></tr><tr><td>6</td><td>Mróz</td></tr></tbody></table></details><details><summary><strong>Wiatr</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Spokój</td></tr><tr><td>2</td><td>Umiarkowany wiatr</td></tr><tr><td>3</td><td>Silny wiatr</td></tr><tr><td>4</td><td>Sztorm</td></tr><tr><td>5</td><td>Burza</td></tr></tbody></table></details>",
                     "materials": "płonące kadzidło",
-                    "targetAffects": "weather within 5 miles",
+                    "targetAffects": "pogoda w promieniu 5 mil",
                     "activities": {
                         "Cast and Control": {
                             "name": "Rzuć i kontroluj",
@@ -23291,7 +23291,7 @@
                     "name": "Wskrzeszenie",
                     "description": "<p>Dotykiem wskrzeszasz martwą istotę, jeśli nie minęło więcej niż 10 dni od jej śmierci i nie była Nieumarłym w chwili zgonu.</p><p>Istota wraca do życia z 1 Punktem Wytrzymałości. Czar również neutralizuje wszelkie trucizny, które wpływały na istotę w momencie śmierci.</p><p>Czar zamyka wszystkie śmiertelne rany, ale nie przywraca utraconych części ciała. Jeśli istota nie ma części ciała lub organów niezbędnych do przeżycia—na przykład głowy—czar automatycznie kończy się niepowodzeniem.</p><p>Powrót z martwych jest trudnym doświadczeniem. Cel otrzymuje karę −4 do testów na k20. Za każdym razem, gdy ukończy Pełny Odpoczynek, kara zmniejsza się o 1, aż osiągnie 0.</p>",
                     "materials": "diament warty 500+ SZ, który czar zużywa",
-                    "targetAffects": "a dead creature",
+                    "targetAffects": "martwa istota",
                     "activities": {
                         "Revive": {
                             "name": "Ożywienie"
@@ -24350,7 +24350,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -25456,7 +25456,7 @@
                     "name": "Wizja",
                     "description": "<p>Możesz widzieć i słyszeć istotę, którą wybierzesz, pod warunkiem że znajduje się na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, który jest modyfikowany (patrz poniższe tabele) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przeciwko czemu wykonuje rzut, odczuwa jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Drugoręczna (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Pierwszoręczna (spotkałeś cel)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia</td><td>−10</td></tr></tbody></table><p>W przypadku udanego rzutu obronnego cel nie jest dotknięty efektem czaru i nie możesz ponownie użyć tego czaru na nim przez 24 godziny.</p><p>W przypadku nieudanego rzutu czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Możesz widzieć i słyszeć przez sensor tak, jakbyś tam był. Sensor porusza się wraz z celem, pozostając w odległości 10 stóp od niego przez cały czas działania czaru. Jeśli coś może zobaczyć sensor, pojawia się on jako świetlista kula wielkości pięści.</p><p>Zamiast wybrać istotę, możesz wybrać miejsce, które widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje tam nieruchomy.</p>",
                     "materials": "fokus warty 1 000+ SZ, taki jak kryształowa kula, lustro lub misa wypełniona wodą",
-                    "targetAffects": "creature on same plane of existence or a location you have seen",
+                    "targetAffects": "istota na tej samej sferze egzystencji lub lokacji która widziałeś",
                     "activities": {
                         "Secondhand and Picture": {
                             "name": "Druga ręka i obraz"
@@ -25866,7 +25866,7 @@
                     }
                 },
                 "Fist": {
-                    "name": "Fist",
+                    "name": "Pięść",
                     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Protection": {
@@ -26093,7 +26093,7 @@
                     "name": "Kontrola pogody",
                     "description": "<p>Przejmujesz kontrolę nad pogodą w promieniu 5 mil (8km) od siebie na czas trwania czaru. Musisz znajdować się na zewnątrz, aby rzucić ten czar, a kończy się on wcześniej, jeśli wejdziesz do środka.</p><p>Gdy rzucasz czar, zmieniasz aktualne warunki pogodowe, które ustala MG. Możesz zmienić opady, temperaturę i wiatr. Nowe warunki zaczynają działać po 1k4 × 10 minutach. Gdy już się pojawią, możesz ponownie zmienić warunki. Gdy czar się kończy, pogoda stopniowo wraca do normy.</p><p>Gdy zmieniasz warunki pogodowe, znajdź aktualny stan w poniższych tabelach i zmień jego stopień o jeden w górę lub w dół. Zmieniając wiatr, możesz zmienić jego kierunek.</p><details><summary><strong>Opady</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Bezchmurne</td></tr><tr><td>2</td><td>Lekkie zachmurzenie</td></tr><tr><td>3</td><td>Zachmurzenie lub mgła przy ziemi</td></tr><tr><td>4</td><td>Deszcz, grad lub śnieg</td></tr><tr><td>5</td><td>Ulewny deszcz, intensywny grad lub zamieć</td></tr></tbody></table></details><details><summary><strong>Temperatura</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Fala upałów</td></tr><tr><td>2</td><td>Gorąco</td></tr><tr><td>3</td><td>Ciepło</td></tr><tr><td>4</td><td>Chłodno</td></tr><tr><td>5</td><td>Zimno</td></tr><tr><td>6</td><td>Mróz</td></tr></tbody></table></details><details><summary><strong>Wiatr</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Spokój</td></tr><tr><td>2</td><td>Umiarkowany wiatr</td></tr><tr><td>3</td><td>Silny wiatr</td></tr><tr><td>4</td><td>Sztorm</td></tr><tr><td>5</td><td>Burza</td></tr></tbody></table></details>",
                     "materials": "płonące kadzidło",
-                    "targetAffects": "weather within 5 miles",
+                    "targetAffects": "pogoda w promieniu 5 mil",
                     "activities": {
                         "Cast and Control": {
                             "name": "Rzuć i kontroluj",
@@ -26483,7 +26483,7 @@
                     "name": "Sferalny przeskok",
                     "description": "<p>Ty oraz do ośmiu chętnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
-                    "targetAffects": "you and up to eight willing creatures",
+                    "targetAffects": "ty do ośmiu przychylnych ci istot",
                     "activities": {
                         "Transport": {
                             "name": "Transport"
@@ -26811,7 +26811,7 @@
                     "name": "Uczta bohaterów",
                     "description": "<p>Przywołujesz ucztę, która pojawia się na powierzchni w niezajętym sześcianie o boku 10 stóp obok ciebie. Spożycie uczty zajmuje 1 godzinę i znika ona po upływie tego czasu, a jej korzystne efekty nie zaczynają działać, dopóki ta godzina nie minie. Do uczty może przystąpić maksymalnie dwanaście istot.</p><p>Istota, która weźmie udział w uczcie, zyskuje kilka korzyści trwających przez 24 godziny. Otrzymuje &amp;Reference[damageResistance]{Odporność} na obrażenia od trucizn, a także ma &amp;Reference[Immunity]{Niewrażliwość} na stany &amp;Reference[Frightened]{Przerażony} i &amp;Reference[Poisoned]{Zatruty}. Jej maksymalne Punkty Wytrzymałości zwiększają się o 2k10, a dodatkowo zyskuje taką samą liczbę Punktów Wytrzymałości.</p>",
                     "materials": "miska wysadzana klejnotami warta 1 000+ SZ, którą czar zużywa",
-                    "targetAffects": "unoccupied",
+                    "targetAffects": "niezajęta",
                     "activities": {
                         "Conjure Feast": {
                             "name": "Wyczaruj ucztę"
@@ -27453,7 +27453,7 @@
                     "name": "Kontrola pogody",
                     "description": "<p>Przejmujesz kontrolę nad pogodą w promieniu 5 mil (8km) od siebie na czas trwania czaru. Musisz znajdować się na zewnątrz, aby rzucić ten czar, a kończy się on wcześniej, jeśli wejdziesz do środka.</p><p>Gdy rzucasz czar, zmieniasz aktualne warunki pogodowe, które ustala MG. Możesz zmienić opady, temperaturę i wiatr. Nowe warunki zaczynają działać po 1k4 × 10 minutach. Gdy już się pojawią, możesz ponownie zmienić warunki. Gdy czar się kończy, pogoda stopniowo wraca do normy.</p><p>Gdy zmieniasz warunki pogodowe, znajdź aktualny stan w poniższych tabelach i zmień jego stopień o jeden w górę lub w dół. Zmieniając wiatr, możesz zmienić jego kierunek.</p><details><summary><strong>Opady</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Bezchmurne</td></tr><tr><td>2</td><td>Lekkie zachmurzenie</td></tr><tr><td>3</td><td>Zachmurzenie lub mgła przy ziemi</td></tr><tr><td>4</td><td>Deszcz, grad lub śnieg</td></tr><tr><td>5</td><td>Ulewny deszcz, intensywny grad lub zamieć</td></tr></tbody></table></details><details><summary><strong>Temperatura</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Fala upałów</td></tr><tr><td>2</td><td>Gorąco</td></tr><tr><td>3</td><td>Ciepło</td></tr><tr><td>4</td><td>Chłodno</td></tr><tr><td>5</td><td>Zimno</td></tr><tr><td>6</td><td>Mróz</td></tr></tbody></table></details><details><summary><strong>Wiatr</strong></summary><table><thead><tr><td>Stopień</td><td>Stan</td></tr></thead><tbody><tr><td>1</td><td>Spokój</td></tr><tr><td>2</td><td>Umiarkowany wiatr</td></tr><tr><td>3</td><td>Silny wiatr</td></tr><tr><td>4</td><td>Sztorm</td></tr><tr><td>5</td><td>Burza</td></tr></tbody></table></details>",
                     "materials": "płonące kadzidło",
-                    "targetAffects": "weather within 5 miles",
+                    "targetAffects": "pogoda w promieniu 5 mil",
                     "activities": {
                         "Cast and Control": {
                             "name": "Rzuć i kontroluj",
@@ -28894,7 +28894,7 @@
                 "Word of Recall": {
                     "name": "Słowo powrotu",
                     "description": "<p>Ty i maksymalnie pięć chętnych istot w odległości 5 stóp od ciebie natychmiast teleportujecie się do wcześniej wyznaczonego sanktuarium. Ty i wszelkie istoty, które teleportują się z tobą, pojawiacie się w najbliższej wolnej przestrzeni od miejsca, które wyznaczyłeś, przygotowując swoje sanktuarium (patrz poniżej). Jeśli rzucisz ten czar bez wcześniejszego przygotowania sanktuarium, czar nie działa.</p><p>Musisz wyznaczyć lokalizację, taką jak świątynia, jako sanktuarium, rzucając ten czar w tym miejscu.</p>",
-                    "targetAffects": "you and five other creatures",
+                    "targetAffects": "ty i pięć innych istot",
                     "activities": {
                         "Teleport to Sanctuary": {
                             "name": "Teleportacja do Sanktuarium"
@@ -29981,7 +29981,7 @@
                     "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Scratch": {
-                    "name": "Scratch",
+                    "name": "Zadrapanie",
                     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Shape-Shift": {
@@ -30018,7 +30018,7 @@
                     "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Scratch": {
-                    "name": "Scratch",
+                    "name": "Zadrapanie",
                     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Shape-Shift": {
@@ -30069,7 +30069,7 @@
                     "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Scratch": {
-                    "name": "Scratch",
+                    "name": "Zadrapanie",
                     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Shape-Shift": {
