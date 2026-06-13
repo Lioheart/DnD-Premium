@@ -3,18 +3,18 @@
     "folders": {
         "Alchemist": "Alchemik",
         "Armorer": "Płatnerz",
-        "Artificer Class Features": "Artificer Class Features",
-        "Artificer Subclasses": "Artificer Subclasses",
+        "Artificer Class Features": "Zdolności klasowe Wynalazcy",
+        "Artificer Subclasses": "Podklasy wynalazcy",
         "Artillerist": "Artylerzysta",
         "Backgrounds": "Pochodzenia",
         "Battle Smith": "Kowal bitewny",
         "Cartographer": "Kartograf",
-        "Changeling Traits": "Changeling Traits",
-        "Dragonmarks": "Dragonmarks",
+        "Changeling Traits": "Chechy odmieńca",
+        "Dragonmarks": "Smocze znaki",
         "Elixers": "Eliksiry",
         "Feats": "Atuty",
-        "Kalashtar Traits": "Kalashtar Traits",
-        "Khoravar Traits": "Khoravar Traits",
+        "Kalashtar Traits": "Cechy kalashtara",
+        "Khoravar Traits": "Cechy khoravara",
         "Level 10 Plans": "Level 10 Plans",
         "Level 14 Plans": "Level 14 Plans",
         "Level 2 Plans": "Level 2 Plans",
@@ -23,8 +23,8 @@
         "Shifter Traits": "Cechy zmiennego",
         "Species": "Gatunki",
         "Spells": "Czary",
-        "The Artificer": "The Artificer",
-        "Warforged Traits": "Warforged Traits"
+        "The Artificer": "Wynalazca",
+        "Warforged Traits": "Cechy zbrojnokutego"
     },
     "entries": {
         "Aberrant Dragonmark": {
@@ -46,19 +46,19 @@
             "name": "Odporność na kwas"
         },
         "Advanced Artifice": {
-            "name": "Advanced Artifice",
+            "name": "Zaawansowane wynalazki",
             "description": {
-                "value": "<p>You gain the following benefits.</p><p><em><strong>Magic Item Savant.</strong></em> You can now attune to up to five magic items at once.</p><p><em><strong>Refreshed Genius.</strong></em> When you finish a Short Rest, you regain one expended use of your Flash of Genius feature.</p>"
+                "value": "<p>Zyskujesz następujące korzyści.</p><p><em><strong>Uczony w magicznych przedmiotach.</strong></em> Możesz teraz zestroić się jednocześnie z maksymalnie pięcioma magicznymi przedmiotami.</p><p><em><strong>Odświeżenie geniuszu.</strong></em> Kiedy kończysz Krótki odpoczynek, odzyskujesz jedno zużyte użycie swojej cechy Przebłysk geniuszu.</p>"
             }
         },
         "Adventurer's Atlas": {
-            "name": "Adventurer's Atlas",
+            "name": "Atlas poszukiwacza przygód",
             "description": {
                 "value": "<p>Whenever you finish a Long Rest while holding Cartographer’s Tools, you can use that tool to create a set of magical maps by touching at least two creatures (one of whom can be yourself), up to a maximum number of creatures equal to 1 plus your Intelligence modifier (minimum of two creatures). Each target receives a magical map, which constantly updates to show the relative position of all the map holders but is illegible to all others. The maps last until you die or until you use this feature again, at which point any existing maps created by this feature immediately vanish.</p><p>While carrying the map, a target gains the following benefits.</p><p><em><strong>Awareness.</strong></em> The target adds 1d4 to its Initiative rolls.</p><p><em><strong>Positioning.</strong></em> The target knows the location of all other map holders that are on the same plane of existence as itself. When casting a spell or creating another effect that requires being able to see the effect’s target, a map holder can target another map holder regardless of sight or cover, so long as the other map holder is still within the effect’s range.</p>"
             }
         },
         "Alchemical Savant": {
-            "name": "Alchemical Savant",
+            "name": "Uczony w alchemii",
             "description": {
                 "value": "<p>Whenever you cast a spell using your Alchemist’s Supplies as the Spellcasting Focus, you gain a bonus to one roll of the spell. That roll must restore [[/heal]]{Hit Points} or be a damage roll that deals [[/damage]]{Acid, Fire, or Poison} damage. The bonus equals your Intelligence modifier (minimum bonus of +1).</p>"
             }
@@ -66,7 +66,7 @@
         "Alchemist": {
             "name": "Alchemik",
             "description": {
-                "value": "<p><em>Craft Magic Elixirs and Potions</em></p><p>An Alchemist is an expert at combining reagents to produce magical effects. Alchemists use their creations to give life and to leech it away.</p>"
+                "value": "<p><em>Twórz magiczne eliksiry i mikstury</em></p><p>Alchemik jest ekspertem w łączeniu odczynników, aby wywoływać magiczne efekty. Alchemicy używają swoich tworów, by dawać życie i je wysysać.</p>"
             }
         },
         "Alchemist Spells": {
@@ -82,16 +82,16 @@
             }
         },
         "Arcane Armor": {
-            "name": "Arcane Armor",
+            "name": "Magiczny pancerz",
             "description": {
                 "value": "<p>As a Magic action while you have Smith’s Tools in hand, you can turn a suit of armor you are wearing into Arcane Armor. The armor continues to be Arcane Armor until you don another suit of armor or you die.</p><p>You gain the following benefits while wearing your Arcane Armor.</p><p><em><strong>No Strength Requirement.</strong></em> If the armor normally has a Strength requirement, the Arcane Armor lacks this requirement for you.</p><p><em><strong>Quick Don and Doff.</strong></em> You can don or doff the armor as a Utilize action. The armor can’t be removed against your will.</p><p><em><strong>Spellcasting Focus.</strong></em> You can use the Arcane Armor as a Spellcasting Focus for your Artificer spells.</p><section class=\"secret\" id=\"secret-RBG4vzXizNb6AeKx\"><p><strong>Foundry Note</strong></p><p>Use the Armor Model feature to create your Arcane Armor.</p></section>"
             }
         },
         "Arcane Empowerment": {
-            "name": "Arcane Empowerment"
+            "name": "Magiczne wzmocnienie"
         },
         "Arcane Firearm": {
-            "name": "Arcane Firearm",
+            "name": "Magiczna broń palna",
             "description": {
                 "value": "<p>When you finish a Long Rest, you can use Woodcarver’s Tools to carve special sigils into a Rod, Staff, Wand, or Martial Ranged weapon and thereby turn it into your Arcane Firearm. The sigils disappear from the object if you later carve them on a different item. The sigils otherwise last indefinitely.</p><p>You can use your Arcane Firearm as a Spellcasting Focus for your Artificer spells. When you cast an Artificer spell through the firearm, roll [[/r 1d8]], and you gain a bonus to one of the spell’s damage rolls equal to the number rolled.</p>"
             }
@@ -115,7 +115,7 @@
             "name": "Pancerz +2"
         },
         "Armor Model": {
-            "name": "Armor Model",
+            "name": "Model pancerza",
             "description": {
                 "value": "<p>You can customize your Arcane Armor. When you do so, choose one of the following armor models: Dreadnaught, Guardian, or Infiltrator. The model you choose gives you special benefits while you wear it.</p><p>Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of your Strength or Dexterity modifier, to the attack and damage rolls.</p><p>You can change the armor’s model whenever you finish a Short or Long Rest if you have Smith’s Tools in hand.</p><p><em><strong>Dreadnaught.</strong></em> You design your armor to become a towering juggernaut in battle. It has the following features:</p><p><strong>@UUID[Compendium.dnd-forge-artificer.options.Item.efaDreadnaughtFo]{Force Demolisher}.</strong></p><p><strong>@UUID[Compendium.dnd-forge-artificer.options.Item.efaDreadnaughtGi]{Giant Stature}.</strong></p><p><em><strong>Guardian.</strong></em> You design your armor to be in the front line of conflict. It has the following features:</p><p><strong>@UUID[Compendium.dnd-forge-artificer.options.Item.efaThunderPulse0]{Thunder Pulse}.</strong></p><p><strong>@UUID[Compendium.dnd-forge-artificer.options.Item.efaDefensiveFiel]{Defensive Field}.</strong></p><p><em><strong>Infiltrator.</strong></em> You customize your armor for subtler undertakings. It has the following features:</p><p><strong>@UUID[Compendium.dnd-forge-artificer.options.Item.efaLightningLaun]{Lightning Launcher}.</strong></p><p><strong>@UUID[Compendium.dnd-forge-artificer.options.Item.efaPoweredSteps0]{Powered Steps}.</strong></p><p><strong>@UUID[Compendium.dnd-forge-artificer.options.Item.efaDampeningFiel]{Dampening Field}.</strong></p><section class=\"secret\" id=\"secret-rSfgkzmVtx77CkO1\"><p><strong>Foundry Note</strong></p><p>Enchanting a set of armor with this feature will include the benefits of the Arcane Armor feature.</p><p>The relevant items and features are added to your sheet when you enchant a piece of armor with this feature and removed when you disenchant them.</p></section>"
             }
@@ -171,7 +171,7 @@
         "Armorer": {
             "name": "Płatnerz",
             "description": {
-                "value": "<p><em>Craft Magic Armor to Enhance Your Abilities</em></p><p>An Armorer modifies armor to function almost like a second skin. The armor is enhanced to hone the Armorer’s magic, unleash potent attacks, and generate a formidable defense.</p>"
+                "value": "<p><em>Twórz Magiczny pancerz, by wzmacniać swoje zdolności</em></p><p>Płatnerz modyfikuje pancerz, aby działał niemal jak druga skóra. Pancerz zostaje ulepszony, by wzmacniać magię Płatnerza, wyzwalać potężne ataki i zapewniać potężną obronę.</p>"
             }
         },
         "Armorer Spells": {
@@ -187,9 +187,9 @@
             }
         },
         "Artificer": {
-            "name": "Artificer",
+            "name": "Wynalazca",
             "description": {
-                "value": "<p>Masters of invention, Artificers use ingenuity and magic to unlock extraordinary capabilities in objects. They see magic as a complex system waiting to be decoded and then harnessed in their spells and inventions. You can find everything you need to play one of these inventors in this chapter (@UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaTheArtificer0]{The Artificer}).</p>"
+                "value": "<p>Mistrzowie innowacji, Wynalazcy używają pomysłowości i magii, wyzwalać niezwykłe właściwości przedmiotów). Postrzegają magię jako złożony system, który czeka na rozszyfrowanie, a następnie wykorzystanie w zaklęciach oraz nowatorskich wynalazkach. W tym rozdziale znajdziesz wszystko, czego potrzebujesz, by zagrać jednym z takich Wynalazców (@UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaTheArtificer0]).</p>"
             }
         },
         "Artificer Subclass": {
@@ -201,7 +201,7 @@
         "Artillerist": {
             "name": "Artylerzysta",
             "description": {
-                "value": "<blockquote><p>Wield Destructive Power from Afar</p></blockquote><p>An Artillerist specializes in using magic to hurl energy, projectiles, and explosions on a battlefield.</p>"
+                "value": "<blockquote><p>Władaj niszczycielską mocą z oddali</p></blockquote><p>Artylerzysta specjalizuje się w używaniu magii do miotania energii, pocisków i eksplozji na polu walki.</p>"
             }
         },
         "Artillerist Spells": {
@@ -224,7 +224,7 @@
             }
         },
         "Battle Ready": {
-            "name": "Battle Ready",
+            "name": "Gotowość bojowa",
             "description": {
                 "value": "<p>Your combat training and your experiments with magic have paid off in two ways.</p><p><em><strong>Arcane Empowerment</strong></em>. When you attack with a magic weapon, you can use your Intelligence modifier, instead of your Strength or Dexterity modifier, for the attack and damage rolls.</p><p><em><strong>Weapon Knowledge</strong></em>. You gain proficiency with Martial weapons. You can use a weapon with which you have proficiency as a Spellcasting Focus for your Artificer spells.</p><section class=\"secret\" id=\"secret-hhCDbH1GjzkdSiHz\"><p><strong>Foundry Note</strong></p><p>To use, click on the \"<strong>Arcane Empowerment</strong>\" activity to place the chat card in chat. Then, take any magic weapon from your inventory and drag it into the <strong>enchantment drop area</strong> on the chat card. This action will change the bonus modifier to your Intelligence (INT) modifier.</p><p>As an alternative, you can change to the <strong>Effects tab</strong> of this feature and drag the enchantment onto the relevant magic item's Effects tab</p></section>"
             }
@@ -321,17 +321,17 @@
         "Changeling": {
             "name": "Odmieniec",
             "description": {
-                "value": "<p>With ever-changing appearances, changelings reside in many societies undetected. Each changeling can supernaturally adopt any face they like. For some changelings, a new face may reveal an aspect of their soul.</p><p>The first changelings in the multiverse appeared in the Feywild, and the wondrous, mutable essence of that plane lingers in changelings today—even in those who have never set foot in the fey realm.</p><p>In their true form, changelings appear faded, their features almost devoid of detail. It is rare to see one in that form, for a typical changeling alters their shape the way others might change clothes. However, many changelings develop identities with more depth, crafting a persona complete with history and beliefs to go with each shape. A changeling adventurer might have personas for many situations, including negotiation, investigation, and combat.</p><p>Multiple changelings can share a persona. Personas can even pass down through a family, allowing a younger changeling to take advantage of contacts established by the persona’s previous users.</p><hr /><h3>Changeling Traits</h3><p><strong>Creature Type:</strong> Fey</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p>As a Changeling, you have these special traits.</p><p><em><strong>Changeling Instincts.</strong></em> Thanks to your connection to the fey realm, you gain proficiency in two of the following skills of your choice: Deception, Insight, Intimidation, Performance, or Persuasion.</p><p><em><strong>Shape-Shifter.</strong></em> As an action, you can shape-shift to change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height and weight and can change your size between Medium and Small. You can make yourself appear as a member of another playable species, though none of your game statistics change. You can’t duplicate the appearance of an individual you’ve never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. This trait doesn’t change your clothing and equipment.</p><p>While shape-shifted with this trait, you have Advantage on Charisma checks.</p><p>You stay in the new form until you take an action to revert to your true form.</p>"
+                "value": "<p>Odmieńcy, o nieustannie zmieniającym się wyglądzie, żyją nierozpoznani w wielu społecznościach. Każdy odmieniec może w nadnaturalny sposób przybrać dowolną twarz, jaką zechce. Dla niektórych odmieńców nowa twarz może ujawniać aspekt ich duszy.</p><p>Pierwsi odmieńcy w wieloświecie pojawili się w Feywild, a cudowna, zmienna esencja tej sfery wciąż trwa w odmieńcach po dziś dzień — nawet w tych, którzy nigdy nie postawili stopy w krainie fey.</p><p>W swojej prawdziwej postaci odmieńcy wydają się wyblakli, a ich rysy są niemal pozbawione szczegółów. Rzadko widuje się ich w tej formie, ponieważ typowy odmieniec zmienia kształt tak, jak inni mogliby zmieniać ubrania. Jednak wielu odmieńców rozwija tożsamości o większej głębi, tworząc personę wraz z historią i przekonaniami odpowiadającymi każdej postaci. Poszukiwacz przygód będący odmieńcem może mieć persony na wiele sytuacji, w tym do negocjacji, śledztwa i walki.</p><p>Wielu odmieńców może dzielić jedną personę. Persony mogą być nawet przekazywane w rodzinie, pozwalając młodszemu odmieńcowi korzystać z kontaktów nawiązanych przez poprzednich użytkowników tej persony.</p><hr /><h3>Cechy odmieńca</h3><p><strong>Typ Istoty:</strong> Fey</p><p><strong>Rozmiar:</strong> Średni (około 4–7 stóp wzrostu) albo Mały (około 2–4 stóp wzrostu), wybierany przy wyborze tego gatunku</p><p><strong>Szybkość:</strong> 30 stóp</p><p>Jako odmieniec posiadasz następujące cechy specjalne.</p><p><em><strong>Instynkty odmieńca.</strong></em> Dzięki twojemu powiązaniu z krainą fey zyskujesz biegłość w dwóch spośród następujących umiejętności według własnego wyboru: Oszustwo, Intuicja, Zastraszanie, Występy albo Perswazja.</p><p><em><strong>Zmiennokształtność.</strong></em> Akcją możesz zmienić kształt, aby zmienić swój wygląd i głos. Ty określasz szczegóły tych zmian, w tym swoje ubarwienie, długość włosów i płeć. Możesz także dostosować swój wzrost i wagę oraz zmienić rozmiar między Średnim a Małym. Możesz sprawić, że będziesz wyglądać jak przedstawiciel innego grywalnego gatunku, choć żadne z twoich statystyk gry się nie zmieniają. Nie możesz skopiować wyglądu osoby, której nigdy nie widziałeś, i musisz przyjąć formę mającą taki sam podstawowy układ kończyn jak ty. Ta cecha nie zmienia twojego ubrania ani ekwipunku.</p><p>Gdy jesteś przekształcony dzięki tej cesze, masz Ułatwienie w testach Charyzmy.</p><p>Pozostajesz w nowej formie, dopóki Akcją nie powrócisz do swojej prawdziwej postaci.</p>"
             }
         },
         "Changeling Instincts": {
-            "name": "Changeling Instincts",
+            "name": "Instynkty odmieńca",
             "description": {
                 "value": "<p>Thanks to your connection to the fey realm, you gain proficiency in two of the following skills of your choice: Deception, Insight, Intimidation, Performance, or Persuasion.</p>"
             }
         },
         "Chemical Mastery": {
-            "name": "Chemical Mastery",
+            "name": "Chemiczne mistrzostwo",
             "description": {
                 "value": "<p>You gain the following benefits.</p><p><em><strong>Alchemical Eruption.</strong></em> When you cast an Artificer spell that deals Acid, Fire, or Poison damage to a target, you can also deal [[/damage]] damage to that target. You can use this benefit only once on each of your turns.</p><p><em><strong>Chemical Resistance.</strong></em> You gain Resistance to Acid damage and Poison damage. You also gain Immunity to the Poisoned condition.</p><p><em><strong>Conjured Cauldron.</strong></em> You can cast <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplTashasBubb]{Tasha’s Bubbling Cauldron} </em>without expending a spell slot, without preparing the spell, and without Material components, provided you use Alchemist’s Supplies as the Spellcasting Focus. Once you use this feature, you can’t use it again until you finish a Long Rest.</p>"
             }
@@ -411,7 +411,7 @@
             "description": "<p>When you make a Wisdom (Perception or Survival) check, 1d4 is automatically added to the ability check.</p>"
         },
         "Dreadnaught": {
-            "name": "Dreadnaught"
+            "name": "Drednot"
         },
         "Dreadnaught: Force Demolisher": {
             "name": "Dreadnaught: Force Demolisher",
@@ -430,9 +430,9 @@
             "description": "<p>You have Advantage on Wisdom and Charisma saving throws.</p>"
         },
         "Eldritch Cannon": {
-            "name": "Eldritch Cannon",
+            "name": "Mistyczne działo",
             "description": {
-                "value": "<p>Using Smith’s Tools or Woodcarver’s Tools, you can take a Magic action to create a Small or Tiny Eldritch Cannon in an unoccupied space on a horizontal surface within 5 feet of yourself. The cannon’s game statistics appear below. You determine its appearance, including whether you carry it or not (and your choice of legs or wheels, for the latter). It disappears if it is reduced to 0 Hit Points or after 1 hour. You can dismiss it early as a Magic action.</p><p>Once you create a cannon, you can’t do so again until you finish a Long Rest or expend a spell slot to create one. You can have only one cannon at a time and can’t create one while you already have one.</p><p><em><strong>Activate Cannon (Requires You to Be within 60 Feet of the Cannon).</strong></em> As a Bonus Action, you order the cannon to use the Flamethrower, Force Ballista, or Protector option below; you can direct the cannon to move up to 15 feet before or after that option:</p><p><strong>Flamethrower.</strong> The cannon blasts fire in a 15-foot Cone. Each creature in that area makes a Dexterity saving throw against your spell save DC, taking 2d8 Fire damage on a failed save or half as much damage on a successful one. Flammable objects in the Cone that aren't being worn or carried start burning.</p><p><strong>Force Ballista.</strong> Make a ranged spell attack originating from the cannon at one creature or object within 120 feet of it. On a hit, the target takes 2d8 Force damage, and if the target is a creature, it is pushed up to 5 feet away from the cannon.</p><p><strong>Protector.</strong> The cannon emits a burst of positive energy that grants itself and each creature of your choice within 10 feet of the cannon a number of Temporary Hit Points equal to 1d8 plus your Intelligence modifier (minimum of +1).</p><section class=\"secret\" id=\"secret-7F6iSlhRjlzGnJAc\"><p><strong>Foundry Note</strong></p><p>You can use the Eldritch Cannon from this feature or from the features on the summoned Eldritch Cannon's character sheet.</p></section><p></p><details><summary><strong>Stat Block</strong></summary><p></p><p>@Embed[Compendium.dnd-forge-artificer.actors.Actor.efaEldritchCanno statblock caption=false]</p></details>"
+                "value": "<p>Korzystając z Narzędzi kowala albo Narzędzi snycerza, możesz wykonać Akcję magii, aby stworzyć Małe albo Malutkie Mistyczne działo na niezajętej przestrzeni na poziomej powierzchni w obrębie 5 stóp od siebie. Statystyki działa znajdują się poniżej. Ty określasz jego wygląd, w tym to, czy je nosisz, czy nie (a w tym drugim przypadku także wybór nóg albo kół). Znika ono, jeśli jego Punkty Wytrzymałości spadną do 0 albo po 1 godzinie. Możesz odwołać je wcześniej Akcją Magii.</p><p>Gdy raz stworzysz działo, nie możesz zrobić tego ponownie, dopóki nie zakończysz Długiego odpoczynku albo nie zużyjesz Komórki czaru, by je stworzyć. Możesz mieć tylko jedno działo naraz i nie możesz stworzyć kolejnego, jeśli masz już jedno.</p><p><em><strong>Aktywacja działa (wymaga znajdowania się w obrębie 60 stóp od działa).</strong></em> Akcją dodatkową wydajesz działu rozkaz użycia jednej z poniższych opcji: Miotacz ognia, Balista mocy albo Obrońca; możesz nakazać działu przemieścić się do 15 stóp przed użyciem tej opcji albo po niej:</p><p><strong>Miotacz ognia.</strong> Działo wypluwa ogień w Stożku o długości 15 stóp. Każde stworzenie w tym obszarze wykonuje rzut obronny na Zręczność przeciw twojemu ST rzutu przeciw czarom, otrzymując 2k8 obrażeń od ognia przy nieudanym rzucie albo połowę tych obrażeń przy udanym. Łatwopalne obiekty w Stożku, które nie są noszone ani trzymane, zaczynają płonąć.</p><p><strong>Balista mocy.</strong> Wykonaj dystansowy atak czarem pochodzący z działa przeciw jednemu stworzeniu albo obiektowi w obrębie 120 stóp od niego. Przy trafieniu cel otrzymuje 2k8 obrażeń od mocy, a jeśli celem jest stworzenie, zostaje odepchnięte do 5 stóp od działa.</p><p><strong>Obrońca.</strong> Działo emituje wybuch pozytywnej energii, który przyznaje jemu samemu i każdemu wybranemu przez ciebie stworzeniu w obrębie 10 stóp od działa liczbę Tymczasowych Punktów Wytrzymałości równą 1k8 + twój modyfikator Inteligencji (minimum +1).</p><section class=\"secret\" id=\"secret-7F6iSlhRjlzGnJAc\"><p><strong>Notatka Foundry</strong></p><p>Możesz używać Mistycznego działa z tej cechy albo z cech na karcie postaci przywołanego Mistycznego działa.</p></section><p></p><details><summary><strong>Statystyki</strong></summary><p></p><p>@Embed[Compendium.dnd-forge-artificer.actors.Actor.efaEldritchCanno statblock caption=false]</p></details>"
             }
         },
         "Elven Chain": {
@@ -446,21 +446,21 @@
             "description": "<p>When you make a Charisma (Persuasion) check or an ability check using Brewer’s Supplies or Cook’s Utensils, 1d4 is automatically added to the ability check.</p>"
         },
         "Experimental Elixir": {
-            "name": "Experimental Elixir",
+            "name": "Eksperymentalny eliksir",
             "description": {
                 "value": "<p>Whenever you finish a Long Rest while holding Alchemist’s Supplies, you can use that tool to magically produce <strong>[[lookup @scale.alchemist.elixers]]{two}</strong> elixirs. For each elixir, roll on the Experimental Elixir table for the elixir’s effect, which is triggered when someone drinks the elixir. The elixir appears in a vial, and the vial vanishes when the elixir is drunk or poured out. If any elixir remains when you finish a Long Rest, the elixir and its vial vanish.</p><p>@Embed[Compendium.dnd-forge-artificer.tables.RollTable.efaExperimentalE caption=false cite=false resultLabel=\"Effect\" rollable]</p><p><em><strong>Drinking an Elixir.</strong></em> As a Bonus Action, a creature can drink the elixir or administer it to another creature within 5 feet of itself.</p><p><em><strong>Creating Additional Elixirs.</strong></em> As a Magic action while holding Alchemist’s Supplies, you can expend one spell slot to create another elixir. When you do so, you choose its effect from the Experimental Elixir table rather than rolling.</p><p>When you reach certain Artificer levels, you can make an additional elixir at the end of each Long Rest: a total of three at level 5, four at level 9, and five at level 15.</p><p></p>"
             }
         },
         "Explosive Cannon": {
-            "name": "Explosive Cannon",
+            "name": "Wybuchowe działo",
             "description": {
-                "value": "<p>Every [[/item Eldritch Cannon]] you create is now more destructive. You gain the following benefits.</p><p><em><strong>Detonate</strong></em>. When your cannon takes damage, you can take a Reaction to command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw against your spell save DC, taking 3d10 Force damage on a failed save or half as much damage on a successful one.</p><p><em><strong>Firepower</strong></em>. The cannon’s damage rolls and the number of Temporary Hit Points granted by Protector increase by 1d8.</p><section class=\"secret\" id=\"secret-gXu3BZvjDiwHBGD6\"><p><strong>Foundry Note</strong></p><p>The benefits of this feature are implemented in the <strong>[[/item Eldritch Cannon]]</strong> feature as your level advances. The <strong>Craft Cannon</strong> activity will automatically update to begin summoning the <strong>Explosive</strong> version of your Cannon which also has the improvements integrated in its sheet.</p></section>"
+                "value": "<p>Każde [[/item Eldritch Cannon]]{Mistyczne działo}, które tworzysz, jest teraz bardziej niszczycielskie. Zyskujesz następujące korzyści.</p><p><em><strong>Detonacja</strong></em>. Gdy twoje działo otrzyma obrażenia, możesz wykonać Reakcję, aby wydać mu rozkaz detonacji, jeśli znajdujesz się w obrębie 60 stóp od niego. Takie działanie niszczy działo i zmusza każde stworzenie w obrębie 20 stóp od niego do wykonania rzutu obronnego na Zręczność przeciw twojemu ST rzutu przeciw czarom; przy nieudanym rzucie otrzymuje 3k10 obrażeń od mocy, a przy udanym połowę tych obrażeń.</p><p><em><strong>Siła ognia</strong></em>. Rzuty na obrażenia działa oraz liczba Tymczasowych Punktów Wytrzymałości przyznawanych przez Obrońcę zwiększają się o 1k8.</p><section class=\"secret\" id=\"secret-gXu3BZvjDiwHBGD6\"><p><strong>Notatka Foundry</strong></p><p>Korzyści z tej zdolności są zaimplementowane w zdolności <strong>[[/item Eldritch Cannon]]</strong> wraz ze wzrostem twojego poziomu. Aktywność <strong>Wytwórz działo</strong> automatycznie zaktualizuje się, aby zaczęła przywoływać <strong>Explosive</strong> wersję twojego działa, która ma również uwzględnione te ulepszenia na swojej karcie.</p></section>"
             }
         },
         "Extra Attack": {
             "name": "Dodatkowy atak",
             "description": {
-                "value": "<p>You can attack twice instead of once whenever you take the Attack action on your turn. </p><p>You can forgo one of your attacks when you take the Attack action to command your @UUID[Compendium.dnd-forge-artificer.actors.Actor.efaSteelDefender]{Steel Defender} to take the <strong>Force-Empowered Rend</strong> action.</p>"
+                "value": "<p>Możesz zaatakować dwa razy zamiast raz, ilekroć wykonujesz Akcję ataku w swojej turze.</p><p>Możesz zrezygnować z jednego ze swoich ataków, gdy wykonujesz Akcję ataku, aby wydać swojemu @UUID[Compendium.dnd-forge-artificer.actors.Actor.efaSteelDefender]{Stalowemy obrońcy} polecenie wykonania akcji <strong>Rozdarcie wzmocnione mocą</strong>.</p>"
             }
         },
         "Eyes of Charming": {
@@ -497,7 +497,7 @@
             }
         },
         "Flash of Genius": {
-            "name": "Flash of Genius",
+            "name": "Przebłysk geniuszu",
             "description": {
                 "value": "<p>When you or a creature you can see within 30 feet of you fails an ability check or a saving throw, you can take a Reaction to add a bonus to the roll, potentially causing it to succeed. The bonus equals your Intelligence modifier (minimum of +1).</p><p>You can take this Reaction a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>"
             }
@@ -525,9 +525,9 @@
             "name": "Odporność na moc"
         },
         "Fortified Position": {
-            "name": "Fortified Position",
+            "name": "Umocniona pozycja",
             "description": {
-                "value": "<p>You’re a master at forming well-defended emplacements using your [[/item Eldritch Cannon]]. You gain the following benefits.</p><p><em><strong>Double Firepower</strong></em>. You can now have two cannons at the same time, and you can create two with the same Magic action. (If you expend a spell slot to create the first cannon, you must expend another spell slot to create the second.) You can activate both of them with the same Bonus Action, ordering them to use the same activation option or different ones. You can’t create a third cannon while you have two.</p><p><em><strong>Shimmering Field Projection</strong></em>. You and your allies have Half Cover while within 10 feet of your Eldritch Cannon.</p><section class=\"secret\" id=\"secret-ZBFmNCkN7FOCe98l\"><p><strong>Foundry Note</strong></p><p>The benefits of this feature<strong> </strong>are implemented in the <strong>[[/item Eldritch Cannon]]</strong> feature as your level advances.</p></section>"
+                "value": "<p>Jesteś mistrzem w tworzeniu dobrze umocnionych stanowisk za pomocą swojego [[/item Eldritch Cannon]]{Mistycznego działa}. Zyskujesz następujące korzyści.</p><p><em><strong>Podwójna siła ognia</strong></em>. Możesz teraz utrzymywać dwa działa jednocześnie oraz powołać oba tą samą Akcją Magii. (Jeśli zużywasz Komórkę czaru, aby wykreować pierwsze z nich, musisz poświęcić kolejną Komórkę czaru na utworzenie drugiego). Możesz aktywować oba tą samą Akcją Dodatkową, wydając im polecenie użycia tej samej opcji aktywacji albo różnych opcji. Nie możesz stworzyć trzeciego działa, jeśli masz już dwa.</p><p><em><strong>Projekcja migoczącego pola</strong></em>. Ty oraz twoi sojusznicy zyskujecie Połowiczną osłonę, gdy przebywacie w obrębie 10 stóp od twojego Mistycznego działa.</p><section class=\"secret\" id=\"secret-ZBFmNCkN7FOCe98l\"><p><strong>Notatka Foundry</strong></p><p>Korzyści z tej zdolności są zaimplementowane<strong> </strong> w zdolności <strong>[[/item Eldritch Cannon]]</strong> wraz ze wzrostem twojego jego poziomu.</p></section>"
             }
         },
         "Frightened": {
@@ -633,7 +633,7 @@
             }
         },
         "Guided Precision": {
-            "name": "Guided Precision",
+            "name": "Precyzyjne naprowadzanie",
             "description": {
                 "value": "<p>Once per turn, whenever you cast a spell from your Cartographer Spells list or hit a creature affected by your <em>Faerie Fire</em> with an attack roll, you can add your Intelligence modifier to one damage roll of the spell or attack.</p><p>In addition, taking damage can’t cause you to lose Concentration on <em>Faerie Fire</em>.</p>"
             }
@@ -646,7 +646,7 @@
         },
         "Half Cover": {
             "name": "Połowa osłony",
-            "description": "<p>You have have Half Cover while within 10 feet of your Eldritch Cannon.</p>"
+            "description": "<p>Masz Połowiczną osłonę, gdy znajdujesz się w obrębie 10 stóp od swojego Mistycznego działa.</p>"
         },
         "Healing Elixir": {
             "name": "Healing Elixir",
@@ -761,7 +761,7 @@
             }
         },
         "Improved Defender": {
-            "name": "Improved Defender",
+            "name": "Ulepszony obrońca",
             "description": {
                 "value": "<p>Your Arcane Jolt and Steel Defender have become more powerful, granting these benefits.</p><p><em><strong>Improved Jolt</strong></em>. The extra damage and healing of your Arcane Jolt both increase to 4d6.</p><p><em><strong>Improved Deflection</strong></em>. Whenever your Steel Defender uses its Deflect Attack, the attacker takes Force damage equal to 1d4 plus your Intelligence modifier.</p><section class=\"secret\" id=\"secret-CfVDpROlShovKAlo\"><p><strong>Foundry Note</strong></p><p>The benefits of the Improved Jolt feature are implemented in the <strong>Arcane Jolt</strong> feature as your level advances.</p><p>The <strong>Steel Defender</strong> feature is automatically updated to now summon an <strong>Improved Steel Defender</strong> with the change to <strong>Improved Deflection</strong> implemented.</p></section><p></p>"
             }
@@ -788,7 +788,7 @@
             }
         },
         "Ingenious Movement": {
-            "name": "Ingenious Movement",
+            "name": "Błyskotliwy ruch",
             "description": {
                 "value": "<p>When you use your @UUID[Compendium.dnd-forge-artificer.options.Item.efaFlashofGenius]{Flash of Genius}, you or a willing creature of your choice that you can see within 30 feet of yourself can teleport up to 30 feet to an unoccupied space you can see as part of that same Reaction.</p>"
             }
@@ -846,13 +846,13 @@
             }
         },
         "Magic Item Adept": {
-            "name": "Magic Item Adept",
+            "name": "Znawca magicznych przedmiotów",
             "description": {
                 "value": "<p>You can now attune to up to four magic items at once.</p>"
             }
         },
         "Magic Item Master": {
-            "name": "Magic Item Master",
+            "name": "Mistrz magicznych przedmiotów",
             "description": {
                 "value": "<p>You can now attune to up to six magic items at once.</p>"
             }
@@ -861,7 +861,7 @@
             "name": "Magic Item Savant"
         },
         "Magic Item Tinker": {
-            "name": "Magic Item Tinker",
+            "name": "Majsterkowicz magicznych przedmiotów",
             "description": {
                 "value": "<p>Your Replicate Magic Item feature gains the following options.</p><p><em><strong>Charge Magic Item.</strong></em> As a Bonus Action, you can touch a magic item within 5 feet of yourself that you created with Replicate Magic Item and that uses charges. You expend a level 1+ spell slot and recharge the item. The number of charges the item regains is equal to the level of spell slot expended.</p><p><em><strong>Drain Magic Item.</strong></em> As a Bonus Action, you can touch a magic item within 5 feet of yourself that you created with Replicate Magic Item and cause the item to vanish, converting its magical energy into a spell slot. The slot is level 1 if the item is Common or level 2 if the item is Uncommon or Rare. Once you use this feature, you can’t do so again until you finish a Long Rest. Any spell slot you create with this feature vanishes when you finish a Long Rest.</p><p><em><strong>Transmute Magic Item.</strong></em> As a Magic action, you can touch one magic item within 5 feet of yourself that you created with Replicate Magic Item and transform it into a different magic item. The resulting item must be based on a magic item plan you know. Once you use this feature, you can’t do so again until you finish a Long Rest.</p><h4></h4>"
             }
@@ -1028,7 +1028,7 @@
             }
         },
         "Replicate Magic Item": {
-            "name": "Replicate Magic Item",
+            "name": "Replikacja magicznego przedmiotu",
             "description": {
                 "value": "<p>You have learned arcane plans that you use to make magic items.</p><p><em><strong>Plans Known.</strong></em> When you gain this feature, choose four plans to learn from the @UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaTheArtificer0.JournalEntryPage.9vdV0UPcsgH6GqRj]{Magic Item Plans} (Artificer Level 2+) table (see the <em>Dungeon Master’s Guide</em> for the items’ descriptions). <em>@UUID[Compendium.dnd-forge-artificer.options.Item.efaP2BagofHoldin]{Bag of Holding},</em> <em>@UUID[Compendium.dnd-forge-artificer.options.Item.efaP2CapofWaterB]{Cap of Water Breathing}</em>, <em>@UUID[Compendium.dnd-forge-artificer.options.Item.efaP2SendingSton]{Sending Stones}</em>, and <em>@UUID[Compendium.dnd-forge-artificer.options.Item.efaP2WandoftheWa]{Wand of the War Mage}</em> are recommended. Whenever you gain an Artificer level, you can replace one of the plans you know with a new plan for which you qualify.</p><p>You learn another plan of your choice when you reach certain Artificer levels, as shown in the Plans Known column of the Artificer Features table. When you choose a plan to learn, you choose it from any Magic Item Plans table for which you qualify; your qualification is based on your Artificer level.</p><p><em><strong>Creating an Item.</strong></em> When you finish a Long Rest, you can create one or two different magic items if you have Tinker’s Tools in hand. Each item is based on one of the plans you know for this feature.</p><p>If a created item requires Attunement, you can attune yourself to it the instant you create it. If you decide to attune to the item later, you must do so using the normal process for Attunement.</p><p>When you reach certain Artificer levels specified in the Magic Items column of the Artificer Features table, the number of magic items you can create at the end of a Long Rest increases. Each item you create must be based on a different plan you know.</p><p>You can’t have more magic items from this feature than the number shown in the Magic Items column of the Artificer Features table for your level. If you try to exceed your maximum number of magic items for this feature, the oldest item vanishes, and then the new item appears.</p><section class=\"notable\"><h4>Crafting More Magic Items</h4><p>The Replicate Magic Item feature isn’t the only way for an Artificer to make magic items. The <em>Dungeon Master’s Guide</em> provides rules for characters—not just Artificers—who want to make magic items of all sorts. Though many different characters can make magic items, Artificers can do it faster than others; each Artificer subclass improves a character’s speed at making items of a certain category.</p><p>When an Artificer crafts a magic item using the normal rules in the <em>Dungeon Master’s Guide</em>, the character gains no special connection to that item. Class features that refer to items created by your Replicate Magic Item feature don’t apply to items you craft by other means.</p></section><p><em><strong>Duration.</strong></em> A magic item created by this feature functions as the normal magic item, except its magic isn’t permanent; when you die, the magic item vanishes after 1d4 days. If you replace a plan you know with a new plan, any magic item created with the replaced plan immediately vanishes.</p><p>If an item that you created with this feature is a container, such as a <em>Bag of Holding</em>, and it vanishes, its contents harmlessly appear in and around its space.</p><p><em><strong>Spellcasting Focus.</strong></em> You can use any Wand or Weapon created by this feature as a Spellcasting Focus in lieu of using a set of Artisan’s Tools.</p>"
             }
@@ -1055,7 +1055,7 @@
             }
         },
         "Restorative Reagents": {
-            "name": "Restorative Reagents",
+            "name": "Regenerujące odczynniki",
             "description": {
                 "value": "<p>You can cast <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLesserRest]{Lesser Restoration}</em> without expending a spell slot and without preparing the spell, provided you use Alchemist’s Supplies as the Spellcasting Focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>"
             }
@@ -1149,11 +1149,11 @@
             }
         },
         "Shape-Shifted": {
-            "name": "Shape-Shifted",
+            "name": "Zmieniona postać",
             "description": "<p>While shape-shifted with this trait, you have Advantage on Charisma checks.</p>"
         },
         "Shape-Shifter": {
-            "name": "Shape-Shifter",
+            "name": "Zmiennokształtny",
             "description": {
                 "value": "<p>As an action, you can shape-shift to change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height and weight and can change your size between Medium and Small. You can make yourself appear as a member of another playable species, though none of your game statistics change. You can’t duplicate the appearance of an individual you’ve never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. This trait doesn’t change your clothing and equipment.</p><p>While shape-shifted with this trait, you have Advantage on Charisma checks.</p><p>You stay in the new form until you take an action to revert to your true form.</p><section class=\"secret\" id=\"secret-3t1HExONrsHfU6vl\"><p><strong>Foundry Note</strong></p><p>This feature includes a <strong>Transform</strong> activity which can be used to open the Compendium Browser and select an Actor whose appearance you would like to copy. You can also drag an Actor onto your character sheet and select <strong>Appearance Only</strong> as the transformation type or manually adjust your token.</p><p>This feature includes a <strong>Shape-Shifted</strong> Active Effect which can be activated when you're shifted and grants advantage on all Charisma checks.</p></section>"
             }
@@ -1202,7 +1202,7 @@
             }
         },
         "Soul of Artifice": {
-            "name": "Soul of Artifice",
+            "name": "Dusza wynalazcy",
             "description": {
                 "value": "<p>You have developed a mystical connection to your magic items, which you can draw on for aid. You gain the following benefits.</p><p><em><strong>Cheat Death.</strong></em> If you’re reduced to 0 Hit Points but not killed outright, you can disintegrate any number of Uncommon or Rare magic items created by your Replicate Magic Item feature. If you do so, your Hit Points instead change to a number equal to 20 times the number of magic items disintegrated.</p><p><em><strong>Magical Guidance.</strong></em> When you finish a Short Rest, you regain all expended uses of your Flash of Genius if you have Attunement to at least one magic item.</p>"
             }
@@ -1220,7 +1220,7 @@
             }
         },
         "Spell-Storing Item": {
-            "name": "Spell-Storing Item",
+            "name": "Przedmiot przechowujący czar",
             "description": {
                 "value": "<p>Whenever you finish a Long Rest, you can touch one Simple or Martial weapon or one item that you can use as a Spellcasting Focus, and you store a spell in it, choosing a level 1, 2, or 3 Artificer spell that has a casting time of an action and doesn’t require a Material component that is consumed by the spell (you needn’t have the spell prepared).</p><p>While holding the object, a creature can take a Magic action to produce the spell’s effect from it, using your spellcasting ability modifier. If the spell requires Concentration, the creature must concentrate. Once a creature has used the object to produce the spell’s effect, the object can’t be used this way again until the start of the creature’s next turn.</p><p>The spell stays in the object until it’s been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object.</p><section class=\"secret\" id=\"secret-qbkdg7BMZ3Ou2rIT\"><p><strong>Foundry Note</strong></p><p>The <strong>Enchant</strong> activity will add a <strong>Cast</strong> activity to the item. To add the spell, open the <strong>Cast</strong> activity, change to the Spell tab, and drag/drop the spell. You will also need to change to the Activation tab and then the Consumption sub-tab of the activity to set the maximum number of uses.</p></section>"
             }
@@ -1232,13 +1232,13 @@
             }
         },
         "Steel Defender": {
-            "name": "Steel Defender",
+            "name": "Stalowy obrońca",
             "description": {
                 "value": "<p>Your tinkering has borne you a companion, a <strong>@UUID[Compendium.dnd-forge-artificer.actors.Actor.efaSteelDefender]{Steel Defender}</strong> (see the stat block). You determine the defender’s appearance and whether it has two legs or four; your choices don’t affect the defender’s game statistics.</p><p>The defender is Friendly to you and your allies and obeys you. It vanishes if you die.</p><p><em><strong>The Defender in Combat</strong></em>. In combat, the defender acts during your turn. It can move and take its Reaction on its own, but the only action it takes is the &amp;Reference[Dodge] action unless you take a Bonus Action to command it to take an action. If you have the Incapacitated condition, the defender acts on its own and isn’t limited to the Dodge action.</p><p><em><strong>Restoring or Replacing the Defender</strong></em>. If the defender has died within the last hour, you can take a Magic action to touch it and expend a spell slot. The defender returns to life after 1 minute with all its Hit Points restored.</p><p>Whenever you finish a Long Rest, you can create a new defender if you have Smith’s Tools in hand. If you already have a defender from this feature, the first one vanishes.</p><details><summary><strong>STAT BLOCK</strong></summary><p>@embed[Compendium.dnd-forge-artificer.actors.Actor.efaSteelDefender statblock caption=false]</p></details><p></p>"
             }
         },
         "Superior Atlas": {
-            "name": "Superior Atlas",
+            "name": "Pierwszorzędny atlas",
             "description": {
                 "value": "<p>Your Adventurer’s Atlas improves, gaining the following benefits.</p><p><em><strong>Safe Haven.</strong></em> When a map holder would be reduced to 0 Hit Points but not killed outright, that creature can destroy its map. The creature’s Hit Points instead change to a number equal to twice your Artificer level, and the creature is teleported to an unoccupied space within 5 feet of you or another map holder of its choice.</p><p><em><strong>Unerring Path.</strong></em> If you are one of the map holders for your Adventurer’s Atlas, you can cast <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFindthePat]{Find the Path}</em> without expending a spell slot, without preparing the spell, and without needing spell components. Once you use this benefit, you can’t use it again until you finish a Long Rest.</p>"
             }
@@ -1276,7 +1276,7 @@
             "description": "<p>A creature hit by the pulse has Disadvantage on attack rolls against targets other than you until the start of your next turn.</p>"
         },
         "Tinker's Magic": {
-            "name": "Tinker's Magic",
+            "name": "Magia majsterkowicza",
             "description": {
                 "value": "<p>You know the <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]{Mending}</em> cantrip.</p><p>As a Magic action while holding Tinker’s Tools, you can create one item in an unoccupied space within 5 feet of yourself, choosing the item from the following list:</p><details><summary><strong>Item Options</strong></summary><div class=\"align-start\" style=\"columns:2\"><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagBallBearing]{Ball Bearings}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagBasket00000]{Basket}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagBedroll0000]{Bedroll}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagBell0000000]{Bell}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagBlanket0000]{Blanket}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagBlockandTac]{Block and Tackle}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagBottleGlass]{Bottle, Glass}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagBucket00000]{Bucket}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagCaltrops000]{Caltrops}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagCandle00000]{Candle}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagCrowbar0000]{Crowbar}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagFlask000000]{Flask}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagGrapplingHo]{Grappling Hook}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagHuntingTrap]{Hunting Trap}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagJug00000000]{Jug}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagLamp0000000]{Lamp}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagManacles000]{Manacles}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagNet00000000]{Net}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagOil00000000]{Oil}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagPaper000000]{Paper}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagParchment00]{Parchment}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagPole0000000]{Pole}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouch}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagRope0000000]{Rope}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagSack0000000]{Sack}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagShovel00000]{Shovel}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagSpikesIron0]{Spikes, Iron}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagString00000]{String}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagTinderbox00]{Tinderbox}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagTorch000000]{Torch}</p><p>@UUID[Compendium.dnd5e.equipment24.Item.phbagVial0000000]{Vial}</p></div></details><p>See the rules for the item in the<em> Player’s Handbook</em>. The item lasts until you finish a Long Rest, at which point it vanishes.</p><p>You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>"
             }
@@ -1377,13 +1377,13 @@
         "Tireless": {
             "name": "Niestrudzony",
             "description": {
-                "value": "<p>You don’t gain &amp;Reference[Exhaustion apply=false] levels from dehydration, malnutrition, or suffocation.</p>"
+                "value": "<p>Nie zyskujesz poziomów &amp;Reference[Exhaustion apply=false] z powodu odwodnienia, niedożywienia ani duszenia się.</p>"
             }
         },
         "Tools of the Trade": {
-            "name": "Tools of the Trade",
+            "name": "Narzędzia fachu",
             "description": {
-                "value": "<p>You gain the following benefits.</p><p><em><strong>Tool Proficiency.</strong></em> You gain proficiency with Calligrapher’s Supplies and Cartographer’s Tools. If you already have one of these proficiencies, you gain proficiency with one other type of Artisan’s Tools of your choice (or with two other types if you have both).</p><p><em><strong>Scroll Crafting.</strong></em> When you scribe a <em>Spell Scroll</em> using the crafting rules in the <em>Player’s Handbook</em>, the amount of time required to craft it is halved.</p>"
+                "value": "<p>Zyskujesz następujące korzyści.</p><p><em><strong>Biegłość w narzędziach.</strong></em> Zyskujesz biegłość w Materiałach kaligraficznych i Narzędziach kartograficznych. Jeśli masz już jedną z tych biegłości, zyskujesz biegłość w jednym innym rodzaju Narzędzi rzemieślniczych według własnego wyboru (albo w dwóch innych rodzajach, jeśli masz obie).</p><p><em><strong>Tworzenie zwojów.</strong></em> Gdy zapisujesz <em>magiczny zwój</em>, korzystając z zasad tworzenia z <em>Podręcznika Gracza</em>, czas potrzebny na jego stworzenie zmniejsza się o połowę.</p>"
             }
         },
         "Unarmed Strike +1": {
