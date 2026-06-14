@@ -15,11 +15,11 @@
         "Feats": "Atuty",
         "Kalashtar Traits": "Cechy kalashtara",
         "Khoravar Traits": "Cechy khoravara",
-        "Level 10 Plans": "Level 10 Plans",
-        "Level 14 Plans": "Level 14 Plans",
-        "Level 2 Plans": "Level 2 Plans",
-        "Level 6 Plans": "Level 6 Plans",
-        "Magic Item Plans": "Magic Item Plans",
+        "Level 10 Plans": "Poziom 10 Plany",
+        "Level 14 Plans": "Poziom 14 Plany",
+        "Level 2 Plans": "Poziom 2 Plany",
+        "Level 6 Plans": "Poziom 6 Plany",
+        "Magic Item Plans": "Plany magicznych przedmiotów",
         "Shifter Traits": "Cechy zmiennego",
         "Species": "Gatunki",
         "Spells": "Czary",
@@ -60,7 +60,7 @@
         "Alchemical Savant": {
             "name": "Uczony w alchemii",
             "description": {
-                "value": "<p>Whenever you cast a spell using your Alchemist’s Supplies as the Spellcasting Focus, you gain a bonus to one roll of the spell. That roll must restore [[/heal]]{Hit Points} or be a damage roll that deals [[/damage]]{Acid, Fire, or Poison} damage. The bonus equals your Intelligence modifier (minimum bonus of +1).</p>"
+                "value": "<p>Za każdym razem, gdy rzucasz czar, używając swoich Materiałów alchemicznych jako Magicznego Fokusu, zyskujesz premię do jednego rzutu tego czaru. Rzut ten musi przywracać [[/heal]]{Punkty Wytrzymałości} albo być rzutem na obrażenia, który zadaje [[/damage]]{od kwasu, ognia albo trucizny} obrażeń. Premia jest równa twojemu modyfikatorowi Inteligencji (minimalna premia +1).</p>"
             }
         },
         "Alchemist": {
@@ -72,7 +72,7 @@
         "Alchemist Spells": {
             "name": "Czary alchemika",
             "description": {
-                "value": "<p>When you reach an Artificer level specified in the Alchemist Spells table, you thereafter always have the listed spells prepared.</p><table><caption>Alchemist Spells</caption><thead><tr><th scope=\"col\"><p>Artificer Level</p></th><th scope=\"col\"><p>Spells</p></th></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHealingWor]{Healing Word}, @UUID[Compendium.dnd5e.spells24.Item.phbsplRayofSickn]{Ray of Sickness}</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFlamingSph]{Flaming Sphere}, @UUID[Compendium.dnd5e.spells24.Item.phbsplMelfsAcidA]{Melf’s Acid Arrow}</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplGaseousFor]{Gaseous Form}, @UUID[Compendium.dnd5e.spells24.Item.phbsplMassHealin]{Mass Healing Word}</em></p></td></tr><tr><td><p>13</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDeathWard0]{Death Ward}, @UUID[Compendium.dnd5e.spells24.Item.phbsplVitriolicS]{Vitriolic Sphere}</em></p></td></tr><tr><td><p>17</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCloudkill0]{Cloudkill}, @UUID[Compendium.dnd5e.spells24.Item.phbsplRaiseDead0]{Raise Dead}</em></p></td></tr></tbody></table>"
+                "value": "<p>Gdy osiągniesz poziom Wynalazcy wskazany w tabeli czarów Alchemika, od tego momentu zawsze masz przygotowane wymienione czary.</p><table><caption>Czary Alchemika</caption><thead><tr><th scope=\"col\"><p>Poziom Wynalazcy</p></th><th scope=\"col\"><p>Czary</p></th></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHealingWor], @UUID[Compendium.dnd5e.spells24.Item.phbsplRayofSickn]</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFlamingSph], @UUID[Compendium.dnd5e.spells24.Item.phbsplMelfsAcidA]</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplGaseousFor], @UUID[Compendium.dnd5e.spells24.Item.phbsplMassHealin]</em></p></td></tr><tr><td><p>13</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDeathWard0], @UUID[Compendium.dnd5e.spells24.Item.phbsplVitriolicS]</em></p></td></tr><tr><td><p>17</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCloudkill0], @UUID[Compendium.dnd5e.spells24.Item.phbsplRaiseDead0]</em></p></td></tr></tbody></table>"
             }
         },
         "Alchemy Jug": {
@@ -93,7 +93,7 @@
         "Arcane Firearm": {
             "name": "Magiczna broń palna",
             "description": {
-                "value": "<p>When you finish a Long Rest, you can use Woodcarver’s Tools to carve special sigils into a Rod, Staff, Wand, or Martial Ranged weapon and thereby turn it into your Arcane Firearm. The sigils disappear from the object if you later carve them on a different item. The sigils otherwise last indefinitely.</p><p>You can use your Arcane Firearm as a Spellcasting Focus for your Artificer spells. When you cast an Artificer spell through the firearm, roll [[/r 1d8]], and you gain a bonus to one of the spell’s damage rolls equal to the number rolled.</p>"
+                "value": "<p>Kiedy kończysz Długi odpoczynek, możesz użyć Narzędzi snycerza, aby wyryć specjalne sigile na Berle, Kosturze, Różdżce albo żołnierskiej broni dystansowej i w ten sposób przekształcić ten przedmiot w swoją Magiczną broń palną. Sigile znikają z przedmiotu, jeśli później wyryjesz je na innym przedmiocie. W przeciwnym razie pozostają na nim bez końca.</p><p>Możesz używać swojej Magicznej broni palnej jako Magicznego Fokusu dla swoich czarów Wynalazcy. Gdy rzucasz czar Wynalazcy przez tę broń palną, wykonaj rzut [[/r 1d8]] i zyskujesz premię do jednego z rzutów na obrażenia tego czaru równą wyrzuconemu wynikowi.</p>"
             }
         },
         "Arcane Jolt": {
@@ -105,7 +105,7 @@
         "Archaeologist": {
             "name": "Archeolog",
             "description": {
-                "value": "<p><strong>Ability Scores:</strong> Dexterity, Intelligence, Wisdom</p><p><strong>Feat:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftSkilled0000]{Skilled}</p><p><strong>Skill Proficiencies:</strong> History and Survival</p><p><strong>Tool Proficiency:</strong> Cartographer’s Tools</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulCartograph]{Cartographer’s Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagLanternBull]{Bullseye Lantern}, @UUID[Compendium.dnd5e.equipment24.Item.phbagMap00000000]{Map}, @UUID[Compendium.dnd5e.equipment24.Item.phbagCaseMaporSc]{Map or Scroll Case}, @UUID[Compendium.dnd5e.equipment24.Item.phbagShovel00000]{Shovel}, @UUID[Compendium.dnd5e.equipment24.Item.phbagTent0000000]{Tent}, @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav]{Traveler’s Clothes}, [[/award 17GP]]; or (B) [[/award 50GP]]</p><p>You’ve made a lifelong study of the lost and fallen cultures of the past, visiting their ruins, deciphering their written records, and examining their surviving masterworks. Perhaps you studied at Morgrave University or a similar institution, supplementing your time in the library with fieldwork amid ancient ruins in remote locations. Some archaeologists plunder the treasures of the past in search of wealth or fame, but most consider it their calling to learn from the past. In any case, the archaeologists of Eberron combine the qualities of learned historians with the grit of treasure hunters.</p>"
+                "value": "<p><strong>Wartości cech:</strong> Zręczność, Inteligencja, Mądrość</p><p><strong>Atut:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftSkilled0000]</p><p><strong>Biegłości w umiejętnościach:</strong> Historia i Sztuka przetrwania</p><p><strong>Biegłość w narzędziach:</strong> Narzędzia kartograficzne</p><p><strong>Ekwipunek:</strong> <em>Wybierz A albo B:</em> (A) @UUID[Compendium.dnd5e.equipment24.Item.phbtulCartograph], @UUID[Compendium.dnd5e.equipment24.Item.phbagLanternBull], @UUID[Compendium.dnd5e.equipment24.Item.phbagMap00000000], @UUID[Compendium.dnd5e.equipment24.Item.phbagCaseMaporSc], @UUID[Compendium.dnd5e.equipment24.Item.phbagShovel00000], @UUID[Compendium.dnd5e.equipment24.Item.phbagTent0000000], @UUID[Compendium.dnd5e.equipment24.Item.phbagClothesTrav], [[/award 17GP]]; albo (B) [[/award 50GP]]</p><p>Poświęciłeś całe życie badaniu zaginionych i upadłych kultur przeszłości, odwiedzając ich ruiny, odczytując pozostawione przez nie zapisy i badając ich zachowane arcydzieła. Być może studiowałeś na Morgrave University lub podobnej uczelni, uzupełniając czas spędzony w bibliotece pracą terenową pośród starożytnych ruin w odległych miejscach. Niektórzy archeolodzy plądrują skarby przeszłości w poszukiwaniu bogactwa lub sławy, ale większość uważa, że ich powołaniem jest czerpanie nauki z przeszłości. W każdym razie archeolodzy Eberronu łączą cechy uczonych historyków z hartem poszukiwaczy skarbów.</p>"
             }
         },
         "Armor +1": {
@@ -121,34 +121,34 @@
             }
         },
         "Armor of Acid Resistance": {
-            "name": "Armor of Acid Resistance"
+            "name": "Pancerz odporności na kwas"
         },
         "Armor of Cold Resistance": {
-            "name": "Armor of Cold Resistance"
+            "name": "Pancerz odporności na zimno"
         },
         "Armor of Fire Resistance": {
-            "name": "Armor of Fire Resistance"
+            "name": "Pancerz odporności na ogień"
         },
         "Armor of Force Resistance": {
-            "name": "Armor of Force Resistance"
+            "name": "Pancerz odporności na moc"
         },
         "Armor of Lightning Resistance": {
-            "name": "Armor of Lightning Resistance"
+            "name": "Pancerz odporności na ektryczności"
         },
         "Armor of Necrotic Resistance": {
-            "name": "Armor of Necrotic Resistance"
+            "name": "Pancerz odporności na nekrotyczność"
         },
         "Armor of Poison Resistance": {
-            "name": "Armor of Poison Resistance"
+            "name": "Pancerz odporności na trucizny"
         },
         "Armor of Psychic Resistance": {
-            "name": "Armor of Psychic Resistance"
+            "name": "Pancerz odporności psychicznej"
         },
         "Armor of Radiant Resistance": {
-            "name": "Armor of Radiant Resistance"
+            "name": "Pancerz odporności na światłość"
         },
         "Armor of Resistance": {
-            "name": "Armor of Resistance",
+            "name": "Pancerz odporności",
             "description": {
                 "value": "<p>@Embed[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgArmorOfResist caption=false classes=\"hide-secrets\"]</p><p>@Embed[Compendium.dnd-forge-artificer.book.JournalEntry.efaAppendixFound.JournalEntryPage.2uGa93dXu7RhlZq9 caption=false cite=false classes=\"hide-in-embed\"]{Using Template Plans}</p>"
             }
@@ -177,7 +177,7 @@
         "Armorer Spells": {
             "name": "Czary płatnerza",
             "description": {
-                "value": "<p>When you reach an Artificer level specified in the Armorer Spells table, you thereafter always have the listed spells prepared.</p><table><caption>Armorer Spells</caption><thead><tr><th scope=\"col\"><p>Artificer Level</p></th><th scope=\"col\"><p>Spells</p></th></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMagicMissi]{Magic Missile}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThunderwav]{Thunderwave}</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMirrorImag]{Mirror Image}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShatter000]{Shatter}</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHypnoticPa]{Hypnotic Pattern}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLightningB]{Lightning Bolt}</em></p></td></tr><tr><td><p>13</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireShield]{Fire Shield}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterInv]{Greater Invisibility}</em></p></td></tr><tr><td><p>17</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPasswall00]{Passwall}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWallofForc]{Wall of Force}</em></p></td></tr></tbody></table>"
+                "value": "<p>Gdy osiągniesz poziom Wynalazcy wskazany w tabeli czarów Płatnerza, od tego momentu zawsze masz przygotowane wymienione czary.</p><table><caption>Czary Płatnerza</caption><thead><tr><th scope=\"col\"><p>Poziom Wynalazcy</p></th><th scope=\"col\"><p>Czary</p></th></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMagicMissi]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThunderwav]</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMirrorImag]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShatter000]</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHypnoticPa], @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLightningB]</em></p></td></tr><tr><td><p>13</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireShield]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterInv]</em></p></td></tr><tr><td><p>17</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPasswall00], @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWallofForc]</em></p></td></tr></tbody></table>"
             }
         },
         "Arrow-Catching Shield": {
@@ -193,9 +193,9 @@
             }
         },
         "Artificer Subclass": {
-            "name": "Artificer Subclass",
+            "name": "Podklasa Wynalazcy",
             "description": {
-                "value": "<p>You gain an Artificer subclass of your choice. The @UUID[Compendium.dnd-forge-artificer.options.Item.efaAlchemist0000]{Alchemist}, @UUID[Compendium.dnd-forge-artificer.options.Item.efaArmorer000000]{Armorer}, @UUID[Compendium.dnd-forge-artificer.options.Item.efaArtillerist00]{Artillerist}, @UUID[Compendium.dnd-forge-artificer.options.Item.efaBattleSmith00]{Battle Smith}, and @UUID[Compendium.dnd-forge-artificer.options.Item.efaCartographer0]{Cartographer} subclasses are detailed after this class’s description. A subclass is a specialization that grants you features at certain Artificer levels. For the rest of your career, you gain each of your subclass’s features that are of your Artificer level or lower.</p>"
+                "value": "<p>Zyskujesz wybraną podklasę Wynalazcy. Podklasy @UUID[Compendium.dnd-forge-artificer.options.Item.efaAlchemist0000], @UUID[Compendium.dnd-forge-artificer.options.Item.efaArmorer000000], @UUID[Compendium.dnd-forge-artificer.options.Item.efaArtillerist00], @UUID[Compendium.dnd-forge-artificer.options.Item.efaBattleSmith00] i @UUID[Compendium.dnd-forge-artificer.options.Item.efaCartographer0] opisano po opisie tej klasy. Podklasa to specjalizacja, która zapewnia ci zdolności na określonych poziomach Wynalazcy. Przez resztę swojej kariery zyskujesz każdą zdolność swojej podklasy, której wymagany poziom Wynalazcy jest równy twojemu poziomowi Wynalazcy albo niższy.</p>"
             }
         },
         "Artillerist": {
@@ -207,15 +207,15 @@
         "Artillerist Spells": {
             "name": "Czary artylerzysty",
             "description": {
-                "value": "<p>When you reach an Artificer level specified in the Artillerist Spells table, you thereafter always have the listed spells prepared.</p><table><caption>Artillerist Spells</caption><thead><tr><td>Artificer Level</td><td>Spells</td></tr></thead><tbody><tr><td>3</td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplShield0000]{Shield}, @UUID[Compendium.dnd5e.spells24.Item.phbsplThunderwav]{Thunderwave}</em></p></td></tr><tr><td>5</td><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScorchingR]{Scorching Ray}, @UUID[Compendium.dnd5e.spells24.Item.phbsplShatter000]{Shatter}</em></td></tr><tr><td>9</td><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball}, @UUID[Compendium.dnd5e.spells24.Item.phbsplWindWall00]{Wind Wall}</em></td></tr><tr><td>13</td><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplIceStorm00]{Ice Storm}, @UUID[Compendium.dnd5e.spells24.Item.phbsplWallofFire]{Wall of Fire}</em></td></tr><tr><td>17</td><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplConeofCold]{Cone of Cold}, @UUID[Compendium.dnd5e.spells24.Item.phbsplWallofForc]{Wall of Force}</em></td></tr></tbody></table><section class=\"secret\" id=\"secret-Z9pAhvumQlf7onuP\"><p><strong>Foundry Note</strong></p><p>These spells are granted automatically as you advance.</p></section>"
+                "value": "<p>Gdy osiągniesz poziom Wynalazcy wskazany w tabeli czarów Artylerzysty, od tego momentu zawsze masz przygotowane wymienione czary.</p><table><caption>Czary Artylerzysty</caption><thead><tr><td>Poziom Wynalazcy</td><td>Czary</td></tr></thead><tbody><tr><td>3</td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplShield0000], @UUID[Compendium.dnd5e.spells24.Item.phbsplThunderwav]</em></p></td></tr><tr><td>5</td><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScorchingR], @UUID[Compendium.dnd5e.spells24.Item.phbsplShatter000]</em></td></tr><tr><td>9</td><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00], @UUID[Compendium.dnd5e.spells24.Item.phbsplWindWall00]</em></td></tr><tr><td>13</td><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplIceStorm00], @UUID[Compendium.dnd5e.spells24.Item.phbsplWallofFire]</em></td></tr><tr><td>17</td><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplConeofCold], @UUID[Compendium.dnd5e.spells24.Item.phbsplWallofForc]</em></td></tr></tbody></table><section class=\"secret\" id=\"secret-Z9pAhvumQlf7onuP\"><p><strong>Notatka Foundry</strong></p><p>Te czary są automatycznie przyznawane w miarę awansowania na kolejne poziomy.</p></section>"
             }
         },
         "Artisan's Intuition": {
-            "name": "Artisan's Intuition",
-            "description": "<p>When you make an Intelligence (Arcana) check or an ability check using Artisan’s Tools, 1d4 is automatically added to the ability check.</p>"
+            "name": "Intuicja rzemieślnika",
+            "description": "<p>Gdy wykonujesz test Inteligencji (Wiedza tajemna) albo test cechy z użyciem Narzędzi rzemieślniczych, do testu cechy automatycznie dodaje się 1k4.</p>"
         },
         "Attack Roll Damage Bonus": {
-            "name": "Attack Roll Damage Bonus"
+            "name": "Premia do obrażeń od ataku"
         },
         "Bag of Holding": {
             "name": "Torba przechowywania",
@@ -226,7 +226,7 @@
         "Battle Ready": {
             "name": "Gotowość bojowa",
             "description": {
-                "value": "<p>Your combat training and your experiments with magic have paid off in two ways.</p><p><em><strong>Arcane Empowerment</strong></em>. When you attack with a magic weapon, you can use your Intelligence modifier, instead of your Strength or Dexterity modifier, for the attack and damage rolls.</p><p><em><strong>Weapon Knowledge</strong></em>. You gain proficiency with Martial weapons. You can use a weapon with which you have proficiency as a Spellcasting Focus for your Artificer spells.</p><section class=\"secret\" id=\"secret-hhCDbH1GjzkdSiHz\"><p><strong>Foundry Note</strong></p><p>To use, click on the \"<strong>Arcane Empowerment</strong>\" activity to place the chat card in chat. Then, take any magic weapon from your inventory and drag it into the <strong>enchantment drop area</strong> on the chat card. This action will change the bonus modifier to your Intelligence (INT) modifier.</p><p>As an alternative, you can change to the <strong>Effects tab</strong> of this feature and drag the enchantment onto the relevant magic item's Effects tab</p></section>"
+                "value": "<p>Twoje wyszkolenie bojowe i eksperymenty z magią przyniosły efekty na dwa sposoby.</p><p><em><strong>Magiczne wzmocnienie</strong></em>. Gdy atakujesz magiczną bronią, możesz użyć swojego modyfikatora Inteligencji zamiast modyfikatora Siły lub Zręczności do testów ataku i rzutów na obrażenia.</p><p><em><strong>Obeznanie z bronią</strong></em>. Zyskujesz biegłość w broniach żołnierskich. Możesz używać broni, w której masz biegłość, jako Magicznego Fokusu dla swoich czarów Wynalazcy.</p><section class=\"secret\" id=\"secret-hhCDbH1GjzkdSiHz\"><p><strong>Notatka Foundry</strong></p><p>Aby użyć tej zdolności, kliknij aktywność „<strong>Magiczne wzmocnienie</strong>”, aby umieścić kartę czatu na czacie. Następnie weź dowolną magiczną broń ze swojego ekwipunku i przeciągnij ją do <strong>obszaru upuszczania wzmocnienia</strong> na karcie czatu. Ta czynność zmieni modyfikator premii na twój modyfikator Inteligencji (INT).</p><p>Alternatywnie możesz przejść do <strong>karty Efekty</strong> tej zdolności i przeciągnąć wzmocnienie na kartę Efekty odpowiedniego magicznego przedmiotu.</p></section>"
             }
         },
         "Battle Smith": {
@@ -236,9 +236,9 @@
             }
         },
         "Battle Smith Spells": {
-            "name": "Battle Smith Spells",
+            "name": "Czaru Kowala bitewnego",
             "description": {
-                "value": "<p>When you reach an Artificer level specified in the Battle Smith Spells table, you thereafter always have the listed spells prepared.</p><table><caption>Battle Smith Spells</caption><thead><tr><td>Artificer Level</td><td>Spells</td></tr></thead><tbody><tr><td>3</td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHeroism000]{Heroism}, @UUID[Compendium.dnd5e.spells24.Item.phbsplShield0000]{Shield}</em></p></td></tr><tr><td>5</td><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplShiningSmi]{Shining Smite}, @UUID[Compendium.dnd5e.spells24.Item.phbsplWardingBon]{Warding Bond}</em></td></tr><tr><td>9</td><td><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAuraofVita]{Aura of Vitality}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplConjureBar]{Conjure Barrage}</em></td></tr><tr><td>13</td><td><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAuraofPuri]{Aura of Purity}, @UUID[Compendium.dnd5e.spells24.Item.phbsplFireShield]{Fire Shield}</em></td></tr><tr><td>17</td><td><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBanishingS]{Banishing Smite}, @UUID[Compendium.dnd5e.spells24.Item.phbsplMassCureWo]{Mass Cure Wounds}</em></td></tr></tbody></table><section class=\"secret\" id=\"secret-Z9pAhvumQlf7onuP\"><p><strong>Foundry Note</strong></p><p>These spells are granted automatically as you advance.</p></section>"
+                "value": "<p>Gdy osiągniesz poziom Wynalazcy wskazany w tabeli czarów Kowala bitwy, od tego momentu zawsze masz przygotowane wymienione czary.</p><table><caption>Czary Kowala bitewnego</caption><thead><tr><td>Poziom Wynalazcy</td><td>Czary</td></tr></thead><tbody><tr><td>3</td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHeroism000], @UUID[Compendium.dnd5e.spells24.Item.phbsplShield0000]</em></p></td></tr><tr><td>5</td><td><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplShiningSmi], @UUID[Compendium.dnd5e.spells24.Item.phbsplWardingBon]</em></td></tr><tr><td>9</td><td><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAuraofVita], @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplConjureBar]</em></td></tr><tr><td>13</td><td><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAuraofPuri], @UUID[Compendium.dnd5e.spells24.Item.phbsplFireShield]</em></td></tr><tr><td>17</td><td><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBanishingS], @UUID[Compendium.dnd5e.spells24.Item.phbsplMassCureWo]</em></td></tr></tbody></table><section class=\"secret\" id=\"secret-Z9pAhvumQlf7onuP\"><p><strong>Notatka Foundry</strong></p><p>Te czary są automatycznie przyznawane w miarę awansowania na kolejne poziomy.</p></section>"
             }
         },
         "Beasthide": {
@@ -271,7 +271,7 @@
         "Boldness Elixir": {
             "name": "Boldness Elixir",
             "description": {
-                "value": "<p> The drinker can roll 1d4 and add the number rolled to every attack roll and saving throw it makes for the next minute. The duration increases when you reach Artificer levels 9 (10 minutes) and 15 (1 hour).</p>"
+                "value": "<p>Pijący może wykonać rzut 1k4 i dodać wyrzucony wynik do każdego testu ataku i rzutu obronnego, które wykona w ciągu następnej minuty. Czas trwania zwiększa się, gdy osiągniesz 9. poziom Wynalazcy (10 minut) i 15. poziom (1 godzina).</p>"
             }
         },
         "Boon of Siberys": {
@@ -315,13 +315,13 @@
         "Cartographer Spells": {
             "name": "Czary kartografa",
             "description": {
-                "value": "<p>When you reach an Artificer level specified in the Cartographer Spells table, you thereafter always have the listed spells prepared.</p><table><caption>Cartographer Spells</caption><thead><tr><th scope=\"col\"><p>Artificer Level</p></th><th scope=\"col\"><p>Spells</p></th></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Faerie Fire}</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplGuidingBol]{Guiding Bolt}</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHealingWor]{Healing Word}</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLocateObje]{Locate Object}</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMindSpike0]{Mind Spike}</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCallLightn]{Call Lightning}</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplClairvoyan]{Clairvoyance}</em></p></td></tr><tr><td><p>13</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplBanishment]{Banishment}</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLocateCrea]{Locate Creature}</em></p></td></tr><tr><td><p>17</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Scrying}</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplTeleportat]{Teleportation Circle}</em></p></td></tr></tbody></table>"
+                "value": "<p>Gdy osiągniesz poziom Wynalazcy wskazany w tabeli czarów Kartografa, od tego momentu zawsze masz przygotowane wymienione czary.</p><table><caption>Czary Kartografa</caption><thead><tr><th scope=\"col\"><p>Poziom Wynalazcy</p></th><th scope=\"col\"><p>Czary</p></th></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplGuidingBol]</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHealingWor]</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLocateObje]</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMindSpike0]</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCallLightn]</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplClairvoyan]</em></p></td></tr><tr><td><p>13</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplBanishment]</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLocateCrea]</em></p></td></tr><tr><td><p>17</p></td><td><p><em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplTeleportat]</em></p></td></tr></tbody></table>"
             }
         },
         "Changeling": {
             "name": "Odmieniec",
             "description": {
-                "value": "<p>Odmieńcy, o nieustannie zmieniającym się wyglądzie, żyją nierozpoznani w wielu społecznościach. Każdy odmieniec może w nadnaturalny sposób przybrać dowolną twarz, jaką zechce. Dla niektórych odmieńców nowa twarz może ujawniać aspekt ich duszy.</p><p>Pierwsi odmieńcy w wieloświecie pojawili się w Feywild, a cudowna, zmienna esencja tej sfery wciąż trwa w odmieńcach po dziś dzień — nawet w tych, którzy nigdy nie postawili stopy w krainie fey.</p><p>W swojej prawdziwej postaci odmieńcy wydają się wyblakli, a ich rysy są niemal pozbawione szczegółów. Rzadko widuje się ich w tej formie, ponieważ typowy odmieniec zmienia kształt tak, jak inni mogliby zmieniać ubrania. Jednak wielu odmieńców rozwija tożsamości o większej głębi, tworząc personę wraz z historią i przekonaniami odpowiadającymi każdej postaci. Poszukiwacz przygód będący odmieńcem może mieć persony na wiele sytuacji, w tym do negocjacji, śledztwa i walki.</p><p>Wielu odmieńców może dzielić jedną personę. Persony mogą być nawet przekazywane w rodzinie, pozwalając młodszemu odmieńcowi korzystać z kontaktów nawiązanych przez poprzednich użytkowników tej persony.</p><hr /><h3>Cechy odmieńca</h3><p><strong>Typ Istoty:</strong> Fey</p><p><strong>Rozmiar:</strong> Średni (około 4–7 stóp wzrostu) albo Mały (około 2–4 stóp wzrostu), wybierany przy wyborze tego gatunku</p><p><strong>Szybkość:</strong> 30 stóp</p><p>Jako odmieniec posiadasz następujące cechy specjalne.</p><p><em><strong>Instynkty odmieńca.</strong></em> Dzięki twojemu powiązaniu z krainą fey zyskujesz biegłość w dwóch spośród następujących umiejętności według własnego wyboru: Oszustwo, Intuicja, Zastraszanie, Występy albo Perswazja.</p><p><em><strong>Zmiennokształtność.</strong></em> Akcją możesz zmienić kształt, aby zmienić swój wygląd i głos. Ty określasz szczegóły tych zmian, w tym swoje ubarwienie, długość włosów i płeć. Możesz także dostosować swój wzrost i wagę oraz zmienić rozmiar między Średnim a Małym. Możesz sprawić, że będziesz wyglądać jak przedstawiciel innego grywalnego gatunku, choć żadne z twoich statystyk gry się nie zmieniają. Nie możesz skopiować wyglądu osoby, której nigdy nie widziałeś, i musisz przyjąć formę mającą taki sam podstawowy układ kończyn jak ty. Ta cecha nie zmienia twojego ubrania ani ekwipunku.</p><p>Gdy jesteś przekształcony dzięki tej cesze, masz Ułatwienie w testach Charyzmy.</p><p>Pozostajesz w nowej formie, dopóki Akcją nie powrócisz do swojej prawdziwej postaci.</p>"
+                "value": "<p>Odmieńcy, o nieustannie zmieniającym się wyglądzie, żyją nierozpoznani w wielu społecznościach. Każdy odmieniec może w nadnaturalny sposób przybrać dowolną twarz, jaką zechce. Dla niektórych odmieńców nowa twarz może ujawniać aspekt ich duszy.</p><p>Pierwsi odmieńcy w wieloświecie pojawili się w Feywild, a cudowna, zmienna esencja tej sfery wciąż trwa w odmieńcach po dziś dzień — nawet w tych, którzy nigdy nie postawili stopy w krainie fey.</p><p>W swojej prawdziwej postaci odmieńcy wydają się wyblakli, a ich rysy są niemal pozbawione szczegółów. Rzadko widuje się ich w tej formie, ponieważ typowy odmieniec zmienia kształt tak, jak inni mogliby zmieniać ubrania. Jednak wielu odmieńców rozwija tożsamości o większej głębi, tworząc personę wraz z historią i przekonaniami odpowiadającymi każdej postaci. Poszukiwacz przygód będący odmieńcem może mieć persony na wiele sytuacji, w tym do negocjacji, śledztwa i walki.</p><p>Wielu odmieńców może dzielić jedną personę. Persony mogą być nawet przekazywane w rodzinie, pozwalając młodszemu odmieńcowi korzystać z kontaktów nawiązanych przez poprzednich użytkowników tej persony.</p><hr /><h3>Cechy odmieńca</h3><p><strong>Typ Istoty:</strong> Fey</p><p><strong>Rozmiar:</strong> Średni (około 4–7 stóp wzrostu) albo Mały (około 2–4 stóp wzrostu), wybierany przy wyborze tego gatunku</p><p><strong>Szybkość:</strong> 30 stóp</p><p>Jako odmieniec posiadasz następujące cechy specjalne.</p><p><em><strong>Instynkty odmieńca.</strong></em> Dzięki twojemu powiązaniu z krainą fey zyskujesz biegłość w dwóch spośród następujących umiejętności według własnego wyboru: Oszustwo, Intuicja, Zastraszanie, Występy albo Perswazja.</p><p><em><strong>Zmiennokształtny.</strong></em> Akcją możesz zmienić kształt, aby zmienić swój wygląd i głos. Ty określasz szczegóły tych zmian, w tym swoje ubarwienie, długość włosów i płeć. Możesz także dostosować swój wzrost i wagę oraz zmienić rozmiar między Średnim a Małym. Możesz sprawić, że będziesz wyglądać jak przedstawiciel innego grywalnego gatunku, choć żadne z twoich statystyk gry się nie zmieniają. Nie możesz skopiować wyglądu osoby, której nigdy nie widziałeś, i musisz przyjąć formę mającą taki sam podstawowy układ kończyn jak ty. Ta cecha nie zmienia twojego ubrania ani ekwipunku.</p><p>Gdy jesteś przekształcony dzięki tej cesze, masz Ułatwienie w testach Charyzmy.</p><p>Pozostajesz w nowej formie, dopóki Akcją nie powrócisz do swojej prawdziwej postaci.</p>"
             }
         },
         "Changeling Instincts": {
@@ -426,7 +426,7 @@
             }
         },
         "Dual Mind": {
-            "name": "Dual Mind",
+            "name": "Dwoisty umysł",
             "description": "<p>You have Advantage on Wisdom and Charisma saving throws.</p>"
         },
         "Eldritch Cannon": {
@@ -448,7 +448,7 @@
         "Experimental Elixir": {
             "name": "Eksperymentalny eliksir",
             "description": {
-                "value": "<p>Whenever you finish a Long Rest while holding Alchemist’s Supplies, you can use that tool to magically produce <strong>[[lookup @scale.alchemist.elixers]]{two}</strong> elixirs. For each elixir, roll on the Experimental Elixir table for the elixir’s effect, which is triggered when someone drinks the elixir. The elixir appears in a vial, and the vial vanishes when the elixir is drunk or poured out. If any elixir remains when you finish a Long Rest, the elixir and its vial vanish.</p><p>@Embed[Compendium.dnd-forge-artificer.tables.RollTable.efaExperimentalE caption=false cite=false resultLabel=\"Effect\" rollable]</p><p><em><strong>Drinking an Elixir.</strong></em> As a Bonus Action, a creature can drink the elixir or administer it to another creature within 5 feet of itself.</p><p><em><strong>Creating Additional Elixirs.</strong></em> As a Magic action while holding Alchemist’s Supplies, you can expend one spell slot to create another elixir. When you do so, you choose its effect from the Experimental Elixir table rather than rolling.</p><p>When you reach certain Artificer levels, you can make an additional elixir at the end of each Long Rest: a total of three at level 5, four at level 9, and five at level 15.</p><p></p>"
+                "value": "<p>Za każdym razem, gdy kończysz Długi Odpoczynek, trzymając Materiały alchemiczne, możesz użyć tego narzędzia, aby magicznie stworzyć <strong>[[lookup @scale.alchemist.elixers]]{dwa}</strong> eliksiry. Dla każdego eliksiru rzuć na tabelę Eksperymentalnego eliksiru, aby określić jego efekt, który uruchamia się, gdy ktoś wypije eliksir. Eliksir pojawia się w fiolce, a fiolka znika, gdy eliksir zostanie wypity albo wylany. Jeśli jakiś eliksir pozostaje, gdy kończysz Długi Odpoczynek, eliksir i jego fiolka znikają.</p><p>@Embed[Compendium.dnd-forge-artificer.tables.RollTable.efaExperimentalE caption=false cite=false resultLabel=\"Effect\" rollable]</p><p><em><strong>Wypicie eliksiru.</strong></em> Akcją Dodatkową stworzenie może wypić eliksir albo podać go innemu stworzeniu w obrębie 5 stóp od siebie.</p><p><em><strong>Tworzenie dodatkowych eliksirów.</strong></em> Akcją Magii, trzymając Materiały alchemiczne, możesz zużyć jedną Komórkę Czaru, aby stworzyć kolejny eliksir. Gdy to robisz, wybierasz jego efekt z tabeli Eksperymentalnego eliksiru zamiast rzucać.</p><p>Gdy osiągniesz określone poziomy Wynalazcy, możesz stworzyć dodatkowy eliksir na końcu każdego Długiego Odpoczynku: łącznie trzy na 5. poziomie, cztery na 9. poziomie i pięć na 15. poziomie.</p><p></p>"
             }
         },
         "Explosive Cannon": {
@@ -514,7 +514,7 @@
         "Flight Elixir": {
             "name": "Eliksir lotu",
             "description": {
-                "value": "<p> The drinker gains a Fly Speed of 10 feet for 10 minutes. The Fly Speed increases when you reach Artificer levels 9 (20 feet) and 15 (30 feet).</p>"
+                "value": "<p>Pijący zyskuje Szybkość Lotu 10 stóp na 10 minut. Ta Szybkość Lotu wzrasta, gdy osiągniesz 9. poziom Wynalazcy (20 stóp) i 15. poziom (30 stóp).</p>"
             }
         },
         "Flying": {
@@ -651,7 +651,7 @@
         "Healing Elixir": {
             "name": "Healing Elixir",
             "description": {
-                "value": "<p> The drinker regains a number of Hit Points equal to 2d8 plus your Intelligence modifier. The number of Hit Points restored increases by 1d8 when you reach Artificer levels 9 (3d8) and 15 (4d8).</p>"
+                "value": "<p>Pijący odzyskuje liczbę Punktów Wytrzymałości równą 2k8 + twój modyfikator Inteligencji. Liczba odzyskiwanych Punktów Wytrzymałości zwiększa się o 1k8, gdy osiągniesz 9. poziom Wynalazcy (3k8) i 15. poziom (4k8).</p>"
             }
         },
         "Helm of Awareness": {
@@ -812,7 +812,7 @@
         "Kalashtar": {
             "name": "Kalashtar",
             "description": {
-                "value": "<p>Kalashtar (pronounced kal-ASH-tar) are created from the union of humanity and renegade spirits called quori from the plane of dreams. Kalashtar appear human, but their spiritual connection affects them in a variety of ways. They have symmetrical, slightly angular features, and their eyes often glow when they are concentrating or expressing strong emotions.</p><p>Kalashtar can’t communicate directly with their quori spirits. Rather, kalashtar might experience them as a source of instinct and inspiration, drawing on the spirits’ memories when the kalashtar sleep. This connection grants kalashtar minor psionic abilities, as well as protection from psionic attacks.</p><hr /><h3>Kalashtar Traits</h3><p><strong>Creature Type:</strong> Aberration</p><p><strong>Size:</strong> Medium (about 6–7 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p>As a Kalashtar, you have these special traits.</p><p><em><strong>Dual Mind.</strong></em> You have Advantage on Wisdom and Charisma saving throws.</p><p><em><strong>Mental Discipline.</strong></em> You have Resistance to Psychic damage.</p><p><em><strong>Mind Link.</strong></em> You have telepathy with a range in feet equal to 10 times your level. When you’re using this trait to speak telepathically to a creature, you can take a Magic action to give that creature the ability to speak telepathically with you for 1 hour or until you take another Magic action to end this effect.</p><p><em><strong>Severed from Dreams.</strong></em> You can’t be the target of the <em>Dream</em> spell. In addition, when you finish a Long Rest, you gain proficiency in one skill of your choice. This proficiency lasts until you finish another Long Rest.</p>"
+                "value": "<p>Kalashtar (wymawiane kal-ASZ-tar) powstali z połączenia ludzi i zbuntowanych duchów zwanych quori ze sfery snów. Kalashtar wyglądają jak ludzie, ale ich duchowa więź wpływa na nich na różne sposoby. Mają symetryczne, lekko kanciaste rysy, a ich oczy często jaśnieją, gdy się koncentrują albo przeżywają silne emocje.</p><p>Kalashtar nie mogą komunikować się bezpośrednio ze swoimi duchami quori. Zamiast tego mogą doświadczać ich jako źródła instynktu i natchnienia, czerpiąc ze wspomnień duchów, gdy śpią. To połączenie daje Kalashtar drobne zdolności psioniczne, a także ochronę przed atakami psionicznymi.</p><hr /><h3>Cechy Kalashtara</h3><p><strong>Typ Istoty:</strong>  Wynaturzenie</p><p><strong>Rozmiar:</strong> Średni (około 6–7 stóp wzrostu)</p><p><strong>Szybkość:</strong> 30 stóp</p><p>Jako Kalashtar posiadasz następujące cechy specjalne.</p><p><em><strong>Dwoisty umysł.</strong></em> Masz Ułatwienie w rzutach obronnych na Mądrość i Charyzmę.</p><p><em><strong>Dyscyplina umysłu.</strong></em> Masz Odporność na obrażenia psychiczne.</p><p><em><strong>Więź umysłów.</strong></em> Masz telepatię o zasięgu w stopach równym 10 razy twój poziom. Gdy używasz tej cechy, aby porozumiewać się telepatycznie ze stworzeniem, możesz wykonać Akcję Magii, aby dać temu stworzeniu zdolność telepatycznego porozumiewania się z tobą przez 1 godzinę albo do chwili, gdy wykonasz kolejną Akcję Magii, aby zakończyć ten efekt.</p><p><em><strong>Odcięty od snów.</strong></em> Nie możesz być celem czaru <em>Sen</em>. Dodatkowo, gdy kończysz Długi Odpoczynek, zyskujesz biegłość w jednej umiejętności według własnego wyboru. Ta biegłość trwa do chwili, gdy zakończysz kolejny Długi odpoczynek.</p>"
             }
         },
         "Khoravar": {
@@ -837,7 +837,7 @@
             "name": "Odporność na elektryczność"
         },
         "Linked Minds": {
-            "name": "Linked Minds"
+            "name": "Związane umysły"
         },
         "Longtooth": {
             "name": "Longtooth",
@@ -955,13 +955,13 @@
             "description": "<p>When you make a Wisdom (Medicine) check or an ability check using a Herbalism Kit, 1d4 is automatically added to the ability check.</p>"
         },
         "Mental Discipline": {
-            "name": "Mental Discipline",
+            "name": "Dyscyplina umysłu",
             "description": {
                 "value": "<p>You have Resistance to Psychic damage.</p>"
             }
         },
         "Mind Link": {
-            "name": "Mind Link",
+            "name": "Więź umysłów",
             "description": "<p>You have telepathy with a range in feet equal to 10 times your level.</p>"
         },
         "Mind Sharpener": {
@@ -1051,13 +1051,13 @@
         "Resilience Elixir": {
             "name": "Resilience Elixir",
             "description": {
-                "value": "<p> The drinker gains a +1 bonus to AC for 10 minutes. The duration increases when you reach Artificer levels 9 (1 hour) and 15 (8 hours).</p>"
+                "value": "<p>Pijący zyskuje premię +1 do KP na 10 minut. Czas trwania zwiększa się, gdy osiągniesz 9. poziom Wynalazcy (1 godzina) i 15. poziom (8 godzin).</p>"
             }
         },
         "Restorative Reagents": {
             "name": "Regenerujące odczynniki",
             "description": {
-                "value": "<p>You can cast <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLesserRest]{Lesser Restoration}</em> without expending a spell slot and without preparing the spell, provided you use Alchemist’s Supplies as the Spellcasting Focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>"
+                "value": "<p>Możesz rzucić <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLesserRest]</em> bez zużywania Komórki Czaru i bez przygotowywania tego czaru, pod warunkiem że używasz Materiałów alchemicznych jako Magicznego Fokusu. Możesz zrobić to liczbę razy równą twojemu modyfikatorowi Inteligencji (minimum raz), a wszystkie zużyte użycia odzyskujesz po zakończeniu Długiego odpoczynku.</p>"
             }
         },
         "Returning Weapon": {
@@ -1143,13 +1143,13 @@
             }
         },
         "Severed from Dreams": {
-            "name": "Severed from Dreams",
+            "name": "Odcięty od snów",
             "description": {
                 "value": "<p>You can’t be the target of the <em>Dream</em> spell. In addition, when you finish a Long Rest, you gain proficiency in one skill of your choice. This proficiency lasts until you finish another Long Rest.</p><section class=\"secret\" id=\"secret-P7LFXCBWFeKX5vM5\"><p><strong>Foundry Note</strong></p><p>Refer to @UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaAppendixFound.JournalEntryPage.V2entjsFRymITxop]{How to Modify Your Choices} to change your proficiency.</p></section>"
             }
         },
         "Shape-Shifted": {
-            "name": "Zmieniona postać",
+            "name": "Zmieniony kształt",
             "description": "<p>While shape-shifted with this trait, you have Advantage on Charisma checks.</p>"
         },
         "Shape-Shifter": {
@@ -1259,7 +1259,7 @@
         "Swiftness Elixir": {
             "name": "Swiftness Elixir",
             "description": {
-                "value": "<p>The drinker’s Speed increases by 10 feet for 1 hour. This bonus increases when you reach Artificer levels 9 (15 feet) and 15 (20 feet).</p>"
+                "value": "<p>Szybkość pijącego wzrasta o 10 stóp na 1 godzinę. Premia ta zwiększa się, gdy osiągniesz 9. poziom Wynalazcy (15 stóp) i 15. poziom (20 stóp).</p>"
             }
         },
         "Swiftstride": {

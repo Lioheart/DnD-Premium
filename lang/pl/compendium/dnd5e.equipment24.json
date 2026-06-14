@@ -399,64 +399,64 @@
             }
         },
         "Armor of Resistance": {
-            "name": "Armor of Resistance",
+            "name": "Pancerz odporności",
             "description": "<p><em>Armor (Any Light, Medium, or Heavy), Rare (Requires Attunement)</em></p><p>You have Resistance to one type of damage while you wear this armor. The GM chooses the type or determines it randomly by rolling on the following table.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.dmgArmorOfResist rollable caption=false]</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.dmgFoundryRefere.JournalEntryPage.Ok4iCgD25ENgoRxE cite=false caption=false classes=\"hide-in-embed\"]</p>",
             "activities": {
                 "Armor of Resistance": {
-                    "name": "Armor of Resistance"
+                    "name": "Pancerz odporności"
                 }
             },
             "effects": {
                 "Armor of Acid Resistance": {
-                    "name": "Armor of Acid Resistance",
+                    "name": "Pancerz Odporności od kwasu",
                     "changes": {
                         "name": "{} of Acid Resistance"
                     }
                 },
                 "Armor of Cold Resistance": {
-                    "name": "Armor of Cold Resistance",
+                    "name": "Pancerz odporności na zimno",
                     "changes": {
                         "name": "{} of Cold Resistance"
                     }
                 },
                 "Armor of Fire Resistance": {
-                    "name": "Armor of Fire Resistance",
+                    "name": "Pancerz odporności na ogień",
                     "changes": {
                         "name": "{} of Fire Resistance"
                     }
                 },
                 "Armor of Force Resistance": {
-                    "name": "Armor of Force Resistance",
+                    "name": "Pancerz odporności na moc",
                     "changes": {
                         "name": "{} of Force Resistance"
                     }
                 },
                 "Armor of Lightning Resistance": {
-                    "name": "Armor of Lightning Resistance",
+                    "name": "Pancerz odporności na ektryczności",
                     "changes": {
                         "name": "{} of Lightning Resistance"
                     }
                 },
                 "Armor of Necrotic Resistance": {
-                    "name": "Armor of Necrotic Resistance",
+                    "name": "Pancerz odporności na nekrotyczność",
                     "changes": {
                         "name": "{} of Necrotic Resistance"
                     }
                 },
                 "Armor of Poison Resistance": {
-                    "name": "Armor of Poison Resistance",
+                    "name": "Pancerz odporności na trucizny",
                     "changes": {
                         "name": "{} of Poison Resistance"
                     }
                 },
                 "Armor of Psychic Resistance": {
-                    "name": "Armor of Psychic Resistance",
+                    "name": "Pancerz odporności psychicznej",
                     "changes": {
                         "name": "{} of Psychic Resistance"
                     }
                 },
                 "Armor of Radiant Resistance": {
-                    "name": "Armor of Radiant Resistance",
+                    "name": "Pancerz odporności na światłość",
                     "changes": {
                         "name": "{} of Radiant Resistance"
                     }
@@ -951,7 +951,7 @@
             "description": "<p><em>See @UUID[Compendium.dnd5e.equipment24.Item.dmgFigurineOfWon]{Figurine of Wondrous Power}</em></p><p>This bronze statuette is of a griffon rampant. It can become a <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmGriffon0000000]{Griffon}</strong> for up to 6 hours. Once it has been used, it can't be used again until 5 days have passed.</p><section class=\"secret\" id=\"secret-CyXRwZfsh4tOiRUf\"><p><strong>Foundry Note</strong></p><p>This item's limited uses represent the 5 days required before the figurine can be used again.</p></section>",
             "activities": {
                 "summon": {
-                    "target": "unoccupied space"
+                    "target": "niezajęta przestrzeń"
                 }
             }
         },
@@ -1842,7 +1842,7 @@
             "description": "<p><em>See @UUID[Compendium.dnd5e.equipment24.Item.dmgFigurineOfWon]{Figurine of Wondrous Power}</em></p><p>This ebony statuette, carved in the likeness of a horsefly, can become a <strong>@UUID[Compendium.dnd5e.actors24.Actor.dmgGiantFly00000]{Giant Fly}</strong> for up to 12 hours and can be ridden as a mount. Once it has been used, it can't be used again until 2 days have passed.</p><section class=\"secret\" id=\"secret-50TFh1zOfnv1SBKO\"><p><strong>Foundry Note</strong></p><p>This item's limited uses represent the 2 days required before the figurine can be used again.</p></section>",
             "activities": {
                 "summon": {
-                    "target": "unoccupied space"
+                    "target": "niezajęta przestrzeń"
                 }
             }
         },
@@ -1860,16 +1860,16 @@
                 },
                 "2—9: Obeys Commands": {
                     "name": "2—9: Obeys Commands",
-                    "target": "unoccupied space"
+                    "target": "niezajęta przestrzeń"
                 },
                 "10: Casts Wish": {
                     "name": "10: Casts Wish",
-                    "target": "unoccupied space"
+                    "target": "niezajęta przestrzeń"
                 },
                 "1: Attacks You": {
                     "name": "1: Attacks You",
                     "chatFlavor": "A Hostile @UUID[Compendium.dnd5e.actors24.Actor.LTomFUTBrkRi0Pj5]{Efreeti} appears",
-                    "target": "unoccupied space"
+                    "target": "niezajęta przestrzeń"
                 }
             }
         },
@@ -2501,11 +2501,11 @@
             "activities": {
                 "Use First Lion": {
                     "name": "Use First Lion",
-                    "target": "unoccupied space"
+                    "target": "niezajęta przestrzeń"
                 },
                 "Use Second Lion": {
                     "name": "Use Second Lion",
-                    "target": "unoccupied space"
+                    "target": "niezajęta przestrzeń"
                 }
             }
         },
@@ -2778,7 +2778,7 @@
             "activities": {
                 "Summon Warriors": {
                     "name": "Przyzwanie wojowników",
-                    "target": "unoccupied space"
+                    "target": "niezajęta przestrzeń"
                 }
             },
             "effects": {
@@ -3067,20 +3067,20 @@
             "activities": {
                 "Goat of Terror": {
                     "name": "Goat of Terror",
-                    "target": "unoccupied space"
+                    "target": "niezajęta przestrzeń"
                 },
                 "Goat of Traveling": {
                     "name": "Goat of Traveling",
-                    "target": "unoccupied space"
+                    "target": "niezajęta przestrzeń"
                 },
                 "Revert or Recall Goat of Traveling": {
                     "name": "Revert or Recall Goat of Traveling",
                     "chatFlavor": "Each hour or portion thereof it spends in goat form costs 1 charge.",
-                    "target": "unoccupied space"
+                    "target": "niezajęta przestrzeń"
                 },
                 "Goat of Travail": {
                     "name": "Goat of Travail",
-                    "target": "unoccupied space"
+                    "target": "niezajęta przestrzeń"
                 }
             }
         },
@@ -3442,7 +3442,7 @@
             "description": "<p><em>See @UUID[Compendium.dnd5e.equipment24.Item.dmgFigurineOfWon]{Figurine of Wondrous Power}</em></p><p>This marble statuette resembles a trumpeting elephant. It can become an <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmElephant000000]{Elephant}</strong> for up to 24 hours. Once it has been used, it can't be used again until 7 days have passed.</p><section class=\"secret\" id=\"secret-RHHx3aKcpKsHN2aK\"><p><strong>Foundry Note</strong></p><p>This item's limited uses represent the 7 days required before the figurine can be used again.</p></section>",
             "activities": {
                 "summon": {
-                    "target": "unoccupied space"
+                    "target": "niezajęta przestrzeń"
                 }
             }
         },
@@ -3656,7 +3656,7 @@
             "activities": {
                 "summon": {
                     "chatFlavor": "[[/r 1d10cs1]]{10 percent chance} of ignoring your orders.",
-                    "target": "unoccupied space"
+                    "target": "niezajęta przestrzeń"
                 }
             }
         },
@@ -3743,7 +3743,7 @@
             "description": "<p><em>See @UUID[Compendium.dnd5e.equipment24.Item.dmgFigurineOfWon]{Figurine of Wondrous Power}</em></p><p>This onyx statuette of a dog can become a <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmMastiff0000000]{Mastiff}</strong> for up to 6 hours. The mastiff has an Intelligence of 8 and can speak Common. It also has Blindsight with a range of 60 feet. Once it has been used, it can't be used again until 7 days have passed.</p><section class=\"secret\" id=\"secret-61PsF1VxjiD2gq06\"><p><strong>Foundry Note</strong></p><p>This item's limited uses represent the 7 days required before the figurine can be used again.</p></section>",
             "activities": {
                 "summon": {
-                    "target": "unoccupied space"
+                    "target": "niezajęta przestrzeń"
                 }
             },
             "effects": {
@@ -4989,7 +4989,7 @@
             "description": "<p><em>See @UUID[Compendium.dnd5e.equipment24.Item.dmgFigurineOfWon]{Figurine of Wondrous Power}</em></p><p>This serpentine statuette of an owl can become a <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmGiantOwl000000]{Giant Owl}</strong> for up to 8 hours. The owl can communicate telepathically with you at any range if you and it are on the same plane of existence. Once it has been used, it can't be used again until 2 days have passed.</p><section class=\"secret\" id=\"secret-lvDPI4uyHQj4dE5a\"><p><strong>Foundry Note</strong></p><p>This item's limited uses represent the 2 days required before the figurine can be used again.</p></section>",
             "activities": {
                 "summon": {
-                    "target": "unoccupied space"
+                    "target": "niezajęta przestrzeń"
                 }
             }
         },
@@ -5607,7 +5607,7 @@
             }
         },
         "Talons": {
-            "name": "Talons",
+            "name": "Szpony",
             "description": "<p> Every magic item you wear or carry disintegrates. Artifacts in your possession vanish instead.</p>",
             "activities": {
                 "Card Effect": {
