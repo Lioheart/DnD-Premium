@@ -631,7 +631,22 @@
                 },
                 "Claw": {
                     "name": "Claw",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a [[lookup @target.affects.special activity=W1T7dZnG8GMMwyEP]] creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]) from one of two claws.</p>",
+                    "activities": {
+                        "attack": {
+                            "target": "Medium or smaller",
+                            "targetAffects": "Medium or smaller"
+                        },
+                        "Escape Check": {
+                            "name": "Escape Check"
+                        }
+                    },
+                    "effects": {
+                        "Grappled": {
+                            "name": "Grappled",
+                            "description": "<p>If the target is a Medium or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]).</p>"
+                        }
+                    }
                 }
             }
         },
@@ -675,10 +690,10 @@
                 },
                 "Multiattack": {
                     "name": "Multiattack",
-                    "description": "<p>The [[lookup @name lowercase]] makes two [[/item .mmClaw0000000000]] attacks.</p>",
+                    "description": "<p>The [[lookup @name lowercase]] makes two [[/item .mmBite0000000000]] attacks.</p>",
                     "activities": {
-                        "Expand Use": {
-                            "name": "Expand Use"
+                        "Expend Use": {
+                            "name": "Expend Use"
                         }
                     }
                 },
@@ -735,11 +750,11 @@
                 },
                 "Deflect Attack": {
                     "name": "Deflect Attack",
-                    "description": "<p><em>Trigger</em>: A creature the defender can see within 5 feet of itself makes an attack roll against a creature other than the defender. </p><p><em>Response</em>: The triggering creature makes the attack roll with Disadvantage.</p>",
+                    "description": "<p><em>Trigger</em>: A creature the defender can see within 5 feet of itself makes an attack roll against a creature other than the defender.</p><p><em>Response</em>: The triggering creature makes the attack roll with Disadvantage.</p><p><strong>Improved Defelection.</strong> Whenever your Steel Defender uses its Deflect Attack, the attacker takes Force damage equal to 1d4 plus your Intelligence modifier.</p>",
                     "activities": {
-                        "utility": {
-                            "condition": "A creature the defender can see within 5 feet of itself makes an attack roll against a creature other than the defender.",
-                            "activationCondition": "A creature the defender can see within 5 feet of itself makes an attack roll against a creature other than the defender."
+                        "damage": {
+                            "target": "Can see",
+                            "targetAffects": "Can see"
                         }
                     }
                 },
@@ -1012,10 +1027,10 @@
                 },
                 "Multiattack": {
                     "name": "Multiattack",
-                    "description": "<p>The [[lookup @name lowercase]] makes two [[/item .mmClaw0000000000]] attacks.</p>",
+                    "description": "<p>The [[lookup @name lowercase]] makes three [[/item Strange Scepter]] attacks.</p>",
                     "activities": {
-                        "Expand Use": {
-                            "name": "Expand Use"
+                        "Use": {
+                            "name": "Use"
                         }
                     }
                 },
@@ -1025,7 +1040,7 @@
                 },
                 "Spellcasting": {
                     "name": "Spellcasting",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC [[lookup @attributes.spell.dc]]):</p><p class=\"feature-trait\"><strong>At Will:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThaumaturg]{Thaumaturgy}</em></p><p class=\"feature-trait\"><strong>2/Day Each:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHoldPerson]{Hold Person}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplTongues000]{Tongues}</em></p>"
+                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC [[lookup @attributes.spell.dc]]):</p><p class=\"feature-trait\"><strong>At Will:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectMagi]{Detect Magic}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThaumaturg]{Thaumaturgy}</em></p><p class=\"feature-trait\"><strong>1/Day Each:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDestructiv]{Destructive Wave}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDivination]{Divination}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHoldMonste]{Hold Monster}</em> (level 6 version), <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplScrying000]{Scrying}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplTongues000]{Tongues}</em></p>"
                 },
                 "Detect Magic": {
                     "name": "Detect Magic",
@@ -1193,10 +1208,10 @@
                 },
                 "Multiattack": {
                     "name": "Multiattack",
-                    "description": "<p>The [[lookup @name lowercase]] makes two [[/item .mmClaw0000000000]] attacks.</p>",
+                    "description": "<p>The [[lookup @name lowercase]] makes two [[/item Bone Whip]] attacks.</p>",
                     "activities": {
-                        "Expand Use": {
-                            "name": "Expand Use"
+                        "Use": {
+                            "name": "Use"
                         }
                     }
                 },
@@ -1823,7 +1838,7 @@
                 },
                 "Multiattack": {
                     "name": "Multiattack",
-                    "description": "<p>The [[lookup @name lowercase]] makes two [[/item .mmClaw0000000000]] attacks.</p>",
+                    "description": "<p>The [[lookup @name lowercase]] makes two [[/item .mmSpectralJaws00]] attacks.</p>",
                     "activities": {
                         "Expand Use": {
                             "name": "Expand Use"

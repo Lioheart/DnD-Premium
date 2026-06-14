@@ -117,7 +117,7 @@
             "items": {
                 "Bite": {
                     "name": "Bite",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> +2, reach 5 ft. <em>Hit:</em> 1 Piercing damage.</p>"
                 }
             }
         },
@@ -256,7 +256,7 @@
             "items": {
                 "Multiattack": {
                     "name": "Multiattack",
-                    "description": "<p>The tiger makes one [[/item Pounce]] attack and uses [[/item Prowl]].</p>",
+                    "description": "<p>The bear makes two [[/item Rend]] attacks.</p>",
                     "activities": {
                         "Activate": {
                             "name": "Activate"
@@ -265,7 +265,7 @@
                 },
                 "Rend": {
                     "name": "Rend",
-                    "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>7 (1d8 + 3) Slashing damage.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 5 (1d6 + 2) Slashing damage.</p>"
                 }
             }
         },
@@ -278,7 +278,7 @@
             "items": {
                 "Multiattack": {
                     "name": "Multiattack",
-                    "description": "<p>The tiger makes one [[/item Pounce]] attack and uses [[/item Prowl]].</p>",
+                    "description": "<p>The bear makes one [[/item Bite]] attack and one [[/item Claw]] attack.</p>",
                     "activities": {
                         "Activate": {
                             "name": "Activate"
@@ -287,7 +287,7 @@
                 },
                 "Bite": {
                     "name": "Bite",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 7 (1d8 + 3) Piercing damage.</p>"
                 },
                 "Claw": {
                     "name": "Claw",
@@ -315,7 +315,7 @@
             "items": {
                 "Bite": {
                     "name": "Bite",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 4 (1d4 + 2) Bludgeoning damage.</p>"
                 }
             }
         },
@@ -471,12 +471,12 @@
             "items": {
                 "Pack Tactics": {
                     "name": "Pack Tactics",
-                    "description": "<p> The wolf has Advantage on attack rolls against a creature if at least one of the wolf’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>",
+                    "description": "<p>The wolf has Advantage on an attack roll against a creature if at least one of the wolf’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>",
                     "requirements": "Ally within 5 feet of target"
                 },
                 "Bite": {
                     "name": "Bite",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit: </em>8 (1d10 + 3) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Huge or smaller.</p>"
                 }
             }
         },
@@ -499,7 +499,7 @@
             "items": {
                 "Multiattack": {
                     "name": "Multiattack",
-                    "description": "<p>The tiger makes one [[/item Pounce]] attack and uses [[/item Prowl]].</p>",
+                    "description": "<p>The elephant makes two [[/item Gore]] attacks.</p>",
                     "activities": {
                         "Activate": {
                             "name": "Activate"
@@ -625,7 +625,7 @@
                 },
                 "Bite": {
                     "name": "Bite",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> +3, reach 5 ft. <em>Hit:</em> 1 Piercing damage.</p>"
                 }
             }
         },
@@ -635,7 +635,7 @@
             "items": {
                 "Bite": {
                     "name": "Bite",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> +3, reach 5 ft. <em>Hit:</em> 6 (2d4 + 1) Piercing damage.</p>"
                 }
             }
         },
@@ -649,7 +649,7 @@
             "items": {
                 "Ram": {
                     "name": "Ram",
-                    "description": "<p><em>Melee Attack Roll: </em>+2, reach 5 ft. <em>Hit: </em>1 Bludgeoning damage, or the goat deals 2 (1d4) Bludgeoning damage if it moved at least 20 feet straight toward the target immediately before the hit.</p>",
+                    "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>6 (1d6 + 3) Bludgeoning damage. If the goat moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 5 (2d4) Bludgeoning damage and, if it is Huge or smaller, has the &amp;Reference[prone] condition.</p>",
                     "activities": {
                         "Charging Attack": {
                             "name": "Charging Attack"
@@ -672,7 +672,7 @@
                 },
                 "Bite": {
                     "name": "Bite",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit:</em> 7 (1d8 + 3) Piercing damage plus 7 (2d6) Poison damage.</p>"
                 },
                 "Web": {
                     "name": "Web",
@@ -686,7 +686,7 @@
             "items": {
                 "Bite": {
                     "name": "Bite",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Piercing damage.</p>"
                 }
             }
         },
@@ -887,7 +887,7 @@
             "items": {
                 "Pack Tactics": {
                     "name": "Pack Tactics",
-                    "description": "<p> The wolf has Advantage on attack rolls against a creature if at least one of the wolf’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>",
+                    "description": "<p>The lion has Advantage on an attack roll against a creature if at least one of the lion’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>",
                     "requirements": "Ally within 5 feet of target"
                 },
                 "Running Leap": {
@@ -896,7 +896,7 @@
                 },
                 "Multiattack": {
                     "name": "Multiattack",
-                    "description": "<p>The tiger makes one [[/item Pounce]] attack and uses [[/item Prowl]].</p>",
+                    "description": "<p>The lion makes two [[/item Rend]] attacks. It can replace one of these attacks with a use of [[/item Roar]].</p>",
                     "activities": {
                         "Activate": {
                             "name": "Activate"
@@ -925,7 +925,7 @@
             "items": {
                 "Bite": {
                     "name": "Bite",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> +3, reach 5 ft. <em>Hit: </em>4 (1d6 + 1) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Large or smaller.</p>"
                 }
             }
         },
@@ -939,7 +939,7 @@
                 },
                 "Hooves": {
                     "name": "Hooves",
-                    "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>7 (1d8 + 3) Bludgeoning damage.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>4 (1d4 + 2) Bludgeoning damage.</p>"
                 }
             }
         },
@@ -949,7 +949,7 @@
             "items": {
                 "Multiattack": {
                     "name": "Multiattack",
-                    "description": "<p>The tiger makes one [[/item Pounce]] attack and uses [[/item Prowl]].</p>",
+                    "description": "<p>The panther makes one [[/item Pounce]] attack and uses [[/item Prowl]].</p>",
                     "activities": {
                         "Activate": {
                             "name": "Activate"
@@ -958,18 +958,18 @@
                 },
                 "Pounce": {
                     "name": "Pounce",
-                    "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>6 (1d6 + 3) Slashing damage. If the tiger had Advantage on the attack roll, the target takes an extra 3 (1d6) Slashing damage and, if it is Huge or smaller, has the &amp;Reference[prone] condition.</p>",
+                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>4 (1d4 + 2) Slashing damage, or the panther deals 7 (2d4 + 2) Slashing damage if it had Advantage on the attack roll.</p>",
                     "activities": {
                         "Advantage Attack": {
                             "name": "Advantage Attack",
-                            "condition": "attack made with Advantage",
-                            "activationCondition": "attack made with Advantage"
+                            "condition": "has Advantage on this attack",
+                            "activationCondition": "has Advantage on this attack"
                         }
                     }
                 },
                 "Prowl": {
                     "name": "Prowl",
-                    "description": "<p>The tiger moves up to half its Speed without provoking Opportunity Attacks. At the end of this movement, the tiger can take the &amp;Reference[hide] action.</p>",
+                    "description": "<p>The panther moves up to half its Speed without provoking Opportunity Attacks. At the end of this movement, the panther can take the &amp;Reference[hide] action.</p>",
                     "activities": {
                         "Move and Hide": {
                             "name": "Move and Hide"
@@ -1087,7 +1087,7 @@
                 },
                 "Bite": {
                     "name": "Bite",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> +2, reach 5 ft. <em>Hit:</em> 1 Piercing damage.</p>"
                 }
             }
         },
@@ -1304,7 +1304,7 @@
             "items": {
                 "Bite": {
                     "name": "Bite",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 1 Piercing damage.</p>"
                 }
             }
         },

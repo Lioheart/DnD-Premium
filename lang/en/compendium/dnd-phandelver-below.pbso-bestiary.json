@@ -34,11 +34,11 @@
                 },
                 "Multiattack": {
                     "name": "Multiattack",
-                    "description": "<p>The zealot makes one [[/item Psychic Rend]] attack and two [[/item Shortsword]] attacks.</p>"
+                    "description": "<p>The zealot makes one Psychic Rend attack and two Shortsword attacks.</p>"
                 },
                 "Spellcasting (Psionics)": {
                     "name": "Spellcasting (Psionics)",
-                    "description": "<section class=\"secret\" id=\"secret-qtt6zedYBerVYtGT\"><p>The zealot casts one of the following spells, requiring no components and using Charisma as the spellcasting ability (spell save DC 15):</p><p>At will: @UUID[Compendium.dnd5e.spells.Item.ppWAAEul0QHtm4er]{detect thoughts}, @UUID[Compendium.dnd5e.spells.Item.oIzA2MEHwxhtQneU]{minor illusion}</p><p>1/day each: @UUID[.Ml2Kbf7QjpusHlsr]{arcane gate}, @UUID[.YihTDitj9rYLjeOM]{hunger of Hadar}</p></section><p>The zealot is a spellcaster. Its spellcasting ability is Charisma.</p>"
+                    "description": "<section class=\"secret\" id=\"secret-qtt6zedYBerVYtGT\"><p>The zealot casts one of the following spells, requiring no components and using Charisma as the spellcasting ability (spell save DC 15):</p><p>At will: @UUID[Compendium.dnd5e.spells.Item.ppWAAEul0QHtm4er]{detect thoughts}, @UUID[Compendium.dnd5e.spells.Item.oIzA2MEHwxhtQneU]{minor illusion}</p><p>1/day each: arcane gate, hunger of Hadar</p></section><p>The zealot is a spellcaster. Its spellcasting ability is Charisma.</p>"
                 },
                 "Shortsword": {
                     "name": "Shortsword",
@@ -54,7 +54,7 @@
                 },
                 "Void Warp": {
                     "name": "Void Warp",
-                    "description": "<p>Shalfi teleports, along with any equipment it is wearing or carrying, to an unoccupied space it can see within 120 feet of itself, leaving a churning void in the space it left. Immediately after it teleports, each creature within 30 feet of the void other than the zealot must make a DC 15 Strength saving throw. On a failed save, a creature takes 18 (4d8) force damage and is pulled to the unoccupied space closest to the void. On a successful save, the creature takes half as much damage only. The void then disappears.</p>"
+                    "description": "<p>The zealot teleports, along with any equipment it is wearing or carrying, to an unoccupied space it can see within 120 feet of itself, leaving a churning void in the space it left. Immediately after it teleports, each creature within 30 feet of the void other than the zealot must make a DC 15 Strength saving throw. On a failed save, a creature takes 18 (4d8) force damage and is pulled to the unoccupied space closest to the void. On a successful save, the creature takes half as much damage only. The void then disappears.</p>"
                 },
                 "Psychic Rend (Melee)": {
                     "name": "Psychic Rend (Melee)",
@@ -866,7 +866,7 @@
                 },
                 "Javelin": {
                     "name": "Javelin",
-                    "description": "<section class=\"secret\" id=\"secret-N0w9FZwf4m3GCaAT\"><p>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: <strong>9 (2d6 + 2) </strong><em><strong>piercing damage</strong></em> in melee or <strong>5 (1d6 + 2) </strong><em><strong>piercing damage</strong></em> at range.</p></section><p>The Bugbear attacks with its Javelin.</p>"
+                    "description": "<section class=\"secret\" id=\"secret-gSxAQK74flXy5xCn\"><p>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: <strong>9 (2d6 + 2) </strong><em><strong>piercing damage</strong></em> in melee or <strong>5 (1d6 + 2) </strong><em><strong>piercing damage</strong></em> at range.</p></section><p>The Bugbear attacks with its Javelin.</p>"
                 }
             }
         },
@@ -930,13 +930,7 @@
                 },
                 "Unleash Void": {
                     "name": "Unleash Void",
-                    "description": "<p>The mind flayer opens a rift into the Far Realm, centered on a point the mind flayer can see within 60 feet of itself, and a tentacle lashes across creatures near the rift. Each creature other than mind flayers within 30 feet of the rift must make a DC 17 Intelligence saving throw, after which the tentacle disappears and the rift closes. On a failed save, a creature takes 18 (4d8) cold damage from the rift plus 18 (4d8) psychic damage from the tentacle and has the stunned condition for 1 minute. On a successful save, a creature takes half as much damage only. A stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>",
-                    "effects": {
-                        "Stunned": {
-                            "name": "Stunned",
-                            "description": "<p>The target has the &amp;Reference[stunned] condition for 1 minute.</p>"
-                        }
-                    }
+                    "description": "<p>The mind flayer opens a rift into the Far Realm, centered on a point the mind flayer can see within 60 feet of itself, and a tentacle lashes across creatures near the rift. Each creature other than mind flayers within 30 feet of the rift must make a DC 17 Intelligence saving throw, after which the tentacle disappears and the rift closes. On a failed save, a creature takes 18 (4d8) cold damage from the rift plus 18 (4d8) psychic damage from the tentacle and has the stunned condition for 1 minute. On a successful save, a creature takes half as much damage only. A stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>"
                 },
                 "Warp Reality": {
                     "name": "Warp Reality",
@@ -3289,11 +3283,16 @@
                 },
                 "Multiattack": {
                     "name": "Multiattack",
-                    "description": "<p>The mind flayer makes two Tentacle attacks.</p>"
+                    "description": "<p>The mind flayer makes two [[/item Tentacle]] attacks.</p>"
                 },
                 "Spellcasting (Psionics)": {
                     "name": "Spellcasting (Psionics)",
-                    "description": "<section class=\"secret\" id=\"secret-3DciHpRYPE4yuqbJ\"><p>The mind flayer casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 17):</p><p>At will: @UUID[Compendium.dnd5e.spells.Item.ghXTfe7sgCbgf1Q8]{detect magic}, @UUID[Compendium.dnd5e.spells.Item.ppWAAEul0QHtm4er]{detect thoughts}, @UUID[Compendium.dnd5e.spells.Item.Utk1OQRwYkMkFRD3]{mage hand} (the hand is invisible)</p><p>3/day each: @UUID[Compendium.dnd5e.spells.Item.cg50KpBkBdPK6vPL]{clairvoyance} (as an action), @UUID[Compendium.dnd5e.spells.Item.15Fa6q1nH27XfbR8]{dispel magic}</p><p>1/day: @UUID[Compendium.dnd5e.spells.Item.J6Jpw5XzB5aTeqnz]{plane shift} (self only)</p></section><p>The mind flayer is a spellcaster. Its spellcasting ability is Intelligence.</p>"
+                    "description": "<section class=\"secret\" id=\"secret-3DciHpRYPE4yuqbJ\"><p>The mind flayer casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 17):</p><p>At will: @UUID[Compendium.dnd5e.spells.Item.ghXTfe7sgCbgf1Q8]{detect magic}, @UUID[Compendium.dnd5e.spells.Item.ppWAAEul0QHtm4er]{detect thoughts}, @UUID[Compendium.dnd5e.spells.Item.Utk1OQRwYkMkFRD3]{mage hand} (the hand is invisible)</p><p>3/day each: @UUID[Compendium.dnd5e.spells.Item.cg50KpBkBdPK6vPL]{clairvoyance} (as an action), @UUID[Compendium.dnd5e.spells.Item.15Fa6q1nH27XfbR8]{dispel magic}</p><p>1/day: @UUID[Compendium.dnd5e.spells.Item.J6Jpw5XzB5aTeqnz]{plane shift} (self only)</p></section><p>The mind flayer is a spellcaster. Its spellcasting ability is Intelligence.</p>",
+                    "activities": {
+                        "Plane Shift (self only)": {
+                            "name": "Plane Shift (self only)"
+                        }
+                    }
                 },
                 "Unleash Void": {
                     "name": "Unleash Void",
@@ -4270,7 +4269,7 @@
                 },
                 "Multiattack": {
                     "name": "Multiattack",
-                    "description": "<p>The mind flayer makes two Tentacle attacks.</p>"
+                    "description": "<p>The mind flayer makes two [[/item Tentacle]] attacks.</p>"
                 },
                 "Extract Brain": {
                     "name": "Extract Brain",
@@ -4278,17 +4277,16 @@
                 },
                 "Spellcasting (Psionics)": {
                     "name": "Spellcasting (Psionics)",
-                    "description": "<section class=\"secret\" id=\"secret-3DciHpRYPE4yuqbJ\"><p>The mind flayer casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 17):</p><p>At will: @UUID[Compendium.dnd5e.spells.Item.ghXTfe7sgCbgf1Q8]{detect magic}, @UUID[Compendium.dnd5e.spells.Item.ppWAAEul0QHtm4er]{detect thoughts}, @UUID[Compendium.dnd5e.spells.Item.Utk1OQRwYkMkFRD3]{mage hand} (the hand is invisible)</p><p>3/day each: @UUID[Compendium.dnd5e.spells.Item.cg50KpBkBdPK6vPL]{clairvoyance} (as an action), @UUID[Compendium.dnd5e.spells.Item.15Fa6q1nH27XfbR8]{dispel magic}</p><p>1/day: @UUID[Compendium.dnd5e.spells.Item.J6Jpw5XzB5aTeqnz]{plane shift} (self only)</p></section><p>The mind flayer is a spellcaster. Its spellcasting ability is Intelligence.</p>"
+                    "description": "<section class=\"secret\" id=\"secret-3DciHpRYPE4yuqbJ\"><p>The mind flayer casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 17):</p><p>At will: @UUID[Compendium.dnd5e.spells.Item.ghXTfe7sgCbgf1Q8]{detect magic}, @UUID[Compendium.dnd5e.spells.Item.ppWAAEul0QHtm4er]{detect thoughts}, @UUID[Compendium.dnd5e.spells.Item.Utk1OQRwYkMkFRD3]{mage hand} (the hand is invisible)</p><p>3/day each: @UUID[Compendium.dnd5e.spells.Item.cg50KpBkBdPK6vPL]{clairvoyance} (as an action), @UUID[Compendium.dnd5e.spells.Item.15Fa6q1nH27XfbR8]{dispel magic}</p><p>1/day: @UUID[Compendium.dnd5e.spells.Item.J6Jpw5XzB5aTeqnz]{plane shift} (self only)</p></section><p>The mind flayer is a spellcaster. Its spellcasting ability is Intelligence.</p>",
+                    "activities": {
+                        "Plane Shift (self only)": {
+                            "name": "Plane Shift (self only)"
+                        }
+                    }
                 },
                 "Unleash Void": {
                     "name": "Unleash Void",
-                    "description": "<p>The mind flayer opens a rift into the Far Realm, centered on a point the mind flayer can see within 60 feet of itself, and a tentacle lashes across creatures near the rift. Each creature other than mind flayers within 30 feet of the rift must make a DC 17 Intelligence saving throw, after which the tentacle disappears and the rift closes. On a failed save, a creature takes 18 (4d8) cold damage from the rift plus 18 (4d8) psychic damage from the tentacle and has the stunned condition for 1 minute. On a successful save, a creature takes half as much damage only. A stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>",
-                    "effects": {
-                        "Stunned": {
-                            "name": "Stunned",
-                            "description": "<p>The target has the &amp;Reference[stunned] condition for 1 minute.</p>"
-                        }
-                    }
+                    "description": "<p>The mind flayer opens a rift into the Far Realm, centered on a point the mind flayer can see within 60 feet of itself, and a tentacle lashes across creatures near the rift. Each creature other than mind flayers within 30 feet of the rift must make an <strong>Intelligence saving throw</strong>, after which the tentacle disappears and the rift closes. On a failed save, a creature takes 18 (4d8) cold damage from the rift plus 18 (4d8) psychic damage from the tentacle and has the &amp;Reference[stunned]{stunned} condition for 1 minute. On a successful save, a creature takes half as much damage only. A stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>"
                 },
                 "Warp Reality": {
                     "name": "Warp Reality",
@@ -4753,7 +4751,7 @@
                 },
                 "Weird Insight": {
                     "name": "Weird Insight",
-                    "description": "<section class=\"secret\" id=\"secret-hxpGF84gDqLY2vis\"><p>The nothic targets one creature it can see within 30 feet of it. The target must contest its Charisma (Deception) check against the nothic’s [[/check skill=insight]]check. If the nothic wins, it magically learns one fact or secret about the target. The target automatically wins if it is immune to being charmed.</p></section><p>The target must roll [[/check skill=deception]].</p>"
+                    "description": "<section class=\"secret\" id=\"secret-hxpGF84gDqLY2vis\"><p>The nothic targets one creature it can see within 30 feet of it. The target must contest its [[/check skill=dec]] check against the nothic’s [[/check skill=ins]] check. If the nothic wins, it magically learns one fact or secret about the target. The target automatically wins if it is immune to being charmed.</p></section><p>The target must roll [[/check skill=dec]].</p>"
                 }
             }
         },
@@ -6863,7 +6861,7 @@
                 },
                 "Wraith - Life Drain": {
                     "name": "Wraith - Life Drain",
-                    "description": "<section class=\"secret\"><p><em>Melee Weapon Attack:</em><strong>+6 to hit,</strong>, <strong>5 ft.,</strong> one creature. Hit: <strong>21 (4d8 + 3) <em>necrotic damage</em></strong>. </p><p>The target must succeed on a  <strong>DC 14 Constitution</strong> saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</p></section><p>The Wraith attacks with its Life Drain. The target must make a <strong>Constitution</strong> saving throw.</p>"
+                    "description": "<section class=\"secret\" id=\"secret-LwsRjW2COjuRYoRY\"><p><em>Melee Weapon Attack: </em><strong>+6 to hit,</strong>, <strong>5 ft.,</strong> one creature. Hit: <strong>21 (4d8 + 3) </strong><em><strong>necrotic damage</strong></em>.</p><p>The target must succeed on a <strong>DC 14 Constitution</strong> saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</p></section><p>The Wraith attacks with its Life Drain. The target must make a <strong>Constitution</strong> saving throw.</p>"
                 },
                 "Sunlight Sensitivity": {
                     "name": "Sunlight Sensitivity",
@@ -7101,11 +7099,11 @@
             "items": {
                 "Slam": {
                     "name": "Slam",
-                    "description": "<section class=\"secret\" id=\"secret-SDiFovnMAnWB1gfF\"><p><em>Melee Weapon Attack:</em><strong> +3 to hit,</strong> reach <strong>5 ft.,</strong> one target. Hit: <strong>4 (1d6 + 1) </strong><em><strong>bludgeoning damage</strong></em>.</p></section><p>The Zombie attacks with its Slam.</p>"
+                    "description": "<section class=\"secret\" id=\"secret-Pv6ewNlryB3DyuNS\"><p><em>Melee Weapon Attack:</em><strong>+3 to hit,</strong>, <strong>5 ft.,</strong> one target. Hit: <strong>4 (1d6 + 1) </strong><em><strong>bludgeoning damage</strong></em>.</p></section><p>The Zombie attacks with its Slam.</p>"
                 },
                 "Undead Fortitude": {
                     "name": "Undead Fortitude",
-                    "description": "<section class=\"secret\" id=\"secret-8aTs9IXua0mGG7AT\"><p>If damage reduces the zombie to <strong>0 hit points</strong>, it must make a <strong>Constitution</strong> saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to <strong>1 hit point</strong> instead.</p></section><p>If damage reduces the zombie to <strong>0 hit points</strong>, it must make a <strong>Constitution</strong> saving throw.</p>"
+                    "description": "<section class=\"secret\"><p>If damage reduces the zombie to <strong>0 hit points</strong>, it must make a <strong>Constitution</strong> saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to <strong>1 hit point</strong> instead.</p></section><p>If damage reduces the zombie to <strong>0 hit points</strong>, it must make a <strong>Constitution</strong> saving throw.</p>"
                 }
             }
         }
