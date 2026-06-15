@@ -70,7 +70,7 @@
             }
         },
         "Acid Absorption": {
-            "name": "Acid Absorption",
+            "name": "Wchłanianie kwasu",
             "description": "<p>The creature is immune to Acid damage and instead regains a number of Hit Points equal to the Acid damage dealt.</p>"
         },
         "Acid Breath": {
@@ -247,13 +247,13 @@
             "description": "<p>The target has Disadvantage on attack rolls until the end of the attacking creature's next turn.</p>"
         },
         "Aura of Authority": {
-            "name": "Aura of Authority",
+            "name": "autorytetu",
             "description": {
                 "value": "<p>While in a [[lookup @target.template.size activity=dE4lg9tZyXtoCb5x]]-foot Emanation originating from the [[lookup @name lowercase]], the [[lookup @name lowercase]] and its allies have Advantage on attack rolls and saving throws, provided the [[lookup @name lowercase]] doesn’t have the &amp;Reference[Incapacitated apply=false] condition.</p>"
             }
         },
         "Aura of Bravery": {
-            "name": "Aura of Bravery",
+            "name": "Aura męstwa",
             "description": {
                 "value": "<p>Creatures of the [[lookup @name lowercase]]'s choice in a [[lookup @target.template.size activity=N8uK4xdPCXdknRTb]]-foot Emanation originating from it have Immunity to the &amp;Reference[Charmed apply=false] and &amp;Reference[Frightened apply=false] conditions while there.</p>"
             }
@@ -363,7 +363,7 @@
             }
         },
         "Berserk": {
-            "name": "Berserk",
+            "name": "Atak szału",
             "description": "<p>On each of its turns while berserk, the creature attacks the nearest creature it can see. If no creature is near enough to move to and attack, the creature attacks an object. Once the creature goes berserk, it remains so until it is destroyed or it is no longer &amp;Reference[Bloodied apply=false].</p>"
         },
         "Bewildered": {
@@ -383,7 +383,7 @@
             }
         },
         "Bladed Arm": {
-            "name": "Bladed Arm",
+            "name": "Ramieniostrze",
             "description": {
                 "value": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
             }
@@ -838,7 +838,7 @@
             }
         },
         "Constrict": {
-            "name": "Constrict",
+            "name": "Duszenie",
             "description": {
                 "value": "<p><em>Strength Saving Throw:</em><span class=\"Heading-4\"> </span>DC [[lookup @save.dc.value activity=IgOMjRxAt7UISkJq]], one [[lookup @target.affects.special activity=IgOMjRxAt7UISkJq]] creature the [[lookup @name lowercase]] can see within [[lookup @range.value activity=IgOMjRxAt7UISkJq]] feet. <em>Failure:</em> [[/damage average]] damage. The target has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]), and it has the &amp;Reference[Restrained apply=false] condition until the grapple ends.</p>"
             }
@@ -916,7 +916,7 @@
             }
         },
         "Create Whirlwind": {
-            "name": "Create Whirlwind",
+            "name": "Stwórz wir",
             "description": {
                 "value": "<p class=\"feature\">The [[lookup @name lowercase]] conjures a whirlwind at a point it can see within 120 feet. The whirlwind fills a [[lookup @target.template.size activity=TYNKL0QDItFpbR2G]]-foot-radius, [[lookup @target.template.height activity=TYNKL0QDItFpbR2G]]-foot-high [[lookup @target.template.type capitalize activity=TYNKL0QDItFpbR2G]] centered on that point. The whirlwind lasts until the [[lookup @name lowercase]]’s Concentration on it ends. The [[lookup @name lowercase]] can move the whirlwind up to 20 feet at the start of each of its turns.</p><p class=\"feature\">Whenever the whirlwind enters a creature’s space or a creature enters the whirlwind, that creature is subjected to the following effect.</p><p class=\"feature\"><em>Strength Saving Throw:</em> DC [[lookup @save.dc.value activity=TYNKL0QDItFpbR2G]] (a creature makes this save only once per turn, and the [[lookup @name lowercase]] is unaffected).</p><p class=\"feature\"><em>Failure:</em> While in the whirlwind, the target has the &amp;Reference[Restrained apply=false] condition and moves with the whirlwind. At the start of each of its turns, the Restrained target takes [[/damage average]] damage. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success.</p>"
             }
@@ -974,7 +974,7 @@
             "description": "<p>Cel otrzymuje karę −2 do KP do końca swojej następnej tury.</p>"
         },
         "Darkness Aura": {
-            "name": "Darkness Aura",
+            "name": "Aura ciemności",
             "description": {
                 "value": "<p>Magical Darkness fills a [[lookup @target.template.size activity=amat5Ii4NydseA0h]]-foot Emanation originating from the [[lookup @name]]. This effect lasts while the [[lookup @name]] maintains Concentration on it, up to [[lookup @duration.value activity=amat5Ii4NydseA0h]] minutes. Darkvision can’t penetrate this area, and no light can illuminate it.</p>"
             }
@@ -1492,7 +1492,7 @@
             "description": "<p>The target dies if the creature that is at 0 Hit Points fails a Constitution save.</p>"
         },
         "Fear Aura": {
-            "name": "Fear Aura",
+            "name": "Aura strachu",
             "description": {
                 "value": "<p class=\"feature\">The [[lookup @name lowercase]] emanates an aura in a [[lookup @target.template.size activity=oT8238p9jXwVy76c]]-foot Emanation while it doesn’t have the Incapacitated condition.</p><p class=\"feature\"><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=oT8238p9jXwVy76c]], [[lookup @target.affects.special activity=oT8238p9jXwVy76c]].</p><p class=\"feature\"><em>Failure:</em> The target has the &amp;Reference[Frightened apply=false] condition until the start of its next turn.</p><p class=\"feature\"><em>Success:</em> The target is immune to this [[lookup @name lowercase]]’s aura for 24 hours.</p>"
             }
@@ -1528,7 +1528,7 @@
             }
         },
         "Fetid Aura": {
-            "name": "Fetid Aura",
+            "name": "Aura fetoru",
             "description": {
                 "value": "<p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=viDmXaiaC23yBh98]], any creature that starts its turn in a [[lookup @target.template.size activity=viDmXaiaC23yBh98]]-foot Emanation originating from the swarm. <em>Failure:</em> The target has the &amp;Reference[Poisoned apply=false] condition until the start of its next turn. While Poisoned, the target can take either an action or a Bonus Action on its turn, not both, and it can’t take Reactions.</p>"
             }
@@ -1582,7 +1582,7 @@
             }
         },
         "Fiery Bolt": {
-            "name": "Fiery Bolt",
+            "name": "Ogniowy pocisk",
             "description": {
                 "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
             }
@@ -1600,7 +1600,7 @@
             }
         },
         "Fire Absorption": {
-            "name": "Fire Absorption",
+            "name": "Wchłanianie ognia",
             "description": {
                 "value": "<p class=\"feature\">Whenever the [[lookup @name lowercase]] is subjected to Fire damage, it regains a number of Hit Points equal to the Fire damage dealt.</p>"
             }
@@ -1645,7 +1645,7 @@
             }
         },
         "Flame Aura": {
-            "name": "Flame Aura",
+            "name": "Aura płomieni",
             "description": {
                 "value": "<p class=\"feature\">At the end of each of the [[lookup @name lowercase]]’s turns, each creature in a [[lookup @target.template.size activity=f4cPafTT2VXHbpr7]]-foot Emanation originating from the [[lookup @name lowercase]] takes [[/damage average]] damage.</p>"
             }
@@ -2022,7 +2022,7 @@
             }
         },
         "Heat Aura": {
-            "name": "Heat Aura",
+            "name": "Aura żaru",
             "description": {
                 "value": "<p class=\"feature\">At the end of each of the [[lookup @name lowercase]]’s turns, each [[lookup @target.affects.type activity=LDcQJj3oXyPCuCaT]] in a [[lookup @target.template.size activity=LDcQJj3oXyPCuCaT]]-foot Emanation originating from the [[lookup @name lowercase]] takes [[/damage average]] damage.</p>"
             }
@@ -2391,7 +2391,7 @@
             }
         },
         "Lightning Absorption": {
-            "name": "Lightning Absorption",
+            "name": "Wchłanianie elektryczności",
             "description": {
                 "value": "<p class=\"feature\">Whenever the [[lookup @name lowercase]] is subjected to Lightning damage, it regains a number of Hit Points equal to the Lightning damage dealt.</p>"
             }
@@ -2948,7 +2948,7 @@
             }
         },
         "Pounce": {
-            "name": "Natarcie",
+            "name": "Obalenie",
             "description": {
                 "value": "<p>The [[lookup @name lowercase]] moves up to half its Speed, and it makes one [[/item Rend]] attack.</p>"
             }
@@ -3779,7 +3779,7 @@
             }
         },
         "Standing Leap": {
-            "name": "Standing Leap",
+            "name": "Skok z miejsca",
             "description": {
                 "value": "<p class=\"feature\">The [[lookup @name lowercase]]’s Long Jump is up to 20 feet and its High Jump is up to 10 feet with or without a running start.</p>"
             }
@@ -4282,7 +4282,7 @@
             "description": "<p>The target has the &amp;Reference[Unconscious apply=false] condition for the duration (see source item for the length of the duration) or until it takes damage or a creature within 5 feet of it takes an action to wake it.</p>"
         },
         "Undead Fortitude": {
-            "name": "Undead Fortitude",
+            "name": "Trupia odporność",
             "description": {
                 "value": "<p class=\"feature\">If damage reduces the [[lookup @name lowercase]] to 0 Hit Points, it makes a Constitution saving throw (DC 5 plus the damage taken) unless the damage is Radiant or from a Critical Hit. On a successful save, the [[lookup @name lowercase]] drops to 1 Hit Point instead.</p>"
             }
@@ -4496,7 +4496,7 @@
             }
         },
         "Whirlwind": {
-            "name": "Whirlwind",
+            "name": "Wir",
             "description": {
                 "value": "<p class=\"feature\"><em>Strength Saving Throw:</em> DC [[lookup @save.dc.value activity=GQzr4EMMm6kkZVdC]], each Medium or smaller [[lookup @target.affects.type activity=GQzr4EMMm6kkZVdC]] in the [[lookup @name lowercase]]'s space. <em>Failure:</em> [[/damage average]] damage, and the target is pushed up to 20 feet straight away from the [[lookup @name lowercase]] and has the &amp;Reference[Prone apply=false] condition. <em>Success:</em> Half damage only.</p>"
             }
