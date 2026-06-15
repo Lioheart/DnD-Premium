@@ -120,12 +120,12 @@
             "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Acid Absorption": {
-            "name": "Acid Absorption",
+            "name": "Wchłanianie kwasu",
             "description": "<p>Whenever the [[lookup @name lowercase]]{monster} is subjected to &amp;Reference[Acid] damage, it takes no damage and instead regains a number of Hit Points equal to the Acid damage dealt.</p>",
             "requirements": "Subjected to Acid damage",
             "effects": {
                 "Acid Absorption": {
-                    "name": "Acid Absorption",
+                    "name": "Wchłanianie kwasu",
                     "description": "<p>The creature is immune to Acid damage and instead regains a number of Hit Points equal to the Acid damage dealt.</p>"
                 }
             }
@@ -245,7 +245,7 @@
             }
         },
         "Aura of Authority": {
-            "name": "Aura of Authority",
+            "name": "autorytetu",
             "description": "<p>While in a [[lookup @target.template.size activity=dE4lg9tZyXtoCb5x]]-foot Emanation originating from the [[lookup @name lowercase]]{monster}, the [[lookup @name lowercase]]{monster} and its allies have Advantage on attack rolls and saving throws, provided the [[lookup @name lowercase]]{monster} doesn't have the &amp;Reference[Incapacitated apply=false] condition.</p>",
             "requirements": "Nie jest Obezwładniony",
             "activities": {
@@ -342,7 +342,7 @@
             "description": "<p>The [[lookup @name lowercase]]{monster} casts <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCommand000]</em>, requiring no spell components and using Charisma as the spellcasting ability (spell save DC [[lookup @abilities.cha.dc]]). The [[lookup @name lowercase]]{monster} can't take this action again until the start of its next turn.</p>"
         },
         "Berserk": {
-            "name": "Berserk",
+            "name": "Atak szału",
             "description": "<p>Whenever the [[lookup @name lowercase]]{monster} starts its turn &amp;Reference[Bloodied], roll [[/r 1d6]]. On a 6, the [[lookup @name lowercase]]{monster} goes berserk. On each of its turns while berserk, the [[lookup @name lowercase]]{monster} attacks the nearest creature it can see. If no creature is near enough to move to and attack, the [[lookup @name lowercase]]{monster} attacks an object. Once the [[lookup @name lowercase]]{monster} goes berserk, it remains so until it is destroyed or it is no longer Bloodied.</p><p>The [[lookup @name lowercase]]{monster}'s creator, if within [[lookup @range.value activity=tnkOsrSwEElO2kZM]] feet of the berserk [[lookup @name lowercase]]{monster}, can try to calm it by taking an action to make a [[/check ability=cha skill=per dc=@abilities.str.dc]] DC 15 Charisma (Persuasion) check; the golem must be able to hear its creator. If this check succeeds, the golem ceases being berserk until the start of its next turn, at which point it resumes rolling for the Berserk trait again if it is still Bloodied.</p>",
             "activities": {
                 "Berserk Check": {
@@ -358,7 +358,7 @@
             },
             "effects": {
                 "Berserk": {
-                    "name": "Berserk",
+                    "name": "Atak szału",
                     "description": "<p>On each of its turns while berserk, the creature attacks the nearest creature it can see. If no creature is near enough to move to and attack, the creature attacks an object. Once the creature goes berserk, it remains so until it is destroyed or it is no longer &amp;Reference[Bloodied apply=false].</p>"
                 }
             }
@@ -378,7 +378,7 @@
             }
         },
         "Bladed Arm": {
-            "name": "Bladed Arm",
+            "name": "Ramieniostrze",
             "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Blazing Light": {
@@ -637,7 +637,7 @@
             }
         },
         "Constrict": {
-            "name": "Constrict",
+            "name": "Duszenie",
             "description": "<p><em>Strength Saving Throw:</em><span class=\"Heading-4\"> </span>DC [[lookup @save.dc.value activity=IgOMjRxAt7UISkJq]], one [[lookup @target.affects.special activity=IgOMjRxAt7UISkJq]] creature the [[lookup @name lowercase]]{monster} can see within [[lookup @range.value activity=IgOMjRxAt7UISkJq]] feet. <em>Failure:</em> [[/damage average]] damage. The target has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]), and it has the &amp;Reference[Restrained apply=false] condition until the grapple ends.</p>",
             "activities": {
                 "save": {
@@ -716,7 +716,7 @@
             }
         },
         "Create Whirlwind": {
-            "name": "Create Whirlwind",
+            "name": "Stwórz wir",
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} conjures a whirlwind at a point it can see within 120 feet. The whirlwind fills a [[lookup @target.template.size activity=TYNKL0QDItFpbR2G]]-foot-radius, [[lookup @target.template.height activity=TYNKL0QDItFpbR2G]]-foot-high [[lookup @target.template.type capitalize activity=TYNKL0QDItFpbR2G]] centered on that point. The whirlwind lasts until the [[lookup @name lowercase]]{monster}'s Concentration on it ends. The [[lookup @name lowercase]]{monster} can move the whirlwind up to 20 feet at the start of each of its turns.</p><p class=\"feature\">Whenever the whirlwind enters a creature's space or a creature enters the whirlwind, that creature is subjected to the following effect.</p><p class=\"feature\"><em>Strength Saving Throw:</em> DC [[lookup @save.dc.value activity=TYNKL0QDItFpbR2G]] (a creature makes this save only once per turn, and the [[lookup @name lowercase]]{monster} is unaffected).</p><p class=\"feature\"><em>Failure:</em> While in the whirlwind, the target has the &amp;Reference[Restrained apply=false] condition and moves with the whirlwind. At the start of each of its turns, the Restrained target takes [[/damage average]] damage. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success.</p>",
             "activities": {
                 "Save": {
@@ -767,7 +767,7 @@
             }
         },
         "Darkness Aura": {
-            "name": "Darkness Aura",
+            "name": "Aura ciemności",
             "description": "<p>Magical Darkness fills a [[lookup @target.template.size activity=amat5Ii4NydseA0h]]-foot Emanation originating from the [[lookup @name]]{monster}. This effect lasts while the [[lookup @name]]{monster} maintains Concentration on it, up to [[lookup @duration.value activity=amat5Ii4NydseA0h]] minutes. Darkvision can't penetrate this area, and no light can illuminate it.</p>"
         },
         "Deadly Leap": {
@@ -1120,7 +1120,7 @@
             "description": "<p class=\"feature\">If the [[lookup @name lowercase]]{monster} dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Hit Points somewhere in Mount Celestia.</p>"
         },
         "Fear Aura": {
-            "name": "Fear Aura",
+            "name": "Aura strachu",
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} emanates an aura in a [[lookup @target.template.size activity=oT8238p9jXwVy76c]]-foot Emanation while it doesn't have the Incapacitated condition.</p><p class=\"feature\"><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=oT8238p9jXwVy76c]], [[lookup @target.affects.special activity=oT8238p9jXwVy76c]].</p><p class=\"feature\"><em>Failure:</em> The target has the &amp;Reference[Frightened apply=false] condition until the start of its next turn.</p><p class=\"feature\"><em>Success:</em> The target is immune to this [[lookup @name lowercase]]{monster}'s aura for 24 hours.</p>",
             "activities": {
                 "save": {
@@ -1154,7 +1154,7 @@
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Fiery Bolt": {
-            "name": "Fiery Bolt",
+            "name": "Ogniowy pocisk",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Fiery Mace": {
@@ -1166,7 +1166,7 @@
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} uses [[/item Spellcasting]] to cast <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScorchingR]{Scorching Ray}</em>. The [[lookup @name lowercase]]{monster} can't take this action again until the start of its next turn.</p>"
         },
         "Fire Absorption": {
-            "name": "Fire Absorption",
+            "name": "Wchłanianie ognia",
             "description": "<p class=\"feature\">Whenever the [[lookup @name lowercase]]{monster} is subjected to Fire damage, it regains a number of Hit Points equal to the Fire damage dealt.</p>"
         },
         "Fire Aura": {
@@ -1441,7 +1441,7 @@
             }
         },
         "Heat Aura": {
-            "name": "Heat Aura",
+            "name": "Aura żaru",
             "description": "<p class=\"feature\">At the end of each of the [[lookup @name lowercase]]{monster}'s turns, each [[lookup @target.affects.type activity=LDcQJj3oXyPCuCaT]] in a [[lookup @target.template.size activity=LDcQJj3oXyPCuCaT]]-foot Emanation originating from the [[lookup @name lowercase]]{monster} takes [[/damage average]] damage.</p>"
         },
         "Heated Blade": {
@@ -1686,7 +1686,7 @@
             "description": "<p class=\"feature\">While in Bright Light, the [[lookup @name lowercase]]{monster} has Disadvantage on attack rolls.</p>"
         },
         "Lightning Absorption": {
-            "name": "Lightning Absorption",
+            "name": "Wchłanianie elektryczności",
             "description": "<p class=\"feature\">Whenever the [[lookup @name lowercase]]{monster} is subjected to Lightning damage, it regains a number of Hit Points equal to the Lightning damage dealt.</p>",
             "requirements": "Subjected to Lightning damage"
         },
@@ -2211,7 +2211,7 @@
             }
         },
         "Pounce": {
-            "name": "Natarcie",
+            "name": "Obalenie",
             "description": "<p>The [[lookup @name lowercase]]{monster} moves up to half its Speed, and it makes one [[/item Rend]] attack.</p>",
             "activities": {
                 "Expend Use": {
@@ -2794,7 +2794,7 @@
             }
         },
         "Standing Leap": {
-            "name": "Standing Leap",
+            "name": "Skok z miejsca",
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster}'s Long Jump is up to 20 feet and its High Jump is up to 10 feet with or without a running start.</p>"
         },
         "Steam Breath": {
@@ -3195,7 +3195,7 @@
             }
         },
         "Undead Fortitude": {
-            "name": "Undead Fortitude",
+            "name": "Trupia odporność",
             "description": "<p class=\"feature\">If damage reduces the [[lookup @name lowercase]]{monster} to 0 Hit Points, it makes a Constitution saving throw (DC 5 plus the damage taken) unless the damage is Radiant or from a Critical Hit. On a successful save, the [[lookup @name lowercase]]{monster} drops to 1 Hit Point instead.</p>"
         },
         "Undead Restoration": {
@@ -3464,7 +3464,7 @@
             }
         },
         "Whirlwind": {
-            "name": "Whirlwind",
+            "name": "Wir",
             "description": "<p class=\"feature\"><em>Strength Saving Throw:</em> DC [[lookup @save.dc.value activity=GQzr4EMMm6kkZVdC]], each Medium or smaller [[lookup @target.affects.type activity=GQzr4EMMm6kkZVdC]] in the [[lookup @name lowercase]]{monster}'s space. <em>Failure:</em> [[/damage average]] damage, and the target is pushed up to 20 feet straight away from the [[lookup @name lowercase]]{monster} and has the &amp;Reference[Prone apply=false] condition. <em>Success:</em> Half damage only.</p>",
             "activities": {
                 "Save": {
