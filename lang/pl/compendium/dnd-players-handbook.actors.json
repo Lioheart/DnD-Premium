@@ -89,12 +89,11 @@
             "items": {
                 "Amorphous Form": {
                     "name": "Amorphous Form",
-                    "description": "<p> The spirit can move through a space as narrow as 1 inch wide without it counting as Difficult Terrain.</p>",
-                    "requirements": "Air, Fire, and Water Only"
+                    "description": "<p> The spirit can move through a space as narrow as 1 inch wide without it counting as Difficult Terrain.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -103,7 +102,7 @@
                 },
                 "Slam": {
                     "name": "Walnięcie",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> Force damage equal to 1d4 + 3.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d10 + 4 + the spell’s level Lightning damage.</p>"
                 }
             }
         },
@@ -117,7 +116,7 @@
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The ape makes two [[/item Fist]] attacks.</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -173,11 +172,11 @@
                 },
                 "Radiant Bow": {
                     "name": "Radiant Bow",
-                    "description": "<p><em>(Avenger Only)</em></p><p><em>Ranged Attack Roll</em>: Bonus equals your spell attack modifier, range 600 ft. <em>Hit:</em> 2d6 + 2 + the spell’s level Radiant damage.</p>"
+                    "description": "<p> <em>Ranged Attack Roll</em>: Bonus equals your spell attack modifier, range 600 ft. <em>Hit:</em> 2d6 + 2 + the spell’s level Radiant damage.</p>"
                 },
                 "Healing Touch": {
                     "name": "Healing Touch",
-                    "description": "<p> One creature within 5 feet of the steed regains a number of Hit Points equal to 2d8 plus the spell’s level.</p>"
+                    "description": "<p> The spirit touches another creature. The target regains Hit Points equal to 2d8 + the spell’s level.</p>"
                 }
             }
         },
@@ -187,7 +186,7 @@
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Rzut ataku wręcz:</em> +2, zasięg 5 stóp. <em>Trafienie:</em> 1 obrażenie Kłute.</p>"
                 }
             }
         },
@@ -861,7 +860,7 @@
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Rzut ataku wręcz:</em> +4, zasięg 5 ft. <em>Trafienie:</em> 1 obrażenie Kłute.</p>"
                 }
             }
         },
@@ -872,7 +871,7 @@
             "items": {
                 "Primal Bond": {
                     "name": "Pierwotna więź",
-                    "description": "<p>Dodaj swoją Premi​​ę z Biegłości do każdego testu cechy lub rzutu obronnego, który wykonuje bestia.</p><section class=\"secret\" id=\"secret-beTIv7xucaHGX104\"><p><strong>Notatka Foundry</strong></p><p>Ta premia została uwzględniona w globalnych premiach bestii.</p></section>"
+                    "description": "<p>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</p><section class=\"secret\" id=\"secret-CfXBtyjBnCMQ2fmp\"><p><strong>Foundry Note</strong></p><p>This bonus has been included in the beast's global bonuses.</p></section>"
                 },
                 "Beast's Strike": {
                     "name": "Uderzenie Bestii",
@@ -901,11 +900,11 @@
             "items": {
                 "Amphibious": {
                     "name": "Ziemno-wodny",
-                    "description": "<p> The crab can breathe air and water.</p>"
+                    "description": "<p> Bestia może oddychać w powietrzy i wodzie.</p>"
                 },
                 "Primal Bond": {
                     "name": "Pierwotna więź",
-                    "description": "<p>Dodaj swoją Premi​​ę z Biegłości do każdego testu cechy lub rzutu obronnego, który wykonuje bestia.</p><section class=\"secret\" id=\"secret-beTIv7xucaHGX104\"><p><strong>Notatka Foundry</strong></p><p>Ta premia została uwzględniona w globalnych premiach bestii.</p></section>"
+                    "description": "<p>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</p><section class=\"secret\" id=\"secret-pNoLkUZKFbyzHTbF\"><p><strong>Foundry Note</strong></p><p>This bonus has been included in the beast's global bonuses.</p></section>"
                 },
                 "Beast's Strike": {
                     "name": "Uderzenie Bestii",
@@ -934,7 +933,7 @@
             "items": {
                 "Flyby": {
                     "name": "Przelot",
-                    "description": "<p>Sowa nie wywołuje Ataków okazyjnych, gdy wylatuje poza zasięg wroga.</p>"
+                    "description": "<p>Bestia nie wywołuje Ataków okazyjnych, gdy wylatuje poza zasięg wroga.</p>"
                 },
                 "Primal Bond": {
                     "name": "Pierwotna więź",
@@ -965,7 +964,11 @@
                 "Eye Ray": {
                     "name": "Promień z oczu",
                     "description": "<p><em>Rzut Ataku Dystansowego:</em> Premia równa twojemu modyfikatorowi ataku czarem, zasięg 150 ft. <em>Trafienie:</em> 1k8 + 3 + krąg czaru obrażeń psychicznych.</p>",
-                    "requirements": "Beholderkin Only"
+                    "activities": {
+                        "Attack": {
+                            "name": "Atak"
+                        }
+                    }
                 }
             }
         },
@@ -977,12 +980,11 @@
             "items": {
                 "Flyby": {
                     "name": "Przelot",
-                    "description": "<p>Widmo nie wywołuje ataków okazyjnych, gdy wylatuje poza zasięg wroga.</p>",
-                    "requirements": "Air Only"
+                    "description": "<p>Widmo nie wywołuje ataków okazyjnych, gdy wylatuje poza zasięg wroga.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Rend]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -991,7 +993,7 @@
                 },
                 "Rend": {
                     "name": "Rozdarcie",
-                    "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 4 + the spell’s level Piercing damage.</p>"
                 }
             }
         },
@@ -1003,12 +1005,12 @@
             "items": {
                 "Pack Tactics": {
                     "name": "Atak grupowy",
-                    "description": "<p>Wilk ma Ułatwienie w rzutach ataku przeciwko istocie, jeśli przynajmniej jeden z jego sojuszników znajduje się w odległości 5 stóp od tej istoty i sojusznik nie ma stanu Obezwładniony.</p>",
+                    "description": "<p> The spirit has Advantage on an attack roll against a creature if at least one of the spirit’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>",
                     "requirements": "Ally within 5 feet of target"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Rend]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -1017,7 +1019,7 @@
                 },
                 "Rend": {
                     "name": "Rozdarcie",
-                    "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 4 + the spell’s level Piercing damage.</p>"
                 }
             }
         },
@@ -1033,16 +1035,17 @@
                 },
                 "Pack Tactics": {
                     "name": "Atak grupowy",
-                    "description": "<p>Wilk ma Ułatwienie w rzutach ataku przeciwko istocie, jeśli przynajmniej jeden z jego sojuszników znajduje się w odległości 5 stóp od tej istoty i sojusznik nie ma stanu Obezwładniony.</p>",
-                    "requirements": "Ally within 5 feet of target"
+                    "description": "<p> The spirit has Advantage on an attack roll against a creature if at least one of the spirit’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>",
+                    "requirements": "Land and Water Only"
                 },
                 "Water Breathing": {
                     "name": "Oddychanie pod wodą",
-                    "description": "<p>The shark can breathe only underwater.</p>"
+                    "description": "<p> Widmo może oddychać tylko pod wodą.</p>",
+                    "requirements": "Water Only"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Rend]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -1051,7 +1054,7 @@
                 },
                 "Rend": {
                     "name": "Rozdarcie",
-                    "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 4 + the spell’s level Piercing damage.</p>"
                 }
             }
         },
@@ -1063,16 +1066,16 @@
             "items": {
                 "Pack Tactics": {
                     "name": "Atak grupowy",
-                    "description": "<p>Wilk ma Ułatwienie w rzutach ataku przeciwko istocie, jeśli przynajmniej jeden z jego sojuszników znajduje się w odległości 5 stóp od tej istoty i sojusznik nie ma stanu Obezwładniony.</p>",
+                    "description": "<p> The spirit has Advantage on an attack roll against a creature if at least one of the spirit’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>",
                     "requirements": "Ally within 5 feet of target"
                 },
                 "Water Breathing": {
                     "name": "Oddychanie pod wodą",
-                    "description": "<p>The shark can breathe only underwater.</p>"
+                    "description": "<p> Widmo może oddychać tylko pod wodą.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Rend]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -1081,7 +1084,7 @@
                 },
                 "Rend": {
                     "name": "Rozdarcie",
-                    "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 4 + the spell’s level Piercing damage.</p>"
                 }
             }
         },
@@ -1142,7 +1145,7 @@
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The bear makes two [[/item Rend]] attacks.</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -1151,7 +1154,7 @@
                 },
                 "Rend": {
                     "name": "Rozdarcie",
-                    "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 5 (1d6 + 2) Slashing damage.</p>"
                 }
             }
         },
@@ -1165,7 +1168,12 @@
                 },
                 "Gore": {
                     "name": "Nadzianie",
-                    "description": "<p><em>Melee Attack Roll: </em>+8, reach 5 ft. <em>Hit:</em> 15 (2d8 + 6) Piercing damage. If the elephant moved at least 20 feet straight toward the target immediately before the hit, the target also has the &amp;Reference[prone] condition.</p>"
+                    "description": "<p><em>Melee Attack Roll: </em>+3, reach 5 ft. <em>Hit: </em>4 (1d6 + 1) Piercing damage. If the boar moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 3 (1d6) Piercing damage and, if it is Large or smaller, has the &amp;Reference[Prone] condition.</p>",
+                    "activities": {
+                        "Charging Attack": {
+                            "name": "Charging Attack"
+                        }
+                    }
                 }
             }
         },
@@ -1175,7 +1183,7 @@
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The bear makes one [[/item Bite]] attack and one [[/item Claw]] attack.</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -1184,11 +1192,11 @@
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 7 (1d8 + 3) Piercing damage.</p>"
                 },
                 "Claw": {
                     "name": "Pazury",
-                    "description": "<p><em>Melee Attack Roll: </em>+3, reach 5 ft. <em>Hit:</em> 4 (1d6 + 1) Bludgeoning damage. If the target is Medium or smaller, it has the &amp;Reference[grappled] condition (escape DC 11). The crab has two claws, each of which can grapple one target.</p>"
+                    "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Slashing damage, and the target has the &amp;Reference[prone] condition if it is Huge or smaller.</p>"
                 }
             }
         },
@@ -1198,7 +1206,7 @@
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 4 (1d4 + 2) Bludgeoning damage.</p>"
                 }
             }
         },
@@ -1246,7 +1254,7 @@
                 },
                 "Healing Touch": {
                     "name": "Healing Touch",
-                    "description": "<p> One creature within 5 feet of the steed regains a number of Hit Points equal to 2d8 plus the spell’s level.</p>"
+                    "description": "<p> The spirit touches another creature. The target regains Hit Points equal to 2d8 + the spell’s level.</p>"
                 }
             }
         },
@@ -1263,7 +1271,7 @@
                 },
                 "Otherworldly Slam": {
                     "name": "Nieziemskie walnięcie",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 plus the spell’s level of Necrotic damage.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 plus the spell’s level of Radiant damage.</p>"
                 },
                 "Healing Touch": {
                     "name": "Healing Touch",
@@ -1279,7 +1287,7 @@
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -1288,17 +1296,16 @@
                 },
                 "Slam": {
                     "name": "Walnięcie",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> Force damage equal to 1d4 + 3.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 4 + the spell’s level Bludgeoning damage.</p>"
                 },
                 "Berserk Lashing": {
                     "name": "Berserk Lashing",
                     "description": "<p><em>Trigger:</em> The spirit takes damage from a creature. <em>Response:</em> The spirit makes a [[/item Slam]] attack against that creature if possible, or the spirit moves up to half its Speed toward that creature without provoking Opportunity Attacks.</p>",
-                    "requirements": "Clay Only",
+                    "requirements": "Takes damage from a creature",
                     "activities": {
-                        "Attack or Move": {
-                            "name": "Attack or Move",
-                            "condition": "The spirit takes damage from a creature.",
-                            "activationCondition": "The spirit takes damage from a creature."
+                        "utility": {
+                            "condition": "the spirit takes damage from a creature",
+                            "activationCondition": "the spirit takes damage from a creature"
                         }
                     }
                 }
@@ -1856,10 +1863,10 @@
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>6 (1d8 + 2) Piercing damage.</p>"
                 },
                 "Constrict": {
-                    "name": "Constrict",
+                    "name": "Duszenie",
                     "description": "<p><em>Strength Saving Throw:</em> DC 12, one Medium or smaller creature the snake can see within 5 feet. <em>Failure:</em> 7 (3d4) Bludgeoning damage, and the target has the &amp;Reference[grappled] condition (escape DC 12).</p>",
                     "activities": {
                         "save": {
@@ -1898,7 +1905,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -1907,7 +1914,7 @@
                 },
                 "Slam": {
                     "name": "Walnięcie",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> Force damage equal to 1d4 + 3.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 4 + the spell’s level Bludgeoning damage.</p>"
                 },
                 "Berserk Lashing": {
                     "name": "Berserk Lashing",
@@ -1933,7 +1940,7 @@
                 },
                 "Claw": {
                     "name": "Pazury",
-                    "description": "<p><em>Melee Attack Roll: </em>+3, reach 5 ft. <em>Hit:</em> 4 (1d6 + 1) Bludgeoning damage. If the target is Medium or smaller, it has the &amp;Reference[grappled] condition (escape DC 11). The crab has two claws, each of which can grapple one target.</p>"
+                    "description": "<p><em>Rzut ataku wręcz:</em> +2, zasięg 5 ft.. <em>Trafienie:</em> 1 obrażenie Obuchowe.</p>"
                 }
             }
         },
@@ -1947,7 +1954,13 @@
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 6 (1d8 + 2) Piercing damage. If the target is Medium or smaller, it has the &amp;Reference[grappled apply=false] condition (escape DC 12). While Grappled, the target has the &amp;Reference[restrained apply=false] condition.</p>",
+                    "effects": {
+                        "Grappled": {
+                            "name": "Pochwycony",
+                            "description": "<p>While &amp;Reference[Grappled apply=false] (escape DC 12), the target has the &amp;Reference[Restrained apply=false] condition.</p>"
+                        }
+                    }
                 }
             }
         },
@@ -1978,17 +1991,19 @@
                 },
                 "Radiant Mace": {
                     "name": "Radiant Mace",
-                    "description": "<p><em>(Defender Only)</em></p><p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d10 + 3 + the spell’s level Radiant damage, and the spirit can choose itself or another creature it can see within 10 feet of the target. The chosen creature gains [[/healing 1d10 type=temphp]]{1d10 Temporary Hit Points}.</p>",
+                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d10 + 3 + the spell’s level Radiant damage, and the spirit can choose itself or another creature it can see within 10 feet of the target. The chosen creature gains [[/healing 1d10 type=temphp]]{1d10 Temporary Hit Points}.</p>",
                     "activities": {
                         "Temporary Healing": {
                             "name": "Temporary Healing",
+                            "condition": "on hit with Radiant Mace",
+                            "activationCondition": "on hit with Radiant Mace",
                             "range": "range based on Attack target"
                         }
                     }
                 },
                 "Healing Touch": {
                     "name": "Healing Touch",
-                    "description": "<p> One creature within 5 feet of the steed regains a number of Hit Points equal to 2d8 plus the spell’s level.</p>"
+                    "description": "<p> The spirit touches another creature. The target regains Hit Points equal to 2d8 + the spell’s level.</p>"
                 }
             }
         },
@@ -2001,7 +2016,6 @@
                 "Death Throes": {
                     "name": "Death Throes",
                     "description": "<p>When the spirit drops to 0 Hit Points or the spell ends, the spirit explodes. <em>Dexterity Saving Throw:</em> DC equals your spell save DC, each creature in a 10-foot Emanation originating from the spirit. <em>Failure:</em> 2d10 plus this spell’s level Fire damage. <em>Success:</em> Half damage.</p>",
-                    "requirements": "Demon Only",
                     "activities": {
                         "Explode": {
                             "name": "Explode",
@@ -2012,7 +2026,7 @@
                 },
                 "Magic Resistance": {
                     "name": "Odporność na magię",
-                    "description": "<p> The sphinx has Advantage on saving throws against spells and other magical effects.</p>"
+                    "description": "<p> The spirit has Advantage on saving throws against spells and other magical effects.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -2023,8 +2037,8 @@
                         }
                     }
                 },
-                "Bite (Demon Only)": {
-                    "name": "Ugryzenie (Tylko Demon)",
+                "Bite": {
+                    "name": "Ugryzienie",
                     "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d12 + 3 + the spell’s level Necrotic damage.</p>"
                 }
             }
@@ -2037,11 +2051,11 @@
             "items": {
                 "Devil’s Sight": {
                     "name": "Devil’s Sight",
-                    "description": "<p>Magical Darkness doesn’t impede the imp’s Darkvision.</p>"
+                    "description": "<p> Magical Darkness doesn’t impede the spirit’s Darkvision.</p>"
                 },
                 "Magic Resistance": {
                     "name": "Odporność na magię",
-                    "description": "<p> The sphinx has Advantage on saving throws against spells and other magical effects.</p>"
+                    "description": "<p> The spirit has Advantage on saving throws against spells and other magical effects.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -2052,8 +2066,8 @@
                         }
                     }
                 },
-                "Fiery Strike (Devil Only)": {
-                    "name": "Fiery Strike (Devil Only)",
+                "Fiery Strike": {
+                    "name": "Fiery Strike",
                     "description": "<p><em>Melee or Ranged Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. or range 150 ft. <em>Hit:</em> 2d6 + 3 + the spell’s level Fire damage.</p>",
                     "activities": {
                         "Melee Attack": {
@@ -2072,12 +2086,12 @@
             "items": {
                 "Pack Tactics": {
                     "name": "Atak grupowy",
-                    "description": "<p>Wilk ma Ułatwienie w rzutach ataku przeciwko istocie, jeśli przynajmniej jeden z jego sojuszników znajduje się w odległości 5 stóp od tej istoty i sojusznik nie ma stanu Obezwładniony.</p>",
+                    "description": "<p>The wolf has Advantage on an attack roll against a creature if at least one of the wolf’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>",
                     "requirements": "Ally within 5 feet of target"
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit: </em>8 (1d10 + 3) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Huge or smaller.</p>"
                 }
             }
         },
@@ -2136,7 +2150,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Rend]] attacks equal to half the spell’s level (round down), and it uses [[/item Breath Weapon]].</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -2145,7 +2159,7 @@
                 },
                 "Rend": {
                     "name": "Rozdarcie",
-                    "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage.</p>"
+                    "description": "<p><em>Melee Attack: </em>Bonus equals your spell attack modifier, reach 10 feet. <em>Hit: </em>1d6 + 4 + the spell’s level Piercing damage.</p>"
                 },
                 "Breath Weapon": {
                     "name": "Zionięcie",
@@ -2159,7 +2173,7 @@
             "items": {
                 "Hooves": {
                     "name": "Kopyta",
-                    "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>7 (1d8 + 3) Bludgeoning damage.</p>"
+                    "description": "<p><em>Melee Attack Roll: </em>+6, reach 5 ft. <em>Hit:</em> 6 (1d4 + 4) Bludgeoning damage.</p>"
                 }
             }
         },
@@ -2529,7 +2543,7 @@
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -2538,7 +2552,7 @@
                 },
                 "Slam": {
                     "name": "Walnięcie",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> Force damage equal to 1d4 + 3.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d10 + 4 + the spell’s level Bludgeoning damage.</p>"
                 }
             }
         },
@@ -2554,7 +2568,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -2563,7 +2577,7 @@
                 },
                 "Slam": {
                     "name": "Walnięcie",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> Force damage equal to 1d4 + 3.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d10 + 4 + the spell’s level Bludgeoning (Earth only), Cold (Water only), Lightning (Air only), or Fire (Fire only) damage.</p>"
                 }
             }
         },
@@ -2573,7 +2587,7 @@
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Słoń wykonuje dwa ataki [[/item Gore]].</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -2603,7 +2617,7 @@
             "items": {
                 "Ram": {
                     "name": "Taran",
-                    "description": "<p><em>Melee Attack Roll: </em>+2, reach 5 ft. <em>Hit: </em>1 Bludgeoning damage, or the goat deals 2 (1d4) Bludgeoning damage if it moved at least 20 feet straight toward the target immediately before the hit.</p>",
+                    "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>6 (1d6 + 3) Bludgeoning damage. If the elk moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 3 (1d6) Bludgeoning damage and, if it is Huge or smaller, has the &amp;Reference[prone] condition.</p>",
                     "activities": {
                         "Charging Attack": {
                             "name": "Charging Attack"
@@ -2618,7 +2632,13 @@
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p>At the start of each of your turns, the hound attempts to bite one enemy within 5 feet of it. That enemy must succeed on a Dexterity saving throw or take 4d8 Force damage.</p>",
+                    "activities": {
+                        "save": {
+                            "condition": "na początku twojej tury",
+                            "activationCondition": "na początku twojej tury"
+                        }
+                    }
                 }
             },
             "effects": {
@@ -2635,7 +2655,7 @@
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Fey Blade]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -2686,7 +2706,7 @@
                 },
                 "Otherworldly Slam": {
                     "name": "Nieziemskie walnięcie",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 plus the spell’s level of Necrotic damage.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 plus the spell’s level of Psychic damage.</p>"
                 },
                 "Fey Step": {
                     "name": "Fey Step",
@@ -2744,11 +2764,12 @@
                 },
                 "Devil’s Sight": {
                     "name": "Devil’s Sight",
-                    "description": "<p>Magical Darkness doesn’t impede the imp’s Darkvision.</p>"
+                    "description": "<p> Magical Darkness doesn’t impede the spirit’s Darkvision.</p>",
+                    "requirements": "Devil Only"
                 },
                 "Magic Resistance": {
                     "name": "Odporność na magię",
-                    "description": "<p> The sphinx has Advantage on saving throws against spells and other magical effects.</p>"
+                    "description": "<p> The spirit has Advantage on saving throws against spells and other magical effects.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -3091,12 +3112,11 @@
             "items": {
                 "Amorphous Form": {
                     "name": "Amorphous Form",
-                    "description": "<p> The spirit can move through a space as narrow as 1 inch wide without it counting as Difficult Terrain.</p>",
-                    "requirements": "Air, Fire, and Water Only"
+                    "description": "<p> The spirit can move through a space as narrow as 1 inch wide without it counting as Difficult Terrain.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -3105,7 +3125,7 @@
                 },
                 "Slam": {
                     "name": "Walnięcie",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> Force damage equal to 1d4 + 3.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d10 + 4 + the spell’s level Fire damage.</p>"
                 }
             }
         },
@@ -3150,15 +3170,15 @@
             "items": {
                 "Amphibious": {
                     "name": "Ziemno-wodny",
-                    "description": "<p> The crab can breathe air and water.</p>"
+                    "description": "<p> Żaba może oddychać w powietrzu i wodzie.</p>"
                 },
                 "Standing Leap": {
-                    "name": "Standing Leap",
+                    "name": "Skok z miejsca",
                     "description": "<p>Skok w dal żaby wynosi do 10 stóp, a Skok wzwyż do 5 stóp, z rozbiegiem lub bez.</p>"
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Rzut ataku wręcz:</em> +3, zasięg 5 ft. <em>Trafienie:</em> 1 obrażenie Kłute.</p>"
                 }
             }
         },
@@ -3170,7 +3190,7 @@
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Fey Blade]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -3183,10 +3203,10 @@
                 },
                 "Fey Step": {
                     "name": "Fey Step",
-                    "description": "<p>The spirit magically teleports up to 30 feet to an unoccupied space it can see. Then one of the following effects occurs, based on the spirit’s chosen mood:</p><p><strong>Fuming.</strong></p><p>The spirit has Advantage on the next attack roll it makes before the end of this turn.</p><p><strong>[[/item Mirthful]]</strong> @Embed[.phbaoiMirthful00 caption=false cite=false]</p><p><strong>[[/item Tricksy]]</strong> @Embed[.phbaoiTricksy000 caption=false cite=false]</p>",
+                    "description": "<p>The spirit magically teleports up to 30 feet to an unoccupied space it can see. Then the following effect occurs, based on the spirit’s chosen mood:</p><p><strong>Fuming. </strong>The spirit has Advantage on the next attack roll it makes before the end of this turn.</p>",
                     "activities": {
-                        "Teleport": {
-                            "name": "Teleportacja"
+                        "Fuming Teleport": {
+                            "name": "Fuming Teleport"
                         }
                     }
                 }
@@ -3233,7 +3253,7 @@
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> +3, reach 5 ft. <em>Hit:</em> 6 (2d4 + 1) Piercing damage.</p>"
                 }
             }
         },
@@ -3245,11 +3265,11 @@
             "items": {
                 "Spider Climb": {
                     "name": "Pajęcza wspinaczka",
-                    "description": "<p>The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>"
+                    "description": "<p> The insect can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The insect makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -3263,7 +3283,6 @@
                 "Venomous Spew": {
                     "name": "Venomous Spew",
                     "description": "<p><em>Constitution Saving Throw:</em> Your spell save DC, one creature the insect can see within 10 feet. <em>Failure:</em> The target has the &amp;Reference[Poisoned apply=false] condition until the start of the insect’s next turn.</p>",
-                    "requirements": "Centipede Only",
                     "effects": {
                         "Poisoned": {
                             "name": "Zatruty",
@@ -3293,7 +3312,7 @@
             "items": {
                 "Ram": {
                     "name": "Taran",
-                    "description": "<p><em>Melee Attack Roll: </em>+2, reach 5 ft. <em>Hit: </em>1 Bludgeoning damage, or the goat deals 2 (1d4) Bludgeoning damage if it moved at least 20 feet straight toward the target immediately before the hit.</p>",
+                    "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>6 (1d6 + 3) Bludgeoning damage. If the goat moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 5 (2d4) Bludgeoning damage and, if it is Huge or smaller, has the &amp;Reference[prone] condition.</p>",
                     "activities": {
                         "Charging Attack": {
                             "name": "Charging Attack"
@@ -3309,11 +3328,11 @@
             "items": {
                 "Spider Climb": {
                     "name": "Pajęcza wspinaczka",
-                    "description": "<p>The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>"
+                    "description": "<p> The insect can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The insect makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -3354,11 +3373,11 @@
             "items": {
                 "Water Breathing": {
                     "name": "Oddychanie pod wodą",
-                    "description": "<p>The shark can breathe only underwater.</p>"
+                    "description": "<p>The seahorse can breathe only underwater.</p>"
                 },
                 "Ram": {
                     "name": "Taran",
-                    "description": "<p><em>Melee Attack Roll: </em>+2, reach 5 ft. <em>Hit: </em>1 Bludgeoning damage, or the goat deals 2 (1d4) Bludgeoning damage if it moved at least 20 feet straight toward the target immediately before the hit.</p>",
+                    "description": "<p><em>Melee Attack Roll: </em>+4, reach 5 ft. <em>Hit: </em>9 (2d6 + 2) Bludgeoning damage, or the seahorse deals 11 (2d8 + 2) Bludgeoning damage if it moved at least 20 feet straight toward the target immediately before the hit.</p>",
                     "activities": {
                         "Charging Attack": {
                             "name": "Charging Attack"
@@ -3381,11 +3400,11 @@
                 },
                 "Web Walker": {
                     "name": "Chodzenie po sieci",
-                    "description": "<p> The spider ignores movement restrictions caused by webs, and the spider knows the location of any other creature in contact with the same web.</p>"
+                    "description": "<p> The spider ignores movement restrictions caused by webs, and it knows the location of any other creature in contact with the same web.</p>"
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit:</em> 7 (1d8 + 3) Piercing damage plus 7 (2d6) Poison damage.</p>"
                 },
                 "Web": {
                     "name": "Pajęczyna",
@@ -3401,11 +3420,11 @@
             "items": {
                 "Spider Climb": {
                     "name": "Pajęcza wspinaczka",
-                    "description": "<p>The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>"
+                    "description": "<p> The insect can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The insect makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -3424,7 +3443,7 @@
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Piercing damage.</p>"
                 }
             }
         },
@@ -3447,14 +3466,9 @@
             "name": "Chwytne pnącze",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplGraspingVi caption=false]</p>",
             "items": {
-                "Guarded Area": {
-                    "name": "Guarded Area",
-                    "description": "<p>Any enemy that moves to a space within 10 feet of the guardian for the first time on a turn or starts its turn there makes a Dexterity saving throw, taking 20 Radiant damage on a failed save or half as much damage on a successful one. The guardian vanishes when it has dealt a total of 60 damage.</p><section id=\"secret-fNtHgg2PRmVbaDl5\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature's Limited Uses is optionally provided for tracking the total damage dealt by the guardian.  Additionally, The <strong>Consume Damage Pool</strong> activity is configured with scaling uses consumption in increments of 5 damage for use after the final damage is determined and applied.</p></section>",
-                    "activities": {
-                        "Consume Damage Pool": {
-                            "name": "Consume Damage Pool"
-                        }
-                    }
+                "Vine Attack": {
+                    "name": "Vine Attack",
+                    "description": "<p>Make a melee spell attack against a creature within 30 feet of the vine. On a hit, the target takes 4d8 Bludgeoning damage and is pulled up to 30 feet toward the vine; if the target is Huge or smaller, it has the &amp;Reference[Grappled] condition (escape DC equal to your spell save DC).</p><p>The vine can grapple [[@flags.dnd5e.summon.level - 3]] creature(s) at a time, and you can cause the vine to release a Grappled creature (no action required).</p><h3>Escape Tests</h3><p>[[/check ability=str skill=ath dc=8+@prof+@flags.dnd5e.summon.mod]]</p><p>[[/check ability=dex skill=acr dc=8+@prof+@flags.dnd5e.summon.mod]]</p>"
                 }
             }
         },
@@ -3479,7 +3493,7 @@
             "items": {
                 "Talons": {
                     "name": "Szpony",
-                    "description": "<p><em>Rzut ataku wręcz:</em> +3, zasięg 5 ft.. <em>Trafienie:</em> 1 obrażenie Cięte.</p>"
+                    "description": "<p><em>Rzut ataku wręcz:</em> +5, zasięg 5 ft.. <em>Trafienie:</em> 1 obrażenie Cięte.</p>"
                 }
             }
         },
@@ -3491,7 +3505,7 @@
             "items": {
                 "Slam": {
                     "name": "Walnięcie",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> Force damage equal to 1d4 + 3.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> Force damage equal to 2d12 + 3 + your spellcasting ability modifier.</p>"
                 }
             }
         },
@@ -3514,38 +3528,33 @@
                 },
                 "Magic Resistance": {
                     "name": "Odporność na magię",
-                    "description": "<p> The sphinx has Advantage on saving throws against spells and other magical effects.</p>"
+                    "description": "<p> The imp has Advantage on saving throws against spells and other magical effects.</p>"
                 },
                 "Sting": {
                     "name": "Żądło",
-                    "description": "<p><em>Melee Attack Roll:</em> +2, reach 5 ft. <em>Hit: </em>1 Piercing damage plus 3 (1d6) Poison damage.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 6 (1d6 + 3) Piercing damage plus 7 (2d6) Poison damage.</p>"
                 },
                 "Invisibility": {
                     "name": "Niewidzialność",
-                    "description": "<p>The sprite casts [[/item lO6diOZO5FReftK6]] on itself, requiring no spell components and using Charisma as the spellcasting ability.</p><hr /><p>@Embed[.lO6diOZO5FReftK6 caption=false]</p>",
-                    "activities": {
-                        "Cast": {
-                            "name": "Rzucanie"
-                        }
-                    }
+                    "description": "<p>The imp casts [[/item oHafKbzbqYGiL4i1]] on itself, requiring no spell components and using Charisma as the spellcasting ability.</p><hr /><p>@Embed[.oHafKbzbqYGiL4i1 caption=false]</p>"
                 },
                 "Shape-Shift": {
                     "name": "Zmiana Kształtu",
-                    "description": "<p> The quasit shape-shifts to resemble a bat (Speed 10 ft., Fly 40 ft.), a centipede (40 ft., Climb 40 ft.), or a toad (40 ft., Swim 40 ft.), or it returns to its true form. Its statistics are the same in each form, except for its Speed. Any equipment it’s wearing or carrying isn’t transformed.</p>",
+                    "description": "<p> The imp shape-shifts to resemble a rat (Speed 20 ft.), a raven (20 ft., Fly 60 ft.), or a spider (20 ft., Climb 20 ft.), or it returns to its true form. Its statistics are the same in each form, except for its Speed. Any equipment it’s wearing or carrying isn’t transformed.</p>",
                     "activities": {
                         "Change Form": {
                             "name": "Change Form"
                         }
                     },
                     "effects": {
-                        "Centipede Form": {
-                            "name": "Centipede Form"
+                        "Rat Form": {
+                            "name": "Rat Form"
                         },
-                        "Bat Form": {
-                            "name": "Bat Form"
+                        "Raven Form": {
+                            "name": "Raven Form"
                         },
-                        "Toad Form": {
-                            "name": "Toad Form"
+                        "Spider Form": {
+                            "name": "Spider Form"
                         }
                     }
                 },
@@ -3593,7 +3602,7 @@
             "items": {
                 "Slam": {
                     "name": "Walnięcie",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> Force damage equal to 1d4 + 3.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> Force damage equal to 2d6 + 3 + your spellcasting ability modifier.</p>"
                 }
             }
         },
@@ -3606,7 +3615,7 @@
             "items": {
                 "Pack Tactics": {
                     "name": "Atak grupowy",
-                    "description": "<p>Wilk ma Ułatwienie w rzutach ataku przeciwko istocie, jeśli przynajmniej jeden z jego sojuszników znajduje się w odległości 5 stóp od tej istoty i sojusznik nie ma stanu Obezwładniony.</p>",
+                    "description": "<p>The lion has Advantage on an attack roll against a creature if at least one of the lion’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>",
                     "requirements": "Ally within 5 feet of target"
                 },
                 "Running Leap": {
@@ -3615,7 +3624,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Lew wykonuje dwa ataki [[/item Rend]]. Może zastąpić jeden z tych ataków użyciem [[/item Roar]].</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -3624,7 +3633,7 @@
                 },
                 "Rend": {
                     "name": "Rozdarcie",
-                    "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>7 (1d8 + 3) Slashing damage.</p>"
                 },
                 "Roar": {
                     "name": "Ryk",
@@ -3644,11 +3653,11 @@
             "items": {
                 "Spider Climb": {
                     "name": "Pajęcza wspinaczka",
-                    "description": "<p>The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>"
+                    "description": "<p> The lizard can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>"
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Rzut ataku wręcz:</em> +2, zasięg 5 stóp. <em>Trafienie:</em> 1 obrażenie Kłute.</p>"
                 }
             }
         },
@@ -3666,7 +3675,7 @@
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> +3, reach 5 ft. <em>Hit: </em>4 (1d6 + 1) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Large or smaller.</p>"
                 }
             }
         },
@@ -3691,16 +3700,17 @@
                 "Heated Body": {
                     "name": "Heated Body",
                     "description": "<p> A creature that hits the spirit with a melee attack or that starts its turn in a grapple with the spirit takes 1d10 Fire damage.</p>",
-                    "requirements": "Metal Only",
+                    "requirements": "Creature makes physical contact",
                     "activities": {
-                        "Contact Damage": {
-                            "name": "Contact Damage"
+                        "damage": {
+                            "condition": "A creature that hits the spirit with a melee attack or that starts its turn in a grapple with the spirit",
+                            "activationCondition": "A creature that hits the spirit with a melee attack or that starts its turn in a grapple with the spirit"
                         }
                     }
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -3709,7 +3719,7 @@
                 },
                 "Slam": {
                     "name": "Walnięcie",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> Force damage equal to 1d4 + 3.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 4 + the spell’s level Bludgeoning damage.</p>"
                 }
             }
         },
@@ -3722,7 +3732,7 @@
                 "Whispering Aura": {
                     "name": "Szeptająca aura",
                     "description": "<p>Na początku każdej tury widma emituje on energię psioniczną, jeśli nie ma stanu &amp;Reference[Incapacitated]. <em>Rzut Obronny na Mądrość:</em> ST równy twojemu ST rzutu przeciw czarom, każde stworzenie (poza tobą) w promieniu 5 ft od ducha. <em>Porażka:</em> 2k6 obrażeń psychicznych.</p>",
-                    "requirements": "Mind Flayer Only",
+                    "requirements": "Nie jest Obezwładniony",
                     "activities": {
                         "save": {
                             "condition": "start of its turn",
@@ -3741,8 +3751,7 @@
                 },
                 "Psychic Slam": {
                     "name": "Psychiczne walnięcie",
-                    "description": "<p><em>Rzut Ataku Wręcz:</em> Premia równa twojemu modyfikatorowi ataku czarem, zasięg 5 ft. <em>Trafienie:</em> 1k8 + 3 + krąg czaru obrażeń psychicznych.</p>",
-                    "requirements": "Mind Flayer Only"
+                    "description": "<p><em>Rzut Ataku Wręcz:</em> Premia równa twojemu modyfikatorowi ataku czarem, zasięg 5 ft. <em>Trafienie:</em> 1k8 + 3 + krąg czaru obrażeń psychicznych.</p>"
                 }
             }
         },
@@ -3754,7 +3763,7 @@
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Fey Blade]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -3767,10 +3776,16 @@
                 },
                 "Fey Step": {
                     "name": "Fey Step",
-                    "description": "<p>The spirit magically teleports up to 30 feet to an unoccupied space it can see. Then one of the following effects occurs, based on the spirit’s chosen mood:</p><p><strong>Fuming.</strong></p><p>The spirit has Advantage on the next attack roll it makes before the end of this turn.</p><p><strong>[[/item Mirthful]]</strong> @Embed[.phbaoiMirthful00 caption=false cite=false]</p><p><strong>[[/item Tricksy]]</strong> @Embed[.phbaoiTricksy000 caption=false cite=false]</p>",
+                    "description": "<p>The spirit magically teleports up to 30 feet to an unoccupied space it can see. Then the following effect occurs, based on the spirit’s chosen mood:</p><p><strong>Mirthful. </strong><em>Wisdom Saving Throw:</em> DC equals your spell save DC, one creature the spirit can see within 10 feet of itself. <em>Failure:</em> The target is &amp;Reference[charmed apply=false] by you and the spirit for 1 minute or until the target takes any damage.</p>",
                     "activities": {
-                        "Teleport": {
-                            "name": "Teleportacja"
+                        "Teleport and Charm": {
+                            "name": "Teleport and Charm"
+                        }
+                    },
+                    "effects": {
+                        "Charmed": {
+                            "name": "Zauroczony",
+                            "description": "<p>The target is &amp;Reference[charmed] by you and the spirit for 1 minute or until the target takes any damage.</p>"
                         }
                     }
                 }
@@ -4118,7 +4133,7 @@
                 },
                 "Hooves": {
                     "name": "Kopyta",
-                    "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>7 (1d8 + 3) Bludgeoning damage.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>4 (1d4 + 2) Bludgeoning damage.</p>"
                 }
             }
         },
@@ -4132,7 +4147,7 @@
                 },
                 "Water Breathing": {
                     "name": "Oddychanie pod wodą",
-                    "description": "<p>The shark can breathe only underwater.</p>"
+                    "description": "<p>The octopus can breathe only underwater.</p>"
                 },
                 "Ink Cloud": {
                     "name": "Chmura atramentu",
@@ -4159,15 +4174,16 @@
                 "Life Bond": {
                     "name": "Life Bond",
                     "description": "<p> When you regain Hit Points from a level 1+ spell, the steed regains the same number of Hit Points if you’re within 5 feet of it.</p>",
-                    "requirements": "You regain Hit Points from a spell"
+                    "requirements": "you regain Hit Points from a spell"
                 },
                 "Otherworldly Slam": {
                     "name": "Nieziemskie walnięcie",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 plus the spell’s level of Necrotic damage.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 plus the spell’s level of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage.</p>"
                 },
                 "Fell Glare": {
                     "name": "Fell Glare",
-                    "description": "<p><em>Wisdom Saving Throw:</em> DC equals your spell save DC, one creature within 60 feet the steed can see. <em>Failure:</em> The target has the &amp;Reference[frightened] condition until the end of your next turn.</p>",
+                    "description": "<p><em>Wisdom Saving Throw:</em> DC equals your spell save DC, one creature within 60 feet the steed can see. <em>Failure:</em> The target has the &amp;Reference[frightened apply=false] condition until the end of your next turn.</p>",
+                    "requirements": "Fiend Only",
                     "effects": {
                         "Frightened": {
                             "name": "Przerażony"
@@ -4177,6 +4193,7 @@
                 "Fey Step": {
                     "name": "Fey Step",
                     "description": "<p> The steed teleports, along with its rider, to an unoccupied space of your choice up to 60 feet away from itself.</p>",
+                    "requirements": "Fey Only",
                     "activities": {
                         "Teleport": {
                             "name": "Teleportacja"
@@ -4185,7 +4202,8 @@
                 },
                 "Healing Touch": {
                     "name": "Healing Touch",
-                    "description": "<p> One creature within 5 feet of the steed regains a number of Hit Points equal to 2d8 plus the spell’s level.</p>"
+                    "description": "<p> One creature within 5 feet of the steed regains a number of Hit Points equal to 2d8 plus the spell’s level.</p>",
+                    "requirements": "Celestial Only"
                 }
             }
         },
@@ -4499,7 +4517,7 @@
             "items": {
                 "Hooves": {
                     "name": "Kopyta",
-                    "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>7 (1d8 + 3) Bludgeoning damage.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>4 (1d4 + 2) Bludgeoning damage.</p>"
                 }
             }
         },
@@ -4509,11 +4527,11 @@
             "items": {
                 "Magic Resistance": {
                     "name": "Odporność na magię",
-                    "description": "<p> The sphinx has Advantage on saving throws against spells and other magical effects.</p>"
+                    "description": "<p> The pseudodragon has Advantage on saving throws against spells and other magical effects.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The pseudodragon makes two [[/item Bite]] attacks.</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -4522,11 +4540,21 @@
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Melee Attack Roll: </em>+4, reach 5 ft. <em>Hit:</em> 4 (1d4 + 2) Piercing damage.</p>"
                 },
                 "Sting": {
                     "name": "Żądło",
-                    "description": "<p><em>Melee Attack Roll:</em> +2, reach 5 ft. <em>Hit: </em>1 Piercing damage plus 3 (1d6) Poison damage.</p>"
+                    "description": "<p><em>Constitution Saving Throw:</em> DC 12, one creature the pseudodragon can see within 5 feet. <em>Failure:</em> 5 (2d4 + 2) Poison damage, and the target has the &amp;Reference[poisoned apply=false] condition for 1 hour. <em>Failure by 5 or More:</em> The Poisoned target also has the &amp;Reference[unconscious apply=false] condition until it takes damage or another creature takes an action to shake it awake.</p>",
+                    "effects": {
+                        "Poisoned": {
+                            "name": "Zatruty",
+                            "description": "<p>The target has the &amp;Reference[poisoned apply=false] condition for 1 hour.</p>"
+                        },
+                        "Unconscious": {
+                            "name": "Nieprzytomny",
+                            "description": "<p><em>Failure by 5 or More:</em> The Poisoned target also has the &amp;Reference[unconscious apply=false] condition until it takes damage or another creature takes an action to shake it awake.</p>"
+                        }
+                    }
                 }
             }
         },
@@ -4581,15 +4609,21 @@
             "items": {
                 "Magic Resistance": {
                     "name": "Odporność na magię",
-                    "description": "<p> The sphinx has Advantage on saving throws against spells and other magical effects.</p>"
+                    "description": "<p> The quasit has Advantage on saving throws against spells and other magical effects.</p>"
                 },
                 "Rend": {
                     "name": "Rozdarcie",
-                    "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage.</p>"
+                    "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Slashing damage, and the target has the &amp;Reference[poisoned apply=false] condition until the start of the quasit’s next turn.</p>",
+                    "effects": {
+                        "Poisoned": {
+                            "name": "Zatruty",
+                            "description": "<p>The target has the &amp;Reference[poisoned apply=false] condition until the start of the quasit’s next turn.</p>"
+                        }
+                    }
                 },
                 "Invisibility": {
                     "name": "Niewidzialność",
-                    "description": "<p>The sprite casts [[/item lO6diOZO5FReftK6]] on itself, requiring no spell components and using Charisma as the spellcasting ability.</p><hr /><p>@Embed[.lO6diOZO5FReftK6 caption=false]</p>",
+                    "description": "<p>The quasit casts [[/item 7wNdT95XqhyGOpBd]] on itself, requiring no spell components and using Charisma as the spellcasting ability.</p><hr /><p>@Embed[.7wNdT95XqhyGOpBd caption=false]</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -5019,7 +5053,7 @@
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Rzut ataku wręcz:</em> +2, zasięg 5 stóp. <em>Trafienie:</em> 1 obrażenie Kłute.</p>"
                 }
             }
         },
@@ -5043,7 +5077,7 @@
             "items": {
                 "Pack Tactics": {
                     "name": "Atak grupowy",
-                    "description": "<p>Wilk ma Ułatwienie w rzutach ataku przeciwko istocie, jeśli przynajmniej jeden z jego sojuszników znajduje się w odległości 5 stóp od tej istoty i sojusznik nie ma stanu Obezwładniony.</p>",
+                    "description": "<p>The shark has Advantage on an attack roll against a creature if at least one of the shark’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>",
                     "requirements": "Ally within 5 feet of target"
                 },
                 "Water Breathing": {
@@ -5052,7 +5086,7 @@
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Melee Attack Roll: </em>+4, reach 5 ft. <em>Hit: </em>7 (2d4 + 2) Piercing damage.</p>"
                 }
             }
         },
@@ -5430,11 +5464,11 @@
                 "Regeneration": {
                     "name": "Regeneracja",
                     "description": "<p>The spirit regains [[/healing 5]]{5 Hit Points} at the start of its turn if it has at least 1 Hit Point.</p>",
-                    "requirements": "Slaad Only",
+                    "requirements": "Has at least 1 Hit Point",
                     "activities": {
                         "heal": {
-                            "condition": "start of its turn, if it has at least 1 Hit Point",
-                            "activationCondition": "start of its turn, if it has at least 1 Hit Point"
+                            "condition": "start of its turn",
+                            "activationCondition": "start of its turn"
                         }
                     }
                 },
@@ -5450,7 +5484,6 @@
                 "Claw": {
                     "name": "Pazury",
                     "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d10 + 3 + the spell’s level Slashing damage, and the target can’t regain Hit Points until the start of the spirit’s next turn.</p>",
-                    "requirements": "Slaad Only",
                     "effects": {
                         "Blocked Healing": {
                             "name": "Zablokowane leczenie"
@@ -5460,16 +5493,16 @@
             }
         },
         "Slaad Tadpole": {
-            "name": "Slaad Tadpole",
+            "name": "Slaad kijanka",
             "alignment": "Chaotyczny Neutralny",
             "items": {
                 "Magic Resistance": {
                     "name": "Odporność na magię",
-                    "description": "<p> The sphinx has Advantage on saving throws against spells and other magical effects.</p>"
+                    "description": "<p> The slaad has Advantage on saving throws against spells and other magical effects.</p>"
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 5 (1d6 + 2) Piercing damage.</p>"
                 }
             }
         },
@@ -5834,7 +5867,7 @@
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Melee Attack Roll: </em>+4, reach 5 ft. <em>Hit: </em>1 Piercing damage plus 2 (1d4) Poison damage.</p>"
                 }
             }
         },
@@ -5905,7 +5938,7 @@
                 "Stony Lethargy": {
                     "name": "Stony Lethargy",
                     "description": "<p> When a creature starts its turn within 10 feet of the spirit, the spirit can target it with magical energy if the spirit can see it. <em>Wisdom Saving Throw:</em> DC equals your spell save DC, the target. <em>Failure:</em> Until the start of its next turn, the target can’t make Opportunity Attacks, and its Speed is halved.</p>",
-                    "requirements": "Stone Only",
+                    "requirements": "A creature starts its turn within range",
                     "effects": {
                         "Stony Lethargy": {
                             "name": "Stony Lethargy",
@@ -5915,7 +5948,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -5924,7 +5957,7 @@
                 },
                 "Slam": {
                     "name": "Walnięcie",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> Force damage equal to 1d4 + 3.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 4 + the spell’s level Bludgeoning damage.</p>"
                 }
             }
         },
@@ -5978,7 +6011,7 @@
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Fey Blade]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -5991,10 +6024,10 @@
                 },
                 "Fey Step": {
                     "name": "Fey Step",
-                    "description": "<p>The spirit magically teleports up to 30 feet to an unoccupied space it can see. Then one of the following effects occurs, based on the spirit’s chosen mood:</p><p><strong>Fuming.</strong></p><p>The spirit has Advantage on the next attack roll it makes before the end of this turn.</p><p><strong>[[/item Mirthful]]</strong> @Embed[.phbaoiMirthful00 caption=false cite=false]</p><p><strong>[[/item Tricksy]]</strong> @Embed[.phbaoiTricksy000 caption=false cite=false]</p>",
+                    "description": "<p>The spirit magically teleports up to 30 feet to an unoccupied space it can see. Then the following effect occurs, based on the spirit’s chosen mood:</p><p><strong>Tricksy.</strong> The spirit fills a 10-foot Cube within 5 feet of it with magical &amp;Reference[darkness], which lasts until the end of its next turn.</p>",
                     "activities": {
-                        "Teleport": {
-                            "name": "Teleportacja"
+                        "Teleport and Shroud": {
+                            "name": "Teleport and Shroud"
                         }
                     }
                 }
@@ -6008,12 +6041,11 @@
                 "Festering Aura": {
                     "name": "Festering Aura",
                     "description": "<p><em>Constitution Saving Throw:</em> DC equals your spell save DC, any creature (other than you) that starts its turn within a 5-foot Emanation originating from the spirit. <em>Failure:</em> The creature has the &amp;Reference[Poisoned apply=false] condition until the start of its next turn.</p>",
+                    "requirements": "Putrid Only",
                     "activities": {
                         "save": {
                             "condition": "any other creature that starts its turn within range",
-                            "activationCondition": "any other creature that starts its turn within range",
-                            "target": "other than you",
-                            "targetAffects": "other than you"
+                            "activationCondition": "any other creature that starts its turn within range"
                         }
                     },
                     "effects": {
@@ -6025,7 +6057,8 @@
                 },
                 "Incorporeal Passage": {
                     "name": "Incorporeal Passage",
-                    "description": "<p>The spirit can move through other creatures and objects as if they were &amp;Reference[difficultterrain]. If it ends its turn inside an object, it is shunted to the nearest unoccupied space and takes [[/damage 1d10 type=force]] damage for every 5 feet traveled.</p>"
+                    "description": "<p>The spirit can move through other creatures and objects as if they were &amp;Reference[difficultterrain]. If it ends its turn inside an object, it is shunted to the nearest unoccupied space and takes [[/damage 1d10 type=force]] damage for every 5 feet traveled.</p>",
+                    "requirements": "Ghostly Only"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -6039,6 +6072,7 @@
                 "Deathly Touch": {
                     "name": "Deathly Touch",
                     "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 3 + the spell’s level Necrotic damage, and the target has the &amp;Reference[frightened apply=false] condition until the end of its next turn.</p>",
+                    "requirements": "Ghostly Only",
                     "effects": {
                         "Frightened": {
                             "name": "Przerażony",
@@ -6048,11 +6082,12 @@
                 },
                 "Grave Bolt": {
                     "name": "Grave Bolt",
-                    "description": "<p><em>Ranged Attack Roll:</em> Bonus equals your spell attack modifier, range 150 ft. <em>Hit:</em> 2d4 + 3 + the spell’s level Necrotic damage.</p>"
+                    "description": "<p><em>Ranged Attack Roll:</em> Bonus equals your spell attack modifier, range 150 ft. <em>Hit:</em> 2d4 + 3 + the spell’s level Necrotic damage.</p>",
+                    "requirements": "Skeletal Only"
                 },
                 "Rotting Claw": {
                     "name": "Rotting Claw",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus: equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d6 + 3 + the spell’s level Slashing damage. If the target has the &amp;Reference[poisoned apply=false] condition, it has the &amp;Reference[paralyzed apply=false] condition until the end of its next turn.</p>",
+                    "description": "<p><em>(Putrid Only)</em></p><p><em>Melee Attack Roll:</em> Bonus: equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d6 + 3 + the spell’s level Slashing damage. If the target has the &amp;Reference[poisoned apply=false] condition, it has the &amp;Reference[paralyzed apply=false] condition until the end of its next turn.</p>",
                     "effects": {
                         "Paralyzed": {
                             "name": "Sparaliżowany",
@@ -6078,7 +6113,7 @@
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p><em>Melee Attack Roll: </em>+4, reach 5 ft. <em>Hit: </em>4 (1d4 + 2) Piercing damage plus 3 (1d6) Poison damage.</p>"
                 }
             }
         },
@@ -6088,7 +6123,12 @@
             "items": {
                 "Hooves": {
                     "name": "Kopyta",
-                    "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>7 (1d8 + 3) Bludgeoning damage.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> +6, reach 5 ft. <em>Hit:</em> 9 (2d4 + 4) Bludgeoning damage. If the horse moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 5 (2d4) Bludgeoning damage and, if it is Huge or smaller, has the &amp;Reference[prone] condition.</p>",
+                    "activities": {
+                        "Charging Attack": {
+                            "name": "Charging Attack"
+                        }
+                    }
                 }
             }
         },
@@ -6560,12 +6600,11 @@
             "items": {
                 "Amorphous Form": {
                     "name": "Amorphous Form",
-                    "description": "<p> The spirit can move through a space as narrow as 1 inch wide without it counting as Difficult Terrain.</p>",
-                    "requirements": "Air, Fire, and Water Only"
+                    "description": "<p> The spirit can move through a space as narrow as 1 inch wide without it counting as Difficult Terrain.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -6574,7 +6613,7 @@
                 },
                 "Slam": {
                     "name": "Walnięcie",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> Force damage equal to 1d4 + 3.</p>"
+                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d10 + 4 + the spell’s level Cold damage.</p>"
                 }
             }
         },
@@ -6584,7 +6623,7 @@
             "items": {
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit: </em>5 (1d6 + 2) Piercing damage, and the target has the &amp;Reference[prone] condition if it is Medium or smaller.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 1 Piercing damage.</p>"
                 }
             }
         },
@@ -6915,7 +6954,7 @@
             "items": {
                 "Magic Resistance": {
                     "name": "Odporność na magię",
-                    "description": "<p> The sphinx has Advantage on saving throws against spells and other magical effects.</p>"
+                    "description": "<p> The spirit has Advantage on saving throws against spells and other magical effects.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -6926,8 +6965,8 @@
                         }
                     }
                 },
-                "Claws (Yugoloth Only)": {
-                    "name": "Claws (Yugoloth Only)",
+                "Claws": {
+                    "name": "Pazury",
                     "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 3 + the spell’s level Slashing damage. Immediately after the attack hits or misses, the spirit can teleport up to 30 feet to an unoccupied space it can see.</p>",
                     "activities": {
                         "Attack and Teleport": {
@@ -6942,13 +6981,13 @@
             "alignment": "Neutralny Zły",
             "items": {
                 "Undead Fortitude": {
-                    "name": "Undead Fortitude",
+                    "name": "Trupia odporność",
                     "description": "<p> If damage reduces the zombie to 0 Hit Points, it must make a Constitution saving throw with a DC of 5 plus the damage taken unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead.</p>",
                     "requirements": "Reduced to 0 Hit Points"
                 },
                 "Slam": {
                     "name": "Walnięcie",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> Force damage equal to 1d4 + 3.</p>"
+                    "description": "<p> <em>Melee Attack Roll:</em> +3, reach 5 ft. <em>Hit:</em> 4 (1d6 + 1) Bludgeoning damage.</p>"
                 }
             }
         }
