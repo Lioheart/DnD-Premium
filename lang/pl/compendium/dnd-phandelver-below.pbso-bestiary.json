@@ -34,11 +34,11 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The zealot makes one [[/item Psychic Rend]] attack and two [[/item Shortsword]] attacks.</p>"
+                    "description": "<p>The zealot makes one Psychic Rend attack and two Shortsword attacks.</p>"
                 },
                 "Spellcasting (Psionics)": {
                     "name": "Spellcasting (Psionics)",
-                    "description": "<section class=\"secret\" id=\"secret-qtt6zedYBerVYtGT\"><p>The zealot casts one of the following spells, requiring no components and using Charisma as the spellcasting ability (spell save DC 15):</p><p>At will: @UUID[Compendium.dnd5e.spells.Item.ppWAAEul0QHtm4er]{detect thoughts}, @UUID[Compendium.dnd5e.spells.Item.oIzA2MEHwxhtQneU]{minor illusion}</p><p>1/day each: @UUID[.Ml2Kbf7QjpusHlsr]{arcane gate}, @UUID[.YihTDitj9rYLjeOM]{hunger of Hadar}</p></section><p>The zealot is a spellcaster. Its spellcasting ability is Charisma.</p>"
+                    "description": "<section class=\"secret\" id=\"secret-qtt6zedYBerVYtGT\"><p>The zealot casts one of the following spells, requiring no components and using Charisma as the spellcasting ability (spell save DC 15):</p><p>At will: @UUID[Compendium.dnd5e.spells.Item.ppWAAEul0QHtm4er]{detect thoughts}, @UUID[Compendium.dnd5e.spells.Item.oIzA2MEHwxhtQneU]{minor illusion}</p><p>1/day each: arcane gate, hunger of Hadar</p></section><p>The zealot is a spellcaster. Its spellcasting ability is Charisma.</p>"
                 },
                 "Shortsword": {
                     "name": "Krótki miecz",
@@ -54,7 +54,7 @@
                 },
                 "Void Warp": {
                     "name": "Void Warp",
-                    "description": "<p>Shalfi teleports, along with any equipment it is wearing or carrying, to an unoccupied space it can see within 120 feet of itself, leaving a churning void in the space it left. Immediately after it teleports, each creature within 30 feet of the void other than the zealot must make a DC 15 Strength saving throw. On a failed save, a creature takes 18 (4d8) force damage and is pulled to the unoccupied space closest to the void. On a successful save, the creature takes half as much damage only. The void then disappears.</p>"
+                    "description": "<p>The zealot teleports, along with any equipment it is wearing or carrying, to an unoccupied space it can see within 120 feet of itself, leaving a churning void in the space it left. Immediately after it teleports, each creature within 30 feet of the void other than the zealot must make a DC 15 Strength saving throw. On a failed save, a creature takes 18 (4d8) force damage and is pulled to the unoccupied space closest to the void. On a successful save, the creature takes half as much damage only. The void then disappears.</p>"
                 },
                 "Psychic Rend (Melee)": {
                     "name": "Psychic Rend (Melee)",
@@ -403,7 +403,7 @@
                     "description": "<section class=\"secret\" id=\"secret-SDiFovnMAnWB1gfF\"><p><em>Melee Weapon Attack:</em><strong> +3 to hit,</strong> reach <strong>5 ft.,</strong> one target. Hit: <strong>4 (1d6 + 1) </strong><em><strong>bludgeoning damage</strong></em>.</p></section><p>The Zombie attacks with its Slam.</p>"
                 },
                 "Undead Fortitude": {
-                    "name": "Undead Fortitude",
+                    "name": "Trupia odporność",
                     "description": "<section class=\"secret\" id=\"secret-8aTs9IXua0mGG7AT\"><p>If damage reduces the zombie to <strong>0 hit points</strong>, it must make a <strong>Constitution</strong> saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to <strong>1 hit point</strong> instead.</p></section><p>If damage reduces the zombie to <strong>0 hit points</strong>, it must make a <strong>Constitution</strong> saving throw.</p>"
                 },
                 "Ash Puff": {
@@ -593,7 +593,7 @@
                     "description": "<section class=\"secret\" id=\"secret-MeksLhDRT3xY7CAa\"><p><em>Melee Weapon Attack: </em><strong>+10 to hit,</strong>, <strong>10 ft.,</strong> one target. Hit: <strong>22 (3d10 + 6) </strong><em><strong>piercing damage</strong></em>.</p></section><p>The Behir attacks with its Bite.</p>"
                 },
                 "Constrict": {
-                    "name": "Constrict",
+                    "name": "Duszenie",
                     "description": "<section class=\"secret\" id=\"secret-ECh3fRmdaFojcHWg\"><p>Melee Weapon Attack: +10 to hit, reach 5 ft., <strong>one Large or smaller creature</strong>. Hit: <strong>17 (2d10 + 6) </strong><em><strong>bludgeoning damage</strong></em> plus <strong>17 (2d10 + 6) </strong><em><strong>slashing damage</strong></em>.</p><p>The target is grappled (escape DC 16) if the behir isn't already constricting a creature, and the target is restrained until this grapple ends.</p></section><p>The Behir attacks with its Constrict. The target is &amp;Reference[grappled]{grappled} if the Behir isn't already constricting a creature, and the target is &amp;Reference[restrained]{restrained} until this grapple ends.</p>"
                 },
                 "Lightning Breath": {
@@ -866,7 +866,7 @@
                 },
                 "Javelin": {
                     "name": "Oszczep",
-                    "description": "<section class=\"secret\" id=\"secret-N0w9FZwf4m3GCaAT\"><p>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: <strong>9 (2d6 + 2) </strong><em><strong>piercing damage</strong></em> in melee or <strong>5 (1d6 + 2) </strong><em><strong>piercing damage</strong></em> at range.</p></section><p>The Bugbear attacks with its Javelin.</p>"
+                    "description": "<section class=\"secret\" id=\"secret-gSxAQK74flXy5xCn\"><p>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: <strong>9 (2d6 + 2) </strong><em><strong>piercing damage</strong></em> in melee or <strong>5 (1d6 + 2) </strong><em><strong>piercing damage</strong></em> at range.</p></section><p>The Bugbear attacks with its Javelin.</p>"
                 }
             }
         },
@@ -930,13 +930,7 @@
                 },
                 "Unleash Void": {
                     "name": "Unleash Void",
-                    "description": "<p>The mind flayer opens a rift into the Far Realm, centered on a point the mind flayer can see within 60 feet of itself, and a tentacle lashes across creatures near the rift. Each creature other than mind flayers within 30 feet of the rift must make a DC 17 Intelligence saving throw, after which the tentacle disappears and the rift closes. On a failed save, a creature takes 18 (4d8) cold damage from the rift plus 18 (4d8) psychic damage from the tentacle and has the stunned condition for 1 minute. On a successful save, a creature takes half as much damage only. A stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>",
-                    "effects": {
-                        "Stunned": {
-                            "name": "Ogłuszony",
-                            "description": "<p>The target has the &amp;Reference[stunned] condition for 1 minute.</p>"
-                        }
-                    }
+                    "description": "<p>The mind flayer opens a rift into the Far Realm, centered on a point the mind flayer can see within 60 feet of itself, and a tentacle lashes across creatures near the rift. Each creature other than mind flayers within 30 feet of the rift must make a DC 17 Intelligence saving throw, after which the tentacle disappears and the rift closes. On a failed save, a creature takes 18 (4d8) cold damage from the rift plus 18 (4d8) psychic damage from the tentacle and has the stunned condition for 1 minute. On a successful save, a creature takes half as much damage only. A stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>"
                 },
                 "Warp Reality": {
                     "name": "Warp Reality",
@@ -1100,11 +1094,11 @@
                     "description": "<p>The golem has<strong> advantage </strong>on saving throws against spells and other magical effects.</p>"
                 },
                 "Berserk": {
-                    "name": "Berserk",
+                    "name": "Atak szału",
                     "description": "<section class=\"secret\" id=\"secret-hd4wN5vVGgHF1zjz\"><p>Whenever the golem starts its turn with <strong>60 hit points</strong> or fewer, roll a [[/r d6]]. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see.</p><p>If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its<strong> hit points</strong>.</p></section><p>The golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself.</p>",
                     "effects": {
                         "Berserk": {
-                            "name": "Berserk",
+                            "name": "Atak szału",
                             "description": "<p>The golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its<strong> hit points</strong>.</p>"
                         }
                     }
@@ -1118,7 +1112,7 @@
                     "description": "<p>The golem's weapon attacks are magical.</p>"
                 },
                 "Acid Absorption": {
-                    "name": "Acid Absorption",
+                    "name": "Wchłanianie kwasu",
                     "description": "<p>Whenever the golem is subjected to <strong><em>acid damage</em></strong>, it takes no damage and instead regains a number of<strong> hit points</strong> equal to the <strong><em>acid damage</em> dealt</strong>.</p>"
                 },
                 "Multiattack": {
@@ -2086,7 +2080,7 @@
                     "description": "<section class=\"secret\" id=\"secret-QuVgbVvhPjfstIny\"><p><em>Melee Weapon Attack: </em><strong>+6 to hit,</strong>, <strong>10 ft.,</strong> one creature. Hit: <strong>11 (2d6 + 4) </strong><em><strong>piercing damage</strong></em>.</p></section><p>The Giant Constrictor Snake attacks with its Bite.</p>"
                 },
                 "Constrict": {
-                    "name": "Constrict",
+                    "name": "Duszenie",
                     "description": "<section class=\"secret\" id=\"secret-wohlmYFSuvnJCCMH\"><p><em>Melee Weapon Attack: </em><strong>+6 to hit,</strong>, <strong>5 ft.,</strong> one creature. Hit: <strong>13 (2d8 + 4) </strong><em><strong>bludgeoning damage</strong></em>.</p><p>The target is grappled (escape DC 16). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.</p></section><p>The Giant Constrictor Snake attacks with its Constrict. The target is grappled. Until this grapple ends, the creature is restrained, and the snake can't constrict another target.</p>",
                     "activities": {
                         "Escape": {
@@ -2191,7 +2185,7 @@
             }
         },
         "Gibbering Mouther": {
-            "name": "Gibbering Mouther",
+            "name": "Bełkoczący paszczowiec",
             "description": "<p>Of all the terrors created by foul sorcery, gibbering mouthers are among the most wicked and depraved. This creature is the composite eyes, mouths, and liquefied matter of its former victims. Tormented by the destruction of their bodies and absorption into the mouther, those victims gibber incoherently and are forced to consume everything in reach.</p><p><strong>Amoeboid Form.</strong> The gibbering mouther’s body is an amorphous mass of mouths and eyes that propels itself by oozing forward, fastening several mouths to the ground and pulling its bulk behind. Though it moves slowly, it swims through water, mud, and quicksand with ease.</p><p><strong>Horrifying Cacophony.</strong> When a gibbering mouther senses prey, its mouths begin to murmur and chatter, each with a different voice: deep or shrill, wailing or ululating, crying out in agony or ecstasy. This cacophonous gibbering overcomes the senses of any creature that hears it, causing most to flee in terror. Others are overcome with confusion or stand paralyzed, fixated on the horrific creature as it oozes forward to consume them.</p><p><strong>All-Consuming.</strong> Driven to devour any creature it can reach, a gibbering mouther flows over victims transfixed by its ranting, its multitudinous voices temporarily silenced as it gnaws and swallows living flesh. The monster liquefies stone with which it comes into contact, hindering creatures that overcome its gibbering and attempt to flee.</p><p>A gibbering mouther leaves nothing of its prey behind. However, even as the last of a victim’s body is consumed, its eyes and mouth boil to the surface, ready to join the chorus of tormented gibbering that welcomes the monster’s next meal.</p>",
             "alignment": "Neutralny",
             "items": {
@@ -2324,7 +2318,7 @@
             }
         },
         "Githyanki Warrior": {
-            "name": "Wojownik githyanki",
+            "name": "Githyanki wojownik",
             "description": "<p>The githyanki plunder countless worlds from the decks of their astral vessels and the backs of red dragons. Feathers, beads, gems, and precious metals decorate their armor and weapons—the legendary silver swords with which they cut through their foes. Since winning their freedom from the mind flayers, the githyanki have become ruthless conquerors under the rulership of their dread lich-queen, Vlaakith.</p><p><strong>Astral Raiders.</strong> The githyanki despise all other races, undertaking devastating raids that take them from their strongholds in the Astral Plane to the far-flung corners of the multiverse. War is the ultimate expression of githyanki culture, and their pitiless black eyes know no mercy. After a raid, they leave shattered survivors enough food and resources to weakly endure. Later, the githyanki return to their conquered foes, plundering them again and again.</p><p><strong>Followers of Gith.</strong> In their own language, githyanki means “followers of Gith.” Under the guidance of Gith, the githyanki stratified into a militaristic society, with a strict caste system, dedicated to the ongoing fight against the victims and sworn enemies of their race. When their leader Gith perished, she was replaced by her undead adviser, Vlaakith. The lich-queen forbade worship of all beings except herself.</p><p>Of all their enemies, the githyanki most hate their former masters, the mind flayers. Their close kin, the githzerai, are second in their enmity. All other creatures are treated with simple contempt by the githyanki, whose xenophobic pride defines their view of inferior races.</p><p><strong>Silver Swords.</strong> In ancient times, gith knights created special weapons to combat their mind flayer masters. These silver swords channel the force of the wielder’s will, dealing psychic as well as physical damage. A githyanki can’t become a knight until it masters the singular discipline needed to will such a blade into existence. A silver sword is equivalent to a greatsword, and takes on the properties of a @UUID[Compendium.dnd5e.items.Item.RfEZvwcLwe6Ih0LQ]{+3 greatsword} in the hands of its creator.</p><p>In the eyes of the githyanki, each silver sword is a priceless relic and a work of art. Githyanki knights will hunt down and destroy any non-githyanki that dares to carry or wield a silver sword, reclaiming it for their people.</p><p><strong>Red Dragon Riders.</strong> In the uprising against the illithids, Gith sought allies. Her adviser Vlaakith appealed to Tiamat, the goddess of evil dragonkind, and Gith ventured into the Nine Hells to meet with her. Only Tiamat now knows what passed between them, but Vlaakith returned to the Astral Plane with the Dragon Queen’s red dragon consort Ephelomon, who proclaimed that his kind would forever act as allies to the githyanki. Not all red dragons honor the alliance kindled so long ago, but most at least don’t consider the githyanki their enemies.</p><p><strong>Outposts in the Mortal Realm.</strong> Since creatures that dwell on the Astral Plane don’t age, the githyanki establish creches in remote areas of the Material Plane to raise their young. Doubling as military academies, these creches train young githyanki to harness their psychic and combat abilities. When a githyanki grows to adulthood and slays a mind flayer as part of a sacred rite of passage, it is permitted to rejoin its people on the Astral Plane.</p>",
             "alignment": "Praworządny Zły",
             "items": {
@@ -3056,7 +3050,7 @@
             }
         },
         "Grick Alpha": {
-            "name": "Grick Alpha",
+            "name": "Grik alfa",
             "description": "<p>The wormlike grick waits unseen, blending in with the rock of the caves and caverns it haunts. Only when prey comes near does it rear up, its four barbed tentacles unfurling to reveal its hungry, snapping beak.</p><p><strong>Passive Predators.</strong> Gricks rarely hunt. Instead, they drag their rubbery bodies to places where creatures regularly pass, lurking out of sight amid rocky rubble and debris, squeezing into burrows, holes, or crevices, climbing up to ledges, or coiling around stalactites to drop on unwary prey. A grick consumes virtually anything that moves except for other gricks. It targets the nearest prey, grabbing a fallen creature with its tentacles and dragging it off to eat alone.</p><p><strong>Roving Ambushers.</strong> Gricks remain in an area until the food supply dwindles, often because sentient creatures become aware of their presence and plot alternate routes around their lairs. When prey is scarce in the Underdark, gricks venture aboveground to hunt in the wilderness, lurking in trees or on cliff-side ledges. A grick pack is often led by a single well-fed, oversized alpha around which the others congregate.</p><p><strong>Spoils of Slaughter.</strong> Over time, grick lairs accumulate the cast-off possessions of intelligent prey, and expert guides know to look out for these telltale signs. Underdark explorers sometimes seal off the routes leading to and from a grick lair to starve them, then claim the wealth of the foul creatures’ victims.</p>",
             "alignment": "Neutralny",
             "items": {
@@ -3289,11 +3283,16 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The mind flayer makes two Tentacle attacks.</p>"
+                    "description": "<p>The mind flayer makes two [[/item Tentacle]] attacks.</p>"
                 },
                 "Spellcasting (Psionics)": {
                     "name": "Spellcasting (Psionics)",
-                    "description": "<section class=\"secret\" id=\"secret-3DciHpRYPE4yuqbJ\"><p>The mind flayer casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 17):</p><p>At will: @UUID[Compendium.dnd5e.spells.Item.ghXTfe7sgCbgf1Q8]{detect magic}, @UUID[Compendium.dnd5e.spells.Item.ppWAAEul0QHtm4er]{detect thoughts}, @UUID[Compendium.dnd5e.spells.Item.Utk1OQRwYkMkFRD3]{mage hand} (the hand is invisible)</p><p>3/day each: @UUID[Compendium.dnd5e.spells.Item.cg50KpBkBdPK6vPL]{clairvoyance} (as an action), @UUID[Compendium.dnd5e.spells.Item.15Fa6q1nH27XfbR8]{dispel magic}</p><p>1/day: @UUID[Compendium.dnd5e.spells.Item.J6Jpw5XzB5aTeqnz]{plane shift} (self only)</p></section><p>The mind flayer is a spellcaster. Its spellcasting ability is Intelligence.</p>"
+                    "description": "<section class=\"secret\" id=\"secret-3DciHpRYPE4yuqbJ\"><p>The mind flayer casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 17):</p><p>At will: @UUID[Compendium.dnd5e.spells.Item.ghXTfe7sgCbgf1Q8]{detect magic}, @UUID[Compendium.dnd5e.spells.Item.ppWAAEul0QHtm4er]{detect thoughts}, @UUID[Compendium.dnd5e.spells.Item.Utk1OQRwYkMkFRD3]{mage hand} (the hand is invisible)</p><p>3/day each: @UUID[Compendium.dnd5e.spells.Item.cg50KpBkBdPK6vPL]{clairvoyance} (as an action), @UUID[Compendium.dnd5e.spells.Item.15Fa6q1nH27XfbR8]{dispel magic}</p><p>1/day: @UUID[Compendium.dnd5e.spells.Item.J6Jpw5XzB5aTeqnz]{plane shift} (self only)</p></section><p>The mind flayer is a spellcaster. Its spellcasting ability is Intelligence.</p>",
+                    "activities": {
+                        "Plane Shift (self only)": {
+                            "name": "Plane Shift (self only)"
+                        }
+                    }
                 },
                 "Unleash Void": {
                     "name": "Unleash Void",
@@ -3549,7 +3548,7 @@
             }
         },
         "Hook Horror": {
-            "name": "Hook Horror",
+            "name": "Hakowa poczwara",
             "description": "<p>A fierce predator of the Underdark, the hook horror aggressively defends its hunting grounds. The subterranean caverns where these creatures dwell echo with the constant clacking and scraping of their hooks as they wend their way up cliffs and along cavern walls.</p><p>The monstrous hook horror has a head resembling a vulture’s and the torso of an enormous beetle, with an exoskeleton studded by sharp, bony protuberances. It gains its name from its long, powerfully built arms and legs, which end in wickedly curved hooked claws.</p><p><strong>Echoes in the Dark.</strong> Hook horrors communicate by striking their hooks against their exoskeletons or the stone surfaces around them. What sounds to others like random clacking noise is actually a complex language that only hook horrors understand, and which carries for miles through the echoing Underdark.</p><p><strong>Pack Predators.</strong> The omnivorous hook horrors eat lichens, fungi, plants, and any creature they can catch. A hook horror’s hooked limbs give it excellent purchase on rock surfaces, and these creatures use their climbing skills to ambush prey from above.</p><p>They hunt in packs, working together against the largest and most dangerous opponents. If a battle goes poorly, a hook horror quickly climbs a cavern wall to flee.</p><p><strong>Dedicated Clans.</strong> Hook horrors live in extended family groups or clans. Each clan is ruled by the eldest female, who typically places her mate in charge of the clan’s hunters. Hook horrors lay eggs, which are clustered in a central, well-defended area of a clan’s home caverns.</p>",
             "alignment": "Neutralny",
             "items": {
@@ -3819,7 +3818,7 @@
             }
         },
         "Intellect Devourer": {
-            "name": "Intellect Devourer",
+            "name": "Pożeracz intelektu",
             "description": "<p>An intellect devourer resembles a walking brain protected by a crusty covering and set on bestial clawed legs. This foul aberration feeds on the intelligence of sentient creatures, taking over a victim’s body on behalf of its mind flayer masters.</p><p><strong>Illithid Creations.</strong> Mind flayers breed intellect devourers to serve as roaming hunters of the Underdark, creating an intellect devourer by taking the brain of a thrall and subjecting it to a horrible ritual. As it sprouts legs, the brain becomes an intelligent predator as twisted and evil as its masters.</p><p><strong>Deadly Puppet Masters.</strong> An intellect devourer consumes a creature’s mind and memories, then turns the host body into a puppet under its control. An intellect devourer typically uses its puppet host to lure others into the domain of the mind flayers to be enthralled or consumed.</p>",
             "alignment": "Praworządny Zły",
             "items": {
@@ -3883,7 +3882,7 @@
             }
         },
         "Invisible Stalker": {
-            "name": "Invisible Stalker",
+            "name": "Niewidzialny łowca",
             "description": "<p>An invisible stalker is an air elemental that has been summoned from its native plane and transformed by powerful magic. Its sole purpose is to hunt down creatures and retrieve objects for its summoner. When it is defeated or the magic that binds it expires, an invisible stalker vanishes in a gust of wind.</p><p><strong>Directed Hunter.</strong> When an invisible stalker is created, it stays at its summoner’s side until it is given a task to perform. If an assignment doesn’t involve hunting down and slaying a specific creature or recovering an object, the magic that created the invisible stalker ends and the elemental is released. Otherwise, it completes the task, then returns to its summoner for more commands, forced to serve until the magic that binds it expires. If its summoner dies in the interim, the invisible stalker vanishes after completing its task.</p><p>An invisible stalker is an unwilling servant at best. It resents any undertaking assigned to it. A mission that requires significant time might drive the invisible stalker to pervert the intent of a command unless it is worded carefully.</p><p><strong>Unseen Threat.</strong> Invisible stalkers are composed of air and are naturally &amp;Reference[invisible]{invisible}. A creature might hear and feel an invisible stalker in passing, but the elemental remains invisible even when it attacks. A spell that allows someone to see the invisible reveals only the invisible stalker’s vague outline.</p><p><strong>Elemental Nature.</strong> An invisible stalker requires no air, food, drink, or sleep.</p>",
             "alignment": "Neutralny",
             "items": {
@@ -4270,7 +4269,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The mind flayer makes two Tentacle attacks.</p>"
+                    "description": "<p>The mind flayer makes two [[/item Tentacle]] attacks.</p>"
                 },
                 "Extract Brain": {
                     "name": "Pobranie mózgu",
@@ -4278,17 +4277,16 @@
                 },
                 "Spellcasting (Psionics)": {
                     "name": "Spellcasting (Psionics)",
-                    "description": "<section class=\"secret\" id=\"secret-3DciHpRYPE4yuqbJ\"><p>The mind flayer casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 17):</p><p>At will: @UUID[Compendium.dnd5e.spells.Item.ghXTfe7sgCbgf1Q8]{detect magic}, @UUID[Compendium.dnd5e.spells.Item.ppWAAEul0QHtm4er]{detect thoughts}, @UUID[Compendium.dnd5e.spells.Item.Utk1OQRwYkMkFRD3]{mage hand} (the hand is invisible)</p><p>3/day each: @UUID[Compendium.dnd5e.spells.Item.cg50KpBkBdPK6vPL]{clairvoyance} (as an action), @UUID[Compendium.dnd5e.spells.Item.15Fa6q1nH27XfbR8]{dispel magic}</p><p>1/day: @UUID[Compendium.dnd5e.spells.Item.J6Jpw5XzB5aTeqnz]{plane shift} (self only)</p></section><p>The mind flayer is a spellcaster. Its spellcasting ability is Intelligence.</p>"
+                    "description": "<section class=\"secret\" id=\"secret-3DciHpRYPE4yuqbJ\"><p>The mind flayer casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 17):</p><p>At will: @UUID[Compendium.dnd5e.spells.Item.ghXTfe7sgCbgf1Q8]{detect magic}, @UUID[Compendium.dnd5e.spells.Item.ppWAAEul0QHtm4er]{detect thoughts}, @UUID[Compendium.dnd5e.spells.Item.Utk1OQRwYkMkFRD3]{mage hand} (the hand is invisible)</p><p>3/day each: @UUID[Compendium.dnd5e.spells.Item.cg50KpBkBdPK6vPL]{clairvoyance} (as an action), @UUID[Compendium.dnd5e.spells.Item.15Fa6q1nH27XfbR8]{dispel magic}</p><p>1/day: @UUID[Compendium.dnd5e.spells.Item.J6Jpw5XzB5aTeqnz]{plane shift} (self only)</p></section><p>The mind flayer is a spellcaster. Its spellcasting ability is Intelligence.</p>",
+                    "activities": {
+                        "Plane Shift (self only)": {
+                            "name": "Plane Shift (self only)"
+                        }
+                    }
                 },
                 "Unleash Void": {
                     "name": "Unleash Void",
-                    "description": "<p>The mind flayer opens a rift into the Far Realm, centered on a point the mind flayer can see within 60 feet of itself, and a tentacle lashes across creatures near the rift. Each creature other than mind flayers within 30 feet of the rift must make a DC 17 Intelligence saving throw, after which the tentacle disappears and the rift closes. On a failed save, a creature takes 18 (4d8) cold damage from the rift plus 18 (4d8) psychic damage from the tentacle and has the stunned condition for 1 minute. On a successful save, a creature takes half as much damage only. A stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>",
-                    "effects": {
-                        "Stunned": {
-                            "name": "Ogłuszony",
-                            "description": "<p>The target has the &amp;Reference[stunned] condition for 1 minute.</p>"
-                        }
-                    }
+                    "description": "<p>The mind flayer opens a rift into the Far Realm, centered on a point the mind flayer can see within 60 feet of itself, and a tentacle lashes across creatures near the rift. Each creature other than mind flayers within 30 feet of the rift must make an <strong>Intelligence saving throw</strong>, after which the tentacle disappears and the rift closes. On a failed save, a creature takes 18 (4d8) cold damage from the rift plus 18 (4d8) psychic damage from the tentacle and has the &amp;Reference[stunned]{stunned} condition for 1 minute. On a successful save, a creature takes half as much damage only. A stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>"
                 },
                 "Warp Reality": {
                     "name": "Warp Reality",
@@ -4568,7 +4566,7 @@
             }
         },
         "Needle Blight": {
-            "name": "Needle Blight",
+            "name": "Iglasta skaza",
             "description": "<p>In the shadows of a forest, needle blights might be taken at a distance for shuffling, hunched humanoids. Up close, these creatures reveal themselves as horrid plants whose conifer-like needles grow across their bodies in quivering clumps. A needle blight lashes out with these needles or launches them as an aerial assault that can punch through armor and flesh.</p><p>When needle blights detect a threat, they loose a pollen that the wind carries to other needle blights throughout the forest. Alerted to their foes’ location, needle blights converge from all sides to drench their roots in blood.</p>",
             "alignment": "Neutralny Zły",
             "items": {
@@ -4753,7 +4751,7 @@
                 },
                 "Weird Insight": {
                     "name": "Weird Insight",
-                    "description": "<section class=\"secret\" id=\"secret-hxpGF84gDqLY2vis\"><p>The nothic targets one creature it can see within 30 feet of it. The target must contest its Charisma (Deception) check against the nothic’s [[/check skill=insight]]check. If the nothic wins, it magically learns one fact or secret about the target. The target automatically wins if it is immune to being charmed.</p></section><p>The target must roll [[/check skill=deception]].</p>"
+                    "description": "<section class=\"secret\" id=\"secret-hxpGF84gDqLY2vis\"><p>The nothic targets one creature it can see within 30 feet of it. The target must contest its [[/check skill=dec]] check against the nothic’s [[/check skill=ins]] check. If the nothic wins, it magically learns one fact or secret about the target. The target automatically wins if it is immune to being charmed.</p></section><p>The target must roll [[/check skill=dec]].</p>"
                 }
             }
         },
@@ -4854,7 +4852,7 @@
             }
         },
         "Ochre Jelly": {
-            "name": "Ochre Jelly",
+            "name": "Żółta galareta",
             "description": "<p>An ochre jelly is a yellowish ooze that can slide under doors and through narrow cracks in pursuit of creatures to devour.</p><hr /><p>Ochre jellies are yellowish blobs that can slide under doors and through narrow cracks in pursuit of creatures to devour. They have enough bestial cunning to avoid large groups of enemies.</p><p>An ochre jelly follows at a safe distance as it pursues its meal. Its digestive enzymes dissolve flesh quickly but have no effect on other substances such as bone, wood, and metal.</p><p><strong>Slow Death.</strong> An ooze kills its prey slowly. Some varieties, such as black puddings and gelatinous cubes, engulf creatures to prevent escape. The only upside of this torturous death is that a victim’s comrades can come to the rescue before it is too late.</p><p>Since not every ooze digests every type of substance, some have coins, metal gear, bones, and other debris suspended within their quivering bodies. A slain ooze can be a rich source of treasure for its killers.</p><p><strong>Unwitting Servants.</strong> Although an ooze lacks the intelligence to ally itself with other creatures, others that understand an ooze’s need to feed might lure it into a location where it can be of use to them. Clever monsters keep oozes around to defend passageways or consume refuse. Likewise, an ooze can be enticed into a pit trap, where its captors feed it often enough to prevent it from coming after them. Crafty creatures place torches and flaming braziers in strategic areas to dissuade an ooze from leaving a particular tunnel or room.</p><p><strong>Spawn of Juiblex.</strong> According to the Demonomicon of Iggwilv and other sources, oozes are scattered fragments or offspring of the demon lord Juiblex. Whether this is true or not, the Faceless Lord is one of the few beings that can control oozes and imbue them with a modicum of intelligence. Most of the time, oozes have no sense of tactics or self-preservation. They are direct and predictable, attacking and eating without cunning. Under the control of Juiblex, they exhibit glimmers of sentience and malevolent intent.</p><p><strong>Ooze Nature.</strong> An ooze doesn’t require sleep.</p>",
             "alignment": "Bez charakteru",
             "items": {
@@ -4953,7 +4951,7 @@
             }
         },
         "Ogre Zombie": {
-            "name": "Ogre Zombie",
+            "name": "Zombi ogr",
             "description": "<p>From somewhere in the darkness, a gurgling moan is heard. A form lurches into view, dragging one foot as it raises bloated arms and broken hands. The zombie advances, driven to kill anyone too slow to escape its grasp.</p><hr /><p><strong>Dark Servants.</strong> Sinister necromantic magic infuses the remains of the dead, causing them to rise as zombies that do their creator’s bidding without fear or hesitation. They move with a jerky, uneven gait, clad in the moldering apparel they wore when put to rest, and carrying the stench of decay.</p><p>Most zombies are made from humanoid remains, though the flesh and bones of any formerly living creature can be imbued with a semblance of life. Necromantic magic, usually from spells, animates a zombie. Some zombies rise spontaneously when dark magic saturates an area. Once turned into a zombie, a creature can’t be restored to life except by powerful magic, such as a resurrection spell.</p><p>A zombie retains no vestiges of its former self, its mind devoid of thought and imagination. A zombie left without orders simply stands in place and rots unless something comes along that it can kill. The magic animating a zombie imbues it with evil, so left without purpose, it attacks any living creature it encounters.</p><p><strong>Hideous Forms.</strong> Zombies appear as they did in life, showing the wounds that killed them. However, the magic that creates these vile creatures often takes time to run its course. Dead warriors might rise from a battlefield, eviscerated and bloated after days in the sun. The muddy cadaver of a peasant could claw its way from the ground, riddled with maggots and worms. A zombie might wash ashore or rise from a marsh, swollen and reeking after weeks in the water.</p><p><strong>Mindless Soldiers.</strong> Zombies take the most direct route to any foe, unable to comprehend obstacles, tactics, or dangerous terrain. A zombie might stumble into a fast-flowing river to reach foes on a far shore, clawing at the surface as it is battered against rocks and destroyed. To reach a foe below it, a zombie might step out of an open window. Zombies stumble through roaring infernos, into pools of acid, and across fields littered with caltrops without hesitation.</p><p>A zombie can follow simple orders and distinguish friends from foes, but its ability to reason is limited to shambling in whatever direction it is pointed, pummeling any enemy in its path. A zombie armed with a weapon uses it, but the zombie won’t retrieve a dropped weapon or other tool until told to do so.</p><p><strong>Undead Nature.</strong> A zombie doesn’t require air, food, drink, or sleep.</p>",
             "alignment": "Neutralny Zły",
             "items": {
@@ -4962,7 +4960,7 @@
                     "description": "<section class=\"secret\" id=\"secret-zCKWdF0O03V8rPZl\"><p><em>Melee Weapon Attack: </em><strong>+6 to hit,</strong> <strong>5 ft.,</strong> one target. Hit: <strong>13 (2d8 + 4) </strong><em><strong>bludgeoning damage</strong></em>.</p></section><p>The Ogre Zombie attacks with its Morningstar.</p>"
                 },
                 "Undead Fortitude": {
-                    "name": "Undead Fortitude",
+                    "name": "Trupia odporność",
                     "description": "<section class=\"secret\" id=\"secret-X28wG8CaQQZk1yLE\"><p>If damage reduces the zombie to <strong>0 hit points</strong>, it must make a <strong>Constitution</strong> saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to <strong>1 hit point</strong> instead.</p></section><p>If damage reduces the zombie to <strong>0 hit points</strong>, it must make a <strong>Constitution</strong> saving throw.</p>"
                 }
             }
@@ -5391,7 +5389,7 @@
             }
         },
         "Purple Worm": {
-            "name": "Purple Worm",
+            "name": "Purpurowy czerw",
             "description": "<p>The massive burrowing monster known as the purple worm terrorizes the creatures of the Underdark as it chews through solid rock in pursuit of prey. A dim-witted, ravenous force of nature, this creature regards anything it encounters as food.</p><p><strong>Ravenous Hunters.</strong> Loud noise attracts purple worms, which have been known to interrupt underground battles and tear through subterranean cities seeking prey. The underground civilizations of the drow, the duergar, and the mind flayers maintain special wards around their settlements to deter these monsters.</p><p>Though most common in the Underdark, purple worms are frequently seen on the surface world in rocky and mountainous lands. The maw of a purple worm is large enough to swallow a horse whole, and no creature is safe from its hunger. It lunges forward by rhythmically compressing and expanding its body, catching other Underdark dwellers by surprise with the speed of its advance.</p><p><strong>Boons of the Worm.</strong> When a purple worm burrows through the ground, it consumes earth and rock, which it breaks down and constantly excretes. Precious metals and gems can thus be found within the bodies of purple worms, which are targeted by particularly brave and foolhardy treasure hunters.</p><p>A burrowing purple worm constantly creates new tunnels throughout the Underdark, which are quickly made use of by other creatures as corridors and highways. Because a purple worm rarely returns to its own tunnels, such passageways are a good place to avoid these monsters. Areas rich in prey quickly become interlaced with complex tunnel systems resulting from several worms hunting together.</p>",
             "alignment": "Bez charakteru",
             "items": {
@@ -5446,7 +5444,7 @@
             }
         },
         "Quaggoth Thonot": {
-            "name": "Quaggoth Thonot",
+            "name": "Quaggoth thonot",
             "tokenName": "Quaggoth",
             "description": "<p>Violent and territorial, quaggoths climb the chasms of the Underdark. They maul their foes in a frenzy, becoming even more murderous in the face of death.</p><p><strong>Quaggoth Origins.</strong> In a distant age, quaggoth tribes dwelled upon the surface as nocturnal arboreal hunters, possessing their own language and culture. When elves appeared in the mortal realm, they clashed with the quaggoths, eventually driving them to near extinction. Only by fleeing deep into the Underdark did the quaggoths survive.</p><p>As they passed the ages deep beneath the world, the quaggoths’ fur lost its color and their vision adapted to the darkness, even as the constant danger and weird magic of their new realm transformed them. They ate whatever food they could find—and when they could not find it, they preyed on each other. As cannibalism became part of their culture, their past was abandoned.</p><p><strong>Servants of the Drow.</strong> The ancient enmity between quaggoths and surface elves makes them easy converts to the dark elf cause. In recent years, the drow have taken an interest in recruiting and training quaggoths, encouraging their ferocity while strengthening their obedience. Wealthy drow houses have legions of quaggoths at their command. Even worse, the drow cultivate the quaggoths’ hatred of the elves by leading them on surface raids against known elven enclaves.</p><p><strong>Thonots.</strong> Some quaggoths absorb psionic energy that suffuses certain parts of the Underdark. When a tribe discovers that one of its own has inherited such powers, they press it into the role of tribal shaman, or thonot. A thonot keep a tribe’s lore and ensures its superiority against enemies. A thonot that fails the tribe is slain and devoured in a cannibalistic ritual, in the hope that its power passes to another more worthy quaggoth.</p><p><strong>Poison Immunity.</strong> Generations of hunting venomous subterranean creatures and perpetual exposure to the molds and fungi that grow in the depths have forced quaggoths to adapt immunities to poisons of all kinds.</p>",
             "alignment": "Chaotyczny Neutralny",
@@ -6315,12 +6313,12 @@
             }
         },
         "Shambling Mound": {
-            "name": "Shambling Mound",
+            "name": "Gnilec",
             "description": "<p>A shambling mound, sometimes called a shambler, trudges ponderously through bleak swamps, dismal marshes, and rain forests, consuming any organic matter in its path. This rotting heap of animated vegetation looms up half again as tall as a human, tapering into a faceless “head” at its top.</p><p><strong>All-Consuming Devourers.</strong> A shambling mound feeds on any organic material, tirelessly consuming plants as it moves and devouring animals that can’t escape it. Only the shambling mounds’ rarity and plodding speed prevent them from overwhelming entire ecosystems. Even so, their presence leeches natural environments of plant and animal life, and an unsettling quiet pervades the swamps and woods haunted by these ever-hungry horrors.</p><p><strong>Unseen Hunters.</strong> Composed of decaying leaves, vines, roots, and other natural swamp and forest compost, shamblers can blend into their environs. Because they move slowly, they rarely attempt to pursue and catch creatures. Rather, they remain in place, sustaining themselves by absorbing nutrients from their surroundings as they wait for prey to come to them. When a creature passes near or alights upon a shambling mound, the monster comes to life, seizing and absorbing the unwary prey.</p><p><strong>Spawned by Lightning.</strong> A shambling mound results from a phenomenon in which lightning or fey magic invigorates an otherwise ordinary swamp plant. As the plant is reborn into its second life, it chokes the life from plants and animals around it, mulching their corpses in a heap around its roots. Those roots eventually give up their reliance on the soil, directing the shambling mound to seek out new sources of food.</p><p><strong>The Weed that Walks.</strong> The instinct that drives a shambling mound is its central root-stem, buried somewhere inside its ponderous form. The rest of a shambler consists of the rotting heap that it simultaneously accumulates and feeds on, which protects the root-stem and animates to smash and smother the life from any creature.</p><p>The dense mass of a shambling mound’s body shrugs off the effects of cold and fire. Lightning reinvigorates the root-stem, strengthening the shambling mound and bolstering its consumptive drive.</p><p>Despite its monstrous form, the shambling mound is a living plant that requires air and nourishment. Although it doesn’t sleep the way an animal does, it can lie dormant for days on end before rising to hunt for food.</p><p><strong>A Resurgent Menace.</strong> If a shambling mound faces defeat before an overwhelming foe, the root-stem can feign death, collapsing the remains of its mound. If not subsequently killed, the root-stem beds down in the shambler’s remains to slowly regrow its full body, then once again sets out to consume all it can. In this way, shambling mound infestations long thought destroyed can recur time and again.</p>",
             "alignment": "Bez charakteru",
             "items": {
                 "Lightning Absorption": {
-                    "name": "Lightning Absorption",
+                    "name": "Wchłanianie elektryczności",
                     "description": "<p>Whenever the shambling mound is subjected to <strong><em>lightning damage</em></strong>, it takes no damage and regains a number of<strong> hit points</strong> equal to the <strong><em>lightning damage</em> dealt</strong>.</p>"
                 },
                 "Multiattack": {
@@ -6369,7 +6367,7 @@
             }
         },
         "Shrieker": {
-            "name": "Shrieker",
+            "name": "Wrzaskun",
             "description": "<p>A shrieker is a human-sized mushroom that emits a piercing screech to drive off creatures that disturb it. Other creatures use the fungi as an alarm to signal the approach of prey, and various intelligent races of the Underdark cultivate shriekers on the outskirts of their communities to discourage trespassers.</p>",
             "alignment": "Bez charakteru",
             "items": {
@@ -6399,7 +6397,7 @@
             }
         },
         "Slaad Tadpole": {
-            "name": "Slaad Tadpole",
+            "name": "Slaad kijanka",
             "description": "<p>In the Ever-Changing Chaos of Limbo, bits of forest and meadow, ruined castles, and isolated islands drift through a tumult of fire, water, earth, and wind. The foremost inhabitants of this inhospitable plane are the toad-like slaadi. Slaadi are undisciplined and have no formal hierarchy, although weaker slaadi obey stronger ones under threat of annihilation.</p><p><strong>The Spawning Stone.</strong> Long ago, Primus, overlord of the modrons, created a gigantic, geometrically complex stone imbued with the power of law. He then cast it adrift in Limbo, believing that the stone would bring order to the chaos of that plane and halt the spread of chaos to other planes. As the stone’s power grew, it became possible for creatures with ordered minds, such as modrons and githzerai, to create enclaves in Limbo. However, Primus’s creation had an unforeseen side effect: the chaotic energy absorbed by the stone spawned the horrors that came to be known as slaadi. Sages refer to Primus’s massive creation as the Spawning Stone for this reason.</p><p>The slaadi wiped out every last modron enclave in Limbo. As creatures of utter chaos, slaadi loathe modrons and attack them on sight. Nonetheless, Primus stands by his creation and either doesn’t perceive the slaadi as threats or chooses to ignore them.</p><p><strong>Birth and Transformation.</strong> Slaadi have horrific cycles of reproduction. Slaadi reproduce either by implanting humanoid hosts with eggs or by infecting them with a transformative disease called chaos phage. Each color of slaad reproduces or transforms in a different way, with red slaadi spawning blue and green slaadi, and blue slaadi spawning red and green. Each green slaad undergoes a lifelong cycle of transformation into the more powerful gray and death slaadi. With each transformation, the slaad retains its memories.</p><p><strong>Shapechangers.</strong> Some slaadi can transform into the humanoid creatures from which they were originally spawned. These slaadi return to the Material Plane to sow discord in the guise of their former selves.</p>",
             "alignment": "Chaotyczny Neutralny",
             "items": {
@@ -6464,7 +6462,7 @@
             }
         },
         "Spirit Naga": {
-            "name": "Spirit Naga",
+            "name": "Duchowa naga",
             "description": "<p>Spirit nagas live in gloom and spitefulness, constantly plotting vengeance against creatures that have wronged them — or that they believe have wronged them. Lairing in dismal caverns and ruins, they devote their time to developing new spells and enslaving the mortals with which they surround themselves. A spirit naga likes to charm its foes, drawing them close so that it can sink its poisonous fangs into their flesh.</p><hr /><h2>Nagas</h2><p>Nagas are intelligent serpents that inhabit the ruins of the past, amassing arcane treasures and knowledge.</p><p>The first nagas were created as immortal guardians by a humanoid race long lost to history. When this race died out, the nagas deemed themselves the rightful inheritors of their masters’ treasures and magical lore. Industrious and driven, nagas occasionally venture out from their lairs to track down magic items or rare spellbooks.</p><p>Nagas never feel the ravages of time or succumb to sickness. Even if it is struck down, a naga’s immortal spirit reforms in a new body in a matter of days, ready to continue its eternal work.</p><p><strong>Benevolent Dictators and Brutal Tyrants.</strong> A naga rules its domain with absolute authority. Whether it rules with compassion or by terrorizing its subjects, the naga believes itself the master of all other creatures that inhabit its domain.</p><p><strong>Rivalry.</strong> Nagas have a long-standing enmity with the yuan-ti, with each race seeing itself as the epitome of serpentine evolution. Though cooperation between them is rare, nagas and yuan-ti sometimes set aside their differences to work toward common objectives. However, yuan-ti always chafe under a naga’s authority.</p><p><strong>Immortal Nature.</strong> A naga doesn’t require air, food, drink, or sleep.</p>",
             "alignment": "Chaotyczny Zły",
             "items": {
@@ -6598,7 +6596,7 @@
             }
         },
         "Umber Hulk": {
-            "name": "Umber Hulk",
+            "name": "Umbrowy kolos",
             "description": "<p>An abominable horror from deep beneath the earth, an umber hulk burrows into cave complexes, dungeons, or Underdark settlements in search of food. Those lucky enough to survive an umber hulk attack often remember precious little of the incident, thanks to the umber hulk’s mind-scrambling gaze.</p><p><strong>Devious Delvers.</strong> Umber hulks can burrow through solid rock, forming new tunnels in their wake. The steel-hard chitin of its body can withstand the cave-ins, tunnel collapses, and rock falls that commonly follow it.</p><p>Burrowing into the wall of a cavern or passageway, an umber hulk lies in wait for creatures to pass by on the other side, its hair-like feelers sensing any movement around it. When it explodes out in a shower of earth and rock, its unsuspecting quarry turns to face the oncoming threat — and is entranced by the umber hulk’s bewildering eyes, forced to stand helpless as its mandibles snap shut.</p><p><strong>Mind Scrambler.</strong> Many survivors of an umber hulk encounter recollect little about the attack, because the monster’s confusing gaze scrambles their memory of the event. Those who have fought and killed umber hulks recognize the signs. For other denizens of the Underdark, grisly tales of vanished explorers and wanton destruction speak of an unknown foe. Umber hulks take on supernatural status in these harrowing stories, many of which convey the same warning: once an umber hulk has been spotted, it is already too late to escape it.</p>",
             "alignment": "Chaotyczny Zły",
             "items": {
@@ -6625,7 +6623,7 @@
             }
         },
         "Violet Fungus": {
-            "name": "Violet Fungus",
+            "name": "Fioletowy grzyb",
             "description": "<p>This purplish mushroom uses root-like feelers growing from its base to creep across cavern floors. The four stalks protruding from a violet fungi’s central mass are used to lash out at prey, rotting flesh with the slightest touch. Any creature killed by a violet fungus decomposes rapidly. A new violet fungus sprouts from the moldering corpse, growing to full size in [[/gmroll 2d6]] days.</p>",
             "alignment": "Bez charakteru",
             "items": {
@@ -6779,7 +6777,7 @@
             }
         },
         "Water Weird": {
-            "name": "Water Weird",
+            "name": "Wodne dziwo",
             "description": "<p>A water weird is an elemental guardian bound to a specific water-filled location, such as a pool or fountain. Invisible while immersed in water, its serpentine shape becomes clear only when it emerges to attack, using its coils to crush any creature other than its summoner and those its summoner declares as off limits. When slain, a water weird becomes an inanimate pool of water.</p><p><strong>Good and Evil Weirds.</strong> Like most elementals, a water weird has no concept of good or evil. However, a water weird bound to a sacred or befouled source of water begins to take on the nature of that site, becoming neutral good or neutral evil.</p><p>A neutral good water weird tries to frighten away interlopers rather than kill them, while a neutral evil water weird kills its victims for pleasure and might turn against its summoner. A water weird loses its evil alignment if its waters are cleansed with a @UUID[Compendium.dnd5e.spells.Item.Kn7K5PtYUJAKZTTp]{purify food and drink} spell.</p><p><strong>Elemental Nature.</strong> A water weird doesn’t require air, food, drink, or sleep.</p>",
             "alignment": "Neutralny",
             "items": {
@@ -6792,7 +6790,7 @@
                     "description": "<p>The water weird dies if it leaves the water to which it is bound or if that water is destroyed.</p>"
                 },
                 "Constrict": {
-                    "name": "Constrict",
+                    "name": "Duszenie",
                     "description": "<section class=\"secret\" id=\"secret-3TuogRqiHnJaEJGH\"><p><em>Melee Weapon Attack:</em> +5 to hit, reach 10 ft., one creature. Hit: 13 (3d6 + 3) bludgeoning damage. If the target is Medium or smaller, it is &amp;Reference[grappled]{grappled} (escape DC 13) and pulled 5 feet toward the water weird. Until this grapple ends, the target is &amp;Reference[restrained]{restrained}, the water weird tries to drown it, and the water weird can’t constrict another target.</p></section><p>The weird constricts its target. If the target is Medium or smaller, it is &amp;Reference[grappled]{grappled} (escape [[/check ability=strength dc=13]]) and pulled 5 feet toward the water weird. Until this grapple ends, the target is &amp;Reference[restrained]{restrained}, the water weird tries to drown it, and the water weird can’t constrict another target.</p>"
                 }
             }
@@ -6863,7 +6861,7 @@
                 },
                 "Wraith - Life Drain": {
                     "name": "Wraith - Life Drain",
-                    "description": "<section class=\"secret\"><p><em>Melee Weapon Attack:</em><strong>+6 to hit,</strong>, <strong>5 ft.,</strong> one creature. Hit: <strong>21 (4d8 + 3) <em>necrotic damage</em></strong>. </p><p>The target must succeed on a  <strong>DC 14 Constitution</strong> saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</p></section><p>The Wraith attacks with its Life Drain. The target must make a <strong>Constitution</strong> saving throw.</p>"
+                    "description": "<section class=\"secret\" id=\"secret-LwsRjW2COjuRYoRY\"><p><em>Melee Weapon Attack: </em><strong>+6 to hit,</strong>, <strong>5 ft.,</strong> one creature. Hit: <strong>21 (4d8 + 3) </strong><em><strong>necrotic damage</strong></em>.</p><p>The target must succeed on a <strong>DC 14 Constitution</strong> saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</p></section><p>The Wraith attacks with its Life Drain. The target must make a <strong>Constitution</strong> saving throw.</p>"
                 },
                 "Sunlight Sensitivity": {
                     "name": "Wrażliwość na światło słoneczne",
@@ -7101,11 +7099,11 @@
             "items": {
                 "Slam": {
                     "name": "Walnięcie",
-                    "description": "<section class=\"secret\" id=\"secret-SDiFovnMAnWB1gfF\"><p><em>Melee Weapon Attack:</em><strong> +3 to hit,</strong> reach <strong>5 ft.,</strong> one target. Hit: <strong>4 (1d6 + 1) </strong><em><strong>bludgeoning damage</strong></em>.</p></section><p>The Zombie attacks with its Slam.</p>"
+                    "description": "<section class=\"secret\" id=\"secret-Pv6ewNlryB3DyuNS\"><p><em>Melee Weapon Attack:</em><strong>+3 to hit,</strong>, <strong>5 ft.,</strong> one target. Hit: <strong>4 (1d6 + 1) </strong><em><strong>bludgeoning damage</strong></em>.</p></section><p>The Zombie attacks with its Slam.</p>"
                 },
                 "Undead Fortitude": {
-                    "name": "Undead Fortitude",
-                    "description": "<section class=\"secret\" id=\"secret-8aTs9IXua0mGG7AT\"><p>If damage reduces the zombie to <strong>0 hit points</strong>, it must make a <strong>Constitution</strong> saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to <strong>1 hit point</strong> instead.</p></section><p>If damage reduces the zombie to <strong>0 hit points</strong>, it must make a <strong>Constitution</strong> saving throw.</p>"
+                    "name": "Trupia odporność",
+                    "description": "<section class=\"secret\"><p>If damage reduces the zombie to <strong>0 hit points</strong>, it must make a <strong>Constitution</strong> saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to <strong>1 hit point</strong> instead.</p></section><p>If damage reduces the zombie to <strong>0 hit points</strong>, it must make a <strong>Constitution</strong> saving throw.</p>"
                 }
             }
         }
