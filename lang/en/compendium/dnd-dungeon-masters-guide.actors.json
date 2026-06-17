@@ -302,6 +302,9 @@
                     "name": "Description/Effects",
                     "description": "<p><em>Deadly Hazard (Levels 5–10) or Nuisance Hazard (Levels 11–16)</em></p><p>Brown mold resembles a furry, light-brown carpet. This fungus feeds on warmth, drawing heat from anything around itself. One patch of brown mold covers a 10-foot square, and the temperature within 30 feet of it is always frigid.</p><p>When a creature enters a space within 5 feet of the mold for the first time on a turn or starts its turn there, the creature makes a DC 12 Constitution saving throw, taking 22 (4d10) Cold damage on a failed save or half as much damage on a successful one.</p><p>Brown mold has Immunity to Fire damage, and any source of fire brought within 5 feet of it causes the mold to instantly expand across a surface and toward the fire, creating a new patch that covers a 10-foot square. A patch of brown mold exposed to an effect that deals any amount of Cold damage is destroyed instantly.</p>",
                     "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        },
                         "10-Foot Square": {
                             "name": "10-Foot Square"
                         }
@@ -387,16 +390,20 @@
                     "chat": "<p>A trap is triggered.</p>",
                     "activities": {
                         "Trigger (1-4)": {
-                            "name": "Trigger (1-4)"
+                            "name": "Trigger (1-4)",
+                            "damageOnSave": "half"
                         },
                         "Trigger (5-10)": {
-                            "name": "Trigger (5-10)"
+                            "name": "Trigger (5-10)",
+                            "damageOnSave": "half"
                         },
                         "Trigger (11-16)": {
-                            "name": "Trigger (11-16)"
+                            "name": "Trigger (11-16)",
+                            "damageOnSave": "half"
                         },
                         "Trigger (17-20)": {
-                            "name": "Trigger (17-20)"
+                            "name": "Trigger (17-20)",
+                            "damageOnSave": "half"
                         }
                     }
                 }
@@ -517,7 +524,8 @@
                     "activities": {
                         "save": {
                             "target": "has the Prone condition",
-                            "targetAffects": "has the Prone condition"
+                            "targetAffects": "has the Prone condition",
+                            "damageOnSave": "half"
                         }
                     }
                 }
@@ -535,16 +543,20 @@
                     "chat": "<p>A trap is triggered.</p>",
                     "activities": {
                         "Trigger (1-4)": {
-                            "name": "Trigger (1-4)"
+                            "name": "Trigger (1-4)",
+                            "damageOnSave": "half"
                         },
                         "Trigger (5-10)": {
-                            "name": "Trigger (5-10)"
+                            "name": "Trigger (5-10)",
+                            "damageOnSave": "half"
                         },
                         "Trigger (11-16)": {
-                            "name": "Trigger (11-16)"
+                            "name": "Trigger (11-16)",
+                            "damageOnSave": "half"
                         },
                         "Trigger (17-20)": {
-                            "name": "Trigger (17-20)"
+                            "name": "Trigger (17-20)",
+                            "damageOnSave": "half"
                         },
                         "Escape Check (1-4)": {
                             "name": "Escape Check (1-4)"
@@ -579,16 +591,20 @@
                     "chat": "<p>A trap is triggered.</p>",
                     "activities": {
                         "Trigger (1-4)": {
-                            "name": "Trigger (1-4)"
+                            "name": "Trigger (1-4)",
+                            "damageOnSave": "half"
                         },
                         "Trigger (5-10)": {
-                            "name": "Trigger (5-10)"
+                            "name": "Trigger (5-10)",
+                            "damageOnSave": "half"
                         },
                         "Trigger (11-16)": {
-                            "name": "Trigger (11-16)"
+                            "name": "Trigger (11-16)",
+                            "damageOnSave": "half"
                         },
                         "Trigger (17-20)": {
-                            "name": "Trigger (17-20)"
+                            "name": "Trigger (17-20)",
+                            "damageOnSave": "half"
                         }
                     }
                 }
@@ -599,7 +615,12 @@
             "items": {
                 "Description/Effects": {
                     "name": "Description/Effects",
-                    "description": "<p><em>Deadly Hazard (Levels 5–10)</em></p><p>A fireball fungus is a Small, inanimate mushroom that can grow anywhere fungi are found in abundance. Its luminous, orange cap sheds Bright Light in a 15-foot radius and Dim Light for an additional 15 feet.</p><p>A fireball fungus has AC 10, HP 6, and to Immunity Psychic damage. When it drops to 0 Hit Points, the fungus explodes as if a @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireball00]{Fireball} spell (save DC 15) had been centered on it.</p><p><em><strong>At Higher Levels.</strong></em> The explosion of a fireball fungus causes other fireball fungi in the area of effect to explode as well. You can scale the hazard for higher levels by adding one additional fungus at levels 11–16 or three additional fungi at levels 17–20.</p>"
+                    "description": "<p><em>Deadly Hazard (Levels 5–10)</em></p><p>A fireball fungus is a Small, inanimate mushroom that can grow anywhere fungi are found in abundance. Its luminous, orange cap sheds Bright Light in a 15-foot radius and Dim Light for an additional 15 feet.</p><p>A fireball fungus has AC 10, HP 6, and to Immunity Psychic damage. When it drops to 0 Hit Points, the fungus explodes as if a @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireball00]{Fireball} spell (save DC 15) had been centered on it.</p><p><em><strong>At Higher Levels.</strong></em> The explosion of a fireball fungus causes other fireball fungi in the area of effect to explode as well. You can scale the hazard for higher levels by adding one additional fungus at levels 11–16 or three additional fungi at levels 17–20.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    }
                 }
             }
         },
@@ -676,7 +697,12 @@
                 },
                 "Web": {
                     "name": "Web",
-                    "description": "<p><em>Dexterity Saving Throw:</em> DC 13, one creature the spider can see within 60 feet. <em>Failure:</em> The target has the &amp;Reference[restrained] condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Poison and Psychic damage).</p>"
+                    "description": "<p><em>Dexterity Saving Throw:</em> DC 13, one creature the spider can see within 60 feet. <em>Failure:</em> The target has the &amp;Reference[restrained] condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Poison and Psychic damage).</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    }
                 }
             }
         },
@@ -733,7 +759,8 @@
                     "activities": {
                         "save": {
                             "condition": "Hostile creature starts its turn within 30 feet",
-                            "activationCondition": "Hostile creature starts its turn within 30 feet"
+                            "activationCondition": "Hostile creature starts its turn within 30 feet",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -763,7 +790,8 @@
                     "description": "<p><em>Nuisance Hazard (Levels 1–4)</em></p><p>Acidic green slime devours flesh, organic material, and metal on contact. Bright green, wet, and sticky, it clings to walls, floors, and ceilings in patches.</p><p>One patch of green slime covers a 5-foot square. Green slime has Blindsight with a range of 30 feet, and it drops from walls and ceilings when it detects movement below itself. Beyond that, it can’t move. A creature aware of the slime’s presence can avoid being struck by it with a successful DC 10 Dexterity saving throw.</p><p>A creature that comes in contact with green slime takes 5 (1d10) Acid damage. The creature takes the damage again at the start of each of its turns until the slime is scraped off (requiring an action) or destroyed. Against wood or metal, green slime deals 11 (2d10) Acid damage each round, and any nonmagical wood or metal item used to scrape off the green slime is destroyed.</p><p>Direct sunlight or any amount of Cold, Fire, or Radiant damage destroys a patch of green slime.</p>",
                     "activities": {
                         "Avoid": {
-                            "name": "Avoid"
+                            "name": "Avoid",
+                            "damageOnSave": "half"
                         },
                         "Contact Damage": {
                             "name": "Contact Damage"
@@ -910,6 +938,11 @@
                 "Roar": {
                     "name": "Roar",
                     "description": "<p><em>Wisdom Saving Throw:</em> DC 11, one creature within 15 feet. <em>Failure:</em> The target has the &amp;Reference[frightened apply=false] condition until the start of the lion’s next turn.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Frightened": {
                             "name": "Frightened",
@@ -987,16 +1020,20 @@
                     "chat": "<p>A trap is triggered.</p>",
                     "activities": {
                         "Trigger (1-4)": {
-                            "name": "Trigger (1-4)"
+                            "name": "Trigger (1-4)",
+                            "damageOnSave": "half"
                         },
                         "Trigger (5-10)": {
-                            "name": "Trigger (5-10)"
+                            "name": "Trigger (5-10)",
+                            "damageOnSave": "half"
                         },
                         "Trigger (11-16)": {
-                            "name": "Trigger (11-16)"
+                            "name": "Trigger (11-16)",
+                            "damageOnSave": "half"
                         },
                         "Trigger (17-20)": {
-                            "name": "Trigger (17-20)"
+                            "name": "Trigger (17-20)",
+                            "damageOnSave": "half"
                         }
                     }
                 }
@@ -1011,16 +1048,20 @@
                     "chat": "<p>A trap is triggered.</p>",
                     "activities": {
                         "Trigger (1-4)": {
-                            "name": "Trigger (1-4)"
+                            "name": "Trigger (1-4)",
+                            "damageOnSave": "half"
                         },
                         "Trigger (5-10)": {
-                            "name": "Trigger (5-10)"
+                            "name": "Trigger (5-10)",
+                            "damageOnSave": "half"
                         },
                         "Trigger (11-16)": {
-                            "name": "Trigger (11-16)"
+                            "name": "Trigger (11-16)",
+                            "damageOnSave": "half"
                         },
                         "Trigger (17-20)": {
-                            "name": "Trigger (17-20)"
+                            "name": "Trigger (17-20)",
+                            "damageOnSave": "half"
                         }
                     },
                     "effects": {
@@ -1042,16 +1083,20 @@
                             "name": "Place Gas"
                         },
                         "Level 1-4 Save": {
-                            "name": "Level 1-4 Save"
+                            "name": "Level 1-4 Save",
+                            "damageOnSave": "half"
                         },
                         "Level 5-10 Save": {
-                            "name": "Level 5-10 Save"
+                            "name": "Level 5-10 Save",
+                            "damageOnSave": "half"
                         },
                         "Level 11-16 Save": {
-                            "name": "Level 11-16 Save"
+                            "name": "Level 11-16 Save",
+                            "damageOnSave": "half"
                         },
                         "Level 17-20 Save": {
-                            "name": "Level 17-20 Save"
+                            "name": "Level 17-20 Save",
+                            "damageOnSave": "half"
                         }
                     }
                 }
@@ -1114,6 +1159,9 @@
                     "activities": {
                         "Place Razorvine": {
                             "name": "Place Razorvine"
+                        },
+                        "save": {
+                            "damageOnSave": "half"
                         }
                     }
                 }
@@ -1135,6 +1183,11 @@
                 "Description/Effects": {
                     "name": "Description/Effects",
                     "description": "<p><em>Nuisance Hazard (Levels 11–16)</em></p><section class=\"secret\" id=\"secret-Q5ErQoKW5KLRi6hd\"><p>The River Styx courses through the Lower Planes. Tasting or touching its waters can shatter a creature’s intellect and personality, as well as strip away its memories. Certain Fiends are immune to the river’s effects.</p><p>Unless immune to the river’s effects, a creature that drinks from the Styx, enters the river, or starts its turn in the river makes a DC 20 Intelligence saving throw. On a failed save, the creature takes 19 (3d12) Psychic damage and can’t cast spells or take the Magic action for 30 days. An affected creature can drink from the Styx and swim in its waters without suffering any additional effects.</p><p>The effect can be ended only by the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]{Greater Restoration}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHeal000000]{Heal}, or @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWish000000]{Wish} spell. If the effect isn’t ended after 30 days, the effect becomes permanent, and the creature loses all its memories. At that point, nothing short of a <em>Wish</em> spell or divine intervention can undo the effect.</p><p>Water taken from the River Styx loses its potency after 24 hours, becoming a harmless, foul-tasting liquid. Arcanaloths, night hags, and other fell creatures might know rituals that can prolong the water's potency, at your discretion.</p></section>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "River Styx Effects": {
                             "name": "River Styx Effects",
@@ -1152,19 +1205,23 @@
                     "description": "<p><em>Deadly Hazard (Levels 1–4)</em></p><p>When a rockslide occurs, every creature in its path makes a DC 15 Dexterity saving throw. On a failed save, a creature takes 11 (2d10) Bludgeoning damage, has the &amp;Reference[Prone apply=false] condition, and moves with the rockslide. On a successful save, a creature takes half as much damage only.</p><p>When the rockslide stops, its space becomes &amp;Reference[Difficult Terrain], and all Prone creatures in its space are buried under rocks and debris. A creature buried in this way has the &amp;Reference[Restrained] condition and has &amp;Reference[Total Cover]. As an action, a creature can try to crawl out from under the rock pile. If the creature succeeds on a DC 15 Strength (Athletics) check, it is no longer Restrained; instead, it has the Prone condition and is atop the rock pile. If the check fails, the creature remains buried and gains 1 &amp;Reference[Exhaustion] level.</p><p>A creature that has neither the &amp;Reference[Incapacitated apply=false] nor the Restrained condition can spend 1 minute freeing another creature buried by the rockslide.</p><p><em><strong>At Higher Levels.</strong></em> You can scale this hazard for higher levels by increasing the Bludgeoning damage as follows: 22 (4d10) at levels 5–10, 55 (10d10) at levels 11–16, and 99 (18d10) at levels 17–20.</p>",
                     "activities": {
                         "Rockslide Level 1-4": {
-                            "name": "Rockslide Level 1-4"
+                            "name": "Rockslide Level 1-4",
+                            "damageOnSave": "half"
                         },
                         "Escape Check": {
                             "name": "Escape Check"
                         },
                         "Rockslide Level 5-10": {
-                            "name": "Rockslide Level 5-10"
+                            "name": "Rockslide Level 5-10",
+                            "damageOnSave": "half"
                         },
                         "Rockslide Level 11-16": {
-                            "name": "Rockslide Level 11-16"
+                            "name": "Rockslide Level 11-16",
+                            "damageOnSave": "half"
                         },
                         "Rockslide Level 17-20": {
-                            "name": "Rockslide Level 17-20"
+                            "name": "Rockslide Level 17-20",
+                            "damageOnSave": "half"
                         }
                     },
                     "effects": {
@@ -1188,6 +1245,9 @@
                     "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Deadly Trap (Levels 11–16) or Nuisance Trap (Levels 17–20)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Trigger:</strong> A creature moves onto a pressure plate</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Duration:</strong> Until the stone stops rolling</p><p>When a creature moves onto a hidden pressure plate, a 5-foot-radius orb of solid stone is released from a secret compartment and begins to roll. The stone and all creatures nearby roll Initiative; the stone gets a [[/r 1d20 + 8]]{+8} bonus on its Initiative roll.</p><p>On its turn, the stone moves 60 feet in one direction, changing course if redirected by an obstacle. The stone can move through creatures’ spaces, and creatures can move through the stone’s space, treating it as &amp;Reference[Difficult Terrain]. Whenever the stone enters a creature’s space for the first time on a turn or a creature enters the stone’s space while the stone is rolling, that creature must succeed on a DC 15 Dexterity saving throw or take 55 (10d10) Bludgeoning damage and have the &amp;Reference[Prone apply=false] condition.</p><p>The stone stops when it hits a wall or similar barrier. It can’t go around corners, but creative dungeon builders incorporate curving turns into nearby passages that allow the stone to keep moving.</p><p><em><strong>Detect and Disarm.</strong></em> As a Study action, a creature can examine the section of floor that forms the pressure plate and make a [[/check inv 15]] check, deducing the pressure plate’s function on a successful check. Wedging an Iron Spike or a similar object under the pressure plate prevents the trap from triggering.</p><p><em><strong>Destroy the Stone.</strong></em> The stone is a Large object that has AC 17, HP 100, a Damage Threshold of 10, and Immunity to Poison and Psychic damage.</p><p><em><strong>Slow the Stone.</strong></em> As an action, a creature can try to slow down the stone with a DC 20 Strength (Athletics) check. If the check is successful, the distance the stone moves on its turn is reduced by 15 feet. If that distance drops to 0, it stops moving and is no longer a threat.</p></div>",
                     "chat": "<p>A trap is triggered.</p>",
                     "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        },
                         "Slow": {
                             "name": "Slow"
                         }
@@ -1275,16 +1335,20 @@
                     "description": "<p><em>Nuisance Hazard (Levels 1–4)</em></p><p>Vicious vines are animated by magic. They often cling to doorways, archways, walls, and statuary. Until a vicious vine moves, there’s nothing to distinguish it from an inanimate vine.</p><p>Each vicious vine has AC 11; HP 16; and to Immunity Bludgeoning, Piercing, and Psychic damage. When a creature enters a space within 5 feet of the vine for the first time on a turn or starts its turn there, the vine tries to coil around that creature. The target must succeed on a DC 12 Dexterity saving throw or have the Grappled condition (escape DC 12). While Grappled in this way, the target takes 5 (1d10) Necrotic damage from the vine’s life-draining thorns at the start of each of the target’s turns. The vine can grapple only one creature at a time.</p><p>As an Influence action, a character under the effect of a <em>Speak with Plants</em> spell or similar magic can try to persuade the vine to release its victim, doing so with a successful DC 10 Charisma (Persuasion) check. A creature released by the vine in this way won’t be attacked by that vine again for the next 24 hours.</p><p><em><strong>At Higher Levels.</strong></em> You can scale the hazard for higher levels by increasing the Necrotic damage, the save DC, and the escape DC, as shown in the following table.</p><table><thead><tr><th><p>Levels</p></th><th><p>Necrotic Damage</p></th><th><p>Save/Escape DC</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>11 (2d10)</p></td><td><p>14</p></td></tr><tr><td><p>11–16</p></td><td><p>22 (4d10)</p></td><td><p>16</p></td></tr><tr><td><p>17–20</p></td><td><p>55 (10d10)</p></td><td><p>18</p></td></tr></tbody></table>",
                     "activities": {
                         "Save Level 1-4": {
-                            "name": "Save Level 1-4"
+                            "name": "Save Level 1-4",
+                            "damageOnSave": "none"
                         },
                         "Save Level 5-10": {
-                            "name": "Save Level 5-10"
+                            "name": "Save Level 5-10",
+                            "damageOnSave": "none"
                         },
                         "Save Level 11-16": {
-                            "name": "Save Level 11-16"
+                            "name": "Save Level 11-16",
+                            "damageOnSave": "none"
                         },
                         "Save Level 17-20": {
-                            "name": "Save Level 17-20"
+                            "name": "Save Level 17-20",
+                            "damageOnSave": "none"
                         },
                         "Persuade Plant Check": {
                             "name": "Persuade Plant Check"
@@ -1315,6 +1379,9 @@
                     "name": "Description/Effects",
                     "description": "<p><em>Nuisance Hazard (Levels 1–4)</em></p><p>Giant spiders weave thick, sticky webs across passages and at the bottom of pits to snare prey. These web-filled areas are &amp;Reference[Difficult Terrain].</p><p>A creature that enters a web-filled area for the first time on a turn or starts its turn there must succeed on a DC 12 Dexterity saving throw or have the &amp;Reference[Restrained apply=false] condition. As an action, a creature Restrained by the webs can try to escape from them, doing so with a successful DC 12 Strength (Athletics) or Dexterity (Acrobatics) check.</p><p>Each 10-foot Cube of webs has AC 10; HP 15; Vulnerability to Fire damage; and Immunity to Piercing, Poison, and Psychic damage.</p>",
                     "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        },
                         "Escape Check": {
                             "name": "Escape Check"
                         }
@@ -1353,7 +1420,8 @@
                             "name": "Place Mold"
                         },
                         "Touch Mold": {
-                            "name": "Touch Mold"
+                            "name": "Touch Mold",
+                            "damageOnSave": "half"
                         },
                         "Start of Turn Damage": {
                             "name": "Start of Turn Damage"
@@ -1374,7 +1442,12 @@
                 "Undead Fortitude": {
                     "name": "Undead Fortitude",
                     "description": "<p> If damage reduces the zombie to 0 Hit Points, it must make a Constitution saving throw with a DC of 5 plus the damage taken unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead.</p>",
-                    "requirements": "Reduced to 0 Hit Points"
+                    "requirements": "Reduced to 0 Hit Points",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    }
                 },
                 "Slam": {
                     "name": "Slam",

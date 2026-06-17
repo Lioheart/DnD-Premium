@@ -20,10 +20,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
-                "chatFlavor": "description.chatFlavor",
                 "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
                 "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
                 "range": {
                     "path": "range",
                     "converter": "imperialToMetric"
@@ -109,13 +110,19 @@
                 "Throw Acid": {
                     "name": "Throw Acid",
                     "target": "You can see",
-                    "targetAffects": "You can see"
+                    "targetAffects": "You can see",
+                    "damageOnSave": "none"
                 }
             }
         },
         "Alchemist's Fire": {
             "name": "Alchemist's Fire",
             "description": "<p>When you take the Attack action, you can replace one of your attacks with throwing a flask of Alchemist’s Fire. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take [[/damage 1d4 type=fire]] damage and start &amp;Reference[burning].</p>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "half"
+                }
+            },
             "effects": {
                 "Burning.": {
                     "name": "Burning.",
@@ -173,7 +180,8 @@
             "description": "<p>As a Utilize action, you can spill Ball Bearings from their pouch. They spread to cover a level, 10-foot-square area within 10 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 10 Dexterity saving throw or have the &amp;Reference[Prone] condition. It takes 10 minutes to recover the Ball Bearings.</p><section id=\"secret-bbcC5syRGw0PCZnG\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Recover Ball Bearings</strong> activity grants another use of this item.</p></section>",
             "activities": {
                 "Spill Ball Bearings": {
-                    "name": "Spill Ball Bearings"
+                    "name": "Spill Ball Bearings",
+                    "damageOnSave": "half"
                 },
                 "Recover Ball Bearings": {
                     "name": "Recover Ball Bearings"
@@ -269,6 +277,11 @@
         "Caltrops": {
             "name": "Caltrops",
             "description": "<p>As a Utilize action, you can spread Caltrops from their bag to cover a 5-foot-square area within 5 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 15 Dexterity saving throw or take 1 Piercing damage and have its Speed reduced to 0 until the start of its next turn. It takes 10 minutes to recover the Caltrops.</p>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "none"
+                }
+            },
             "effects": {
                 "Slowed": {
                     "name": "Slowed"
@@ -604,7 +617,8 @@
             "description": "<p>When you take the Attack action, you can replace one of your attacks with throwing a flask of Holy Water. Target one creature you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d8 Radiant damage if it is a Fiend or an Undead.</p>",
             "activities": {
                 "Throw": {
-                    "name": "Throw"
+                    "name": "Throw",
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -630,7 +644,8 @@
             "activities": {
                 "save": {
                     "condition": "Steps on the plate",
-                    "activationCondition": "Steps on the plate"
+                    "activationCondition": "Steps on the plate",
+                    "damageOnSave": "none"
                 },
                 "Escape": {
                     "name": "Escape"
@@ -834,6 +849,11 @@
         "Net": {
             "name": "Net",
             "description": "<p>When you take the Attack action, you can replace one of your attacks with throwing a Net. Target a creature you can see within 15 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or have the &amp;Reference[Restrained] condition until it escapes. The target succeeds automatically if it is Huge or larger.</p><p>To escape, the target or a creature within 5 feet of it must take an action to make a [[/skill ath 10]] check, freeing the Restrained creature on a success. Destroying the Net (AC 10; 5 HP; Immunity to Bludgeoning, Poison, and Psychic damage) also frees the target, ending the effect.</p>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "none"
+                }
+            },
             "effects": {
                 "Caught in Net": {
                     "name": "Caught in Net"
@@ -845,7 +865,8 @@
             "description": "<p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p><p><strong>Dousing a Creature or an Object.</strong> When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra [[/damage 5 type=fire]] damage from burning oil.</p><p><strong>Dousing a Space.</strong> You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p><p><strong>Fuel.</strong> Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn’t need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>",
             "activities": {
                 "Throw": {
-                    "name": "Throw"
+                    "name": "Throw",
+                    "damageOnSave": "half"
                 },
                 "Douse Space": {
                     "name": "Douse Space"
@@ -1168,7 +1189,8 @@
             "activities": {
                 "Grapple/Shove": {
                     "name": "Grapple/Shove",
-                    "chatFlavor": "Grapple or Shove attempt"
+                    "chatFlavor": "Grapple or Shove attempt",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {

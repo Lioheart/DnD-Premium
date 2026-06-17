@@ -46,7 +46,8 @@
                     "activities": {
                         "save": {
                             "condition": "start of its turn",
-                            "activationCondition": "start of its turn"
+                            "activationCondition": "start of its turn",
+                            "damageOnSave": "none"
                         }
                     }
                 },
@@ -323,7 +324,8 @@
                     "description": "<p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p><p><strong>Dousing a Creature or an Object.</strong> When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra [[/damage 5 type=fire]] damage from burning oil.</p><p><strong>Dousing a Space.</strong> You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p><p><strong>Fuel.</strong> Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn’t need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Throw"
+                            "name": "Throw",
+                            "damageOnSave": "half"
                         },
                         "Douse Space": {
                             "name": "Douse Space"
@@ -499,7 +501,8 @@
                     "activities": {
                         "Grapple/Shove": {
                             "name": "Grapple/Shove",
-                            "chatFlavor": "Grapple or Shove attempt"
+                            "chatFlavor": "Grapple or Shove attempt",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -584,6 +587,11 @@
                 "Vicious Mockery": {
                     "name": "Vicious Mockery",
                     "description": "<p>You unleash a string of insults laced with subtle enchantments at one creature you can see or hear within range. The target must succeed on a Wisdom saving throw or take 1d6 Psychic damage and have Disadvantage on the next attack roll it makes before the end of its next turn.</p><p><strong>Cantrip Upgrade.</strong> The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    },
                     "effects": {
                         "Mocked": {
                             "name": "Mocked",
@@ -594,6 +602,11 @@
                 "Charm Person": {
                     "name": "Charm Person",
                     "description": "<p>One Humanoid you can see within range makes a Wisdom saving throw. It does so with Advantage if you or your allies are fighting it. On a failed save, the target has the &amp;Reference[charmed apply=false] condition until the spell ends or until you or your allies damage it. The Charmed creature is Friendly to you. When the spell ends, the target knows it was Charmed by you.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional creature for each spell slot level above 1.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Charmed": {
                             "name": "Charmed",
@@ -605,6 +618,11 @@
                     "name": "Color Spray",
                     "description": "<p>You launch a dazzling array of flashing, colorful light. Each creature in a 15-foot Cone originating from you must succeed on a Constitution saving throw or have the &amp;Reference[blinded apply=false] condition until the end of your next turn.</p>",
                     "materials": "a pinch of colorful sand",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Blinded": {
                             "name": "Blinded"
@@ -613,7 +631,12 @@
                 },
                 "Dissonant Whispers": {
                     "name": "Dissonant Whispers",
-                    "description": "<p>One creature of your choice that you can see within range hears a discordant melody in its mind. The target makes a Wisdom saving throw. On a failed save, it takes 3d6 Psychic damage and must immediately use its Reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target takes half as much damage only.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 1.</p>"
+                    "description": "<p>One creature of your choice that you can see within range hears a discordant melody in its mind. The target makes a Wisdom saving throw. On a failed save, it takes 3d6 Psychic damage and must immediately use its Reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target takes half as much damage only.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 1.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    }
                 },
                 "Healing Word": {
                     "name": "Healing Word",
@@ -644,7 +667,8 @@
                     "description": "<p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p><p><strong>Dousing a Creature or an Object.</strong> When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra [[/damage 5 type=fire]] damage from burning oil.</p><p><strong>Dousing a Space.</strong> You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p><p><strong>Fuel.</strong> Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn’t need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Throw"
+                            "name": "Throw",
+                            "damageOnSave": "half"
                         },
                         "Douse Space": {
                             "name": "Douse Space"
@@ -1101,7 +1125,8 @@
                     "description": "<p>The hand attempts to push a Huge or smaller creature within 5 feet of it. The target must succeed on a Strength saving throw, or the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target, remaining within 5 feet of it.</p>",
                     "activities": {
                         "save": {
-                            "chatFlavor": "[[5 + 5 * @flags.dnd5e.summon.mod]] foot push"
+                            "chatFlavor": "[[5 + 5 * @flags.dnd5e.summon.mod]] foot push",
+                            "damageOnSave": "half"
                         }
                     }
                 },
@@ -1110,7 +1135,8 @@
                     "description": "<p>The hand attempts to grapple a Huge or smaller creature within 5 feet of it. The target must succeed on a Dexterity saving throw, or the target has the &amp;Reference[Grappled] condition, with an escape DC equal to your spell save DC. While the hand grapples the target, you can take a Bonus Action to cause the hand to crush it, dealing Bludgeoning damage to the target equal to 4d6 plus your spellcasting ability modifier.</p><h3>Grapple Escape Tests</h3><p>[[/check ability=str skill=ath dc=8+@prof+@flags.dnd5e.summon.mod]]{Strength (Athletics)} [[/check ability=dex skill=acr dc=8+@prof+@flags.dnd5e.summon.mod]]{Dexterity (Acrobatics)}</p>",
                     "activities": {
                         "Grapple": {
-                            "name": "Grapple"
+                            "name": "Grapple",
+                            "damageOnSave": "none"
                         },
                         "Crush": {
                             "name": "Crush",
@@ -1524,7 +1550,8 @@
                     "description": "<p>Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 Radiant damage. The target gains no benefit from Half Cover or Three-Quarters Cover for this save.</p><p><strong>Cantrip Upgrade.</strong> The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>",
                     "activities": {
                         "Cast": {
-                            "name": "Cast"
+                            "name": "Cast",
+                            "damageOnSave": "none"
                         }
                     }
                 },
@@ -1590,7 +1617,8 @@
                     "description": "<p>When you take the Attack action, you can replace one of your attacks with throwing a flask of Holy Water. Target one creature you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d8 Radiant damage if it is a Fiend or an Undead.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Throw"
+                            "name": "Throw",
+                            "damageOnSave": "half"
                         }
                     }
                 },
@@ -1715,12 +1743,14 @@
                         "Initial Save": {
                             "name": "Initial Save",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
-                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "damageOnSave": "none"
                         },
                         "Save while Restrained": {
                             "name": "Save while Restrained",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
-                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -1742,7 +1772,8 @@
                     "activities": {
                         "save": {
                             "condition": "visible creature moves or ends its turn within 10 feet of the pack",
-                            "activationCondition": "visible creature moves or ends its turn within 10 feet of the pack"
+                            "activationCondition": "visible creature moves or ends its turn within 10 feet of the pack",
+                            "damageOnSave": "none"
                         }
                     }
                 }
@@ -1759,12 +1790,14 @@
                         "Initial Save": {
                             "name": "Initial Save",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
-                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "damageOnSave": "none"
                         },
                         "Save while Restrained": {
                             "name": "Save while Restrained",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
-                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -1812,12 +1845,14 @@
                         "Initial Save": {
                             "name": "Initial Save",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
-                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "damageOnSave": "none"
                         },
                         "Save while Restrained": {
                             "name": "Save while Restrained",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
-                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -1840,12 +1875,14 @@
                         "Initial Save": {
                             "name": "Initial Save",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
-                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "damageOnSave": "none"
                         },
                         "Save while Restrained": {
                             "name": "Save while Restrained",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
-                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -1871,7 +1908,8 @@
                     "activities": {
                         "save": {
                             "target": "Medium or smaller creature",
-                            "targetAffects": "Medium or smaller creature"
+                            "targetAffects": "Medium or smaller creature",
+                            "damageOnSave": "none"
                         }
                     }
                 }
@@ -1886,6 +1924,11 @@
                     "name": "Stony Lethargy",
                     "description": "<p> When a creature starts its turn within 10 feet of the spirit, the spirit can target it with magical energy if the spirit can see it. <em>Wisdom Saving Throw:</em> DC equals your spell save DC, the target. <em>Failure:</em> Until the start of its next turn, the target can’t make Opportunity Attacks, and its Speed is halved.</p>",
                     "requirements": "Stone Only",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Stony Lethargy": {
                             "name": "Stony Lethargy",
@@ -2020,7 +2063,8 @@
                         "Explode": {
                             "name": "Explode",
                             "condition": "when the spirit drops to 0 Hit Points or the spell ends",
-                            "activationCondition": "when the spirit drops to 0 Hit Points or the spell ends"
+                            "activationCondition": "when the spirit drops to 0 Hit Points or the spell ends",
+                            "damageOnSave": "half"
                         }
                     }
                 },
@@ -2163,7 +2207,12 @@
                 },
                 "Breath Weapon": {
                     "name": "Breath Weapon",
-                    "description": "<p><em>Dexterity Saving Throw: </em>DC equals your spell save DC, each creature in a 30-foot Cone. <em>Failure: </em>2d6 damage of a type this spirit has Resistance to (your choice when you cast the spell). <em>Success: </em>Half damage.</p>"
+                    "description": "<p><em>Dexterity Saving Throw: </em>DC equals your spell save DC, each creature in a 30-foot Cone. <em>Failure: </em>2d6 damage of a type this spirit has Resistance to (your choice when you cast the spell). <em>Success: </em>Half damage.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    }
                 }
             }
         },
@@ -2324,6 +2373,11 @@
                     "name": "Animal Friendship",
                     "description": "<p>Target a Beast that you can see within range. The target must succeed on a Wisdom saving throw or have the &amp;Reference[charmed apply=false] condition for the duration. If you or one of your allies deals damage to the target, the spells ends.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional Beast for each spell slot level above 1.</p>",
                     "materials": "a morsel of food",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Charmed": {
                             "name": "Charmed",
@@ -2338,6 +2392,11 @@
                 "Faerie Fire": {
                     "name": "Faerie Fire",
                     "description": "<p>Objects in a 20-foot Cube within range are outlined in blue, green, or violet light (your choice). Each creature in the Cube is also outlined if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed &amp;Reference[dimlight] in a 10-foot radius and can’t benefit from the Invisible condition.</p><p>Attack rolls against an affected creature or object have Advantage if the attacker can see it.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Outlined": {
                             "name": "Outlined",
@@ -2347,7 +2406,12 @@
                 },
                 "Thunderwave": {
                     "name": "Thunderwave",
-                    "description": "<p>You unleash a wave of thunderous energy. Each creature in a 15-foot Cube originating from you makes a Constitution saving throw. On a failed save, a creature takes 2d8 Thunder damage and is pushed 10 feet away from you. On a successful save, a creature takes half as much damage only.</p><p>In addition, unsecured objects that are entirely within the Cube are pushed 10 feet away from you, and a thunderous boom is audible within 300 feet.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d8 for each spell slot level above 1.</p>"
+                    "description": "<p>You unleash a wave of thunderous energy. Each creature in a 15-foot Cube originating from you makes a Constitution saving throw. On a failed save, a creature takes 2d8 Thunder damage and is pushed 10 feet away from you. On a successful save, a creature takes half as much damage only.</p><p>In addition, unsecured objects that are entirely within the Cube are pushed 10 feet away from you, and a thunderous boom is audible within 300 feet.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d8 for each spell slot level above 1.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    }
                 },
                 "Wooden staff": {
                     "name": "Wooden staff",
@@ -2366,7 +2430,8 @@
                     "description": "<p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p><p><strong>Dousing a Creature or an Object.</strong> When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra [[/damage 5 type=fire]] damage from burning oil.</p><p><strong>Dousing a Space.</strong> You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p><p><strong>Fuel.</strong> Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn’t need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Throw"
+                            "name": "Throw",
+                            "damageOnSave": "half"
                         },
                         "Douse Space": {
                             "name": "Douse Space"
@@ -2605,7 +2670,8 @@
                     "activities": {
                         "save": {
                             "target": "has the Prone condition",
-                            "targetAffects": "has the Prone condition"
+                            "targetAffects": "has the Prone condition",
+                            "damageOnSave": "half"
                         }
                     }
                 }
@@ -2636,7 +2702,8 @@
                     "activities": {
                         "save": {
                             "condition": "start of your turn",
-                            "activationCondition": "start of your turn"
+                            "activationCondition": "start of your turn",
+                            "damageOnSave": "none"
                         }
                     }
                 }
@@ -2679,6 +2746,11 @@
                     "name": "Mirthful",
                     "description": "<p><em>Wisdom Saving Throw:</em> DC equals your spell save DC, one creature the spirit can see within 10 feet of itself. <em>Failure:</em> The target is &amp;Reference[charmed apply=false] by you and the spirit for 1 minute or until the target takes any damage.</p>",
                     "requirements": "Activated by Fey Step",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Charmed": {
                             "name": "Charmed",
@@ -2737,6 +2809,11 @@
                 "Fell Glare": {
                     "name": "Fell Glare",
                     "description": "<p><em>Wisdom Saving Throw:</em> DC equals your spell save DC, one creature within 60 feet the steed can see. <em>Failure:</em> The target has the &amp;Reference[frightened] condition until the end of your next turn.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Frightened": {
                             "name": "Frightened"
@@ -2758,7 +2835,8 @@
                         "Explode": {
                             "name": "Explode",
                             "condition": "when the spirit drops to 0 Hit Points or the spell ends",
-                            "activationCondition": "when the spirit drops to 0 Hit Points or the spell ends"
+                            "activationCondition": "when the spirit drops to 0 Hit Points or the spell ends",
+                            "damageOnSave": "half"
                         }
                     }
                 },
@@ -2939,6 +3017,11 @@
                 "Caltrops": {
                     "name": "Caltrops",
                     "description": "<p>As a Utilize action, you can spread Caltrops from their bag to cover a 5-foot-square area within 5 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 15 Dexterity saving throw or take 1 Piercing damage and have its Speed reduced to 0 until the start of its next turn. It takes 10 minutes to recover the Caltrops.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Slowed": {
                             "name": "Slowed"
@@ -2954,7 +3037,8 @@
                     "description": "<p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p><p><strong>Dousing a Creature or an Object.</strong> When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra [[/damage 5 type=fire]] damage from burning oil.</p><p><strong>Dousing a Space.</strong> You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p><p><strong>Fuel.</strong> Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn’t need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Throw"
+                            "name": "Throw",
+                            "damageOnSave": "half"
                         },
                         "Douse Space": {
                             "name": "Douse Space"
@@ -3139,7 +3223,8 @@
                     "activities": {
                         "save": {
                             "condition": "Any creature ends its turn within range",
-                            "activationCondition": "Any creature ends its turn within range"
+                            "activationCondition": "Any creature ends its turn within range",
+                            "damageOnSave": "half"
                         }
                     }
                 },
@@ -3148,7 +3233,8 @@
                     "description": "<p>As a Bonus Action, you can move the sphere up to 30 feet, rolling it along the ground. If you move the sphere into a creature’s space, that creature makes the save against the sphere, and the sphere stops moving for the turn.</p><p>When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. Flammable objects that aren’t being worn or carried start burning if touched by the sphere.</p>",
                     "activities": {
                         "Move and Save": {
-                            "name": "Move and Save"
+                            "name": "Move and Save",
+                            "damageOnSave": "half"
                         }
                     }
                 }
@@ -3283,6 +3369,11 @@
                 "Venomous Spew": {
                     "name": "Venomous Spew",
                     "description": "<p><em>Constitution Saving Throw:</em> Your spell save DC, one creature the insect can see within 10 feet. <em>Failure:</em> The target has the &amp;Reference[Poisoned apply=false] condition until the start of the insect’s next turn.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Poisoned": {
                             "name": "Poisoned",
@@ -3358,6 +3449,11 @@
                     "name": "Venomous Spew",
                     "description": "<p><em>Constitution Saving Throw:</em> Your spell save DC, one creature the insect can see within 10 feet. <em>Failure:</em> The target has the &amp;Reference[Poisoned apply=false] condition until the start of the insect’s next turn.</p>",
                     "requirements": "Centipede Only",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Poisoned": {
                             "name": "Poisoned",
@@ -3408,7 +3504,12 @@
                 },
                 "Web": {
                     "name": "Web",
-                    "description": "<p><em>Dexterity Saving Throw:</em> DC 13, one creature the spider can see within 60 feet. <em>Failure:</em> The target has the &amp;Reference[restrained] condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Poison and Psychic damage).</p>"
+                    "description": "<p><em>Dexterity Saving Throw:</em> DC 13, one creature the spider can see within 60 feet. <em>Failure:</em> The target has the &amp;Reference[restrained] condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Poison and Psychic damage).</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    }
                 }
             }
         },
@@ -3480,6 +3581,9 @@
                     "name": "Guarded Area",
                     "description": "<p>Any enemy that moves to a space within 10 feet of the guardian for the first time on a turn or starts its turn there makes a Dexterity saving throw, taking 20 Radiant damage on a failed save or half as much damage on a successful one. The guardian vanishes when it has dealt a total of 60 damage.</p><section id=\"secret-fNtHgg2PRmVbaDl5\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature's Limited Uses is optionally provided for tracking the total damage dealt by the guardian.  Additionally, The <strong>Consume Damage Pool</strong> activity is configured with scaling uses consumption in increments of 5 damage for use after the final damage is determined and applied.</p></section>",
                     "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        },
                         "Consume Damage Pool": {
                             "name": "Consume Damage Pool"
                         }
@@ -3638,6 +3742,11 @@
                 "Roar": {
                     "name": "Roar",
                     "description": "<p><em>Wisdom Saving Throw:</em> DC 11, one creature within 15 feet. <em>Failure:</em> The target has the &amp;Reference[frightened apply=false] condition until the start of the lion’s next turn.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Frightened": {
                             "name": "Frightened",
@@ -3736,7 +3845,8 @@
                     "activities": {
                         "save": {
                             "condition": "start of its turn",
-                            "activationCondition": "start of its turn"
+                            "activationCondition": "start of its turn",
+                            "damageOnSave": "none"
                         }
                     }
                 },
@@ -3779,7 +3889,8 @@
                     "description": "<p>The spirit magically teleports up to 30 feet to an unoccupied space it can see. Then the following effect occurs, based on the spirit’s chosen mood:</p><p><strong>Mirthful. </strong><em>Wisdom Saving Throw:</em> DC equals your spell save DC, one creature the spirit can see within 10 feet of itself. <em>Failure:</em> The target is &amp;Reference[charmed apply=false] by you and the spirit for 1 minute or until the target takes any damage.</p>",
                     "activities": {
                         "Teleport and Charm": {
-                            "name": "Teleport and Charm"
+                            "name": "Teleport and Charm",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -3846,10 +3957,12 @@
                     "requirements": "Dragonborn",
                     "activities": {
                         "Breath Weapon (Cone)": {
-                            "name": "Breath Weapon (Cone)"
+                            "name": "Breath Weapon (Cone)",
+                            "damageOnSave": "half"
                         },
                         "Breath Weapon (Line)": {
-                            "name": "Breath Weapon (Line)"
+                            "name": "Breath Weapon (Line)",
+                            "damageOnSave": "half"
                         }
                     }
                 },
@@ -3867,10 +3980,12 @@
                     "materials": "a pinch of sand or rose petals",
                     "activities": {
                         "Free Cast (1/day)": {
-                            "name": "Free Cast (1/day)"
+                            "name": "Free Cast (1/day)",
+                            "damageOnSave": "half"
                         },
                         "Cast with Spell Slot": {
-                            "name": "Cast with Spell Slot"
+                            "name": "Cast with Spell Slot",
+                            "damageOnSave": "half"
                         }
                     },
                     "effects": {
@@ -3939,7 +4054,8 @@
                     "description": "<p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p><p><strong>Dousing a Creature or an Object.</strong> When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra [[/damage 5 type=fire]] damage from burning oil.</p><p><strong>Dousing a Space.</strong> You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p><p><strong>Fuel.</strong> Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn’t need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Throw"
+                            "name": "Throw",
+                            "damageOnSave": "half"
                         },
                         "Douse Space": {
                             "name": "Douse Space"
@@ -4099,7 +4215,8 @@
                     "activities": {
                         "Grapple/Shove": {
                             "name": "Grapple/Shove",
-                            "chatFlavor": "Grapple or Shove attempt"
+                            "chatFlavor": "Grapple or Shove attempt",
+                            "damageOnSave": "half"
                         }
                     },
                     "effects": {
@@ -4184,6 +4301,11 @@
                     "name": "Fell Glare",
                     "description": "<p><em>Wisdom Saving Throw:</em> DC equals your spell save DC, one creature within 60 feet the steed can see. <em>Failure:</em> The target has the &amp;Reference[frightened apply=false] condition until the end of your next turn.</p>",
                     "requirements": "Fiend Only",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Frightened": {
                             "name": "Frightened"
@@ -4334,6 +4456,11 @@
                     "description": "<p>As you hit the target, it takes an extra 1d6 Fire damage from the attack. At the start of each of its turns until the spell ends, the target takes 1d6 Fire damage and then makes a Constitution saving throw. On a failed save, the spell continues. On a successful save, the spell ends.</p><p><strong>Using a Higher-Level Spell Slot. </strong>All the damage increases by 1d6 for each spell slot level above 1.</p>",
                     "activation": "immediately after hitting a target with a Melee weapon or an Unarmed Strike",
                     "activationCondition": "immediately after hitting a target with a Melee weapon or an Unarmed Strike",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Seared": {
                             "name": "Seared",
@@ -4354,7 +4481,8 @@
                     "description": "<p>When you take the Attack action, you can replace one of your attacks with throwing a flask of Holy Water. Target one creature you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d8 Radiant damage if it is a Fiend or an Undead.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Throw"
+                            "name": "Throw",
+                            "damageOnSave": "half"
                         }
                     }
                 },
@@ -4545,6 +4673,11 @@
                 "Sting": {
                     "name": "Sting",
                     "description": "<p><em>Constitution Saving Throw:</em> DC 12, one creature the pseudodragon can see within 5 feet. <em>Failure:</em> 5 (2d4 + 2) Poison damage, and the target has the &amp;Reference[poisoned apply=false] condition for 1 hour. <em>Failure by 5 or More:</em> The Poisoned target also has the &amp;Reference[unconscious apply=false] condition until it takes damage or another creature takes an action to shake it awake.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Poisoned": {
                             "name": "Poisoned",
@@ -4572,7 +4705,8 @@
                             "condition": "any other creature that starts its turn within range",
                             "activationCondition": "any other creature that starts its turn within range",
                             "target": "other than you",
-                            "targetAffects": "other than you"
+                            "targetAffects": "other than you",
+                            "damageOnSave": "half"
                         }
                     },
                     "effects": {
@@ -4633,6 +4767,11 @@
                 "Scare": {
                     "name": "Scare",
                     "description": "<p><em>Wisdom Saving Throw:</em> DC 10, one creature within 20 feet. <em>Failure:</em> The target has the &amp;Reference[frightened apply=false] condition. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Frightened": {
                             "name": "Frightened",
@@ -4836,6 +4975,9 @@
                     "activation": "Immediately after hitting a creature with a weapon",
                     "activationCondition": "Immediately after hitting a creature with a weapon",
                     "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        },
                         "Start of Turn Damage": {
                             "name": "Start of Turn Damage"
                         }
@@ -4860,7 +5002,8 @@
                     "description": "<p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p><p><strong>Dousing a Creature or an Object.</strong> When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra [[/damage 5 type=fire]] damage from burning oil.</p><p><strong>Dousing a Space.</strong> You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p><p><strong>Fuel.</strong> Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn’t need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Throw"
+                            "name": "Throw",
+                            "damageOnSave": "half"
                         },
                         "Douse Space": {
                             "name": "Douse Space"
@@ -5217,7 +5360,8 @@
                     "description": "<p>As a Utilize action, you can spill Ball Bearings from their pouch. They spread to cover a level, 10-foot-square area within 10 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 10 Dexterity saving throw or have the &amp;Reference[Prone] condition. It takes 10 minutes to recover the Ball Bearings.</p><section id=\"secret-bbcC5syRGw0PCZnG\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Recover Ball Bearings</strong> activity grants another use of this item.</p></section>",
                     "activities": {
                         "Spill Ball Bearings": {
-                            "name": "Spill Ball Bearings"
+                            "name": "Spill Ball Bearings",
+                            "damageOnSave": "half"
                         },
                         "Recover Ball Bearings": {
                             "name": "Recover Ball Bearings"
@@ -5255,7 +5399,8 @@
                     "description": "<p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p><p><strong>Dousing a Creature or an Object.</strong> When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra [[/damage 5 type=fire]] damage from burning oil.</p><p><strong>Dousing a Space.</strong> You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p><p><strong>Fuel.</strong> Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn’t need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Throw"
+                            "name": "Throw",
+                            "damageOnSave": "half"
                         },
                         "Douse Space": {
                             "name": "Douse Space"
@@ -5672,7 +5817,12 @@
                 },
                 "Burning Hands": {
                     "name": "Burning Hands",
-                    "description": "<p>A thin sheet of flames shoots forth from you. Each creature in a 15-foot Cone makes a Dexterity saving throw, taking 3d6 Fire damage on a failed save or half as much damage on a successful one.</p><p>Flammable objects in the Cone that aren’t being worn or carried start burning.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 1.</p>"
+                    "description": "<p>A thin sheet of flames shoots forth from you. Each creature in a 15-foot Cone makes a Dexterity saving throw, taking 3d6 Fire damage on a failed save or half as much damage on a successful one.</p><p>Flammable objects in the Cone that aren’t being worn or carried start burning.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 1.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    }
                 },
                 "Wand": {
                     "name": "Wand",
@@ -5681,6 +5831,11 @@
                 "Caltrops": {
                     "name": "Caltrops",
                     "description": "<p>As a Utilize action, you can spread Caltrops from their bag to cover a 5-foot-square area within 5 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 15 Dexterity saving throw or take 1 Piercing damage and have its Speed reduced to 0 until the start of its next turn. It takes 10 minutes to recover the Caltrops.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Slowed": {
                             "name": "Slowed"
@@ -5696,7 +5851,8 @@
                     "description": "<p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p><p><strong>Dousing a Creature or an Object.</strong> When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra [[/damage 5 type=fire]] damage from burning oil.</p><p><strong>Dousing a Space.</strong> You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p><p><strong>Fuel.</strong> Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn’t need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Throw"
+                            "name": "Throw",
+                            "damageOnSave": "half"
                         },
                         "Douse Space": {
                             "name": "Douse Space"
@@ -5901,7 +6057,12 @@
                 },
                 "Heart Sight": {
                     "name": "Heart Sight",
-                    "description": "<p> <em>Charisma Saving Throw:</em> DC 10, one creature within 5 feet the sprite can see. Celestials, Fiends, and Undead automatically fail the save. <em>Failure:</em> The sprite knows the target’s emotions and alignment.</p>"
+                    "description": "<p> <em>Charisma Saving Throw:</em> DC 10, one creature within 5 feet the sprite can see. Celestials, Fiends, and Undead automatically fail the save. <em>Failure:</em> The sprite knows the target’s emotions and alignment.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    }
                 },
                 "Invisibility": {
                     "name": "Invisibility",
@@ -5939,6 +6100,11 @@
                     "name": "Stony Lethargy",
                     "description": "<p> When a creature starts its turn within 10 feet of the spirit, the spirit can target it with magical energy if the spirit can see it. <em>Wisdom Saving Throw:</em> DC equals your spell save DC, the target. <em>Failure:</em> Until the start of its next turn, the target can’t make Opportunity Attacks, and its Speed is halved.</p>",
                     "requirements": "A creature starts its turn within range",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Stony Lethargy": {
                             "name": "Stony Lethargy",
@@ -6045,7 +6211,8 @@
                     "activities": {
                         "save": {
                             "condition": "any other creature that starts its turn within range",
-                            "activationCondition": "any other creature that starts its turn within range"
+                            "activationCondition": "any other creature that starts its turn within range",
+                            "damageOnSave": "half"
                         }
                     },
                     "effects": {
@@ -6244,7 +6411,8 @@
                     "description": "<p>Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 Radiant damage. The target gains no benefit from Half Cover or Three-Quarters Cover for this save.</p><p><strong>Cantrip Upgrade.</strong> The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>",
                     "activities": {
                         "Cast": {
-                            "name": "Cast"
+                            "name": "Cast",
+                            "damageOnSave": "none"
                         }
                     }
                 },
@@ -6254,10 +6422,12 @@
                     "materials": "a drop of blood",
                     "activities": {
                         "Cast": {
-                            "name": "Cast"
+                            "name": "Cast",
+                            "damageOnSave": "half"
                         },
                         "Free Cast (1/day)": {
-                            "name": "Free Cast (1/day)"
+                            "name": "Free Cast (1/day)",
+                            "damageOnSave": "half"
                         }
                     },
                     "effects": {
@@ -6284,6 +6454,11 @@
                 "Charm Person": {
                     "name": "Charm Person",
                     "description": "<p>One Humanoid you can see within range makes a Wisdom saving throw. It does so with Advantage if you or your allies are fighting it. On a failed save, the target has the &amp;Reference[charmed apply=false] condition until the spell ends or until you or your allies damage it. The Charmed creature is Friendly to you. When the spell ends, the target knows it was Charmed by you.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional creature for each spell slot level above 1.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Charmed": {
                             "name": "Charmed",
@@ -6372,18 +6547,25 @@
                         "Healthy Target": {
                             "name": "Healthy Target",
                             "target": "undamaged creature",
-                            "targetAffects": "undamaged creature"
+                            "targetAffects": "undamaged creature",
+                            "damageOnSave": "none"
                         },
                         "Damaged Target": {
                             "name": "Damaged Target",
                             "target": "creature missing any of its Hit Points",
-                            "targetAffects": "creature missing any of its Hit Points"
+                            "targetAffects": "creature missing any of its Hit Points",
+                            "damageOnSave": "none"
                         }
                     }
                 },
                 "Mind Sliver": {
                     "name": "Mind Sliver",
                     "description": "<p>You try to temporarily sliver the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 Psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.</p><p><strong>Cantrip Upgrade.</strong> The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    },
                     "effects": {
                         "Slivered": {
                             "name": "Slivered",
@@ -6482,7 +6664,8 @@
                     "description": "<p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p><p><strong>Dousing a Creature or an Object.</strong> When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra [[/damage 5 type=fire]] damage from burning oil.</p><p><strong>Dousing a Space.</strong> You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p><p><strong>Fuel.</strong> Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn’t need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Throw"
+                            "name": "Throw",
+                            "damageOnSave": "half"
                         },
                         "Douse Space": {
                             "name": "Douse Space"
@@ -6676,7 +6859,8 @@
                     "description": "<p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p><p><strong>Dousing a Creature or an Object.</strong> When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra [[/damage 5 type=fire]] damage from burning oil.</p><p><strong>Dousing a Space.</strong> You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p><p><strong>Fuel.</strong> Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn’t need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Throw"
+                            "name": "Throw",
+                            "damageOnSave": "half"
                         },
                         "Douse Space": {
                             "name": "Douse Space"
@@ -6761,7 +6945,12 @@
                 },
                 "Acid Splash": {
                     "name": "Acid Splash",
-                    "description": "<p>You create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.</p><p><strong>Cantrip Upgrade.</strong> The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).</p>"
+                    "description": "<p>You create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.</p><p><strong>Cantrip Upgrade.</strong> The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    }
                 },
                 "Detect Magic": {
                     "name": "Detect Magic",
@@ -6813,6 +7002,11 @@
                     "name": "Sleep",
                     "description": "<p>Each creature of your choice in a 5-foot-radius Sphere centered on a point within range must succeed on a Wisdom saving throw or have the &amp;Reference[incapacitated apply=false] condition until the end of its next turn, at which point it must repeat the save. If the target fails the second save, the target has the &amp;Reference[unconscious] condition for the duration. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell’s effect.</p><p>Creatures that don’t sleep, such as elves, or that have Immunity to the Exhaustion condition automatically succeed on saves against this spell.</p>",
                     "materials": "a pinch of sand or rose petals",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    },
                     "effects": {
                         "Sleeping": {
                             "name": "Sleeping",
@@ -6822,7 +7016,12 @@
                 },
                 "Thunderwave": {
                     "name": "Thunderwave",
-                    "description": "<p>You unleash a wave of thunderous energy. Each creature in a 15-foot Cube originating from you makes a Constitution saving throw. On a failed save, a creature takes 2d8 Thunder damage and is pushed 10 feet away from you. On a successful save, a creature takes half as much damage only.</p><p>In addition, unsecured objects that are entirely within the Cube are pushed 10 feet away from you, and a thunderous boom is audible within 300 feet.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d8 for each spell slot level above 1.</p>"
+                    "description": "<p>You unleash a wave of thunderous energy. Each creature in a 15-foot Cube originating from you makes a Constitution saving throw. On a failed save, a creature takes 2d8 Thunder damage and is pushed 10 feet away from you. On a successful save, a creature takes half as much damage only.</p><p>In addition, unsecured objects that are entirely within the Cube are pushed 10 feet away from you, and a thunderous boom is audible within 300 feet.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d8 for each spell slot level above 1.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    }
                 },
                 "Staff": {
                     "name": "Staff",
@@ -6854,7 +7053,8 @@
                     "description": "<p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p><p><strong>Dousing a Creature or an Object.</strong> When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra [[/damage 5 type=fire]] damage from burning oil.</p><p><strong>Dousing a Space.</strong> You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p><p><strong>Fuel.</strong> Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn’t need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Throw"
+                            "name": "Throw",
+                            "damageOnSave": "half"
                         },
                         "Douse Space": {
                             "name": "Douse Space"
@@ -6983,7 +7183,12 @@
                 "Undead Fortitude": {
                     "name": "Undead Fortitude",
                     "description": "<p> If damage reduces the zombie to 0 Hit Points, it must make a Constitution saving throw with a DC of 5 plus the damage taken unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead.</p>",
-                    "requirements": "Reduced to 0 Hit Points"
+                    "requirements": "Reduced to 0 Hit Points",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "half"
+                        }
+                    }
                 },
                 "Slam": {
                     "name": "Slam",

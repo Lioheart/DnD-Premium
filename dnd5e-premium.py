@@ -1941,6 +1941,12 @@ def add_activities_to_item(entry: dict, item: dict) -> None:
             if isinstance(range_special, str) and range_special.strip():
                 activity_entry["range"] = range_special.strip()
 
+        damage = activity.get("damage")
+        if isinstance(damage, dict):
+            on_save = damage.get("onSave")
+            if isinstance(on_save, str) and on_save.strip():
+                activity_entry["damageOnSave"] = on_save.strip()
+
         roll = activity.get("roll")
         if isinstance(roll, dict):
             roll_name = roll.get("name") or roll.get("prompt")
@@ -2266,10 +2272,11 @@ def default_item_mapping() -> dict:
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
-                "chatFlavor": "description.chatFlavor",
                 "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
                 "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
                 "range": {
                     "path": "range",
                     "converter": "imperialToMetric"

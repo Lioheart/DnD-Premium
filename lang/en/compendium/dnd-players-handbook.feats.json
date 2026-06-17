@@ -20,10 +20,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
-                "chatFlavor": "description.chatFlavor",
                 "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
                 "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
                 "range": {
                     "path": "range",
                     "converter": "imperialToMetric"
@@ -191,7 +192,8 @@
                 "Energy Redirection": {
                     "name": "Energy Redirection",
                     "target": "Isn't behind Total Cover",
-                    "targetAffects": "Isn't behind Total Cover"
+                    "targetAffects": "Isn't behind Total Cover",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -674,11 +676,13 @@
                 },
                 "Poison Save (Dexterity)": {
                     "name": "Poison Save (Dexterity)",
-                    "chatFlavor": "&Reference[poisoned] on failure"
+                    "chatFlavor": "&Reference[poisoned] on failure",
+                    "damageOnSave": "none"
                 },
                 "Poison Save (Intelligence)": {
                     "name": "Poison Save (Intelligence)",
-                    "chatFlavor": "&Reference[poisoned] on failure"
+                    "chatFlavor": "&Reference[poisoned] on failure",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -784,7 +788,8 @@
                 "Shield Bash": {
                     "name": "Shield Bash",
                     "condition": "If you hit a creature with a Melee weapon within 5 feet of you as part of the Attack action",
-                    "activationCondition": "If you hit a creature with a Melee weapon within 5 feet of you as part of the Attack action"
+                    "activationCondition": "If you hit a creature with a Melee weapon within 5 feet of you as part of the Attack action",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -876,17 +881,20 @@
                 "Telekinetic Shove: Intelligence": {
                     "name": "Telekinetic Shove: Intelligence",
                     "target": "You can see",
-                    "targetAffects": "You can see"
+                    "targetAffects": "You can see",
+                    "damageOnSave": "half"
                 },
                 "Telekinetic Shove: Wisdom": {
                     "name": "Telekinetic Shove: Wisdom",
                     "target": "You can see",
-                    "targetAffects": "You can see"
+                    "targetAffects": "You can see",
+                    "damageOnSave": "half"
                 },
                 "Telekinetic Shove: Charisma": {
                     "name": "Telekinetic Shove: Charisma",
                     "target": "You can see",
-                    "targetAffects": "You can see"
+                    "targetAffects": "You can see",
+                    "damageOnSave": "half"
                 }
             }
         },

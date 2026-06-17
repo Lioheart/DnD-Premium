@@ -24,6 +24,7 @@
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
                 "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
                 "range": {
                     "path": "range",
                     "converter": "imperialToMetric"
@@ -145,10 +146,12 @@
             "requirements": "Dragonborn",
             "activities": {
                 "Breath Weapon (Cone)": {
-                    "name": "Breath Weapon (Cone)"
+                    "name": "Breath Weapon (Cone)",
+                    "damageOnSave": "half"
                 },
                 "Breath Weapon (Line)": {
-                    "name": "Breath Weapon (Line)"
+                    "name": "Breath Weapon (Line)",
+                    "damageOnSave": "half"
                 }
             }
         },

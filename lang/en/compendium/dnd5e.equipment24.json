@@ -24,6 +24,7 @@
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
                 "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
                 "range": {
                     "path": "range",
                     "converter": "imperialToMetric"
@@ -108,7 +109,8 @@
             "activities": {
                 "Throw Acid": {
                     "name": "Throw Acid",
-                    "target": "You can see"
+                    "target": "You can see",
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -157,7 +159,8 @@
             "activities": {
                 "Elemental Compulsion": {
                     "name": "Elemental Compulsion",
-                    "target": "Elemental"
+                    "target": "Elemental",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -172,6 +175,11 @@
         "Alchemist's Fire": {
             "name": "Alchemist's Fire",
             "description": "<p>When you take the Attack action, you can replace one of your attacks with throwing a flask of Alchemist's Fire. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take [[/damage 1d4 type=fire]] damage and start &amp;Reference[burning].</p>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "none"
+                }
+            },
             "effects": {
                 "Burning.": {
                     "name": "Burning.",
@@ -194,7 +202,8 @@
                 "Slaying Save": {
                     "name": "Slaying Save",
                     "condition": "when the specified creature type is damaged by this ammunition",
-                    "target": "specific creature type"
+                    "target": "specific creature type",
+                    "damageOnSave": "half"
                 },
                 "Ammunition of Slaying": {
                     "name": "Ammunition of Slaying"
@@ -593,7 +602,8 @@
             "description": "<p><em>Ingested Poison</em></p><p>A creature subjected to Assassin's Blood makes a DC 10 Constitution saving throw. On a failed save, the creature takes 6 (1d12) Poison damage and has the &amp;Reference[Poisoned apply=false] condition for 24 hours. On a successful save, the creature takes half as much damage only.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Use Poison"
+                    "name": "Use Poison",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -618,7 +628,8 @@
                 },
                 "Dump Beans": {
                     "name": "Dump Beans",
-                    "condition": "Object interaction"
+                    "condition": "Object interaction",
+                    "damageOnSave": "half"
                 },
                 "Plant Bean": {
                     "name": "Plant Bean",
@@ -662,7 +673,8 @@
             "description": "<p>As a Utilize action, you can spill Ball Bearings from their pouch. They spread to cover a level, 10-foot-square area within 10 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 10 Dexterity saving throw or have the &amp;Reference[Prone] condition. It takes 10 minutes to recover the Ball Bearings.</p><section id=\"secret-bbcC5syRGw0PCZnG\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Recover Ball Bearings</strong> activity grants another use of this item.</p></section>",
             "activities": {
                 "Spill Ball Bearings": {
-                    "name": "Spill Ball Bearings"
+                    "name": "Spill Ball Bearings",
+                    "damageOnSave": "half"
                 },
                 "Recover Ball Bearings": {
                     "name": "Recover Ball Bearings"
@@ -690,7 +702,8 @@
             "description": "<p><em>Wondrous Item, Rare</em></p><p>This small black sphere measures 3/4 of an inch in diameter and weighs an ounce. Typically, [[/r 1d4 + 4#Beads of Force]] <em>Beads of Force</em> are found together.</p><p>You can take a Magic action to throw the bead up to 60 feet. The bead explodes in a 10-foot-radius Sphere on impact and is destroyed. Each creature in the Sphere must succeed on a DC 15 Dexterity saving throw or take 5d4 Force damage. A sphere of transparent force then encloses the area for 1 minute. Any creature that failed the save and is completely within the area is trapped inside this sphere. Creatures that succeeded on the save or are partially within the area are pushed away from the center of the sphere until they are no longer inside it. Only breathable air can pass through the sphere's wall. No attack or other effect can pass through.</p><p>An enclosed creature can take a Utilize action to push against the sphere's wall, moving the sphere up to half the creature's Speed. The sphere can be picked up, and its magic causes it to weigh only 1 pound, regardless of the weight of creatures inside.</p>",
             "activities": {
                 "Throw Bead": {
-                    "name": "Throw Bead"
+                    "name": "Throw Bead",
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -1030,7 +1043,8 @@
             "description": "<p><em>Inhaled Poison</em></p><p>A creature subjected to Burnt Othur Fumes must succeed on a DC 13 Constitution saving throw or take 10 (3d6) Poison damage, and it must repeat the save at the start of each of its turns. On each successive failed save, the creature takes 3 (1d6) Poison damage. After three successful saves, the poison ends.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Use Poison"
+                    "name": "Use Poison",
+                    "damageOnSave": "none"
                 },
                 "Successive Failed Save Damage": {
                     "name": "Successive Failed Save Damage"
@@ -1044,6 +1058,11 @@
         "Caltrops": {
             "name": "Caltrops",
             "description": "<p>As a Utilize action, you can spread Caltrops from their bag to cover a 5-foot-square area within 5 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 15 Dexterity saving throw or take 1 Piercing damage and have its Speed reduced to 0 until the start of its next turn. It takes 10 minutes to recover the Caltrops.</p>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "none"
+                }
+            },
             "effects": {
                 "Slowed": {
                     "name": "Slowed"
@@ -1295,16 +1314,20 @@
             "description": "<div><p><em>Deadly Trap (Levels 1–4)</em></p><p><strong>Trigger:</strong> A creature crosses a trip wire</p><p><strong>Duration:</strong> Instantaneous</p><p>This trap uses a trip wire to collapse an unstable section of ceiling. The trip wire is 3 inches off the ground and stretches between two weak supports that topple when the trip wire is pulled.</p><p>The first creature that crosses the trip wire causes the supports to topple and the unstable section of ceiling to collapse. Each creature beneath the unstable section of ceiling must succeed on a DC 13 Dexterity saving throw, taking 11 (2d10) Bludgeoning damage on a failed save or half as much damage on a successful one. Rubble from the collapse turns the trapped area into &amp;Reference[Difficult Terrain].</p><p><em><strong>Detect and Disarm.</strong></em> As a Search action, a creature can examine the trapped area and make a [[/check prc 11]] check, detecting the trip wire and the unstable section of ceiling on a successful check. Once detected, the trip wire can be easily cut or avoided (no ability check required).</p><p><em><strong>At Higher Levels.</strong></em> You can scale the trap for higher levels by increasing the damage and the save DC, as shown in the following table.</p><table><thead><tr><th><p>Levels</p></th><th><p>Bludgeoning Damage</p></th><th><p>Save DC</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>22 (4d10)</p></td><td><p>15</p></td></tr><tr><td><p>11–16</p></td><td><p>55 (10d10)</p></td><td><p>17</p></td></tr><tr><td><p>17–20</p></td><td><p>99 (18d10)</p></td><td><p>19</p></td></tr></tbody></table></div>",
             "activities": {
                 "Trigger (1-4)": {
-                    "name": "Trigger (1-4)"
+                    "name": "Trigger (1-4)",
+                    "damageOnSave": "half"
                 },
                 "Trigger (5-10)": {
-                    "name": "Trigger (5-10)"
+                    "name": "Trigger (5-10)",
+                    "damageOnSave": "half"
                 },
                 "Trigger (11-16)": {
-                    "name": "Trigger (11-16)"
+                    "name": "Trigger (11-16)",
+                    "damageOnSave": "half"
                 },
                 "Trigger (17-20)": {
-                    "name": "Trigger (17-20)"
+                    "name": "Trigger (17-20)",
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -1357,7 +1380,8 @@
             "description": "<p><em>Contact Poison</em></p><p>A creature subjected to Carrion Crawler Mucus must succeed on a DC 13 Constitution saving throw or have the &amp;Reference[Poisoned apply=false] condition for 1 minute. The creature also has the &amp;Reference[Paralyzed apply=false] condition while Poisoned in this way. The creature repeats the save at the end of each of its turns, ending the effect on itself on a success.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Use Poison"
+                    "name": "Use Poison",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -1410,7 +1434,8 @@
                     "target": "The Dagger of Venom"
                 },
                 "Poison Save": {
-                    "name": "Poison Save"
+                    "name": "Poison Save",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -1466,7 +1491,8 @@
                 "Geyser": {
                     "name": "Geyser",
                     "chatFlavor": "30 gallons; save vs &Reference[prone]",
-                    "target": "One creature or object of your choice in the Line"
+                    "target": "One creature or object of your choice in the Line",
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -1602,7 +1628,8 @@
             "description": "<p><em>Wondrous Item, Artifact (Requires Attunement)</em></p><section class=\"secret\" id=\"secret-giR5yoa8kkJFGmuP\"><p>While attuned to an orb, you can take a Magic action to peer into the orb's depths. You must then make a DC 15 Charisma saving throw. On a successful save, you control the orb for as long as you remain attuned to it. On a failed save, the orb imposes the Charmed condition on you for as long as you remain attuned to it.</p><p>While you are Charmed by the orb, you can't voluntarily end your Attunement to it, and the orb casts @UUID[Compendium.dnd5e.spells24.Item.phbsplSuggestion]{Suggestion} on you at will (save DC 18), urging you to work toward the evil ends it desires. The dragon essence within the orb might want many things: the annihilation of a particular society or organization, freedom from the orb, to spread suffering in the world, to advance the worship of Tiamat, or something else the GM decides.</p><p><em><strong>Destroying an Orb.</strong></em> An <em>Dragon Orb</em> has AC 20 and is destroyed if it takes damage from a <em>+3 Weapon</em> or a @UUID[Compendium.dnd5e.spells24.Item.phbsplDisintegra]{Disintegrate} spell. Nothing else can harm it.</p></section><p>An orb is an etched crystal globe about 10 inches in diameter. When used, it grows to about 20 inches in diameter, and mist swirls inside it.</p><p><em><strong>Spells.</strong></em> The orb has 7 charges and regains 1d4 + 3 expended charges daily at dawn. If you control the orb, you can cast one of the spells on the following table from it. The table indicates how many charges you must expend to cast the spell.</p><table><thead><tr><th><p>Spell</p></th><th><p>Charge Cost</p></th><th></th></tr></thead><tbody><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplCureWounds]{Cure Wounds} (level 9 version)</p></td><td><p>4</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplDaylight00]{Daylight}</p></td><td><p>1</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplDeathWard0]{Death Ward}</p></td><td><p>2</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect Magic}</p></td><td><p>0</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Scrying} (save DC 18)</p></td><td><p>3</p></td><td></td></tr></tbody></table><p><em><strong>Call Dragons.</strong></em> While you control the orb, you can take a Magic action to cause the orb to issue a telepathic call that extends in all directions for 40 miles. Chromatic dragons in range feel compelled to come to the orb as soon as possible by the most direct route. Dragon deities such as Tiamat are unaffected by this call. Chromatic dragons drawn to the orb might be Hostile toward you for compelling them against their will. Once you have used this property, it can't be used again for 1 hour.</p>",
             "activities": {
                 "Attunement Save": {
-                    "name": "Attunement Save"
+                    "name": "Attunement Save",
+                    "damageOnSave": "half"
                 },
                 "Call Dragons": {
                     "name": "Call Dragons",
@@ -1770,13 +1797,19 @@
                 },
                 "Sprinkle on Elemental": {
                     "name": "Sprinkle on Elemental",
-                    "target": "Elemental composed mostly of water"
+                    "target": "Elemental composed mostly of water",
+                    "damageOnSave": "half"
                 }
             }
         },
         "Dust of Sneezing and Choking": {
             "name": "Dust of Sneezing and Choking",
             "description": "<p><em>Wondrous Item, Uncommon</em></p><p>Found in a small container, this powder resembles @UUID[Compendium.dnd5e.equipment24.Item.dmgDustOfDisappe]{Dust of Disappearance}, and <em>Identify</em> reveals it to be such. There is enough of it for one use.</p><p>As a Utilize action, you can throw the dust into the air, forcing yourself and every creature in a 30-foot Emanation originating from you to make a DC 15 Constitution saving throw. Constructs, Elementals, Oozes, Plants, and Undead succeed on the save automatically.</p><p>On a failed save, a creature begins sneezing uncontrollably; it has the Incapacitated condition and is suffocating. The creature [[/save ability=con dc=15]]{repeats the save} at the end of each of its turns, ending the effect on itself on a success. The effect also ends on any creature targeted by a <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLesserRest]{Lesser Restoration}</em> spell.</p>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "none"
+                }
+            },
             "effects": {
                 "Incapacitated and Suffocating (Sneezing)": {
                     "name": "Incapacitated and Suffocating (Sneezing)",
@@ -1825,7 +1858,8 @@
             "activities": {
                 "Elemental Compulsion": {
                     "name": "Elemental Compulsion",
-                    "target": "Elemental"
+                    "target": "Elemental",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -2006,7 +2040,8 @@
                 "Arrow of Restraint": {
                     "name": "Arrow of Restraint",
                     "condition": "instead of dealing damage",
-                    "chatFlavor": "Save Fail: &Reference[restrained]<br>Escape: [[/check ability=str skill=ath dc=20]]"
+                    "chatFlavor": "Save Fail: &Reference[restrained]<br>Escape: [[/check ability=str skill=ath dc=20]]",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -2031,7 +2066,8 @@
             "description": "<p><em>Inhaled Poison</em></p><p>A creature subjected to Essence of Ether must succeed on a DC 15 Constitution saving throw or have the &amp;Reference[Poisoned apply=false] condition for 8 hours. The creature also has the &amp;Reference[Unconscious apply=false] condition while Poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Use Poison"
+                    "name": "Use Poison",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -2087,16 +2123,20 @@
             "description": "<div><p><em>Nuisance Trap (Levels 1–4)</em></p><p><strong>Trigger:</strong> A creature crosses a trip wire</p><p><strong>Duration:</strong> Instantaneous</p><p>A falling net trap uses a trip wire to release a weighted, 10-foot-square Net suspended from the ceiling. The trip wire is 3 inches off the ground and stretches between two columns or trees.</p><p>The first creature that crosses the trip wire causes the Net to fall on it. The target must succeed on a DC 10 Dexterity saving throw or have the &amp;Reference[Restrained] condition until it escapes. The target succeeds automatically if it's Huge or larger. A creature can take an action to make a DC 10 Strength (Athletics) check, freeing itself or another creature within its reach from the Net on a successful check.</p><p><em><strong>Detect and Disarm.</strong></em> As a Search action, a creature can examine the trapped area and make a [[/check prc 11]] check, detecting the trip wire and the suspended @UUID[Compendium.dnd5e.equipment24.Item.phbagNet00000000]{Net} on a successful check. Once detected, the trip wire can be easily cut or avoided (no ability check required).</p><p><em><strong>Destroy the Net.</strong></em> Reducing the Net to 0 Hit Points frees any creature trapped in it (see @UUID[Compendium.dnd5e.content24.JournalEntry.phbEquipment0000.JournalEntryPage.xIDcbjgXOndS8zRl]{Adventuring Gear} for the Net's statistics).</p><p><em><strong>Set the Trap.</strong></em> A creature that has Thieves' Tools and all the trap's components (including a Net) can try to set a falling net trap, doing so with a successful DC 13 Dexterity (Sleight of Hand) check. Each attempt to set this trap takes 10 minutes.</p><p><em><strong>At Higher Levels.</strong></em> You can scale the trap for higher levels by increasing the weight of the Net, which increases the save DC and the DC of the Strength (Athletics) check as follows: DC 12 at levels 5–10, DC 14 at levels 11–16, or DC 16 at levels 17–20.</p></div>",
             "activities": {
                 "Trigger (1-4)": {
-                    "name": "Trigger (1-4)"
+                    "name": "Trigger (1-4)",
+                    "damageOnSave": "half"
                 },
                 "Trigger (5-10)": {
-                    "name": "Trigger (5-10)"
+                    "name": "Trigger (5-10)",
+                    "damageOnSave": "half"
                 },
                 "Trigger (11-16)": {
-                    "name": "Trigger (11-16)"
+                    "name": "Trigger (11-16)",
+                    "damageOnSave": "half"
                 },
                 "Trigger (17-20)": {
-                    "name": "Trigger (17-20)"
+                    "name": "Trigger (17-20)",
+                    "damageOnSave": "half"
                 },
                 "Escape Check (1-4)": {
                     "name": "Escape Check (1-4)"
@@ -2217,7 +2257,8 @@
             "activities": {
                 "Elemental Compulsion": {
                     "name": "Elemental Compulsion",
-                    "target": "Elemental"
+                    "target": "Elemental",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -2234,16 +2275,20 @@
             "description": "<div><p><em>Deadly Trap (Levels 1–4)</em></p><p><strong>Trigger:</strong> A creature moves onto a pressure plate</p><p><strong>Duration:</strong> Instantaneous, and the trap resets at the start of the next turn</p><p>When a creature moves onto this trap's pressure plate for the first time on a turn or starts its turn there, a nearby statue exhales a 15-foot Cone of magical flame. The statue can look like anything, such as a dragon or a wizard. Each creature in the Cone must succeed on a DC 15 Dexterity saving throw, taking 11 (2d10) Fire damage on a failed save or half as much damage on a successful one.</p><p><em><strong>Detect and Disarm.</strong></em> A <em>Detect Magic</em> spell reveals an aura of Evocation magic around the statue. As a Search action, a creature within 5 feet of the statue can examine it and make a [[/check DC prc 10]] check, detecting a tiny glyph on the statue on a successful check. Once the glyph is found, a character can take a Study action to examine it and make a [[/check arc 15]] check, ascertaining that the glyph means \"fire\" on a successful check. As an action, a character can use a sharp tool to deface the glyph, which disarms the trap.</p><p>As a Search action, a creature can examine the section of floor that forms the pressure plate and make a [[/check prc 15]] check, detecting the pressure plate on a successful check. Wedging an Iron Spike or similar object under the pressure plate prevents the trap from triggering.</p><p><em><strong>At Higher Levels.</strong></em> You can scale the trap for higher levels by increasing the damage and the area of effect, as shown in the following table.</p><table><thead><tr><th><p>Levels</p></th><th><p>Fire Damage</p></th><th><p>Area of Effect</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>22 (4d10)</p></td><td><p>30-foot Cone</p></td></tr><tr><td><p>11–16</p></td><td><p>55 (10d10)</p></td><td><p>60-foot Cone</p></td></tr><tr><td><p>17–20</p></td><td><p>99 (18d10)</p></td><td><p>120-foot Cone</p></td></tr></tbody></table></div>",
             "activities": {
                 "Trigger (1-4)": {
-                    "name": "Trigger (1-4)"
+                    "name": "Trigger (1-4)",
+                    "damageOnSave": "half"
                 },
                 "Trigger (5-10)": {
-                    "name": "Trigger (5-10)"
+                    "name": "Trigger (5-10)",
+                    "damageOnSave": "half"
                 },
                 "Trigger (11-16)": {
-                    "name": "Trigger (11-16)"
+                    "name": "Trigger (11-16)",
+                    "damageOnSave": "half"
                 },
                 "Trigger (17-20)": {
-                    "name": "Trigger (17-20)"
+                    "name": "Trigger (17-20)",
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -2393,10 +2438,12 @@
                     "name": "First Command Word"
                 },
                 "Second Command Word": {
-                    "name": "Second Command Word"
+                    "name": "Second Command Word",
+                    "damageOnSave": "half"
                 },
                 "Third Command Word": {
-                    "name": "Third Command Word"
+                    "name": "Third Command Word",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -2558,7 +2605,8 @@
                 },
                 "Giants' Bane (On Crit)": {
                     "name": "Giants' Bane (On Crit)",
-                    "chatFlavor": "Save failure: Death"
+                    "chatFlavor": "Save failure: Death",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -2643,7 +2691,8 @@
                 },
                 "Explosive Emanation": {
                     "name": "Explosive Emanation",
-                    "condition": "Take Fire damage from failing a saving throw"
+                    "condition": "Take Fire damage from failing a saving throw",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -2728,7 +2777,8 @@
             "description": "<p>When you take the Attack action, you can replace one of your attacks with throwing a flask of Holy Water. Target one creature you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d8 Radiant damage if it is a Fiend or an Undead.</p>",
             "activities": {
                 "Throw": {
-                    "name": "Throw"
+                    "name": "Throw",
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -2753,7 +2803,8 @@
             "description": "<p><em>Wondrous Item, Rare</em></p><p>You can take a Magic action to blow the horn, which emits a thunderous blast in a 30-foot Cone that is audible out to 600 feet. Each creature in the Cone makes a DC 15 Constitution saving throw. On a failed save, a creature takes 5d8 Thunder damage and has the &amp;Reference[Deafened apply=false] condition for 1 minute. On a successful save, a creature takes half as much damage only. Glass or crystal objects in the Cone that aren't being worn or carried take 10d8 Thunder damage.</p><p>Each use of the horn's magic has a 20 percent chance of causing the horn to explode. The explosion deals 10d6 Force damage to the user and destroys the horn.</p><section class=\"secret\" id=\"secret-rkHeC2mFJBKqNOh0\"><p><strong>Foundry Note</strong></p><p>The <strong>Roll for Explosion Chance</strong> activity will return 1 if it explodes otherwise it will return 0.</p></section>",
             "activities": {
                 "Blow Horn": {
-                    "name": "Blow Horn"
+                    "name": "Blow Horn",
+                    "damageOnSave": "half"
                 },
                 "Object Damage": {
                     "name": "Object Damage"
@@ -2821,7 +2872,8 @@
             "description": "<p>As a Utilize action, you can set a Hunting Trap, which is a sawtooth steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 Piercing damage and have its Speed reduced to 0 until the start of its next turn. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet). A creature can use its action to make a DC 13 Strength (Athletics) check, freeing itself or another creature within its reach on a success. Each failed check deals [[/damage 1 type=piercing]] damage to the trapped creature.</p>",
             "activities": {
                 "save": {
-                    "condition": "Steps on the plate"
+                    "condition": "Steps on the plate",
+                    "damageOnSave": "none"
                 },
                 "Escape": {
                     "name": "Escape"
@@ -3035,7 +3087,8 @@
             "description": "<p><em>Wondrous Item, Legendary</em></p><p>While holding this brass-stoppered iron flask, you can take a Magic action to target a creature that you can see within 60 feet of yourself. If the flask is empty and the target is native to a plane of existence other than the one you're on, the target must succeed on a DC 17 Wisdom saving throw or be trapped in the flask. If the target has been trapped by the flask before, it has Advantage on the save. Once trapped, a creature remains in the flask until released. The flask can hold only one creature at a time. A creature trapped in the flask doesn't age and doesn't need to breathe, eat, or drink.</p><p>You can take a Magic action to remove the flask's stopper and release the creature in the flask. The creature then obeys your commands for 1 hour, understanding those commands even if it doesn't know the language in which the commands are given. If you issue no commands or give the creature a command that is likely to result in its death or imprisonment, it defends itself but otherwise takes no actions. At the end of the duration, the creature acts in accordance with its normal disposition and alignment.</p><p>An @UUID[Compendium.dnd5e.spells24.Item.phbsplIdentify00]{Identify} spell reveals if the flask contains a creature, but the only way to determine the type of creature is to open the flask. A newly discovered <em>Iron Flask</em> might already contain a creature chosen by the GM.</p><section class=\"secret\" id=\"secret-LJ4Og6JjdncKvEKV\"><p><strong>Foundry Note</strong></p><p>This item has one limited use for tracking whether or not a creature has been trapped in the flask.</p><p>The <strong>Add Trapped Creature</strong> activity expends a usage to indicate it is currently full.</p><p>The <strong>Release Trapped Creature</strong> activity is a summon activity which restores a usage to indicate it can now contain another creature. You can edit the activity, change to the \"Summon\" tab and drag the captured creature's Actor onto the tab so it can be summoned later.</p></section>",
             "activities": {
                 "Attempt to Trap Creature": {
-                    "name": "Attempt to Trap Creature"
+                    "name": "Attempt to Trap Creature",
+                    "damageOnSave": "half"
                 },
                 "Release Creature": {
                     "name": "Release Creature"
@@ -3093,7 +3146,8 @@
             "description": "<p>Each time you make an attack roll with this magic weapon and hit, you can have it deal Lightning damage instead of Piercing damage.</p><p><em><strong>Lightning Bolt.</strong></em> When you throw this weapon at a target no farther than 120 feet from you, you can forgo making a ranged attack roll and instead turn the weapon into a bolt of lightning. This bolt forms a 5-foot-wide Line between you and the target. The target and each other creature in the Line (excluding you) makes a DC 13 Dexterity saving throw, taking 4d6 Lightning damage on a failed save or half as much damage on a successful one. Immediately after dealing this damage, the weapon reappears in your hand. This property can't be used again until the next dawn.</p><section id=\"secret-606LeZVVMHWwmeln\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Attack</strong> activity allows you to choose between Lightning and Piercing when rolling damage and will remember your last choice.</p></section>",
             "activities": {
                 "Lightning Bolt": {
-                    "name": "Lightning Bolt"
+                    "name": "Lightning Bolt",
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -3284,7 +3338,8 @@
                     "chatFlavor": "Bonus Damage: 2d6 Radiant vs Fiend/Undead"
                 },
                 "save": {
-                    "target": "Fiend or Undead"
+                    "target": "Fiend or Undead",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -3308,7 +3363,8 @@
             "description": "<p><em>Weapon (@UUID[Compendium.dnd5e.equipment24.Item.phbwepMace000000]{Mace}). Rare (Requires Attunement)</em></p><p>This magic weapon has 3 charges and regains 1d3 expended charges daily at dawn. While holding the weapon, you can take a Magic action and expend 1 charge to release a wave of terror from it. Each creature of your choice within 30 feet of you must succeed on a DC 15 Wisdom saving throw or have the &amp;Reference[Frightened apply=false] condition for 1 minute. While Frightened in this way, a creature must spend its turns trying to move as far away from you as it can, and it can't make Opportunity Attacks. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can take the Dodge action. At the end of each of its turns, a creature repeats the save, ending the effect on itself on a success.</p>",
             "activities": {
                 "Wave of Terror": {
-                    "name": "Wave of Terror"
+                    "name": "Wave of Terror",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -3326,7 +3382,8 @@
             "description": "<p><em>Inhaled Poison</em></p><p>A creature subjected to Malice must succeed on a DC 15 Constitution saving throw or have the &amp;Reference[Poisoned apply=false] condition for 1 hour. The creature also has the &amp;Reference[Blinded apply=false] condition while Poisoned in this way.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Use Poison"
+                    "name": "Use Poison",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -3479,7 +3536,8 @@
             "description": "<p><em>Ingested Poison</em></p><p>A creature that ingests Midnight Tears suffers no effect until the stroke of midnight. Any effect that ends the &amp;Reference[Poisoned apply=false] condition neutralizes this poison. If the poison hasn't been neutralized before midnight, the creature makes a DC 17 Constitution saving throw, taking 31 (9d6) Poison damage on a failed save or half as much damage on a successful one.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Use Poison"
+                    "name": "Use Poison",
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -3496,7 +3554,8 @@
             "description": "<p><em>Wondrous Item, Very Rare</em></p><p>When this 4-foot-tall, 2-foot-wide mirror is viewed indirectly, its surface shows faint images of creatures. The mirror weighs 50 pounds, and it has AC 11, HP 10, Immunity to Poison and Psychic damage, and Vulnerability to Bludgeoning damage. It shatters and is destroyed when reduced to 0 Hit Points.</p><p>If the mirror is hanging on a vertical surface and you are within 5 feet of it, you can take a Magic action and use a command word to activate it. It remains activated until you take a Magic action and repeat the command word to deactivate it.</p><p>Any creature other than you that sees its reflection in the activated mirror while within 30 feet of the mirror must succeed on a DC 15 Charisma saving throw or be trapped, along with anything it is wearing or carrying, in one of the mirror's twelve extradimensional cells. A creature that knows the mirror's nature makes the save with Advantage, and Constructs succeed on the save automatically.</p><p>An extradimensional cell is an infinite expanse filled with thick fog that reduces visibility to 10 feet. Creatures trapped in the mirror's cells don't age, and they don't need to eat, drink, or sleep. A creature trapped within a cell can escape using magic that permits planar travel. Otherwise, the creature is confined to the cell until freed.</p><p>If the mirror traps a creature but its twelve extradimensional cells are already occupied, the mirror frees one trapped creature at random to accommodate the new prisoner. A freed creature appears in an unoccupied space within sight of the mirror but facing away from it. If the mirror is shattered, all creatures it contains are freed and appear in unoccupied spaces near it.</p><p>While within 5 feet of the mirror, you can take a Magic action to name one creature trapped in it or call out a particular cell by number. The creature named or contained in the named cell appears as an image on the mirror's surface. You and the creature can then communicate.</p><p>In a similar way, you can take a Magic action and use a second command word to free one creature trapped in the mirror. The freed creature appears, along with its possessions, in the unoccupied space nearest to the mirror and facing away from it.</p><p>Placing the mirror inside an extradimensional space created by a <em>Bag of Holding</em>, <em>Portable Hole</em>, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate and not behind Total Cover is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened.</p><section id=\"secret-wD2MAubhr1RWqA6v\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This item has a max uses of 12 which can be used to track the number of creatures trapped within the mirror. The <strong>Add/Free Trapped Creature</strong> activities can be used to increment/decrement that number.</p></section>",
             "activities": {
                 "save": {
-                    "condition": "Sees its reflection"
+                    "condition": "Sees its reflection",
+                    "damageOnSave": "half"
                 },
                 "Add Trapped Creature": {
                     "name": "Add Trapped Creature"
@@ -3594,6 +3653,11 @@
         "Net": {
             "name": "Net",
             "description": "<p>When you take the Attack action, you can replace one of your attacks with throwing a Net. Target a creature you can see within 15 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or have the &amp;Reference[Restrained] condition until it escapes. The target succeeds automatically if it is Huge or larger.</p><p>To escape, the target or a creature within 5 feet of it must take an action to make a [[/skill ath 10]] check, freeing the Restrained creature on a success. Destroying the Net (AC 10; 5 HP; Immunity to Bludgeoning, Poison, and Psychic damage) also frees the target, ending the effect.</p>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "none"
+                }
+            },
             "effects": {
                 "Caught in Net": {
                     "name": "Caught in Net"
@@ -3606,7 +3670,8 @@
             "activities": {
                 "Life Stealing": {
                     "name": "Life Stealing",
-                    "condition": "when you roll a 20 on an attack against a creature with fewer than 100 Hit Points"
+                    "condition": "when you roll a 20 on an attack against a creature with fewer than 100 Hit Points",
+                    "damageOnSave": "none"
                 },
                 "Nine Lives Stealer": {
                     "name": "Nine Lives Stealer"
@@ -3665,7 +3730,8 @@
             "description": "<p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p><p><strong>Dousing a Creature or an Object.</strong> When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra [[/damage 5 type=fire]] damage from burning oil.</p><p><strong>Dousing a Space.</strong> You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p><p><strong>Fuel.</strong> Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn't need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>",
             "activities": {
                 "Throw": {
-                    "name": "Throw"
+                    "name": "Throw",
+                    "damageOnSave": "half"
                 },
                 "Douse Space": {
                     "name": "Douse Space"
@@ -3729,7 +3795,8 @@
             "description": "<p><em>Contact Poison</em></p><p>A creature subjected to Oil of Taggit must succeed on a DC 13 Constitution saving throw or have the &amp;Reference[Poisoned apply=false] condition for 24 hours. The creature also has the &amp;Reference[Unconscious apply=false] condition while Poisoned in this way. It wakes up if it takes damage.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Use Poison"
+                    "name": "Use Poison",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -3774,7 +3841,8 @@
             "description": "<p><em>Ingested Poison</em></p><p>A creature subjected to Pale Tincture must succeed on a DC 16 Constitution saving throw or take 3 (1d6) Poison damage and have the &amp;Reference[Poisoned apply=false] condition. The Poisoned creature repeats the save every 24 hours, taking 3 (1d6) Poison damage on a failed save. The damage the poison deals can't be healed by any means while the creature remains Poisoned. After seven successful saves against the poison, the creature is no longer Poisoned.</p><section class=\"secret\" id=\"secret-tSBe5DSXqLu6xn8u\"><p><strong>Foundry Note</strong></p><p>The <strong>Use Poison</strong> activity includes the save and the <strong>Poisoned and Reduce Max</strong> Active Effect applies the Poisoned condition and can be used for preventing healing as well. Edit the Active Effect on the player, change to the \"Effects\" tab and adjust the \"Effect Value\" to be \"-X\" where X is the total damage they've taken from the poison. This will temporarily reduce their max HP by that value.</p></section>",
             "activities": {
                 "Use Poison": {
-                    "name": "Use Poison"
+                    "name": "Use Poison",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -3860,7 +3928,8 @@
             "description": "<p><em>Wondrous Item, Uncommon</em></p><p>These pipes have 3 charges and regain 1d3 expended charges daily at dawn. You can take a Magic action to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature of your choice within 30 feet of you must succeed on a DC 15 Wisdom saving throw or have the &amp;Reference[Frightened apply=false] condition for 1 minute. A creature that fails the save repeats it at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on its save is immune to the effect of these pipes for 24 hours.</p>",
             "activities": {
                 "Play Pipes": {
-                    "name": "Play Pipes"
+                    "name": "Play Pipes",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -3878,7 +3947,8 @@
                     "target": "rats"
                 },
                 "Sway Rats": {
-                    "name": "Sway Rats"
+                    "name": "Sway Rats",
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -3926,16 +3996,20 @@
             "description": "<div><p><em>Deadly Trap (Levels 1–4)</em></p><p><strong>Trigger:</strong> A creature moves onto a pressure plate</p><p><strong>Duration:</strong> Instantaneous, and the trap resets at the start of the next turn if it has activated fewer than three times</p><p>When a creature moves onto this trap's pressure plate for the first time on a turn, poisoned darts shoot from tubes embedded in the surrounding walls. The holes that house these tubes are obscured by dust and cobwebs or skillfully hidden amid bas-reliefs, murals, or frescoes.</p><p>Each creature in the darts' path must succeed on a DC 13 Dexterity saving throw or be struck by [[/r 1d3]] darts, taking 3 (1d6) Poison damage per dart.</p><p><em><strong>Detect and Disarm.</strong></em> As a Search action, a creature can examine the walls and make a [[/check prc 15]] check, detecting the holes on a successful check. Plugging all the holes with wax, cloth, or detritus prevents the darts from firing.</p><p>As a Search action, a creature can examine the section of floor that forms the pressure plate and make a [[/check prc 15]] check, detecting the pressure plate on a successful check. Wedging an Iron Spike or a similar object under the pressure plate prevents the trap from triggering.</p><p><em><strong>At Higher Levels.</strong></em> You can scale the trap for higher levels by increasing each dart's Poison damage as follows: 7 (2d6) at levels 5–10, 14 (4d6) at levels 11–16, or 24 (7d6) at levels 17–20.</p></div>",
             "activities": {
                 "Trigger (1-4)": {
-                    "name": "Trigger (1-4)"
+                    "name": "Trigger (1-4)",
+                    "damageOnSave": "half"
                 },
                 "Trigger (5-10)": {
-                    "name": "Trigger (5-10)"
+                    "name": "Trigger (5-10)",
+                    "damageOnSave": "half"
                 },
                 "Trigger (11-16)": {
-                    "name": "Trigger (11-16)"
+                    "name": "Trigger (11-16)",
+                    "damageOnSave": "half"
                 },
                 "Trigger (17-20)": {
-                    "name": "Trigger (17-20)"
+                    "name": "Trigger (17-20)",
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -3944,16 +4018,20 @@
             "description": "<div><p><em>Nuisance Trap (Levels 1–4)</em></p><p><strong>Trigger:</strong> A creature opens the trap's lock improperly or fails to disarm the trap</p><p><strong>Duration:</strong> Instantaneous</p><p>A poisoned needle is hidden in a lock. When a creature opens the lock with any object other than the proper key, the needle springs out and stabs the creature. The creature makes a DC 11 Constitution saving throw. On a failed save, the creature takes 5 (1d10) Poison damage and has the &amp;Reference[Poisoned apply=false] condition for 1 hour. On a successful save, the creature takes half as much damage only.</p><p><em><strong>Avoid.</strong></em> The trap doesn't trigger if the lock is opened using a <em>Knock</em> spell or similar magic.</p><p><em><strong>Detect and Disarm.</strong></em> As a Search action, a creature can examine the trapped lock and make a [[/check prc 15]] check, detecting the needle on a successful check. Once the trap is detected, a character can take an action to try to disarm the trap, doing so with a successful [[/check slt 15]] check. On a failed check, the creature triggers the trap.</p><p><em><strong>At Higher Levels.</strong></em> You can scale the trap for higher levels by increasing the damage and the save DC, as shown in the following table.</p><table><thead><tr><th><p>Levels</p></th><th><p>Poison Damage</p></th><th><p>Save DC</p></th><th></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>11 (2d10)</p></td><td><p>13</p></td><td></td></tr><tr><td><p>11–16</p></td><td><p>22 (4d10)</p></td><td><p>15</p></td><td></td></tr><tr><td><p>17–20</p></td><td><p>55 (10d10)</p></td><td><p>17</p></td><td></td></tr></tbody></table></div>",
             "activities": {
                 "Trigger (1-4)": {
-                    "name": "Trigger (1-4)"
+                    "name": "Trigger (1-4)",
+                    "damageOnSave": "half"
                 },
                 "Trigger (5-10)": {
-                    "name": "Trigger (5-10)"
+                    "name": "Trigger (5-10)",
+                    "damageOnSave": "half"
                 },
                 "Trigger (11-16)": {
-                    "name": "Trigger (11-16)"
+                    "name": "Trigger (11-16)",
+                    "damageOnSave": "half"
                 },
                 "Trigger (17-20)": {
-                    "name": "Trigger (17-20)"
+                    "name": "Trigger (17-20)",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -4220,7 +4298,8 @@
             "description": "<p><em>Potion, Uncommon</em></p><p>This concoction looks, smells, and tastes like a Potion of Healing or another beneficial potion. However, it is actually poison masked by illusion magic. <em>Identify</em> reveals its true nature.</p><p>If you drink this potion, you take 4d6 Poison damage and must succeed on a DC 13 Constitution saving throw or have the Poisoned condition for 1 hour.</p>",
             "activities": {
                 "Drink": {
-                    "name": "Drink"
+                    "name": "Drink",
+                    "damageOnSave": "full"
                 }
             },
             "effects": {
@@ -4324,7 +4403,8 @@
             "description": "<p><em>Injury Poison</em></p><p>A creature subjected to Purple Worm Poison makes a DC 21 Constitution saving throw, taking 35 (10d6) Poison damage on a failed save or half as much damage on a successful one.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Use Poison"
+                    "name": "Use Poison",
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -4563,10 +4643,12 @@
                     "name": "Create Lightning Spheres"
                 },
                 "Lightning Sphere Save": {
-                    "name": "Lightning Sphere Save"
+                    "name": "Lightning Sphere Save",
+                    "damageOnSave": "half"
                 },
                 "Shooting Stars": {
-                    "name": "Shooting Stars"
+                    "name": "Shooting Stars",
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -4624,6 +4706,9 @@
             "activities": {
                 "Gain X-Ray Vision": {
                     "name": "Gain X-Ray Vision"
+                },
+                "save": {
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -4641,10 +4726,12 @@
             "description": "<p><em>Wondrous Item, Rare (Requires Attunement)</em></p><p>This robe is adorned with eyelike patterns. While you wear the robe, you gain the following benefits:</p><p><strong>All-Around Vision.</strong> The robe gives you Advantage on Wisdom (Perception) checks that rely on sight.</p><p><strong>Special Senses.</strong> You have Darkvision and Truesight, both with a range of 120 feet.</p><p><em><strong>Drawbacks.</strong></em> A<em> </em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLight00000]{Light} spell cast on the robe or a @UUID[Compendium.dnd5e.spells24.Item.phbsplDaylight00]{Daylight} spell cast within 5 feet of the robe gives you the &amp;Reference[Blinded] condition for 1 minute. At the end of each of your turns, you make a Constitution saving throw (DC 11 for <em>Light</em> or DC 15 for <em>Daylight</em>), ending the condition on yourself on a success.</p>",
             "activities": {
                 "Light Save": {
-                    "name": "Light Save"
+                    "name": "Light Save",
+                    "damageOnSave": "half"
                 },
                 "Daylight Save": {
-                    "name": "Daylight Save"
+                    "name": "Daylight Save",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -4658,7 +4745,8 @@
             "description": "<p><em>Wondrous Item, Very Rare (Requires Attunement)</em></p><p>This robe has 3 charges, and it regains 1d3 expended charges daily at dawn. While you wear it, you can take a Magic action and expend 1 charge to cause the garment to display a shifting pattern of dazzling hues until the end of your next turn.</p><p>During this time, the robe sheds Bright Light in a 30-foot radius and Dim Light for an additional 30 feet, and creatures that can see you have Disadvantage on attack rolls against you. Any creature in the Bright Light that can see you when the robe's power is activated must succeed on a DC 15 Wisdom saving throw or have the Stunned condition until the effect ends.</p><section class=\"secret\" id=\"secret-fHn9nt3cSF0lOwcT\"><p><strong>Foundry Note</strong></p><p>The <strong>Display Dazzling Hues</strong> activity includes a measured template which can be used for tracking the area of Bright Light.</p></section>",
             "activities": {
                 "save": {
-                    "target": "can see you"
+                    "target": "can see you",
+                    "damageOnSave": "half"
                 },
                 "Display Dazzling Hues": {
                     "name": "Display Dazzling Hues"
@@ -4764,14 +4852,17 @@
                     "name": "Button 3 Attack"
                 },
                 "Drain Life": {
-                    "name": "Drain Life"
+                    "name": "Drain Life",
+                    "damageOnSave": "none"
                 },
                 "Paralyze": {
-                    "name": "Paralyze"
+                    "name": "Paralyze",
+                    "damageOnSave": "none"
                 },
                 "Terrify": {
                     "name": "Terrify",
-                    "target": "you can see"
+                    "target": "you can see",
+                    "damageOnSave": "none"
                 },
                 "Button 2 Versatile Attack": {
                     "name": "Button 2 Versatile Attack"
@@ -4795,7 +4886,8 @@
             "description": "<p><em>Rod, Rare (Requires Attunement)</em></p><p>You can take a Magic action to present the rod and command obedience from each creature of your choice that you can see within 120 feet of yourself. Each target must succeed on a DC 15 Wisdom saving throw or have the &amp;Reference[Charmed apply=false] condition for 8 hours. While Charmed in this way, the creature regards you as its trusted leader. If harmed by you or your allies or commanded to do something contrary to its nature, a target ceases to be Charmed in this way. Once used, this property can't be used again until the next dawn.</p>",
             "activities": {
                 "Command Obedience": {
-                    "name": "Command Obedience"
+                    "name": "Command Obedience",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -4834,6 +4926,9 @@
             "name": "Rolling Stone",
             "description": "<div><p ><em>Deadly Trap (Levels 11–16) or Nuisance Trap (Levels 17–20)</em></p><p><strong>Trigger:</strong> A creature moves onto a pressure plate</p><p><strong>Duration:</strong> Until the stone stops rolling</p><p>When a creature moves onto a hidden pressure plate, a 5-foot-radius orb of solid stone is released from a secret compartment and begins to roll. The stone and all creatures nearby roll Initiative; the stone gets a [[/r 1d20 + 8]]{+8} bonus on its Initiative roll.</p><p>On its turn, the stone moves 60 feet in one direction, changing course if redirected by an obstacle. The stone can move through creatures' spaces, and creatures can move through the stone's space, treating it as &amp;Reference[Difficult Terrain]. Whenever the stone enters a creature's space for the first time on a turn or a creature enters the stone's space while the stone is rolling, that creature must succeed on a DC 15 Dexterity saving throw or take 55 (10d10) Bludgeoning damage and have the &amp;Reference[Prone apply=false] condition.</p><p>The stone stops when it hits a wall or similar barrier. It can't go around corners, but creative dungeon builders incorporate curving turns into nearby passages that allow the stone to keep moving.</p><p><em><strong>Detect and Disarm.</strong></em> As a Study action, a creature can examine the section of floor that forms the pressure plate and make a [[/check inv 15]] check, deducing the pressure plate's function on a successful check. Wedging an Iron Spike or a similar object under the pressure plate prevents the trap from triggering.</p><p><em><strong>Destroy the Stone.</strong></em> The stone is a Large object that has AC 17, HP 100, a Damage Threshold of 10, and Immunity to Poison and Psychic damage.</p><p><em><strong>Slow the Stone.</strong></em> As an action, a creature can try to slow down the stone with a DC 20 Strength (Athletics) check. If the check is successful, the distance the stone moves on its turn is reduced by 15 feet. If that distance drops to 0, it stops moving and is no longer a threat.</p></div>",
             "activities": {
+                "save": {
+                    "damageOnSave": "none"
+                },
                 "Slow": {
                     "name": "Slow"
                 }
@@ -4874,7 +4969,8 @@
             "description": "<p><em>Wondrous Item, Rare</em></p><p>This rope is 30 feet long. While holding one end of the rope, you can take a Magic action to command the other end to dart forward and entangle one creature you can see within 20 feet of yourself. The target must succeed on a DC 15 Dexterity saving throw or have the &amp;Reference[Restrained apply=false] condition. You can release the target by letting go of your end of the rope (causing the rope to coil up in the target's space) or by using a Bonus Action to repeat the command (causing the rope to coil up in your hand).</p><p>A target Restrained by the rope can take an action to make its choice of a DC 15 Strength (Athletics) or Dexterity (Acrobatics) check. On a successful check, the target is no longer Restrained by the rope. If you're still holding onto the rope when a target escapes from it, you can take a Reaction to command the rope to coil up in your hand; otherwise, the rope coils up in the target's space.</p><p>The rope has AC 20, HP 20, and Immunity to Poison and Psychic damage. It regains 1 Hit Point every 5 minutes as long as it has at least 1 Hit Point. If the rope drops to 0 Hit Points, it is destroyed.</p><section class=\"secret\" id=\"secret-7RGkmfY1bTmeeb5L\"><p><strong>Foundry Note</strong></p><p>The item includes 20 uses for tracking its HP. The <strong>Damage Rope</strong> activity can be used to apply damage and the <strong>Repair Rope</strong> activity can be used to restore its HP.</p><p>The <strong>Escape</strong> activity can be used to send an Athletics and Dexterity check to the chat for the target to roll for their escape.</p></section>",
             "activities": {
                 "Entangle": {
-                    "name": "Entangle"
+                    "name": "Entangle",
+                    "damageOnSave": "half"
                 },
                 "Escape": {
                     "name": "Escape"
@@ -4980,7 +5076,8 @@
             "description": "<p><em>Injury Poison</em></p><p>A creature subjected to Serpent Venom must succeed on a DC 11 Constitution saving throw, taking 10 (3d6) Poison damage on a failed save or half as much damage on a successful one.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Use Poison"
+                    "name": "Use Poison",
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -5214,6 +5311,9 @@
                 },
                 "Control the Sphere": {
                     "name": "Control the Sphere"
+                },
+                "save": {
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -5222,7 +5322,8 @@
             "description": "<p><em>Injury Poison</em></p><p>A creature subjected to Lolth's Sting must succeed on a DC 13 Constitution saving throw or have the &amp;reference[Poisoned apply=false] condition for 1 hour. If the creature fails the save by 5 or more, the creature also has the &amp;Reference[Unconscious apply=false] condition while Poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Use Poison"
+                    "name": "Use Poison",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -5313,7 +5414,8 @@
                     "name": "Retributive Strike"
                 },
                 "Retributive Strike: Save": {
-                    "name": "Retributive Strike: Save"
+                    "name": "Retributive Strike: Save",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -5348,7 +5450,8 @@
                     "name": "Spell Absorption"
                 },
                 "Retributive Strike: Save": {
-                    "name": "Retributive Strike: Save"
+                    "name": "Retributive Strike: Save",
+                    "damageOnSave": "half"
                 },
                 "Retributive Strike": {
                     "name": "Retributive Strike"
@@ -5410,19 +5513,23 @@
             "description": "<p><em>@UUID[Compendium.dnd5e.equipment24.Item.phbafcStaffalsoa]{Staff}, Very Rare (Requires Attunement)</em></p><p>This staff can be wielded as a magic Quarterstaff that grants a +2 bonus to attack rolls and damage rolls made with it. It also has the following additional properties. Once one of these properties is used, it can't be used again until the next dawn.</p><p><em><strong>Lightning.</strong></em> When you hit with a melee attack using the staff, you can cause the target to take an extra 2d6 Lightning damage (no action required).</p><p><em><strong>Thunder.</strong></em> When you hit with a melee attack using the staff, you can cause the staff to emit a crack of thunder audible out to 300 feet (no action required). The target you hit must succeed on a DC 17 Constitution saving throw or have the Stunned condition until the end of your next turn.</p><p><em><strong>Thunder and Lightning.</strong></em> Immediately after you hit with a melee attack using the staff, you can take a Bonus Action to use the Lightning and Thunder properties (see above) at the same time. Doing so doesn't expend the daily use of those properties, only the use of this one.</p><p><em><strong>Lightning Strike.</strong></em> You can take a Magic action to cause a bolt of lightning to leap from the staff's tip in a Line that is 5 feet wide and 120 feet long. Each creature in that Line makes a DC 17 Dexterity saving throw, taking 9d6 Lightning damage on a failed save or half as much damage on a successful one.</p><p><em><strong>Thunderclap.</strong></em> You can take a Magic action to cause the staff to produce a thunderclap audible out to 600 feet. Every creature within a 60-foot Emanation originating from you makes a DC 17 Constitution saving throw. On a failed save, a creature takes 2d6 Thunder damage and has the Deafened condition for 1 minute. On a successful save, a creature takes half as much damage only.</p>",
             "activities": {
                 "Thunder": {
-                    "name": "Thunder"
+                    "name": "Thunder",
+                    "damageOnSave": "half"
                 },
                 "Lightning": {
                     "name": "Lightning"
                 },
                 "Thunder & Lightning": {
-                    "name": "Thunder & Lightning"
+                    "name": "Thunder & Lightning",
+                    "damageOnSave": "full"
                 },
                 "Lightning Strike": {
-                    "name": "Lightning Strike"
+                    "name": "Lightning Strike",
+                    "damageOnSave": "half"
                 },
                 "Thunderclap": {
-                    "name": "Thunderclap"
+                    "name": "Thunderclap",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -5439,7 +5546,8 @@
             "description": "<p><em>@UUID[Compendium.dnd5e.equipment24.Item.phbafcStaffalsoa]{Staff}, Rare (Requires Attunement)</em></p><p>This staff has 3 charges and regains 1d3 expended charges daily at dawn.</p><p>The staff can be wielded as a magic Quarterstaff. On a hit, it deals damage as a normal Quarterstaff, and you can expend 1 charge to deal an extra 2d10 Necrotic damage to the target and force it to make a DC 15 Constitution saving throw. On a failed save, the target has Disadvantage for 1 hour on any ability check or saving throw that uses Strength or Constitution.</p><section class=\"secret\" id=\"secret-XLCxThjwbGtdndsQ\"><p><strong>Foundry Note</strong></p><p>The <strong>Save</strong> activity includes an Active Effect for tracking the disadvantage.</p></section>",
             "activities": {
                 "Damage & Save": {
-                    "name": "Damage & Save"
+                    "name": "Damage & Save",
+                    "damageOnSave": "full"
                 }
             },
             "effects": {
@@ -5551,7 +5659,8 @@
                     "name": "Sword of Wounding"
                 },
                 "Sword of Wounding Save": {
-                    "name": "Sword of Wounding Save"
+                    "name": "Sword of Wounding Save",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -5575,7 +5684,8 @@
                 },
                 "Pure Rebuke": {
                     "name": "Pure Rebuke",
-                    "range": "you can see"
+                    "range": "you can see",
+                    "damageOnSave": "full"
                 }
             },
             "effects": {
@@ -5597,7 +5707,8 @@
                 },
                 "Ultimate End": {
                     "name": "Ultimate End",
-                    "range": "you can see"
+                    "range": "you can see",
+                    "damageOnSave": "full"
                 }
             },
             "effects": {
@@ -5670,19 +5781,23 @@
                     "chatFlavor": "Bonus Damage: 2d8 Thunder vs loose object"
                 },
                 "Clap of Thunder": {
-                    "name": "Clap of Thunder"
+                    "name": "Clap of Thunder",
+                    "damageOnSave": "half"
                 },
                 "Earthquake: Save": {
-                    "name": "Earthquake: Save"
+                    "name": "Earthquake: Save",
+                    "damageOnSave": "half"
                 },
                 "Earthquake: Object Damage": {
                     "name": "Earthquake: Object Damage"
                 },
                 "Earthquake: Fissure": {
-                    "name": "Earthquake: Fissure"
+                    "name": "Earthquake: Fissure",
+                    "damageOnSave": "none"
                 },
                 "Earthquake: Concentration Save": {
-                    "name": "Earthquake: Concentration Save"
+                    "name": "Earthquake: Concentration Save",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -5772,7 +5887,8 @@
             "description": "<p><em>Ingested Poison</em></p><p>A creature subjected to Torpor poison must succeed on a DC 15 Constitution saving throw or have the &amp;Reference[Poisoned] condition for [[/r 4d6]] hours. The creature's Speed is halved while the creature is Poisoned in this way.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Use Poison"
+                    "name": "Use Poison",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -5798,7 +5914,8 @@
             "description": "<p><em>Ingested Poison</em></p><p>A creature subjected to Truth Serum must succeed on a DC 11 Constitution saving throw or have the &amp;Reference[Poisoned] condition for 1 hour. The Poisoned creature can't knowingly communicate a lie.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Use Poison"
+                    "name": "Use Poison",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -5813,7 +5930,8 @@
             "activities": {
                 "Grapple/Shove": {
                     "name": "Grapple/Shove",
-                    "chatFlavor": "Grapple or Shove attempt"
+                    "chatFlavor": "Grapple or Shove attempt",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -5946,7 +6064,8 @@
             "description": "<p><em>Wand, Rare (Requires Attunement by a Spellcaster)</em></p><p>This wand has 7 charges. While holding it, you can take a Magic action to expend 1 charge to cause a thin blue ray to streak from the tip toward a creature you can see within 60 feet of yourself. The target must succeed on a DC 15 Constitution saving throw or have the &amp;Reference[Paralyzed apply=false] condition for 1 minute. At the end of each of the target's turns, it repeats the save, ending the effect on itself on a success.</p><p><em><strong>Regaining Charges.</strong></em> The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll [[/r 1d20]]. On a 1, the wand crumbles into ashes and is destroyed.</p>",
             "activities": {
                 "Paralyze": {
-                    "name": "Paralyze"
+                    "name": "Paralyze",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -6025,7 +6144,8 @@
                     "name": "Grass Cover (61-64)"
                 },
                 "Burst of Colorful Light (78-82)": {
-                    "name": "Burst of Colorful Light (78-82)"
+                    "name": "Burst of Colorful Light (78-82)",
+                    "damageOnSave": "half"
                 },
                 "Stream of Gems (88-92)": {
                     "name": "Stream of Gems (88-92)"
@@ -6058,7 +6178,8 @@
             "activities": {
                 "Elemental Compulsion": {
                     "name": "Elemental Compulsion",
-                    "target": "Elemental"
+                    "target": "Elemental",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -6219,7 +6340,8 @@
             "description": "<p><em>Injury Poison</em></p><p>A creature subjected to Wyvern Poison makes a DC 14 Constitution saving throw, taking 24 (7d6) Poison damage on a failed save or half as much damage on a successful one.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Use Poison"
+                    "name": "Use Poison",
+                    "damageOnSave": "half"
                 }
             }
         },

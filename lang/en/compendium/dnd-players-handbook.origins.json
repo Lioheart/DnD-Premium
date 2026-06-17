@@ -20,10 +20,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
-                "chatFlavor": "description.chatFlavor",
                 "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
                 "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
                 "range": {
                     "path": "range",
                     "converter": "imperialToMetric"
@@ -130,10 +131,12 @@
             "requirements": "Black or Copper Ancestry",
             "activities": {
                 "Exhale Cone": {
-                    "name": "Exhale Cone"
+                    "name": "Exhale Cone",
+                    "damageOnSave": "half"
                 },
                 "Exhale Line": {
-                    "name": "Exhale Line"
+                    "name": "Exhale Line",
+                    "damageOnSave": "half"
                 }
             },
             "advancement": {
@@ -207,10 +210,12 @@
             "requirements": "For Reference Only",
             "activities": {
                 "Exhale Cone": {
-                    "name": "Exhale Cone"
+                    "name": "Exhale Cone",
+                    "damageOnSave": "half"
                 },
                 "Exhale Line": {
-                    "name": "Exhale Line"
+                    "name": "Exhale Line",
+                    "damageOnSave": "half"
                 }
             },
             "advancement": {
@@ -236,7 +241,8 @@
                     "name": "Inner Radiance"
                 },
                 "Necrotic Shroud": {
-                    "name": "Necrotic Shroud"
+                    "name": "Necrotic Shroud",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -291,10 +297,12 @@
             "requirements": "Silver or White Ancestry",
             "activities": {
                 "Exhale Cone": {
-                    "name": "Exhale Cone"
+                    "name": "Exhale Cone",
+                    "damageOnSave": "half"
                 },
                 "Exhale Line": {
-                    "name": "Exhale Line"
+                    "name": "Exhale Line",
+                    "damageOnSave": "half"
                 }
             },
             "advancement": {
@@ -563,10 +571,12 @@
             "requirements": "Brass, Gold, or Red Ancestry",
             "activities": {
                 "Exhale Cone": {
-                    "name": "Exhale Cone"
+                    "name": "Exhale Cone",
+                    "damageOnSave": "half"
                 },
                 "Exhale Line": {
-                    "name": "Exhale Line"
+                    "name": "Exhale Line",
+                    "damageOnSave": "half"
                 }
             },
             "advancement": {
@@ -847,10 +857,12 @@
             "requirements": "Blue or Bronze Ancestry",
             "activities": {
                 "Exhale Cone": {
-                    "name": "Exhale Cone"
+                    "name": "Exhale Cone",
+                    "damageOnSave": "half"
                 },
                 "Exhale Line": {
-                    "name": "Exhale Line"
+                    "name": "Exhale Line",
+                    "damageOnSave": "half"
                 }
             },
             "advancement": {
@@ -941,10 +953,12 @@
             "requirements": "Green Ancestry",
             "activities": {
                 "Exhale Cone": {
-                    "name": "Exhale Cone"
+                    "name": "Exhale Cone",
+                    "damageOnSave": "half"
                 },
                 "Exhale Line": {
-                    "name": "Exhale Line"
+                    "name": "Exhale Line",
+                    "damageOnSave": "half"
                 }
             },
             "advancement": {

@@ -65,7 +65,8 @@
                         "Clockwork Force": {
                             "name": "Clockwork Force",
                             "condition": "action taken by controller",
-                            "activationCondition": "action taken by controller"
+                            "activationCondition": "action taken by controller",
+                            "damageOnSave": "half"
                         },
                         "Orderly Ward": {
                             "name": "Orderly Ward",
@@ -83,7 +84,12 @@
             "items": {
                 "Mechanical Determination": {
                     "name": "Mechanical Determination",
-                    "description": "<p>If damage reduces the wonder to 0 Hit Points, it makes a Constitution saving throw with a DC of 5 plus the damage taken unless the damage is Lightning or from a Critical Hit. On a successful save, the wonder drops to 1 Hit Point instead.</p>"
+                    "description": "<p>If damage reduces the wonder to 0 Hit Points, it makes a Constitution saving throw with a DC of 5 plus the damage taken unless the damage is Lightning or from a Critical Hit. On a successful save, the wonder drops to 1 Hit Point instead.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    }
                 },
                 "Wind-Up Operation": {
                     "name": "Wind-Up Operation",

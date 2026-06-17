@@ -20,10 +20,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
-                "chatFlavor": "description.chatFlavor",
                 "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
                 "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
                 "range": {
                     "path": "range",
                     "converter": "imperialToMetric"
@@ -150,7 +151,8 @@
             "activities": {
                 "save": {
                     "target": "That you can see",
-                    "targetAffects": "That you can see"
+                    "targetAffects": "That you can see",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -499,7 +501,8 @@
                 "Frightful Aura": {
                     "name": "Frightful Aura",
                     "condition": "Whenever an enemy starts its turn in your Aura of Protection",
-                    "activationCondition": "Whenever an enemy starts its turn in your Aura of Protection"
+                    "activationCondition": "Whenever an enemy starts its turn in your Aura of Protection",
+                    "damageOnSave": "half"
                 },
                 "Restore Use": {
                     "name": "Restore Use"
@@ -847,7 +850,8 @@
                 "Beguiling Reaction": {
                     "name": "Beguiling Reaction",
                     "condition": "Immediately after a creature you can see hits you with an attack roll",
-                    "activationCondition": "Immediately after a creature you can see hits you with an attack roll"
+                    "activationCondition": "Immediately after a creature you can see hits you with an attack roll",
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -858,7 +862,8 @@
             "activities": {
                 "save": {
                     "condition": "After casting an enchantment or illusion spell using a spell slot",
-                    "activationCondition": "After casting an enchantment or illusion spell using a spell slot"
+                    "activationCondition": "After casting an enchantment or illusion spell using a spell slot",
+                    "damageOnSave": "half"
                 },
                 "Recharge with Inspiration": {
                     "name": "Recharge with Inspiration"
@@ -875,7 +880,12 @@
         },
         "Beguiling Twist": {
             "name": "Beguiling Twist",
-            "description": "<p>The magic of the Feywild guards your mind. You have Advantage on saving throws to avoid or end the Charmed or Frightened condition.</p><p>In addition, whenever you or a creature you can see within 120 feet of you succeeds on a saving throw to avoid or end the Charmed or Frightened condition, you can take a Reaction to force a different creature you can see within 120 feet of yourself to make a Wisdom save against your spell save DC. On a failed save, the target is &amp;Reference[Charmed] or &amp;Reference[Frightened] (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success.</p>"
+            "description": "<p>The magic of the Feywild guards your mind. You have Advantage on saving throws to avoid or end the Charmed or Frightened condition.</p><p>In addition, whenever you or a creature you can see within 120 feet of you succeeds on a saving throw to avoid or end the Charmed or Frightened condition, you can take a Reaction to force a different creature you can see within 120 feet of yourself to make a Wisdom save against your spell save DC. On a failed save, the target is &amp;Reference[Charmed] or &amp;Reference[Frightened] (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success.</p>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "half"
+                }
+            }
         },
         "Bend Luck": {
             "name": "Bend Luck",
@@ -970,7 +980,8 @@
             "activities": {
                 "save": {
                     "condition": "Whenever a creature you can see starts its turn within 30 feet of you while your Raging",
-                    "activationCondition": "Whenever a creature you can see starts its turn within 30 feet of you while your Raging"
+                    "activationCondition": "Whenever a creature you can see starts its turn within 30 feet of you while your Raging",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -1270,7 +1281,8 @@
             "activities": {
                 "save": {
                     "condition": "When you form a telepathic bond using Awakened Mind",
-                    "activationCondition": "When you form a telepathic bond using Awakened Mind"
+                    "activationCondition": "When you form a telepathic bond using Awakened Mind",
+                    "damageOnSave": "half"
                 },
                 "Regain Use": {
                     "name": "Regain Use"
@@ -1615,14 +1627,16 @@
                 "Poison": {
                     "name": "Poison",
                     "condition": "When you deal Sneak Attack damage",
-                    "activationCondition": "When you deal Sneak Attack damage"
+                    "activationCondition": "When you deal Sneak Attack damage",
+                    "damageOnSave": "half"
                 },
                 "Trip": {
                     "name": "Trip",
                     "condition": "When you deal Snack Attack damage",
                     "activationCondition": "When you deal Snack Attack damage",
                     "target": "Larger or smaller",
-                    "targetAffects": "Larger or smaller"
+                    "targetAffects": "Larger or smaller",
+                    "damageOnSave": "half"
                 },
                 "Cunning Sneak Attack": {
                     "name": "Cunning Sneak Attack",
@@ -1713,7 +1727,8 @@
                 "Death Strike": {
                     "name": "Death Strike",
                     "condition": "When you hit with your Sneak Attack on the first round of a combat",
-                    "activationCondition": "When you hit with your Sneak Attack on the first round of a combat"
+                    "activationCondition": "When you hit with your Sneak Attack on the first round of a combat",
+                    "damageOnSave": "full"
                 }
             }
         },
@@ -1748,7 +1763,8 @@
                     "activationCondition": "If you reduce the damage to 0",
                     "target": "Isn't behind Total Cover",
                     "targetAffects": "Isn't behind Total Cover",
-                    "range": "5 feet for melee attacks or 60 feet for ranged attacks"
+                    "range": "5 feet for melee attacks or 60 feet for ranged attacks",
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -1767,7 +1783,8 @@
                     "activationCondition": "If you reduce the damage to 0",
                     "target": "Isn't behind Total Cover",
                     "targetAffects": "Isn't behind Total Cover",
-                    "range": "5 feet for melee attacks or 60 feet for ranged attacks"
+                    "range": "5 feet for melee attacks or 60 feet for ranged attacks",
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -1791,17 +1808,20 @@
                 "Daze": {
                     "name": "Daze",
                     "condition": "When you deal Sneak Attack damage",
-                    "activationCondition": "When you deal Sneak Attack damage"
+                    "activationCondition": "When you deal Sneak Attack damage",
+                    "damageOnSave": "half"
                 },
                 "Knock Out": {
                     "name": "Knock Out",
                     "condition": "When you deal Sneak Attack damage",
-                    "activationCondition": "When you deal Sneak Attack damage"
+                    "activationCondition": "When you deal Sneak Attack damage",
+                    "damageOnSave": "half"
                 },
                 "Obscure": {
                     "name": "Obscure",
                     "condition": "When you deal Sneak Attack damage",
-                    "activationCondition": "When you deal Sneak Attack damage"
+                    "activationCondition": "When you deal Sneak Attack damage",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -1830,7 +1850,8 @@
             "activities": {
                 "save": {
                     "condition": "When you hit a creature with an attack roll",
-                    "activationCondition": "When you hit a creature with an attack roll"
+                    "activationCondition": "When you hit a creature with an attack roll",
+                    "damageOnSave": "full"
                 }
             }
         },
@@ -2294,7 +2315,8 @@
                     "activationCondition": "When you deal Elemental Strike damage",
                     "target": "hit by elemental damage from imbued strike",
                     "targetAffects": "hit by elemental damage from imbued strike",
-                    "range": "pushed or pulled up to 10 feet"
+                    "range": "pushed or pulled up to 10 feet",
+                    "damageOnSave": "half"
                 },
                 "Activate Attunement": {
                     "name": "Activate Attunement"
@@ -2311,7 +2333,8 @@
             "description": "<p>As a Magic action, you can expend 2 Focus Points to cause elemental energy to burst in a 20-foot-radius Sphere centered on a point within 120 feet of yourself. Choose a damage type: Acid, Cold, Fire, Lightning, or Thunder.</p><p>Each creature in the Sphere must make a Dexterity saving throw. On a failed save, a creature takes damage of the chosen type equal to three rolls of your Martial Arts die. On a successful save, a creature takes half as much damage.</p><section id=\"secret-ibRDHOMdegAOpfmU\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The damage type can be selected in the roll dialog.</p></section>",
             "activities": {
                 "Burst": {
-                    "name": "Burst"
+                    "name": "Burst",
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -2419,7 +2442,8 @@
                 "Poison": {
                     "name": "Poison",
                     "condition": "When you deal Sneak Attack damage",
-                    "activationCondition": "When you deal Sneak Attack damage"
+                    "activationCondition": "When you deal Sneak Attack damage",
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -2956,7 +2980,8 @@
             "activities": {
                 "save": {
                     "condition": "When you hit a creature with an attack roll",
-                    "activationCondition": "When you hit a creature with an attack roll"
+                    "activationCondition": "When you hit a creature with an attack roll",
+                    "damageOnSave": "full"
                 }
             },
             "effects": {
@@ -3164,7 +3189,8 @@
                 "Hurl Through Hell": {
                     "name": "Hurl Through Hell",
                     "condition": "Once per turn when you hit a creature with an attack roll",
-                    "activationCondition": "Once per turn when you hit a creature with an attack roll"
+                    "activationCondition": "Once per turn when you hit a creature with an attack roll",
+                    "damageOnSave": "none"
                 },
                 "Regain Use": {
                     "name": "Regain Use"
@@ -3408,6 +3434,9 @@
             "description": "<p>As a Bonus Action, you can strike terror into others with your menacing presence and primal power. When you do so, each creature of your choice in a 30-foot Emanation originating from you must make a Wisdom saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, a creature has the Frightened condition for 1 minute. At the end of each of the &amp;Reference[Frightened] creature's turns, the creature repeats the save, ending the effect on itself on a success.</p><p>Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a use of your Rage (no action required) to restore your use of it.</p><section class=\"secret\" id=\"secret-vRQdGrtACAbxH4Tm\"><p><strong>Foundry Note</strong></p><p>The <strong>Save</strong> activity includes an Active Effect which adds the Frightened condition.</p><p>The <strong>Recharge</strong> activity consumes a use of Rage and recharges your use of Intimidating Presence.</p></section>",
             "requirements": "Path of the Berserker",
             "activities": {
+                "save": {
+                    "damageOnSave": "half"
+                },
                 "Recharge with Rage": {
                     "name": "Recharge with Rage"
                 }
@@ -3536,7 +3565,12 @@
         "Land's Aid": {
             "name": "Land's Aid",
             "description": "<p>As a Magic action, you can expend a use of your Wild Shape and choose a point within 60 feet of yourself. Vitality-giving flowers and life-draining thorns appear for a moment in a 10-foot-radius Sphere centered on that point. Each creature of your choice in the Sphere must make a Constitution saving throw against your spell save DC, taking 2d6 Necrotic damage on a failed save or half as much damage on a successful one. One creature of your choice in that area regains [[/healing @scale.land.lands-aid]]{[[lookup @scale.land.lands-aid]] Hit Points}.</p><p>The damage and healing increase by 1d6 when you reach Druid levels 10 (3d6) and 14 (4d6).</p><section class=\"secret\" id=\"secret-T1DFK6QJjzeJsysz\"><p><strong>Foundry Note</strong></p><p>This feature includes an activity for the saving throw and the healing.</p><p>The healing/damage values automatically scale as you level up.</p></section>",
-            "requirements": "Circle of Land"
+            "requirements": "Circle of Land",
+            "activities": {
+                "save": {
+                    "damageOnSave": "half"
+                }
+            }
         },
         "Lay on Hands": {
             "name": "Lay on Hands",
@@ -3791,7 +3825,8 @@
             "activities": {
                 "save": {
                     "condition": "When you hit a creature with an attack roll",
-                    "activationCondition": "When you hit a creature with an attack roll"
+                    "activationCondition": "When you hit a creature with an attack roll",
+                    "damageOnSave": "full"
                 }
             },
             "effects": {
@@ -3829,7 +3864,8 @@
                     "activationCondition": "After teleporting",
                     "target": "That you choose",
                     "targetAffects": "That you choose",
-                    "range": "Of the space you just left"
+                    "range": "Of the space you just left",
+                    "damageOnSave": "half"
                 },
                 "cast": {
                     "condition": "After taking damage",
@@ -4070,6 +4106,11 @@
         "Nature's Wrath": {
             "name": "Nature's Wrath",
             "description": "<p>As a Magic action, you can expend one use of your Channel Divinity to conjure spectral vines around nearby creatures. Each creature of your choice that you can see within 15 feet of yourself must succeed on a Strength saving throw or have the Restrained condition for 1 minute. A Restrained creature repeats the save at the end of each of its turns, ending the effect on itself on a success.</p><section id=\"secret-0hFWoWfW8qGxYckC\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which applies the Restrained condition.</p></section>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "half"
+                }
+            },
             "effects": {
                 "Nature's Wrath": {
                     "name": "Nature's Wrath"
@@ -4231,11 +4272,13 @@
             "activities": {
                 "Manifest Single Emanation": {
                     "name": "Manifest Single Emanation",
-                    "range": "One willing creature"
+                    "range": "One willing creature",
+                    "damageOnSave": "none"
                 },
                 "Manifest Double Emanation": {
                     "name": "Manifest Double Emanation",
-                    "range": "One willing creature"
+                    "range": "One willing creature",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -4261,12 +4304,14 @@
                 "Push": {
                     "name": "Push",
                     "condition": "Whenever you hit a creature with an attack granted by your Flurry of Blows",
-                    "activationCondition": "Whenever you hit a creature with an attack granted by your Flurry of Blows"
+                    "activationCondition": "Whenever you hit a creature with an attack granted by your Flurry of Blows",
+                    "damageOnSave": "half"
                 },
                 "Topple": {
                     "name": "Topple",
                     "condition": "Whenever you hit a creature with an attack granted by your Flurry of Blows",
-                    "activationCondition": "Whenever you hit a creature with an attack granted by your Flurry of Blows"
+                    "activationCondition": "Whenever you hit a creature with an attack granted by your Flurry of Blows",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -4835,7 +4880,8 @@
             "activities": {
                 "save": {
                     "condition": "When you hit a creature with an attack roll",
-                    "activationCondition": "When you hit a creature with an attack roll"
+                    "activationCondition": "When you hit a creature with an attack roll",
+                    "damageOnSave": "full"
                 }
             }
         },
@@ -4857,7 +4903,8 @@
                 "End Vibrations": {
                     "name": "End Vibrations",
                     "condition": "When you take the Attack action on your turn",
-                    "activationCondition": "When you take the Attack action on your turn"
+                    "activationCondition": "When you take the Attack action on your turn",
+                    "damageOnSave": "half"
                 },
                 "Instill Vibrations": {
                     "name": "Instill Vibrations",
@@ -4874,7 +4921,12 @@
         "Radiance of the Dawn": {
             "name": "Radiance of the Dawn",
             "description": "<p>As a Magic action, you present your Holy Symbol and expend a use of your Channel Divinity to emit a flash of light in a 30-foot Emanation originating from yourself. Any magical &amp;Reference[Darkness]—such as that created by the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]{Darkness} spell—in that area is dispelled. Additionally, each creature of your choice in that area must make a Constitution saving throw, taking Radiant damage equal to 2d10 plus your Cleric level on a failed save or half as much damage on a successful one.</p>",
-            "requirements": "Light Domain"
+            "requirements": "Light Domain",
+            "activities": {
+                "save": {
+                    "damageOnSave": "half"
+                }
+            }
         },
         "Radiant Soul": {
             "name": "Radiant Soul",
@@ -5086,7 +5138,12 @@
         "Relentless Rage": {
             "name": "Relentless Rage",
             "description": "<p>Your Rage can keep you fighting despite grievous wounds. If you drop to 0 Hit Points while your Rage is active and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, your Hit Points instead change to a number equal to twice your Barbarian level.</p><p>Each time you use this feature after the first, the DC increases by 5. When you finish a Short or Long Rest, the DC resets to 10.</p><section class=\"secret\" id=\"secret-GTpuSHXh1ZobcQYd\"><p><strong>Foundry Note</strong></p><p>This feature will automatically increase the DC by 5 if you consume the resource when activating it. It will also automatically reset to 10 after a Short or Long Rest.</p></section>",
-            "requirements": "Barbarian"
+            "requirements": "Barbarian",
+            "activities": {
+                "save": {
+                    "damageOnSave": "half"
+                }
+            }
         },
         "Reliable Talent": {
             "name": "Reliable Talent",
@@ -5113,12 +5170,14 @@
                 "Rend Mind (Free)": {
                     "name": "Rend Mind (Free)",
                     "condition": "When you deal Sneak Attack damage with your Psychic Blades",
-                    "activationCondition": "When you deal Sneak Attack damage with your Psychic Blades"
+                    "activationCondition": "When you deal Sneak Attack damage with your Psychic Blades",
+                    "damageOnSave": "half"
                 },
                 "Rend Mind": {
                     "name": "Rend Mind",
                     "condition": "When you deal Sneak Attack damage with your Psychic Blades",
-                    "activationCondition": "When you deal Sneak Attack damage with your Psychic Blades"
+                    "activationCondition": "When you deal Sneak Attack damage with your Psychic Blades",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -5322,7 +5381,8 @@
                 "Channel Divinity: Turn Undead": {
                     "name": "Channel Divinity: Turn Undead",
                     "target": "Undead",
-                    "targetAffects": "Undead"
+                    "targetAffects": "Undead",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -5601,7 +5661,8 @@
                 "Spell Thief": {
                     "name": "Spell Thief",
                     "condition": "Immediately after a creature casts a spell that targets you or includes you in its area of effect",
-                    "activationCondition": "Immediately after a creature casts a spell that targets you or includes you in its area of effect"
+                    "activationCondition": "Immediately after a creature casts a spell that targets you or includes you in its area of effect",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -5622,7 +5683,8 @@
                 "Mass Fear": {
                     "name": "Mass Fear",
                     "condition": "When you use the Dreadful Strike effect",
-                    "activationCondition": "When you use the Dreadful Strike effect"
+                    "activationCondition": "When you use the Dreadful Strike effect",
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -5690,7 +5752,8 @@
                     "name": "Taunting Step",
                     "condition": "After teleporting",
                     "activationCondition": "After teleporting",
-                    "range": "Of the space you just left"
+                    "range": "Of the space you just left",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -5704,6 +5767,11 @@
             "name": "Stormborn",
             "description": "<p>Your Wrath of the Sea confers two more benefits while active, as detailed below.</p><p><strong>Flight.</strong> You gain a Fly Speed equal to your Speed.</p><p><strong>Resistance.</strong> You have Resistance to Cold, Lightning, and Thunder damage.</p><section class=\"secret\" id=\"secret-gM39tGMfj0IPiND0\"><p><strong>Foundry Note</strong></p><p>You can use this feature in place of Wrath of the Sea. It includes an Active Effect which will automate the addition of the Resistances. It does not add the Fly Speed though.</p></section>",
             "requirements": "Circle of the Sea",
+            "activities": {
+                "save": {
+                    "damageOnSave": "none"
+                }
+            },
             "effects": {
                 "Stormborn": {
                     "name": "Stormborn"
@@ -5739,7 +5807,8 @@
             "activities": {
                 "save": {
                     "condition": "Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike",
-                    "activationCondition": "Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike"
+                    "activationCondition": "Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -5954,7 +6023,8 @@
                 "Telekinetic Thrust": {
                     "name": "Telekinetic Thrust",
                     "condition": "When you deal damage to a target with your Psionic Strike",
-                    "activationCondition": "When you deal damage to a target with your Psionic Strike"
+                    "activationCondition": "When you deal damage to a target with your Psionic Strike",
+                    "damageOnSave": "none"
                 },
                 "Psi-Powered Leap Using Psionic Energy": {
                     "name": "Psi-Powered Leap Using Psionic Energy"
@@ -6165,7 +6235,8 @@
             "activities": {
                 "save": {
                     "condition": "When you hit a creature with an attack roll",
-                    "activationCondition": "When you hit a creature with an attack roll"
+                    "activationCondition": "When you hit a creature with an attack roll",
+                    "damageOnSave": "full"
                 }
             },
             "effects": {
@@ -6213,7 +6284,8 @@
             "activities": {
                 "Grapple/Shove": {
                     "name": "Grapple/Shove",
-                    "chatFlavor": "Grapple or Shove attempt"
+                    "chatFlavor": "Grapple or Shove attempt",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -6251,10 +6323,12 @@
                 "Recoil Save": {
                     "name": "Recoil Save",
                     "condition": "a creature hits you with an attack roll for the first time on a turn",
-                    "activationCondition": "a creature hits you with an attack roll for the first time on a turn"
+                    "activationCondition": "a creature hits you with an attack roll for the first time on a turn",
+                    "damageOnSave": "half"
                 },
                 "Assume Majestic Presence": {
-                    "name": "Assume Majestic Presence"
+                    "name": "Assume Majestic Presence",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -6511,7 +6585,8 @@
             "description": "<p>You can unleash a space-warping anomaly. As a Magic action, you teleport to an unoccupied space you can see within 120 feet of yourself. Immediately after you disappear, each creature within 30 feet of the space you left must make a Strength saving throw against your spell save DC. On a failed save, a creature takes 3d10 Force damage and is pulled straight toward the space you left, ending in an unoccupied space as close to your former space as possible. On a successful save, the creature takes half as much damage only.</p><p>Once you use this feature, you can’t do so again until you finish a Long Rest unless you spend 5 Sorcery Points (no action required) to restore your use of it.</p>",
             "activities": {
                 "Warping Implosion": {
-                    "name": "Warping Implosion"
+                    "name": "Warping Implosion",
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -6761,10 +6836,12 @@
             "requirements": "Circle of the Sea",
             "activities": {
                 "Manifest Ocean Spray": {
-                    "name": "Manifest Ocean Spray"
+                    "name": "Manifest Ocean Spray",
+                    "damageOnSave": "none"
                 },
                 "Bonus Action Save": {
-                    "name": "Bonus Action Save"
+                    "name": "Bonus Action Save",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {

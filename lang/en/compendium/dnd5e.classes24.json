@@ -24,6 +24,7 @@
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
                 "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
                 "range": {
                     "path": "range",
                     "converter": "imperialToMetric"
@@ -107,7 +108,8 @@
             "description": "<p>As a Magic action, you can expend one use of this class's Channel Divinity to overwhelm foes with awe. As you present your Holy Symbol or weapon, you can target a number of creatures equal to your Charisma modifier (minimum of one creature) that you can see within 60 feet of yourself. Each target must succeed on a Wisdom saving throw or have the &amp;Reference[Frightened] condition for 1 minute or until it takes any damage. While Frightened in this way, a target can do only one of the following on its turns: move, take an action, or take a Bonus Action.</p><section class=\"secret\" id=\"secret-lu2BuwFj2pnJ367b\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which applies the Frightened condition.</p></section>",
             "activities": {
                 "save": {
-                    "target": "That you can see"
+                    "target": "That you can see",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -665,12 +667,14 @@
             "activities": {
                 "Poison": {
                     "name": "Poison",
-                    "condition": "When you deal Sneak Attack damage"
+                    "condition": "When you deal Sneak Attack damage",
+                    "damageOnSave": "half"
                 },
                 "Trip": {
                     "name": "Trip",
                     "condition": "When you deal Snack Attack damage",
-                    "target": "Larger or smaller"
+                    "target": "Larger or smaller",
+                    "damageOnSave": "half"
                 },
                 "Cunning Sneak Attack": {
                     "name": "Cunning Sneak Attack",
@@ -761,7 +765,8 @@
                     "name": "Redirect",
                     "condition": "If you reduce the damage to 0",
                     "target": "Isn't behind Total Cover",
-                    "range": "5 feet for melee attacks or 60 feet for ranged attacks"
+                    "range": "5 feet for melee attacks or 60 feet for ranged attacks",
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -777,7 +782,8 @@
                     "name": "Redirect",
                     "condition": "If you reduce the damage to 0",
                     "target": "Isn't behind Total Cover",
-                    "range": "5 feet for melee attacks or 60 feet for ranged attacks"
+                    "range": "5 feet for melee attacks or 60 feet for ranged attacks",
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -800,15 +806,18 @@
             "activities": {
                 "Daze": {
                     "name": "Daze",
-                    "condition": "When you deal Sneak Attack damage"
+                    "condition": "When you deal Sneak Attack damage",
+                    "damageOnSave": "half"
                 },
                 "Knock Out": {
                     "name": "Knock Out",
-                    "condition": "When you deal Sneak Attack damage"
+                    "condition": "When you deal Sneak Attack damage",
+                    "damageOnSave": "half"
                 },
                 "Obscure": {
                     "name": "Obscure",
-                    "condition": "When you deal Sneak Attack damage"
+                    "condition": "When you deal Sneak Attack damage",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -1626,7 +1635,8 @@
             "activities": {
                 "Hurl Through Hell": {
                     "name": "Hurl Through Hell",
-                    "condition": "Once per turn when you hit a creature with an attack roll"
+                    "condition": "Once per turn when you hit a creature with an attack roll",
+                    "damageOnSave": "none"
                 },
                 "Regain Use": {
                     "name": "Regain Use"
@@ -1729,6 +1739,9 @@
             "description": "<p>As a Bonus Action, you can strike terror into others with your menacing presence and primal power. When you do so, each creature of your choice in a 30-foot Emanation originating from you must make a Wisdom saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, a creature has the Frightened condition for 1 minute. At the end of each of the &amp;Reference[Frightened] creature's turns, the creature repeats the save, ending the effect on itself on a success.</p><p>Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a use of your Rage (no action required) to restore your use of it.</p><section class=\"secret\" id=\"secret-vRQdGrtACAbxH4Tm\"><p><strong>Foundry Note</strong></p><p>The <strong>Save</strong> activity includes an Active Effect which adds the Frightened condition.</p><p>The <strong>Recharge</strong> activity consumes a use of Rage and recharges your use of Intimidating Presence.</p></section>",
             "requirements": "Path of the Berserker",
             "activities": {
+                "save": {
+                    "damageOnSave": "half"
+                },
                 "Recharge with Rage": {
                     "name": "Recharge with Rage"
                 }
@@ -1825,7 +1838,12 @@
         "Land's Aid": {
             "name": "Land's Aid",
             "description": "<p>As a Magic action, you can expend a use of your Wild Shape and choose a point within 60 feet of yourself. Vitality-giving flowers and life-draining thorns appear for a moment in a 10-foot-radius Sphere centered on that point. Each creature of your choice in the Sphere must make a Constitution saving throw against your spell save DC, taking 2d6 Necrotic damage on a failed save or half as much damage on a successful one. One creature of your choice in that area regains [[/healing @scale.land.lands-aid]]{[[lookup @scale.land.lands-aid]] Hit Points}.</p><p>The damage and healing increase by 1d6 when you reach Druid levels 10 (3d6) and 14 (4d6).</p><section class=\"secret\" id=\"secret-T1DFK6QJjzeJsysz\"><p><strong>Foundry Note</strong></p><p>This feature includes an activity for the saving throw and the healing.</p><p>The healing/damage values automatically scale as you level up.</p></section>",
-            "requirements": "Circle of Land"
+            "requirements": "Circle of Land",
+            "activities": {
+                "save": {
+                    "damageOnSave": "half"
+                }
+            }
         },
         "Lay on Hands": {
             "name": "Lay on Hands",
@@ -2254,11 +2272,13 @@
                 },
                 "Push": {
                     "name": "Push",
-                    "condition": "Whenever you hit a creature with an attack granted by your Flurry of Blows"
+                    "condition": "Whenever you hit a creature with an attack granted by your Flurry of Blows",
+                    "damageOnSave": "half"
                 },
                 "Topple": {
                     "name": "Topple",
-                    "condition": "Whenever you hit a creature with an attack granted by your Flurry of Blows"
+                    "condition": "Whenever you hit a creature with an attack granted by your Flurry of Blows",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -2536,7 +2556,8 @@
             "activities": {
                 "End Vibrations": {
                     "name": "End Vibrations",
-                    "condition": "When you take the Attack action on your turn"
+                    "condition": "When you take the Attack action on your turn",
+                    "damageOnSave": "half"
                 },
                 "Instill Vibrations": {
                     "name": "Instill Vibrations",
@@ -2594,7 +2615,12 @@
         "Relentless Rage": {
             "name": "Relentless Rage",
             "description": "<p>Your Rage can keep you fighting despite grievous wounds. If you drop to 0 Hit Points while your Rage is active and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, your Hit Points instead change to a number equal to twice your Barbarian level.</p><p>Each time you use this feature after the first, the DC increases by 5. When you finish a Short or Long Rest, the DC resets to 10.</p><section class=\"secret\" id=\"secret-GTpuSHXh1ZobcQYd\"><p><strong>Foundry Note</strong></p><p>This feature will automatically increase the DC by 5 if you consume the resource when activating it. It will also automatically reset to 10 after a Short or Long Rest.</p></section>",
-            "requirements": "Barbarian"
+            "requirements": "Barbarian",
+            "activities": {
+                "save": {
+                    "damageOnSave": "half"
+                }
+            }
         },
         "Reliable Talent": {
             "name": "Reliable Talent",
@@ -2767,7 +2793,8 @@
             "activities": {
                 "Channel Divinity: Turn Undead": {
                     "name": "Channel Divinity: Turn Undead",
-                    "target": "Undead"
+                    "target": "Undead",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -2959,7 +2986,8 @@
             "description": "<p>Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus Point to attempt a stunning strike. The target must make a Constitution saving throw. On a failed save, the target has the Stunned condition until the start of your next turn. On a successful save, the target's Speed is halved until the start of your next turn, and the next attack roll made against the target before then has Advantage.</p><section class=\"secret\" id=\"secret-bfJBOqZfcoIiBtoP\"><p><strong>Foundry Note</strong></p><p>This feature includes the Saving Throw and a Stunned Active Effect which applies the Stunned status if they fail and a Slowed Active Effect for tracking that their Speed is halved and that the next attack roll made against them has Advantage if they succeed.</p></section>",
             "activities": {
                 "save": {
-                    "condition": "Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike"
+                    "condition": "Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -3190,7 +3218,8 @@
             "activities": {
                 "Grapple/Shove": {
                     "name": "Grapple/Shove",
-                    "chatFlavor": "Grapple or Shove attempt"
+                    "chatFlavor": "Grapple or Shove attempt",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {

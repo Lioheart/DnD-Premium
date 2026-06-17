@@ -20,10 +20,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
-                "chatFlavor": "description.chatFlavor",
                 "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
                 "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
                 "range": {
                     "path": "range",
                     "converter": "imperialToMetric"
@@ -138,6 +139,9 @@
                 "Dazzling Weapon": {
                     "name": "Dazzling Weapon"
                 },
+                "save": {
+                    "damageOnSave": "none"
+                },
                 "Summon Light": {
                     "name": "Summon Light"
                 }
@@ -201,7 +205,8 @@
                     "activationCondition": "Taking the Drive action and spending half of the ship's Fly Speed",
                     "target": "not anchored",
                     "targetAffects": "not anchored",
-                    "range": "within the ship"
+                    "range": "within the ship",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -247,7 +252,8 @@
             "description": "<p><em>Weapon (@UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepMace000000]{Mace}). Rare (Requires Attunement)</em></p><p>This magic weapon has 3 charges and regains 1d3 expended charges daily at dawn. While holding the weapon, you can take a Magic action and expend 1 charge to release a wave of terror from it. Each creature of your choice within 30 feet of you must succeed on a DC 15 Wisdom saving throw or have the &amp;Reference[Frightened apply=false] condition for 1 minute. While Frightened in this way, a creature must spend its turns trying to move as far away from you as it can, and it can’t make Opportunity Attacks. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can take the Dodge action. At the end of each of its turns, a creature repeats the save, ending the effect on itself on a success.</p>",
             "activities": {
                 "Wave of Terror": {
-                    "name": "Wave of Terror"
+                    "name": "Wave of Terror",
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
