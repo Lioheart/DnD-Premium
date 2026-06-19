@@ -20,10 +20,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
-                "chatFlavor": "description.chatFlavor",
                 "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
                 "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
                 "range": {
                     "path": "range",
                     "converter": "imperialToMetric"
@@ -191,7 +192,8 @@
                 "Energy Redirection": {
                     "name": "Przekierowanie energii",
                     "target": "Nie jest za Całkowitą osłoną",
-                    "targetAffects": "Nie jest za Całkowitą osłoną"
+                    "targetAffects": "Nie jest za Całkowitą osłoną",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -674,11 +676,13 @@
                 },
                 "Poison Save (Dexterity)": {
                     "name": "Obrona na truciznę (Zręczność)",
-                    "chatFlavor": "&Reference[Poisoned] w przypadku niepowodzenia"
+                    "chatFlavor": "&Reference[Poisoned] w przypadku niepowodzenia",
+                    "damageOnSave": "none"
                 },
                 "Poison Save (Intelligence)": {
                     "name": "Obrona na truciznę (Inteligencja)",
-                    "chatFlavor": "&Reference[Poisoned] w przypadku niepowodzenia"
+                    "chatFlavor": "&Reference[Poisoned] w przypadku niepowodzenia",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -784,7 +788,8 @@
                 "Shield Bash": {
                     "name": "Uderzenie tarczą",
                     "condition": "Jeśli trafisz istotę bronią do walki wręcz znajdującą się w odległości 5 stóp od ciebie w ramach Akcji Atak",
-                    "activationCondition": "Jeśli trafisz istotę bronią do walki wręcz znajdującą się w odległości 5 stóp od ciebie w ramach Akcji Atak"
+                    "activationCondition": "Jeśli trafisz istotę bronią do walki wręcz znajdującą się w odległości 5 stóp od ciebie w ramach Akcji Atak",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -876,17 +881,20 @@
                 "Telekinetic Shove: Intelligence": {
                     "name": "Telekinetyczne pchnięcie: Inteligencja",
                     "target": "Widzisz",
-                    "targetAffects": "Widzisz"
+                    "targetAffects": "Widzisz",
+                    "damageOnSave": "połowa"
                 },
                 "Telekinetic Shove: Wisdom": {
                     "name": "Telekinetyczne pchnięcie: Mądrość",
                     "target": "Widzisz",
-                    "targetAffects": "Widzisz"
+                    "targetAffects": "Widzisz",
+                    "damageOnSave": "połowa"
                 },
                 "Telekinetic Shove: Charisma": {
                     "name": "Telekinetyczne pchnięcie: Charyzma",
                     "target": "Widzisz",
-                    "targetAffects": "Widzisz"
+                    "targetAffects": "Widzisz",
+                    "damageOnSave": "połowa"
                 }
             }
         },
