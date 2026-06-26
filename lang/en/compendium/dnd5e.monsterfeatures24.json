@@ -20,6 +20,7 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
+                "activationCondition": "activation.condition",
                 "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
@@ -246,6 +247,7 @@
                 "Detach Attempt": {
                     "name": "Detach Attempt",
                     "condition": "Action taken by the target or creature within range of it",
+                    "activationCondition": "Action taken by the target or creature within range of it",
                     "target": "attached target"
                 }
             },
@@ -263,7 +265,8 @@
             "activities": {
                 "Expend Use": {
                     "name": "Expend Use",
-                    "condition": "doesn't have the Incapacitated condition"
+                    "condition": "doesn't have the Incapacitated condition",
+                    "activationCondition": "doesn't have the Incapacitated condition"
                 }
             }
         },
@@ -315,6 +318,7 @@
             "activities": {
                 "damage": {
                     "condition": "start of each of its turns",
+                    "activationCondition": "start of each of its turns",
                     "target": "it is grappling or any creature grappling it"
                 }
             }
@@ -328,11 +332,13 @@
             "description": "<p>[[/attack extended]]. [[/damage average extended]], or [[/damage average activity=3m1SLqBeMGQF3UaQ]] if [[lookup @activation.condition activity=3m1SLqBeMGQF3UaQ]]</p>",
             "activities": {
                 "attack": {
-                    "condition": "swarm is not Bloodied"
+                    "condition": "swarm is not Bloodied",
+                    "activationCondition": "swarm is not Bloodied"
                 },
                 "Bloodied Attack": {
                     "name": "Bloodied Attack",
-                    "condition": "the swarm is &Reference[Bloodied apply=false]"
+                    "condition": "the swarm is &Reference[Bloodied apply=false]",
+                    "activationCondition": "the swarm is &Reference[Bloodied apply=false]"
                 }
             }
         },
@@ -366,11 +372,13 @@
                 "Berserk Check": {
                     "name": "Berserk Check",
                     "condition": "starts its turn &Reference[Bloodied]",
+                    "activationCondition": "starts its turn &Reference[Bloodied]",
                     "roll": "Berserk on 6"
                 },
                 "Calm Check": {
                     "name": "Calm Check",
                     "condition": "Action taken by creature's creator",
+                    "activationCondition": "Action taken by creature's creator",
                     "target": "this creature"
                 }
             },
@@ -391,7 +399,8 @@
             "activities": {
                 "Bloodied Attack": {
                     "name": "Bloodied Attack",
-                    "condition": "the swarm is &Reference[Bloodied]"
+                    "condition": "the swarm is &Reference[Bloodied]",
+                    "activationCondition": "the swarm is &Reference[Bloodied]"
                 }
             }
         },
@@ -503,7 +512,8 @@
             "requirements": "While underwater",
             "activities": {
                 "utility": {
-                    "condition": "while underwater"
+                    "condition": "while underwater",
+                    "activationCondition": "while underwater"
                 }
             }
         },
@@ -858,6 +868,7 @@
             "activities": {
                 "save": {
                     "condition": "when it dies",
+                    "activationCondition": "when it dies",
                     "damageOnSave": "half"
                 }
             }
@@ -915,7 +926,8 @@
             "activities": {
                 "Reduce Damage": {
                     "name": "Reduce Damage",
-                    "condition": "hit by a ranged attack roll and takes Bludgeoning, Piercing, or Slashing damage from it"
+                    "condition": "hit by a ranged attack roll and takes Bludgeoning, Piercing, or Slashing damage from it",
+                    "activationCondition": "hit by a ranged attack roll and takes Bludgeoning, Piercing, or Slashing damage from it"
                 },
                 "Save": {
                     "name": "Save",
@@ -1353,7 +1365,8 @@
             "activities": {
                 "Use": {
                     "name": "Use",
-                    "condition": "takes Cold damage"
+                    "condition": "takes Cold damage",
+                    "activationCondition": "takes Cold damage"
                 }
             },
             "effects": {
@@ -1778,7 +1791,8 @@
             "activities": {
                 "Expend Use": {
                     "name": "Expend Use",
-                    "condition": "spending 10 feet of movement"
+                    "condition": "spending 10 feet of movement",
+                    "activationCondition": "spending 10 feet of movement"
                 }
             }
         },
@@ -1788,7 +1802,8 @@
             "activities": {
                 "Expend Use": {
                     "name": "Expend Use",
-                    "condition": "fails a saving throw"
+                    "condition": "fails a saving throw",
+                    "activationCondition": "fails a saving throw"
                 }
             }
         },
@@ -2209,6 +2224,7 @@
                 "Use": {
                     "name": "Use",
                     "condition": "hit by a melee attack roll while holding a weapon",
+                    "activationCondition": "hit by a melee attack roll while holding a weapon",
                     "roll": "Bonus AC"
                 }
             }
@@ -2514,6 +2530,7 @@
                 "Expend Use": {
                     "name": "Expend Use",
                     "condition": "A creature the goblin can see makes an attack roll against it.",
+                    "activationCondition": "A creature the goblin can see makes an attack roll against it.",
                     "target": "a Small or Medium ally"
                 }
             }
@@ -2547,7 +2564,8 @@
             "requirements": "At least 1 Hit Point",
             "activities": {
                 "heal": {
-                    "condition": "starts its turn with at least 1 Hit Point"
+                    "condition": "starts its turn with at least 1 Hit Point",
+                    "activationCondition": "starts its turn with at least 1 Hit Point"
                 }
             }
         },
@@ -2929,6 +2947,7 @@
                 "Split": {
                     "name": "Split",
                     "condition": "is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage.",
+                    "activationCondition": "is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage.",
                     "profiles": {
                         "Black Pudding": {
                             "name": "Black Pudding"
@@ -3402,6 +3421,7 @@
                 "Save": {
                     "name": "Save",
                     "condition": "A creature the devil can see",
+                    "activationCondition": "A creature the devil can see",
                     "damageOnSave": "none"
                 }
             },
@@ -3680,6 +3700,7 @@
                 "Expend Use": {
                     "name": "Expend Use",
                     "condition": "The attacking creature is hit by an attack roll",
+                    "activationCondition": "The attacking creature is hit by an attack roll",
                     "target": "to an unoccupied space it can see"
                 }
             },

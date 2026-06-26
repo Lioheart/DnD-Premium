@@ -20,6 +20,7 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
+                "activationCondition": "activation.condition",
                 "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
@@ -202,6 +203,7 @@
                 "Slaying Save": {
                     "name": "Slaying Save",
                     "condition": "when the specified creature type is damaged by this ammunition",
+                    "activationCondition": "when the specified creature type is damaged by this ammunition",
                     "target": "specific creature type",
                     "damageOnSave": "half"
                 },
@@ -582,6 +584,7 @@
                 "Intercept Attack": {
                     "name": "Intercept Attack",
                     "condition": "an attacker makes a ranged attack roll against a target within 5 feet of you",
+                    "activationCondition": "an attacker makes a ranged attack roll against a target within 5 feet of you",
                     "chatFlavor": "You become the target of the ranged attack.",
                     "target": "attack roll made against target"
                 }
@@ -623,17 +626,20 @@
                 "Count Beans": {
                     "name": "Count Beans",
                     "condition": "Upon discovering the bag.",
+                    "activationCondition": "Upon discovering the bag.",
                     "chatFlavor": "3d4 dry beans found in bag.",
                     "target": "Held Bag of Beans"
                 },
                 "Dump Beans": {
                     "name": "Dump Beans",
                     "condition": "Object interaction",
+                    "activationCondition": "Object interaction",
                     "damageOnSave": "half"
                 },
                 "Plant Bean": {
                     "name": "Plant Bean",
                     "condition": "Object interaction",
+                    "activationCondition": "Object interaction",
                     "target": "Dirt or sand"
                 }
             }
@@ -664,7 +670,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             }
         },
@@ -1267,10 +1274,12 @@
                 "Grip Edges": {
                     "name": "Grip Edges",
                     "condition": "in an area of Dim Light or Darkness",
+                    "activationCondition": "in an area of Dim Light or Darkness",
                     "target": "edges of the cloak"
                 },
                 "cast": {
-                    "condition": "in an area of Dim Light or Darkness"
+                    "condition": "in an area of Dim Light or Darkness",
+                    "activationCondition": "in an area of Dim Light or Darkness"
                 }
             },
             "effects": {
@@ -1337,11 +1346,13 @@
             "activities": {
                 "Card Effect: Start": {
                     "name": "Card Effect: Start",
-                    "condition": "The next time you enter combat against one or more Hostile creatures"
+                    "condition": "The next time you enter combat against one or more Hostile creatures",
+                    "activationCondition": "The next time you enter combat against one or more Hostile creatures"
                 },
                 "Card Effect: Resolve": {
                     "name": "Card Effect: Resolve",
-                    "condition": "when the selected Hostile creature dies during this combat"
+                    "condition": "when the selected Hostile creature dies during this combat",
+                    "activationCondition": "when the selected Hostile creature dies during this combat"
                 }
             },
             "effects": {
@@ -1582,6 +1593,7 @@
                 "Attempt Escape": {
                     "name": "Attempt Escape",
                     "condition": "is bound by Dimensional Shackles",
+                    "activationCondition": "is bound by Dimensional Shackles",
                     "chatFlavor": "Can be attempted once every 30 days",
                     "target": "Dimensional Shackles binding self"
                 }
@@ -1613,6 +1625,7 @@
                 "Card Effect": {
                     "name": "Card Effect",
                     "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw",
                     "chatFlavor": "You draw no more cards"
                 }
             },
@@ -1824,6 +1837,7 @@
                 "Reduce Unwilling Movement": {
                     "name": "Reduce Unwilling Movement",
                     "condition": "an effect moves you against your will along the ground",
+                    "activationCondition": "an effect moves you against your will along the ground",
                     "chatFlavor": "Distance moved reduced by up to 10 feet"
                 },
                 "Dwarven Plate": {
@@ -2040,6 +2054,7 @@
                 "Arrow of Restraint": {
                     "name": "Arrow of Restraint",
                     "condition": "instead of dealing damage",
+                    "activationCondition": "instead of dealing damage",
                     "chatFlavor": "Save Fail: &Reference[restrained]<br>Escape: [[/check ability=str skill=ath dc=20]]",
                     "damageOnSave": "none"
                 }
@@ -2083,6 +2098,7 @@
                 "Card Effect": {
                     "name": "Card Effect",
                     "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw",
                     "chatFlavor": "Card's effect occurs immediately upon draw"
                 }
             },
@@ -2167,6 +2183,7 @@
                 "Card Effect": {
                     "name": "Card Effect",
                     "condition": "Card's effect occurs upon draw or at any other time before you die",
+                    "activationCondition": "Card's effect occurs upon draw or at any other time before you die",
                     "target": "One event that has occured"
                 }
             }
@@ -2327,7 +2344,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             },
             "effects": {
@@ -2363,7 +2381,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             },
             "effects": {
@@ -2421,11 +2440,13 @@
                 "Card Effect: Jewelry": {
                     "name": "Card Effect: Jewelry",
                     "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw",
                     "chatFlavor": "Creates 25 pieces of @UUID[Compendium.dnd5e.equipment24.Item.dmgJewelry2000GP]{Jewelry}"
                 },
                 "Card Effect: Gems": {
                     "name": "Card Effect: Gems",
                     "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw",
                     "chatFlavor": "Creates 50 @UUID[Compendium.dnd5e.equipment24.Item.dmgGemstone1000G]{Gemstones}"
                 }
             }
@@ -2510,6 +2531,7 @@
                 "Snare Missile": {
                     "name": "Snare Missile",
                     "condition": "Hit by an attack roll with a Ranged or Thrown weapon",
+                    "activationCondition": "Hit by an attack roll with a Ranged or Thrown weapon",
                     "roll": "Snare Missile"
                 }
             }
@@ -2692,6 +2714,7 @@
                 "Explosive Emanation": {
                     "name": "Explosive Emanation",
                     "condition": "Take Fire damage from failing a saving throw",
+                    "activationCondition": "Take Fire damage from failing a saving throw",
                     "damageOnSave": "half"
                 }
             },
@@ -2873,6 +2896,7 @@
             "activities": {
                 "save": {
                     "condition": "Steps on the plate",
+                    "activationCondition": "Steps on the plate",
                     "damageOnSave": "none"
                 },
                 "Escape": {
@@ -2930,6 +2954,7 @@
                 "Utilize (Scale by Spell Level)": {
                     "name": "Utilize (Scale by Spell Level)",
                     "condition": "when a creature you can see casts a spell of 4th level or lower",
+                    "activationCondition": "when a creature you can see casts a spell of 4th level or lower",
                     "roll": "Spell Level Canceled"
                 }
             }
@@ -2971,6 +2996,7 @@
                 "Utilize (Scale by Spell Level)": {
                     "name": "Utilize (Scale by Spell Level)",
                     "condition": "when a creature you can see casts a spell of 8th level or lower",
+                    "activationCondition": "when a creature you can see casts a spell of 8th level or lower",
                     "roll": "Spell Level Canceled"
                 }
             }
@@ -3031,7 +3057,8 @@
             "activities": {
                 "Regeneration": {
                     "name": "Regeneration",
-                    "condition": "once per hour if you have at least 1 Hit Point"
+                    "condition": "once per hour if you have at least 1 Hit Point",
+                    "activationCondition": "once per hour if you have at least 1 Hit Point"
                 }
             }
         },
@@ -3157,11 +3184,13 @@
             "activities": {
                 "Card Effect: Advantage": {
                     "name": "Card Effect: Advantage",
-                    "condition": "Card's chosen effect occurs immediately upon draw"
+                    "condition": "Card's chosen effect occurs immediately upon draw",
+                    "activationCondition": "Card's chosen effect occurs immediately upon draw"
                 },
                 "Card Effect: Draw Two": {
                     "name": "Card Effect: Draw Two",
                     "condition": "Card's chosen effect occurs immediately upon draw",
+                    "activationCondition": "Card's chosen effect occurs immediately upon draw",
                     "chatFlavor": "You draw two additional cards"
                 }
             }
@@ -3185,7 +3214,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             }
         },
@@ -3195,7 +3225,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             }
         },
@@ -3287,6 +3318,7 @@
                 "Luck": {
                     "name": "Luck",
                     "condition": "failed D20 Test",
+                    "activationCondition": "failed D20 Test",
                     "roll": "Roll D20"
                 }
             },
@@ -3555,6 +3587,7 @@
             "activities": {
                 "save": {
                     "condition": "Sees its reflection",
+                    "activationCondition": "Sees its reflection",
                     "damageOnSave": "half"
                 },
                 "Add Trapped Creature": {
@@ -3604,6 +3637,7 @@
                 "Check Deck Size": {
                     "name": "Check Deck Size",
                     "condition": "when determining the number of cards in this Deck",
+                    "activationCondition": "when determining the number of cards in this Deck",
                     "target": "Mysterious Deck",
                     "roll": "Deck Size"
                 },
@@ -3671,6 +3705,7 @@
                 "Life Stealing": {
                     "name": "Life Stealing",
                     "condition": "when you roll a 20 on an attack against a creature with fewer than 100 Hit Points",
+                    "activationCondition": "when you roll a 20 on an attack against a creature with fewer than 100 Hit Points",
                     "damageOnSave": "none"
                 },
                 "Nine Lives Stealer": {
@@ -3699,7 +3734,8 @@
                 },
                 "Swear Oath": {
                     "name": "Swear Oath",
-                    "condition": "when you make a ranged attack with this weapon"
+                    "condition": "when you make a ranged attack with this weapon",
+                    "activationCondition": "when you make a ranged attack with this weapon"
                 }
             },
             "effects": {
@@ -4415,6 +4451,7 @@
                 "Card Effect": {
                     "name": "Card Effect",
                     "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw",
                     "roll": "Ability Score Reduction"
                 }
             }
@@ -4530,7 +4567,8 @@
             "description": "<p><em>Ring, Very Rare (Requires Attunement)</em></p><p>While wearing this ring, you regain 1d6 Hit Points every 10 minutes if you have at least 1 Hit Point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after [[/r 1d6 + 1]] days if you have at least 1 Hit Point the whole time.</p><section class=\"secret\" id=\"secret-N3RMelHP7jT5vBMy\"><p><strong>Foundry Note</strong></p><p>The <strong>Heal</strong> activity allows you to enter the number of 10 minute increments that have passed and will automatically scale the healing formula. For example, if it's been an hour, you can enter 6 and it will roll 6d6.</p></section>",
             "activities": {
                 "heal": {
-                    "condition": "Every 10 minutes"
+                    "condition": "Every 10 minutes",
+                    "activationCondition": "Every 10 minutes"
                 }
             }
         },
@@ -4912,7 +4950,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             },
             "effects": {
@@ -4994,7 +5033,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             }
         },
@@ -5051,7 +5091,8 @@
             "description": "<p><em>Weapon (@UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar}), Very Rare (Requires Attunement)</em></p><p>You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. In addition, you can make one attack with it as a Bonus Action on each of your turns.</p>",
             "activities": {
                 "attack": {
-                    "condition": "Action or Bonus Action"
+                    "condition": "Action or Bonus Action",
+                    "activationCondition": "Action or Bonus Action"
                 }
             }
         },
@@ -5563,7 +5604,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             }
         },
@@ -5598,7 +5640,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             },
             "effects": {
@@ -5724,6 +5767,7 @@
                 "Card Effect": {
                     "name": "Card Effect",
                     "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw",
                     "target": "all magic items you wear or carry"
                 }
             }
@@ -5769,7 +5813,8 @@
             "activities": {
                 "Card Effect": {
                     "name": "Card Effect",
-                    "condition": "Card's effect occurs immediately upon draw"
+                    "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw"
                 }
             }
         },
@@ -5995,6 +6040,7 @@
                 "Card Effect": {
                     "name": "Card Effect",
                     "condition": "Card's effect occurs immediately upon draw",
+                    "activationCondition": "Card's effect occurs immediately upon draw",
                     "chatFlavor": "You draw no more cards"
                 }
             },

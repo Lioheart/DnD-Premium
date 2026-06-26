@@ -19,7 +19,112 @@
         },
         "items": {
             "path": "items",
-            "converter": "items"
+            "converter": "document",
+            "documentType": "Item",
+            "cardinality": "many",
+            "mapping": {
+                "description": "system.description.value",
+                "requirements": "system.requirements",
+                "materials": "system.materials.value",
+                "chat": "system.description.chat",
+                "activation": "system.activation.condition",
+                "activationValue": "system.activation.value",
+                "activities": {
+                    "path": "system.activities",
+                    "converter": "structured",
+                    "cardinality": "many",
+                    "container": "keyed",
+                    "keys": [
+                        "_id",
+                        "name",
+                        "type"
+                    ],
+                    "mapping": {
+                        "name": "name",
+                        "condition": "activation.condition",
+                        "activationCondition": "activation.condition",
+                        "activationValue": "activation.value",
+                        "chatFlavor": "description.chatFlavor",
+                        "duration": "duration.special",
+                        "roll": "roll.name",
+                        "damageOnSave": "damage.onSave",
+                        "range": {
+                            "path": "range",
+                            "converter": "imperialToMetric"
+                        },
+                        "target": {
+                            "path": "target",
+                            "converter": "imperialToMetric"
+                        },
+                        "profiles": {
+                            "path": "profiles",
+                            "converter": "nameCollection"
+                        }
+                    }
+                },
+                "effects": {
+                    "path": "effects",
+                    "converter": "effects"
+                },
+                "advancement": {
+                    "path": "system.advancement",
+                    "converter": "structured",
+                    "cardinality": "many",
+                    "container": "keyed",
+                    "keys": [
+                        "_id",
+                        "title"
+                    ],
+                    "mapping": {
+                        "title": "title",
+                        "hint": "hint",
+                        "_variants": [
+                            {
+                                "_when": {
+                                    "path": "type",
+                                    "equals": "ScaleValue"
+                                },
+                                "distance": {
+                                    "path": "configuration.distance",
+                                    "converter": "imperialToMetric"
+                                },
+                                "scale": {
+                                    "path": "configuration.scale",
+                                    "converter": "imperialToMetric"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "movement": {
+                    "path": "system.movement",
+                    "converter": "imperialToMetric"
+                },
+                "weight": {
+                    "path": "system.weight",
+                    "converter": "imperialToMetric"
+                },
+                "range": {
+                    "path": "system.range",
+                    "converter": "imperialToMetric"
+                },
+                "capacityWeight": {
+                    "path": "system.capacity.weight",
+                    "converter": "imperialToMetric"
+                },
+                "senses": {
+                    "path": "system.senses",
+                    "converter": "imperialToMetric"
+                },
+                "target": {
+                    "path": "system.target",
+                    "converter": "imperialToMetric"
+                },
+                "volume": {
+                    "path": "system.capacity.volume",
+                    "converter": "imperialToMetric"
+                }
+            }
         },
         "travel": {
             "path": "system.attributes.travel",
@@ -68,7 +173,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -180,7 +286,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -360,7 +467,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -558,7 +666,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -770,7 +879,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -974,7 +1084,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -1172,7 +1283,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -1359,7 +1471,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -1503,7 +1616,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -1641,7 +1755,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -1851,7 +1966,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -2581,7 +2697,8 @@
                     "requirements": "Cleric",
                     "activities": {
                         "damage": {
-                            "condition": "Deal damage with any Cleric cantrip"
+                            "condition": "Deal damage with any Cleric cantrip",
+                            "activationCondition": "Deal damage with any Cleric cantrip"
                         }
                     }
                 },
@@ -2854,7 +2971,8 @@
                     "activities": {
                         "Potent Spellcasting: Heal": {
                             "name": "Potent Spellcasting: Heal",
-                            "condition": "When you cast a Cleric cantrip and deal damage to a creature with it"
+                            "condition": "When you cast a Cleric cantrip and deal damage to a creature with it",
+                            "activationCondition": "When you cast a Cleric cantrip and deal damage to a creature with it"
                         }
                     }
                 },
@@ -2997,7 +3115,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -3199,7 +3318,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -3405,7 +3525,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -3630,7 +3751,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -3906,7 +4028,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -4123,7 +4246,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -4323,7 +4447,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -4485,7 +4610,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -4684,7 +4810,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -4918,7 +5045,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -5061,7 +5189,8 @@
                     "description": "<p><em>Melee Attack Roll:</em> [[/attack]] ([[lookup @activation.condition activity=xWlMeXFjELfSUWX9]]), reach [[lookup @range.value activity=xWlMeXFjELfSUWX9]] ft. [[/damage average extended]]. If the target is a Large or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]).</p>",
                     "activities": {
                         "attack": {
-                            "condition": "with Advantage if the target is Grappled by the ankheg"
+                            "condition": "with Advantage if the target is Grappled by the ankheg",
+                            "activationCondition": "with Advantage if the target is Grappled by the ankheg"
                         },
                         "Escape Check": {
                             "name": "Escape Check"
@@ -5343,11 +5472,13 @@
                     "activities": {
                         "Regain Spell Slot": {
                             "name": "Regain Spell Slot",
-                            "condition": "Once on each of your turns"
+                            "condition": "Once on each of your turns",
+                            "activationCondition": "Once on each of your turns"
                         },
                         "Regain Wild Shape": {
                             "name": "Regain Wild Shape",
-                            "condition": "Once on each of your turns"
+                            "condition": "Once on each of your turns",
+                            "activationCondition": "Once on each of your turns"
                         }
                     }
                 },
@@ -5671,7 +5802,8 @@
                         },
                         "Recover Spell Slots": {
                             "name": "Recover Spell Slots",
-                            "condition": "When you finish a Short Rest"
+                            "condition": "When you finish a Short Rest",
+                            "activationCondition": "When you finish a Short Rest"
                         }
                     }
                 },
@@ -5824,6 +5956,7 @@
                         "Reduce Unwilling Movement": {
                             "name": "Reduce Unwilling Movement",
                             "condition": "an effect moves you against your will along the ground",
+                            "activationCondition": "an effect moves you against your will along the ground",
                             "chatFlavor": "Distance moved reduced by up to 10 feet"
                         }
                     },
@@ -6071,7 +6204,8 @@
                     "description": "<p>As a Bonus Action, you can move the eye up to 30 feet in any direction. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter.</p>",
                     "activities": {
                         "utility": {
-                            "condition": "Bonus Action used by summoner"
+                            "condition": "Bonus Action used by summoner",
+                            "activationCondition": "Bonus Action used by summoner"
                         }
                     }
                 }
@@ -6112,7 +6246,8 @@
                         },
                         "Crush": {
                             "name": "Crush",
-                            "condition": "has a creature grappled"
+                            "condition": "has a creature grappled",
+                            "activationCondition": "has a creature grappled"
                         }
                     }
                 },
@@ -6568,7 +6703,8 @@
                     "activities": {
                         "Self Damage": {
                             "name": "Self Damage",
-                            "condition": "the Avatarends its turn inside an object."
+                            "condition": "the Avatarends its turn inside an object.",
+                            "activationCondition": "the Avatarends its turn inside an object."
                         }
                     }
                 },
@@ -6636,7 +6772,8 @@
                     "description": "<p>At the end of each of the [[lookup @name lowercase]]{monster}'s turns, each [[lookup @target.affects.type activity=15VgJKVXwYBOFSqJ]] of the [[lookup @name lowercase]]{monster}'s choice in a [[lookup @target.template.size activity=15VgJKVXwYBOFSqJ]]-foot Emanation originating from the [[lookup @name lowercase]]{monster} takes [[/damage average]] damage unless the [[lookup @name lowercase]]{monster} has the Incapacitated condition.</p>",
                     "activities": {
                         "damage": {
-                            "condition": "at the end of each of this creature's turns"
+                            "condition": "at the end of each of this creature's turns",
+                            "activationCondition": "at the end of each of this creature's turns"
                         }
                     }
                 },
@@ -6701,7 +6838,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -6799,6 +6937,7 @@
                         "Use": {
                             "name": "Use",
                             "condition": "hit by a melee attack roll while holding a weapon",
+                            "activationCondition": "hit by a melee attack roll while holding a weapon",
                             "roll": "Bonus AC"
                         }
                     }
@@ -6816,6 +6955,7 @@
                     "activities": {
                         "damage": {
                             "condition": "start of each of its turns",
+                            "activationCondition": "start of each of its turns",
                             "target": "it is grappling or any creature grappling it"
                         }
                     }
@@ -7319,6 +7459,7 @@
                         "Cut with Words": {
                             "name": "Cut with Words",
                             "condition": "Creature you can see within 60 feet makes a damage roll or succeeds on an ability check or attack roll",
+                            "activationCondition": "Creature you can see within 60 feet makes a damage roll or succeeds on an ability check or attack roll",
                             "roll": "Bardic Inspiration"
                         }
                     }
@@ -7561,7 +7702,8 @@
                     "requirements": "Bard",
                     "activities": {
                         "utility": {
-                            "condition": "You or a creature within 30 feet of you fails a saving throw against an effect that applies the Charmed or Frightened condition"
+                            "condition": "You or a creature within 30 feet of you fails a saving throw against an effect that applies the Charmed or Frightened condition",
+                            "activationCondition": "You or a creature within 30 feet of you fails a saving throw against an effect that applies the Charmed or Frightened condition"
                         }
                     }
                 },
@@ -7771,6 +7913,7 @@
                     "activities": {
                         "utility": {
                             "condition": "When you fail an ability check or attack roll",
+                            "activationCondition": "When you fail an ability check or attack roll",
                             "roll": "Bardic Inspiration"
                         }
                     }
@@ -8037,6 +8180,7 @@
                         "Split": {
                             "name": "Split",
                             "condition": "is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage.",
+                            "activationCondition": "is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage.",
                             "profiles": {
                                 "Black Pudding": {
                                     "name": "Black Pudding"
@@ -8147,6 +8291,7 @@
                         "Moving Attack": {
                             "name": "Moving Attack",
                             "condition": "moved 20+ feet",
+                            "activationCondition": "moved 20+ feet",
                             "target": "Medium or smaller"
                         }
                     },
@@ -8336,7 +8481,8 @@
                     "description": "<p><em>Melee Attack Roll:</em> [[/attack]] ([[lookup @activation.condition activity=QIpweawAzbt4xw5h]]), reach [[lookup @range.value activity=QIpweawAzbt4xw5h]] ft. [[/damage average extended]]</p>",
                     "activities": {
                         "attack": {
-                            "condition": "with Advantage if the target is Grappled by the bugbear"
+                            "condition": "with Advantage if the target is Grappled by the bugbear",
+                            "activationCondition": "with Advantage if the target is Grappled by the bugbear"
                         }
                     }
                 },
@@ -8388,7 +8534,8 @@
                     "description": "<p><em>Melee or Ranged Attack Roll:</em> [[/attack]] ([[lookup @activation.condition activity=FHmD55OJjrFoBkHr]]), reach [[lookup @item.range.reach item=ST0XpSUdRn52jAF0]] ft. or range [[lookup @item.range.value item=ST0XpSUdRn52jAF0]]/[[lookup @item.range.long item=ST0XpSUdRn52jAF0]] ft. [[/damage average extended]]</p>",
                     "activities": {
                         "attack": {
-                            "condition": "with Advantage if the target is Grappled by the bugbear"
+                            "condition": "with Advantage if the target is Grappled by the bugbear",
+                            "activationCondition": "with Advantage if the target is Grappled by the bugbear"
                         }
                     }
                 },
@@ -8457,7 +8604,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "spending 10 feet of movement"
+                            "condition": "spending 10 feet of movement",
+                            "activationCondition": "spending 10 feet of movement"
                         }
                     }
                 }
@@ -8503,7 +8651,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "spending 10 feet of movement"
+                            "condition": "spending 10 feet of movement",
+                            "activationCondition": "spending 10 feet of movement"
                         }
                     }
                 },
@@ -8607,7 +8756,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "spending 10 feet of movement"
+                            "condition": "spending 10 feet of movement",
+                            "activationCondition": "spending 10 feet of movement"
                         }
                     }
                 }
@@ -8852,6 +9002,7 @@
                         "Save": {
                             "name": "Save",
                             "condition": "A creature the devil can see",
+                            "activationCondition": "A creature the devil can see",
                             "damageOnSave": "none"
                         }
                     },
@@ -8999,6 +9150,7 @@
                         "Berserk Check": {
                             "name": "Berserk Check",
                             "condition": "starts its turn &Reference[Bloodied]",
+                            "activationCondition": "starts its turn &Reference[Bloodied]",
                             "roll": "Berserk on 6"
                         }
                     },
@@ -9066,6 +9218,7 @@
                         "Detach Attempt": {
                             "name": "Detach Attempt",
                             "condition": "Action taken by the target or creature within range of it",
+                            "activationCondition": "Action taken by the target or creature within range of it",
                             "target": "attached target"
                         }
                     },
@@ -9313,11 +9466,13 @@
                         "Initial Save": {
                             "name": "Initial Save",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
                             "damageOnSave": "none"
                         },
                         "Save while Restrained": {
                             "name": "Save while Restrained",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
                             "damageOnSave": "none"
                         }
                     },
@@ -9340,6 +9495,7 @@
                     "activities": {
                         "save": {
                             "condition": "visible creature moves or ends its turn within 10 feet of the pack",
+                            "activationCondition": "visible creature moves or ends its turn within 10 feet of the pack",
                             "damageOnSave": "none"
                         }
                     }
@@ -9357,11 +9513,13 @@
                         "Initial Save": {
                             "name": "Initial Save",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
                             "damageOnSave": "none"
                         },
                         "Save while Restrained": {
                             "name": "Save while Restrained",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
                             "damageOnSave": "none"
                         }
                     },
@@ -9383,7 +9541,8 @@
                     "description": "<p>@Embed[Compendium.dnd5e.spells24.Item.phbsplConjureFey caption=false]</p>",
                     "activities": {
                         "attack": {
-                            "condition": "upon appearing"
+                            "condition": "upon appearing",
+                            "activationCondition": "upon appearing"
                         },
                         "Teleport and Attack": {
                             "name": "Teleport and Attack"
@@ -9409,11 +9568,13 @@
                         "Initial Save": {
                             "name": "Initial Save",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
                             "damageOnSave": "none"
                         },
                         "Save while Restrained": {
                             "name": "Save while Restrained",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
                             "damageOnSave": "none"
                         }
                     },
@@ -9437,11 +9598,13 @@
                         "Initial Save": {
                             "name": "Initial Save",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
                             "damageOnSave": "none"
                         },
                         "Save while Restrained": {
                             "name": "Save while Restrained",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
                             "damageOnSave": "none"
                         }
                     },
@@ -9912,6 +10075,7 @@
                         "Command: Move and Attack": {
                             "name": "Command: Move and Attack",
                             "condition": "Bonus Action taken by attuned character",
+                            "activationCondition": "Bonus Action taken by attuned character",
                             "range": "Can move up to 30 feet before attacking"
                         }
                     }
@@ -9922,6 +10086,7 @@
                         "Command: Move and Attack": {
                             "name": "Command: Move and Attack",
                             "condition": "Bonus Action taken by attuned character",
+                            "activationCondition": "Bonus Action taken by attuned character",
                             "range": "Can move up to 30 feet before attacking"
                         }
                     }
@@ -9932,6 +10097,7 @@
                         "Command: Move and Attack": {
                             "name": "Command: Move and Attack",
                             "condition": "Bonus Action taken by attuned character",
+                            "activationCondition": "Bonus Action taken by attuned character",
                             "range": "Can move up to 30 feet before attacking"
                         }
                     }
@@ -9942,6 +10108,7 @@
                         "Command: Move and Attack": {
                             "name": "Command: Move and Attack",
                             "condition": "Bonus Action taken by attuned character",
+                            "activationCondition": "Bonus Action taken by attuned character",
                             "range": "Can move up to 30 feet before attacking"
                         }
                     }
@@ -9952,6 +10119,7 @@
                         "Command: Move and Attack": {
                             "name": "Command: Move and Attack",
                             "condition": "Bonus Action taken by attuned character",
+                            "activationCondition": "Bonus Action taken by attuned character",
                             "range": "Can move up to 30 feet before attacking"
                         }
                     }
@@ -10445,7 +10613,8 @@
                     "description": "<p>[[/attack]] ([[lookup @activation.condition activity=mEQjWdqU7zGv6Ott]]), reach [[lookup @range.value activity=mEQjWdqU7zGv6Ott]] [[lookup @range.units activity=mEQjWdqU7zGv6Ott]]. [[/damage average extended]].</p>",
                     "activities": {
                         "attack": {
-                            "condition": "with Advantage during the first round of each combat"
+                            "condition": "with Advantage during the first round of each combat",
+                            "activationCondition": "with Advantage during the first round of each combat"
                         }
                     }
                 },
@@ -11024,6 +11193,7 @@
                     "activities": {
                         "save": {
                             "condition": "when it dies",
+                            "activationCondition": "when it dies",
                             "damageOnSave": "half"
                         }
                     }
@@ -11410,6 +11580,7 @@
                         "Use": {
                             "name": "Use",
                             "condition": "hit by a melee attack roll while holding a weapon",
+                            "activationCondition": "hit by a melee attack roll while holding a weapon",
                             "roll": "Bonus AC"
                         }
                     }
@@ -11545,6 +11716,7 @@
                     "activities": {
                         "save": {
                             "condition": "start of your turn",
+                            "activationCondition": "start of your turn",
                             "damageOnSave": "none"
                         }
                     }
@@ -11706,6 +11878,7 @@
                     "activities": {
                         "save": {
                             "condition": "Any creature ends its turn within range",
+                            "activationCondition": "Any creature ends its turn within range",
                             "damageOnSave": "half"
                         }
                     }
@@ -11745,11 +11918,13 @@
                         "Berserk Check": {
                             "name": "Berserk Check",
                             "condition": "starts its turn &Reference[Bloodied]",
+                            "activationCondition": "starts its turn &Reference[Bloodied]",
                             "roll": "Berserk on 6"
                         },
                         "Calm Check": {
                             "name": "Calm Check",
                             "condition": "Action taken by creature's creator",
+                            "activationCondition": "Action taken by creature's creator",
                             "target": "this creature"
                         }
                     },
@@ -12168,7 +12343,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "spending 10 feet of movement"
+                            "condition": "spending 10 feet of movement",
+                            "activationCondition": "spending 10 feet of movement"
                         }
                     }
                 }
@@ -12786,7 +12962,8 @@
                     "activities": {
                         "Expand Use": {
                             "name": "Expand Use",
-                            "condition": "while underwater"
+                            "condition": "while underwater",
+                            "activationCondition": "while underwater"
                         }
                     }
                 },
@@ -12819,7 +12996,8 @@
                     "description": "<p><em>Melee Attack Roll:</em> [[/attack]] ([[lookup @activation.condition activity=xWlMeXFjELfSUWX9]]), reach [[lookup @item.range.reach item=xWlMeXFjELfSUWX9]] ft. [[/damage average extended]]</p>",
                     "activities": {
                         "attack": {
-                            "condition": "with Advantage if the target doesn’t have all its Hit Point"
+                            "condition": "with Advantage if the target doesn’t have all its Hit Point",
+                            "activationCondition": "with Advantage if the target doesn’t have all its Hit Point"
                         }
                     }
                 }
@@ -13241,6 +13419,7 @@
                         "Use": {
                             "name": "Use",
                             "condition": "hit by a melee attack roll while holding a weapon",
+                            "activationCondition": "hit by a melee attack roll while holding a weapon",
                             "roll": "Bonus AC"
                         }
                     }
@@ -13352,6 +13531,7 @@
                         "Expend Use": {
                             "name": "Expend Use",
                             "condition": "A creature the goblin can see makes an attack roll against it.",
+                            "activationCondition": "A creature the goblin can see makes an attack roll against it.",
                             "target": "a Small or Medium ally"
                         }
                     }
@@ -14156,7 +14336,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "spending 10 feet of movement"
+                            "condition": "spending 10 feet of movement",
+                            "activationCondition": "spending 10 feet of movement"
                         }
                     }
                 }
@@ -14283,7 +14464,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "spending 10 feet of movement"
+                            "condition": "spending 10 feet of movement",
+                            "activationCondition": "spending 10 feet of movement"
                         }
                     }
                 }
@@ -14397,7 +14579,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "doesn't have the Incapacitated condition"
+                            "condition": "doesn't have the Incapacitated condition",
+                            "activationCondition": "doesn't have the Incapacitated condition"
                         }
                     }
                 },
@@ -14544,7 +14727,8 @@
                     "description": "<p><em>Melee Attack Roll:</em> [[/attack]] ([[lookup @activation.condition activity=xWlMeXFjELfSUWX9]]), reach [[lookup @range.value activity=xWlMeXFjELfSUWX9]] [[lookup @range.units activity=xWlMeXFjELfSUWX9]]. [[/damage average extended]].</p>",
                     "activities": {
                         "attack": {
-                            "condition": "with Advantage if the target doesn’t have all its Hit Points"
+                            "condition": "with Advantage if the target doesn’t have all its Hit Points",
+                            "activationCondition": "with Advantage if the target doesn’t have all its Hit Points"
                         }
                     }
                 }
@@ -14645,6 +14829,7 @@
                         "Frigid Air": {
                             "name": "Frigid Air",
                             "condition": "creature moves through the wall for the first time on a turn",
+                            "activationCondition": "creature moves through the wall for the first time on a turn",
                             "damageOnSave": "half"
                         }
                     },
@@ -14678,6 +14863,7 @@
                     "activities": {
                         "save": {
                             "condition": "when it dies",
+                            "activationCondition": "when it dies",
                             "damageOnSave": "half"
                         }
                     }
@@ -15092,6 +15278,7 @@
                         "Use": {
                             "name": "Use",
                             "condition": "hit by a melee attack roll while holding a weapon",
+                            "activationCondition": "hit by a melee attack roll while holding a weapon",
                             "roll": "Bonus AC"
                         }
                     }
@@ -15134,7 +15321,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -15302,7 +15490,8 @@
                     "activities": {
                         "Relentlessly Endure": {
                             "name": "Relentlessly Endure",
-                            "condition": "When you are reduced to 0 Hit Points but not killed outright"
+                            "condition": "When you are reduced to 0 Hit Points but not killed outright",
+                            "activationCondition": "When you are reduced to 0 Hit Points but not killed outright"
                         }
                     }
                 },
@@ -16101,7 +16290,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "spending 10 feet of movement"
+                            "condition": "spending 10 feet of movement",
+                            "activationCondition": "spending 10 feet of movement"
                         }
                     }
                 },
@@ -16276,7 +16466,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -16977,6 +17168,7 @@
                     "activities": {
                         "save": {
                             "condition": "when it dies",
+                            "activationCondition": "when it dies",
                             "damageOnSave": "half"
                         }
                     }
@@ -17008,6 +17200,7 @@
                     "activities": {
                         "save": {
                             "condition": "when it dies",
+                            "activationCondition": "when it dies",
                             "damageOnSave": "half"
                         }
                     }
@@ -17158,6 +17351,7 @@
                         "Use": {
                             "name": "Use",
                             "condition": "hit by a melee attack roll while holding a weapon",
+                            "activationCondition": "hit by a melee attack roll while holding a weapon",
                             "roll": "Bonus AC"
                         }
                     }
@@ -17611,7 +17805,8 @@
                     "activities": {
                         "Retaliate": {
                             "name": "Retaliate",
-                            "condition": "When you take damage from a creature within 5 feet of you"
+                            "condition": "When you take damage from a creature within 5 feet of you",
+                            "activationCondition": "When you take damage from a creature within 5 feet of you"
                         }
                     }
                 },
@@ -17763,7 +17958,8 @@
                     "activities": {
                         "Recharge Rage on Initiative": {
                             "name": "Recharge Rage on Initiative",
-                            "condition": "When you roll initiative"
+                            "condition": "When you roll initiative",
+                            "activationCondition": "When you roll initiative"
                         }
                     }
                 },
@@ -17901,7 +18097,8 @@
                     "activities": {
                         "Attacked if Grappling": {
                             "name": "Attacked if Grappling",
-                            "condition": "with Advantage if the target is Grappled by the mimic"
+                            "condition": "with Advantage if the target is Grappled by the mimic",
+                            "activationCondition": "with Advantage if the target is Grappled by the mimic"
                         }
                     }
                 },
@@ -17951,6 +18148,7 @@
                         "Moving Attack": {
                             "name": "Moving Attack",
                             "condition": "moved 10+ feet",
+                            "activationCondition": "moved 10+ feet",
                             "target": "Large or smaller"
                         }
                     },
@@ -18261,7 +18459,8 @@
                     "activities": {
                         "Empowered Spell": {
                             "name": "Empowered Spell",
-                            "condition": "When you roll damage for a spell"
+                            "condition": "When you roll damage for a spell",
+                            "activationCondition": "When you roll damage for a spell"
                         }
                     }
                 },
@@ -18271,7 +18470,8 @@
                     "activities": {
                         "Quickened Spell": {
                             "name": "Quickened Spell",
-                            "condition": "When you cast a spell that has a casting time of an action"
+                            "condition": "When you cast a spell that has a casting time of an action",
+                            "activationCondition": "When you cast a spell that has a casting time of an action"
                         }
                     }
                 },
@@ -18606,23 +18806,28 @@
                     "activities": {
                         "Acid": {
                             "name": "Acid",
-                            "condition": "When you cast a spell that deals damage of your elemental affinity"
+                            "condition": "When you cast a spell that deals damage of your elemental affinity",
+                            "activationCondition": "When you cast a spell that deals damage of your elemental affinity"
                         },
                         "Cold": {
                             "name": "Cold",
-                            "condition": "When you cast a spell that deals damage of your elemental affinity"
+                            "condition": "When you cast a spell that deals damage of your elemental affinity",
+                            "activationCondition": "When you cast a spell that deals damage of your elemental affinity"
                         },
                         "Fire": {
                             "name": "Fire",
-                            "condition": "When you cast a spell that deals damage of your elemental affinity"
+                            "condition": "When you cast a spell that deals damage of your elemental affinity",
+                            "activationCondition": "When you cast a spell that deals damage of your elemental affinity"
                         },
                         "Lightning": {
                             "name": "Lightning",
-                            "condition": "When you cast a spell that deals damage of your elemental affinity"
+                            "condition": "When you cast a spell that deals damage of your elemental affinity",
+                            "activationCondition": "When you cast a spell that deals damage of your elemental affinity"
                         },
                         "Poison": {
                             "name": "Poison",
-                            "condition": "When you cast a spell that deals damage of your elemental affinity"
+                            "condition": "When you cast a spell that deals damage of your elemental affinity",
+                            "activationCondition": "When you cast a spell that deals damage of your elemental affinity"
                         }
                     }
                 },
@@ -18671,7 +18876,8 @@
                     "activities": {
                         "Careful Spell": {
                             "name": "Careful Spell",
-                            "condition": "When you cast a spell that forces other creatures to make a saving throw"
+                            "condition": "When you cast a spell that forces other creatures to make a saving throw",
+                            "activationCondition": "When you cast a spell that forces other creatures to make a saving throw"
                         }
                     }
                 },
@@ -18751,7 +18957,8 @@
                     "activities": {
                         "Twinned Spell": {
                             "name": "Twinned Spell",
-                            "condition": "When you cast a spell that can be upcast to target an additional creature"
+                            "condition": "When you cast a spell that can be upcast to target an additional creature",
+                            "activationCondition": "When you cast a spell that can be upcast to target an additional creature"
                         }
                     }
                 },
@@ -18885,7 +19092,8 @@
                     "activities": {
                         "Extended Spell": {
                             "name": "Extended Spell",
-                            "condition": "When you cast a spell that has a duration of 1 minute or longer"
+                            "condition": "When you cast a spell that has a duration of 1 minute or longer",
+                            "activationCondition": "When you cast a spell that has a duration of 1 minute or longer"
                         }
                     }
                 },
@@ -18895,7 +19103,8 @@
                     "activities": {
                         "Subtle Spell": {
                             "name": "Subtle Spell",
-                            "condition": "When you cast a spell"
+                            "condition": "When you cast a spell",
+                            "activationCondition": "When you cast a spell"
                         }
                     }
                 },
@@ -19231,7 +19440,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -19366,6 +19576,7 @@
                         "Expend Use": {
                             "name": "Expend Use",
                             "condition": "The attacking creature is hit by an attack roll",
+                            "activationCondition": "The attacking creature is hit by an attack roll",
                             "target": "to an unoccupied space it can see"
                         }
                     },
@@ -19818,6 +20029,7 @@
                         "Use": {
                             "name": "Use",
                             "condition": "hit by a melee attack roll while holding a weapon",
+                            "activationCondition": "hit by a melee attack roll while holding a weapon",
                             "roll": "Bonus AC"
                         }
                     }
@@ -19887,7 +20099,8 @@
                     "activities": {
                         "Split": {
                             "name": "Split",
-                            "condition": "is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage."
+                            "condition": "is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage.",
+                            "activationCondition": "is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage."
                         }
                     }
                 }
@@ -19904,7 +20117,8 @@
                     "activities": {
                         "Obscure Area": {
                             "name": "Obscure Area",
-                            "condition": "a creature ends its turn within 5 feet of the octopus while underwater"
+                            "condition": "a creature ends its turn within 5 feet of the octopus while underwater",
+                            "activationCondition": "a creature ends its turn within 5 feet of the octopus while underwater"
                         }
                     }
                 },
@@ -19974,7 +20188,8 @@
                     "requirements": "At least 1 Hit Point",
                     "activities": {
                         "heal": {
-                            "condition": "starts its turn with at least 1 Hit Point"
+                            "condition": "starts its turn with at least 1 Hit Point",
+                            "activationCondition": "starts its turn with at least 1 Hit Point"
                         }
                     }
                 },
@@ -20161,6 +20376,7 @@
                     "activities": {
                         "save": {
                             "condition": "Whenever the Poisoned target finishes a Long Rest",
+                            "activationCondition": "Whenever the Poisoned target finishes a Long Rest",
                             "target": "Poisoned target",
                             "damageOnSave": "none"
                         }
@@ -20606,7 +20822,8 @@
                     "activities": {
                         "Uncanny Metabolism": {
                             "name": "Uncanny Metabolism",
-                            "condition": "When you roll initiative"
+                            "condition": "When you roll initiative",
+                            "activationCondition": "When you roll initiative"
                         }
                     }
                 },
@@ -20616,11 +20833,13 @@
                     "activities": {
                         "Reduce": {
                             "name": "Reduce",
-                            "condition": "When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage"
+                            "condition": "When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage",
+                            "activationCondition": "When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage"
                         },
                         "Redirect": {
                             "name": "Redirect",
                             "condition": "If you reduce the damage to 0",
+                            "activationCondition": "If you reduce the damage to 0",
                             "target": "Isn't behind Total Cover",
                             "range": "5 feet for melee attacks or 60 feet for ranged attacks",
                             "damageOnSave": "none"
@@ -20637,16 +20856,19 @@
                     "activities": {
                         "Addle": {
                             "name": "Addle",
-                            "condition": "Whenever you hit a creature with an attack granted by your Flurry of Blows"
+                            "condition": "Whenever you hit a creature with an attack granted by your Flurry of Blows",
+                            "activationCondition": "Whenever you hit a creature with an attack granted by your Flurry of Blows"
                         },
                         "Push": {
                             "name": "Push",
                             "condition": "Whenever you hit a creature with an attack granted by your Flurry of Blows",
+                            "activationCondition": "Whenever you hit a creature with an attack granted by your Flurry of Blows",
                             "damageOnSave": "half"
                         },
                         "Topple": {
                             "name": "Topple",
                             "condition": "Whenever you hit a creature with an attack granted by your Flurry of Blows",
+                            "activationCondition": "Whenever you hit a creature with an attack granted by your Flurry of Blows",
                             "damageOnSave": "half"
                         }
                     },
@@ -20678,6 +20900,7 @@
                     "activities": {
                         "save": {
                             "condition": "Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike",
+                            "activationCondition": "Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike",
                             "damageOnSave": "half"
                         }
                     },
@@ -20778,7 +21001,8 @@
                         },
                         "Patient Defense": {
                             "name": "Patient Defense",
-                            "condition": "When you expend a Focus Point to use Patient Defense"
+                            "condition": "When you expend a Focus Point to use Patient Defense",
+                            "activationCondition": "When you expend a Focus Point to use Patient Defense"
                         }
                     }
                 },
@@ -20851,11 +21075,13 @@
                     "activities": {
                         "Reduce": {
                             "name": "Reduce",
-                            "condition": "When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage"
+                            "condition": "When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage",
+                            "activationCondition": "When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage"
                         },
                         "Redirect": {
                             "name": "Redirect",
                             "condition": "If you reduce the damage to 0",
+                            "activationCondition": "If you reduce the damage to 0",
                             "target": "Isn't behind Total Cover",
                             "range": "5 feet for melee attacks or 60 feet for ranged attacks",
                             "damageOnSave": "none"
@@ -20888,11 +21114,13 @@
                         "End Vibrations": {
                             "name": "End Vibrations",
                             "condition": "When you take the Attack action on your turn",
+                            "activationCondition": "When you take the Attack action on your turn",
                             "damageOnSave": "half"
                         },
                         "Instill Vibrations": {
                             "name": "Instill Vibrations",
-                            "condition": "When you hit a creature with an Unarmed Strike"
+                            "condition": "When you hit a creature with an Unarmed Strike",
+                            "activationCondition": "When you hit a creature with an Unarmed Strike"
                         }
                     },
                     "effects": {
@@ -21069,7 +21297,8 @@
                     "description": "<p><em>Melee Attack Roll:</em> [[/attack]] ([[lookup @activation.condition activity=xWlMeXFjELfSUWX9]]), reach [[lookup @range.value activity=xWlMeXFjELfSUWX9]] [[lookup @range.units activity=xWlMeXFjELfSUWX9]]. [[/damage average extended]].</p>",
                     "activities": {
                         "attack": {
-                            "condition": "with Advantage if the target doesn’t have all its Hit Points"
+                            "condition": "with Advantage if the target doesn’t have all its Hit Points",
+                            "activationCondition": "with Advantage if the target doesn’t have all its Hit Points"
                         }
                     }
                 }
@@ -21219,7 +21448,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -22295,7 +22525,8 @@
                     "activities": {
                         "Colossus Slayer": {
                             "name": "Colossus Slayer",
-                            "condition": "Once per turn when you hit a creature with a weapon"
+                            "condition": "Once per turn when you hit a creature with a weapon",
+                            "activationCondition": "Once per turn when you hit a creature with a weapon"
                         }
                     }
                 },
@@ -22474,7 +22705,8 @@
                     "activities": {
                         "Multiattack Defense": {
                             "name": "Multiattack Defense",
-                            "condition": "When a creature hits you with an attack roll"
+                            "condition": "When a creature hits you with an attack roll",
+                            "activationCondition": "When a creature hits you with an attack roll"
                         }
                     },
                     "effects": {
@@ -22496,7 +22728,8 @@
                         },
                         "Decrease Exhaustion": {
                             "name": "Decrease Exhaustion",
-                            "condition": "Whenever you finish a Short Rest"
+                            "condition": "Whenever you finish a Short Rest",
+                            "activationCondition": "Whenever you finish a Short Rest"
                         }
                     }
                 },
@@ -22634,7 +22867,8 @@
                     "activities": {
                         "Resistances": {
                             "name": "Resistances",
-                            "condition": "When you take damage"
+                            "condition": "When you take damage",
+                            "activationCondition": "When you take damage"
                         }
                     },
                     "effects": {
@@ -22724,7 +22958,8 @@
                     "description": "<p><em>Weapon (@UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{Scimitar}), Very Rare (Requires Attunement)</em></p><p>You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. In addition, you can make one attack with it as a Bonus Action on each of your turns.</p>",
                     "activities": {
                         "attack": {
-                            "condition": "Action or Bonus Action"
+                            "condition": "Action or Bonus Action",
+                            "activationCondition": "Action or Bonus Action"
                         }
                     }
                 },
@@ -22815,7 +23050,8 @@
                         },
                         "Move Mark": {
                             "name": "Move Mark",
-                            "condition": "when the currently marked target drops to 0 Hit Points"
+                            "condition": "when the currently marked target drops to 0 Hit Points",
+                            "activationCondition": "when the currently marked target drops to 0 Hit Points"
                         }
                     },
                     "effects": {
@@ -22837,7 +23073,8 @@
                         },
                         "Move Mark": {
                             "name": "Move Mark",
-                            "condition": "when the currently marked target drops to 0 Hit Points"
+                            "condition": "when the currently marked target drops to 0 Hit Points",
+                            "activationCondition": "when the currently marked target drops to 0 Hit Points"
                         }
                     },
                     "effects": {
@@ -23237,6 +23474,7 @@
                         "Expend Second Wind": {
                             "name": "Expend Second Wind",
                             "condition": "When you fail an ability check",
+                            "activationCondition": "When you fail an ability check",
                             "roll": "Bonus"
                         }
                     }
@@ -23927,21 +24165,25 @@
                         "Poison": {
                             "name": "Poison",
                             "condition": "When you deal Sneak Attack damage",
+                            "activationCondition": "When you deal Sneak Attack damage",
                             "damageOnSave": "half"
                         },
                         "Trip": {
                             "name": "Trip",
                             "condition": "When you deal Snack Attack damage",
+                            "activationCondition": "When you deal Snack Attack damage",
                             "target": "Larger or smaller",
                             "damageOnSave": "half"
                         },
                         "Cunning Sneak Attack": {
                             "name": "Cunning Sneak Attack",
-                            "condition": "When you deal Sneak Attack damage"
+                            "condition": "When you deal Sneak Attack damage",
+                            "activationCondition": "When you deal Sneak Attack damage"
                         },
                         "Withdraw": {
                             "name": "Withdraw",
-                            "condition": "When you deal Sneak Attack damage"
+                            "condition": "When you deal Sneak Attack damage",
+                            "activationCondition": "When you deal Sneak Attack damage"
                         }
                     },
                     "effects": {
@@ -23960,7 +24202,8 @@
                     "activities": {
                         "Uncanny Dodge": {
                             "name": "Uncanny Dodge",
-                            "condition": "When an attacker that you can see hits you with an attack roll"
+                            "condition": "When an attacker that you can see hits you with an attack roll",
+                            "activationCondition": "When an attacker that you can see hits you with an attack roll"
                         }
                     }
                 },
@@ -24177,16 +24420,19 @@
                         "Daze": {
                             "name": "Daze",
                             "condition": "When you deal Sneak Attack damage",
+                            "activationCondition": "When you deal Sneak Attack damage",
                             "damageOnSave": "half"
                         },
                         "Knock Out": {
                             "name": "Knock Out",
                             "condition": "When you deal Sneak Attack damage",
+                            "activationCondition": "When you deal Sneak Attack damage",
                             "damageOnSave": "half"
                         },
                         "Obscure": {
                             "name": "Obscure",
                             "condition": "When you deal Sneak Attack damage",
+                            "activationCondition": "When you deal Sneak Attack damage",
                             "damageOnSave": "half"
                         }
                     },
@@ -25360,7 +25606,8 @@
                     "requirements": "While underwater",
                     "activities": {
                         "utility": {
-                            "condition": "while underwater"
+                            "condition": "while underwater",
+                            "activationCondition": "while underwater"
                         }
                     }
                 }
@@ -25547,7 +25794,8 @@
                     "activities": {
                         "Bonus Hex Damage": {
                             "name": "Bonus Hex Damage",
-                            "condition": "whenever you hit the target with an attack roll"
+                            "condition": "whenever you hit the target with an attack roll",
+                            "activationCondition": "whenever you hit the target with an attack roll"
                         },
                         "Place Curse": {
                             "name": "Place Curse"
@@ -25666,7 +25914,8 @@
                     "description": "<p>When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to your Charisma modifier plus your Warlock level (minimum of 1 Temporary Hit Point). You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points.</p>",
                     "activities": {
                         "heal": {
-                            "condition": "When you reduce an enemy to 0 Hit Points or  an enemy within 10 feet of you is reduced to 0 Hit Points"
+                            "condition": "When you reduce an enemy to 0 Hit Points or  an enemy within 10 feet of you is reduced to 0 Hit Points",
+                            "activationCondition": "When you reduce an enemy to 0 Hit Points or  an enemy within 10 feet of you is reduced to 0 Hit Points"
                         }
                     }
                 },
@@ -25918,7 +26167,8 @@
                     "activities": {
                         "Bonus Hex Damage": {
                             "name": "Bonus Hex Damage",
-                            "condition": "whenever you hit the target with an attack roll"
+                            "condition": "whenever you hit the target with an attack roll",
+                            "activationCondition": "whenever you hit the target with an attack roll"
                         },
                         "Place Curse": {
                             "name": "Place Curse"
@@ -26001,6 +26251,7 @@
                         "Luck": {
                             "name": "Luck",
                             "condition": "When you make an ability check or saving throw",
+                            "activationCondition": "When you make an ability check or saving throw",
                             "roll": "Bonus"
                         }
                     }
@@ -26363,6 +26614,7 @@
                         "Hurl Through Hell": {
                             "name": "Hurl Through Hell",
                             "condition": "Once per turn when you hit a creature with an attack roll",
+                            "activationCondition": "Once per turn when you hit a creature with an attack roll",
                             "damageOnSave": "none"
                         },
                         "Regain Use": {
@@ -26701,7 +26953,8 @@
                     "requirements": "At least 1 Hit Point",
                     "activities": {
                         "heal": {
-                            "condition": "starts its turn with at least 1 Hit Point"
+                            "condition": "starts its turn with at least 1 Hit Point",
+                            "activationCondition": "starts its turn with at least 1 Hit Point"
                         }
                     }
                 },
@@ -26727,7 +26980,8 @@
                     "description": "<p class=\"feature\"><em>Trigger:</em> An attack roll hits the wearer of the [[lookup @name lowercase]]{monster}'s amulet while the wearer is within 5 feet of the [[lookup @name lowercase]]{monster}.</p><p class=\"feature\"><em>Response:</em> The wearer gains a +5 bonus to AC, including against the triggering attack and possibly causing it to miss, until the start of the [[lookup @name lowercase]]{monster}'s next turn.</p>",
                     "activities": {
                         "utility": {
-                            "condition": "An attack roll hits the wearer of the guardian's amulet while the wearer is within 5 feet of the guardian"
+                            "condition": "An attack roll hits the wearer of the guardian's amulet while the wearer is within 5 feet of the guardian",
+                            "activationCondition": "An attack roll hits the wearer of the guardian's amulet while the wearer is within 5 feet of the guardian"
                         }
                     },
                     "effects": {
@@ -26865,7 +27119,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -27110,7 +27365,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -27343,7 +27599,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -27845,6 +28102,7 @@
                     "activities": {
                         "save": {
                             "condition": "when it dies",
+                            "activationCondition": "when it dies",
                             "damageOnSave": "half"
                         }
                     }
@@ -27920,7 +28178,8 @@
                     "activities": {
                         "Reduce Damage": {
                             "name": "Reduce Damage",
-                            "condition": "hit by a ranged attack roll and takes Bludgeoning, Piercing, or Slashing damage from it"
+                            "condition": "hit by a ranged attack roll and takes Bludgeoning, Piercing, or Slashing damage from it",
+                            "activationCondition": "hit by a ranged attack roll and takes Bludgeoning, Piercing, or Slashing damage from it"
                         },
                         "Save": {
                             "name": "Save",
@@ -28177,7 +28436,8 @@
                     "activities": {
                         "Bloodied Attack": {
                             "name": "Bloodied Attack",
-                            "condition": "the swarm is &Reference[Bloodied]"
+                            "condition": "the swarm is &Reference[Bloodied]",
+                            "activationCondition": "the swarm is &Reference[Bloodied]"
                         }
                     }
                 }
@@ -28198,7 +28458,8 @@
                     "activities": {
                         "Bloodied Attack": {
                             "name": "Bloodied Attack",
-                            "condition": "the swarm is &Reference[Bloodied]"
+                            "condition": "the swarm is &Reference[Bloodied]",
+                            "activationCondition": "the swarm is &Reference[Bloodied]"
                         }
                     },
                     "effects": {
@@ -28229,7 +28490,8 @@
                     "activities": {
                         "Bloodied Attack": {
                             "name": "Bloodied Attack",
-                            "condition": "the swarm is &Reference[Bloodied]"
+                            "condition": "the swarm is &Reference[Bloodied]",
+                            "activationCondition": "the swarm is &Reference[Bloodied]"
                         }
                     }
                 }
@@ -28253,11 +28515,13 @@
                     "description": "<p>[[/attack]] ([[lookup @activation.condition activity=nrOPHKjj59hG1On3]]), reach [[lookup @range.value activity=nrOPHKjj59hG1On3]] [[lookup @range.units activity=nrOPHKjj59hG1On3]]. [[/damage average extended]], or [[/damage average activity=3Yo83eZUNwX51AcE]] if [[lookup @activation.condition activity=3Yo83eZUNwX51AcE]]</p>",
                     "activities": {
                         "attack": {
-                            "condition": "with Advantage if the target doesn't have all its Hit Points"
+                            "condition": "with Advantage if the target doesn't have all its Hit Points",
+                            "activationCondition": "with Advantage if the target doesn't have all its Hit Points"
                         },
                         "Bloodied Attack": {
                             "name": "Bloodied Attack",
-                            "condition": "the swarm is &Reference[Bloodied]"
+                            "condition": "the swarm is &Reference[Bloodied]",
+                            "activationCondition": "the swarm is &Reference[Bloodied]"
                         }
                     }
                 }
@@ -28278,7 +28542,8 @@
                     "activities": {
                         "Bloodied Attack": {
                             "name": "Bloodied Attack",
-                            "condition": "the swarm is &Reference[Bloodied]"
+                            "condition": "the swarm is &Reference[Bloodied]",
+                            "activationCondition": "the swarm is &Reference[Bloodied]"
                         }
                     }
                 }
@@ -28298,11 +28563,13 @@
                     "description": "<p>[[/attack extended]]. [[/damage average extended]], or [[/damage average activity=3m1SLqBeMGQF3UaQ]] if [[lookup @activation.condition activity=3m1SLqBeMGQF3UaQ]]</p>",
                     "activities": {
                         "attack": {
-                            "condition": "swarm is not Bloodied"
+                            "condition": "swarm is not Bloodied",
+                            "activationCondition": "swarm is not Bloodied"
                         },
                         "Bloodied Attack": {
                             "name": "Bloodied Attack",
-                            "condition": "the swarm is &Reference[Bloodied apply=false]"
+                            "condition": "the swarm is &Reference[Bloodied apply=false]",
+                            "activationCondition": "the swarm is &Reference[Bloodied apply=false]"
                         }
                     }
                 },
@@ -28338,7 +28605,8 @@
                     "activities": {
                         "Bloodied Attack": {
                             "name": "Bloodied Attack",
-                            "condition": "the swarm is &Reference[Bloodied]"
+                            "condition": "the swarm is &Reference[Bloodied]",
+                            "activationCondition": "the swarm is &Reference[Bloodied]"
                         }
                     }
                 }
@@ -28355,7 +28623,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -28714,7 +28983,8 @@
                     "requirements": "At least 1 Hit Point",
                     "activities": {
                         "heal": {
-                            "condition": "starts its turn with at least 1 Hit Point"
+                            "condition": "starts its turn with at least 1 Hit Point",
+                            "activationCondition": "starts its turn with at least 1 Hit Point"
                         }
                     }
                 },
@@ -28754,7 +29024,8 @@
                     "requirements": "At least 1 Hit Point",
                     "activities": {
                         "heal": {
-                            "condition": "starts its turn with at least 1 Hit Point"
+                            "condition": "starts its turn with at least 1 Hit Point",
+                            "activationCondition": "starts its turn with at least 1 Hit Point"
                         }
                     }
                 },
@@ -28825,7 +29096,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -29055,7 +29327,8 @@
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
-                            "condition": "fails a saving throw"
+                            "condition": "fails a saving throw",
+                            "activationCondition": "fails a saving throw"
                         }
                     }
                 },
@@ -29523,6 +29796,7 @@
                         "Use": {
                             "name": "Use",
                             "condition": "hit by a melee attack roll while holding a weapon",
+                            "activationCondition": "hit by a melee attack roll while holding a weapon",
                             "roll": "Bonus AC"
                         }
                     }
@@ -29544,7 +29818,8 @@
                     "activities": {
                         "Use": {
                             "name": "Use",
-                            "condition": "takes Cold damage"
+                            "condition": "takes Cold damage",
+                            "activationCondition": "takes Cold damage"
                         }
                     },
                     "effects": {
@@ -29617,7 +29892,8 @@
                     "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>",
                     "activities": {
                         "attack": {
-                            "condition": "Humanoid or Hybrid Form Only"
+                            "condition": "Humanoid or Hybrid Form Only",
+                            "activationCondition": "Humanoid or Hybrid Form Only"
                         }
                     }
                 },
@@ -29635,7 +29911,8 @@
                     "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Humanoid, it is subjected to the following effect.</p><p><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=q7leyHRdAkccDyqG]].</p><p><em>Failure:</em> The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmWerebear000000]{Werebear}</strong> under the DM's control and has 10 Hit Points.</p><p><em>Success:</em> The target is immune to this [[lookup @name lowercase]]{monster}'s' curse for 24 hours.</p>",
                     "activities": {
                         "attack": {
-                            "condition": "Bear or Hybrid Form Only"
+                            "condition": "Bear or Hybrid Form Only",
+                            "activationCondition": "Bear or Hybrid Form Only"
                         },
                         "save": {
                             "damageOnSave": "none"
@@ -29656,7 +29933,8 @@
                     "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>",
                     "activities": {
                         "attack": {
-                            "condition": "Bear or Hybrid Form Only"
+                            "condition": "Bear or Hybrid Form Only",
+                            "activationCondition": "Bear or Hybrid Form Only"
                         }
                     }
                 },
@@ -29725,7 +30003,8 @@
                         },
                         "Moving Attack": {
                             "name": "Moving Attack",
-                            "condition": "Boar or Hybrid Form Only"
+                            "condition": "Boar or Hybrid Form Only",
+                            "activationCondition": "Boar or Hybrid Form Only"
                         }
                     },
                     "effects": {
@@ -31075,7 +31354,8 @@
                     "description": "<p>Whenever you cast a Wizard spell from the Evocation school, you can add your Intelligence modifier to one damage roll of that spell.</p><section class=\"secret\" id=\"secret-3cdT0RlurgG5XV4o\"><p><strong>Foundry Note</strong></p><p>You can add your Intelligence modifier to the spell's Situational Bonus in the damage dialog or use this feature's <strong>Damage</strong> activity which allows you to select the type in the damage dialog.</p></section>",
                     "activities": {
                         "damage": {
-                            "condition": "Whenever you cast a Wizard spell from the Evocation school"
+                            "condition": "Whenever you cast a Wizard spell from the Evocation school",
+                            "activationCondition": "Whenever you cast a Wizard spell from the Evocation school"
                         }
                     }
                 },
@@ -31350,11 +31630,13 @@
                     "activities": {
                         "Second+ Use": {
                             "name": "Second+ Use",
-                            "condition": "When you cast a Wizard spell with a spell slot of levels 1-5 that deals damage"
+                            "condition": "When you cast a Wizard spell with a spell slot of levels 1-5 that deals damage",
+                            "activationCondition": "When you cast a Wizard spell with a spell slot of levels 1-5 that deals damage"
                         },
                         "First Use": {
                             "name": "First Use",
-                            "condition": "When you cast a Wizard spell with a spell slot of levels 1-5 that deals damage"
+                            "condition": "When you cast a Wizard spell with a spell slot of levels 1-5 that deals damage",
+                            "activationCondition": "When you cast a Wizard spell with a spell slot of levels 1-5 that deals damage"
                         }
                     }
                 },

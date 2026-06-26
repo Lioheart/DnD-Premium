@@ -20,6 +20,7 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
+                "activationCondition": "activation.condition",
                 "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
@@ -136,6 +137,7 @@
                 "Teleport": {
                     "name": "Teleport",
                     "condition": "Immediately after you take the Attack action",
+                    "activationCondition": "Immediately after you take the Attack action",
                     "target": "Unocuppied space"
                 }
             }
@@ -147,6 +149,7 @@
                 "Improve Fate": {
                     "name": "Improve Fate",
                     "condition": "When you or another creature within 60 feet of you succeeds or fails a D20 Test",
+                    "activationCondition": "When you or another creature within 60 feet of you succeeds or fails a D20 Test",
                     "roll": "Bonus/Penalty"
                 }
             }
@@ -162,6 +165,7 @@
                 "Free Cast Roll": {
                     "name": "Free Cast Roll",
                     "condition": "Whenever you cast a spell with a level 1-4 spell slot",
+                    "activationCondition": "Whenever you cast a spell with a level 1-4 spell slot",
                     "roll": "Roll"
                 }
             }

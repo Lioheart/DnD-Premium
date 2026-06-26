@@ -20,6 +20,7 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
+                "activationCondition": "activation.condition",
                 "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
@@ -1130,15 +1131,18 @@
                 "Touch Bead": {
                     "name": "Touch Bead",
                     "condition": "a creature touches the glowing bead before the spell ends",
+                    "activationCondition": "a creature touches the glowing bead before the spell ends",
                     "damageOnSave": "none"
                 },
                 "Turn End Damage Increase": {
                     "name": "Turn End Damage Increase",
-                    "condition": "whenever your turn ends"
+                    "condition": "whenever your turn ends",
+                    "activationCondition": "whenever your turn ends"
                 },
                 "Trigger Explosion": {
                     "name": "Trigger Explosion",
                     "condition": "when the spell ends",
+                    "activationCondition": "when the spell ends",
                     "damageOnSave": "half"
                 }
             }
@@ -1391,12 +1395,14 @@
                 "End of Turn Fissures": {
                     "name": "End of Turn Fissures",
                     "condition": "end of turn of initial casting",
+                    "activationCondition": "end of turn of initial casting",
                     "chatFlavor": "[[1d6]] Fissure(s)<br>[[10 * 1d10]] Feet deep",
                     "damageOnSave": "half"
                 },
                 "Collapsing Structure Save": {
                     "name": "Collapsing Structure Save",
                     "condition": "when a structure drops to 0 Hit Points",
+                    "activationCondition": "when a structure drops to 0 Hit Points",
                     "range": "half of the structure's height",
                     "damageOnSave": "half"
                 }
@@ -1801,6 +1807,7 @@
                 "Damage Forbidden Creature": {
                     "name": "Damage Forbidden Creature",
                     "condition": "creature of a chosen type enters the spell’s area for the first time on a turn or ends its turn there",
+                    "activationCondition": "creature of a chosen type enters the spell’s area for the first time on a turn or ends its turn there",
                     "range": "within the spell's area"
                 }
             }
@@ -1856,6 +1863,7 @@
                 "Freeze Water": {
                     "name": "Freeze Water",
                     "condition": "if the globe strikes a body of water",
+                    "activationCondition": "if the globe strikes a body of water",
                     "target": "creatures swimming on the surface"
                 },
                 "Cast and Hold": {
@@ -2204,7 +2212,8 @@
             "activities": {
                 "Bonus Hex Damage": {
                     "name": "Bonus Hex Damage",
-                    "condition": "whenever you hit the target with an attack roll"
+                    "condition": "whenever you hit the target with an attack roll",
+                    "activationCondition": "whenever you hit the target with an attack roll"
                 },
                 "Place Curse": {
                     "name": "Place Curse"
@@ -2323,7 +2332,8 @@
                 },
                 "Move Mark": {
                     "name": "Move Mark",
-                    "condition": "when the currently marked target drops to 0 Hit Points"
+                    "condition": "when the currently marked target drops to 0 Hit Points",
+                    "activationCondition": "when the currently marked target drops to 0 Hit Points"
                 }
             },
             "effects": {
@@ -2605,6 +2615,7 @@
                 "Possess Humanoid": {
                     "name": "Possess Humanoid",
                     "condition": "your soul inhabits the container",
+                    "activationCondition": "your soul inhabits the container",
                     "target": "target is Humanoid",
                     "damageOnSave": "none"
                 },
@@ -3841,22 +3852,26 @@
                 "Turn 2: Acid Rain": {
                     "name": "Turn 2: Acid Rain",
                     "condition": "at the start of your turn",
+                    "activationCondition": "at the start of your turn",
                     "target": "creatures under the cloud"
                 },
                 "Turn 3: Lightning": {
                     "name": "Turn 3: Lightning",
                     "condition": "at the start of your turn",
+                    "activationCondition": "at the start of your turn",
                     "target": "creatures under the cloud",
                     "damageOnSave": "half"
                 },
                 "Turn 4: Hailstones": {
                     "name": "Turn 4: Hailstones",
                     "condition": "at the start of your turn",
+                    "activationCondition": "at the start of your turn",
                     "target": "creatures under the cloud"
                 },
                 "Turn 5+: Gusts and Rain": {
                     "name": "Turn 5+: Gusts and Rain",
                     "condition": "at the start of your turn",
+                    "activationCondition": "at the start of your turn",
                     "target": "creatures under the cloud"
                 }
             },
@@ -4130,6 +4145,7 @@
                 "Start of Turn Effects": {
                     "name": "Start of Turn Effects",
                     "condition": "start of each of your turns",
+                    "activationCondition": "start of each of your turns",
                     "range": "moves away from you",
                     "damageOnSave": "half"
                 }
@@ -4222,6 +4238,7 @@
                 "Frigid Air": {
                     "name": "Frigid Air",
                     "condition": "creature moves through the wall for the first time on a turn",
+                    "activationCondition": "creature moves through the wall for the first time on a turn",
                     "damageOnSave": "half"
                 }
             }
@@ -4255,6 +4272,7 @@
                 "Traversal Save": {
                     "name": "Traversal Save",
                     "condition": "first time a creature enters or ends its turn in the wall",
+                    "activationCondition": "first time a creature enters or ends its turn in the wall",
                     "damageOnSave": "half"
                 }
             }
@@ -4311,6 +4329,7 @@
                 "End of Turn Save": {
                     "name": "End of Turn Save",
                     "condition": "at the end of each affected creature's turn",
+                    "activationCondition": "at the end of each affected creature's turn",
                     "damageOnSave": "none"
                 }
             },
