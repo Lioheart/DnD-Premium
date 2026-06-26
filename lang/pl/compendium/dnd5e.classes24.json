@@ -20,6 +20,7 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
+                "activationCondition": "activation.condition",
                 "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
@@ -433,7 +434,8 @@
             "requirements": "Kleryk",
             "activities": {
                 "damage": {
-                    "condition": "Zadaj obrażenia dowolną sztuczką kleryka"
+                    "condition": "Zadaj obrażenia dowolną sztuczką kleryka",
+                    "activationCondition": "Zadaj obrażenia dowolną sztuczką kleryka"
                 }
             }
         },
@@ -482,7 +484,8 @@
             "activities": {
                 "Careful Spell": {
                     "name": "Precyzyjne zaklęcie",
-                    "condition": "Kiedy rzucasz czar, który zmusza inne istoty do wykonania rzutu obronnego"
+                    "condition": "Kiedy rzucasz czar, który zmusza inne istoty do wykonania rzutu obronnego",
+                    "activationCondition": "Kiedy rzucasz czar, który zmusza inne istoty do wykonania rzutu obronnego"
                 }
             }
         },
@@ -637,7 +640,8 @@
             "requirements": "Bard",
             "activities": {
                 "utility": {
-                    "condition": "Ty lub istota w odległości do 30 stóp od ciebie nie zdacie rzutu obronnego przeciwko efektowi, który nakłada stan Zauroczony lub Przerażony"
+                    "condition": "Ty lub istota w odległości do 30 stóp od ciebie nie zdacie rzutu obronnego przeciwko efektowi, który nakłada stan Zauroczony lub Przerażony",
+                    "activationCondition": "Ty lub istota w odległości do 30 stóp od ciebie nie zdacie rzutu obronnego przeciwko efektowi, który nakłada stan Zauroczony lub Przerażony"
                 }
             }
         },
@@ -668,21 +672,25 @@
                 "Poison": {
                     "name": "Trucizna",
                     "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
+                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
                     "damageOnSave": "połowa"
                 },
                 "Trip": {
                     "name": "Podcięcie",
                     "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
+                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
                     "target": "Duży lub mniejszy",
                     "damageOnSave": "połowa"
                 },
                 "Cunning Sneak Attack": {
                     "name": "Chytry ukradkowy atak",
-                    "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku"
+                    "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
+                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku"
                 },
                 "Withdraw": {
                     "name": "Odwrót",
-                    "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku"
+                    "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
+                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku"
                 }
             },
             "effects": {
@@ -703,6 +711,7 @@
                 "Cut with Words": {
                     "name": "Cięta riposta",
                     "condition": "Istota, którą widzisz w odległości do 60 stóp, wykonuje rzut na obrażenia lub odnosi sukces w teście cechy albo teście ataku",
+                    "activationCondition": "Istota, którą widzisz w odległości do 60 stóp, wykonuje rzut na obrażenia lub odnosi sukces w teście cechy albo teście ataku",
                     "roll": "Bardowska inspiracja"
                 }
             }
@@ -723,7 +732,8 @@
             "description": "<p>Gdy sprowadzisz wroga do 0 Punktów Wytrzymałości, zyskujesz Tymczasowe Punkty Wytrzymałości równe twojemu modyfikatorowi z Charyzmy plus twój poziom Czarownika (minimum 1 Tymczasowy Punkt Wytrzymałości). Otrzymujesz ten sam efekt, jeśli ktoś inny sprowadzi wroga znajdującego się w odległości 10 stóp od ciebie do 0 Punktów Wytrzymałości.</p>",
             "activities": {
                 "heal": {
-                    "condition": "Kiedy zredukujesz wroga do 0 Punktów Wytrzymałości lub gdy wróg w odległości 10 stóp od ciebie zostanie zredukowany do 0 Punktów Wytrzymałości"
+                    "condition": "Kiedy zredukujesz wroga do 0 Punktów Wytrzymałości lub gdy wróg w odległości 10 stóp od ciebie zostanie zredukowany do 0 Punktów Wytrzymałości",
+                    "activationCondition": "Kiedy zredukujesz wroga do 0 Punktów Wytrzymałości lub gdy wróg w odległości 10 stóp od ciebie zostanie zredukowany do 0 Punktów Wytrzymałości"
                 }
             }
         },
@@ -734,6 +744,7 @@
                 "Luck": {
                     "name": "Szczęście",
                     "condition": "Kiedy wykonujesz test cechy lub rzut obronny",
+                    "activationCondition": "Kiedy wykonujesz test cechy lub rzut obronny",
                     "roll": "Premia"
                 }
             }
@@ -744,7 +755,8 @@
             "activities": {
                 "Multiattack Defense": {
                     "name": "Defensywa przed Wielokrotnym atakiem",
-                    "condition": "Kiedy istota trafi cię testem ataku"
+                    "condition": "Kiedy istota trafi cię testem ataku",
+                    "activationCondition": "Kiedy istota trafi cię testem ataku"
                 }
             },
             "effects": {
@@ -759,11 +771,13 @@
             "activities": {
                 "Reduce": {
                     "name": "Zmniejsz",
-                    "condition": "Kiedy test ataku trafia ciebie, a jego obrażenia obejmują obrażenia obuchowe, kłute lub cięte"
+                    "condition": "Kiedy test ataku trafia ciebie, a jego obrażenia obejmują obrażenia obuchowe, kłute lub cięte",
+                    "activationCondition": "Kiedy test ataku trafia ciebie, a jego obrażenia obejmują obrażenia obuchowe, kłute lub cięte"
                 },
                 "Redirect": {
                     "name": "Przekieruj",
                     "condition": "Jeśli zredukujesz obrażenia do 0",
+                    "activationCondition": "Jeśli zredukujesz obrażenia do 0",
                     "target": "Nie jest za Całkowitą osłoną",
                     "range": "5 stóp dla ataków wręcz lub 60 stóp dla ataków zasięgowych",
                     "damageOnSave": "none"
@@ -776,11 +790,13 @@
             "activities": {
                 "Reduce": {
                     "name": "Zmniejsz",
-                    "condition": "Kiedy test ataku trafia ciebie, a jego obrażenia obejmują obrażenia obuchowe, kłute lub cięte"
+                    "condition": "Kiedy test ataku trafia ciebie, a jego obrażenia obejmują obrażenia obuchowe, kłute lub cięte",
+                    "activationCondition": "Kiedy test ataku trafia ciebie, a jego obrażenia obejmują obrażenia obuchowe, kłute lub cięte"
                 },
                 "Redirect": {
                     "name": "Przekieruj",
                     "condition": "Jeśli zredukujesz obrażenia do 0",
+                    "activationCondition": "Jeśli zredukujesz obrażenia do 0",
                     "target": "Nie jest za Całkowitą osłoną",
                     "range": "5 stóp dla ataków wręcz lub 60 stóp dla ataków zasięgowych",
                     "damageOnSave": "none"
@@ -807,16 +823,19 @@
                 "Daze": {
                     "name": "Otępienie",
                     "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
+                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
                     "damageOnSave": "połowa"
                 },
                 "Knock Out": {
                     "name": "Znokautowanie",
                     "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
+                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
                     "damageOnSave": "połowa"
                 },
                 "Obscure": {
                     "name": "Oślepienie",
                     "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
+                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
                     "damageOnSave": "połowa"
                 }
             },
@@ -870,7 +889,8 @@
             "activities": {
                 "Distant Spell": {
                     "name": "Dalekosiężne zaklęcie",
-                    "condition": "Kiedy rzucasz czar o zasięgu co najmniej 5 stóp lub czar o zasięgu Dotyk"
+                    "condition": "Kiedy rzucasz czar o zasięgu co najmniej 5 stóp lub czar o zasięgu Dotyk",
+                    "activationCondition": "Kiedy rzucasz czar o zasięgu co najmniej 5 stóp lub czar o zasięgu Dotyk"
                 }
             }
         },
@@ -1084,7 +1104,8 @@
             "activities": {
                 "Eldritch Master": {
                     "name": "Mistyczny Władca",
-                    "condition": "Kiedy używasz Magicznego sprytu"
+                    "condition": "Kiedy używasz Magicznego sprytu",
+                    "activationCondition": "Kiedy używasz Magicznego sprytu"
                 }
             }
         },
@@ -1103,7 +1124,8 @@
             "activities": {
                 "Smite": {
                     "name": "Ugodzenie",
-                    "condition": "Traf istotę swoją bronią paktu"
+                    "condition": "Traf istotę swoją bronią paktu",
+                    "activationCondition": "Traf istotę swoją bronią paktu"
                 }
             }
         },
@@ -1131,23 +1153,28 @@
             "activities": {
                 "Acid": {
                     "name": "Kwas",
-                    "condition": "Gdy rzucasz czar, który zadaje obrażenia zgodne z twoim pokrewieństwem żywiołu"
+                    "condition": "Gdy rzucasz czar, który zadaje obrażenia zgodne z twoim pokrewieństwem żywiołu",
+                    "activationCondition": "Gdy rzucasz czar, który zadaje obrażenia zgodne z twoim pokrewieństwem żywiołu"
                 },
                 "Cold": {
                     "name": "Zimno",
-                    "condition": "Gdy rzucasz czar, który zadaje obrażenia zgodne z twoim pokrewieństwem żywiołu"
+                    "condition": "Gdy rzucasz czar, który zadaje obrażenia zgodne z twoim pokrewieństwem żywiołu",
+                    "activationCondition": "Gdy rzucasz czar, który zadaje obrażenia zgodne z twoim pokrewieństwem żywiołu"
                 },
                 "Fire": {
                     "name": "Ogień",
-                    "condition": "Gdy rzucasz czar, który zadaje obrażenia zgodne z twoim pokrewieństwem żywiołu"
+                    "condition": "Gdy rzucasz czar, który zadaje obrażenia zgodne z twoim pokrewieństwem żywiołu",
+                    "activationCondition": "Gdy rzucasz czar, który zadaje obrażenia zgodne z twoim pokrewieństwem żywiołu"
                 },
                 "Lightning": {
                     "name": "Elektryczność",
-                    "condition": "Gdy rzucasz czar, który zadaje obrażenia zgodne z twoim pokrewieństwem żywiołu"
+                    "condition": "Gdy rzucasz czar, który zadaje obrażenia zgodne z twoim pokrewieństwem żywiołu",
+                    "activationCondition": "Gdy rzucasz czar, który zadaje obrażenia zgodne z twoim pokrewieństwem żywiołu"
                 },
                 "Poison": {
                     "name": "Trucizna",
-                    "condition": "Gdy rzucasz czar, który zadaje obrażenia zgodne z twoim pokrewieństwem żywiołu"
+                    "condition": "Gdy rzucasz czar, który zadaje obrażenia zgodne z twoim pokrewieństwem żywiołu",
+                    "activationCondition": "Gdy rzucasz czar, który zadaje obrażenia zgodne z twoim pokrewieństwem żywiołu"
                 }
             }
         },
@@ -1181,7 +1208,8 @@
             "description": "<p>Ilekroć rzucasz czar Maga ze Szkoły wywoływania, możesz dodać swój modyfikator Inteligencji do jednego rzutu obrażeń tego czaru.</p><section class=\"secret\" id=\"secret-3cdT0RlurgG5XV4o\"><p><strong>Notatka Foundry</strong></p><p>Możesz dodać swój modyfikator Inteligencji do Premii sytuacyjnej czaru w oknie obrażeń albo użyć aktywności <strong>Obrażenia</strong> tej cechy, która pozwala wybrać typ w oknie obrażeń.</p></section>",
             "activities": {
                 "damage": {
-                    "condition": "Ilekroć rzucasz czar maga ze szkoły wywoływania"
+                    "condition": "Ilekroć rzucasz czar maga ze szkoły wywoływania",
+                    "activationCondition": "Ilekroć rzucasz czar maga ze szkoły wywoływania"
                 }
             }
         },
@@ -1191,7 +1219,8 @@
             "activities": {
                 "Empowered Spell": {
                     "name": "Wzmocnione zaklęcie",
-                    "condition": "Kiedy wykonujesz rzut na obrażenia dla czaru"
+                    "condition": "Kiedy wykonujesz rzut na obrażenia dla czaru",
+                    "activationCondition": "Kiedy wykonujesz rzut na obrażenia dla czaru"
                 }
             }
         },
@@ -1244,7 +1273,8 @@
             "activities": {
                 "Extended Spell": {
                     "name": "Przedłużone zaklęcie",
-                    "condition": "Kiedy rzucasz czar o czasie trwania wynoszącym 1 minutę lub dłużej"
+                    "condition": "Kiedy rzucasz czar o czasie trwania wynoszącym 1 minutę lub dłużej",
+                    "activationCondition": "Kiedy rzucasz czar o czasie trwania wynoszącym 1 minutę lub dłużej"
                 }
             }
         },
@@ -1539,7 +1569,8 @@
             "activities": {
                 "Protect": {
                     "name": "Ochrona",
-                    "condition": "Kiedy dowolna istota, której imię znajduje się na stronie, zostanie zredukowana do 0 Punktów Wytrzymałości, ale nie zostanie natychmiast zabita"
+                    "condition": "Kiedy dowolna istota, której imię znajduje się na stronie, zostanie zredukowana do 0 Punktów Wytrzymałości, ale nie zostanie natychmiast zabita",
+                    "activationCondition": "Kiedy dowolna istota, której imię znajduje się na stronie, zostanie zredukowana do 0 Punktów Wytrzymałości, ale nie zostanie natychmiast zabita"
                 },
                 "Write Name": {
                     "name": "Zapisz Imię"
@@ -1563,7 +1594,8 @@
                 },
                 "Patient Defense": {
                     "name": "Cierpliwa obrona",
-                    "condition": "Kiedy zużywasz Punkt Skupienia, aby użyć Cierpliwej obrony"
+                    "condition": "Kiedy zużywasz Punkt Skupienia, aby użyć Cierpliwej obrony",
+                    "activationCondition": "Kiedy zużywasz Punkt Skupienia, aby użyć Cierpliwej obrony"
                 }
             }
         },
@@ -1573,7 +1605,8 @@
             "activities": {
                 "Heightened Spell": {
                     "name": "Przebijające zaklęcie",
-                    "condition": "Kiedy rzucasz czar, który zmusza istotę do wykonania rzutu obronnego"
+                    "condition": "Kiedy rzucasz czar, który zmusza istotę do wykonania rzutu obronnego",
+                    "activationCondition": "Kiedy rzucasz czar, który zmusza istotę do wykonania rzutu obronnego"
                 }
             }
         },
@@ -1625,7 +1658,8 @@
             "description": "<p>Zyskujesz jedną z poniższych opcji cechy do wyboru. Za każdym razem, gdy zakończysz Krótki lub Długi Odpoczynek, możesz zamienić wybraną opcję na drugą.</p><p><strong>Zguba kolosów.</strong> Twoja wytrwałość może osłabić nawet najbardziej odpornych wrogów. Gdy trafisz istotę bronią, broń zadaje dodatkowe 1k8 obrażeń celowi, jeśli brakuje mu jakichkolwiek Punktów Wytrzymałości. Możesz zadać te dodatkowe obrażenia tylko raz na turę.</p><p><strong>Pogromca hordy.</strong> Raz w każdej swojej turze, gdy wykonasz atak bronią, możesz wykonać kolejny atak tą samą bronią przeciwko innej istocie, która znajduje się w zasięgu 5 stóp od pierwotnego celu, jest w zasięgu broni i której nie zaatakowałeś w tej turze.</p><section class=\"secret\" id=\"secret-I2q5Nm7g6mkLjH5Y\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha zawiera aktywność <strong>Zguba kolosów</strong> dla dodatkowych obrażeń. Możesz wybrać odpowiedni typ obrażeń w oknie dialogowym rzutu.</p><p>Dla opcji <strong>Pogromca hordy</strong> po prostu wykonaj kolejny atak.</p></section>",
             "activities": {
                 "damage": {
-                    "condition": "Raz na turę, kiedy trafisz istotę bronią"
+                    "condition": "Raz na turę, kiedy trafisz istotę bronią",
+                    "activationCondition": "Raz na turę, kiedy trafisz istotę bronią"
                 }
             }
         },
@@ -1636,6 +1670,7 @@
                 "Hurl Through Hell": {
                     "name": "Droga przez piekło",
                     "condition": "Raz na turę, gdy trafisz istotę testem ataku",
+                    "activationCondition": "Raz na turę, gdy trafisz istotę testem ataku",
                     "damageOnSave": "none"
                 },
                 "Regain Use": {
@@ -1650,7 +1685,8 @@
             "activities": {
                 "Potent Spellcasting: Heal": {
                     "name": "Potężne czarowanie: Leczenie",
-                    "condition": "Kiedy rzucasz sztuczkę kapłana i zadasz nią obrażenia istocie"
+                    "condition": "Kiedy rzucasz sztuczkę kapłana i zadasz nią obrażenia istocie",
+                    "activationCondition": "Kiedy rzucasz sztuczkę kapłana i zadasz nią obrażenia istocie"
                 }
             }
         },
@@ -1895,15 +1931,18 @@
             "description": "<blockquote><p>Wymagania: Czarownik poziomu 9 lub wyższy, inwokacja @UUID[Compendium.dnd5e.classes24.Item.phbinvPactBlade0]</p></blockquote><p>Raz na turę, gdy trafisz istotę swoją bronią paktu, możesz zadać dodatkowe 1k6 obrażeń nekrotycznych, psychicznych lub od światłości (do wyboru) oraz możesz zużyć jedną ze swoich Kości Wytrzymałości, aby rzucić nią i odzyskać liczbę Punktów Wytrzymałości równą wynikowi rzutu plus twój modyfikator Kondycji (minimum 1 Punkt Wytrzymałości).</p><section class=\"secret\" id=\"secret-1Hta9I4donszrwIQ\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Obrażenia</strong> pozwala wybrać typ obrażeń w oknie rzutu i zapamięta twój wybór na przyszłość.</p><p>Aktywności <strong>Leczenie (Największa Kość Wytrzymałości)</strong> i <strong>Najmniejsza Kość Wytrzymałości</strong> zużywają odpowiednią Kość Wytrzymałości i zapewniają rzut leczenia z uwzględnieniem modyfikatora Kondycji. Wybór ma znaczenie tylko wtedy, gdy masz wieloklasowość z różnymi typami kości wytrzymałości.</p></section>",
             "activities": {
                 "damage": {
-                    "condition": "Raz na turę, kiedy trafisz istotę swoją bronią paktu"
+                    "condition": "Raz na turę, kiedy trafisz istotę swoją bronią paktu",
+                    "activationCondition": "Raz na turę, kiedy trafisz istotę swoją bronią paktu"
                 },
                 "Heal (Largest Hit Die)": {
                     "name": "Leczenie (Największa kość wytrzymałości)",
-                    "condition": "Raz na turę, kiedy trafisz istotę swoją bronią paktu"
+                    "condition": "Raz na turę, kiedy trafisz istotę swoją bronią paktu",
+                    "activationCondition": "Raz na turę, kiedy trafisz istotę swoją bronią paktu"
                 },
                 "Heal (Smallest Hit Die)": {
                     "name": "Leczenie (Najmniejsza kość wytrzymałości)",
-                    "condition": "Raz na turę, kiedy trafisz istotę swoją bronią paktu"
+                    "condition": "Raz na turę, kiedy trafisz istotę swoją bronią paktu",
+                    "activationCondition": "Raz na turę, kiedy trafisz istotę swoją bronią paktu"
                 }
             }
         },
@@ -2148,7 +2187,8 @@
                 },
                 "Recover Spell Slots": {
                     "name": "Odzyskaj komórki czaru",
-                    "condition": "Kiedy zakończysz Krótki Odpoczynek"
+                    "condition": "Kiedy zakończysz Krótki Odpoczynek",
+                    "activationCondition": "Kiedy zakończysz Krótki Odpoczynek"
                 }
             }
         },
@@ -2268,16 +2308,19 @@
             "activities": {
                 "Addle": {
                     "name": "Zamroczenie",
-                    "condition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów"
+                    "condition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów",
+                    "activationCondition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów"
                 },
                 "Push": {
                     "name": "Popchnięcie",
                     "condition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów",
+                    "activationCondition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów",
                     "damageOnSave": "połowa"
                 },
                 "Topple": {
                     "name": "Obalenie",
                     "condition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów",
+                    "activationCondition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów",
                     "damageOnSave": "połowa"
                 }
             },
@@ -2306,11 +2349,13 @@
             "activities": {
                 "Second+ Use": {
                     "name": "Drugie+ użycie",
-                    "condition": "Kiedy rzucasz czar maga, który zadaje obrażenia i korzysta z komórki czaru od 1. do 5. kręgu"
+                    "condition": "Kiedy rzucasz czar maga, który zadaje obrażenia i korzysta z komórki czaru od 1. do 5. kręgu",
+                    "activationCondition": "Kiedy rzucasz czar maga, który zadaje obrażenia i korzysta z komórki czaru od 1. do 5. kręgu"
                 },
                 "First Use": {
                     "name": "Pierwsze użycie",
-                    "condition": "Kiedy rzucasz czar maga, który zadaje obrażenia i korzysta z komórki czaru od 1. do 5. kręgu"
+                    "condition": "Kiedy rzucasz czar maga, który zadaje obrażenia i korzysta z komórki czaru od 1. do 5. kręgu",
+                    "activationCondition": "Kiedy rzucasz czar maga, który zadaje obrażenia i korzysta z komórki czaru od 1. do 5. kręgu"
                 }
             }
         },
@@ -2457,6 +2502,7 @@
             "activities": {
                 "utility": {
                     "condition": "Kiedy nie powiedzie ci się test cechy lub test ataku",
+                    "activationCondition": "Kiedy nie powiedzie ci się test cechy lub test ataku",
                     "roll": "Bardowska inspiracja"
                 }
             }
@@ -2472,7 +2518,8 @@
             "activities": {
                 "Recharge Rage on Initiative": {
                     "name": "Odnów Szał przy rzucie na Inicjatywę",
-                    "condition": "Kiedy wykonujesz rzut na inicjatywę"
+                    "condition": "Kiedy wykonujesz rzut na inicjatywę",
+                    "activationCondition": "Kiedy wykonujesz rzut na inicjatywę"
                 }
             }
         },
@@ -2546,7 +2593,8 @@
             "activities": {
                 "Quickened Spell": {
                     "name": "Przyspieszone zaklęcie",
-                    "condition": "Kiedy rzucasz czar, którego czas rzucania wynosi jedną Akcję"
+                    "condition": "Kiedy rzucasz czar, którego czas rzucania wynosi jedną Akcję",
+                    "activationCondition": "Kiedy rzucasz czar, którego czas rzucania wynosi jedną Akcję"
                 }
             }
         },
@@ -2557,11 +2605,13 @@
                 "End Vibrations": {
                     "name": "Zakończenie wibracji",
                     "condition": "Kiedy wykonujesz Akcję Ataku w swojej turze",
+                    "activationCondition": "Kiedy wykonujesz Akcję Ataku w swojej turze",
                     "damageOnSave": "połowa"
                 },
                 "Instill Vibrations": {
                     "name": "Wzbudzenie wibracji",
-                    "condition": "Kiedy trafisz istotę Uderzeniem Bez Broni"
+                    "condition": "Kiedy trafisz istotę Uderzeniem Bez Broni",
+                    "activationCondition": "Kiedy trafisz istotę Uderzeniem Bez Broni"
                 }
             },
             "effects": {
@@ -2670,7 +2720,8 @@
             "activities": {
                 "Retaliate": {
                     "name": "Odwet",
-                    "condition": "Kiedy otrzymujesz obrażenia od istoty znajdującej się w odległości 5 stóp od ciebie"
+                    "condition": "Kiedy otrzymujesz obrażenia od istoty znajdującej się w odległości 5 stóp od ciebie",
+                    "activationCondition": "Kiedy otrzymujesz obrażenia od istoty znajdującej się w odległości 5 stóp od ciebie"
                 }
             }
         },
@@ -2766,7 +2817,8 @@
             "description": "<p>Kiedy wykonujesz akcję Ataku, możesz zużyć jedno użycie swojego Aktu wiary, aby nasycić trzymaną broń do walki wręcz pozytywną energią. Przez 10 minut lub do ponownego użycia tej zdolności dodajesz swój modyfikator Charyzmy do testów ataku tą bronią (minimum +1), a każde trafienie pozwala ci wybrać między jej normalnym typem obrażeń a obrażeniami od Światłości.</p><p>Broń emituje także Jasne Światło w promieniu 20 stóp oraz Słabe światło na kolejne 20 stóp.</p><p>Możesz zakończyć ten efekt wcześniej (nie wymaga akcji). Efekt kończy się również, jeśli przestaniesz nosić tę broń.</p>",
             "activities": {
                 "enchant": {
-                    "condition": "kiedy używasz akcji Ataku"
+                    "condition": "kiedy używasz akcji Ataku",
+                    "activationCondition": "kiedy używasz akcji Ataku"
                 }
             },
             "effects": {
@@ -2822,7 +2874,8 @@
             "activities": {
                 "Seeking Spell": {
                     "name": "Naprowadzane zaklęcie",
-                    "condition": "Kiedy wykonujesz test ataku czarem i pudłujesz"
+                    "condition": "Kiedy wykonujesz test ataku czarem i pudłujesz",
+                    "activationCondition": "Kiedy wykonujesz test ataku czarem i pudłujesz"
                 }
             }
         },
@@ -2973,7 +3026,8 @@
             "activities": {
                 "Stroke of Luck": {
                     "name": "Łut szczęścia",
-                    "condition": "Kiedy nie powiedzie ci się test k20"
+                    "condition": "Kiedy nie powiedzie ci się test k20",
+                    "activationCondition": "Kiedy nie powiedzie ci się test k20"
                 }
             }
         },
@@ -2987,6 +3041,7 @@
             "activities": {
                 "save": {
                     "condition": "Raz na turę, gdy trafisz istotę bronią Mnicha lub Uderzeniem bez broni",
+                    "activationCondition": "Raz na turę, gdy trafisz istotę bronią Mnicha lub Uderzeniem bez broni",
                     "damageOnSave": "połowa"
                 }
             },
@@ -3005,7 +3060,8 @@
             "activities": {
                 "Subtle Spell": {
                     "name": "Dyskretne zaklęcie",
-                    "condition": "Kiedy rzucasz czar"
+                    "condition": "Kiedy rzucasz czar",
+                    "activationCondition": "Kiedy rzucasz czar"
                 }
             }
         },
@@ -3023,7 +3079,8 @@
             "description": "<p>Na początku swojej tury możesz zużyć 3 Punkty skupienia, aby wzmocnić się przed obrażeniami na 1 minutę lub do momentu uzyskania stanu &Reference[Incapacitated]{Obezwładniony}. W tym czasie masz Odporność na wszystkie obrażenia poza obrażeniami od Mocy.</p><section id=\"secret-jojCvqn1dDjsyTzI\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zużyje 3 Punkty skupienia i zawiera Aktywny Efekt, który zastosuje odpowiednie Odporności.</p></section>",
             "activities": {
                 "utility": {
-                    "condition": "Na początku twojej tury"
+                    "condition": "Na początku twojej tury",
+                    "activationCondition": "Na początku twojej tury"
                 }
             },
             "effects": {
@@ -3038,7 +3095,8 @@
             "activities": {
                 "Resistances": {
                     "name": "Odporności",
-                    "condition": "Gdy otrzymujesz obrażenia"
+                    "condition": "Gdy otrzymujesz obrażenia",
+                    "activationCondition": "Gdy otrzymujesz obrażenia"
                 }
             },
             "effects": {
@@ -3111,7 +3169,8 @@
             "description": "<p>Osiągasz szczyt odporności w walce, zyskując następujące korzyści.</p><p><strong>Defy Death.</strong> Masz Ułatwienie do rzutów obronnych przeciwko Śmierci. Ponadto, gdy rzucisz 18–20 w rzucie obronnym przeciwko Śmierci, zyskujesz korzyść z rzutu 20.</p><p><strong>Heroic Rally.</strong> Na początku każdej ze swoich tur odzyskujesz Punkty Wytrzymałości równe 5 plus Twój modyfikator Konstytucji, jeśli jesteś Krwawiący i masz co najmniej 1 Punkt Wytrzymałości.</p><section id=\"secret-z1Nr871ifr67hchm\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta funkcja nie automatyzuje zmian rzutów obronnych przeciwko Śmierci. Zawiera aktywność leczenia, ale nie dodaje jej automatycznie, gdy jesteś Krwawiący.</p></section>",
             "activities": {
                 "heal": {
-                    "condition": "Na początku każdej twojej tury"
+                    "condition": "Na początku każdej twojej tury",
+                    "activationCondition": "Na początku każdej twojej tury"
                 }
             }
         },
@@ -3132,6 +3191,7 @@
                 "Expend Second Wind": {
                     "name": "Zużycie Drugiego oddechu",
                     "condition": "Kiedy nie powiedzie ci się test cechy",
+                    "activationCondition": "Kiedy nie powiedzie ci się test cechy",
                     "roll": "Premia"
                 }
             }
@@ -3184,7 +3244,8 @@
                 },
                 "Decrease Exhaustion": {
                     "name": "Zmniejszenie Wyczerpania",
-                    "condition": "Po zakończeniu krótkiego odpoczynku"
+                    "condition": "Po zakończeniu krótkiego odpoczynku",
+                    "activationCondition": "Po zakończeniu krótkiego odpoczynku"
                 }
             }
         },
@@ -3194,7 +3255,8 @@
             "activities": {
                 "Transmuted Spell": {
                     "name": "Przekształcone zaklęcie",
-                    "condition": "Kiedy rzucasz czar, który zadaje obrażenia od kwasu, zimna, ognia, elektryczności, trucizn lub dźwięku"
+                    "condition": "Kiedy rzucasz czar, który zadaje obrażenia od kwasu, zimna, ognia, elektryczności, trucizn lub dźwięku",
+                    "activationCondition": "Kiedy rzucasz czar, który zadaje obrażenia od kwasu, zimna, ognia, elektryczności, trucizn lub dźwięku"
                 }
             }
         },
@@ -3204,7 +3266,8 @@
             "activities": {
                 "Twinned Spell": {
                     "name": "Bliźniacze zaklęcie",
-                    "condition": "Kiedy rzucasz czar, który można wzmocnić, aby wskazać dodatkową istotę jako cel"
+                    "condition": "Kiedy rzucasz czar, który można wzmocnić, aby wskazać dodatkową istotę jako cel",
+                    "activationCondition": "Kiedy rzucasz czar, który można wzmocnić, aby wskazać dodatkową istotę jako cel"
                 }
             }
         },
@@ -3255,7 +3318,8 @@
             "activities": {
                 "Uncanny Dodge": {
                     "name": "Niesamowity unik",
-                    "condition": "Kiedy atakujący, którego widzisz, trafi cię testem ataku"
+                    "condition": "Kiedy atakujący, którego widzisz, trafi cię testem ataku",
+                    "activationCondition": "Kiedy atakujący, którego widzisz, trafi cię testem ataku"
                 }
             }
         },
@@ -3265,7 +3329,8 @@
             "activities": {
                 "Uncanny Metabolism": {
                     "name": "Niesamowity metabolizm",
-                    "condition": "Kiedy wykonujesz rzut na inicjatywę"
+                    "condition": "Kiedy wykonujesz rzut na inicjatywę",
+                    "activationCondition": "Kiedy wykonujesz rzut na inicjatywę"
                 }
             }
         },
@@ -3404,11 +3469,13 @@
             "activities": {
                 "Regain Spell Slot": {
                     "name": "Odzyskanie komórki czaru",
-                    "condition": "Raz w każdej swojej turze"
+                    "condition": "Raz w każdej swojej turze",
+                    "activationCondition": "Raz w każdej swojej turze"
                 },
                 "Regain Wild Shape": {
                     "name": "Odzyskanie Dzikiej postaci",
-                    "condition": "Raz w każdej swojej turze"
+                    "condition": "Raz w każdej swojej turze",
+                    "activationCondition": "Raz w każdej swojej turze"
                 }
             }
         },
