@@ -1755,7 +1755,10 @@ def actor_mapping_for_pack(pack_name: str) -> dict:
         },
         "items": {
             "path": "items",
-            "converter": "items"
+            "converter": "document",
+            "documentType": "Item",
+            "cardinality": "many",
+            "mapping": default_item_mapping()
         },
         "senses": {
             "path": "system.attributes.senses",
@@ -2272,6 +2275,7 @@ def default_item_mapping() -> dict:
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
+                "activationCondition": "activation.condition",
                 "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
