@@ -20,6 +20,7 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
+                "activationCondition": "activation.condition",
                 "activationValue": "activation.value",
                 "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
@@ -136,6 +137,7 @@
                 "Teleport": {
                     "name": "Teleportacja",
                     "condition": "Natychmiast po wykonaniu Akcji Ataku",
+                    "activationCondition": "Natychmiast po wykonaniu Akcji Ataku",
                     "target": "Niezajęta przestrzeń"
                 }
             }
@@ -147,6 +149,7 @@
                 "Improve Fate": {
                     "name": "Poprawa przeznaczenia",
                     "condition": "Gdy Ty lub inne stworzenie w promieniu 60 stóp odniesie sukces lub porażkę w Teście D20",
+                    "activationCondition": "Gdy Ty lub inne stworzenie w promieniu 60 stóp odniesie sukces lub porażkę w Teście D20",
                     "roll": "Premia/kara"
                 }
             }
@@ -162,6 +165,7 @@
                 "Free Cast Roll": {
                     "name": "Rzut darmowego rzucania czarów",
                     "condition": "Za każdym razem, gdy rzucasz czar przy użyciu komórki czaru 1-4 poziomu",
+                    "activationCondition": "Za każdym razem, gdy rzucasz czar przy użyciu komórki czaru 1-4 poziomu",
                     "roll": "Rzut kośćmi"
                 }
             }
