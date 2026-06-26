@@ -20,10 +20,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
-                "chatFlavor": "description.chatFlavor",
                 "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
                 "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
                 "range": {
                     "path": "range",
                     "converter": "imperialToMetric"
@@ -130,10 +131,12 @@
             "requirements": "Czarny lub miedziany rodowód",
             "activities": {
                 "Exhale Cone": {
-                    "name": "Wydmuch stożka"
+                    "name": "Wydmuch stożka",
+                    "damageOnSave": "połowa"
                 },
                 "Exhale Line": {
-                    "name": "Wydmuch linii"
+                    "name": "Wydmuch linii",
+                    "damageOnSave": "połowa"
                 }
             },
             "advancement": {
@@ -207,10 +210,12 @@
             "requirements": "Wyłącznie do wglądu",
             "activities": {
                 "Exhale Cone": {
-                    "name": "Wydmuch stożka"
+                    "name": "Wydmuch stożka",
+                    "damageOnSave": "połowa"
                 },
                 "Exhale Line": {
-                    "name": "Wydmuch linii"
+                    "name": "Wydmuch linii",
+                    "damageOnSave": "połowa"
                 }
             },
             "advancement": {
@@ -236,7 +241,8 @@
                     "name": "Wewnętrzny blask"
                 },
                 "Necrotic Shroud": {
-                    "name": "Nekrotyczny całun"
+                    "name": "Nekrotyczny całun",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -291,10 +297,12 @@
             "requirements": "Srebrny lub biały rodowód",
             "activities": {
                 "Exhale Cone": {
-                    "name": "Wydmuch stożka"
+                    "name": "Wydmuch stożka",
+                    "damageOnSave": "połowa"
                 },
                 "Exhale Line": {
-                    "name": "Wydmuch linii"
+                    "name": "Wydmuch linii",
+                    "damageOnSave": "połowa"
                 }
             },
             "advancement": {
@@ -563,10 +571,12 @@
             "requirements": "Mosiężny, złoty lub czerwony rodowód",
             "activities": {
                 "Exhale Cone": {
-                    "name": "Wydmuch stożka"
+                    "name": "Wydmuch stożka",
+                    "damageOnSave": "połowa"
                 },
                 "Exhale Line": {
-                    "name": "Wydmuch linii"
+                    "name": "Wydmuch linii",
+                    "damageOnSave": "połowa"
                 }
             },
             "advancement": {
@@ -847,10 +857,12 @@
             "requirements": "Niebieski lub brązowy rodowód",
             "activities": {
                 "Exhale Cone": {
-                    "name": "Wydmuch stożka"
+                    "name": "Wydmuch stożka",
+                    "damageOnSave": "połowa"
                 },
                 "Exhale Line": {
-                    "name": "Wydmuch linii"
+                    "name": "Wydmuch linii",
+                    "damageOnSave": "połowa"
                 }
             },
             "advancement": {
@@ -941,10 +953,12 @@
             "requirements": "Zielony rodowód",
             "activities": {
                 "Exhale Cone": {
-                    "name": "Wydmuch stożka"
+                    "name": "Wydmuch stożka",
+                    "damageOnSave": "połowa"
                 },
                 "Exhale Line": {
-                    "name": "Wydmuch linii"
+                    "name": "Wydmuch linii",
+                    "damageOnSave": "połowa"
                 }
             },
             "advancement": {

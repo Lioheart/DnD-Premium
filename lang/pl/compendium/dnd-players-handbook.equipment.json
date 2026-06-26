@@ -20,10 +20,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
-                "chatFlavor": "description.chatFlavor",
                 "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
                 "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
                 "range": {
                     "path": "range",
                     "converter": "imperialToMetric"
@@ -109,13 +110,19 @@
                 "Throw Acid": {
                     "name": "Rzuć kwas",
                     "target": "Widzisz",
-                    "targetAffects": "Widzisz"
+                    "targetAffects": "Widzisz",
+                    "damageOnSave": "none"
                 }
             }
         },
         "Alchemist's Fire": {
             "name": "Ogień alchemiczny",
             "description": "<p>Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką Ognia alchemicznego. Wybierz jedną istotę lub obiekt, które widzisz w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo otrzymuje [[/damage 1k4 type=fire]] obrażenia od ognia i otrzymuje status &amp;Reference[burning].</p>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "połowa"
+                }
+            },
             "effects": {
                 "Burning.": {
                     "name": "Płonący",
@@ -173,7 +180,8 @@
             "description": "<p>Akcją Użycia Obiektu wysypujesz kulki metalowe z ich sakiewki. Rozsypują się, pokrywając płaski obszar o wymiarach 10 na 10 stóp w odległości do 10 stóp od ciebie. Istota, która wejdzie w ten obszar po raz pierwszy w danej turze, musi wykonać rzut obronny na Zręczność (ST 10) lub otrzymuje stan &amp;Reference[Prone]. Odzyskanie kulek metalowych zajmuje 10 minut.</p><section id=\"secret-bbcC5syRGw0PCZnG\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Czynność <strong>Odzyskanie kulek metalowych</strong> zapewnia kolejne użycie tego przedmiotu.</p></section>",
             "activities": {
                 "Spill Ball Bearings": {
-                    "name": "Rozsyp kulki metalowe"
+                    "name": "Rozsyp kulki metalowe",
+                    "damageOnSave": "połowa"
                 },
                 "Recover Ball Bearings": {
                     "name": "Zbierz łożyska kulkowe"
@@ -269,6 +277,11 @@
         "Caltrops": {
             "name": "Kolczatki",
             "description": "<p>Akcją Użycia Obiektu możesz rozsypać kolczatki z ich torby, aby pokryć obszar o boku 5 stóp w odległości do 5 stóp od siebie. Istota, która wejdzie w ten obszar po raz pierwszy w danej turze, musi wykonać rzut obronny na Zręczność (ST 15) lub otrzymuje 1 obrażenie kłute i jej szybkość zostaje zredukowana do 0 do początku jej następnej tury. Odzyskanie kolczatek zajmuje 10 minut.</p>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "none"
+                }
+            },
             "effects": {
                 "Slowed": {
                     "name": "Spowolniony"
@@ -604,7 +617,8 @@
             "description": "<p>Gdy wykonujesz Akcję Atak, możesz zastąpić jeden ze swoich ataków rzuceniem fiolki Wody Święconej. Wyceluj w jedną istotę, którą widzisz w promieniu 20 stóp od siebie. Cel musi wykonać udany rzut obronny na Zręczność (ST 8 plus twój modyfikator Zręczności i Premia od Biegłości) lub otrzymać 2k8 obrażenia od światłości, jeśli jest to Czart lub Nieumarły.</p>",
             "activities": {
                 "Throw": {
-                    "name": "Rzuć"
+                    "name": "Rzuć",
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -630,7 +644,8 @@
             "activities": {
                 "save": {
                     "condition": "Nadepnięcie na płytę",
-                    "activationCondition": "Nadepnięcie na płytę"
+                    "activationCondition": "Nadepnięcie na płytę",
+                    "damageOnSave": "none"
                 },
                 "Escape": {
                     "name": "Ucieczka"
@@ -834,6 +849,11 @@
         "Net": {
             "name": "Sieć",
             "description": "<p>Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem siecią. Wybierz istotę, którą widzisz, w odległości do 15 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo otrzymuje stan &amp;Reference[Restrained] do momentu, aż się uwolni. Cel automatycznie odnosi sukces, jeśli jest Wielki lub większy.</p><p>Aby się uwolnić, cel lub istota w odległości do 5 stóp od niego musi wykonać akcję, aby przeprowadzić test [[/skill ath 10]], uwalniając istotę ze stanem Restrained w przypadku sukcesu. Zniszczenie sieci (KP 10; 5 PW; Niewrażliwość na obrażenia obuchowe, od trucizn i psychiczne) również uwalnia cel, kończąc efekt.</p>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "none"
+                }
+            },
             "effects": {
                 "Caught in Net": {
                     "name": "Złapany w sieć"
@@ -845,7 +865,8 @@
             "description": "<p>Możesz oblać istotę, obiekt lub obszar olejem albo użyć go jako paliwa, jak opisano poniżej.</p><p><strong>Oblanie istoty lub obiektu.</strong> Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką oleju. Wybierz jedną istotę lub obiekt w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo zostaje pokryty olejem. Jeśli cel otrzyma obrażenia od ognia, zanim olej wyschnie (po 1 minucie), otrzymuje dodatkowe [[/damage 5 type=fire]] obrażenia od płonącego oleju.</p><p><strong>Oblanie obszaru.</strong> Możesz wykonać akcję Użycie Obiektu, aby wylać flaszkę oleju na płaski grunt, pokrywając obszar o boku 5 stóp w odległości do 5 stóp od siebie. Jeśli zostanie podpalony, olej pali się do końca tury 2 rundy od momentu podpalenia (czyli 12 sekund) i zadaje 5 obrażeń od ognia każdej istocie, która wejdzie w ten obszar lub zakończy w nim turę. Istota może otrzymać te obrażenia tylko raz na turę.</p><p><strong>Paliwo.</strong> Olej służy jako paliwo do lamp i latarni. Po podpaleniu, flaszka oleju pali się przez 6 godzin w lampie lub latarni. Ten czas nie musi być ciągły; możesz zgasić płonący olej (jako akcję Użycie Obiektu) i ponownie go zapalić, aż do łącznego czasu spalania wynoszącego 6 godzin.</p>",
             "activities": {
                 "Throw": {
-                    "name": "Rzuć"
+                    "name": "Rzuć",
+                    "damageOnSave": "połowa"
                 },
                 "Douse Space": {
                     "name": "Zgaś przestrzeń"
@@ -1168,7 +1189,8 @@
             "activities": {
                 "Grapple/Shove": {
                     "name": "Pochwycenie/Pchnięcie",
-                    "chatFlavor": "Próba pochwycenia lub popchnięcia"
+                    "chatFlavor": "Próba pochwycenia lub popchnięcia",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {

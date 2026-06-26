@@ -20,10 +20,11 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
-                "chatFlavor": "description.chatFlavor",
                 "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
                 "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
                 "range": {
                     "path": "range",
                     "converter": "imperialToMetric"
@@ -150,7 +151,8 @@
             "activities": {
                 "save": {
                     "target": "Którego widzisz",
-                    "targetAffects": "Którego widzisz"
+                    "targetAffects": "Którego widzisz",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -499,7 +501,8 @@
                 "Frightful Aura": {
                     "name": "Aura grozy",
                     "condition": "Ilekroć wróg rozpoczyna swoją turę w twojej Aurze Ochrony",
-                    "activationCondition": "Ilekroć wróg rozpoczyna swoją turę w twojej Aurze Ochrony"
+                    "activationCondition": "Ilekroć wróg rozpoczyna swoją turę w twojej Aurze Ochrony",
+                    "damageOnSave": "połowa"
                 },
                 "Restore Use": {
                     "name": "Przywrócenie użycia"
@@ -847,7 +850,8 @@
                 "Beguiling Reaction": {
                     "name": "Zniewalająca reakcja",
                     "condition": "Natychmiast po tym, jak istota, którą widzisz, trafi cię testem ataku",
-                    "activationCondition": "Natychmiast po tym, jak istota, którą widzisz, trafi cię testem ataku"
+                    "activationCondition": "Natychmiast po tym, jak istota, którą widzisz, trafi cię testem ataku",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -858,7 +862,8 @@
             "activities": {
                 "save": {
                     "condition": "Po rzuceniu czaru zaklinania lub iluzji przy użyciu komórki czaru",
-                    "activationCondition": "Po rzuceniu czaru zaklinania lub iluzji przy użyciu komórki czaru"
+                    "activationCondition": "Po rzuceniu czaru zaklinania lub iluzji przy użyciu komórki czaru",
+                    "damageOnSave": "połowa"
                 },
                 "Recharge with Inspiration": {
                     "name": "Odnowa dzięki Inspiracji"
@@ -875,7 +880,12 @@
         },
         "Beguiling Twist": {
             "name": "Zniewalająca zwrot",
-            "description": "<p>Magia Feywild chroni twój umysł. Masz Ułatwienie w rzutach obronnych, aby uniknąć lub zakończyć stan Zauroczony lub Przerażony.</p><p>Dodatkowo, ilekroć ty lub istota, którą widzisz w odległości 120 stóp od siebie, odniesie sukces w rzucie obronnym, aby uniknąć lub zakończyć stan Zauroczony lub Przerażony, możesz Reakcją zmusić inną istotę, którą widzisz w odległości 120 stóp od siebie, do wykonania rzutu obronnego z Roztropności przeciwko twojemu ST rzutu przeciw czarom. Przy nieudanym rzucie cel staje się &amp;Reference[Charmed] lub &amp;Reference[Frightened] (twój wybór) na 1 minutę. Cel powtarza rzut na końcu każdej swojej tury, kończąc efekt przy udanym rzucie.</p>"
+            "description": "<p>Magia Feywild chroni twój umysł. Masz Ułatwienie w rzutach obronnych, aby uniknąć lub zakończyć stan Zauroczony lub Przerażony.</p><p>Dodatkowo, ilekroć ty lub istota, którą widzisz w odległości 120 stóp od siebie, odniesie sukces w rzucie obronnym, aby uniknąć lub zakończyć stan Zauroczony lub Przerażony, możesz Reakcją zmusić inną istotę, którą widzisz w odległości 120 stóp od siebie, do wykonania rzutu obronnego z Roztropności przeciwko twojemu ST rzutu przeciw czarom. Przy nieudanym rzucie cel staje się &amp;Reference[Charmed] lub &amp;Reference[Frightened] (twój wybór) na 1 minutę. Cel powtarza rzut na końcu każdej swojej tury, kończąc efekt przy udanym rzucie.</p>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "połowa"
+                }
+            }
         },
         "Bend Luck": {
             "name": "Naginanie szczęścia",
@@ -970,7 +980,8 @@
             "activities": {
                 "save": {
                     "condition": "Ilekroć stworzenie, które widzisz, rozpoczyna swoją turę w odległości do 30 stóp od ciebie, gdy jesteś w Szale",
-                    "activationCondition": "Ilekroć stworzenie, które widzisz, rozpoczyna swoją turę w odległości do 30 stóp od ciebie, gdy jesteś w Szale"
+                    "activationCondition": "Ilekroć stworzenie, które widzisz, rozpoczyna swoją turę w odległości do 30 stóp od ciebie, gdy jesteś w Szale",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -1270,7 +1281,8 @@
             "activities": {
                 "save": {
                     "condition": "Gdy tworzysz więź telepatyczną, używając Przebudzonego umysłu",
-                    "activationCondition": "Gdy tworzysz więź telepatyczną, używając Przebudzonego umysłu"
+                    "activationCondition": "Gdy tworzysz więź telepatyczną, używając Przebudzonego umysłu",
+                    "damageOnSave": "połowa"
                 },
                 "Regain Use": {
                     "name": "Odzyskaj użycie"
@@ -1615,14 +1627,16 @@
                 "Poison": {
                     "name": "Trucizna",
                     "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
-                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku"
+                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
+                    "damageOnSave": "połowa"
                 },
                 "Trip": {
                     "name": "Podcięcie",
                     "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
                     "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
                     "target": "Duży lub mniejszy",
-                    "targetAffects": "Duży lub mniejszy"
+                    "targetAffects": "Duży lub mniejszy",
+                    "damageOnSave": "połowa"
                 },
                 "Cunning Sneak Attack": {
                     "name": "Chytry ukradkowy atak",
@@ -1713,7 +1727,8 @@
                 "Death Strike": {
                     "name": "Śmiertelne uderzenie",
                     "condition": "Kiedy trafisz Ukrytym Atakiem w pierwszej rundzie walki",
-                    "activationCondition": "Kiedy trafisz Ukrytym Atakiem w pierwszej rundzie walki"
+                    "activationCondition": "Kiedy trafisz Ukrytym Atakiem w pierwszej rundzie walki",
+                    "damageOnSave": "full"
                 }
             }
         },
@@ -1748,7 +1763,8 @@
                     "activationCondition": "Jeśli zredukujesz obrażenia do 0",
                     "target": "Nie jest za Całkowitą osłoną",
                     "targetAffects": "Nie jest za Całkowitą osłoną",
-                    "range": "5 stóp dla ataków wręcz lub 60 stóp dla ataków zasięgowych"
+                    "range": "5 stóp dla ataków wręcz lub 60 stóp dla ataków zasięgowych",
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -1767,7 +1783,8 @@
                     "activationCondition": "Jeśli zredukujesz obrażenia do 0",
                     "target": "Nie jest za Całkowitą osłoną",
                     "targetAffects": "Nie jest za Całkowitą osłoną",
-                    "range": "5 stóp dla ataków wręcz lub 60 stóp dla ataków zasięgowych"
+                    "range": "5 stóp dla ataków wręcz lub 60 stóp dla ataków zasięgowych",
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -1791,17 +1808,20 @@
                 "Daze": {
                     "name": "Otępienie",
                     "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
-                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku"
+                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
+                    "damageOnSave": "połowa"
                 },
                 "Knock Out": {
                     "name": "Znokautowanie",
                     "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
-                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku"
+                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
+                    "damageOnSave": "połowa"
                 },
                 "Obscure": {
                     "name": "Oślepienie",
                     "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
-                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku"
+                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -1830,7 +1850,8 @@
             "activities": {
                 "save": {
                     "condition": "Gdy trafiasz istotę w teście ataku",
-                    "activationCondition": "Gdy trafiasz istotę w teście ataku"
+                    "activationCondition": "Gdy trafiasz istotę w teście ataku",
+                    "damageOnSave": "full"
                 }
             }
         },
@@ -2294,7 +2315,8 @@
                     "activationCondition": "Kiedy zadasz obrażenia Uderzeniem żywiołu",
                     "target": "trafiony obrażeniami od żywiołów nasyconym uderzeniem",
                     "targetAffects": "trafiony obrażeniami od żywiołów nasyconym uderzeniem",
-                    "range": "popchnięta albo przyciągnięta do 10 stóp"
+                    "range": "popchnięta albo przyciągnięta do 10 stóp",
+                    "damageOnSave": "połowa"
                 },
                 "Activate Attunement": {
                     "name": "Aktywacja Harmonii"
@@ -2311,7 +2333,8 @@
             "description": "<p>Akcja Magii możesz zużyć 2 Punkty skupienia, aby wywołać wybuch energii żywiołów w Sferze o promieniu 20 stóp, której centrum znajduje się w punkcie w promieniu 120 stóp od ciebie. Wybierz typ obrażeń: kwasowe, od zimna, od ognia, od elektryczności lub od dźwięku.</p><p>Każda istota w Sferze musi wykonać rzut obronny na Zręczność. W przypadku niepowodzenia otrzymuje obrażenia wybranego typu równe trzem rzutom twojej Kości Sztuk walki. W przypadku udanego rzutu obronnego istota otrzymuje połowę obrażeń.</p><section id=\"secret-ibRDHOMdegAOpfmU\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Typ obrażeń można wybrać w oknie dialogowym rzutu.</p></section>",
             "activities": {
                 "Burst": {
-                    "name": "Wybuch"
+                    "name": "Wybuch",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -2419,7 +2442,8 @@
                 "Poison": {
                     "name": "Trucizna",
                     "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
-                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku"
+                    "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -2956,7 +2980,8 @@
             "activities": {
                 "save": {
                     "condition": "Gdy trafiasz istotę w teście ataku",
-                    "activationCondition": "Gdy trafiasz istotę w teście ataku"
+                    "activationCondition": "Gdy trafiasz istotę w teście ataku",
+                    "damageOnSave": "full"
                 }
             },
             "effects": {
@@ -3164,7 +3189,8 @@
                 "Hurl Through Hell": {
                     "name": "Droga przez piekło",
                     "condition": "Raz na turę, gdy trafisz istotę testem ataku",
-                    "activationCondition": "Raz na turę, gdy trafisz istotę testem ataku"
+                    "activationCondition": "Raz na turę, gdy trafisz istotę testem ataku",
+                    "damageOnSave": "none"
                 },
                 "Regain Use": {
                     "name": "Odzyskaj użycie"
@@ -3408,6 +3434,9 @@
             "description": "<p>Akcją dodatkową możesz wzbudzić grozę w innych dzięki swojej Złowrogiej Postawie i prymitywnej mocy. Gdy to zrobisz, każda wybrana przez ciebie istota w Emanacji o promieniu 30 stóp, której punktem wyjścia jesteś ty, musi wykonać rzut obronny na Mądrość (ST równe 8 + twój modyfikator Siły + Premia od Biegłości). Przy nieudanym rzucie istota otrzymuje stan Przerażony na 1 minutę. Na końcu każdej swojej tury istota ze stanem &amp;Reference[Frightened] powtarza rzut, kończąc efekt przy sukcesie.</p><p>Po użyciu tej zdolności nie możesz jej użyć ponownie, dopóki nie zakończysz Długiego Odpoczynku, chyba że wydasz jedno użycie swojego Szału (nie wymaga Akcji), aby odzyskać możliwość jej użycia.</p><section class=\"secret\" id=\"secret-vRQdGrtACAbxH4Tm\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Obrona</strong> zawiera Aktywny Efekt, który nadaje stan Przerażony.</p><p>Aktywność <strong>Naładowanie</strong> zużywa jedno użycie Szału i odnawia twoją zdolność Złowrogiej Postawy.</p></section>",
             "requirements": "Ścieżka berserkera",
             "activities": {
+                "save": {
+                    "damageOnSave": "połowa"
+                },
                 "Recharge with Rage": {
                     "name": "Odnowa w szale"
                 }
@@ -3536,7 +3565,12 @@
         "Land's Aid": {
             "name": "Pomoc natury",
             "description": "<p>Akcją Magii możesz wydać użycie swojej Dzikiej postaci i wybrać punkt w odległości do 60 stóp od ciebie. Kwiaty dające witalność i wysysające życie ciernie pojawiają się na moment w Sferze o promieniu 10 stóp ze środkiem w tym punkcie. Każda wybrana przez ciebie istota w tej sferze musi wykonać rzut obronny na Kondycję przeciwko twojemu ST rzutu przeciw czarom, otrzymując 2k6 obrażeń nekrotycznych przy nieudanym rzucie albo połowę przy udanym. Jedna wybrana przez ciebie istota na tym obszarze odzyskuje [[/healing @scale.land.lands-aid]]{[[lookup @scale.land.lands-aid]] Punkty Wytrzymałości}.</p><p>Obrażenia i leczenie rosną o 1k6, gdy osiągniesz poziomy druida 10 (3k6) i 14 (4k6).</p><section class=\"secret\" id=\"secret-T1DFK6QJjzeJsysz\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera aktywność dla rzutu obronnego i leczenia.</p><p>Wartości leczenia/obrażeń automatycznie skalują się wraz z awansem na kolejne poziomy.</p></section>",
-            "requirements": "Krąg Ziemi"
+            "requirements": "Krąg Ziemi",
+            "activities": {
+                "save": {
+                    "damageOnSave": "połowa"
+                }
+            }
         },
         "Lay on Hands": {
             "name": "Nakładanie rąk",
@@ -3791,7 +3825,8 @@
             "activities": {
                 "save": {
                     "condition": "Gdy trafiasz istotę w teście ataku",
-                    "activationCondition": "Gdy trafiasz istotę w teście ataku"
+                    "activationCondition": "Gdy trafiasz istotę w teście ataku",
+                    "damageOnSave": "full"
                 }
             },
             "effects": {
@@ -3829,7 +3864,8 @@
                     "activationCondition": "Po teleportacji",
                     "target": "wybrana przez ciebie",
                     "targetAffects": "wybrana przez ciebie",
-                    "range": "przestrzeni, którą właśnie opuściłeś"
+                    "range": "przestrzeni, którą właśnie opuściłeś",
+                    "damageOnSave": "połowa"
                 },
                 "cast": {
                     "condition": "Po otrzymaniu obrażeń",
@@ -4070,6 +4106,11 @@
         "Nature's Wrath": {
             "name": "Gniew natury",
             "description": "<p>Akcją magii możesz zużyć jedno użycie swojego Aktu wiary, aby przywołać spektralne pnącza wokół pobliskich istot. Każda wybrana przez Ciebie istota, którą widzisz w promieniu 15 stóp, musi wykonać rzut obronny na Siłę. W przypadku niepowodzenia zyskuje stan &Reference[Restrained] na 1 minutę. Unieruchomiona istota powtarza rzut obronny na końcu każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu.</p><section id=\"secret-0hFWoWfW8qGxYckC\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta funkcja zawiera Aktywny Efekt, który nakłada stan &Reference[Restrained].</p></section>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "połowa"
+                }
+            },
             "effects": {
                 "Nature's Wrath": {
                     "name": "Gniew natury"
@@ -4231,11 +4272,13 @@
             "activities": {
                 "Manifest Single Emanation": {
                     "name": "Stwórz pojedynczą Emanację",
-                    "range": "Jedna chętna istota"
+                    "range": "Jedna chętna istota",
+                    "damageOnSave": "none"
                 },
                 "Manifest Double Emanation": {
                     "name": "Stwórz podwójną Emanację",
-                    "range": "Jedna chętna istota"
+                    "range": "Jedna chętna istota",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -4261,12 +4304,14 @@
                 "Push": {
                     "name": "Popchnięcie",
                     "condition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów",
-                    "activationCondition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów"
+                    "activationCondition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów",
+                    "damageOnSave": "połowa"
                 },
                 "Topple": {
                     "name": "Obalenie",
                     "condition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów",
-                    "activationCondition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów"
+                    "activationCondition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -4835,7 +4880,8 @@
             "activities": {
                 "save": {
                     "condition": "Gdy trafiasz istotę w teście ataku",
-                    "activationCondition": "Gdy trafiasz istotę w teście ataku"
+                    "activationCondition": "Gdy trafiasz istotę w teście ataku",
+                    "damageOnSave": "full"
                 }
             }
         },
@@ -4857,7 +4903,8 @@
                 "End Vibrations": {
                     "name": "Zakończenie wibracji",
                     "condition": "Kiedy wykonujesz Akcję Ataku w swojej turze",
-                    "activationCondition": "Kiedy wykonujesz Akcję Ataku w swojej turze"
+                    "activationCondition": "Kiedy wykonujesz Akcję Ataku w swojej turze",
+                    "damageOnSave": "połowa"
                 },
                 "Instill Vibrations": {
                     "name": "Wzbudzenie wibracji",
@@ -4874,7 +4921,12 @@
         "Radiance of the Dawn": {
             "name": "Blask świtu",
             "description": "<p>Akcją Magii prezentujesz swój Święty symbol i zużywasz jedno użycie swojego Aktu wiary, by wyemitować błysk światła w emanacji o promieniu 30 stóp, której źródłem jesteś ty. Każda magiczna &amp;Reference[Darkness] - taka jak ta stworzona przez czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00] - zostaje rozproszona w tym obszarze. Dodatkowo, każda istota twojego wyboru znajdująca się w tym obszarze musi wykonać rzut obronny na Kondycję, otrzymując obrażenia od światłości równe 2k10 plus twój poziom Kleryka przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p>",
-            "requirements": "Domena światła"
+            "requirements": "Domena światła",
+            "activities": {
+                "save": {
+                    "damageOnSave": "połowa"
+                }
+            }
         },
         "Radiant Soul": {
             "name": "Świetlista dusza",
@@ -5086,7 +5138,12 @@
         "Relentless Rage": {
             "name": "Niezmordowany szał",
             "description": "<p>Twój Szał pozwala ci walczyć pomimo ciężkich ran. Jeśli spadniesz do 0 Punktów Wytrzymałości, gdy twój Szał jest aktywny, i nie zginiesz od razu, możesz wykonać rzut obronny na Kondycję o ST 10. Jeśli ci się powiedzie, twoje Punkty Wytrzymałości zmieniają się zamiast tego na liczbę równą dwukrotności twojego poziomu barbarzyńcy.</p><p>Za każdym kolejnym użyciem tej zdolności ST zwiększa się o 5. Gdy kończysz Krótki lub Długi Odpoczynek, ST resetuje się do 10.</p><section class=\"secret\" id=\"secret-GTpuSHXh1ZobcQYd\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność automatycznie zwiększy ST o 5, jeśli zużyjesz zasób podczas jej aktywacji. Automatycznie zresetuje się także do 10 po Krótkim lub Długim Odpoczynku.</p></section>```",
-            "requirements": "Barbarzyńca"
+            "requirements": "Barbarzyńca",
+            "activities": {
+                "save": {
+                    "damageOnSave": "połowa"
+                }
+            }
         },
         "Reliable Talent": {
             "name": "Niezawodny talent",
@@ -5113,12 +5170,14 @@
                 "Rend Mind (Free)": {
                     "name": "Rozdarcie umysłu (Darmowe)",
                     "condition": "Kiedy zadasz obrażenia z Ukrytego ataku swoimi Psychicznymi ostrzami",
-                    "activationCondition": "Kiedy zadasz obrażenia z Ukrytego ataku swoimi Psychicznymi ostrzami"
+                    "activationCondition": "Kiedy zadasz obrażenia z Ukrytego ataku swoimi Psychicznymi ostrzami",
+                    "damageOnSave": "połowa"
                 },
                 "Rend Mind": {
                     "name": "Rozdarcie umysłu",
                     "condition": "Kiedy zadasz obrażenia z Ukrytego ataku swoimi Psychicznymi ostrzami",
-                    "activationCondition": "Kiedy zadasz obrażenia z Ukrytego ataku swoimi Psychicznymi ostrzami"
+                    "activationCondition": "Kiedy zadasz obrażenia z Ukrytego ataku swoimi Psychicznymi ostrzami",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -5322,7 +5381,8 @@
                 "Channel Divinity: Turn Undead": {
                     "name": "Akt wiary: Odpędzanie Nieumarłych",
                     "target": "Nieumarły",
-                    "targetAffects": "Nieumarły"
+                    "targetAffects": "Nieumarły",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -5601,7 +5661,8 @@
                 "Spell Thief": {
                     "name": "Złodziej zaklęć",
                     "condition": "Natychmiast po tym, jak istota rzuci czar, który cię wskazuje jako cel lub obejmuje cię swoim obszarem działania",
-                    "activationCondition": "Natychmiast po tym, jak istota rzuci czar, który cię wskazuje jako cel lub obejmuje cię swoim obszarem działania"
+                    "activationCondition": "Natychmiast po tym, jak istota rzuci czar, który cię wskazuje jako cel lub obejmuje cię swoim obszarem działania",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -5622,7 +5683,8 @@
                 "Mass Fear": {
                     "name": "Masowy strach",
                     "condition": "Kiedy używasz efektu Przerażającego uderzenia",
-                    "activationCondition": "Kiedy używasz efektu Przerażającego uderzenia"
+                    "activationCondition": "Kiedy używasz efektu Przerażającego uderzenia",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -5690,7 +5752,8 @@
                     "name": "Prowokujący krok",
                     "condition": "Po teleportacji",
                     "activationCondition": "Po teleportacji",
-                    "range": "przestrzeni, którą właśnie opuściłeś"
+                    "range": "przestrzeni, którą właśnie opuściłeś",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -5704,6 +5767,11 @@
             "name": "Władca sztormu",
             "description": "<p>Twój Gniew morza zapewnia ci dwa dodatkowe efekty, gdy jest aktywny, jak opisano poniżej.</p><p><strong>Lot.</strong> Zyskujesz Szybkość Lotu równą swojej Szybkości.</p><p><strong>Odporność.</strong> Masz Odporność na obrażenia od zimna, elektryczności i dźwięku.</p><section class=\"secret\" id=\"secret-gM39tGMfj0IPiND0\"><p><strong>Notatka Foundry</strong></p><p>Możesz używać tej zdolności zamiast Gniewu morza. Zawiera ona Aktywny Efekt, który automatyzuje dodanie Odporności. Nie dodaje jednak Szybkości Lotu.</p></section>",
             "requirements": "Krąg Morza",
+            "activities": {
+                "save": {
+                    "damageOnSave": "none"
+                }
+            },
             "effects": {
                 "Stormborn": {
                     "name": "Władca sztormu"
@@ -5739,7 +5807,8 @@
             "activities": {
                 "save": {
                     "condition": "Raz na turę, gdy trafisz istotę bronią Mnicha lub Uderzeniem bez broni",
-                    "activationCondition": "Raz na turę, gdy trafisz istotę bronią Mnicha lub Uderzeniem bez broni"
+                    "activationCondition": "Raz na turę, gdy trafisz istotę bronią Mnicha lub Uderzeniem bez broni",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -5954,7 +6023,8 @@
                 "Telekinetic Thrust": {
                     "name": "Telekinetyczne pchnięcie",
                     "condition": "Kiedy zadasz celowi obrażenia swoim Psionicznym uderzeniem",
-                    "activationCondition": "Kiedy zadasz celowi obrażenia swoim Psionicznym uderzeniem"
+                    "activationCondition": "Kiedy zadasz celowi obrażenia swoim Psionicznym uderzeniem",
+                    "damageOnSave": "none"
                 },
                 "Psi-Powered Leap Using Psionic Energy": {
                     "name": "Psioniczny skok z użyciem energii psionicznej"
@@ -6165,7 +6235,8 @@
             "activities": {
                 "save": {
                     "condition": "Gdy trafiasz istotę w teście ataku",
-                    "activationCondition": "Gdy trafiasz istotę w teście ataku"
+                    "activationCondition": "Gdy trafiasz istotę w teście ataku",
+                    "damageOnSave": "full"
                 }
             },
             "effects": {
@@ -6213,7 +6284,8 @@
             "activities": {
                 "Grapple/Shove": {
                     "name": "Pochwycenie/Pchnięcie",
-                    "chatFlavor": "Próba pochwycenia lub popchnięcia"
+                    "chatFlavor": "Próba pochwycenia lub popchnięcia",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -6251,10 +6323,12 @@
                 "Recoil Save": {
                     "name": "Rzut obronny przed majestatem",
                     "condition": "istota trafi cię testem ataku po raz pierwszy w danej turze",
-                    "activationCondition": "istota trafi cię testem ataku po raz pierwszy w danej turze"
+                    "activationCondition": "istota trafi cię testem ataku po raz pierwszy w danej turze",
+                    "damageOnSave": "połowa"
                 },
                 "Assume Majestic Presence": {
-                    "name": "Przybranie majestatycznej prezencji"
+                    "name": "Przybranie majestatycznej prezencji",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -6511,7 +6585,8 @@
             "description": "<p>Możesz uwolnić anomalię zniekształcającą przestrzeń. Akcją możesz teleportować się do wolnego miejsca, które widzisz w promieniu 120 stóp od siebie. Natychmiast po zniknięciu każda istota w promieniu 30 stóp od miejsca, które opuściłeś, musi wykonać rzut obronny na Siłę przeciwko twojemu ST rzutu przeciw czarom. Przy niepowodzeniu istota otrzymuje 3k10 obrażeń od mocy i zostaje przyciągnięta bezpośrednio do miejsca, które opuściłeś, kończąc w najbliższej wolnej przestrzeni. Przy udanym rzucie obronnym istota otrzymuje połowę obrażeń.</p><p>Po użyciu tej zdolności nie możesz jej użyć ponownie, dopóki nie zakończysz Długiego odpoczynku, chyba że wydasz 5 Punktów Zaklinania (bez konieczności użycia akcji), aby odzyskać jej użycie.</p>",
             "activities": {
                 "Warping Implosion": {
-                    "name": "Zniekształcająca implozja"
+                    "name": "Zniekształcająca implozja",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -6761,10 +6836,12 @@
             "requirements": "Krąg Morza",
             "activities": {
                 "Manifest Ocean Spray": {
-                    "name": "Przywołanie morskiej bryzy"
+                    "name": "Przywołanie morskiej bryzy",
+                    "damageOnSave": "none"
                 },
                 "Bonus Action Save": {
-                    "name": "Akcja dodatkowa: Rzut obronny"
+                    "name": "Akcja dodatkowa: Rzut obronny",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
