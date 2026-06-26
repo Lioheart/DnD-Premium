@@ -1,0 +1,699 @@
+{
+    "label": "Options",
+    "folders": {
+        "Backgrounds": "Backgrounds",
+        "Channeled Spirits": "Channeled Spirits",
+        "College of Spirits": "College of Spirits",
+        "Dark Gift": "Dark Gift",
+        "Feats": "Feats",
+        "Grave Domain": "Grave Domain",
+        "Hollow Warden": "Hollow Warden",
+        "Origin": "Origin",
+        "Phantom": "Phantom",
+        "Reanimator": "Reanimator",
+        "Shadow Sorcery": "Shadow Sorcery",
+        "Species": "Species",
+        "Strange Modifications": "Strange Modifications",
+        "Subclasses": "Subclasses",
+        "Traits": "Traits",
+        "Undead Patron": "Undead Patron"
+    },
+    "entries": {
+        "Aberrant Anatomy": {
+            "name": "Aberrant Anatomy",
+            "description": {
+                "value": "<p>Exposure to alien horrors like those of the Far Realm has warped your physical form in supernatural ways. You gain the following features.</p><p><strong>Breathless.</strong> You can hold your breath for 1 hour.</p><p><strong>Extrasensory Perception.</strong> You have proficiency in the Perception skill, if you lack it. You also gain Expertise in that skill.</p><p>In addition, you have &amp;Reference[Blindsight] with a range of 15 feet.</p><p><strong>Warping Flesh.</strong> Immediately after you make a D20 Test and roll a 1 on the d20, the aberrant influence infecting your form flares, wrenching control of your flesh. Make a [[/save]]{Constitution saving throw} (DC 13 plus your Proficiency Bonus). On a failed save, you have the &amp;Reference[Stunned apply=false] condition until the end of your next turn.</p>"
+            }
+        },
+        "Ancient Armor": {
+            "name": "Ancient Armor"
+        },
+        "Ancient Might": {
+            "name": "Ancient Might",
+            "description": {
+                "value": "<p>You become wholly suffused with the wild’s ancient and terrible power, granting you the following benefits.</p><p><span class=\"inline-entry\"><strong>Ominous Strikes.</strong></span> When you hit a creature that has the &amp;Reference[Frightened apply=false] condition with an attack roll, that attack deals extra damage equal to your Wisdom modifier.</p><p><span class=\"inline-entry\"><strong>Persistent Wrath.</strong></span> If you’re reduced to 0 Hit Points but not killed outright while transformed using @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwHWWrathofth3C]{Wrath of the Wild,} you can surge with wild power. Your Hit Points instead change to a number equal to twice your Ranger level. Once you use this feature, you can’t do so again until you finish a Long Rest. You can also expend a level 4+ spell slot (no action required) to restore your use of this feature.</p><p><span class=\"inline-entry\"><strong>Timeless.</strong></span> You have Immunity to the &amp;Reference[Exhaustion apply=false] condition.</p><section id=\"secret-Bm2dNq2IvXUldXDR\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Ominous Strikes</strong> active effect should be toggled as needed depending on the attack target.</p></section>"
+            }
+        },
+        "Arcane Conduit": {
+            "name": "Arcane Conduit",
+            "description": {
+                "value": "<p><strong>Arcane Conduit. </strong>You can cast spells as though you were in the companion’s space, but you must use your own senses. Once per turn, when you cast an Artificer spell from the Evocation or Necromancy school and deal damage while your companion is within 120 feet of you, you can add your Intelligence modifier to one damage roll of that spell.</p>"
+            }
+        },
+        "Arsonist Spirit": {
+            "name": "Arsonist Spirit",
+            "description": {
+                "value": "The target makes a Dexterity saving throw, taking Fire damage equal to four rolls of your Bardic Inspiration die on a failed save or half as much damage on a successful one."
+            }
+        },
+        "Attack and Save Disadvantage": {
+            "name": "Attack and Save Disadvantage",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwHowlA3f2I58L3 inline]</p><p><em>Disadvantage on attack rolls is not automated.</em></p>"
+        },
+        "Avenger Spirit": {
+            "name": "Avenger Spirit",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSAvengerSpv2 inline]</p>"
+        },
+        "Beasts of Ill Omen": {
+            "name": "Beasts of Ill Omen",
+            "description": {
+                "value": "<p>You can call forth a howling creature of shadow to hound your foes. You can spend 3 Sorcery Points to cast <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSummonBeas]{Summon Beast}</em> as a Bonus Action without expending a spell slot, without preparing the spell, and without Material components. The summoned creature appears as a beast made of shadow, and enemies within 5 feet of the summoned creature have Disadvantage on saving throws against spells you cast.</p><p>Whenever you cast the spell, you can modify it so that it doesn’t require Concentration. If you do so, the spell’s duration becomes 1 minute for that casting, and the spell ends early if you cast the spell again.</p>"
+            }
+        },
+        "Beloved Spirit": {
+            "name": "Beloved Spirit",
+            "description": {
+                "value": "<p>The target [[/heal]]{regains Hit Points} equal to a roll of your Bardic Inspiration die plus your Charisma modifier.</p>"
+            }
+        },
+        "Bloated": {
+            "name": "Bloated",
+            "description": {
+                "value": "<p><strong>Bloated. </strong>The companion becomes Large. Whenever it hits a Large or smaller creature with its Dreadful Swipe action, that creature is pushed up to 10 feet away from the companion. Additionally, you can add your Intelligence modifier to the damage dealt by the companion’s Death Burst.</p>"
+            }
+        },
+        "Bloated Size and Burst": {
+            "name": "Bloated Size and Burst"
+        },
+        "Brute Spirit": {
+            "name": "Brute Spirit",
+            "description": {
+                "value": "<p>Each creature of your choice in a 30-foot Emanation originating from the target makes a [[/save]]{Strength saving throw.} On a failed save, a creature takes [[/damage]]{Thunder damage} equal to three rolls of your Bardic Inspiration die and has the &amp;Reference[Prone] condition. On a successful save, a creature takes half as much damage only.</p>"
+            }
+        },
+        "Channeler": {
+            "name": "Channeler",
+            "description": {
+                "value": "<p>You learn how to contact spirits beyond the grave, letting their power and knowledge flow through you. You gain the following benefits.</p><p><span class=\"inline-entry\"><strong>Guiding Whispers.</strong></span> You know the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGuidance00]{Guidance}</em> cantrip. It has a range of 60 feet when you cast it.</p><p><span class=\"inline-entry\"><strong>Spiritual Focus.</strong></span> You employ tools that aid you in channeling spirits. You gain a Gaming Set (@UUID[Compendium.dnd-players-handbook.equipment.Item.phbgstPlayingcar]{playing cards}). You have proficiency with this Gaming Set, and you can use it or one of the following items as a Spellcasting Focus for your Bard spells: Arcane Focus (@UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcCrystal000]{crystal} or @UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcOrb0000000]{orb}), @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCandle00000]{Candle}, or @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInkPen00000]{Ink Pen}.</p>"
+            }
+        },
+        "Charmed": {
+            "name": "Charmed",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSTricksterO6 inline]</p>"
+        },
+        "Circle of Mortality": {
+            "name": "Circle of Mortality",
+            "description": {
+                "value": "<p>You can manipulate the balance between life and death, granting you the following benefits.</p><p><strong>Pull of Death.</strong> Once per turn, when you deal damage to a creature that’s missing any Hit Points by casting a spell or by hitting with an attack roll, that creature takes an extra [[/damage]]{1d4 Necrotic} damage. This extra damage increases to 1d6 when you reach Cleric level 11.</p><p><strong>Return to Life.</strong> You can cast <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSparetheDy]{Spare the Dying}</em> as a Bonus Action.</p><p>Additionally, when you would normally roll one or more dice to restore Hit Points to a creature at 0 Hit Points with a spell or Channel Divinity, don’t roll those dice for the healing; instead, use the highest number possible for each die. For example, instead of restoring 2d4 Hit Points to a creature at 0 Hit Points with a spell, you restore 8.</p>"
+            }
+        },
+        "College of Spirits": {
+            "name": "College of Spirits",
+            "description": {
+                "value": "<p class=\"meta\"><em>Call Forth Spirits from Beyond the Grave</em></p><p>Bards of the College of Spirits conjure legendary spirits to change the world. But such entities are capricious, and what a Bard summons isn’t always entirely under their control.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.CollegeofSpirits]{Subclass Details}</em></p>"
+            }
+        },
+        "Coward Spirit": {
+            "name": "Coward Spirit",
+            "description": {
+                "value": "<p>The target and each creature of your choice in a 30-foot Emanation originating from the target must succeed on a [[/save]]{Wisdom saving throw} or have the &amp;Reference[Frightened apply=false] condition until the start of your next turn. While a creature is Frightened, its Speed is halved (round down), and it can take either an action or a Bonus Action, not both.</p>"
+            }
+        },
+        "Cursed (Path to the Grave)": {
+            "name": "Cursed (Path to the Grave)",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSPathtotheCb inline]</p><p><em>Disadvantage on attack rolls is not automated.</em></p>"
+        },
+        "D20 Test Advantage": {
+            "name": "D20 Test Advantage",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSFortuneTeZz inline]</p><p><em>Advantage on attack rolls is not automated.</em></p>"
+        },
+        "Death Burst Improvement": {
+            "name": "Death Burst Improvement",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwREImprovedRlq caption=false]</p>"
+        },
+        "Death's Friend": {
+            "name": "Death's Friend",
+            "description": {
+                "value": "<p>Your association with death has become so close that you gain the following benefits.</p><p><span class=\"inline-entry\"><strong>Death’s Lament.</strong></span> When you use @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwPRWailsfromLz]{Wails from the Grave}, you can deal the feature’s Necrotic damage to both the first and the second creature.</p><p><span class=\"inline-entry\"><strong>Draw of Death.</strong></span> When you roll Initiative, you gain one soul trinket for your Tokens of the Departed if you have none remaining.</p>"
+            }
+        },
+        "Dhampir": {
+            "name": "Dhampir",
+            "description": {
+                "value": "<p>Dhampirs are living people who possess vampiric prowess but are cursed with macabre hunger. Most dhampirs thirst for blood, but some gain sustenance from dreams, life energy, or other vital sources. Dhampirs must choose whether to fight to control their hunger or give in to predatory urges.</p><p>Some dhampirs are the descendants of a powerful vampire, while others are partially transformed by a vampire’s bite. Macabre bargains and necromantic influences might also give rise to dhampirs.</p><h4 class=\"entry\">Dhampir Traits</h4><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 35 feet</p><p>As a Dhampir, you have these special traits.</p><p><span class=\"inline-entry\"><strong>Darkvision.</strong></span> You have Darkvision with a range of 60 feet.</p><p><span class=\"inline-entry\"><strong>Trace of Undeath.</strong></span> You have Resistance to Necrotic damage.</p><p><span class=\"inline-entry\"><strong>Spider Climb.</strong></span> @Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwSpiderClimb7F inline]</p><p><span class=\"inline-entry\"><strong>Vampiric Bite.</strong></span> @Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwVampiricBitnE inline]</p>"
+            }
+        },
+        "Divine Reaper": {
+            "name": "Divine Reaper",
+            "description": {
+                "value": "<p>Your deep connection to this domain renders you a hallowed harbinger of death, granting you the following benefits.</p><p><span class=\"inline-entry\"><strong>Enhanced Necromancy.</strong></span> When you cast a spell of level 5 or lower from the Necromancy school that targets one creature, or when you cast a spell from the @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSGraveDomaZF]{Grave Domain Spells} table, you can expend a use of Channel Divinity to target a second creature within the spell’s range. If the spell requires costly or consumed Material components, you must provide Material components for each target.</p><p><span class=\"inline-entry\"><strong>Keeper of Souls.</strong></span> When an enemy dies within 60 feet of you, you or one creature you can see within 60 feet of yourself [[/heal]]{regains Hit Points} equal to twice your Cleric level. You can’t use this feature if you have the Incapacitated condition. Once you use this feature, you can’t use it again until you finish a Short or Long Rest, unless you expend a level 6+ spell slot (no action required) to restore your use of it.</p>"
+            }
+        },
+        "Echoing Soul": {
+            "name": "Echoing Soul",
+            "description": {
+                "value": "<p>You experience echoes from a past or alternate life. You gain the following features.</p><p><strong>Channeled Prowess.</strong> You have proficiency in two skills of your choice.</p><p>In addition, choose one skill you have proficiency in. You gain Expertise in that skill. Whenever you finish a Long Rest, you can change your choice for this benefit.</p><p><strong>Inherent Tongues.</strong> You know one additional language of your choice, which you choose from the language tables in the Player’s Handbook.</p><p><strong>Intrusive Echoes.</strong> Immediately after you make a D20 Test and roll a 1 on the d20, memories and sensations from your soul’s other life threaten to overtake you. Make a Constitution saving throw (DC 13 plus your Proficiency Bonus). On a failed save, you have the Incapacitated condition until the end of your next turn. While you are Incapacitated in this way, your Speed is halved.</p>"
+            }
+        },
+        "Eerie Token": {
+            "name": "Eerie Token",
+            "description": {
+                "value": "<p> As a Bonus Action, you can create a magical token by harmlessly removing a lock of hair, detaching a nail, or using some other method. While the token exists, you gain the following benefits:</p><ul><li><p><strong>Distant Message.</strong> As a Magic action, you can send a telepathic message of 25 words or fewer to a creature holding or carrying the token, as long as you are within 10 miles of it.</p></li><li><p><strong>Remote Viewing.</strong> If you are within 10 miles of the token, you can take a Magic action to extend your senses through the token for 1 minute, until you have the Incapacitated condition, or until you end this state (no action required). During this state, you can see and hear from the token as if you were located where it is. When this state ends, the token is harmlessly destroyed.</p></li></ul><p>Unless the token is destroyed early, it lasts until you finish a Long Rest. Once you create a token using this feature, you can’t do so again until you finish a Long Rest.</p>"
+            }
+        },
+        "Empowered Channeling": {
+            "name": "Empowered Channeling",
+            "description": {
+                "value": "<p>Your ability to channel spirits improves. You gain the following benefits.</p><p><span class=\"inline-entry\"><strong>Power from Beyond.</strong></span> Once per turn, when you cast a Bard spell with a spell slot that deals damage or restores Hit Points, roll 1d6. You gain a bonus equal to the number rolled to one of the spell’s damage rolls or to the total Hit Points the spell restores.</p><p><span class=\"inline-entry\"><strong>Spiritual Manifestation.</strong></span> You always have the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritGuar]{Spirit Guardians}</em> spell prepared. You can cast the spell once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest.</p><p>Whenever you cast the spell, you can modify it so the spirits also guard against worldly threats. When you cast the spell in this way, you and allies within the spell’s Emanation have Half Cover. Once you modify the spell in this way, you can’t do so again until you finish a Short or Long Rest.</p>"
+            }
+        },
+        "Escaped Death": {
+            "name": "Escaped Death",
+            "description": {
+                "value": "<p>You have Advantage on Death Saving Throws.</p>"
+            }
+        },
+        "Everlasting": {
+            "name": "Everlasting",
+            "description": {
+                "value": "<p>You don’t gain Exhaustion levels from dehydration, malnutrition, or suffocation. You don’t need to sleep, and magic can’t put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</p>"
+            }
+        },
+        "Extrasensory Perception": {
+            "name": "Extrasensory Perception",
+            "description": "<p>You have &amp;Reference[Blindsight] with a range of 15 feet.</p>"
+        },
+        "Eyes of the Dark": {
+            "name": "Eyes of the Dark",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwSSPowerofShNG inline]</p>"
+        },
+        "Feral Pounce": {
+            "name": "Feral Pounce",
+            "description": {
+                "value": "<p>Your @UUID[Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.xJjJ4lhymAYXAOvO]{Unarmed Strikes} deal Slashing damage instead of Bludgeoning damage. In addition, when you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Shove options. You can use this benefit only once per turn.</p>"
+            }
+        },
+        "Ferocity": {
+            "name": "Ferocity",
+            "description": {
+                "value": "<p><strong>Ferocity: </strong>The damage die of the companion’s Dreadful Swipe increases to 1d6.</p>"
+            }
+        },
+        "Ferocity Die": {
+            "name": "Ferocity Die"
+        },
+        "Form of Dread": {
+            "name": "Form of Dread",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwUPFormofDreOJ inline]</p>"
+        },
+        "Form of Dread (Necrotic Husk)": {
+            "name": "Form of Dread (Necrotic Husk)",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwUPFormofDreOJ inline]</p><hr /><p><span class=\"inline-entry\"><strong>Necrotic Resilience.</strong></span> While using your Form of Dread, you have Immunity to Necrotic damage.</p>"
+        },
+        "Form of Superior Dread": {
+            "name": "Form of Superior Dread",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwUPFormofDreOJ inline]</p><hr /><p><span class=\"inline-entry\"><strong>Necrotic Resilience.</strong></span> While using your Form of Dread, you have Immunity to Necrotic damage.</p><hr /><p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwUPSuperiorDCk inline]</p>"
+        },
+        "Fortune Teller Spirit": {
+            "name": "Fortune Teller Spirit",
+            "description": {
+                "value": "The target has Advantage on D20 Tests until the start of your next turn."
+            }
+        },
+        "Frightened": {
+            "name": "Frightened",
+            "description": "<p>On a failed save, the target has the Frightened condition until the end of your next turn.</p>"
+        },
+        "Frightened (Menacing Aura)": {
+            "name": "Frightened (Menacing Aura)",
+            "description": "<p><span class=\"inline-entry\"><strong>Menacing Aura.</strong></span> When a creature fails its saving throw against your Unnerving Aura, it also can’t regain Hit Points or take Reactions until the start of your next turn.</p>"
+        },
+        "Gathered Whispers": {
+            "name": "Gathered Whispers",
+            "description": {
+                "value": "<p>You are haunted by a cacophony of whispering spirits only you can hear. You gain the following features.</p><p><strong>Spirit Whispers.</strong> You learn the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMessage000]{Message} spell and can cast it without Material components. Additionally, you always have the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAugury0000]{Augury} spell prepared. You can cast it without a spell slot or spell components, and you must finish a Long Rest before you can cast it in this way again. You can also cast the spell using any spell slots you have.</p><p>Intelligence, Wisdom, or Charisma is your spellcasting ability for this benefit (choose when you select this feat).</p><p><strong>Unearthly Scream.</strong> When you are hit by an attack roll, you can take a Reaction to channel your haunting spirits into a protective, otherworldly scream. You can add your Proficiency Bonus to your AC against that attack, potentially causing it to miss. You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p><strong>Voices from Beyond.</strong> Immediately after you make a D20 Test and roll a 1 on the d20, the haunting voices rise to a ghastly volume. Make a [[/save]]{Wisdom saving throw} (DC 13 plus your Proficiency Bonus). On a failed save, you have the Deafened condition until the end of your next turn. While Deafened, you have Disadvantage on ability checks and attack rolls.</p>"
+            }
+        },
+        "Gaunt": {
+            "name": "Gaunt",
+            "description": {
+                "value": "<p><strong>Gaunt. </strong>The companion’s Speed increases to 45 feet, and it gains a Climb Speed equal to its Speed. It can climb difficult surfaces, including along ceilings, without needing to make an ability check. In addition, whenever a creature of your choice starts its turn within a 10-foot Emanation originating from your companion, the creature must succeed on a Wisdom saving throw against your spell save DC or have the Frightened condition until the start of its next turn.</p>"
+            }
+        },
+        "Ghastly Form": {
+            "name": "Ghastly Form"
+        },
+        "Ghost Walk": {
+            "name": "Ghost Walk",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwPRGhostWalkKY inline]</p><p><em>Hazy Form and Incorporeal Movement is not automated.</em></p>"
+        },
+        "Grappled": {
+            "name": "Grappled"
+        },
+        "Grave Domain": {
+            "name": "Grave Domain",
+            "description": {
+                "value": "<p><em>Embody Deific Forces of Death</em></p><p>The Grave Domain concerns itself with the boundary between life and death. To those who tap into this domain’s power, death is a natural and inevitable part of the multiverse. Such Clerics seek to destroy undead and shepherd spirits.</p><p>The magic of this domain also allows these Clerics to stave off death for a time. But this is merely a delay of death, not a denial of it, for the grave will always claim its due.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.GraveDomainCleri]{Subclass Details}</em></p>"
+            }
+        },
+        "Grave Domain Spells": {
+            "name": "Grave Domain Spells",
+            "description": {
+                "value": "<p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Grave Domain Spells table, you thereafter always have the listed spells prepared.</p><table><caption><p>Grave Domain Spells</p></caption><thead><tr><th scope=\"col\"><p>Cleric Level</p></th><th scope=\"col\"><p>Spells</p></th></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectEvil]{Detect Evil and Good}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFalseLife0]{False Life}</em>,<br class=\"TODO\" /><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGentleRepo]{Gentle Repose}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofEnfee]{Ray of Enfeeblement}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSparetheDy]{Spare the Dying}</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRevivify00]{Revivify}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplVampiricTo]{Vampiric Touch}</em></p></td></tr><tr><td><p>7</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBlight0000]{Blight}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDeathWard0]{Death Ward}</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelEvil]{Dispel Evil and Good}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRaiseDead0]{Raise Dead}</em></p></td></tr></tbody></table>"
+            }
+        },
+        "Grave Touched": {
+            "name": "Grave Touched",
+            "description": {
+                "value": "<p>Your patron’s powers have a profound effect on your body and magic, granting you the following benefits.</p><p><span class=\"inline-entry\"><strong>Arcane Necrosis.</strong></span> Necrotic damage from your attacks, Warlock spells, and Warlock features ignores Resistance to Necrotic damage. Once per turn when you cast a spell that deals damage, you can change that spell’s damage type to Necrotic.</p><p><span class=\"inline-entry\"><strong>Dreaded Necrosis.</strong></span> When you hit a creature with an attack roll and deal Necrotic damage while using your Form of Dread, you can roll one additional damage die when determining the Necrotic damage the target takes. You can use this benefit only once per turn.</p><p><span class=\"inline-entry\"><strong>Undead Endurance.</strong></span> You don’t gain &amp;Reference[Exhaustion apply=false] levels from &amp;Reference[dehydration apply=false], &amp;Reference[malnutrition apply=false], or &amp;Reference[suffocation apply=false]. In addition, you don’t need to sleep, and magic can’t put you to sleep.</p><section id=\"secret-fpX4k2sh73RnF288\" class=\"secret\"><p><strong>Foundry Note</strong></p><p><strong>Arcane</strong> and <strong>Dreaded Necrosis</strong> effects are not automated.</p></section>"
+            }
+        },
+        "Half Cover (Spirit Guardians)": {
+            "name": "Half Cover (Spirit Guardians)",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSEmpoweredtO inline]</p>"
+        },
+        "Haunted One": {
+            "name": "Haunted One",
+            "description": {
+                "value": "<p><strong>Ability Scores:</strong> Constitution, Wisdom, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwSurvivor2zrM3]{Survivor} or a @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwFeats00000000.JournalEntryPage.yEsfCxTXqE0ZGQ3B]{Dark Gift feat} of your choice.</p><p><strong>Skill Proficiencies:</strong> Arcana and Survival</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of Gaming Set</em></p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) Gaming Set (same as above), Crowbar, Holy Water (1 flask), Mirror, Oil (2 flasks), Signal Whistle, Tinderbox, Traveler’s Clothes, 5 Torches, Waterskin, and 14 GP; or (B) 50 GP</p><p>You are haunted by the events of your past. Whether it was a lone terrible incident or an accumulation of painful moments, you bear the unshakable weight of what happened to you. You’ve tried to bury it and run away from it, to no avail; it can’t be slain with a sword or banished via magic. Nevertheless, you persist.</p>"
+            }
+        },
+        "Hexblood": {
+            "name": "Hexblood",
+            "description": {
+                "value": "<p>Hexbloods are individuals infused with fey magic as a result of eldritch energy or mysterious witchcraft. Many hexbloods are transformed into such beings after making a deal with a powerful hag, but other strange forces can result in the birth of a hexblood. A hexblood’s strange fey power manifests as eerie clairvoyance and beguiling magic.</p><h4 class=\"entry\">Hexblood Traits</h4><p><strong>Creature Type:</strong> Fey</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p>As a Hexblood, you have these special traits.</p><p><span class=\"inline-entry\"><strong>Darkvision.</strong></span> You have Darkvision with a range of 60 feet.</p><p><span class=\"inline-entry\"><strong>Eerie Token.</strong></span> @Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwEerieTokenSri inline]</p><p><span class=\"inline-entry\"><strong>Hex Magic.</strong></span> You always have the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDisguiseSe]{Disguise Self}</em> and <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHex0000000]{Hex} </em>spells prepared. You can cast each spell once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select this species).</p>"
+            }
+        },
+        "Hollow Warden": {
+            "name": "Hollow Warden",
+            "description": {
+                "value": "<p class=\"meta\"><em>Draw on the Might of Ancient Wild Terrors</em></p><p>Legends tell that the most ancient and bloodthirsty terrors lurk deep within the old places of the earth. Hollow Wardens venerate and draw power from such beings, transforming themselves into merciless and monstrous guardians that stalk jagged coastlines, steep mountain crags, and other dark and wild places.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.HollowWardenRang]{Subclass Details}</em></p>"
+            }
+        },
+        "Hollow Warden Spells": {
+            "name": "Hollow Warden Spells",
+            "description": {
+                "value": "<p>When you reach a Ranger level specified in the Hollow Warden Spells table, you thereafter always have the listed spell prepared.</p><table><caption><p>Hollow Warden Spells</p></caption><thead><tr><th scope=\"col\"><p>Ranger Level</p></th><th scope=\"col\"><p>Spell</p></th></tr></thead><tbody><tr><td><p>3</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWrathfulSm]{Wrathful Smite}</p></td></tr><tr><td><p>5</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAlterSelf0]{Alter Self}</p></td></tr><tr><td><p>9</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPhantomSte]{Phantom Steed}</p></td></tr><tr><td><p>13</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDominateBe]{Dominate Beast}</p></td></tr><tr><td><p>17</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSteelWindS]{Steel Wind Strike}</p></td></tr></tbody></table>"
+            }
+        },
+        "Howl": {
+            "name": "Howl",
+            "description": {
+                "value": "<p> As a Bonus Action, you let out an unearthly howl. Each creature of your choice within 15 feet of you must succeed on a Wisdom saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus) or have Disadvantage on attack rolls and saving throws until the start of your next turn.</p><p>You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>"
+            }
+        },
+        "Hungering Might": {
+            "name": "Hungering Might",
+            "description": {
+                "value": "<p>You gain a bonus to Constitution saving throws equal to your Wisdom modifier (minimum of +1).</p><p>In addition, once per turn when you hit a creature with an attack roll while you are transformed using Wrath of the Wild, you regain a number of Hit Points equal to [[/heal 1d10+@abilities.wis.mod]]{1d10 plus your Wisdom modifier,} provided you are Bloodied when you hit.</p><section class=\"secret\" id=\"secret-hDX4eM19PNuyru5y\"><p><strong>Foundry Note</strong></p><p>The once per turn healing activity is found on @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwHWWrathofth3C]{Wrath of the Wild} as a level-gated activity, <strong>Hungering Might</strong>.</p></section>"
+            }
+        },
+        "Improved Reanimation": {
+            "name": "Improved Reanimation",
+            "description": {
+                "value": "<p>The damage of your @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.FFTZLIEaYBc8sQfW]{Reanimated Companion’s} Death Burst increases to 4d4. Necrotic damage dealt by your companion ignores Resistance.</p>"
+            }
+        },
+        "Innate Sorcery (Umbral Form)": {
+            "name": "Innate Sorcery (Umbral Form)",
+            "description": "<p>@Embed[Compendium.dnd-players-handbook.classes.Item.phbscrInnateSorc cite=false]</p><hr /><p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwSSUmbralForQw cite=false]</p>"
+        },
+        "Intrusive Echoes (Incapacitated)": {
+            "name": "Intrusive Echoes (Incapacitated)",
+            "description": "<p>You have the &amp;Reference[Incapacitated apply=false] condition until the end of your next turn. While you are Incapacitated in this way, your Speed is halved.</p>"
+        },
+        "Investigator": {
+            "name": "Investigator",
+            "description": {
+                "value": "<p><strong>Ability Scores:</strong> Intelligence, Wisdom, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwSharpEyev8PBf]{Sharp Eye} or a @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwFeats00000000.JournalEntryPage.yEsfCxTXqE0ZGQ3B]{Dark Gift feat} of your choice.</p><p><strong>Skill Proficiencies:</strong> Insight and Investigation</p><p><strong>Tool Proficiency:</strong> Disguise Kit</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) Disguise Kit, Manacles, Shovel, Traveler’s Clothes, 3 Vials, and 16 GP; or (B) 50 GP</p><p>You relentlessly seek the truth. Perhaps you witnessed something remarkable or terrible and now desire to unravel its mystery, or maybe you’re motivated by universal justice and honesty. Whether the cases you’re embroiled in are local crimes or eldritch conspiracies, you’re driven to reveal what others would keep hidden.</p>"
+            }
+        },
+        "Invisible": {
+            "name": "Invisible",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSShadeSpirvt inline]</p>"
+        },
+        "Involuntary Change (Stunned)": {
+            "name": "Involuntary Change (Stunned)",
+            "description": "<p>If you’ve already expended the use of that feature, you instead have the &amp;Reference[Stunned apply=false] condition until the start of your next turn.</p>"
+        },
+        "Jolt to Life": {
+            "name": "Jolt to Life",
+            "description": {
+                "value": "<div class=\"hide-in-embed\"><p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSparetheDy caption=false]</p><hr /></div><p><span class=\"inline-entry\"><strong>Jolt to Life.</strong></span> When you cast <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSparetheDy]{Spare the Dying}</em>, you can modify the spell so that it sends a jolt of electricity through the target, reviving it. The target regains a number of Hit Points equal to your Artificer level, and each creature of your choice in a 10-foot Emanation originating from the target makes a [[/save]]{Dexterity saving throw} against your spell save DC, taking [[/damage]]{2d4 Lightning} damage on a failed save or half as much damage on a successful one.</p><p>You can modify the spell this way a number of times equal to your Intelligence modifier, and you regain all expended uses when you finish a Long Rest. The Lightning damage of this feature increases by 1d4 when you reach Artificer levels 11 (3d4) and 17 (4d4).</p>"
+            }
+        },
+        "Knowledge from a Past Life": {
+            "name": "Knowledge from a Past Life",
+            "description": {
+                "value": "<p> You gain proficiency in one skill of your choice.</p><p>In addition, you can temporarily peer into the past to aid you in the present. When you fail an ability check, you can roll 1d6 and add the number rolled to the d20, potentially turning the failure into a success. You can do this a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>"
+            }
+        },
+        "Life Essence": {
+            "name": "Life Essence",
+            "description": "<p>While you have at least one soul trinket, you have Advantage on Death Saving Throws and Constitution saving throws.</p>"
+        },
+        "Living Shadow": {
+            "name": "Living Shadow",
+            "description": {
+                "value": "<p>The shadow you cast is animate and ever-present—sometimes it even acts according to its own will. You gain the following features.</p><p><span class=\"inline-entry\"><strong>Grasping Shadow.</strong></span> You learn the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMageHand00]{Mage Hand}</em> spell and can cast it without spell components. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this feat).</p><p><span class=\"inline-entry\"><strong>Lengthened Strike.</strong></span> When you make a melee attack roll as part of the Attack or Magic action on your turn, you can increase your reach for that attack by 10 feet, as your shadow stretches to aid you. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p><span class=\"inline-entry\"><strong>Ominous Will.</strong></span> Immediately after you make a D20 Test and roll a 1 on the d20, your shadow attempts to exert its will. Make a [[/save]]{Wisdom saving throw} (DC 13 plus your Proficiency Bonus). On a failed save, you have the &amp;Reference[Incapacitated apply=false] condition until the start of your next turn, at which point you must roll on the Shadow’s Will table to determine what you do during that turn.</p><p>@Embed[Compendium.dnd-ravenloft-horrors-within.tables.RollTable.rhwShadowsWillqh rollable resultLabel=\"Behavior\" classes=\"caption-top\"]{Shadow's Will}</p>"
+            }
+        },
+        "Lupin": {
+            "name": "Lupin",
+            "description": {
+                "value": "<p>With their bristling fur and snarling muzzles, lupins cast imposing shadows in the Mists. Lupins often arise from encounters with werewolves in which the curse of lycanthropy didn’t fully take hold. Unlike true werewolves, lupins can’t shift between wolf and humanoid form but are instead stuck as a hybrid transformation. This cursed wolflike physiology affords lupins bestial might, enhanced instincts, and a dread-inducing howl.</p><h4 class=\"entry\">Lupin Traits</h4><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p>As a Lupin, you have these special traits.</p><p><span class=\"inline-entry\"><strong>Darkvision.</strong></span> You have Darkvision with a range of 60 feet.</p><p><span class=\"inline-entry\"><strong>Feral Pounce.</strong></span> @Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwFeralPounce7E inline]</p><p><span class=\"inline-entry\"><strong>Howl.</strong></span> @Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwHowlA3f2I58L3 inline]</p><p><span class=\"inline-entry\"><strong>Werewolf Instincts.</strong></span> You have proficiency in the Perception, Stealth, or Survival skill.</p>"
+            }
+        },
+        "Macabre Modifications": {
+            "name": "Macabre Modifications",
+            "description": {
+                "value": "<p>You experiment and alter your companion further. Whenever you create a @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.FFTZLIEaYBc8sQfW]{Reanimated Companion}, the companion now gains two options for Strange Modifications, instead of one. Additionally, when picking options for Strange Modifications, you can also choose from the following options.</p><p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwSMBloated8heS inline]{Bloated}</p><p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwSMGauntb5vfDl inline]{Gaunt}</p><p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwSMMoistFP81Qo inline]{Moist}</p>"
+            }
+        },
+        "Magical Token": {
+            "name": "Magical Token",
+            "description": {
+                "value": "<p><em>See @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwEerieTokenSri]{Eerie Token}</em></p>"
+            }
+        },
+        "Mist Walker": {
+            "name": "Mist Walker",
+            "description": {
+                "value": "<p>You know how to slip through the Mists’ grasp, but this freedom comes at a price: If you remain in one area for too long, the Mists find you and drain your life force. You gain the following features.</p><p><span class=\"inline-entry\"><strong>Domain Traveler.</strong></span> When you enter the Mists intent on reaching a specific domain, you are treated as if you possess a @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwTheLandoftheM.JournalEntryPage.MistTalismansC63]{Mist talisman} keyed to that domain. To use this feature, you must know the name of the domain you have chosen as your destination, but you don’t need to have previously visited that land. This trait doesn’t allow you to bypass domain borders closed by a Darklord’s will.</p><p><span class=\"inline-entry\"><strong>Mist Walk.</strong></span> When you take damage or fail a saving throw to avoid or end the Grappled or Restrained condition, you can take a Reaction and teleport up to 15 feet to an unoccupied space you can see. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p><span class=\"inline-entry\"><strong>Poisoned Roots.</strong></span> When you finish a Long Rest, the world around you in a 10-mile radius becomes a siphon that leeches away at your vitality. Whenever you finish a Short Rest in that area, make a Constitution saving throw (DC 13 plus your Proficiency Bonus). On a failed save, you get no benefits from finishing that rest.</p>"
+            }
+        },
+        "Mist Wanderer": {
+            "name": "Mist Wanderer",
+            "description": {
+                "value": "<p><strong>Ability Scores:</strong> Dexterity, Constitution, Wisdom</p><p><strong>Feat:</strong> A @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwFeats00000000.JournalEntryPage.yEsfCxTXqE0ZGQ3B]{Dark Gift feat} of your choice (see “Feats” later in this chapter; @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwMistWalkerlge]{Mist Walker} is recommended)</p><p><strong>Skill Proficiencies:</strong> Survival and Stealth</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of Artisan’s Tools</em></p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) Artisan’s Tools (same as above), Lamp, Oil (5 flasks), Pouch, Rope, Tinderbox, Traveler’s Clothes, and 30 GP; or (B) 50 GP</p><p>You once knew your home. But one day, the Mists rose and drew you into a Domain of Dread. Ever since, you have wandered between domains, braving the mercurial Mists as you search for a way home. Your time in these cursed realms has changed you, yet you find solace in communities of fellow wanderers throughout the Mists.</p>"
+            }
+        },
+        "Moist": {
+            "name": "Moist",
+            "description": {
+                "value": "<p><strong>Moist. </strong>The companion gains a Swim Speed equal to its Speed, and it can move through a space as narrow as 1 inch without expending extra movement to do so. In addition, whenever the companion is hit by an attack roll from a creature within 10 feet of itself, the attacker takes Acid damage equal to your Intelligence modifier.</p>"
+            }
+        },
+        "Mystical Connection": {
+            "name": "Mystical Connection",
+            "description": {
+                "value": "<p>You gain mastery over the spirits you call forth. Whenever you roll on the Spirits from Beyond table, you can roll the die twice and choose which of the two effects to bestow. If you roll the same number on both dice, you can instead choose any effect on the table.</p>"
+            }
+        },
+        "Necrotic Husk": {
+            "name": "Necrotic Husk",
+            "description": {
+                "value": "<p>Your connection to undeath saturates your body. You gain the following benefits.</p><p><span class=\"inline-entry\"><strong>Necrotic Resilience.</strong></span> You have Resistance to Necrotic damage. While using your Form of Dread, you have Immunity to Necrotic damage.</p><p><span class=\"inline-entry\"><strong>Unholy Resuscitation.</strong></span> If you drop to 0 Hit Points and don’t die outright, you can cause your body to erupt with deathly energy. Each creature of your choice in a 30-foot Emanation originating from you makes a [[/save]]{Constitution saving throw} against your spell save DC, taking [[/damage]]{Necrotic damage} equal to 2d10 plus your Charisma modifier on a failed save or half as much damage on a successful one. Your Hit Points then change to twice your Warlock level, and you gain 1 Exhaustion level.</p><p>Once you use this benefit, you can’t use it again until you finish a Short or Long Rest.</p><section class=\"secret\" id=\"secret-8gqtEqCdRGtQwukO\"><p><strong>Foundry Note</strong></p><p>The benefits granted by <strong>Necrotic Resilience</strong> are integrated into the <strong>Form of Dread</strong> feature.</p></section>"
+            }
+        },
+        "Ominous Strikes": {
+            "name": "Ominous Strikes",
+            "description": "<p><span class=\"inline-entry\"><strong>Ominous Strikes.</strong></span> When you hit a creature that has the &amp;Reference[Frightened apply=false] condition with an attack roll, that attack deals extra damage equal to your Wisdom modifier.</p>"
+        },
+        "Ominous Will (Incapacitated)": {
+            "name": "Ominous Will (Incapacitated)",
+            "description": "<p>On a failed save, you have the Incapacitated condition until the start of your next turn, at which point you must roll on the @UUID[Compendium.dnd-ravenloft-horrors-within.tables.RollTable.rhwShadowsWillqh]{Shadow's Will} table to determine what you do during that turn.</p>"
+        },
+        "Paranoia": {
+            "name": "Paranoia",
+            "description": "<p><em>Disadvantage on attack rolls is not automated.</em></p>"
+        },
+        "Path to the Grave": {
+            "name": "Path to the Grave",
+            "description": {
+                "value": "<p>As a Bonus Action, you present your Holy Symbol and expend a use of Channel Divinity to curse one creature you can see within 30 feet of yourself until the start of your next turn. While cursed, the creature has Disadvantage on attack rolls and saving throws.</p><p>When you or an ally you can see hits the cursed target with an attack roll, you can end the curse early (no action required) to make the attack deal extra [[/damage]]{Necrotic or Radiant damage} (your choice) equal to your Cleric level.</p>"
+            }
+        },
+        "Phantom": {
+            "name": "Phantom",
+            "description": {
+                "value": "<p class=\"meta\"><em>Embrace Death and Wield Ghostly Power</em></p><p>Some Rogues traverse the veil between life and death, shepherding opponents to the grave and slipping through the world as undetectable as a spirit. In these pursuits, a Rogue might discover a mystical connection to death itself. Such an individual becomes immersed in negative energy, infusing their strikes with deathly energy and stealing knowledge from souls who have passed on. Thieves’ guilds value Rogues of this persuasion as highly effective information gatherers and spies.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.PhantomRogueBU0w]{Subclass Details}</em></p>"
+            }
+        },
+        "Power of Shadow": {
+            "name": "Power of Shadow",
+            "description": {
+                "value": "<p>You gain the following benefits.</p><p><span class=\"inline-entry\"><strong>Eyes of the Dark.</strong></span> You have Darkvision with a range of 120 feet and Blindsight with a range of 10 feet. In addition, if a spell you cast creates an area of Darkness, you can see normally through that spell’s Darkness.</p><p><span class=\"inline-entry\"><strong>Strength of the Grave.</strong></span> If you would drop to 0 Hit Points and not die outright, you can make a [[/save]]{Charisma saving throw} (DC 5 plus the damage taken). On a successful save, your Hit Points instead [[/heal]]{change to a number} equal to your Charisma modifier plus your Sorcerer level. After you succeed on this save, you can’t use this benefit again until you finish a Long Rest.</p>"
+            }
+        },
+        "Priest Spirit": {
+            "name": "Priest Spirit",
+            "description": {
+                "value": "<p>The target [[/heal]]{regains Hit Points} equal to two rolls of your Bardic Inspiration die, and one of the following conditions of your choice ends on the target: &amp;Reference[Blinded apply=false], &amp;Reference[Charmed apply=false], &amp;Reference[Deafened apply=false], &amp;Reference[Paralyzed apply=false], &amp;Reference[Poisoned apply=false], or &amp;Reference[Stunned apply=false].</p>"
+            }
+        },
+        "Prone": {
+            "name": "Prone"
+        },
+        "Pull of the Grave": {
+            "name": "Pull of the Grave"
+        },
+        "Reanimated Companion": {
+            "name": "Reanimated Companion",
+            "description": {
+                "value": "<p>Using Tinker’s Tools or another type of Artisan’s Tools with which you have proficiency, you can take a Magic action to create a <strong>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.FFTZLIEaYBc8sQfW]{Reanimated Companion}</strong> through the power of necromancy and science. The companion manifests in an unoccupied space within 5 feet of you. You determine the companion’s appearance; your choices don’t affect the companion’s game statistics.</p><p>The companion is Friendly to you and your allies and obeys you. It lasts until you finish a Long Rest or until you take a Magic action to dismiss it early, at which point it harmlessly collapses into a pile of viscera. It immediately drops to 0 Hit Points and dies (triggering its Death Burst trait) if you die.</p><p>Once you create a companion, you can’t do so again until you finish a Long Rest or expend a spell slot to create one. You can have only one companion at a time and can’t create one while your companion is present.</p><p><span class=\"inline-entry\"><em><strong>The Companion in Combat.</strong></em></span> In combat, the companion acts during your turn. It can move and take its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action. If you have the Incapacitated condition, the companion acts on its own and isn’t limited to the Dodge action.</p>"
+            }
+        },
+        "Reanimator": {
+            "name": "Reanimator",
+            "description": {
+                "value": "<p class=\"meta\"><em>Reassemble Corpses and Raise the Dead</em></p><p>Reanimators defy the laws of nature in pursuit of gruesome experiments. These grim Artificers stitch together servants from disparate corpses, use foul magic to strengthen the living, and transform the art of necromancy into a terrifying science.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.ReanimatorArtifi]{Subclass Details}</em></p>"
+            }
+        },
+        "Reanimator Spells": {
+            "name": "Reanimator Spells",
+            "description": {
+                "value": "<p>When you reach an Artificer level specified in the Reanimator Spells table, you thereafter always have the listed spells prepared.</p><table><caption><p>Reanimator Spells</p></caption><thead><tr><th scope=\"col\"><p>Artificer Level</p></th><th scope=\"col\"><p>Spells</p></th></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFalseLife0]{False Life}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSparetheDy]{Spare the Dying}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWitchBolt0]{Witch Bolt}</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBlindnessD]{Blindness/Deafness}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplEnhanceAbi]{Enhance Ability}</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAnimateDea]{Animate Dead}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLightningB]{Lightning Bolt}</em></p></td></tr><tr><td><p>13</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBlight0000]{Blight}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDeathWard0]{Death Ward}</em></p></td></tr><tr><td><p>17</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAntilifeSh]{Antilife Shell}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRaiseDead0]{Raise Dead}</em></p></td></tr></tbody></table>"
+            }
+        },
+        "Reanimator's Skill Set": {
+            "name": "Reanimator's Skill Set",
+            "description": {
+                "value": "<p>You gain the following benefits.</p><p><span class=\"inline-entry\">@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.AVoqeXk2ZFHWZzQB caption=false cite=false]</span></p><p><span class=\"inline-entry\"><strong>Reanimator’s Tools.</strong></span> You gain proficiency with Alchemist’s Supplies. If you already have this proficiency, you gain proficiency with one other type of Artisan’s Tools of your choice.</p>"
+            }
+        },
+        "Reborn": {
+            "name": "Reborn",
+            "description": {
+                "value": "<p>Reborn are individuals who have died yet inexplicably still live. Some reborn exhibit the scars of fatal ends, their ashen flesh or bloodless veins making it clear that they’ve escaped death. Other reborn are marvels of magic or science, being stitched together from disparate beings or bearing mysterious minds in manufactured bodies. Whatever their origins, reborn know a new life and seek experiences and answers all their own.</p><h4 class=\"entry\">Reborn Traits</h4><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p>As a Reborn, you have these special traits.</p><p><span class=\"inline-entry\"><strong>Escaped Death.</strong></span> @Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwEscapedDeatXY inline]</p><p><span class=\"inline-entry\"><strong>Everlasting.</strong></span> @Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwEverlasting7o inline]</p><p><span class=\"inline-entry\"><strong>Knowledge from a Past Life.</strong></span> @Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwKnowledgefraL inline]</p><p><span class=\"inline-entry\"><strong>Strange Endurance.</strong></span> You have Resistance to one of the following damage types of your choice: Cold, Necrotic, or Poison.</p>"
+            }
+        },
+        "Refined Reanimation": {
+            "name": "Refined Reanimation",
+            "description": {
+                "value": "<p>You have mastered the science of revivification, granting you the following benefits.</p><p><span class=\"inline-entry\"><strong>Facilitated Revival.</strong></span> You can cast <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRaiseDead0]{Raise Dead}</em> once without expending a spell slot and without Material components, provided you use Tinker’s Tools or another type of Artisan’s Tools with which you have proficiency as the Spellcasting Focus. Once you use this feature, you can’t use it again until you finish a Long Rest.</p><p><span class=\"inline-entry\"><strong>Life Transfer.</strong></span> You can siphon the animating magic of your @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.FFTZLIEaYBc8sQfW]{Reanimated Companion} to bolster yourself. When you or your companion takes damage, you can take a Reaction to gain a number of [[/heal]]{Hit Points} equal to your companion’s current Hit Points. The companion then immediately drops to 0 Hit Points and dies (triggering its @UUID[Compendium.dnd-ravenloft-horrors-within.actors.Actor.rhwReanimatedCom.Item.Inop9jX7p5oWLG8h]{Death Burst} trait).</p><p><span class=\"inline-entry\"><strong>Superior Modifications.</strong></span> Whenever you create a @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.FFTZLIEaYBc8sQfW]{Reanimated Companion}, the companion now gains three options for @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwREStrangeMok1]{Strange Modifications.}</p>"
+            }
+        },
+        "Remote Viewing (Incapacitated)": {
+            "name": "Remote Viewing (Incapacitated)"
+        },
+        "Renegade Spirit": {
+            "name": "Renegade Spirit",
+            "description": {
+                "value": "The target can immediately take a Reaction to teleport up to 30 feet to an unoccupied space it can see."
+            }
+        },
+        "Rot and Violence": {
+            "name": "Rot and Violence",
+            "description": {
+                "value": "<p>Your dedication to wild eldritch beings alters you further. When transformed using @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwHWWrathofth3C]{Wrath of the Wild}, you gain the following additional benefits.</p><p><span class=\"inline-entry\"><strong>Menacing Aura.</strong></span> When a creature fails its saving throw against your Unnerving Aura, it also can’t regain Hit Points or take Reactions until the start of your next turn.</p><p><span class=\"inline-entry\"><strong>Strangling Roots.</strong></span> When you hit a creature with an attack roll using a weapon, you can activate the &amp;Reference[weaponMastery=sap]{Sap} or &amp;Reference[weaponMastery=slow]{Slow} mastery property in addition to a different mastery property you’re using with that weapon.</p>"
+            }
+        },
+        "Second Skin": {
+            "name": "Second Skin",
+            "description": {
+                "value": "<p>There is another side of you that most people never see: a beast, a terrifying avenger, or a walking nightmare. You gain the following features.</p><p><strong>Alternate Form.</strong> You always have the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAlterSelf0]{Alter Self}</em> spell prepared. You can cast it without a spell slot or spell components, and you must finish a Long Rest before you can cast it in this way again. You can also cast it using spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this feat).</p><p>When you cast <em>Alter Self</em> without a spell slot using this feature, it doesn’t require Concentration.</p><p><strong>Involuntary Change.</strong> Certain circumstances can involuntarily trigger your transformation. When you select this feat, roll on the Change Catalyst table to determine what triggers your change.</p><p>After you experience the catalyst, at the start of your next turn, make a [[/save]]{Charisma saving throw} (DC 13 plus your Proficiency Bonus). On a failed save, you immediately use Alternate Form to cast [[/item activity=ZrjtFFSbJZTj8Cfm]]{Alter Self} without a spell slot. If you’ve already expended the use of that feature, you instead have the &amp;Reference[Stunned apply=false] condition until the start of your next turn.</p><p>@Embed[Compendium.dnd-ravenloft-horrors-within.tables.RollTable.rhwChangeCatalys rollable resultLabel=\"Catalyst\" classes=\"caption-top\"]{Change Catalyst}</p>"
+            }
+        },
+        "Sentinel at Death's Door": {
+            "name": "Sentinel at Death's Door",
+            "description": {
+                "value": "<p>When you or a Bloodied creature you can see within 60 feet of yourself is hit with an attack roll, you can take a Reaction to halve that attack’s damage (round down). If the triggering attack roll was a Critical Hit, any effects triggered by a Critical Hit are canceled.</p><p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>"
+            }
+        },
+        "Shade Spirit": {
+            "name": "Shade Spirit",
+            "description": {
+                "value": "<p>The target has the Invisible condition until the end of its next turn or until the target makes an attack roll, deals damage, or casts a spell. When the invisibility ends, each creature in a 5-foot Emanation originating from the target must succeed on a [[/save]]{Constitution saving throw} or take [[/damage]]{Necrotic damage} equal to two rolls of your Bardic Inspiration die.</p>"
+            }
+        },
+        "Shadow Sorcery": {
+            "name": "Shadow Sorcery",
+            "description": {
+                "value": "<p class=\"meta\"><em>Bend Doom and Darkness to Your Will</em></p><p>Your innate magic comes from the most nebulous and inscrutable forces of the Shadowfell or from other regions of supernatural darkness. You might trace your lineage to an entity from such a place, or perhaps you were exposed to the sinister energy of a shadow dragon and were transformed by it. Your shadowy magic allows you to command darkness, undeath, and woe.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.ShadowSorcerySor]{Subclass Details}</em></p>"
+            }
+        },
+        "Shadow Spells": {
+            "name": "Shadow Spells",
+            "description": {
+                "value": "<p>When you reach a Sorcerer level specified in the Shadow Spells table, you thereafter always have the listed spells prepared.</p><table><caption><p>Shadow Spells</p></caption><thead><tr><th scope=\"col\"><p>Sorcerer Level</p></th><th scope=\"col\"><p>Spells</p></th></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBane000000]{Bane}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]{Darkness}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplInflictWou]{Inflict Wounds}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPasswithou]{Pass Without Trace}</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHungerofHa]{Hunger of Hadar}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplNondetecti]{Nondetection}</em></p></td></tr><tr><td><p>7</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterInv]{Greater Invisibility}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPhantasmal]{Phantasmal Killer}</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplContagion0]{Contagion}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCreation00]{Creation}</em></p></td></tr></tbody></table>"
+            }
+        },
+        "Shadow Walk": {
+            "name": "Shadow Walk",
+            "description": {
+                "value": "<p>While you are in Dim Light or Darkness, you can take a Bonus Action to teleport up to 120 feet to an unoccupied space you can see that is also in Dim Light or Darkness.</p>"
+            }
+        },
+        "Sharp Eye": {
+            "name": "Sharp Eye",
+            "description": {
+                "value": "<p>When you take the &amp;Reference[Search] or &amp;Reference[Study] action, you can give yourself <strong>Advantage</strong> on any ability check made as part of that action. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. If the check fails, the use of this feature isn’t expended.</p>"
+            }
+        },
+        "Sharpshooter Spirit": {
+            "name": "Sharpshooter Spirit",
+            "description": {
+                "value": "<p>The target takes [[/damage]]{Force damage} equal to a roll of your Bardic Inspiration die plus your Charisma modifier.</p>"
+            }
+        },
+        "Soul Trinkets": {
+            "name": "Soul Trinkets",
+            "description": {
+                "value": "<p><span class=\"inline-entry\"><strong>Using Soul Trinkets.</strong></span> You can use soul trinkets in the following ways:</p><p><em><strong>Death’s Knell.</strong></em> When you deal Sneak Attack damage on your turn, you can destroy one soul trinket and immediately use Wails from the Grave without expending a use of that feature.</p><p><em><strong>Life Essence.</strong></em> While you have at least one soul trinket, you have Advantage on Death Saving Throws and Constitution saving throws.</p><p><em><strong>Spirit Query.</strong></em> You can take a Magic action to destroy one soul trinket and immediately cast the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAugury0000]{Augury}</em> spell, requiring no spell components and using Constitution as the spellcasting modifier. If you know the creature with which the trinket is associated, you can ask the creature’s spirit one question instead of casting the spell. In this case, the spirit appears to you and answers as concisely as possible in a language it knew in life.</p><section class=\"secret\" id=\"secret-SG1BKWe6ixTNpMLX\"><p><strong>Foundry Note</strong></p><p>The <strong>Life Essence</strong> active effect should be disabled when this item's limited uses are exhausted. Alternatively, the effect will be disabled if the <strong>Soul Trinkets </strong>consumable is unequipped.</p></section>"
+            }
+        },
+        "Spider Climb (Hands Free)": {
+            "name": "Spider Climb (Hands Free)"
+        },
+        "Spider Climb Improvement": {
+            "name": "Spider Climb Improvement",
+            "description": {
+                "value": "<p>You have a Climb Speed equal to your Speed. When you reach character level 3, you can move up, down, and across vertical surfaces and along ceilings while leaving your hands free.</p><section id=\"secret-hFNgu4YMm6Dr1Ip2\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The Climb Speed granted by this feature is provided by the species item directly.</p></section>"
+            }
+        },
+        "Spirit Medium": {
+            "name": "Spirit Medium",
+            "description": {
+                "value": "<p><strong>Ability Scores:</strong> Constitution, Intelligence, Wisdom</p><p><strong>Feat:</strong> A @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwFeats00000000.JournalEntryPage.yEsfCxTXqE0ZGQ3B]{Dark Gift feat} of your choice (@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwGatheredWhisp]{Gathered Whispers} is recommended)</p><p><strong>Skill Proficiencies:</strong> Insight and Religion</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of Gaming Set</em></p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) Dagger, Gaming Set (same as above), Basket, Bell, 8 Candles, Ink, Ink Pen, Paper (5 sheets), Tinderbox, Traveler’s Clothes, and 32 GP; or (B) 50 GP</p><p>Through strange rituals and fateful encounters, you’ve discovered that you bear a unique connection to the spirits of the dead and damned. Your body is a conduit for such spirits, granting you prescient insight from beyond. But these spirits’ intentions aren’t always innocent, and their gifts come at a haunting cost.</p>"
+            }
+        },
+        "Spirits from Beyond": {
+            "name": "Spirits from Beyond",
+            "description": {
+                "value": "<p>You can call forth spirits of the dead to empower you and your allies. When you take a Bonus Action to give a creature a Bardic Inspiration die, you can call forth the powers of a random spirit. To determine the spirit you channel, roll the Bardic Inspiration die and refer to the Spirits from Beyond table. The spirit remains channeled until you unleash it or until you finish a Short or Long Rest.</p><p><span class=\"inline-entry\"><strong>Controlled Channeling.</strong></span> As a Bonus Action, you can expend a use of your Bardic Inspiration and channel a specific spirit. When you do so, choose the spirit from the Spirits from Beyond table rather than rolling. The chosen spirit’s corresponding number must be less than or equal to the highest number on your Bardic Inspiration die; for example, if your Bardic Inspiration die is a d8, you can choose to channel any spirit up to (and including) the Shade.</p><p><span class=\"inline-entry\"><strong>Unleashing a Spirit.</strong></span> As a Magic action, you can unleash one of your channeled spirits. Choose one creature you can see within 30 feet of yourself as the spirit’s target. The spirit then takes effect; if a spirit’s effect requires a saving throw, the DC equals your Bard spell save DC.</p><table><caption><p>Spirits from Beyond</p></caption><thead><tr><th scope=\"col\"><p>Bardic Insp. Die</p></th><th scope=\"col\"><p>Spirit and Unleash Effect</p></th></tr></thead><tbody><tr><td><p>1</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSBelovedSp2V]{Beloved}</p></td></tr><tr><td><p>2</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSSharpshooGM]{Sharpshooter}</p></td></tr><tr><td><p>3</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSAvengerSpv2]{Avenger}</p></td></tr><tr><td><p>4</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSRenegadeSXD]{Renegade}</p></td></tr><tr><td><p>5</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSFortuneTeZz]{Fortune Teller}</p></td></tr><tr><td><p>6</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSWayfarerSqp]{Wayfarer}</p></td></tr><tr><td><p>7</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSTricksterO6]{Trickster}</p></td></tr><tr><td><p>8</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSShadeSpirvt]{Shade}</p></td></tr><tr><td><p>9</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSArsonistSF5]{Arsonist}</p></td></tr><tr><td><p>10</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSCowardSpi34]{Coward}</p></td></tr><tr><td><p>11</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSBruteSpir1q]{Brute}</p></td></tr><tr><td><p>12</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSPriestSpi36]{Priest}</p></td></tr></tbody></table>"
+            }
+        },
+        "Strange Modifications": {
+            "name": "Strange Modifications",
+            "description": {
+                "value": "<p>Whenever you create a <strong>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.FFTZLIEaYBc8sQfW]{Reanimated Companion,}</strong> it gains one of the following options of your choice; choose when you create the companion.</p><p><span class=\"inline-entry\">@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwSMArcaneConVv inline]</span></p><p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwSMFerocityuzY inline]</p>"
+            }
+        },
+        "Strengthened Attack or Check": {
+            "name": "Strengthened Attack or Check",
+            "description": "<ul><li><p>You gain a bonus to the next ability check or attack roll you make within the next minute; the bonus is equal to the Piercing damage dealt.</p></li></ul>"
+        },
+        "Superior Dread": {
+            "name": "Superior Dread",
+            "description": {
+                "value": "<p>Your Form of Dread improves, granting you the following benefits while you are using it.</p><p><span class=\"inline-entry\"><strong>Dread Resistance.</strong></span> You have Resistance to Bludgeoning, Piercing, and Slashing damage.</p><p><span class=\"inline-entry\"><strong>Ghostly Flight.</strong></span> You have a Fly Speed equal to your Speed and can hover. You can move through creatures and objects as if they were Difficult Terrain, but you take [[/damage 1d10 Force]] damage if you end your turn inside a creature or an object.</p><p><span class=\"inline-entry\"><strong>Profane Casting.</strong></span> Whenever you cast a Warlock spell from the Conjuration or Necromancy school, you cast it without any Verbal, Somatic, or Material components, except Material components that are costly or consumed.</p><section id=\"secret-njnFDOjOUeUaC4XL\" class=\"secret\"><p><strong>Foundry Note</strong></p><p><strong>Profane Casting</strong> is not automated.</p></section>"
+            }
+        },
+        "Survivor": {
+            "name": "Survivor",
+            "description": {
+                "value": "<p>You gain the following benefits.</p><p><strong>Hypervigilance.</strong> Whenever you roll Initiative, you can reroll the d20 if the number rolled is 9 or lower. You must use the new roll.</p><p><span class=\"inline-entry\"><strong>Steel Yourself.</strong></span> When you fail a saving throw to avoid or end the Charmed or Frightened condition, you can take a Reaction to add a bonus to the roll, potentially causing it to succeed. The bonus is equal to your Proficiency Bonus.</p><p>Once you take this Reaction, you can’t do so again until you finish a Long Rest.</p>"
+            }
+        },
+        "Symbiotic Agenda (Charmed)": {
+            "name": "Symbiotic Agenda (Charmed)",
+            "description": "<p>You have the Charmed condition for 1d12 hours. While Charmed, you must try to follow the symbiote’s commands and further its goals, as determined by the DM. Whenever you take damage, you can repeat this save, ending the effect on a success.</p>"
+        },
+        "Symbiotic Being": {
+            "name": "Symbiotic Being",
+            "description": {
+                "value": "<p>A second being resides within your body, offering knowledge and assistance while furthering its own agenda. You gain the following features.</p><p><span class=\"inline-entry\"><strong>Entwined Existence.</strong></span> The symbiote can’t be targeted. If you die, so does your symbiote. If you are returned to life, your symbiote also revives.</p><p><span class=\"inline-entry\"><strong>Second Mind.</strong></span> You gain proficiency in one of the following skills: Arcana, Deception, History, Intimidation, Insight, Investigation, Nature, Religion, Perception, or Persuasion. You also know one additional language of your choice, chosen from the language tables in the <em>Player’s Handbook</em>.</p><p><span class=\"inline-entry\"><strong>Sustained Symbiosis.</strong></span> When you fail a saving throw, you can take a Reaction and expend one of your Hit Dice. Roll the die and add the number rolled to the saving throw, potentially turning the failure into a success.</p><p>You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p><span class=\"inline-entry\"><strong>Symbiotic Agenda.</strong></span> Immediately after you make a D20 Test and roll a 1 on the d20, your symbiote attempts to assert control. Make a Charisma saving throw (DC 13 plus your Proficiency Bonus). On a failed save, you have the Charmed condition for [[/r 1d12#hours]] hours. While Charmed, you must try to follow the symbiote’s commands and further its goals, as determined by the DM. Whenever you take damage, you can repeat this save, ending the effect on a success.</p><p>At the DM’s discretion, you might make this saving throw whenever you act contrary to the symbiote’s agenda.</p>"
+            }
+        },
+        "Token Created": {
+            "name": "Token Created"
+        },
+        "Tokens of the Departed": {
+            "name": "Tokens of the Departed",
+            "description": {
+                "value": "<p>The spirits of the dead are drawn to you, and echoes of their past lives magically manifest as strange curios with resonant power.</p><p>You gain two @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwPRSoulTrinkg0]{soul trinkets}. A soul trinket is a Tiny object (the DM determines the trinket’s form or has you roll on the @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.2nJWForKrOIXzELQ]{Trinkets} table in the <em>Player’s Handbook</em> to generate it). If you move more than 30 feet from a trinket, the trinket immediately teleports to you, appearing somewhere on your person.</p><p><span class=\"inline-entry\">@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwPRSoulTrinkg0 caption=false]</span></p><p><span class=\"inline-entry\"><strong>Gaining Additional Soul Trinkets.</strong></span> When a creature you can see within 30 feet of you dies, you can take a Reaction to gain another soul trinket, claiming a sliver of that creature’s departing spirit. The new trinket appears somewhere on your person.</p><p>You can have a maximum of two soul trinkets at a time. If you try to gain a soul trinket while at your maximum, one of your existing trinkets is immediately destroyed and replaced by the new trinket. The maximum number of soul trinkets you can have increases when you reach Rogue levels 13 (three trinkets) and 17 (four trinkets).</p><p>Whenever you finish a Long Rest with fewer than two soul trinkets, you gain soul trinkets until you have two.</p>"
+            }
+        },
+        "Touch of Death": {
+            "name": "Touch of Death",
+            "description": {
+                "value": "<p>Deathly power resides within you, bursting out at the slightest provocation. You gain the following features.</p><p><span class=\"inline-entry\"><strong>Death Touch.</strong></span> You learn the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplChillTouch]{Chill Touch}</em> spell and can cast it without spell components. Necrotic damage you deal with this spell ignores Resistance. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this feat).</p><p><span class=\"inline-entry\"><strong>Pull of the Grave.</strong></span> You have Disadvantage on Death Saving Throws.</p>"
+            }
+        },
+        "Trickster Spirit": {
+            "name": "Trickster Spirit",
+            "description": {
+                "value": "The target makes a Wisdom saving throw. On a failed save, the target takes Psychic damage equal to two rolls of your Bardic Inspiration die and has the Charmed condition until the start of your next turn. On a successful save, the target takes half as much damage only."
+            }
+        },
+        "Umbral Form": {
+            "name": "Umbral Form",
+            "description": {
+                "value": "<p>When you use @UUID[Compendium.dnd-players-handbook.classes.Item.phbscrInnateSorc]{Innate Sorcery}, you can adopt a shadowy form, gaining the benefits below while your Innate Sorcery is active or until you end the form (no action required). Once you use this feature, you can’t use it again until you finish a Long Rest unless you spend 6 Sorcery Points (no action required) to restore your use of it.</p><p><span class=\"inline-entry\"><strong>Incorporeal Movement.</strong></span> You can move through creatures and objects as if they were Difficult Terrain, but you take [[/damage 1d10 Force]] damage if you end your turn inside a creature or an object.</p><p><span class=\"inline-entry\"><strong>Shadow Resilience.</strong></span> You have Resistance to all damage except Force and Radiant damage.</p>"
+            }
+        },
+        "Undead Patron": {
+            "name": "Undead Patron",
+            "description": {
+                "value": "<p class=\"meta\"><em>Defy Death for Profane Power</em></p><p>You’ve made a pact with a creature that defies the cycle of life and death: a powerful lich, a vampire, or another entity of undeath. Having once been mortal, these ancient patrons know firsthand the paths of ambition and the routes past the doors of death. They eagerly share this profane knowledge and other secrets with those who work their will among the living.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.UndeadPatronWarl]{Subclass Details}</em></p>"
+            }
+        },
+        "Undead Spells": {
+            "name": "Undead Spells",
+            "description": {
+                "value": "<p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Undead Spells table, you thereafter always have the listed spells prepared.</p><table><caption><p>Undead Spells</p></caption><tbody><tr></tr></tbody></table><table><thead><tr><th scope=\"col\"><p>Warlock Level</p></th><th scope=\"col\"><p>Spells</p></th></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBane000000]{Bane}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBlindnessD]{Blindness/Deafness}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbPhantasmalFor]{Phantasmal Force}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofSickn]{Ray of Sickness}</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpeakwithD]{Speak with Dead}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSummonUnde]{Summon Undead}</em></p></td></tr><tr><td><p>7</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterInv]{Greater Invisibility}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPhantasmal]{Phantasmal Killer}</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAntilifeSh]{Antilife Shell}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCloudkill0]{Cloudkill}</em></p></td></tr></tbody></table>"
+            }
+        },
+        "Vampiric Bite": {
+            "name": "Vampiric Bite",
+            "description": {
+                "value": "<p>When you use your &amp;Reference[Unarmed Strike] and deal damage, you can choose to bite with your fangs. You deal Piercing damage equal to [[/damage]]{1d4 plus your Constitution modifier} instead of the normal damage of an Unarmed Strike.</p><p>In addition, when you deal this damage to a creature that isn’t a Construct or an Undead, you can empower yourself in one of the following ways:</p><ul><li><p><strong>Drain.</strong> You regain Hit Points equal to the Piercing damage dealt.</p></li><li><p><strong>Strengthen.</strong> You gain a bonus to the next ability check or attack roll you make within the next minute; the bonus is equal to the Piercing damage dealt.</p></li></ul><p>You can empower yourself with this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><section class=\"secret\" id=\"secret-ll4s2dnNOeddNqmg\"><p><strong>Foundry Note</strong></p><p>The Active Effect provided by <strong>Strengthen</strong> includes the character's Constitution modifier, but not the damage roll nor modifications to total damage dealt due to resistance/vulnerability.</p></section>"
+            }
+        },
+        "Voice of Death": {
+            "name": "Voice of Death",
+            "description": {
+                "value": "<p>You can cast <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpeakwithD]{Speak with Dead}</em> once without a spell slot, requiring no spell components and using Dexterity as the spellcasting modifier. You regain the ability to cast it this way when you finish a Short or Long Rest.</p><p>When you cast the spell, you can target one of your @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwPRSoulTrinkg0]{soul trinkets} from @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwPRTokensoftit]{Tokens of the Departed} instead of a corpse, allowing the spirit of the creature associated with the trinket to answer.</p>"
+            }
+        },
+        "Voices from Beyond (Deafened)": {
+            "name": "Voices from Beyond (Deafened)",
+            "description": "<p>While Deafened, you have Disadvantage on ability checks and attack rolls.</p><p><em>Disadvantage on attack rolls is not automated.</em></p>"
+        },
+        "Wails from the Grave": {
+            "name": "Wails from the Grave",
+            "description": {
+                "value": "<p>Immediately after you deal @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgeSneakAttac]{Sneak Attack} damage to a creature on your turn, you can target a second creature that you can see within 30 feet of the first creature. Roll half the number of Sneak Attack damage dice for your level (round up), and the second creature takes [[/damage]]{Necrotic damage} equal to the roll’s total as wails of the dead sound around it.</p><p>You can use this feature a number of times equal to your Dexterity modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>"
+            }
+        },
+        "Warping Flesh (Stunned)": {
+            "name": "Warping Flesh (Stunned)",
+            "description": "<p>You have the &amp;Reference[stunned apply=false] condition until the end of your next turn.</p>"
+        },
+        "Watchers": {
+            "name": "Watchers",
+            "description": {
+                "value": "<p>Something unnatural is always watching you, taking the form of scurrying vermin and other eerie creatures. You gain the following features.</p><p><span class=\"inline-entry\"><strong>Borrowed Eyes.</strong></span> You always have the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBeastSense]{Beast Sense}</em> and <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpeakwithA]{Speak with Animals}</em> spells prepared. You can cast each spell without a spell slot, and you must finish a Long Rest before you can cast it in this way again. You can also cast these spells using spell slots you have of the appropriate level.</p><p><span class=\"inline-entry\"><strong>Heightened Suspicion.</strong></span> Whenever you take the Search action, you can roll [[/r 1d4]] and add the number rolled to any ability check made as part of that action.</p><p><span class=\"inline-entry\"><strong>Incessant Watchers.</strong></span> You have Disadvantage on saving throws made against the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplScrying000]{Scrying}</em> spell.</p><p>In addition, immediately after you make a D20 Test and roll a 1 on the d20, paranoia threatens to overwhelm you. Make a [[/save]]{Wisdom saving throw} (DC 13 plus your Proficiency Bonus). On a failed save, you have Disadvantage on D20 Tests for 1 minute. You can repeat the save at the end of each of your turns, ending the effect early on a success.</p>"
+            }
+        },
+        "Wayfarer Spirit": {
+            "name": "Wayfarer Spirit",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSWayfarerSqp inline]</p>"
+        },
+        "Whispers of the Dead": {
+            "name": "Whispers of the Dead",
+            "description": {
+                "value": "<p>Whenever you finish a Short or Long Rest, you can choose one skill or tool proficiency that you lack and gain it, as a ghostly presence shares its knowledge with you. You lose this proficiency when you use this benefit again to choose a different proficiency.</p>"
+            }
+        },
+        "Wrath of the Wild": {
+            "name": "Wrath of the Wild",
+            "description": {
+                "value": "<p>You draw power from the strange and ancient horrors of the land, causing you to sprout unnatural growths, such as bloody antlers or putrid fangs, or causing your shadow to lengthen or twist around you. As a Bonus Action, you can expend a use of @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgrFavoredEne]{Favored Enemy} to transform into a ghastly form, gaining the following benefits for 1 minute or until you have the Incapacitated condition, die, or end the transformation (no action required).</p><p><span class=\"inline-entry\"><strong>Ancient Armor.</strong></span> You gain a +1 bonus to AC, as your body is wreathed in rotten bark and beastly bristles. This bonus increases to +2 when you reach Ranger level 11.</p><p><span class=\"inline-entry\"><strong>Prowling Retribution.</strong></span> Immediately after a creature you can see within 5 feet of yourself deals damage to you or one of your allies, you can make an Opportunity Attack against that creature.</p><p><span class=\"inline-entry\"><strong>Unnerving Aura.</strong></span> When you transform and at the start of each of your subsequent turns, each creature of your choice in a 10-foot Emanation originating from you makes a [[/save]]{Wisdom saving throw} against your spell save DC. On a failed save, a creature has the &amp;Reference[Frightened apply=false] condition until the start of your next turn.</p><section id=\"secret-t81C5kFgKQPazEcf\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Prowling Retribution</strong> benefit is not automated.</p></section>"
+            }
+        }
+    },
+    "mapping": {
+        "description": {
+            "path": "system.description",
+            "converter": "structured",
+            "cardinality": "one",
+            "mapping": {
+                "value": "value",
+                "chat": "chat",
+                "unidentified": "unidentified"
+            }
+        }
+    }
+}
