@@ -20,10 +20,12 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
-                "chatFlavor": "description.chatFlavor",
+                "activationCondition": "activation.condition",
                 "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
                 "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
                 "range": {
                     "path": "range",
                     "converter": "imperialToMetric"
@@ -184,7 +186,7 @@
             "description": "<blockquote><p>If you want to travel between the Moonshaes, you won’t be able to on foot, by horse, or by cart. You’ll need to sail. And while you could simply hire a boat, where’s the fun in that?</p></blockquote><p>This small piece of jewelry has 3 charges and regains all expended charges daily at dawn. While you are holding it, you can take a Magic action to expend 1 charge, which causes the jewelry to transform into a sail-powered personal vehicle. The vehicle is roughly the size and shape of a household door with a 10-foot-tall sail extending from one side. After 1 hour or until you use the item’s command word (no action required), the transformation ends and the <em>Windskiff</em> reverts to its jewelry form.</p><p>In vehicle form, a <em>Windskiff </em>is a Medium object with the following statistics: AC 12, HP 30, and Speed 40 ft. The <em>Windskiff</em> hovers a few inches above whatever surface it’s on and can glide; it moves 5 feet horizontally for every 1 foot it descends in the air. A <em>Windskiff </em>and its riders take no damage from falling.</p>",
             "activities": {
                 "Expand Use": {
-                    "name": "Expand Use"
+                    "name": "Wykorzystaj użycie"
                 }
             }
         },
