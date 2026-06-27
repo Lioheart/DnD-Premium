@@ -15,7 +15,112 @@
         },
         "items": {
             "path": "items",
-            "converter": "items"
+            "converter": "document",
+            "documentType": "Item",
+            "cardinality": "many",
+            "mapping": {
+                "description": "system.description.value",
+                "requirements": "system.requirements",
+                "materials": "system.materials.value",
+                "chat": "system.description.chat",
+                "activation": "system.activation.condition",
+                "activationValue": "system.activation.value",
+                "activities": {
+                    "path": "system.activities",
+                    "converter": "structured",
+                    "cardinality": "many",
+                    "container": "keyed",
+                    "keys": [
+                        "_id",
+                        "name",
+                        "type"
+                    ],
+                    "mapping": {
+                        "name": "name",
+                        "condition": "activation.condition",
+                        "activationCondition": "activation.condition",
+                        "activationValue": "activation.value",
+                        "chatFlavor": "description.chatFlavor",
+                        "duration": "duration.special",
+                        "roll": "roll.name",
+                        "damageOnSave": "damage.onSave",
+                        "range": {
+                            "path": "range",
+                            "converter": "imperialToMetric"
+                        },
+                        "target": {
+                            "path": "target",
+                            "converter": "imperialToMetric"
+                        },
+                        "profiles": {
+                            "path": "profiles",
+                            "converter": "nameCollection"
+                        }
+                    }
+                },
+                "effects": {
+                    "path": "effects",
+                    "converter": "effects"
+                },
+                "advancement": {
+                    "path": "system.advancement",
+                    "converter": "structured",
+                    "cardinality": "many",
+                    "container": "keyed",
+                    "keys": [
+                        "_id",
+                        "title"
+                    ],
+                    "mapping": {
+                        "title": "title",
+                        "hint": "hint",
+                        "_variants": [
+                            {
+                                "_when": {
+                                    "path": "type",
+                                    "equals": "ScaleValue"
+                                },
+                                "distance": {
+                                    "path": "configuration.distance",
+                                    "converter": "imperialToMetric"
+                                },
+                                "scale": {
+                                    "path": "configuration.scale",
+                                    "converter": "imperialToMetric"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "movement": {
+                    "path": "system.movement",
+                    "converter": "imperialToMetric"
+                },
+                "weight": {
+                    "path": "system.weight",
+                    "converter": "imperialToMetric"
+                },
+                "range": {
+                    "path": "system.range",
+                    "converter": "imperialToMetric"
+                },
+                "capacityWeight": {
+                    "path": "system.capacity.weight",
+                    "converter": "imperialToMetric"
+                },
+                "senses": {
+                    "path": "system.senses",
+                    "converter": "imperialToMetric"
+                },
+                "target": {
+                    "path": "system.target",
+                    "converter": "imperialToMetric"
+                },
+                "volume": {
+                    "path": "system.capacity.volume",
+                    "converter": "imperialToMetric"
+                }
+            }
         },
         "senses": {
             "path": "system.attributes.senses",
@@ -30,7 +135,7 @@
             "items": {
                 "Regeneration": {
                     "name": "Regeneracja",
-                    "description": "<p>The spirit regains [[/healing 5]]{5 Hit Points} at the start of its turn if it has at least 1 Hit Point.</p>",
+                    "description": "<p>Duch odzyskuje [[/healing 5]]{5 Punktów Wytrzymałości} na początku swojej tury, jeśli ma co najmniej 1 Punkt Wytrzymałości.</p>",
                     "requirements": "Slaad Only",
                     "activities": {
                         "heal": {
@@ -46,7 +151,8 @@
                     "activities": {
                         "save": {
                             "condition": "start of its turn",
-                            "activationCondition": "start of its turn"
+                            "activationCondition": "start of its turn",
+                            "damageOnSave": "none"
                         }
                     }
                 },
@@ -323,7 +429,8 @@
                     "description": "<p>Możesz oblać istotę, obiekt lub obszar olejem albo użyć go jako paliwa, jak opisano poniżej.</p><p><strong>Oblanie istoty lub obiektu.</strong> Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką oleju. Wybierz jedną istotę lub obiekt w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo zostaje pokryty olejem. Jeśli cel otrzyma obrażenia od ognia, zanim olej wyschnie (po 1 minucie), otrzymuje dodatkowe [[/damage 5 type=fire]] obrażenia od płonącego oleju.</p><p><strong>Oblanie obszaru.</strong> Możesz wykonać akcję Użycie Obiektu, aby wylać flaszkę oleju na płaski grunt, pokrywając obszar o boku 5 stóp w odległości do 5 stóp od siebie. Jeśli zostanie podpalony, olej pali się do końca tury 2 rundy od momentu podpalenia (czyli 12 sekund) i zadaje 5 obrażeń od ognia każdej istocie, która wejdzie w ten obszar lub zakończy w nim turę. Istota może otrzymać te obrażenia tylko raz na turę.</p><p><strong>Paliwo.</strong> Olej służy jako paliwo do lamp i latarni. Po podpaleniu, flaszka oleju pali się przez 6 godzin w lampie lub latarni. Ten czas nie musi być ciągły; możesz zgasić płonący olej (jako akcję Użycie Obiektu) i ponownie go zapalić, aż do łącznego czasu spalania wynoszącego 6 godzin.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Rzuć"
+                            "name": "Rzuć",
+                            "damageOnSave": "połowa"
                         },
                         "Douse Space": {
                             "name": "Zgaś przestrzeń"
@@ -499,7 +606,8 @@
                     "activities": {
                         "Grapple/Shove": {
                             "name": "Pochwycenie/Pchnięcie",
-                            "chatFlavor": "Próba pochwycenia lub popchnięcia"
+                            "chatFlavor": "Próba pochwycenia lub popchnięcia",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -584,6 +692,11 @@
                 "Vicious Mockery": {
                     "name": "Zjadliwe szyderstwo",
                     "description": "<p>Wypuszczasz serię obelg, splecionych z subtelnymi zaklęciami, w kierunku jednej istoty, którą możesz zobaczyć lub usłyszeć w zasięgu. Cel musi pomyślnie zdać rzut obronny Mądrości, inaczej otrzyma 1k6 obrażeń psychicznych i ma Utrudnienie na następny test ataku, który wykona przed końcem swojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k6 na poziomach 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    },
                     "effects": {
                         "Mocked": {
                             "name": "Wyśmiany",
@@ -594,6 +707,11 @@
                 "Charm Person": {
                     "name": "Zauroczenie osoby",
                     "description": "<p>Jeden humanoid, którego widzisz w zasięgu, musi wykonać rzut obronny na Mądrość. Wykonuje go z Ułatwieniem, jeśli walczy z tobą lub twoimi sojuszników. W przypadku porażki ma stan &Reference[charmed apply=false]{Zauroczony} do czasu zakończenia czaru lub do momentu, w którym ty lub twoi sojusznicy zadacie mu obrażenia. Zauroczona istota jest wobec ciebie Przyjazna. Kiedy działanie czaru dobiega końca, cel wie, że został przez ciebie Zauroczony.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wskazać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Charmed": {
                             "name": "Zauroczony",
@@ -605,6 +723,11 @@
                     "name": "Kolorowy rozprysk",
                     "description": "<p>Wysyłasz olśniewającą wiązkę migającego, kolorowego światła. Każda istota w Stożku o zasięgu 15 stóp wychodzącym z ciebie musi wykonać rzut obronny na Kondycję. W przypadku porażki ma stan &Reference[blinded apply=false] do końca swojej następnej tury.</p>",
                     "materials": "szczypta kolorowego piasku",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Blinded": {
                             "name": "Oślepiony"
@@ -613,7 +736,12 @@
                 },
                 "Dissonant Whispers": {
                     "name": "Fałszywe podszepty",
-                    "description": "<p>Jedna wybrana przez ciebie istota, którą widzisz w zasięgu, słyszy w swoim umyśle dysonansową melodię. Cel wykonuje rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje 3k6 obrażeń psychicznych i musi natychmiast wykorzystać swoją Reakcję, jeśli jest dostępna, aby oddalić się od ciebie najbezpieczniejszą możliwą trasą. W przypadku udanego rzutu obronnego cel otrzymuje tylko połowę tych obrażeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>"
+                    "description": "<p>Jedna wybrana przez ciebie istota, którą widzisz w zasięgu, słyszy w swoim umyśle dysonansową melodię. Cel wykonuje rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje 3k6 obrażeń psychicznych i musi natychmiast wykorzystać swoją Reakcję, jeśli jest dostępna, aby oddalić się od ciebie najbezpieczniejszą możliwą trasą. W przypadku udanego rzutu obronnego cel otrzymuje tylko połowę tych obrażeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 },
                 "Healing Word": {
                     "name": "Kojące słowo",
@@ -644,7 +772,8 @@
                     "description": "<p>Możesz oblać istotę, obiekt lub obszar olejem albo użyć go jako paliwa, jak opisano poniżej.</p><p><strong>Oblanie istoty lub obiektu.</strong> Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką oleju. Wybierz jedną istotę lub obiekt w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo zostaje pokryty olejem. Jeśli cel otrzyma obrażenia od ognia, zanim olej wyschnie (po 1 minucie), otrzymuje dodatkowe [[/damage 5 type=fire]] obrażenia od płonącego oleju.</p><p><strong>Oblanie obszaru.</strong> Możesz wykonać akcję Użycie Obiektu, aby wylać flaszkę oleju na płaski grunt, pokrywając obszar o boku 5 stóp w odległości do 5 stóp od siebie. Jeśli zostanie podpalony, olej pali się do końca tury 2 rundy od momentu podpalenia (czyli 12 sekund) i zadaje 5 obrażeń od ognia każdej istocie, która wejdzie w ten obszar lub zakończy w nim turę. Istota może otrzymać te obrażenia tylko raz na turę.</p><p><strong>Paliwo.</strong> Olej służy jako paliwo do lamp i latarni. Po podpaleniu, flaszka oleju pali się przez 6 godzin w lampie lub latarni. Ten czas nie musi być ciągły; możesz zgasić płonący olej (jako akcję Użycie Obiektu) i ponownie go zapalić, aż do łącznego czasu spalania wynoszącego 6 godzin.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Rzuć"
+                            "name": "Rzuć",
+                            "damageOnSave": "połowa"
                         },
                         "Douse Space": {
                             "name": "Zgaś przestrzeń"
@@ -1101,7 +1230,8 @@
                     "description": "<p>Dłoń próbuje odepchnąć Wielką lub mniejszą istotę znajdującą się w odległości 5 stóp od niej. Cel musi wykonać udany rzut obronny na Siłę, w przeciwnym razie dłoń odpycha cel o 5 stóp plus liczbę stóp równą pięciokrotności twojego modyfikatora cechy bazowej. Dłoń porusza się wraz z celem, pozostając w odległości 5 stóp od niego.</p>",
                     "activities": {
                         "save": {
-                            "chatFlavor": "[[5 + 5 * @flags.dnd5e.summon.mod]] foot push"
+                            "chatFlavor": "[[5 + 5 * @flags.dnd5e.summon.mod]] foot push",
+                            "damageOnSave": "połowa"
                         }
                     }
                 },
@@ -1110,7 +1240,8 @@
                     "description": "<p>Dłoń próbuje pochwycić Wielką lub mniejszą istotę znajdującą się w odległości 5 stóp od niej. Cel musi wykonać udany rzut obronny na Zręczność, w przeciwnym razie otrzymuje stan &amp;Reference[Grappled], a ST testu ucieczki równe jest ST twoich rzutów obronnych na czary. Dopóki dłoń trzyma cel, możesz podjąć Akcję Dodatkową, aby zmiażdżyć go, zadając celowi obrażenia obuchowe równe 4k6 plus twój modyfikator cechy bazowej.</p><h3>Testy ucieczki z pochwycenia</h3><p>[[/check ability=str skill=ath dc=8+@prof+@flags.dnd5e.summon.mod]]{Siła (Atletyka)} [[/check ability=dex skill=acr dc=8+@prof+@flags.dnd5e.summon.mod]]{Zręczność (Akrobatyka)}</p>",
                     "activities": {
                         "Grapple": {
-                            "name": "Pochwycenie"
+                            "name": "Pochwycenie",
+                            "damageOnSave": "none"
                         },
                         "Crush": {
                             "name": "Miażdzenie",
@@ -1163,15 +1294,15 @@
             "alignment": "Bez charakteru",
             "items": {
                 "Bloodied Fury": {
-                    "name": "Bloodied Fury",
+                    "name": "Zakrwawiony furia",
                     "description": "<p> While Bloodied, the boar has Advantage on attack rolls.</p>"
                 },
                 "Gore": {
                     "name": "Nadzianie",
-                    "description": "<p><em>Melee Attack Roll: </em>+3, reach 5 ft. <em>Hit: </em>4 (1d6 + 1) Piercing damage. If the boar moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 3 (1d6) Piercing damage and, if it is Large or smaller, has the &amp;Reference[Prone] condition.</p>",
+                    "description": "<p><em>Test ataku wręcz: </em>+3, zasięg 5 stóp. <em>Trafienie: </em>4 (1k6 + 1) obrażeń kłutych. Jeśli dzik poruszył  się co najmniej 20 stóp w linii prostej w stronę celu bezpośrednio przed trafieniem, cel otrzymuje dodatkowe 3 (1k6) obrażenia kłute i, jeśli jest Duży lub mniejszy, ma stan &amp;Reference[Prone].</p>",
                     "activities": {
                         "Charging Attack": {
-                            "name": "Charging Attack"
+                            "name": "Szarżujący atak"
                         }
                     }
                 }
@@ -1247,7 +1378,7 @@
                     "description": "<p><em>(Defender Only)</em></p><p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d10 + 3 + the spell’s level Radiant damage, and the spirit can choose itself or another creature it can see within 10 feet of the target. The chosen creature gains [[/healing 1d10 type=temphp]]{1d10 Temporary Hit Points}.</p>",
                     "activities": {
                         "Temporary Healing": {
-                            "name": "Temporary Healing",
+                            "name": "Tymczasowe leczenie",
                             "range": "range based on Attack target"
                         }
                     }
@@ -1524,7 +1655,8 @@
                     "description": "<p>Światłość przypominająca płomień spada na istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Zręczność. W przypadku niepowodzenia otrzymuje 1k8 obrażeń od światłości. Cel nie korzysta z osłony Połowicznej ani Trzy Czwarte podczas tego rzutu.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
                     "activities": {
                         "Cast": {
-                            "name": "Rzucanie"
+                            "name": "Rzucanie",
+                            "damageOnSave": "none"
                         }
                     }
                 },
@@ -1590,7 +1722,8 @@
                     "description": "<p>Gdy wykonujesz Akcję Atak, możesz zastąpić jeden ze swoich ataków rzuceniem fiolki Wody Święconej. Wyceluj w jedną istotę, którą widzisz w promieniu 20 stóp od siebie. Cel musi wykonać udany rzut obronny na Zręczność (ST 8 plus twój modyfikator Zręczności i Premia od Biegłości) lub otrzymać 2k8 obrażenia od światłości, jeśli jest to Czart lub Nieumarły.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Rzuć"
+                            "name": "Rzuć",
+                            "damageOnSave": "połowa"
                         }
                     }
                 },
@@ -1713,14 +1846,16 @@
                     "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplConjureEle caption=false]</p>",
                     "activities": {
                         "Initial Save": {
-                            "name": "Initial Save",
+                            "name": "Początkowy rzut obronny",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
-                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "damageOnSave": "none"
                         },
                         "Save while Restrained": {
                             "name": "Save while Restrained",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
-                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -1742,7 +1877,8 @@
                     "activities": {
                         "save": {
                             "condition": "visible creature moves or ends its turn within 10 feet of the pack",
-                            "activationCondition": "visible creature moves or ends its turn within 10 feet of the pack"
+                            "activationCondition": "visible creature moves or ends its turn within 10 feet of the pack",
+                            "damageOnSave": "none"
                         }
                     }
                 }
@@ -1757,14 +1893,16 @@
                     "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplConjureEle caption=false]</p>",
                     "activities": {
                         "Initial Save": {
-                            "name": "Initial Save",
+                            "name": "Początkowy rzut obronny",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
-                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "damageOnSave": "none"
                         },
                         "Save while Restrained": {
                             "name": "Save while Restrained",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
-                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -1810,14 +1948,16 @@
                     "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplConjureEle caption=false]</p>",
                     "activities": {
                         "Initial Save": {
-                            "name": "Initial Save",
+                            "name": "Początkowy rzut obronny",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
-                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "damageOnSave": "none"
                         },
                         "Save while Restrained": {
                             "name": "Save while Restrained",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
-                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -1838,14 +1978,16 @@
                     "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplConjureEle caption=false]</p>",
                     "activities": {
                         "Initial Save": {
-                            "name": "Initial Save",
+                            "name": "Początkowy rzut obronny",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
-                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "damageOnSave": "none"
                         },
                         "Save while Restrained": {
                             "name": "Save while Restrained",
                             "condition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
-                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit"
+                            "activationCondition": "a creature you can see enters the spirit’s space or starts its turn within 5 feet of the spirit",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -1871,7 +2013,8 @@
                     "activities": {
                         "save": {
                             "target": "Średnia lub mniejsza istota",
-                            "targetAffects": "Średnia lub mniejsza istota"
+                            "targetAffects": "Średnia lub mniejsza istota",
+                            "damageOnSave": "none"
                         }
                     }
                 }
@@ -1886,6 +2029,11 @@
                     "name": "Stony Lethargy",
                     "description": "<p> When a creature starts its turn within 10 feet of the spirit, the spirit can target it with magical energy if the spirit can see it. <em>Wisdom Saving Throw:</em> DC equals your spell save DC, the target. <em>Failure:</em> Until the start of its next turn, the target can’t make Opportunity Attacks, and its Speed is halved.</p>",
                     "requirements": "Stone Only",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Stony Lethargy": {
                             "name": "Stony Lethargy",
@@ -1994,7 +2142,7 @@
                     "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d10 + 3 + the spell’s level Radiant damage, and the spirit can choose itself or another creature it can see within 10 feet of the target. The chosen creature gains [[/healing 1d10 type=temphp]]{1d10 Temporary Hit Points}.</p>",
                     "activities": {
                         "Temporary Healing": {
-                            "name": "Temporary Healing",
+                            "name": "Tymczasowe leczenie",
                             "condition": "on hit with Radiant Mace",
                             "activationCondition": "on hit with Radiant Mace",
                             "range": "range based on Attack target"
@@ -2014,13 +2162,14 @@
             "alignment": "Neutralny",
             "items": {
                 "Death Throes": {
-                    "name": "Death Throes",
+                    "name": "Agonia",
                     "description": "<p>When the spirit drops to 0 Hit Points or the spell ends, the spirit explodes. <em>Dexterity Saving Throw:</em> DC equals your spell save DC, each creature in a 10-foot Emanation originating from the spirit. <em>Failure:</em> 2d10 plus this spell’s level Fire damage. <em>Success:</em> Half damage.</p>",
                     "activities": {
                         "Explode": {
                             "name": "Explode",
                             "condition": "when the spirit drops to 0 Hit Points or the spell ends",
-                            "activationCondition": "when the spirit drops to 0 Hit Points or the spell ends"
+                            "activationCondition": "when the spirit drops to 0 Hit Points or the spell ends",
+                            "damageOnSave": "połowa"
                         }
                     }
                 },
@@ -2163,7 +2312,12 @@
                 },
                 "Breath Weapon": {
                     "name": "Zionięcie",
-                    "description": "<p><em>Dexterity Saving Throw: </em>DC equals your spell save DC, each creature in a 30-foot Cone. <em>Failure: </em>2d6 damage of a type this spirit has Resistance to (your choice when you cast the spell). <em>Success: </em>Half damage.</p>"
+                    "description": "<p><em>Dexterity Saving Throw: </em>DC equals your spell save DC, each creature in a 30-foot Cone. <em>Failure: </em>2d6 damage of a type this spirit has Resistance to (your choice when you cast the spell). <em>Success: </em>Half damage.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 }
             }
         },
@@ -2324,6 +2478,11 @@
                     "name": "Przyjaciel zwierząt",
                     "description": "<p>Wybierz Bestię, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość albo zostaje objęty stanem &amp;Reference[charmed apply=false] przez czas trwania czaru. Jeśli ty lub jeden z twoich sojuszników zada celowi obrażenia, czar się kończy.</p><p><strong>Użycie Komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową Bestię za każdy krąg powyżej 1.</p>",
                     "materials": "Kęs jedzenia",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Charmed": {
                             "name": "Zauroczony",
@@ -2338,6 +2497,11 @@
                 "Faerie Fire": {
                     "name": "Blask faerie",
                     "description": "<p>Obiekty w sześcianie o boku 20 stóp w zasięgu są obrysowane niebieskim, zielonym lub fioletowym światłem (do twojego wyboru). Każda istota w sześcianie jest również obrysowana, jeśli nie powiedzie jej się rzut obronny na Zręczność. Przez czas trwania obiekty i objęte efektem istoty emitują &amp;Reference[dimlight]{Słabe światło} w promieniu 10 stóp i nie mogą czerpać korzyści ze stanu Niewidzialny.</p><p>Testy ataku przeciwko objętej efektem istocie lub obiektowi mają Ułatwienie, jeśli atakujący może je widzieć.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Outlined": {
                             "name": "Obrysowany",
@@ -2347,7 +2511,12 @@
                 },
                 "Thunderwave": {
                     "name": "Fala gromu",
-                    "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>"
+                    "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 },
                 "Wooden staff": {
                     "name": "Drewniany kostur",
@@ -2366,7 +2535,8 @@
                     "description": "<p>Możesz oblać istotę, obiekt lub obszar olejem albo użyć go jako paliwa, jak opisano poniżej.</p><p><strong>Oblanie istoty lub obiektu.</strong> Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką oleju. Wybierz jedną istotę lub obiekt w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo zostaje pokryty olejem. Jeśli cel otrzyma obrażenia od ognia, zanim olej wyschnie (po 1 minucie), otrzymuje dodatkowe [[/damage 5 type=fire]] obrażenia od płonącego oleju.</p><p><strong>Oblanie obszaru.</strong> Możesz wykonać akcję Użycie Obiektu, aby wylać flaszkę oleju na płaski grunt, pokrywając obszar o boku 5 stóp w odległości do 5 stóp od siebie. Jeśli zostanie podpalony, olej pali się do końca tury 2 rundy od momentu podpalenia (czyli 12 sekund) i zadaje 5 obrażeń od ognia każdej istocie, która wejdzie w ten obszar lub zakończy w nim turę. Istota może otrzymać te obrażenia tylko raz na turę.</p><p><strong>Paliwo.</strong> Olej służy jako paliwo do lamp i latarni. Po podpaleniu, flaszka oleju pali się przez 6 godzin w lampie lub latarni. Ten czas nie musi być ciągły; możesz zgasić płonący olej (jako akcję Użycie Obiektu) i ponownie go zapalić, aż do łącznego czasu spalania wynoszącego 6 godzin.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Rzuć"
+                            "name": "Rzuć",
+                            "damageOnSave": "połowa"
                         },
                         "Douse Space": {
                             "name": "Zgaś przestrzeń"
@@ -2599,13 +2769,14 @@
                     "description": "<p><em>Melee Attack Roll: </em>+8, reach 5 ft. <em>Hit:</em> 15 (2d8 + 6) Piercing damage. If the elephant moved at least 20 feet straight toward the target immediately before the hit, the target also has the &amp;Reference[prone] condition.</p>"
                 },
                 "Trample": {
-                    "name": "Trample",
+                    "name": "Tratowanie",
                     "description": "<p> <em>Dexterity Saving Throw:</em> DC 16, one creature within 5 feet that has the Prone condition. <em>Failure:</em> 17 (2d10 + 6) Bludgeoning damage. <em>Success:</em> Half damage.</p>",
                     "requirements": "Target is Prone",
                     "activities": {
                         "save": {
                             "target": "has the Prone condition",
-                            "targetAffects": "has the Prone condition"
+                            "targetAffects": "has the Prone condition",
+                            "damageOnSave": "połowa"
                         }
                     }
                 }
@@ -2620,7 +2791,7 @@
                     "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>6 (1d6 + 3) Bludgeoning damage. If the elk moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 3 (1d6) Bludgeoning damage and, if it is Huge or smaller, has the &amp;Reference[prone] condition.</p>",
                     "activities": {
                         "Charging Attack": {
-                            "name": "Charging Attack"
+                            "name": "Szarżujący atak"
                         }
                     }
                 }
@@ -2636,7 +2807,8 @@
                     "activities": {
                         "save": {
                             "condition": "na początku twojej tury",
-                            "activationCondition": "na początku twojej tury"
+                            "activationCondition": "na początku twojej tury",
+                            "damageOnSave": "none"
                         }
                     }
                 }
@@ -2679,6 +2851,11 @@
                     "name": "Mirthful",
                     "description": "<p><em>Wisdom Saving Throw:</em> DC equals your spell save DC, one creature the spirit can see within 10 feet of itself. <em>Failure:</em> The target is &amp;Reference[charmed apply=false] by you and the spirit for 1 minute or until the target takes any damage.</p>",
                     "requirements": "Activated by Fey Step",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Charmed": {
                             "name": "Zauroczony",
@@ -2737,6 +2914,11 @@
                 "Fell Glare": {
                     "name": "Fell Glare",
                     "description": "<p><em>Wisdom Saving Throw:</em> DC equals your spell save DC, one creature within 60 feet the steed can see. <em>Failure:</em> The target has the &amp;Reference[frightened] condition until the end of your next turn.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Frightened": {
                             "name": "Przerażony"
@@ -2751,14 +2933,15 @@
             "alignment": "Neutralny",
             "items": {
                 "Death Throes": {
-                    "name": "Death Throes",
+                    "name": "Agonia",
                     "description": "<p>When the spirit drops to 0 Hit Points or the spell ends, the spirit explodes. <em>Dexterity Saving Throw:</em> DC equals your spell save DC, each creature in a 10-foot Emanation originating from the spirit. <em>Failure:</em> 2d10 plus this spell’s level Fire damage. <em>Success:</em> Half damage.</p>",
                     "requirements": "Demon Only",
                     "activities": {
                         "Explode": {
                             "name": "Explode",
                             "condition": "when the spirit drops to 0 Hit Points or the spell ends",
-                            "activationCondition": "when the spirit drops to 0 Hit Points or the spell ends"
+                            "activationCondition": "when the spirit drops to 0 Hit Points or the spell ends",
+                            "damageOnSave": "połowa"
                         }
                     }
                 },
@@ -2939,6 +3122,11 @@
                 "Caltrops": {
                     "name": "Kolczatki",
                     "description": "<p>Akcją Użycia Obiektu możesz rozsypać kolczatki z ich torby, aby pokryć obszar o boku 5 stóp w odległości do 5 stóp od siebie. Istota, która wejdzie w ten obszar po raz pierwszy w danej turze, musi wykonać rzut obronny na Zręczność (ST 15) lub otrzymuje 1 obrażenie kłute i jej szybkość zostaje zredukowana do 0 do początku jej następnej tury. Odzyskanie kolczatek zajmuje 10 minut.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Slowed": {
                             "name": "Spowolniony"
@@ -2954,7 +3142,8 @@
                     "description": "<p>Możesz oblać istotę, obiekt lub obszar olejem albo użyć go jako paliwa, jak opisano poniżej.</p><p><strong>Oblanie istoty lub obiektu.</strong> Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką oleju. Wybierz jedną istotę lub obiekt w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo zostaje pokryty olejem. Jeśli cel otrzyma obrażenia od ognia, zanim olej wyschnie (po 1 minucie), otrzymuje dodatkowe [[/damage 5 type=fire]] obrażenia od płonącego oleju.</p><p><strong>Oblanie obszaru.</strong> Możesz wykonać akcję Użycie Obiektu, aby wylać flaszkę oleju na płaski grunt, pokrywając obszar o boku 5 stóp w odległości do 5 stóp od siebie. Jeśli zostanie podpalony, olej pali się do końca tury 2 rundy od momentu podpalenia (czyli 12 sekund) i zadaje 5 obrażeń od ognia każdej istocie, która wejdzie w ten obszar lub zakończy w nim turę. Istota może otrzymać te obrażenia tylko raz na turę.</p><p><strong>Paliwo.</strong> Olej służy jako paliwo do lamp i latarni. Po podpaleniu, flaszka oleju pali się przez 6 godzin w lampie lub latarni. Ten czas nie musi być ciągły; możesz zgasić płonący olej (jako akcję Użycie Obiektu) i ponownie go zapalić, aż do łącznego czasu spalania wynoszącego 6 godzin.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Rzuć"
+                            "name": "Rzuć",
+                            "damageOnSave": "połowa"
                         },
                         "Douse Space": {
                             "name": "Zgaś przestrzeń"
@@ -3139,7 +3328,8 @@
                     "activities": {
                         "save": {
                             "condition": "Any creature ends its turn within range",
-                            "activationCondition": "Any creature ends its turn within range"
+                            "activationCondition": "Any creature ends its turn within range",
+                            "damageOnSave": "połowa"
                         }
                     }
                 },
@@ -3148,7 +3338,8 @@
                     "description": "<p>Jako Akcję Dodatkową możesz przesunąć kulę do 30 stóp, tocząc ją po ziemi. Jeśli przesuniesz kulę w pole istoty, ta istota wykonuje rzut obronny przeciwko kuli, a kula przestaje się poruszać w tej turze.</p><p>Kiedy przesuwasz kulę, możesz skierować ją nad przeszkody o wysokości do 5 stóp i przeskoczyć nią nad przepaściami o szerokości do 10 stóp. Łatwopalne obiekty, które nie są noszone ani trzymane, zaczynają płonąć, jeśli dotknie ich kula.</p>",
                     "activities": {
                         "Move and Save": {
-                            "name": "Move and Save"
+                            "name": "Move and Save",
+                            "damageOnSave": "połowa"
                         }
                     }
                 }
@@ -3283,6 +3474,11 @@
                 "Venomous Spew": {
                     "name": "Venomous Spew",
                     "description": "<p><em>Constitution Saving Throw:</em> Your spell save DC, one creature the insect can see within 10 feet. <em>Failure:</em> The target has the &amp;Reference[Poisoned apply=false] condition until the start of the insect’s next turn.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Poisoned": {
                             "name": "Zatruty",
@@ -3315,7 +3511,7 @@
                     "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>6 (1d6 + 3) Bludgeoning damage. If the goat moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 5 (2d4) Bludgeoning damage and, if it is Huge or smaller, has the &amp;Reference[prone] condition.</p>",
                     "activities": {
                         "Charging Attack": {
-                            "name": "Charging Attack"
+                            "name": "Szarżujący atak"
                         }
                     }
                 }
@@ -3358,6 +3554,11 @@
                     "name": "Venomous Spew",
                     "description": "<p><em>Constitution Saving Throw:</em> Your spell save DC, one creature the insect can see within 10 feet. <em>Failure:</em> The target has the &amp;Reference[Poisoned apply=false] condition until the start of the insect’s next turn.</p>",
                     "requirements": "Centipede Only",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Poisoned": {
                             "name": "Zatruty",
@@ -3380,7 +3581,7 @@
                     "description": "<p><em>Melee Attack Roll: </em>+4, reach 5 ft. <em>Hit: </em>9 (2d6 + 2) Bludgeoning damage, or the seahorse deals 11 (2d8 + 2) Bludgeoning damage if it moved at least 20 feet straight toward the target immediately before the hit.</p>",
                     "activities": {
                         "Charging Attack": {
-                            "name": "Charging Attack"
+                            "name": "Szarżujący atak"
                         }
                     }
                 },
@@ -3408,7 +3609,12 @@
                 },
                 "Web": {
                     "name": "Pajęczyna",
-                    "description": "<p><em>Dexterity Saving Throw:</em> DC 13, one creature the spider can see within 60 feet. <em>Failure:</em> The target has the &amp;Reference[restrained] condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Poison and Psychic damage).</p>"
+                    "description": "<p><em>Dexterity Saving Throw:</em> DC 13, one creature the spider can see within 60 feet. <em>Failure:</em> The target has the &amp;Reference[restrained] condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Poison and Psychic damage).</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 }
             }
         },
@@ -3456,7 +3662,7 @@
                     "description": "<p><em>Melee Attack Roll: </em>+2, reach 5 ft. <em>Hit: </em>1 Bludgeoning damage, or the goat deals 2 (1d4) Bludgeoning damage if it moved at least 20 feet straight toward the target immediately before the hit.</p>",
                     "activities": {
                         "Charging Attack": {
-                            "name": "Charging Attack"
+                            "name": "Szarżujący atak"
                         }
                     }
                 }
@@ -3480,6 +3686,9 @@
                     "name": "Guarded Area",
                     "description": "<p>Any enemy that moves to a space within 10 feet of the guardian for the first time on a turn or starts its turn there makes a Dexterity saving throw, taking 20 Radiant damage on a failed save or half as much damage on a successful one. The guardian vanishes when it has dealt a total of 60 damage.</p><section id=\"secret-fNtHgg2PRmVbaDl5\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature's Limited Uses is optionally provided for tracking the total damage dealt by the guardian.  Additionally, The <strong>Consume Damage Pool</strong> activity is configured with scaling uses consumption in increments of 5 damage for use after the final damage is determined and applied.</p></section>",
                     "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        },
                         "Consume Damage Pool": {
                             "name": "Consume Damage Pool"
                         }
@@ -3543,18 +3752,18 @@
                     "description": "<p> The imp shape-shifts to resemble a rat (Speed 20 ft.), a raven (20 ft., Fly 60 ft.), or a spider (20 ft., Climb 20 ft.), or it returns to its true form. Its statistics are the same in each form, except for its Speed. Any equipment it’s wearing or carrying isn’t transformed.</p>",
                     "activities": {
                         "Change Form": {
-                            "name": "Change Form"
+                            "name": "Zmiana formy"
                         }
                     },
                     "effects": {
                         "Rat Form": {
-                            "name": "Rat Form"
+                            "name": "Forma szczura"
                         },
                         "Raven Form": {
-                            "name": "Raven Form"
+                            "name": "Forma kruka"
                         },
                         "Spider Form": {
-                            "name": "Spider Form"
+                            "name": "Forma pająka"
                         }
                     }
                 },
@@ -3619,7 +3828,7 @@
                     "requirements": "Ally within 5 feet of target"
                 },
                 "Running Leap": {
-                    "name": "Running Leap",
+                    "name": "Skok z rozbiegu",
                     "description": "<p>Przy 10-stopowym rozbiegu lew może wykonać Skok w dal na odległość do 25 stóp.</p>"
                 },
                 "Multiattack": {
@@ -3638,6 +3847,11 @@
                 "Roar": {
                     "name": "Ryk",
                     "description": "<p><em>Wisdom Saving Throw:</em> DC 11, one creature within 15 feet. <em>Failure:</em> The target has the &amp;Reference[frightened apply=false] condition until the start of the lion’s next turn.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Frightened": {
                             "name": "Przerażony",
@@ -3736,7 +3950,8 @@
                     "activities": {
                         "save": {
                             "condition": "start of its turn",
-                            "activationCondition": "start of its turn"
+                            "activationCondition": "start of its turn",
+                            "damageOnSave": "none"
                         }
                     }
                 },
@@ -3779,7 +3994,8 @@
                     "description": "<p>The spirit magically teleports up to 30 feet to an unoccupied space it can see. Then the following effect occurs, based on the spirit’s chosen mood:</p><p><strong>Mirthful. </strong><em>Wisdom Saving Throw:</em> DC equals your spell save DC, one creature the spirit can see within 10 feet of itself. <em>Failure:</em> The target is &amp;Reference[charmed apply=false] by you and the spirit for 1 minute or until the target takes any damage.</p>",
                     "activities": {
                         "Teleport and Charm": {
-                            "name": "Teleport and Charm"
+                            "name": "Teleport and Charm",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -3846,10 +4062,12 @@
                     "requirements": "Drakoni",
                     "activities": {
                         "Breath Weapon (Cone)": {
-                            "name": "Zionięcie (Stożek)"
+                            "name": "Zionięcie (Stożek)",
+                            "damageOnSave": "połowa"
                         },
                         "Breath Weapon (Line)": {
-                            "name": "Zionięcie (Linia)"
+                            "name": "Zionięcie (Linia)",
+                            "damageOnSave": "połowa"
                         }
                     }
                 },
@@ -3867,10 +4085,12 @@
                     "materials": "szczypta piasku lub płatków róży",
                     "activities": {
                         "Free Cast (1/day)": {
-                            "name": "Free Cast (1/day)"
+                            "name": "Free Cast (1/day)",
+                            "damageOnSave": "połowa"
                         },
                         "Cast with Spell Slot": {
-                            "name": "Cast with Spell Slot"
+                            "name": "Cast with Spell Slot",
+                            "damageOnSave": "połowa"
                         }
                     },
                     "effects": {
@@ -3939,7 +4159,8 @@
                     "description": "<p>Możesz oblać istotę, obiekt lub obszar olejem albo użyć go jako paliwa, jak opisano poniżej.</p><p><strong>Oblanie istoty lub obiektu.</strong> Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką oleju. Wybierz jedną istotę lub obiekt w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo zostaje pokryty olejem. Jeśli cel otrzyma obrażenia od ognia, zanim olej wyschnie (po 1 minucie), otrzymuje dodatkowe [[/damage 5 type=fire]] obrażenia od płonącego oleju.</p><p><strong>Oblanie obszaru.</strong> Możesz wykonać akcję Użycie Obiektu, aby wylać flaszkę oleju na płaski grunt, pokrywając obszar o boku 5 stóp w odległości do 5 stóp od siebie. Jeśli zostanie podpalony, olej pali się do końca tury 2 rundy od momentu podpalenia (czyli 12 sekund) i zadaje 5 obrażeń od ognia każdej istocie, która wejdzie w ten obszar lub zakończy w nim turę. Istota może otrzymać te obrażenia tylko raz na turę.</p><p><strong>Paliwo.</strong> Olej służy jako paliwo do lamp i latarni. Po podpaleniu, flaszka oleju pali się przez 6 godzin w lampie lub latarni. Ten czas nie musi być ciągły; możesz zgasić płonący olej (jako akcję Użycie Obiektu) i ponownie go zapalić, aż do łącznego czasu spalania wynoszącego 6 godzin.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Rzuć"
+                            "name": "Rzuć",
+                            "damageOnSave": "połowa"
                         },
                         "Douse Space": {
                             "name": "Zgaś przestrzeń"
@@ -4099,7 +4320,8 @@
                     "activities": {
                         "Grapple/Shove": {
                             "name": "Pochwycenie/Pchnięcie",
-                            "chatFlavor": "Próba pochwycenia lub popchnięcia"
+                            "chatFlavor": "Próba pochwycenia lub popchnięcia",
+                            "damageOnSave": "połowa"
                         }
                     },
                     "effects": {
@@ -4184,6 +4406,11 @@
                     "name": "Fell Glare",
                     "description": "<p><em>Wisdom Saving Throw:</em> DC equals your spell save DC, one creature within 60 feet the steed can see. <em>Failure:</em> The target has the &amp;Reference[frightened apply=false] condition until the end of your next turn.</p>",
                     "requirements": "Fiend Only",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Frightened": {
                             "name": "Przerażony"
@@ -4334,6 +4561,11 @@
                     "description": "<p>Gdy trafisz cel, otrzymuje on dodatkowe 1k6 obrażeń od ognia w wyniku ataku. Na początku każdej ze swoich tur, aż do zakończenia czaru, cel otrzymuje 1k6 obrażeń od ognia, a następnie wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia czar trwa dalej. W przypadku sukcesu czar się kończy.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Wszystkie obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
                     "activation": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
                     "activationCondition": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Seared": {
                             "name": "Przypalony",
@@ -4354,7 +4586,8 @@
                     "description": "<p>Gdy wykonujesz Akcję Atak, możesz zastąpić jeden ze swoich ataków rzuceniem fiolki Wody Święconej. Wyceluj w jedną istotę, którą widzisz w promieniu 20 stóp od siebie. Cel musi wykonać udany rzut obronny na Zręczność (ST 8 plus twój modyfikator Zręczności i Premia od Biegłości) lub otrzymać 2k8 obrażenia od światłości, jeśli jest to Czart lub Nieumarły.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Rzuć"
+                            "name": "Rzuć",
+                            "damageOnSave": "połowa"
                         }
                     }
                 },
@@ -4485,7 +4718,7 @@
                 },
                 "Nimble Escape": {
                     "name": "Sprawna ucieczka",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] takes the &amp;Reference[Disengage] or &amp;Reference[Hide] action.</p>",
+                    "description": "<p class=\"feature\">[[lookup @name]] wykonuje akcję &amp;Reference[Disengage] lub &amp;Reference[Hide].</p>",
                     "activities": {
                         "Expend Use": {
                             "name": "Wykorzystaj użycie"
@@ -4545,6 +4778,11 @@
                 "Sting": {
                     "name": "Żądło",
                     "description": "<p><em>Constitution Saving Throw:</em> DC 12, one creature the pseudodragon can see within 5 feet. <em>Failure:</em> 5 (2d4 + 2) Poison damage, and the target has the &amp;Reference[poisoned apply=false] condition for 1 hour. <em>Failure by 5 or More:</em> The Poisoned target also has the &amp;Reference[unconscious apply=false] condition until it takes damage or another creature takes an action to shake it awake.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Poisoned": {
                             "name": "Zatruty",
@@ -4572,7 +4810,8 @@
                             "condition": "any other creature that starts its turn within range",
                             "activationCondition": "any other creature that starts its turn within range",
                             "target": "other than you",
-                            "targetAffects": "other than you"
+                            "targetAffects": "other than you",
+                            "damageOnSave": "połowa"
                         }
                     },
                     "effects": {
@@ -4631,8 +4870,13 @@
                     }
                 },
                 "Scare": {
-                    "name": "Scare",
+                    "name": "Przerażenie",
                     "description": "<p><em>Wisdom Saving Throw:</em> DC 10, one creature within 20 feet. <em>Failure:</em> The target has the &amp;Reference[frightened apply=false] condition. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Frightened": {
                             "name": "Przerażony",
@@ -4645,18 +4889,18 @@
                     "description": "<p> The quasit shape-shifts to resemble a bat (Speed 10 ft., Fly 40 ft.), a centipede (40 ft., Climb 40 ft.), or a toad (40 ft., Swim 40 ft.), or it returns to its true form. Its statistics are the same in each form, except for its Speed. Any equipment it’s wearing or carrying isn’t transformed.</p>",
                     "activities": {
                         "Change Form": {
-                            "name": "Change Form"
+                            "name": "Zmiana formy"
                         }
                     },
                     "effects": {
                         "Centipede Form": {
-                            "name": "Centipede Form"
+                            "name": "Forma stonogi"
                         },
                         "Bat Form": {
-                            "name": "Bat Form"
+                            "name": "Forma nietoperza"
                         },
                         "Toad Form": {
-                            "name": "Toad Form"
+                            "name": "Forma ropuchy"
                         }
                     }
                 },
@@ -4836,6 +5080,9 @@
                     "activation": "Natychmiast po trafieniu istoty bronią",
                     "activationCondition": "Natychmiast po trafieniu istoty bronią",
                     "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        },
                         "Start of Turn Damage": {
                             "name": "Obrażenia na początku tury"
                         }
@@ -4860,7 +5107,8 @@
                     "description": "<p>Możesz oblać istotę, obiekt lub obszar olejem albo użyć go jako paliwa, jak opisano poniżej.</p><p><strong>Oblanie istoty lub obiektu.</strong> Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką oleju. Wybierz jedną istotę lub obiekt w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo zostaje pokryty olejem. Jeśli cel otrzyma obrażenia od ognia, zanim olej wyschnie (po 1 minucie), otrzymuje dodatkowe [[/damage 5 type=fire]] obrażenia od płonącego oleju.</p><p><strong>Oblanie obszaru.</strong> Możesz wykonać akcję Użycie Obiektu, aby wylać flaszkę oleju na płaski grunt, pokrywając obszar o boku 5 stóp w odległości do 5 stóp od siebie. Jeśli zostanie podpalony, olej pali się do końca tury 2 rundy od momentu podpalenia (czyli 12 sekund) i zadaje 5 obrażeń od ognia każdej istocie, która wejdzie w ten obszar lub zakończy w nim turę. Istota może otrzymać te obrażenia tylko raz na turę.</p><p><strong>Paliwo.</strong> Olej służy jako paliwo do lamp i latarni. Po podpaleniu, flaszka oleju pali się przez 6 godzin w lampie lub latarni. Ten czas nie musi być ciągły; możesz zgasić płonący olej (jako akcję Użycie Obiektu) i ponownie go zapalić, aż do łącznego czasu spalania wynoszącego 6 godzin.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Rzuć"
+                            "name": "Rzuć",
+                            "damageOnSave": "połowa"
                         },
                         "Douse Space": {
                             "name": "Zgaś przestrzeń"
@@ -5048,7 +5296,7 @@
             "alignment": "Bez charakteru",
             "items": {
                 "Agile": {
-                    "name": "Agile",
+                    "name": "Zwinny",
                     "description": "<p> The rat doesn’t provoke Opportunity Attacks when it moves out of an enemy’s reach.</p>"
                 },
                 "Bite": {
@@ -5217,7 +5465,8 @@
                     "description": "<p>Akcją Użycia Obiektu wysypujesz kulki metalowe z ich sakiewki. Rozsypują się, pokrywając płaski obszar o wymiarach 10 na 10 stóp w odległości do 10 stóp od ciebie. Istota, która wejdzie w ten obszar po raz pierwszy w danej turze, musi wykonać rzut obronny na Zręczność (ST 10) lub otrzymuje stan &amp;Reference[Prone]. Odzyskanie kulek metalowych zajmuje 10 minut.</p><section id=\"secret-bbcC5syRGw0PCZnG\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Czynność <strong>Odzyskanie kulek metalowych</strong> zapewnia kolejne użycie tego przedmiotu.</p></section>",
                     "activities": {
                         "Spill Ball Bearings": {
-                            "name": "Rozsyp kulki metalowe"
+                            "name": "Rozsyp kulki metalowe",
+                            "damageOnSave": "połowa"
                         },
                         "Recover Ball Bearings": {
                             "name": "Zbierz łożyska kulkowe"
@@ -5255,7 +5504,8 @@
                     "description": "<p>Możesz oblać istotę, obiekt lub obszar olejem albo użyć go jako paliwa, jak opisano poniżej.</p><p><strong>Oblanie istoty lub obiektu.</strong> Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką oleju. Wybierz jedną istotę lub obiekt w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo zostaje pokryty olejem. Jeśli cel otrzyma obrażenia od ognia, zanim olej wyschnie (po 1 minucie), otrzymuje dodatkowe [[/damage 5 type=fire]] obrażenia od płonącego oleju.</p><p><strong>Oblanie obszaru.</strong> Możesz wykonać akcję Użycie Obiektu, aby wylać flaszkę oleju na płaski grunt, pokrywając obszar o boku 5 stóp w odległości do 5 stóp od siebie. Jeśli zostanie podpalony, olej pali się do końca tury 2 rundy od momentu podpalenia (czyli 12 sekund) i zadaje 5 obrażeń od ognia każdej istocie, która wejdzie w ten obszar lub zakończy w nim turę. Istota może otrzymać te obrażenia tylko raz na turę.</p><p><strong>Paliwo.</strong> Olej służy jako paliwo do lamp i latarni. Po podpaleniu, flaszka oleju pali się przez 6 godzin w lampie lub latarni. Ten czas nie musi być ciągły; możesz zgasić płonący olej (jako akcję Użycie Obiektu) i ponownie go zapalić, aż do łącznego czasu spalania wynoszącego 6 godzin.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Rzuć"
+                            "name": "Rzuć",
+                            "damageOnSave": "połowa"
                         },
                         "Douse Space": {
                             "name": "Zgaś przestrzeń"
@@ -5463,7 +5713,7 @@
             "items": {
                 "Regeneration": {
                     "name": "Regeneracja",
-                    "description": "<p>The spirit regains [[/healing 5]]{5 Hit Points} at the start of its turn if it has at least 1 Hit Point.</p>",
+                    "description": "<p>Duch odzyskuje [[/healing 5]]{5 Punktów Wytrzymałości} na początku swojej tury, jeśli ma co najmniej 1 Punkt Wytrzymałości.</p>",
                     "requirements": "Has at least 1 Hit Point",
                     "activities": {
                         "heal": {
@@ -5647,7 +5897,7 @@
                     "description": "<p>Błyskawica wystrzeliwuje od ciebie do istoty, którą próbujesz dotknąć. Wykonaj wręczowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 1k8 obrażeń od elektryczności i nie może wykonywać Ataków Okazyjnych do początku swojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
                     "effects": {
                         "Shocked": {
-                            "name": "Zszokowany",
+                            "name": "Porażony",
                             "description": "<p>Cel nie może wykonywać Ataków Okazyjnych do początku swojej następnej tury.</p>"
                         }
                     }
@@ -5672,7 +5922,12 @@
                 },
                 "Burning Hands": {
                     "name": "Płonące dłonie",
-                    "description": "<p>Cienka płachta płomieni wystrzeliwuje z ciebie. Każda istota w Stożku o długości 15 stóp musi wykonać rzut obronny na Zręczność. W przypadku porażki otrzymuje ona 3k6 obrażeń od ognia, a w przypadku sukcesu połowę tych obrażeń.</p><p>Łatwopalne obiekty w Stożku, które nie są noszone ani niesione, zaczynają płonąć.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>"
+                    "description": "<p>Cienka płachta płomieni wystrzeliwuje z ciebie. Każda istota w Stożku o długości 15 stóp musi wykonać rzut obronny na Zręczność. W przypadku porażki otrzymuje ona 3k6 obrażeń od ognia, a w przypadku sukcesu połowę tych obrażeń.</p><p>Łatwopalne obiekty w Stożku, które nie są noszone ani niesione, zaczynają płonąć.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 },
                 "Wand": {
                     "name": "Różdzka",
@@ -5681,6 +5936,11 @@
                 "Caltrops": {
                     "name": "Kolczatki",
                     "description": "<p>Akcją Użycia Obiektu możesz rozsypać kolczatki z ich torby, aby pokryć obszar o boku 5 stóp w odległości do 5 stóp od siebie. Istota, która wejdzie w ten obszar po raz pierwszy w danej turze, musi wykonać rzut obronny na Zręczność (ST 15) lub otrzymuje 1 obrażenie kłute i jej szybkość zostaje zredukowana do 0 do początku jej następnej tury. Odzyskanie kolczatek zajmuje 10 minut.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Slowed": {
                             "name": "Spowolniony"
@@ -5696,7 +5956,8 @@
                     "description": "<p>Możesz oblać istotę, obiekt lub obszar olejem albo użyć go jako paliwa, jak opisano poniżej.</p><p><strong>Oblanie istoty lub obiektu.</strong> Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką oleju. Wybierz jedną istotę lub obiekt w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo zostaje pokryty olejem. Jeśli cel otrzyma obrażenia od ognia, zanim olej wyschnie (po 1 minucie), otrzymuje dodatkowe [[/damage 5 type=fire]] obrażenia od płonącego oleju.</p><p><strong>Oblanie obszaru.</strong> Możesz wykonać akcję Użycie Obiektu, aby wylać flaszkę oleju na płaski grunt, pokrywając obszar o boku 5 stóp w odległości do 5 stóp od siebie. Jeśli zostanie podpalony, olej pali się do końca tury 2 rundy od momentu podpalenia (czyli 12 sekund) i zadaje 5 obrażeń od ognia każdej istocie, która wejdzie w ten obszar lub zakończy w nim turę. Istota może otrzymać te obrażenia tylko raz na turę.</p><p><strong>Paliwo.</strong> Olej służy jako paliwo do lamp i latarni. Po podpaleniu, flaszka oleju pali się przez 6 godzin w lampie lub latarni. Ten czas nie musi być ciągły; możesz zgasić płonący olej (jako akcję Użycie Obiektu) i ponownie go zapalić, aż do łącznego czasu spalania wynoszącego 6 godzin.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Rzuć"
+                            "name": "Rzuć",
+                            "damageOnSave": "połowa"
                         },
                         "Douse Space": {
                             "name": "Zgaś przestrzeń"
@@ -5886,11 +6147,11 @@
             "alignment": "Neutralny Dobry",
             "items": {
                 "Needle Sword": {
-                    "name": "Needle Sword",
+                    "name": "Igłowy miecz",
                     "description": "<p><em>Melee Attack Roll: </em>+6, reach 5 ft. <em>Hit:</em> 6 (1d4 + 4) Piercing damage.</p>"
                 },
                 "Enchanting Bow": {
-                    "name": "Enchanting Bow",
+                    "name": "Zaklinający łuk",
                     "description": "<p><em>Ranged Attack Roll: </em>+6, range 40/160 ft. <em>Hit:</em> 1 Piercing damage, and the target has the &amp;Reference[charmed apply=false] condition until the start of the sprite’s next turn.</p>",
                     "effects": {
                         "Charmed": {
@@ -5900,8 +6161,13 @@
                     }
                 },
                 "Heart Sight": {
-                    "name": "Heart Sight",
-                    "description": "<p> <em>Charisma Saving Throw:</em> DC 10, one creature within 5 feet the sprite can see. Celestials, Fiends, and Undead automatically fail the save. <em>Failure:</em> The sprite knows the target’s emotions and alignment.</p>"
+                    "name": "Wgląd w uczucia",
+                    "description": "<p> <em>Charisma Saving Throw:</em> DC 10, one creature within 5 feet the sprite can see. Celestials, Fiends, and Undead automatically fail the save. <em>Failure:</em> The sprite knows the target’s emotions and alignment.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 },
                 "Invisibility": {
                     "name": "Niewidzialność",
@@ -5939,6 +6205,11 @@
                     "name": "Stony Lethargy",
                     "description": "<p> When a creature starts its turn within 10 feet of the spirit, the spirit can target it with magical energy if the spirit can see it. <em>Wisdom Saving Throw:</em> DC equals your spell save DC, the target. <em>Failure:</em> Until the start of its next turn, the target can’t make Opportunity Attacks, and its Speed is halved.</p>",
                     "requirements": "A creature starts its turn within range",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Stony Lethargy": {
                             "name": "Stony Lethargy",
@@ -5967,17 +6238,17 @@
             "items": {
                 "Rend": {
                     "name": "Rozdarcie",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Large or smaller creature, it has the &amp;Reference[Prone apply=false] condition.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Wielką lub mniejszą istotą, otrzymuje stan &amp;Reference[Prone apply=false].</p>",
                     "effects": {
                         "Prone": {
                             "name": "Powalony",
-                            "description": "<p>If the target is a Large or smaller creature, it has the &amp;Reference[Prone apply=false] condition.</p>"
+                            "description": "<p>Jeśli cel jest Wielką lub mniejszą istotą, otrzymuje stan &amp;Reference[Prone apply=false].</p>"
                         }
                     }
                 },
                 "Nimble Escape": {
                     "name": "Sprawna ucieczka",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] takes the &amp;Reference[Disengage] or &amp;Reference[Hide] action.</p>",
+                    "description": "<p class=\"feature\">[[lookup @name]] wykonuje akcję &amp;Reference[Disengage] lub &amp;Reference[Hide].</p>",
                     "activities": {
                         "Expend Use": {
                             "name": "Wykorzystaj użycie"
@@ -6045,7 +6316,8 @@
                     "activities": {
                         "save": {
                             "condition": "any other creature that starts its turn within range",
-                            "activationCondition": "any other creature that starts its turn within range"
+                            "activationCondition": "any other creature that starts its turn within range",
+                            "damageOnSave": "połowa"
                         }
                     },
                     "effects": {
@@ -6126,7 +6398,7 @@
                     "description": "<p><em>Melee Attack Roll:</em> +6, reach 5 ft. <em>Hit:</em> 9 (2d4 + 4) Bludgeoning damage. If the horse moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 5 (2d4) Bludgeoning damage and, if it is Huge or smaller, has the &amp;Reference[prone] condition.</p>",
                     "activities": {
                         "Charging Attack": {
-                            "name": "Charging Attack"
+                            "name": "Szarżujący atak"
                         }
                     }
                 }
@@ -6244,7 +6516,8 @@
                     "description": "<p>Światłość przypominająca płomień spada na istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Zręczność. W przypadku niepowodzenia otrzymuje 1k8 obrażeń od światłości. Cel nie korzysta z osłony Połowicznej ani Trzy Czwarte podczas tego rzutu.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
                     "activities": {
                         "Cast": {
-                            "name": "Rzucanie"
+                            "name": "Rzucanie",
+                            "damageOnSave": "none"
                         }
                     }
                 },
@@ -6254,10 +6527,12 @@
                     "materials": "kropla krwi",
                     "activities": {
                         "Cast": {
-                            "name": "Rzucanie"
+                            "name": "Rzucanie",
+                            "damageOnSave": "połowa"
                         },
                         "Free Cast (1/day)": {
-                            "name": "Free Cast (1/day)"
+                            "name": "Free Cast (1/day)",
+                            "damageOnSave": "połowa"
                         }
                     },
                     "effects": {
@@ -6284,6 +6559,11 @@
                 "Charm Person": {
                     "name": "Zauroczenie osoby",
                     "description": "<p>Jeden humanoid, którego widzisz w zasięgu, musi wykonać rzut obronny na Mądrość. Wykonuje go z Ułatwieniem, jeśli walczy z tobą lub twoimi sojuszników. W przypadku porażki ma stan &Reference[charmed apply=false]{Zauroczony} do czasu zakończenia czaru lub do momentu, w którym ty lub twoi sojusznicy zadacie mu obrażenia. Zauroczona istota jest wobec ciebie Przyjazna. Kiedy działanie czaru dobiega końca, cel wie, że został przez ciebie Zauroczony.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wskazać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Charmed": {
                             "name": "Zauroczony",
@@ -6372,18 +6652,25 @@
                         "Healthy Target": {
                             "name": "Zdrowy cel",
                             "target": "istota, która nie utraciła żadnych punktów wytrzymałości",
-                            "targetAffects": "istota, która nie utraciła żadnych punktów wytrzymałości"
+                            "targetAffects": "istota, która nie utraciła żadnych punktów wytrzymałości",
+                            "damageOnSave": "none"
                         },
                         "Damaged Target": {
                             "name": "Zraniony cel",
                             "target": "istota, która utraciła jakiekolwiek punkty wytrzymałości",
-                            "targetAffects": "istota, która utraciła jakiekolwiek punkty wytrzymałości"
+                            "targetAffects": "istota, która utraciła jakiekolwiek punkty wytrzymałości",
+                            "damageOnSave": "none"
                         }
                     }
                 },
                 "Mind Sliver": {
                     "name": "Myślowy odłamek",
                     "description": "<p>Próbujesz chwilowo rozszczepić umysł jednej istoty, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Inteligencję, inaczej otrzymuje 1k6 obrażeń psychicznych i odejmuje 1k4 od następnego rzutu obronnego, który wykona przed końcem twojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k6, gdy osiągniesz poziomy 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    },
                     "effects": {
                         "Slivered": {
                             "name": "Pocięty",
@@ -6482,7 +6769,8 @@
                     "description": "<p>Możesz oblać istotę, obiekt lub obszar olejem albo użyć go jako paliwa, jak opisano poniżej.</p><p><strong>Oblanie istoty lub obiektu.</strong> Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką oleju. Wybierz jedną istotę lub obiekt w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo zostaje pokryty olejem. Jeśli cel otrzyma obrażenia od ognia, zanim olej wyschnie (po 1 minucie), otrzymuje dodatkowe [[/damage 5 type=fire]] obrażenia od płonącego oleju.</p><p><strong>Oblanie obszaru.</strong> Możesz wykonać akcję Użycie Obiektu, aby wylać flaszkę oleju na płaski grunt, pokrywając obszar o boku 5 stóp w odległości do 5 stóp od siebie. Jeśli zostanie podpalony, olej pali się do końca tury 2 rundy od momentu podpalenia (czyli 12 sekund) i zadaje 5 obrażeń od ognia każdej istocie, która wejdzie w ten obszar lub zakończy w nim turę. Istota może otrzymać te obrażenia tylko raz na turę.</p><p><strong>Paliwo.</strong> Olej służy jako paliwo do lamp i latarni. Po podpaleniu, flaszka oleju pali się przez 6 godzin w lampie lub latarni. Ten czas nie musi być ciągły; możesz zgasić płonący olej (jako akcję Użycie Obiektu) i ponownie go zapalić, aż do łącznego czasu spalania wynoszącego 6 godzin.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Rzuć"
+                            "name": "Rzuć",
+                            "damageOnSave": "połowa"
                         },
                         "Douse Space": {
                             "name": "Zgaś przestrzeń"
@@ -6676,7 +6964,8 @@
                     "description": "<p>Możesz oblać istotę, obiekt lub obszar olejem albo użyć go jako paliwa, jak opisano poniżej.</p><p><strong>Oblanie istoty lub obiektu.</strong> Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką oleju. Wybierz jedną istotę lub obiekt w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo zostaje pokryty olejem. Jeśli cel otrzyma obrażenia od ognia, zanim olej wyschnie (po 1 minucie), otrzymuje dodatkowe [[/damage 5 type=fire]] obrażenia od płonącego oleju.</p><p><strong>Oblanie obszaru.</strong> Możesz wykonać akcję Użycie Obiektu, aby wylać flaszkę oleju na płaski grunt, pokrywając obszar o boku 5 stóp w odległości do 5 stóp od siebie. Jeśli zostanie podpalony, olej pali się do końca tury 2 rundy od momentu podpalenia (czyli 12 sekund) i zadaje 5 obrażeń od ognia każdej istocie, która wejdzie w ten obszar lub zakończy w nim turę. Istota może otrzymać te obrażenia tylko raz na turę.</p><p><strong>Paliwo.</strong> Olej służy jako paliwo do lamp i latarni. Po podpaleniu, flaszka oleju pali się przez 6 godzin w lampie lub latarni. Ten czas nie musi być ciągły; możesz zgasić płonący olej (jako akcję Użycie Obiektu) i ponownie go zapalić, aż do łącznego czasu spalania wynoszącego 6 godzin.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Rzuć"
+                            "name": "Rzuć",
+                            "damageOnSave": "połowa"
                         },
                         "Douse Space": {
                             "name": "Zgaś przestrzeń"
@@ -6761,7 +7050,12 @@
                 },
                 "Acid Splash": {
                     "name": "Kwasowy rozprysk",
-                    "description": "<p>Tworzysz kwasowy bąbel w wybranym punkcie w zasięgu, gdzie eksploduje w sferze o promieniu 5 stóp. Każda istota w tej sferze musi wykonać rzut obronny na Zręczność albo otrzymuje 1k6 obrażeń od kwasu.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia wzrastają o 1k6, gdy osiągniesz poziomy 5 (2k6), 11 (3k6) i 17 (4k6).</p>"
+                    "description": "<p>Tworzysz kwasowy bąbel w wybranym punkcie w zasięgu, gdzie eksploduje w sferze o promieniu 5 stóp. Każda istota w tej sferze musi wykonać rzut obronny na Zręczność albo otrzymuje 1k6 obrażeń od kwasu.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia wzrastają o 1k6, gdy osiągniesz poziomy 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    }
                 },
                 "Detect Magic": {
                     "name": "Wykrycie magii",
@@ -6813,6 +7107,11 @@
                     "name": "Uśpienie",
                     "description": "<p>Każda wybrana przez ciebie istota w sferze o promieniu 5 stóp, której centrum znajduje się w wybranym punkcie w zasięgu, musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[incapacitated apply=false]{Obezwładniony} do końca twojej następnej tury, po czym musi powtórzyć rzut obronny. Jeśli cel nie powiedzie się w drugim rzucie, otrzymuje stan &amp;Reference[unconscious]{Nieprzytomny} na czas działania czaru. Czar kończy się na celu, jeśli otrzyma on obrażenia lub jeśli ktoś w odległości 5 stóp od niego wykona akcję, aby wybudzić go z efektu czaru.</p><p>Istoty, które nie śpią, takie jak elfy, lub które mają Niewrażliwość na stan Wyczerpany, automatycznie odnoszą sukces w rzutach obronnych przeciwko temu czarowi.</p>",
                     "materials": "szczypta piasku lub płatków róży",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Sleeping": {
                             "name": "Śpiący",
@@ -6822,7 +7121,12 @@
                 },
                 "Thunderwave": {
                     "name": "Fala gromu",
-                    "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>"
+                    "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 },
                 "Staff": {
                     "name": "Kostury",
@@ -6854,7 +7158,8 @@
                     "description": "<p>Możesz oblać istotę, obiekt lub obszar olejem albo użyć go jako paliwa, jak opisano poniżej.</p><p><strong>Oblanie istoty lub obiektu.</strong> Wykonując akcję Atak, możesz zastąpić jeden ze swoich ataków rzutem flaszką oleju. Wybierz jedną istotę lub obiekt w odległości do 20 stóp od siebie. Cel musi wykonać rzut obronny na Zręczność (ST 8 + twój modyfikator Zręczności + Premia od Biegłości) albo zostaje pokryty olejem. Jeśli cel otrzyma obrażenia od ognia, zanim olej wyschnie (po 1 minucie), otrzymuje dodatkowe [[/damage 5 type=fire]] obrażenia od płonącego oleju.</p><p><strong>Oblanie obszaru.</strong> Możesz wykonać akcję Użycie Obiektu, aby wylać flaszkę oleju na płaski grunt, pokrywając obszar o boku 5 stóp w odległości do 5 stóp od siebie. Jeśli zostanie podpalony, olej pali się do końca tury 2 rundy od momentu podpalenia (czyli 12 sekund) i zadaje 5 obrażeń od ognia każdej istocie, która wejdzie w ten obszar lub zakończy w nim turę. Istota może otrzymać te obrażenia tylko raz na turę.</p><p><strong>Paliwo.</strong> Olej służy jako paliwo do lamp i latarni. Po podpaleniu, flaszka oleju pali się przez 6 godzin w lampie lub latarni. Ten czas nie musi być ciągły; możesz zgasić płonący olej (jako akcję Użycie Obiektu) i ponownie go zapalić, aż do łącznego czasu spalania wynoszącego 6 godzin.</p>",
                     "activities": {
                         "Throw": {
-                            "name": "Rzut"
+                            "name": "Rzut",
+                            "damageOnSave": "połowa"
                         },
                         "Douse Space": {
                             "name": "Zgaś przestrzeń"
@@ -6983,7 +7288,12 @@
                 "Undead Fortitude": {
                     "name": "Trupia odporność",
                     "description": "<p> If damage reduces the zombie to 0 Hit Points, it must make a Constitution saving throw with a DC of 5 plus the damage taken unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead.</p>",
-                    "requirements": "Reduced to 0 Hit Points"
+                    "requirements": "Zredukowany do 0 Punktów Wytrzymałości",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 },
                 "Slam": {
                     "name": "Walnięcie",
