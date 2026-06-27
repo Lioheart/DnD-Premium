@@ -1,0 +1,438 @@
+{
+    "label": "Przedmioty (SRD)",
+    "mapping": {
+        "description": "system.description.value",
+        "requirements": "system.requirements",
+        "materials": "system.materials.value",
+        "chat": "system.description.chat",
+        "activation": "system.activation.condition",
+        "activationValue": "system.activation.value",
+        "activities": {
+            "path": "system.activities",
+            "converter": "structured",
+            "cardinality": "many",
+            "container": "keyed",
+            "keys": [
+                "_id",
+                "name",
+                "type"
+            ],
+            "mapping": {
+                "name": "name",
+                "condition": "activation.condition",
+                "activationCondition": "activation.condition",
+                "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
+                "duration": "duration.special",
+                "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
+                "range": {
+                    "path": "range",
+                    "converter": "imperialToMetric"
+                },
+                "target": {
+                    "path": "target",
+                    "converter": "imperialToMetric"
+                },
+                "profiles": {
+                    "path": "profiles",
+                    "converter": "nameCollection"
+                }
+            }
+        },
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        },
+        "advancement": {
+            "path": "system.advancement",
+            "converter": "structured",
+            "cardinality": "many",
+            "container": "keyed",
+            "keys": [
+                "_id",
+                "title"
+            ],
+            "mapping": {
+                "title": "title",
+                "hint": "hint",
+                "_variants": [
+                    {
+                        "_when": {
+                            "path": "type",
+                            "equals": "ScaleValue"
+                        },
+                        "distance": {
+                            "path": "configuration.distance",
+                            "converter": "imperialToMetric"
+                        },
+                        "scale": {
+                            "path": "configuration.scale",
+                            "converter": "imperialToMetric"
+                        }
+                    }
+                ]
+            }
+        },
+        "movement": {
+            "path": "system.movement",
+            "converter": "imperialToMetric"
+        },
+        "weight": {
+            "path": "system.weight",
+            "converter": "imperialToMetric"
+        },
+        "range": {
+            "path": "system.range",
+            "converter": "imperialToMetric"
+        },
+        "capacityWeight": {
+            "path": "system.capacity.weight",
+            "converter": "imperialToMetric"
+        },
+        "senses": {
+            "path": "system.senses",
+            "converter": "imperialToMetric"
+        },
+        "target": {
+            "path": "system.target",
+            "converter": "imperialToMetric"
+        },
+        "volume": {
+            "path": "system.capacity.volume",
+            "converter": "imperialToMetric"
+        }
+    },
+    "entries": {
+        "Animated Digits": {
+            "name": "Animated Digits",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Ashes of a Corpse": {
+            "name": "Ashes of a Corpse",
+            "description": "<p>The ashes of a corpse fill a small container.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Barovian Wine Bottle": {
+            "name": "Barovian Wine Bottle",
+            "description": "<p>An empty bottle of Barovian wine.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Black Rose": {
+            "name": "Black Rose",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Blood Faction Gear": {
+            "name": "Blood Faction Gear",
+            "description": "<p>An item of equipment marked with the Blood Falcon displays the faction's emblem.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Bloodstained Farm Implement": {
+            "name": "Bloodstained Farm Implement",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Broken Holy Symbol": {
+            "name": "Broken Holy Symbol",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Broken Jewelry": {
+            "name": "Broken Jewelry",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Burnt Armor": {
+            "name": "Burnt Armor",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Canopic Jar": {
+            "name": "Canopic Jar",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Charm of the Black Rose": {
+            "name": "Charm of the Black Rose",
+            "description": "<p>You can expend this charm to gain one of the following effects:</p><ul><li><p>You have Advantage on ability checks made to influence Lord Soth’s attitude for 24 hours.</p></li><li><p>You cast <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDissonantW]{Dissonant Whispers}</em> (level 5 version, spell save DC 17).</p></li></ul><p>The Charm vanishes once you use either effect.</p>",
+            "activities": {
+                "Advantage Ability Checks": {
+                    "name": "Advantage Ability Checks"
+                }
+            },
+            "effects": {
+                "Influence over Lord Soth": {
+                    "name": "Influence over Lord Soth"
+                }
+            }
+        },
+        "Coin from Darkon": {
+            "name": "Coin from Darkon",
+            "description": "<p>A coin featuring the face of Azalin Rex shines with a dull, aged glow.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Death Mask": {
+            "name": "Death Mask",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Displacer beast skin": {
+            "name": "Displacer beast skin",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Dram of Sweet-Smelling Poison": {
+            "name": "Dram of Sweet-Smelling Poison",
+            "description": "<p>A dram of sweet-smelling poison rests in a small glass vial.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Dried Crown of White Camellias": {
+            "name": "Dried Crown of White Camellias",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Ebonbane": {
+            "name": "Ebonbane",
+            "description": "<p><em>Weapon (Longsword)</em></p><p>[[/attack extended]]. [[/damage average extended]]  or [[/damage twoHanded average]] damage if used with two hands.</p><p>The Darklord of the Domain of Dread known as the Shadowlands is Ebonbane, a sapient sword. Ebonbane uses its monster stat block while in Shadowborn Manor.</p><p><em><strong>Bound to the Shadowlands</strong></em>. When you enter a space outside of the Shadowlands, your Attunement immediately ends and Ebonbane teleports to somewhere in Shadowborn Manor.</p><p><em><strong>Insatiable Rage</strong></em>. The sword demands destruction. If the sword hasn’t slain a Celestial or a Humanoid for 3 days, you make a [[/save format=long activity=jQFm90O9PZuVJhxI]] at the next dawn. On a successful save, you take 8d8 Force damage. On a failed save, you are dominated by the sword, as if by the <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDominateMo]{Dominate Monster}</em> spell, and the sword demands the blood of a Celestial or a Humanoid. The spell effect ends when the sword’s demand is met.</p><p><em><strong>Magic Weapon</strong></em>. You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a Celestial or a Humanoid with it, that attack also deals 3d6 Necrotic damage.</p><p>While you hold this weapon, you have Advantage on saving throws against spells and other magical effects.</p><p><em><strong>Sentience</strong></em>. Ebonbane is a sentient Chaotic Evil weapon with an Intelligence of 17, a Wisdom of 14, and a Charisma of 19. It has hearing and Truesight out to 120 feet. The weapon speaks Common and can communicate with its wielder telepathically. While you are attuned to it, Ebonbane also understands every language you know.</p><p><em><strong>Personality</strong></em>. Ebonbane was created to kill the paladin Kateri Shadowborn, and it still possesses a burning hatred for goodly knights. Ebonbane revels in seeing good defeated and hope vanquished. The sword bonds with any wielder that assists in its goals but always views it wielder as a lackey.</p><p><em><strong>Destroying Ebonbane</strong></em>. The only way to destroy Ebonbane is to forge a weapon from the Four Keys and reduce Ebonbane to 0 Hit Points with it (see the @UUID[Compendium.dnd-ravenloft-horrors-within.actors.Actor.rhwEbonbane00000]{Ebonbane} stat block).</p>",
+            "activities": {
+                "save": {
+                    "condition": "At dawn",
+                    "activationCondition": "At dawn",
+                    "damageOnSave": "none"
+                }
+            }
+        },
+        "Eye of Hazlik Amulet": {
+            "name": "Eye of Hazlik Amulet",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Faded Love Letter": {
+            "name": "Faded Love Letter",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Family Portrait": {
+            "name": "Family Portrait",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Feathered Mask": {
+            "name": "Feathered Mask",
+            "description": "<p>A feathered mask hides the wearer behind a fan of dark feathers.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Flame-Singed Love Letter": {
+            "name": "Flame-Singed Love Letter",
+            "description": "<p>A love letter, singed by flames, carries a faint scent of smoke.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Glass Shoe": {
+            "name": "Glass Shoe",
+            "description": "<p>A glass shoe sparkles with delicate and fragile beauty.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Glowing Minerals": {
+            "name": "Glowing Minerals",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Gold Shoe": {
+            "name": "Gold Shoe",
+            "description": "<p>A gold shoe shines with a polished, radiant brightness.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Great Cthulhu Effigy": {
+            "name": "Great Cthulhu Effigy",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Gremishka Foot": {
+            "name": "Gremishka Foot",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Handbill": {
+            "name": "Handbill",
+            "description": "<p>A paper handbill features bold print advertising exceptional performances.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Harkon's Bite": {
+            "name": "Harkon's Bite",
+            "description": "<p class=\"meta\"><em>Wondrous Item (Requires Attunement by a Humanoid)</em></p><p>A dire wolf’s tooth dangles from this simple cord necklace. You gain a +1 bonus to ability checks and saving throws while you wear this necklace.</p><p><span class=\"inline-entry\"><em><strong>Curse</strong></em>.</span> This necklace is cursed. Attuning to the necklace curses you; this curse can’t be removed until Harkon Lukas dies. As long as you remain cursed, you become a <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmWerewolf000000]{Werewolf}</strong> serving Harkon Lukas under the DM’s control during the night of a full moon.</p>",
+            "effects": {
+                "Harkon's Bite": {
+                    "name": "Harkon's Bite"
+                }
+            }
+        },
+        "Jeweled Mask": {
+            "name": "Jeweled Mask",
+            "description": "<p>A jeweled mask sparkles with a cold, watchful elegance.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Lapis Lazuli Scarab": {
+            "name": "Lapis Lazuli Scarab",
+            "description": "<p>A lapis lazuli scarab featuring a vibrant, deep blue color.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Letter from Leka": {
+            "name": "Letter from Leka",
+            "description": "<p>A letter from the capital, Leka, written in rough handwriting.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Mark of Beasts": {
+            "name": "Mark of Beasts",
+            "description": "<p>On granting this Blessing, the Darklord chooses a &amp;Reference[Beast]{Beast} associated with themself. While you are in the same domain as the Darklord, Beasts of that kind are Friendly toward you. Additionally, you can use this Blessing to cast <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpeakwithA]{Speak with Animals}</em> to communicate with this kind of Beast only. Once you cast this spell in this way, you can’t cast it again until you finish a Long Rest.</p>",
+            "requirements": "Associated Beast: (name)",
+            "activities": {
+                "Speak with Associated Beast": {
+                    "name": "Speak with Associated Beast"
+                }
+            }
+        },
+        "Mark of Obsession": {
+            "name": "Mark of Obsession",
+            "description": "<p>Immediately after you take damage from a creature you can see within 10 feet of yourself, you can take a Reaction to force the creature to make a [[/save format=long]]. On a failed save, the creature has the &amp;Reference[Frightened apply=false] condition until the end of your next turn. Once you use this Blessing, you can’t use it again until you finish a Long Rest.</p><p>While you have this Blessing, the Darklord who gave it to you can contact you once every 24 hours. This might take the form of a magical message, such as a <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSending000]{Sending}</em> spell, or a short letter delivered by mysterious means.</p>",
+            "activities": {
+                "save": {
+                    "condition": "after taking damage from a visible target within range",
+                    "activationCondition": "after taking damage from a visible target within range",
+                    "damageOnSave": "połowa"
+                }
+            },
+            "effects": {
+                "Frightened": {
+                    "name": "Przerażony",
+                    "description": "<p>The creature has the &amp;Reference[Frightened apply=false] condition until the end of your next turn. Once you use this Blessing, you can’t use it again until you finish a Long Rest.</p>"
+                }
+            }
+        },
+        "Mark of Sacrifice": {
+            "name": "Mark of Sacrifice",
+            "description": "<p>You can use this Blessing to cast <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbEvilAndGoodPr]{Protection from Evil and Good}</em>. Once you cast this spell in this way, you can’t cast it again until you finish a Long Rest.</p><p>If this Blessing is removed, the Darklord who gave it to you knows your whereabouts, and you have Disadvantage on Wisdom saving throws for 24 hours.</p><section id=\"secret-NMxaH3DUfhufrAxP\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Mark of Sacrifice (Removed)</strong> active effect should be manually applied to the owner of this blessing such that it will remain when this blessing item is removed from its owner.</p></section>",
+            "effects": {
+                "Mark of Sacrifice (Removed)": {
+                    "name": "Mark of Sacrifice (Removed)",
+                    "description": "<p>If this Blessing is removed, the Darklord who gave it to you knows your whereabouts, and you have Disadvantage on Wisdom saving throws for 24 hours.</p>"
+                }
+            }
+        },
+        "Mark of the Dread Lord": {
+            "name": "Mark of the Dread Lord",
+            "description": "<p>While in the same domain as the Darklord who gave you this Blessing, you can cast <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFear000000]{Fear}</em>. Once you cast this spell in this way, you can’t cast it again until you finish a Long Rest.</p><p>So long as you possess this Blessing, your face is veiled by shadows.</p>",
+            "effects": {
+                "Veiled": {
+                    "name": "Zasłonięty",
+                    "description": "<p>So long as you possess this Blessing, your face is veiled by shadows.</p>"
+                }
+            }
+        },
+        "Mark of the Raven Talisman": {
+            "name": "Mark of the Raven Talisman",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Poisonous Flower Blossom": {
+            "name": "Poisonous Flower Blossom",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Polished Skull": {
+            "name": "Polished Skull",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Preserved Humanoid Limb": {
+            "name": "Preserved Humanoid Limb",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Red Robe Scrap": {
+            "name": "Red Robe Scrap",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Religious Relic": {
+            "name": "Religious Relic",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Rusted Tulwar": {
+            "name": "Rusted Tulwar",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Rusty Foot Trap": {
+            "name": "Rusty Foot Trap",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Sahuagin-Tooth Fishing Lure": {
+            "name": "Sahuagin-Tooth Fishing Lure",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Scrap of Black Fabric": {
+            "name": "Scrap of Black Fabric",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Scroll of Hieroglyphics": {
+            "name": "Scroll of Hieroglyphics",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Spell Scroll: Protection from Evil and Good": {
+            "name": "Spell Scroll: Protection from Evil and Good",
+            "description": "<p><em>1st Level &amp;Reference[Spell Scroll], Requires Concentration</em></p><p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbEvilAndGoodPr inline]</p>"
+        },
+        "Starmetal Amulet": {
+            "name": "Starmetal Amulet",
+            "description": "<p>An amulet crafted from starmetal and engraved with unusual runes.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Starmetal Rod": {
+            "name": "Starmetal Rod",
+            "description": "<p>A rod crafted from starmetal and engraved with unusual runes.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Straw Doll": {
+            "name": "Straw Doll",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Symbol of the Circle": {
+            "name": "Symbol of the Circle",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Tainted Spring Water": {
+            "name": "Tainted Spring Water",
+            "description": "<p>A vial of tainted spring water carries a faint, sour odor.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Tarnished Signet Ring": {
+            "name": "Tarnished Signet Ring",
+            "description": "<p>A tarnished signet ring displays a faded family crest.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Three Thorns": {
+            "name": "Three Thorns",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Unbreakable Heart": {
+            "name": "Unbreakable Heart",
+            "description": "<p>This heart-shaped, clockwork device installs itself, fastening into place if positioned where a creature’s heart used to be. </p><p>A creature that contains the device is affected as if by the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRaiseDead0]{Raise Dead}</em> spell. After this, the creature is immune to disease, ceases to age, and doesn’t die of old age. </p><p>The Unbreakable Heart glows, shedding Bright Light in a 10-foot radius and Dim Light for an additional 10 feet. While inside a creature, the device causes the creature to shed Dim Light in a 10-foot radius.</p>",
+            "effects": {
+                "Resurrection Sickness (Day 1)": {
+                    "name": "Choroba Zmartwychwstania (Dzień 1)",
+                    "description": "<p>Powrót z martwych to trudne doświadczenie. Cel otrzymuje karę −4 do testów na k20. Za każdym razem, gdy cel zakończy długi odpoczynek, kara zmniejsza się o 1, aż osiągnie 0.</p>"
+                },
+                "Resurrection Sickness (Day 2)": {
+                    "name": "Choroba Zmartwychwstania (Dzień 2)",
+                    "description": "<p>Powrót z martwych to trudne doświadczenie. Cel otrzymuje karę −4 do testów na k20. Za każdym razem, gdy cel zakończy długi odpoczynek, kara zmniejsza się o 1, aż osiągnie 0.</p>"
+                },
+                "Resurrection Sickness (Day 3)": {
+                    "name": "Choroba Zmartwychwstania (Dzień 3)",
+                    "description": "<p>Powrót z martwych to trudne doświadczenie. Cel otrzymuje karę −4 do testów na k20. Za każdym razem, gdy cel zakończy długi odpoczynek, kara zmniejsza się o 1, aż osiągnie 0.</p>"
+                },
+                "Resurrection Sickness (Day 4)": {
+                    "name": "Choroba Zmartwychwstania (Dzień 4)",
+                    "description": "<p>Powrót z martwych to trudne doświadczenie. Cel otrzymuje karę −4 do testów na k20. Za każdym razem, gdy cel zakończy długi odpoczynek, kara zmniejsza się o 1, aż osiągnie 0.</p>"
+                }
+            }
+        },
+        "von Zarovich Crest": {
+            "name": "von Zarovich Crest",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Wolf’s Tooth Necklace": {
+            "name": "Wolf’s Tooth Necklace",
+            "description": "<p>A necklace made of wolf's teeth hangs from a rugged leather cord.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Woodcut of Hunting Wolves": {
+            "name": "Woodcut of Hunting Wolves",
+            "description": "<p>A rustic woodcut illustrates hunting wolves in a rough, weathered style.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Worn Fine Clothing": {
+            "name": "Worn Fine Clothing",
+            "description": "<p>An article of well-worn fine clothing carries remnants of its faded elegance.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Wyvern-and-Lotus Shield": {
+            "name": "Wyvern-and-Lotus Shield",
+            "description": "<p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        },
+        "Zombie Flesh": {
+            "name": "Zombie Flesh",
+            "description": "<p>A strip of zombie flesh smells strongly of decay.</p><hr /><p>Mist talismans are nonmagical objects that resonate with certain domains. They might be any object, and some might be aligned with multiple domains.</p><p>By holding or wearing a Mist talisman and focusing on the domain it’s associated with, a creature in the Mists can reach the intended domain after [[/r 1d6]] hours of travel. Creatures following within 30 feet of a Mist talisman’s bearer reach the same destination.</p><p>Mist talismans don’t allow their bearers to escape domains with closed borders. Similarly, if the borders of the destination domain are closed, roll on the Wandering the Mists table to determine what happens.</p>"
+        }
+    },
+    "folders": {
+        "Adventures": "Adventures",
+        "Charms": "Znaki",
+        "Darklord Gifts": "Darklord Gifts",
+        "Isles of Agony": "Isles of Agony",
+        "Items": "Przedmioty",
+        "Mist Talismans": "Mist Talismans",
+        "Sentient": "Sentient",
+        "The Ghost Hunter’s Haunting": "The Ghost Hunter’s Haunting",
+        "Wondrous Items": "Wondrous Items"
+    }
+}
