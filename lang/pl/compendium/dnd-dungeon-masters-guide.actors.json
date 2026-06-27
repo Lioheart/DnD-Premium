@@ -15,7 +15,112 @@
         },
         "items": {
             "path": "items",
-            "converter": "items"
+            "converter": "document",
+            "documentType": "Item",
+            "cardinality": "many",
+            "mapping": {
+                "description": "system.description.value",
+                "requirements": "system.requirements",
+                "materials": "system.materials.value",
+                "chat": "system.description.chat",
+                "activation": "system.activation.condition",
+                "activationValue": "system.activation.value",
+                "activities": {
+                    "path": "system.activities",
+                    "converter": "structured",
+                    "cardinality": "many",
+                    "container": "keyed",
+                    "keys": [
+                        "_id",
+                        "name",
+                        "type"
+                    ],
+                    "mapping": {
+                        "name": "name",
+                        "condition": "activation.condition",
+                        "activationCondition": "activation.condition",
+                        "activationValue": "activation.value",
+                        "chatFlavor": "description.chatFlavor",
+                        "duration": "duration.special",
+                        "roll": "roll.name",
+                        "damageOnSave": "damage.onSave",
+                        "range": {
+                            "path": "range",
+                            "converter": "imperialToMetric"
+                        },
+                        "target": {
+                            "path": "target",
+                            "converter": "imperialToMetric"
+                        },
+                        "profiles": {
+                            "path": "profiles",
+                            "converter": "nameCollection"
+                        }
+                    }
+                },
+                "effects": {
+                    "path": "effects",
+                    "converter": "effects"
+                },
+                "advancement": {
+                    "path": "system.advancement",
+                    "converter": "structured",
+                    "cardinality": "many",
+                    "container": "keyed",
+                    "keys": [
+                        "_id",
+                        "title"
+                    ],
+                    "mapping": {
+                        "title": "title",
+                        "hint": "hint",
+                        "_variants": [
+                            {
+                                "_when": {
+                                    "path": "type",
+                                    "equals": "ScaleValue"
+                                },
+                                "distance": {
+                                    "path": "configuration.distance",
+                                    "converter": "imperialToMetric"
+                                },
+                                "scale": {
+                                    "path": "configuration.scale",
+                                    "converter": "imperialToMetric"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "movement": {
+                    "path": "system.movement",
+                    "converter": "imperialToMetric"
+                },
+                "weight": {
+                    "path": "system.weight",
+                    "converter": "imperialToMetric"
+                },
+                "range": {
+                    "path": "system.range",
+                    "converter": "imperialToMetric"
+                },
+                "capacityWeight": {
+                    "path": "system.capacity.weight",
+                    "converter": "imperialToMetric"
+                },
+                "senses": {
+                    "path": "system.senses",
+                    "converter": "imperialToMetric"
+                },
+                "target": {
+                    "path": "system.target",
+                    "converter": "imperialToMetric"
+                },
+                "volume": {
+                    "path": "system.capacity.volume",
+                    "converter": "imperialToMetric"
+                }
+            }
         },
         "senses": {
             "path": "system.attributes.senses",
@@ -302,6 +407,9 @@
                     "name": "Opis/Efekty",
                     "description": "<p><em>Śmiertelne Zagrożenie (poziomy 5–10) lub Dokuczliwe Zagrożenie (poziomy 11–16)</em></p> <p>Brunatna pleśń przypomina futrzany, jasnobrązowy dywan. Ten grzyb żywi się ciepłem, pochłaniając je ze wszystkiego w swoim otoczeniu. Pojedyncza kolonia brunatnej pleśni zajmuje pole o boku 10 stóp, a temperatura w promieniu 30 stóp od niej jest zawsze lodowata.</p> <p>Gdy istota po raz pierwszy w turze wejdzie w przestrzeń znajdującą się w odległości 5 stóp od pleśni lub zacznie tam swoją turę, wykonuje rzut obronny na Kondycję o ST 12, otrzymując 22 (4k10) obrażeń od Zimna przy nieudanym rzucie albo połowę tej wartości przy udanym.</p> <p>Brunatna pleśń ma Odporność na obrażenia od Ognia, a każde źródło ognia zbliżone do niej na 5 stóp powoduje jej natychmiastowe rozprzestrzenienie się po powierzchni w kierunku ognia, tworząc nową kolonię zajmującą pole o boku 10 stóp. Kolonia brunatnej pleśni wystawiona na działanie efektu zadającego jakąkolwiek ilość obrażeń od Zimna zostaje natychmiast zniszczona.</p>",
                     "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        },
                         "10-Foot Square": {
                             "name": "Kwadrat o boku 10 stóp"
                         }
@@ -387,16 +495,20 @@
                     "chat": "<p>A trap is triggered.</p>",
                     "activities": {
                         "Trigger (1-4)": {
-                            "name": "Wyzwalacz (1-4)"
+                            "name": "Wyzwalacz (1-4)",
+                            "damageOnSave": "połowa"
                         },
                         "Trigger (5-10)": {
-                            "name": "Wyzwalacz (5-10)"
+                            "name": "Wyzwalacz (5-10)",
+                            "damageOnSave": "połowa"
                         },
                         "Trigger (11-16)": {
-                            "name": "Wyzwalacz (11-16)"
+                            "name": "Wyzwalacz (11-16)",
+                            "damageOnSave": "połowa"
                         },
                         "Trigger (17-20)": {
-                            "name": "Wyzwalacz (17-20)"
+                            "name": "Wyzwalacz (17-20)",
+                            "damageOnSave": "połowa"
                         }
                     }
                 }
@@ -511,13 +623,14 @@
                     "description": "<p><em>Melee Attack Roll: </em>+8, reach 5 ft. <em>Hit:</em> 15 (2d8 + 6) Piercing damage. If the elephant moved at least 20 feet straight toward the target immediately before the hit, the target also has the &amp;Reference[prone] condition.</p>"
                 },
                 "Trample": {
-                    "name": "Trample",
+                    "name": "Tratowanie",
                     "description": "<p> <em>Dexterity Saving Throw:</em> DC 16, one creature within 5 feet that has the Prone condition. <em>Failure:</em> 17 (2d10 + 6) Bludgeoning damage. <em>Success:</em> Half damage.</p>",
                     "requirements": "Target is Prone",
                     "activities": {
                         "save": {
                             "target": "has the Prone condition",
-                            "targetAffects": "has the Prone condition"
+                            "targetAffects": "has the Prone condition",
+                            "damageOnSave": "połowa"
                         }
                     }
                 }
@@ -535,16 +648,20 @@
                     "chat": "<p>A trap is triggered.</p>",
                     "activities": {
                         "Trigger (1-4)": {
-                            "name": "Wyzwalacz (1-4)"
+                            "name": "Wyzwalacz (1-4)",
+                            "damageOnSave": "połowa"
                         },
                         "Trigger (5-10)": {
-                            "name": "Wyzwalacz (5-10)"
+                            "name": "Wyzwalacz (5-10)",
+                            "damageOnSave": "połowa"
                         },
                         "Trigger (11-16)": {
-                            "name": "Wyzwalacz (11-16)"
+                            "name": "Wyzwalacz (11-16)",
+                            "damageOnSave": "połowa"
                         },
                         "Trigger (17-20)": {
-                            "name": "Wyzwalacz (17-20)"
+                            "name": "Wyzwalacz (17-20)",
+                            "damageOnSave": "połowa"
                         },
                         "Escape Check (1-4)": {
                             "name": "Test ucieczki (1-4)"
@@ -579,16 +696,20 @@
                     "chat": "<p>A trap is triggered.</p>",
                     "activities": {
                         "Trigger (1-4)": {
-                            "name": "Wyzwalacz (1-4)"
+                            "name": "Wyzwalacz (1-4)",
+                            "damageOnSave": "połowa"
                         },
                         "Trigger (5-10)": {
-                            "name": "Wyzwalacz (5-10)"
+                            "name": "Wyzwalacz (5-10)",
+                            "damageOnSave": "połowa"
                         },
                         "Trigger (11-16)": {
-                            "name": "Wyzwalacz (11-16)"
+                            "name": "Wyzwalacz (11-16)",
+                            "damageOnSave": "połowa"
                         },
                         "Trigger (17-20)": {
-                            "name": "Wyzwalacz (17-20)"
+                            "name": "Wyzwalacz (17-20)",
+                            "damageOnSave": "połowa"
                         }
                     }
                 }
@@ -599,7 +720,12 @@
             "items": {
                 "Description/Effects": {
                     "name": "Opis/Efekty",
-                    "description": "<p><em>Śmiertelne Zagrożenie (poziomy 5–10)</em></p> <p>Grzyb Kuli Ognia to Niewielki, nieożywiony grzyb, który może rosnąć wszędzie tam, gdzie występują obfite skupiska grzybów. Jego świecący, pomarańczowy kapelusz emituje Jasne światło w promieniu 15 stóp oraz Słabe światło w kolejnych 15 stopach.</p> <p>Grzyb Kuli Ognia ma AC 10, 6 PW oraz Odporność na obrażenia Psychiczne. Gdy jego Punkty Wytrzymałości spadną do 0, grzyb wybucha tak, jakby w jego centrum został rzucony czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireball00] (ST rzutu obronnego 15).</p> <p><em><strong>Na wyższych poziomach.</strong></em> Eksplozja Grzyba Kuli Ognia powoduje również wybuch wszystkich pozostałych grzybów tego rodzaju znajdujących się w obszarze działania. Możesz dostosować to zagrożenie do wyższych poziomów, dodając jeden dodatkowy grzyb na poziomach 11–16 lub trzy dodatkowe grzyby na poziomach 17–20.</p>"
+                    "description": "<p><em>Śmiertelne Zagrożenie (poziomy 5–10)</em></p> <p>Grzyb Kuli Ognia to Niewielki, nieożywiony grzyb, który może rosnąć wszędzie tam, gdzie występują obfite skupiska grzybów. Jego świecący, pomarańczowy kapelusz emituje Jasne światło w promieniu 15 stóp oraz Słabe światło w kolejnych 15 stopach.</p> <p>Grzyb Kuli Ognia ma AC 10, 6 PW oraz Odporność na obrażenia Psychiczne. Gdy jego Punkty Wytrzymałości spadną do 0, grzyb wybucha tak, jakby w jego centrum został rzucony czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireball00] (ST rzutu obronnego 15).</p> <p><em><strong>Na wyższych poziomach.</strong></em> Eksplozja Grzyba Kuli Ognia powoduje również wybuch wszystkich pozostałych grzybów tego rodzaju znajdujących się w obszarze działania. Możesz dostosować to zagrożenie do wyższych poziomów, dodając jeden dodatkowy grzyb na poziomach 11–16 lub trzy dodatkowe grzyby na poziomach 17–20.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 }
             }
         },
@@ -652,7 +778,7 @@
                     "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit: </em>6 (1d6 + 3) Bludgeoning damage. If the goat moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 5 (2d4) Bludgeoning damage and, if it is Huge or smaller, has the &amp;Reference[prone] condition.</p>",
                     "activities": {
                         "Charging Attack": {
-                            "name": "Charging Attack"
+                            "name": "Szarżujący atak"
                         }
                     }
                 }
@@ -676,7 +802,12 @@
                 },
                 "Web": {
                     "name": "Pajęczyna",
-                    "description": "<p><em>Dexterity Saving Throw:</em> DC 13, one creature the spider can see within 60 feet. <em>Failure:</em> The target has the &amp;Reference[restrained] condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Poison and Psychic damage).</p>"
+                    "description": "<p><em>Dexterity Saving Throw:</em> DC 13, one creature the spider can see within 60 feet. <em>Failure:</em> The target has the &amp;Reference[restrained] condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Poison and Psychic damage).</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 }
             }
         },
@@ -699,7 +830,7 @@
                     "description": "<p><em>Melee Attack Roll: </em>+2, reach 5 ft. <em>Hit: </em>1 Bludgeoning damage, or the goat deals 2 (1d4) Bludgeoning damage if it moved at least 20 feet straight toward the target immediately before the hit.</p>",
                     "activities": {
                         "Charging Attack": {
-                            "name": "Charging Attack"
+                            "name": "Szarżujący atak"
                         }
                     }
                 }
@@ -733,7 +864,8 @@
                     "activities": {
                         "save": {
                             "condition": "Hostile creature starts its turn within 30 feet",
-                            "activationCondition": "Hostile creature starts its turn within 30 feet"
+                            "activationCondition": "Hostile creature starts its turn within 30 feet",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -763,7 +895,8 @@
                     "description": "<p><em>Uciążliwe Zagrożenie (Poziomy 1–4)</em></p><p>Kwaśny zielony szlam pożera ciało, materię organiczną i metal przy kontakcie. Jasnozielony, mokry i lepki, przylega do ścian, podłóg i sufitów w postaci plam.</p><p>Jedna plama zielonego szlamu pokrywa kwadrat o boku 5 stóp. Zielony szlam ma Ślepowidzenie o zasięgu 30 stóp i spada ze ścian oraz sufitów, gdy wykryje ruch pod sobą. Poza tym nie może się poruszać. Istota świadoma obecności szlamu może uniknąć trafienia, jeśli zda rzut obronny na Zręczność o ST 10.</p><p>Istota, która wejdzie w kontakt z zielonym szlamem, otrzymuje 5 (1k10) obrażeń od kwasu. Istota otrzymuje te obrażenia ponownie na początku każdej swojej tury, dopóty szlam nie zostanie zeskrobany (wymaga Akcji) lub zniszczony. W przypadku drewna lub metalu zielony szlam zadaje 11 (2k10) obrażeń od kwasu każdą rundę, a każdy niemagiczny drewniany lub metalowy przedmiot użyty do zeskrobania zielonego szlamu zostaje zniszczony.</p><p>Bezpośrednie światło słoneczne lub dowolna ilość obrażeń od zimna, ognia lub światłości niszczy plamę zielonego szlamu.</p>",
                     "activities": {
                         "Avoid": {
-                            "name": "Avoid"
+                            "name": "Avoid",
+                            "damageOnSave": "połowa"
                         },
                         "Contact Damage": {
                             "name": "Contact Damage"
@@ -827,18 +960,18 @@
                     "description": "<p> The imp shape-shifts to resemble a rat (Speed 20 ft.), a raven (20 ft., Fly 60 ft.), or a spider (20 ft., Climb 20 ft.), or it returns to its true form. Its statistics are the same in each form, except for its Speed. Any equipment it’s wearing or carrying isn’t transformed.</p>",
                     "activities": {
                         "Change Form": {
-                            "name": "Change Form"
+                            "name": "Zmiana formy"
                         }
                     },
                     "effects": {
                         "Rat Form": {
-                            "name": "Rat Form"
+                            "name": "Forma szczura"
                         },
                         "Raven Form": {
-                            "name": "Raven Form"
+                            "name": "Forma kruka"
                         },
                         "Spider Form": {
-                            "name": "Spider Form"
+                            "name": "Forma pająka"
                         }
                     }
                 },
@@ -891,7 +1024,7 @@
                     "requirements": "Ally within 5 feet of target"
                 },
                 "Running Leap": {
-                    "name": "Running Leap",
+                    "name": "Skok z rozbiegu",
                     "description": "<p>Przy 10-stopowym rozbiegu lew może wykonać Skok w dal na odległość do 25 stóp.</p>"
                 },
                 "Multiattack": {
@@ -910,6 +1043,11 @@
                 "Roar": {
                     "name": "Ryk",
                     "description": "<p><em>Wisdom Saving Throw:</em> DC 11, one creature within 15 feet. <em>Failure:</em> The target has the &amp;Reference[frightened apply=false] condition until the start of the lion’s next turn.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Frightened": {
                             "name": "Przerażony",
@@ -968,7 +1106,7 @@
                     }
                 },
                 "Prowl": {
-                    "name": "Prowl",
+                    "name": "Przemknięcie",
                     "description": "<p>The panther moves up to half its Speed without provoking Opportunity Attacks. At the end of this movement, the panther can take the &amp;Reference[hide] action.</p>",
                     "activities": {
                         "Move and Hide": {
@@ -987,16 +1125,20 @@
                     "chat": "<p>A trap is triggered.</p>",
                     "activities": {
                         "Trigger (1-4)": {
-                            "name": "Wyzwalacz (1-4)"
+                            "name": "Wyzwalacz (1-4)",
+                            "damageOnSave": "połowa"
                         },
                         "Trigger (5-10)": {
-                            "name": "Wyzwalacz (5-10)"
+                            "name": "Wyzwalacz (5-10)",
+                            "damageOnSave": "połowa"
                         },
                         "Trigger (11-16)": {
-                            "name": "Wyzwalacz (11-16)"
+                            "name": "Wyzwalacz (11-16)",
+                            "damageOnSave": "połowa"
                         },
                         "Trigger (17-20)": {
-                            "name": "Wyzwalacz (17-20)"
+                            "name": "Wyzwalacz (17-20)",
+                            "damageOnSave": "połowa"
                         }
                     }
                 }
@@ -1011,16 +1153,20 @@
                     "chat": "<p>A trap is triggered.</p>",
                     "activities": {
                         "Trigger (1-4)": {
-                            "name": "Wyzwalacz (1-4)"
+                            "name": "Wyzwalacz (1-4)",
+                            "damageOnSave": "połowa"
                         },
                         "Trigger (5-10)": {
-                            "name": "Wyzwalacz (5-10)"
+                            "name": "Wyzwalacz (5-10)",
+                            "damageOnSave": "połowa"
                         },
                         "Trigger (11-16)": {
-                            "name": "Wyzwalacz (11-16)"
+                            "name": "Wyzwalacz (11-16)",
+                            "damageOnSave": "połowa"
                         },
                         "Trigger (17-20)": {
-                            "name": "Wyzwalacz (17-20)"
+                            "name": "Wyzwalacz (17-20)",
+                            "damageOnSave": "połowa"
                         }
                     },
                     "effects": {
@@ -1042,16 +1188,20 @@
                             "name": "Umieszczenie gazu"
                         },
                         "Level 1-4 Save": {
-                            "name": "Poziom 1-4 rzut obronny"
+                            "name": "Poziom 1-4 rzut obronny",
+                            "damageOnSave": "połowa"
                         },
                         "Level 5-10 Save": {
-                            "name": "Poziom 5-10 rzut obronny"
+                            "name": "Poziom 5-10 rzut obronny",
+                            "damageOnSave": "połowa"
                         },
                         "Level 11-16 Save": {
-                            "name": "Poziom 11-16 rzut obronny"
+                            "name": "Poziom 11-16 rzut obronny",
+                            "damageOnSave": "połowa"
                         },
                         "Level 17-20 Save": {
-                            "name": "Poziom 17-20 rzut obronny"
+                            "name": "Poziom 17-20 rzut obronny",
+                            "damageOnSave": "połowa"
                         }
                     }
                 }
@@ -1082,7 +1232,7 @@
             "alignment": "Bez charakteru",
             "items": {
                 "Agile": {
-                    "name": "Agile",
+                    "name": "Zwinny",
                     "description": "<p> The rat doesn’t provoke Opportunity Attacks when it moves out of an enemy’s reach.</p>"
                 },
                 "Bite": {
@@ -1114,6 +1264,9 @@
                     "activities": {
                         "Place Razorvine": {
                             "name": "Umieszcznie Brzytworośli"
+                        },
+                        "save": {
+                            "damageOnSave": "połowa"
                         }
                     }
                 }
@@ -1135,6 +1288,11 @@
                 "Description/Effects": {
                     "name": "Opis/Efekty",
                     "description": "<p><em>Uciążliwe Zagrożenie (Poziomy 11–16)</em></p><section class=\"secret\" id=\"secret-Q5ErQoKW5KLRi6hd\"><p>Rzeka Styks przepływa przez Sfery Niższe. Skosztowanie lub dotknięcie jej wód może zdruzgotać intelekt i osobowość istoty, a także odebrać jej wspomnienia. Niektóre Czarty są odporne na działanie rzeki.</p><p>O ile nie jest odporna na efekty rzeki, istota, która wypije wodę ze Styksu, wejdzie do rzeki lub rozpocznie w niej swoją turę, wykonuje rzut obronny na Inteligencję o ST 20. Przy nieudanym rzucie istota otrzymuje 19 (3k12) obrażeń psychicznych i przez 30 dni nie może rzucać czarów ani wykonywać Akcji Magii. Dotknięta efektem istota może pić wodę ze Styksu i pływać w niej bez ponoszenia dodatkowych konsekwencji.</p><p>Efekt ten może zostać zakończony tylko przez czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes], @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHeal000000] lub @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWish000000]. Jeśli efekt nie zostanie zakończony przed upływem 30 dni, staje się trwały, a istota traci wszystkie swoje wspomnienia. W tym momencie nic oprócz czaru <em>życzenie</em> lub boskiej interwencji nie może odwrócić tego skutku.</p><p>Woda pobrana z Rzeki Styks traci swoją moc po 24 godzinach, stając się nieszkodliwą, lecz paskudnie smakującą cieczą. Arkanalothy, nocne wiedźmy i inne mroczne istoty mogą znać rytuały pozwalające przedłużyć jej działanie, według twojego uznania.</p></section>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "River Styx Effects": {
                             "name": "Efekty rzeki Styks",
@@ -1152,19 +1310,23 @@
                     "description": "<p><em>Śmiertelne Zagrożenie (Poziomy 1–4)</em></p><p>Gdy następuje osuwisko skalne, każda istota znajdująca się na jego drodze wykonuje rzut obronny na Zręczność o ST 15. Przy nieudanym rzucie istota otrzymuje 11 (2k10) obrażeń obuchowych, uzyskuje stan &amp;Reference[Prone apply=false] i przemieszcza się wraz z osuwiskiem. Przy udanym rzucie istota otrzymuje tylko połowę obrażeń.</p><p>Gdy osuwisko ustaje, jego obszar staje się &amp;Reference[Difficult Terrain], a wszystkie Powalone istoty znajdujące się w tym obszarze zostają pogrzebane pod skałami i gruzem. Istota pogrzebana w ten sposób ma stan &amp;Reference[Restrained] oraz &amp;Reference[Total Cover]. Akcją istota może spróbować wyczołgać się spod rumowiska. Jeśli uda jej się test Siły (Atletyka) o ST 15, przestaje być Unieruchomiona; zamiast tego ma stan Powalony i znajduje się na wierzchu rumowiska. Jeśli test się nie powiedzie, istota pozostaje pogrzebana i zyskuje 1 poziom &amp;Reference[Exhaustion].</p><p>Istota, która nie ma stanów &amp;Reference[Incapacitated apply=false] ani Unieruchomiony, może poświęcić 1 minutę, aby oswobodzić inną istotę pogrzebaną przez osuwisko.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować to zagrożenie dla wyższych poziomów, zwiększając obrażenia obuchowe następująco: 22 (4k10) na poziomach 5–10, 55 (10k10) na poziomach 11–16 oraz 99 (18k10) na poziomach 17–20.</p>",
                     "activities": {
                         "Rockslide Level 1-4": {
-                            "name": "Osuwisko skalne Poziom 1-4"
+                            "name": "Osuwisko skalne Poziom 1-4",
+                            "damageOnSave": "połowa"
                         },
                         "Escape Check": {
                             "name": "Test ucieczki"
                         },
                         "Rockslide Level 5-10": {
-                            "name": "Osuwisko skalne Poziom 5-10"
+                            "name": "Osuwisko skalne Poziom 5-10",
+                            "damageOnSave": "połowa"
                         },
                         "Rockslide Level 11-16": {
-                            "name": "Osuwisko skalne Poziom 11-16"
+                            "name": "Osuwisko skalne Poziom 11-16",
+                            "damageOnSave": "połowa"
                         },
                         "Rockslide Level 17-20": {
-                            "name": "Osuwisko skalne Poziom 17-20"
+                            "name": "Osuwisko skalne Poziom 17-20",
+                            "damageOnSave": "połowa"
                         }
                     },
                     "effects": {
@@ -1188,6 +1350,9 @@
                     "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Śmiertelna Pułapka (Poziomy 11–16) lub Uciążliwa Pułapka (Poziomy 17–20)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Wyzwalacz:</strong> Istota wchodzi na płytkę naciskową</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Czas Trwania:</strong> Dopóki głaz się toczy</p><p>Gdy istota wejdzie na ukrytą płytkę naciskową, z tajnego schowka uwalnia się kula litego kamienia o promieniu 5 stóp i zaczyna się toczyć. Głaz i wszystkie pobliskie istoty wykonują rzut na Inicjatywę; głaz otrzymuje premię +8 do swojego rzutu ([[/r 1d20 + 8]]).</p><p>W swojej turze głaz przemieszcza się o 60 stóp w jednym kierunku, zmieniając kurs, jeśli napotka przeszkodę. Głaz może poruszać się przez obszary zajmowane przez istoty, a istoty mogą poruszać się przez obszar głazu, traktując go jako &amp;Reference[Difficult Terrain]. Zawsze gdy głaz po raz pierwszy w turze wejdzie w przestrzeń istoty lub istota wejdzie w przestrzeń głazu, gdy ten się toczy, istota musi wykonać rzut obronny na Zręczność o ST 15, inaczej otrzymuje 55 (10k10) obrażeń obuchowych i uzyskuje stan &amp;Reference[Prone apply=false].</p><p>Głaz zatrzymuje się, gdy uderzy w ścianę lub podobną przeszkodę. Nie może skręcać pod kątem prostym, ale pomysłowi konstruktorzy lochów czasem projektują zakrzywione przejścia, które pozwalają głazowi kontynuować ruch.</p><p><em><strong>Wykrycie i Unieszkodliwienie.</strong></em> Akcją Nauki istota może zbadać fragment podłogi tworzący płytkę naciskową i wykonać test [[/check inv 15]], ustalając funkcję płytki przy udanym teście. Podłożenie Metalowego Kołka lub podobnego przedmiotu pod płytkę naciskową uniemożliwia wyzwolenie pułapki.</p><p><em><strong>Zniszczenie Głazu.</strong></em> Głaz jest Dużym obiektem o KP 17, PW 100, Progu Obrażeń równym 10 oraz Niewrażliwości na obrażenia od trucizn i psychiczne.</p><p><em><strong>Spowolnienie Głazu.</strong></em> Akcją istota może spróbować spowolnić głaz, wykonując test Siły (Atletyka) o ST 20. Jeśli test zakończy się sukcesem, dystans, jaki głaz pokonuje w swojej turze, zmniejsza się o 15 stóp. Jeśli dystans ten spadnie do 0, głaz przestaje się poruszać i nie stanowi już zagrożenia.</p></div>",
                     "chat": "<p>A trap is triggered.</p>",
                     "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        },
                         "Slow": {
                             "name": "Spowolnienie"
                         }
@@ -1257,7 +1422,7 @@
                     }
                 },
                 "Prowl": {
-                    "name": "Prowl",
+                    "name": "Przemknięcie",
                     "description": "<p>The tiger moves up to half its Speed without provoking Opportunity Attacks. At the end of this movement, the tiger can take the &amp;Reference[hide] action.</p>",
                     "activities": {
                         "Move and Hide": {
@@ -1275,16 +1440,20 @@
                     "description": "<p><em>Uciążliwe Zagrożenie (Poziomy 1–4)</em></p><p>Drapieżne pnącza są ożywiane przez magię. Często przylegają do drzwi, łuków, ścian i posągów. Dopóki drapieżne pnącze się nie poruszy, nic nie odróżnia go od zwykłego, nieożywionego pnącza.</p><p>Każde drapieżne pnącze ma KP 11; PW 16 oraz Niewrażliwość na obrażenia obuchowe, kłute i psychiczne. Gdy istota po raz pierwszy w turze wejdzie w obszar w odległości 5 stóp od pnącza lub rozpocznie tam swoją turę, pnącze próbuje owinąć się wokół tej istoty. Cel musi wykonać rzut obronny na Zręczność o ST 12 albo uzyskuje stan &amp;Reference[Grappled] (ST ucieczki 12). Dopóki istota jest pochwycona w ten sposób, na początku każdej swojej tury otrzymuje 5 (1k10) obrażeń nekrotycznych od wysysających życie kolców pnącza. Pnącze może pochwycić tylko jedną istotę naraz.</p><p>Akcją Wpływu postać znajdująca się pod działaniem czaru <em>rozmawianie z roślinami</em> lub podobnej magii może spróbować nakłonić pnącze, by wypuściło swoją ofiarę, robiąc to po udanym teście Charyzmy (Perswazja) o ST 10. Istota uwolniona w ten sposób nie zostanie ponownie zaatakowana przez to pnącze przez następne 24 godziny.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować to zagrożenie dla wyższych poziomów, zwiększając obrażenia nekrotyczne, ST rzutu obronnego oraz ST ucieczki, jak pokazano w poniższej tabeli.</p><table><thead><tr><th><p>Poziomy</p></th><th><p>Obrażenia Nekrotyczne</p></th><th><p>ST Rzutu / Ucieczki</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>11 (2k10)</p></td><td><p>14</p></td></tr><tr><td><p>11–16</p></td><td><p>22 (4k10)</p></td><td><p>16</p></td></tr><tr><td><p>17–20</p></td><td><p>55 (10k10)</p></td><td><p>18</p></td></tr></tbody></table>",
                     "activities": {
                         "Save Level 1-4": {
-                            "name": "Obrona Poziom 1-4"
+                            "name": "Obrona Poziom 1-4",
+                            "damageOnSave": "none"
                         },
                         "Save Level 5-10": {
-                            "name": "Obrona Poziom 5-10"
+                            "name": "Obrona Poziom 5-10",
+                            "damageOnSave": "none"
                         },
                         "Save Level 11-16": {
-                            "name": "Obrona Poziom 11-16"
+                            "name": "Obrona Poziom 11-16",
+                            "damageOnSave": "none"
                         },
                         "Save Level 17-20": {
-                            "name": "Obrona Poziom 17-20"
+                            "name": "Obrona Poziom 17-20",
+                            "damageOnSave": "none"
                         },
                         "Persuade Plant Check": {
                             "name": "Test perswazji rośliny"
@@ -1315,6 +1484,9 @@
                     "name": "Opis/Efekty",
                     "description": "<p><em>Uciążliwe Zagrożenie (Poziomy 1–4)</em></p><p>Olbrzymie pająki tkają grube, lepkie pajęczyny w poprzek korytarzy i na dnie jam, aby usidlać zdobycz. Obszary wypełnione pajęczynami stanowią &amp;Reference[Difficult Terrain].</p><p>Istota, która po raz pierwszy w turze wejdzie do obszaru wypełnionego pajęczynami lub rozpocznie tam swoją turę, musi wykonać rzut obronny na Zręczność o ST 12, inaczej uzyskuje stan &amp;Reference[Restrained apply=false]. Akcją istota unieruchomiona przez pajęczyny może spróbować się z nich wydostać, robiąc to po udanym teście Siły (Atletyka) lub Zręczności (Akrobatyka) o ST 12.</p><p>Każdy 10-stopowy Sześcian pajęczyn ma KP 10; PW 15; Podatność na obrażenia od ognia oraz Niewrażliwość na obrażenia kłute, od trucizn i psychiczne.</p>",
                     "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        },
                         "Escape Check": {
                             "name": "Test ucieczki"
                         }
@@ -1353,7 +1525,8 @@
                             "name": "Umieść pleśń"
                         },
                         "Touch Mold": {
-                            "name": "Dotknij pleśń"
+                            "name": "Dotknij pleśń",
+                            "damageOnSave": "połowa"
                         },
                         "Start of Turn Damage": {
                             "name": "Obrażenia na początku tury"
@@ -1374,7 +1547,12 @@
                 "Undead Fortitude": {
                     "name": "Trupia odporność",
                     "description": "<p> If damage reduces the zombie to 0 Hit Points, it must make a Constitution saving throw with a DC of 5 plus the damage taken unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead.</p>",
-                    "requirements": "Reduced to 0 Hit Points"
+                    "requirements": "Zredukowany do 0 Punktów Wytrzymałości",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 },
                 "Slam": {
                     "name": "Walnięcie",
