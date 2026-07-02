@@ -1222,7 +1222,7 @@
         "Draining Swipe": {
             "name": "Draining Swipe",
             "description": {
-                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target’s Strength score decreases by [[/r 1d4]]. The target dies if this reduces that score to 0. If a Humanoid is slain by this attack, a <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmShadow00000000]{Shadow}</strong> rises from the corpse [[/r 1d4]] hours later.</p><section id=\"secret-qqwbOYJqDuTP2N5e\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature provides an Active Effect in the Effects Tab to modify the target PC's Strength Score. Since this Strength reduction can be applied multiple times, the GM must drag the Active Effect in this item's Effect tab onto the PC's character sheet. From there, the GM must navigate to the Effects tab on the PC's sheet to modify the Effect Value preceded by the negative symbol, e.g., -3. Presently, it is set at -1.</p></section>"
+                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target’s Strength score decreases by [[/r 1d4]]. The target dies if this reduces that score to 0. If a Humanoid is slain by this attack, a <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmShadow00000000]{Shadow}</strong> rises from the corpse [[/r 1d4]] hours later.</p><section class=\"secret\" id=\"secret-qqwbOYJqDuTP2N5e\"><p><strong>Foundry Note</strong></p><p>This feature also provides an <strong>Active Effect (AE)</strong> to modify the target's <strong>Strength Score</strong>. When the target roll's their d4 to determine the loss, you can apply the respective AE to the target's sheet.</p></section>"
             }
         },
         "Dread Authority": {
@@ -2067,9 +2067,21 @@
             "name": "Hide",
             "description": "<p>You takes the &amp;Reference[Hide] action.</p>"
         },
-        "Hit: STR Score -1d4": {
-            "name": "Hit: STR Score -1d4",
-            "description": "<p>The target’s Strength score decreases by [[/r 1d4]].</p>"
+        "Hit: STR Score -1": {
+            "name": "Hit: STR Score -1",
+            "description": "<p>The target’s Strength score decreases by -1.</p>"
+        },
+        "Hit: STR Score -2": {
+            "name": "Hit: STR Score -2",
+            "description": "<p>The target’s Strength score decreases by -2.</p>"
+        },
+        "Hit: STR Score -3": {
+            "name": "Hit: STR Score -3",
+            "description": "<p>The target’s Strength score decreases by -3,</p>"
+        },
+        "Hit: STR Score -4": {
+            "name": "Hit: STR Score -4",
+            "description": "<p>The target’s Strength score decreases by -4.</p>"
         },
         "Hold Breath": {
             "name": "Hold Breath",

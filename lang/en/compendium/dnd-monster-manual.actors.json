@@ -4439,13 +4439,22 @@
                     "description": "<p>An [[lookup @name lowercase]] represents a Forager, Hunter, or Sage (DM’s choice), which determines certain traits in this stat block.</p><details><summary>Appearance Tables</summary><p>@Embed[Compendium.dnd-monster-manual.tables.RollTable.mmForagerAnimalL rollable classes=\"caption-top\" cite=false]{Forager Animal Lord Appearances}</p><p>@Embed[Compendium.dnd-monster-manual.tables.RollTable.mmHunterAnimalLo rollable classes=\"caption-top\" cite=false]{Hunter Animal Lord Appearances}</p><p>@Embed[Compendium.dnd-monster-manual.tables.RollTable.mmSageAnimalLord rollable classes=\"caption-top\" cite=false]{Sage Animal Lord Appearances}</p></details>",
                     "effects": {
                         "Forager Appearance": {
-                            "name": "Forager Appearance"
+                            "name": "Forager Appearance",
+                            "changes": {
+                                "name": "{} (Forager)"
+                            }
                         },
                         "Hunter Appearance": {
-                            "name": "Hunter Appearance"
+                            "name": "Hunter Appearance",
+                            "changes": {
+                                "name": "{} (Hunter)"
+                            }
                         },
                         "Sage Appearance": {
-                            "name": "Sage Appearance"
+                            "name": "Sage Appearance",
+                            "changes": {
+                                "name": "{} (Sage)"
+                            }
                         }
                     }
                 },
@@ -4818,7 +4827,7 @@
                 },
                 "Tail": {
                     "name": "Tail",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a {size} or smaller creature, it has the &amp;Reference[Prone apply=false] condition. If the target is a Huge or smaller creature, it has the &amp;Reference[Prone apply=false] condition.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Huge or smaller creature, it has the &amp;Reference[Prone apply=false] condition.</p>",
                     "effects": {
                         "Prone": {
                             "name": "Prone",
@@ -6054,6 +6063,13 @@
                             "name": "Spell Changes"
                         }
                     }
+                },
+                "Chain Mail": {
+                    "name": "Chain Mail"
+                },
+                "Holy Symbol": {
+                    "name": "Holy Symbol",
+                    "description": "<p>A Holy Symbol takes one of the forms in the Holy Symbol table and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.</p><p>The table indicates whether a Holy Symbol needs to be held, worn, or borne on fabric (such as a tabard or banner) or a Shield.</p><table><caption>Holy Symbols</caption><thead><tr><td>Symbol</td><td>Weight</td><td>Cost</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyAmuletworn]{Amulet} (worn or held)</td><td>1 lb.</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyEmblemborn]{Emblem} (borne on fabric or a Shield)</td><td>—</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyReliquaryh]{Reliquary} (held)</td><td>2 lb.</td><td>5 GP</td></tr></tbody></table>"
                 }
             }
         },
@@ -9742,6 +9758,13 @@
                             "name": "Spell Changes"
                         }
                     }
+                },
+                "Holy Symbol": {
+                    "name": "Holy Symbol",
+                    "description": "<p>A Holy Symbol takes one of the forms in the Holy Symbol table and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.</p><p>The table indicates whether a Holy Symbol needs to be held, worn, or borne on fabric (such as a tabard or banner) or a Shield.</p><table><caption>Holy Symbols</caption><thead><tr><td>Symbol</td><td>Weight</td><td>Cost</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyAmuletworn]{Amulet} (worn or held)</td><td>1 lb.</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyEmblemborn]{Emblem} (borne on fabric or a Shield)</td><td>—</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyReliquaryh]{Reliquary} (held)</td><td>2 lb.</td><td>5 GP</td></tr></tbody></table>"
+                },
+                "Leather Armor": {
+                    "name": "Leather Armor"
                 }
             }
         },
@@ -9825,6 +9848,10 @@
                 },
                 "Breastplate": {
                     "name": "Breastplate"
+                },
+                "Holy Symbol": {
+                    "name": "Holy Symbol",
+                    "description": "<p>A Holy Symbol takes one of the forms in the Holy Symbol table and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.</p><p>The table indicates whether a Holy Symbol needs to be held, worn, or borne on fabric (such as a tabard or banner) or a Shield.</p><table><caption>Holy Symbols</caption><thead><tr><td>Symbol</td><td>Weight</td><td>Cost</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyAmuletworn]{Amulet} (worn or held)</td><td>1 lb.</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyEmblemborn]{Emblem} (borne on fabric or a Shield)</td><td>—</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyReliquaryh]{Reliquary} (held)</td><td>2 lb.</td><td>5 GP</td></tr></tbody></table>"
                 }
             }
         },
@@ -11202,6 +11229,37 @@
                             "name": "Resurrection Sickness (Day 3)",
                             "description": "<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to D20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0.</p>"
                         },
+                        "Spell Changes": {
+                            "name": "Spell Changes"
+                        }
+                    }
+                },
+                "Divine Aid": {
+                    "name": "Divine Aid",
+                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] casts <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCureWounds]{Cure Wounds}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLesserRest]{Lesser Restoration}</em>, or <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRemoveCurs]{Remove Curse}</em> using the same spellcasting ability as Spellcasting.</p>"
+                },
+                "Lesser Restoration": {
+                    "name": "Lesser Restoration",
+                    "description": "<p>You touch a creature and end one condition on it: &amp;Reference[blinded], &amp;Reference[deafened], &amp;Reference[paralyzed], or &amp;Reference[poisoned].</p>",
+                    "effects": {
+                        "Spell Changes": {
+                            "name": "Spell Changes"
+                        }
+                    }
+                },
+                "Cure Wounds": {
+                    "name": "Cure Wounds",
+                    "description": "<p>A creature you touch regains a number of Hit Points equal to 2d8 plus your spellcasting ability modifier.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The healing increases by 2d8 for each spell slot level above 1.</p>",
+                    "effects": {
+                        "Spell Changes": {
+                            "name": "Spell Changes"
+                        }
+                    }
+                },
+                "Remove Curse": {
+                    "name": "Remove Curse",
+                    "description": "<p>At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner’s Attunement to the object so it can be removed or discarded.</p>",
+                    "effects": {
                         "Spell Changes": {
                             "name": "Spell Changes"
                         }
@@ -22056,7 +22114,7 @@
                 },
                 "Mind Burst": {
                     "name": "Mind Burst",
-                    "description": "<p class=\"feature\"><em>Intelligence Saving Throw:</em> DC [[lookup @save.dc.value activity=T0ybbd1ZrLCdEXsW]], [[lookup @target.affects.labels.statblock activity=T0ybbd1ZrLCdEXsW]] in a [[lookup @target.template.size activity=T0ybbd1ZrLCdEXsW]]-[[lookup @target.template.units activity=T0ybbd1ZrLCdEXsW]]. Emanation originating from the [[lookup @name lowercase]].</p><p><em>Failure:</em> [[/damage average]] damage, and the target has the &amp;Reference[Stunned apply=false] condition until the end of the [[lookup @name lowercase]]’s next turn.</p><p><em>Success:</em> [[lookup @damage.onSave capitalize activity=T0ybbd1ZrLCdEXsW]] damage only.</p>",
+                    "description": "<p class=\"feature\"><em>Intelligence Saving Throw:</em> DC [[lookup @save.dc.value activity=T0ybbd1ZrLCdEXsW]], each creature in a [[lookup @target.template.size activity=T0ybbd1ZrLCdEXsW]]-[[lookup @target.template.units activity=T0ybbd1ZrLCdEXsW]]. Emanation originating from the [[lookup @name lowercase]].</p><p><em>Failure:</em> [[/damage average]] damage, and the target has the &amp;Reference[Stunned apply=false] condition until the end of the [[lookup @name lowercase]]’s next turn.</p><p><em>Success:</em> [[lookup @damage.onSave capitalize activity=T0ybbd1ZrLCdEXsW]] damage only.</p>",
                     "activities": {
                         "Save": {
                             "name": "Save",
@@ -23550,6 +23608,21 @@
                 "Tentacles": {
                     "name": "Tentacles",
                     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
+                },
+                "Ink Cloud": {
+                    "name": "Ink Cloud",
+                    "description": "<p><em>Trigger</em>: A creature ends its turn within 5 feet of the [[lookup @name lowercase]] while underwater.</p><p><em>Response</em>: The [[lookup @name lowercase]] releases ink that fills a [[lookup @target.template.size activity=1MiIPcVuCpfgBIkS]]-foot Cube centered on itself, and the [[lookup @name lowercase]] moves up to its Swim Speed. The Cube is Heavily Obscured for 1 minute or until a strong current or similar effect disperses the ink.</p>",
+                    "activities": {
+                        "Expend Use": {
+                            "name": "Expend Use"
+                        }
+                    },
+                    "effects": {
+                        "Blinded: Heavily Obscured": {
+                            "name": "Blinded: Heavily Obscured",
+                            "description": "<p>You have the &amp;Reference[Blinded apply=false] condition while trying to see something in a Heavily Obscured space. </p>"
+                        }
+                    }
                 }
             }
         },
@@ -25271,6 +25344,13 @@
                             "name": "Spell Changes"
                         }
                     }
+                },
+                "Chain Shirt": {
+                    "name": "Chain Shirt"
+                },
+                "Holy Symbol": {
+                    "name": "Holy Symbol",
+                    "description": "<p>A Holy Symbol takes one of the forms in the Holy Symbol table and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.</p><p>The table indicates whether a Holy Symbol needs to be held, worn, or borne on fabric (such as a tabard or banner) or a Shield.</p><table><caption>Holy Symbols</caption><thead><tr><td>Symbol</td><td>Weight</td><td>Cost</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyAmuletworn]{Amulet} (worn or held)</td><td>1 lb.</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyEmblemborn]{Emblem} (borne on fabric or a Shield)</td><td>—</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyReliquaryh]{Reliquary} (held)</td><td>2 lb.</td><td>5 GP</td></tr></tbody></table>"
                 }
             }
         },
@@ -25369,6 +25449,13 @@
                             "name": "Spell Changes"
                         }
                     }
+                },
+                "Chain Shirt": {
+                    "name": "Chain Shirt"
+                },
+                "Holy Symbol": {
+                    "name": "Holy Symbol",
+                    "description": "<p>A Holy Symbol takes one of the forms in the Holy Symbol table and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.</p><p>The table indicates whether a Holy Symbol needs to be held, worn, or borne on fabric (such as a tabard or banner) or a Shield.</p><table><caption>Holy Symbols</caption><thead><tr><td>Symbol</td><td>Weight</td><td>Cost</td></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyAmuletworn]{Amulet} (worn or held)</td><td>1 lb.</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyEmblemborn]{Emblem} (borne on fabric or a Shield)</td><td>—</td><td>5 GP</td></tr><tr><td>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbhsyReliquaryh]{Reliquary} (held)</td><td>2 lb.</td><td>5 GP</td></tr></tbody></table>"
                 }
             }
         },
@@ -25757,7 +25844,7 @@
                     "effects": {
                         "Poisoned": {
                             "name": "Poisoned",
-                            "description": "<p> The target has the &amp;Reference[Poisoned apply=false] condition until the start of the [[lookup @name lowercase]]’s next turn.</p>"
+                            "description": "<p>The target has the &amp;Reference[Poisoned apply=false] condition until the start of the [[lookup @name lowercase]]’s next turn.</p>"
                         }
                     }
                 },
@@ -28993,6 +29080,15 @@
                             "name": "Expend Use"
                         }
                     }
+                },
+                "Thieves' Tools": {
+                    "name": "Thieves' Tools",
+                    "description": "<p class=\"phb-meta\"><strong>Ability:</strong> Dexterity</p><p class=\"phb-meta\"><strong>Utilize:</strong> Pick a lock (DC 15), or disarm a trap (DC 15)</p>",
+                    "activities": {
+                        "Pick a Lock/Disarm a Trap": {
+                            "name": "Pick a Lock/Disarm a Trap"
+                        }
+                    }
                 }
             }
         },
@@ -29103,7 +29199,7 @@
             "items": {
                 "Proboscis": {
                     "name": "Proboscis",
-                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a creature<span style=\"font-family:'Roboto Condensed', sans-serif\">, and the </span>[[lookup @name lowercase]]<span style=\"font-family:'Roboto Condensed', sans-serif\"> attaches to the target. While attached, the </span>[[lookup @name lowercase]]<span style=\"font-family:'Roboto Condensed', sans-serif\"> can’t make Proboscis attacks, and the target takes [[/damage average activity=5xwoPMBiaRBqjFav]] damage at the start of each of the </span>[[lookup @name lowercase]]'s<span style=\"font-family:'Roboto Condensed', sans-serif\"> turns.</span></p><p class=\"feature\"><span style=\"font-family:'Roboto Condensed', sans-serif\">The </span>[[lookup @name lowercase]]<span style=\"font-family:'Roboto Condensed', sans-serif\"> can detach itself by spending 5 feet of its movement. The target or a creature within 5 feet of it can detach the </span>[[lookup @name lowercase]]<span style=\"font-family:'Roboto Condensed', sans-serif\"> as an action.</span></p>",
+                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the stirge attaches to the target. <span style=\"font-family:'Roboto Condensed', sans-serif\">While attached, the </span>[[lookup @name lowercase]]<span style=\"font-family:'Roboto Condensed', sans-serif\"> can’t make Proboscis attacks, and the target takes [[/damage average activity=5xwoPMBiaRBqjFav]] damage at the start of each of the </span>[[lookup @name lowercase]]'s<span style=\"font-family:'Roboto Condensed', sans-serif\"> turns.</span></p><p class=\"feature\"><span style=\"font-family:'Roboto Condensed', sans-serif\">The </span>[[lookup @name lowercase]]<span style=\"font-family:'Roboto Condensed', sans-serif\"> can detach itself by spending 5 feet of its movement. The target or a creature within 5 feet of it can detach the </span>[[lookup @name lowercase]]<span style=\"font-family:'Roboto Condensed', sans-serif\"> as an action.</span></p>",
                     "activities": {
                         "Attached: Damage": {
                             "name": "Attached: Damage"
@@ -30374,7 +30470,7 @@
                 },
                 "Bite": {
                     "name": "Bite",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Large or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]])). While Grappled, the target has the &amp;Reference[Restrained apply=falsse] condition and can’t be targeted by the [[lookup @name lowercase]]’s Tail.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Large or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]). While Grappled, the target has the &amp;Reference[Restrained apply=falsse] condition and can’t be targeted by the [[lookup @name lowercase]]’s Tail.</p>",
                     "activities": {
                         "Escape Check": {
                             "name": "Escape Check"
@@ -31656,7 +31752,7 @@
                 },
                 "Counterattack": {
                     "name": "Counterattack",
-                    "description": "<p class=\"feature\"><em>Trigger</em>: The [[lookup @name lowercase]] is hit by an attack roll.</p><p class=\"feature\"><em>Response:</em> The [[lookup @name lowercase]] adds 4 to its AC against that attack, possibly causing it to miss. On a miss, the [[lookup @name lowercase]] can make one [[/item .cWEx0aUNtgAiphWk]] or [[/item .UYIXz9iBOnpRuR1H]]Longbow attack against the attacker.</p><section class=\"secret\" id=\"secret-r0XEblGuDiHl5cWo\"><p><strong>Foundry Note</strong></p><p>This feature also provides an <strong>Active Effect (AE)</strong> that will modify this creature's <strong>Armor Class</strong> when you utilize the reaction. You can enable the AE in the effects tab of the character sheet.</p></section>",
+                    "description": "<p class=\"feature\"><em>Trigger</em>: The [[lookup @name lowercase]] is hit by an attack roll.</p><p class=\"feature\"><em>Response:</em> The [[lookup @name lowercase]] adds 4 to its AC against that attack, possibly causing it to miss. On a miss, the [[lookup @name lowercase]] can make one [[/item .cWEx0aUNtgAiphWk]] or [[/item .UYIXz9iBOnpRuR1H]] attack against the attacker.</p><section class=\"secret\" id=\"secret-r0XEblGuDiHl5cWo\"><p><strong>Foundry Note</strong></p><p>This feature also provides an <strong>Active Effect (AE)</strong> that will modify this creature's <strong>Armor Class</strong> when you utilize the reaction. You can enable the AE in the effects tab of the character sheet.</p></section>",
                     "activities": {
                         "Expend Use": {
                             "name": "Expend Use",
