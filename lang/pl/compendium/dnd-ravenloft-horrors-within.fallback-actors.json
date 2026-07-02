@@ -1,5 +1,5 @@
 {
-    "label": "Fallback-Actors",
+    "label": "Bestiariusz do przygód",
     "mapping": {
         "alignment": {
             "path": "system.details.alignment",
@@ -842,7 +842,7 @@
                         },
                         "Paralyzed": {
                             "name": "Sparaliżowany",
-                            "description": "<p>The target has the &amp;Reference[Paralyzed apply=false] condition and repeats the save at the end of each of its turns, ending the effect on itself on a success.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Paralyzed apply=false] i powtarza rzut obronny na końcu każdej swojej tury, kończąc na sobie ten efekt przy sukcesie.</p>"
                         },
                         "Frightened": {
                             "name": "Przerażony",
@@ -926,7 +926,7 @@
                     "effects": {
                         "Paralyzed": {
                             "name": "Sparaliżowany",
-                            "description": "<p>The target has the &amp;Reference[Paralyzed apply=false] condition and repeats the save at the end of each of its turns, ending the effect on itself on a success.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Paralyzed apply=false] i powtarza rzut obronny na końcu każdej swojej tury, kończąc na sobie ten efekt przy sukcesie.</p>"
                         },
                         "Frightened": {
                             "name": "Przerażony",
@@ -1635,11 +1635,11 @@
                 },
                 "Rend": {
                     "name": "Rozdarcie",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If target is a Large or smaller creature, it has the &amp;Reference[Prone apply=false] condition.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Prone apply=false].</p>",
                     "effects": {
                         "Prone": {
                             "name": "Powalony",
-                            "description": "<p>If target is a Large or smaller creature, it has the &amp;Reference[Prone apply=false] condition.</p>"
+                            "description": "<p>Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Prone apply=false].</p>"
                         }
                     }
                 },
@@ -1861,13 +1861,13 @@
                     "effects": {
                         "Grappled & Restrained": {
                             "name": "Pochwycony i Unieruchomiony",
-                            "description": "<p>If the target is a Large or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[/check ability=str skill=ath format=long]], see source item for DC). While Grappled, the target has the &amp;Reference[Restrained apply=false] condition.</p>"
+                            "description": "<p>Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[/check ability=str skill=ath format=long]], zobacz źródłowy przedmiot, aby poznać ST). Kiedy jest Pochwycony, cel ma stan &amp;Reference[Restrained apply=false].</p>"
                         }
                     }
                 },
                 "Tail": {
                     "name": "Ogon",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Large or smaller creature, it has the &amp;Reference[Prone apply=false] condition. </p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Prone apply=false].</p>",
                     "effects": {
                         "Prone": {
                             "name": "Powalony",
@@ -2119,7 +2119,7 @@
                     "effects": {
                         "Total Cover": {
                             "name": "Osłona całkowita",
-                            "description": "<p>A swallowed creature has Total Cover against attacks and other effects outside the revenant.</p>"
+                            "description": "<p>Połknięta istota ma Całkowitą osłonę przed atakami i innymi efektami pochodzącymi spoza zmory.</p>"
                         }
                     }
                 }
@@ -2149,7 +2149,7 @@
                         },
                         "Unconscious": {
                             "name": "Nieprzytomny",
-                            "description": "<p>While Poisoned, the target has the &amp;Reference[Unconscious apply=false] condition, which ends early if the target takes any damage.</p>"
+                            "description": "<p>Mając stan Zatruty, cel ma stan &amp;Reference[Unconscious apply=false], który kończy się wcześniej, jeśli cel odniesie jakiekolwiek obrażenia.</p>"
                         }
                     }
                 }
@@ -2239,11 +2239,11 @@
                     "effects": {
                         "Total Cover": {
                             "name": "Osłona całkowita",
-                            "description": "<p>The possessesing creature has &amp;Reference[Total Cover] against attacks and other effects originating outside its host.</p>"
+                            "description": "<p>Opętująca istota ma &amp;Reference[Total Cover] przed atakami i innymi efektami pochodzącymi spoza jej gospodarza.</p>"
                         },
                         "Languages": {
                             "name": "Języki",
-                            "description": "<p>The possessing creature retains its understanding of Deep Speech and its telepathy.</p>"
+                            "description": "<p>Opętująca istota zachowuje rozumienie Głębinowego i swoją telepatię.</p>"
                         }
                     }
                 }
@@ -2317,7 +2317,7 @@
             "items": {
                 "Spear": {
                     "name": "Włócznia",
-                    "description": "<p><em>Melee or Ranged Attack Roll:</em> +3, reach 5 ft. or range 20/60 ft. <em>Hit:</em> 5 (1d8 + 1) Piercing damage.</p>"
+                    "description": "<p><em>Test ataku wręcz lub dystansowego:</em> +3, zasięg 5 stóp albo zasięg 20/60 stóp. <em>Trafienie:</em> 5 (1k8 + 1) obrażeń kłutych.</p>"
                 },
                 "Amphibious": {
                     "name": "Ziemno-wodny",
@@ -2394,7 +2394,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The [[lookup @name lowercase]] makes three [[/item Strange Scepter]] attacks.</p>",
+                    "description": "<p>[[lookup @name]] wykonuje trzy ataki [[/item Dziwne berło]].</p>",
                     "activities": {
                         "Use": {
                             "name": "Użycie"
@@ -2402,7 +2402,7 @@
                     }
                 },
                 "Strange Scepter": {
-                    "name": "Strange Scepter",
+                    "name": "Dziwne berło",
                     "description": "<p class=\"feature\"><em>Melee or Ranged Attack Roll:</em> [[/attack]], reach [[lookup @item.range.reach]] ft. or range [[lookup @item.range.value]] ft. [[/damage average extended]].</p>"
                 },
                 "Spellcasting": {
@@ -2778,7 +2778,7 @@
                     "effects": {
                         "Frightened": {
                             "name": "Przerażony",
-                            "description": "<p>The target has the &amp;Reference[Frightened apply=false] condition until the end of the attacking creature's next turn.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Frightened apply=false] do końca następnej tury atakującej istoty.</p>"
                         }
                     }
                 }
@@ -2867,7 +2867,7 @@
                         },
                         "Frightened": {
                             "name": "Przerażony",
-                            "description": "<p>The target has the &amp;Reference[Frightened apply=false] condition (performer’s choice) until the end of the attacking creature's next turn.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Frightened apply=false] (według wyboru artysty) do końca następnej tury atakującej istoty.</p>"
                         }
                     }
                 },
@@ -2889,7 +2889,7 @@
                     "effects": {
                         "Charmed": {
                             "name": "Zauroczony",
-                            "description": "<p>If the attack roll misses the attacking creature's target, the target has the &amp;Reference[Charmed apply=false] condition until the end of the attacking creature's next turn.</p>"
+                            "description": "<p>Jeśli test ataku nie trafia celu atakującej istoty, cel ma stan &amp;Reference[Charmed apply=false] do końca następnej tury atakującej istoty.</p>"
                         }
                     }
                 },
@@ -3099,7 +3099,7 @@
                     "effects": {
                         "Frightened & Paralyzed": {
                             "name": "Przerażony i Sparaliżowany",
-                            "description": "<p>If the attacking creature curses the Frightened target, the target also has the &amp;Reference[Paralyzed apply=false] condition for the duration. After 1 minute, it succeeds automatically.</p>"
+                            "description": "<p>Jeśli atakująca istota przeklnie Przerażony cel, cel ma także stan &amp;Reference[Paralyzed apply=false] na czas trwania efektu. Po 1 minucie automatycznie odnosi sukces.</p>"
                         },
                         "Frightened": {
                             "name": "Przerażony",
@@ -3198,7 +3198,7 @@
                 },
                 "Charged Tendril": {
                     "name": "Charged Tendril",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Medium or smaller creature, the [[lookup @name lowercase]] pulls the target 5 feet straight toward itself.</p>"
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Średnią lub mniejszą istotą, [[lookup @name lowercase]] przyciąga cel o 5 stóp po linii prostej ku sobie.</p>"
                 },
                 "Engulf": {
                     "name": "Pochłonięcie",
@@ -3270,14 +3270,14 @@
                     "description": "<p class=\"feature\"><em>Trigger:</em> An attack roll hits the wearer of the [[lookup @name lowercase]]’s amulet while the wearer is within 5 feet of the [[lookup @name lowercase]].</p><p class=\"feature\"><em>Response:</em> The wearer gains a +5 bonus to AC, including against the triggering attack and possibly causing it to miss, until the start of the [[lookup @name lowercase]]’s next turn.</p>",
                     "activities": {
                         "utility": {
-                            "condition": "An attack roll hits the wearer of the guardian's amulet while the wearer is within 5 feet of the guardian",
-                            "activationCondition": "An attack roll hits the wearer of the guardian's amulet while the wearer is within 5 feet of the guardian"
+                            "condition": "Test ataku trafia noszącego amulet należący do tarczownika, jeśli znajduje się on w zasięgu 5 stóp od niego. ",
+                            "activationCondition": "Test ataku trafia noszącego amulet należący do tarczownika, jeśli znajduje się on w zasięgu 5 stóp od niego. "
                         }
                     },
                     "effects": {
                         "Protected": {
                             "name": "Chroniony",
-                            "description": "<p>The wearer gains a +5 bonus to AC, including against the triggering attack and possibly causing it to miss, until the start of the bestower's next turn.</p>"
+                            "description": "<p>Noszący zyskuje premię +5 do KP, w tym przeciwko atakowi wyzwalającemu, co może sprawić, że chybi, aż do początku następnej tury obdarowującego.</p>"
                         }
                     }
                 }
@@ -3325,7 +3325,7 @@
                     "effects": {
                         "Blinded": {
                             "name": "Oślepiony",
-                            "description": "<p>The target has the &amp;Reference[Blinded apply=false] condition until the end of the attacking creatures’s next turn.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Blinded apply=false] do końca następnej tury atakujących istot.</p>"
                         }
                     }
                 },
@@ -3500,7 +3500,7 @@
                     "effects": {
                         "Grappled & Restrained": {
                             "name": "Pochwycony i Unieruchomiony",
-                            "description": "<p>If the target is a Large or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[/check ability=str skill=ath format=long]], see source item for DC). While Grappled, the target has the &amp;Reference[Restrained apply=falsse] condition.</p>"
+                            "description": "<p>Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[/check ability=str skill=ath format=long]], zobacz źródłowy przedmiot, aby poznać ST). Kiedy jest Pochwycony, cel ma stan &amp;Reference[Restrained apply=falsse].</p>"
                         }
                     }
                 },
@@ -3544,7 +3544,7 @@
                     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the [[lookup @name lowercase]] can teleport the target up to 10 feet to an unoccupied space the [[lookup @name lowercase]] can see that isn’t in the air.</p>",
                     "activities": {
                         "attack": {
-                            "chatFlavor": "On Hit: Can teleport to unoccupied space, 10 ft. away."
+                            "chatFlavor": "Przy trafieniu: Może teleportować się do niezajętej przestrzeni oddalonej o 10 stóp."
                         }
                     }
                 },
@@ -4179,7 +4179,7 @@
                     "effects": {
                         "Poisoned & Blinded": {
                             "name": "Zatruty i Oślepiony",
-                            "description": "<p>The target has the &amp;Reference[Poisoned apply=false] condition until the end of the attacking creature's next turn. While Poisoned, the target has the &amp;Reference[Blinded apply=false] condition.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Poisoned apply=false] do końca następnej tury atakującej istoty. Będąc Zatruty, cel ma stan &amp;Reference[Blinded apply=false].</p>"
                         }
                     }
                 },
