@@ -15,7 +15,112 @@
         },
         "items": {
             "path": "items",
-            "converter": "items"
+            "converter": "document",
+            "documentType": "Item",
+            "cardinality": "many",
+            "mapping": {
+                "description": "system.description.value",
+                "requirements": "system.requirements",
+                "materials": "system.materials.value",
+                "chat": "system.description.chat",
+                "activation": "system.activation.condition",
+                "activationValue": "system.activation.value",
+                "activities": {
+                    "path": "system.activities",
+                    "converter": "structured",
+                    "cardinality": "many",
+                    "container": "keyed",
+                    "keys": [
+                        "_id",
+                        "name",
+                        "type"
+                    ],
+                    "mapping": {
+                        "name": "name",
+                        "condition": "activation.condition",
+                        "activationCondition": "activation.condition",
+                        "activationValue": "activation.value",
+                        "chatFlavor": "description.chatFlavor",
+                        "duration": "duration.special",
+                        "roll": "roll.name",
+                        "damageOnSave": "damage.onSave",
+                        "range": {
+                            "path": "range",
+                            "converter": "imperialToMetric"
+                        },
+                        "target": {
+                            "path": "target",
+                            "converter": "imperialToMetric"
+                        },
+                        "profiles": {
+                            "path": "profiles",
+                            "converter": "nameCollection"
+                        }
+                    }
+                },
+                "effects": {
+                    "path": "effects",
+                    "converter": "effects"
+                },
+                "advancement": {
+                    "path": "system.advancement",
+                    "converter": "structured",
+                    "cardinality": "many",
+                    "container": "keyed",
+                    "keys": [
+                        "_id",
+                        "title"
+                    ],
+                    "mapping": {
+                        "title": "title",
+                        "hint": "hint",
+                        "_variants": [
+                            {
+                                "_when": {
+                                    "path": "type",
+                                    "equals": "ScaleValue"
+                                },
+                                "distance": {
+                                    "path": "configuration.distance",
+                                    "converter": "imperialToMetric"
+                                },
+                                "scale": {
+                                    "path": "configuration.scale",
+                                    "converter": "imperialToMetric"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "movement": {
+                    "path": "system.movement",
+                    "converter": "imperialToMetric"
+                },
+                "weight": {
+                    "path": "system.weight",
+                    "converter": "imperialToMetric"
+                },
+                "range": {
+                    "path": "system.range",
+                    "converter": "imperialToMetric"
+                },
+                "capacityWeight": {
+                    "path": "system.capacity.weight",
+                    "converter": "imperialToMetric"
+                },
+                "senses": {
+                    "path": "system.senses",
+                    "converter": "imperialToMetric"
+                },
+                "target": {
+                    "path": "system.target",
+                    "converter": "imperialToMetric"
+                },
+                "volume": {
+                    "path": "system.capacity.volume",
+                    "converter": "imperialToMetric"
+                }
+            }
         },
         "senses": {
             "path": "system.attributes.senses",
@@ -106,6 +211,11 @@
                 "Burning Hands": {
                     "name": "Płonące dłonie",
                     "description": "<p>Cienka płachta płomieni wystrzeliwuje z ciebie. Każda istota w Stożku o długości 15 stóp musi wykonać rzut obronny na Zręczność. W przypadku porażki otrzymuje ona 3k6 obrażeń od ognia, a w przypadku sukcesu połowę tych obrażeń.</p><p>Łatwopalne obiekty w Stożku, które nie są noszone ani niesione, zaczynają płonąć.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -125,6 +235,11 @@
                 "Thunderwave": {
                     "name": "Fala gromu",
                     "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -200,6 +315,11 @@
                 "Glare": {
                     "name": "Spojrzenie",
                     "description": "<p><em>Wisdom Saving Throw: </em>DC [[lookup @save.dc.value activity=onxFr8Slt41qWXfP]], one creature the bruiser can see within [[lookup @range.value activity=onxFr8Slt41qWXfP]] feet.</p><p><em>Failure:</em> The target has the &amp;Reference[Frightened apply=false] condition until the start of the bruiser’s next turn.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    },
                     "effects": {
                         "Frightened": {
                             "name": "Przerażony",
@@ -276,7 +396,8 @@
                     "activities": {
                         "save": {
                             "target": "hit by the infiltrator’s Mind Blade attack this turn.\\",
-                            "targetAffects": "hit by the infiltrator’s Mind Blade attack this turn.\\"
+                            "targetAffects": "hit by the infiltrator’s Mind Blade attack this turn.\\",
+                            "damageOnSave": "połowa"
                         }
                     },
                     "effects": {
@@ -292,7 +413,8 @@
                     "materials": "1 sztuka miedzi",
                     "activities": {
                         "Probe Deeper": {
-                            "name": "Głębsze badanie"
+                            "name": "Głębsze badanie",
+                            "damageOnSave": "połowa"
                         },
                         "Sense Thoughts": {
                             "name": "Wyczuwanie myśli"
@@ -307,6 +429,11 @@
                 "efaSynapticStati": {
                     "name": "Szum synaptyczny",
                     "description": "<p>Wybuchasz energię psychiczną w punkcie w zasięgu. Każda istota w Sferze o promieniu 6m (20 stóp) centrum w tym punkcie wykonuje rzut obronny na Inteligencję, otrzymując 8k6 obrażeń psychicznych przy niepowodzeniu lub połowę obrażeń przy sukcesie.</p><p>W przypadku niepowodzenia, cel ma także zamieszane myśli przez 1 minutę. W tym czasie odejmuje [[/r 1d6]] od wszystkich swoich testów ataku i testów zdolności, jak również od rzutów obronnych na Kondycję w celu utrzymania Koncentracji. Cel wykonuje [[/save ability=int dc=@attributes.spelldc format=long]] na końcu każdej ze swoich tur, kończąc efekt na sobie w przypadku sukcesu.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Muddled Thoughts": {
                             "name": "Zamieszane myśli",
@@ -346,6 +473,11 @@
                 "Primal Fear": {
                     "name": "Primal Fear",
                     "description": "<p><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=jStzD14Wkerw0JJQ]], each creature in a [[lookup @target.template.size activity=jStzD14Wkerw0JJQ]]-foot-radius Sphere centered on a point the mindkiller can see within [[lookup @range.value activity=jStzD14Wkerw0JJQ]] feet.</p><p><em>Failure:</em> [[/damage average]] damage, and the target has the &amp;Reference[Frightened apply=false] condition until the start of the mindkiller’s next turn.</p><p>While Frightened in this way, the target can do only one of the following on each of its turns: move, take an action, or take a Bonus Action.</p><p><em>Success:</em> Half damage only.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Frightened": {
                             "name": "Przerażony",
@@ -360,6 +492,11 @@
                 "Dominate Person": {
                     "name": "Dominacja nad osobą",
                     "description": "<p>Jeden Humanoid, którego widzisz w zasięgu, musi odnieść sukces w rzucie obronnym na Mądrość albo zyskuje stan &amp;Reference[Charmed apply=false] na czas trwania. Cel ma Ułatwienie w tym rzucie obronnym, jeśli ty albo twoi sojusznicy walczycie z nim. Ilekroć cel otrzyma obrażenia, powtarza ten rzut obronny, a przy sukcesie czar kończy się na nim.</p><p>Masz telepatyczną więź z celem mającym stan &amp;Reference[Charmed apply=false], dopóki oboje znajdujecie się na tej samej sferze egzystencji. W swojej turze możesz użyć tej więzi, aby wydawać celowi rozkazy (nie wymaga Akcji), takie jak „Zaakuj tamtą istotę”, „Przemieść się tam” albo „Przynieś tamten obiekt”. Cel stara się jak najlepiej wykonać rozkaz w swojej turze. Jeśli wykona rozkaz i nie otrzyma od ciebie dalszych poleceń, działa i porusza się, jak chce, skupiając się na ochronie samego siebie.</p><p>Możesz rozkazać celowi wykonanie Reakcji, ale aby to zrobić, musisz wykorzystać własną Reakcję.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Twoja Koncentracja może trwać dłużej przy użyciu komórki czaru 6. kręgu (maksymalnie 10 minut), 7. kręgu (maksymalnie 1 godzina) albo 8. kręgu lub wyższego (maksymalnie 8 godzin).</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Dominated": {
                             "name": "Zdominowany",
@@ -381,7 +518,12 @@
                 },
                 "Flame Thrower": {
                     "name": "Miotacz ognia",
-                    "description": "<p>Działo wypluwa ogień w Stożku o długości 15 stóp. Każde stworzenie w tym obszarze wykonuje rzut obronny na Zręczność przeciw twojemu ST rzutu przeciw czarom, otrzymując [[/damage]] obrażeń przy nieudanym rzucie albo połowę tych obrażeń przy udanym. Łatwopalne obiekty w Stożku, które nie są noszone ani trzymane, zaczynają płonąć.</p>"
+                    "description": "<p>Działo wypluwa ogień w Stożku o długości 15 stóp. Każde stworzenie w tym obszarze wykonuje rzut obronny na Zręczność przeciw twojemu ST rzutu przeciw czarom, otrzymując [[/damage]] obrażeń przy nieudanym rzucie albo połowę tych obrażeń przy udanym. Łatwopalne obiekty w Stożku, które nie są noszone ani trzymane, zaczynają płonąć.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 },
                 "Force Ballista": {
                     "name": "Balista mocy",
@@ -414,7 +556,7 @@
                     "description": "<p>[[/attack extended]]. [[/damage average extended]]—plus [[/damage 2d6 necrotic average]] damage if the commander is Bloodied.</p>",
                     "activities": {
                         "Bloodied Attack": {
-                            "name": "Bloodied Attack"
+                            "name": "Zakrwawiony atak"
                         }
                     }
                 },
@@ -435,7 +577,7 @@
                     "description": "<p>[[/attack extended]]. [[/damage average extended]]—plus [[/damage 2d6 necrotic average]] damage if the commander is Bloodied—and the target has Disadvantage on its next attack roll before the start of the commander’s next turn.</p><section class=\"secret\" id=\"secret-2PHBR931qWmrFBQV\"><p><strong>Foundry Note</strong></p><p>This feature includes an <strong>Active Effect (AE)</strong> that can be used as a reminder but does not automate the above benefits.</p></section>",
                     "activities": {
                         "Bloodied Attack": {
-                            "name": "Bloodied Attack"
+                            "name": "Zakrwawiony atak"
                         }
                     },
                     "effects": {
@@ -464,7 +606,7 @@
                             "name": "Atak"
                         },
                         "Bloodied Attack": {
-                            "name": "Bloodied Attack"
+                            "name": "Zakrwawiony atak"
                         }
                     },
                     "effects": {
@@ -479,7 +621,7 @@
                     "description": "<p>[[/attack extended]]. [[/damage average extended]]—plus [[/damage 1d8 necrotic average]] damage if the knight is &amp;Reference[Bloodied].</p>",
                     "activities": {
                         "Bloodied Attack": {
-                            "name": "Bloodied Attack"
+                            "name": "Zakrwawiony atak"
                         }
                     }
                 },
@@ -503,7 +645,12 @@
                 },
                 "Flame Thrower": {
                     "name": "Miotacz ognia",
-                    "description": "<p>Działo wypluwa ogień w Stożku o długości 15 stóp. Każde stworzenie w tym obszarze wykonuje rzut obronny na Zręczność przeciw twojemu ST rzutu przeciw czarom, otrzymując [[/damage]] obrażeń przy nieudanym rzucie albo połowę tych obrażeń przy udanym. Łatwopalne obiekty w Stożku, które nie są noszone ani trzymane, zaczynają płonąć.</p>"
+                    "description": "<p>Działo wypluwa ogień w Stożku o długości 15 stóp. Każde stworzenie w tym obszarze wykonuje rzut obronny na Zręczność przeciw twojemu ST rzutu przeciw czarom, otrzymując [[/damage]] obrażeń przy nieudanym rzucie albo połowę tych obrażeń przy udanym. Łatwopalne obiekty w Stożku, które nie są noszone ani trzymane, zaczynają płonąć.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 },
                 "Force Ballista": {
                     "name": "Balista mocy",
@@ -522,7 +669,12 @@
                 },
                 "Detonate": {
                     "name": "Detonate",
-                    "description": "<p>When your cannon takes damage, you can take a Reaction to command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw against your spell save DC, taking 3d10 Force damage on a failed save or half as much damage on a successful one.</p>"
+                    "description": "<p>When your cannon takes damage, you can take a Reaction to command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw against your spell save DC, taking 3d10 Force damage on a failed save or half as much damage on a successful one.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 }
             }
         },
@@ -585,6 +737,11 @@
                     "name": "Uśpienie",
                     "description": "<p>Each creature of your choice in a 5-foot-radius Sphere centered on a point within range must succeed on a Wisdom saving throw or have the &amp;Reference[incapacitated apply=false] condition until the end of its next turn, at which point it must repeat the save. If the target fails the second save, the target has the &amp;Reference[unconscious] condition for the duration. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell's effect.</p><p>Creatures that don't sleep, such as elves, or that have Immunity to the Exhaustion condition automatically succeed on saves against this spell.</p>",
                     "materials": "szczypta piasku lub płatków róży",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Sleeping": {
                             "name": "Śpiący",
@@ -627,7 +784,7 @@
             "items": {
                 "Amphibious": {
                     "name": "Ziemno-wodny",
-                    "description": "<p>The [[lookup @name lowercase]] może oddychać w powietrzu i wodzie.</p>"
+                    "description": "<p>[[lookup @name]] może oddychać w powietrzu i wodzie.</p>"
                 },
                 "Claw": {
                     "name": "Pazury",
@@ -644,7 +801,7 @@
                     "effects": {
                         "Grappled": {
                             "name": "Pochwycony",
-                            "description": "<p>If the target is a Medium or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]).</p>"
+                            "description": "<p>Jeśli cel jest Średnią lub mniejszą istotą, otrzymuje stan &amp;Reference[Grappled apply=false] (ST ucieczki [[lookup @skills.ath.passive]]).</p>"
                         }
                     }
                 }
@@ -666,7 +823,8 @@
                         "Save": {
                             "name": "Obrona",
                             "target": "Humanoid i Gigant",
-                            "targetAffects": "Humanoid i Gigant"
+                            "targetAffects": "Humanoid i Gigant",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -685,12 +843,12 @@
             "items": {
                 "Pack Tactics": {
                     "name": "Atak grupowy",
-                    "description": "<p>The [[lookup @name lowercase]] has Advantage on an attack roll against a creature if at least one of the [[lookup @name lowercase]]'s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>",
-                    "requirements": "Ally within 5 feet of attack target"
+                    "description": "<p>[[lookup @name]] ma Ułatwienie w teście ataku przeciwko istocie, jeśli co najmniej jeden sojusznik potwora [[lookup @name lowercase]] znajduje się w odległości 5 stóp od tej istoty i nie ma stanu Obezwładniony.</p>",
+                    "requirements": "Sojusznik w odległości 5 stóp od celu ataku"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The [[lookup @name lowercase]] makes two [[/item .mmBite0000000000]] attacks.</p>",
+                    "description": "<p>[[lookup @name]] wykonuje dwa ataki [[/item .mmBite0000000000]].</p>",
                     "activities": {
                         "Expend Use": {
                             "name": "Wykorzystaj użycie"
@@ -703,7 +861,12 @@
                 },
                 "Fire Breath": {
                     "name": "Ogniste zionięcie",
-                    "description": "<p><em>Dexterity Saving Throw: </em>DC [[lookup @save.dc.value activity=bDqgmtLG3zcVuqdi]], each [[lookup @target.affects.type activity=bDqgmtLG3zcVuqdi]] in a [[lookup @target.template.size activity=bDqgmtLG3zcVuqdi]]-foot Cone.</p><p><em>Failure: </em>[[/damage average]] damage.</p><p><em>Success:</em> Half damage.</p>"
+                    "description": "<p class=\"feature\">[[lookup @name]] rzuca <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCounterspe]</em> lub <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShield0000]</em> w odpowiedzi na wyzwalacz czaru, używając tej samej cechy bazowej co Rzucanie czarów.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 }
             }
         },
@@ -852,6 +1015,9 @@
                     "name": "Shackling Glyph",
                     "description": "<p><em>Strength Saving Throw:</em> DC [[lookup @attributes.spell.dc]], one creature the warden can see within [[lookup @range.value activity=AKdmrcN2he98aia7]] feet.</p><p><em>Failure:</em> The creature has the &amp;Reference[Grappled apply=false] condition (escape DC 14). While Grappled, the creature has the &amp;Reference[Restrained apply=false] condition.</p>",
                     "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        },
                         "Escape Check": {
                             "name": "Test ucieczki"
                         }
@@ -863,7 +1029,7 @@
                     }
                 },
                 "Protective Magic": {
-                    "name": "Protective Magic",
+                    "name": "Magia ochronna",
                     "description": "<p>The warden casts [[/item .JIGhDMyr2mnf8OMW]]{Counterspell} or [[/item .MWDCLYm2xEVNc14M]]{Shield} in response to the spell’s trigger, using the same spellcasting ability as Spellcasting.</p>",
                     "activities": {
                         "cast": {
@@ -937,6 +1103,11 @@
                     "description": "<p>Próbujesz przerwać istocie rzucanie czaru. Istota wykonuje rzut obronny na Kondycję. Przy nieudanym rzucie czar rozprasza się bez żadnego efektu, a Akcja, Akcja Dodatkowa albo Reakcja użyta do jego rzucenia zostaje zmarnowana. Jeśli czar został rzucony z użyciem komórki czaru, ta komórka nie zostaje zużyta.</p>",
                     "activation": "gdy widzisz istotę w zasięgu rzucającą czar z komponentami werbalnymi, somatycznymi lub materialnymi",
                     "activationCondition": "gdy widzisz istotę w zasięgu rzucającą czar z komponentami werbalnymi, somatycznymi lub materialnymi",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -956,11 +1127,11 @@
                 },
                 "Amphibious": {
                     "name": "Ziemno-wodny",
-                    "description": "<p>The [[lookup @name lowercase]] może oddychać w powietrzu i wodzie.</p>"
+                    "description": "<p>[[lookup @name]] może oddychać w powietrzu i wodzie.</p>"
                 },
                 "Sunlight Sensitivity": {
                     "name": "Wrażliwość na światło słoneczne",
-                    "description": "<p>While in sunlight, the [[lookup @name lowercase]] has Disadvantage on ability checks and attack rolls.</p>",
+                    "description": "<p>W świetle słonecznym [[lookup @name lowercase]] ma Utrudnienie w testach cech i testach ataku.</p>",
                     "requirements": "W świetle słonecznym"
                 },
                 "Sticky Shield": {
@@ -969,10 +1140,11 @@
                     "activities": {
                         "Save": {
                             "name": "Obrona",
-                            "condition": "A creature misses the kuo-toa with a melee attack roll using a weapon.",
-                            "activationCondition": "A creature misses the kuo-toa with a melee attack roll using a weapon.",
+                            "condition": "Istota chybia kuo-toę testem ataku wręcz wykonanego bronią.",
+                            "activationCondition": "Istota chybia kuo-toę testem ataku wręcz wykonanego bronią.",
                             "target": "wyzwalająca istota",
-                            "targetAffects": "wyzwalająca istota"
+                            "targetAffects": "wyzwalająca istota",
+                            "damageOnSave": "none"
                         },
                         "Free Weapon Check": {
                             "name": "Free Weapon Check",
@@ -996,7 +1168,8 @@
                     "activities": {
                         "save": {
                             "target": "Duży lub mniejszy",
-                            "targetAffects": "Duży lub mniejszy"
+                            "targetAffects": "Duży lub mniejszy",
+                            "damageOnSave": "połowa"
                         },
                         "Escape Check": {
                             "name": "Test ucieczki"
@@ -1018,11 +1191,11 @@
             "items": {
                 "Amphibious": {
                     "name": "Ziemno-wodny",
-                    "description": "<p>The [[lookup @name lowercase]] może oddychać w powietrzu i wodzie.</p>"
+                    "description": "<p>[[lookup @name]] może oddychać w powietrzu i wodzie.</p>"
                 },
                 "Sunlight Sensitivity": {
                     "name": "Wrażliwość na światło słoneczne",
-                    "description": "<p>While in sunlight, the [[lookup @name lowercase]] has Disadvantage on ability checks and attack rolls.</p>",
+                    "description": "<p>W świetle słonecznym [[lookup @name lowercase]] ma Utrudnienie w testach cech i testach ataku.</p>",
                     "requirements": "W świetle słonecznym"
                 },
                 "Multiattack": {
@@ -1040,7 +1213,7 @@
                 },
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC [[lookup @attributes.spell.dc]]):</p><p class=\"feature-trait\"><strong>At Will:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectMagi]{Detect Magic}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThaumaturg]{Thaumaturgy}</em></p><p class=\"feature-trait\"><strong>1/Day Each:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDestructiv]{Destructive Wave}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDivination]{Divination}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHoldMonste]{Hold Monster}</em> (level 6 version), <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplScrying000]{Scrying}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplTongues000]{Tongues}</em></p>"
+                    "description": "<p class=\"feature\">[[lookup @name]] rzuca jeden z poniższych czarów bez potrzeby użycia komponentów Materialnych, używając Mądrości jako Cechy bazowej (ST rzutu obronnego przeciw czarom [[lookup @attributes.spell.dc]]):</p><p class=\"feature-trait\"><strong>Do woli:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectMagi]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThaumaturg]</em></p><p class=\"feature-trait\"><strong>1/dzień każdy:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDestructiv]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDivination]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHoldMonste]</em> (wersja 6. kręgu), <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplScrying000]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplTongues000]</em></p>"
                 },
                 "Detect Magic": {
                     "name": "Wykrycie magii",
@@ -1076,6 +1249,11 @@
                 "Destructive Wave": {
                     "name": "Fala zniszczenia",
                     "description": "<p>Destrukcyjna energia rozchodzi się od ciebie w promieniu 30 stóp. Każda wybrana przez ciebie istota w tym obszarze wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia cel otrzymuje 5k6 obrażeń od dźwięku oraz 5k6 obrażeń od światłości lub nekrotycznych (twój wybór) i zostaje &Reference[Prone]{Powalony}. W przypadku udanego rzutu obronnego cel otrzymuje tylko połowę tych obrażeń.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Prone": {
                             "name": "Powalony"
@@ -1104,6 +1282,11 @@
                     "name": "Unieruchomienie potwora",
                     "description": "<p>Wybierasz istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &Reference[Paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 5. kręgu.</p>",
                     "materials": "prosty kawałek żelaza",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Paralyzed": {
                             "name": "Sparaliżowany",
@@ -1121,31 +1304,40 @@
                     "targetAffects": "istota na tej samej sferze egzystencji lub lokacji która widziałeś",
                     "activities": {
                         "Secondhand and Picture": {
-                            "name": "Druga ręka i obraz"
+                            "name": "Druga ręka i obraz",
+                            "damageOnSave": "połowa"
                         },
                         "Secondhand and Garment": {
-                            "name": "Druga ręka i odzienie"
+                            "name": "Druga ręka i odzienie",
+                            "damageOnSave": "połowa"
                         },
                         "Secondhand and Body Part": {
-                            "name": "Druga ręka i część ciała"
+                            "name": "Druga ręka i część ciała",
+                            "damageOnSave": "połowa"
                         },
                         "Firsthand and Picture": {
-                            "name": "Pierwsza ręka i obraz"
+                            "name": "Pierwsza ręka i obraz",
+                            "damageOnSave": "połowa"
                         },
                         "Firsthand and Garment": {
-                            "name": "Pierwsza ręka i odzienie"
+                            "name": "Pierwsza ręka i odzienie",
+                            "damageOnSave": "połowa"
                         },
                         "Firsthand and Body Part": {
-                            "name": "Pierwsza ręka i część ciała"
+                            "name": "Pierwsza ręka i część ciała",
+                            "damageOnSave": "połowa"
                         },
                         "Extensive and Picture": {
-                            "name": "Rozległy i obraz"
+                            "name": "Rozległy i obraz",
+                            "damageOnSave": "połowa"
                         },
                         "Extensive and Garment": {
-                            "name": "Rozległy i odzienie"
+                            "name": "Rozległy i odzienie",
+                            "damageOnSave": "połowa"
                         },
                         "Extensive and Body Part": {
-                            "name": "Rozległy i Część ciała"
+                            "name": "Rozległy i Część ciała",
+                            "damageOnSave": "połowa"
                         },
                         "Create Sensor": {
                             "name": "Stworzenie sensora",
@@ -1174,7 +1366,7 @@
                 },
                 "Shield of Faith": {
                     "name": "Tarcza wiary",
-                    "description": "<p>The [[lookup @name lowercase]] casts <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShieldofFa]{Shield of Faith}</em>, using the same spellcasting ability as Spellcasting.</p>"
+                    "description": "<p>[[lookup @name]] rzuca <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShieldofFa]</em>, używając tej samej cechy bazowej co Rzucanie czarów.</p>"
                 },
                 "T5upgFch5zEBoWTj": {
                     "name": "Tarcza wiary",
@@ -1199,16 +1391,16 @@
             "items": {
                 "Amphibious": {
                     "name": "Ziemno-wodny",
-                    "description": "<p>The [[lookup @name lowercase]] może oddychać w powietrzu i wodzie.</p>"
+                    "description": "<p>[[lookup @name]] może oddychać w powietrzu i wodzie.</p>"
                 },
                 "Sunlight Sensitivity": {
                     "name": "Wrażliwość na światło słoneczne",
-                    "description": "<p>While in sunlight, the [[lookup @name lowercase]] has Disadvantage on ability checks and attack rolls.</p>",
+                    "description": "<p>W świetle słonecznym [[lookup @name lowercase]] ma Utrudnienie w testach cech i testach ataku.</p>",
                     "requirements": "W świetle słonecznym"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The [[lookup @name lowercase]] makes two [[/item Bone Whip]] attacks.</p>",
+                    "description": "<p>[[lookup @name]] wykonuje dwa ataki [[/item Bicz z kości]].</p>",
                     "activities": {
                         "Use": {
                             "name": "Użycie"
@@ -1234,11 +1426,11 @@
             "items": {
                 "Amphibious": {
                     "name": "Ziemno-wodny",
-                    "description": "<p>The [[lookup @name lowercase]] może oddychać w powietrzu i wodzie.</p>"
+                    "description": "<p>[[lookup @name]] może oddychać w powietrzu i wodzie.</p>"
                 },
                 "Sunlight Sensitivity": {
                     "name": "Wrażliwość na światło słoneczne",
-                    "description": "<p>While in sunlight, the [[lookup @name lowercase]] has Disadvantage on ability checks and attack rolls.</p>",
+                    "description": "<p>W świetle słonecznym [[lookup @name lowercase]] ma Utrudnienie w testach cech i testach ataku.</p>",
                     "requirements": "W świetle słonecznym"
                 },
                 "Pincer Staff": {
@@ -1252,7 +1444,7 @@
                     "effects": {
                         "Grappled": {
                             "name": "Pochwycony",
-                            "description": "<p>If the target is a Medium or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[/check ability=str skill=ath format=long]], see source item for DC).</p>"
+                            "description": "<p>Jeśli cel jest Średnią lub mniejszą istotą, otrzymuje stan &amp;Reference[Grappled apply=false] (ST ucieczki [[/check ability=str skill=ath format=long]], patrz element źródłowy, aby poznać ST).</p>"
                         }
                     }
                 },
@@ -1262,7 +1454,7 @@
                 },
                 "Shield of Faith": {
                     "name": "Tarcza wiary",
-                    "description": "<p>The [[lookup @name lowercase]] casts <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShieldofFa]{Shield of Faith}</em>, using the same spellcasting ability as Spellcasting.</p>"
+                    "description": "<p>[[lookup @name]] rzuca <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShieldofFa]</em>, używając tej samej cechy bazowej co Rzucanie czarów.</p>"
                 },
                 "CqajRrRLSFDDOQPA": {
                     "name": "Tarcza wiary",
@@ -1334,7 +1526,8 @@
                             "activationCondition": "Taking the Drive action and spending half of the ship's Fly Speed",
                             "target": "not anchored",
                             "targetAffects": "not anchored",
-                            "range": "within the ship"
+                            "range": "within the ship",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -1419,7 +1612,7 @@
                     "description": "<p>The scion makes two [[/item Thunderbolt]] attacks and uses [[/item Spellcasting]].</p>"
                 },
                 "Thunderbolt": {
-                    "name": "Thunderbolt",
+                    "name": "Grom",
                     "description": "<p>[[/attack extended]]. [[/damage average extended]].</p><p><em>Critical Hit:</em> The creature also has the &amp;Reference[Deafened apply=false] condition for 1 minute.</p>",
                     "effects": {
                         "Deafened": {
@@ -1461,6 +1654,11 @@
                     "name": "Poryw wiatru",
                     "description": "<p>Silny podmuch wiatru o długości 60 stóp i szerokości 10 stóp wystrzeliwuje od ciebie w wybranym kierunku na czas trwania czaru. Każda istota w linii musi wykonać rzut obronny na Siłę. W przypadku niepowodzenia zostaje odepchnięta o 15 stóp od ciebie wzdłuż linii. Istota, która zakończy swoją turę w linii, musi ponownie wykonać ten rzut.</p><p>Każda istota w linii musi wydawać 2 stopy (0,5m) ruchu na każdy 1 stopę (0,3m) przemieszczenia się w twoim kierunku.</p><p>Podmuch rozprasza gazy i opary, a także gasi świece i podobne niezabezpieczone płomienie w obszarze. Powoduje, że chronione płomienie, takie jak te w lampionach, migoczą dziko i mają 50% szans na zgaśnięcie.</p><p>Jako Akcję Dodatkową w swoich kolejnych turach możesz zmienić kierunek, w którym wieje linia wiatru.</p>",
                     "materials": "nasiono rośliny strączkowej",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -1470,6 +1668,11 @@
                 "Thunderwave": {
                     "name": "Fala gromu",
                     "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -1517,7 +1720,7 @@
                             "name": "Harpun"
                         },
                         "Reel": {
-                            "name": "Reel",
+                            "name": "Nawijanie",
                             "chatFlavor": "Requires Elemental Core",
                             "target": "harpooned target",
                             "targetAffects": "harpooned target"
@@ -1563,7 +1766,8 @@
                             "activationCondition": "Taking the Drive action and spending half of the ship's Fly Speed",
                             "target": "not anchored",
                             "targetAffects": "not anchored",
-                            "range": "within the ship"
+                            "range": "within the ship",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -1604,6 +1808,11 @@
                 "Inquisitive Eye": {
                     "name": "Inquisitive Eye",
                     "description": "<p><em>Wisdom Saving Throw:</em> DC [[lookup @attributes.spell.dc]], one creature the inquisitive can see within [[lookup @range.value activity=82uorFWecfUXV0dP]] feet.</p><p><em>Failure</em>: [[/damage average]] damage, and the target is marked.</p><p>The inquisitive has Advantage on attack rolls against a target it has marked. While marked, the target can’t become hidden from the inquisitive, and if it has the Invisible condition, it gains no benefit from that condition against the inquisitive.</p><p>The mark disappears after 1 minute or when the inquisitive uses this action again.</p><p><em>Success</em>: Half damage only.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    },
                     "effects": {
                         "Marked": {
                             "name": "Marked",
@@ -1635,6 +1844,11 @@
                     "name": "Wykrycie myśli",
                     "description": "<p>For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of 3 or lower or doesn't speak any language, the creature is unaffected.</p><p>You initially learn the surface thoughts of the creature—what is most on its mind in that moment. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's mind. If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.</p><p>Questions verbally directed at the target creature naturally shape the course of its thoughts, so this spell is particularly effective as part of an interrogation.</p><p>You can also use this spell to detect the presence of thinking creatures you can't see. When you cast the spell or as your action during the duration, you can search for thoughts within 30 feet of you. The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. You can't detect a creature with an Intelligence of 3 or lower or one that doesn't speak any language.</p><p>Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range.</p>",
                     "materials": "A copper piece",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -1723,7 +1937,8 @@
                     "materials": "1 sztuka miedzi",
                     "activities": {
                         "Probe Deeper": {
-                            "name": "Głębsze badanie"
+                            "name": "Głębsze badanie",
+                            "damageOnSave": "połowa"
                         },
                         "Sense Thoughts": {
                             "name": "Wyczuwanie myśli"
@@ -1780,7 +1995,12 @@
                 },
                 "Lightning Cage": {
                     "name": "Lightning Cage",
-                    "description": "<p><em>Constitution Saving Throw:</em> DC [[lookup @attributes.spell.dc]], each creature in a [[lookup @target.template.size activity=CdatXIm9fdWxAYUo]]-foot-radius Sphere centered on a point the enforcer can see within [[lookup @range.value activity=CdatXIm9fdWxAYUo]] feet.</p><p><em>Failure</em>: [[/damage average]] damage, and the creature can’t take Reactions until the end of the enforcer’s next turn.</p><p><em>Success</em>: Half damage only.</p>"
+                    "description": "<p><em>Constitution Saving Throw:</em> DC [[lookup @attributes.spell.dc]], each creature in a [[lookup @target.template.size activity=CdatXIm9fdWxAYUo]]-foot-radius Sphere centered on a point the enforcer can see within [[lookup @range.value activity=CdatXIm9fdWxAYUo]] feet.</p><p><em>Failure</em>: [[/damage average]] damage, and the creature can’t take Reactions until the end of the enforcer’s next turn.</p><p><em>Success</em>: Half damage only.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 },
                 "Misty Step": {
                     "name": "Krok przez mgłę",
@@ -1792,7 +2012,8 @@
                     "activities": {
                         "save": {
                             "condition": "The enforcer takes damage from a melee attack.",
-                            "activationCondition": "The enforcer takes damage from a melee attack."
+                            "activationCondition": "The enforcer takes damage from a melee attack.",
+                            "damageOnSave": "none"
                         }
                     }
                 },
@@ -1833,29 +2054,29 @@
                     "description": "<p class=\"feature\">The [[lookup @name lowercase]] can breathe air and water, but it must be submerged at least once every 4 hours to avoid suffocating outside water.</p>"
                 },
                 "Shark Telepathy": {
-                    "name": "Shark Telepathy",
+                    "name": "Rekinia telepatia",
                     "description": "<p class=\"feature\">The [[lookup @name lowercase]] can magically control sharks within 120 feet of itself, using a special telepathy.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The [[lookup @name lowercase]] makes two [[/item .mmSpectralJaws00]] attacks.</p>",
+                    "description": "<p>[[lookup @name]] wykonuje dwa ataki [[/item .mmSpectralJaws00]].</p>",
                     "activities": {
                         "Expand Use": {
-                            "name": "Expand Use"
+                            "name": "Wykorzystaj użycie"
                         }
                     }
                 },
                 "Spectral Jaws": {
-                    "name": "Spectral Jaws",
+                    "name": "Widmowe szczęki",
                     "description": "<p class=\"feature\"><em>Melee or Ranged Attack Roll:</em> [[/attack]], reach [[lookup @item.range.reach]] ft. or range [[lookup @item.range.value]] ft. <em>Hit:</em> [[/damage average]] damage.</p>"
                 },
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC [[lookup @attributes.spell.dc]]):</p><p class=\"feature-trait\"><strong>At Will:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThaumaturg]{Thaumaturgy}</em></p><p class=\"feature-trait\"><strong>2/Day Each:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHoldPerson]{Hold Person}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplTongues000]{Tongues}</em></p>"
+                    "description": "<p class=\"feature\">[[lookup @name]] rzuca jeden z poniższych czarów bez potrzeby użycia komponentów Materialnych, używając Mądrości jako Cechy bazowej (ST rzutu obronnego przeciw czarom [[lookup @attributes.spell.dc]]):</p><p class=\"feature-trait\"><strong>Do woli:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThaumaturg]</em></p><p class=\"feature-trait\"><strong>2/dzień każdy:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHoldPerson]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplTongues000]</em></p>"
                 },
                 "Fiendish Aid": {
-                    "name": "Fiendish Aid",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] casts <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBless00000]{Bless}</em> or <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHealingWor]{Healing Word}</em>, using the same spellcasting ability as Spellcasting.</p>"
+                    "name": "Czarcia pomoc",
+                    "description": "<p class=\"feature\">[[lookup @name]] rzuca <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBless00000]</em> lub <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHealingWor]</em>, używając tej samej Cechy bazowej co Rzucanie czarów.</p>"
                 },
                 "Bless": {
                     "name": "Błogosławieństwo",
@@ -1898,6 +2119,11 @@
                     "name": "Unieruchomienie osoby",
                     "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać dodatkowego Humanoida za każdą komórkę czaru powyżej 2. kręgu.</p>",
                     "materials": "prosty kawałek żelaza",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Paralyzed": {
                             "name": "Sparaliżowany",
@@ -1925,7 +2151,7 @@
         },
         "Sahuagin Warrior": {
             "name": "Sahuagin wojownik",
-            "description": "<h1>Sahuagin</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.6GoEsoHTiVUdeAKu caption=false cite=false classes=\"no-embed mm\"]</p><h2>Sahuagin Warrior</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.e7E1JhVR2AaUl70T caption=false cite=false classes=\"no-embed mm\"]</p>",
+            "description": "<h1>Sahuagin</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.6GoEsoHTiVUdeAKu caption=false cite=false classes=\"no-embed mm\"]</p><h2>Sahuagin wojownik</h2><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.e7E1JhVR2AaUl70T caption=false cite=false classes=\"no-embed mm\"]</p>",
             "alignment": "Praworządny Zły",
             "items": {
                 "Blood Frenzy": {
@@ -1937,15 +2163,15 @@
                     "description": "<p class=\"feature\">The [[lookup @name lowercase]] can breathe air and water, but it must be submerged at least once every 4 hours to avoid suffocating outside water.</p>"
                 },
                 "Shark Telepathy": {
-                    "name": "Shark Telepathy",
+                    "name": "Rekinia telepatia",
                     "description": "<p class=\"feature\">The [[lookup @name lowercase]] can magically control sharks within 120 feet of itself, using a special telepathy.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The [[lookup @name lowercase]] makes two [[/item .mmClaw0000000000]] attacks.</p>",
+                    "description": "<p>[[lookup @name]] wykonuje dwa ataki [[/item .mmClaw0000000000]].</p>",
                     "activities": {
                         "Expand Use": {
-                            "name": "Expand Use"
+                            "name": "Wykorzystaj użycie"
                         }
                     }
                 },
@@ -1955,7 +2181,7 @@
                 },
                 "Aquatic Charge": {
                     "name": "Wodna szarża",
-                    "description": "<p>The [[lookup @name lowercase]] swims up to its Swim Speed straight toward an enemy it can see.</p>",
+                    "description": "<p>[[lookup @name]] płynie po linii prostej o maksymalnie wartość swojej Szybkości pływania w kierunku wroga, którego widzi.</p>",
                     "activities": {
                         "Expend Use": {
                             "name": "Wykorzystaj użycie",
@@ -2136,6 +2362,11 @@
                 "Word of Stasis": {
                     "name": "Word of Stasis",
                     "description": "<p><em>Constitution Saving Throw:</em> DC [[lookup @attributes.spell.dc]], each creature in a [[lookup @target.template.size activity=ZbumyLKn42fPAx9W]]-foot-radius Sphere centered on a point the scribe can see within [[lookup @range.value activity=ZbumyLKn42fPAx9W]] feet.</p><p><em>Failure</em>: The target has the &amp;Reference[Incapacitated apply=false] condition until the start of the scribe’s next turn. While the target is Incapacitated, its Speed is 0 and can’t increase.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    },
                     "effects": {
                         "Incapacitated | Speed 0 ft.": {
                             "name": "Incapacitated | Speed 0 ft.",
@@ -2335,7 +2566,8 @@
                             "activationCondition": "Taking the Drive action and spending half of the ship's Fly Speed",
                             "target": "not anchored",
                             "targetAffects": "not anchored",
-                            "range": "within the ship"
+                            "range": "within the ship",
+                            "damageOnSave": "none"
                         }
                     },
                     "effects": {
@@ -2409,6 +2641,11 @@
                 "Tear Through Space": {
                     "name": "Tear Through Space",
                     "description": "<p>The marauder teleports to a space it can see within [[lookup @range.value activity=1FS7w4J4fc1wNXoZ]] feet, appearing in a dazzling flash.</p><p><em>Constitution Saving Throw</em>: DC [[lookup @save.dc.value activity=1FS7w4J4fc1wNXoZ]], each creature in a [[lookup @target.template.size activity=1FS7w4J4fc1wNXoZ]]-foot Emanation originating from the marauder when it appears.</p><p><em>Failure</em>: The target has the &amp;Reference[Blinded apply=false] condition until the end of the marauder’s next turn.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    },
                     "effects": {
                         "Blinded": {
                             "name": "Oślepiony",
@@ -2434,6 +2671,11 @@
                     "description": "<p>Wypuszczasz zielony promień w cel, który widzisz w zasięgu. Celem może być istota, niemagiczny obiekt lub tworzenie magicznej energii, takie jak ściana stworzona przez <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofForc]{Ścianę energii}</em>.</p><p>Istota będąca celem tego czaru wykonuje rzut obronny na Zręczność. W przypadku niepowodzenia cel otrzymuje 10k6 + 40 obrażeń od mocy. Jeśli obrażenia te zredukują jego Punkty Wytrzymałości do 0, istota oraz wszystkie niemagiczne przedmioty, które nosi i posiada, zostają zdezintegrowane w szary pył. Cel może zostać wskrzeszony jedynie za pomocą czaru <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplTrueResurr]{Prawdziwe zmartwychwstanie}</em> lub <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Życzenie}</em>.</p><p>Ten czar automatycznie dezintegruje niemagiczny obiekt o rozmiarze Dużym lub mniejszym albo tworzenie magicznej energii. Jeśli taki cel jest Ogromny lub większy, czar dezintegruje jego fragment o wymiarach 10 stóp sześciennych.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 3k6 za każdy krąg komórki czaru powyżej 6.</p>",
                     "materials": "magnetyt i pył",
                     "targetAffects": "stworzenie, niemagiczny obiekt albo twór magicznej mocy",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    },
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -2459,6 +2701,11 @@
                     "description": "<p>Wypuszczasz zielony promień w cel, który widzisz w zasięgu. Celem może być istota, niemagiczny obiekt lub tworzenie magicznej energii, takie jak ściana stworzona przez <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofForc]{Ścianę energii}</em>.</p><p>Istota będąca celem tego czaru wykonuje rzut obronny na Zręczność. W przypadku niepowodzenia cel otrzymuje 10k6 + 40 obrażeń od mocy. Jeśli obrażenia te zredukują jego Punkty Wytrzymałości do 0, istota oraz wszystkie niemagiczne przedmioty, które nosi i posiada, zostają zdezintegrowane w szary pył. Cel może zostać wskrzeszony jedynie za pomocą czaru <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplTrueResurr]{Prawdziwe zmartwychwstanie}</em> lub <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Życzenie}</em>.</p><p>Ten czar automatycznie dezintegruje niemagiczny obiekt o rozmiarze Dużym lub mniejszym albo tworzenie magicznej energii. Jeśli taki cel jest Ogromny lub większy, czar dezintegruje jego fragment o wymiarach 10 stóp sześciennych.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 3k6 za każdy krąg komórki czaru powyżej 6.</p>",
                     "materials": "magnetyt i pył",
                     "targetAffects": "stworzenie, niemagiczny obiekt albo twór magicznej mocy",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    },
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -2480,8 +2727,8 @@
                     "description": "<p>When the ruffian casts <em>Witch Bolt</em>, roll [[/r 1d8]].</p><p>On an <strong>even number</strong>, the ruffian gains a number of Temporary Hit Points equal to the number rolled.</p><p>On an <strong>odd number</strong>, one creature of the ruffian’s choice within 30 feet of it takes Force damage equal to the number rolled; if no other creatures are in range, it takes the damage.</p>",
                     "activities": {
                         "Roll 1d8": {
-                            "name": "Roll 1d8",
-                            "roll": "Roll 1d8"
+                            "name": "Rzut 1k8",
+                            "roll": "Rzut 1k8"
                         }
                     }
                 },
@@ -2637,6 +2884,11 @@
                 "Shadow Cowl": {
                     "name": "Shadow Cowl",
                     "description": "<p><em>Wisdom Saving Throw:</em> DC [[lookup @attributes.spell.dc]], one creature the shadow walker can see within [[lookup @range.value activity=r2I5Mfx9bpdyAtVm]] feet.</p><p><em>Failure</em>: [[/damage average]] damage, and the target has the &amp;Reference[Blinded apply=false] condition until the start of the shadow walker’s next turn.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    },
                     "effects": {
                         "Shadow Cowl: Blinded": {
                             "name": "Shadow Cowl: Blinded"
@@ -2645,7 +2897,12 @@
                 },
                 "Draining Teleport": {
                     "name": "Draining Teleport",
-                    "description": "<p>While in Dim Light or Darkness, the shadow walker teleports up to [[lookup @range.value activity=5A4V9dTUxeBg6AaU]] feet to a space it can see that is also in Dim Light or Darkness.</p><p><em>Constitution Saving Throw</em>: DC [[lookup @save.dc.value activity=5A4V9dTUxeBg6AaU]], each creature in a [[lookup @target.template.size activity=5A4V9dTUxeBg6AaU]]-foot Emanation originating from the shadow walker at its destination space.</p><p><em>Failure</em>: [[/damage average]] damage.</p>"
+                    "description": "<p>While in Dim Light or Darkness, the shadow walker teleports up to [[lookup @range.value activity=5A4V9dTUxeBg6AaU]] feet to a space it can see that is also in Dim Light or Darkness.</p><p><em>Constitution Saving Throw</em>: DC [[lookup @save.dc.value activity=5A4V9dTUxeBg6AaU]], each creature in a [[lookup @target.template.size activity=5A4V9dTUxeBg6AaU]]-foot Emanation originating from the shadow walker at its destination space.</p><p><em>Failure</em>: [[/damage average]] damage.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    }
                 },
                 "Fey Ancestry": {
                     "name": "Rodowód fey",
@@ -2704,7 +2961,7 @@
                 },
                 "Sunlight Sensitivity": {
                     "name": "Wrażliwość na światło słoneczne",
-                    "description": "<p>While in sunlight, the [[lookup @name lowercase]] has Disadvantage on ability checks and attack rolls.</p>",
+                    "description": "<p>W świetle słonecznym [[lookup @name lowercase]] ma Utrudnienie w testach cech i testach ataku.</p>",
                     "requirements": "W świetle słonecznym"
                 },
                 "wkbIT6sEpgH36JVM": {
@@ -2910,6 +3167,11 @@
                     "name": "Przyjaciel zwierząt",
                     "description": "<p>Wybierz Bestię, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość albo zostaje objęty stanem &amp;Reference[charmed apply=false] przez czas trwania czaru. Jeśli ty lub jeden z twoich sojuszników zada celowi obrażenia, czar się kończy.</p><p><strong>Użycie Komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową Bestię za każdy krąg powyżej 1.</p>",
                     "materials": "Kęs jedzenia",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Charmed": {
                             "name": "Zauroczony",
@@ -2924,6 +3186,11 @@
                     "name": "Zwierzęcy posłaniec",
                     "description": "<p>Wybrana przez ciebie Malutka Bestia, którą widzisz w zasięgu czaru musi wykonać rzut obronny na Charyzmę. W przypadku porażki podejmuje się ona dostarczenia wiadomości w Twoim imieniu (istota o Stopniu Wyzwania wyższym niż 0 automatycznie odnosi sukces w tym rzucie). Wskazujesz odwiedzone wcześniej miejsce oraz odbiorcę pasującego do ogólnego opisu, takiego jak „osoba w mundurze straży miejskiej” lub „rudowłosy krasnolud w spiczastym kapeluszu”. Przekazujesz także wiadomość liczącą do dwudziestu pięciu słów. Przez czas trwania czaru bestia zmierza ku wyznaczonemu miejscu, pokonując około 25 mil na każde 24 godziny lub 50 mil, jeśli potrafi latać.</p><p>Kiedy Bestia dotrze na miejsce, przekazuje twoją wiadomość opisanej przez ciebie istocie, naśladując twój sposób komunikacji. Jeśli Bestia nie dotrze do celu przed upływem czasu trwania czaru, wiadomość zostaje utracona, a Bestia wraca do miejsca, w którym rzucono zaklęcie.</p><p><strong>Użycie Komórki czaru wyższego kręgu.</strong> Czas trwania czaru wydłuża się o 48 godzin za każdy krąg powyżej 2.</p>",
                     "materials": "Kęs jedzenia",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Carrying Message": {
                             "name": "Przekazywanie wiadomości",
@@ -2938,6 +3205,11 @@
                     "name": "Burza lodu",
                     "description": "<p>Grad spada w Walcu o promieniu 20 stóp i wysokości 40 stóp z centrum w punkcie w zasięgu. Każda istota w Walcu wykonuje rzut obronny na Zręczność. Istota otrzymuje 2k10 obrażeń obuchowych i 4k6 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p>Gradziny zamieniają grunt w Walcu w &amp;Reference[DifficultTerrain]{Trudny Teren} do końca twojej następnej tury.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia obuchowe zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 4.</p>",
                     "materials": "rękawiczka z jednym palcem",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -2946,8 +3218,8 @@
                 },
                 "Pack Tactics": {
                     "name": "Atak grupowy",
-                    "description": "<p>The [[lookup @name lowercase]] has Advantage on an attack roll against a creature if at least one of the [[lookup @name lowercase]]'s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>",
-                    "requirements": "Ally within 5 feet of attack target"
+                    "description": "<p>[[lookup @name]] ma Ułatwienie w teście ataku przeciwko istocie, jeśli co najmniej jeden sojusznik potwora [[lookup @name lowercase]] znajduje się w odległości 5 stóp od tej istoty i nie ma stanu Obezwładniony.</p>",
+                    "requirements": "Sojusznik w odległości 5 stóp od celu ataku"
                 },
                 "Scimitar": {
                     "name": "Sejmitar",
@@ -3082,6 +3354,11 @@
                     "name": "Unieruchomienie osoby",
                     "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać dodatkowego Humanoida za każdą komórkę czaru powyżej 2. kręgu.</p>",
                     "materials": "prosty kawałek żelaza",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    },
                     "effects": {
                         "Paralyzed": {
                             "name": "Sparaliżowany",
@@ -3126,7 +3403,7 @@
                 },
                 "Siege Monster": {
                     "name": "Potwór obleżniczy",
-                    "description": "<p>The [[lookup @name lowercase]] deals double damage to objects and structures.</p>"
+                    "description": "<p>[[lookup @name]] zadaje podwójne obrażenia obiektom i konstrukcjom.</p>"
                 },
                 "Axehand": {
                     "name": "Axehand",
@@ -3145,6 +3422,11 @@
                 "Hammerfist": {
                     "name": "Hammerfist",
                     "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a creature, it must succeed on a [[/save format=long]] or be knocked &amp;Reference[Prone apply=false].</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    },
                     "effects": {
                         "Prone": {
                             "name": "Powalony"
@@ -3153,7 +3435,12 @@
                 },
                 "Sweeping Axe": {
                     "name": "Sweeping Axe",
-                    "description": "<p>The [[lookup @name lowercase]] makes a sweep with its axehand, and each creature within [[lookup @target.template.size activity=aFgu5DuYlYYtF705]] feet of it must make a [[/save format=long]]. A creature takes [[/damage average]] damage on a failed save, or half as much damage on a successful one.</p>"
+                    "description": "<p>The [[lookup @name lowercase]] makes a sweep with its axehand, and each creature within [[lookup @target.template.size activity=aFgu5DuYlYYtF705]] feet of it must make a [[/save format=long]]. A creature takes [[/damage average]] damage on a failed save, or half as much damage on a successful one.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "połowa"
+                        }
+                    }
                 }
             }
         },

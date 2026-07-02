@@ -20,10 +20,12 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
-                "chatFlavor": "description.chatFlavor",
+                "activationCondition": "activation.condition",
                 "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
                 "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
                 "range": {
                     "path": "range",
                     "converter": "imperialToMetric"
@@ -138,6 +140,9 @@
                 "Dazzling Weapon": {
                     "name": "Dazzling Weapon"
                 },
+                "save": {
+                    "damageOnSave": "none"
+                },
                 "Summon Light": {
                     "name": "Summon Light"
                 }
@@ -201,7 +206,8 @@
                     "activationCondition": "Taking the Drive action and spending half of the ship's Fly Speed",
                     "target": "not anchored",
                     "targetAffects": "not anchored",
-                    "range": "within the ship"
+                    "range": "within the ship",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -247,7 +253,8 @@
             "description": "<p><em>Broń (@UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepMace000000]). Rzadki (wymaga zestrojenia)</em></p><p>Ta magiczna broń ma 3 ładunki i codziennie o świcie odzyskuje 1k3 zużytych ładunków. Trzymając tę broń, możesz wykonać akcję Magii i zużyć 1 ładunek, aby uwolnić z niej falę grozy. Każde wybrane przez ciebie stworzenie w obrębie 30 stóp od ciebie musi odnieść sukces w rzucie obronnym na Mądrość o ST 15 albo otrzymuje stan &amp;Reference[Frightened apply=false] na 1 minutę. Będąc Przerażone w ten sposób, stworzenie musi spędzać swoje tury, próbując oddalić się od ciebie tak daleko, jak to możliwe, i nie może wykonywać Ataków okazyjnych. W ramach swojej Akcji może użyć tylko Akcji Sprintu albo próbować uwolnić się od efektu, który uniemożliwia mu ruch. Jeśli nie ma dokąd się poruszyć, stworzenie może wykonać Akcję Uniku. Na końcu każdej swojej tury stworzenie powtarza rzut obronny, kończąc efekt wobec siebie przy sukcesie.</p>",
             "activities": {
                 "Wave of Terror": {
-                    "name": "Fala grozy"
+                    "name": "Fala grozy",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -398,7 +405,7 @@
                     "name": "Harpun"
                 },
                 "Reel": {
-                    "name": "Reel",
+                    "name": "Nawijanie",
                     "chatFlavor": "Requires Elemental Core",
                     "target": "harpooned target",
                     "targetAffects": "harpooned target"

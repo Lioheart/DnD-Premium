@@ -20,10 +20,12 @@
             "mapping": {
                 "name": "name",
                 "condition": "activation.condition",
-                "chatFlavor": "description.chatFlavor",
+                "activationCondition": "activation.condition",
                 "activationValue": "activation.value",
+                "chatFlavor": "description.chatFlavor",
                 "duration": "duration.special",
                 "roll": "roll.name",
+                "damageOnSave": "damage.onSave",
                 "range": {
                     "path": "range",
                     "converter": "imperialToMetric"
@@ -184,7 +186,8 @@
                 "Elemental Compulsion": {
                     "name": "Elemental Compulsion",
                     "target": "Żywiołak",
-                    "targetAffects": "Żywiołak"
+                    "targetAffects": "Żywiołak",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -209,7 +212,8 @@
                     "condition": "when the specified creature type is damaged by this ammunition",
                     "activationCondition": "when the specified creature type is damaged by this ammunition",
                     "target": "specific creature type",
-                    "targetAffects": "specific creature type"
+                    "targetAffects": "specific creature type",
+                    "damageOnSave": "połowa"
                 },
                 "Ammunition of Slaying": {
                     "name": "Ammunition of Slaying"
@@ -540,7 +544,8 @@
             "description": "<p><em>Ingested Poison</em></p><p>A creature subjected to Assassin's Blood makes a DC 10 Constitution saving throw. On a failed save, the creature takes 6 (1d12) Poison damage and has the &amp;Reference[Poisoned apply=false] condition for 24 hours. On a successful save, the creature takes half as much damage only.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Użyj trucizny"
+                    "name": "Użyj trucizny",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -619,7 +624,8 @@
                 "Dump Beans": {
                     "name": "Dump Beans",
                     "condition": "Object interaction",
-                    "activationCondition": "Object interaction"
+                    "activationCondition": "Object interaction",
+                    "damageOnSave": "połowa"
                 },
                 "Plant Bean": {
                     "name": "Plant Bean",
@@ -669,7 +675,8 @@
             "description": "<p><em>Wondrous Item, Rare</em></p><p>This small black sphere measures 3/4 of an inch in diameter and weighs an ounce. Typically, [[/r 1d4 + 4#Beads of Force]] <em>Beads of Force</em> are found together.</p><p>You can take a Magic action to throw the bead up to 60 feet. The bead explodes in a 10-foot-radius Sphere on impact and is destroyed. Each creature in the Sphere must succeed on a DC 15 Dexterity saving throw or take 5d4 Force damage. A sphere of transparent force then encloses the area for 1 minute. Any creature that failed the save and is completely within the area is trapped inside this sphere. Creatures that succeeded on the save or are partially within the area are pushed away from the center of the sphere until they are no longer inside it. Only breathable air can pass through the sphere’s wall. No attack or other effect can pass through.</p><p>An enclosed creature can take a Utilize action to push against the sphere’s wall, moving the sphere up to half the creature’s Speed. The sphere can be picked up, and its magic causes it to weigh only 1 pound, regardless of the weight of creatures inside.</p>",
             "activities": {
                 "Throw Bead": {
-                    "name": "Throw Bead"
+                    "name": "Throw Bead",
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -866,7 +873,8 @@
             "description": "<p>As an action, you can light a Bomb and throw it at a point up to 60 feet away, where it explodes. Each creature in a 5-foot-radius Sphere centered on that point makes a DC 12 Dexterity saving throw, taking 3d6 Fire damage on a failed save or half as much damage on a successful one.</p>",
             "activities": {
                 "Throw": {
-                    "name": "Rzuć"
+                    "name": "Rzuć",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -1094,6 +1102,9 @@
             "name": "Brunatna pleśń",
             "description": "<p><em>Śmiertelne Zagrożenie (poziomy 5–10) lub Dokuczliwe Zagrożenie (poziomy 11–16)</em></p> <p><strong>Aktor:</strong> @UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.dmgBrownMold0000]</p> <p>Brunatna pleśń przypomina futrzany, jasnobrązowy dywan. Ten grzyb żywi się ciepłem, pochłaniając je ze wszystkiego w swoim otoczeniu. Pojedyncza kolonia brunatnej pleśni zajmuje pole o boku 10 stóp, a temperatura w promieniu 30 stóp od niej jest zawsze lodowata.</p> <p>Gdy istota po raz pierwszy w turze wejdzie w przestrzeń znajdującą się w odległości 5 stóp od pleśni lub zacznie tam swoją turę, wykonuje rzut obronny na Kondycję o ST 12, otrzymując 22 (4k10) obrażeń od Zimna przy nieudanym rzucie albo połowę tej wartości przy udanym.</p> <p>Brunatna pleśń jest Odporna na obrażenia od Ognia, a każde źródło ognia zbliżone do niej na 5 stóp powoduje jej natychmiastowe rozprzestrzenienie się po powierzchni w kierunku ognia, tworząc nową kolonię zajmującą pole o boku 10 stóp. Kolonia brunatnej pleśni wystawiona na działanie efektu zadającego dowolną ilość obrażeń od Zimna zostaje natychmiast zniszczona.</p>",
             "activities": {
+                "save": {
+                    "damageOnSave": "połowa"
+                },
                 "10-Foot Square": {
                     "name": "Kwadrat o boku 10 stóp"
                 }
@@ -1104,7 +1115,8 @@
             "description": "<p><em>Inhaled Poison</em></p><p>A creature subjected to Burnt Othur Fumes must succeed on a DC 13 Constitution saving throw or take 10 (3d6) Poison damage, and it must repeat the save at the start of each of its turns. On each successive failed save, the creature takes 3 (1d6) Poison damage. After three successful saves, the poison ends.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Użyj trucizny"
+                    "name": "Użyj trucizny",
+                    "damageOnSave": "none"
                 },
                 "Successive Failed Save Damage": {
                     "name": "Successive Failed Save Damage"
@@ -1219,7 +1231,8 @@
             "description": "<p><em>Contact Poison</em></p><p>A creature subjected to Carrion Crawler Mucus must succeed on a DC 13 Constitution saving throw or have the &amp;Reference[Poisoned apply=false] condition for 1 minute. The creature also has the &amp;Reference[Paralyzed apply=false] condition while Poisoned in this way. The creature repeats the save at the end of each of its turns, ending the effect on itself on a success.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Użyj trucizny"
+                    "name": "Użyj trucizny",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -1495,16 +1508,20 @@
             "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Śmiertelna Pułapka (Poziomy 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Wyzwalacz:</strong> Istota przechodzi nad potykaczem</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Czas Trwania:</strong> Natychmiastowy</p><p>Ta pułapka wykorzystuje potykacz, aby zawalić niestabilny fragment stropu. Potykacz znajduje się 3 cale nad ziemią i rozciąga się między dwoma słabymi podporami, które przewracają się, gdy potykacz zostaje naruszony.</p><p>Pierwsza istota, która przejdzie nad potykaczem, powoduje przewrócenie się podpór i zawalenie niestabilnego fragmentu stropu. Każda istota znajdująca się pod tym fragmentem musi wykonać rzut obronny na Zręczność o ST 13, otrzymując 11 (2k10) obrażeń obuchowych przy nieudanym rzucie lub połowę tej wartości przy udanym. Rumowisko po zawaleniu zmienia obszar pułapki w &amp;Reference[Difficult Terrain].</p><p><em><strong>Wykrycie i Unieszkodliwienie.</strong></em> Akcją Poszukiwania istota może zbadać obszar pułapki i wykonać test [[/check prc 11]], wykrywając potykacz i niestabilny fragment stropu przy udanym teście. Po wykryciu potykacz można łatwo przeciąć lub obejść (bez potrzeby wykonywania testu).</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować tę pułapkę dla wyższych poziomów, zwiększając obrażenia i ST rzutu obronnego, jak pokazano w poniższej tabeli.</p><table><thead><tr><th><p>Poziomy</p></th><th><p>Obrażenia Obuchowe</p></th><th><p>ST Rzutu</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>22 (4k10)</p></td><td><p>15</p></td></tr><tr><td><p>11–16</p></td><td><p>55 (10k10)</p></td><td><p>17</p></td></tr><tr><td><p>17–20</p></td><td><p>99 (18k10)</p></td><td><p>19</p></td></tr></tbody></table></div>",
             "activities": {
                 "Trigger (1-4)": {
-                    "name": "Wyzwalacz (1-4)"
+                    "name": "Wyzwalacz (1-4)",
+                    "damageOnSave": "połowa"
                 },
                 "Trigger (5-10)": {
-                    "name": "Wyzwalacz (5-10)"
+                    "name": "Wyzwalacz (5-10)",
+                    "damageOnSave": "połowa"
                 },
                 "Trigger (11-16)": {
-                    "name": "Wyzwalacz (11-16)"
+                    "name": "Wyzwalacz (11-16)",
+                    "damageOnSave": "połowa"
                 },
                 "Trigger (17-20)": {
-                    "name": "Wyzwalacz (17-20)"
+                    "name": "Wyzwalacz (17-20)",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -1608,7 +1625,8 @@
                     "targetAffects": "The Dagger of Venom"
                 },
                 "Poison Save": {
-                    "name": "Poison Save"
+                    "name": "Poison Save",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -1673,7 +1691,8 @@
                     "name": "Geyser",
                     "chatFlavor": "30 gallons; save vs &Reference[prone]",
                     "target": "One creature or object of your choice in the Line",
-                    "targetAffects": "One creature or object of your choice in the Line"
+                    "targetAffects": "One creature or object of your choice in the Line",
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -1763,7 +1782,8 @@
                     "chatFlavor": "The Fiend makes the saving throw with Disadvantage. Deduct one item use on successful containment.",
                     "target": "visible Fiend trapped within a Magic Circle",
                     "targetAffects": "visible Fiend trapped within a Magic Circle",
-                    "range": "within sight"
+                    "range": "within sight",
+                    "damageOnSave": "none"
                 },
                 "Ensnarement: Magic Circle": {
                     "name": "Ensnarement: Magic Circle",
@@ -1941,13 +1961,19 @@
                 "Sprinkle on Elemental": {
                     "name": "Sprinkle on Elemental",
                     "target": "Elemental composed mostly of water",
-                    "targetAffects": "Elemental composed mostly of water"
+                    "targetAffects": "Elemental composed mostly of water",
+                    "damageOnSave": "połowa"
                 }
             }
         },
         "Dust of Sneezing and Choking": {
             "name": "Pył kichania i duszenia",
             "description": "<p><em>Wondrous Item, Uncommon</em></p><p>Found in a small container, this powder resembles @UUID[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgDustOfDisappe]{Dust of Disappearance}, and <em>Identify</em> reveals it to be such. There is enough of it for one use.</p><p>As a Utilize action, you can throw the dust into the air, forcing yourself and every creature in a 30-foot Emanation originating from you to make a DC 15 Constitution saving throw. Constructs, Elementals, Oozes, Plants, and Undead succeed on the save automatically.</p><p>On a failed save, a creature begins sneezing uncontrollably; it has the Incapacitated condition and is suffocating. The creature [[/save ability=con dc=15]]{repeats the save} at the end of each of its turns, ending the effect on itself on a success. The effect also ends on any creature targeted by a <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLesserRest]{Lesser Restoration}</em> spell.</p>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "none"
+                }
+            },
             "effects": {
                 "Incapacitated and Suffocating (Sneezing)": {
                     "name": "Incapacitated and Suffocating (Sneezing)",
@@ -1993,10 +2019,12 @@
             "description": "<p>An an action, you can light a Dynamite Stick and throw it at a point up to 60 feet away, where it explodes. Each creature in a 5-foot-radius Sphere centered on that point makes a DC 12 Dexterity saving throw, taking 3d6 Force damage on a failed save or half as much damage on a successful one.</p><p>It takes 1 minute to bind two or more Dynamite Sticks together so they explode at the same time. Each stick after the first increases the damage by 1d6 (to a maximum of 10d6) and the effect’s radius by 5 feet (to a maximum of 20 feet).</p><p>It takes 1 minute to rig dynamite with a longer fuse so it explodes after a longer period of time, such as 1 minute or 10 minutes.</p><section id=\"secret-u0cupKh9yxxRvrKi\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Throw Bundle</strong> activity allows you to select the number of bundled sticks and automatically adjusts the measured template and damage values.</p><p>To support bundling rather than increasing the quantity of Dynamite Sticks you have in your inventory, increase the max Limited Uses value of this item.</p></section>",
             "activities": {
                 "Throw": {
-                    "name": "Rzuć"
+                    "name": "Rzuć",
+                    "damageOnSave": "połowa"
                 },
                 "Throw Bundle": {
-                    "name": "Throw Bundle"
+                    "name": "Throw Bundle",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -2021,7 +2049,8 @@
                 "Elemental Compulsion": {
                     "name": "Elemental Compulsion",
                     "target": "Żywiołak",
-                    "targetAffects": "Żywiołak"
+                    "targetAffects": "Żywiołak",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -2207,7 +2236,8 @@
                     "name": "Arrow of Restraint",
                     "condition": "instead of dealing damage",
                     "activationCondition": "instead of dealing damage",
-                    "chatFlavor": "Save Fail: &Reference[restrained]<br>Escape: [[/check ability=str skill=ath dc=20]]"
+                    "chatFlavor": "Save Fail: &Reference[restrained]<br>Escape: [[/check ability=str skill=ath dc=20]]",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -2382,7 +2412,8 @@
             "description": "<p><em>Inhaled Poison</em></p><p>A creature subjected to Essence of Ether must succeed on a DC 15 Constitution saving throw or have the &amp;Reference[Poisoned apply=false] condition for 8 hours. The creature also has the &amp;Reference[Unconscious apply=false] condition while Poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Użyj trucizny"
+                    "name": "Użyj trucizny",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -2448,7 +2479,8 @@
                     "name": "Necrotic Reduction",
                     "chatFlavor": "A creature reduced to 0 Hit Points by this damage is transformed into green slime",
                     "target": "creature you can see",
-                    "targetAffects": "creature you can see"
+                    "targetAffects": "creature you can see",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -2497,16 +2529,20 @@
             "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Uciążliwa Pułapka (Poziomy 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Wyzwalacz:</strong> Istota przechodzi nad potykaczem</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Czas Trwania:</strong> Natychmiastowy</p><p>Pułapka z opadającą siecią wykorzystuje potykacz, aby uwolnić dociążoną Sieć o wymiarach 10 stóp na 10 stóp, zawieszoną pod stropem. Potykacz znajduje się 3 cale nad ziemią i rozciąga się między dwiema kolumnami lub drzewami.</p><p>Pierwsza istota, która przejdzie nad potykaczem, powoduje, że Sieć spada na nią. Cel musi wykonać rzut obronny na Zręczność o ST 10 albo uzyskuje stan &amp;Reference[Restrained], dopóki nie się uwolni. Istota Duża lub większa automatycznie odnosi sukces. Istota może Akcją wykonać test Siły (Atletyka) o ST 10, aby uwolnić siebie lub inną istotę w swoim zasięgu z Sieci przy udanym teście.</p><p><em><strong>Wykrycie i Unieszkodliwienie.</strong></em> Akcją Poszukiwania istota może zbadać obszar pułapki i wykonać test [[/check prc 11]], wykrywając potykacz i zawieszoną @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagNet00000000]{Net} przy udanym teście. Po wykryciu potykacz można łatwo przeciąć lub obejść (bez potrzeby wykonywania testu).</p><p><em><strong>Zniszczenie Sieci.</strong></em> Zredukowanie Sieci do 0 Punktów Wytrzymałości uwalnia wszystkie uwięzione w niej istoty (zobacz statystyki Sieci w <em>Podręczniku Gracza</em>).</p><p><em><strong>Założenie Pułapki.</strong></em> Istota posiadająca Zestaw Złodziejskich Narzędzi oraz wszystkie elementy pułapki (w tym Sieć) może spróbować założyć pułapkę z opadającą siecią, robiąc to po udanym teście Zręczności (Zwinne Dłonie) o ST 13. Każda próba założenia pułapki trwa 10 minut.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować tę pułapkę dla wyższych poziomów, zwiększając ciężar Sieci, co podnosi ST rzutu obronnego oraz ST testu Siły (Atletyka) następująco: ST 12 na poziomach 5–10, ST 14 na poziomach 11–16 oraz ST 16 na poziomach 17–20.</p></div>",
             "activities": {
                 "Trigger (1-4)": {
-                    "name": "Wyzwalacz (1-4)"
+                    "name": "Wyzwalacz (1-4)",
+                    "damageOnSave": "połowa"
                 },
                 "Trigger (5-10)": {
-                    "name": "Wyzwalacz (5-10)"
+                    "name": "Wyzwalacz (5-10)",
+                    "damageOnSave": "połowa"
                 },
                 "Trigger (11-16)": {
-                    "name": "Wyzwalacz (11-16)"
+                    "name": "Wyzwalacz (11-16)",
+                    "damageOnSave": "połowa"
                 },
                 "Trigger (17-20)": {
-                    "name": "Wyzwalacz (17-20)"
+                    "name": "Wyzwalacz (17-20)",
+                    "damageOnSave": "połowa"
                 },
                 "Escape Check (1-4)": {
                     "name": "Test ucieczki (1-4)"
@@ -2554,7 +2590,8 @@
                 "Elemental Compulsion": {
                     "name": "Elemental Compulsion",
                     "target": "Żywiołak",
-                    "targetAffects": "Żywiołak"
+                    "targetAffects": "Żywiołak",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -2571,22 +2608,31 @@
             "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Śmiertelna Pułapka (Poziomy 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Wyzwalacz:</strong> Istota wchodzi na płytkę naciskową</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Czas Trwania:</strong> Natychmiastowy, a pułapka resetuje się na początku następnej tury</p><p>Gdy istota po raz pierwszy w turze wejdzie na płytkę naciskową tej pułapki lub rozpocznie na niej swoją turę, pobliska statua wydycha 15-stopowy Stożek magicznych płomieni. Statua może mieć dowolny wygląd, na przykład przedstawiać smoka lub maga. Każda istota w Stożku musi wykonać rzut obronny na Zręczność o ST 15, otrzymując 11 (2k10) obrażeń od ognia przy nieudanym rzucie lub połowę tej wartości przy udanym.</p><p><em><strong>Wykrycie i Unieszkodliwienie.</strong></em> Czar <em>wykrycie magii</em> ujawnia aurę magii przywołania wokół statuy. Akcją Przeszukiwania istota znajdująca się w odległości 5 stóp od statuy może ją zbadać i wykonać test [[/check DC prc 10]], wykrywając przy udanym teście mały glif na statui. Gdy glif zostanie odnaleziony, postać może wykonać Akcję Nauki, aby go zbadać i wykonać test [[/check arc 15]], ustalając przy sukcesie, że glif oznacza „ogień”. Akcją postać może użyć ostrego narzędzia, aby uszkodzić glif, co unieszkodliwia pułapkę.</p><p>Akcją Przeszukiwania istota może zbadać fragment podłogi tworzący płytkę naciskową i wykonać test [[/check prc 15]], wykrywając płytkę przy udanym teście. Podłożenie Metalowego Kołka lub podobnego przedmiotu pod płytkę naciskową zapobiega wyzwoleniu pułapki.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować tę pułapkę dla wyższych poziomów, zwiększając obrażenia i obszar działania, jak pokazano w poniższej tabeli.</p><table><thead><tr><th><p>Poziomy</p></th><th><p>Obrażenia od Ognia</p></th><th><p>Obszar Działania</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>22 (4k10)</p></td><td><p>Stożek 30 stóp</p></td></tr><tr><td><p>11–16</p></td><td><p>55 (10k10)</p></td><td><p>Stożek 60 stóp</p></td></tr><tr><td><p>17–20</p></td><td><p>99 (18k10)</p></td><td><p>Stożek 120 stóp</p></td></tr></tbody></table></div>",
             "activities": {
                 "Trigger (1-4)": {
-                    "name": "Wyzwalacz (1-4)"
+                    "name": "Wyzwalacz (1-4)",
+                    "damageOnSave": "połowa"
                 },
                 "Trigger (5-10)": {
-                    "name": "Wyzwalacz (5-10)"
+                    "name": "Wyzwalacz (5-10)",
+                    "damageOnSave": "połowa"
                 },
                 "Trigger (11-16)": {
-                    "name": "Wyzwalacz (11-16)"
+                    "name": "Wyzwalacz (11-16)",
+                    "damageOnSave": "połowa"
                 },
                 "Trigger (17-20)": {
-                    "name": "Wyzwalacz (17-20)"
+                    "name": "Wyzwalacz (17-20)",
+                    "damageOnSave": "połowa"
                 }
             }
         },
         "Fireball Fungus": {
             "name": "Grzyb Kuli ognia",
-            "description": "<p><em>Śmiertelne Zagrożenie (poziomy 5–10)</em></p> <p><strong>Aktor:</strong> @UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.dmgFireballFungu]</p> <p>Grzyb Kuli Ognia to Niewielki, nieożywiony grzyb, który może rosnąć wszędzie tam, gdzie występują obfite skupiska grzybów. Jego świecący, pomarańczowy kapelusz emituje Jasne światło w promieniu 15 stóp oraz Słabe światło w kolejnych 15 stopach.</p> <p>Grzyb Kuli Ognia ma AC 10, 6 PW oraz Odporność na obrażenia Psychiczne. Gdy jego Punkty Wytrzymałości spadną do 0, grzyb wybucha tak, jakby w jego centrum został rzucony czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireball00] (ST rzutu obronnego 15).</p> <p><em><strong>Na wyższych poziomach.</strong></em> Eksplozja Grzyba Kuli Ognia powoduje również wybuch wszystkich pozostałych grzybów tego rodzaju znajdujących się w obszarze działania. Możesz dostosować to zagrożenie do wyższych poziomów, dodając jeden dodatkowy grzyb na poziomach 11–16 lub trzy dodatkowe grzyby na poziomach 17–20.</p>"
+            "description": "<p><em>Śmiertelne Zagrożenie (poziomy 5–10)</em></p> <p><strong>Aktor:</strong> @UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.dmgFireballFungu]</p> <p>Grzyb Kuli Ognia to Niewielki, nieożywiony grzyb, który może rosnąć wszędzie tam, gdzie występują obfite skupiska grzybów. Jego świecący, pomarańczowy kapelusz emituje Jasne światło w promieniu 15 stóp oraz Słabe światło w kolejnych 15 stopach.</p> <p>Grzyb Kuli Ognia ma AC 10, 6 PW oraz Odporność na obrażenia Psychiczne. Gdy jego Punkty Wytrzymałości spadną do 0, grzyb wybucha tak, jakby w jego centrum został rzucony czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireball00] (ST rzutu obronnego 15).</p> <p><em><strong>Na wyższych poziomach.</strong></em> Eksplozja Grzyba Kuli Ognia powoduje również wybuch wszystkich pozostałych grzybów tego rodzaju znajdujących się w obszarze działania. Możesz dostosować to zagrożenie do wyższych poziomów, dodając jeden dodatkowy grzyb na poziomach 11–16 lub trzy dodatkowe grzyby na poziomach 17–20.</p>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "połowa"
+                }
+            }
         },
         "Flame Tongue": {
             "name": "Flame Tongue",
@@ -2630,7 +2676,8 @@
             "description": "<p><em>Large Object</em></p><p><strong>Armor Class:</strong> 19 <strong>Hit Points:</strong> 100</p><p><em><strong>Flamethrower.</strong></em> <em>Dexterity Saving Throw:</em> DC 15, each creature in a 60-foot-long, 5-foot-wide Line. <em>Failure:</em> 14 (4d6) Fire damage, and the creature starts burning. <em>Success:</em> Half damage only.</p><p>Powered by magic, this iron coach has a flamethrower turret mounted atop it.</p><p>The coach can accommodate up to two Medium creatures. An iron hatch in the vehicle’s underbelly grants access. Narrow slits in the front, sides, and back of the coach allow its occupants to see outside. A creature in the coach has Three-Quarters Cover against attacks and other effects that originate outside it.</p><p>The coach is designed for a crew of two: a driver and a gunner. The driver can take the Utilize action to move and turn the coach, which has a Speed of 30 feet, using levers and pedals inside. The gunner can use the Flamethrower action to aim and fire it.</p>",
             "activities": {
                 "Flamethrower": {
-                    "name": "Flamethrower"
+                    "name": "Flamethrower",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -2725,10 +2772,12 @@
                     "name": "First Command Word"
                 },
                 "Second Command Word": {
-                    "name": "Second Command Word"
+                    "name": "Second Command Word",
+                    "damageOnSave": "połowa"
                 },
                 "Third Command Word": {
-                    "name": "Third Command Word"
+                    "name": "Third Command Word",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -2868,7 +2917,8 @@
             "description": "<p><em>Uciążliwe Zagrożenie (poziomy 1–4)</em></p> <p><strong>Aktor:</strong> @UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.dmgGreenSlime000]</p> <p>Żrący zielony szlam pożera żywe ciało, materiał organiczny oraz metal przy każdym kontakcie. Jaskrawozielony, mokry i lepki, tworzy plamy przylegające do ścian, podłóg i sufitów.</p> <p>Pojedyncza plama zielonego szlamu zajmuje pole o boku 5 stóp. Zielony szlam ma Ślepowidzenie o zasięgu 30 stóp i spada ze ścian lub sufitów, gdy wykryje ruch pod sobą. Poza tym nie może się poruszać. Istota świadoma obecności szlamu może uniknąć trafienia, wykonując udany rzut obronny na Zręczność o ST 10.</p> <p>Istota, która wejdzie w kontakt z zielonym szlamem, otrzymuje 5 (1k10) obrażeń od Kwasu. Otrzymuje je ponownie na początku każdej swojej tury, dopóki szlam nie zostanie zeskrobany (wymaga Akcji) lub zniszczony. W przypadku drewna lub metalu zielony szlam zadaje 11 (2k10) obrażeń od Kwasu w każdej rundzie, a każdy niemagiczny drewniany lub metalowy przedmiot użyty do zeskrobania szlamu zostaje zniszczony.</p> <p>Bezpośrednie światło słoneczne lub jakakolwiek ilość obrażeń od Zimna, Ognia lub Światłości natychmiast niszczy plamę zielonego szlamu.</p>",
             "activities": {
                 "Avoid": {
-                    "name": "Avoid"
+                    "name": "Avoid",
+                    "damageOnSave": "połowa"
                 },
                 "Contact Damage": {
                     "name": "Contact Damage"
@@ -2883,7 +2933,8 @@
             "description": "<p>As an action, you can use a Grenade Launcher to propel a grenade to a point up to 1,000 feet away. The grenade explodes at that point, creating a particular effect in a 20-foot-radius Sphere.</p><p><em><strong>Fragmentation Grenade.</strong></em> Each creature in the Sphere makes a DC 15 Dexterity saving throw, taking 17 (5d6) Piercing damage on a failed save or half as much damage on a successful one.</p><p><em><strong>Smoke Grenade.</strong></em> The area of the Sphere is Heavily Obscured by smoke for 1 minute. A strong wind (such as the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGustofWind]{Gust of Wind} spell) disperses the smoke.</p>",
             "activities": {
                 "Fragmentation Grenade": {
-                    "name": "Fragmentation Grenade"
+                    "name": "Fragmentation Grenade",
+                    "damageOnSave": "połowa"
                 },
                 "Smoke Grenade": {
                     "name": "Smoke Grenade"
@@ -2895,7 +2946,8 @@
             "description": "<p>As an action, you can throw a grenade at a point up to 60 feet away. The grenade explodes at that point, creating a particular effect in a 20-foot-radius Sphere.</p><p>Each creature in the Sphere makes a DC 15 Dexterity saving throw, taking 17 (5d6) Piercing damage on a failed save or half as much damage on a successful one.</p>",
             "activities": {
                 "Throw": {
-                    "name": "Rzuć"
+                    "name": "Rzuć",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -2913,7 +2965,8 @@
             "description": "<p>Setting fire to a container full of Gunpowder causes it to explode. When a container explodes, each creature in a 10-foot-radius Sphere centered on the container makes a DC 12 Dexterity saving throw, taking 24 (7d6) Fire damage on a failed save or half as much damage on a successful one.</p>",
             "activities": {
                 "Explode": {
-                    "name": "Explode"
+                    "name": "Explode",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -2922,7 +2975,8 @@
             "description": "<p>Setting fire to a container full of Gunpowder causes it to explode. When a container explodes, each creature in a 10-foot-radius Sphere centered on the container makes a DC 12 Dexterity saving throw taking 10 (3d6) Fire damage (for a powder horn) on a failed save or half as much damage on a successful one.</p>",
             "activities": {
                 "Explode": {
-                    "name": "Explode"
+                    "name": "Explode",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -2946,7 +3000,8 @@
                 },
                 "Giants' Bane (On Crit)": {
                     "name": "Giants' Bane (On Crit)",
-                    "chatFlavor": "Save failure: Death"
+                    "chatFlavor": "Save failure: Death",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -3036,7 +3091,8 @@
                 "Explosive Emanation": {
                     "name": "Explosive Emanation",
                     "condition": "Take Fire damage from failing a saving throw",
-                    "activationCondition": "Take Fire damage from failing a saving throw"
+                    "activationCondition": "Take Fire damage from failing a saving throw",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -3118,7 +3174,8 @@
             "description": "<p><em>Wondrous Item, Rare</em></p><p>You can take a Magic action to blow the horn, which emits a thunderous blast in a 30-foot Cone that is audible out to 600 feet. Each creature in the Cone makes a DC 15 Constitution saving throw. On a failed save, a creature takes 5d8 Thunder damage and has the &amp;Reference[Deafened apply=false] condition for 1 minute. On a successful save, a creature takes half as much damage only. Glass or crystal objects in the Cone that aren’t being worn or carried take 10d8 Thunder damage.</p><p>Each use of the horn’s magic has a 20 percent chance of causing the horn to explode. The explosion deals 10d6 Force damage to the user and destroys the horn.</p><section class=\"secret\" id=\"secret-rkHeC2mFJBKqNOh0\"><p><strong>Foundry Note</strong></p><p>The <strong>Roll for Explosion Chance</strong> activity will return 1 if it explodes otherwise it will return 0.</p></section>",
             "activities": {
                 "Blow Horn": {
-                    "name": "Blow Horn"
+                    "name": "Blow Horn",
+                    "damageOnSave": "połowa"
                 },
                 "Object Damage": {
                     "name": "Object Damage"
@@ -3421,7 +3478,8 @@
             "description": "<p><em>Wondrous Item, Legendary</em></p><p>While holding this brass-stoppered iron flask, you can take a Magic action to target a creature that you can see within 60 feet of yourself. If the flask is empty and the target is native to a plane of existence other than the one you’re on, the target must succeed on a DC 17 Wisdom saving throw or be trapped in the flask. If the target has been trapped by the flask before, it has Advantage on the save. Once trapped, a creature remains in the flask until released. The flask can hold only one creature at a time. A creature trapped in the flask doesn’t age and doesn’t need to breathe, eat, or drink.</p><p>You can take a Magic action to remove the flask’s stopper and release the creature in the flask. The creature then obeys your commands for 1 hour, understanding those commands even if it doesn’t know the language in which the commands are given. If you issue no commands or give the creature a command that is likely to result in its death or imprisonment, it defends itself but otherwise takes no actions. At the end of the duration, the creature acts in accordance with its normal disposition and alignment.</p><p>An @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplIdentify00]{Identify} spell reveals if the flask contains a creature, but the only way to determine the type of creature is to open the flask. A newly discovered <em>Iron Flask</em> might already contain a creature chosen by the DM or determined randomly by rolling on the following table (see the <em>Monster Manual</em> for the creature’s stat block).</p><details><summary>Possible Creatures Roll Table</summary><p>@Embed[Compendium.dnd-dungeon-masters-guide.tables.RollTable.dmgIronFlaskCont caption=false rollable]</p></details><section class=\"secret\" id=\"secret-LJ4Og6JjdncKvEKV\"><p><strong>Foundry Note</strong></p><p>This item has one limited use for tracking whether or not a creature has been trapped in the flask.</p><p>The <strong>Add Trapped Creature</strong> activity expends a usage to indicate it is currently full.</p><p>The <strong>Release Trapped Creature</strong> activity is a summon activity which restores a usage to indicate it can now contain another creature. You can edit the activity, change to the \"Summon\" tab and drag the captured creature's Actor onto the tab so it can be summoned later.</p></section>",
             "activities": {
                 "Attempt to Trap Creature": {
-                    "name": "Attempt to Trap Creature"
+                    "name": "Attempt to Trap Creature",
+                    "damageOnSave": "połowa"
                 },
                 "Release Creature": {
                     "name": "Release Creature"
@@ -3480,7 +3538,8 @@
             "description": "<p><em>Weapon (@UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepJavelin000]{Javelin}), Uncommon</em></p><p>Each time you make an attack roll with this magic weapon and hit, you can have it deal Lightning damage instead of Piercing damage.</p><p><em><strong>Lightning Bolt.</strong></em> When you throw this weapon at a target no farther than 120 feet from you, you can forgo making a ranged attack roll and instead turn the weapon into a bolt of lightning. This bolt forms a 5-foot-wide Line between you and the target. The target and each other creature in the Line (excluding you) makes a DC 13 Dexterity saving throw, taking 4d6 Lightning damage on a failed save or half as much damage on a successful one. Immediately after dealing this damage, the weapon reappears in your hand. This property can’t be used again until the next dawn.</p><section class=\"secret\" id=\"secret-606LeZVVMHWwmeln\"><p><strong>Foundry Note</strong></p><p>The <strong>Attack</strong> activity allows you to choose between Lightning and Piercing when rolling damage and will remember your last choice.</p></section>",
             "activities": {
                 "Lightning Bolt": {
-                    "name": "Piorun"
+                    "name": "Piorun",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -3512,7 +3571,8 @@
                     "name": "Ładowanie"
                 },
                 "Toxic Keg": {
-                    "name": "Toxic Keg"
+                    "name": "Toxic Keg",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -3588,7 +3648,8 @@
             "description": "<p><em>Injury Poison</em></p><p>A creature subjected to Lolth's Sting must succeed on a DC 13 Constitution saving throw or have the &amp;reference[Poisoned apply=false] condition for 1 hour. If the creature fails the save by 5 or more, the creature also has the &amp;Reference[Unconscious apply=false] condition while Poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Użyj trucizny"
+                    "name": "Użyj trucizny",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -3650,7 +3711,8 @@
                 },
                 "save": {
                     "target": "Fiend or Undead",
-                    "targetAffects": "Fiend or Undead"
+                    "targetAffects": "Fiend or Undead",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -3674,7 +3736,8 @@
             "description": "<p><em>Broń (@UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepMace000000]). Rzadki (wymaga zestrojenia)</em></p><p>Ta magiczna broń ma 3 ładunki i codziennie o świcie odzyskuje 1k3 zużytych ładunków. Trzymając tę broń, możesz wykonać akcję Magii i zużyć 1 ładunek, aby uwolnić z niej falę grozy. Każde wybrane przez ciebie stworzenie w obrębie 30 stóp od ciebie musi odnieść sukces w rzucie obronnym na Mądrość o ST 15 albo otrzymuje stan &amp;Reference[Frightened apply=false] na 1 minutę. Będąc Przerażone w ten sposób, stworzenie musi spędzać swoje tury, próbując oddalić się od ciebie tak daleko, jak to możliwe, i nie może wykonywać Ataków okazyjnych. W ramach swojej Akcji może użyć tylko Akcji Sprintu albo próbować uwolnić się od efektu, który uniemożliwia mu ruch. Jeśli nie ma dokąd się poruszyć, stworzenie może wykonać Akcję Uniku. Na końcu każdej swojej tury stworzenie powtarza rzut obronny, kończąc efekt wobec siebie przy sukcesie.</p>",
             "activities": {
                 "Wave of Terror": {
-                    "name": "Fala grozy"
+                    "name": "Fala grozy",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -3688,7 +3751,8 @@
             "description": "<p><em>Inhaled Poison</em></p><p>A creature subjected to Malice must succeed on a DC 15 Constitution saving throw or have the &amp;Reference[Poisoned apply=false] condition for 1 hour. The creature also has the &amp;Reference[Blinded apply=false] condition while Poisoned in this way.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Użyj trucizny"
+                    "name": "Użyj trucizny",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -3830,7 +3894,8 @@
             "description": "<p><em>Ingested Poison</em></p><p>A creature that ingests Midnight Tears suffers no effect until the stroke of midnight. Any effect that ends the &amp;Reference[Poisoned apply=false] condition neutralizes this poison. If the poison hasn't been neutralized before midnight, the creature makes a DC 17 Constitution saving throw, taking 31 (9d6) Poison damage on a failed save or half as much damage on a successful one.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Użyj trucizny"
+                    "name": "Użyj trucizny",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -3844,7 +3909,8 @@
             "activities": {
                 "save": {
                     "condition": "Sees its reflection",
-                    "activationCondition": "Sees its reflection"
+                    "activationCondition": "Sees its reflection",
+                    "damageOnSave": "połowa"
                 },
                 "Add Trapped Creature": {
                     "name": "Add Trapped Creature"
@@ -3902,7 +3968,8 @@
                     "name": "Conjure Spectral Entity"
                 },
                 "Blinding Flash": {
-                    "name": "Blinding Flash"
+                    "name": "Oślepiający błysk",
+                    "damageOnSave": "none"
                 },
                 "Cast Stored Spell": {
                     "name": "Cast Stored Spell"
@@ -3936,7 +4003,7 @@
                     "description": "<p>A creature repeats the [[/save ability=con dc=15]]{save} at the end of each of its turns, ending the effect on itself on a success. </p>"
                 },
                 "Rune: Blinding Flash": {
-                    "name": "Rune: Blinding Flash",
+                    "name": "Runa: Oślepiający błysk",
                     "description": "<p>You can take a Bonus Action to cause the <em>Moonblade</em> to flash brightly. Each other creature that is within 30 feet of you and not behind Total Cover must succeed on a DC 15 Constitution saving throw or have the Blinded condition for 1 minute. A creature repeats the save at the end of each of its turns, ending the effect on itself on a success. You can’t use this property again until you finish a Short or Long Rest.</p>"
                 },
                 "Rune: Spell Storing": {
@@ -3986,7 +4053,8 @@
                 "Life Stealing": {
                     "name": "Life Stealing",
                     "condition": "when you roll a 20 on an attack against a creature with fewer than 100 Hit Points",
-                    "activationCondition": "when you roll a 20 on an attack against a creature with fewer than 100 Hit Points"
+                    "activationCondition": "when you roll a 20 on an attack against a creature with fewer than 100 Hit Points",
+                    "damageOnSave": "none"
                 },
                 "Nine Lives Stealer": {
                     "name": "Nine Lives Stealer"
@@ -4103,7 +4171,8 @@
             "description": "<p><em>Contact Poison</em></p><p>A creature subjected to Oil of Taggit must succeed on a DC 13 Constitution saving throw or have the &amp;Reference[Poisoned apply=false] condition for 24 hours. The creature also has the &amp;Reference[Unconscious apply=false] condition while Poisoned in this way. It wakes up if it takes damage.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Użyj trucizny"
+                    "name": "Użyj trucizny",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -4141,7 +4210,8 @@
             "description": "<p><em>Wondrous Item, Artifact (Requires Attunement)</em></p><section class=\"secret\" id=\"secret-giR5yoa8kkJFGmuP\"><details><summary>Lore</summary><p>Long ago, in the Dragonlance setting, elves and humans waged a terrible war against chromatic dragons. When the world seemed doomed, the wizards of the Towers of High Sorcery came together and forged five <em>Orbs of Dragonkind</em> to help defeat the dragons. One orb was taken to each of the five towers, and there they were used to speed the war toward a victorious end. The wizards used the orbs to lure dragons to them, then destroyed the dragons with powerful magic.</p><p>As the Towers of High Sorcery fell in later ages, the orbs were destroyed or faded into legend, and only three are thought to survive. Their magic has been warped over the centuries. Their primary purpose of calling dragons still functions, but they also allow some measure of control over dragons.</p><p>Each orb contains the essence of an evil dragon, a presence that resents any attempt to coax magic from it. Those who try to wield an orb’s magic but lack sufficient force of personality might find themselves under the orb’s control.</p></details><p>While attuned to an orb, you can take a Magic action to peer into the orb’s depths. You must then make a DC 15 Charisma saving throw. On a successful save, you control the orb for as long as you remain attuned to it. On a failed save, the orb imposes the Charmed condition on you for as long as you remain attuned to it.</p><p>While you are Charmed by the orb, you can’t voluntarily end your Attunement to it, and the orb casts @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSuggestion]{Suggestion} on you at will (save DC 18), urging you to work toward the evil ends it desires. The dragon essence within the orb might want many things: the annihilation of a particular society or organization, freedom from the orb, to spread suffering in the world, to advance the worship of Tiamat, or something else the DM decides.</p><p><em><strong>Destroying an Orb.</strong></em> An <em>Orb of Dragonkind</em> has AC 20 and is destroyed if it takes damage from a <em>+3 Weapon</em> or a @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDisintegra]{Disintegrate} spell. Nothing else can harm it.</p></section><p>An orb is an etched crystal globe about 10 inches in diameter. When used, it grows to about 20 inches in diameter, and mist swirls inside it.</p><p><em><strong>Random Properties.</strong></em> An <em>Orb of Dragonkind</em> has the following @UUID[Compendium.dnd-dungeon-masters-guide.content.JournalEntry.dmgMagicItems000.JournalEntryPage.iA3mHmvlXvWKlyBo#artifact-properties]{random properties}:</p><ul><li class=\"Core-Styles_Core-Bulleted\">2 @UUID[Compendium.dnd-dungeon-masters-guide.tables.RollTable.dmgMinorBenefici]{minor beneficial properties}</li><li class=\"Core-Styles_Core-Bulleted\">1 @UUID[Compendium.dnd-dungeon-masters-guide.tables.RollTable.dmgMinorDetrimen]{minor detrimental property}</li><li class=\"Core-Styles_Core-Bulleted\">1 @UUID[Compendium.dnd-dungeon-masters-guide.tables.RollTable.dmgMajorDetrimen]{major detrimental property}</li></ul><p><em><strong>Spells.</strong></em> The orb has 7 charges and regains 1d4 + 3 expended charges daily at dawn. If you control the orb, you can cast one of the spells on the following table from it. The table indicates how many charges you must expend to cast the spell.</p><table><thead><tr><th><p>Spell</p></th><th><p>Charge Cost</p></th><th></th></tr></thead><tbody><tr><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCureWounds]{Cure Wounds} (level 9 version)</p></td><td><p>4</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDaylight00]{Daylight}</p></td><td><p>1</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDeathWard0]{Death Ward}</p></td><td><p>2</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectMagi]{Detect Magic}</p></td><td><p>0</p></td><td></td></tr><tr><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplScrying000]{Scrying} (save DC 18)</p></td><td><p>3</p></td><td></td></tr></tbody></table><p><em><strong>Call Dragons.</strong></em> While you control the orb, you can take a Magic action to cause the orb to issue a telepathic call that extends in all directions for 40 miles. Chromatic dragons in range feel compelled to come to the orb as soon as possible by the most direct route. Dragon deities such as Tiamat are unaffected by this call. Chromatic dragons drawn to the orb might be Hostile toward you for compelling them against their will. Once you have used this property, it can’t be used again for 1 hour.</p>",
             "activities": {
                 "Attunement Save": {
-                    "name": "Attunement Save"
+                    "name": "Attunement Save",
+                    "damageOnSave": "połowa"
                 },
                 "Call Dragons": {
                     "name": "Call Dragons",
@@ -4164,7 +4234,8 @@
             "description": "<p><em>Ingested Poison</em></p><p>A creature subjected to Pale Tincture must succeed on a DC 16 Constitution saving throw or take 3 (1d6) Poison damage and have the &amp;Reference[Poisoned apply=false] condition. The Poisoned creature repeats the save every 24 hours, taking 3 (1d6) Poison damage on a failed save. The damage the poison deals can't be healed by any means while the creature remains Poisoned. After seven successful saves against the poison, the creature is no longer Poisoned.</p><section class=\"secret\" id=\"secret-tSBe5DSXqLu6xn8u\"><p><strong>Foundry Note</strong></p><p>The <strong>Use Poison</strong> activity includes the save and the <strong>Poisoned and Reduce Max</strong> Active Effect applies the Poisoned condition and can be used for preventing healing as well. Edit the Active Effect on the player, change to the \"Effects\" tab and adjust the \"Effect Value\" to be \"-X\" where X is the total damage they've taken from the poison. This will temporarily reduce their max HP by that value.</p></section>",
             "activities": {
                 "Use Poison": {
-                    "name": "Użyj trucizny"
+                    "name": "Użyj trucizny",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -4238,7 +4309,8 @@
             "description": "<p><em>Wondrous Item, Uncommon</em></p><p>These pipes have 3 charges and regain 1d3 expended charges daily at dawn. You can take a Magic action to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature of your choice within 30 feet of you must succeed on a DC 15 Wisdom saving throw or have the &amp;Reference[Frightened apply=false] condition for 1 minute. A creature that fails the save repeats it at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on its save is immune to the effect of these pipes for 24 hours.</p>",
             "activities": {
                 "Play Pipes": {
-                    "name": "Play Pipes"
+                    "name": "Play Pipes",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -4257,7 +4329,8 @@
                     "targetAffects": "rats"
                 },
                 "Sway Rats": {
-                    "name": "Sway Rats"
+                    "name": "Sway Rats",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -4280,16 +4353,20 @@
             "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Śmiertelna Pułapka (Poziomy 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Wyzwalacz:</strong> Istota wchodzi na płytkę naciskową</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Czas Trwania:</strong> Natychmiastowy, a pułapka resetuje się na początku następnej tury, jeśli została aktywowana mniej niż trzy razy</p><p>Gdy istota po raz pierwszy w turze wejdzie na płytkę naciskową tej pułapki, zatrute strzałki wystrzeliwują z rurek osadzonych w otaczających ścianach. Otwory mieszczące te rurki są zasłonięte kurzem i pajęczynami lub umiejętnie ukryte wśród płaskorzeźb, malowideł czy fresków.</p><p>Każda istota znajdująca się na drodze strzałek musi wykonać rzut obronny na Zręczność o ST 13, inaczej zostaje trafiona przez [[/r 1d3]] strzałki, otrzymując 3 (1k6) obrażeń od trucizn za każdą strzałkę.</p><p><em><strong>Wykrycie i Unieszkodliwienie.</strong></em> Akcją Przeszukiwania istota może zbadać ściany i wykonać test [[/check prc 15]], wykrywając otwory przy udanym teście. Zatkanie wszystkich otworów woskiem, tkaniną lub gruzem uniemożliwia wystrzelenie strzałek.</p><p>Akcją Przeszukiwania istota może zbadać fragment podłogi tworzący płytkę naciskową i wykonać test [[/check prc 15]], wykrywając płytkę przy udanym teście. Podłożenie Metalowego Kołka lub podobnego przedmiotu pod płytkę naciskową zapobiega wyzwoleniu pułapki.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować tę pułapkę dla wyższych poziomów, zwiększając obrażenia od trucizn zadawane przez każdą strzałkę następująco: 7 (2k6) na poziomach 5–10, 14 (4k6) na poziomach 11–16 oraz 24 (7k6) na poziomach 17–20.</p></div>",
             "activities": {
                 "Trigger (1-4)": {
-                    "name": "Wyzwalacz (1-4)"
+                    "name": "Wyzwalacz (1-4)",
+                    "damageOnSave": "połowa"
                 },
                 "Trigger (5-10)": {
-                    "name": "Wyzwalacz (5-10)"
+                    "name": "Wyzwalacz (5-10)",
+                    "damageOnSave": "połowa"
                 },
                 "Trigger (11-16)": {
-                    "name": "Wyzwalacz (11-16)"
+                    "name": "Wyzwalacz (11-16)",
+                    "damageOnSave": "połowa"
                 },
                 "Trigger (17-20)": {
-                    "name": "Wyzwalacz (17-20)"
+                    "name": "Wyzwalacz (17-20)",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -4298,16 +4375,20 @@
             "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Uciążliwa Pułapka (Poziomy 1–4)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Wyzwalacz:</strong> Istota niewłaściwie otwiera zamek pułapki lub nie udaje jej się jej unieszkodliwić</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Czas Trwania:</strong> Natychmiastowy</p><p>Zatruta igła jest ukryta w zamku. Gdy istota otwiera zamek dowolnym przedmiotem innym niż właściwy klucz, igła wyskakuje i rani istotę. Istota wykonuje rzut obronny na Kondycję o ST 11. Przy nieudanym rzucie istota otrzymuje 5 (1k10) obrażeń od trucizn i uzyskuje stan &amp;Reference[Poisoned apply=false] na 1 godzinę. Przy udanym rzucie istota otrzymuje tylko połowę obrażeń.</p><p><em><strong>Ominięcie.</strong></em> Pułapka nie wyzwala się, jeśli zamek zostanie otwarty za pomocą czaru <em>pukanie</em> lub podobnej magii.</p><p><em><strong>Wykrycie i Unieszkodliwienie.</strong></em> Akcją Przeszukiwania istota może zbadać zamek pułapki i wykonać test [[/check prc 15]], wykrywając igłę przy udanym teście. Po wykryciu pułapki postać może wykonać Akcję, aby spróbować ją unieszkodliwić, robiąc to po udanym teście [[/check slt 15]]. Przy nieudanym teście istota wyzwala pułapkę.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować tę pułapkę dla wyższych poziomów, zwiększając obrażenia i ST rzutu obronnego, jak pokazano w poniższej tabeli.</p><table><thead><tr><th><p>Poziomy</p></th><th><p>Obrażenia od Trucizn</p></th><th><p>ST Rzutu</p></th><th></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>11 (2k10)</p></td><td><p>13</p></td><td></td></tr><tr><td><p>11–16</p></td><td><p>22 (4k10)</p></td><td><p>15</p></td><td></td></tr><tr><td><p>17–20</p></td><td><p>55 (10k10)</p></td><td><p>17</p></td><td></td></tr></tbody></table></div>",
             "activities": {
                 "Trigger (1-4)": {
-                    "name": "Wyzwalacz (1-4)"
+                    "name": "Wyzwalacz (1-4)",
+                    "damageOnSave": "połowa"
                 },
                 "Trigger (5-10)": {
-                    "name": "Wyzwalacz (5-10)"
+                    "name": "Wyzwalacz (5-10)",
+                    "damageOnSave": "połowa"
                 },
                 "Trigger (11-16)": {
-                    "name": "Wyzwalacz (11-16)"
+                    "name": "Wyzwalacz (11-16)",
+                    "damageOnSave": "połowa"
                 },
                 "Trigger (17-20)": {
-                    "name": "Wyzwalacz (17-20)"
+                    "name": "Wyzwalacz (17-20)",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -4324,16 +4405,20 @@
                     "name": "Umieszczenie gazu"
                 },
                 "Level 1-4 Save": {
-                    "name": "Rzut obrony dla poziomów 1–4"
+                    "name": "Rzut obrony dla poziomów 1–4",
+                    "damageOnSave": "połowa"
                 },
                 "Level 5-10 Save": {
-                    "name": "Poziom 1-4 rzut obronny"
+                    "name": "Poziom 1-4 rzut obronny",
+                    "damageOnSave": "połowa"
                 },
                 "Level 11-16 Save": {
-                    "name": "Poziom 1-4 rzut obronny"
+                    "name": "Poziom 1-4 rzut obronny",
+                    "damageOnSave": "połowa"
                 },
                 "Level 17-20 Save": {
-                    "name": "Poziom 1-4 rzut obronny"
+                    "name": "Poziom 1-4 rzut obronny",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -4396,7 +4481,8 @@
             "description": "<p><em>Mikstura, Niespotykana</em></p><p>Po wypiciu tej mikstury możesz użyć Akcji Bonusowej, aby zionąć ogniem w cel znajdujący się w odległości do 30 stóp od ciebie. Cel wykonuje rzut obronny na Zręczność o ST 13, otrzymując 4k6 obrażeń od Ognia przy nieudanym rzucie lub połowę przy udanym. Efekt kończy się po trzykrotnym zionięciu ogniem lub po upływie 1 godziny.</p><p>Pomarańczowy płyn tej mikstury migocze, a dym wypełnia górną część pojemnika i unosi się na zewnątrz za każdym razem, gdy butelkę się otworzy.</p>",
             "activities": {
                 "Breathe Fire": {
-                    "name": "Zionięcie ogniem"
+                    "name": "Zionięcie ogniem",
+                    "damageOnSave": "połowa"
                 },
                 "Drink": {
                     "name": "Wypij"
@@ -4625,7 +4711,8 @@
             "description": "<p><em>Mikstura, Niespotykana</em></p><p>Ta mikstura wygląda, pachnie i smakuje jak Mikstura Leczenia lub inna dobroczynna mikstura. W rzeczywistości jest to trucizna zamaskowana magią iluzji. <em>Identyfikacja</em> ujawnia jej prawdziwą naturę.</p><p>Jeśli wypijesz tę miksturę, otrzymujesz 4k6 obrażeń od Trucizny i musisz wykonać rzut obronny na Kondycję o ST 13, w przeciwnym razie masz stan Zatruty przez 1 godzinę.</p>",
             "activities": {
                 "Drink": {
-                    "name": "Wypij"
+                    "name": "Wypij",
+                    "damageOnSave": "full"
                 }
             },
             "effects": {
@@ -4728,7 +4815,8 @@
             "description": "<p><em>Injury Poison</em></p><p>A creature subjected to Purple Worm Poison makes a DC 21 Constitution saving throw, taking 35 (10d6) Poison damage on a failed save or half as much damage on a successful one.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Użyj trucizny"
+                    "name": "Użyj trucizny",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -4864,6 +4952,9 @@
             "activities": {
                 "Place Razorvine": {
                     "name": "Umieszcznie Brzytworośli"
+                },
+                "save": {
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -5035,10 +5126,12 @@
                     "name": "Create Lightning Spheres"
                 },
                 "Lightning Sphere Save": {
-                    "name": "Lightning Sphere Save"
+                    "name": "Lightning Sphere Save",
+                    "damageOnSave": "połowa"
                 },
                 "Shooting Stars": {
-                    "name": "Shooting Stars"
+                    "name": "Shooting Stars",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -5096,6 +5189,9 @@
             "activities": {
                 "Gain X-Ray Vision": {
                     "name": "Gain X-Ray Vision"
+                },
+                "save": {
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -5111,7 +5207,8 @@
                 "Heads": {
                     "name": "Głowy",
                     "target": "you can see",
-                    "targetAffects": "you can see"
+                    "targetAffects": "you can see",
+                    "damageOnSave": "połowa"
                 },
                 "Tails": {
                     "name": "Tails"
@@ -5126,6 +5223,11 @@
         "River Styx": {
             "name": "Rzeka Styks",
             "description": "<p><em>Uciążliwe Zagrożenie (Poziomy 11–16)</em></p><p><strong>Aktor:</strong> @UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.dmgRiverStyx0000]{River Styx}</p><p>Rzeka Styks przepływa przez Sfery Niższe. Skosztowanie lub dotknięcie jej wód może zdruzgotać intelekt i osobowość istoty, a także odebrać jej wspomnienia. Niektóre Czarty są odporne na działanie rzeki.</p><p>O ile nie jest odporna na efekty rzeki, istota, która wypije wodę ze Styksu, wejdzie do rzeki lub rozpocznie w niej swoją turę, wykonuje rzut obronny na Inteligencję o ST 20. Przy nieudanym rzucie istota otrzymuje 19 (3k12) obrażeń psychicznych i przez 30 dni nie może rzucać czarów ani wykonywać Akcji Magii. Dotknięta efektem istota może pić wodę ze Styksu i pływać w niej bez ponoszenia dodatkowych konsekwencji.</p><p>Efekt ten może zostać zakończony tylko przez czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes] , @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHeal000000] lub @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWish000000] . Jeśli efekt nie zostanie zakończony przed upływem 30 dni, staje się trwały, a istota traci wszystkie swoje wspomnienia. W tym momencie nic oprócz czaru <em>życzenie</em> lub boskiej interwencji nie może odwrócić tego skutku.</p><p>Woda pobrana z Rzeki Styks traci swoją moc po 24 godzinach, stając się nieszkodliwą, lecz paskudnie smakującą cieczą. Arkanalothy, nocne wiedźmy i inne mroczne istoty mogą znać rytuały pozwalające przedłużyć jej działanie, według twojego uznania.</p>",
+            "activities": {
+                "save": {
+                    "damageOnSave": "połowa"
+                }
+            },
             "effects": {
                 "River Styx Effects": {
                     "name": "Efekty rzeki Styks",
@@ -5138,10 +5240,12 @@
             "description": "<p><em>Wondrous Item, Rare (Requires Attunement)</em></p><p>This robe is adorned with eyelike patterns. While you wear the robe, you gain the following benefits:</p><p><strong>All-Around Vision.</strong> The robe gives you Advantage on Wisdom (Perception) checks that rely on sight.</p><p><strong>Special Senses.</strong> You have Darkvision and Truesight, both with a range of 120 feet.</p><p><em><strong>Drawbacks.</strong></em> A<em> </em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLight00000]{Light} spell cast on the robe or a @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDaylight00]{Daylight} spell cast within 5 feet of the robe gives you the &amp;Reference[Blinded] condition for 1 minute. At the end of each of your turns, you make a Constitution saving throw (DC 11 for <em>Light</em> or DC 15 for <em>Daylight</em>), ending the condition on yourself on a success.</p>",
             "activities": {
                 "Light Save": {
-                    "name": "Light Save"
+                    "name": "Light Save",
+                    "damageOnSave": "połowa"
                 },
                 "Daylight Save": {
-                    "name": "Daylight Save"
+                    "name": "Daylight Save",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -5156,7 +5260,8 @@
             "activities": {
                 "save": {
                     "target": "can see you",
-                    "targetAffects": "can see you"
+                    "targetAffects": "can see you",
+                    "damageOnSave": "połowa"
                 },
                 "Display Dazzling Hues": {
                     "name": "Display Dazzling Hues"
@@ -5218,19 +5323,23 @@
             "description": "<p><em>Śmiertelne Zagrożenie (Poziomy 1–4)</em></p><p><strong>Aktor:</strong> @UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.dmgRockslide0000]{Rockslide}</p><p>Gdy następuje osuwisko skalne, każda istota znajdująca się na jego drodze wykonuje rzut obronny na Zręczność o ST 15. Przy nieudanym rzucie istota otrzymuje 11 (2k10) obrażeń obuchowych, uzyskuje stan &amp;Reference[Prone apply=false] i przemieszcza się wraz z osuwiskiem. Przy udanym rzucie istota otrzymuje tylko połowę obrażeń.</p><p>Gdy osuwisko ustaje, jego obszar staje się &amp;Reference[Difficult Terrain], a wszystkie Powalone istoty znajdujące się w tym obszarze zostają pogrzebane pod skałami i gruzem. Istota pogrzebana w ten sposób ma stan &amp;Reference[Restrained] oraz &amp;Reference[Total Cover]. Akcją istota może spróbować wyczołgać się spod rumowiska. Jeśli uda jej się test Siły (Atletyka) o ST 15, przestaje być Unieruchomiona; zamiast tego ma stan Powalony i znajduje się na wierzchu rumowiska. Jeśli test się nie powiedzie, istota pozostaje pogrzebana i zyskuje 1 poziom &amp;Reference[Exhaustion].</p><p>Istota, która nie ma stanów &amp;Reference[Incapacitated apply=false] ani Unieruchomiony, może poświęcić 1 minutę, aby oswobodzić inną istotę pogrzebaną przez osuwisko.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować to zagrożenie dla wyższych poziomów, zwiększając obrażenia obuchowe następująco: 22 (4k10) na poziomach 5–10, 55 (10k10) na poziomach 11–16 oraz 99 (18k10) na poziomach 17–20.</p>",
             "activities": {
                 "Rockslide Level 1-4": {
-                    "name": "Osuwisko skalne Poziom 1-4"
+                    "name": "Osuwisko skalne Poziom 1-4",
+                    "damageOnSave": "połowa"
                 },
                 "Escape Check": {
                     "name": "Test ucieczki"
                 },
                 "Rockslide Level 5-10": {
-                    "name": "Osuwisko skalne Poziom 5-10"
+                    "name": "Osuwisko skalne Poziom 5-10",
+                    "damageOnSave": "połowa"
                 },
                 "Rockslide Level 11-16": {
-                    "name": "Osuwisko skalne Poziom 11-16"
+                    "name": "Osuwisko skalne Poziom 11-16",
+                    "damageOnSave": "połowa"
                 },
                 "Rockslide Level 17-20": {
-                    "name": "Osuwisko skalne Poziom 17-20"
+                    "name": "Osuwisko skalne Poziom 17-20",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -5283,15 +5392,18 @@
                     "name": "Button 3 Attack"
                 },
                 "Drain Life": {
-                    "name": "Drain Life"
+                    "name": "Drain Life",
+                    "damageOnSave": "none"
                 },
                 "Paralyze": {
-                    "name": "Sparaliżuj"
+                    "name": "Sparaliżuj",
+                    "damageOnSave": "none"
                 },
                 "Terrify": {
                     "name": "Terrify",
                     "target": "you can see",
-                    "targetAffects": "you can see"
+                    "targetAffects": "you can see",
+                    "damageOnSave": "none"
                 },
                 "Button 2 Versatile Attack": {
                     "name": "Button 2 Versatile Attack"
@@ -5315,7 +5427,8 @@
             "description": "<p><em>Rod, Rare (Requires Attunement)</em></p><p>You can take a Magic action to present the rod and command obedience from each creature of your choice that you can see within 120 feet of yourself. Each target must succeed on a DC 15 Wisdom saving throw or have the &amp;Reference[Charmed apply=false] condition for 8 hours. While Charmed in this way, the creature regards you as its trusted leader. If harmed by you or your allies or commanded to do something contrary to its nature, a target ceases to be Charmed in this way. Once used, this property can’t be used again until the next dawn.</p>",
             "activities": {
                 "Command Obedience": {
-                    "name": "Command Obedience"
+                    "name": "Command Obedience",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -5391,6 +5504,9 @@
             "name": "Toczący się głaz",
             "description": "<div id=\"_idContainer405\" class=\"_idGenObjectStyleOverride-1\"><p class=\"Core-Styles_Core-Metadata\"><em>Śmiertelna Pułapka (Poziomy 11–16) lub Uciążliwa Pułapka (Poziomy 17–20)</em></p><p class=\"Game_Objects_Game_Object_Data\"><strong>Wyzwalacz:</strong> Istota wchodzi na płytkę naciskową</p><p class=\"Game_Objects_Game_Object_Data\"><strong>Czas Trwania:</strong> Dopóki głaz się toczy</p><p>Gdy istota wejdzie na ukrytą płytkę naciskową, z tajnego schowka uwalnia się kula litego kamienia o promieniu 5 stóp i zaczyna się toczyć. Głaz i wszystkie pobliskie istoty wykonują rzut na Inicjatywę; głaz otrzymuje premię +8 do swojego rzutu ([[/r 1d20 + 8]]).</p><p>W swojej turze głaz przemieszcza się o 60 stóp w jednym kierunku, zmieniając kurs, jeśli napotka przeszkodę. Głaz może poruszać się przez obszary zajmowane przez istoty, a istoty mogą poruszać się przez obszar głazu, traktując go jako &amp;Reference[Difficult Terrain]. Zawsze gdy głaz po raz pierwszy w turze wejdzie w przestrzeń istoty lub istota wejdzie w przestrzeń głazu, gdy ten się toczy, istota musi wykonać rzut obronny na Zręczność o ST 15, inaczej otrzymuje 55 (10k10) obrażeń obuchowych i uzyskuje stan &amp;Reference[Prone apply=false].</p><p>Głaz zatrzymuje się, gdy uderzy w ścianę lub podobną przeszkodę. Nie może skręcać pod kątem prostym, ale pomysłowi konstruktorzy lochów czasem projektują zakrzywione przejścia, które pozwalają głazowi kontynuować ruch.</p><p><em><strong>Wykrycie i Unieszkodliwienie.</strong></em> Akcją Nauki istota może zbadać fragment podłogi tworzący płytkę naciskową i wykonać test [[/check inv 15]], ustalając funkcję płytki przy udanym teście. Podłożenie Metalowego Kołka lub podobnego przedmiotu pod płytkę naciskową uniemożliwia wyzwolenie pułapki.</p><p><em><strong>Zniszczenie Głazu.</strong></em> Głaz jest Dużym obiektem o KP 17, PW 100, Progu Obrażeń równym 10 oraz Niewrażliwości na obrażenia od trucizn i psychiczne.</p><p><em><strong>Spowolnienie Głazu.</strong></em> Akcją istota może spróbować spowolnić głaz, wykonując test Siły (Atletyka) o ST 20. Jeśli test zakończy się sukcesem, dystans, jaki głaz pokonuje w swojej turze, zmniejsza się o 15 stóp. Jeśli dystans ten spadnie do 0, głaz przestaje się poruszać i nie stanowi już zagrożenia.</p></div>",
             "activities": {
+                "save": {
+                    "damageOnSave": "none"
+                },
                 "Slow": {
                     "name": "Spowolnienie"
                 }
@@ -5416,7 +5532,8 @@
             "description": "<p><em>Wondrous Item, Rare</em></p><p>This rope is 30 feet long. While holding one end of the rope, you can take a Magic action to command the other end to dart forward and entangle one creature you can see within 20 feet of yourself. The target must succeed on a DC 15 Dexterity saving throw or have the &amp;Reference[Restrained apply=false] condition. You can release the target by letting go of your end of the rope (causing the rope to coil up in the target’s space) or by using a Bonus Action to repeat the command (causing the rope to coil up in your hand).</p><p>A target Restrained by the rope can take an action to make its choice of a DC 15 Strength (Athletics) or Dexterity (Acrobatics) check. On a successful check, the target is no longer Restrained by the rope. If you’re still holding onto the rope when a target escapes from it, you can take a Reaction to command the rope to coil up in your hand; otherwise, the rope coils up in the target’s space.</p><p>The rope has AC 20, HP 20, and Immunity to Poison and Psychic damage. It regains 1 Hit Point every 5 minutes as long as it has at least 1 Hit Point. If the rope drops to 0 Hit Points, it is destroyed.</p><section class=\"secret\" id=\"secret-7RGkmfY1bTmeeb5L\"><p><strong>Foundry Note</strong></p><p>The item includes 20 uses for tracking its HP. The <strong>Damage Rope</strong> activity can be used to apply damage and the <strong>Repair Rope</strong> activity can be used to restore its HP.</p><p>The <strong>Escape</strong> activity can be used to send an Athletics and Dexterity check to the chat for the target to roll for their escape.</p></section>",
             "activities": {
                 "Entangle": {
-                    "name": "Oplątanie"
+                    "name": "Oplątanie",
+                    "damageOnSave": "połowa"
                 },
                 "Escape": {
                     "name": "Ucieczka"
@@ -5650,7 +5767,8 @@
             "description": "<p><em>Injury Poison</em></p><p>A creature subjected to Serpent Venom must succeed on a DC 11 Constitution saving throw, taking 10 (3d6) Poison damage on a failed save or half as much damage on a successful one.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Użyj trucizny"
+                    "name": "Użyj trucizny",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -5835,6 +5953,9 @@
                 },
                 "Control the Sphere": {
                     "name": "Control the Sphere"
+                },
+                "save": {
+                    "damageOnSave": "none"
                 }
             }
         },
@@ -5924,7 +6045,8 @@
                     "name": "Karzące uderzenie"
                 },
                 "Retributive Strike: Save": {
-                    "name": "Retributive Strike: Save"
+                    "name": "Retributive Strike: Save",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -5966,7 +6088,8 @@
                     "name": "Spell Absorption"
                 },
                 "Retributive Strike: Save": {
-                    "name": "Retributive Strike: Save"
+                    "name": "Retributive Strike: Save",
+                    "damageOnSave": "połowa"
                 },
                 "Retributive Strike": {
                     "name": "Karzące uderzenie"
@@ -6029,19 +6152,23 @@
             "description": "<p><em>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcStaffalsoa]{Staff}, Very Rare (Requires Attunement)</em></p><p>This staff can be wielded as a magic Quarterstaff that grants a +2 bonus to attack rolls and damage rolls made with it. It also has the following additional properties. Once one of these properties is used, it can’t be used again until the next dawn.</p><p><em><strong>Lightning.</strong></em> When you hit with a melee attack using the staff, you can cause the target to take an extra 2d6 Lightning damage (no action required).</p><p><em><strong>Thunder.</strong></em> When you hit with a melee attack using the staff, you can cause the staff to emit a crack of thunder audible out to 300 feet (no action required). The target you hit must succeed on a DC 17 Constitution saving throw or have the Stunned condition until the end of your next turn.</p><p><em><strong>Thunder and Lightning.</strong></em> Immediately after you hit with a melee attack using the staff, you can take a Bonus Action to use the Lightning and Thunder properties (see above) at the same time. Doing so doesn’t expend the daily use of those properties, only the use of this one.</p><p><em><strong>Lightning Strike.</strong></em> You can take a Magic action to cause a bolt of lightning to leap from the staff’s tip in a Line that is 5 feet wide and 120 feet long. Each creature in that Line makes a DC 17 Dexterity saving throw, taking 9d6 Lightning damage on a failed save or half as much damage on a successful one.</p><p><em><strong>Thunderclap.</strong></em> You can take a Magic action to cause the staff to produce a thunderclap audible out to 600 feet. Every creature within a 60-foot Emanation originating from you makes a DC 17 Constitution saving throw. On a failed save, a creature takes 2d6 Thunder damage and has the Deafened condition for 1 minute. On a successful save, a creature takes half as much damage only.</p>",
             "activities": {
                 "Thunder": {
-                    "name": "od Dźwięku"
+                    "name": "od Dźwięku",
+                    "damageOnSave": "połowa"
                 },
                 "Lightning": {
                     "name": "Elektryczność"
                 },
                 "Thunder & Lightning": {
-                    "name": "Thunder & Lightning"
+                    "name": "Thunder & Lightning",
+                    "damageOnSave": "full"
                 },
                 "Lightning Strike": {
-                    "name": "Elektryczne uderzenie"
+                    "name": "Elektryczne uderzenie",
+                    "damageOnSave": "połowa"
                 },
                 "Thunderclap": {
-                    "name": "Grzmot"
+                    "name": "Grzmot",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -6058,7 +6185,8 @@
             "description": "<p><em>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcStaffalsoa]{Staff}, Rare (Requires Attunement)</em></p><p>This staff has 3 charges and regains 1d3 expended charges daily at dawn.</p><p>The staff can be wielded as a magic Quarterstaff. On a hit, it deals damage as a normal Quarterstaff, and you can expend 1 charge to deal an extra 2d10 Necrotic damage to the target and force it to make a DC 15 Constitution saving throw. On a failed save, the target has Disadvantage for 1 hour on any ability check or saving throw that uses Strength or Constitution.</p><section class=\"secret\" id=\"secret-XLCxThjwbGtdndsQ\"><p><strong>Foundry Note</strong></p><p>The <strong>Save</strong> activity includes an Active Effect for tracking the disadvantage.</p></section>",
             "activities": {
                 "Damage & Save": {
-                    "name": "Damage & Save"
+                    "name": "Damage & Save",
+                    "damageOnSave": "full"
                 }
             },
             "effects": {
@@ -6131,7 +6259,8 @@
                     "name": "Fill"
                 },
                 "Spill": {
-                    "name": "Spill"
+                    "name": "Spill",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -6155,7 +6284,8 @@
                     "chatFlavor": "Bonus Damage: 2d10 Slashing vs Undead"
                 },
                 "Destroy Sword": {
-                    "name": "Destroy Sword"
+                    "name": "Destroy Sword",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -6215,7 +6345,8 @@
                     "name": "Sword of Vengeance"
                 },
                 "Call to Vengeance": {
-                    "name": "Call to Vengeance"
+                    "name": "Call to Vengeance",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -6232,7 +6363,8 @@
                     "name": "Sword of Wounding"
                 },
                 "Sword of Wounding Save": {
-                    "name": "Sword of Wounding Save"
+                    "name": "Sword of Wounding Save",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -6267,7 +6399,8 @@
                 },
                 "Pure Rebuke": {
                     "name": "Pure Rebuke",
-                    "range": "you can see"
+                    "range": "you can see",
+                    "damageOnSave": "full"
                 }
             },
             "effects": {
@@ -6289,7 +6422,8 @@
                 },
                 "Ultimate End": {
                     "name": "Ultimate End",
-                    "range": "you can see"
+                    "range": "you can see",
+                    "damageOnSave": "full"
                 }
             },
             "effects": {
@@ -6335,6 +6469,9 @@
             "activities": {
                 "Tentacle Attack": {
                     "name": "Tentacle Attack"
+                },
+                "save": {
+                    "damageOnSave": "full"
                 }
             },
             "effects": {
@@ -6362,19 +6499,23 @@
                     "chatFlavor": "Bonus Damage: 2d8 Thunder vs loose object"
                 },
                 "Clap of Thunder": {
-                    "name": "Clap of Thunder"
+                    "name": "Clap of Thunder",
+                    "damageOnSave": "połowa"
                 },
                 "Earthquake: Save": {
-                    "name": "Earthquake: Save"
+                    "name": "Earthquake: Save",
+                    "damageOnSave": "połowa"
                 },
                 "Earthquake: Object Damage": {
                     "name": "Earthquake: Object Damage"
                 },
                 "Earthquake: Fissure": {
-                    "name": "Earthquake: Fissure"
+                    "name": "Earthquake: Fissure",
+                    "damageOnSave": "none"
                 },
                 "Earthquake: Concentration Save": {
-                    "name": "Earthquake: Concentration Save"
+                    "name": "Earthquake: Concentration Save",
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -6451,7 +6592,8 @@
             "description": "<p><em>Ingested Poison</em></p><p>A creature subjected to Torpor poison must succeed on a DC 15 Constitution saving throw or have the &amp;Reference[Poisoned] condition for [[/r 4d6]] hours. The creature's Speed is halved while the creature is Poisoned in this way.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Użyj trucizny"
+                    "name": "Użyj trucizny",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -6489,7 +6631,8 @@
             "description": "<p><em>Ingested Poison</em></p><p>A creature subjected to Truth Serum must succeed on a DC 11 Constitution saving throw or have the &amp;Reference[Poisoned] condition for 1 hour. The Poisoned creature can't knowingly communicate a lie.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Użyj trucizny"
+                    "name": "Użyj trucizny",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -6532,16 +6675,20 @@
             "description": "<p><em>Uciążliwe Zagrożenie (Poziomy 1–4)</em></p><p><strong>Aktor:</strong> @UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.dmgViciousVine00]{Vicious Vine}</p><p>Drapieżne pnącza są ożywiane przez magię. Często przylegają do drzwi, łuków, ścian i posągów. Dopóki drapieżne pnącze się nie poruszy, nic nie odróżnia go od zwykłego, nieożywionego pnącza.</p><p>Każde drapieżne pnącze ma KP 11; PW 16 oraz Niewrażliwość na obrażenia obuchowe, kłute i psychiczne. Gdy istota po raz pierwszy w turze wejdzie w obszar w odległości 5 stóp od pnącza lub rozpocznie tam swoją turę, pnącze próbuje owinąć się wokół tej istoty. Cel musi wykonać rzut obronny na Zręczność o ST 12 albo uzyskuje stan &amp;Reference[Grappled] (ST ucieczki 12). Dopóki istota jest pochwycona w ten sposób, na początku każdej swojej tury otrzymuje 5 (1k10) obrażeń nekrotycznych od wysysających życie kolców pnącza. Pnącze może pochwycić tylko jedną istotę naraz.</p><p>Akcją Wpływu postać znajdująca się pod działaniem czaru <em>rozmawianie z roślinami</em> lub podobnej magii może spróbować nakłonić pnącze, by wypuściło swoją ofiarę, robiąc to po udanym teście Charyzmy (Perswazja) o ST 10. Istota uwolniona w ten sposób nie zostanie ponownie zaatakowana przez to pnącze przez następne 24 godziny.</p><p><em><strong>Na Wyższych Poziomach.</strong></em> Możesz skalować to zagrożenie dla wyższych poziomów, zwiększając obrażenia nekrotyczne, ST rzutu obronnego oraz ST ucieczki, jak pokazano w poniższej tabeli.</p><table><thead><tr><th><p>Poziomy</p></th><th><p>Obrażenia Nekrotyczne</p></th><th><p>ST Rzutu / Ucieczki</p></th></tr></thead><tbody><tr><td><p>5–10</p></td><td><p>11 (2k10)</p></td><td><p>14</p></td></tr><tr><td><p>11–16</p></td><td><p>22 (4k10)</p></td><td><p>16</p></td></tr><tr><td><p>17–20</p></td><td><p>55 (10k10)</p></td><td><p>18</p></td></tr></tbody></table>",
             "activities": {
                 "Save Level 1-4": {
-                    "name": "Obrona Poziom 1-4"
+                    "name": "Obrona Poziom 1-4",
+                    "damageOnSave": "none"
                 },
                 "Save Level 5-10": {
-                    "name": "Obrona Poziom 5-10"
+                    "name": "Obrona Poziom 5-10",
+                    "damageOnSave": "none"
                 },
                 "Save Level 11-16": {
-                    "name": "Obrona Poziom 11-16"
+                    "name": "Obrona Poziom 11-16",
+                    "damageOnSave": "none"
                 },
                 "Save Level 17-20": {
-                    "name": "Obrona Poziom 17-20"
+                    "name": "Obrona Poziom 17-20",
+                    "damageOnSave": "none"
                 },
                 "Persuade Plant Check": {
                     "name": "Test perswazji rośliny"
@@ -6610,7 +6757,8 @@
                     "name": "Walloping Save",
                     "condition": "on hit with this ammunition",
                     "activationCondition": "on hit with this ammunition",
-                    "chatFlavor": "Target creature is &Reference[prone] on a failed saving throw."
+                    "chatFlavor": "Target creature is &Reference[prone] on a failed saving throw.",
+                    "damageOnSave": "none"
                 },
                 "Walloping Ammunition": {
                     "name": "Walloping Ammunition"
@@ -6689,7 +6837,8 @@
             "description": "<p><em>Wand, Rare (Requires Attunement by a Spellcaster)</em></p><p>This wand has 7 charges. While holding it, you can take a Magic action to expend 1 charge to cause a thin blue ray to streak from the tip toward a creature you can see within 60 feet of yourself. The target must succeed on a DC 15 Constitution saving throw or have the &amp;Reference[Paralyzed apply=false] condition for 1 minute. At the end of each of the target’s turns, it repeats the save, ending the effect on itself on a success.</p><p><em><strong>Regaining Charges.</strong></em> The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand’s last charge, roll [[/r 1d20]]. On a 1, the wand crumbles into ashes and is destroyed.</p>",
             "activities": {
                 "Paralyze": {
-                    "name": "Sparaliżuj"
+                    "name": "Sparaliżuj",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -6769,7 +6918,8 @@
                     "name": "Grass Cover (61-64"
                 },
                 "Burst of Colorful Light (78-82)": {
-                    "name": "Burst of Colorful Light (78-82)"
+                    "name": "Burst of Colorful Light (78-82)",
+                    "damageOnSave": "połowa"
                 },
                 "Stream of Gems (88-92)": {
                     "name": "Stream of Gems (88-92)"
@@ -6788,7 +6938,8 @@
                 "Elemental Compulsion": {
                     "name": "Elemental Compulsion",
                     "target": "Żywiołak",
-                    "targetAffects": "Żywiołak"
+                    "targetAffects": "Żywiołak",
+                    "damageOnSave": "połowa"
                 }
             },
             "effects": {
@@ -6863,6 +7014,9 @@
             "name": "Pajęczyny",
             "description": "<p><em>Uciążliwe Zagrożenie (Poziomy 1–4)</em></p><p><strong>Aktor:</strong> @UUID[Compendium.dnd-dungeon-masters-guide.actors.Actor.dmgWebs000000000]{Webs}</p><p>Olbrzymie pająki tkają grube, lepkie pajęczyny w poprzek korytarzy i na dnie jam, aby usidlać zdobycz. Obszary wypełnione pajęczynami stanowią &amp;Reference[Difficult Terrain].</p><p>Istota, która po raz pierwszy w turze wejdzie do obszaru wypełnionego pajęczynami lub rozpocznie tam swoją turę, musi wykonać rzut obronny na Zręczność o ST 12, inaczej uzyskuje stan &amp;Reference[Restrained apply=false]. Akcją istota unieruchomiona przez pajęczyny może spróbować się z nich wydostać, robiąc to po udanym teście Siły (Atletyka) lub Zręczności (Akrobatyka) o ST 12.</p><p>Każdy 10-stopowy Sześcian pajęczyn ma KP 10; PW 15; Podatność na obrażenia od ognia oraz Niewrażliwość na obrażenia kłute, od trucizn i psychiczne.</p>",
             "activities": {
+                "save": {
+                    "damageOnSave": "połowa"
+                },
                 "Escape Check": {
                     "name": "Test ucieczki"
                 }
@@ -6883,7 +7037,7 @@
             }
         },
         "Whelm": {
-            "name": "Whelm",
+            "name": "Zalanie",
             "description": "<p><em>Weapon (@UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepWarhammer0]{Warhammer}), Artifact (Requires Attunement by a Dwarf or a Creature Attuned to a Belt of Dwarvenkind)</em></p><p>Whelm is a powerful weapon forged by dwarves and lost in the dungeon of White Plume Mountain.</p><p>You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon.</p><p><em><strong>Hurl</strong></em>. <em>Whelm</em> has the Thrown property with a normal range of 60 feet and a long range of 180 feet. When you hit with a ranged attack roll using <em>Whelm</em>, the target takes an extra 1d8 Force damage, or an extra 4d8 Force damage if the target is a Construct, an Elemental, or a Giant. Immediately after hitting or missing, the weapon flies back to your hand.</p><p><em><strong>Shock Wave</strong></em>. You can take a Magic action to strike the ground with <em>Whelm</em> and send a shock wave out from the point of impact. Each creature of your choice on the ground within 60 feet of that point must succeed on a DC 20 Constitution saving throw or have the &amp;Reference[Stunned apply=false]{Stunned} condition for 1 minute. A creature repeats the save at the end of each of its turns, ending the effect on itself on a success. Once used, this property can’t be used again until the next dawn.</p><p><em><strong>Supernatural Awareness</strong></em>. While you are holding the weapon, it alerts you to the location of any secret or concealed doors within 30 feet of you. In addition, you can cast <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectEvil]{Detect Evil and Good}</em> or <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLocateObje]{Locate Object}</em> from the weapon. Once you cast either spell, you can’t cast it from the weapon again until the next dawn.</p><details><summary>Sentience/Personality/Destroying Whelm</summary><p><em><strong>Sentience</strong></em>. <em>Whelm</em> is a sentient, Lawful Neutral weapon with an Intelligence of 15, a Wisdom of 12, and a Charisma of 15. It has hearing and Darkvision out to 120 feet.</p><p>The weapon communicates telepathically with its wielder and speaks Dwarvish, Giant, and Goblin.</p><p><em><strong>Personality</strong></em>. <em>Whelm</em> has ties to the dwarf clan that created it, called the Dankil or the Mightyhammer clan. It longs to be returned to that clan. <em>Whelm's</em> purpose is to protect dwarves. Conflict arises if the wielder doesn’t share this goal.</p><p><em><strong>Destroying Whelm</strong></em>. <em>Whelm</em> can be dissolved in the acidic bile of a recently slain ancient black dragon. It can also be melted down in the forges of the Mightyhammer dwarf clan, but only by the rightful leader of that clan.</p></details>",
             "activities": {
                 "Standard Attack": {
@@ -6893,7 +7047,8 @@
                     "name": "Hurl (Constuct, Elemental, Giant)"
                 },
                 "Shock Wave": {
-                    "name": "Shock Wave"
+                    "name": "Shock Wave",
+                    "damageOnSave": "none"
                 },
                 "Hurl": {
                     "name": "Hurl"
@@ -6973,7 +7128,8 @@
             "description": "<p><em>Injury Poison</em></p><p>A creature subjected to Wyvern Poison makes a DC 14 Constitution saving throw, taking 24 (7d6) Poison damage on a failed save or half as much damage on a successful one.</p>",
             "activities": {
                 "Use Poison": {
-                    "name": "Użyj trucizny"
+                    "name": "Użyj trucizny",
+                    "damageOnSave": "połowa"
                 }
             }
         },
@@ -6985,7 +7141,8 @@
                     "name": "Umieść pleśń"
                 },
                 "Touch Mold": {
-                    "name": "Dotknij pleśń"
+                    "name": "Dotknij pleśń",
+                    "damageOnSave": "połowa"
                 },
                 "Start of Turn Damage": {
                     "name": "Obrażenia na początku tury"

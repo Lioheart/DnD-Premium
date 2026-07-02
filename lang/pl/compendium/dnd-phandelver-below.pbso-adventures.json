@@ -4315,7 +4315,7 @@
                             }
                         },
                         "Scare": {
-                            "name": "Scare",
+                            "name": "Przerażenie",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-X6V3GMjWqE1xIxxu\"><p>One creature of the quasit's choice within 20 ft. of it must succeed on a <strong>DC 10 Wisdom</strong> saving throw or be &amp;Reference[frightened apply=false] for 1 minute.</p><p>The target can repeat the saving throw at the end of each of its turns, with disadvantage if the quasit is within line of sight, ending the effect on itself on a success.</p></section><p>One creature of the quasit's choice within 20 ft. of it must make a <strong>Wisdom</strong> saving throw. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the quasit is within line of sight, ending the effect on itself on a success.</p>"
                             }
@@ -4369,19 +4369,19 @@
                             }
                         },
                         "Horrifying Visage": {
-                            "name": "Horrifying Visage",
+                            "name": "Przerażające oblicze",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-1OBS0flNMT5xkqiK\"><p>Each non-undead creature within 60 ft. of the banshee that can see it must succeed on a <strong>DC 13 Wisdom</strong> saving throw or be &amp;Reference[condition=frightened]{frightened} for 1 minute. If the save fails by 5 or more, the target also ages [[/r 1d4 * 10]] years.</p><p>A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this {creature}'s Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.</p></section><p>Each non-undead creature within 60 ft. of the banshee that can see it must succeed make a <strong>Wisdom</strong> saving throw. A target can repeat the saving throw at the end of each of its turns, ending the condition on itself on a success.</p>"
                             }
                         },
                         "Detect Life": {
-                            "name": "Detect Life",
+                            "name": "Wykrycie życia",
                             "description": {
                                 "value": "<p>The banshee can magically sense the presence of creatures up to 5 miles away that aren’t undead or constructs. She knows the general direction they’re in but not their exact locations.</p>"
                             }
                         },
                         "Corrupting Touch": {
-                            "name": "Corrupting Touch",
+                            "name": "Plugawiący dotyk",
                             "description": {
                                 "value": "<section id=\"secret-920RAV7hQHrYRREM\" class=\"secret\"><p><em>Melee Spell Attack:</em> +4 to hit, reach 5 ft., one target. Hit: 12 (3d6 + 2) necrotic damage.</p></section><p>The banshee reaches out with a corrupting touch.</p>"
                             }
@@ -4510,7 +4510,7 @@
                             }
                         },
                         "Read Thoughts": {
-                            "name": "Read Thoughts",
+                            "name": "Czytanie w myślach",
                             "description": {
                                 "value": "<section class=\"secret\">\n<p>The doppelganger magically reads the surface thoughts of one creature within 60 ft. of it. The effect can penetrate barriers, but 3 ft. of wood or dirt, 2 ft. of stone, 2 inches of metal, or a thin sheet of lead blocks it.</p>\n<p>While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target.</p>\n</section>\n<p>The doppelganger magically reads the surface thoughts of one creature within 60 ft. of it.</p>"
                             }
@@ -5414,7 +5414,7 @@
                             }
                         },
                         "Split": {
-                            "name": "Split",
+                            "name": "Podział",
                             "description": {
                                 "value": "<section class=\"secret\"><p>When a jelly that is Medium or larger is subjected to lightning or <em>slashing damage</em>, it splits into two new jellies if it has at least 10 Hit Points. Each new jelly has Hit Points equal to half the original jelly's, rounded down. New jellies are one size smaller than the original jelly.</p></section><p>The jelly splits into two new jellies. New jellies are one size smaller than the original jelly.</p>"
                             }
@@ -6110,7 +6110,7 @@
                             }
                         },
                         "Earth Glide": {
-                            "name": "Earth Glide",
+                            "name": "Sunięcie przez ziemie",
                             "description": {
                                 "value": "<p>The xorn can burrow through nonmagical, unworked earth and stone. While doing so, the xorn doesn't disturb the material it moves through.</p>"
                             }
@@ -6128,7 +6128,7 @@
                             }
                         },
                         "Treasure Sense": {
-                            "name": "Treasure Sense",
+                            "name": "Wyczucie skarbów",
                             "description": {
                                 "value": "<p>The xorn can pinpoint, by scent, the location of precious metals and stones, such as coins and gems, within <strong>60 ft.</strong> of it.</p>"
                             }
@@ -6242,7 +6242,7 @@
                     "tokenName": "Chuul",
                     "items": {
                         "Pincer": {
-                            "name": "Pincer",
+                            "name": "Szczypce",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-KejUh11SRhrSReWa\"><p><em>Melee Weapon Attack: </em><strong>+6 to hit,</strong>, <strong>10 ft.,</strong> one target. Hit: <strong>11 (2d6 + 4) </strong><em><strong>bludgeoning damage</strong></em>.</p><p>The target is &amp;Reference[grappled]{grappled} (escape [[/check ability=str dc=14]]) if it is a Large or smaller creature and the chuul doesn't have two other creatures grappled.</p></section><p>The Chuul attacks with its Pincer. The target is &amp;Reference[grappled]{grappled} if it is a Large or smaller creature.</p>"
                             }
@@ -6266,7 +6266,7 @@
                             }
                         },
                         "Sense Magic": {
-                            "name": "Sense Magic",
+                            "name": "Wyczucie magii",
                             "description": {
                                 "value": "<p>The chuul senses magic <strong>within 120 feet</strong> of it at will. This trait otherwise works like the detect magic spell but isn't itself magical.</p>"
                             }
@@ -6488,7 +6488,7 @@
                     "tokenName": "Mefit pyłow",
                     "items": {
                         "Death Burst": {
-                            "name": "Pośmiertna eksplozja",
+                            "name": "Śmiercionośny wybuch",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-O1zTnCZg22PbWl4h\"><p>When the mephit dies, it explodes in a burst of dust. Each creature within <strong>5 ft.</strong> of it must then succeed on a <strong>DC 10 Constitution saving throw</strong> or be &amp;Reference[blinded]{blinded} for <strong>1 minute</strong>. A blinded creature can repeat the saving throw on each of its turns, ending the effect on itself on a success.</p></section><p>When the mephit dies, it explodes in a burst of dust. Each creature within <strong>5 ft.</strong> of it must make a <strong>Constitution</strong> saving throw.</p>"
                             }
@@ -6551,7 +6551,7 @@
                     "tokenName": "Żywiołak ziemi",
                     "items": {
                         "Earth Glide": {
-                            "name": "Earth Glide",
+                            "name": "Sunięcie przez ziemie",
                             "description": {
                                 "value": "<p>The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.</p>"
                             }
@@ -6695,7 +6695,7 @@
                     "tokenName": "Duch",
                     "items": {
                         "Ethereal Sight": {
-                            "name": "Ethereal Sight",
+                            "name": "Eteryczny wzrok",
                             "description": {
                                 "value": "<p>The ghost can see <strong>60 ft.</strong> into the Ethereal Plane when it is on the Material Plane, and vice versa.</p>"
                             }
@@ -6707,7 +6707,7 @@
                             }
                         },
                         "Withering Touch": {
-                            "name": "Withering Touch",
+                            "name": "Obumierający dotyk",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-zb6LzFgF7wtYpHwg\"><p><em>Melee Weapon Attack: </em><strong>+5 to hit,</strong>, <strong>5 ft.,</strong> one target. Hit: <strong>17 (4d6 + 3) </strong><em><strong>necrotic damage</strong></em>.</p></section><p>The Ghost attacks with its Withering Touch.</p>"
                             }
@@ -6719,7 +6719,7 @@
                             }
                         },
                         "Horrifying Visage": {
-                            "name": "Horrifying Visage",
+                            "name": "Przerażające oblicze",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-PS1xFPnqQ6wyNqRE\"><p>Each non-undead creature within 60 ft. of the ghost that can see it must succeed on a <strong>DC 13 Wisdom</strong> saving throw or be &amp;Reference[frightened]{frightened} for 1 minute. If the save fails by 5 or more, the target also ages [[/gmroll 1d4*10]] years.</p><p>A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a @UUID[Compendium.dnd5e.spells.Item.WzvJ7G3cqvIubsLk]{greater restoration} spell, but only within 24 hours of it occurring.</p></section><p>Each non-undead creature within 60 ft. of the ghost that can see it must succeed make a <strong>Wisdom</strong> saving throw. A target can repeat the saving throw at the end of each of its turns, ending the condition on itself on a success.</p>"
                             }
@@ -6830,7 +6830,7 @@
                             }
                         },
                         "Spell Immunity": {
-                            "name": "Spell Immunity",
+                            "name": "Niepodatność na czary",
                             "description": {
                                 "value": "<p>The helmed horror is immune to three spells chosen by its creator. Typical immunities include fireball, heat metal, and lightning bolt.</p>"
                             }
@@ -6986,7 +6986,7 @@
                             }
                         },
                         "Rotting Fist": {
-                            "name": "Rotting Fist",
+                            "name": "Gnijąca pięść",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-uJoT0vBtiiZ3YX2q\"><p><em>Melee Weapon Attack: </em><strong>+5 to hit,</strong>, <strong>5 ft.,</strong> one target. Hit: <strong>10 (2d6 + 3) </strong><em><strong>bludgeoning damage</strong></em> plus <strong>10 (3d6) </strong><em><strong>necrotic damage</strong></em>.</p><p>If the target is a creature, it must succeed on a <strong>DC 12 Constitution</strong> saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the @UUID[Compendium.dnd5e.spells.Item.XZhdgVK3cLoxNCQl]{remove curse} spell or other magic.</p></section><p>The Mummy attacks with its Rotting Fist. If the target is a creature, it must make a <strong>Constitution</strong> saving throw.</p>"
                             }
@@ -7352,13 +7352,13 @@
                             }
                         },
                         "Tendril": {
-                            "name": "Tendril",
+                            "name": "Wić",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-1HsUHsqj8eoYWlcV\"><p><em>Melee Weapon Attack:</em><strong>+7 to hit,</strong>, <strong>50 ft.,</strong> one target. Hit: The target is &amp;Reference[Grappled]{grappled} (escape [[/check ability=str dc=15]]). Until the grapple ends, the target is &amp;Reference[Restrained]{restrained} and has <strong>disadvantage on Strength Checks and Strength Saving Throws</strong> , and the roper can't use the same tendril on another target.</p></section><p>The Roper attacks with its Tendril. The target is &amp;Reference[Grappled]{grappled}. Until the grapple ends, the target is &amp;Reference[Restrained]{restrained} and has <strong>disadvantage on Strength Checks and Strength Saving Throws</strong>.</p>"
                             }
                         },
                         "Reel": {
-                            "name": "Reel",
+                            "name": "Nawijanie",
                             "description": {
                                 "value": "<p>The roper pulls each creature &amp;Reference[grappled]{grappled} by it up to 25 ft. straight toward it.</p>"
                             }
@@ -7445,7 +7445,7 @@
                             }
                         },
                         "Water Bound": {
-                            "name": "Water Bound",
+                            "name": "Związane z wodą",
                             "description": {
                                 "value": "<p>The water weird dies if it leaves the water to which it is bound or if that water is destroyed.</p>"
                             }
@@ -7718,7 +7718,7 @@
                             }
                         },
                         "Running Leap": {
-                            "name": "Running Leap",
+                            "name": "Skok z rozbiegu",
                             "description": {
                                 "value": "<p>The barlgura’s long jump is up to 40 feet and its high jump is up to 20 feet when it has a running start.</p>"
                             }
@@ -7853,7 +7853,7 @@
                     "tokenName": "Cloaker Mutate",
                     "items": {
                         "Light Sensitivity": {
-                            "name": "Light Sensitivity",
+                            "name": "Wrażliwość na światło",
                             "description": {
                                 "value": "<p>While in bright light, the mutate has <strong>disadvantage</strong> on attack rolls.</p>"
                             }
@@ -8072,7 +8072,7 @@
                             }
                         },
                         "Gibbering": {
-                            "name": "Gibbering",
+                            "name": "Bełkotanie",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-yKDEFUR92vkoLklz\"><p>The mouther babbles incoherently while it can see any creature and isn't &amp;Reference[incapacitated]{incapacitated}. Each creature that starts its turn <strong>within 20 feet</strong> of the mouther and can hear the gibbering must succeed on a <strong>DC 10 Wisdom saving throw</strong>. On a failure, the creature can't take reactions until the start of its next turn and rolls a d8 to determine what it does during its turn.</p><p>On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. On a 7 or 8, the creature makes a melee attack against a randomly determined creature within its reach or does nothing if it can't make such an attack.</p></section><p>The mouther babbles incoherently while it can see any creature. Each creature that starts its turn <strong>within 20 feet</strong> of the mouther and can hear the gibbering must succeed on a Wisdom saving throw.</p>"
                             }
@@ -8276,7 +8276,7 @@
                             }
                         },
                         "Hurl Flame": {
-                            "name": "Hurl Flame",
+                            "name": "Ciskanie płomieniami",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-pvdrwz7HJfrlARly\"><p><em>Ranged Spell Attack:</em> +4 to hit, range 60 ft., one target. <em>Hit:</em> 10 (3d6) fire damage. The fire ignites flammable objects that aren’t being worn or carried.</p></section><p>The slaad hurls a flame.</p>"
                             }
@@ -8552,7 +8552,7 @@
                             }
                         },
                         "Devour Intellect": {
-                            "name": "Devour Intellect",
+                            "name": "Pożarcie intelektu",
                             "description": {
                                 "value": "<p>The intellect devourer targets one creature it can see within 10 feet of it that has a brain. The target must succeed on a DC 12 Intelligence saving throw against this magic or take 11 (2d10) psychic damage. Also on a failure, roll [[/r 3d6]]: If the total equals or exceeds the target’s Intelligence score, that score is reduced to 0. The target is &amp;Reference[stunned]{stunned} until it regains at least one point of Intelligence.</p>"
                             }
@@ -9206,7 +9206,7 @@
                     "tokenName": "Wrzaskun",
                     "items": {
                         "Shriek": {
-                            "name": "Shriek",
+                            "name": "Wrzask",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-IQDHrNBGGArkqIjl\"><p>When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for [[/r 1d4]] of the shrieker's turns afterward</p></section><p>When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it.</p>"
                             }
@@ -9311,7 +9311,7 @@
                             }
                         },
                         "Psychic Drain": {
-                            "name": "Psychic Drain",
+                            "name": "Psychiczne wyssanie",
                             "description": {
                                 "value": "<p>One creature &amp;Reference[charmed]{charmed} by the aboleth takes <strong>10 (3d6)</strong> <strong>psychic </strong>damage, and the aboleth regains hit points equal to the damage the creature takes.</p>"
                             }
@@ -9323,7 +9323,7 @@
                             }
                         },
                         "Probing Telepathy": {
-                            "name": "Probing Telepathy",
+                            "name": "Sondująca telepatia",
                             "description": {
                                 "value": "<p>If a creature communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires if the aboleth can see the creature.</p>"
                             }
@@ -10301,7 +10301,7 @@
                             }
                         },
                         "Fling": {
-                            "name": "Fling",
+                            "name": "Wyrzut",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-lcqSAA6iPLcZXHtL\"><p>One Large or smaller object held or creature grappled by the kraken is thrown up to 60 feet in a random direction and knocked prone. If a thrown target strikes a solid surface, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 18 Dexterity saving throw or take the same damage and be knocked prone.</p><p><strong>Foundry Note</strong></p><p>The Damage and Save activities include a scale where you can enter the number of 10 feet increments the character was thrown and it will scale the damage automatically.</p></section><p>One Large or smaller object held or creature grappled by the kraken is thrown up to 60 feet in a random direction and knocked &amp;Reference[prone]{prone}. If the target is thrown at another creature, that creature must make a <strong>Dexterity</strong> saving throw or take the same damage and be knocked prone.</p>"
                             }
@@ -11202,13 +11202,13 @@
                     "tokenName": "Żywiołak wody",
                     "items": {
                         "Freeze": {
-                            "name": "Freeze",
+                            "name": "Zamarzanie",
                             "description": {
                                 "value": "<section class=\"secret\"><p>If the elemental takes <strong><em>cold damage</em></strong>, it partially freezes; its speed is reduced by <strong>20 ft.</strong> until the end of its next turn.</p></section><p>If the elemental takes <strong><em>cold damage</em></strong>, it partially freezes.</p>"
                             }
                         },
                         "Water Form": {
-                            "name": "Water Form",
+                            "name": "Wodna forma",
                             "description": {
                                 "value": "<p>The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.</p>"
                             }
@@ -11226,7 +11226,7 @@
                             }
                         },
                         "Whelm": {
-                            "name": "Whelm",
+                            "name": "Zalanie",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-tpnvomAtfNouC7yE\"><p>Each creature in the elemental's space must make a <strong>DC 15 Strength</strong> saving throw. On a failure, a target takes <strong>13 (2d8 + 4) </strong><em><strong>bludgeoning damage</strong></em>. If it is Large or smaller, it is also grappled (escape [[/check ability=str dc=14]]). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water.</p><p>If the saving throw is successful, the target is pushed out of the elemental's space.The elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental's turns, each target grappled by it takes <strong>13 (2d8 + 4) </strong><em><strong>bludgeoning damage</strong></em>. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 14 Strength check and succeeding.</p></section><p>Each creature in the elemental's space must make a <strong>Strength</strong> saving throw. If it is Large or smaller, it is also &amp;Reference[grappled]{grappled}. Until this grapple ends, the target is &amp;Reference[restrained]{restrained} and unable to breathe unless it can breathe water. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a Strength check and succeeding.</p>"
                             }

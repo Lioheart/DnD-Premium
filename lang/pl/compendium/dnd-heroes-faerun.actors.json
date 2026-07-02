@@ -15,7 +15,112 @@
         },
         "items": {
             "path": "items",
-            "converter": "items"
+            "converter": "document",
+            "documentType": "Item",
+            "cardinality": "many",
+            "mapping": {
+                "description": "system.description.value",
+                "requirements": "system.requirements",
+                "materials": "system.materials.value",
+                "chat": "system.description.chat",
+                "activation": "system.activation.condition",
+                "activationValue": "system.activation.value",
+                "activities": {
+                    "path": "system.activities",
+                    "converter": "structured",
+                    "cardinality": "many",
+                    "container": "keyed",
+                    "keys": [
+                        "_id",
+                        "name",
+                        "type"
+                    ],
+                    "mapping": {
+                        "name": "name",
+                        "condition": "activation.condition",
+                        "activationCondition": "activation.condition",
+                        "activationValue": "activation.value",
+                        "chatFlavor": "description.chatFlavor",
+                        "duration": "duration.special",
+                        "roll": "roll.name",
+                        "damageOnSave": "damage.onSave",
+                        "range": {
+                            "path": "range",
+                            "converter": "imperialToMetric"
+                        },
+                        "target": {
+                            "path": "target",
+                            "converter": "imperialToMetric"
+                        },
+                        "profiles": {
+                            "path": "profiles",
+                            "converter": "nameCollection"
+                        }
+                    }
+                },
+                "effects": {
+                    "path": "effects",
+                    "converter": "effects"
+                },
+                "advancement": {
+                    "path": "system.advancement",
+                    "converter": "structured",
+                    "cardinality": "many",
+                    "container": "keyed",
+                    "keys": [
+                        "_id",
+                        "title"
+                    ],
+                    "mapping": {
+                        "title": "title",
+                        "hint": "hint",
+                        "_variants": [
+                            {
+                                "_when": {
+                                    "path": "type",
+                                    "equals": "ScaleValue"
+                                },
+                                "distance": {
+                                    "path": "configuration.distance",
+                                    "converter": "imperialToMetric"
+                                },
+                                "scale": {
+                                    "path": "configuration.scale",
+                                    "converter": "imperialToMetric"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "movement": {
+                    "path": "system.movement",
+                    "converter": "imperialToMetric"
+                },
+                "weight": {
+                    "path": "system.weight",
+                    "converter": "imperialToMetric"
+                },
+                "range": {
+                    "path": "system.range",
+                    "converter": "imperialToMetric"
+                },
+                "capacityWeight": {
+                    "path": "system.capacity.weight",
+                    "converter": "imperialToMetric"
+                },
+                "senses": {
+                    "path": "system.senses",
+                    "converter": "imperialToMetric"
+                },
+                "target": {
+                    "path": "system.target",
+                    "converter": "imperialToMetric"
+                },
+                "volume": {
+                    "path": "system.capacity.volume",
+                    "converter": "imperialToMetric"
+                }
+            }
         },
         "senses": {
             "path": "system.attributes.senses",
@@ -65,7 +170,8 @@
                         "Clockwork Force": {
                             "name": "Clockwork Force",
                             "condition": "action taken by controller",
-                            "activationCondition": "action taken by controller"
+                            "activationCondition": "action taken by controller",
+                            "damageOnSave": "połowa"
                         },
                         "Orderly Ward": {
                             "name": "Orderly Ward",
@@ -83,7 +189,12 @@
             "items": {
                 "Mechanical Determination": {
                     "name": "Mechanical Determination",
-                    "description": "<p>If damage reduces the wonder to 0 Hit Points, it makes a Constitution saving throw with a DC of 5 plus the damage taken unless the damage is Lightning or from a Critical Hit. On a successful save, the wonder drops to 1 Hit Point instead.</p>"
+                    "description": "<p>If damage reduces the wonder to 0 Hit Points, it makes a Constitution saving throw with a DC of 5 plus the damage taken unless the damage is Lightning or from a Critical Hit. On a successful save, the wonder drops to 1 Hit Point instead.</p>",
+                    "activities": {
+                        "save": {
+                            "damageOnSave": "none"
+                        }
+                    }
                 },
                 "Wind-Up Operation": {
                     "name": "Wind-Up Operation",
@@ -109,8 +220,8 @@
             "items": {
                 "Flyby": {
                     "name": "Przelot",
-                    "description": "<p>The [[lookup @name lowercase]] doesn’t provoke an &amp;Reference[OpportunityAttacks]{Opportunity Attack} when it flies out of an enemy’s reach.</p>",
-                    "requirements": "Flies out of an enemy's reach"
+                    "description": "<p>[[lookup @name]] nie prowokuje &amp;Reference[OpportunityAttacks]{Ataków okazyjnych}, gdy wylatuje poza zasięg wroga.</p>",
+                    "requirements": "Wylatuje poza zasięg wroga"
                 },
                 "Bite": {
                     "name": "Ugryzienie",
@@ -125,16 +236,16 @@
             "items": {
                 "Pack Tactics": {
                     "name": "Atak grupowy",
-                    "description": "<p>The [[lookup @name lowercase]] has Advantage on an attack roll against a creature if at least one of the [[lookup @name lowercase]]'s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>",
-                    "requirements": "Ally within 5 feet of attack target"
+                    "description": "<p>[[lookup @name]] ma Ułatwienie w teście ataku przeciwko istocie, jeśli co najmniej jeden sojusznik potwora [[lookup @name lowercase]] znajduje się w odległości 5 stóp od tej istoty i nie ma stanu Obezwładniony.</p>",
+                    "requirements": "Sojusznik w odległości 5 stóp od celu ataku"
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Medium or smaller creature, it has the &amp;Reference[Prone apply=false] condition.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Średnią lub mniejszą istotą, otrzymuje stan &amp;Reference[Prone apply=false].</p>",
                     "effects": {
                         "Prone": {
                             "name": "Powalony",
-                            "description": "<p>If the target is a Medium or smaller creature, it has the &amp;Reference[Prone apply=false] condition.</p>"
+                            "description": "<p>Jeśli cel jest Średnią lub mniejszą istotą, otrzymuje stan &amp;Reference[Prone apply=false].</p>"
                         }
                     }
                 }
