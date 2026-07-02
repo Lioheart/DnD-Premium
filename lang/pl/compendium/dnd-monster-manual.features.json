@@ -48,7 +48,7 @@
         "Aberrant Ground": {
             "name": "Aberrant Ground",
             "description": {
-                "value": "<p>The ground in a [[lookup @target.template.size activity=zVznqPXgYjETqpQz]]-foot Emanation originating from the [[lookup @name]] is &amp;Reference[Difficult Terrain].</p>"
+                "value": "<p>Podłoże w [[lookup @target.template.size activity=zVznqPXgYjETqpQz]]-stopowej Emanacji pochodzącej od [[lookup @name]] jest &amp;Reference[Difficult Terrain]{Trudnym terenem}.</p>"
             }
         },
         "Absorb Body": {
@@ -101,7 +101,7 @@
         "Advanced Telepathy": {
             "name": "Advanced Telepathy",
             "description": {
-                "value": "<p>The [[lookup @name lowercase]] perceives the content of any telepathic communication within 60 feet of it.</p>"
+                "value": "<p>[[lookup @name]] odbiera treść każdej komunikacji telepatycznej w obrębie 60 stóp od siebie.</p>"
             }
         },
         "Agile": {
@@ -236,15 +236,15 @@
         },
         "Attached: Blinded": {
             "name": "Attached: Blinded",
-            "description": "<p>While attached, the target has the &amp;Reference[Blinded apply=false] condition.</p>"
+            "description": "<p>Dopóki jest przyczepiony, cel ma stan &amp;Reference[Blinded apply=false].</p>"
         },
         "Attack: Advantage": {
             "name": "Attack: Advantage",
-            "description": "<p>The target has Advantage on attack rolls until the start of the granter’s next turn.</p>"
+            "description": "<p>Cel ma Ułatwienie w testach ataku do początku następnej tury udzielającego.</p>"
         },
         "Attacks: Disadvantage": {
             "name": "Ataki: Utrudnienie",
-            "description": "<p>The target has Disadvantage on attack rolls until the end of the attacking creature's next turn.</p>"
+            "description": "<p>Cel ma Utrudnienie w testach ataku do końca następnej tury atakującej istoty.</p>"
         },
         "Aura of Authority": {
             "name": "autorytetu",
@@ -266,7 +266,7 @@
         },
         "Averse": {
             "name": "Averse",
-            "description": "<p>It has Disadvantage on attack rolls and ability checks until the end of its next turn.</p>"
+            "description": "<p>Ma Utrudnienie w testach ataku i testach cech do końca swojej następnej tury.</p>"
         },
         "Aversion to Fire": {
             "name": "Aversion to Fire",
@@ -412,15 +412,15 @@
         },
         "Blinded & Deafened": {
             "name": "Oślepiony i Ogłuchły",
-            "description": "<p>The target has the &amp;Reference[Blinded apply=false] and &amp;Reference[Deafened apply=false] conditions until the start of the attacking creature’s next turn.</p>"
+            "description": "<p>Cel ma stany &amp;Reference[Blinded apply=false] i &amp;Reference[Deafened apply=false] do początku następnej tury atakującej istoty.</p>"
         },
         "Blinded & Poisoned": {
             "name": "Oślepiony i Zatruty",
-            "description": "<p>The target has the &amp;Reference[Blinded apply=false] and &amp;Reference[Poisoned apply=false] conditions until the end of the attacking creature's next turn.</p>"
+            "description": "<p>Cel ma stany &amp;Reference[Blinded apply=false] i &amp;Reference[Poisoned apply=false] do końca następnej tury atakującej istoty.</p>"
         },
         "Blinded & Suffocating": {
             "name": "Oślepiony i Duszący się",
-            "description": "<p>The target has the &amp;Reference[Blinded apply=false] condition and is &amp;Reference[suffocating apply=false]{suffocating} while the attacking creature is attached to the target.</p>"
+            "description": "<p>Cel ma stan &amp;Reference[Blinded apply=false] oraz amp;Reference[suffocating apply=false], dopóki atakująca istota jest przyczepiona do celu.</p>"
         },
         "Blinded, Restrained, and Total Cover": {
             "name": "Oślepiony, Unieruchomiony i Całkowita osłona",
@@ -475,7 +475,7 @@
         "Blurred Form": {
             "name": "Blurred Form",
             "description": {
-                "value": "<p>Attack rolls against the [[lookup @name lowercase]] are made with Disadvantage unless the [[lookup @name lowercase]] has the Incapacitated condition.</p>"
+                "value": "<p>Testy ataku przeciwko [[lookup @name lowercase]] są wykonywane z Utrudnieniem, chyba że [[lookup @name lowercase]] ma stan Obezwładniony.</p>"
             }
         },
         "Bog Staff": {
@@ -487,12 +487,12 @@
         "Bolster": {
             "name": "Wzmocnienie",
             "description": {
-                "value": "<p>The [[lookup @name lowercase]] gains [[lookup @healing.formula activity=v5km8Vio4N6HgkF6]] Temporary Hit Points, and the [[lookup @name lowercase]] and each ally within [[lookup @range.value activity=v5km8Vio4N6HgkF6]] feet of it gain Advantage on D20 Tests until the end of the [[lookup @name lowercase]]'s next turn. The [[lookup @name lowercase]] can’t take this action again until the start of its next turn.</p>"
+                "value": "<p>[[lookup @name]] zyskuje [[lookup @healing.formula activity=v5km8Vio4N6HgkF6]] Tymczasowych Punktów Wytrzymałości, a [[lookup @name lowercase]] i każdy sojusznik w obrębie [[lookup @range.value activity=v5km8Vio4N6HgkF6]] stóp od niego zyskują Ułatwienie w Testach k20 do końca następnej tury [[lookup @name lowercase]]. [[lookup @name]] nie może wykonać ponownie tej Akcji aż do początku swojej następnej tury.</p>"
             }
         },
         "Bolstered: Test Advantage": {
             "name": "Bolstered: Test Advantage",
-            "description": "<p>The target gains Advantage on D20 Tests until the end of the user's next turn.</p>"
+            "description": "<p>Cel zyskuje Ułatwienie w Testach k20 do końca następnej tury użytkownika.</p>"
         },
         "Bone Bow": {
             "name": "Kościany łuk",
@@ -521,7 +521,7 @@
         "Bone Whip": {
             "name": "Bicz z kości",
             "description": {
-                "value": "<p>[[/attack extended]]. [[/damage average extended]], and the target can’t make &amp;Reference[OpportunityAttacks] until the start of the [[lookup @name lowercase]]’s next turn.</p>"
+                "value": "<p>[[/attack extended]]. [[/damage average extended]], a cel nie może wykonywać &amp;Reference[OpportunityAttacks]{Ataków okazyjnych} do początku następnej tury [[lookup @name lowercase]].</p>"
             }
         },
         "Boulder": {
@@ -551,13 +551,13 @@
         "Brutal Gore": {
             "name": "Brutalne nadzianie",
             "description": {
-                "value": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Huge or smaller creature, it is pushed up to 20 feet straight away from the [[lookup @name lowercase]] and has the &amp;Reference[Prone apply=false] condition.</p>"
+                "value": "<p>[[/attack extended]]. [[/damage average extended]] obrażeń. Jeśli cel jest Wielką lub mniejszą istotą, zostaje odepchnięty po linii prostej o maksymalnie 20 stóp od [[lookup @name lowercase]] i ma stan &amp;Reference[Prone apply=false].</p>"
             }
         },
         "Bubble Dash": {
             "name": "Bubble Dash",
             "description": {
-                "value": "<p>While underwater, the [[lookup @name lowercase]] moves up to its Swim Speed without provoking &amp;Reference[Opportunity Attacks].</p>"
+                "value": "<p>Pod wodą [[lookup @name lowercase]] porusza się o maksymalnie swoją Szybkość pływania bez prowokowania &amp;Reference[Opportunity Attacks].</p>"
             }
         },
         "Burn": {
@@ -637,19 +637,19 @@
             }
         },
         "Chaos Blade": {
-            "name": "Chaos Blade",
+            "name": "Ostrze chaosu",
             "description": {
                 "value": "<p>[[/attack extended]]. [[/damage average extended]]. Do początku następnej tury [[lookup @name lowercase]] cel ma stan określony rzutem 1k4: przy <strong>1</strong> &amp;Reference[Charmed apply=false]; przy <strong>2</strong> &amp;Reference[Frightened apply=false]; przy <strong>3</strong> &amp;Reference[Poisoned apply=false]; a przy <strong>4</strong> &amp;Reference[Incapacitated apply=false].</p>"
             }
         },
         "Chaos Claw": {
-            "name": "Chaos Claw",
+            "name": "Pazury chaosu",
             "description": {
                 "value": "<p>[[/attack extended]]. [[/damage average extended]]. Do początku następnej tury [[lookup @name lowercase]] cel ma stan określony rzutem 1k4: przy <strong>1</strong> &amp;Reference[Charmed apply=false]; przy <strong>2</strong> &amp;Reference[Frightened apply=false]; przy <strong>3</strong> &amp;Reference[Poisoned apply=false]; a przy <strong>4</strong> &amp;Reference[Incapacitated apply=false].</p>"
             }
         },
         "Chaos Staff": {
-            "name": "Chaos Staff",
+            "name": "Kostur chaosu",
             "description": {
                 "value": "<p>[[/attack extended]]. [[/damage average extended]]. Do początku następnej tury [[lookup @name lowercase]] cel ma stan określony rzutem 1k4: przy <strong>1</strong> &amp;Reference[Charmed apply=false]; przy <strong>2</strong> &amp;Reference[Frightened apply=false]; przy <strong>3</strong> &amp;Reference[Poisoned apply=false]; a przy <strong>4</strong> &amp;Reference[Incapacitated apply=false].</p>"
             }
@@ -663,7 +663,7 @@
         "Charged Tendril": {
             "name": "Charged Tendril",
             "description": {
-                "value": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Medium or smaller creature, the [[lookup @name lowercase]] pulls the target 5 feet straight toward itself.</p>"
+                "value": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Średnią lub mniejszą istotą, [[lookup @name lowercase]] przyciąga cel o 5 stóp po linii prostej ku sobie.</p>"
             }
         },
         "Charging Horn": {
@@ -680,7 +680,7 @@
         },
         "Charmed": {
             "name": "Zauroczony",
-            "description": "<p>If the attack roll misses the attacking creature's target, the target has the &amp;Reference[Charmed apply=false] condition until the end of the attacking creature's next turn.</p>"
+            "description": "<p>Jeśli test ataku nie trafia celu atakującej istoty, cel ma stan &amp;Reference[Charmed apply=false] do końca następnej tury atakującej istoty.</p>"
         },
         "Charmed & Frightened": {
             "name": "Zauroczony i Przerażony",
@@ -723,7 +723,7 @@
         "Chromatic Spittle": {
             "name": "Chromatic Spittle",
             "description": {
-                "value": "<p>[[/attack extended]]. [[/damage average extended]] (type chosen by the [[lookup @name lowercase]]).</p>"
+                "value": "<p>[[/attack extended]]. [[/damage average extended]] (typ wybrany przez potwora [[lookup @name lowercase]]).</p>"
             }
         },
         "Cinder Breath": {
@@ -810,7 +810,7 @@
         "Confer Fire Resistance": {
             "name": "Udzielenie odporności na ogień",
             "description": {
-                "value": "<p class=\"feature\">The [[lookup @name lowercase]] can grant Resistance to Fire damage to a rider while it is on the [[lookup @name lowercase]].</p>"
+                "value": "<p class=\"feature\">[[lookup @name]] może zapewnić jeźdźcowi Odporność na obrażenia od ognia, gdy ten znajduje się na [[lookup @name lowercase]].</p>"
             }
         },
         "Confusing Gaze": {
@@ -870,7 +870,7 @@
         "Control Weather": {
             "name": "Kontrola pogody",
             "description": {
-                "value": "<p class=\"feature\">The [[lookup @name lowercase]] casts the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplControlWea]{Control Weather}</em> spell, requiring no spell components and using Constitution as the spellcasting ability.</p>"
+                "value": "<p class=\"feature\">[[lookup @name]] rzuca czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplControlWea]</em> bez potrzeby użycia komponentów czaru, używając Kondycji jako Cechy bazowej.</p>"
             }
         },
         "Corrosive Form": {
@@ -951,7 +951,7 @@
         },
         "Cursed: Disadv. Checks & Saves": {
             "name": "Przeklęty: Utrudn. w testach i rzutach obronnych",
-            "description": "<p>Until the curse ends, a creature has Disadvantage on ability checks and saving throws.</p>"
+            "description": "<p>Dopóki klątwa trwa, istota ma Utrudnienie w testach cech i rzutach obronnych.</p>"
         },
         "Cursed: No Reaction": {
             "name": "Przeklęty: Brak reakcji",
@@ -959,7 +959,7 @@
         },
         "Damaged: -1 AC": {
             "name": "Po otrzymaniu obrażeń: -1 KP",
-            "description": "<p>Nonmagical armor worn by the target takes a -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.</p>"
+            "description": "<p>Niemagiczna zbroja noszona przez cel otrzymuje karę -1 do zapewnianej KP. Zbroja zostaje zniszczona, jeśli kara zmniejszy jej KP do 10.</p>"
         },
         "Damaged: -1 AC/Attack": {
             "name": "Po otrzymaniu obrażeń: −1 do KP/Atak",
@@ -1001,7 +1001,7 @@
         },
         "Deafened and Disadvantaged": {
             "name": "Deafened and Disadvantaged",
-            "description": "<p>The target has the &amp;Reference[Deafened apply=false] condition until the start of the user's next turn. While Deafened, the target also has Disadvantage on ability checks and attack rolls.</p>"
+            "description": "<p>Cel ma stan &amp;Reference[Deafened apply=false] do początku następnej tury użytkownika. Będąc Ogłuchły, cel ma także Utrudnienie w testach cech i testach ataku.</p>"
         },
         "Death Burst": {
             "name": "Śmiercionośny wybuch",
@@ -1059,7 +1059,7 @@
         },
         "Defense: +4 AC": {
             "name": "Defensywa: +4 KP",
-            "description": "<p>Add +4 to its AC against melee attack rolls (including the triggering attack) until the start of its next turn.</p>"
+            "description": "<p>Dodaj +4 do jego KP przeciwko testom ataku wręcz (w tym atakowi wyzwalającemu) do początku jego następnej tury.</p>"
         },
         "Defensive Stance": {
             "name": "Defensive Stance",
@@ -1170,13 +1170,13 @@
         "Divine Beam": {
             "name": "Divine Beam",
             "description": {
-                "value": "<p class=\"feature\"><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=MM0CWfZkvWYQQt2f]], each [[lookup @target.affects.type activity=MM0CWfZkvWYQQt2f]] in a [[lookup @target.template.size activity=MM0CWfZkvWYQQt2f]]-foot long, [[lookup @target.template.width activity=MM0CWfZkvWYQQt2f]]-foot-wide line.</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage.</p><p class=\"feature\"><em>Success:</em> [[lookup @damage.onSave capitalize activity=MM0CWfZkvWYQQt2f]] damage.</p><p class=\"feature\"><em>Failure or Success:</em> A creature reduced to 0 Hit Points by this beam disintegrates into dust, leaving behind any magic items it was wearing or carrying.</p>"
+                "value": "<p class=\"feature\"><em>Rzut obronny na Zręczność:</em> ST [[lookup @save.dc.value activity=MM0CWfZkvWYQQt2f]], każda istota typu [[lookup @target.affects.type activity=MM0CWfZkvWYQQt2f]] w Linii o długości [[lookup @target.template.size activity=MM0CWfZkvWYQQt2f]] stóp i szerokości [[lookup @target.template.width activity=MM0CWfZkvWYQQt2f]] stóp.</p><p class=\"feature\"><em>Porażka:</em> [[/damage average]] obrażeń.</p><p class=\"feature\"><em>Sukces:</em> [[lookup @damage.onSave capitalize activity=MM0CWfZkvWYQQt2f]] obrażeń.</p><p class=\"feature\"><em>Porażka lub Sukces:</em> Istota zredukowana do 0 Punktów Wytrzymałości przez ten promień rozpada się w pył, pozostawiając po sobie wszelkie magiczne przedmioty, które miała na sobie lub niosła.</p>"
             }
         },
         "Divine Ray": {
             "name": "Boski promień",
             "description": {
-                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]] ([[lookup @name lowercase]]’s choice).</p>"
+                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]] (według wyboru potwora [[lookup @name lowercase]]).</p>"
             }
         },
         "Dominate Mind": {
@@ -1196,7 +1196,7 @@
             }
         },
         "Draconic Strike": {
-            "name": "Draconic Strike",
+            "name": "Smocze uderzenie",
             "description": {
                 "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target has the &amp;Reference[Frightened apply=false] condition until the start of the [[lookup @name lowercase]]’s next turn.</p>"
             }
@@ -1222,7 +1222,7 @@
         "Draining Swipe": {
             "name": "Draining Swipe",
             "description": {
-                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target’s Strength score decreases by [[/r 1d4]]. The target dies if this reduces that score to 0. If a Humanoid is slain by this attack, a <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmShadow00000000]{Shadow}</strong> rises from the corpse [[/r 1d4]] hours later.</p><section id=\"secret-qqwbOYJqDuTP2N5e\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature provides an Active Effect in the Effects Tab to modify the target PC's Strength Score. Since this Strength reduction can be applied multiple times, the GM must drag the Active Effect in this item's Effect tab onto the PC's character sheet. From there, the GM must navigate to the Effects tab on the PC's sheet to modify the Effect Value preceded by the negative symbol, e.g., -3. Presently, it is set at -1.</p></section>"
+                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target’s Strength score decreases by [[/r 1d4]]. The target dies if this reduces that score to 0. If a Humanoid is slain by this attack, a <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmShadow00000000]{Shadow}</strong> rises from the corpse [[/r 1d4]] hours later.</p><section class=\"secret\" id=\"secret-qqwbOYJqDuTP2N5e\"><p><strong>Foundry Note</strong></p><p>This feature also provides an <strong>Active Effect (AE)</strong> to modify the target's <strong>Strength Score</strong>. When the target roll's their d4 to determine the loss, you can apply the respective AE to the target's sheet.</p></section>"
             }
         },
         "Dread Authority": {
@@ -1246,7 +1246,7 @@
         "Dread Scythe": {
             "name": "Dread Scythe",
             "description": {
-                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target can’t regain Hit Points until the end of its next turn.</p>"
+                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], a cel nie może odzyskiwać Punktów Wytrzymałości do końca swojej następnej tury.</p>"
             }
         },
         "Dreadful Glare": {
@@ -1300,7 +1300,7 @@
         "Eldritch Lantern": {
             "name": "Eldritch Lantern",
             "description": {
-                "value": "<p class=\"feature\">The [[lookup @name lowercase]] casts <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFaerieFire]{Faerie Fire}</em>, using Intelligence as the spellcasting ability (spell save DC [[lookup @abilities.int.dc]]).</p>"
+                "value": "<p class=\"feature\">[[lookup @name]] rzuca <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFaerieFire]</em>, używając Inteligencji jako Cechy bazowej (ST rzutu obronnego przeciw czarom [[lookup @abilities.int.dc]]).</p>"
             }
         },
         "Eldritch Restoration": {
@@ -1324,13 +1324,13 @@
         "Elemental Burst": {
             "name": "Wybuch żywiołów",
             "description": {
-                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]] ([[lookup @name lowercase]]'s choice).</p>"
+                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]] (według wyboru potwora [[lookup @name lowercase]]).</p>"
             }
         },
         "Elemental Claw": {
             "name": "Elemental Claw",
             "description": {
-                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]] ([[lookup @name lowercase]]'s choice). If the target is a Medium or smaller creature, the cultist moves the target up to 10 feet straight toward or away from itself.</p>"
+                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]] (wedle wyboru [[lookup @name lowercase]]). Jeśli cel jest Średnią lub mniejszą istotą, kultysta przesuwa cel o maksymalnie 10 stóp po linii prostej ku sobie albo od siebie.</p>"
             }
         },
         "Elemental Flail": {
@@ -1348,7 +1348,7 @@
         "Enchanting Bow": {
             "name": "Zaklinający łuk",
             "description": {
-                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target has the &amp;Reference[Charmed apply=false] condition until the start of the [[lookup @name lowercase]]'s next turn.</p>"
+                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], a cel ma stan &amp;Reference[Charmed apply=false] do początku następnej tury [[lookup @name lowercase]].</p>"
             }
         },
         "Energy Drain": {
@@ -1370,7 +1370,7 @@
             }
         },
         "Entangling Rope": {
-            "name": "Entangling Rope",
+            "name": "Pętająca lina",
             "description": {
                 "value": "<p class=\"feature\"><em>Strength Saving Throw:</em> DC [[lookup @save.dc.value activity=n8nEah4vbrEPphNF]], one creature the [[lookup @name lowercase]] can see within [[lookup @range.value activity=n8nEah4vbrEPphNF]] feet. <em>Failure:</em> [[/damage average]] damage, and the target has the &amp;Reference[Restrained apply=false] condition until the rope is destroyed, the [[lookup @name lowercase]] uses a Bonus Action to release the target, or the [[lookup @name lowercase]] uses Entangling Rope again.</p>"
             }
@@ -1390,7 +1390,7 @@
         "Ephemeral": {
             "name": "Efemeryczny",
             "description": {
-                "value": "<p class=\"feature\">The [[lookup @name lowercase]] can’t wear or carry anything.</p>"
+                "value": "<p class=\"feature\">[[lookup @name]] nie może niczego nieść ani mieć na sobie.</p>"
             }
         },
         "Eruption": {
@@ -1489,7 +1489,7 @@
         },
         "Failure: Dead": {
             "name": "Porażka: Śmierć",
-            "description": "<p>The target dies if the creature that is at 0 Hit Points fails a Constitution save.</p>"
+            "description": "<p>Cel umiera, jeśli istota, która ma 0 Punktów Wytrzymałości, nie zda rzutu obronnego na Kondycję.</p>"
         },
         "Fear Aura": {
             "name": "Aura strachu",
@@ -1566,7 +1566,7 @@
         "Fiendish Guile": {
             "name": "Fiendish Guile",
             "description": {
-                "value": "<p class=\"feature\">The [[lookup @name lowercase]] casts <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelMagi]{Dispel Magic}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplInvisibili]{Invisibility}</em> (self only), <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMistyStep0]{Misty Step}</em>, or <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSuggestion]{Suggestion}</em>, requiring no Material components and using the same spellcasting ability as Spellcasting.</p>"
+                "value": "<p class=\"feature\">[[lookup @name]] rzuca <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelMagi]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplInvisibili]</em> (tylko na siebie), <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMistyStep0]</em> albo <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSuggestion]</em> bez potrzeby użycia komponentów Materialnych, używając tej samej Cechy bazowej co Rzucanie czarów.</p>"
             }
         },
         "Fiendish Restoration": {
@@ -1713,7 +1713,7 @@
         "Fog Cloud": {
             "name": "Chmura mgły",
             "description": {
-                "value": "<p>The mephit casts <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFogCloud00]</em>, requiring no spell components and using Charisma as the spellcasting ability.</p>"
+                "value": "<p>Mefit rzuca <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFogCloud00]</em> bez potrzeby użycia komponentów czaru, używając Charyzmy jako Cechy bazowej.</p>"
             }
         },
         "Forager Appearance": {
@@ -1781,7 +1781,7 @@
         },
         "Frightened & Paralyzed": {
             "name": "Przerażony i Sparaliżowany",
-            "description": "<p>If the attacking creature curses the Frightened target, the target also has the &amp;Reference[Paralyzed apply=false] condition for the duration. After 1 minute, it succeeds automatically.</p>"
+            "description": "<p>Jeśli atakująca istota przeklnie Przerażony cel, cel ma także stan &amp;Reference[Paralyzed apply=false] na czas trwania efektu. Po 1 minucie automatycznie odnosi sukces.</p>"
         },
         "Frightening": {
             "name": "Przerażający",
@@ -1878,7 +1878,7 @@
         "Grab": {
             "name": "Chwyt",
             "description": {
-                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a Medium or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]).</p>"
+                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Średnią lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]).</p>"
             }
         },
         "Grafted: Con Saves and Restrained": {
@@ -1932,7 +1932,7 @@
         "Great Bow": {
             "name": "Wielki łuk",
             "description": {
-                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target’s Speed decreases by 10 feet until the end of its next turn.</p>"
+                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], a Szybkość celu zmniejsza się o 10 stóp do końca jego następnej tury.</p>"
             }
         },
         "Greater Magic Resistance": {
@@ -1990,7 +1990,7 @@
         "Hasten": {
             "name": "Przyspieszenie",
             "description": {
-                "value": "<p class=\"feature\">The [[lookup @name lowercase]] takes the &amp;Reference[Dash] and &amp;Reference[Disengage] actions.</p>"
+                "value": "<p class=\"feature\">[[lookup @name]] wykonuje Akcje &amp;Reference[Dash] i &amp;Reference[Disengage].</p>"
             }
         },
         "Haunted Zone": {
@@ -2012,7 +2012,7 @@
         "Healing Word": {
             "name": "Kojące słowo",
             "description": {
-                "value": "<p>The [[lookup @name lowercase]] casts <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHealingWor]{Healing Word}</em>, using the same spellcasting ability as Spellcasting.</p>"
+                "value": "<p>[[lookup @name]] rzuca <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHealingWor]</em>, używając tej samej Cechy bazowej co Rzucanie czarów.</p>"
             }
         },
         "Heart Sight": {
@@ -2067,9 +2067,21 @@
             "name": "Ukrycie",
             "description": "<p>Wykonujesz akcję &amp;Reference[Hide].</p>"
         },
-        "Hit: STR Score -1d4": {
-            "name": "Hit: STR Score -1d4",
-            "description": "<p>The target’s Strength score decreases by [[/r 1d4]].</p>"
+        "Hit: STR Score -1": {
+            "name": "Trafienie: Wartość SIŁ -1",
+            "description": "<p>Wartość Siły celu zmniejsza się o -1.</p>"
+        },
+        "Hit: STR Score -2": {
+            "name": "Trafienie: Wartość SIŁ -2",
+            "description": "<p>Wartość Siły celu zmniejsza się o -2.</p>"
+        },
+        "Hit: STR Score -3": {
+            "name": "Trafienie: Wartość SIŁ -3",
+            "description": "<p>Wartość Siły celu zmniejsza się o -3.</p>"
+        },
+        "Hit: STR Score -4": {
+            "name": "Trafienie: Wartość SIŁ -4",
+            "description": "<p>Wartość Siły celu zmniejsza się o -4.</p>"
         },
         "Hold Breath": {
             "name": "Wstrzymanie oddechu",
@@ -2110,7 +2122,7 @@
         "Horrific Necrosis": {
             "name": "Horrific Necrosis",
             "description": {
-                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target has the &amp;Reference[Frightened apply=false] condition until the end of its next turn.</p>"
+                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], a cel ma stan &amp;Reference[Frightened apply=false] do końca swojej następnej tury.</p>"
             }
         },
         "Horrific Visage": {
@@ -2165,7 +2177,7 @@
         "Hypnotic Gaze": {
             "name": "Hypnotic Gaze",
             "description": {
-                "value": "<p class=\"feature\"><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=Sc5RbdImboeEd4zt]], each [[lookup @target.affects.type activity=Sc5RbdImboeEd4zt]] in a [[lookup @target.template.size activity=Sc5RbdImboeEd4zt]]-foot [[lookup @target.template.type capitalize activity=Sc5RbdImboeEd4zt]].</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage, and the target has the &amp;Reference[Stunned apply=false] condition until the start of the [[lookup @name lowercase]]’s next turn.</p><p class=\"feature\"><em>Success:</em> The target is immune to this [[lookup @name lowercase]]’s Hypnotic Gaze for 24 hours.</p>"
+                "value": "<p class=\"feature\"><em>Rzut obronny na Mądrość:</em> ST [[lookup @save.dc.value activity=Sc5RbdImboeEd4zt]], każda istota typu [[lookup @target.affects.type activity=Sc5RbdImboeEd4zt]] w [[lookup @target.template.size activity=Sc5RbdImboeEd4zt]]-stopowym [[lookup @target.template.type capitalize activity=Sc5RbdImboeEd4zt]].</p><p class=\"feature\"><em>Porażka:</em> [[/damage average]] obrażeń, a cel ma stan &amp;Reference[Stunned apply=false] do początku następnej tury [[lookup @name lowercase]].</p><p class=\"feature\"><em>Sukces:</em> Cel jest niewrażliwy na Hipnotyczne spojrzenie [[lookup @name lowercase]] przez 24 godziny.</p>"
             }
         },
         "Ice Spear": {
@@ -2229,7 +2241,7 @@
         "Incite Rampage": {
             "name": "Wywołanie amoku",
             "description": {
-                "value": "<p class=\"feature\">The [[lookup @name lowercase]] targets another [[lookup @target.affects.type activity=KFhSwaFqmCUTBUTF]] it can see within [[lookup @range.value activity=KFhSwaFqmCUTBUTF]] feet of itself [[lookup @target.affects.special activity=KFhSwaFqmCUTBUTF]]. The target can take a &amp;Reference[Reaction] to make one melee attack.</p>"
+                "value": "<p class=\"feature\">[[lookup @name]] obiera za cel inną istotę typu [[lookup @target.affects.type activity=KFhSwaFqmCUTBUTF]], którą widzi w obrębie [[lookup @range.value activity=KFhSwaFqmCUTBUTF]] stóp od siebie [[lookup @target.affects.special activity=KFhSwaFqmCUTBUTF]]. Cel może użyć &amp;Reference[Reaction], aby wykonać jeden atak wręcz.</p>"
             }
         },
         "Incorporeal Movement": {
@@ -2241,7 +2253,7 @@
         "Incubus Form": {
             "name": "Incubus Form",
             "description": {
-                "value": "<p class=\"feature\">When the [[lookup @name lowercase]] finishes a Long Rest, it can shape-shift into an <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmIncubus0000000]{Incubus}</strong>, using that stat block instead of this one.</p>"
+                "value": "<p class=\"feature\">Kiedy [[lookup @name lowercase]] ukończy Długi Odpoczynek, może zmienić kształt, przyjmując postać <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmIncubus0000000]</strong>, korzystając z tego bloku statystyk zamiast własnego.</p>"
             }
         },
         "Infernal Fork": {
@@ -2323,7 +2335,7 @@
         "Iron Scent": {
             "name": "Iron Scent",
             "description": {
-                "value": "<p class=\"feature\">The [[lookup @name lowercase]] can pinpoint the location of [[lookup @target.affects.special activity=I1ppxiVO5CS6tKj0]] within [[lookup @target.template.size activity=I1ppxiVO5CS6tKj0]] feet of itself.</p>"
+                "value": "<p class=\"feature\">[[lookup @name]] może dokładnie określić położenie [[lookup @target.affects.special activity=I1ppxiVO5CS6tKj0]] w obrębie [[lookup @target.template.size activity=I1ppxiVO5CS6tKj0]] stóp od siebie.</p>"
             }
         },
         "Jinx": {
@@ -2335,12 +2347,12 @@
         "Jumper": {
             "name": "Skoczek",
             "description": {
-                "value": "<p class=\"feature\">The [[lookup @name lowercase]]’s jump distance is determined using its Dexterity rather than its Strength.</p>"
+                "value": "<p class=\"feature\">Odległość skoku [[lookup @name lowercase]] określa się przy użyciu Zręczności zamiast Siły.</p>"
             }
         },
         "Languages": {
             "name": "Języki",
-            "description": "<p>The possessing creature retains its understanding of Deep Speech and its telepathy.</p>"
+            "description": "<p>Opętująca istota zachowuje rozumienie Głębinowego i swoją telepatię.</p>"
         },
         "Lash": {
             "name": "Smagnięcie",
@@ -2375,7 +2387,7 @@
         "Life Suppression": {
             "name": "Life Suppression",
             "description": {
-                "value": "<p class=\"feature\">Creatures within [[lookup @target.template.size activity=n7LC7M3BMXe8n2Ro]] feet of the [[lookup @name lowercase]] can’t regain Hit Points.</p>"
+                "value": "<p class=\"feature\">Istoty w obrębie [[lookup @target.template.size activity=n7LC7M3BMXe8n2Ro]] stóp od [[lookup @name lowercase]] nie mogą odzyskiwać Punktów Wytrzymałości.</p>"
             }
         },
         "Life-Draining Root": {
@@ -2454,7 +2466,7 @@
         "Lunge": {
             "name": "Lunge",
             "description": {
-                "value": "<p class=\"feature\">The [[lookup @name lowercase]] moves up to half its Speed, and it makes one Dread Blade attack.</p>"
+                "value": "<p class=\"feature\">[[lookup @name]] porusza się o maksymalnie połowę swojej Szybkości i wykonuje jeden atak Złowrogie ostrze.</p>"
             }
         },
         "Luring Song": {
@@ -2470,7 +2482,7 @@
             }
         },
         "Magic Rope": {
-            "name": "Magic Rope",
+            "name": "Magiczna lina",
             "description": {
                 "value": "<p class=\"feature\">The [[lookup @name lowercase]] has a magic rope. While bearing it, the [[lookup @name lowercase]] can use the Entangling Rope action. The rope has AC 20, HP 90, and Immunity to Poison and Psychic damage. The rope turns to dust if reduced to 0 Hit Points, if it is 5+ feet away from the [[lookup @name lowercase]] for 1 hour or more, or if the [[lookup @name lowercase]] dies. If the rope is damaged or destroyed, the [[lookup @name lowercase]] can fully restore it when finishing a Short or Long Rest.</p>"
             }
@@ -2478,7 +2490,7 @@
         "Magic of the Spider Queen": {
             "name": "Magia Pajęczej Królowej",
             "description": {
-                "value": "<p class=\"feature\">The [[lookup @name lowercase]] casts <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]{Darkness}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFaerieFire]{Faerie Fire}</em>, or <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWeb0000000]{Web}</em>, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC [[lookup @attributes.spell.dc]]).</p>"
+                "value": "<p class=\"feature\">[[lookup @name]] rzuca <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFaerieFire]</em> albo <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWeb0000000]</em> bez potrzeby użycia komponentów Materialnych, używając Mądrości jako Cechy bazowej (ST rzutu obronnego przeciw czarom [[lookup @attributes.spell.dc]]).</p>"
             }
         },
         "Magical Backlash": {
@@ -2644,7 +2656,7 @@
             }
         },
         "Mutating Claw": {
-            "name": "Mutating Claw",
+            "name": "Mutujące pazury\n",
             "description": {
                 "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a Humanoid not cursed by a slaad, it is subjected to the following effect.</p><p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=zy66rXdo6Mo4E9bO]]. <em>Failure:</em> The target is cursed. The cursed target can’t regain Hit Points, and its Hit Point maximum decreases by [[/r 3d6#HP Max Decrease]]{10 (3d6)} after every 24 hours and doesn’t return to normal after finishing a Long Rest.</p><p class=\"feature\">If the curse reduces the target’s Hit Point maximum to 0, the curse ends, and instead of dying, the target instantly transforms into a <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmRedSlaad000000]{Red Slaad}</strong> or, if it can cast spells of level 3 or higher, a <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmGreenSlaad0000]{Green Slaad}</strong>. Only a <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWish000000]{Wish}</em> spell can reverse this transformation.</p>"
             }
@@ -2919,7 +2931,7 @@
         },
         "Poisoned & Blinded": {
             "name": "Zatruty i Oślepiony",
-            "description": "<p>The target has the &amp;Reference[Poisoned apply=false] condition until the end of the attacking creature's next turn. While Poisoned, the target has the &amp;Reference[Blinded apply=false] condition.</p>"
+            "description": "<p>Cel ma stan &amp;Reference[Poisoned apply=false] do końca następnej tury atakującej istoty. Będąc Zatruty, cel ma stan &amp;Reference[Blinded apply=false].</p>"
         },
         "Poisoned & Paralyzed": {
             "name": "Zatruty i Sparaliżowany",
@@ -2927,10 +2939,10 @@
         },
         "Poisoned and Incapacitated": {
             "name": "Zatruty i Obezwładniony",
-            "description": "<p>The target has the &amp;Reference[Poisoned apply=false] condition until the end of its next turn. While Poisoned, it has the &amp;Reference[Incapacitated apply=false] condition.</p>"
+            "description": "<p>Cel ma stan &amp;Reference[Poisoned apply=false] do końca swojej następnej tury. Będąc Zatruty, ma stan &amp;Reference[Incapacitated apply=false].</p>"
         },
         "Poisonous Spittle": {
-            "name": "Poisonous Spittle",
+            "name": "Trujące plunięcie",
             "description": {
                 "value": "<p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=r4plP8QiJxzFZZO7]], [[lookup @target.affects.labels.statblock activity=r4plP8QiJxzFZZO7]] the [[lookup @name lowercase]] can see within [[lookup @range.value activity=r4plP8QiJxzFZZO7]] feet. <em>Failure:</em> 31 (7d8) Poison damage, and the target has the &amp;Reference[Blinded apply=false] condition until the start of the [[lookup @name lowercase]]’s next turn. <em>Success:</em> Half damage only.</p>"
             }
@@ -2972,12 +2984,12 @@
         "Proboscis": {
             "name": "Ssawka",
             "description": {
-                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a creature, its Hit Point maximum decreases by an amount equal to the Necrotic damage taken.</p>"
+                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest istotą, maksimum Punktów Wytrzymałości celu zmniejsza się o wartość równą odniesionym obrażeniom nekrotycznym.</p>"
             }
         },
         "Prone": {
             "name": "Powalony",
-            "description": "<p>Creatures in that area lose &amp;Reference[Concentration] and, if Medium or smaller, have the &amp;Reference[Prone apply=false] condition.</p>"
+            "description": "<p>Istoty na tym obszarze tracą &amp;Reference[Concentration] i, jeśli są Średnie lub mniejsze, mają stan &amp;Reference[Prone apply=false].</p>"
         },
         "Prone & Restrained": {
             "name": "Powalony i Unieruchomiony",
@@ -2991,7 +3003,7 @@
         },
         "Protected": {
             "name": "Chroniony",
-            "description": "<p>The wearer gains a +5 bonus to AC, including against the triggering attack and possibly causing it to miss, until the start of the bestower's next turn.</p>"
+            "description": "<p>Noszący zyskuje premię +5 do KP, w tym przeciwko atakowi wyzwalającemu, co może sprawić, że chybi, aż do początku następnej tury obdarowującego.</p>"
         },
         "Protection": {
             "name": "Ochrona",
@@ -3018,13 +3030,13 @@
             }
         },
         "Psi Blade": {
-            "name": "Psi Blade",
+            "name": "Psioniczne ostrze",
             "description": {
                 "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
             }
         },
         "Psi Strike": {
-            "name": "Psi Strike",
+            "name": "Psioniczne uderzenie",
             "description": {
                 "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
             }
@@ -3032,7 +3044,7 @@
         "Psi-Powered Leap": {
             "name": "Psioniczny skok",
             "description": {
-                "value": "<p>The githyanki casts <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplJump000000]{Jump}</em>, requiring no spell components and using the same spellcasting ability as Spellcasting.</p>"
+                "value": "<p>Githyanki rzuca <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplJump000000]</em> bez potrzeby użycia komponentów czaru, używając tej samej Cechy bazowej co Rzucanie czarów.</p>"
             }
         },
         "Psionic Defense": {
@@ -3060,7 +3072,7 @@
             }
         },
         "Psychic Warp": {
-            "name": "Psychic Warp",
+            "name": "Psychiczne zniekształcenie",
             "description": {
                 "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target has the [[lookup @name lowercase]]’s choice of (A) the &amp;Reference[Charmed apply=false] condition until the start of the [[lookup @name lowercase]]’s next turn or (B) the &amp;Reference[Prone apply=false] condition, provided the target is a Large or smaller creature.</p>"
             }
@@ -3114,7 +3126,7 @@
             }
         },
         "Radiant Sword": {
-            "name": "Radiant Sword",
+            "name": "Świetlisty miecz",
             "description": {
                 "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
             }
@@ -3127,7 +3139,7 @@
         },
         "Raging Storm: Blind, Deaf, Verbal Components": {
             "name": "Raging Storm: Blind, Deaf, Verbal Components",
-            "description": "<p>Creatures entirely in the cloud have the &amp;Reference[Blinded apply=false] and &amp;Reference[Deafened apply=false] conditions and can’t cast spells with a Verbal component.</p>"
+            "description": "<p>Istoty całkowicie znajdujące się w chmurze mają stany &amp;Reference[Blinded apply=false] i &amp;Reference[Deafened apply=false] oraz nie mogą rzucać czarów z komponentem Werbalnym.</p>"
         },
         "Rake": {
             "name": "Drapanie",
@@ -3256,12 +3268,12 @@
         "Restless Touch": {
             "name": "Restless Touch",
             "description": {
-                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target is cursed for 24 hours or until the [[lookup @name lowercase]] dies. Until the curse ends, the target gains no benefit from finishing Short Rests.</p>"
+                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]] obrażeń, a cel zostaje przeklęty na 24 godziny lub do śmierci [[lookup @name lowercase]]. Dopóki klątwa trwa, cel nie odnosi żadnych korzyści z ukończenia Krótkiego Odpoczynku.</p>"
             }
         },
         "Restrained": {
             "name": "Unieruchomiony",
-            "description": "<p>The target has the &amp;Reference[Restrained apply=false] condition until the web is destroyed.</p>"
+            "description": "<p>Cel ma stan &amp;Reference[Restrained apply=false], dopóki pajęczyna nie zostanie zniszczona.</p>"
         },
         "Restraining Glob": {
             "name": "Restraining Glob",
@@ -3409,7 +3421,7 @@
         "Sense Magic": {
             "name": "Wyczucie magii",
             "description": {
-                "value": "<p class=\"feature\">The [[lookup @name lowercase]] senses magic within 120 feet of itself. This trait otherwise works like the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectMagi]{Detect Magic}</em> spell but isn’t itself magical.</p>"
+                "value": "<p class=\"feature\">[[lookup @name]] wyczuwa magię w obrębie 120 stóp od siebie. Ta cecha poza tym działa jak czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectMagi]</em>, ale sama nie jest magiczna.</p>"
             }
         },
         "Serpentine Gaze": {
@@ -3497,7 +3509,7 @@
         "Shielded Mind": {
             "name": "Osłonięta jaźń",
             "description": {
-                "value": "<p class=\"feature\">The [[lookup @name lowercase]]’s thoughts can’t be read by any means, and other creatures can communicate with it telepathically only if it allows them.</p>"
+                "value": "<p class=\"feature\">Myśli [[lookup @name lowercase]] nie mogą zostać odczytane żadnymi środkami, a inne istoty mogą komunikować się z nim telepatycznie tylko wtedy, gdy im na to pozwoli.</p>"
             }
         },
         "Shimmering Shield": {
@@ -3690,7 +3702,7 @@
         },
         "Speed: -10 feet": {
             "name": "Szybkość: -10 stóp",
-            "description": "<p>If the target is a creature, its Speed decreases by 10 feet until the end of its next turn.</p>"
+            "description": "<p>Jeśli cel jest istotą, jego Szybkość zmniejsza się o 10 stóp do końca jego następnej tury.</p>"
         },
         "Speed: -20 ft.": {
             "name": "Szybkość: -20 stóp",
@@ -3857,9 +3869,9 @@
             }
         },
         "Strange Scepter": {
-            "name": "Strange Scepter",
+            "name": "Dziwne berło",
             "description": {
-                "value": "<p class=\"feature\"><em>Melee or Ranged Attack Roll:</em> [[/attack]], reach [[lookup @item.range.reach]] ft. or range [[lookup @item.range.value]] ft. [[/damage average extended]].</p>"
+                "value": "<p class=\"feature\"><em>Test ataku wręcz lub dystansowego:</em> [[/attack]], zasięg [[lookup @item.range.reach]] stóp albo zasięg [[lookup @item.range.value]] stóp. [[/damage average extended]] obrażeń.</p>"
             }
         },
         "Stunned": {
@@ -3917,7 +3929,7 @@
         "Sunlight Weakness": {
             "name": "Osłabiające światło",
             "description": {
-                "value": "<p class=\"feature\">While in sunlight, the [[lookup @name lowercase]] has Disadvantage on D20 Tests.</p>"
+                "value": "<p class=\"feature\">Będąc w świetle słonecznym, [[lookup @name lowercase]] ma Utrudnienie w Testach k20.</p>"
             }
         },
         "Superior Invisibility": {
@@ -4025,13 +4037,13 @@
         "Telepathic Bond": {
             "name": "Telepatia",
             "description": {
-                "value": "<p class=\"feature\">While the [[lookup @name lowercase]] is on the same plane of existence as its master, the two of them can communicate telepathically with each other.</p>"
+                "value": "<p class=\"feature\">Dopóki [[lookup @name]] znajduje się w tej samej sferze egzystencji co jego pan, oboje mogą komunikować się ze sobą telepatycznie.</p>"
             }
         },
         "Telepathic Shroud": {
             "name": "Telepathic Shroud",
             "description": {
-                "value": "<p class=\"feature\">The [[lookup @name lowercase]]’s thoughts can’t be read by any means, and magic can’t detect its location or observe it remotely.</p>"
+                "value": "<p class=\"feature\">Myśli [[lookup @name lowercase]] nie mogą zostać odczytane żadnymi środkami, a magia nie może wykryć jego położenia ani zdalnie go obserwować.</p>"
             }
         },
         "Telepathy 30 ft.": {
@@ -4112,7 +4124,7 @@
         "Thunderbolt": {
             "name": "Grom",
             "description": {
-                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target has the &amp;Reference[Blinded apply=false] and &amp;Reference[Deafened apply=false] conditions until the start of the [[lookup @name lowercase]]’s next turn.</p>"
+                "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]] obrażeń, a cel ma stany &amp;Reference[Blinded apply=false] i &amp;Reference[Deafened apply=false] do początku następnej tury [[lookup @name lowercase]].</p>"
             }
         },
         "Thunderclap": {
@@ -4159,7 +4171,7 @@
         },
         "Total Cover": {
             "name": "Osłona całkowita",
-            "description": "<p>The possessesing creature has &amp;Reference[Total Cover] against attacks and other effects originating outside its host.</p>"
+            "description": "<p>Opętująca istota ma &amp;Reference[Total Cover] przed atakami i innymi efektami pochodzącymi spoza jej gospodarza.</p>"
         },
         "Total Cover, Suffocating & Restrained": {
             "name": "Total Cover, Suffocating & Restrained",
@@ -4466,9 +4478,9 @@
             }
         },
         "Web Strand": {
-            "name": "Web Strand",
+            "name": "Pajęczyna",
             "description": {
-                "value": "<p class=\"feature\"><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=Ln5NXBaHGKlwdoiP]], one Large or smaller [[lookup @target.affects.type activity=Ln5NXBaHGKlwdoiP]] the [[lookup @name lowercase]] can see within [[lookup @range.value activity=Ln5NXBaHGKlwdoiP]] feet.</p><p class=\"feature\"><em>Failure:</em> The target has the &amp;Reference[Restrained apply=false] condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Bludgeoning, Poison, and Psychic damage).</p>"
+                "value": "<p class=\"feature\"><em>Rzut obronny na Zręczność:</em> ST [[lookup @save.dc.value activity=Ln5NXBaHGKlwdoiP]], jedna Duża lub mniejsza istota typu [[lookup @target.affects.type activity=Ln5NXBaHGKlwdoiP]], którą [[lookup @name lowercase]] widzi w obrębie [[lookup @range.value activity=Ln5NXBaHGKlwdoiP]] stóp.</p><p class=\"feature\"><em>Porażka:</em> Cel ma stan &amp;Reference[Restrained apply=false], dopóki pajęczyna nie zostanie zniszczona (KP 10; PW 5; Podatność na obrażenia od ognia; Niepodatność na obrażenia obuchowe, od trucizny i psychiczne).</p>"
             }
         },
         "Web Walker": {
@@ -4539,7 +4551,7 @@
             }
         },
         "Withering Sword": {
-            "name": "Withering Sword",
+            "name": "Obumierający miecz",
             "description": {
                 "value": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
             }
