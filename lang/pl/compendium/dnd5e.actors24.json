@@ -5186,7 +5186,7 @@
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> [[/attack]] ([[lookup @activation.condition activity=xWlMeXFjELfSUWX9]]), reach [[lookup @range.value activity=xWlMeXFjELfSUWX9]] ft. [[/damage average extended]]. If the target is a Large or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]).</p>",
+                    "description": "<p><em>Test ataku wręcz:</em> [[/attack]] ([[lookup @activation.condition activity=xWlMeXFjELfSUWX9]]), zasięg [[lookup @range.value activity=xWlMeXFjELfSUWX9]] stóp. [[/damage average extended]] obrażeń. Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]).</p>",
                     "activities": {
                         "attack": {
                             "condition": "z Ułatwieniem, jeśli cel jest Pochwycony przez ankhega",
@@ -8195,7 +8195,7 @@
                     "effects": {
                         "Damaged: -1 AC": {
                             "name": "Po otrzymaniu obrażeń: -1 KP",
-                            "description": "<p>Nonmagical armor worn by the target takes a -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.</p>"
+                            "description": "<p>Niemagiczna zbroja noszona przez cel otrzymuje karę -1 do zapewnianej KP. Zbroja zostaje zniszczona, jeśli kara zmniejszy jej KP do 10.</p>"
                         }
                     }
                 }
@@ -8233,7 +8233,7 @@
                 },
                 "Beak": {
                     "name": "Dziób",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]], or [[/damage average activity=EsTerwQE7jI9CDxE]] damage if the target is &amp;Reference[Bloodied].</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]], albo [[/damage average activity=EsTerwQE7jI9CDxE]] obrażeń, jeśli cel jest &amp;Reference[Bloodied].</p>",
                     "activities": {
                         "Bloodied Attack": {
                             "name": "Zakrwawiony atak"
@@ -8337,7 +8337,7 @@
                     "effects": {
                         "Poisoned": {
                             "name": "Zatruty",
-                            "description": "<p>the target has the &amp;Reference[Poisoned apply=false] condition until the start of the attacking creature’s next turn.</p>"
+                            "description": "<p>cel ma stan &amp;Reference[Poisoned apply=false] do początku następnej tury atakującej istoty.</p>"
                         }
                     }
                 }
@@ -8478,7 +8478,7 @@
                 },
                 "Morningstar": {
                     "name": "Morgensztern",
-                    "description": "<p><em>Melee Attack Roll:</em> [[/attack]] ([[lookup @activation.condition activity=QIpweawAzbt4xw5h]]), reach [[lookup @range.value activity=QIpweawAzbt4xw5h]] ft. [[/damage average extended]]</p>",
+                    "description": "<p><em>Test ataku wręcz:</em> [[/attack]] ([[lookup @activation.condition activity=QIpweawAzbt4xw5h]]), zasięg [[lookup @range.value activity=QIpweawAzbt4xw5h]] stóp. [[/damage average extended]]</p>",
                     "activities": {
                         "attack": {
                             "condition": "z Ułatwieniem, jeśli cel jest Pochwycony przez strachuna",
@@ -8531,7 +8531,7 @@
             "items": {
                 "Light Hammer": {
                     "name": "Lekki młot",
-                    "description": "<p><em>Melee or Ranged Attack Roll:</em> [[/attack]] ([[lookup @activation.condition activity=FHmD55OJjrFoBkHr]]), reach [[lookup @item.range.reach item=ST0XpSUdRn52jAF0]] ft. or range [[lookup @item.range.value item=ST0XpSUdRn52jAF0]]/[[lookup @item.range.long item=ST0XpSUdRn52jAF0]] ft. [[/damage average extended]]</p>",
+                    "description": "<p><em>Test ataku wręcz lub dystansowego:</em> [[/attack]] ([[lookup @activation.condition activity=FHmD55OJjrFoBkHr]]), zasięg [[lookup @item.range.reach item=ST0XpSUdRn52jAF0]] stóp albo zasięg [[lookup @item.range.value item=ST0XpSUdRn52jAF0]]/[[lookup @item.range.long item=ST0XpSUdRn52jAF0]] stóp. [[/damage average extended]]</p>",
                     "activities": {
                         "attack": {
                             "condition": "z Ułatwieniem, jeśli cel jest Pochwycony przez strachuna",
@@ -8548,7 +8548,7 @@
                 },
                 "Grab": {
                     "name": "Chwyt",
-                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a Medium or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]).</p>",
+                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Średnią lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]).</p>",
                     "activities": {
                         "Escape Check": {
                             "name": "Test ucieczki"
@@ -8991,7 +8991,7 @@
                     "effects": {
                         "Restrained": {
                             "name": "Unieruchomiony",
-                            "description": "<p>The target has the &amp;Reference[Restrained apply=false] condition until the end of the attacking creature's next turn.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Restrained apply=false] do końca następnej tury atakującej istoty.</p>"
                         }
                     }
                 },
@@ -9069,7 +9069,7 @@
                 },
                 "Fire Breath": {
                     "name": "Ogniste zionięcie",
-                    "description": "<p><em>Dexterity Saving Throw: </em>DC [[lookup @save.dc.value activity=bDqgmtLG3zcVuqdi]], each [[lookup @target.affects.type activity=bDqgmtLG3zcVuqdi]] in a [[lookup @target.template.size activity=bDqgmtLG3zcVuqdi]]-foot Cone.</p><p><em>Failure: </em>[[/damage average]] damage.</p><p><em>Success:</em>Half damage.</p>",
+                    "description": "<p><em>Rzut obronny na Zręczność: </em>ST [[lookup @save.dc.value activity=bDqgmtLG3zcVuqdi]], każda istota typu [[lookup @target.affects.type activity=bDqgmtLG3zcVuqdi]] w [[lookup @target.template.size activity=bDqgmtLG3zcVuqdi]]-stopowym Stożku.</p><p><em>Porażka: </em>[[/damage average]] obrażeń.</p><p><em>Sukces:</em>Połowa obrażeń.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
@@ -9180,7 +9180,7 @@
                 },
                 "Slam": {
                     "name": "Walnięcie",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]], and the target's Hit Point maximum decreases by an amount equal to the Acid damage taken.</p>"
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]], a maksimum Punktów Wytrzymałości celu zmniejsza się o wartość równą odniesionym obrażeniom od kwasu.</p>"
                 },
                 "Hasten": {
                     "name": "Przyspieszenie",
@@ -9225,7 +9225,7 @@
                     "effects": {
                         "Attached: Blinded": {
                             "name": "Attached: Blinded",
-                            "description": "<p>While attached, the target has the &amp;Reference[Blinded apply=false] condition.</p>"
+                            "description": "<p>Dopóki jest przyczepiony, cel ma stan &amp;Reference[Blinded apply=false].</p>"
                         }
                     }
                 },
@@ -9267,7 +9267,7 @@
                     "effects": {
                         "Frightened": {
                             "name": "Przerażony",
-                            "description": "<p>The target has the &amp;Reference[Frightened apply=false] condition until the end of the attacking creature's next turn.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Frightened apply=false] do końca następnej tury atakującej istoty.</p>"
                         }
                     }
                 }
@@ -9293,7 +9293,7 @@
                 },
                 "Thundercloud": {
                     "name": "Thundercloud",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]], and the target has the &amp;Reference[Incapacitated apply=false] condition until the end of its next turn.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]], a cel ma stan &amp;Reference[Incapacitated apply=false] do końca swojej następnej tury.</p>",
                     "effects": {
                         "Incapacitated": {
                             "name": "Obezwładniony",
@@ -10137,7 +10137,7 @@
                     "effects": {
                         "Blinded & Suffocating": {
                             "name": "Oślepiony i Duszący się",
-                            "description": "<p>The target has the &amp;Reference[Blinded apply=false] condition and is &amp;Reference[suffocating apply=false]{suffocating} while the attacking creature is attached to the target.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Blinded apply=false] oraz amp;Reference[suffocating apply=false], dopóki atakująca istota jest przyczepiona do celu.</p>"
                         },
                         "Self: Attack Adv./0 Speed": {
                             "name": "Self: Attack Adv./0 Speed",
@@ -10610,7 +10610,7 @@
                 },
                 "Slam": {
                     "name": "Walnięcie",
-                    "description": "<p>[[/attack]] ([[lookup @activation.condition activity=mEQjWdqU7zGv6Ott]]), reach [[lookup @range.value activity=mEQjWdqU7zGv6Ott]] [[lookup @range.units activity=mEQjWdqU7zGv6Ott]]. [[/damage average extended]].</p>",
+                    "description": "<p>[[/attack]] ([[lookup @activation.condition activity=mEQjWdqU7zGv6Ott]]), zasięg [[lookup @range.value activity=mEQjWdqU7zGv6Ott]] [[lookup @range.units activity=mEQjWdqU7zGv6Ott]]. [[/damage average extended]].</p>",
                     "activities": {
                         "attack": {
                             "condition": "z Ułatwieniem podczas pierwszej rundy każdej walki",
@@ -11561,7 +11561,7 @@
                     "description": "<p>The [[lookup @name lowercase]]{monster} has Advantage on saving throws against spells and other magical effects.</p>"
                 },
                 "Magic Rope": {
-                    "name": "Magic Rope",
+                    "name": "Magiczna lina",
                     "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} has a magic rope. While bearing it, the [[lookup @name lowercase]]{monster} can use the [[/item .mmEntanglingRope]] action. The rope has AC 20, HP 90, and Immunity to Poison and Psychic damage. The rope turns to dust if reduced to 0 Hit Points, if it is 5+ feet away from the [[lookup @name lowercase]]{monster} for 1 hour or more, or if the [[lookup @name lowercase]]{monster} dies. If the rope is damaged or destroyed, the [[lookup @name lowercase]]{monster} can fully restore it when finishing a Short or Long Rest.</p>"
                 },
                 "Multiattack": {
@@ -11586,13 +11586,13 @@
                     }
                 },
                 "Withering Sword": {
-                    "name": "Withering Sword",
+                    "name": "Obumierający miecz",
                     "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Entangling Rope": {
-                    "name": "Entangling Rope",
+                    "name": "Pętająca lina",
                     "description": "<p class=\"feature\"><em>Strength Saving Throw:</em> DC [[lookup @save.dc.value activity=n8nEah4vbrEPphNF]], one creature the [[lookup @name lowercase]]{monster} can see within [[lookup @range.value activity=n8nEah4vbrEPphNF]] feet. </p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage, and the target has the &amp;Reference[Restrained apply=false] condition until the rope is destroyed, the [[lookup @name lowercase]]{monster} uses a Bonus Action to release the target, or the [[lookup @name lowercase]]{monster} uses Entangling Rope again.</p>",
-                    "requirements": "Requires Magic Rope",
+                    "requirements": "Wymaga magicznej liny",
                     "activities": {
                         "save": {
                             "damageOnSave": "none"
@@ -11601,7 +11601,7 @@
                     "effects": {
                         "Restrained": {
                             "name": "Unieruchomiony",
-                            "description": "<p>The target has the &amp;Reference[Restrained apply=false] condition until the rope is destroyed.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Restrained apply=false], dopóki sznur nie zostanie zniszczony.</p>"
                         }
                     }
                 }
@@ -11631,7 +11631,7 @@
                     "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} ignores movement restrictions caused by webs, and the [[lookup @name lowercase]]{monster} knows the location of any other creature in contact with the same web.</p>"
                 },
                 "Web Strand": {
-                    "name": "Web Strand",
+                    "name": "Pajęczyna",
                     "description": "<p class=\"feature\"><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=Ln5NXBaHGKlwdoiP]], one Large or smaller [[lookup @target.affects.type activity=Ln5NXBaHGKlwdoiP]] the [[lookup @name lowercase]]{monster} can see within [[lookup @range.value activity=Ln5NXBaHGKlwdoiP]] feet.</p><p class=\"feature\"><em>Failure:</em> The target has the &amp;Reference[Restrained apply=false] condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Bludgeoning, Poison, and Psychic damage).</p>",
                     "activities": {
                         "Save": {
@@ -11642,7 +11642,7 @@
                     "effects": {
                         "Restrained": {
                             "name": "Unieruchomiony",
-                            "description": "<p>The target has the &amp;Reference[Restrained apply=false] condition until the web is destroyed.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Restrained apply=false], dopóki pajęczyna nie zostanie zniszczona.</p>"
                         }
                     }
                 },
@@ -11907,7 +11907,7 @@
                     "effects": {
                         "Averse": {
                             "name": "Averse",
-                            "description": "<p>It has Disadvantage on attack rolls and ability checks until the end of its next turn.</p>"
+                            "description": "<p>Ma Utrudnienie w testach ataku i testach cech do końca swojej następnej tury.</p>"
                         }
                     }
                 },
@@ -12057,7 +12057,7 @@
                     "effects": {
                         "Attack: Advantage": {
                             "name": "Attack: Advantage",
-                            "description": "<p>The target has Advantage on attack rolls until the start of the granter’s next turn.</p>"
+                            "description": "<p>Cel ma Ułatwienie w testach ataku do początku następnej tury udzielającego.</p>"
                         }
                     }
                 }
@@ -12268,7 +12268,7 @@
                     "effects": {
                         "Incapacitated": {
                             "name": "Obezwładniony",
-                            "description": "<p>The target has the &amp;Reference[Incapacitated apply=false] condition and loses control of its body.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Incapacitated apply=false] i traci kontrolę nad swoim ciałem.</p>"
                         }
                     }
                 }
@@ -12543,13 +12543,13 @@
                     "effects": {
                         "Grappled & Restrained": {
                             "name": "Pochwycony i Unieruchomiony",
-                            "description": "<p>If the target is a Large or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[/check ability=str skill=ath format=long]], see source item for DC). While Grappled, the target has the &amp;Reference[Restrained apply=false] condition.</p>"
+                            "description": "<p>Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[/check ability=str skill=ath format=long]], zobacz źródłowy przedmiot, aby poznać ST). Kiedy jest Pochwycony, cel ma stan &amp;Reference[Restrained apply=false].</p>"
                         }
                     }
                 },
                 "Tail": {
                     "name": "Ogon",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Large or smaller creature, it has the &amp;Reference[Prone apply=false] condition. </p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Prone apply=false].</p>",
                     "effects": {
                         "Prone": {
                             "name": "Powalony",
@@ -12944,7 +12944,7 @@
             "items": {
                 "Ram": {
                     "name": "Taran",
-                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], or [[/damage average activity=YI7aqJ7iiFSYAT7z]] damage if the seahorse moved 20+ feet straight toward the target immediately before the hit.</p>",
+                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], albo [[/damage average activity=YI7aqJ7iiFSYAT7z]] obrażeń, jeśli konik morski poruszył się co najmniej 20 stóp po linii prostej ku celowi bezpośrednio przed trafieniem.</p>",
                     "activities": {
                         "attack": {
                             "target": "Średni lub mniejszy"
@@ -12993,7 +12993,7 @@
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p><em>Melee Attack Roll:</em> [[/attack]] ([[lookup @activation.condition activity=xWlMeXFjELfSUWX9]]), reach [[lookup @item.range.reach item=xWlMeXFjELfSUWX9]] ft. [[/damage average extended]]</p>",
+                    "description": "<p><em>Test ataku wręcz:</em> [[/attack]] ([[lookup @activation.condition activity=xWlMeXFjELfSUWX9]]), zasięg [[lookup @item.range.reach item=xWlMeXFjELfSUWX9]] stóp. [[/damage average extended]]</p>",
                     "activities": {
                         "attack": {
                             "condition": "z Ułatwieniem, jeśli cel nie ma wszystkich Punktów Wytrzymałości",
@@ -13205,7 +13205,7 @@
                     "effects": {
                         "Prone": {
                             "name": "Powalony",
-                            "description": "<p>If the target is a Medium or smaller creature, it has the &amp;Reference[Prone] condition.</p>"
+                            "description": "<p>Jeśli cel jest Średnią lub mniejszą istotą, ma stan &amp;Reference[Prone].</p>"
                         }
                     }
                 },
@@ -13220,7 +13220,7 @@
                     "effects": {
                         "Blinded": {
                             "name": "Oślepiony",
-                            "description": "<p>the target has the &amp;Reference[Blinded apply=false] condition until the end of the user’s next turn.</p>"
+                            "description": "<p>cel ma stan &amp;Reference[Blinded apply=false] do końca następnej tury użytkownika.</p>"
                         }
                     }
                 }
@@ -14158,7 +14158,7 @@
                     "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Poisonous Spittle": {
-                    "name": "Poisonous Spittle",
+                    "name": "Trujące plunięcie",
                     "description": "<p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=r4plP8QiJxzFZZO7]], [[lookup @target.affects.labels.statblock activity=r4plP8QiJxzFZZO7]] the [[lookup @name lowercase]]{monster} can see within [[lookup @range.value activity=r4plP8QiJxzFZZO7]] feet.</p><p><em>Failure:</em> 31 (7d8) Poison damage, and the target has the &amp;Reference[Blinded apply=false] condition until the start of the [[lookup @name lowercase]]{monster}'s next turn.</p><p><em>Success:</em> Half damage only.</p>",
                     "activities": {
                         "Save": {
@@ -14646,7 +14646,7 @@
                         },
                         "Unconscious": {
                             "name": "Nieprzytomny",
-                            "description": "<p>While Poisoned, the target has the &amp;Reference[Unconscious apply=false] condition, which ends early if the target takes any damage.</p>"
+                            "description": "<p>Mając stan Zatruty, cel ma stan &amp;Reference[Unconscious apply=false], który kończy się wcześniej, jeśli cel odniesie jakiekolwiek obrażenia.</p>"
                         }
                     }
                 }
@@ -14987,7 +14987,7 @@
                     "effects": {
                         "Cursed": {
                             "name": "Przeklęty",
-                            "description": "<p>The target is cursed for 24 hours or until the attacking creature dies. Until the curse ends, the target gains no benefit from finishing Short Rests.</p>"
+                            "description": "<p>Cel zostaje przeklęty na 24 godziny albo do śmierci atakującej istoty. Dopóki klątwa trwa, cel nie odnosi żadnych korzyści z ukończenia Krótkiego Odpoczynku.</p>"
                         }
                     }
                 },
@@ -15361,7 +15361,7 @@
                         "Save": {
                             "name": "Obrona",
                             "target": "Duża lub mniejsza istota",
-                            "range": "that isn’t in the air",
+                            "range": "która nie jest w powietrzu",
                             "damageOnSave": "połowa"
                         }
                     },
@@ -15445,7 +15445,7 @@
                     "effects": {
                         "Blinded & Poisoned": {
                             "name": "Oślepiony i Zatruty",
-                            "description": "<p>The target has the &amp;Reference[Blinded apply=false] and &amp;Reference[Poisoned apply=false] conditions until the end of the attacking creature's next turn.</p>"
+                            "description": "<p>Cel ma stany &amp;Reference[Blinded apply=false] i &amp;Reference[Poisoned apply=false] do końca następnej tury atakującej istoty.</p>"
                         }
                     }
                 }
@@ -17455,7 +17455,7 @@
                     "effects": {
                         "Speed: -10 feet": {
                             "name": "Szybkość: -10 stóp",
-                            "description": "<p>If the target is a creature, its Speed decreases by 10 feet until the end of its next turn.</p>"
+                            "description": "<p>Jeśli cel jest istotą, jego Szybkość zmniejsza się o 10 stóp do końca jego następnej tury.</p>"
                         }
                     }
                 }
@@ -20056,7 +20056,7 @@
                 },
                 "Rotting Gaze": {
                     "name": "Rotting Gaze",
-                    "description": "<p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=k4jetEkSCPApNFgz]], [[lookup @target.affects.labels.statblock activity=k4jetEkSCPApNFgz]] the [[lookup @name lowercase]] can see within [[lookup @range.value activity=k4jetEkSCPApNFgz]] feet.</p><p><em>Failure:</em> [[/damage average]] damage.</p><p><em>Success:</em> Half damage.</p>",
+                    "description": "<p class=\"feature\"><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=k4jetEkSCPApNFgz]], [[lookup @target.affects.labels.statblock activity=k4jetEkSCPApNFgz]], którą [[lookup @name lowercase]] widzi w obrębie [[lookup @range.value activity=k4jetEkSCPApNFgz]] stóp.</p><p><em>Porażka:</em> [[/damage average]] obrażeń.</p><p><em>Sukces:</em> Połowa obrażeń.</p>",
                     "activities": {
                         "Save": {
                             "name": "Obrona",
@@ -20212,7 +20212,7 @@
                     "effects": {
                         "Frightened": {
                             "name": "Przerażony",
-                            "description": "<p>The target has the &amp;Reference[Frightened apply=false] condition until the start of the attacking creature’s next turn</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Frightened apply=false] do początku następnej tury atakującej istoty</p>"
                         }
                     }
                 },
@@ -21360,7 +21360,7 @@
                 },
                 "Pistol": {
                     "name": "Pistolet",
-                    "description": "<p><em>Ranged Attack Roll:</em> +7, range 30/90 ft. <em>Hit:</em> 15 (2d10 + 4) Piercing damage.</p>"
+                    "description": "<p><em>Test ataku dystansowego:</em> +7, zasięg 30/90 stóp. <em>Trafienie:</em> 15 (2k10 + 4) obrażeń kłutych.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -21566,7 +21566,7 @@
                     }
                 },
                 "Radiant Sword": {
-                    "name": "Radiant Sword",
+                    "name": "Świetlisty miecz",
                     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Holy Burst": {
@@ -26980,14 +26980,14 @@
                     "description": "<p class=\"feature\"><em>Trigger:</em> An attack roll hits the wearer of the [[lookup @name lowercase]]{monster}'s amulet while the wearer is within 5 feet of the [[lookup @name lowercase]]{monster}.</p><p class=\"feature\"><em>Response:</em> The wearer gains a +5 bonus to AC, including against the triggering attack and possibly causing it to miss, until the start of the [[lookup @name lowercase]]{monster}'s next turn.</p>",
                     "activities": {
                         "utility": {
-                            "condition": "An attack roll hits the wearer of the guardian's amulet while the wearer is within 5 feet of the guardian",
-                            "activationCondition": "An attack roll hits the wearer of the guardian's amulet while the wearer is within 5 feet of the guardian"
+                            "condition": "Test ataku trafia noszącego amulet należący do tarczownika, jeśli znajduje się on w zasięgu 5 stóp od niego. ",
+                            "activationCondition": "Test ataku trafia noszącego amulet należący do tarczownika, jeśli znajduje się on w zasięgu 5 stóp od niego. "
                         }
                     },
                     "effects": {
                         "Protected": {
                             "name": "Chroniony",
-                            "description": "<p>The wearer gains a +5 bonus to AC, including against the triggering attack and possibly causing it to miss, until the start of the bestower's next turn.</p>"
+                            "description": "<p>Noszący zyskuje premię +5 do KP, w tym przeciwko atakowi wyzwalającemu, co może sprawić, że chybi, aż do początku następnej tury obdarowującego.</p>"
                         }
                     }
                 }
@@ -27395,7 +27395,7 @@
                     "effects": {
                         "Incapacitated": {
                             "name": "Obezwładniony",
-                            "description": "<p>The target has the &amp;Reference[Incapacitated apply=false] condition until the start of the attacking creature's next turn.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Incapacitated apply=false] do początku następnej tury atakującej istoty.</p>"
                         }
                     }
                 },
@@ -28018,7 +28018,7 @@
                     "effects": {
                         "Charmed": {
                             "name": "Zauroczony",
-                            "description": "<p>The target has the &amp;Reference[Charmed apply=false] condition until the start of the attacking creature's next turn.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Charmed apply=false] do początku następnej tury atakującej istoty.</p>"
                         }
                     }
                 },
@@ -28168,7 +28168,7 @@
                     "effects": {
                         "Prone": {
                             "name": "Powalony",
-                            "description": "<p>If the target is a Large or smaller creature, it has the &amp;Reference[Prone] condition.</p>"
+                            "description": "<p>Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Prone].</p>"
                         }
                     }
                 },
@@ -28272,7 +28272,7 @@
                     "effects": {
                         "Blinded & Deafened": {
                             "name": "Oślepiony i Ogłuchły",
-                            "description": "<p>The target has the &amp;Reference[Blinded apply=false] and &amp;Reference[Deafened apply=false] conditions until the start of the attacking creature’s next turn.</p>"
+                            "description": "<p>Cel ma stany &amp;Reference[Blinded apply=false] i &amp;Reference[Deafened apply=false] do początku następnej tury atakującej istoty.</p>"
                         }
                     }
                 },
@@ -28386,7 +28386,7 @@
                     "activities": {
                         "Save": {
                             "name": "Obrona",
-                            "chatFlavor": "Failure or Success: The target’s HP max. decreases by an amount equal to the damage taken.",
+                            "chatFlavor": "Porażka lub Sukces: Maksimum PW celu zmniejsza się o wartość równą odniesionym obrażeniom.",
                             "target": "Zauroczony przez istotę",
                             "damageOnSave": "połowa"
                         }
@@ -28512,7 +28512,7 @@
                 },
                 "Bites": {
                     "name": "Ugryzienie",
-                    "description": "<p>[[/attack]] ([[lookup @activation.condition activity=nrOPHKjj59hG1On3]]), reach [[lookup @range.value activity=nrOPHKjj59hG1On3]] [[lookup @range.units activity=nrOPHKjj59hG1On3]]. [[/damage average extended]], or [[/damage average activity=3Yo83eZUNwX51AcE]] if [[lookup @activation.condition activity=3Yo83eZUNwX51AcE]]</p>",
+                    "description": "<p>[[/attack]] ([[lookup @activation.condition activity=nrOPHKjj59hG1On3]]), zasięg [[lookup @range.value activity=nrOPHKjj59hG1On3]] [[lookup @range.units activity=nrOPHKjj59hG1On3]]. [[/damage average extended]], albo [[/damage average activity=3Yo83eZUNwX51AcE]], jeśli [[lookup @activation.condition activity=3Yo83eZUNwX51AcE]]</p>",
                     "activities": {
                         "attack": {
                             "condition": "z Ułatwieniem, jeśli cel nie ma wszystkich Punktów Wytrzymałości",
@@ -28584,7 +28584,7 @@
                     "effects": {
                         "Deafened and Disadvantaged": {
                             "name": "Deafened and Disadvantaged",
-                            "description": "<p>The target has the &amp;Reference[Deafened apply=false] condition until the start of the user's next turn. While Deafened, the target also has Disadvantage on ability checks and attack rolls.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Deafened apply=false] do początku następnej tury użytkownika. Będąc Ogłuchły, cel ma także Utrudnienie w testach cech i testach ataku.</p>"
                         }
                     }
                 }
@@ -28746,7 +28746,7 @@
                     "effects": {
                         "Prone": {
                             "name": "Powalony",
-                            "description": "<p>Creatures in that area lose &amp;Reference[Concentration] and, if Medium or smaller, have the &amp;Reference[Prone apply=false] condition.</p>"
+                            "description": "<p>Istoty na tym obszarze tracą &amp;Reference[Concentration] i, jeśli są Średnie lub mniejsze, mają stan &amp;Reference[Prone apply=false].</p>"
                         }
                     }
                 },
@@ -29069,7 +29069,7 @@
                     "effects": {
                         "Grappled & Restrained": {
                             "name": "Pochwycony i Unieruchomiony",
-                            "description": "<p>If the target is a Large or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[/check ability=str skill=ath format=long]], see source item for DC). While Grappled, the target has the &amp;Reference[Restrained apply=falsse] condition.</p>"
+                            "description": "<p>Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[/check ability=str skill=ath format=long]], zobacz źródłowy przedmiot, aby poznać ST). Kiedy jest Pochwycony, cel ma stan &amp;Reference[Restrained apply=falsse].</p>"
                         }
                     }
                 },
@@ -30113,7 +30113,7 @@
                     "effects": {
                         "Cursed": {
                             "name": "Przeklęty",
-                            "description": "<p>The target is cursed if they fail their saving throw.</p>"
+                            "description": "<p>Cel zostaje przeklęty, jeśli nie zda rzutu obronnego.</p>"
                         }
                     }
                 },
@@ -30327,7 +30327,7 @@
                     "effects": {
                         "Failure: Dead": {
                             "name": "Porażka: Śmierć",
-                            "description": "<p>The target dies if the creature that is at 0 Hit Points fails a Constitution save.</p>"
+                            "description": "<p>Cel umiera, jeśli istota, która ma 0 Punktów Wytrzymałości, nie zda rzutu obronnego na Kondycję.</p>"
                         }
                     }
                 },

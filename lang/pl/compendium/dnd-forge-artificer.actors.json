@@ -1123,7 +1123,7 @@
             "items": {
                 "Spear": {
                     "name": "Włócznia",
-                    "description": "<p><em>Melee or Ranged Attack Roll:</em> +3, reach 5 ft. or range 20/60 ft. <em>Hit:</em> 5 (1d8 + 1) Piercing damage.</p>"
+                    "description": "<p><em>Test ataku wręcz lub dystansowego:</em> +3, zasięg 5 stóp albo zasięg 20/60 stóp. <em>Trafienie:</em> 5 (1k8 + 1) obrażeń kłutych.</p>"
                 },
                 "Amphibious": {
                     "name": "Ziemno-wodny",
@@ -1200,7 +1200,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The [[lookup @name lowercase]] makes three [[/item Strange Scepter]] attacks.</p>",
+                    "description": "<p>[[lookup @name]] wykonuje trzy ataki [[/item Dziwne berło]].</p>",
                     "activities": {
                         "Use": {
                             "name": "Użycie"
@@ -1208,8 +1208,8 @@
                     }
                 },
                 "Strange Scepter": {
-                    "name": "Strange Scepter",
-                    "description": "<p class=\"feature\"><em>Melee or Ranged Attack Roll:</em> [[/attack]], reach [[lookup @item.range.reach]] ft. or range [[lookup @item.range.value]] ft. [[/damage average extended]].</p>"
+                    "name": "Dziwne berło",
+                    "description": "<p class=\"feature\"><em>Test ataku wręcz lub dystansowego:</em> [[/attack]], zasięg [[lookup @item.range.reach]] stóp albo zasięg [[lookup @item.range.value]] stóp. [[/damage average extended]] obrażeń.</p>"
                 },
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
@@ -1409,11 +1409,11 @@
                 },
                 "Bone Whip": {
                     "name": "Bicz z kości",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]], and the target can’t make &amp;Reference[OpportunityAttacks] until the start of the [[lookup @name lowercase]]’s next turn.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]], a cel nie może wykonywać &amp;Reference[OpportunityAttacks]{Ataków okazyjnych} do początku następnej tury [[lookup @name lowercase]].</p>",
                     "effects": {
                         "Whipped: No Opportunity Attacks": {
                             "name": "Zbiczowany: Brak Atakiów okazyjnych",
-                            "description": "<p>The target can’t make Opportunity Attacks until the start of the user’s next turn.</p>"
+                            "description": "<p>Cel nie może wykonywać Ataków okazyjnych do początku następnej tury użytkownika.</p>"
                         }
                     }
                 }
