@@ -208,7 +208,10 @@
             "effects": {
                 "Agonizing Blast": {
                     "name": "Agonizing Blast",
-                    "description": "<p>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell’s damage rolls.</p>"
+                    "description": "<p>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell’s damage rolls.</p>",
+                    "changes": {
+                        "name": ", Agonizing"
+                    }
                 }
             }
         },
@@ -228,8 +231,14 @@
         },
         "Aquatic Affinity": {
             "name": "Aquatic Affinity",
-            "description": "<p>The size of the Emanation created by your Wrath of the Sea increases to 10 feet.</p><p>In addition, you gain a Swim Speed equal to your Speed.</p><section id=\"secret-LWG2vV8HTOk84VXW\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The size of the emanation increases automatically but this feature does not automatically add the Swim Speed.</p></section>",
-            "requirements": "Circle of the Sea"
+            "description": "<p>The size of the Emanation created by your Wrath of the Sea increases to 10 feet.</p><p>In addition, you gain a Swim Speed equal to your Speed.</p>",
+            "requirements": "Circle of the Sea",
+            "effects": {
+                "Aquatic Affinity": {
+                    "name": "Aquatic Affinity",
+                    "description": "<p>You gain a Swim Speed equal to your Speed.</p>"
+                }
+            }
         },
         "Arcane Apotheosis": {
             "name": "Arcane Apotheosis",
@@ -241,7 +250,13 @@
         },
         "Arcane Recovery": {
             "name": "Arcane Recovery",
-            "description": "<p>You can regain some of your magical energy by studying your spellbook. When you finish a Short Rest, you can choose expended spell slots to recover. The spell slots can have a combined level equal to no more than half your Wizard level (round up), and none of the slots can be level 6 or higher. For example, if you’re a level 4 Wizard, you can recover up to two levels’ worth of spell slots, regaining either one level 2 spell slot or two level 1 spell slots.</p><p>Once you use this feature, you can’t do so again until you finish a Long Rest.</p><p><strong>Combined Level Available:</strong> [[(@classes.wizard.levels / 2)]]</p><section id=\"secret-cO6X083GFJ1W4071\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>Since you can select the slots you will have to manually adjust your available slots. This feature can be used to track the one-time use though.</p></section>"
+            "description": "<p>You can regain some of your magical energy by studying your spellbook. When you finish a Short Rest, you can choose expended spell slots to recover. The spell slots can have a combined level equal to no more than half your Wizard level (round up), and none of the slots can be level 6 or higher. For example, if you’re a level 4 Wizard, you can recover up to two levels’ worth of spell slots, regaining either one level 2 spell slot or two level 1 spell slots.</p><p>Once you use this feature, you can’t do so again until you finish a Long Rest.</p><p><strong>Combined Level Available:</strong> [[ceil(@classes.wizard.levels / 2)]]</p><section class=\"secret\" id=\"secret-cO6X083GFJ1W4071\"><p><strong>Foundry Note</strong></p><p>Since you can select the slots you will have to manually adjust your available slots. This feature can be used to track the one-time use though.</p></section>",
+            "activities": {
+                "Recover": {
+                    "name": "Recover",
+                    "roll": "Combined Spell Levels"
+                }
+            }
         },
         "Arcane Trickster": {
             "name": "Arcane Trickster",
@@ -357,39 +372,25 @@
         },
         "Aspect of the Wilds": {
             "name": "Aspect of the Wilds",
-            "description": "<p>You gain one of the following options of your choice. Whenever you finish a Long Rest, you can change your choice.</p><p><strong>Owl.</strong> You have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p><p><strong>Panther. </strong>You have a Climb Speed equal to your Speed.</p><p><strong>Salmon.</strong> You have a Swim Speed equal to your Speed.</p><section class=\"secret\" id=\"secret-CKbkC1Dm8i7Nz9TV\"><p><strong>Foundry Note</strong></p><p>This feature includes an activity with an Active Effect which automates the Darkvision changes from the <strong>Owl</strong> option. The Speed changes are not automatically applied.</p></section>",
+            "description": "<p>You gain one of the following options of your choice. Whenever you finish a Long Rest, you can change your choice.</p><p><strong>Owl.</strong> You have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p><p><strong>Panther. </strong>You have a Climb Speed equal to your Speed.</p><p><strong>Salmon.</strong> You have a Swim Speed equal to your Speed.</p>",
             "requirements": "Path of the Wild Heart",
             "activities": {
-                "Owl": {
-                    "name": "Owl"
-                },
-                "Panther": {
-                    "name": "Panther"
-                },
-                "Salmon": {
-                    "name": "Salmon"
+                "Choose Aspect": {
+                    "name": "Choose Aspect"
                 }
             },
             "effects": {
                 "Aspect of the Owl": {
                     "name": "Aspect of the Owl",
                     "description": "<p>You have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p>"
-                }
-            }
-        },
-        "Assasinate": {
-            "name": "Assasinate",
-            "description": "<p>You’re adept at ambushing a target, granting you the following benefits.</p><p><strong>Initiative.</strong> You have Advantage on Initiative rolls.</p><p><strong>Surprising Strikes.</strong> During the first round of each combat, you have Advantage on attack rolls against any creature that hasn’t taken a turn. If your Sneak Attack hits any target during that round, the target takes extra damage of the weapon’s type equal to your Rogue level.</p><section class=\"secret\" id=\"secret-roKwXDEMg8PmZo8U\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which automates the advantage on Initiative rolls.</p><p>The <strong>Damage</strong> activity can be used to apply extra damage equal to your level. You can choose the damage type in the roll's dialog box. Alternatively, you could add your level ([[lookup @classes.rogue.levels]]) as a situational bonus to your normal damage roll.</p></section>",
-            "activities": {
-                "damage": {
-                    "condition": "Your Sneak Attack hits any target during the first round",
-                    "activationCondition": "Your Sneak Attack hits any target during the first round"
-                }
-            },
-            "effects": {
-                "Assasinate": {
-                    "name": "Assasinate",
-                    "description": "<p>You have Advantage on Initiative rolls.</p>"
+                },
+                "Aspect of the Panther": {
+                    "name": "Aspect of the Panther",
+                    "description": "<p>You have a Climb Speed equal to your Speed.</p>"
+                },
+                "Aspect of the Salmon": {
+                    "name": "Aspect of the Salmon",
+                    "description": "<p>You have a Swim Speed equal to your Speed.</p>"
                 }
             }
         },
@@ -422,6 +423,22 @@
         "Assassin's Tools": {
             "name": "Assassin's Tools",
             "description": "<p>You gain a Disguise Kit and a Poisoner’s Kit, and you have proficiency with them.</p><section id=\"secret-QaK1hUaUaZqGMS7e\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The equipment and proficiencies are granted to you automatically as you level up.</p></section>"
+        },
+        "Assassinate": {
+            "name": "Assassinate",
+            "description": "<p>You’re adept at ambushing a target, granting you the following benefits.</p><p><strong>Initiative.</strong> You have Advantage on Initiative rolls.</p><p><strong>Surprising Strikes.</strong> During the first round of each combat, you have Advantage on attack rolls against any creature that hasn’t taken a turn. If your Sneak Attack hits any target during that round, the target takes extra damage of the weapon’s type equal to your Rogue level.</p><section class=\"secret\" id=\"secret-roKwXDEMg8PmZo8U\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which automates the advantage on Initiative rolls.</p><p>The <strong>Damage</strong> activity can be used to apply extra damage equal to your level. You can choose the damage type in the roll's dialog box. Alternatively, you could add your level ([[lookup @classes.rogue.levels]]) as a situational bonus to your normal damage roll.</p></section>",
+            "activities": {
+                "damage": {
+                    "condition": "Your Sneak Attack hits any target during the first round",
+                    "activationCondition": "Your Sneak Attack hits any target during the first round"
+                }
+            },
+            "effects": {
+                "Assasinate": {
+                    "name": "Assasinate",
+                    "description": "<p>You have Advantage on Initiative rolls.</p>"
+                }
+            }
         },
         "Aura Expansion": {
             "name": "Aura Expansion",
@@ -484,13 +501,8 @@
         },
         "Avatar of Battle": {
             "name": "Avatar of Battle",
-            "description": "<p>You gain Resistance to Bludgeoning, Piercing, and Slashing damage.</p><section id=\"secret-6TJyGok1Gf1bVLme\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which automates the damage resistance.</p></section>",
-            "requirements": "War Domain",
-            "effects": {
-                "Avatar of Battle": {
-                    "name": "Avatar of Battle"
-                }
-            }
+            "description": "<p>You gain Resistance to Bludgeoning, Piercing, and Slashing damage.</p>",
+            "requirements": "War Domain"
         },
         "Avenging Angel": {
             "name": "Avenging Angel",
@@ -591,91 +603,7 @@
         },
         "Barbarian": {
             "name": "Barbarian",
-            "description": "<blockquote><p>A Fierce Warrior of Primal Rage</p></blockquote><h3>Core Barbarian Traits</h3><table class=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p>Primary Ability</p></th><td><p>Strength</p></td></tr><tr><th><p><strong>Hit Point Die</strong></p></th><td><p>D12 per Barbarian level</p></td></tr><tr><th><p><strong>Saving Throw Proficiencies</strong></p></th><td><p>Strength and Constitution</p></td></tr><tr><th><p><strong>Skill Proficiencies</strong></p></th><td><p><em>Choose 2:</em> Animal Handling, Athletics, Intimidation, Nature, Perception, or Survival</p></td></tr><tr><th><p><strong>Weapon Proficiencies</strong></p></th><td><p>Simple and Martial weapons</p></td></tr><tr><th><p><strong>Armor Training</strong></p></th><td><p>Light and Medium armor and Shields</p></td></tr><tr><th><p><strong>Starting Equipment</strong></p></th><td><p><em>Choose A or B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepGreataxe00]{Greataxe}, 4 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepHandaxe000]{Handaxes}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagExplorersPa]{Explorer’s Pack}, and [[/award 15GP]]; or (B) [[/award 75GP]]</p></td></tr></tbody></table><p>Barbarians are mighty warriors who are powered by primal forces of the multiverse that manifest as a Rage. More than a mere emotion—and not limited to anger—this Rage is an incarnation of a predator’s ferocity, a storm’s fury, and a sea’s turmoil.</p><p>Some Barbarians personify their Rage as a fierce spirit or revered forebear. Others see it as a connection to the pain and anguish of the world, as an impersonal tangle of wild magic, or as an expression of their own deepest self. For every Barbarian, their Rage is a power that fuels not just battle prowess, but also uncanny reflexes and heightened senses.</p><p>Barbarians often serve as protectors and leaders in their communities. They charge headlong into danger so those under their protection don’t have to. Their courage in the face of danger makes Barbarians perfectly suited for adventure.</p><h2>Becoming a Barbarian …</h2><h3>As a Level 1 Character</h3><ul><li>Gain all the traits in the Core Barbarian Traits table.</li><li>Gain the Barbarian’s level 1 features, which are listed in the Barbarian Features table.</li></ul><h3>As a Multiclass Character</h3><ul><li>Gain the following traits from the Core Barbarian Traits table: Hit Point Die, proficiency with Martial weapons, and training with Shields.</li><li>Gain the Barbarian’s level 1 features, which are listed in the Barbarian Features table.</li></ul>",
-            "advancement": {
-                "Rage Damage": {
-                    "title": "Rage Damage"
-                },
-                "Weapon Masteries Known": {
-                    "title": "Weapon Masteries Known"
-                },
-                "Class Features": {
-                    "title": "Class Features"
-                },
-                "vbNdqiHqN2qTbnUw": {
-                    "title": "Class Features"
-                },
-                "MUU3y634K3edUdyL": {
-                    "title": "Class Features"
-                },
-                "49KNhnvoZJduJaOI": {
-                    "title": "Class Features"
-                },
-                "ALO7yStJ7IHDxOss": {
-                    "title": "Class Features"
-                },
-                "JNtXQqEZhCUM1NLJ": {
-                    "title": "Class Features"
-                },
-                "5S7821U8Dtg9egZu": {
-                    "title": "Class Features"
-                },
-                "zqXib0MKbaqrTTVR": {
-                    "title": "Class Features"
-                },
-                "YYXyPXHTKRgnPswF": {
-                    "title": "Class Features"
-                },
-                "e5XIkDQYhqNDImgs": {
-                    "title": "Class Features"
-                },
-                "WlOoBbYeEoCTcD0t": {
-                    "title": "Class Features"
-                },
-                "vsCiTVHhgLseNJjr": {
-                    "title": "Class Features"
-                },
-                "Primal Knowledge": {
-                    "title": "Primal Knowledge",
-                    "hint": "You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1."
-                },
-                "Brutal Strike": {
-                    "title": "Brutal Strike"
-                },
-                "Saving Throws Proficiencies": {
-                    "title": "Saving Throws Proficiencies"
-                },
-                "Skill Proficiencies": {
-                    "title": "Skill Proficiencies"
-                },
-                "Weapon Proficiencies": {
-                    "title": "Weapon Proficiencies"
-                },
-                "Armor Training": {
-                    "title": "Armor Training"
-                },
-                "yj2VgvjKystoRCK6": {
-                    "title": "Weapon Proficiencies"
-                },
-                "oxhsE5PIGxe6mO4s": {
-                    "title": "Armor Training"
-                },
-                "Weapon Mastery": {
-                    "title": "Weapon Mastery",
-                    "hint": "Your training with weapons allows you to use the mastery properties of additional weapons."
-                },
-                "WYkWGiSyjLN4WC4x": {
-                    "title": "Weapon Mastery",
-                    "hint": "Your training with weapons allows you to use the mastery properties of additional weapons."
-                },
-                "EUfvF7zVF9ooQGUg": {
-                    "title": "Weapon Mastery",
-                    "hint": "Your training with weapons allows you to use the mastery properties of additional weapons."
-                },
-                "Rages": {
-                    "title": "Rages"
-                }
-            }
+            "description": "<blockquote><p>A Fierce Warrior of Primal Rage</p></blockquote><h3>Core Barbarian Traits</h3><table class=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p>Primary Ability</p></th><td><p>Strength</p></td></tr><tr><th><p><strong>Hit Point Die</strong></p></th><td><p>D12 per Barbarian level</p></td></tr><tr><th><p><strong>Saving Throw Proficiencies</strong></p></th><td><p>Strength and Constitution</p></td></tr><tr><th><p><strong>Skill Proficiencies</strong></p></th><td><p><em>Choose 2:</em> Animal Handling, Athletics, Intimidation, Nature, Perception, or Survival</p></td></tr><tr><th><p><strong>Weapon Proficiencies</strong></p></th><td><p>Simple and Martial weapons</p></td></tr><tr><th><p><strong>Armor Training</strong></p></th><td><p>Light and Medium armor and Shields</p></td></tr><tr><th><p><strong>Starting Equipment</strong></p></th><td><p><em>Choose A or B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepGreataxe00]{Greataxe}, 4 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepHandaxe000]{Handaxes}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagExplorersPa]{Explorer’s Pack}, and [[/award 15GP]]; or (B) [[/award 75GP]]</p></td></tr></tbody></table><p>Barbarians are mighty warriors who are powered by primal forces of the multiverse that manifest as a Rage. More than a mere emotion—and not limited to anger—this Rage is an incarnation of a predator’s ferocity, a storm’s fury, and a sea’s turmoil.</p><p>Some Barbarians personify their Rage as a fierce spirit or revered forebear. Others see it as a connection to the pain and anguish of the world, as an impersonal tangle of wild magic, or as an expression of their own deepest self. For every Barbarian, their Rage is a power that fuels not just battle prowess, but also uncanny reflexes and heightened senses.</p><p>Barbarians often serve as protectors and leaders in their communities. They charge headlong into danger so those under their protection don’t have to. Their courage in the face of danger makes Barbarians perfectly suited for adventure.</p><h2>Becoming a Barbarian …</h2><h3>As a Level 1 Character</h3><ul><li>Gain all the traits in the Core Barbarian Traits table.</li><li>Gain the Barbarian’s level 1 features, which are listed in the Barbarian Features table.</li></ul><h3>As a Multiclass Character</h3><ul><li>Gain the following traits from the Core Barbarian Traits table: Hit Point Die, proficiency with Martial weapons, and training with Shields.</li><li>Gain the Barbarian’s level 1 features, which are listed in the Barbarian Features table.</li></ul>"
         },
         "Bard": {
             "name": "Bard",
@@ -923,13 +851,8 @@
             "description": "<p>Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d8 Necrotic or Radiant damage (your choice).</p><section id=\"secret-iZHQe1DZBrtcFZCk\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature's damage will automatically increase when you gain @UUID[Compendium.dnd-players-handbook.classes.Item.phbclcImprovedBl]{Improved Blessed Strikes}.</p></section>",
             "requirements": "Cleric",
             "activities": {
-                "Necrotic Divine Strike": {
-                    "name": "Necrotic Divine Strike",
-                    "target": "When you a hit a creature with an attack roll using a weapon once per turn",
-                    "targetAffects": "When you a hit a creature with an attack roll using a weapon once per turn"
-                },
-                "Radiant Divine Strike": {
-                    "name": "Radiant Divine Strike",
+                "Divine Strike": {
+                    "name": "Divine Strike",
                     "target": "When you a hit a creature with an attack roll using a weapon once per turn",
                     "targetAffects": "When you a hit a creature with an attack roll using a weapon once per turn"
                 }
@@ -948,7 +871,7 @@
         },
         "Blessing of the Trickster": {
             "name": "Blessing of the Trickster",
-            "description": "<p>As a Magic action, you can choose yourself or a willing creature within 30 feet of yourself to have Advantage on Dexterity (Stealth) checks. This blessing lasts until you finish a Long Rest or you use this feature again.</p><section class=\"secret\" id=\"secret-HR9knJJry8NACRET\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect for tracking the blessing but it does not automate the advantage on Stealth checks or automatically end when you use this feature again.</p></section>",
+            "description": "<p>As a Magic action, you can choose yourself or a willing creature within 30 feet of yourself to have Advantage on Dexterity (Stealth) checks. This blessing lasts until you finish a Long Rest or you use this feature again.</p>",
             "requirements": "Trickery Domain",
             "activities": {
                 "Blessing": {
@@ -1847,12 +1770,16 @@
         },
         "Disarming Attack": {
             "name": "Disarming Attack",
-            "description": "<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to disarm the target. Add the Superiority Die roll to the attack's damage roll. The target must succeed on a Strength saving throw or drop one object of your choice that it's holding, with the object landing in its space.</p><section class=\"secret\" id=\"secret-OIeqhDE1w3MxjygU\"><p><strong>Foundry Note</strong></p><p>This feature will automatically use the higher of your Strength/Dexterity for the save.</p><p>The Damage included in the save allows you to select the type of damage it should deal in the roll dialog. It will remember your choice going forwards.</p></section>",
+            "description": "<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to disarm the target. Add the Superiority Die roll to the attack's damage roll. The target must succeed on a Strength saving throw or drop one object of your choice that it's holding, with the object landing in its space.</p>",
             "activities": {
-                "save": {
-                    "condition": "When you hit a creature with an attack roll",
-                    "activationCondition": "When you hit a creature with an attack roll",
+                "Strength Save": {
+                    "name": "Strength Save",
                     "damageOnSave": "full"
+                },
+                "Superiority Die": {
+                    "name": "Superiority Die",
+                    "condition": "When you hit a creature with an attack roll",
+                    "activationCondition": "When you hit a creature with an attack roll"
                 }
             }
         },
@@ -1869,10 +1796,15 @@
         },
         "Disciplined Survivor": {
             "name": "Disciplined Survivor",
-            "description": "<p>Your physical and mental discipline grant you proficiency in all saving throws.</p><p>Additionally, whenever you make a saving throw and fail, you can expend 1 Focus Point to reroll it, and you must use the new roll.</p><section class=\"secret\" id=\"secret-VLGTfBDBcfExjSXG\"><p><strong>Foundry Note</strong></p><p>You will automatically be granted the additional Saving Throw proficiencies as you level up.</p><p>Use this feature to expend 1 Focus Point.</p></section>",
+            "description": "<p>Your physical and mental discipline grant you proficiency in all saving throws.</p><p>Additionally, whenever you make a saving throw and fail, you can expend 1 Focus Point to reroll it, and you must use the new roll.</p><section class=\"secret\" id=\"secret-VLGTfBDBcfExjSXG\"><p><strong>Foundry Note</strong></p><p>Use this feature to expend 1 Focus Point.</p></section>",
             "activities": {
                 "Consume Focus Point": {
                     "name": "Consume Focus Point"
+                }
+            },
+            "effects": {
+                "Disciplined Survivor": {
+                    "name": "Disciplined Survivor"
                 }
             }
         },
@@ -1892,7 +1824,8 @@
             "description": "<p>When you hit a creature with an attack roll, you can expend one Superiority Die to distract the target. Add the Superiority Die roll to the attack's damage roll. The next attack roll against the target by an attacker other than you has Advantage if the attack is made before the start of your next turn.</p><section class=\"secret\" id=\"secret-IbvdKkHFBNOThkil\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which can be used for tracking the distracted target but does not automate the Advantage.</p><p>The <strong>Damage</strong> activity allows you to select the type of damage it should deal in the roll dialog.</p></section>",
             "effects": {
                 "Distracted": {
-                    "name": "Distracted"
+                    "name": "Distracted",
+                    "description": "<p>@Embed[Compendium.dnd-players-handbook.classes.Item.phbmnvDistractin]</p>"
                 }
             }
         },
@@ -1902,16 +1835,13 @@
         },
         "Divine Fury": {
             "name": "Divine Fury",
-            "description": "<p>You can channel divine power into your strikes. On each of your turns while your Rage is active, the first creature you hit with a weapon or an Unarmed Strike takes extra damage equal to 1d6 plus half your Barbarian level (round down). The extra damage is Necrotic or Radiant; you choose the type each time you deal the damage.</p><section class=\"secret\" id=\"secret-qDE2QhFtf1aiHWmx\"><p><strong>Foundry Note</strong></p><p>This feature includes an activity for each type of damage.</p></section>",
+            "description": "<p>You can channel divine power into your strikes. On each of your turns while your Rage is active, the first creature you hit with a weapon or an Unarmed Strike takes extra damage equal to 1d6 plus half your Barbarian level (round down). The extra damage is Necrotic or Radiant; you choose the type each time you deal the damage.</p>",
             "requirements": "Path of the Zealot",
             "activities": {
-                "Necrotic Divine Fury": {
-                    "name": "Necrotic Divine Fury",
-                    "target": "First creature you hit with a weapon or an Unarmed Strike",
-                    "targetAffects": "First creature you hit with a weapon or an Unarmed Strike"
-                },
-                "Radiant Divine Fury": {
-                    "name": "Radiant Divine Fury",
+                "Divine Fury": {
+                    "name": "Divine Fury",
+                    "condition": "you hit a creature on your turn while Rage is active",
+                    "activationCondition": "you hit a creature on your turn while Rage is active",
                     "target": "First creature you hit with a weapon or an Unarmed Strike",
                     "targetAffects": "First creature you hit with a weapon or an Unarmed Strike"
                 }
@@ -1929,13 +1859,8 @@
         },
         "Divine Order: Protector": {
             "name": "Divine Order: Protector",
-            "description": "<p>You have dedicated yourself to the following sacred role:</p><p><strong>Protector.</strong> Trained for battle, you gain proficiency with Martial weapons and training with Heavy armor.</p><section id=\"secret-Tsm148wTyiFWlMFv\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which grants the proficiency and training.</p></section>",
-            "requirements": "Cleric",
-            "effects": {
-                "Divine Order: Protector": {
-                    "name": "Divine Order: Protector"
-                }
-            }
+            "description": "<p>You have dedicated yourself to the following sacred role:</p><p><strong>Protector.</strong> Trained for battle, you gain proficiency with Martial weapons and training with Heavy armor.</p>",
+            "requirements": "Cleric"
         },
         "Divine Order: Thaumaturge": {
             "name": "Divine Order: Thaumaturge",
@@ -2070,7 +1995,7 @@
         },
         "Dreadful Strikes": {
             "name": "Dreadful Strikes",
-            "description": "<p>You can augment your weapon strikes with mind-scarring magic drawn from the murky hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 Psychic damage to the target, which can take this extra damage only once per turn. The extra damage increases to 1d6 when you reach Ranger level 11.</p><section id=\"secret-4bJV0nAffRomytFv\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Damage</strong> activity includes the extra damage. It automatically scales as you level up.</p></section>",
+            "description": "<p>You can augment your weapon strikes with mind-scarring magic drawn from the murky hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 Psychic damage to the target, which can take this extra damage only once per turn. The extra damage increases to 1d6 when you reach Ranger level 11.</p>",
             "activities": {
                 "damage": {
                     "condition": "When you hit a creature with a weapon",
@@ -2183,7 +2108,7 @@
         },
         "Eldritch Hex": {
             "name": "Eldritch Hex",
-            "description": "<p>Your alien patron grants you a powerful curse. You always have the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHex0000000]{Hex} spell prepared. When you cast <em>Hex</em> and choose an ability, the target also has Disadvantage on saving throws of the chosen ability for the duration of the spell.</p><section id=\"secret-yj97DsFIc6iBEaTL\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The spell is automatically added to your sheet when you level up.</p></section>"
+            "description": "<p>Your alien patron grants you a powerful curse. You always have the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHex0000000]{Hex} spell prepared. When you cast <em>Hex</em> and choose an ability, the target also has Disadvantage on saving throws of the chosen ability for the duration of the spell.</p>"
         },
         "Eldritch Invocations": {
             "name": "Eldritch Invocations",
@@ -2258,7 +2183,10 @@
             },
             "effects": {
                 "Eldritch Spear": {
-                    "name": "Eldritch Spear"
+                    "name": "Eldritch Spear",
+                    "changes": {
+                        "name": ", Eldritch Spear"
+                    }
                 }
             }
         },
@@ -2325,7 +2253,21 @@
             },
             "effects": {
                 "Active Attunement": {
-                    "name": "Active Attunement"
+                    "name": "Active Attunement",
+                    "changes": {
+                        "name": "{} (Active)"
+                    }
+                },
+                "Active Attunement (Stride)": {
+                    "name": "Active Attunement (Stride)",
+                    "description": "<p><em>See  @UUID[Compendium.dnd-players-handbook.classes.Item.phbmnkStrideOfTh]</em></p>",
+                    "changes": {
+                        "name": "{} (Active)"
+                    }
+                },
+                "Stride of the Elements": {
+                    "name": "Stride of the Elements",
+                    "description": "<p><em>See @UUID[Compendium.dnd-players-handbook.classes.Item.phbmnkStrideOfTh]</em></p>"
                 }
             }
         },
@@ -2552,7 +2494,7 @@
         },
         "Fanatical Focus": {
             "name": "Fanatical Focus",
-            "description": "<p>Once per active Rage, if you fail a saving throw, you can reroll it with a bonus equal to your Rage Damage bonus (currently [[/r @scale.barbarian.rage-damage]]), and you must use the new roll.</p>",
+            "description": "<p>Once per active Rage, if you fail a saving throw, you can reroll it with a bonus equal to your Rage Damage bonus <span class=\"hide-in-embed\">(currently [[@scale.barbarian.rage-damage]])</span>, and you must use the new roll.</p>",
             "requirements": "Path of the Zealot"
         },
         "Fast Hands": {
@@ -2582,14 +2524,15 @@
         },
         "Favored Enemy": {
             "name": "Favored Enemy",
-            "description": "<p>You always have the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHuntersMar]{Hunter’s Mark} spell prepared. You can cast it twice without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest.</p><p>The number of times you can cast the spell without a spell slot increases when you reach certain Ranger levels, as shown in the Favored Enemy column of the Ranger Features table.</p><section id=\"secret-cyuZuzwxsQg01vVN\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The spell is granted to you at this level and will increase the number of free uses available automatically as you level up.</p></section>"
+            "description": "<p>You always have the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHuntersMar]{Hunter’s Mark} spell prepared. You can cast it twice without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest.</p><p>The number of times you can cast the spell without a spell slot increases when you reach certain Ranger levels, as shown in the Favored Enemy column of the Ranger Features table.</p>"
         },
         "Feinting Attack": {
             "name": "Feinting Attack",
             "description": "<p>As a Bonus Action, you can expend one Superiority Die to feint, choosing one creature within 5 feet of yourself as your target. You have Advantage on your next attack roll against that target this turn. If that attack hits, add the Superiority Die to the attack's damage roll.</p><section class=\"secret\" id=\"secret-SPgOlwvOGiFCmygG\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect for tracking the target but it does not automate the Advantage.</p><p>The <strong>Damage</strong> activity allows you to select the type of damage it should deal in the roll dialog.</p></section>",
             "effects": {
-                "Feinted": {
-                    "name": "Feinted"
+                "Feinting Attack": {
+                    "name": "Feinting Attack",
+                    "description": "<p>@Embed[Compendium.dnd-players-handbook.classes.Item.phbmnvFeintingAt]</p>"
                 }
             }
         },
@@ -2838,7 +2781,12 @@
         },
         "Flurry of Healing and Harm": {
             "name": "Flurry of Healing and Harm",
-            "description": "<p>When you use Flurry of Blows, you can replace each of the Unarmed Strikes with a use of Hand of Healing without expending Focus Points for the healing.</p><p>In addition, when you make an Unarmed Strike with Flurry of Blows and deal damage, you can use Hand of Harm with that strike without expending a Focus Point for Hand of Harm. You can still use Hand of Harm only once per turn.</p><p>You can use these benefits a total number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p><section id=\"secret-FnxdUfwVso4SoAFQ\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature can be used for tracking your available uses.</p></section>"
+            "description": "<p>When you use Flurry of Blows, you can replace each of the Unarmed Strikes with a use of Hand of Healing without expending Focus Points for the healing.</p><p>In addition, when you make an Unarmed Strike with Flurry of Blows and deal damage, you can use Hand of Harm with that strike without expending a Focus Point for Hand of Harm. You can still use Hand of Harm only once per turn.</p><p>You can use these benefits a total number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p><section id=\"secret-FnxdUfwVso4SoAFQ\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature can be used for tracking your available uses.</p></section>",
+            "activities": {
+                "Expend Use": {
+                    "name": "Expend Use"
+                }
+            }
         },
         "Foe Slayer": {
             "name": "Foe Slayer",
@@ -2873,7 +2821,7 @@
         },
         "Frenzy": {
             "name": "Frenzy",
-            "description": "<p>If you use Reckless Attack while your Rage is active, you deal extra damage to the first target you hit on your turn with a Strength-based attack. To determine the extra damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. The damage has the same type as the weapon or Unarmed Strike used for the attack.</p><section id=\"secret-EsDSGWYhmnmiS9Cu\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Damage</strong> activity scales automatically as you level up and allows you to select the type of damage to use in the damage roll's dialog box. It will then remember your choice going forward.</p></section>",
+            "description": "<p>If you use Reckless Attack while your Rage is active, you deal extra damage to the first target you hit on your turn with a Strength-based attack. To determine the extra damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. The damage has the same type as the weapon or Unarmed Strike used for the attack.</p>",
             "requirements": "Path of the Berserker"
         },
         "Full of Stars": {
@@ -2977,12 +2925,16 @@
         },
         "Goading Attack": {
             "name": "Goading Attack",
-            "description": "<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to goad the target into attacking you. Add the [[/damage @scale.battle-master.superiority.die]]{Superiority Die} to the attack's damage roll. The target must succeed on a Wisdom saving throw or have Disadvantage on attack rolls against targets other than you until the end of your next turn.</p><section class=\"secret\" id=\"secret-BS37R5kndzjT5lCr\"><p><strong>Foundry Note</strong></p><p>This feature includes activities for saving against your <strong>Strength</strong> or <strong>Dexterity</strong>. You can use the inline damage roll for the extra damage or the <strong>Damage</strong> activity.</p><p>The <strong>Damage</strong> activity allows you to select the type of damage it should deal in the roll dialog.</p></section>",
+            "description": "<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to goad the target into attacking you. Add the [[/damage @scale.battle-master.superiority.die]]{Superiority Die} to the attack's damage roll. The target must succeed on a Wisdom saving throw or have Disadvantage on attack rolls against targets other than you until the end of your next turn.</p>",
             "activities": {
-                "save": {
-                    "condition": "When you hit a creature with an attack roll",
-                    "activationCondition": "When you hit a creature with an attack roll",
+                "Wisdom Save": {
+                    "name": "Wisdom Save",
                     "damageOnSave": "full"
+                },
+                "Superiority Die": {
+                    "name": "Superiority Die",
+                    "condition": "When you hit a creature with an attack roll",
+                    "activationCondition": "When you hit a creature with an attack roll"
                 }
             },
             "effects": {
@@ -2994,44 +2946,7 @@
         },
         "Great Old One Patron": {
             "name": "Great Old One Patron",
-            "description": "<blockquote><p>Unearth Forbidden Lore of Ineffable Beings</p></blockquote><p>When you choose this subclass, you might bind yourself to an unspeakable being from the Far Realm or an elder god—a being such as Tharizdun, the Chained God; Zargon, the Returner; Hadar, the Dark Hunger; or Great Cthulhu. Or you might invoke several entities without yoking yourself to one. The motives of these beings are incomprehensible, and the Great Old One might be indifferent to your existence. But the secrets you’ve learned nevertheless allow you to draw strange magic from it.</p>",
-            "advancement": {
-                "Subclass Features": {
-                    "title": "Subclass Features"
-                },
-                "pkjDsDeyI1xHOSDb": {
-                    "title": "Subclass Features"
-                },
-                "hEHLXeuzpfLUyPbb": {
-                    "title": "Subclass Features"
-                },
-                "BXdX73NWYsGIrZyc": {
-                    "title": "Subclass Features"
-                },
-                "Great Old One Spells": {
-                    "title": "Great Old One Spells",
-                    "hint": "The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Great Old One Spells table, you thereafter always have the listed spells prepared."
-                },
-                "DDHUugD2NaiN7EPr": {
-                    "title": "Great Old One Spells",
-                    "hint": "The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Great Old One Spells table, you thereafter always have the listed spells prepared."
-                },
-                "jfnWwUamgADyAfmd": {
-                    "title": "Great Old One Spells",
-                    "hint": "The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Great Old One Spells table, you thereafter always have the listed spells prepared."
-                },
-                "P1WZnglOVdRxuub3": {
-                    "title": "Great Old One Spells",
-                    "hint": "The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Great Old One Spells table, you thereafter always have the listed spells prepared."
-                },
-                "Eldritch Hex": {
-                    "title": "Eldritch Hex",
-                    "hint": "Your alien patron grants you a powerful curse. You always have the Hex spell prepared."
-                },
-                "Create Thrall": {
-                    "title": "Create Thrall"
-                }
-            }
+            "description": "<blockquote><p>Unearth Forbidden Lore of Ineffable Beings</p></blockquote><p>When you choose this subclass, you might bind yourself to an unspeakable being from the Far Realm or an elder god—a being such as Tharizdun, the Chained God; Zargon, the Returner; Hadar, the Dark Hunger; or Great Cthulhu. Or you might invoke several entities without yoking yourself to one. The motives of these beings are incomprehensible, and the Great Old One might be indifferent to your existence. But the secrets you’ve learned nevertheless allow you to draw strange magic from it.</p>"
         },
         "Great Old One Spells": {
             "name": "Great Old One Spells",
@@ -3133,6 +3048,50 @@
         "Heroic Warrior": {
             "name": "Heroic Warrior",
             "description": "<p>The thrill of battle drives you toward victory. During combat, you can give yourself Heroic Inspiration whenever you start your turn without it.</p>"
+        },
+        "Hex (Powerful)": {
+            "name": "Hex (Powerful)",
+            "description": "<p>You place a curse on a creature that you can see within range. Until the spell ends, you deal an extra 1d6 Necrotic damage to the target whenever you hit it with an attack roll. Also, choose one ability when you cast the spell. The target has Disadvantage on ability checks made with the chosen ability.</p><p>If the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action on a later turn to curse a new creature.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Your Concentration can last longer with a spell slot of level 2 (up to 4 hours), 3–4 (up to 8 hours), or 5+ (24 hours).</p><hr /><p>@Embed[Compendium.dnd-players-handbook.classes.Item.phbwlkEldritchHe classes=\"caption-top\" cite=false]{Eldritch Hex (Great Old One Patron)}</p>",
+            "materials": "the petrified eye of a newt",
+            "activities": {
+                "Bonus Hex Damage": {
+                    "name": "Bonus Hex Damage",
+                    "condition": "whenever you hit the target with an attack roll",
+                    "activationCondition": "whenever you hit the target with an attack roll"
+                },
+                "Place Curse": {
+                    "name": "Place Curse"
+                },
+                "Curse New Creature": {
+                    "name": "Curse New Creature"
+                }
+            },
+            "effects": {
+                "Hexed Strength": {
+                    "name": "Hexed Strength",
+                    "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>"
+                },
+                "Hexed Dexterity": {
+                    "name": "Hexed Dexterity",
+                    "description": "<p>The target has Disadvantage on ability checks and saves made with the chosen ability.</p>"
+                },
+                "Hexed Constitution": {
+                    "name": "Hexed Constitution",
+                    "description": "<p>The target has Disadvantage on ability checks and saves made with the chosen ability.</p>"
+                },
+                "Hexed Intelligence": {
+                    "name": "Hexed Intelligence",
+                    "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>"
+                },
+                "Hexed Wisdom": {
+                    "name": "Hexed Wisdom",
+                    "description": "<p>The target has Disadvantage on ability checks and saves made with the chosen ability.</p>"
+                },
+                "Hexed Charisma": {
+                    "name": "Hexed Charisma",
+                    "description": "<p>The target has Disadvantage on ability checks and saves made with the chosen ability.</p>"
+                }
+            }
         },
         "Holy Nimbus": {
             "name": "Holy Nimbus",
@@ -3405,7 +3364,7 @@
         },
         "Inspiring Movement": {
             "name": "Inspiring Movement",
-            "description": "<p>When an enemy you can see ends its turn within 5 feet of you, you can take a Reaction and expend one use of your Bardic Inspiration to move up to half your Speed (currently [[lookup @attributes.movement.walk]]). Then one ally of your choice within 30 feet of you can also move up to half their Speed using their Reaction.</p><p>None of this feature's movement provokes Opportunity Attacks.</p>",
+            "description": "<p>When an enemy you can see ends its turn within 5 feet of you, you can take a Reaction and expend one use of your Bardic Inspiration to move up to half your Speed<span class=\"hide-in-embed\"> (currently [[lookup @attributes.movement.speed]])</span>. Then one ally of your choice within 30 feet of you can also move up to half their Speed using their Reaction.</p><p>None of this feature's movement provokes Opportunity Attacks.</p>",
             "requirements": "College of Dance",
             "activities": {
                 "Move": {
@@ -3450,37 +3409,40 @@
         },
         "Investment of the Chain Master": {
             "name": "Investment of the Chain Master",
-            "description": "<blockquote><p>Prerequisite: Level 5+ Warlock, @UUID[Compendium.dnd-players-handbook.classes.Item.phbinvPactChain0]{Pact of the Chain} Invocation</p></blockquote><p>When you cast @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFindFamili]{Find Familiar}, you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits.</p><p><strong>Aerial or Aquatic.</strong> The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet.</p><p><strong>Quick Attack.</strong> As a Bonus Action, you can command the familiar to take the Attack action.</p><p><strong>Necrotic or Radiant Damage.</strong> Whenever the familiar deals Bludgeoning, Piercing, or Slashing damage, you can make it deal Necrotic or Radiant damage instead.</p><p><strong>Your Save DC.</strong> If the familiar forces a creature to make a saving throw, it uses your spell save DC.</p><p><strong>Resistance.</strong> When the familiar takes damage, you can take a Reaction to grant it Resistance against that damage.</p><section class=\"secret\" id=\"secret-D3vSCo0uEG4Kp1X6\"><p><strong>Foundry Note</strong></p><p>The <strong>Find Familiar with Flight</strong> and <strong>with Swimming</strong> activities both allow you to summon a familiar with the relevant movement bonus. Both activities consume a Pact Magic spell slot.</p><p>The <strong>Invest with Resistance</strong> activity includes an Active Effect for resisting each type of damage which can be applied to get the relevant resistance. Be sure you disable/delete the previous Active Effect in the \"Effects\" tab of your sheet when you change Resistances.</p><p>The familiar automatically uses your Save DC.</p></section>",
+            "description": "<blockquote><p>Prerequisite: Level 5+ Warlock, @UUID[Compendium.dnd-players-handbook.classes.Item.phbinvPactChain0]{Pact of the Chain} Invocation</p></blockquote><p>When you cast @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFindFamili]{Find Familiar}, you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits.</p><p><strong>Aerial or Aquatic.</strong> The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet.</p><p><strong>Quick Attack.</strong> As a Bonus Action, you can command the familiar to take the Attack action.</p><p><strong>Necrotic or Radiant Damage.</strong> Whenever the familiar deals Bludgeoning, Piercing, or Slashing damage, you can make it deal Necrotic or Radiant damage instead.</p><p><strong>Your Save DC.</strong> If the familiar forces a creature to make a saving throw, it uses your spell save DC.</p><p><strong>Resistance.</strong> When the familiar takes damage, you can take a Reaction to grant it Resistance against that damage.</p><section class=\"secret\" id=\"secret-D3vSCo0uEG4Kp1X6\"><p><strong>Foundry Note</strong></p><p>The <strong>Find Familiar</strong> activities will apply both <strong>Aerial</strong> and <strong>Aquatic</strong> effects to the summoned creature. The unused effect on the creature may be deleted.</p><p>The <strong>Resistance</strong> activity includes optional Active Effect for resisting each type of damage.</p></section>",
             "requirements": "Pact of the Chain Invocation",
             "activities": {
-                "Find Familiar with Flight": {
-                    "name": "Find Familiar with Flight",
-                    "profiles": {
-                        "CR 0 Beast": {
-                            "name": "CR 0 Beast"
-                        }
-                    }
-                },
-                "Find Familiar with Swimming": {
-                    "name": "Find Familiar with Swimming",
-                    "profiles": {
-                        "CR 0 Beast": {
-                            "name": "CR 0 Beast"
-                        }
-                    }
-                },
-                "Invest with Resistance": {
-                    "name": "Invest with Resistance",
+                "Resistance": {
+                    "name": "Resistance",
                     "target": "Your familiar",
                     "targetAffects": "Your familiar"
+                },
+                "Find Familiar": {
+                    "name": "Find Familiar",
+                    "profiles": {
+                        "CR 0 Beast": {
+                            "name": "CR 0 Beast"
+                        }
+                    }
+                },
+                "Find Familiar (Expanded Options)": {
+                    "name": "Find Familiar (Expanded Options)"
+                },
+                "Quick Attack": {
+                    "name": "Quick Attack",
+                    "chatFlavor": "The familiar takes the Attack action",
+                    "target": "the familiar",
+                    "targetAffects": "the familiar"
                 }
             },
             "effects": {
-                "Investment of Flight": {
-                    "name": "Investment of Flight"
+                "Aerial": {
+                    "name": "Aerial",
+                    "description": "<p><strong>Aerial or Aquatic.</strong> The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet.</p>"
                 },
-                "Investment of Swimming": {
-                    "name": "Investment of Swimming"
+                "Aquatic": {
+                    "name": "Aquatic",
+                    "description": "<p><strong>Aerial or Aquatic.</strong> The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet.</p>"
                 },
                 "Resist Acid": {
                     "name": "Resist Acid"
@@ -3565,7 +3527,7 @@
         },
         "Land's Aid": {
             "name": "Land's Aid",
-            "description": "<p>As a Magic action, you can expend a use of your Wild Shape and choose a point within 60 feet of yourself. Vitality-giving flowers and life-draining thorns appear for a moment in a 10-foot-radius Sphere centered on that point. Each creature of your choice in the Sphere must make a Constitution saving throw against your spell save DC, taking 2d6 Necrotic damage on a failed save or half as much damage on a successful one. One creature of your choice in that area regains [[/healing @scale.land.lands-aid]]{[[lookup @scale.land.lands-aid]] Hit Points}.</p><p>The damage and healing increase by 1d6 when you reach Druid levels 10 (3d6) and 14 (4d6).</p><section class=\"secret\" id=\"secret-T1DFK6QJjzeJsysz\"><p><strong>Foundry Note</strong></p><p>This feature includes an activity for the saving throw and the healing.</p><p>The healing/damage values automatically scale as you level up.</p></section>",
+            "description": "<p>As a Magic action, you can expend a use of your Wild Shape and choose a point within 60 feet of yourself. Vitality-giving flowers and life-draining thorns appear for a moment in a 10-foot-radius Sphere centered on that point. Each creature of your choice in the Sphere must make a Constitution saving throw against your spell save DC, taking 2d6 Necrotic damage on a failed save or half as much damage on a successful one. One creature of your choice in that area regains [[/heal]]{2d6 Hit Points}.</p><p>The damage and healing increase by 1d6 when you reach Druid levels 10 (3d6) and 14 (4d6).</p><section class=\"secret\" id=\"secret-T1DFK6QJjzeJsysz\"><p><strong>Foundry Note</strong></p><p>This feature includes an activity for the saving throw and the healing.</p><p>The healing/damage values automatically scale as you level up.</p></section>",
             "requirements": "Circle of Land",
             "activities": {
                 "save": {
@@ -3748,13 +3710,10 @@
             "name": "Maneuvering Attack",
             "description": "<p>When you hit a creature with an attack roll, you can expend one Superiority Die to maneuver one of your comrades into another position. Add the Superiority Die roll to the attack's damage roll, and choose a willing creature who can see or hear you. That creature can use its Reaction to move up to half its Speed without provoking an Opportunity Attack from the target of your attack.</p>",
             "activities": {
-                "Maneuver": {
-                    "name": "Maneuver",
+                "Superiority Die": {
+                    "name": "Superiority Die",
                     "condition": "When you hit a creature with an attack roll",
-                    "activationCondition": "When you hit a creature with an attack roll",
-                    "target": "Can see or hear you",
-                    "targetAffects": "Can see or hear you",
-                    "roll": "Attack Bonus"
+                    "activationCondition": "When you hit a creature with an attack roll"
                 }
             }
         },
@@ -3799,7 +3758,10 @@
             "effects": {
                 "Dexterous Attacks & Martial Arts Damage": {
                     "name": "Dexterous Attacks & Martial Arts Damage",
-                    "description": "<p><strong>Martial Arts Die.</strong> You can roll [[lookup @scale.monk.die]] in place of the normal damage of your Unarmed Strike or Monk weapons. This die changes as you gain Monk levels, as shown in the Martial Arts column of the Monk Features table.</p><p><strong>Dexterous Attacks.</strong> You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes and Monk weapons. In addition, when you use the Grapple or Shove option of your Unarmed Strike, you can use your Dexterity modifier instead of your Strength modifier to determine the save DC.</p><p></p>"
+                    "description": "<p><strong>Martial Arts Die.</strong> You can roll [[lookup @scale.monk.die]] in place of the normal damage of your Unarmed Strike or Monk weapons. This die changes as you gain Monk levels, as shown in the Martial Arts column of the Monk Features table.</p><p><strong>Dexterous Attacks.</strong> You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes and Monk weapons. In addition, when you use the Grapple or Shove option of your Unarmed Strike, you can use your Dexterity modifier instead of your Strength modifier to determine the save DC.</p><p></p>",
+                    "changes": {
+                        "name": "{} (Martial Arts)"
+                    }
                 }
             }
         },
@@ -3822,17 +3784,21 @@
         },
         "Menacing Attack": {
             "name": "Menacing Attack",
-            "description": "<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to frighten the target. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or have the Frightened condition until the end of your next turn.</p><section class=\"secret\" id=\"secret-sPNAs2sYsogCvvxn\"><p><strong>Foundry Note</strong></p><p>This feature includes a <strong>Strength Save</strong> activity and a <strong>Dexterity Save</strong> activity which will consume a use of your Superiority Die.</p><p>The <strong>Damage</strong> activity allows you to select the type of damage it should deal in the roll dialog.</p></section>",
+            "description": "<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to frighten the target. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or have the Frightened condition until the end of your next turn.</p>",
             "activities": {
-                "save": {
-                    "condition": "When you hit a creature with an attack roll",
-                    "activationCondition": "When you hit a creature with an attack roll",
+                "Wisdom Save": {
+                    "name": "Wisdom Save",
                     "damageOnSave": "full"
+                },
+                "Superiority Die": {
+                    "name": "Superiority Die",
+                    "condition": "When you hit a creature with an attack roll",
+                    "activationCondition": "When you hit a creature with an attack roll"
                 }
             },
             "effects": {
-                "Menaced": {
-                    "name": "Menaced"
+                "Frightened": {
+                    "name": "Frightened"
                 }
             }
         },
@@ -3894,78 +3860,7 @@
         },
         "Monk": {
             "name": "Monk",
-            "description": "<blockquote><p>A Martial Artist of Supernatural Focus</p></blockquote><h3>Core Monk Traits</h3><table class=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p>Primary Ability</p></th><td><p>Dexterity and Wisdom</p></td></tr><tr><th scope=\"row\"><p>Hit Point Die</p></th><td><p>D8 per Monk level</p></td></tr><tr><th scope=\"row\"><p>Saving Throw Proficiencies</p></th><td><p>Strength and Dexterity</p></td></tr><tr><th scope=\"row\"><p>Skill Proficiencies</p></th><td><p><em>Choose 2:</em> Acrobatics, Athletics, History, Insight, Religion, or Stealth</p></td></tr><tr><th scope=\"row\"><p>Weapon Proficiencies</p></th><td><p>Simple weapons and Martial weapons that have the Light property</p></td></tr><tr><th scope=\"row\"><p>Tool Proficiencies</p></th><td><p><em>Choose one type of Artisan's Tools or Musical Instrument</em></p></td></tr><tr><th scope=\"row\"><p>Armor Training</p></th><td><p>None</p></td></tr><tr><th scope=\"row\"><p>Starting Equipment</p></th><td><p><em>Choose A or B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepSpear00000]{Spear}, 5 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000]{Daggers}, Artisan's Tools or Musical Instrument chosen for the tool proficiency above, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagExplorersPa]{Explorer's Pack}, and [[/award 11GP]]; or (B) [[/award 50GP]]</p></td></tr></tbody></table><p>Monks use rigorous combat training and mental discipline to align themselves with the multiverse and focus their internal reservoirs of power. Different Monks conceptualize this power in various ways: as breath, energy, life force, essence, or self, for example. Whether channeled as a striking display of martial prowess or as a subtler manifestation of defense and speed, this power infuses all that a Monk does.</p><p>Monks focus their internal power to create extraordinary, even supernatural, effects. They channel uncanny speed and strength into their attacks, with or without the use of weapons. In a Monk's hands, even the most basic weapons can become sophisticated implements of combat mastery.</p><p>Many Monks find that a structured life of ascetic withdrawal helps them cultivate the physical and mental focus they need to harness their power. Other Monks believe that immersing themselves in the vibrant confusion of life helps to fuel their determination and discipline.</p><p>Monks generally view adventures as tests of their physical and mental development. They are driven by a desire to accomplish a greater mission than merely slaying monsters and plundering treasure; they strive to turn themselves into living weapons.</p><h2>Becoming a Monk …</h2><h3>As a Level 1 Character</h3><ul><li>Gain all the traits in the Core Monk Traits table.</li><li>Gain the Monk's level 1 features, which are listed in the Monk Features table.</li></ul><h3>As a Multiclass Character</h3><ul><li>Gain the Hit Point Die trait from the Core Monk Traits table.</li><li>Gain the Monk's level 1 features, which are listed in the Monk Features table.</li></ul>",
-            "advancement": {
-                "Class Features": {
-                    "title": "Class Features"
-                },
-                "mrRoW8wNhjYbeqH1": {
-                    "title": "Class Features"
-                },
-                "ms2HaCjkdW9DV3KG": {
-                    "title": "Class Features"
-                },
-                "8tQG3hCcquAKQaPI": {
-                    "title": "Class Features"
-                },
-                "W4pBCGfpgL3LjHT0": {
-                    "title": "Class Features"
-                },
-                "TIzNw6t61wYmtj6V": {
-                    "title": "Class Features"
-                },
-                "Rfq6ZXQhdFm3Zmjx": {
-                    "title": "Class Features"
-                },
-                "26AlznyWcDuaFTCY": {
-                    "title": "Class Features"
-                },
-                "H32KYn1ozuG9jgYH": {
-                    "title": "Class Features"
-                },
-                "p4M4GK8yYVPY4Nsc": {
-                    "title": "Class Features"
-                },
-                "l5WJg41iXSVd88sd": {
-                    "title": "Class Features"
-                },
-                "9EzbkaZcskpZqLAv": {
-                    "title": "Class Features"
-                },
-                "BJBdi5OYKS2pvCeV": {
-                    "title": "Class Features"
-                },
-                "DOmTqz4RzFr3Scvj": {
-                    "title": "Class Features"
-                },
-                "Martial Arts Die": {
-                    "title": "Martial Arts Die"
-                },
-                "Unarmored Movement": {
-                    "title": "Unarmored Movement"
-                },
-                "Disciplined Survivor": {
-                    "title": "Disciplined Survivor"
-                },
-                "Saving Throw Proficiencies": {
-                    "title": "Saving Throw Proficiencies"
-                },
-                "Skill Proficiencies": {
-                    "title": "Skill Proficiencies"
-                },
-                "Weapon Proficiencies": {
-                    "title": "Weapon Proficiencies"
-                },
-                "Tool Proficiencies": {
-                    "title": "Tool Proficiencies"
-                },
-                "Focus Points": {
-                    "title": "Focus Points"
-                },
-                "Epic Boon": {
-                    "title": "Epic Boon"
-                }
-            }
+            "description": "<blockquote><p>A Martial Artist of Supernatural Focus</p></blockquote><h3>Core Monk Traits</h3><table class=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p>Primary Ability</p></th><td><p>Dexterity and Wisdom</p></td></tr><tr><th scope=\"row\"><p>Hit Point Die</p></th><td><p>D8 per Monk level</p></td></tr><tr><th scope=\"row\"><p>Saving Throw Proficiencies</p></th><td><p>Strength and Dexterity</p></td></tr><tr><th scope=\"row\"><p>Skill Proficiencies</p></th><td><p><em>Choose 2:</em> Acrobatics, Athletics, History, Insight, Religion, or Stealth</p></td></tr><tr><th scope=\"row\"><p>Weapon Proficiencies</p></th><td><p>Simple weapons and Martial weapons that have the Light property</p></td></tr><tr><th scope=\"row\"><p>Tool Proficiencies</p></th><td><p><em>Choose one type of Artisan's Tools or Musical Instrument</em></p></td></tr><tr><th scope=\"row\"><p>Armor Training</p></th><td><p>None</p></td></tr><tr><th scope=\"row\"><p>Starting Equipment</p></th><td><p><em>Choose A or B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepSpear00000]{Spear}, 5 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000]{Daggers}, Artisan's Tools or Musical Instrument chosen for the tool proficiency above, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagExplorersPa]{Explorer's Pack}, and [[/award 11GP]]; or (B) [[/award 50GP]]</p></td></tr></tbody></table><p>Monks use rigorous combat training and mental discipline to align themselves with the multiverse and focus their internal reservoirs of power. Different Monks conceptualize this power in various ways: as breath, energy, life force, essence, or self, for example. Whether channeled as a striking display of martial prowess or as a subtler manifestation of defense and speed, this power infuses all that a Monk does.</p><p>Monks focus their internal power to create extraordinary, even supernatural, effects. They channel uncanny speed and strength into their attacks, with or without the use of weapons. In a Monk's hands, even the most basic weapons can become sophisticated implements of combat mastery.</p><p>Many Monks find that a structured life of ascetic withdrawal helps them cultivate the physical and mental focus they need to harness their power. Other Monks believe that immersing themselves in the vibrant confusion of life helps to fuel their determination and discipline.</p><p>Monks generally view adventures as tests of their physical and mental development. They are driven by a desire to accomplish a greater mission than merely slaying monsters and plundering treasure; they strive to turn themselves into living weapons.</p><h2>Becoming a Monk …</h2><h3>As a Level 1 Character</h3><ul><li>Gain all the traits in the Core Monk Traits table.</li><li>Gain the Monk's level 1 features, which are listed in the Monk Features table.</li></ul><h3>As a Multiclass Character</h3><ul><li>Gain the Hit Point Die trait from the Core Monk Traits table.</li><li>Gain the Monk's level 1 features, which are listed in the Monk Features table.</li></ul>"
         },
         "Monk's Focus": {
             "name": "Monk's Focus",
@@ -3973,7 +3868,8 @@
             "requirements": "Monk",
             "activities": {
                 "Flurry of Blows": {
-                    "name": "Flurry of Blows"
+                    "name": "Flurry of Blows",
+                    "chatFlavor": "Make two [[/item Unarmed Strike]]{Unarmed Strikes}"
                 },
                 "Patient Defense (Focus Point)": {
                     "name": "Patient Defense (Focus Point)"
@@ -3983,9 +3879,6 @@
                 },
                 "Step of the Wind": {
                     "name": "Step of the Wind"
-                },
-                "Expend Focus Point": {
-                    "name": "Expend Focus Point"
                 }
             },
             "effects": {
@@ -4084,12 +3977,9 @@
         },
         "Nature's Ward": {
             "name": "Nature's Ward",
-            "description": "<p>You are immune to the Poisoned condition, and you have Resistance to a damage type associated with your current land choice in the Circle Spells feature, as shown in the Nature's Ward table.</p><table><caption>Nature's Ward</caption><thead><tr><td>Land Type</td><td>Resistance</td></tr></thead><tbody><tr><td>Arid</td><td>Fire</td></tr><tr><td>Polar</td><td>Cold</td></tr><tr><td>Temperate</td><td>Lightning</td></tr><tr><td>Tropical</td><td>Poison</td></tr></tbody></table><section class=\"secret\" id=\"secret-0muLLDjt1zqXptme\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect for the Poison condition immunity and an Active Effect for each land type. You can activate the Active Effect for your chosen land type.</p></section>",
+            "description": "<p>You are immune to the Poisoned condition, and you have Resistance to a damage type associated with your current land choice in the Circle Spells feature, as shown in the Nature's Ward table.</p><table><caption>Nature's Ward</caption><thead><tr><td>Land Type</td><td>Resistance</td></tr></thead><tbody><tr><td>Arid</td><td>Fire</td></tr><tr><td>Polar</td><td>Cold</td></tr><tr><td>Temperate</td><td>Lightning</td></tr><tr><td>Tropical</td><td>Poison</td></tr></tbody></table><section class=\"secret\" id=\"secret-0muLLDjt1zqXptme\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect for each land type. You can activate the Active Effect for your chosen land type.</p></section>",
             "requirements": "Circle of Land",
             "effects": {
-                "Nature's Ward": {
-                    "name": "Nature's Ward"
-                },
                 "Nature's Ward: Arid": {
                     "name": "Nature's Ward: Arid"
                 },
@@ -4370,7 +4260,10 @@
             },
             "effects": {
                 "Pact Weapon": {
-                    "name": "Pact Weapon"
+                    "name": "Pact Weapon",
+                    "changes": {
+                        "name": ", Pact Weapon"
+                    }
                 }
             }
         },
@@ -4612,7 +4505,7 @@
         },
         "Physician's Touch": {
             "name": "Physician's Touch",
-            "description": "<p>Your Hand of Harm and Hand of Healing improve, as detailed below.</p><p><strong>Hand of Harm.</strong> When you use Hand of Harm on a creature, you can also give that creature the Poisoned condition until the end of your next turn.</p><p><strong>Hand of Healing.</strong> When you use Hand of Healing, you can also end one of the following conditions on the creature you heal: Blinded, Deafened, Paralyzed, Poisoned, or Stunned.</p><section id=\"secret-0OzKGSx4PSkIO5se\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>You can use the <strong>Hand of Harm</strong> and <strong>Hand of Healing</strong> activities on this feature going forward. <strong>Hand of Harm</strong> includes an Active Effect which will apply the Poisoned status.</p></section>",
+            "description": "<p>Your Hand of Harm and Hand of Healing improve, as detailed below.</p><p><strong>Hand of Harm.</strong> When you use Hand of Harm on a creature, you can also give that creature the &amp;Reference[Poisoned apply=false] condition until the end of your next turn.</p><p><strong>Hand of Healing.</strong> When you use Hand of Healing, you can also end one of the following conditions on the creature you heal: Blinded, Deafened, Paralyzed, Poisoned, or Stunned.</p><section class=\"secret\" id=\"secret-0OzKGSx4PSkIO5se\"><p><strong>Foundry Note</strong></p><p>You can use the <strong>Hand of Harm</strong> and <strong>Hand of Healing</strong> activities on this feature going forward. <strong>Hand of Harm</strong> includes an Active Effect which will apply the Poisoned status.</p></section>",
             "activities": {
                 "Hand of Harm": {
                     "name": "Hand of Harm",
@@ -4624,8 +4517,8 @@
                 }
             },
             "effects": {
-                "Physician's Touch: Hand of Harm": {
-                    "name": "Physician's Touch: Hand of Harm"
+                "Poisoned (Hand of Harm)": {
+                    "name": "Poisoned (Hand of Harm)"
                 }
             }
         },
@@ -4740,13 +4633,8 @@
         },
         "Primal Order: Warden": {
             "name": "Primal Order: Warden",
-            "description": "<p>Trained for battle, you gain proficiency with Martial weapons and training with Medium armor.</p><section id=\"secret-hVQSjHcU93Zpf54G\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which automates the addition of your Martial weapons proficiency and Medium armor training.</p></section>",
-            "requirements": "Druid",
-            "effects": {
-                "Martial Weapon & Medium Armor Training": {
-                    "name": "Martial Weapon & Medium Armor Training"
-                }
-            }
+            "description": "<p>Trained for battle, you gain proficiency with Martial weapons and training with Medium armor.</p>",
+            "requirements": "Druid"
         },
         "Projected Ward": {
             "name": "Projected Ward",
@@ -4877,12 +4765,16 @@
         },
         "Pushing Attack": {
             "name": "Pushing Attack",
-            "description": "<p>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to drive the target back. Add the Superiority Die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or be pushed up to 15 feet directly away from you.</p><section id=\"secret-S6d1XbWlRjPp1t0t\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature includes a <strong>Strength Save</strong> activity and a <strong>Dexterity Save</strong> activity which will consume a use of your Superiority Die.</p><p>The <strong>Damage</strong> activity allows you to select the type of damage it should deal in the roll dialog.</p></section>",
+            "description": "<p>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to drive the target back. Add the Superiority Die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or be pushed up to 15 feet directly away from you.</p>",
             "activities": {
-                "save": {
-                    "condition": "When you hit a creature with an attack roll",
-                    "activationCondition": "When you hit a creature with an attack roll",
+                "Strength Save": {
+                    "name": "Strength Save",
                     "damageOnSave": "full"
+                },
+                "Superiority Die": {
+                    "name": "Superiority Die",
+                    "condition": "When you hit a creature with an attack roll",
+                    "activationCondition": "When you hit a creature with an attack roll"
                 }
             }
         },
@@ -4960,7 +4852,7 @@
         },
         "Rage of the Gods": {
             "name": "Rage of the Gods",
-            "description": "<p>When you activate your Rage, you can assume the form of a divine warrior. This form lasts for 1 minute or until you drop to 0 Hit Points. Once you use this feature, you can't do so again until you finish a Long Rest.</p><p>While in this form, you gain the benefits below.</p><p><strong>Flight.</strong> You have a Fly Speed equal to your Speed and can hover.</p><p><strong>Resistance.</strong> You have Resistance to Necrotic, Psychic, and Radiant damage.</p><p><strong>Revivification.</strong> When a creature within 30 feet of you would drop to 0 Hit Points, you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level (currently [[lookup @classes.barbarian.levels]]).</p><section class=\"secret\" id=\"secret-gWvozli4SOlo3KxS\"><p><strong>Foundry Note</strong></p><p>The <strong>Rage of the Gods</strong> activity includes an Active Effect for automatically adding the resistances and hover but does not provide the fly speed.</p><p>The <strong>Revivification</strong> activity includes a healing roll of your Barbarian level.</p></section>",
+            "description": "<p>When you activate your Rage, you can assume the form of a divine warrior. This form lasts for 1 minute or until you drop to 0 Hit Points. Once you use this feature, you can't do so again until you finish a Long Rest.</p><p>While in this form, you gain the benefits below.</p><p><strong>Flight.</strong> You have a Fly Speed equal to your Speed and can hover.</p><p><strong>Resistance.</strong> You have Resistance to Necrotic, Psychic, and Radiant damage.</p><p><strong>Revivification.</strong> When a creature within 30 feet of you would drop to 0 Hit Points, you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level (currently [[lookup @classes.barbarian.levels]]).</p><section class=\"secret\" id=\"secret-gWvozli4SOlo3KxS\"><p><strong>Foundry Note</strong></p><p>The <strong>Rage of the Gods</strong> activity includes an Active Effect for automatically adding the resistances, hover, and fly speed.</p><p>The <strong>Revivification</strong> activity includes a healing roll of your Barbarian level.</p></section>",
             "requirements": "Path of the Zealot",
             "activities": {
                 "Revivification": {
@@ -4978,7 +4870,7 @@
             "effects": {
                 "Rage of the Gods": {
                     "name": "Rage of the Gods",
-                    "description": "<p>While in this form, you gain the benefits below.</p><p><strong>Flight.</strong> You have a Fly Speed equal to your Speed and can hover.</p><p><strong>Resistance.</strong> You have Resistance to Necrotic, Psychic, and Radiant damage.</p><p><strong>Revivification.</strong> When a creature within 30 feet of you would drop to 0 Hit Points, you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level.</p>"
+                    "description": "<p>While in this form, you gain the benefits below.</p><p><strong>Flight.</strong> You have a Fly Speed equal to your Speed and can hover.</p><p><strong>Resistance.</strong> You have Resistance to Necrotic, Psychic, and Radiant damage.</p>"
                 }
             }
         },
@@ -5019,90 +4911,7 @@
         },
         "Ranger": {
             "name": "Ranger",
-            "description": "<blockquote><p>A Wandering Warrior Imbued with Primal Magic</p></blockquote><h3>Core Ranger Traits</h3><table class=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p><strong>Primary Ability</strong></p></th><td><p>Dexterity and Wisdom</p></td></tr><tr><th scope=\"row\"><p><strong>Hit Point Die</strong></p></th><td><p>D10 per Ranger level</p></td></tr><tr><th scope=\"row\"><p><strong>Saving Throw Proficiencies</strong></p></th><td><p>Strength and Dexterity</p></td></tr><tr><th scope=\"row\"><p><strong>Skill Proficiencies</strong></p></th><td><p><em>Choose 3:</em> Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, or Survival</p></td></tr><tr><th scope=\"row\"><p><strong>Weapon Proficiencies</strong></p></th><td><p>Simple and Martial weapons</p></td></tr><tr><th scope=\"row\"><p><strong>Armor Training</strong></p></th><td><p>Light and Medium armor and Shields</p></td></tr><tr><th scope=\"row\"><p><strong>Starting Equipment</strong></p></th><td><p><em>Choose A or B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmStuddedLea]{Studded Leather Armor}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepScimitar00]{Scimitar}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepShortsword]{Shortsword}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepLongbow000]{Longbow}, 20 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoArrows0000]{Arrows}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagQuiver00000]{Quiver}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagDruidicFocu]{Druidic Focus} (@UUID[Compendium.dnd-players-handbook.equipment.Item.phbdfcSprigofmis]{sprig of mistletoe}), @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagExplorersPa]{Explorer’s Pack}, and [[/award 7GP]]; or (B) [[/award 150GP]]</p></td></tr></tbody></table><p>Far from bustling cities, amid the trees of trackless forests and across wide plains, Rangers keep their unending watch in the wilderness. Rangers learn to track their quarry as a predator does, moving stealthily through the wilds and hiding themselves in brush and rubble.</p><p>Thanks to their connection with nature, Rangers can also cast spells that harness primal powers of the wilderness. A Ranger’s talents and magic are honed with deadly focus to protect the world from the ravages of monsters and tyrants.</p><h2>Becoming a Ranger …</h2><h3>As a Level 1 Character</h3><ul><li>Gain all the traits in the Core Ranger Traits table.</li><li>Gain the Ranger’s level 1 features, which are listed in the Ranger Features table.</li></ul><h3>As a Multiclass Character</h3><ul><li>Gain the following traits from the Core Ranger Traits table: Hit Point Die, proficiency with Martial weapons, proficiency in one skill of your choice from the Ranger’s skill list, and training with Light and Medium armor and Shields.</li><li>Gain the Ranger’s level 1 features, which are listed in the Ranger Features table. See the multiclassing rules in chapter 2 to determine your available spell slots.</li></ul>",
-            "advancement": {
-                "Class Features": {
-                    "title": "Class Features"
-                },
-                "0XJhkNDTm9P3K5n3": {
-                    "title": "Class Features"
-                },
-                "onoWzEIWhrrG4QJt": {
-                    "title": "Class Features"
-                },
-                "fEmkkyi2Z6qGfYOZ": {
-                    "title": "Class Features"
-                },
-                "fy2LFc8UC9PTq4aF": {
-                    "title": "Class Features"
-                },
-                "Expertise": {
-                    "title": "Expertise"
-                },
-                "tfv4CeK2F4fdZMMi": {
-                    "title": "Class Features"
-                },
-                "yMKZmo7nE6oSFMD0": {
-                    "title": "Class Features"
-                },
-                "zurYQjBBNQW92SAz": {
-                    "title": "Class Features"
-                },
-                "c3CqyzFeTFA5Yq8u": {
-                    "title": "Class Features"
-                },
-                "e1EWIvBos04kIm4n": {
-                    "title": "Class Features"
-                },
-                "M9VOxnHqo0qYtwGb": {
-                    "title": "Class Features"
-                },
-                "Favored Enemy": {
-                    "title": "Favored Enemy"
-                },
-                "FksFWNV4X4lTFlvO": {
-                    "title": "Favored Enemy"
-                },
-                "Deft Explorer": {
-                    "title": "Deft Explorer"
-                },
-                "wzh6lW4bOlQy4geS": {
-                    "title": "Deft Explorer"
-                },
-                "Hunter's Mark Damage": {
-                    "title": "Hunter's Mark Damage"
-                },
-                "Max Prepared Spells": {
-                    "title": "Max Prepared Spells"
-                },
-                "Saving Throw Proficiencies": {
-                    "title": "Saving Throw Proficiencies"
-                },
-                "Skill Proficiencies": {
-                    "title": "Skill Proficiencies"
-                },
-                "Weapon Proficiencies": {
-                    "title": "Weapon Proficiencies"
-                },
-                "Armor Training": {
-                    "title": "Armor Training"
-                },
-                "491B9spyMvoNt2ij": {
-                    "title": "Skill Proficiencies"
-                },
-                "Fighting Style": {
-                    "title": "Fighting Style"
-                },
-                "Weapon Mastery": {
-                    "title": "Weapon Mastery"
-                },
-                "wXbfWOQp62GRMMlZ": {
-                    "title": "Weapon Proficiencies"
-                },
-                "Epic Boon": {
-                    "title": "Epic Boon"
-                }
-            }
+            "description": "<blockquote><p>A Wandering Warrior Imbued with Primal Magic</p></blockquote><h3>Core Ranger Traits</h3><table class=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p><strong>Primary Ability</strong></p></th><td><p>Dexterity and Wisdom</p></td></tr><tr><th scope=\"row\"><p><strong>Hit Point Die</strong></p></th><td><p>D10 per Ranger level</p></td></tr><tr><th scope=\"row\"><p><strong>Saving Throw Proficiencies</strong></p></th><td><p>Strength and Dexterity</p></td></tr><tr><th scope=\"row\"><p><strong>Skill Proficiencies</strong></p></th><td><p><em>Choose 3:</em> Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, or Survival</p></td></tr><tr><th scope=\"row\"><p><strong>Weapon Proficiencies</strong></p></th><td><p>Simple and Martial weapons</p></td></tr><tr><th scope=\"row\"><p><strong>Armor Training</strong></p></th><td><p>Light and Medium armor and Shields</p></td></tr><tr><th scope=\"row\"><p><strong>Starting Equipment</strong></p></th><td><p><em>Choose A or B: </em>(A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmStuddedLea]{Studded Leather Armor}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepScimitar00]{Scimitar}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepShortsword]{Shortsword}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepLongbow000]{Longbow}, 20 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoArrows0000]{Arrows}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagQuiver00000]{Quiver}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagDruidicFocu]{Druidic Focus} (@UUID[Compendium.dnd-players-handbook.equipment.Item.phbdfcSprigofmis]{sprig of mistletoe}), @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagExplorersPa]{Explorer’s Pack}, and [[/award 7GP]]; or (B) [[/award 150GP]]</p></td></tr></tbody></table><p>Far from bustling cities, amid the trees of trackless forests and across wide plains, Rangers keep their unending watch in the wilderness. Rangers learn to track their quarry as a predator does, moving stealthily through the wilds and hiding themselves in brush and rubble.</p><p>Thanks to their connection with nature, Rangers can also cast spells that harness primal powers of the wilderness. A Ranger’s talents and magic are honed with deadly focus to protect the world from the ravages of monsters and tyrants.</p><h2>Becoming a Ranger …</h2><h3>As a Level 1 Character</h3><ul><li>Gain all the traits in the Core Ranger Traits table.</li><li>Gain the Ranger’s level 1 features, which are listed in the Ranger Features table.</li></ul><h3>As a Multiclass Character</h3><ul><li>Gain the following traits from the Core Ranger Traits table: Hit Point Die, proficiency with Martial weapons, proficiency in one skill of your choice from the Ranger’s skill list, and training with Light and Medium armor and Shields.</li><li>Gain the Ranger’s level 1 features, which are listed in the Ranger Features table. See the multiclassing rules in chapter 2 to determine your available spell slots.</li></ul>"
         },
         "Reckless Attack": {
             "name": "Reckless Attack",
@@ -5200,7 +5009,10 @@
             "effects": {
                 "Repelling Blast": {
                     "name": "Repelling Blast",
-                    "description": "<p>Choose one of your known Warlock cantrips that requires an attack roll. When you hit a Large or smaller creature with that cantrip, you can push the creature up to 10 feet straight away from you.</p>"
+                    "description": "<p>Choose one of your known Warlock cantrips that requires an attack roll. When you hit a Large or smaller creature with that cantrip, you can push the creature up to 10 feet straight away from you.</p>",
+                    "changes": {
+                        "name": ", Repelling"
+                    }
                 }
             }
         },
@@ -5235,7 +5047,7 @@
         },
         "Revelation in Flesh": {
             "name": "Revelation in Flesh",
-            "description": "<p>You can unleash the aberrant truth hidden within yourself. As a Bonus Action, you can spend 1 Sorcery Point or more to magically alter your body for 10 minutes. For each Sorcery Point you spend, you gain one of the following benefits of your choice, the effects of which last until the alteration ends.</p><p><strong>Aquatic Adaptation.</strong> You gain a Swim Speed equal to twice your Speed, and you can breathe underwater. Gills grow from your neck or flare behind your ears, and your fingers become webbed or you grow wriggling cilia.</p><p><strong>Glistening Flight.</strong> You gain a Fly Speed equal to your Speed, and you can hover. As you fly, your skin glistens with mucus or otherworldly light.</p><p><strong>See the Invisible.</strong> You can see any Invisible creature within 60 feet of yourself that isn’t behind Total Cover. Your eyes also turn black or become writhing sensory tendrils.</p><p><strong>Wormlike Movement.</strong> Your body, along with any equipment you are wearing or carrying, becomes slimy and pliable. You can move through any space as narrow as 1 inch, and you can spend 5 feet of movement to escape from nonmagical restraints or the Grappled condition.</p><section id=\"secret-jX8dvHDf5youPS4j\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Expend Sorcery Points</strong> activity will let you select the number of Sorcery Points you would like to expend. It includes an Active Effect for each option which can be used for tracking but does not automate their changes.</p></section>",
+            "description": "<p>You can unleash the aberrant truth hidden within yourself. As a Bonus Action, you can spend 1 Sorcery Point or more to magically alter your body for 10 minutes. For each Sorcery Point you spend, you gain one of the following benefits of your choice, the effects of which last until the alteration ends.</p><p><strong>Aquatic Adaptation.</strong> You gain a Swim Speed equal to twice your Speed, and you can breathe underwater. Gills grow from your neck or flare behind your ears, and your fingers become webbed or you grow wriggling cilia.</p><p><strong>Glistening Flight.</strong> You gain a Fly Speed equal to your Speed, and you can hover. As you fly, your skin glistens with mucus or otherworldly light.</p><p><strong>See the Invisible.</strong> You can see any Invisible creature within 60 feet of yourself that isn’t behind Total Cover. Your eyes also turn black or become writhing sensory tendrils.</p><p><strong>Wormlike Movement.</strong> Your body, along with any equipment you are wearing or carrying, becomes slimy and pliable. You can move through any space as narrow as 1 inch, and you can spend 5 feet of movement to escape from nonmagical restraints or the Grappled condition.</p><section class=\"secret\" id=\"secret-jX8dvHDf5youPS4j\"><p><strong>Foundry Note</strong></p><p>The <strong>Expend Sorcery Points</strong> activity will let you select the number of Sorcery Points you would like to expend.</p></section>",
             "activities": {
                 "Expend Sorcery Points": {
                     "name": "Expend Sorcery Points"
@@ -5350,7 +5162,7 @@
         },
         "Roving": {
             "name": "Roving",
-            "description": "<p>Your Speed increases by 10 feet while you aren’t wearing Heavy armor. You also have a Climb Speed and a Swim Speed equal to your Speed.</p><section class=\"secret\" id=\"secret-XnQYiG0fJWJSHkQw\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which increases your Speed by 10 feet. It does not automatically grant an equivalent Climb and Swim Speed though. It can be disabled if you choose to wear Heavy armor.</p></section>",
+            "description": "<p>Your Speed increases by 10 feet while you aren’t wearing Heavy armor. You also have a Climb Speed and a Swim Speed equal to your Speed.</p><section class=\"secret\" id=\"secret-XnQYiG0fJWJSHkQw\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which can be disabled if you are wearing Heavy armor.</p></section>",
             "effects": {
                 "Roving": {
                     "name": "Roving"
@@ -5362,7 +5174,10 @@
             "description": "<p>When you take the Attack action, you can expend one use of your Channel Divinity to imbue one Melee weapon that you are holding with positive energy. For 10 minutes or until you use this feature again, you add your Charisma modifier to attack rolls you make with that weapon (minimum bonus of +1), and each time you hit with it, you cause it to deal its normal damage type or Radiant damage.</p><p>The weapon also emits Bright Light in a 20-foot radius and Dim Light 20 feet beyond that.</p><p>You can end this effect early (no action required). This effect also ends if you aren’t carrying the weapon.</p>",
             "effects": {
                 "Sacred Weapon": {
-                    "name": "Sacred Weapon"
+                    "name": "Sacred Weapon",
+                    "changes": {
+                        "name": ", Sacred Weapon"
+                    }
                 }
             }
         },
@@ -5413,7 +5228,12 @@
         },
         "Second-Story Work": {
             "name": "Second-Story Work",
-            "description": "<p>You’ve trained to get into especially hard-to-reach places, granting you these benefits.</p><p><strong>Climber.</strong> You gain a Climb Speed equal to your Speed.</p><p><strong>Jumper.</strong> You can determine your &amp;Reference[Jumping]{jump} distance using your Dexterity rather than your Strength.</p><section class=\"secret\" id=\"secret-7BCLTkAFUjinYhJw\"><p><strong>Foundry Note</strong></p><p>This feature does not automatically add the Climb Speed and will have to be added manually.</p></section>"
+            "description": "<p>You’ve trained to get into especially hard-to-reach places, granting you these benefits.</p><p><strong>Climber.</strong> You gain a Climb Speed equal to your Speed.</p><p><strong>Jumper.</strong> You can determine your &amp;Reference[Jumping]{jump} distance using your Dexterity rather than your Strength.</p><section class=\"secret\" id=\"secret-7BCLTkAFUjinYhJw\"><p><strong>Foundry Note</strong></p><p>This feature does not automatically add the Climb Speed and will have to be added manually.</p></section>",
+            "effects": {
+                "Second-Story Work": {
+                    "name": "Second-Story Work"
+                }
+            }
         },
         "Seeking Spell": {
             "name": "Seeking Spell",
@@ -5432,12 +5252,7 @@
         },
         "Shadow Arts": {
             "name": "Shadow Arts",
-            "description": "<p>You have learned to draw on the power of the Shadow­fell, gaining the following benefits.</p><p><strong>Darkness.</strong> You can expend 1 Focus Point to cast the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]{Darkness} spell without spell components. You can see within the spell's area when you cast it with this feature. While the spell persists, you can move its area of Darkness to a space within 60 feet of yourself at the start of each of your turns.</p><p><strong>Darkvision.</strong> You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p><p><strong>Shadowy Figments.</strong> You know the Minor Illusion spell. Wisdom is your spellcasting ability for it.</p><section class=\"secret\" id=\"secret-wd4smhB7uw8Awq0x\"><p><strong>Foundry Note</strong></p><p>The <strong>Expend Focus Point</strong> activity expends a use and you can then use the [[/item Darkness]] spell which is granted to you at this level.</p><p>This feature includes an Active Effect that increases your Darkvision.</p><p>You are granted the Minor Illusion spell when you reach this level.</p></section>",
-            "activities": {
-                "Expend Focus Point": {
-                    "name": "Expend Focus Point"
-                }
-            },
+            "description": "<p>You have learned to draw on the power of the Shadow­fell, gaining the following benefits.</p><p><strong>Darkness.</strong> You can expend 1 Focus Point to cast the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]{Darkness} spell without spell components. You can see within the spell's area when you cast it with this feature. While the spell persists, you can move its area of Darkness to a space within 60 feet of yourself at the start of each of your turns.</p><p><strong>Darkvision.</strong> You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p><p><strong>Shadowy Figments.</strong> You know the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMinorIllus]{Minor Illusion} spell. Wisdom is your spellcasting ability for it.</p>",
             "effects": {
                 "Shadow Art Vision": {
                     "name": "Shadow Art Vision"
@@ -5491,7 +5306,10 @@
             "effects": {
                 "Signature": {
                     "name": "Signature",
-                    "description": "<p>Choose two level 3 spells in your spellbook as your signature spells. You always have these spells prepared, and you can cast each of them once at level 3 without expending a spell slot. When you do so, you can’t cast them in this way again until you finish a Short or Long Rest. To cast either spell at a higher level, you must expend a spell slot.</p>"
+                    "description": "<p>Choose two level 3 spells in your spellbook as your signature spells. You always have these spells prepared, and you can cast each of them once at level 3 without expending a spell slot. When you do so, you can’t cast them in this way again until you finish a Short or Long Rest. To cast either spell at a higher level, you must expend a spell slot.</p>",
+                    "changes": {
+                        "name": ", Signature"
+                    }
                 }
             }
         },
@@ -5647,7 +5465,10 @@
             },
             "effects": {
                 "Mastered": {
-                    "name": "Mastered"
+                    "name": "Mastered",
+                    "changes": {
+                        "name": ", Mastered"
+                    }
                 }
             }
         },
@@ -5726,6 +5547,10 @@
                 },
                 "Starry Form": {
                     "name": "Starry Form"
+                },
+                "Dragon Form (Twinkling)": {
+                    "name": "Dragon Form (Twinkling)",
+                    "description": "<p>A constellation of a wise dragon appears on you. When you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.</p><p>You have a Fly Speed of 20 feet and can hover.</p>"
                 }
             }
         },
@@ -5766,7 +5591,7 @@
         },
         "Stormborn": {
             "name": "Stormborn",
-            "description": "<p>Your Wrath of the Sea confers two more benefits while active, as detailed below.</p><p><strong>Flight.</strong> You gain a Fly Speed equal to your Speed.</p><p><strong>Resistance.</strong> You have Resistance to Cold, Lightning, and Thunder damage.</p><section class=\"secret\" id=\"secret-gM39tGMfj0IPiND0\"><p><strong>Foundry Note</strong></p><p>You can use this feature in place of Wrath of the Sea. It includes an Active Effect which will automate the addition of the Resistances. It does not add the Fly Speed though.</p></section>",
+            "description": "<p>Your Wrath of the Sea confers two more benefits while active, as detailed below.</p><p><strong>Flight.</strong> You gain a Fly Speed equal to your Speed.</p><p><strong>Resistance.</strong> You have Resistance to Cold, Lightning, and Thunder damage.</p><section class=\"secret\" id=\"secret-gM39tGMfj0IPiND0\"><p><strong>Foundry Note</strong></p><p>You can use this feature in place of Wrath of the Sea. It includes an Active Effect which will automate the addition of the Resistances and Fly Speed.</p></section>",
             "requirements": "Circle of the Sea",
             "activities": {
                 "save": {
@@ -5781,7 +5606,7 @@
         },
         "Stride of the Elements": {
             "name": "Stride of the Elements",
-            "description": "<p>While your Elemental Attunement is active, you also have a Fly Speed and a Swim Speed equal to your Speed.</p><section id=\"secret-2VpFYVEuPixaVTaH\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature does not automatically grant the Fly and Swim Speed.</p></section>"
+            "description": "<p>While your Elemental Attunement is active, you also have a Fly Speed and a Swim Speed equal to your Speed.</p><section class=\"secret\" id=\"secret-2VpFYVEuPixaVTaH\"><p><strong>Foundry Note</strong></p><p>These changes are handled by your <strong>Elemental Attunement</strong> feature.</p></section>"
         },
         "Stroke of Luck": {
             "name": "Stroke of Luck",
@@ -5804,7 +5629,7 @@
         },
         "Stunning Strike": {
             "name": "Stunning Strike",
-            "description": "<p>Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus Point to attempt a stunning strike. The target must make a Constitution saving throw. On a failed save, the target has the Stunned condition until the start of your next turn. On a successful save, the target's Speed is halved until the start of your next turn, and the next attack roll made against the target before then has Advantage.</p><section class=\"secret\" id=\"secret-bfJBOqZfcoIiBtoP\"><p><strong>Foundry Note</strong></p><p>This feature includes the Saving Throw and a Stunned Active Effect which applies the Stunned status if they fail and a Slowed Active Effect for tracking that their Speed is halved and that the next attack roll made against them has Advantage if they succeed.</p></section>",
+            "description": "<p>Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus Point to attempt a stunning strike. The target must make a Constitution saving throw. On a failed save, the target has the &amp;Reference[Stunned apply=false] condition until the start of your next turn. On a successful save, the target's Speed is halved until the start of your next turn, and the next attack roll made against the target before then has Advantage.</p><section class=\"secret\" id=\"secret-bfJBOqZfcoIiBtoP\"><p><strong>Foundry Note</strong></p><p>This feature includes the Saving Throw and a Stunned Active Effect which applies the Stunned status if they fail and a Slowed Active Effect for tracking that their Speed is halved and that the next attack roll made against them has Advantage if they succeed.</p></section>",
             "activities": {
                 "save": {
                     "condition": "Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike",
@@ -6001,7 +5826,7 @@
         },
         "Tandem Footwork": {
             "name": "Tandem Footwork",
-            "description": "<p>When you roll Initiative, you can expend one use of your Bardic Inspiration if you don't have the &amp;Reference[Incapacitated] condition. When you do so, roll your Bardic Inspiration die; you and each ally within 30 feet of you who can see or hear you gains a bonus to Initiative equal to the number rolled.</p><section class=\"secret\" id=\"secret-nQrxfDcx2JC1jNO2\"><p><strong>Foundry Note</strong></p><p>Using this feature will consume a usage of your Bardic Inspiration.</p></section>",
+            "description": "<p>When you roll Initiative, you can expend one use of your Bardic Inspiration if you don't have the &amp;Reference[Incapacitated] condition. When you do so, roll your Bardic Inspiration die; you and each ally within 30 feet of you who can see or hear you gains a bonus to Initiative equal to the number rolled.</p>",
             "requirements": "College of Dance",
             "activities": {
                 "Initiative Bonus": {
@@ -6016,7 +5841,7 @@
         },
         "Telekinetic Adept": {
             "name": "Telekinetic Adept",
-            "description": "<p>You have mastered new ways to use your telekinetic abilities, detailed below.</p><p><strong>Psi-Powered Leap.</strong> As a Bonus Action, you gain a Fly Speed equal to twice your Speed until the end of the current turn. Once you take this Bonus Action, you can't do so again until you finish a Short or Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.</p><p><strong>Telekinetic Thrust.</strong> When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw (DC 8 plus your Intelligence modifier and Proficiency Bonus). On a failed save, you can give the target the Prone condition or transport it up to 10 feet horizontally.</p><section id=\"secret-3FJveOZHh3M7CaKV\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Psi-Powered Leap</strong> activity includes a free use and you can use the <strong>Psi-Powered Leap Using Psionic Energy</strong> activity to use it again with a Psionic Energy Die. It does not automate the addition of the Fly Speed.</p><p>The <strong>Telekinetic Thrust</strong> activity includes an Active Effect which will can apply the Prone condition.</p></section>",
+            "description": "<p>You have mastered new ways to use your telekinetic abilities, detailed below.</p><p><strong>Psi-Powered Leap.</strong> As a Bonus Action, you gain a Fly Speed equal to twice your Speed until the end of the current turn. Once you take this Bonus Action, you can't do so again until you finish a Short or Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.</p><p><strong>Telekinetic Thrust.</strong> When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw (DC 8 plus your Intelligence modifier and Proficiency Bonus). On a failed save, you can give the target the Prone condition or transport it up to 10 feet horizontally.</p><section class=\"secret\" id=\"secret-3FJveOZHh3M7CaKV\"><p><strong>Foundry Note</strong></p><p>The <strong>Psi-Powered Leap</strong> activity includes a free use and you can use the <strong>Psi-Powered Leap Using Psionic Energy</strong> activity to use it again with a Psionic Energy Die.</p><p>The <strong>Telekinetic Thrust</strong> activity includes an Active Effect which will can apply the Prone condition.</p></section>",
             "activities": {
                 "Psi-Powered Leap": {
                     "name": "Psi-Powered Leap"
@@ -6032,8 +5857,11 @@
                 }
             },
             "effects": {
-                "Telekinetic Thrust": {
-                    "name": "Telekinetic Thrust"
+                "Prone": {
+                    "name": "Prone"
+                },
+                "Psi-Powered Leap": {
+                    "name": "Psi-Powered Leap"
                 }
             }
         },
@@ -6127,7 +5955,15 @@
         },
         "Tides of Chaos": {
             "name": "Tides of Chaos",
-            "description": "<p>You can manipulate chaos itself to give yourself Advantage on one D20 Test before you roll the d20. Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Long Rest before you can use this feature again.</p><p>If you do cast a Sorcerer spell with a spell slot before you finish a Long Rest, you automatically roll on the @UUID[Compendium.dnd-players-handbook.tables.RollTable.phbWildMagicSurg]{Wild Magic Surge} table.</p>"
+            "description": "<p>You can manipulate chaos itself to give yourself Advantage on one D20 Test before you roll the d20. Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Long Rest before you can use this feature again.</p><p>If you do cast a Sorcerer spell with a spell slot before you finish a Long Rest, you automatically roll on the @UUID[Compendium.dnd-players-handbook.tables.RollTable.phbWildMagicSurg]{Wild Magic Surge} table.</p>",
+            "activities": {
+                "Expend for Advantage": {
+                    "name": "Expend for Advantage"
+                },
+                "Recharge from Spell": {
+                    "name": "Recharge from Spell"
+                }
+            }
         },
         "Tireless": {
             "name": "Tireless",
@@ -6232,17 +6068,21 @@
         },
         "Trip Attack": {
             "name": "Trip Attack",
-            "description": "<p>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die and add the die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or have the &amp;Reference[Prone] condition.</p><section class=\"secret\" id=\"secret-QeXYRpr665AxyLvo\"><p><strong>Foundry Note</strong></p><p>This feature will automatically use the higher of your Strength/Dexterity for the save.</p><p>The Damage included in the save allows you to select the type of damage it should deal in the roll dialog. It will remember your choice going forwards.</p></section>",
+            "description": "<p>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die and add the die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or have the &amp;Reference[Prone] condition.</p>",
             "activities": {
-                "save": {
-                    "condition": "When you hit a creature with an attack roll",
-                    "activationCondition": "When you hit a creature with an attack roll",
+                "Strength Save": {
+                    "name": "Strength Save",
                     "damageOnSave": "full"
+                },
+                "Superiority Die": {
+                    "name": "Superiority Die",
+                    "condition": "When you hit a creature with an attack roll",
+                    "activationCondition": "When you hit a creature with an attack roll"
                 }
             },
             "effects": {
-                "Tripped": {
-                    "name": "Tripped"
+                "Prone": {
+                    "name": "Prone"
                 }
             }
         },
@@ -6309,7 +6149,7 @@
         },
         "Unarmored Movement": {
             "name": "Unarmored Movement",
-            "description": "<p>Your speed increases by 10 feet while you aren't wearing armor or wielding a Shield. This bonus increases when you reach certain Monk levels, as shown on the Monk Features table.</p><p><strong>Current Increase:</strong> [[lookup @scale.monk.unarmored-movement]]</p><section id=\"secret-2fH97uVacHRVqDCo\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature includes an Unarmored Movement Active Effect which adds 10 feet to your Movement. It can not automatically update as you level up though. You can edit the value to match your current increase.</p></section>",
+            "description": "<p>Your speed increases by 10 feet while you aren't wearing armor or wielding a Shield. This bonus increases when you reach certain Monk levels, as shown on the Monk Features table.</p><p class=\"hide-in-embed\"><strong>Current Increase:</strong> [[lookup @scale.monk.unarmored-movement]]</p>",
             "effects": {
                 "Unarmored Movement": {
                     "name": "Unarmored Movement"
@@ -6441,7 +6281,10 @@
             "effects": {
                 "War Bond": {
                     "name": "War Bond",
-                    "description": "<p>Once you have bonded a weapon to yourself, you can't be disarmed of that weapon unless you have the Incapacitated condition. If it is on the same plane of existence, you can summon that weapon as a Bonus Action, causing it to teleport instantly to your hand.</p>"
+                    "description": "<p>Once you have bonded a weapon to yourself, you can't be disarmed of that weapon unless you have the Incapacitated condition. If it is on the same plane of existence, you can summon that weapon as a Bonus Action, causing it to teleport instantly to your hand.</p>",
+                    "changes": {
+                        "name": ", War Bonded"
+                    }
                 }
             }
         },
@@ -6474,18 +6317,13 @@
         },
         "War Domain Spells": {
             "name": "War Domain Spells",
-            "description": "<p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the War Domain Spells table, you thereafter always have the listed spells prepared.</p><table><caption>War Domain Spells</caption><thead><tr><td>Cleric Level</td><td>Prepared Spells</td></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGuidingBol]{Guiding Bolt}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMagicWeapo]{Magic Weapon}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShieldofFa]{Shield of Faith}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritualW]{Spiritual Weapon}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCrusadersM]{Crusader's Mantle}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritGuar]{Spirit Guardians}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireShield]{Fire Shield}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFreedomofM]{Freedom of Movement}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHoldMonste]{Hold Monster}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSteelWindS]{Steel Wind Strike}</td></tr></tbody></table><section class=\"secret\" id=\"secret-Qu99GvyNrwjfGfHE\"><p><strong>Foundry Note</strong></p><p>These spells are granted automatically as you advance.</p></section>",
+            "description": "<p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the War Domain Spells table, you thereafter always have the listed spells prepared.</p><table><caption>War Domain Spells</caption><thead><tr><td>Cleric Level</td><td>Prepared Spells</td></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGuidingBol]{Guiding Bolt}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMagicWeapo]{Magic Weapon}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShieldofFa]{Shield of Faith}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritualW]{Spiritual Weapon}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCrusadersM]{Crusader's Mantle}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritGuar]{Spirit Guardians}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireShield]{Fire Shield}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFreedomofM]{Freedom of Movement}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHoldMonste]{Hold Monster}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSteelWindS]{Steel Wind Strike}</td></tr></tbody></table>",
             "requirements": "War Domain"
         },
         "War God's Blessing": {
             "name": "War God's Blessing",
-            "description": "<p>You can expend a use of your Channel Divinity to cast @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShieldofFa]{Shield of Faith} or @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritualW]{Spiritual Weapon} rather than expending a spell slot. When you cast either spell in this way, the spell doesn't require Concentration. Instead the spell lasts for 1 minute, but it ends early if you cast that spell again, have the Incapacitated condition, or die.</p><section id=\"secret-Aj9Z4ttMu8G9e9Li\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>When casting the spell uncheck the \"Consumption\" checkbox and the \"Concentration\" checkbox.</p></section>",
-            "requirements": "War Domain",
-            "activities": {
-                "Expend Channel Divinity": {
-                    "name": "Expend Channel Divinity"
-                }
-            }
+            "description": "<p>You can expend a use of your Channel Divinity to cast @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShieldofFa]{Shield of Faith} or @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritualW]{Spiritual Weapon} rather than expending a spell slot. When you cast either spell in this way, the spell doesn't require Concentration. Instead the spell lasts for 1 minute, but it ends early if you cast that spell again, have the Incapacitated condition, or die.</p>",
+            "requirements": "War Domain"
         },
         "War Magic": {
             "name": "War Magic",
@@ -6614,27 +6452,7 @@
         },
         "Warrior of Shadow": {
             "name": "Warrior of Shadow",
-            "description": "<blockquote><p>Harness Shadow Power for Stealth and Subterfuge</p></blockquote><p>Warriors of Shadow practice stealth and subterfuge, harnessing the power of the Shadowfell. They are at home in darkness, able to draw gloom around themselves to hide, leap from shadow to shadow, and take on a wraithlike form.</p>",
-            "advancement": {
-                "Subclass Features": {
-                    "title": "Subclass Features"
-                },
-                "KKc6VtzWsSGh2NnC": {
-                    "title": "Subclass Features"
-                },
-                "M7cvHrnI6p0Yo150": {
-                    "title": "Subclass Features"
-                },
-                "1kqB8Z5f6UcgmGjY": {
-                    "title": "Subclass Features"
-                },
-                "Shadow Arts": {
-                    "title": "Shadow Arts"
-                },
-                "LpEqumfqKaiLQHvK": {
-                    "title": "Shadow Arts"
-                }
-            }
+            "description": "<blockquote><p>Harness Shadow Power for Stealth and Subterfuge</p></blockquote><p>Warriors of Shadow practice stealth and subterfuge, harnessing the power of the Shadowfell. They are at home in darkness, able to draw gloom around themselves to hide, leap from shadow to shadow, and take on a wraithlike form.</p>"
         },
         "Warrior of the Elements": {
             "name": "Warrior of the Elements",
@@ -6659,7 +6477,7 @@
         },
         "Warrior of the Gods": {
             "name": "Warrior of the Gods",
-            "description": "<p>A divine entity helps ensure you can continue the fight. You have a pool of four d12s that you can spend to heal yourself. As a Bonus Action, you can expend dice from the pool, roll them, and regain a number of Hit Points equal to the roll's total.</p><p>Your pool regains all expended dice when you finish a Long Rest.</p><p>The pool's maximum number of dice increases by one when you reach Barbarian levels 6 (5 dice), 12 (6 dice), and 17 (7 dice).</p><section class=\"secret\" id=\"secret-er80mQOJaHK8ww7M\"><p><strong>Foundry Note</strong></p><p>The pool size is automatically handled in this feature's scale value advancement.</p></section>",
+            "description": "<p>A divine entity helps ensure you can continue the fight. You have a pool of four d12s that you can spend to heal yourself. As a Bonus Action, you can expend dice from the pool, roll them, and regain a number of Hit Points equal to the roll's total.</p><p>Your pool regains all expended dice when you finish a Long Rest.</p><p>The pool's maximum number of dice increases by one when you reach Barbarian levels 6 (5 dice), 12 (6 dice), and 17 (7 dice).</p>",
             "requirements": "Path of the Zealot",
             "advancement": {
                 "Pool Size": {

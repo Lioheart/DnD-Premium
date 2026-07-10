@@ -115,7 +115,7 @@
         },
         "Aid": {
             "name": "Aid",
-            "description": "<p>Choose up to three creatures within range. Each target’s Hit Point maximum and current Hit Points increase by 5 for the duration.</p><p><strong>Using a Higher-Level Spell Slot. </strong>Each target’s Hit Points increase by 5 for each spell slot level above 2.</p><section id=\"secret-u9DpSmufNhFMDGmN\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The default <strong>Heal</strong> activity is configured with multiple Active Effects representing the temporary maximum Hit Points provided by this spell.</p><p>Users should apply the appropriate Active Effect for the spell slot level used in the casting of this spell.</p></section>",
+            "description": "<p>Choose up to three creatures within range. Each target's Hit Point maximum and current Hit Points increase by 5 for the duration.</p><p><strong>Using a Higher-Level Spell Slot. </strong>Each target's Hit Points increase by 5 for each spell slot level above 2.</p>",
             "materials": "a strip of white cloth",
             "effects": {
                 "Level 2: +5 Max HP": {
@@ -167,7 +167,7 @@
         },
         "Alter Self": {
             "name": "Alter Self",
-            "description": "<p>You alter your physical form. Choose one of the following options. Its effects last for the duration, during which you can take a Magic action to replace the option you chose with a different one.</p><p><strong>Aquatic Adaptation.</strong> You sprout gills and grow webs between your fingers. You can breathe underwater and gain a Swim Speed equal to your Speed.</p><section class=\"secret\" id=\"secret-7sTILHJaR1io7TWi\"><p><strong>Foundry Note</strong></p><p>The Active Effect provided by the <strong>Aquatic Adaptation</strong> activity upgrades the character's Swim Speed to a value of \"1\" to indicate equivalence to (walk) Speed.</p></section><p><strong>Change Appearance.</strong> You alter your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and other distinguishing characteristics. You can make yourself appear as a member of another species, though none of your statistics change. You can’t appear as a creature of a different size, and your basic shape stays the same; if you’re bipedal, you can’t use this spell to become quadrupedal, for instance. For the duration, you can take a Magic action to change your appearance in this way again.</p><p><strong>Natural Weapons. </strong>You grow claws (Slashing), fangs (Piercing), horns (Piercing), or hooves (Bludgeoning). When you use your Unarmed Strike to deal damage with that new growth, it deals 1d6 damage of the type in parentheses instead of dealing the normal damage for your Unarmed Strike, and you use your spellcasting ability modifier for the attack and damage rolls rather than using Strength.</p>",
+            "description": "<p>You alter your physical form. Choose one of the following options. Its effects last for the duration, during which you can take a Magic action to replace the option you chose with a different one.</p><p><strong>Aquatic Adaptation.</strong> You sprout gills and grow webs between your fingers. You can breathe underwater and gain a Swim Speed equal to your Speed.</p><p><strong>Change Appearance.</strong> You alter your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and other distinguishing characteristics. You can make yourself appear as a member of another species, though none of your statistics change. You can’t appear as a creature of a different size, and your basic shape stays the same; if you’re bipedal, you can’t use this spell to become quadrupedal, for instance. For the duration, you can take a Magic action to change your appearance in this way again.</p><p><strong>Natural Weapons. </strong>You grow claws (Slashing), fangs (Piercing), horns (Piercing), or hooves (Bludgeoning). When you use your Unarmed Strike to deal damage with that new growth, it deals 1d6 damage of the type in parentheses instead of dealing the normal damage for your Unarmed Strike, and you use your spellcasting ability modifier for the attack and damage rolls rather than using Strength.</p>",
             "activities": {
                 "Aquatic Adaptation": {
                     "name": "Aquatic Adaptation"
@@ -494,9 +494,12 @@
             "activation": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
             "activationCondition": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
             "activities": {
-                "Damage and Banish": {
-                    "name": "Damage and Banish",
-                    "damageOnSave": "half"
+                "Banishment Save": {
+                    "name": "Banishment Save",
+                    "damageOnSave": "full"
+                },
+                "Damage": {
+                    "name": "Damage"
                 }
             },
             "effects": {
@@ -1072,7 +1075,7 @@
             "description": "<p>Your touch inflicts a magical contagion. The target must succeed on a Constitution saving throw or take 11d8 Necrotic damage and have the &amp;Reference[Poisoned apply=false] condition. Also, choose one ability when you cast the spell. While Poisoned, the target has Disadvantage on saving throws made with the chosen ability.</p><p>The target must repeat the saving throw at the end of each of its turns until it gets three successes or failures. If the target succeeds on three of these saves, the spell ends on the target. If the target fails three of the saves, the spell lasts for 7 days on it.</p><p>Whenever the Poisoned target receives an effect that would end the Poisoned condition, the target must succeed on a [[/save ability=con dc=@attributes.spell.dc format=long]], or the Poisoned condition doesn’t end on it.</p>",
             "activities": {
                 "save": {
-                    "damageOnSave": "half"
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -1113,7 +1116,10 @@
             },
             "effects": {
                 "Contingency Spell": {
-                    "name": "Contingency Spell"
+                    "name": "Contingency Spell",
+                    "changes": {
+                        "name": "Contengency: {}"
+                    }
                 }
             }
         },
@@ -2215,7 +2221,7 @@
         },
         "Giant Insect": {
             "name": "Giant Insect",
-            "description": "<p>You summon a giant centipede, spider, or wasp (chosen when you cast the spell). It manifests in an unoccupied space you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobGiantInsec]{Giant Insect}</strong> stat block. The form you choose determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[Dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>In addition to the noted usage of the spell's level in the insect's Traits and Actions, the following attributes are also affected.</p><table><caption>Giant Insect</caption><tbody><tr><td><strong>AC</strong></td><td>11 + the spell’s level</td></tr><tr><td><strong>HP</strong></td><td>30 + 10 for each spell level above 4</td></tr><tr><td><strong>Speed</strong></td><td>40 ft., Climb 40 ft., Fly 40 ft. (Wasp only)</td></tr><tr><td><strong>PB</strong></td><td>equals your Proficiency Bonus</td></tr></tbody></table></article></section>"
+            "description": "<p>You summon a giant centipede, spider, or wasp (chosen when you cast the spell). It manifests in an unoccupied space you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobGiantInsec]{Giant Insect}</strong> stat block. The form you choose determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[Dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobGiantInsec statblock caption=false]</p>"
         },
         "Glibness": {
             "name": "Glibness",
@@ -2967,15 +2973,24 @@
             "effects": {
                 "Magic Weapon +1": {
                     "name": "Magic Weapon +1",
-                    "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>"
+                    "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
+                    "changes": {
+                        "name": "Magic {} +1"
+                    }
                 },
                 "Magic Weapon +2": {
                     "name": "Magic Weapon +2",
-                    "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +2 bonus to attack rolls and damage rolls.</p>"
+                    "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +2 bonus to attack rolls and damage rolls.</p>",
+                    "changes": {
+                        "name": "Magic {} +2"
+                    }
                 },
                 "Magic Weapon +3": {
                     "name": "Magic Weapon +3",
-                    "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +3 bonus to attack rolls and damage rolls.</p>"
+                    "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +3 bonus to attack rolls and damage rolls.</p>",
+                    "changes": {
+                        "name": "Magic {} +3"
+                    }
                 }
             }
         },
@@ -3756,7 +3771,12 @@
         },
         "Ray of Sickness": {
             "name": "Ray of Sickness",
-            "description": "<p>You shoot a greenish ray at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 Poison damage and has the &amp;Reference[poisoned] condition until the end of your next turn.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d8 for each spell slot level above 1.</p>"
+            "description": "<p>You shoot a greenish ray at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 Poison damage and has the &amp;Reference[poisoned] condition until the end of your next turn.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d8 for each spell slot level above 1.</p>",
+            "effects": {
+                "Poisoned": {
+                    "name": "Poisoned"
+                }
+            }
         },
         "Regenerate": {
             "name": "Regenerate",
@@ -4101,16 +4121,28 @@
             },
             "effects": {
                 "Shillelagh (1d8)": {
-                    "name": "Shillelagh (1d8)"
+                    "name": "Shillelagh (1d8)",
+                    "changes": {
+                        "name": "{} Shillelagh"
+                    }
                 },
                 "Shillelagh (1d10)": {
-                    "name": "Shillelagh (1d10)"
+                    "name": "Shillelagh (1d10)",
+                    "changes": {
+                        "name": "{} (Shillelagh)"
+                    }
                 },
                 "Shillelagh (1d12)": {
-                    "name": "Shillelagh (1d12)"
+                    "name": "Shillelagh (1d12)",
+                    "changes": {
+                        "name": "{} (Shillelagh)"
+                    }
                 },
                 "Shillelagh (2d6)": {
-                    "name": "Shillelagh (2d6)"
+                    "name": "Shillelagh (2d6)",
+                    "changes": {
+                        "name": "{} (Shillelagh)"
+                    }
                 }
             }
         },
@@ -4296,8 +4328,12 @@
             "activation": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
             "activationCondition": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
             "activities": {
-                "save": {
+                "Stun Save": {
+                    "name": "Stun Save",
                     "damageOnSave": "full"
+                },
+                "Damage": {
+                    "name": "Damage"
                 }
             }
         },
@@ -4410,17 +4446,17 @@
         },
         "Summon Aberration": {
             "name": "Summon Aberration",
-            "description": "<p>You call forth an aberrant spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobAberrantSp]{Aberrant Spirit}</strong> stat block. When you cast the spell, choose Beholderkin, Mind Flayer, or Slaad. The creature resembles an Aberration of that kind, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, it shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[Dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>In addition to the noted usage of the spell's level in the spirit's Traits and Actions, the following attributes are also affected.</p><table><caption>Aberrant Spirit</caption><tbody><tr><td><strong>AC</strong></td><td>11 + the spell’s level</td></tr><tr><td><strong>HP</strong></td><td>40 + 10 for each spell level above 4</td></tr><tr><td><strong>Speed</strong></td><td>30 ft.; Fly 30 ft. (hover; Beholderkin only)</td></tr><tr><td><strong>PB</strong></td><td>equals your Proficiency Bonus</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth an aberrant spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobAberrantSp]{Aberrant Spirit}</strong> stat block. When you cast the spell, choose Beholderkin, Mind Flayer, or Slaad. The creature resembles an Aberration of that kind, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, it shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[Dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobAberrantSp statblock caption=false]</p>",
             "materials": "a pickled tentacle and an eyeball in a platinum-inlaid vial worth 400+ GP"
         },
         "Summon Beast": {
             "name": "Summon Beast",
-            "description": "<p>You call forth a bestial spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobBestialSpi]{Bestial Spirit}</strong> stat block. When you cast the spell, choose an environment: Air, Land, or Water. The creature resembles an animal of your choice that is native to the chosen environment, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>In addition to the noted usage of the spell's level in the spirit's Traits and Actions, the following attributes are also affected.</p><table><caption>Bestial Spirit</caption><tbody><tr><td><strong>AC</strong></td><td>11 + the spell’s level</td></tr><tr><td><strong>HP</strong></td><td>20 (Air only) or 30 (Land and Water only) + 5 for each spell level above 2</td></tr><tr><td><strong>Speed</strong></td><td>30 ft.; Climb 30 ft. (Land only); Fly 60 ft. (Air only); Swim 30 ft. (Water only)</td></tr><tr><td><strong>PB</strong></td><td>equals your Proficiency Bonus</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth a bestial spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobBestialSpi]{Bestial Spirit}</strong> stat block. When you cast the spell, choose an environment: Air, Land, or Water. The creature resembles an animal of your choice that is native to the chosen environment, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobBestialSpi statblock caption=false]</p>",
             "materials": "a feather, tuft of fur, and fish tail inside a gilded acorn worth 200+ GP"
         },
         "Summon Celestial": {
             "name": "Summon Celestial",
-            "description": "<p>You call forth a Celestial spirit. It manifests in an angelic form in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobCelestialS]{Celestial Spirit}</strong> stat block. When you cast the spell, choose Avenger or Defender. Your choice determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>In addition to the noted usage of the spell's level in the spirit's Traits and Actions, the following attributes are also affected.</p><table><caption>Celestial Spirit</caption><tbody><tr><td><strong>AC</strong></td><td>11 + the spell’s level + 2 (Defender only)</td></tr><tr><td><strong>HP</strong></td><td>40 + 10 for each spell level above 5</td></tr><tr><td><strong>PB</strong></td><td>equals your Proficiency Bonus</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth a Celestial spirit. It manifests in an angelic form in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobCelestialS]{Celestial Spirit}</strong> stat block. When you cast the spell, choose Avenger or Defender. Your choice determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobCelestialS statblock caption=false]</p>",
             "materials": "a reliquary worth 500+ GP",
             "activities": {
                 "summon": {
@@ -4437,7 +4473,7 @@
         },
         "Summon Construct": {
             "name": "Summon Construct",
-            "description": "<p>You call forth the spirit of a Construct. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobConstructS]{Construct Spirit}</strong> stat block. When you cast the spell, choose a material: Clay, Metal, or Stone. The creature resembles an animate statue (you determine the appearance) made of the chosen material, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[Dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>In addition to the noted usage of the spell's level in the spirit's Traits and Actions, the following attributes are also affected.</p><table><caption>Construct Spirit</caption><tbody><tr><td><strong>AC</strong></td><td>13 + the spell’s level</td></tr><tr><td><strong>HP</strong></td><td>40 + 15 for each spell level above 4</td></tr><tr><td><strong>PB</strong></td><td>equals your Proficiency Bonus</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth the spirit of a Construct. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobConstructS]{Construct Spirit}</strong> stat block. When you cast the spell, choose a material: Clay, Metal, or Stone. The creature resembles an animate statue (you determine the appearance) made of the chosen material, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[Dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobConstructS statblock caption=false]</p>",
             "materials": "a lockbox worth 400+ GP",
             "activities": {
                 "summon": {
@@ -4457,12 +4493,12 @@
         },
         "Summon Dragon": {
             "name": "Summon Dragon",
-            "description": "<p>You call forth a Dragon spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobDraconicSp]{Draconic Spirit}</strong> stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot. </strong>Use the spell slot’s level for the spell’s level in the stat block.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>In addition to the noted usage of the spell's level in the spirit's Traits and Actions, the following attributes are also affected.</p><table><caption>Draconic Spirit</caption><tbody><tr><td><strong>AC</strong></td><td>14 + the spell’s level</td></tr><tr><td><strong>HP</strong></td><td>50 + 10 for each spell level above 5</td></tr><tr><td><strong>PB</strong></td><td>equals your Proficiency Bonus</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth a Dragon spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobDraconicSp]{Draconic Spirit}</strong> stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot. </strong>Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobDraconicSp statblock caption=false]</p>",
             "materials": "an object with the image of a dragon engraved on it worth 500+ GP"
         },
         "Summon Elemental": {
             "name": "Summon Elemental",
-            "description": "<p>You call forth an Elemental spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobElementalS]{Elemental Spirit}</strong> stat block. When you cast the spell, choose an element: Air, Earth, Fire, or Water. The creature resembles a bipedal form wreathed in the chosen element, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[Dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>In addition to the noted usage of the spell's level in the spirit's Traits and Actions, the following attributes are also affected.</p><table><caption>Elemental Spirit</caption><tbody><tr><td><strong>AC</strong></td><td>11 + the spell’s level</td></tr><tr><td><strong>HP</strong></td><td>50 + 10 for each spell level above 4</td></tr><tr><td><strong>Speed</strong></td><td>40 ft.; Burrow 40 ft. (Earth only); Fly 40 ft. (hover; Air only); Swim 40 ft. (Water only)</td></tr><tr><td><strong>PB</strong></td><td>equals your Proficiency Bonus</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth an Elemental spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobElementalS]{Elemental Spirit}</strong> stat block. When you cast the spell, choose an element: Air, Earth, Fire, or Water. The creature resembles a bipedal form wreathed in the chosen element, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[Dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobElementalS statblock caption=false]</p>",
             "materials": "air, a pebble, ash, and water inside a gold-inlaid vial worth 400+ GP",
             "activities": {
                 "summon": {
@@ -4485,12 +4521,12 @@
         },
         "Summon Fey": {
             "name": "Summon Fey",
-            "description": "<p>You call forth a Fey spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobFeySpirit0]{Fey Spirit}</strong> stat block. When you cast the spell, choose a mood: Fuming, Mirthful, or Tricksy. The creature resembles a Fey creature of your choice marked by the chosen mood, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>In addition to the noted usage of the spell's level in the spirit's Traits and Actions, the following attributes are also affected.</p><table><caption>Fey Spirit</caption><tbody><tr><td><strong>AC</strong></td><td>12 + the spell’s level</td></tr><tr><td><strong>HP</strong></td><td>30 + 10 for each spell level above 3</td></tr><tr><td><strong>PB</strong></td><td>equals your Proficiency Bonus</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth a Fey spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobFeySpirit0]{Fey Spirit}</strong> stat block. When you cast the spell, choose a mood: Fuming, Mirthful, or Tricksy. The creature resembles a Fey creature of your choice marked by the chosen mood, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobFeySpirit0 statblock caption=false]</p>",
             "materials": "a gilded flower worth 300+ GP"
         },
         "Summon Fiend": {
             "name": "Summon Fiend",
-            "description": "<p>You call forth a fiendish spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobFiendishSp]{Fiendish Spirit}</strong> stat block. When you cast the spell, choose Demon, Devil, or Yugoloth. The creature resembles a Fiend of the chosen type, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[Dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>In addition to the noted usage of the spell's level in the spirit's Traits and Actions, the following attributes are also affected.</p><table><caption>Fiendish Spirit</caption><tbody><tr><td><strong>AC</strong></td><td>12 + the spell’s level</td></tr><tr><td><strong>HP</strong></td><td>50 (Demon only) or 40 (Devil only) or 60 (Yugoloth only) + 15 for each spell level above 6</td></tr><tr><td><strong>Speed</strong></td><td>40 ft.; Climb 40 ft. (Demon only); Fly 60 ft. (Devil only)</td></tr><tr><td><strong>PB</strong></td><td>equals your Proficiency Bonus</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth a fiendish spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobFiendishSp]{Fiendish Spirit}</strong> stat block. When you cast the spell, choose Demon, Devil, or Yugoloth. The creature resembles a Fiend of the chosen type, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[Dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobFiendishSp statblock caption=false]</p>",
             "materials": "a bloody vial worth 600+ GP",
             "activities": {
                 "summon": {
@@ -4510,7 +4546,7 @@
         },
         "Summon Undead": {
             "name": "Summon Undead",
-            "description": "<p>You call forth an Undead spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobUndeadSpir]{Undead Spirit}</strong> stat block. When you cast the spell, choose the creature’s form: Ghostly, Putrid, or Skeletal. The spirit resembles an Undead creature with the chosen form, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>In addition to the noted usage of the spell's level in the spirit's Traits and Actions, the following attributes are also affected.</p><table><caption>Undead Spirit</caption><tbody><tr><td><strong>AC</strong></td><td>11 + the spell’s level</td></tr><tr><td><strong>HP</strong></td><td>30 (Ghostly and Putrid only) or 20 (Skeletal only) + 10 for each spell level above 3</td></tr><tr><td><strong>Speed</strong></td><td>30 ft.; Fly 40 ft. (hover; Ghostly only)</td></tr><tr><td><strong>PB</strong></td><td>equals your Proficiency Bonus</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth an Undead spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobUndeadSpir]{Undead Spirit}</strong> stat block. When you cast the spell, choose the creature’s form: Ghostly, Putrid, or Skeletal. The spirit resembles an Undead creature with the chosen form, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobUndeadSpir statblock caption=false]</p>",
             "materials": "a gilded skull worth 300+ GP"
         },
         "Sunbeam": {
@@ -4564,7 +4600,10 @@
             },
             "effects": {
                 "Endless Ammunition": {
-                    "name": "Endless Ammunition"
+                    "name": "Endless Ammunition",
+                    "changes": {
+                        "name": "Swift {}"
+                    }
                 }
             }
         },
@@ -4863,7 +4902,10 @@
             },
             "effects": {
                 "True Strike": {
-                    "name": "True Strike"
+                    "name": "True Strike",
+                    "changes": {
+                        "name": "{} (True Strike)"
+                    }
                 }
             }
         },
@@ -5167,8 +5209,12 @@
             "activation": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
             "activationCondition": "immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
             "activities": {
-                "save": {
+                "Frightened Save": {
+                    "name": "Frightened Save",
                     "damageOnSave": "full"
+                },
+                "Damage": {
+                    "name": "Damage"
                 }
             },
             "effects": {
