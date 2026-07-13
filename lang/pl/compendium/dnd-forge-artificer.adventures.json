@@ -42,7 +42,7 @@
                         "Claw": {
                             "name": "Pazury",
                             "description": {
-                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a [[lookup @target.affects.special activity=W1T7dZnG8GMMwyEP]] creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]) from one of two claws.</p>"
+                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest istotą [[lookup @target.affects.special activity=W1T7dZnG8GMMwyEP]], ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]) przez jeden z dwóch pazurów.</p>"
                             }
                         }
                     }
@@ -286,7 +286,7 @@
                             }
                         },
                         "Pummel": {
-                            "name": "Pummel",
+                            "name": "Okładanie pięściami",
                             "description": {
                                 "value": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
                             }
