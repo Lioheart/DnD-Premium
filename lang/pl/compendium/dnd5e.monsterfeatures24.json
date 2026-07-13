@@ -271,12 +271,12 @@
             }
         },
         "Aversion to Fire": {
-            "name": "Aversion to Fire",
+            "name": "Wstręt do ognia",
             "description": "<p>If the [[lookup @name lowercase]]{monster} takes Fire damage, it has Disadvantage on attack rolls and ability checks until the end of its next turn.</p>",
             "requirements": "Takes Fire damage",
             "effects": {
                 "Averse": {
-                    "name": "Averse",
+                    "name": "Wstręt",
                     "description": "<p>Ma Utrudnienie w testach ataku i testach cech do końca swojej następnej tury.</p>"
                 }
             }
@@ -575,7 +575,7 @@
             "effects": {
                 "Grappled & Restrained": {
                     "name": "Pochwycony i Unieruchomiony",
-                    "description": "<p>If the target is a Large or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[/check ability=str skill=ath format=long]], see source item for DC) from one of two chains, and it has the &amp;Reference[Restrained apply=false] condition until the grapple ends.</p>"
+                    "description": "<p>Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[/check ability=str skill=ath format=long]], ST podano w elemencie źródłowym) wskutek pochwycenia przez jeden z dwóch łańcuchów oraz stan &amp;Reference[Restrained apply=false] do zakończenia pochwycenia.</p>"
                 }
             }
         },
@@ -677,7 +677,7 @@
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} uses [[/item Spellcasting]] to cast <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCommand000]{Command}</em> (level 2 version). The [[lookup @name lowercase]]{monster} can't take this action again until the start of its next turn.</p>"
         },
         "Compression": {
-            "name": "Compression",
+            "name": "Kompresja",
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} can move through a space as narrow as 1 inch without expending extra movement to do so.</p>"
         },
         "Confer Fire Resistance": {
@@ -803,7 +803,7 @@
             "effects": {
                 "Restrained": {
                     "name": "Unieruchomiony",
-                    "description": "<p>The target has the &amp;Reference[Restrained apply=false] condition and moves with the whirlwind.</p><p>At the end of each of its turns, the target repeats the save, ending the effect on itself on a success.</p>"
+                    "description": "<p>Cel ma stan &amp;Reference[Restrained apply=false] i porusza się wraz z trąbą powietrzną.</p><p>Na końcu każdej swojej tury cel powtarza rzut obronny, kończąc na sobie ten efekt przy sukcesie.</p>"
                 }
             }
         },
@@ -1247,7 +1247,7 @@
             "effects": {
                 "Poisoned": {
                     "name": "Zatruty",
-                    "description": "<p>The target has the &amp;Reference[Poisoned apply=false] condition until the end of its next turn. While Poisoned, the creature can take either an action or a Bonus Action on its turn, not both, and it can’t take Reactions.</p>"
+                    "description": "<p>Cel ma stan &amp;Reference[Poisoned apply=false] do końca swojej następnej tury. Będąc Zatruta, istota może podczas swojej tury wykonać albo Akcję, albo Akcję Dodatkową, ale nie obie, i nie może używać Reakcji.</p>"
                 }
             }
         },
@@ -1356,7 +1356,7 @@
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Foreleg": {
-            "name": "Foreleg",
+            "name": "Przednie odnóże",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Freeze": {
@@ -1472,7 +1472,7 @@
             }
         },
         "Gouge": {
-            "name": "Gouge",
+            "name": "Dziobanie",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target has the &amp;Reference[Poisoned apply=false] condition until the end of its next turn.</p>",
             "effects": {
                 "Poisoned": {
@@ -1633,7 +1633,7 @@
             "effects": {
                 "Frightened": {
                     "name": "Przerażony",
-                    "description": "<p>The target has the &amp;Reference[Frightened apply=false] condition for 1 minute, until it takes damage, or until it ends its turn with the attacking creature out of line of sight.</p>"
+                    "description": "<p>Cel ma stan &amp;Reference[Frightened apply=false] przez 1 minutę, dopóki nie otrzyma obrażeń albo dopóki nie zakończy swojej tury, nie mając atakującej istoty w polu widzenia.</p>"
                 }
             }
         },
@@ -1673,7 +1673,7 @@
             "description": "<p>The [[lookup @name lowercase]]{monster} sheds Bright Light in a {m}-foot radius and Dim Light for an additional {n} feet.</p>"
         },
         "Illusory Appearance": {
-            "name": "Illusory Appearance",
+            "name": "Złudny wygląd",
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} casts <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDisguiseSe]{Disguise Self}</em>, using Constitution as the spellcasting ability (spell save DC [[lookup @attributes.spell.dc]]). The spell's duration is [[lookup @duration.value activity=qY8e7Xm7QYQDXqsd]] [[lookup @duration.units activity=qY8e7Xm7QYQDXqsd]]s.</p>"
         },
         "Immutable Form": {
@@ -1750,7 +1750,7 @@
             "effects": {
                 "Blinded: Heavily Obscured": {
                     "name": "Oślepiony: Pozbawiony widoczności",
-                    "description": "<p>You have the &amp;Reference[Blinded apply=false] condition while trying to see something in a Heavily Obscured space. </p>"
+                    "description": "<p>Próbując zobaczyć coś w przestrzeni Pozbawionej widoczności, masz stan &amp;Reference[Blinded apply=false].</p>"
                 }
             }
         },
@@ -1910,7 +1910,7 @@
             "effects": {
                 "Charmed & Incapacitated": {
                     "name": "Zauroczony i Obezwładniony",
-                    "description": "<p>The target has the &amp;Reference[Charmed apply=false] condition until the song ends and repeats the save at the end of each of its turns.</p><p>While Charmed, the target has the &amp;Reference[Incapacitated apply=false] condition.</p>"
+                    "description": "<p>Cel ma stan &amp;Reference[Charmed apply=false] do zakończenia pieśni i powtarza rzut obronny na końcu każdej swojej tury.</p><p>Będąc Zauroczony, cel ma stan &amp;Reference[Incapacitated apply=false].</p>"
                 }
             }
         },
@@ -2068,7 +2068,7 @@
             "effects": {
                 "Unconscious": {
                     "name": "Nieprzytomny",
-                    "description": "<p>If the target has 20 Hit Points or fewer, it has the &amp;Reference[Unconscious apply=false] condition for 1 hour, until it takes damage, or until a creature within 5 feet of it takes an action to wake it.</p>"
+                    "description": "<p>Jeśli cel ma 20 lub mniej Punktów Wytrzymałości, ma stan &amp;Reference[Unconscious apply=false] przez 1 godzinę, dopóki nie otrzyma obrażeń albo dopóki istota w obrębie 5 stóp od niego nie wykona Akcji, aby go obudzić.</p>"
                 }
             }
         },
@@ -2421,7 +2421,7 @@
             }
         },
         "Pummel": {
-            "name": "Pummel",
+            "name": "Okładanie pięściami",
             "description": "<p class=\"feature\"><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=aae828c0Hue0XOMP]], one creature Grappled by the [[lookup @name lowercase]]{monster}.</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage.</p><p class=\"feature\"><em>Success:</em> Half damage.</p>",
             "activities": {
                 "Save": {
@@ -2432,7 +2432,7 @@
             }
         },
         "Pursuit": {
-            "name": "Pursuit",
+            "name": "Pościg",
             "description": "<p class=\"feature\"><em>Trigger:</em> Another creature the [[lookup @name lowercase]]{monster} can see ends its move within [[lookup @range.value activity=blUXkjLhs9kD2ofo]] feet of the [[lookup @name lowercase]]{monster}. <em>Response:</em> The [[lookup @name lowercase]]{monster} uses Teleport, but its destination space must be [[lookup @target.affects.special activity=blUXkjLhs9kD2ofo]].</p>",
             "activities": {
                 "Expend Use": {
@@ -3119,7 +3119,7 @@
             }
         },
         "Swoop": {
-            "name": "Swoop",
+            "name": "Porwanie",
             "description": "<p class=\"feature\">If the [[lookup @name lowercase]]{monster} has a creature Grappled, the [[lookup @name lowercase]]{monster} flies up to half its Fly Speed without provoking &amp;Reference[OpportunityAttacks] and drops that creature.</p>",
             "activities": {
                 "Expend Use": {
@@ -3250,7 +3250,7 @@
             }
         },
         "Thundercloud": {
-            "name": "Thundercloud",
+            "name": "Chmura burzowa",
             "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>",
             "effects": {
                 "Incapacitated": {
@@ -3486,7 +3486,7 @@
             "effects": {
                 "Invisible": {
                     "name": "Niewidzialny",
-                    "description": "<p>The attacking creature and its light have the &amp;Reference[Invisible apply=false] condition until their Concentration ends on this effect, which ends early immediately after the wisp makes an attack roll or uses the Consume Life bonus action.</p>"
+                    "description": "<p>Atakująca istota i emitowane przez nią światło mają stan &amp;Reference[Invisible apply=false] do zakończenia przez nią Koncentracji na tym efekcie. Efekt kończy się wcześniej natychmiast po tym, jak błędny ognik wykona test ataku lub użyje Akcji Dodatkowej Consume Life.</p>"
                 }
             }
         },
@@ -3495,7 +3495,7 @@
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Vile Appearance": {
-            "name": "Vile Appearance",
+            "name": "Odrażający wygląd",
             "description": "<p class=\"feature\"><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=FR0ETDHBas1Z5LfF]], any [[lookup @target.affects.special activity=FR0ETDHBas1Z5LfF]] that starts its turn within [[lookup @range.value activity=FR0ETDHBas1Z5LfF]] feet of the [[lookup @name lowercase]]{monster} and can see the [[lookup @name lowercase]]{monster}'s true form.</p><p class=\"feature\"><em>Failure:</em> The target has the &amp;Reference[Frightened apply=false] condition until the start of its next turn.</p><p class=\"feature\"><em>Success:</em> The target is immune to this [[lookup @name lowercase]]{monster}'s Horrific Appearance for 24 hours.</p>",
             "activities": {
                 "save": {
@@ -3523,7 +3523,7 @@
             "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Vortex": {
-            "name": "Vortex",
+            "name": "Wir",
             "description": "<p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=cZy0VYbCVY8aRB4z]], one [[lookup @target.affects.special activity=cZy0VYbCVY8aRB4z]] in the [[lookup @name lowercase]]{monster}'s space. <em>Failure:</em> [[/damage average activity=cZy0VYbCVY8aRB4z]] damage, and the target has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]). Until the grapple ends, the target can't cast spells with a Verbal component and takes [[/damage average activity=kDz92inkRCjGrPiz]] damage at the start of each of the [[lookup @name lowercase]]{monster}'s turns.</p>",
             "activities": {
                 "Save": {
@@ -3543,7 +3543,7 @@
             "effects": {
                 "Grappled": {
                     "name": "Pochwycony",
-                    "description": "<p>The target has the &amp;Reference[Grappled apply=false] condition (escape DC [[/check ability=str skill=ath format=long]], see source item for DC).</p><p>Until the grapple ends, the target can’t cast spells with a Verbal component and takes additional damage at the start of each of the NPC’s turns.</p>"
+                    "description": "<p>Cel ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[/check ability=str skill=ath format=long]], ST podano w elemencie źródłowym).</p><p>Do zakończenia pochwycenia cel nie może rzucać czarów z komponentem Werbalnym i otrzymuje dodatkowe obrażenia na początku każdej tury NPC.</p>"
                 }
             }
         },
@@ -3711,7 +3711,7 @@
                 },
                 "Blinded": {
                     "name": "Oślepiony",
-                    "description": "<p>Each creature of the attacking creature's choice that it can see within 5 ft. of its destination space has the &amp;Reference[Blinded apply=long] condition until the end of the attacking creature's next turn.</p>"
+                    "description": "<p>Każda istota wybrana przez atakującą istotę i widziana przez nią w obrębie 5 stóp od przestrzeni docelowej ma stan &amp;Reference[Blinded apply=long] do końca następnej tury atakującej istoty.</p>"
                 }
             }
         },
