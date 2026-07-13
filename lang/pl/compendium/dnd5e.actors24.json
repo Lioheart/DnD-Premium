@@ -5205,7 +5205,7 @@
                 },
                 "Acid Spray": {
                     "name": "Kwasowy rozprysk",
-                    "description": "<p><em>Dexterity Saving Throw: </em>DC [[lookup @save.dc.value activity=20GU2JBM5zJfNPD1]], each [[lookup @target.affects.type activity=20GU2JBM5zJfNPD1]] in a [[lookup @target.template.size activity=20GU2JBM5zJfNPD1]]-[[lookup @target.template.units activity=20GU2JBM5zJfNPD1]]-long, [[lookup @target.template.width activity=20GU2JBM5zJfNPD1]]-[[lookup @target.template.units activity=20GU2JBM5zJfNPD1]]-wide [[lookup @target.template.type capitalize activity=20GU2JBM5zJfNPD1]].</p><p><em>Failure: </em>[[/damage average]] damage.</p><p><em>Success:</em> Half damage.</p>",
+                    "description": "<p><em>Rzut obronny na Zręczność: </em>ST [[lookup @save.dc.value activity=20GU2JBM5zJfNPD1]], każda istota typu [[lookup @target.affects.type activity=20GU2JBM5zJfNPD1]] w [[lookup @target.template.type capitalize activity=20GU2JBM5zJfNPD1]] o długości [[lookup @target.template.size activity=20GU2JBM5zJfNPD1]] [[lookup @target.template.units activity=20GU2JBM5zJfNPD1]] i szerokości [[lookup @target.template.width activity=20GU2JBM5zJfNPD1]] [[lookup @target.template.units activity=20GU2JBM5zJfNPD1]].</p><p><em>Porażka: </em>[[/damage average]] obrażeń.</p><p><em>Sukces:</em> Połowa obrażeń.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
@@ -9015,7 +9015,7 @@
                 },
                 "Chain": {
                     "name": "Łańcuch",
-                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a Large or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]) from one of two chains, and it has the &amp;Reference[Restrained apply=false] condition until the grapple ends.</p>",
+                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]) przez jeden z dwóch łańcuchów oraz stan &amp;Reference[Restrained apply=false] do zakończenia pochwycenia.</p>",
                     "activities": {
                         "Escape Check": {
                             "name": "Test ucieczki"
@@ -9024,7 +9024,7 @@
                     "effects": {
                         "Grappled & Restrained": {
                             "name": "Pochwycony i Unieruchomiony",
-                            "description": "<p>If the target is a Large or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[/check ability=str skill=ath format=long]], see source item for DC) from one of two chains, and it has the &amp;Reference[Restrained apply=false] condition until the grapple ends.</p>"
+                            "description": "<p>Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[/check ability=str skill=ath format=long]], ST podano w elemencie źródłowym) wskutek pochwycenia przez jeden z dwóch łańcuchów oraz stan &amp;Reference[Restrained apply=false] do zakończenia pochwycenia.</p>"
                         }
                     }
                 }
@@ -9118,7 +9118,7 @@
                 },
                 "Pincer": {
                     "name": "Szczypce",
-                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a Large or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]) from one of two pincers.</p>",
+                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]) przez jedne z dwóch szczypiec.</p>",
                     "activities": {
                         "Escape Check": {
                             "name": "Test ucieczki"
@@ -9292,7 +9292,7 @@
                     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Thundercloud": {
-                    "name": "Thundercloud",
+                    "name": "Chmura burzowa",
                     "description": "<p>[[/attack extended]]. [[/damage average extended]], a cel ma stan &amp;Reference[Incapacitated apply=false] do końca swojej następnej tury.</p>",
                     "effects": {
                         "Incapacitated": {
@@ -9929,7 +9929,7 @@
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Medium or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]). While Grappled, the target has the &amp;Reference[Restrained apply=false] condition.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Średnią lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]). Będąc Pochwycony, cel ma stan &amp;Reference[Restrained apply=false].</p>",
                     "activities": {
                         "Escape Check": {
                             "name": "Test ucieczki"
@@ -9938,7 +9938,7 @@
                     "effects": {
                         "Grappled & Restrained": {
                             "name": "Pochwycony i Unieruchomiony",
-                            "description": "<p>If the target is a Medium or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[/check ability=str skill=ath format=long]], see source item for DC). While Grappled, the target has the &amp;Reference[Restrained apply=false] condition.</p><p><strong>Escape Tests (see source item for DC)</strong></p><p>[[/check skill=ath ability=str]]</p><p>[[/check skill=acr ability=dex]]</p>"
+                            "description": "<p>Jeśli cel jest Średnią lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[/check ability=str skill=ath format=long]], ST podano w elemencie źródłowym). Będąc Pochwycony, cel ma stan &amp;Reference[Restrained apply=false].</p><p><strong>Testy uwolnienia (ST podano w elemencie źródłowym)</strong></p><p>[[/check skill=ath ability=str]]</p><p>[[/check skill=acr ability=dex]]</p>"
                         }
                     }
                 }
@@ -10180,7 +10180,7 @@
                     "effects": {
                         "Poisoned": {
                             "name": "Zatruty",
-                            "description": "<p><em>First CON Save Failure</em>: The target has the &amp;Reference[Poisoned apply=false] condition. While Poisoned, the target’s Hit Point maximum doesn’t return to normal when finishing a Long Rest, and it repeats the save every 24 hours that elapse, ending the effect on itself on a success. </p><p><em>Subsequent CON Save Failures</em>: The Poisoned target’s Hit Point maximum decreases by 5 ([[/r 1d10]]).&lt;/p&gt;</p>"
+                            "description": "<p><em>Pierwsza porażka w rzucie obronnym na Kondycję</em>: Cel ma stan &amp;Reference[Poisoned apply=false]. Będąc Zatruty, maksimum Punktów Wytrzymałości celu nie wraca do normy po ukończeniu Długiego Odpoczynku, a cel powtarza rzut obronny co każde upływające 24 godziny, kończąc na sobie ten efekt przy sukcesie. </p><p><em>Kolejne porażki w rzucie obronnym na Kondycję</em>: Maksimum Punktów Wytrzymałości Zatrutego celu zmniejsza się o 5 ([[/r 1d10]]).&lt;/p&gt;</p>"
                         }
                     }
                 }
@@ -10574,7 +10574,7 @@
                     "effects": {
                         "Restrained": {
                             "name": "Unieruchomiony",
-                            "description": "<p>The target has the &amp;Reference[Restrained apply=false] condition and moves with the whirlwind.</p><p>At the end of each of its turns, the target repeats the save, ending the effect on itself on a success.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Restrained apply=false] i porusza się wraz z trąbą powietrzną.</p><p>Na końcu każdej swojej tury cel powtarza rzut obronny, kończąc na sobie ten efekt przy sukcesie.</p>"
                         }
                     }
                 },
@@ -10816,7 +10816,7 @@
                     "effects": {
                         "Poisoned": {
                             "name": "Zatruty",
-                            "description": "<p>The target has the &amp;Reference[Poisoned apply=false] condition until the end of its next turn. While Poisoned, the creature can take either an action or a Bonus Action on its turn, not both, and it can’t take Reactions.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Poisoned apply=false] do końca swojej następnej tury. Będąc Zatruta, istota może podczas swojej tury wykonać albo Akcję, albo Akcję Dodatkową, ale nie obie, i nie może używać Reakcji.</p>"
                         }
                     }
                 }
@@ -10850,7 +10850,7 @@
                     }
                 },
                 "Foreleg": {
-                    "name": "Foreleg",
+                    "name": "Przednie odnóże",
                     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Poison Burst": {
@@ -11901,12 +11901,12 @@
             "alignment": "Neutralny",
             "items": {
                 "Aversion to Fire": {
-                    "name": "Aversion to Fire",
+                    "name": "Wstręt do ognia",
                     "description": "<p>If the [[lookup @name lowercase]]{monster} takes Fire damage, it has Disadvantage on attack rolls and ability checks until the end of its next turn.</p>",
                     "requirements": "Takes Fire damage",
                     "effects": {
                         "Averse": {
-                            "name": "Averse",
+                            "name": "Wstręt",
                             "description": "<p>Ma Utrudnienie w testach ataku i testach cech do końca swojej następnej tury.</p>"
                         }
                     }
@@ -12173,7 +12173,7 @@
                 },
                 "Claw": {
                     "name": "Pazury",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a non-Undead creature, it is subjected to the following effect.</p><p><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=nDM4WpckiZjvBzfg]].</p><p><em>Failure:</em> The target has the &amp;Reference[Paralyzed apply=false] condition until the end of its next turn.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest istotą niebędącą Nieumarłym, zostaje poddany następującemu efektowi.</p><p><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=nDM4WpckiZjvBzfg]].</p><p><em>Porażka:</em> Cel ma stan &amp;Reference[Paralyzed apply=false] do końca swojej następnej tury.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "none"
@@ -12294,7 +12294,7 @@
                 },
                 "Claw": {
                     "name": "Pazury",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a [[lookup @target.affects.type activity=u64Kjp19EAOJoLeo]] [[lookup @target.affects.special activity=u64Kjp19EAOJoLeo]], it is subjected to the following effect.</p><p><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=u64Kjp19EAOJoLeo]].</p><p><em>Failure:</em> The target has the &amp;Reference[Paralyzed apply=false] condition until the end of its next turn.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest istotą typu [[lookup @target.affects.type activity=u64Kjp19EAOJoLeo]] [[lookup @target.affects.special activity=u64Kjp19EAOJoLeo]], zostaje poddany następującemu efektowi.</p><p><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=u64Kjp19EAOJoLeo]].</p><p><em>Porażka:</em> Cel ma stan &amp;Reference[Paralyzed apply=false] do końca swojej następnej tury.</p>",
                     "activities": {
                         "save": {
                             "target": "która nie jest Nieumarłym lub elfem",
@@ -12493,7 +12493,7 @@
                 },
                 "Claw": {
                     "name": "Pazury",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a [[lookup @target.affects.special activity=W1T7dZnG8GMMwyEP]] creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]) from one of two claws.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest istotą [[lookup @target.affects.special activity=W1T7dZnG8GMMwyEP]], ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]) przez jeden z dwóch pazurów.</p>",
                     "activities": {
                         "attack": {
                             "target": "Średni lub mniejszy"
@@ -12586,7 +12586,7 @@
             "items": {
                 "Ram": {
                     "name": "Taran",
-                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a Huge or smaller creature and the elk moved 20+ feet straight it immediately before the hit, the target takes an extra [[/damage average activity=i9cI4yuGrjw1or1q]] and has the &amp;Reference[Prone apply=false] condition.</p>",
+                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Wielką lub mniejszą istotą, a łoś bezpośrednio przed trafieniem poruszył się ku niemu po linii prostej o co najmniej 20 stóp, cel otrzymuje dodatkowe [[/damage average activity=i9cI4yuGrjw1or1q]] i ma stan &amp;Reference[Prone apply=false].</p>",
                     "activities": {
                         "Moving Attack": {
                             "name": "Atak w ruchu"
@@ -12798,7 +12798,7 @@
                 },
                 "Tentacles": {
                     "name": "Macki",
-                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a Medium or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]) from all eight tentacles. While Grappled, the target has the &amp;Reference[Restrained apply=false] condition.</p>",
+                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Średnią lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]) przez wszystkie osiem macek. Będąc Pochwycony, cel ma stan &amp;Reference[Restrained apply=false].</p>",
                     "activities": {
                         "Escape Check": {
                             "name": "Test ucieczki"
@@ -12918,7 +12918,7 @@
                 },
                 "Claw": {
                     "name": "Pazury",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]].  If the target is a Large or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]) from one of two claws.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]) przez jeden z dwóch pazurów.</p>",
                     "activities": {
                         "Escape Check": {
                             "name": "Test ucieczki"
@@ -13110,7 +13110,7 @@
                     "requirements": "Sojusznik w odległości 5 stóp od celu ataku"
                 },
                 "Gouge": {
-                    "name": "Gouge",
+                    "name": "Dziobanie",
                     "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], a cel otrzymuje stan &amp;Reference[Poisoned apply=false] do końca swojej następnej tury.</p>",
                     "effects": {
                         "Poisoned": {
@@ -13251,7 +13251,7 @@
                 },
                 "Pincer": {
                     "name": "Szczypce",
-                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a Medium or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]) from one of two pincers.</p>",
+                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Średnią lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]) przez jedne z dwóch szczypiec.</p>",
                     "activities": {
                         "Escape Check": {
                             "name": "Test ucieczki"
@@ -13265,7 +13265,7 @@
                     }
                 },
                 "Pummel": {
-                    "name": "Pummel",
+                    "name": "Okładanie pięściami",
                     "description": "<p class=\"feature\"><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=aae828c0Hue0XOMP]], one creature Grappled by the [[lookup @name lowercase]]{monster}.</p><p><em>Failure:</em> [[/damage average]] damage.</p><p><em>Success:</em> Half damage.</p>",
                     "activities": {
                         "Save": {
@@ -13700,7 +13700,7 @@
                 },
                 "Trample": {
                     "name": "Tratowanie",
-                    "description": "<p class=\"feature\"><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=QckCIpsC3BdEHycI]], [[lookup @target.affects.labels.statblock activity=QckCIpsC3BdEHycI]] within [[lookup @range.value activity=QckCIpsC3BdEHycI]] feet that has the Prone condition.</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage.</p><p class=\"feature\"><em>Success:</em> [[lookup @damage.onSave capitalize activity=QckCIpsC3BdEHycI]] damage.</p>",
+                    "description": "<p class=\"feature\"><em>Rzut obronny na Zręczność:</em> ST [[lookup @save.dc.value activity=QckCIpsC3BdEHycI]], [[lookup @target.affects.labels.statblock activity=QckCIpsC3BdEHycI]] w obrębie [[lookup @range.value activity=QckCIpsC3BdEHycI]] stóp, która ma stan Powalony.</p><p class=\"feature\"><em>Porażka:</em> [[/damage average]] obrażeń.</p><p class=\"feature\"><em>Sukces:</em> [[lookup @damage.onSave capitalize activity=QckCIpsC3BdEHycI]] obrażeń.</p>",
                     "activities": {
                         "Save": {
                             "name": "Obrona",
@@ -14029,7 +14029,7 @@
                 },
                 "Tentacles": {
                     "name": "Macki",
-                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a Medium or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]) from all four tentacles.</p>",
+                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Średnią lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]) przez wszystkie cztery macki.</p>",
                     "activities": {
                         "Escape Check": {
                             "name": "Test ucieczki"
@@ -14069,7 +14069,7 @@
                     "effects": {
                         "Grappled": {
                             "name": "Pochwycony",
-                            "description": "<p>If the target is a Medium or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[/check ability=str skill=ath format=long]], see source item for DC) from both of the attacking creature's front claws.</p>"
+                            "description": "<p>Jeśli cel jest Średnią lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[/check ability=str skill=ath format=long]], patrz element źródłowy, aby sprawdzić ST) przez oba przednie pazury atakującej istoty.</p>"
                         }
                     }
                 }
@@ -14322,7 +14322,7 @@
                 },
                 "Dragon's Breath": {
                     "name": "Smocze zionięcie",
-                    "description": "<p class=\"feature\"><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=YfxQb5tcONgLb2nD]], each [[lookup @target.affects.type activity=YfxQb5tcONgLb2nD]] in a [[lookup @target.template.size activity=YfxQb5tcONgLb2nD]]-foot Cone.</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage of the type chosen for the Draconic Origin trait.</p><p class=\"feature\"><em>Success:</em> Half damage.</p>",
+                    "description": "<p class=\"feature\"><em>Rzut obronny na Zręczność:</em> ST [[lookup @save.dc.value activity=YfxQb5tcONgLb2nD]], każda istota typu [[lookup @target.affects.type activity=YfxQb5tcONgLb2nD]] w Stożku o długości [[lookup @target.template.size activity=YfxQb5tcONgLb2nD]] stóp.</p><p class=\"feature\"><em>Porażka:</em> [[/damage average]] obrażeń typu wybranego dla cechy Smocze pochodzenie.</p><p class=\"feature\"><em>Sukces:</em> Połowa obrażeń.</p>",
                     "activities": {
                         "Save": {
                             "name": "Obrona",
@@ -14365,7 +14365,7 @@
                     "effects": {
                         "Charmed & Incapacitated": {
                             "name": "Zauroczony i Obezwładniony",
-                            "description": "<p>The target has the &amp;Reference[Charmed apply=false] condition until the song ends and repeats the save at the end of each of its turns.</p><p>While Charmed, the target has the &amp;Reference[Incapacitated apply=false] condition.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Charmed apply=false] do zakończenia pieśni i powtarza rzut obronny na końcu każdej swojej tury.</p><p>Będąc Zauroczony, cel ma stan &amp;Reference[Incapacitated apply=false].</p>"
                         }
                     }
                 }
@@ -14642,7 +14642,7 @@
                     "effects": {
                         "Poisoned": {
                             "name": "Zatruty",
-                            "description": "<p>The target has the &amp;Reference[Poisoned apply=false] condition until the end of the biter's next turn. While Poisoned, the target has the &amp;Reference[Unconscious apply=false] condition, which ends early if the target takes any damage.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Poisoned apply=false] do końca następnej tury gryzącego. Będąc Zatruty, cel ma stan &amp;Reference[Unconscious apply=false], który kończy się wcześniej, jeśli cel otrzyma jakiekolwiek obrażenia.</p>"
                         },
                         "Unconscious": {
                             "name": "Nieprzytomny",
@@ -15016,7 +15016,7 @@
                     "effects": {
                         "Unconscious": {
                             "name": "Nieprzytomny",
-                            "description": "<p>If the target has 20 Hit Points or fewer, it has the &amp;Reference[Unconscious apply=false] condition for 1 hour, until it takes damage, or until a creature within 5 feet of it takes an action to wake it.</p>"
+                            "description": "<p>Jeśli cel ma 20 lub mniej Punktów Wytrzymałości, ma stan &amp;Reference[Unconscious apply=false] przez 1 godzinę, dopóki nie otrzyma obrażeń albo dopóki istota w obrębie 5 stóp od niego nie wykona Akcji, aby go obudzić.</p>"
                         }
                     }
                 },
@@ -15138,7 +15138,7 @@
                     "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Vortex": {
-                    "name": "Vortex",
+                    "name": "Wir",
                     "description": "<p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=cZy0VYbCVY8aRB4z]], one [[lookup @target.affects.special activity=cZy0VYbCVY8aRB4z]] in the [[lookup @name lowercase]]{monster}'s space.</p><p><em>Failure:</em> [[/damage average activity=cZy0VYbCVY8aRB4z]] damage, and the target has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]). Until the grapple ends, the target can't cast spells with a Verbal component and takes [[/damage average activity=kDz92inkRCjGrPiz]] damage at the start of each of the [[lookup @name lowercase]]{monster}'s turns.</p>",
                     "activities": {
                         "Save": {
@@ -15158,7 +15158,7 @@
                     "effects": {
                         "Grappled": {
                             "name": "Pochwycony",
-                            "description": "<p>The target has the &amp;Reference[Grappled apply=false] condition (escape DC [[/check ability=str skill=ath format=long]], see source item for DC).</p><p>Until the grapple ends, the target can’t cast spells with a Verbal component and takes additional damage at the start of each of the NPC’s turns.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[/check ability=str skill=ath format=long]], ST podano w elemencie źródłowym).</p><p>Do zakończenia pochwycenia cel nie może rzucać czarów z komponentem Werbalnym i otrzymuje dodatkowe obrażenia na początku każdej tury NPC.</p>"
                         }
                     }
                 }
@@ -15341,7 +15341,7 @@
                 },
                 "Tentacle": {
                     "name": "Macka",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. <span style=\"font-family:'Roboto Condensed', sans-serif\">The target has the </span>&amp;Reference[Grappled apply=false] <span style=\"font-family:'Roboto Condensed', sans-serif\">condition </span>(escape DC [[lookup @skills.ath.passive]])<span style=\"font-family:'Roboto Condensed', sans-serif\"> from one of ten tentacles, and it has the &amp;Reference[Restrained apply=false] condition until the grapple ends.</span></p><p></p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. <span style=\"font-family:'Roboto Condensed', sans-serif\">Cel ma stan </span>&amp;Reference[Grappled apply=false] <span style=\"font-family:'Roboto Condensed', sans-serif\"></span>(uwolnienie ST [[lookup @skills.ath.passive]])<span style=\"font-family:'Roboto Condensed', sans-serif\"> przez jedną z dziesięciu macek oraz ma stan &amp;Reference[Restrained apply=false] do zakończenia pochwycenia.</span></p><p></p>",
                     "activities": {
                         "Escape Check": {
                             "name": "Test ucieczki"
@@ -19587,7 +19587,7 @@
                         },
                         "Blinded": {
                             "name": "Oślepiony",
-                            "description": "<p>Each creature of the attacking creature's choice that it can see within 5 ft. of its destination space has the &amp;Reference[Blinded apply=long] condition until the end of the attacking creature's next turn.</p>"
+                            "description": "<p>Każda istota wybrana przez atakującą istotę i widziana przez nią w obrębie 5 stóp od przestrzeni docelowej ma stan &amp;Reference[Blinded apply=long] do końca następnej tury atakującej istoty.</p>"
                         }
                     }
                 },
@@ -19689,12 +19689,12 @@
                     "effects": {
                         "Frightened": {
                             "name": "Przerażony",
-                            "description": "<p>The target has the &amp;Reference[Frightened apply=false] condition for 1 minute, until it takes damage, or until it ends its turn with the attacking creature out of line of sight.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Frightened apply=false] przez 1 minutę, dopóki nie otrzyma obrażeń albo dopóki nie zakończy swojej tury, nie mając atakującej istoty w polu widzenia.</p>"
                         }
                     }
                 },
                 "Pursuit": {
-                    "name": "Pursuit",
+                    "name": "Pościg",
                     "description": "<p class=\"feature\"><em>Trigger:</em> Another creature the [[lookup @name lowercase]]{monster} can see ends its move within [[lookup @range.value activity=blUXkjLhs9kD2ofo]] feet of the [[lookup @name lowercase]]{monster}. <em>Response:</em> The [[lookup @name lowercase]]{monster} uses Teleport, but its destination space must be [[lookup @target.affects.special activity=blUXkjLhs9kD2ofo]].</p>",
                     "activities": {
                         "Expend Use": {
@@ -20066,7 +20066,7 @@
                 },
                 "Weird Insight": {
                     "name": "Weird Insight",
-                    "description": "<p class=\"feature\"><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=o6eFmn0HWGbQjzdG]], one [[lookup @target.affects.type activity=o6eFmn0HWGbQjzdG]] the [[lookup @name lowercase]] can see within [[lookup @range.value activity=o6eFmn0HWGbQjzdG]] feet.</p><p><em>Failure:</em> The [[lookup @name lowercase]] magically learns one fact or secret about the target.</p>",
+                    "description": "<p class=\"feature\"><em>Rzut obronny na Mądrość:</em> ST [[lookup @save.dc.value activity=o6eFmn0HWGbQjzdG]], jedna istota typu [[lookup @target.affects.type activity=o6eFmn0HWGbQjzdG]], którą [[lookup @name lowercase]] widzi w obrębie [[lookup @range.value activity=o6eFmn0HWGbQjzdG]] stóp.</p><p><em>Porażka:</em> [[lookup @name]] magicznie poznaje jeden fakt lub sekret dotyczący celu.</p>",
                     "activities": {
                         "Save": {
                             "name": "Obrona",
@@ -20123,7 +20123,7 @@
                     }
                 },
                 "Compression": {
-                    "name": "Compression",
+                    "name": "Kompresja",
                     "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} can move through a space as narrow as 1 inch without expending extra movement to do so.</p>"
                 },
                 "Water Breathing": {
@@ -20132,7 +20132,7 @@
                 },
                 "Tentacles": {
                     "name": "Macki",
-                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a Medium or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]) from all four tentacles.</p>",
+                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Średnią lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]) przez wszystkie cztery macki.</p>",
                     "activities": {
                         "Escape Check": {
                             "name": "Test ucieczki"
@@ -20384,13 +20384,13 @@
                     "effects": {
                         "Poisoned": {
                             "name": "Zatruty",
-                            "description": "<p>The target has the &amp;Reference[Poisoned apply=false] condition. Whenever the Poisoned target finishes a Long Rest, it must make a Constitution Saving Throw or have its Hit Point maximum reduced by [[/damage 1d10 average]] until the Poisoned condition ends.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Poisoned apply=false]. Za każdym razem, gdy Zatruty cel ukończy Długi Odpoczynek, musi wykonać rzut obronny na Kondycję, a w przypadku porażki jego maksimum Punktów Wytrzymałości zmniejsza się o [[/damage 1d10 average]] do zakończenia stanu Zatruty.</p>"
                         }
                     }
                 },
                 "Tentacle": {
                     "name": "Macka",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Medium or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]) from one of two tentacles.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Średnią lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]) przez jedną z dwóch macek.</p>",
                     "activities": {
                         "Escape Check": {
                             "name": "Test ucieczki"
@@ -21264,11 +21264,11 @@
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If this damage reduces the target to 0 Hit Points, the target becomes Stable, and it has the &amp;Reference[Poisoned apply=false] condition for 1 hour. While Poisoned, the target also has the &amp;Reference[Paralyzed apply=false] condition.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli te obrażenia zredukują cel do 0 Punktów Wytrzymałości, cel staje się Stabilny i ma stan &amp;Reference[Poisoned apply=false] przez 1 godzinę. Będąc Zatruty, cel ma także stan &amp;Reference[Paralyzed apply=false].</p>",
                     "effects": {
                         "Poisoned & Paralyzed": {
                             "name": "Zatruty i Sparaliżowany",
-                            "description": "<p>f this damage reduces the target to 0 Hit Points, the target becomes Stable, and it has the &amp;Reference[Poisoned apply=false] condition for 1 hour. While Poisoned, the target also has the &amp;Reference[Paralyzed apply=false] condition.</p>"
+                            "description": "<p>Jeśli te obrażenia zredukują cel do 0 Punktów Wytrzymałości, cel staje się Stabilny i ma stan &amp;Reference[Poisoned apply=false] przez 1 godzinę. Będąc Zatruty, cel ma także stan &amp;Reference[Paralyzed apply=false].</p>"
                         }
                     }
                 },
@@ -21354,7 +21354,7 @@
                     "effects": {
                         "Advantage: Next Attack": {
                             "name": "Advantage: Next Attack",
-                            "description": "<p>On a hit with its rapier on the current attack, the attacking creature has Advantage on the next attack roll it makes before the end of this turn.</p>"
+                            "description": "<p>Przy trafieniu rapierem w bieżącym ataku atakująca istota ma Ułatwienie w następnym teście ataku, który wykona przed końcem tej tury.</p>"
                         }
                     }
                 },
@@ -22240,7 +22240,7 @@
                 },
                 "Scare": {
                     "name": "Przerażenie",
-                    "description": "<p class=\"feature\"><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=L6pjs2RafI3pF8b3]], one creature within [[lookup @range.value activity=L6pjs2RafI3pF8b3]] feet.</p><p class=\"feature\"><em>Failure:</em> The target has the &amp;Reference[Frightened apply=false] condition. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>",
+                    "description": "<p class=\"feature\"><em>Rzut obronny na Mądrość:</em> ST [[lookup @save.dc.value activity=L6pjs2RafI3pF8b3]], jedna istota w obrębie [[lookup @range.value activity=L6pjs2RafI3pF8b3]] stóp.</p><p class=\"feature\"><em>Porażka:</em> Cel ma stan &amp;Reference[Frightened apply=false]. Na końcu każdej swojej tury cel powtarza rzut obronny, kończąc na sobie ten efekt przy sukcesie. Po 1 minucie automatycznie odnosi sukces.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "none"
@@ -23830,7 +23830,7 @@
                     "effects": {
                         "Grappled & Restrained": {
                             "name": "Pochwycony i Unieruchomiony",
-                            "description": "<p>If the target is a [[lookup @target.affects.special activity=xWlMeXFjELfSUWX9]] creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[/check ability=str skill=ath format=long]], see source item for DC), and it has the &amp;Reference[Restrained apply=false] condition until the grapple ends.</p>"
+                            "description": "<p>Jeśli cel jest istotą [[lookup @target.affects.special activity=xWlMeXFjELfSUWX9]], ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[/check ability=str skill=ath format=long]], patrz element źródłowy, aby sprawdzić ST) oraz stan &amp;Reference[Restrained apply=false] do zakończenia pochwycenia.</p>"
                         }
                     }
                 },
@@ -25076,7 +25076,7 @@
                 },
                 "Talons": {
                     "name": "Szpony",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a [[lookup @target.affects.special activity=xdrDC5kFs6sCOFiE]] creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]) from both talons, and it has the &amp;Reference[Restrained apply=false] condition until the grapple ends.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest istotą [[lookup @target.affects.special activity=xdrDC5kFs6sCOFiE]], ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]) przez oba szpony oraz stan &amp;Reference[Restrained apply=false] do zakończenia pochwycenia.</p>",
                     "activities": {
                         "attack": {
                             "target": "Wielki lub mniejszy"
@@ -25088,12 +25088,12 @@
                     "effects": {
                         "Grappled & Restrained": {
                             "name": "Pochwycony i Unieruchomiony",
-                            "description": "<p>If the target is a [[lookup @target.affects.special activity=xdrDC5kFs6sCOFiE]] creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[/check ability=str skill=ath format=long]], see source item for DC) from both talons, and it has the &amp;Reference[Restrained apply=false] condition until the grapple ends.</p>"
+                            "description": "<p>Jeśli cel jest [[lookup @target.affects.special activity=xdrDC5kFs6sCOFiE]] istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[/check ability=str skill=ath format=long]], ST podano w elemencie źródłowym) wskutek pochwycenia przez oba szpony oraz stan &amp;Reference[Restrained apply=false] do zakończenia pochwycenia.</p>"
                         }
                     }
                 },
                 "Swoop": {
-                    "name": "Swoop",
+                    "name": "Porwanie",
                     "description": "<p class=\"feature\">If the [[lookup @name lowercase]]{monster} has a creature Grappled, the [[lookup @name lowercase]]{monster} flies up to half its Fly Speed without provoking &amp;Reference[OpportunityAttacks] and drops that creature.</p>",
                     "activities": {
                         "Expend Use": {
@@ -25537,7 +25537,7 @@
                     }
                 },
                 "Vile Appearance": {
-                    "name": "Vile Appearance",
+                    "name": "Odrażający wygląd",
                     "description": "<p class=\"feature\"><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=FR0ETDHBas1Z5LfF]], any [[lookup @target.affects.special activity=FR0ETDHBas1Z5LfF]] that starts its turn within [[lookup @range.value activity=FR0ETDHBas1Z5LfF]] feet of the [[lookup @name lowercase]]{monster} and can see the [[lookup @name lowercase]]{monster}'s true form.</p><p class=\"feature\"><em>Failure:</em> The target has the &amp;Reference[Frightened apply=false] condition until the start of its next turn.</p><p class=\"feature\"><em>Success:</em> The target is immune to this [[lookup @name lowercase]]{monster}'s Horrific Appearance for 24 hours.</p>",
                     "activities": {
                         "save": {
@@ -25568,7 +25568,7 @@
                     }
                 },
                 "Illusory Appearance": {
-                    "name": "Illusory Appearance",
+                    "name": "Złudny wygląd",
                     "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} casts <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDisguiseSe]{Disguise Self}</em>, using Constitution as the spellcasting ability (spell save DC [[lookup @attributes.spell.dc]]). The spell's duration is [[lookup @duration.value activity=qY8e7Xm7QYQDXqsd]] [[lookup @duration.units activity=qY8e7Xm7QYQDXqsd]]s.</p>"
                 },
                 "Disguise Self": {
@@ -28454,7 +28454,7 @@
                 },
                 "Swarm of Grasping Hands": {
                     "name": "Rój chwytających dłoni",
-                    "description": "<p class=\"feature\">[[/attack extended activity=rO8NirkWF6w9GXTc]]. [[/damage average extended activity=rO8NirkWF6w9GXTc]], or [[/damage average activity=hzeHzcSKHC4AvIJQ]] damage if [[lookup @activation.condition activity=hzeHzcSKHC4AvIJQ]]. If the target is a Medium or smaller creature, it has the &amp;Reference[Prone apply=false] condition.</p>",
+                    "description": "<p class=\"feature\">[[/attack extended activity=rO8NirkWF6w9GXTc]]. [[/damage average extended activity=rO8NirkWF6w9GXTc]], albo [[/damage average activity=hzeHzcSKHC4AvIJQ]] obrażeń, jeśli [[lookup @activation.condition activity=hzeHzcSKHC4AvIJQ]]. Jeśli cel jest Średnią lub mniejszą istotą, ma stan &amp;Reference[Prone apply=false].</p>",
                     "activities": {
                         "Bloodied Attack": {
                             "name": "Zakrwawiony atak",
@@ -28662,7 +28662,7 @@
                     "effects": {
                         "Grappled & Restrained": {
                             "name": "Pochwycony i Unieruchomiony",
-                            "description": "<p>The target has the &amp;Reference[Grappled apply=false] condition(escape DC [[/check ability=str skill=ath format=long]], see source item for DC). Until the grapple ends, the target has the &amp;Reference[Restrained apply=false] condition and can’t teleport.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[/check ability=str skill=ath format=long]], patrz element źródłowy, aby sprawdzić ST). Dopóki pochwycenie trwa, cel ma stan &amp;Reference[Restrained apply=false] i nie może się teleportować.</p>"
                         }
                     }
                 },
@@ -28682,7 +28682,7 @@
                 },
                 "Thunderous Bellow": {
                     "name": "Thunderous Bellow",
-                    "description": "<p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=RWBqtTjGSlEgQWCl]], [[lookup @target.affects.special activity=RWBqtTjGSlEgQWCl]] in a [[lookup @target.template.size activity=RWBqtTjGSlEgQWCl]]-[[lookup @target.template.units activity=RWBqtTjGSlEgQWCl]]. [[lookup @target.template.type capitalize activity=RWBqtTjGSlEgQWCl]].</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage, and the target has the &amp;Reference[Deafened apply=false] and &amp;Reference[Frightened apply=false] conditions until the end of its next turn.</p><p class=\"feature\"><em>Success:</em> Half damage only.</p>",
+                    "description": "<p class=\"feature\"><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=RWBqtTjGSlEgQWCl]], [[lookup @target.affects.special activity=RWBqtTjGSlEgQWCl]] w [[lookup @target.template.size activity=RWBqtTjGSlEgQWCl]]-[[lookup @target.template.units activity=RWBqtTjGSlEgQWCl]]. [[lookup @target.template.type capitalize activity=RWBqtTjGSlEgQWCl]].</p><p class=\"feature\"><em>Porażka:</em> [[/damage average]] obrażeń, a cel ma stany &amp;Reference[Deafened apply=false] i &amp;Reference[Frightened apply=false] do końca swojej następnej tury.</p><p class=\"feature\"><em>Sukces:</em> Tylko połowa obrażeń.</p>",
                     "activities": {
                         "Save": {
                             "name": "Obrona",
@@ -30307,7 +30307,7 @@
                     "effects": {
                         "Invisible": {
                             "name": "Niewidzialny",
-                            "description": "<p>The attacking creature and its light have the &amp;Reference[Invisible apply=false] condition until their Concentration ends on this effect, which ends early immediately after the wisp makes an attack roll or uses the Consume Life bonus action.</p>"
+                            "description": "<p>Atakująca istota i emitowane przez nią światło mają stan &amp;Reference[Invisible apply=false] do zakończenia przez nią Koncentracji na tym efekcie. Efekt kończy się wcześniej natychmiast po tym, jak błędny ognik wykona test ataku lub użyje Akcji Dodatkowej Consume Life.</p>"
                         }
                     }
                 },
