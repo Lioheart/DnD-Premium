@@ -328,7 +328,7 @@
                     }
                 },
                 "Pummel": {
-                    "name": "Pummel",
+                    "name": "Okładanie pięściami",
                     "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Multiattack": {
@@ -347,7 +347,7 @@
                     "description": "<p>The raider has Advantage on an attack roll against a creature if at least one of the raider’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>"
                 },
                 "Pummel": {
-                    "name": "Pummel",
+                    "name": "Okładanie pięściami",
                     "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Smackback": {
@@ -788,7 +788,7 @@
                 },
                 "Claw": {
                     "name": "Pazury",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a [[lookup @target.affects.special activity=W1T7dZnG8GMMwyEP]] creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]) from one of two claws.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest istotą [[lookup @target.affects.special activity=W1T7dZnG8GMMwyEP]], ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]) przez jeden z dwóch pazurów.</p>",
                     "activities": {
                         "attack": {
                             "target": "Średni lub mniejszy",
@@ -830,7 +830,7 @@
                     "effects": {
                         "Charmed & Incapacitated": {
                             "name": "Zauroczony i Obezwładniony",
-                            "description": "<p>The target has the &amp;Reference[Charmed apply=false] condition until the song ends and repeats the save at the end of each of its turns.</p><p>While Charmed, the target has the &amp;Reference[Incapacitated apply=false] condition.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Charmed apply=false] do zakończenia pieśni i powtarza rzut obronny na końcu każdej swojej tury.</p><p>Będąc Zauroczony, cel ma stan &amp;Reference[Incapacitated apply=false].</p>"
                         }
                     }
                 }
@@ -1158,7 +1158,7 @@
                     "effects": {
                         "Grappled": {
                             "name": "Pochwycony",
-                            "description": "<p>If the target doesn’t let go of the weapon, the target has the &amp;Reference[Grappled apply=false] condition while the weapon is stuck (escape DC [[/check ability=str skill=ath format=long]], see source item for DC)</p>"
+                            "description": "<p>Jeśli cel nie puści broni, ma stan &amp;Reference[Grappled apply=false], dopóki broń jest zakleszczona (uwolnienie ST [[/check ability=str skill=ath format=long]], patrz element źródłowy, aby sprawdzić ST)</p>"
                         }
                     }
                 },
@@ -1178,7 +1178,7 @@
                     "effects": {
                         "Restrained": {
                             "name": "Unieruchomiony",
-                            "description": "<p>The target has the &amp;Reference[Restrained apply=false] condition until the net is destroyed (AC 10; HP 5; Immunity to Bludgeoning, Poison, and Psychic damage). A creature can make a DC 10 Strength (Athletics) check to free itself or another creature in a net within 5 feet, destroying the net on a success.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Restrained apply=false] do chwili zniszczenia sieci (KP 10; PW 5; Niepodatność na obrażenia obuchowe, obrażenia od trucizny i obrażenia psychiczne). Istota może wykonać test Siły (Atletyka) o ST 10, aby uwolnić siebie lub inną istotę znajdującą się w sieci w obrębie 5 stóp, niszcząc sieć przy sukcesie.</p>"
                         }
                     }
                 }
