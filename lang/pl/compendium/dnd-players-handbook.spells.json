@@ -115,7 +115,7 @@
         },
         "Aid": {
             "name": "Pomoc",
-            "description": "<p>Wybierz do trzech istot w zasięgu. Maksymalne PW i bieżące  PW każdego celu wzrastają o 5 na czas trwania.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Punkty Wytrzymałości każdego celu wzrastają o 5 za każdy krąg powyżej 2.</p><section id=\"secret-u9DpSmufNhFMDGmN\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Domyślna aktywność <strong>Uleczenie</strong> jest skonfigurowana z wieloma Aktywnymi Efektami reprezentującymi tymczasowe maksymalne PW zapewniane przez ten czar.</p><p>Użytkownicy powinni zastosować odpowiedni Aktywny Efekt dla kręgu czaru użytego przy rzuceniu tego czaru.</p></section>",
+            "description": "<p>Wybierz maksymalnie trzy istoty w zasięgu. Maksimum Punktów Wytrzymałości i aktualne Punkty Wytrzymałości każdego celu wzrastają o 5 na czas trwania.</p><p><strong>Użycie komórki czaru wyższego kręgu. </strong>Punkty Wytrzymałości każdego celu wzrastają o 5 za każdy krąg komórki czaru powyżej 2.</p>",
             "materials": "pasek białej tkaniny",
             "effects": {
                 "Level 2: +5 Max HP": {
@@ -167,7 +167,7 @@
         },
         "Alter Self": {
             "name": "Zmiana siebie",
-            "description": "<p>Zmieniasz swoją fizyczną formę. Wybierz jedną z poniższych opcji. Efekty te trwają przez czas trwania czaru, podczas którego możesz Akcją Magii zastąpić wybraną opcję inną.</p><p><strong>Adaptacja wodna.</strong> Wyrastają ci skrzela i błony między palcami. Możesz oddychać pod wodą i zyskujesz Szybkość Pływania równą twojej Szybkości.</p><section class=\"secret\" id=\"secret-7sTILHJaR1io7TWi\"><p><strong>Notatka Foundry</strong></p><p>Aktywny Efekt zapewniany przez aktywność <strong>Adaptacja wodna</strong> ustawia Szybkość Pływania postaci na wartość „1”, aby wskazać równość ze Szybkością chodzenia.</p></section><p><strong>Zmiana wyglądu.</strong> Zmieniasz swój wygląd. Decydujesz o szczegółach swojej nowej formy, w tym o wzroście, wadze, rysach twarzy, brzmieniu głosu, długości włosów, ubarwieniu oraz innych cechach szczególnych. Możesz upodobnić się do przedstawiciela innego gatunku, choć twoje statystyki pozostają bez zmian. Nie możesz przybrać postaci istoty o innym rozmiarze, a twoja podstawowa budowa ciała musi pozostać taka sama – przykładowo, jeśli jesteś dwunogiem, nie możesz użyć tego czaru, aby stać się czworonogiem. Przez czas trwania czaru możesz ponownie zmienić swój wygląd, wykonując Akcję Magii..</p><p><strong>Naturalne bronie.</strong> Wyrastają ci pazury (cięte), kły (kłute), rogi (kłute) lub kopyta (obuchowe). Kiedy wykonujesz uderzenie bez broni przy użyciu swojego nowego oręża, zadaje ono 1k6 obrażeń właściwego typu zamiast standardowych obrażeń dla uderzenia bez broni. Do rzutów ataku i obrażeń tym orężem używasz modyfikatora swojej cechy bazowej rzucania czarów zamiast Siły.</p>",
+            "description": "<p>You alter your physical form. Choose one of the following options. Its effects last for the duration, during which you can take a Magic action to replace the option you chose with a different one.</p><p><strong>Aquatic Adaptation.</strong> You sprout gills and grow webs between your fingers. You can breathe underwater and gain a Swim Speed equal to your Speed.</p><p><strong>Change Appearance.</strong> You alter your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and other distinguishing characteristics. You can make yourself appear as a member of another species, though none of your statistics change. You can’t appear as a creature of a different size, and your basic shape stays the same; if you’re bipedal, you can’t use this spell to become quadrupedal, for instance. For the duration, you can take a Magic action to change your appearance in this way again.</p><p><strong>Natural Weapons. </strong>You grow claws (Slashing), fangs (Piercing), horns (Piercing), or hooves (Bludgeoning). When you use your Unarmed Strike to deal damage with that new growth, it deals 1d6 damage of the type in parentheses instead of dealing the normal damage for your Unarmed Strike, and you use your spellcasting ability modifier for the attack and damage rolls rather than using Strength.</p>",
             "activities": {
                 "Aquatic Adaptation": {
                     "name": "Adaptacja wodna"
@@ -494,9 +494,12 @@
             "activation": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
             "activationCondition": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
             "activities": {
-                "Damage and Banish": {
-                    "name": "Obrażenia i Wypędzenie",
-                    "damageOnSave": "połowa"
+                "Banishment Save": {
+                    "name": "Banishment Save",
+                    "damageOnSave": "full"
+                },
+                "Damage": {
+                    "name": "Obrażenia"
                 }
             },
             "effects": {
@@ -1072,7 +1075,7 @@
             "description": "<p>Twój dotyk wywołuje magiczną zarazę. Cel musi odnieść sukces w rzucie obronnym na Kondycję albo otrzymuje 11k8 obrażeń nekrotycznych i zyskuje stan &amp;Reference[Poisoned apply=false]. Dodatkowo, gdy rzucasz ten czar, wybierz jedną cechę. Dopóki cel ma stan &amp;Reference[Poisoned apply=false], ma Utrudnienie na rzuty obronne wykonywane przy użyciu wybranej cechy.</p><p>Cel musi powtarzać ten rzut obronny pod koniec każdej swojej tury, aż odniesie trzy sukcesy albo trzy porażki. Jeśli cel odniesie sukces w trzech z tych rzutów obronnych, czar się na nim kończy. Jeśli cel poniesie porażkę w trzech z tych rzutów obronnych, czar trwa na nim przez 7 dni.</p><p>Ilekroć cel mający stan &amp;Reference[Poisoned apply=false] zostanie objęty efektem, który zakończyłby stan &amp;Reference[Poisoned apply=false], cel musi odnieść sukces w [[/save ability=con dc=@attributes.spell.dc format=long]], w przeciwnym razie stan &amp;Reference[Poisoned apply=false] się na nim nie kończy.</p>",
             "activities": {
                 "save": {
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "none"
                 }
             },
             "effects": {
@@ -1113,7 +1116,10 @@
             },
             "effects": {
                 "Contingency Spell": {
-                    "name": "Czar przezorności"
+                    "name": "Czar przezorności",
+                    "changes": {
+                        "name": "Przezorność: {}"
+                    }
                 }
             }
         },
@@ -2215,7 +2221,7 @@
         },
         "Giant Insect": {
             "name": "Olbrzymie owady",
-            "description": "<p>Przywołujesz olbrzymiego stonogę, pająka lub osę (wybranego w momencie rzucania czaru). Pojawia się on w niezajętej przestrzeni, którą widzisz w zasięgu, i używa statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobGiantInsec]{Olbrzymiego Owada}</strong>. Wybrana forma określa niektóre szczegóły w jego statystykach. Istota znika, gdy jej Punkty Wytrzymałości spadną do 0 lub gdy czar się zakończy.</p><p>Istota jest twoim sojusznikiem i sprzymierzeńcem twoich sojuszników. W walce dzieli z tobą Inicjatywę, ale wykonuje swoją turę natychmiast po tobie. Wykonuje twoje werbalne polecenia (nie wymaga to Akcji). Jeśli nie wydasz żadnych poleceń, wykonuje Akcję &amp;Reference[Dodge]{Unik} i porusza się tak, aby unikać niebezpieczeństwa.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Użyj poziomu komórki czaru jako poziomu czaru w statystykach istoty.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>Oprócz opisanych zmian poziom czaru wpływa również na następujące atrybuty owada:</p><table><caption>Olbrzymi Owad</caption><tbody><tr><td><strong>KP</strong></td><td>11 + poziom czaru</td></tr><tr><td><strong>PW</strong></td><td>30 + 10 za każdy poziom czaru powyżej 4.</td></tr><tr><td><strong>Szybkość</strong></td><td>40 stóp, Wspinaczka 40 stóp, Lot 40 stóp (tylko osa)</td></tr><tr><td><strong>PB</strong></td><td>równa się twojemu Premii do Biegłości</td></tr></tbody></table></article></section>"
+            "description": "<p>You summon a giant centipede, spider, or wasp (chosen when you cast the spell). It manifests in an unoccupied space you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobGiantInsec]{Giant Insect}</strong> stat block. The form you choose determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[Dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobGiantInsec statblock caption=false]</p>"
         },
         "Glibness": {
             "name": "Elokwencja",
@@ -2967,15 +2973,24 @@
             "effects": {
                 "Magic Weapon +1": {
                     "name": "Broń magiczna +1",
-                    "description": "<p>Do końca działania czaru, ta broń staje się bronią magiczną z premią +1 do testów ataku i obrażeń.</p>"
+                    "description": "<p>Do końca działania czaru, ta broń staje się bronią magiczną z premią +1 do testów ataku i obrażeń.</p>",
+                    "changes": {
+                        "name": "Magia {} +1"
+                    }
                 },
                 "Magic Weapon +2": {
                     "name": "Broń magiczna +2",
-                    "description": "<p>Do końca działania czaru, ta broń staje się bronią magiczną z premią +2 do testów ataku i obrażeń.</p>"
+                    "description": "<p>Do końca działania czaru, ta broń staje się bronią magiczną z premią +2 do testów ataku i obrażeń.</p>",
+                    "changes": {
+                        "name": "Magia {} +2"
+                    }
                 },
                 "Magic Weapon +3": {
                     "name": "Broń magiczna +3",
-                    "description": "<p>Do końca działania czaru, ta broń staje się bronią magiczną z premią +3 do testów ataku i obrażeń.</p>"
+                    "description": "<p>Do końca działania czaru, ta broń staje się bronią magiczną z premią +3 do testów ataku i obrażeń.</p>",
+                    "changes": {
+                        "name": "Magia {} +3"
+                    }
                 }
             }
         },
@@ -3756,7 +3771,12 @@
         },
         "Ray of Sickness": {
             "name": "Promień zatrucia",
-            "description": "<p>Wystrzeliwujesz zielonkawy promień w kierunku istoty w zasięgu. Wykonaj dystansowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 2k8 obrażeń od trucizn i zyskuje stan &amp;Reference[Poisoned]{Zatruty} do końca swojej następnej tury.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 1. kręgu.</p>"
+            "description": "<p>Wystrzeliwujesz zielonkawy promień w kierunku istoty w zasięgu. Wykonaj dystansowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 2k8 obrażeń od trucizn i zyskuje stan &amp;Reference[Poisoned]{Zatruty} do końca swojej następnej tury.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+            "effects": {
+                "Poisoned": {
+                    "name": "Zatruty"
+                }
+            }
         },
         "Regenerate": {
             "name": "Regeneracja",
@@ -4101,16 +4121,28 @@
             },
             "effects": {
                 "Shillelagh (1d8)": {
-                    "name": "Shillelagh (1k8)"
+                    "name": "Shillelagh (1k8)",
+                    "changes": {
+                        "name": "{} Shillelagh"
+                    }
                 },
                 "Shillelagh (1d10)": {
-                    "name": "Shillelagh (1k10)"
+                    "name": "Shillelagh (1k10)",
+                    "changes": {
+                        "name": "{} (Shillelagh)"
+                    }
                 },
                 "Shillelagh (1d12)": {
-                    "name": "Shillelagh (1k12)"
+                    "name": "Shillelagh (1k12)",
+                    "changes": {
+                        "name": "{} (Shillelagh)"
+                    }
                 },
                 "Shillelagh (2d6)": {
-                    "name": "Shillelagh (2k6)"
+                    "name": "Shillelagh (2k6)",
+                    "changes": {
+                        "name": "{} (Shillelagh)"
+                    }
                 }
             }
         },
@@ -4296,8 +4328,12 @@
             "activation": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
             "activationCondition": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
             "activities": {
-                "save": {
+                "Stun Save": {
+                    "name": "Stun Save",
                     "damageOnSave": "full"
+                },
+                "Damage": {
+                    "name": "Obrażenia"
                 }
             }
         },
@@ -4410,17 +4446,17 @@
         },
         "Summon Aberration": {
             "name": "Przyzwanie wynaturzenia",
-            "description": "<p>Przywołujesz aberracyjne widmo, które manifestuje się w niezajętej przestrzeni, którą widzisz w zasięgu, i używa statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobAberrantSp]{Aberracyjnego Ducha}</strong>. Gdy rzucasz ten czar, wybierz Obserwatora, Łupieżcę Umysłów lub Slaada. Stworzenie przypomina Aberrację tego rodzaju, co determinuje pewne szczegóły w jego bloku statystyk. Istota znika, gdy spadnie do 0 Punktów Wytrzymałości lub gdy czar się skończy.</p><p>Stworzenie jest twoim sojusznikiem oraz sojusznikiem twoich sprzymierzeńców. W walce dzieli z tobą inicjatywę, ale wykonuje swoją turę natychmiast po tobie. Słucha twoich poleceń werbalnych (nie wymagając od ciebie Akcji). Jeśli nie wydasz żadnych poleceń, wykonuje Akcję &amp;Reference[Dodge]{Unik} i wykorzystuje swój ruch, by unikać zagrożeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Poziom komórki czaru określa poziom czaru w statystykach ducha.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>Oprócz wymienionych zastosowań poziomu czaru w cechach i akcjach ducha, następujące atrybuty również ulegają zmianie.</p><table><caption>Aberracyjne Widmo</caption><tbody><tr><td><strong>KP</strong></td><td>11 + poziom czaru</td></tr><tr><td><strong>Punkty Wytrzymałości</strong></td><td>40 + 10 za każdy poziom czaru powyżej 4.</td></tr><tr><td><strong>Szybkość</strong></td><td>30 stóp; Lot 30 stóp (unoszenie się; tylko Obserwator)</td></tr><tr><td><strong>Premia do Biegłości</strong></td><td>równa się twojej Premii do Biegłości</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth an aberrant spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobAberrantSp]{Aberrant Spirit}</strong> stat block. When you cast the spell, choose Beholderkin, Mind Flayer, or Slaad. The creature resembles an Aberration of that kind, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, it shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[Dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobAberrantSp statblock caption=false]</p>",
             "materials": "marynowana macka i gałka oczna w pojemniku wyłożonym platyną wartym 400+ GP"
         },
         "Summon Beast": {
             "name": "Przyzwanie bestii",
-            "description": "<p>Przywołujesz bestialne widmo, które manifestuje się w niezajętej przestrzeni, którą widzisz w zasięgu, i używa statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobBestialSpi]{Bestialnego Ducha}</strong>. Gdy rzucasz ten czar, wybierz środowisko: Powietrze, Ląd lub Woda. Stworzenie przypomina zwierzę twojego wyboru, które jest rodzime dla wybranego środowiska, co determinuje pewne szczegóły w jego bloku statystyk. Istota znika, gdy spadnie do 0 Punktów Wytrzymałości lub gdy czar się skończy.</p><p>Stworzenie jest sojusznikiem twoim oraz twoich sprzymierzeńców. W walce dzieli z tobą inicjatywę, ale wykonuje swoją turę natychmiast po tobie. Słucha twoich poleceń werbalnych (nie wymagając od ciebie Akcji). Jeśli nie wydasz żadnych poleceń, wykonuje Akcję Uniku i wykorzystuje swój ruch, by unikać zagrożeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Poziom komórki czaru określa poziom czaru w statystykach ducha.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>Oprócz wymienionych zastosowań poziomu czaru w cechach i akcjach ducha, następujące atrybuty również ulegają zmianie.</p><table><caption>Bestialne Widmo</caption><tbody><tr><td><strong>KP</strong></td><td>11 + poziom czaru</td></tr><tr><td><strong>Punkty Wytrzymałości</strong></td><td>20 (tylko Powietrze) lub 30 (tylko Ląd i Woda) + 5 za każdy poziom czaru powyżej 2.</td></tr><tr><td><strong>Szybkość</strong></td><td>30 stóp; Wspinaczka 30 stóp (tylko Ląd); Lot 60 stóp (tylko Powietrze); Pływanie 30 stóp (tylko Woda)</td></tr><tr><td><strong>Premia do Biegłości</strong></td><td>równa się twojej Premii do Biegłości</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth a bestial spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobBestialSpi]{Bestial Spirit}</strong> stat block. When you cast the spell, choose an environment: Air, Land, or Water. The creature resembles an animal of your choice that is native to the chosen environment, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobBestialSpi statblock caption=false]</p>",
             "materials": "pióro, kępa futra i ogon ryby w pozłacanym żołędziu wartym 200+ GP"
         },
         "Summon Celestial": {
             "name": "Przyzwanie niebianina",
-            "description": "<p>Przywołujesz Niebiańskie Widmo, które manifestuje się w anielskiej formie w niezajętej przestrzeni, którą widzisz w zasięgu, i używa statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobCelestialS]{Niebiańskiego Ducha}</strong>. Gdy rzucasz ten czar, wybierz Mściciela lub Obrońcę. Twój wybór określa pewne szczegóły w jego bloku statystyk. Istota znika, gdy spadnie do 0 Punktów Wytrzymałości lub gdy czar się skończy.</p><p>Stworzenie jest sojusznikiem twoim oraz twoich sprzymierzeńców. W walce dzieli z tobą inicjatywę, ale wykonuje swoją turę natychmiast po tobie. Słucha twoich poleceń werbalnych (nie wymagając od ciebie Akcji). Jeśli nie wydasz żadnych poleceń, wykonuje Akcję Uniku i wykorzystuje swój ruch, by unikać zagrożeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Poziom komórki czaru określa poziom czaru w statystykach ducha.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>Oprócz wymienionych zastosowań poziomu czaru w cechach i akcjach ducha, następujące atrybuty również ulegają zmianie.</p><table><caption>Niebiańskie Widmo</caption><tbody><tr><td><strong>KP</strong></td><td>11 + poziom czaru + 2 (tylko Obrońca)</td></tr><tr><td><strong>Punkty Wytrzymałości</strong></td><td>40 + 10 za każdy poziom czaru powyżej 5.</td></tr><tr><td><strong>Premia do Biegłości</strong></td><td>równa się twojej Premii do Biegłości</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth a Celestial spirit. It manifests in an angelic form in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobCelestialS]{Celestial Spirit}</strong> stat block. When you cast the spell, choose Avenger or Defender. Your choice determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobCelestialS statblock caption=false]</p>",
             "materials": "relikwiarz wart 500+ GP",
             "activities": {
                 "summon": {
@@ -4437,7 +4473,7 @@
         },
         "Summon Construct": {
             "name": "Przyzwanie konstruktu",
-            "description": "<p>Przywołujesz widmo Konstruktu, które manifestuje się w niezajętej przestrzeni, którą widzisz w zasięgu, i używa statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobConstructS]{Ducha Konstruktu}</strong>. Gdy rzucasz ten czar, wybierz materiał: glinę, metal lub kamień. Stworzenie przypomina ożywiony posąg (sam określasz jego wygląd) wykonany z wybranego materiału, co determinuje pewne szczegóły w jego bloku statystyk. Istota znika, gdy spadnie do 0 Punktów Wytrzymałości lub gdy czar się skończy.</p><p>Stworzenie jest sojusznikiem twoim oraz twoich sprzymierzeńców. W walce dzieli z tobą inicjatywę, ale wykonuje swoją turę natychmiast po tobie. Słucha twoich poleceń werbalnych (nie wymagając od ciebie Akcji). Jeśli nie wydasz żadnych poleceń, wykonuje Akcję &amp;Reference[Dodge]{Unik} i wykorzystuje swój ruch, by unikać zagrożeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Poziom komórki czaru określa poziom czaru w statystykach ducha.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>Oprócz wymienionych zastosowań poziomu czaru w cechach i akcjach ducha, następujące atrybuty również ulegają zmianie.</p><table><caption>Widmo Konstruktu</caption><tbody><tr><td><strong>KP</strong></td><td>13 + poziom czaru</td></tr><tr><td><strong>Punkty Wytrzymałości</strong></td><td>40 + 15 za każdy poziom czaru powyżej 4.</td></tr><tr><td><strong>Premia do Biegłości</strong></td><td>równa się twojej Premii do Biegłości</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth the spirit of a Construct. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobConstructS]{Construct Spirit}</strong> stat block. When you cast the spell, choose a material: Clay, Metal, or Stone. The creature resembles an animate statue (you determine the appearance) made of the chosen material, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[Dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobConstructS statblock caption=false]</p>",
             "materials": "skrzynka na klucze warta 400+ GP",
             "activities": {
                 "summon": {
@@ -4457,12 +4493,12 @@
         },
         "Summon Dragon": {
             "name": "Przyzwanie smoka",
-            "description": "<p>Przywołujesz Smocze Widmo, które manifestuje się w niezajętej przestrzeni, którą widzisz w zasięgu, i używa statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobDraconicSp]{Smoczego Ducha}</strong>. Istota znika, gdy spadnie do 0 Punktów Wytrzymałości lub gdy czar się skończy.</p><p>Stworzenie jest sojusznikiem twoim oraz twoich sprzymierzeńców. W walce dzieli z tobą inicjatywę, ale wykonuje swoją turę natychmiast po tobie. Słucha twoich poleceń werbalnych (nie wymagając od ciebie Akcji). Jeśli nie wydasz żadnych poleceń, wykonuje Akcję Uniku i wykorzystuje swój ruch, by unikać zagrożeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Poziom komórki czaru określa poziom czaru w statystykach ducha.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>Oprócz wymienionych zastosowań poziomu czaru w cechach i akcjach ducha, następujące atrybuty również ulegają zmianie.</p><table><caption>Smocze Widmo</caption><tbody><tr><td><strong>KP</strong></td><td>14 + poziom czaru</td></tr><tr><td><strong>Punkty Wytrzymałości</strong></td><td>50 + 10 za każdy poziom czaru powyżej 5.</td></tr><tr><td><strong>Premia do Biegłości</strong></td><td>równa się twojej Premii do Biegłości</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth a Dragon spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobDraconicSp]{Draconic Spirit}</strong> stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot. </strong>Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobDraconicSp statblock caption=false]</p>",
             "materials": "przedmiot z wygrawerowanym na nim wizerunkiem smoka, wart 500+ GP"
         },
         "Summon Elemental": {
             "name": "Przyzwanie żywiołaka",
-            "description": "<p>Przywołujesz Żywiołacze Widmo, które manifestuje się w niezajętej przestrzeni, którą widzisz w zasięgu, i używa statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobElementalS]{Żywiołaczego Ducha}</strong>. Gdy rzucasz ten czar, wybierz żywioł: Powietrze, Ziemia, Ogień lub Woda. Istota przypomina dwunożną formę otoczoną wybranym żywiołem, co determinuje pewne szczegóły w jej bloku statystyk. Istota znika, gdy spadnie do 0 Punktów Wytrzymałości lub gdy czar się skończy.</p><p>Stworzenie jest sojusznikiem twoim oraz twoich sprzymierzeńców. W walce dzieli z tobą inicjatywę, ale wykonuje swoją turę natychmiast po tobie. Słucha twoich poleceń werbalnych (nie wymagając od ciebie Akcji). Jeśli nie wydasz żadnych poleceń, wykonuje Akcję &amp;Reference[Dodge]{Unik} i wykorzystuje swój ruch, by unikać zagrożeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Poziom komórki czaru określa poziom czaru w statystykach ducha.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>Oprócz wymienionych zastosowań poziomu czaru w cechach i akcjach ducha, następujące atrybuty również ulegają zmianie.</p><table><caption>Żywiołacze Widmo</caption><tbody><tr><td><strong>KP</strong></td><td>11 + poziom czaru</td></tr><tr><td><strong>Punkty Wytrzymałości</strong></td><td>50 + 10 za każdy poziom czaru powyżej 4.</td></tr><tr><td><strong>Szybkość</strong></td><td>40 stóp; Kroczenie pod ziemią 40 stóp (tylko Ziemia); Lot 40 stóp (unoszenie się; tylko Powietrze); Pływanie 40 stóp (tylko Woda)</td></tr><tr><td><strong>Premia do Biegłości</strong></td><td>równa się twojej Premii do Biegłości</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth an Elemental spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobElementalS]{Elemental Spirit}</strong> stat block. When you cast the spell, choose an element: Air, Earth, Fire, or Water. The creature resembles a bipedal form wreathed in the chosen element, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[Dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobElementalS statblock caption=false]</p>",
             "materials": "powietrze, kamyk, popiół i woda w pojemniku wyłożonym złotem wartym 400+ GP",
             "activities": {
                 "summon": {
@@ -4485,12 +4521,12 @@
         },
         "Summon Fey": {
             "name": "Przyzwanie Fey",
-            "description": "<p>Przywołujesz Widmo Fey, które manifestuje się w niezajętej przestrzeni, którą widzisz w zasięgu, i używa statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobFeySpirit0]{Ducha Fey}</strong>. Gdy rzucasz ten czar, wybierz nastrój: Wściekły, Wesoły lub Podstępny. Stworzenie przypomina istotę Fey twojego wyboru, naznaczoną wybranym nastrojem, co determinuje pewne szczegóły w jego bloku statystyk. Istota znika, gdy spadnie do 0 Punktów Wytrzymałości lub gdy czar się skończy.</p><p>Stworzenie jest sojusznikiem twoim oraz twoich sprzymierzeńców. W walce dzieli z tobą inicjatywę, ale wykonuje swoją turę natychmiast po tobie. Słucha twoich poleceń werbalnych (nie wymagając od ciebie Akcji). Jeśli nie wydasz żadnych poleceń, wykonuje Akcję &amp;Reference[dodge]{Unik} i wykorzystuje swój ruch, by unikać zagrożeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Poziom komórki czaru określa poziom czaru w statystykach ducha.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>Oprócz wymienionych zastosowań poziomu czaru w cechach i akcjach ducha, następujące atrybuty również ulegają zmianie.</p><table><caption>Widmo Fey</caption><tbody><tr><td><strong>KP</strong></td><td>12 + poziom czaru</td></tr><tr><td><strong>Punkty Wytrzymałości</strong></td><td>30 + 10 za każdy poziom czaru powyżej 3.</td></tr><tr><td><strong>Premia do Biegłości</strong></td><td>równa się twojej Premii do Biegłości</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth a Fey spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobFeySpirit0]{Fey Spirit}</strong> stat block. When you cast the spell, choose a mood: Fuming, Mirthful, or Tricksy. The creature resembles a Fey creature of your choice marked by the chosen mood, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobFeySpirit0 statblock caption=false]</p>",
             "materials": "pozłacany kwiat wart 300+ GP"
         },
         "Summon Fiend": {
             "name": "Przyzwanie Czarta",
-            "description": "<p>Przywołujesz Plugawne Widmo, które manifestuje się w niezajętej przestrzeni, którą widzisz w zasięgu, i używa statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobFiendishSp]{Plugawnego Ducha}</strong>. Gdy rzucasz ten czar, wybierz Demona, Diabła lub Yugolotha. Stworzenie przypomina Plugawego istotę wybranego typu, co determinuje pewne szczegóły w jego bloku statystyk. Istota znika, gdy spadnie do 0 Punktów Wytrzymałości lub gdy czar się skończy.</p><p>Stworzenie jest sojusznikiem twoim oraz twoich sprzymierzeńców. W walce dzieli z tobą inicjatywę, ale wykonuje swoją turę natychmiast po tobie. Słucha twoich poleceń werbalnych (nie wymagając od ciebie Akcji). Jeśli nie wydasz żadnych poleceń, wykonuje Akcję &amp;Reference[Dodge] i wykorzystuje swój ruch, by unikać zagrożeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Poziom komórki czaru określa poziom czaru w statystykach ducha.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>Oprócz wymienionych zastosowań poziomu czaru w cechach i akcjach ducha, następujące atrybuty również ulegają zmianie.</p><table><caption>Plugawne Widmo</caption><tbody><tr><td><strong>KP</strong></td><td>12 + poziom czaru</td></tr><tr><td><strong>Punkty Wytrzymałości</strong></td><td>50 (tylko Demon) lub 40 (tylko Diabeł) lub 60 (tylko Yugoloth) + 15 za każdy poziom czaru powyżej 6.</td></tr><tr><td><strong>Szybkość</strong></td><td>40 stóp; Wspinaczka 40 stóp (tylko Demon); Lot 60 stóp (tylko Diabeł)</td></tr><tr><td><strong>Premia do Biegłości</strong></td><td>równa się twojej Premii do Biegłości</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth a fiendish spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobFiendishSp]{Fiendish Spirit}</strong> stat block. When you cast the spell, choose Demon, Devil, or Yugoloth. The creature resembles a Fiend of the chosen type, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the &amp;Reference[Dodge] action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobFiendishSp statblock caption=false]</p>",
             "materials": "krwawy flakon wart 600+ GP",
             "activities": {
                 "summon": {
@@ -4510,7 +4546,7 @@
         },
         "Summon Undead": {
             "name": "Przyzwanie nieumarłego",
-            "description": "<p>Przywołujesz Widmo Nieumarłego, które manifestuje się w niezajętej przestrzeni, którą widzisz w zasięgu, i używa statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobUndeadSpir]{Ducha Nieumarłego}</strong>. Gdy rzucasz ten czar, wybierz formę istoty: Widmową, Zgniłą lub Szkieletową. Widmo przypomina Nieumarłego wybranej formy, co determinuje pewne szczegóły w jego bloku statystyk. Istota znika, gdy spadnie do 0 Punktów Wytrzymałości lub gdy czar się skończy.</p><p>Stworzenie jest sojusznikiem twoim oraz twoich sprzymierzeńców. W walce dzieli z tobą inicjatywę, ale wykonuje swoją turę natychmiast po tobie. Słucha twoich poleceń werbalnych (nie wymagając od ciebie Akcji). Jeśli nie wydasz żadnych poleceń, wykonuje Akcję &Reference[Dodge] i wykorzystuje swój ruch, by unikać zagrożeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Poziom komórki czaru określa poziom czaru w statystykach ducha.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>Oprócz wymienionych zastosowań poziomu czaru w cechach i akcjach ducha, następujące atrybuty również ulegają zmianie.</p><table><caption>Widmo Nieumarłego</caption><tbody><tr><td><strong>KP</strong></td><td>11 + poziom czaru</td></tr><tr><td><strong>Punkty Wytrzymałości</strong></td><td>30 (tylko Widmowa i Zgniła) lub 20 (tylko Szkieletowa) + 10 za każdy poziom czaru powyżej 3.</td></tr><tr><td><strong>Szybkość</strong></td><td>30 stóp; Lot 40 stóp (unoszenie się; tylko Widmowa)</td></tr><tr><td><strong>Premia do Biegłości</strong></td><td>równa się twojej Premii do Biegłości</td></tr></tbody></table></article></section>",
+            "description": "<p>You call forth an Undead spirit. It manifests in an unoccupied space that you can see within range and uses the <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobUndeadSpir]{Undead Spirit}</strong> stat block. When you cast the spell, choose the creature’s form: Ghostly, Putrid, or Skeletal. The spirit resembles an Undead creature with the chosen form, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.</p><p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its movement to avoid danger.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s level in the stat block.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobUndeadSpir statblock caption=false]</p>",
             "materials": "pozłacana czaszka warta 300+ GP"
         },
         "Sunbeam": {
@@ -4564,7 +4600,10 @@
             },
             "effects": {
                 "Endless Ammunition": {
-                    "name": "Niekończąca się amunicja"
+                    "name": "Niekończąca się amunicja",
+                    "changes": {
+                        "name": "Szybki {}"
+                    }
                 }
             }
         },
@@ -4863,7 +4902,10 @@
             },
             "effects": {
                 "True Strike": {
-                    "name": "Prawdziwe uderzenie"
+                    "name": "Prawdziwe uderzenie",
+                    "changes": {
+                        "name": "{} (Prawdziwe uderzenie)"
+                    }
                 }
             }
         },
@@ -5167,8 +5209,12 @@
             "activation": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
             "activationCondition": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
             "activities": {
-                "save": {
+                "Frightened Save": {
+                    "name": "Frightened Save",
                     "damageOnSave": "full"
+                },
+                "Damage": {
+                    "name": "Obrażenia"
                 }
             },
             "effects": {
