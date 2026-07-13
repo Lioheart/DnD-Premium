@@ -870,7 +870,7 @@
                     "description": "<p>[[lookup @name]] nie musi wydawać dodatkowego ruchu, aby poruszać istotę, którą pochwycił.</p>"
                 },
                 "Compression": {
-                    "name": "Compression",
+                    "name": "Kompresja",
                     "description": "<p>[[lookup @name]] może poruszać się przez przestrzeń wąską nawet na 1 cal, nie zużywając na to dodatkowego ruchu.</p>"
                 }
             }
@@ -3488,7 +3488,7 @@
                     "description": "<p>[[lookup @name]] makes two [[/item Foreleg]] attacks. He can replace one attack with a use of [[/item Deadly Contraption]].</p>"
                 },
                 "Foreleg": {
-                    "name": "Foreleg",
+                    "name": "Przednie odnóże",
                     "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>",
                     "chat": "<p>With cruel, insectile speed, the machine’s foreleg lashes out and pierces the target.</p>"
                 },
@@ -5097,7 +5097,7 @@
             "items": {
                 "Necrotic Burst": {
                     "name": "Nekrotyczny wybuch",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]], and the target has the &amp;Reference[Poisoned apply=false] condition until the start of the [[lookup @name lowercase]]’s next turn. While Poisoned, the target can’t regain Hit Points.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]], a cel ma stan &amp;Reference[Poisoned apply=false] do początku następnej tury [[lookup @name lowercase]]. Będąc Zatruty, cel nie może odzyskiwać Punktów Wytrzymałości.</p>",
                     "chat": "<p>The necrichor emits a concentrated energy burst that blends force and decay towards its target.</p>",
                     "effects": {
                         "Poisoned": {
@@ -5402,7 +5402,7 @@
                     }
                 },
                 "Lunge": {
-                    "name": "Lunge",
+                    "name": "Zryw",
                     "description": "<p>[[lookup @name]] moves up to half her Speed and makes one [[/item Dread Blade]] attack.</p>",
                     "activities": {
                         "Expend Use": {
