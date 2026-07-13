@@ -127,7 +127,7 @@
                         "Claw": {
                             "name": "Pazury",
                             "description": {
-                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a [[lookup @target.affects.type activity=u64Kjp19EAOJoLeo]] [[lookup @target.affects.special activity=u64Kjp19EAOJoLeo]], it is subjected to the following effect.</p><p><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=u64Kjp19EAOJoLeo]].</p><p><em>Failure:</em> The target has the &amp;Reference[Paralyzed apply=false] condition until the end of its next turn.</p>"
+                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest istotą typu [[lookup @target.affects.type activity=u64Kjp19EAOJoLeo]] [[lookup @target.affects.special activity=u64Kjp19EAOJoLeo]], zostaje poddany następującemu efektowi.</p><p><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=u64Kjp19EAOJoLeo]].</p><p><em>Porażka:</em> Cel ma stan &amp;Reference[Paralyzed apply=false] do końca swojej następnej tury.</p>"
                             }
                         }
                     },
@@ -1242,7 +1242,7 @@
                         "Warhammer": {
                             "name": "Młot bojowy",
                             "description": {
-                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Large or smaller creature, the [[lookup @name lowercase]] pushes the target up to 10 feet straight away from itself.</p>"
+                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Dużą lub mniejszą istotą, [[lookup @name lowercase]] odpycha cel po linii prostej o maksymalnie 10 stóp od siebie.</p>"
                             }
                         },
                         "Heavy Crossbow": {
@@ -1296,7 +1296,7 @@
                         "Bite (Wolf or Hybrid Form Only)": {
                             "name": "Ugryzenie (tylko w formie Wilka lub Hybrydy)",
                             "description": {
-                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Humanoid, it is subjected to the following effect.</p><p><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=GBKhdBPogHNssDIa]].</p><p><em>Failure:</em> The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmWerewolf000000]{Werewolf}</strong> under the DM’s control and has 10 Hit Points.</p><p><em>Success:</em> The target is immune to this [[lookup @name lowercase]]'s curse for 24 hours.</p>"
+                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Humanoidem, zostaje poddany następującemu efektowi.</p><p><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=GBKhdBPogHNssDIa]].</p><p><em>Porażka:</em> Cel zostaje przeklęty. Jeśli przeklęty cel zostanie zredukowany do 0 Punktów Wytrzymałości, zamiast tego staje się <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmWerewolf000000]</strong> pod kontrolą MP i ma 10 Punktów Wytrzymałości.</p><p><em>Sukces:</em> Cel jest niepodatny na klątwę tego [[lookup @name lowercase]] przez 24 godziny.</p>"
                             }
                         },
                         "Scratch": {
@@ -1397,7 +1397,7 @@
                     "tokenName": "Kartad",
                     "items": {
                         "Aversion to Fire": {
-                            "name": "Aversion to Fire",
+                            "name": "Wstręt do ognia",
                             "description": {
                                 "value": "<p>Jeśli [[lookup @name lowercase]] otrzyma obrażenia od ognia, ma Utrudnienie w testach ataku i testach cech do końca swojej następnej tury.</p>"
                             }
@@ -1468,7 +1468,7 @@
                         "Captain’s Charm": {
                             "name": "Captain’s Charm",
                             "description": {
-                                "value": "<p><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=3o27u4Ww7SmCgc8k]], one creature the [[lookup @name lowercase]] can see within [[lookup @range.value activity=3o27u4Ww7SmCgc8k]] feet.</p><p><em>Failure:</em> The target has the &amp;Reference[Charmed apply=false] condition until the start of the [[lookup @name lowercase]]'s next turn.</p>"
+                                "value": "<p><em>Rzut obronny na Mądrość:</em> ST [[lookup @save.dc.value activity=3o27u4Ww7SmCgc8k]], jedna istota, którą [[lookup @name lowercase]] widzi w obrębie [[lookup @range.value activity=3o27u4Ww7SmCgc8k]] stóp.</p><p><em>Porażka:</em> Cel ma stan &amp;Reference[Charmed apply=false] do początku następnej tury [[lookup @name lowercase]].</p>"
                             }
                         },
                         "Riposte": {
@@ -1520,7 +1520,7 @@
                             }
                         },
                         "Ravage": {
-                            "name": "Ravage",
+                            "name": "Rozszarpanie",
                             "description": {
                                 "value": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a [[lookup @target.affects.special activity=Gi7NHst31Yf0KVM9]] creature and the [[lookup @name lowercase]] [[lookup @activation.condition activity=Gi7NHst31Yf0KVM9]] straight toward it immediately before the hit, the target takes an extra [[/damage 2d8 slashing average]] damage and has the &amp;Reference[Prone apply=false] condition.</p>"
                             }
@@ -2515,7 +2515,7 @@
                         "Fiendish Restoration": {
                             "name": "Czarcie przywrócenie",
                             "description": {
-                                "value": "<p> If it dies, the [[lookup @name lowercase]] returns to life in [[/r 1d6]] days and regains all its Hit Points. Only a <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWish000000]{Wish}</em> spell can prevent this trait from functioning.</p>"
+                                "value": "<p>Jeśli umrze, [[lookup @name lowercase]] powraca do życia po [[/r 1d6]] dniach i odzyskuje wszystkie swoje Punkty Wytrzymałości. Tylko czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWish000000]</em> może uniemożliwić działanie tej cechy.</p>"
                             }
                         },
                         "Multiattack": {
@@ -3171,7 +3171,7 @@
                         "Gore  (Boar or Hybrid Form Only)": {
                             "name": "Nadzianie (tylko w formie dzika lub hybrydy)",
                             "description": {
-                                "value": "<p>[[/attack extended]]. [[/damage extended average]]. If the target is a Humanoid, it is subjected to the following effect.</p><p><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=lS5miercc4WPdVfN]].</p><p><em>Failure:</em> The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmWereboar000000]{Wereboar}</strong> under the DM’s control and has 10 Hit Points.</p><p><em>Success:</em> The target is immune to this [[lookup @name lowercase]]'s curse for 24 hours.</p>"
+                                "value": "<p>[[/attack extended]]. [[/damage extended average]]. Jeśli cel jest Humanoidem, zostaje poddany następującemu efektowi.</p><p><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=lS5miercc4WPdVfN]].</p><p><em>Porażka:</em> Cel zostaje przeklęty. Jeśli przeklęty cel zostanie zredukowany do 0 Punktów Wytrzymałości, zamiast tego staje się <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmWereboar000000]</strong> pod kontrolą MP i ma 10 Punktów Wytrzymałości.</p><p><em>Sukces:</em> Cel jest niepodatny na klątwę tego [[lookup @name lowercase]] przez 24 godziny.</p>"
                             }
                         },
                         "Tusk (Boar or Hybrid Form Only)": {
@@ -4163,7 +4163,7 @@
                         "Bite (Wolf or Hybrid Form Only)": {
                             "name": "Ugryzenie (tylko w formie Wilka lub Hybrydy)",
                             "description": {
-                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Humanoid, it is subjected to the following effect.</p><p><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=GBKhdBPogHNssDIa]].</p><p><em>Failure:</em> The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmWerewolf000000]{Werewolf}</strong> under the DM’s control and has 10 Hit Points.</p><p><em>Success:</em> The target is immune to this [[lookup @name lowercase]]'s curse for 24 hours.</p>"
+                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Humanoidem, zostaje poddany następującemu efektowi.</p><p><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=GBKhdBPogHNssDIa]].</p><p><em>Porażka:</em> Cel zostaje przeklęty. Jeśli przeklęty cel zostanie zredukowany do 0 Punktów Wytrzymałości, zamiast tego staje się <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmWerewolf000000]</strong> pod kontrolą MP i ma 10 Punktów Wytrzymałości.</p><p><em>Sukces:</em> Cel jest niepodatny na klątwę tego [[lookup @name lowercase]] przez 24 godziny.</p>"
                             }
                         },
                         "Scratch": {
@@ -4310,7 +4310,7 @@
                         "Claw": {
                             "name": "Pazury",
                             "description": {
-                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a [[lookup @target.affects.type activity=u64Kjp19EAOJoLeo]] [[lookup @target.affects.special activity=u64Kjp19EAOJoLeo]], it is subjected to the following effect.</p><p><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=u64Kjp19EAOJoLeo]].</p><p><em>Failure:</em> The target has the &amp;Reference[Paralyzed apply=false] condition until the end of its next turn.</p>"
+                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest istotą typu [[lookup @target.affects.type activity=u64Kjp19EAOJoLeo]] [[lookup @target.affects.special activity=u64Kjp19EAOJoLeo]], zostaje poddany następującemu efektowi.</p><p><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=u64Kjp19EAOJoLeo]].</p><p><em>Porażka:</em> Cel ma stan &amp;Reference[Paralyzed apply=false] do końca swojej następnej tury.</p>"
                             }
                         }
                     },
@@ -5486,7 +5486,7 @@
                         "Captain’s Charm": {
                             "name": "Captain’s Charm",
                             "description": {
-                                "value": "<p><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=3o27u4Ww7SmCgc8k]], one creature the [[lookup @name lowercase]] can see within [[lookup @range.value activity=3o27u4Ww7SmCgc8k]] feet.</p><p><em>Failure:</em> The target has the &amp;Reference[Charmed apply=false] condition until the start of the [[lookup @name lowercase]]'s next turn.</p>"
+                                "value": "<p><em>Rzut obronny na Mądrość:</em> ST [[lookup @save.dc.value activity=3o27u4Ww7SmCgc8k]], jedna istota, którą [[lookup @name lowercase]] widzi w obrębie [[lookup @range.value activity=3o27u4Ww7SmCgc8k]] stóp.</p><p><em>Porażka:</em> Cel ma stan &amp;Reference[Charmed apply=false] do początku następnej tury [[lookup @name lowercase]].</p>"
                             }
                         },
                         "Riposte": {
@@ -5549,7 +5549,7 @@
                         "Bite (Tiger or Hybrid Form Only)": {
                             "name": "Ugryzenie (tylko w formie Tygrysa lub Hybrydy)",
                             "description": {
-                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Humanoid, it is subjected to the following effect.</p><p><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=jgkWL5fxyqrDPr4D]].</p><p><em>Failure:</em> The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmWeretiger00000]{Weretiger}</strong> under the DM’s control and has 10 Hit Points.</p><p><em>Success:</em> The target is immune to this [[lookup @name lowercase]]'s' curse for 24 hours.</p>"
+                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Humanoidem, zostaje poddany następującemu efektowi.</p><p><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=jgkWL5fxyqrDPr4D]].</p><p><em>Porażka:</em> Cel zostaje przeklęty. Jeśli przeklęty cel zostanie zredukowany do 0 Punktów Wytrzymałości, zamiast tego staje się <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmWeretiger00000]</strong> pod kontrolą MP i ma 10 Punktów Wytrzymałości.</p><p><em>Sukces:</em> Cel jest niepodatny na klątwę tego [[lookup @name lowercase]] przez 24 godziny.</p>"
                             }
                         },
                         "Scratch": {
@@ -5594,7 +5594,7 @@
                         "Bite (Tiger or Hybrid Form Only)": {
                             "name": "Ugryzenie (tylko w formie Tygrysa lub Hybrydy)",
                             "description": {
-                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Humanoid, it is subjected to the following effect.</p><p><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=jgkWL5fxyqrDPr4D]].</p><p><em>Failure:</em> The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmWeretiger00000]{Weretiger}</strong> under the DM’s control and has 10 Hit Points.</p><p><em>Success:</em> The target is immune to this [[lookup @name lowercase]]'s' curse for 24 hours.</p>"
+                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Humanoidem, zostaje poddany następującemu efektowi.</p><p><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=jgkWL5fxyqrDPr4D]].</p><p><em>Porażka:</em> Cel zostaje przeklęty. Jeśli przeklęty cel zostanie zredukowany do 0 Punktów Wytrzymałości, zamiast tego staje się <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmWeretiger00000]</strong> pod kontrolą MP i ma 10 Punktów Wytrzymałości.</p><p><em>Sukces:</em> Cel jest niepodatny na klątwę tego [[lookup @name lowercase]] przez 24 godziny.</p>"
                             }
                         },
                         "Scratch": {
@@ -5639,7 +5639,7 @@
                         "Bite (Tiger or Hybrid Form Only)": {
                             "name": "Ugryzenie (tylko w formie Tygrysa lub Hybrydy)",
                             "description": {
-                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Humanoid, it is subjected to the following effect.</p><p><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=jgkWL5fxyqrDPr4D]].</p><p><em>Failure:</em> The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmWeretiger00000]{Weretiger}</strong> under the DM’s control and has 10 Hit Points.</p><p><em>Success:</em> The target is immune to this [[lookup @name lowercase]]'s' curse for 24 hours.</p>"
+                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Humanoidem, zostaje poddany następującemu efektowi.</p><p><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=jgkWL5fxyqrDPr4D]].</p><p><em>Porażka:</em> Cel zostaje przeklęty. Jeśli przeklęty cel zostanie zredukowany do 0 Punktów Wytrzymałości, zamiast tego staje się <strong>@UUID[Compendium.dnd-monster-manual.actors.Actor.mmWeretiger00000]</strong> pod kontrolą MP i ma 10 Punktów Wytrzymałości.</p><p><em>Sukces:</em> Cel jest niepodatny na klątwę tego [[lookup @name lowercase]] przez 24 godziny.</p>"
                             }
                         },
                         "Scratch": {
@@ -5670,9 +5670,9 @@
                     "tokenName": "Złudna bestia",
                     "items": {
                         "Avoidance": {
-                            "name": "Avoidance",
+                            "name": "Unikanie",
                             "description": {
-                                "value": "<p>If the [[lookup @name lowercase]] is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the save and half damage if it fails. It can’t use this trait if it has the Incapacitated condition.</p>"
+                                "value": "<p>Jeśli [[lookup @name lowercase]] zostanie poddany efektowi, który pozwala mu wykonać rzut obronny, aby otrzymać tylko połowę obrażeń, zamiast tego nie otrzymuje żadnych obrażeń przy sukcesie i połowę obrażeń przy porażce. Nie może użyć tej cechy, jeśli ma stan Obezwładniony.</p>"
                             }
                         },
                         "Displacement": {
@@ -5747,7 +5747,7 @@
                         "Bite": {
                             "name": "Ugryzienie",
                             "description": {
-                                "value": "<p>[[/attack extended]]. [[/damage average extended]].If the target is a [[lookup @target.affects.special activity=xWlMeXFjELfSUWX9]] creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]). While Grappled, the target has the &amp;Reference[Restrained apply=false] condition and can’t be targeted by the [[lookup @name lowercase]]’s Tail.</p>"
+                                "value": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest istotą [[lookup @target.affects.special activity=xWlMeXFjELfSUWX9]], ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]). Będąc Pochwycony, cel ma stan &amp;Reference[Restrained apply=false] i nie może być celem Ogona [[lookup @name lowercase]].</p>"
                             }
                         },
                         "Tail": {
@@ -5777,7 +5777,7 @@
                         "Boulder Toss": {
                             "name": "Boulder Toss",
                             "description": {
-                                "value": "<p>The [[lookup @name lowercase]] hurls a boulder at a point it can see within [[lookup @range.value activity=jpC3fk7LJlhH4CDr]] feet.</p><p><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=jpC3fk7LJlhH4CDr]], each creature in a [[lookup @target.template.size activity=jpC3fk7LJlhH4CDr]]-foot-radius Sphere centered on that point.</p><p><em>Failure:</em> [[/damage average]]. If the target is a Large or smaller creature, it has the &amp;Reference[Prone] condition.</p><p><em>Success:</em> Half damage only.</p>"
+                                "value": "<p>[[lookup @name]] ciska głazem w punkt, który widzi w obrębie [[lookup @range.value activity=jpC3fk7LJlhH4CDr]] stóp.</p><p><em>Rzut obronny na Zręczność:</em> ST [[lookup @save.dc.value activity=jpC3fk7LJlhH4CDr]], każda istota w Sferze o promieniu [[lookup @target.template.size activity=jpC3fk7LJlhH4CDr]] stóp, której środek znajduje się w tym punkcie.</p><p><em>Porażka:</em> [[/damage average]]. Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Prone].</p><p><em>Sukces:</em> Tylko połowa obrażeń.</p>"
                             }
                         },
                         "Leap": {
