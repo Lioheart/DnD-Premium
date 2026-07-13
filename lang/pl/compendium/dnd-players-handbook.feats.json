@@ -110,7 +110,7 @@
         },
         "Actor": {
             "name": "Aktor",
-            "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cechy.</strong> Zwiększ swoją wartość Charyzmy o 1, do maksymalnie 20.</p><p><strong>Impersonacja.</strong> Gdy jesteś przebrany za prawdziwą lub fikcyjną osobę, masz Ułatwienie przy testach Charyzmy (Oszustwo lub Występy), aby przekonać innych, że jesteś tą osobą.</p><p><strong>Naśladownictwo.</strong> Możesz naśladować dźwięki innych istot, w tym mowę. Istota, która słyszy mimikrę, musi odnieść sukces w teście Mądrości (Intuicja), aby ustalić, że efekt jest fałszywy (ST 8 plus twój modyfikator Charyzmy i premia od biegłości).</p><section class=\"secret\" id=\"secret-tOhwF8l7gqyVJOOB\"><p><strong>Notatka Foundry</strong></p><p>Zdolność <strong>Mimicry</strong> zawiera test z odpowiednim ST.</p><p>Ten atut nie automatyzuje Ułatwienia przy testach.</p></section>",
+            "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Charisma score by 1, to a maximum of 20.</p><p><strong>Impersonation. </strong>While you’re disguised as a real or fictional person, you have Advantage on Charisma (Deception or Performance) checks to convince others that you are that person.</p><p><strong>Mimicry.</strong> You can mimic the sounds of other creatures, including speech. A creature that hears the mimicry must succeed on a Wisdom (Insight) check to determine the effect is faked (DC 8 plus your Charisma modifier and Proficiency Bonus).</p><section class=\"secret\" id=\"secret-tOhwF8l7gqyVJOOB\"><p><strong>Foundry Note</strong></p><p>The <strong>Mimicry</strong> activity includes a check with the correct DC.</p><p>This feat does not automate the Advantage on checks.</p></section>",
             "requirements": "Charyzma 13+",
             "activities": {
                 "Mimicry": {
@@ -280,17 +280,18 @@
         "Boon of Skill": {
             "name": "Dar umiejętności",
             "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie Wartości Cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Wszechstronny mistrz.</strong> Zyskujesz biegłość we wszystkich umiejętnościach.</p><p><strong>Znawstwo.</strong> Wybierz jedną umiejętność, w której nie posiadasz Znawstwa. Zyskujesz Znawstwo w tej umiejętności.</p>",
-            "requirements": "Poziom 19",
-            "effects": {
-                "All-Around Adept": {
-                    "name": "Wszechstronny mistrz"
-                }
-            }
+            "requirements": "Poziom 19"
         },
         "Boon of Speed": {
             "name": "Dar szybkości",
-            "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ wartość jednej wybranej cechy o 1, maksymalnie do 30.</p><p><strong>Mistrz ucieczki.</strong>Akcją dodatkową możesz wykonać akcję &amp;Reference[Disengage]{Odstąpienie}, która dodatkowo kończy na tobie stan &amp;Reference[Grappled]{Pochwycony}.</p><p><strong>Quickness.</strong> Twoja Szybkość zwiększa się o 30 stóp.</p><section class=\"secret\" id=\"secret-BTieKWSqXALMO8oH\"><p><strong>Notatka Foundry</strong></p><p>Ten atut zawiera Aktywny Efekt, który automatycznie zwiększa twoją Szybkość.</p></section>",
+            "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 1, to a maximum of 30.</p><p><strong>Escape Artist.</strong> As a Bonus Action, you can take the &amp;Reference[Disengage] action, which also ends the Grappled condition on you.</p><p><strong>Quickness.</strong> Your Speed increases by 30 feet.</p>",
             "requirements": "Poziom 19",
+            "activities": {
+                "Escape Artist": {
+                    "name": "Escape Artist",
+                    "chatFlavor": "Disengage and end Grapple"
+                }
+            },
             "effects": {
                 "Boon of Speed": {
                     "name": "Dar szybkości"
@@ -430,8 +431,13 @@
         },
         "Dual Wielder": {
             "name": "Oburęczny",
-            "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie wartości cechy.</strong> Zwiększ swoją wartość Siły lub Zręczności o 1, do maksimum 20.</p><p><strong>Ulepszona walka dwiema broniami.</strong> Kiedy w swojej turze wykonujesz Akcję Ataku i atakujesz bronią z właściwością Lekka, możesz wykonać jeden dodatkowy atak jako Akcję Dodatkową później w tej samej turze inną bronią, która musi być bronią wręcz pozbawioną właściwości Dwuręczna. Nie dodajesz swojego modyfikatora cechy do obrażeń dodatkowego ataku, chyba że ten modyfikator jest ujemny.</p><p><strong>Szybkie dobycie.</strong> Możesz dobyć lub schować dwie bronie pozbawione właściwości Dwuręczna, kiedy normalnie mógłbyś dobyć lub schować tylko jedną.</p><section id=\"secret-EJIyTsTmMlxQDh6V\" class=\"secret\"><p><strong>Notatka foundry</strong></p><p>Usunięcie twojego modyfikatora cechy nie jest zautomatyzowane. Możesz go odjąć w polu Premia Sytuacyjna w oknie dialogowym rzutu obrażeń.</p></section>",
-            "requirements": "Siła lub Zręczność 13+"
+            "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p><p><strong>Enhanced Dual Wielding.</strong> When you take the Attack action on your turn and attack with a weapon that has the Light property, you can make one extra attack as a Bonus Action later on the same turn with a different weapon, which must be a Melee weapon that lacks the Two-Handed property. You don’t add your ability modifier to the extra attack’s damage unless that modifier is negative.</p><p><strong>Quick Draw.</strong> You can draw or stow two weapons that lack the Two-Handed property when you would normally be able to draw or stow only one.</p>",
+            "requirements": "Siła lub Zręczność 13+",
+            "effects": {
+                "Enhanced Dual Wielding": {
+                    "name": "Enhanced Dual Wielding"
+                }
+            }
         },
         "Dueling": {
             "name": "Fechtunek",
@@ -467,7 +473,7 @@
         },
         "Fey-Touched": {
             "name": "Dotknięty przez Fey",
-            "description": "<p>Twoje wystawienie na magię Feywild daje ci następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Inteligencję, Mądrość lub Charyzmę o 1, maksymalnie do 20.</p><p><strong>Magia Fey.</strong> Wybierz jeden czar 1. kręgu @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.dWVioXxEGjcPsI9Y]{czar} ze szkoły Wieszczenia lub Uroków. Zawsze masz ten czar oraz czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMistyStep0]{Misty Step} przygotowany. Możesz rzucić każdy z tych czarów bez zużywania Komórki Czarów. Gdy raz rzucisz któryś z tych czarów w ten sposób, nie możesz go ponownie rzucić w ten sposób, dopóki nie zakończysz Długiego Odpoczynku. Możesz też rzucać te czary, używając posiadanych Komórek Czarów odpowiedniego kręgu. Cechą bazową rzucania czarów dla tych zaklęc jest cecha zwiększona przez ten atut.</p><section class=\"secret\" id=\"secret-O8kxBQYKdt4eFJIV\"><p><strong>Notatka Foundry</strong></p><p>Po dodaniu tych czarów do karty postaci należy je ręcznie edytować, aby ustawić odpowiednią cechę zaklinania i dodać darmowe użycie.</p></section>"
+            "description": "<p>Your exposure to the Feywild’s magic grants you the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Fey Magic.</strong> Choose one level 1 @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.dWVioXxEGjcPsI9Y]{spell} from the Divination or Enchantment school of magic. You always have that spell and the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMistyStep0]{Misty Step} spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can’t cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability increased by this feat.</p>"
         },
         "Grappler": {
             "name": "Zapaśnik",
@@ -510,13 +516,8 @@
         },
         "Heavily Armored": {
             "name": "Ciężko opancerzony",
-            "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Kondycję lub Siłę o 1, maksymalnie do 20.</p><p><strong>Trening w Pancerzu.</strong> Zyskujesz biegłość w Ciężkich pancerzach.</p><section id=\"secret-XrTFBiTrscuZUyTK\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta cecha automatycznie przyznaje biegłość w Ciężkich pancerzach.</p></section>",
-            "requirements": "Biegłość w średnim pancerzu",
-            "effects": {
-                "Heavily Armored": {
-                    "name": "Ciężko opancerzony"
-                }
-            }
+            "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong>Increase your Constitution or Strength score by 1, to a maximum of 20.</p><p><strong>Armor Training.</strong> You gain training with Heavy armor.</p>",
+            "requirements": "Biegłość w średnim pancerzu"
         },
         "Heavy Armor Master": {
             "name": "Mistrz ciężkiego pancerza",
@@ -569,12 +570,7 @@
         },
         "Lightly Armored": {
             "name": "Lekko opancerzowny",
-            "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Trening w Pancerzu.</strong> Zyskujesz biegłość w Lekkich pancerzach i Tarczach.</p><section class=\"secret\" id=\"secret-NpiwUDsdtqRVqwYX\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność automatycznie zapewnia biegłość w Lekkich pancerzach i Tarczach.</p></section>",
-            "effects": {
-                "Lightly Armored": {
-                    "name": "Lekko opancerzowny"
-                }
-            }
+            "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p><p><strong>Armor Training.</strong> You gain training with Light armor and Shields.</p>"
         },
         "Lucky": {
             "name": "Szczęściarz",
@@ -605,16 +601,11 @@
         },
         "Magic Initiate": {
             "name": "Wtajemniczony",
-            "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Dwie Sztuczki.</strong> Uczysz się dwóch sztuczek według własnego wyboru z listy czarów @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj]{Kleryka}, @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU]{Druida} lub @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Maga}. Inteligencja, Mądrość lub Charyzma jest twoją cechą bazową rzucania czarów dla zaklęć z tego atutu (wybierz podczas jego wyboru).</p><p><strong>Czar 1. Kręgu.</strong> Wybierz jeden czar 1. kręgu z tej samej listy, z której wybrałeś sztuczki dla tego atutu. Zawsze masz ten czar przygotowany. Możesz rzucić go raz bez zużywania Komórki Czarów i odzyskujesz tę możliwość po zakończeniu Długiego Odpoczynku. Możesz także rzucać ten czar, używając posiadanych Komórek Czarów.</p><p><strong>Zmiana Czaru.</strong> Za każdym razem, gdy zdobywasz nowy poziom, możesz zastąpić jeden z czarów wybranych dla tego atutu innym czarem tego samego kręgu z wybranej listy czarów.</p><p><strong>Powtarzalne.</strong> Możesz wybrać ten atut więcej niż raz, ale za każdym razem musisz wybrać inną listę czarów.</p><section id=\"secret-7JQCSgnGrtu9huzf\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Czary muszą zostać ręcznie dodane do karty postaci z powyższymi zmianami.</p></section>"
+            "description": "<p>You gain the following benefits.</p><p><strong>Two Cantrips.</strong> You learn two cantrips of your choice from the @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj]{Cleric}, @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU]{Druid}, or @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Wizard} spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat’s spells (choose when you select this feat).</p><p><strong>Level 1 Spell.</strong> Choose a level 1 spell from the same list you selected for this feat’s cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</p><p><strong>Spell Change.</strong> Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</p><p><strong>Repeatable.</strong> You can take this feat more than once, but you must choose a different spell list each time.</p>"
         },
         "Martial Weapon Training": {
             "name": "Trening broni żołnierskiej",
-            "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Biegłość w Broniach.</strong> Zyskujesz biegłość w Broniach Żołnierskich.</p><section class=\"secret\" id=\"secret-D09BeCa8lfTgpJ6h\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność automatycznie przyznaje ci biegłość w Broniach Żołnierskich.</p></section>",
-            "effects": {
-                "Martial Weapon Training": {
-                    "name": "Trening broni żołnierskiej"
-                }
-            }
+            "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p><p><strong>Weapon Proficiency.</strong> You gain proficiency with Martial weapons.</p>"
         },
         "Medium Armor Master": {
             "name": "Mistrz średniego pancerza",
@@ -628,13 +619,8 @@
         },
         "Moderately Armored": {
             "name": "Średnio opancerzony",
-            "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Siłę lub Zręczność o 1, maksymalnie do 20.</p><p><strong>Trening w Pancerzu.</strong> Zyskujesz biegłość w Średnich pancerzach.</p><section class=\"secret\" id=\"secret-Q1Odcq8OF5Y3cNci\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność automatycznie przyznaje biegłość w Średnich pancerzach.</p></section>",
-            "requirements": "Biegłość w lekkim pancerzu",
-            "effects": {
-                "Moderately Armored": {
-                    "name": "Średnio opancerzony"
-                }
-            }
+            "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p><p><strong>Armor Training.</strong> You gain training with Medium armor.</p>",
+            "requirements": "Biegłość w lekkim pancerzu"
         },
         "Mounted Combatant": {
             "name": "Kawalerzysta",
@@ -689,11 +675,17 @@
             "effects": {
                 "Poisoned (Dex)": {
                     "name": "Zatruty (Zrc)",
-                    "description": "<p>Gdy istota otrzyma obrażenia od zatrutego przedmiotu, musi wykonać rzut obronny [[/save ability=con]] (ST = 8 + modyfikator cechy zwiększonej przez ten atut + twoja Premia od Biegłości) lub otrzymuje 2k8 obrażeń od trucizn i do końca swojej następnej tury ma stan &amp;Reference[Poisoned].</p>"
+                    "description": "<p>Gdy istota otrzyma obrażenia od zatrutego przedmiotu, musi wykonać rzut obronny [[/save ability=con]] (ST = 8 + modyfikator cechy zwiększonej przez ten atut + twoja Premia od Biegłości) lub otrzymuje 2k8 obrażeń od trucizn i do końca swojej następnej tury ma stan &amp;Reference[Poisoned].</p>",
+                    "changes": {
+                        "name": ", Zatruty"
+                    }
                 },
                 "Poisoned (Int)": {
                     "name": "Zatruty (Int)",
-                    "description": "<p>Gdy istota otrzyma obrażenia od zatrutego przedmiotu, musi wykonać rzut obronny [[/save ability=con]] (ST = 8 + modyfikator cechy zwiększonej przez ten atut + twoja Premia od Biegłości) lub otrzymuje 2k8 obrażeń od trucizn i do końca swojej następnej tury ma stan &amp;Reference[Poisoned].</p>"
+                    "description": "<p>Gdy istota otrzyma obrażenia od zatrutego przedmiotu, musi wykonać rzut obronny [[/save ability=con]] (ST = 8 + modyfikator cechy zwiększonej przez ten atut + twoja Premia od Biegłości) lub otrzymuje 2k8 obrażeń od trucizn i do końca swojej następnej tury ma stan &amp;Reference[Poisoned].</p>",
+                    "changes": {
+                        "name": ", Zatruty"
+                    }
                 }
             }
         },
@@ -742,7 +734,7 @@
         },
         "Ritual Caster": {
             "name": "Znawca rytuałów",
-            "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Inteligencję, Mądrość lub Charyzmę o 1, maksymalnie do 20.</p><p><strong>Czary rytualne.</strong> Wybierz liczbę czarów 1. kręgu równą twojej Premii od Biegłości (obecnie [[lookup @prof]]), które posiadają znacznik Rytuał. Zawsze masz te czary przygotowane i możesz je rzucać, używając dowolnych posiadanych Komórek Czarów. Cechą zaklinania dla tych czarów jest cecha zwiększona przez ten atut. Za każdym razem, gdy twoja Premia od Biegłości wzrasta, możesz dodać jeden dodatkowy czar 1. kręgu ze znacznikiem Rytuał do listy zawsze przygotowanych czarów z tej zdolności.</p><p><strong>Szybki rytuał.</strong> Dzięki tej korzyści możesz rzucić czar Rytuałowy, który masz przygotowany, używając jego standardowego czasu rzucania zamiast wydłużonego czasu dla Rytuału. Rzucenie czaru w ten sposób nie wymaga Komórki Czarów. Gdy użyjesz tej korzyści, nie możesz ponownie z niej skorzystać, dopóki nie zakończysz Długiego Odpoczynku.</p><section id=\"secret-k6S1sYFzUtw0k3RK\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Czary muszą zostać dodane ręcznie wraz ze zmianami.</p><p>Zdolność <strong>Szybki rytuał</strong> może być używana do śledzenia ograniczonego użycia między Długimi Odpoczynkami.</p></section>",
+            "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Ritual Spells.</strong> Choose a number of level 1 spells equal to your Proficiency Bonus (currently [[lookup @prof]]) that have the Ritual tag. You always have those spells prepared, and you can cast them with any spell slots you have. The spells’ spellcasting ability is the ability increased by this feat. Whenever your Proficiency Bonus increases thereafter, you can add an additional level 1 spell with the Ritual tag to the spells always prepared with this feature.</p><p><strong>Quick Ritual.</strong> With this benefit, you can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn’t require a spell slot. Once you cast the spell in this way, you can’t use this benefit again until you finish a Long Rest.</p><section class=\"secret\" id=\"secret-k6S1sYFzUtw0k3RK\"><p><strong>Foundry Note</strong></p><p>The <strong>Quick Ritual</strong> activity can be used for tracking the limited use between Long Rests.</p></section>",
             "requirements": "Inteligencja, Mądrość lub Charyzma 13 +",
             "activities": {
                 "Fast Ritual Cast": {
@@ -766,15 +758,7 @@
         },
         "Shadow-Touched": {
             "name": "Dotknięty przez Cień",
-            "description": "<p><em>Ogólny Atut (Wymaganie: Poziom 4+)</em></p><p>Twoje wystawienie na magię Shadowfell daje ci następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Inteligencję, Mądrość lub Charyzmę o 1, maksymalnie do 20.</p><p><strong>Magia Cienia.</strong> Wybierz jeden czar 1. kręgu ze szkoły Iluzji lub Nekromancji. Zawsze masz ten czar oraz czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplInvisibili]{Invisibility} przygotowany. Możesz rzucić każdy z tych czarów bez zużywania Komórki Czarów. Gdy raz rzucisz któryś z tych czarów w ten sposób, nie możesz go ponownie rzucić w ten sposób, dopóki nie zakończysz Długiego Odpoczynku. Możesz też rzucać te czary, używając posiadanych Komórek Czarów odpowiedniego kręgu. Cecha bazowa rzucania czaru dla tych zaklęć, to cechąazwiększona przez ten atut.</p><section class=\"secret\" id=\"secret-MHCfb0RA6g4rzo6K\"><p><strong>Notatka Foundry</strong></p><p>Czary muszą zostać ręcznie dodane do twojej karty postaci z tymi zmianami.</p><p>Aktywności <strong>Wykorzystaj użycie wybranego czaru</strong> oraz <strong>Wykorzystaj użycie niewidzialności</strong> mogą być używane do śledzenia darmowych użyć.</p></section>",
-            "activities": {
-                "Expend Chosen Spell's Use": {
-                    "name": "Wykorzystaj użycie wybranego czaru"
-                },
-                "Expend Invisibility's Use": {
-                    "name": "Wykorzystaj użycie niewidzialności"
-                }
-            }
+            "description": "<p>Your exposure to the Shadowfell’s magic grants you the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Shadow Magic.</strong> Choose one level 1 spell from the Illusion or Necromancy school of magic. You always have that spell and the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplInvisibili]{Invisibility} spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can’t cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability increased by this feat.</p><section class=\"secret\" id=\"secret-MHCfb0RA6g4rzo6K\"><p><strong>Foundry Note</strong></p><p>The spells will have to be added to your sheet with those changes manually.</p><p>The <strong>Expend Chosen Spell's Use</strong> and <strong>Expend Invisibility Use</strong> can be used for tracking your free uses.</p></section>"
         },
         "Sharpshooter": {
             "name": "Strzelec wyborowy",
@@ -848,7 +832,7 @@
         },
         "Speedy": {
             "name": "Szybki",
-            "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Zręczność lub Kondycję o 1, maksymalnie do 20.</p><p><strong>Zwiększenie Szybkości.</strong> Twoja &amp;Reference[Szybkość] zwiększa się o 10 stóp.</p><p><strong>Sprint przez Trudny Teren.</strong> Gdy w swojej turze wykonujesz akcję Sprint, Trudny Teren nie wymaga od ciebie dodatkowego ruchu do końca tej tury.</p><p><strong>Zwinne ruchy.</strong> Ataki okazyjne przeciwko tobie mają Utrudnienie.</p><section class=\"secret\" id=\"secret-mmDZHieZYuvYT5LG\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność automatycznie zwiększa twoją Szybkość ruchu o 10 stóp. Jeśli posiadasz inne typy ruchu, musisz zaktualizować je ręcznie.</p></section>",
+            "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Dexterity or Constitution score by 1, to a maximum of 20.</p><p><strong>Speed Increase.</strong> Your &amp;Reference[Speed] increases by 10 feet.</p><p><strong>Dash over Difficult Terrain.</strong> When you take the Dash action on your turn, Difficult Terrain doesn’t cost you extra movement for the rest of that turn.</p><p><strong>Agile Movement.</strong> Opportunity Attacks have Disadvantage against you.</p>",
             "requirements": "Zręczność lub Kondycja 13+",
             "effects": {
                 "Speedy": {
@@ -901,13 +885,10 @@
         },
         "Telepathic": {
             "name": "Telepata",
-            "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją wartość cechy Inteligencja, Mądrość lub Charyzma o 1, do maksymalnie 20.</p><p><strong>Wypowiedź telepatyczna.</strong> Możesz mówić telepatycznie do dowolnej istoty, którą widzisz w odległości 60 stóp od siebie. Twoje telepatyczne wypowiedzi są w języku, który znasz, a istota rozumie cię tylko wtedy, gdy zna ten język. Twoja komunikacja nie daje istocie możliwości telepatycznego odpowiadania ci.</p><p><strong>Wykrycie myśli.</strong> Zawsze masz przygotowany czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectThou]. Możesz rzucić go bez użycia komórki czaru lub komponentów czaru, ale musisz zakończyć Długi Odpoczynek, zanim ponownie rzucisz go w ten sposób. Możesz także rzucić go, używając komórek czarów odpowiedniego kręgu, które posiadasz. Twoja cecha bazowa rzucania czarów dla tego zaklęcia to cecha zwiększona przez ten atut.</p><section id=\"secret-unoZ1rgJPaBmd1Dn\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Zdolność <strong>Wykrycie myśli</strong> może być używana do śledzenia twojego darmowego użycia na Długi Odpoczynek. Czar będzie jednak musiał zostać ręcznie dodany do twojej karty.</p></section>",
-            "activities": {
+            "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Telepathic Utterance.</strong> You can speak telepathically to any creature you can see within 60 feet of yourself. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn’t give the creature the ability to respond to you telepathically.</p><p><strong>Detect Thoughts.</strong> You always have the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectThou]{Detect Thoughts} spell prepared. You can cast it without a spell slot or spell components, and you must finish a Long Rest before you can cast it in this way again. You can also cast it using spell slots you have of the appropriate level. Your spellcasting ability for the spell is the ability increased by this feat.</p><section class=\"secret\" id=\"secret-unoZ1rgJPaBmd1Dn\"><p><strong>Foundry Note</strong></p><p>The granted spell allows a free casting per Long Rest, but does not remove the spell components.</p></section>",
+            "effects": {
                 "Telepathic Utterance": {
                     "name": "Wypowiedź telepatyczna"
-                },
-                "Expend Use": {
-                    "name": "Wykorzystaj użycie"
                 }
             }
         },
@@ -949,7 +930,7 @@
         },
         "War Caster": {
             "name": "Mag bitewny",
-            "description": "<p>Zyskujesz następujące korzyści.</p><p><strong>Zwiększenie cechy.</strong> Zwiększ swoją Inteligencję, Mądrość lub Charyzmę o 1, maksymalnie do 20.</p><p><strong>Koncentracja.</strong> Masz Ułatwienie w rzutach obronnych na Kondycję wykonywanych w celu utrzymania Koncentracji.</p><p><strong>Reaktywne Rzucanie Czarów.</strong> Gdy istota prowokuje Atak Okazyjny, opuszczając twój zasięg, możesz użyć Reakcji, aby rzucić czar na tę istotę zamiast wykonywać Atak Okazyjny. Czar musi mieć czas rzucania wynoszący jedną akcję i musi mieć za cel wyłącznie tę istotę.</p><p><strong>Komponenty Somatyczne.</strong> Możesz wykonywać somatyczne komponenty czarów, nawet jeśli trzymasz broń lub Tarczę w jednej lub obu rękach.</p><section class=\"secret\" id=\"secret-jGAKlXdMPlzHFjTa\"><p><strong>Notatka Foundry</strong></p><p>Ten atut automatyzuje Ułatwienie w testach Koncentracji.</p></section>",
+            "description": "<p>You gain the following benefits.</p><p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p><strong>Concentration.</strong> You have Advantage on Constitution saving throws that you make to maintain Concentration.</p><p><strong>Reactive Spell.</strong> When a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a spell at the creature rather than making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.</p><p><strong>Somatic Components.</strong> You can perform the Somatic components of spells even when you have weapons or a Shield in one or both hands.</p>",
             "requirements": "Zdolność Rzucanie czarów lub Magia paktu",
             "effects": {
                 "War Caster": {
