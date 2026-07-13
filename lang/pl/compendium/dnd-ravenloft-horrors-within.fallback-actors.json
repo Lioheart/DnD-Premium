@@ -766,7 +766,7 @@
                 },
                 "Antimagic Cone": {
                     "name": "Stożek Antymagii",
-                    "description": "<p>The [[lookup @name lowercase]]'s central eye emits an antimagic wave in a [[lookup @target.template.size activity=7vRTku30dhIyBf68]]-[[lookup @target.template.units activity=7vRTku30dhIyBf68]] [[lookup @target.template.type capitalize activity=7vRTku30dhIyBf68]]. Until the start of the beholder’s next turn, that area acts as an <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAntimagicF]</em> spell, and that area works against the [[lookup @name lowercase]]'s own Eye Rays.</p>"
+                    "description": "<p>Centralne oko [[lookup @name lowercase]] emituje falę antymagii w [[lookup @target.template.size activity=7vRTku30dhIyBf68]]-[[lookup @target.template.units activity=7vRTku30dhIyBf68]] [[lookup @target.template.type capitalize activity=7vRTku30dhIyBf68]]. Do początku następnej tury Obserwatora obszar ten działa jak czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAntimagicF]</em> i działa również przeciwko własnym Eye Rays [[lookup @name lowercase]].</p>"
                 },
                 "Chomp": {
                     "name": "Schrupanie",
@@ -941,7 +941,7 @@
             }
         },
         "Blob of Annihilation": {
-            "name": "Blob of Annihilation",
+            "name": "Plama anihilacji",
             "description": "<h1>Blob of Annihilation</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.eOmRGDXv0BqCZbVA caption=false cite=false classes=\"no-embed mm\"]</p>",
             "alignment": "Neutralny Zły",
             "items": {
@@ -958,7 +958,7 @@
                 },
                 "Astral Implosion": {
                     "name": "Astral Implosion",
-                    "description": "<p>If the [[lookup @name lowercase]] is reduced to 0 Hit Points, it implodes and ejects any creatures and objects engulfed by it into the Astral Sea. The [[lookup @name lowercase]] itself vanishes, leaving behind a layer of slime on everything that was within 600 feet of it. In [[/r 1d20#Years]] years, the [[lookup @name lowercase]] reconstitutes on a random world in the Material Plane.</p>",
+                    "description": "<p>Jeśli [[lookup @name lowercase]] zostanie zredukowany do 0 Punktów Wytrzymałości, imploduje i wyrzuca wszelkie pochłonięte przez siebie istoty oraz obiekty do Morza Astralnego. Sam [[lookup @name]] znika, pozostawiając warstwę śluzu na wszystkim, co znajdowało się w obrębie 600 stóp od niego. Po [[/r 1d20#Years]] latach [[lookup @name lowercase]] odtwarza się na losowym świecie w Sferze Materialnej.</p>",
                     "requirements": "Zredukowany do 0 Punktów Wytrzymałości"
                 },
                 "Magic Resistance": {
@@ -1463,7 +1463,7 @@
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a creature, it is subjected to the following effect.</p><p><em>Constitution Saving Throw</em>: DC [[lookup @save.dc.value activity=F0T3hYR3EtUEMhvs]].</p><p><em>First Failure</em>: The target has the &amp;Reference[Poisoned apply=false] condition. While Poisoned, the target’s Hit Point maximum doesn’t return to normal when finishing a Long Rest, and it repeats the save every 24 hours that elapse, ending the effect on itself on a success.</p><p><em>Subsequent Failures</em>: The Poisoned target’s Hit Point maximum decreases by 5 ([[/r 1d10]]).</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest istotą, zostaje poddany następującemu efektowi.</p><p><em>Rzut obronny na Kondycję</em>: ST [[lookup @save.dc.value activity=F0T3hYR3EtUEMhvs]].</p><p><em>Pierwsza porażka</em>: Cel ma stan &amp;Reference[Poisoned apply=false]. Będąc Zatruty, maksimum Punktów Wytrzymałości celu nie wraca do normalnej wartości po ukończeniu Długiego Odpoczynku, a cel powtarza rzut obronny co 24 godziny, kończąc na sobie ten efekt przy sukcesie.</p><p><em>Kolejne porażki</em>: Maksimum Punktów Wytrzymałości Zatrutego celu zmniejsza się o 5 ([[/r 1d10]]).</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "none"
@@ -1476,7 +1476,7 @@
                     "effects": {
                         "Poisoned": {
                             "name": "Zatruty",
-                            "description": "<p><em>First CON Save Failure</em>: The target has the &amp;Reference[Poisoned apply=false] condition. While Poisoned, the target’s Hit Point maximum doesn’t return to normal when finishing a Long Rest, and it repeats the save every 24 hours that elapse, ending the effect on itself on a success. </p><p><em>Subsequent CON Save Failures</em>: The Poisoned target’s Hit Point maximum decreases by 5 ([[/r 1d10]]).&lt;/p&gt;</p>"
+                            "description": "<p><em>Pierwsza porażka w rzucie obronnym na Kondycję</em>: Cel ma stan &amp;Reference[Poisoned apply=false]. Będąc Zatruty, maksimum Punktów Wytrzymałości celu nie wraca do normy po ukończeniu Długiego Odpoczynku, a cel powtarza rzut obronny co każde upływające 24 godziny, kończąc na sobie ten efekt przy sukcesie. </p><p><em>Kolejne porażki w rzucie obronnym na Kondycję</em>: Maksimum Punktów Wytrzymałości Zatrutego celu zmniejsza się o 5 ([[/r 1d10]]).&lt;/p&gt;</p>"
                         }
                     }
                 }
@@ -1616,8 +1616,8 @@
             "alignment": "Praworządny Zły",
             "items": {
                 "Avoidance": {
-                    "name": "Avoidance",
-                    "description": "<p>If the [[lookup @name lowercase]] is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the save and half damage if it fails. It can’t use this trait if it has the Incapacitated condition.</p>",
+                    "name": "Unikanie",
+                    "description": "<p>Jeśli [[lookup @name lowercase]] zostanie poddany efektowi, który pozwala mu wykonać rzut obronny, aby otrzymać tylko połowę obrażeń, zamiast tego nie otrzymuje żadnych obrażeń przy sukcesie i połowę obrażeń przy porażce. Nie może użyć tej cechy, jeśli ma stan Obezwładniony.</p>",
                     "requirements": "Nie jest Obezwładniony"
                 },
                 "Displacement": {
@@ -1848,7 +1848,7 @@
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p>[[/attack extended]]. [[/damage average extended]].If the target is a [[lookup @target.affects.special activity=xWlMeXFjELfSUWX9]] creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]). While Grappled, the target has the &amp;Reference[Restrained apply=false] condition and can’t be targeted by the [[lookup @name lowercase]]’s Tail.</p>",
+                    "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest istotą [[lookup @target.affects.special activity=xWlMeXFjELfSUWX9]], ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]). Będąc Pochwycony, cel ma stan &amp;Reference[Restrained apply=false] i nie może być celem Ogona [[lookup @name lowercase]].</p>",
                     "activities": {
                         "attack": {
                             "target": "Duża lub mniejsza",
@@ -1906,7 +1906,7 @@
                     "effects": {
                         "Grappled & Suffocating": {
                             "name": "Grappled & Suffocating",
-                            "description": "<p>If the target is a Large or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[/check ability=str skill=ath format=long]], see source item for DC). Until the grapple ends, the target is &amp;Reference[suffocating apply=false]{suffocating}.</p>"
+                            "description": "<p>Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[/check ability=str skill=ath format=long]], patrz element źródłowy, aby sprawdzić ST). Dopóki pochwycenie trwa, cel się dusi &amp;Reference[suffocating apply=false].</p>"
                         }
                     }
                 },
@@ -1966,7 +1966,7 @@
                     "effects": {
                         "Poisoned & Paralyzed": {
                             "name": "Zatruty i Sparaliżowany",
-                            "description": "<p>The target is &amp;Reference[Poisoned apply=false] and can repeat its save at the end of each of its turn, ending the effect on itself on a success. After 1 minute, it succeeds automatically. While Poisoned, the target has the &amp;Reference[Paralyzed apply=false] condition.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Poisoned apply=false] i może powtarzać rzut obronny na końcu każdej swojej tury, kończąc na sobie ten efekt przy sukcesie. Po 1 minucie automatycznie odnosi sukces. Będąc Zatruty, cel ma stan &amp;Reference[Paralyzed apply=false].</p>"
                         },
                         "Grappled": {
                             "name": "Pochwycony"
@@ -2136,7 +2136,7 @@
                 },
                 "Bite": {
                     "name": "Ugryzienie",
-                    "description": "<p>[[/attack extended]]. <em>Hit:</em> [[/damage]] damage, and the target is subjected to the following effect.</p><p><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=zINRP55nQzeLTh4x]].</p><p><em>Failure:</em> The target has the Poisoned condition until the end of the homunculus’s next turn.</p><p><em>Failure by 5 or More:</em> The target has the &amp;Reference[Poisoned apply=false] condition for 1 minute. While Poisoned, the target has the &amp;Reference[Unconscious apply=false] condition, which ends early if the target takes any damage.</p>",
+                    "description": "<p>[[/attack extended]]. <em>Trafienie:</em> [[/damage]] obrażeń, a cel zostaje poddany następującemu efektowi.</p><p><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=zINRP55nQzeLTh4x]].</p><p><em>Porażka:</em> Cel ma stan Zatruty do końca następnej tury homunkulusa.</p><p><em>Porażka o 5 lub więcej:</em> Cel ma stan &amp;Reference[Poisoned apply=false] przez 1 minutę. Będąc Zatruty, cel ma stan &amp;Reference[Unconscious apply=false], który kończy się wcześniej, jeśli cel otrzyma jakiekolwiek obrażenia.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
@@ -2145,7 +2145,7 @@
                     "effects": {
                         "Poisoned": {
                             "name": "Zatruty",
-                            "description": "<p>The target has the &amp;Reference[Poisoned apply=false] condition until the end of the biter's next turn. While Poisoned, the target has the &amp;Reference[Unconscious apply=false] condition, which ends early if the target takes any damage.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Poisoned apply=false] do końca następnej tury gryzącego. Będąc Zatruty, cel ma stan &amp;Reference[Unconscious apply=false], który kończy się wcześniej, jeśli cel otrzyma jakiekolwiek obrażenia.</p>"
                         },
                         "Unconscious": {
                             "name": "Nieprzytomny",
@@ -2276,7 +2276,7 @@
                     "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
                 },
                 "Vortex": {
-                    "name": "Vortex",
+                    "name": "Wir",
                     "description": "<p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=cZy0VYbCVY8aRB4z]], one [[lookup @target.affects.special activity=cZy0VYbCVY8aRB4z]] in the [[lookup @name lowercase]]’s space.</p><p><em>Failure:</em> [[/damage average activity=cZy0VYbCVY8aRB4z]] damage, and the target has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]). Until the grapple ends, the target can’t cast spells with a Verbal component and takes [[/damage average activity=kDz92inkRCjGrPiz]] damage at the start of each of the [[lookup @name lowercase]]’s turns.</p>",
                     "activities": {
                         "Save": {
@@ -2298,7 +2298,7 @@
                     "effects": {
                         "Grappled": {
                             "name": "Pochwycony",
-                            "description": "<p>The target has the &amp;Reference[Grappled apply=false] condition (escape DC [[/check ability=str skill=ath format=long]], see source item for DC).</p><p>Until the grapple ends, the target can’t cast spells with a Verbal component and takes additional damage at the start of each of the NPC’s turns.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[/check ability=str skill=ath format=long]], ST podano w elemencie źródłowym).</p><p>Do zakończenia pochwycenia cel nie może rzucać czarów z komponentem Werbalnym i otrzymuje dodatkowe obrażenia na początku każdej tury NPC.</p>"
                         }
                     }
                 }
@@ -2352,7 +2352,7 @@
                     "effects": {
                         "Grappled": {
                             "name": "Pochwycony",
-                            "description": "<p>If the target doesn’t let go of the weapon, the target has the &amp;Reference[Grappled apply=false] condition while the weapon is stuck (escape DC [[/check ability=str skill=ath format=long]], see source item for DC)</p>"
+                            "description": "<p>Jeśli cel nie puści broni, ma stan &amp;Reference[Grappled apply=false], dopóki broń jest zakleszczona (uwolnienie ST [[/check ability=str skill=ath format=long]], patrz element źródłowy, aby sprawdzić ST)</p>"
                         }
                     }
                 },
@@ -2372,7 +2372,7 @@
                     "effects": {
                         "Restrained": {
                             "name": "Unieruchomiony",
-                            "description": "<p>The target has the &amp;Reference[Restrained apply=false] condition until the net is destroyed (AC 10; HP 5; Immunity to Bludgeoning, Poison, and Psychic damage). A creature can make a DC 10 Strength (Athletics) check to free itself or another creature in a net within 5 feet, destroying the net on a success.</p>"
+                            "description": "<p>Cel ma stan &amp;Reference[Restrained apply=false] do chwili zniszczenia sieci (KP 10; PW 5; Niepodatność na obrażenia obuchowe, obrażenia od trucizny i obrażenia psychiczne). Istota może wykonać test Siły (Atletyka) o ST 10, aby uwolnić siebie lub inną istotę znajdującą się w sieci w obrębie 5 stóp, niszcząc sieć przy sukcesie.</p>"
                         }
                     }
                 }
@@ -3048,7 +3048,7 @@
                     "effects": {
                         "Invisible": {
                             "name": "Niewidzialny",
-                            "description": "<p>The attacking creature and its light have the &amp;Reference[Invisible apply=false] condition until their Concentration ends on this effect, which ends early immediately after the wisp makes an attack roll or uses the Consume Life bonus action.</p>"
+                            "description": "<p>Atakująca istota i emitowane przez nią światło mają stan &amp;Reference[Invisible apply=false] do zakończenia przez nią Koncentracji na tym efekcie. Efekt kończy się wcześniej natychmiast po tym, jak błędny ognik wykona test ataku lub użyje Akcji Dodatkowej Consume Life.</p>"
                         }
                     }
                 }
@@ -3061,7 +3061,7 @@
             "items": {
                 "Regeneration": {
                     "name": "Regeneracja",
-                    "description": "<p>The [[lookup @name lowercase]] regains [[lookup @healing.formula activity=5cGvjZJIJVicjJ3d]] Hit Points at the start of each of its turns. If the revenant takes Fire or Radiant damage, this trait doesn’t function at the start of its next turn. Its body is destroyed only if it starts its turn with 0 Hit Points and doesn’t regenerate.</p>",
+                    "description": "<p>[[lookup @name]] odzyskuje [[lookup @healing.formula activity=5cGvjZJIJVicjJ3d]] Punktów Wytrzymałości na początku każdej swojej tury. Jeśli Zmora otrzyma obrażenia od ognia lub światłości, ta cecha nie działa na początku jego następnej tury. Jego ciało zostaje zniszczone tylko wtedy, gdy rozpoczyna swoją turę z 0 Punktów Wytrzymałości i się nie regeneruje.</p>",
                     "requirements": "Co najmniej 1 Punkt Wytrzymałości",
                     "activities": {
                         "heal": {
@@ -3171,7 +3171,7 @@
                     "effects": {
                         "Cursed": {
                             "name": "Przeklęty",
-                            "description": "<p>The target is &amp;Reference[cursed apply=false] until it finishes a Short or Long Rest. While cursed, the target can’t benefit from the Invisible condition, its Speed decreases by 10 feet, and all Fiends within 120 feet of the target can sense its location regardless of interposing obstacles.</p>"
+                            "description": "<p>Cel jest &amp;Reference[cursed apply=false] do ukończenia Krótkiego lub Długiego Odpoczynku. Będąc przeklęty, cel nie może czerpać korzyści ze stanu Niewidzialny, jego Szybkość zmniejsza się o 10 stóp, a wszystkie Czarty w obrębie 120 stóp od celu mogą wyczuć jego położenie niezależnie od znajdujących się pomiędzy nimi przeszkód.</p>"
                         }
                     }
                 }
@@ -3442,7 +3442,7 @@
                 },
                 "Regeneration": {
                     "name": "Regeneracja",
-                    "description": "<p>The [[lookup @name lowercase]] regains [[lookup @healing.formula activity=5cGvjZJIJVicjJ3d]] Hit Points at the start of each of its turns. If the troll takes Acid or Fire damage, this trait doesn't function on the troll's next turn. The troll dies only if it starts its turn with 0 Hit Points and doesn't regenerate.</p>",
+                    "description": "<p>[[lookup @name]] odzyskuje [[lookup @healing.formula activity=5cGvjZJIJVicjJ3d]] Punktów Wytrzymałości na początku każdej swojej tury. Jeśli troll otrzyma obrażenia od kwasu lub ognia, ta cecha nie działa podczas jego następnej tury. Troll umiera tylko wtedy, gdy rozpoczyna swoją turę z 0 Punktów Wytrzymałości i się nie regeneruje.</p>",
                     "requirements": "Co najmniej 1 Punkt Wytrzymałości",
                     "activities": {
                         "heal": {
