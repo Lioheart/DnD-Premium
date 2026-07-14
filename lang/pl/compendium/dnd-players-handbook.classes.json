@@ -231,12 +231,12 @@
         },
         "Aquatic Affinity": {
             "name": "Pokrewieństwo z wodą",
-            "description": "<p>The size of the Emanation created by your Wrath of the Sea increases to 10 feet.</p><p>In addition, you gain a Swim Speed equal to your Speed.</p>",
+            "description": "<p>Rozmiar Emanacji tworzonej przez twój Gniew Morza zwiększa się do 10 stóp.</p><p>Ponadto zyskujesz Szybkość Pływania równą twojej Szybkości.</p>",
             "requirements": "Krąg Morza",
             "effects": {
                 "Aquatic Affinity": {
                     "name": "Pokrewieństwo z wodą",
-                    "description": "<p>You gain a Swim Speed equal to your Speed.</p>"
+                    "description": "<p>Zyskujesz Szybkość Pływania równą twojej Szybkości.</p>"
                 }
             }
         },
@@ -250,7 +250,7 @@
         },
         "Arcane Recovery": {
             "name": "Odzyskiwanie mocy",
-            "description": "<p>You can regain some of your magical energy by studying your spellbook. When you finish a Short Rest, you can choose expended spell slots to recover. The spell slots can have a combined level equal to no more than half your Wizard level (round up), and none of the slots can be level 6 or higher. For example, if you’re a level 4 Wizard, you can recover up to two levels’ worth of spell slots, regaining either one level 2 spell slot or two level 1 spell slots.</p><p>Once you use this feature, you can’t do so again until you finish a Long Rest.</p><p><strong>Combined Level Available:</strong> [[ceil(@classes.wizard.levels / 2)]]</p><section class=\"secret\" id=\"secret-cO6X083GFJ1W4071\"><p><strong>Foundry Note</strong></p><p>Since you can select the slots you will have to manually adjust your available slots. This feature can be used to track the one-time use though.</p></section>",
+            "description": "<p>Możesz odzyskać część swojej magicznej energii, studiując księgę zaklęć. Gdy zakończysz Krótki odpoczynek, możesz wybrać zużyte komórki czarów do odzyskania. Komórki czarów mogą mieć łączny poziom nie wyższy niż połowa twojego poziomu maga (zaokrąglając w górę), a żadna z komórek nie może być 6. poziomu lub wyższego. Na przykład, jeśli jesteś czarodziejem 4. poziomu, możesz odzyskać komórki o łącznym poziomie równym dwóm, czyli albo jedną komórkę 2. poziomu, albo dwie komórki 1. poziomu.</p><p>Po użyciu tej zdolności nie możesz jej użyć ponownie, dopóki nie zakończysz Długiego odpoczynku.</p><p><strong>Dostępny łączny poziom:</strong> [[(@classes.wizard.levels / 2)]]</p><section id=\"secret-cO6X083GFJ1W4071\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ponieważ możesz sam wybierać komórki, musisz ręcznie dostosować ich dostępność. Ta zdolność może być jednak użyta do śledzenia jednorazowego użycia.</p></section>",
             "activities": {
                 "Recover": {
                     "name": "Odzyskanie",
@@ -372,11 +372,11 @@
         },
         "Aspect of the Wilds": {
             "name": "Aspekt dziczy",
-            "description": "<p>You gain one of the following options of your choice. Whenever you finish a Long Rest, you can change your choice.</p><p><strong>Owl.</strong> You have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p><p><strong>Panther. </strong>You have a Climb Speed equal to your Speed.</p><p><strong>Salmon.</strong> You have a Swim Speed equal to your Speed.</p>",
+            "description": "<p>Zyskujesz jedną z poniższych opcji do wyboru. Za każdym razem, gdy kończysz Długi Odpoczynek, możesz zmienić swój wybór.</p><p><strong>Sowa.</strong> Masz Widzenie w ciemności o zasięgu 60 stóp. Jeśli już posiadasz Widzenie w ciemności, jego zasięg zwiększa się o 60 stóp.</p><p><strong>Pantera.</strong> Masz Szybkość Wspinaczki równą twojej Szybkości.</p><p><strong>Łosoś.</strong> Masz Szybkość Pływania równą twojej Szybkości.</p>",
             "requirements": "Ścieżka dzikiego serca",
             "activities": {
                 "Choose Aspect": {
-                    "name": "Choose Aspect"
+                    "name": "Wybierz aspekt"
                 }
             },
             "effects": {
@@ -385,12 +385,12 @@
                     "description": "<p>Masz Widzenie w ciemności o zasięgu 60 stóp. Jeśli już posiadasz Widzenie w ciemności, jego zasięg zwiększa się o 60 stóp.</p>"
                 },
                 "Aspect of the Panther": {
-                    "name": "Aspect of the Panther",
-                    "description": "<p>You have a Climb Speed equal to your Speed.</p>"
+                    "name": "Aspekt pantery",
+                    "description": "<p>Masz Szybkość wspinania równą twojej Szybkości.</p>"
                 },
                 "Aspect of the Salmon": {
-                    "name": "Aspect of the Salmon",
-                    "description": "<p>You have a Swim Speed equal to your Speed.</p>"
+                    "name": "Aspekt łososia",
+                    "description": "<p>Masz Szybkość pływania równą twojej Szybkości.</p>"
                 }
             }
         },
@@ -425,7 +425,7 @@
             "description": "<p>Otrzymujesz Zestaw do Charakteryzacji oraz Zestaw Truciciela i masz w nich biegłość.</p><section id=\"secret-QaK1hUaUaZqGMS7e\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Wyposażenie oraz biegłości są przyznawane automatycznie wraz ze zdobywaniem poziomów.</p></section>"
         },
         "Assassinate": {
-            "name": "Assassinate",
+            "name": "Skrytobójstwo",
             "description": "<p>Jesteś biegły w zastawianiu zasadzek na cele, co daje ci następujące korzyści.</p><p><strong>Inicjatywa.</strong> Masz Ułatwienie do rzutów na Inicjatywę.</p><p><strong>Zaskakujące uderzenia.</strong> Podczas pierwszej rundy każdej walki masz Ułatwienie do rzutów ataku przeciwko każdej istocie, która nie wykonała jeszcze swojej tury. Jeśli twój Ukradkowy atak trafi dowolny cel w tej rundzie, cel otrzymuje dodatkowe obrażenia tego samego typu co broń, równe twojemu poziomowi Łotra.</p><section class=\"secret\" id=\"secret-roKwXDEMg8PmZo8U\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt, który automatyzuje Ułatwienie do rzutów na Inicjatywę.</p><p>Aktywność <strong>Obrażenia</strong> może być użyta do zastosowania dodatkowych obrażeń równych twojemu poziomowi. Możesz wybrać typ obrażeń w oknie dialogowym rzutu. Alternatywnie możesz dodać swój poziom ([[lookup @classes.rogue.levels]]) jako sytuacyjny bonus do normalnego rzutu na obrażenia.</p></section>",
             "activities": {
                 "damage": {
@@ -501,7 +501,7 @@
         },
         "Avatar of Battle": {
             "name": "Ucieleśnienie walki",
-            "description": "<p>You gain Resistance to Bludgeoning, Piercing, and Slashing damage.</p>",
+            "description": "<p>Zyskujesz Odporność na obrażenia obuchowe, kłute i cięte.</p>",
             "requirements": "Domena wojny"
         },
         "Avenging Angel": {
@@ -871,7 +871,7 @@
         },
         "Blessing of the Trickster": {
             "name": "Błogosławieństwo oszusta",
-            "description": "<p>As a Magic action, you can choose yourself or a willing creature within 30 feet of yourself to have Advantage on Dexterity (Stealth) checks. This blessing lasts until you finish a Long Rest or you use this feature again.</p>",
+            "description": "<p>Akcją Magii możesz wybrać siebie lub przychylną istotę w odległości do 30 stóp od siebie, aby zyskała Ułatwienie w testach Zręczności (Skradanie się). To błogosławieństwo trwa, dopóki nie zakończysz Długiego Odpoczynku lub nie użyjesz ponownie tej zdolności.</p>",
             "requirements": "Domena oszustwa",
             "activities": {
                 "Blessing": {
@@ -1770,14 +1770,14 @@
         },
         "Disarming Attack": {
             "name": "Rozbrojenie",
-            "description": "<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to disarm the target. Add the Superiority Die roll to the attack's damage roll. The target must succeed on a Strength saving throw or drop one object of your choice that it's holding, with the object landing in its space.</p>",
+            "description": "<p>Kiedy trafisz istotę testem ataku, możesz zużyć jedną Kość Przewagi, aby spróbować rozbroić cel. Dodaj wynik rzutu Kością Przewagi do rzutu na obrażenia. Cel musi wykonać rzut obronny na Siłę, w przeciwnym razie upuszcza wybrany przez ciebie przedmiot, który trzyma, a przedmiot ląduje w jego obszarze.</p>",
             "activities": {
                 "Strength Save": {
-                    "name": "Strength Save",
+                    "name": "Rzut obronny na Siłę",
                     "damageOnSave": "full"
                 },
                 "Superiority Die": {
-                    "name": "Superiority Die",
+                    "name": "Kość przewagi",
                     "condition": "Gdy trafiasz istotę w teście ataku",
                     "activationCondition": "Gdy trafiasz istotę w teście ataku"
                 }
@@ -1796,7 +1796,7 @@
         },
         "Disciplined Survivor": {
             "name": "Zdyscyplinowany ocalały",
-            "description": "<p>Your physical and mental discipline grant you proficiency in all saving throws.</p><p>Additionally, whenever you make a saving throw and fail, you can expend 1 Focus Point to reroll it, and you must use the new roll.</p><section class=\"secret\" id=\"secret-VLGTfBDBcfExjSXG\"><p><strong>Foundry Note</strong></p><p>Use this feature to expend 1 Focus Point.</p></section>",
+            "description": "<p>Twoja fizyczna i mentalna dyscyplina daje ci biegłość we wszystkich rzutach obronnych.</p><p>Dodatkowo, za każdym razem gdy wykonujesz rzut obronny i ci się nie powiedzie, możesz wydać 1 Punkt Skupienia, aby przerzucić ten rzut. Musisz użyć nowego wyniku.</p><section class=\"secret\" id=\"secret-VLGTfBDBcfExjSXG\"><p><strong>Notatka Foundry</strong></p><p>Użyj tej zdolności, aby wydać 1 Punkt Skupienia.</p></section>",
             "activities": {
                 "Consume Focus Point": {
                     "name": "Zużyj Punkt Skupienia"
@@ -1835,13 +1835,13 @@
         },
         "Divine Fury": {
             "name": "Boska furia",
-            "description": "<p>You can channel divine power into your strikes. On each of your turns while your Rage is active, the first creature you hit with a weapon or an Unarmed Strike takes extra damage equal to 1d6 plus half your Barbarian level (round down). The extra damage is Necrotic or Radiant; you choose the type each time you deal the damage.</p>",
+            "description": "<p>Możesz skierować boską moc w swoje uderzenia. Podczas każdej ze swoich tur, gdy twój Szał jest aktywny, pierwsza istota, którą trafisz bronią lub Uderzeniem bez broni, otrzymuje dodatkowe obrażenia równe 1k6 plus połowa twojego poziomu Barbarzyńcy (zaokrąglając w dół). Dodatkowe obrażenia to obrażenia nekrotyczne lub obrażenia od światłości; wybierasz typ za każdym razem, gdy je zadajesz.</p><",
             "requirements": "Ścieżka czciciela",
             "activities": {
                 "Divine Fury": {
                     "name": "Boska furia",
-                    "condition": "you hit a creature on your turn while Rage is active",
-                    "activationCondition": "you hit a creature on your turn while Rage is active",
+                    "condition": "gdy trafisz istotę w swojej turze, kiedy Szał jest aktywny",
+                    "activationCondition": "gdy trafisz istotę w swojej turze, kiedy Szał jest aktywny",
                     "target": "Pierwsza istota, którą trafisz bronią albo Uderzeniem bez broni",
                     "targetAffects": "Pierwsza istota, którą trafisz bronią albo Uderzeniem bez broni"
                 }
@@ -1859,7 +1859,7 @@
         },
         "Divine Order: Protector": {
             "name": "Boski porządek: Obrońca",
-            "description": "<p>You have dedicated yourself to the following sacred role:</p><p><strong>Protector.</strong> Trained for battle, you gain proficiency with Martial weapons and training with Heavy armor.</p>",
+            "description": "<p>Poświęciłeś się następującej świętej roli:</p><p><strong>Protektor.</strong> Przeszkolony do walki, zyskujesz biegłość w broni żołnierskiej oraz trening w Ciężkim pancerzu.</p>",
             "requirements": "Kleryk"
         },
         "Divine Order: Thaumaturge": {
@@ -1995,7 +1995,7 @@
         },
         "Dreadful Strikes": {
             "name": "Przerażające uderzenia",
-            "description": "<p>You can augment your weapon strikes with mind-scarring magic drawn from the murky hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 Psychic damage to the target, which can take this extra damage only once per turn. The extra damage increases to 1d6 when you reach Ranger level 11.</p>",
+            "description": "<p>Możesz wzmocnić swoje ataki bronią magią raniącą umysł, zaczerpniętą z mrocznych głębin Feywild. Gdy trafisz istotę bronią, możesz zadać jej dodatkowe 1k4 obrażeń psychicznych; cel może otrzymać te dodatkowe obrażenia tylko raz na turę. Dodatkowe obrażenia wzrastają do 1k6, gdy osiągniesz 11. poziom Łowcy.</p>",
             "activities": {
                 "damage": {
                     "condition": "Kiedy trafisz istotę bronią",
@@ -2108,7 +2108,7 @@
         },
         "Eldritch Hex": {
             "name": "Nieziemski urok",
-            "description": "<p>Your alien patron grants you a powerful curse. You always have the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHex0000000]{Hex} spell prepared. When you cast <em>Hex</em> and choose an ability, the target also has Disadvantage on saving throws of the chosen ability for the duration of the spell.</p>"
+            "description": "<p>Twój obcy Patron obdarza cię potężną klątwą. Zawsze masz przygotowany czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHex0000000]. Gdy rzucasz <em>Urok</em> i wybierasz cechę, cel ma także Utrudnienie w rzutach obronnych na wybraną cechę przez czas trwania czaru.</p>"
         },
         "Eldritch Invocations": {
             "name": "Mistyczne Inwokacje",
@@ -2259,7 +2259,7 @@
                     }
                 },
                 "Active Attunement (Stride)": {
-                    "name": "Active Attunement (Stride)",
+                    "name": "Aktywne zestrojenie (Pęd)",
                     "description": "<p><em>See  @UUID[Compendium.dnd-players-handbook.classes.Item.phbmnkStrideOfTh]</em></p>",
                     "changes": {
                         "name": "{} (Aktywny)"
@@ -2267,7 +2267,7 @@
                 },
                 "Stride of the Elements": {
                     "name": "Pęd żywiołów",
-                    "description": "<p><em>See @UUID[Compendium.dnd-players-handbook.classes.Item.phbmnkStrideOfTh]</em></p>"
+                    "description": "<p><em>Zobacz @UUID[Compendium.dnd-players-handbook.classes.Item.phbmnkStrideOfTh]</em></p>"
                 }
             }
         },
@@ -2494,7 +2494,7 @@
         },
         "Fanatical Focus": {
             "name": "Fanatyczne skupienie",
-            "description": "<p>Once per active Rage, if you fail a saving throw, you can reroll it with a bonus equal to your Rage Damage bonus <span class=\"hide-in-embed\">(currently [[@scale.barbarian.rage-damage]])</span>, and you must use the new roll.</p>",
+            "description": "<p>Raz na aktywny Szał, jeśli nie powiedzie ci się rzut obronny, możesz przerzucić go z premią równą twojej premii do obrażeń z Szału <span class=\"hide-in-embed\">(obecnie [[@scale.barbarian.rage-damage]])</span> i musisz użyć nowego wyniku.</p>",
             "requirements": "Ścieżka czciciela"
         },
         "Fast Hands": {
@@ -2524,7 +2524,7 @@
         },
         "Favored Enemy": {
             "name": "Ulubiony wróg",
-            "description": "<p>You always have the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHuntersMar]{Hunter’s Mark} spell prepared. You can cast it twice without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest.</p><p>The number of times you can cast the spell without a spell slot increases when you reach certain Ranger levels, as shown in the Favored Enemy column of the Ranger Features table.</p>"
+            "description": "<p>Zawsze masz przygotowany czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHuntersMar]. Możesz rzucić go dwa razy bez zużywania komórki czaru i odzyskujesz wszystkie zużyte użycia tej zdolności po zakończeniu Długiego Odpoczynku.</p><p>Liczba razy, kiedy możesz rzucić ten czar bez użycia komórki czaru, zwiększa się wraz z osiągnięciem określonych poziomów Łowcy, zgodnie z kolumną Ulubiony Wróg w tabeli Zdolności Łowcy.</p>"
         },
         "Feinting Attack": {
             "name": "Finta",
@@ -2821,7 +2821,7 @@
         },
         "Frenzy": {
             "name": "Furia",
-            "description": "<p>If you use Reckless Attack while your Rage is active, you deal extra damage to the first target you hit on your turn with a Strength-based attack. To determine the extra damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. The damage has the same type as the weapon or Unarmed Strike used for the attack.</p>",
+            "description": "<p>Jeśli używasz Reckless Attack, gdy Twój Szał jest aktywny, zadajesz dodatkowe obrażenia pierwszemu celowi, którego trafisz w swojej turze testem ataku opartym na Sile. Aby określić dodatkowe obrażenia, rzuć liczbą k6 równą Twojemu bonusowi do obrażeń z Szału i dodaj je razem. Obrażenia mają ten sam typ, co broń lub Uderzenie bez broni użyte do ataku.</p><",
             "requirements": "Ścieżka berserkera"
         },
         "Full of Stars": {
@@ -2925,14 +2925,14 @@
         },
         "Goading Attack": {
             "name": "Prowokacja",
-            "description": "<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to goad the target into attacking you. Add the [[/damage @scale.battle-master.superiority.die]]{Superiority Die} to the attack's damage roll. The target must succeed on a Wisdom saving throw or have Disadvantage on attack rolls against targets other than you until the end of your next turn.</p>",
+            "description": "<p>Kiedy trafisz istotę testem ataku, możesz zużyć jedną Kość Przewagi, aby sprowokować cel do atakowania ciebie. Dodaj [[/damage @scale.battle-master.superiority.die]] Kość Przewagi do rzutu na obrażenia. Cel musi wykonać rzut obronny na Mądrość, w przeciwnym razie ma Utrudnienie w testach ataku przeciwko celom innym niż ty do końca swojej następnej tury.</p>",
             "activities": {
                 "Wisdom Save": {
-                    "name": "Wisdom Save",
+                    "name": "Rzut obronny na Mądrość",
                     "damageOnSave": "full"
                 },
                 "Superiority Die": {
-                    "name": "Superiority Die",
+                    "name": "Kość przewagi",
                     "condition": "Gdy trafiasz istotę w teście ataku",
                     "activationCondition": "Gdy trafiasz istotę w teście ataku"
                 }
@@ -3050,8 +3050,8 @@
             "description": "<p>Ekscytacja bitwy popycha cię ku zwycięstwu. Podczas walki możesz przyznać sobie Heroiczną inspirację, ilekroć rozpoczynasz swoją turę bez niej.</p>"
         },
         "Hex (Powerful)": {
-            "name": "Hex (Powerful)",
-            "description": "<p>You place a curse on a creature that you can see within range. Until the spell ends, you deal an extra 1d6 Necrotic damage to the target whenever you hit it with an attack roll. Also, choose one ability when you cast the spell. The target has Disadvantage on ability checks made with the chosen ability.</p><p>If the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action on a later turn to curse a new creature.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Your Concentration can last longer with a spell slot of level 2 (up to 4 hours), 3–4 (up to 8 hours), or 5+ (24 hours).</p><hr /><p>@Embed[Compendium.dnd-players-handbook.classes.Item.phbwlkEldritchHe classes=\"caption-top\" cite=false]{Eldritch Hex (Great Old One Patron)}</p>",
+            "name": "Urok (Potężny)",
+            "description": "<p>Naznaczasz klątwą istotę, którą widzisz w zasięgu. Dopóki czar trwa, zadajesz dodatkowe 1k6 obrażeń nekrotycznych celowi, gdy trafisz go testem ataku. Dodatkowo, wybierz jedną cechę, gdy rzucasz czar. Cel ma &Reference[Disadvantage]{Utrudnienie} w testach cechy wykonywanych przy użyciu wybranej cechy.</p><p>Jeśli cel spadnie do 0 Punktów Wytrzymałości przed zakończeniem czaru, możesz wykonać Akcję Dodatkową w późniejszej turze, aby nałożyć klątwę na nową istotę.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Twoja Koncentracja może trwać dłużej dzięki komórce czaru 2. kręgu (do 4 godzin), 3–4. kręgu (do 8 godzin) lub 5+ kręgu (24 godziny).</p><hr /><p>@Embed[Compendium.dnd-players-handbook.classes.Item.phbwlkEldritchHe classes=\"caption-top\" cite=false]Nieziemski urok (Patron Wielki Przedwieczny)}</p>",
             "materials": "skamieniałe oko traszki",
             "activities": {
                 "Bonus Hex Damage": {
@@ -3073,11 +3073,11 @@
                 },
                 "Hexed Dexterity": {
                     "name": "Przeklęta Zręczność",
-                    "description": "<p>The target has Disadvantage on ability checks and saves made with the chosen ability.</p>"
+                    "description": "<p>Cel ma Utrudnienie w testach cechy i rzutach obronnych wykonywanych z użyciem wybranej cechy.</p>"
                 },
                 "Hexed Constitution": {
                     "name": "Przeklęta Kondycja",
-                    "description": "<p>The target has Disadvantage on ability checks and saves made with the chosen ability.</p>"
+                    "description": "<p>Cel ma Utrudnienie w testach cechy i rzutach obronnych wykonywanych z użyciem wybranej cechy.</p>"
                 },
                 "Hexed Intelligence": {
                     "name": "Przeklęta Inteligencja",
@@ -3085,11 +3085,11 @@
                 },
                 "Hexed Wisdom": {
                     "name": "Przeklęta Mądrość",
-                    "description": "<p>The target has Disadvantage on ability checks and saves made with the chosen ability.</p>"
+                    "description": "<p>Cel ma Utrudnienie w testach cechy i rzutach obronnych wykonywanych z użyciem wybranej cechy.</p>"
                 },
                 "Hexed Charisma": {
                     "name": "Przeklęta Charyzma",
-                    "description": "<p>The target has Disadvantage on ability checks and saves made with the chosen ability.</p>"
+                    "description": "<p>Cel ma Utrudnienie w testach cechy i rzutach obronnych wykonywanych z użyciem wybranej cechy.</p>"
                 }
             }
         },
@@ -3364,7 +3364,7 @@
         },
         "Inspiring Movement": {
             "name": "Inspirujący ruch",
-            "description": "<p>When an enemy you can see ends its turn within 5 feet of you, you can take a Reaction and expend one use of your Bardic Inspiration to move up to half your Speed<span class=\"hide-in-embed\"> (currently [[lookup @attributes.movement.speed]])</span>. Then one ally of your choice within 30 feet of you can also move up to half their Speed using their Reaction.</p><p>None of this feature's movement provokes Opportunity Attacks.</p>",
+            "description": "Szybkość<p>Kiedy wróg, którego widzisz, kończy swoją turę w odległości 5 stóp od ciebie, możesz wykorzystać Reakcję i zużyć jedno użycie swojej Bardowskiej inspiracji, aby poruszyć się do połowy swojej Szybkości<span class=\"hide-in-embed\"> (obecnie[[lookup @attributes.movement.speed]])</span>. Następnie jeden sojusznik twojego wyboru w promieniu 30 stóp również może poruszyć się do połowy swojej Szybkości, używając swojej Reakcji.</p><p>Żaden ruch wynikający z tej zdolności nie prowokuje Ataków okazyjnych.</p>",
             "requirements": "Kolegium Tańca",
             "activities": {
                 "Move": {
@@ -3409,7 +3409,7 @@
         },
         "Investment of the Chain Master": {
             "name": "Inwestycja Mistrza Łańcucha",
-            "description": "<blockquote><p>Prerequisite: Level 5+ Warlock, @UUID[Compendium.dnd-players-handbook.classes.Item.phbinvPactChain0]{Pact of the Chain} Invocation</p></blockquote><p>When you cast @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFindFamili]{Find Familiar}, you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits.</p><p><strong>Aerial or Aquatic.</strong> The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet.</p><p><strong>Quick Attack.</strong> As a Bonus Action, you can command the familiar to take the Attack action.</p><p><strong>Necrotic or Radiant Damage.</strong> Whenever the familiar deals Bludgeoning, Piercing, or Slashing damage, you can make it deal Necrotic or Radiant damage instead.</p><p><strong>Your Save DC.</strong> If the familiar forces a creature to make a saving throw, it uses your spell save DC.</p><p><strong>Resistance.</strong> When the familiar takes damage, you can take a Reaction to grant it Resistance against that damage.</p><section class=\"secret\" id=\"secret-D3vSCo0uEG4Kp1X6\"><p><strong>Foundry Note</strong></p><p>The <strong>Find Familiar</strong> activities will apply both <strong>Aerial</strong> and <strong>Aquatic</strong> effects to the summoned creature. The unused effect on the creature may be deleted.</p><p>The <strong>Resistance</strong> activity includes optional Active Effect for resisting each type of damage.</p></section>",
+            "description": "<blockquote><p>Wymagania: Czarownik poziomu 5 lub wyższy, inwokacja @UUID[Compendium.dnd-players-handbook.classes.Item.phbinvPactChain0]</p></blockquote><p>Kiedy rzucasz @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFindFamili], napełniasz przywołanego chowańca odrobiną swojej nieziemskiej mocy, przyznając mu następujące korzyści.</p><p><strong>Latanie lub Pływanie.</strong> Chowaniec zyskuje Szybkość Latania lub Szybkość Pływania (do wyboru) 40 stóp.</p><p><strong>Szybki Atak.</strong> Jako Akcję Dodatkową możesz nakazać chowańcowi wykonanie Akcji Ataku.</p><p><strong>Obrażenia Nekrotyczne lub od Światłości.</strong> Za każdym razem, gdy chowaniec zadaje obrażenia obuchowe, kłute lub cięte, możesz sprawić, że zada obrażenia nekrotyczne lub od światłości zamiast nich.</p><p><strong>Twój ST rzutu przeciw czarom.</strong> Jeśli chowaniec zmusza istotę do rzutu obronnego, używa twojego ST rzutu przeciw czarom.</p><p><strong>Odporność.</strong> Kiedy chowaniec otrzymuje obrażenia, możesz użyć Reakcji, aby nadać mu odporność na ten typ obrażeń.</p><<section class=\"secret\" id=\"secret-D3vSCo0uEG4Kp1X6\"><p><strong>Notatka Foundry</strong></p><p>Aktywności <strong>Znalezienie chowańca</strong> zastosują do przywołanej istoty zarówno efekt <strong>Latanie</strong>, jak i <strong>Pływanie</strong>. Nieużywany efekt na istocie można usunąć.</p><p>Aktywność <strong>Odporność</strong> zawiera opcjonalny Aktywny Efekt dla każdego typu obrażeń.</p></section>",
             "requirements": "inwokacja Pakt łańcucha",
             "activities": {
                 "Resistance": {
@@ -3429,20 +3429,20 @@
                     "name": "Znalezienie chowańca (Rozszerzone opcje)"
                 },
                 "Quick Attack": {
-                    "name": "Quick Attack",
-                    "chatFlavor": "The familiar takes the Attack action",
-                    "target": "the familiar",
-                    "targetAffects": "the familiar"
+                    "name": "Szybki atak",
+                    "chatFlavor": "Chowaniec wykonuje akcję Ataku",
+                    "target": "chowaniec",
+                    "targetAffects": "chowaniec"
                 }
             },
             "effects": {
                 "Aerial": {
-                    "name": "Aerial",
-                    "description": "<p><strong>Aerial or Aquatic.</strong> The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet.</p>"
+                    "name": "Latanie",
+                    "description": "<p><strong>Latanie lub pływanie.</strong> Chowaniec zyskuje Szybkość Latania albo Szybkość Pływania (do wyboru) wynoszącą 40 stóp.</p>"
                 },
                 "Aquatic": {
-                    "name": "Aquatic",
-                    "description": "<p><strong>Aerial or Aquatic.</strong> The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet.</p>"
+                    "name": "Pływanie",
+                    "description": "<p><strong>Latanie lub pływanie.</strong> Chowaniec zyskuje Szybkość Latania albo Szybkość Pływania (do wyboru) wynoszącą 40 stóp.</p>"
                 },
                 "Resist Acid": {
                     "name": "Odporność Kwas"
@@ -3527,7 +3527,7 @@
         },
         "Land's Aid": {
             "name": "Pomoc natury",
-            "description": "<p>As a Magic action, you can expend a use of your Wild Shape and choose a point within 60 feet of yourself. Vitality-giving flowers and life-draining thorns appear for a moment in a 10-foot-radius Sphere centered on that point. Each creature of your choice in the Sphere must make a Constitution saving throw against your spell save DC, taking 2d6 Necrotic damage on a failed save or half as much damage on a successful one. One creature of your choice in that area regains [[/heal]]{2d6 Hit Points}.</p><p>The damage and healing increase by 1d6 when you reach Druid levels 10 (3d6) and 14 (4d6).</p><section class=\"secret\" id=\"secret-T1DFK6QJjzeJsysz\"><p><strong>Foundry Note</strong></p><p>This feature includes an activity for the saving throw and the healing.</p><p>The healing/damage values automatically scale as you level up.</p></section>",
+            "description": "<p>Akcją Magii możesz wydać użycie swojej Dzikiej postaci i wybrać punkt w odległości do 60 stóp od ciebie. Kwiaty dające witalność i wysysające życie ciernie pojawiają się na moment w Sferze o promieniu 10 stóp ze środkiem w tym punkcie. Każda wybrana przez ciebie istota w tej sferze musi wykonać rzut obronny na Kondycję przeciwko twojemu ST rzutu przeciw czarom, otrzymując 2k6 obrażeń nekrotycznych przy nieudanym rzucie albo połowę przy udanym. Jedna wybrana przez ciebie istota na tym obszarze odzyskuje [[/heal]]{2d6 Punkty Wytrzymałości}.</p><p>Obrażenia i leczenie rosną o 1k6, gdy osiągniesz poziomy druida 10 (3k6) i 14 (4k6).</p><section class=\"secret\" id=\"secret-T1DFK6QJjzeJsysz\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera aktywność dla rzutu obronnego i leczenia.</p><p>Wartości leczenia/obrażeń automatycznie skalują się wraz z awansem na kolejne poziomy.</p></section>",
             "requirements": "Krąg Ziemi",
             "activities": {
                 "save": {
@@ -3711,7 +3711,7 @@
             "description": "<p>Kiedy trafisz istotę testem ataku, możesz zużyć jedną Kość Przewagi, aby wymanewrować jednego ze swoich towarzyszy w inne miejsce. Dodaj wynik rzutu Kością Przewagi do rzutu na obrażenia ataku i wybierz chętną istotę, która może cię widzieć lub słyszeć. Ta istota może użyć swojej Reakcji, aby poruszyć się do połowy swojej Szybkości, nie prowokując Ataku Okazyjnego od celu twojego ataku.</p>",
             "activities": {
                 "Superiority Die": {
-                    "name": "Superiority Die",
+                    "name": "Kość przewagi",
                     "condition": "Gdy trafiasz istotę w teście ataku",
                     "activationCondition": "Gdy trafiasz istotę w teście ataku"
                 }
@@ -3784,14 +3784,14 @@
         },
         "Menacing Attack": {
             "name": "Groźba",
-            "description": "<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to frighten the target. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or have the Frightened condition until the end of your next turn.</p>",
+            "description": "<p>Kiedy trafisz istotę testem ataku, możesz zużyć jedną Kość Przewagi, aby spróbować ją przestraszyć. Dodaj wynik Kości Przewagi do rzutu na obrażenia. Cel musi wykonać rzut obronny na Mądrość albo otrzymuje stan Przerażony do końca swojej następnej tury.</p>",
             "activities": {
                 "Wisdom Save": {
-                    "name": "Wisdom Save",
+                    "name": "Rzut obronny na Mądrość",
                     "damageOnSave": "full"
                 },
                 "Superiority Die": {
-                    "name": "Superiority Die",
+                    "name": "Kość przewagi",
                     "condition": "Gdy trafiasz istotę w teście ataku",
                     "activationCondition": "Gdy trafiasz istotę w teście ataku"
                 }
@@ -3977,7 +3977,7 @@
         },
         "Nature's Ward": {
             "name": "Wybraniec dziczy",
-            "description": "<p>You are immune to the Poisoned condition, and you have Resistance to a damage type associated with your current land choice in the Circle Spells feature, as shown in the Nature's Ward table.</p><table><caption>Nature's Ward</caption><thead><tr><td>Land Type</td><td>Resistance</td></tr></thead><tbody><tr><td>Arid</td><td>Fire</td></tr><tr><td>Polar</td><td>Cold</td></tr><tr><td>Temperate</td><td>Lightning</td></tr><tr><td>Tropical</td><td>Poison</td></tr></tbody></table><section class=\"secret\" id=\"secret-0muLLDjt1zqXptme\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect for each land type. You can activate the Active Effect for your chosen land type.</p></section>",
+            "description": "<p>Jesteś niepodatny na stan &amp;Reference[Poisoned] i masz odporność na typ obrażeń związany z wybranym przez ciebie środowiskiem w zdolności Czary Kręgu, zgodnie z tabelą Wybraniec dziczy.</p><table><caption>Wybraniec dziczy</caption><thead><tr><td>Środowisko</td><td>Odporność</td></tr></thead><tbody><tr><td>Suche</td><td>od ognia</td></tr><tr><td>Polarne</td><td>od zimna</td></tr><tr><td>Umiarkowane</td><td>od elektryczności</td></tr><tr><td>Tropikalne</td><td>od trucizn</td></tr></tbody></table><section class=\"secret\" id=\"secret-0muLLDjt1zqXptme\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt dla każdego środowiska. Możesz aktywować Aktywny Efekt odpowiadający twojemu wybranemu środowisku.</p></section>",
             "requirements": "Krąg Ziemi",
             "effects": {
                 "Nature's Ward: Arid": {
@@ -4505,7 +4505,7 @@
         },
         "Physician's Touch": {
             "name": "Dotyk medyka",
-            "description": "<p>Your Hand of Harm and Hand of Healing improve, as detailed below.</p><p><strong>Hand of Harm.</strong> When you use Hand of Harm on a creature, you can also give that creature the &amp;Reference[Poisoned apply=false] condition until the end of your next turn.</p><p><strong>Hand of Healing.</strong> When you use Hand of Healing, you can also end one of the following conditions on the creature you heal: Blinded, Deafened, Paralyzed, Poisoned, or Stunned.</p><section class=\"secret\" id=\"secret-0OzKGSx4PSkIO5se\"><p><strong>Foundry Note</strong></p><p>You can use the <strong>Hand of Harm</strong> and <strong>Hand of Healing</strong> activities on this feature going forward. <strong>Hand of Harm</strong> includes an Active Effect which will apply the Poisoned status.</p></section>",
+            "description": "<p>Twoja Dłoń krzywdy i Dłoń uzdrowienia ulegają ulepszeniu, jak wyszczególniono poniżej.</p><p><strong>Dłoń krzywdy.</strong> Kiedy używasz Dłoni krzywdy na istocie, możesz również nałożyć na tę istotę stan  &amp;Reference[Poisoned apply=false do końca swojej następnej tury.</p><p><strong>Dłoń uzdrowienia.</strong> Kiedy używasz Dłoni uzdrowienia, możesz również zakończyć jeden z następujących stanów na istocie, którą uzdrawiasz: Oślepiony, Ogłuchły, Sparaliżowany, Zatruty lub Ogłuszony..</p><section class=\"secret\" id=\"secret-0OzKGSx4PSkIO5se\"><p><strong>Notatka Foundry</strong></p><p>Możesz od teraz używać aktywności <strong>Dłoń krzywdy</strong> i <strong>Dłoń uzdrowienia</strong> z tej zdolności. <strong>Dłoń krzywdy</strong> zawiera Aktywny Efekt, który nałoży status Zatruty.</p></section>",
             "activities": {
                 "Hand of Harm": {
                     "name": "Dłoń krzywdy",
@@ -4518,7 +4518,7 @@
             },
             "effects": {
                 "Poisoned (Hand of Harm)": {
-                    "name": "Poisoned (Hand of Harm)"
+                    "name": "Zatruty (Ręka krzywdy)"
                 }
             }
         },
@@ -4633,7 +4633,7 @@
         },
         "Primal Order: Warden": {
             "name": "Pierwotny porządek: Strażnik",
-            "description": "<p>Trained for battle, you gain proficiency with Martial weapons and training with Medium armor.</p>",
+            "description": "<p>Przeszkolony do walki, zyskujesz biegłość w broni żołnierskiej i trening w Średnim pancerzu.</p><",
             "requirements": "Druid"
         },
         "Projected Ward": {
@@ -4765,14 +4765,14 @@
         },
         "Pushing Attack": {
             "name": "Odepchnięcie",
-            "description": "<p>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to drive the target back. Add the Superiority Die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or be pushed up to 15 feet directly away from you.</p>",
+            "description": "<p>Kiedy trafisz istotę testem ataku bronią lub Niekorzystnym Uderzeniem, możesz zużyć jedną Kość Przewagi, aby spróbować odepchnąć cel. Dodaj wynik Kości Przewagi do rzutu na obrażenia ataku. Jeśli cel jest Duży lub mniejszy, musi wykonać rzut obronny na Siłę, w przeciwnym razie zostaje odepchnięty na odległość do 15 stóp bezpośrednio od ciebie.</p>",
             "activities": {
                 "Strength Save": {
-                    "name": "Strength Save",
+                    "name": "Rzut obronny na Siłę",
                     "damageOnSave": "full"
                 },
                 "Superiority Die": {
-                    "name": "Superiority Die",
+                    "name": "Kość przewagi",
                     "condition": "Gdy trafiasz istotę w teście ataku",
                     "activationCondition": "Gdy trafiasz istotę w teście ataku"
                 }
@@ -4852,7 +4852,7 @@
         },
         "Rage of the Gods": {
             "name": "Szał Bogów",
-            "description": "<p>When you activate your Rage, you can assume the form of a divine warrior. This form lasts for 1 minute or until you drop to 0 Hit Points. Once you use this feature, you can't do so again until you finish a Long Rest.</p><p>While in this form, you gain the benefits below.</p><p><strong>Flight.</strong> You have a Fly Speed equal to your Speed and can hover.</p><p><strong>Resistance.</strong> You have Resistance to Necrotic, Psychic, and Radiant damage.</p><p><strong>Revivification.</strong> When a creature within 30 feet of you would drop to 0 Hit Points, you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level (currently [[lookup @classes.barbarian.levels]]).</p><section class=\"secret\" id=\"secret-gWvozli4SOlo3KxS\"><p><strong>Foundry Note</strong></p><p>The <strong>Rage of the Gods</strong> activity includes an Active Effect for automatically adding the resistances, hover, and fly speed.</p><p>The <strong>Revivification</strong> activity includes a healing roll of your Barbarian level.</p></section>",
+            "description": "<p>Gdy aktywujesz swój Szał, możesz przybrać postać boskiego wojownika. Ta forma trwa przez 1 minutę lub do momentu, gdy spadniesz do 0 Punktów Wytrzymałości. Po użyciu tej zdolności nie możesz jej użyć ponownie, dopóki nie zakończysz Długiego Odpoczynku.</p><p>Będąc w tej formie, zyskujesz poniższe korzyści.</p><p><strong>Lot.</strong> Masz Szybkość Lotu równą twojej Szybkości i możesz się unosić.</p><p><strong>Odporność.</strong> Masz Odporność na obrażenia nekrotyczne, obrażenia psychiczne i obrażenia od światłości.</p><p><strong>Ożywienie.</strong> Gdy istota w promieniu 30 stóp od ciebie miałaby spaść do 0 Punktów Wytrzymałości, możesz użyć Reakcji, aby wydać użycie swojego Szału i zamiast tego zmienić Punkty Wytrzymałości celu na liczbę równą twojemu poziomowi Barbarzyńcy (obecnie [[lookup @classes.barbarian.levels]]).</p><section class=\"secret\" id=\"secret-gWvozli4SOlo3KxS\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Szał Bogów</strong> zawiera Aktywny Efekt automatycznie dodający odporności, unoszenie się i szybkość Lotu.</p><p>Aktywność <strong>Ożywienie</strong> zawiera rzut leczenia równy twojemu poziomowi Barbarzyńcy.</p></section>",
             "requirements": "Ścieżka czciciela",
             "activities": {
                 "Revivification": {
@@ -4870,7 +4870,7 @@
             "effects": {
                 "Rage of the Gods": {
                     "name": "Szał Bogów",
-                    "description": "<p>While in this form, you gain the benefits below.</p><p><strong>Flight.</strong> You have a Fly Speed equal to your Speed and can hover.</p><p><strong>Resistance.</strong> You have Resistance to Necrotic, Psychic, and Radiant damage.</p>"
+                    "description": "<p>W tej formie zyskujesz poniższe korzyści.</p><p><strong>Lot.</strong> Masz prędkość lotu równą swojej Szybkości i możesz unosić się w powietrzu.</p><p><strong>Odporność.</strong> Masz Odporność na obrażenia od nekrotycznych, psychicznych i od światłości.</p>"
                 }
             }
         },
@@ -5047,7 +5047,7 @@
         },
         "Revelation in Flesh": {
             "name": "Objawienie w ciele",
-            "description": "<p>You can unleash the aberrant truth hidden within yourself. As a Bonus Action, you can spend 1 Sorcery Point or more to magically alter your body for 10 minutes. For each Sorcery Point you spend, you gain one of the following benefits of your choice, the effects of which last until the alteration ends.</p><p><strong>Aquatic Adaptation.</strong> You gain a Swim Speed equal to twice your Speed, and you can breathe underwater. Gills grow from your neck or flare behind your ears, and your fingers become webbed or you grow wriggling cilia.</p><p><strong>Glistening Flight.</strong> You gain a Fly Speed equal to your Speed, and you can hover. As you fly, your skin glistens with mucus or otherworldly light.</p><p><strong>See the Invisible.</strong> You can see any Invisible creature within 60 feet of yourself that isn’t behind Total Cover. Your eyes also turn black or become writhing sensory tendrils.</p><p><strong>Wormlike Movement.</strong> Your body, along with any equipment you are wearing or carrying, becomes slimy and pliable. You can move through any space as narrow as 1 inch, and you can spend 5 feet of movement to escape from nonmagical restraints or the Grappled condition.</p><section class=\"secret\" id=\"secret-jX8dvHDf5youPS4j\"><p><strong>Foundry Note</strong></p><p>The <strong>Expend Sorcery Points</strong> activity will let you select the number of Sorcery Points you would like to expend.</p></section>",
+            "description": "<p>Możesz uwolnić wynaturzoną prawdę ukrytą w sobie. Akcją Dodatkową możesz wydać 1 lub więcej Punktów Zaklinania, aby magicznie zmienić swoje ciało na 10 minut. Za każdy wydany Punkt Zaklinania zyskujesz jedno z poniższych korzyści według własnego wyboru, których efekty trwają, dopóki przemiana się nie zakończy.</p><p><strong>Adaptacja wodna.</strong> Zyskujesz szybkość pływania równą dwukrotności swojej szybkości i możesz oddychać pod wodą. Z twojej szyi wyrastają skrzela lub rozchylają się za uszami, a palce stają się błoniaste lub pokrywają się poruszającymi rzęskami.</p><p><strong>Lśniący lot.</strong> Zyskujesz szybkość latania równą swojej szybkości i możesz unosić się w powietrzu. Podczas lotu twoja skóra połyskuje śluzem lub nieziemskim światłem.</p><p><strong>Widzenie niewidzialnych.</strong> Widzisz każdą Niewidzialną istotę w promieniu 60 stóp od siebie, o ile nie znajduje się za Całkowitą Osłoną. Twoje oczy czernieją lub zamieniają się w wijące się czujne macki.</p><p><strong>Robaczy ruch.</strong> Twoje ciało, wraz z noszonym lub trzymanym ekwipunkiem, staje się śliskie i elastyczne. Możesz poruszać się przez każdą przestrzeń wąską na cal oraz możesz wydać 5 stóp ruchu, aby uwolnić się z niemagicznych więzów lub stanu Pochwycony.</p><section class=\"secret\" id=\"secret-jX8dvHDf5youPS4j\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Wykorzystaj Punkty Zaklinania</strong> pozwala wybrać liczbę Punktów Zaklinania, które chcesz wydać.</p></section>",
             "activities": {
                 "Expend Sorcery Points": {
                     "name": "Wykorzystaj Punkty zaklinania"
@@ -5162,7 +5162,7 @@
         },
         "Roving": {
             "name": "Traper",
-            "description": "<p>Your Speed increases by 10 feet while you aren’t wearing Heavy armor. You also have a Climb Speed and a Swim Speed equal to your Speed.</p><section class=\"secret\" id=\"secret-XnQYiG0fJWJSHkQw\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which can be disabled if you are wearing Heavy armor.</p></section>",
+            "description": "<p>Twoja Szybkość zwiększa się o 10 stóp, gdy nie nosisz Ciężkiego pancerza. Dodatkowo, masz Zasięg Wspinaczki i Zasięg Pływania równy swojej Szybkości.</p><section class=\"secret\" id=\"secret-XnQYiG0fJWJSHkQw\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Aktywny Efekt, który zwiększa twoją Szybkość o 10 stóp. Można go wyłączyć, jeśli nosisz Ciężki pancerz.</p></section>",
             "effects": {
                 "Roving": {
                     "name": "Traper"
@@ -5252,7 +5252,7 @@
         },
         "Shadow Arts": {
             "name": "Sztuki cienia",
-            "description": "<p>You have learned to draw on the power of the Shadow­fell, gaining the following benefits.</p><p><strong>Darkness.</strong> You can expend 1 Focus Point to cast the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]{Darkness} spell without spell components. You can see within the spell's area when you cast it with this feature. While the spell persists, you can move its area of Darkness to a space within 60 feet of yourself at the start of each of your turns.</p><p><strong>Darkvision.</strong> You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p><p><strong>Shadowy Figments.</strong> You know the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMinorIllus]{Minor Illusion} spell. Wisdom is your spellcasting ability for it.</p>",
+            "description": "<p>Nauczyłeś się czerpać moc z Shadowfell, zyskując następujące korzyści.</p><p><strong>Ciemność.</strong> Możesz zużyć 1 Punkt Skupienia, aby rzucić czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00] bez komponentów. Gdy rzucasz ten czar dzięki tej zdolności, widzisz w jego obszarze. Dopóki czar trwa, możesz na początku każdej swojej tury przesunąć obszar Ciemności w przestrzeń w odległości do 60 stóp od siebie.</p><p><strong>Widzenie w ciemności.</strong> Zyskujesz Widzenie w ciemności o zasięgu 60 stóp. Jeśli już posiadasz Widzenie w ciemności, jego zasięg zwiększa się o 60 stóp.</p><p><strong>Cieniste złudzenia.</strong> Znasz czar @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMinorIllus]. Twoją cechą bazową do jego rzucania jest Mądrość.</p>",
             "effects": {
                 "Shadow Art Vision": {
                     "name": "Wizja Sztuki cienia"
@@ -5549,8 +5549,8 @@
                     "name": "Gwiezdna forma"
                 },
                 "Dragon Form (Twinkling)": {
-                    "name": "Dragon Form (Twinkling)",
-                    "description": "<p>A constellation of a wise dragon appears on you. When you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.</p><p>You have a Fly Speed of 20 feet and can hover.</p>"
+                    "name": "Forma smoka (Migoczące)",
+                    "description": "<p>Na twoim ciele pojawia się konstelacja mądrego smoka. Kiedy wykonujesz test Inteligencji lub Mądrości albo rzut obronny na Kondycję, aby utrzymać Koncentrację, możesz potraktować wynik 9 lub niższy na kości k20 jako 10.</p><p>Masz Szybkość Latania wynoszącą 20 stóp i możesz się unosić.</p>"
                 }
             }
         },
@@ -5591,7 +5591,7 @@
         },
         "Stormborn": {
             "name": "Władca sztormu",
-            "description": "<p>Your Wrath of the Sea confers two more benefits while active, as detailed below.</p><p><strong>Flight.</strong> You gain a Fly Speed equal to your Speed.</p><p><strong>Resistance.</strong> You have Resistance to Cold, Lightning, and Thunder damage.</p><section class=\"secret\" id=\"secret-gM39tGMfj0IPiND0\"><p><strong>Foundry Note</strong></p><p>You can use this feature in place of Wrath of the Sea. It includes an Active Effect which will automate the addition of the Resistances and Fly Speed.</p></section>",
+            "description": "<p>Twój Gniew morza zapewnia ci dwa dodatkowe efekty, gdy jest aktywny, jak opisano poniżej.</p><p><strong>Lot.</strong> Zyskujesz Szybkość Lotu równą swojej Szybkości.</p><p><strong>Odporność.</strong> Masz Odporność na obrażenia od zimna, elektryczności i dźwięku.</p><section class=\"secret\" id=\"secret-gM39tGMfj0IPiND0\"><p><strong>Notatka Foundry</strong></p><p>Możesz użyć tej zdolności zamiast Gniewu Morza. Zawiera ona Aktywny Efekt, który automatyzuje dodawanie Odporności i Szybkości Latania.</p></section>",
             "requirements": "Krąg Morza",
             "activities": {
                 "save": {
@@ -5606,7 +5606,7 @@
         },
         "Stride of the Elements": {
             "name": "Pęd żywiołów",
-            "description": "<p>While your Elemental Attunement is active, you also have a Fly Speed and a Swim Speed equal to your Speed.</p><section class=\"secret\" id=\"secret-2VpFYVEuPixaVTaH\"><p><strong>Foundry Note</strong></p><p>These changes are handled by your <strong>Elemental Attunement</strong> feature.</p></section>"
+            "description": "<p>Podczas gdy twoja Harmonia żywiołów jest aktywna, zyskujesz także Szybkość Lotu Pływania równy twojej Szybkości.</p><section class=\"secret\" id=\"secret-2VpFYVEuPixaVTaH\"><p><strong>Notatka Foundry</strong></p><p>Te zmiany są obsługiwane przez twoją zdolność <strong>Harmonia żywiołów</strong>.</p></section>"
         },
         "Stroke of Luck": {
             "name": "Łut szczęścia",
@@ -5629,7 +5629,7 @@
         },
         "Stunning Strike": {
             "name": "Ogłuszający cios",
-            "description": "<p>Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus Point to attempt a stunning strike. The target must make a Constitution saving throw. On a failed save, the target has the &amp;Reference[Stunned apply=false] condition until the start of your next turn. On a successful save, the target's Speed is halved until the start of your next turn, and the next attack roll made against the target before then has Advantage.</p><section class=\"secret\" id=\"secret-bfJBOqZfcoIiBtoP\"><p><strong>Foundry Note</strong></p><p>This feature includes the Saving Throw and a Stunned Active Effect which applies the Stunned status if they fail and a Slowed Active Effect for tracking that their Speed is halved and that the next attack roll made against them has Advantage if they succeed.</p></section>",
+            "description": "<p>Raz na turę, gdy trafisz istotę bronią Mnicha lub Uderzeniem bez broni, możesz wydać 1 Punkt Skupienia, aby spróbować wykonać ogłuszający cios. Cel musi wykonać rzut obronny na Kondycję. Przy nieudanym rzucie cel otrzymuje stan &amp;Reference[Stunned apply=false] do początku swojej następnej tury. Przy udanym rzucie szybkość celu zostaje zmniejszona o połowę do początku swojej następnej tury, a następny Test Ataku przeciwko niemu wykonany przed końcem tego czasu ma Ułatwienie.</p><section class=\"secret\" id=\"secret-bfJBOqZfcoIiBtoP\"><p><strong>Notatka Foundry</strong></p><p>Ta zdolność zawiera Rzut Obrony oraz Aktywny Efekt, który nadaje stan Ogłuszony przy niepowodzeniu oraz Aktywny Efekt Spowolnienia, który śledzi, że szybkość celu jest zmniejszona, a kolejny Test Ataku przeciwko niemu ma Ułatwienie przy sukcesie.</p></section>",
             "activities": {
                 "save": {
                     "condition": "Raz na turę, gdy trafisz istotę bronią Mnicha lub Uderzeniem bez broni",
@@ -5826,7 +5826,7 @@
         },
         "Tandem Footwork": {
             "name": "Synchroniczna praca nóg",
-            "description": "<p>When you roll Initiative, you can expend one use of your Bardic Inspiration if you don't have the &amp;Reference[Incapacitated] condition. When you do so, roll your Bardic Inspiration die; you and each ally within 30 feet of you who can see or hear you gains a bonus to Initiative equal to the number rolled.</p>",
+            "description": "<p>Kiedy wykonujesz rzut na Inicjatywę, możesz zużyć jedno użycie swojej Bardowskiej inspiracji, jeśli nie masz stanu &amp;Reference[Incapacitated]{Obezwładniony}. Gdy to zrobisz, rzuć kością swojej Bardowskiej inspiracji; ty oraz każdy sojusznik w promieniu 30 stóp, który cię widzi lub słyszy, otrzymuje premię do Inicjatywy równą wyrzuconej wartości.</p><",
             "requirements": "Kolegium Tańca",
             "activities": {
                 "Initiative Bonus": {
@@ -5841,7 +5841,7 @@
         },
         "Telekinetic Adept": {
             "name": "Adept telekinetyki",
-            "description": "<p>You have mastered new ways to use your telekinetic abilities, detailed below.</p><p><strong>Psi-Powered Leap.</strong> As a Bonus Action, you gain a Fly Speed equal to twice your Speed until the end of the current turn. Once you take this Bonus Action, you can't do so again until you finish a Short or Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.</p><p><strong>Telekinetic Thrust.</strong> When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw (DC 8 plus your Intelligence modifier and Proficiency Bonus). On a failed save, you can give the target the Prone condition or transport it up to 10 feet horizontally.</p><section class=\"secret\" id=\"secret-3FJveOZHh3M7CaKV\"><p><strong>Foundry Note</strong></p><p>The <strong>Psi-Powered Leap</strong> activity includes a free use and you can use the <strong>Psi-Powered Leap Using Psionic Energy</strong> activity to use it again with a Psionic Energy Die.</p><p>The <strong>Telekinetic Thrust</strong> activity includes an Active Effect which will can apply the Prone condition.</p></section>",
+            "description": "<p>Opanowałeś nowe sposoby korzystania ze swoich zdolności telekinetycznych, opisane poniżej.</p><p><strong>Psioniczny skok.</strong> W ramach Akcji dodatkowej zyskujesz prędkość lotu równą dwukrotności twojej Szybkości do końca bieżącej tury. Po użyciu tej Akcji dodatkowej nie możesz zrobić tego ponownie, dopóki nie zakończysz Krótkiego lub Długiego Odpoczynku, chyba że zużyjesz Kość energii psionicznej (bez akcji), aby odzyskać możliwość użycia.</p><p><strong>Telekinetyczne pchnięcie.</strong> Kiedy zadasz celowi obrażenia za pomocą Psionicznego Uderzenia, możesz zmusić go do wykonania rzutu obronnego na Siłę (ST 8 + twój modyfikator z Inteligencji + Premia z Biegłości). W przypadku niepowodzenia możesz nadać celowi stan Powalony albo przemieścić go do 10 stóp w poziomie.</p><section class=\"secret\" id=\"secret-3FJveOZHh3M7CaKV\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Psioniczny skok</strong> zawiera darmowe użycie, a <strong>Psioniczny skok z użyciem energii psionicznej</strong> pozwala użyć go ponownie kosztem Kości energii psionicznej. </p><p>Aktywność <strong>Telekinetyczne pchnięcie</strong> zawiera Efekt Aktywny, który może nadać stan Powalony.</p></section>",
             "activities": {
                 "Psi-Powered Leap": {
                     "name": "Psioniczny skok"
@@ -5958,10 +5958,10 @@
             "description": "<p>Możesz manipulować samym chaosem, aby zapewnić sobie Ułatwienie przy jednym teście k20 przed wykonaniem rzutu. Po użyciu tej zdolności musisz rzucić czar Zaklinacza przy użyciu komórki czaru lub zakończyć Długi odpoczynek, zanim będziesz mógł użyć jej ponownie.</p><p>Jeśli rzucisz czar zaklinacza przy użyciu komórki czaru przed zakończeniem Długiego odpoczynku, automatycznie wykonujesz rzut na tabeli @UUID[Compendium.dnd-players-handbook.tables.RollTable.phbWildMagicSurg].</p>",
             "activities": {
                 "Expend for Advantage": {
-                    "name": "Expend for Advantage"
+                    "name": "Zużyj, aby zyskać Ułatwienie"
                 },
                 "Recharge from Spell": {
-                    "name": "Recharge from Spell"
+                    "name": "Odnowa z czaru"
                 }
             }
         },
@@ -6068,14 +6068,14 @@
         },
         "Trip Attack": {
             "name": "Obalenie",
-            "description": "<p>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die and add the die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or have the &amp;Reference[Prone] condition.</p>",
+            "description": "<p>Gdy trafisz istotę testem ataku przy użyciu broni lub Uderzenia bez broni, możesz zużyć jedną Kość Przewagi i dodać ją do rzutu obrażeń tego ataku. Jeśli cel jest Duży lub mniejszy, musi odnieść sukces w rzucie obronnym na Siłę, inaczej ma stan &amp;Reference[Prone].</p>",
             "activities": {
                 "Strength Save": {
-                    "name": "Strength Save",
+                    "name": "Rzut obronny na Siłę",
                     "damageOnSave": "full"
                 },
                 "Superiority Die": {
-                    "name": "Superiority Die",
+                    "name": "Kość przewagi",
                     "condition": "Gdy trafiasz istotę w teście ataku",
                     "activationCondition": "Gdy trafiasz istotę w teście ataku"
                 }
@@ -6149,7 +6149,7 @@
         },
         "Unarmored Movement": {
             "name": "Szybkość mnicha",
-            "description": "<p>Your speed increases by 10 feet while you aren't wearing armor or wielding a Shield. This bonus increases when you reach certain Monk levels, as shown on the Monk Features table.</p><p class=\"hide-in-embed\"><strong>Current Increase:</strong> [[lookup @scale.monk.unarmored-movement]]</p>",
+            "description": "<p>Twoja Szybkość zwiększa się o 10 stóp, dopóki nie nosisz pancerza ani nie dzierżysz Tarczy. Ta premia zwiększa się, gdy osiągasz określone poziomy Mnicha, jak pokazano w tabeli cech Mnicha.</p><p class=\"hide-in-embed\"><strong>Aktualne zwiększenie:</strong> [[lookup @scale.monk.unarmored-movement]]</p>",
             "effects": {
                 "Unarmored Movement": {
                     "name": "Szybkość mnicha"
@@ -6317,12 +6317,12 @@
         },
         "War Domain Spells": {
             "name": "Czary Domeny wojny",
-            "description": "<p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the War Domain Spells table, you thereafter always have the listed spells prepared.</p><table><caption>War Domain Spells</caption><thead><tr><td>Cleric Level</td><td>Prepared Spells</td></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGuidingBol]{Guiding Bolt}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMagicWeapo]{Magic Weapon}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShieldofFa]{Shield of Faith}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritualW]{Spiritual Weapon}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCrusadersM]{Crusader's Mantle}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritGuar]{Spirit Guardians}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireShield]{Fire Shield}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFreedomofM]{Freedom of Movement}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHoldMonste]{Hold Monster}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSteelWindS]{Steel Wind Strike}</td></tr></tbody></table>",
+            "description": "<p>Twoje połączenie z tą boską domeną zapewnia, że zawsze masz pewne czary gotowe. Gdy osiągniesz poziom Kleryka określony w tabeli Czary Domeny wojny, od tego momentu zawsze masz przygotowane wymienione czary.</p><table><caption>Czary Domeny wojny</caption><thead><tr><td>Poziom Kleryka</td><td>Przygotowane Czary</td></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGuidingBol], @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMagicWeapo], @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShieldofFa], @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritualW]</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCrusadersM], @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritGuar]</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireShield], @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFreedomofM]</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHoldMonste], @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSteelWindS]</td></tr></tbody></table>",
             "requirements": "Domena wojny"
         },
         "War God's Blessing": {
             "name": "Błogosławieństwo boga wojny",
-            "description": "<p>You can expend a use of your Channel Divinity to cast @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShieldofFa]{Shield of Faith} or @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritualW]{Spiritual Weapon} rather than expending a spell slot. When you cast either spell in this way, the spell doesn't require Concentration. Instead the spell lasts for 1 minute, but it ends early if you cast that spell again, have the Incapacitated condition, or die.</p>",
+            "description": "<p>Możesz zużyć jedno użycie swojego Aktu Wiary, aby rzucić @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplShieldofFa] lub @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritualW] zamiast wydawania komórki czaru. Gdy rzucasz którykolwiek z tych czarów w ten sposób, czar nie wymaga Koncentracji. Zamiast tego trwa 1 minutę, ale kończy się wcześniej, jeśli rzucisz ten czar ponownie, jeśli masz stan &amp;Reference[Incapacitated] lub jeśli umrzesz.</p>",
             "requirements": "Domena wojny"
         },
         "War Magic": {
@@ -6477,7 +6477,7 @@
         },
         "Warrior of the Gods": {
             "name": "Boży wojownik",
-            "description": "<p>A divine entity helps ensure you can continue the fight. You have a pool of four d12s that you can spend to heal yourself. As a Bonus Action, you can expend dice from the pool, roll them, and regain a number of Hit Points equal to the roll's total.</p><p>Your pool regains all expended dice when you finish a Long Rest.</p><p>The pool's maximum number of dice increases by one when you reach Barbarian levels 6 (5 dice), 12 (6 dice), and 17 (7 dice).</p>",
+            "description": "<p>Boski byt wpływa na ciebie zapewniając ci możliwość kontynuowania walki. Masz pulę czterech k12, które możesz wydać, aby uleczyć siebie. Jako Akcja dodatkowa możesz wydać kości z puli, rzucić nimi i odzyskać liczbę Punktów Wytrzymałości równą sumie rzutów.</p><p>Twoja pula odzyskuje wszystkie wydane kości po zakończeniu Długiego Odpoczynku.</p><p>Maksymalna liczba kości w puli wzrasta o jedną, gdy osiągasz poziomy Barbarzyńcy 6 (5 kości), 12 (6 kości) i 17 (7 kości).</p>",
             "requirements": "Ścieżka czciciela",
             "advancement": {
                 "Pool Size": {
