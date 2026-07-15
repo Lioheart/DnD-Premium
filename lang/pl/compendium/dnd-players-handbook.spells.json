@@ -3698,7 +3698,7 @@
         },
         "Raise Dead": {
             "name": "Wskrzeszenie",
-            "description": "<p>Dotykiem wskrzeszasz martwą istotę, jeśli nie minęło więcej niż 10 dni od jej śmierci i nie była Nieumarłym w chwili zgonu.</p><p>Istota wraca do życia z 1 Punktem Wytrzymałości. Czar również neutralizuje wszelkie trucizny, które wpływały na istotę w momencie śmierci.</p><p>Czar zamyka wszystkie śmiertelne rany, ale nie przywraca utraconych części ciała. Jeśli istota nie ma części ciała lub organów niezbędnych do przeżycia—na przykład głowy—czar automatycznie kończy się niepowodzeniem.</p><p>Powrót z martwych jest trudnym doświadczeniem. Cel otrzymuje karę −4 do testów na k20. Za każdym razem, gdy ukończy Pełny Odpoczynek, kara zmniejsza się o 1, aż osiągnie 0.</p>",
+            "description": "<p>Dotykiem przywracasz do życia martwą istotę, jeśli zmarła nie więcej niż 10 dni temu i w chwili śmierci nie była Nieumarłym.</p><p>Istota powraca do życia z 1 Punktem wytrzymałości. Czar neutralizuje również wszystkie trucizny, które wpływały na istotę w chwili jej śmierci.</p><p>Ten czar zamyka wszystkie śmiertelne rany, ale nie odtwarza brakujących części ciała. Jeśli istocie brakuje części ciała lub organów niezbędnych do przeżycia — na przykład głowy — czar automatycznie kończy się niepowodzeniem.</p><p>Powrót z martwych jest ciężkim przeżyciem. Cel otrzymuje karę −4 do Testów k20. Za każdym razem, gdy cel kończy Długi odpoczynek, kara zmniejsza się o 1, aż osiągnie 0.</p>",
             "materials": "diament warty 500+ SZ, który czar zużywa",
             "targetAffects": "martwa istota",
             "activities": {
