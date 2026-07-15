@@ -1950,7 +1950,7 @@
         },
         "Finger of Death": {
             "name": "Palec śmierci",
-            "description": "<p>Uwalniasz negatywną energię w kierunku istoty, którą widzisz w zasięgu. Cel wykonuje rzut obronny na Kondycję, otrzymując 7k8 + 30 obrażeń nekrotycznych przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p>Humanoid zabity przez ten czar powstaje na początku swojej następnej tury jako <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobZombie0000]{Zombie}</strong> (patrz dodatek B), który wykonuje twoje werbalne rozkazy.</p>",
+            "description": "<p>Wyzwalasz negatywną energię w kierunku istoty, którą widzisz w zasięgu. Cel wykonuje rzut obronny na Kondycję, otrzymując 7k8 + 30 obrażeń nekrotycznych przy porażce albo połowę tych obrażeń przy sukcesie.</p><p>Humanoid zabity tym czarem powstaje na początku twojej następnej tury jako <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobZombie0000]</strong> (patrz dodatek B) i wykonuje twoje polecenia werbalne.</p>",
             "activities": {
                 "Negative Energy Save": {
                     "name": "Rzut obronny energii negatywnej",
