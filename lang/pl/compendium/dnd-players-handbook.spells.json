@@ -3124,7 +3124,7 @@
         },
         "Mind Spike": {
             "name": "Myślowy cierń",
-            "description": "<p>Wbijasz kolec psionicznej energii w umysł jednej istoty, którą widzisz w zasięgu. Cel wykonuje rzut obronny na Mądrość, otrzymując 3k8 obrażeń psychicznych przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie. Przy nieudanym rzucie zawsze znasz lokalizację celu do końca czaru, ale tylko wtedy, gdy obaj jesteście na tym samym planie egzystencji. Gdy posiadasz tę wiedzę, cel nie może się przed tobą ukryć, a jeśli ma stan &amp;Reference[invisible apply=false]{Niewidzialny}, nie odnosi z tego stanu korzyści przeciwko tobie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 2.</p>",
+            "description": "<p>Wbijasz kolec energii psionicznej w umysł jednej istoty, którą widzisz w zasięgu. Cel wykonuje rzut obronny na Mądrość, otrzymując 3k8 obrażeń psychicznych przy porażce albo połowę tych obrażeń przy sukcesie. Przy porażce do zakończenia czaru zawsze wiesz, gdzie znajduje się cel, ale tylko dopóki oboje przebywacie w tej samej sferze egzystencji. Dopóki posiadasz tę wiedzę, cel nie może się przed tobą ukryć, a jeśli ma stan &amp;Reference[invisible apply=false], nie czerpie z niego żadnych korzyści przeciwko tobie.</p><p><strong>Użycie komórki czaru wyższego kręgu. </strong>Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 2. kręgu.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
