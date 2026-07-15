@@ -3565,7 +3565,7 @@
             "effects": {
                 "Petrifying (Indigo)": {
                     "name": "Skamieniający (Indygo)",
-                    "description": "<p>Cel otrzymuje stan &amp;Reference[Restrained apply=false] i wykonuje [[/save ability=con format=long]] na końcu każdej swojej tury. Jeśli trzykrotnie odniesie sukces, stan się kończy. Jeśli trzykrotnie poniesie porażkę, otrzymuje stan &amp;Reference[Petrified], dopóki nie zostanie uwolniony przez efekt taki jak czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]</em>. Sukcesy i porażki nie muszą następować po sobie — śledź oba wyniki, dopóki cel nie uzyska trzech tego samego rodzaju.</p>"
+                    "description": "<p>Cel ma stan &amp;Reference[Restrained apply=false] i wykonuje [[/save ability=con format=long]] na końcu każdej swojej tury. Jeśli trzykrotnie odniesie sukces w tym rzucie obronnym, stan się kończy. Jeśli trzykrotnie poniesie porażkę, ma stan &amp;Reference[Petrified], dopóki nie zostanie od niego uwolniony przez efekt taki jak czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]</em>. Sukcesy i porażki nie muszą następować kolejno; śledź jedne i drugie, dopóki cel nie zgromadzi trzech wyników tego samego rodzaju.</p>"
                 },
                 "Teleporting (Violet)": {
                     "name": "Teleportacja (Fiolet)",
