@@ -4054,7 +4054,7 @@
         },
         "Sequester": {
             "name": "Odosobnienie",
-            "description": "<p>Dotykiem magicznie izolujesz przedmiot lub chętną istotę. Przez cały czas działania czaru cel otrzymuje stan &Reference[Invisible]{Niewidzialny} i nie może być celem czarów Wieszczących, wykryty przez magię ani obserwowany zdalnie za pomocą magii.</p><p>Jeśli celem jest istota, wchodzi ona w stan zawieszonej animacji; otrzymuje stan &Reference[Unconscious]{Nieprzytomny}, nie starzeje się i nie potrzebuje jedzenia, wody ani powietrza.</p><p>Możesz określić warunek wcześniejszego zakończenia czaru. Może to być dowolne zdarzenie, ale musi wystąpić lub być widoczne w promieniu 1 mili (1,5 km) od celu. Przykłady to „po 1 000 latach” lub „gdy tarrasque się przebudzi”. Czar kończy się również, jeśli cel otrzyma jakiekolwiek obrażenia.</p>",
+            "description": "<p>Dotykiem magicznie izolujesz obiekt lub przychylną istotę. Przez czas trwania czaru cel ma stan Niewidzialny i nie może być obrany za cel czarów Wieszczenia, wykryty za pomocą magii ani obserwowany zdalnie przy użyciu magii.</p><p>Jeśli cel jest istotą, zapada w stan wstrzymania funkcji życiowych; ma stan Nieprzytomny, nie starzeje się i nie potrzebuje jedzenia, wody ani powietrza.</p><p>Możesz określić warunek, którego spełnienie zakończy czar wcześniej. Warunek może być dowolny, ale musi wystąpić lub być widoczny w obrębie 1 mili od celu. Przykładowe warunki to „po 1000 latach” lub „gdy Tarrasque się przebudzi”. Czar kończy się również, jeśli cel otrzyma jakiekolwiek obrażenia.</p>",
             "materials": "pył z klejnotów warty 5 000+ SZ, który czar zużywa",
             "effects": {
                 "Sequestered": {
