@@ -3920,7 +3920,7 @@
         },
         "Sanctuary": {
             "name": "Sanktuarium",
-            "description": "<div><p>Chronisz istotę w zasięgu. Do końca trwania czaru każda istota, która zaatakuje chronioną istotę za pomocą testu ataku lub czaru zadającego obrażenia, musi wykonać [[/save ability=wis dc=@attributes.spell.dc format=long]] albo wybrać nowy cel, albo utracić atak lub czar. Ten czar nie chroni istoty przed efektami obszarowymi. Czar kończy się, jeśli chroniona istota wykona test ataku, rzuci czar lub zada obrażenia.</p></div>",
+            "description": "<div><p>Obejmujesz ochroną istotę w zasięgu. Do zakończenia czaru każda istota, która obiera chronioną istotę za cel testu ataku lub czaru zadającego obrażenia, musi odnieść sukces w [[/save ability=wis dc=@attributes.spell.dc format=long]]{Rzucie obronnym na Mądrość}. W przeciwnym razie musi wybrać nowy cel albo jej atak lub czar przepada. Ten czar nie chroni objętej nim istoty przed obszarami działania. Czar kończy się, jeśli chroniona istota wykona test ataku, rzuci czar lub zada obrażenia.</p></div>",
             "materials": "odłamek szkła z lustra",
             "activities": {
                 "Cast": {
