@@ -2488,7 +2488,7 @@
         },
         "Heroes' Feast": {
             "name": "Uczta bohaterów",
-            "description": "<p>Przywołujesz ucztę, która pojawia się na powierzchni w niezajętym sześcianie o boku 10 stóp obok ciebie. Spożycie uczty zajmuje 1 godzinę i znika ona po upływie tego czasu, a jej korzystne efekty nie zaczynają działać, dopóki ta godzina nie minie. Do uczty może przystąpić maksymalnie dwanaście istot.</p><p>Istota, która weźmie udział w uczcie, zyskuje kilka korzyści trwających przez 24 godziny. Otrzymuje &amp;Reference[damageResistance]{Odporność} na obrażenia od trucizn, a także ma &amp;Reference[Immunity]{Niewrażliwość} na stany &amp;Reference[Frightened]{Przerażony} i &amp;Reference[Poisoned]{Zatruty}. Jej maksymalne Punkty Wytrzymałości zwiększają się o 2k10, a dodatkowo zyskuje taką samą liczbę Punktów Wytrzymałości.</p>",
+            "description": "<p>Wyczarowujesz ucztę, która pojawia się na powierzchni w niezajętym Sześcianie o boku 10 stóp obok ciebie. Spożycie uczty trwa 1 godzinę, a po upływie tego czasu uczta znika. Jej korzystne efekty zaczynają działać dopiero po zakończeniu tej godziny. W uczcie może uczestniczyć do dwunastu istot.</p><p>Istota, która uczestniczy w uczcie, zyskuje na 24 godziny kilka korzyści. Ma &amp;Reference[damageResistance]{Odporność} na obrażenia od trucizny oraz Niepodatność na stany &amp;Reference[Frightened] i &amp;Reference[Poisoned]. Jej maksymalne Punkty wytrzymałości zwiększają się również o 2k10, a ona zyskuje taką samą liczbę Punktów wytrzymałości.</p>",
             "materials": "miska wysadzana klejnotami warta 1 000+ SZ, którą czar zużywa",
             "targetAffects": "niezajęta",
             "activities": {
