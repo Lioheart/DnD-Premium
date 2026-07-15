@@ -4354,7 +4354,7 @@
         },
         "Stinking Cloud": {
             "name": "Śmierdząca chmura",
-            "description": "<p>Tworzysz sferę żółtego, mdłego gazu o promieniu 20 stóp, której centrum znajduje się w wybranym punkcie w zasięgu. Obszar chmura jest &amp;Reference[heavilyobscured]. Utrzymuje się w powietrzu przez cały czas działania czaru lub do momentu, gdy zostanie rozwiana przez silny wiatr (taki jak ten stworzony przez <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGustofWind]{Podmuch Wiatru}</em>).</p><p>Każda istota rozpoczynająca swoją turę w obrębie sfery musi wykonać rzut obronny na Kondycję. W przypadku niepowodzenia otrzymuje stan &amp;Reference[poisoned apply=false]{Zatruty} do końca bieżącej tury. Będąc Zatrutą w ten sposób, istota nie może wykonać Akcji ani Akcji dodatkowej.</p>",
+            "description": "<p>Tworzysz Sferę żółtego, wywołującego nudności gazu o promieniu 20 stóp, której środek znajduje się w punkcie w zasięgu. Chmura jest &amp;Reference[heavilyobscured]{Pozbawiona widoczności}. Utrzymuje się w powietrzu przez czas trwania czaru albo do chwili, gdy zostanie rozwiana przez silny wiatr (taki jak wywołany czarem <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGustofWind]</em>).</p><p>Każda istota, która rozpoczyna swoją turę w Sferze, musi odnieść sukces w rzucie obronnym na Kondycję albo ma stan &amp;Reference[poisoned apply=false] do końca bieżącej tury. Będąc Zatruta w ten sposób, istota nie może wykonać Akcji ani Akcji dodatkowej.</p>",
             "materials": "zgniłe jajko",
             "activities": {
                 "Cast and Save": {
