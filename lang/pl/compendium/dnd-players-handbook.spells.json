@@ -810,7 +810,7 @@
         },
         "Chill Touch": {
             "name": "Przeszywający dotyk",
-            "description": "<p>Nasyłasz chłód grobu w stronę celu w zasięgu, wykonując Test ataku wręcz czarem. W przypadku trafienia cel otrzymuje 1k10 obrażeń nekrotycznych i nie może odzyskać Punktów Wytrzymałości do końca swojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k10, gdy osiągniesz poziomy 5 (2k10), 11 (3k10) i 17 (4k10).</p>",
+            "description": "<p>Nasyłasz chłód grobu w stronę celu w zasięgu, wykonując Test ataku wręcz czarem. W przypadku trafienia cel otrzymuje 1k10 obrażeń nekrotycznych i nie może odzyskać Punktów Wytrzymałości do końca swojej następnej tury.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k10, gdy osiągniesz poziomy 5 (2k10), 11 (3k10) i 17 (4k10).</p>",
             "effects": {
                 "Blocked Healing": {
                     "name": "Zablokowane leczenie",
@@ -1618,7 +1618,7 @@
         },
         "Eldritch Blast": {
             "name": "Nieziemskie uderzenie",
-            "description": "<p>Ciskasz promieniem trzaskającej energii. Wykonaj dystansowy atak czarem przeciwko jednej istocie lub obiektowi w zasięgu. Przy trafieniu cel otrzymuje 1k10 obrażeń od mocy.</p><p><strong>Ulepszenie Sztuczki.</strong> Czar tworzy dwa promienie na 5. poziomie, trzy promienie na 11. poziomie i cztery promienie na 17. poziomie. Możesz skierować promienie na ten sam cel lub na różne cele. Wykonaj osobny test ataku dla każdego promienia.</p><p>[[(floor((@details.level+1)/6)+1)]]{Całkowita Liczba Promieni}</p>"
+            "description": "<p>Ciskasz promieniem trzaskającej energii. Wykonaj dystansowy atak czarem przeciwko jednej istocie lub obiektowi w zasięgu. Przy trafieniu cel otrzymuje 1k10 obrażeń od mocy.</p><p><strong>Ulepszenie sztuczki.</strong> Czar tworzy dwa promienie na 5. poziomie, trzy promienie na 11. poziomie i cztery promienie na 17. poziomie. Możesz skierować promienie na ten sam cel lub na różne cele. Wykonaj osobny test ataku dla każdego promienia.</p><p>[[(floor((@details.level+1)/6)+1)]]{Całkowita Liczba Promieni}</p>"
         },
         "Elemental Weapon": {
             "name": "Broń żywiołu",
@@ -3109,7 +3109,7 @@
         },
         "Mind Sliver": {
             "name": "Myślowy odłamek",
-            "description": "<p>Próbujesz chwilowo rozszczepić umysł jednej istoty, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Inteligencję, inaczej otrzymuje 1k6 obrażeń psychicznych i odejmuje 1k4 od następnego rzutu obronnego, który wykona przed końcem swojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k6, gdy osiągniesz poziomy 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
+            "description": "<p>Próbujesz chwilowo rozszczepić umysł jednej istoty, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Inteligencję, inaczej otrzymuje 1k6 obrażeń psychicznych i odejmuje 1k4 od następnego rzutu obronnego, który wykona przed końcem swojej następnej tury.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k6, gdy osiągniesz poziomy 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "none"
@@ -3476,7 +3476,7 @@
         },
         "Poison Spray": {
             "name": "Trujący rozprysk",
-            "description": "<p>Rozsiewasz toksyczną mgłę w kierunku istoty w zasięgu. Wykonaj test ataku zasięgowego przeciwko celowi. W przypadku trafienia cel otrzymuje 1k12 obrażeń od trucizny.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k12, gdy osiągniesz poziomy 5 (2k12), 11 (3k12) i 17 (4k12).</p>"
+            "description": "<p>Rozsiewasz toksyczną mgłę w kierunku istoty w zasięgu. Wykonaj test ataku zasięgowego przeciwko celowi. W przypadku trafienia cel otrzymuje 1k12 obrażeń od trucizny.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k12, gdy osiągniesz poziomy 5 (2k12), 11 (3k12) i 17 (4k12).</p>"
         },
         "Polymorph": {
             "name": "Polimorfia",
@@ -3610,7 +3610,7 @@
         },
         "Produce Flame": {
             "name": "Wywołanie płomienia",
-            "description": "<p>Migoczący płomień pojawia się w twojej dłoni i pozostaje tam przez cały czas działania czaru. Płomień nie emituje ciepła ani niczego nie podpala, a także rzuca &Reference[BrightLight]{Jasne Światło} w promieniu 20 stóp oraz &Reference[DimLight]{Słabe Światło} na dodatkowe 20 stóp. Czar kończy się, jeśli rzucisz go ponownie.</p><p>Do momentu zakończenia czaru możesz wykonać Akcję Magii, aby rzucić płomień w istotę lub obiekt w odległości do 60 stóp od ciebie. Wykonaj dystansowy test ataku zaklęciem. W przypadku trafienia cel otrzymuje 1k8 obrażeń od ognia.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
+            "description": "<p>Migoczący płomień pojawia się w twojej dłoni i pozostaje tam przez cały czas działania czaru. Płomień nie emituje ciepła ani niczego nie podpala, a także rzuca &Reference[BrightLight]{Jasne Światło} w promieniu 20 stóp oraz &Reference[DimLight]{Słabe Światło} na dodatkowe 20 stóp. Czar kończy się, jeśli rzucisz go ponownie.</p><p>Do momentu zakończenia czaru możesz wykonać Akcję Magii, aby rzucić płomień w istotę lub obiekt w odległości do 60 stóp od ciebie. Wykonaj dystansowy test ataku zaklęciem. W przypadku trafienia cel otrzymuje 1k8 obrażeń od ognia.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
             "activities": {
                 "Cast": {
                     "name": "Rzucanie"
@@ -3761,7 +3761,7 @@
         },
         "Ray of Frost": {
             "name": "Promień mrozu",
-            "description": "<p>Lodowaty promień biało-niebieskiego światła mknie w kierunku istoty w zasięgu. Wykonaj dystansowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia otrzymuje on 1k8 obrażeń od zimna, a jego szybkość zostaje zmniejszona o 10 stóp do początku swojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
+            "description": "<p>Lodowaty promień biało-niebieskiego światła mknie w kierunku istoty w zasięgu. Wykonaj dystansowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia otrzymuje on 1k8 obrażeń od zimna, a jego szybkość zostaje zmniejszona o 10 stóp do początku swojej następnej tury.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
             "effects": {
                 "Reduced Movement": {
                     "name": "Ograniczony ruch",
@@ -3911,7 +3911,7 @@
         },
         "Sacred Flame": {
             "name": "Święty płomień",
-            "description": "<p>Światłość przypominająca płomień spada na istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Zręczność. W przypadku niepowodzenia otrzymuje 1k8 obrażeń od światłości. Cel nie korzysta z osłony Połowicznej ani Trzy Czwarte podczas tego rzutu.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
+            "description": "<p>Światłość przypominająca płomień spada na istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Zręczność. W przypadku niepowodzenia otrzymuje 1k8 obrażeń od światłości. Cel nie korzysta z osłony Połowicznej ani Trzy Czwarte podczas tego rzutu.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "none"
@@ -4111,7 +4111,7 @@
         },
         "Shillelagh": {
             "name": "Shillelagh",
-            "description": "<p>Trzymana przez ciebie Pałka lub Drąg zostają nasycone mocą natury. Przez cały czas działania czaru możesz używać swojej cechy zaklinania zamiast Siły do rzutów ataku i obrażeń w atakach wręcz wykonywanych tą bronią, a jej kość obrażeń staje się k8. Jeśli atak zadaje obrażenia, mogą one być obrażeniami od mocy lub pozostać standardowym typem obrażeń broni (twój wybór).</p><p>Czar kończy się wcześniej, jeśli rzucisz go ponownie lub puścisz broń.</p><p><strong>Ulepszenie Sztuczki.</strong> Kość obrażeń zmienia się na k10 na poziomie 5, k12 na poziomie 11 i 2k6 na poziomie 17.</p>",
+            "description": "<p>Trzymana przez ciebie Pałka lub Drąg zostają nasycone mocą natury. Przez cały czas działania czaru możesz używać swojej cechy zaklinania zamiast Siły do rzutów ataku i obrażeń w atakach wręcz wykonywanych tą bronią, a jej kość obrażeń staje się k8. Jeśli atak zadaje obrażenia, mogą one być obrażeniami od mocy lub pozostać standardowym typem obrażeń broni (twój wybór).</p><p>Czar kończy się wcześniej, jeśli rzucisz go ponownie lub puścisz broń.</p><p><strong>Ulepszenie sztuczki.</strong> Kość obrażeń zmienia się na k10 na poziomie 5, k12 na poziomie 11 i 2k6 na poziomie 17.</p>",
             "materials": "jemioła",
             "targetAffects": "trzymana Pałka albo Drąg",
             "activities": {
@@ -4160,7 +4160,7 @@
         },
         "Shocking Grasp": {
             "name": "Porażający uścisk",
-            "description": "<p>Błyskawica przeskakuje od ciebie ku istocie, której próbujesz dotknąć. Wykonaj test ataku wręcz czarem przeciwko celowi. Przy trafieniu cel otrzymuje 1k8 obrażeń od elektryczności i nie może wykonywać Ataków Okazyjnych do początku swojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k8, gdy osiągniesz poziomy 5. (2k8), 11. (3k8) i 17. (4k8).</p>",
+            "description": "<p>Błyskawica przeskakuje od ciebie ku istocie, której próbujesz dotknąć. Wykonaj test ataku wręcz czarem przeciwko celowi. Przy trafieniu cel otrzymuje 1k8 obrażeń od elektryczności i nie może wykonywać Ataków Okazyjnych do początku swojej następnej tury.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8, gdy osiągniesz poziomy 5. (2k8), 11. (3k8) i 17. (4k8).</p>",
             "effects": {
                 "Shocked": {
                     "name": "Porażony",
@@ -4250,11 +4250,11 @@
         },
         "Sorcerous Burst": {
             "name": "Wybuch mocy",
-            "description": "<p>Rzucasz magiczną energię w jedną istotę lub obiekt w zasięgu. Wykonaj dystansowy test ataku przeciwko celowi. W przypadku trafienia cel otrzymuje 1k8 obrażeń wybranego przez ciebie typu: od kwasu, od zimna, od ognia, od elektryczności, od trucizn, psychicznych lub od dźwięku.</p><p>Jeśli w wyniku rzutu na k8 wypadnie 8, możesz rzucić kolejną k8 i dodać jej wynik do obrażeń. Podczas rzucania tego czaru maksymalna liczba k8, które możesz dodać do obrażeń, jest równa twojemu modyfikatorowi cechy zaklinania.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>"
+            "description": "<p>Rzucasz magiczną energię w jedną istotę lub obiekt w zasięgu. Wykonaj dystansowy test ataku przeciwko celowi. W przypadku trafienia cel otrzymuje 1k8 obrażeń wybranego przez ciebie typu: od kwasu, od zimna, od ognia, od elektryczności, od trucizn, psychicznych lub od dźwięku.</p><p>Jeśli w wyniku rzutu na k8 wypadnie 8, możesz rzucić kolejną k8 i dodać jej wynik do obrażeń. Podczas rzucania tego czaru maksymalna liczba k8, które możesz dodać do obrażeń, jest równa twojemu modyfikatorowi cechy zaklinania.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>"
         },
         "Spare the Dying": {
             "name": "Powstrzymanie śmierci",
-            "description": "<p>Wybierz istotę w zasięgu, która ma 0 Punktów wytrzymałości i nie jest martwa. Istota staje się Stabilna.</p><p><strong>Ulepszenie Sztuczki.</strong> Zasięg podwaja się, gdy osiągniesz poziomy 5. (30 stóp), 11. (60 stóp) i 17. (120 stóp).</p>",
+            "description": "<p>Wybierz istotę w zasięgu, która ma 0 Punktów wytrzymałości i nie jest martwa. Istota staje się Stabilna.</p><p><strong>Ulepszenie sztuczki.</strong> Zasięg podwaja się, gdy osiągniesz poziomy 5. (30 stóp), 11. (60 stóp) i 17. (120 stóp).</p>",
             "targetAffects": "0 Punkty wytrzymałości i nie jest martwy",
             "effects": {
                 "Stabilized": {
@@ -4815,7 +4815,7 @@
         },
         "Toll the Dead": {
             "name": "Żałobny dzwon",
-            "description": "<p>Wskazujesz na jedną istotę, którą widzisz w zasięgu, a pojedynczy dźwięk żałosnego dzwonu jest słyszalny w promieniu 3m (10 stóp) od celu. Cel musi zdać rzut obronny na Mądrość, inaczej otrzymuje 1k8 obrażeń nekrotycznych. Jeśli cel ma brakujące Punkty Wytrzymałości, zamiast tego otrzymuje 1k12 obrażeń nekrotycznych.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o jeden rzut kością, gdy osiągniesz poziomy 5 (2k8 lub 2k12), 11 (3k8 lub 3k12) i 17 (4k8 lub 4k12).</p>",
+            "description": "<p>Wskazujesz na jedną istotę, którą widzisz w zasięgu, a pojedynczy dźwięk żałosnego dzwonu jest słyszalny w promieniu 3m (10 stóp) od celu. Cel musi zdać rzut obronny na Mądrość, inaczej otrzymuje 1k8 obrażeń nekrotycznych. Jeśli cel ma brakujące Punkty Wytrzymałości, zamiast tego otrzymuje 1k12 obrażeń nekrotycznych.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o jeden rzut kością, gdy osiągniesz poziomy 5 (2k8 lub 2k12), 11 (3k8 lub 3k12) i 17 (4k8 lub 4k12).</p>",
             "activities": {
                 "Healthy Target": {
                     "name": "Zdrowy cel",
@@ -4893,7 +4893,7 @@
         },
         "True Strike": {
             "name": "Prawdziwe uderzenie",
-            "description": "<p>Prowadzony błyskiem magicznej intuicji, wykonujesz jeden atak bronią używaną do rzucenia tego czaru. Atak używa twojej zdolności zaklinania do testu ataku i obrażeń zamiast Siły lub Zręczności. Jeśli atak zadaje obrażenia, mogą one być obrażeniami od Światłości lub normalnym typem obrażeń broni (według twojego wyboru).</p><p><strong>Ulepszenie Sztuczki.</strong> Niezależnie od tego, czy zadasz obrażenia od Światłości, czy normalne obrażenia broni, atak zadaje dodatkowe obrażenia od Światłości na poziomach 5 (1k6), 11 (2k6) i 17 (3k6).</p>",
+            "description": "<p>Prowadzony błyskiem magicznej intuicji, wykonujesz jeden atak bronią używaną do rzucenia tego czaru. Atak używa twojej zdolności zaklinania do testu ataku i obrażeń zamiast Siły lub Zręczności. Jeśli atak zadaje obrażenia, mogą one być obrażeniami od Światłości lub normalnym typem obrażeń broni (według twojego wyboru).</p><p><strong>Ulepszenie sztuczki.</strong> Niezależnie od tego, czy zadasz obrażenia od Światłości, czy normalne obrażenia broni, atak zadaje dodatkowe obrażenia od Światłości na poziomach 5 (1k6), 11 (2k6) i 17 (3k6).</p>",
             "materials": "broń, w której masz biegłość i która jest warta 1+ SM",
             "activities": {
                 "Enchant Weapon": {
@@ -4937,7 +4937,7 @@
         },
         "Vicious Mockery": {
             "name": "Zjadliwe szyderstwo",
-            "description": "<p>Wypuszczasz serię obelg, splecionych z subtelnymi zaklęciami, w kierunku jednej istoty, którą możesz zobaczyć lub usłyszeć w zasięgu. Cel musi pomyślnie zdać rzut obronny Mądrości, inaczej otrzyma 1k6 obrażeń psychicznych i ma Utrudnienie na następny test ataku, który wykona przed końcem swojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k6 na poziomach 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
+            "description": "<p>Wypuszczasz serię obelg, splecionych z subtelnymi zaklęciami, w kierunku jednej istoty, którą możesz zobaczyć lub usłyszeć w zasięgu. Cel musi pomyślnie zdać rzut obronny Mądrości, inaczej otrzyma 1k6 obrażeń psychicznych i ma Utrudnienie na następny test ataku, który wykona przed końcem swojej następnej tury.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k6 na poziomach 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "none"
@@ -5182,7 +5182,7 @@
         },
         "Word of Radiance": {
             "name": "Słowo blasku",
-            "description": "<p>Płonąca światłość wybucha z ciebie w Emanacji o zasięgu 5 stóp. Każda wybrana przez Ciebie istota, którą widzisz w jej zasięgu, musi zdać rzut obronny na Kondycję, w przeciwnym razie otrzymuje 1k6 obrażeń od światłości.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k6, gdy osiągniesz poziomy 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
+            "description": "<p>Płonąca światłość wybucha z ciebie w Emanacji o zasięgu 5 stóp. Każda wybrana przez Ciebie istota, którą widzisz w jej zasięgu, musi zdać rzut obronny na Kondycję, w przeciwnym razie otrzymuje 1k6 obrażeń od światłości.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k6, gdy osiągniesz poziomy 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
             "materials": "żeton w kształcie rozbłysku słońca",
             "activities": {
                 "save": {
