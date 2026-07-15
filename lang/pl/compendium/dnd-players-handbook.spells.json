@@ -356,7 +356,7 @@
         },
         "Arcane Vigor": {
             "name": "Magiczna krzepa",
-            "description": "<p>Czerpiesz ze swojej energii życiowej, aby uleczyć odniesione rany. Wydaj jedną lub dwie swoje niewykorzystane Kości Wytrzymałości i rzuć nimi; odzyskujesz liczbę PW równą sumie wyników na kościach powiększonej o twój modyfikator cechy bazowej rzucania czarów. Kości te zostają w ten sposób wydane.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Liczba Kości Wytrzymałości, które możesz wydać, zwiększa się o 1 za każdy krąg czaru powyżej 2.</p><section id=\"secret-boiIVpDiaDqivdaw\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywności <strong>Wykorzystaj Kości Wytrzymałości</strong> są skonfigurowane tak, aby zużywać minimum 2 Kości Wytrzymałości, dodając twój modyfikator tylko raz.</p><p>Jeśli chcesz wykorzystać <em>pojedynczą</em> Kość Wytrzymałości, proszę odjąć, rzucić i uleczyć się ręcznie.</p></section><p></p>",
+            "description": "<p>Czerpiesz ze swojej energii życiowej, aby uleczyć odniesione rany. Wydaj jedną lub dwie swoje niewykorzystane Kości Wytrzymałości i rzuć nimi; odzyskujesz liczbę PW równą sumie wyników na kościach powiększonej o twój modyfikator cechy bazowej rzucania czarów. Kości te zostają w ten sposób wydane.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Liczba Kości Wytrzymałości, które możesz wydać, zwiększa się o 1 za każdy krąg czaru powyżej 2.</p><section id=\"secret-boiIVpDiaDqivdaw\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywności <strong>Wykorzystaj Kości Wytrzymałości</strong> są skonfigurowane tak, aby zużywać minimum 2 Kości Wytrzymałości, dodając twój modyfikator tylko raz.</p><p>Jeśli chcesz wykorzystać <em>pojedynczą</em> Kość Wytrzymałości, proszę odjąć, rzucić i uleczyć się ręcznie.</p></section><p></p>",
             "activities": {
                 "Cast": {
                     "name": "Rzucanie",
@@ -378,7 +378,7 @@
         },
         "Armor of Agathys": {
             "name": "Zbroja Agathys",
-            "description": "<p>Otacza cię warstwa ochronnego, magicznego szronu. Zyskujesz 5 Tymczasowych Punktów Wytrzymałości. Jeśli istota trafi cię atakiem wręcz, zanim czar dobiegnie końca, otrzymuje ona 5 obrażeń od zimna. Działanie czaru kończy się przedwcześnie, jeśli stracisz wszystkie te Tymczasowe Punkty Wytrzymałości.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Tymczasowe Punkty Wytrzymałości i obrażenia od zimna zwiększają się o 5 za każdy krąg powyżej 1.</p>",
+            "description": "<p>Otacza cię warstwa ochronnego, magicznego szronu. Zyskujesz 5 Tymczasowych Punktów Wytrzymałości. Jeśli istota trafi cię atakiem wręcz, zanim czar dobiegnie końca, otrzymuje ona 5 obrażeń od zimna. Działanie czaru kończy się przedwcześnie, jeśli stracisz wszystkie te Tymczasowe Punkty Wytrzymałości.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Tymczasowe Punkty Wytrzymałości i obrażenia od zimna zwiększają się o 5 za każdy krąg powyżej 1.</p>",
             "materials": "odłamek niebieskiego szkła",
             "activities": {
                 "Cast": {
@@ -393,7 +393,7 @@
         },
         "Arms of Hadar": {
             "name": "Ramiona Hadara",
-            "description": "<p>Przywołując moc Hadara, sprawiasz, że wyrastają z ciebie macki. Każda istota znajdująca się w twojej Emanacji o zasięgu 10 stóp musi wykonać rzut obronny na Siłę. W przypadku nieudanego rzutu cel otrzymuje 2k6 obrażeń nekrotycznych i nie może wykonywać reakcji do początku swojej następnej tury. W przypadku sukcesu cel otrzymuje tylko połowę tych obrażeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg powyżej 1.</p>",
+            "description": "<p>Przywołując moc Hadara, sprawiasz, że wyrastają z ciebie macki. Każda istota znajdująca się w twojej Emanacji o zasięgu 10 stóp musi wykonać rzut obronny na Siłę. W przypadku nieudanego rzutu cel otrzymuje 2k6 obrażeń nekrotycznych i nie może wykonywać reakcji do początku swojej następnej tury. W przypadku sukcesu cel otrzymuje tylko połowę tych obrażeń.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg powyżej 1.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
@@ -474,7 +474,7 @@
         },
         "Bane": {
             "name": "Zguba",
-            "description": "<p>Do trzech wybranych przez ciebie istot, które widzisz w zasięgu, musi wykonać rzut obronny na Charyzmę. Za każdym razem, gdy cel, któremu nie powiódł się ten rzut, wykonuje test ataku lub rzut obronny przed zakończeniem czaru, musi odjąć 1k4 od testu ataku lub rzutu obronnego.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 1.</p>",
+            "description": "<p>Do trzech wybranych przez ciebie istot, które widzisz w zasięgu, musi wykonać rzut obronny na Charyzmę. Za każdym razem, gdy cel, któremu nie powiódł się ten rzut, wykonuje test ataku lub rzut obronny przed zakończeniem czaru, musi odjąć 1k4 od testu ataku lub rzutu obronnego.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 1.</p>",
             "materials": "kropla krwi",
             "activities": {
                 "save": {
@@ -511,7 +511,7 @@
         },
         "Banishment": {
             "name": "Wypędzenie",
-            "description": "<p>Jedna istota, którą widzisz w zasięgu, musi wykonać rzut obronny na Charyzmę; w przypadku porażki zostaje ona przeniesiona do nieszkodliwej Demisfery na czas trwania czaru. Przebywając tam, cel zyskuje stan &Reference[Incapacitated apply=false]. Po zakończeniu działania czaru cel pojawia się ponownie w przestrzeni, którą opuścił, lub w najbliższej wolnej przestrzeni, jeśli tamta przestrzeń jest zajęta.</p><p>Jeśli cel jest Wynaturzeniem, Niebianinem, Żywiołakiem, Fey lub Czartem, nie powraca on, jeśli działanie czaru trwa przez pełną 1 minutę. Zamiast tego zostaje on odesłany do losowej przestrzeni w sferze (wybór MP) związanej z jego typem istoty.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 4.</p>",
+            "description": "<p>Jedna istota, którą widzisz w zasięgu, musi wykonać rzut obronny na Charyzmę; w przypadku porażki zostaje ona przeniesiona do nieszkodliwej Demisfery na czas trwania czaru. Przebywając tam, cel zyskuje stan &Reference[Incapacitated apply=false]. Po zakończeniu działania czaru cel pojawia się ponownie w przestrzeni, którą opuścił, lub w najbliższej wolnej przestrzeni, jeśli tamta przestrzeń jest zajęta.</p><p>Jeśli cel jest Wynaturzeniem, Niebianinem, Żywiołakiem, Fey lub Czartem, nie powraca on, jeśli działanie czaru trwa przez pełną 1 minutę. Zamiast tego zostaje on odesłany do losowej przestrzeni w sferze (wybór MP) związanej z jego typem istoty.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 4.</p>",
             "materials": "pentakl",
             "activities": {
                 "save": {
@@ -567,7 +567,7 @@
         },
         "Bestow Curse": {
             "name": "Nałożenie klątwy",
-            "description": "<p>Dotykasz istotę, która musi wykonać rzut obronny na Mądrość; w przypadku porażki staje się ona Przeklęta przez czas trwania czaru. Dopóki klątwa się nie zakończy, cel cierpi z powodu jednego z poniższych efektów do wyboru:</p><ul><li>Wybierz jedną cechę. Cel ma Utrudnienie w testach cech i rzutach obronnych wykonywanych na tę cechę (aktywność <strong>Przeklęta cecha</strong>).</li><li>Cel ma Utrudnienie w Testach ataku przeciwko tobie (aktywność <strong>Przeklęte ataki</strong>).</li><li>W walce cel musi wykonać rzut obronny na Mądrość na początku każdej swojej tury; w przypadku porażki jest on zmuszony wykonać akcję &Reference[Dodge] w tej turze (aktywność <strong>Przeklęte akcje</strong>).</li><li>Jeśli zadasz celowi obrażenia za pomocą Testu ataku lub czaru, cel otrzymuje dodatkowe 1k8 obrażeń nekrotycznych (aktywność <strong>Przeklęta odporność</strong>).</li></ul><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Jeśli rzucisz ten czar, używając komórki czaru kręgu 4, możesz utrzymywać na nim Koncentrację przez maksymalnie 10 minut. Jeśli użyjesz komórki czaru kręgu 5 lub wyższego, czar nie wymaga Koncentracji, a czas trwania wynosi 8 godzin (komórka kręgu 5–6) lub 24 godziny (komórka kręgu 7–8). Jeśli użyjesz komórki czaru kręgu 9, czar trwa, dopóki nie zostanie rozproszony.</p>",
+            "description": "<p>Dotykasz istotę, która musi wykonać rzut obronny na Mądrość; w przypadku porażki staje się ona Przeklęta przez czas trwania czaru. Dopóki klątwa się nie zakończy, cel cierpi z powodu jednego z poniższych efektów do wyboru:</p><ul><li>Wybierz jedną cechę. Cel ma Utrudnienie w testach cech i rzutach obronnych wykonywanych na tę cechę (aktywność <strong>Przeklęta cecha</strong>).</li><li>Cel ma Utrudnienie w Testach ataku przeciwko tobie (aktywność <strong>Przeklęte ataki</strong>).</li><li>W walce cel musi wykonać rzut obronny na Mądrość na początku każdej swojej tury; w przypadku porażki jest on zmuszony wykonać akcję &Reference[Dodge] w tej turze (aktywność <strong>Przeklęte akcje</strong>).</li><li>Jeśli zadasz celowi obrażenia za pomocą Testu ataku lub czaru, cel otrzymuje dodatkowe 1k8 obrażeń nekrotycznych (aktywność <strong>Przeklęta odporność</strong>).</li></ul><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Jeśli rzucisz ten czar, używając komórki czaru kręgu 4, możesz utrzymywać na nim Koncentrację przez maksymalnie 10 minut. Jeśli użyjesz komórki czaru kręgu 5 lub wyższego, czar nie wymaga Koncentracji, a czas trwania wynosi 8 godzin (komórka kręgu 5–6) lub 24 godziny (komórka kręgu 7–8). Jeśli użyjesz komórki czaru kręgu 9, czar trwa, dopóki nie zostanie rozproszony.</p>",
             "activities": {
                 "Curse Ability": {
                     "name": "Przeklęta cecha",
@@ -627,7 +627,7 @@
         },
         "Bigby's Hand": {
             "name": "Dłoń Bigby'ego",
-            "description": "<p>Tworzysz Dużą dłoń z migotliwej magicznej energii w wolnej przestrzeni, którą widzisz w zasięgu. Dłoń trwa przez czas trwania czaru i porusza się na twoje polecenie, naśladując ruchy twojej własnej dłoni.</p><p>Dłoń jest obiektem, który ma KP 20 i Punkty Wytrzymałości równe twojej maksymalnej liczbie Punktów Wytrzymałości. Jeśli jej Punkty Wytrzymałości spadną do 0, działanie czaru dobiega końca. Dłoń nie zajmuje swojej przestrzeni.</p><p>Kiedy rzucasz ten czar oraz jako Akcję dodatkową w swoich kolejnych turach, możesz poruszyć dłonią o maksymalnie 60 stóp, a następnie wywołać jeden z poniższych efektów:</p><p><strong>Zaciśnięta pięść </strong>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbsplBigbysHand.Item.phbaoiClenchedFi inline]</p><p><strong>Potężna dłoń</strong> @Embed[Compendium.dnd-players-handbook.actors.Actor.phbsplBigbysHand.Item.phbaoiForcefulHa inline]</p><p><strong>Chwytająca dłoń</strong> @Embed[Compendium.dnd-players-handbook.actors.Actor.phbsplBigbysHand.Item.phbaoiGraspingHa inline classes=\"no-secrets\"]</p><p><strong>Zasłaniająca dłoń </strong>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbsplBigbysHand.Item.phbaoiInterposin inline]</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia Zaciśniętej pięści zwiększają się o 2k8, a obrażenia Chwytającej dłoni zwiększają się o 2k6 za każdy krąg powyżej 5.</p>",
+            "description": "<p>Tworzysz Dużą dłoń z migotliwej magicznej energii w wolnej przestrzeni, którą widzisz w zasięgu. Dłoń trwa przez czas trwania czaru i porusza się na twoje polecenie, naśladując ruchy twojej własnej dłoni.</p><p>Dłoń jest obiektem, który ma KP 20 i Punkty Wytrzymałości równe twojej maksymalnej liczbie Punktów Wytrzymałości. Jeśli jej Punkty Wytrzymałości spadną do 0, działanie czaru dobiega końca. Dłoń nie zajmuje swojej przestrzeni.</p><p>Kiedy rzucasz ten czar oraz jako Akcję dodatkową w swoich kolejnych turach, możesz poruszyć dłonią o maksymalnie 60 stóp, a następnie wywołać jeden z poniższych efektów:</p><p><strong>Zaciśnięta pięść </strong>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbsplBigbysHand.Item.phbaoiClenchedFi inline]</p><p><strong>Potężna dłoń</strong> @Embed[Compendium.dnd-players-handbook.actors.Actor.phbsplBigbysHand.Item.phbaoiForcefulHa inline]</p><p><strong>Chwytająca dłoń</strong> @Embed[Compendium.dnd-players-handbook.actors.Actor.phbsplBigbysHand.Item.phbaoiGraspingHa inline classes=\"no-secrets\"]</p><p><strong>Zasłaniająca dłoń </strong>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbsplBigbysHand.Item.phbaoiInterposin inline]</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia Zaciśniętej pięści zwiększają się o 2k8, a obrażenia Chwytającej dłoni zwiększają się o 2k6 za każdy krąg powyżej 5.</p>",
             "materials": "skorupka jajka i rękawiczka"
         },
         "Blade Barrier": {
@@ -655,7 +655,7 @@
         },
         "Bless": {
             "name": "Błogosławieństwo",
-            "description": "<p>Błogosławisz do trzech istoty w zasięgu. Za każdym razem, gdy cel wykonuje Test ataku lub rzut obronny, zanim czar się zakończy, cel dodaje 1k4 do Testu ataku lub rzutu obronnego.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 1.</p>",
+            "description": "<p>Błogosławisz do trzech istoty w zasięgu. Za każdym razem, gdy cel wykonuje Test ataku lub rzut obronny, zanim czar się zakończy, cel dodaje 1k4 do Testu ataku lub rzutu obronnego.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 1.</p>",
             "materials": "Święty Symbol wart 5+ GP",
             "effects": {
                 "Blessed": {
@@ -666,7 +666,7 @@
         },
         "Blight": {
             "name": "Plaga",
-            "description": "<p>Istota, którą widzisz w zasięgu, musi wykonać rzut obronny na Kondycję. W przypadku porażki otrzymuje ona 8k8 obrażeń nekrotycznych, a w przypadku sukcesu połowę tych obrażeń. Istota typu Roślina automatycznie ponosi porażkę w tym rzucie.</p><p>Alternatywnie, możesz obrać za cel niemagiczną roślinę, która nie jest istotą, taką jak drzewo lub krzew. Nie wykonuje ona rzutu obronnego; po prostu więdnie i umiera.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg powyżej 4.</p>",
+            "description": "<p>Istota, którą widzisz w zasięgu, musi wykonać rzut obronny na Kondycję. W przypadku porażki otrzymuje ona 8k8 obrażeń nekrotycznych, a w przypadku sukcesu połowę tych obrażeń. Istota typu Roślina automatycznie ponosi porażkę w tym rzucie.</p><p>Alternatywnie, możesz obrać za cel niemagiczną roślinę, która nie jest istotą, taką jak drzewo lub krzew. Nie wykonuje ona rzutu obronnego; po prostu więdnie i umiera.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg powyżej 4.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
@@ -675,7 +675,7 @@
         },
         "Blinding Smite": {
             "name": "Oślepiające ugodzenie",
-            "description": "<p>Cel trafiony tym uderzeniem otrzymuje dodatkowe 3k8 obrażeń od światłości i ma stan &Reference[blinded apply=false] do czasu zakończenia czaru. Na koniec każdej swojej tury oślepiony cel musi wykonać rzut obronny na Kondycję; w przypadku sukcesu kończy on ten efekt na sobie.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Dodatkowe obrażenia zwiększają się o 1k8 za każdy krąg powyżej 3.</p>",
+            "description": "<p>Cel trafiony tym uderzeniem otrzymuje dodatkowe 3k8 obrażeń od światłości i ma stan &Reference[blinded apply=false] do czasu zakończenia czaru. Na koniec każdej swojej tury oślepiony cel musi wykonać rzut obronny na Kondycję; w przypadku sukcesu kończy on ten efekt na sobie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Dodatkowe obrażenia zwiększają się o 1k8 za każdy krąg powyżej 3.</p>",
             "activation": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
             "activationCondition": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
             "activities": {
@@ -693,7 +693,7 @@
         },
         "Blindness/Deafness": {
             "name": "Głuchota/Ślepota",
-            "description": "<p>Jedna istota, którą widzisz w zasięgu, musi wykonać rzut obronny na Kondycję. W przypadku porażki ma stan &Reference[Blinded apply=false] lub &Reference[Deafened apply=false] (twój wybór) przez czas trwania czaru. Na koniec każdej swojej tury cel powtarza ten rzut obronny; w przypadku sukcesu kończy on ten efekt na sobie.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 2.</p>",
+            "description": "<p>Jedna istota, którą widzisz w zasięgu, musi wykonać rzut obronny na Kondycję. W przypadku porażki ma stan &Reference[Blinded apply=false] lub &Reference[Deafened apply=false] (twój wybór) przez czas trwania czaru. Na koniec każdej swojej tury cel powtarza ten rzut obronny; w przypadku sukcesu kończy on ten efekt na sobie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 2.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
@@ -731,7 +731,7 @@
         },
         "Burning Hands": {
             "name": "Płonące dłonie",
-            "description": "<p>Cienka płachta płomieni wystrzeliwuje z ciebie. Każda istota w Stożku o długości 15 stóp musi wykonać rzut obronny na Zręczność. W przypadku porażki otrzymuje ona 3k6 obrażeń od ognia, a w przypadku sukcesu połowę tych obrażeń.</p><p>Łatwopalne obiekty w Stożku, które nie są noszone ani niesione, zaczynają płonąć.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
+            "description": "<p>Cienka płachta płomieni wystrzeliwuje z ciebie. Każda istota w Stożku o długości 15 stóp musi wykonać rzut obronny na Zręczność. W przypadku porażki otrzymuje ona 3k6 obrażeń od ognia, a w przypadku sukcesu połowę tych obrażeń.</p><p>Łatwopalne obiekty w Stożku, które nie są noszone ani niesione, zaczynają płonąć.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
@@ -740,7 +740,7 @@
         },
         "Call Lightning": {
             "name": "Wezwanie błyskawicy",
-            "description": "<p>Chmura burzowa pojawia się w punkcie w zasięgu, który widzisz nad sobą. Przyjmuje kształt Walca o wysokości 10 stóp i promieniu 60 stóp.</p><p>Kiedy rzucasz ten czar, wybierz punkt pod chmurą, który widzisz. Z chmury w ten punkt uderza błyskawica. Każda istota w promieniu 5 stóp od tego punktu musi wykonać rzut obronny na Zręczność. W przypadku porażki otrzymuje ona 3k10 obrażeń od elektryczności, a w przypadku sukcesu połowę tych obrażeń.</p><p>Do czasu zakończenia czaru możesz wykonać Akcję Magii, aby ponownie przywołać błyskawicę w ten sam sposób, obierając za cel ten sam lub inny punkt.</p><p>Jeśli rzucasz ten czar, będąc na zewnątrz podczas burzy, daje on kontrolę nad istniejącą burzą zamiast tworzyć nową. W takich warunkach obrażenia czaru wzrastają o 1k10.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 3.</p>",
+            "description": "<p>Chmura burzowa pojawia się w punkcie w zasięgu, który widzisz nad sobą. Przyjmuje kształt Walca o wysokości 10 stóp i promieniu 60 stóp.</p><p>Kiedy rzucasz ten czar, wybierz punkt pod chmurą, który widzisz. Z chmury w ten punkt uderza błyskawica. Każda istota w promieniu 5 stóp od tego punktu musi wykonać rzut obronny na Zręczność. W przypadku porażki otrzymuje ona 3k10 obrażeń od elektryczności, a w przypadku sukcesu połowę tych obrażeń.</p><p>Do czasu zakończenia czaru możesz wykonać Akcję Magii, aby ponownie przywołać błyskawicę w ten sam sposób, obierając za cel ten sam lub inny punkt.</p><p>Jeśli rzucasz ten czar, będąc na zewnątrz podczas burzy, daje on kontrolę nad istniejącą burzą zamiast tworzyć nową. W takich warunkach obrażenia czaru wzrastają o 1k10.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 3.</p>",
             "activities": {
                 "save": {
                     "chatFlavor": "Piorun uderza w punkt pod chmurą w promieniu 5 stóp",
@@ -769,7 +769,7 @@
         },
         "Chain Lightning": {
             "name": "Łańcuch błyskawic",
-            "description": "<p>Wypuszczasz błyskawicę w stronę celu, który widzisz w zasięgu. Następnie od tego celu przeskakują trzy kolejne błyskawice do maksymalnie trzech innych wybranych przez ciebie celów. Każdy z nich musi znajdować się w promieniu 30 stóp od pierwotnego celu. Celem może być istota lub obiekt, a każdy z nich może zostać trafiony tylko przez jedną z tych błyskawic.</p><p>Każdy cel musi wykonać rzut obronny na Zręczność. W przypadku porażki otrzymuje on 10k8 obrażeń od elektryczności, a w przypadku sukcesu połowę tych obrażeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Jedna dodatkowa błyskawica przeskakuje od pierwszego celu do kolejnego celu za każdy krąg komórki czaru powyżej 6.</p>",
+            "description": "<p>Wypuszczasz błyskawicę w stronę celu, który widzisz w zasięgu. Następnie od tego celu przeskakują trzy kolejne błyskawice do maksymalnie trzech innych wybranych przez ciebie celów. Każdy z nich musi znajdować się w promieniu 30 stóp od pierwotnego celu. Celem może być istota lub obiekt, a każdy z nich może zostać trafiony tylko przez jedną z tych błyskawic.</p><p>Każdy cel musi wykonać rzut obronny na Zręczność. W przypadku porażki otrzymuje on 10k8 obrażeń od elektryczności, a w przypadku sukcesu połowę tych obrażeń.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Jedna dodatkowa błyskawica przeskakuje od pierwszego celu do kolejnego celu za każdy krąg komórki czaru powyżej 6.</p>",
             "materials": "trzy srebrne szpilki",
             "targetAffects": "cele dodatkowe muszą znajdować się w obrębie 30 stóp od pierwotnego celu",
             "activities": {
@@ -780,7 +780,7 @@
         },
         "Charm Monster": {
             "name": "Zauroczenie potwora",
-            "description": "<p>Jedna istota, którą widzisz w zasięgu, musi wykonać rzut obronny na Mądrość. Wykonuje go z Ułatwieniem, jeśli walczy z tobą lub z twoimi sojusznikami. W przypadku porażki ma stan &Reference[Charmed apply=false]{Zauroczony} do czasu zakończenia czaru lub do momentu, w którym otrzyma obrażenia od ciebie lub twoich sojuszników. Zauroczona istota jest wobec ciebie Przyjazna. Kiedy działanie czaru dobiega końca, cel wie, że został przez ciebie Zauroczony..</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wskazać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 4.</p>",
+            "description": "<p>Jedna istota, którą widzisz w zasięgu, musi wykonać rzut obronny na Mądrość. Wykonuje go z Ułatwieniem, jeśli walczy z tobą lub z twoimi sojusznikami. W przypadku porażki ma stan &Reference[Charmed apply=false]{Zauroczony} do czasu zakończenia czaru lub do momentu, w którym otrzyma obrażenia od ciebie lub twoich sojuszników. Zauroczona istota jest wobec ciebie Przyjazna. Kiedy działanie czaru dobiega końca, cel wie, że został przez ciebie Zauroczony..</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wskazać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 4.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
@@ -795,7 +795,7 @@
         },
         "Charm Person": {
             "name": "Zauroczenie osoby",
-            "description": "<p>Jeden humanoid, którego widzisz w zasięgu, musi wykonać rzut obronny na Mądrość. Wykonuje go z Ułatwieniem, jeśli walczy z tobą lub twoimi sojuszników. W przypadku porażki ma stan &Reference[charmed apply=false]{Zauroczony} do czasu zakończenia czaru lub do momentu, w którym ty lub twoi sojusznicy zadacie mu obrażenia. Zauroczona istota jest wobec ciebie Przyjazna. Kiedy działanie czaru dobiega końca, cel wie, że został przez ciebie Zauroczony.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wskazać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
+            "description": "<p>Jeden humanoid, którego widzisz w zasięgu, musi wykonać rzut obronny na Mądrość. Wykonuje go z Ułatwieniem, jeśli walczy z tobą lub twoimi sojuszników. W przypadku porażki ma stan &Reference[charmed apply=false]{Zauroczony} do czasu zakończenia czaru lub do momentu, w którym ty lub twoi sojusznicy zadacie mu obrażenia. Zauroczona istota jest wobec ciebie Przyjazna. Kiedy działanie czaru dobiega końca, cel wie, że został przez ciebie Zauroczony.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wskazać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
@@ -820,12 +820,12 @@
         },
         "Chromatic Orb": {
             "name": "Barwna kula",
-            "description": "<p>Ciskasz kulą energii w stronę celu w zasięgu. Wybierz Kwas, Zimno, Ogień, Elektryczność, Truciznę lub Dźwięk jako typ tworzonej kuli, a następnie wykonaj Dystansowy Test ataku czarem przeciwko celowi. W przypadku trafienia cel otrzymuje 3k8 obrażeń wybranego typu.</p><p>Jeśli uzyskasz ten sam wynik na dwóch lub więcej k8, kula przeskakuje do innego wybranego przez ciebie celu w promieniu 30 stóp od pierwotnego celu. Wykonaj nowy Test ataku przeciwko nowemu celowi i wykonaj nowy rzut na obrażenia. Kula nie może przeskoczyć ponownie, chyba że rzucasz ten czar, używając komórki czaru 2. kręgu lub wyższego. [[@item.level]]{Liczba przeskoków}</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia wzrastają o 1k8 za każdy krąg komórki czaru powyżej 1. Kula może przeskoczyć maksymalną liczbę razy równą kręgowi użytej komórki czaru, a każda istota może zostać obrana za cel tylko raz w ramach jednego rzucenia tego czaru.</p>",
+            "description": "<p>Ciskasz kulą energii w stronę celu w zasięgu. Wybierz Kwas, Zimno, Ogień, Elektryczność, Truciznę lub Dźwięk jako typ tworzonej kuli, a następnie wykonaj Dystansowy Test ataku czarem przeciwko celowi. W przypadku trafienia cel otrzymuje 3k8 obrażeń wybranego typu.</p><p>Jeśli uzyskasz ten sam wynik na dwóch lub więcej k8, kula przeskakuje do innego wybranego przez ciebie celu w promieniu 30 stóp od pierwotnego celu. Wykonaj nowy Test ataku przeciwko nowemu celowi i wykonaj nowy rzut na obrażenia. Kula nie może przeskoczyć ponownie, chyba że rzucasz ten czar, używając komórki czaru 2. kręgu lub wyższego. [[@item.level]]{Liczba przeskoków}</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia wzrastają o 1k8 za każdy krąg komórki czaru powyżej 1. Kula może przeskoczyć maksymalną liczbę razy równą kręgowi użytej komórki czaru, a każda istota może zostać obrana za cel tylko raz w ramach jednego rzucenia tego czaru.</p>",
             "materials": "diament warty 50+ SZ"
         },
         "Circle of Death": {
             "name": "Krąg śmierci",
-            "description": "<p>Negatywna energia rozchodzi się w Sferze o promieniu 60 stóp od wybranego przez ciebie punktu w zasięgu. Każda istota w tym obszarze musi wykonać rzut obronny na Kondycję. W przypadku porażki otrzymuje ona 8k8 obrażeń nekrotycznych, a w przypadku sukcesu połowę tych obrażeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 2k8 za każdy krąg komórki czaru powyżej 6.</p>",
+            "description": "<p>Negatywna energia rozchodzi się w Sferze o promieniu 60 stóp od wybranego przez ciebie punktu w zasięgu. Każda istota w tym obszarze musi wykonać rzut obronny na Kondycję. W przypadku porażki otrzymuje ona 8k8 obrażeń nekrotycznych, a w przypadku sukcesu połowę tych obrażeń.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 2k8 za każdy krąg komórki czaru powyżej 6.</p>",
             "materials": "proszek ze zmiażdżonej czarnej perły wart 500+ SZ",
             "activities": {
                 "save": {
@@ -854,12 +854,12 @@
         },
         "Cloud of Daggers": {
             "name": "Chmura sztyletów",
-            "description": "<p>Przywołujesz wirujące sztylety w Sześcianie o boku 5 stóp, którego środek znajduje się w punkcie w zasięgu. Każda istota w tym obszarze otrzymuje 4k4 obrażeń ciętych. Istota otrzymuje te obrażenia również, jeśli wejdzie do Sześcianu, zakończy w nim swoją turę lub jeśli Sześcian przesunie się w jej przestrzeń. Istota otrzymuje te obrażenia tylko raz na turę.</p><p>W kolejnych turach możesz wykonać Akcję Magii, aby teleportować Sześcian na odległość do 30 stóp.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 2k4 za każdy krąg komórki czaru powyżej 2.</p>",
+            "description": "<p>Przywołujesz wirujące sztylety w Sześcianie o boku 5 stóp, którego środek znajduje się w punkcie w zasięgu. Każda istota w tym obszarze otrzymuje 4k4 obrażeń ciętych. Istota otrzymuje te obrażenia również, jeśli wejdzie do Sześcianu, zakończy w nim swoją turę lub jeśli Sześcian przesunie się w jej przestrzeń. Istota otrzymuje te obrażenia tylko raz na turę.</p><p>W kolejnych turach możesz wykonać Akcję Magii, aby teleportować Sześcian na odległość do 30 stóp.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 2k4 za każdy krąg komórki czaru powyżej 2.</p>",
             "materials": "odłamek szkła"
         },
         "Cloudkill": {
             "name": "Zabójcza chmura",
-            "description": "<p>Tworzysz Sferę o promieniu 20 stóp wypełnioną żółto-zieloną mgłą, której środek znajduje się w punkcie w zasięgu. Mgła utrzymuje się przez czas trwania czaru lub do momentu, w którym silny wiatr (taki jak ten stworzony przez <em>Poryw wiatru</em>) ją rozproszy, co kończy działanie czaru. Jej obszar jest Pozbawiony widoczności.</p><p>Każda istota w Sferze musi wykonać rzut obronny na Kondycję. W przypadku porażki otrzymuje ona 5k8 obrażeń od trucizny, a w przypadku sukcesu połowę tych obrażeń. Istota musi również wykonać ten rzut, gdy Sfera przesunie się w jej przestrzeń oraz gdy wejdzie do Sfery lub zakończy w niej swoją turę. Istota wykonuje ten rzut tylko raz na turę.</p><p>Sfera przesuwa się o 10 stóp od ciebie na początku każdej twojej tury.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 5.</p>",
+            "description": "<p>Tworzysz Sferę o promieniu 20 stóp wypełnioną żółto-zieloną mgłą, której środek znajduje się w punkcie w zasięgu. Mgła utrzymuje się przez czas trwania czaru lub do momentu, w którym silny wiatr (taki jak ten stworzony przez <em>Poryw wiatru</em>) ją rozproszy, co kończy działanie czaru. Jej obszar jest Pozbawiony widoczności.</p><p>Każda istota w Sferze musi wykonać rzut obronny na Kondycję. W przypadku porażki otrzymuje ona 5k8 obrażeń od trucizny, a w przypadku sukcesu połowę tych obrażeń. Istota musi również wykonać ten rzut, gdy Sfera przesunie się w jej przestrzeń oraz gdy wejdzie do Sfery lub zakończy w niej swoją turę. Istota wykonuje ten rzut tylko raz na turę.</p><p>Sfera przesuwa się o 10 stóp od ciebie na początku każdej twojej tury.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 5.</p>",
             "activities": {
                 "Cast and Save": {
                     "name": "Rzuć czar i Obrona",
@@ -884,7 +884,7 @@
         },
         "Command": {
             "name": "Rozkaz",
-            "description": "<p>Wypowiadasz jednowyrazowy rozkaz istocie, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku porażki musi on wykonać ten rozkaz w swojej następnej turze. Wybierz rozkaz z poniższych opcji:</p><p><strong>Zbliż się.</strong> Cel porusza się w twoją stronę najkrótszą i najbardziej bezpośrednią trasą, kończąc swoją turę, jeśli znajdzie się w odległości 5 stóp od ciebie.</p><p><strong>Upuść.</strong> Cel upuszcza wszystko, co trzyma, a następnie kończy swoją turę.</p><p><strong>Uciekaj.</strong>Cel zużywa swoją turę na oddalanie się od ciebie, wykorzystując najszybsze dostępne mu środki.</p><p><strong>Padnij.</strong> Cel otrzymuje stan Powalony, a następnie kończy swoją turę.</p><p><strong>Stój.</strong> W swojej turze cel nie porusza się i nie wykonuje żadnej akcji ani Akcji dodatkowej.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wpłynąć na jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
+            "description": "<p>Wypowiadasz jednowyrazowy rozkaz istocie, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku porażki musi on wykonać ten rozkaz w swojej następnej turze. Wybierz rozkaz z poniższych opcji:</p><p><strong>Zbliż się.</strong> Cel porusza się w twoją stronę najkrótszą i najbardziej bezpośrednią trasą, kończąc swoją turę, jeśli znajdzie się w odległości 5 stóp od ciebie.</p><p><strong>Upuść.</strong> Cel upuszcza wszystko, co trzyma, a następnie kończy swoją turę.</p><p><strong>Uciekaj.</strong>Cel zużywa swoją turę na oddalanie się od ciebie, wykorzystując najszybsze dostępne mu środki.</p><p><strong>Padnij.</strong> Cel otrzymuje stan Powalony, a następnie kończy swoją turę.</p><p><strong>Stój.</strong> W swojej turze cel nie porusza się i nie wykonuje żadnej akcji ani Akcji dodatkowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wpłynąć na jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
@@ -943,7 +943,7 @@
         },
         "Cone of Cold": {
             "name": "Stożek zimna",
-            "description": "<p>Uwolniasz podmuch zimnego powietrza. Każda istota w Stożku o zasięgu 60 stóp, rozpoczynającym się od ciebie, wykonuje rzut obronny na Kondycję, otrzymując 8k8 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym. Istota zabita przez ten czar staje się zamarzniętą statuą, dopóki nie odtaje.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 5.</p>",
+            "description": "<p>Uwolniasz podmuch zimnego powietrza. Każda istota w Stożku o zasięgu 60 stóp, rozpoczynającym się od ciebie, wykonuje rzut obronny na Kondycję, otrzymując 8k8 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym. Istota zabita przez ten czar staje się zamarzniętą statuą, dopóki nie odtaje.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 5.</p>",
             "materials": "mały kryształowy lub szklany stożek",
             "activities": {
                 "save": {
@@ -953,7 +953,7 @@
         },
         "Confusion": {
             "name": "Zamęt",
-            "description": "<p>Każda istota znajdująca się wewnątrz sfery o promieniu 10 stóp, wyznaczonej wokół wskazanego przez ciebie punktu w zasięgu czaru, musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia cel traci możliwość wykonywania Akcji dodatkowej oraz Reakcji oraz na początku każdej swojej tury musi rzucić 1k10, aby określić swoje zachowanie, korzystając z poniższej tabeli.</p><p>@@Embed[Compendium.dnd5e.tables24.RollTable.phbsplConfusionB rollable cite=false classes=\"caption-top\"]{Zachowanie w turze}</p><p>Pod koniec każdej swojej tury dotknięty czarem cel powtarza rzut obronny, kończąc działanie efektu na sobie w przypadku sukcesu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu</strong> Promień sfery zwiększa się o 5 stóp za każdy krąg komórki czaru powyżej 4.</p>",
+            "description": "<p>Każda istota znajdująca się wewnątrz sfery o promieniu 10 stóp, wyznaczonej wokół wskazanego przez ciebie punktu w zasięgu czaru, musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia cel traci możliwość wykonywania Akcji dodatkowej oraz Reakcji oraz na początku każdej swojej tury musi rzucić 1k10, aby określić swoje zachowanie, korzystając z poniższej tabeli.</p><p>@@Embed[Compendium.dnd5e.tables24.RollTable.phbsplConfusionB rollable cite=false classes=\"caption-top\"]{Zachowanie w turze}</p><p>Pod koniec każdej swojej tury dotknięty czarem cel powtarza rzut obronny, kończąc działanie efektu na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu</strong> Promień sfery zwiększa się o 5 stóp za każdy krąg komórki czaru powyżej 4.</p>",
             "materials": "trzy skorupki orzechów",
             "activities": {
                 "save": {
@@ -969,7 +969,7 @@
         },
         "Conjure Animals": {
             "name": "Wyczarowanie zwierząt",
-            "description": "<p>Przywołujesz duchy natury, które manifestują się jako Duże stado widmowych, niematerialnych zwierząt w niezajętej przestrzeni, którą widzisz w zasięgu czaru. Stado towarzyszy ci przez cały czas trwania czaru, a ty wybierasz postać, jaką przybierają duchy – np. wilków, węży lub ptaków.</p><p>Masz Ułatwienie w rzutach obronnych na Siłę, dopóki znajdujesz się w odległości do 5 stóp od stada. Kiedy poruszasz się w swojej turze, możesz również przemieścić stado o maksymalnie 30 stóp do niezajętej przestrzeni, którą widzisz.</p><p>Ilekroć stado zbliży się na odległość do 10 stóp od istoty, którą widzisz, a także ilekroć widziana przez ciebie istota zbliży się na odległość do 10 stóp od stada lub zakończy tam swoją turę, możesz zmusić ją do wykonania rzutu obronnego na Zręczność. W przypadku niepowodzenia istota otrzymuje 3k10 obrażeń ciętych. Istota może wykonać ten rzut obronny tylko raz na turę.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu..</strong> Obrażenia zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 3.</p>",
+            "description": "<p>Przywołujesz duchy natury, które manifestują się jako Duże stado widmowych, niematerialnych zwierząt w niezajętej przestrzeni, którą widzisz w zasięgu czaru. Stado towarzyszy ci przez cały czas trwania czaru, a ty wybierasz postać, jaką przybierają duchy – np. wilków, węży lub ptaków.</p><p>Masz Ułatwienie w rzutach obronnych na Siłę, dopóki znajdujesz się w odległości do 5 stóp od stada. Kiedy poruszasz się w swojej turze, możesz również przemieścić stado o maksymalnie 30 stóp do niezajętej przestrzeni, którą widzisz.</p><p>Ilekroć stado zbliży się na odległość do 10 stóp od istoty, którą widzisz, a także ilekroć widziana przez ciebie istota zbliży się na odległość do 10 stóp od stada lub zakończy tam swoją turę, możesz zmusić ją do wykonania rzutu obronnego na Zręczność. W przypadku niepowodzenia istota otrzymuje 3k10 obrażeń ciętych. Istota może wykonać ten rzut obronny tylko raz na turę.</p><p><strong>Użycie komórki czaru wyższego kręgu..</strong> Obrażenia zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 3.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
@@ -978,7 +978,7 @@
         },
         "Conjure Barrage": {
             "name": "Wyczarowanie ognia",
-            "description": "<p>Wymachujesz bronią użytą do rzucenia czaru i przywołujesz podobne widmowe bronie (lub amunicję odpowiednią do tej broni), które wystrzeliwują naprzód, a następnie znikają. Każda istota według twojego wyboru, którą widzisz w Stożku o zasięgu 60 stóp, wykonuje rzut obronny na Zręczność, otrzymując 5k8 obrażeń od mocy przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 3.</p>",
+            "description": "<p>Wymachujesz bronią użytą do rzucenia czaru i przywołujesz podobne widmowe bronie (lub amunicję odpowiednią do tej broni), które wystrzeliwują naprzód, a następnie znikają. Każda istota według twojego wyboru, którą widzisz w Stożku o zasięgu 60 stóp, wykonuje rzut obronny na Zręczność, otrzymując 5k8 obrażeń od mocy przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 3.</p>",
             "materials": "broń do walki wręcz lub dystansowa warta co najmniej 1 SM",
             "activities": {
                 "save": {
@@ -988,7 +988,7 @@
         },
         "Conjure Celestial": {
             "name": "Wyczarowanie niebianina",
-            "description": "<p>Przywołujesz ducha z Wyższych Sfer, który objawia się jako słup światła w Walcu o promieniu 10 stóp i wysokości 40 stóp, skupionym na punkcie w zasięgu. Dla każdej istoty, którą widzisz w Walcu, wybierasz, które z tych świateł na nią pada:</p><p><strong>Healing Light. </strong>Cel odzyskuje Punkty Wytrzymałości równe 4k12 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Searing Light.  </strong>Cel wykonuje rzut obronny na Zręczność, otrzymując 6k12 obrażeń od światłości przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p>Dopóki czar trwa, Jasne Światło wypełnia Walec, a kiedy poruszasz się w swojej turze, możesz również przemieścić Walec do 30 stóp.</p><p>Za każdym razem, gdy Walec przemieści się na obszar istoty, którą widzisz, oraz za każdym razem, gdy istota, którą widzisz, wejdzie do Walca lub zakończy tam swoją turę, możesz oblać ją jednym ze świateł. Istota może być dotknięta tym czarem tylko raz na turę.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Leczenie i obrażenia zwiększają się o 1k12 za każdy krąg komórki czaru powyżej 7.</p>",
+            "description": "<p>Przywołujesz ducha z Wyższych Sfer, który objawia się jako słup światła w Walcu o promieniu 10 stóp i wysokości 40 stóp, skupionym na punkcie w zasięgu. Dla każdej istoty, którą widzisz w Walcu, wybierasz, które z tych świateł na nią pada:</p><p><strong>Healing Light. </strong>Cel odzyskuje Punkty Wytrzymałości równe 4k12 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Searing Light.  </strong>Cel wykonuje rzut obronny na Zręczność, otrzymując 6k12 obrażeń od światłości przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p>Dopóki czar trwa, Jasne Światło wypełnia Walec, a kiedy poruszasz się w swojej turze, możesz również przemieścić Walec do 30 stóp.</p><p>Za każdym razem, gdy Walec przemieści się na obszar istoty, którą widzisz, oraz za każdym razem, gdy istota, którą widzisz, wejdzie do Walca lub zakończy tam swoją turę, możesz oblać ją jednym ze świateł. Istota może być dotknięta tym czarem tylko raz na turę.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie i obrażenia zwiększają się o 1k12 za każdy krąg komórki czaru powyżej 7.</p>",
             "activities": {
                 "Conjure Pillar": {
                     "name": "Wyczarowanie filaru"
@@ -1046,7 +1046,7 @@
         },
         "Conjure Woodland Beings": {
             "name": "Wyczarowanie leśnych istot",
-            "description": "<p>Przywołujesz duchy natury, które krążą wokół ciebie w obszarze Emanacji o promieniu 10 stóp przez cały czas trwania czaru. Za każdym razem, gdy Emanacja wejdzie w przestrzeń istoty, którą widzisz, a także za każdym razem, gdy widziana przez ciebie istota wejdzie w obszar Emanacji lub zakończy tam swoją turę, możesz zmusić ją do wykonania rzutu obronnego na Mądrość. W przypadku niepowodzenia istota otrzymuje 5k8 obrażeń od mocy, a w przypadku sukcesu połowę tych obrażeń. Istota może wykonać ten rzut obronny tylko raz na turę.</p><p>Dodatkowo, możesz wykonać akcję &amp;Reference[Disengage] Akcją dodatkową przez czas trwania czaru.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 4.</p>",
+            "description": "<p>Przywołujesz duchy natury, które krążą wokół ciebie w obszarze Emanacji o promieniu 10 stóp przez cały czas trwania czaru. Za każdym razem, gdy Emanacja wejdzie w przestrzeń istoty, którą widzisz, a także za każdym razem, gdy widziana przez ciebie istota wejdzie w obszar Emanacji lub zakończy tam swoją turę, możesz zmusić ją do wykonania rzutu obronnego na Mądrość. W przypadku niepowodzenia istota otrzymuje 5k8 obrażeń od mocy, a w przypadku sukcesu połowę tych obrażeń. Istota może wykonać ten rzut obronny tylko raz na turę.</p><p>Dodatkowo, możesz wykonać akcję &amp;Reference[Disengage] Akcją dodatkową przez czas trwania czaru.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 4.</p>",
             "activities": {
                 "Cast": {
                     "name": "Rzucanie",
@@ -1161,7 +1161,7 @@
         },
         "Cordon of Arrows": {
             "name": "Kordon strzał",
-            "description": "<p>Dotykasz do czterech niemagicznych Strzał lub Bełtów i sadzisz je w ziemi w swoim miejscu. Dopóki czar trwa, amunicji nie można fizycznie wyrwać z ziemi, a gdy istota inna niż ty wejdzie po raz pierwszy w turze na obszar w promieniu 30 stóp od amunicji lub zakończy tam swoją turę, jeden kawałek amunicji wylatuje, by ją uderzyć. Istota musi wykonać rzut obronny na Zręczność, inaczej otrzymuje 2k4 obrażeń kłutych. Ten kawałek amunicji zostaje wtedy zniszczony. Czar kończy się, gdy żaden kawałek amunicji nie pozostaje w ziemi.</p><p>Gdy rzucasz ten czar, możesz wyznaczyć dowolne istoty, które wybierzesz, a czar je ignoruje.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Liczba amunicji, którą można objąć czarem, zwiększa się o dwa za każdy krąg komórki czaru powyżej 2.</p><section class=\"secret\" id=\"secret-hTdxVas0HdLYLcC5\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Rzucanie</strong> zresetuje ograniczone użycia tego przedmiotu zgodnie z liczbą kawałków amunicji, które są objęte czarem i mogą zostać wystrzelone przez aktywność <strong>Rzut obronny</strong>.</p></section>",
+            "description": "<p>Dotykasz do czterech niemagicznych Strzał lub Bełtów i sadzisz je w ziemi w swoim miejscu. Dopóki czar trwa, amunicji nie można fizycznie wyrwać z ziemi, a gdy istota inna niż ty wejdzie po raz pierwszy w turze na obszar w promieniu 30 stóp od amunicji lub zakończy tam swoją turę, jeden kawałek amunicji wylatuje, by ją uderzyć. Istota musi wykonać rzut obronny na Zręczność, inaczej otrzymuje 2k4 obrażeń kłutych. Ten kawałek amunicji zostaje wtedy zniszczony. Czar kończy się, gdy żaden kawałek amunicji nie pozostaje w ziemi.</p><p>Gdy rzucasz ten czar, możesz wyznaczyć dowolne istoty, które wybierzesz, a czar je ignoruje.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Liczba amunicji, którą można objąć czarem, zwiększa się o dwa za każdy krąg komórki czaru powyżej 2.</p><section class=\"secret\" id=\"secret-hTdxVas0HdLYLcC5\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Rzucanie</strong> zresetuje ograniczone użycia tego przedmiotu zgodnie z liczbą kawałków amunicji, które są objęte czarem i mogą zostać wystrzelone przez aktywność <strong>Rzut obronny</strong>.</p></section>",
             "materials": "ozdobny warkocz",
             "activities": {
                 "save": {
@@ -1189,7 +1189,7 @@
         },
         "Create or Destroy Water": {
             "name": "Stworzenie lub zniszczenie wody",
-            "description": "<p>Wykonujesz jedną z następujących czynności:</p><p><strong>Stworzenie Wody.</strong> Tworzysz do 10 galonów czystej wody w zasięgu w otwartym pojemniku. Alternatywnie woda spada jako deszcz w 30-stopowym Sześcianie w zasięgu, gasząc tam odsłonięte płomienie.</p><p><strong>Zniszczenie Wody.</strong> Niszczysz do 10 galonów wody w otwartym pojemniku w zasięgu. Alternatywnie niszczysz mgłę w 30-stopowym Sześcianie w zasięgu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Tworzysz lub niszczysz dodatkowe 10 galonów wody, lub rozmiar Sześcianu zwiększa się o 5 stóp, za każdy poziom komórki czaru powyżej 1.</p>",
+            "description": "<p>Wykonujesz jedną z następujących czynności:</p><p><strong>Stworzenie Wody.</strong> Tworzysz do 10 galonów czystej wody w zasięgu w otwartym pojemniku. Alternatywnie woda spada jako deszcz w 30-stopowym Sześcianie w zasięgu, gasząc tam odsłonięte płomienie.</p><p><strong>Zniszczenie Wody.</strong> Niszczysz do 10 galonów wody w otwartym pojemniku w zasięgu. Alternatywnie niszczysz mgłę w 30-stopowym Sześcianie w zasięgu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Tworzysz lub niszczysz dodatkowe 10 galonów wody, lub rozmiar Sześcianu zwiększa się o 5 stóp, za każdy poziom komórki czaru powyżej 1.</p>",
             "materials": "mieszanka wody i piasku"
         },
         "Create Undead": {
@@ -1242,7 +1242,7 @@
         },
         "Cure Wounds": {
             "name": "Leczenie ran",
-            "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>"
+            "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>"
         },
         "Dancing Lights": {
             "name": "Tańczące światła",
@@ -1435,7 +1435,7 @@
         },
         "Dissonant Whispers": {
             "name": "Fałszywe podszepty",
-            "description": "<p>Jedna wybrana przez ciebie istota, którą widzisz w zasięgu, słyszy w swoim umyśle dysonansową melodię. Cel wykonuje rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje 3k6 obrażeń psychicznych i musi natychmiast wykorzystać swoją Reakcję, jeśli jest dostępna, aby oddalić się od ciebie najbezpieczniejszą możliwą trasą. W przypadku udanego rzutu obronnego cel otrzymuje tylko połowę tych obrażeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+            "description": "<p>Jedna wybrana przez ciebie istota, którą widzisz w zasięgu, słyszy w swoim umyśle dysonansową melodię. Cel wykonuje rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje 3k6 obrażeń psychicznych i musi natychmiast wykorzystać swoją Reakcję, jeśli jest dostępna, aby oddalić się od ciebie najbezpieczniejszą możliwą trasą. W przypadku udanego rzutu obronnego cel otrzymuje tylko połowę tych obrażeń.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
@@ -1458,7 +1458,7 @@
         },
         "Divine Smite": {
             "name": "Boskie ugodzenie",
-            "description": "<p>Cel otrzymuje dodatkowe 2k8 obrażeń od Światłości od ataku. Obrażenia zwiększają się o 1k8, jeśli celem jest Czart lub Nieumarły.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+            "description": "<p>Cel otrzymuje dodatkowe 2k8 obrażeń od Światłości od ataku. Obrażenia zwiększają się o 1k8, jeśli celem jest Czart lub Nieumarły.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 1. kręgu.</p>",
             "activation": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
             "activationCondition": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
             "activities": {
@@ -1541,7 +1541,7 @@
         },
         "Dragon's Breath": {
             "name": "Smocze zionięcie",
-            "description": "<p>Dotykasz jednej chętnej istoty i wybierasz Kwas, Zimno, Ogień, Elektryczność lub Truciznę. Dopóki czar trwa, cel może wykonać Akcję Magii, by wypuścić Stożek o długości 15 stóp. Każda istota w tym obszarze wykonuje rzut obronny na Zręczność, otrzymując 3k6 obrażeń wybranego typu przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 2.</p>",
+            "description": "<p>Dotykasz jednej chętnej istoty i wybierasz Kwas, Zimno, Ogień, Elektryczność lub Truciznę. Dopóki czar trwa, cel może wykonać Akcję Magii, by wypuścić Stożek o długości 15 stóp. Każda istota w tym obszarze wykonuje rzut obronny na Zręczność, otrzymując 3k6 obrażeń wybranego typu przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 2.</p>",
             "activities": {
                 "Cast": {
                     "name": "Rzucanie"
@@ -1622,7 +1622,7 @@
         },
         "Elemental Weapon": {
             "name": "Broń żywiołu",
-            "description": "<p>Niemagiczna broń, którą dotykasz, staje się magiczną bronią. Wybierz jeden z następujących typów obrażeń: Kwas, Zimno, Ogień, Elektryczność lub Dźwięk. Przez czas trwania broń ma premię +1 do testów ataku i zadaje dodatkowe 1k4 obrażeń wybranego typu przy trafieniu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Jeśli użyjesz komórki czaru o kręgu 5–6, premia do testów ataku wzrasta do +2, a dodatkowe obrażenia zwiększają się do 2k4. Jeśli użyjesz komórki czaru o kręgu 7+, premia wzrasta do +3, a dodatkowe obrażenia zwiększają się do 3k4.</p>",
+            "description": "<p>Niemagiczna broń, którą dotykasz, staje się magiczną bronią. Wybierz jeden z następujących typów obrażeń: Kwas, Zimno, Ogień, Elektryczność lub Dźwięk. Przez czas trwania broń ma premię +1 do testów ataku i zadaje dodatkowe 1k4 obrażeń wybranego typu przy trafieniu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Jeśli użyjesz komórki czaru o kręgu 5–6, premia do testów ataku wzrasta do +2, a dodatkowe obrażenia zwiększają się do 2k4. Jeśli użyjesz komórki czaru o kręgu 7+, premia wzrasta do +3, a dodatkowe obrażenia zwiększają się do 3k4.</p>",
             "effects": {
                 "Elemental Acid +1": {
                     "name": "Kwas żywiołów +1"
@@ -1686,7 +1686,7 @@
         },
         "Enhance Ability": {
             "name": "Wzmocnienie cechy",
-            "description": "<p>Dotykasz istoty i wybierasz Siłę, Zręczność, Inteligencję, Mądrość lub Charyzmę. Przez czas trwania cel ma Ułatwienie w testach cechy używających wybranej cechy.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2. Możesz wybrać inną cechę dla każdego celu.</p>",
+            "description": "<p>Dotykasz istoty i wybierasz Siłę, Zręczność, Inteligencję, Mądrość lub Charyzmę. Przez czas trwania cel ma Ułatwienie w testach cechy używających wybranej cechy.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2. Możesz wybrać inną cechę dla każdego celu.</p>",
             "materials": "futro lub pióro",
             "effects": {
                 "Enhanced Strength": {
@@ -1733,7 +1733,7 @@
         },
         "Ensnaring Strike": {
             "name": "Pętające uderzenie",
-            "description": "<p>Gdy trafiasz cel, na nim pojawiają się chwytające pnącza, a cel wykonuje rzut obronny na Siłę. Istota o rozmiarze Dużym lub większym ma Ułatwienie w tym rzucie. Przy nieudanym rzucie cel otrzymuje stan <span style=\"font-family:Signika, sans-serif\">&amp;Reference[restrained apply=false]{Unieruchomiony}</span> do końca czaru. Przy udanym rzucie pnącza usychają, a czar się kończy.</p><p>Gdy jest Unieruchomiony, cel otrzymuje 1k6 obrażeń kłutych na początku każdej ze swoich tur. Cel lub istota w jego zasięgu może wykonać akcję, by wykonać test [[/check ability=str skill=ath dc=@attributes.spelldc]] przeciwko twojemu ST rzutu obronnego na czary. Przy sukcesie czar się kończy.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
+            "description": "<p>Gdy trafiasz cel, na nim pojawiają się chwytające pnącza, a cel wykonuje rzut obronny na Siłę. Istota o rozmiarze Dużym lub większym ma Ułatwienie w tym rzucie. Przy nieudanym rzucie cel otrzymuje stan <span style=\"font-family:Signika, sans-serif\">&amp;Reference[restrained apply=false]{Unieruchomiony}</span> do końca czaru. Przy udanym rzucie pnącza usychają, a czar się kończy.</p><p>Gdy jest Unieruchomiony, cel otrzymuje 1k6 obrażeń kłutych na początku każdej ze swoich tur. Cel lub istota w jego zasięgu może wykonać akcję, by wykonać test [[/check ability=str skill=ath dc=@attributes.spelldc]] przeciwko twojemu ST rzutu obronnego na czary. Przy sukcesie czar się kończy.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
             "activation": "Natychmiast po trafieniu istoty bronią",
             "activationCondition": "Natychmiast po trafieniu istoty bronią",
             "activities": {
@@ -1865,7 +1865,7 @@
         },
         "False Life": {
             "name": "Fałszywe życie",
-            "description": "<p>Zyskujesz 2k4 + 4 Tymczasowe Punkty Wytrzymałości.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Zyskujesz dodatkowe 5 Tymczasowych Punktów Wytrzymałości za każdy krąg komórki czaru powyżej 1.</p>",
+            "description": "<p>Zyskujesz 2k4 + 4 Tymczasowe Punkty Wytrzymałości.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Zyskujesz dodatkowe 5 Tymczasowych Punktów Wytrzymałości za każdy krąg komórki czaru powyżej 1.</p>",
             "materials": "kropla alkoholu",
             "activities": {
                 "Temporary Health": {
@@ -1922,7 +1922,7 @@
         },
         "Find Steed": {
             "name": "Znalezienie wierzchowca",
-            "description": "<p>Przywołujesz nieziemską istotę, która pojawia się jako lojalny wierzchowiec w wybranej przez ciebie niezajętej przestrzeni w zasięgu. Istota używa bloku statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobOtherworld]</strong>. Jeśli masz już wierzchowca z tego czaru, zostaje on zastąpiony nowym.</p><p>Wierzchowiec przypomina wybrane przez ciebie Duże zwierzę, na którym można jeździć, takie jak koń, wielbłąd, straszliwy wilk albo łoś. Za każdym razem, gdy rzucasz ten czar, wybierz typ istoty wierzchowca — Niebianin, Fey albo Czart — który określa pewne cechy w jego bloku statystyk.</p><p><strong>Walka.</strong> Wierzchowiec jest sojusznikiem twoim i twoich sojuszników. W walce dzieli z tobą wynik Inicjatywy i działa jako kontrolowany wierzchowiec (&amp;Reference[controllingamount]), gdy na nim jedziesz (zgodnie z zasadami walki wierzchem). Jeśli masz stan Obezwładniony, wierzchowiec wykonuje swoją turę bezpośrednio po twojej i działa niezależnie, skupiając się na chronieniu ciebie.</p><p><strong>Zniknięcie wierzchowca.</strong> Wierzchowiec znika, jeśli zostanie zredukowany do 0 Punktów Wytrzymałości albo jeśli umrzesz. Gdy znika, pozostawia wszystko, co nosił lub trzymał. Jeśli ponownie rzucisz ten czar, decydujesz, czy przywołujesz wierzchowca, który zniknął, czy innego.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Użyj kręgu komórki czaru jako kręgu czaru w bloku statystyk.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>Oprócz wskazanego użycia kręgu czaru w Cechach i Akcjach wierzchowca wpływa on również na następujące wartości.</p><table><caption>Nieziemski wierzchowiec</caption><tbody><tr><td><strong>KP</strong></td><td>10 + 1 za każdy krąg czaru</td></tr><tr><td><strong>PW</strong></td><td>5 + 10 za każdy krąg czaru (wierzchowiec ma liczbę Kości Wytrzymałości [k10] równą kręgowi czaru)</td></tr><tr><td><strong>Szybkość</strong></td><td>60 stóp, Latanie 60 stóp (wymaga czaru 4. kręgu lub wyższego)</td></tr><tr><td><strong>PB</strong></td><td>równa twojej Premii z Biegłości</td></tr></tbody></table></article></section><section class=\"secret\" id=\"secret-SI4qlfj05o21BBGg\"><p><strong>Notatka Foundry</strong></p><p>Aktywności <strong>Przywołanie latającego wierzchowca</strong> należy używać podczas zużywania komórki czaru 4. lub wyższego kręgu; jest ona skonfigurowana tak, aby zastosować Szybkość Latania.</p><p>Podczas używania komórki czaru 2. lub 3. kręgu należy zamiast niej użyć aktywności <strong>Przywołanie wierzchowca</strong>.</p></section>",
+            "description": "<p>Przywołujesz nieziemską istotę, która pojawia się jako lojalny wierzchowiec w wybranej przez ciebie niezajętej przestrzeni w zasięgu. Istota używa bloku statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobOtherworld]</strong>. Jeśli masz już wierzchowca z tego czaru, zostaje on zastąpiony nowym.</p><p>Wierzchowiec przypomina wybrane przez ciebie Duże zwierzę, na którym można jeździć, takie jak koń, wielbłąd, straszliwy wilk albo łoś. Za każdym razem, gdy rzucasz ten czar, wybierz typ istoty wierzchowca — Niebianin, Fey albo Czart — który określa pewne cechy w jego bloku statystyk.</p><p><strong>Walka.</strong> Wierzchowiec jest sojusznikiem twoim i twoich sojuszników. W walce dzieli z tobą wynik Inicjatywy i działa jako kontrolowany wierzchowiec (&amp;Reference[controllingamount]), gdy na nim jedziesz (zgodnie z zasadami walki wierzchem). Jeśli masz stan Obezwładniony, wierzchowiec wykonuje swoją turę bezpośrednio po twojej i działa niezależnie, skupiając się na chronieniu ciebie.</p><p><strong>Zniknięcie wierzchowca.</strong> Wierzchowiec znika, jeśli zostanie zredukowany do 0 Punktów Wytrzymałości albo jeśli umrzesz. Gdy znika, pozostawia wszystko, co nosił lub trzymał. Jeśli ponownie rzucisz ten czar, decydujesz, czy przywołujesz wierzchowca, który zniknął, czy innego.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Użyj kręgu komórki czaru jako kręgu czaru w bloku statystyk.</p><section class=\"fvtt advice\" style=\"margin:0.5rem;padding:0.5rem\"><article><p>Oprócz wskazanego użycia kręgu czaru w Cechach i Akcjach wierzchowca wpływa on również na następujące wartości.</p><table><caption>Nieziemski wierzchowiec</caption><tbody><tr><td><strong>KP</strong></td><td>10 + 1 za każdy krąg czaru</td></tr><tr><td><strong>PW</strong></td><td>5 + 10 za każdy krąg czaru (wierzchowiec ma liczbę Kości Wytrzymałości [k10] równą kręgowi czaru)</td></tr><tr><td><strong>Szybkość</strong></td><td>60 stóp, Latanie 60 stóp (wymaga czaru 4. kręgu lub wyższego)</td></tr><tr><td><strong>PB</strong></td><td>równa twojej Premii z Biegłości</td></tr></tbody></table></article></section><section class=\"secret\" id=\"secret-SI4qlfj05o21BBGg\"><p><strong>Notatka Foundry</strong></p><p>Aktywności <strong>Przywołanie latającego wierzchowca</strong> należy używać podczas zużywania komórki czaru 4. lub wyższego kręgu; jest ona skonfigurowana tak, aby zastosować Szybkość Latania.</p><p>Podczas używania komórki czaru 2. lub 3. kręgu należy zamiast niej użyć aktywności <strong>Przywołanie wierzchowca</strong>.</p></section>",
             "activities": {
                 "Summon Steed": {
                     "name": "Przywołanie wierzchowca"
@@ -2001,7 +2001,7 @@
         },
         "Fireball": {
             "name": "Kula ognia",
-            "description": "<p>Jasna smuga wystrzeliwuje od ciebie ku wybranemu punktowi w zasięgu, po czym z głuchym hukiem rozkwita w ognistą eksplozję. Każda istota w Sferze o promieniu 20 stóp, której środek znajduje się w tym punkcie, wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od ognia przy porażce albo połowę tych obrażeń przy sukcesie.</p><p>Łatwopalne obiekty w tym obszarze, które nie są noszone ani trzymane, zaczynają płonąć.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3. kręgu.</p>",
+            "description": "<p>Jasna smuga wystrzeliwuje od ciebie ku wybranemu punktowi w zasięgu, po czym z głuchym hukiem rozkwita w ognistą eksplozję. Każda istota w Sferze o promieniu 20 stóp, której środek znajduje się w tym punkcie, wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od ognia przy porażce albo połowę tych obrażeń przy sukcesie.</p><p>Łatwopalne obiekty w tym obszarze, które nie są noszone ani trzymane, zaczynają płonąć.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3. kręgu.</p>",
             "materials": "kulka guano nietoperza i siarki",
             "activities": {
                 "save": {
@@ -2011,7 +2011,7 @@
         },
         "Flame Blade": {
             "name": "Płomienne ostrze",
-            "description": "<p>Przywołujesz płomienne ostrze w swojej wolnej ręce. Ostrze ma rozmiar i kształt podobny do sejmitara i pozostaje przez czas trwania. Jeśli puścisz ostrze, ono znika, ale możesz przywołać je ponownie Akcją dodatkową.</p><p>Akcją Magii możesz wykonać wręczony atak czarem za pomocą płomiennego ostrza. Przy trafieniu cel otrzymuje obrażenia od ognia równe 3k6 plus twój modyfikator zdolności rzucania czarów.</p><p>Płomienne ostrze emituje Jasne Światło w promieniu 10 stóp i Słabe Światło na dodatkowe 10 stóp.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 2.</p>",
+            "description": "<p>Przywołujesz płomienne ostrze w swojej wolnej ręce. Ostrze ma rozmiar i kształt podobny do sejmitara i pozostaje przez czas trwania. Jeśli puścisz ostrze, ono znika, ale możesz przywołać je ponownie Akcją dodatkową.</p><p>Akcją Magii możesz wykonać wręczony atak czarem za pomocą płomiennego ostrza. Przy trafieniu cel otrzymuje obrażenia od ognia równe 3k6 plus twój modyfikator zdolności rzucania czarów.</p><p>Płomienne ostrze emituje Jasne Światło w promieniu 10 stóp i Słabe Światło na dodatkowe 10 stóp.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 2.</p>",
             "materials": "liść sumaka",
             "activities": {
                 "Evoke Blade": {
@@ -2021,7 +2021,7 @@
         },
         "Flame Strike": {
             "name": "Słup ognia",
-            "description": "<p>Pionowy słup jaskrawego ognia z rykiem spada z góry. Każda istota w Walcu o promieniu 10 stóp i wysokości 40 stóp, skupionym na punkcie w zasięgu, wykonuje rzut obronny na Zręczność, otrzymując 5k6 obrażeń od ognia i 5k6 obrażeń od światłości przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia od ognia i obrażenia od światłości zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 5.</p>",
+            "description": "<p>Pionowy słup jaskrawego ognia z rykiem spada z góry. Każda istota w Walcu o promieniu 10 stóp i wysokości 40 stóp, skupionym na punkcie w zasięgu, wykonuje rzut obronny na Zręczność, otrzymując 5k6 obrażeń od ognia i 5k6 obrażeń od światłości przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia od ognia i obrażenia od światłości zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 5.</p>",
             "materials": "szczypta siarki",
             "activities": {
                 "save": {
@@ -2031,7 +2031,7 @@
         },
         "Flaming Sphere": {
             "name": "Płomienna kula",
-            "description": "<p>Tworzysz sferę ognia o średnicy 5 stóp w niezajętej przestrzeni na ziemi w zasięgu. Utrzymuje się przez czas trwania czaru. Każda istota, która kończy swoją turę w obrębie 5 stóp od sfery, wykonuje [[/save ability=dex dc=@attributes.spell.dc]] rzut obronny, otrzymując 2k6 obrażeń od ognia przy porażce albo połowę tych obrażeń przy sukcesie.</p><p>Akcją dodatkową możesz przemieścić sferę o maksymalnie 30 stóp, tocząc ją po ziemi. Jeśli przemieścisz sferę w przestrzeń istoty, wykonuje ona rzut obronny przeciwko sferze, po czym sfera przestaje się poruszać w tej turze.</p><p>Gdy przemieszczasz sferę, możesz skierować ją ponad przeszkodami o wysokości do 5 stóp oraz przetoczyć ją skokiem nad dołami o szerokości do 10 stóp. Łatwopalne obiekty, które nie są noszone ani trzymane, zaczynają płonąć, jeśli dotknie ich sfera. Sfera emituje Jasne światło w promieniu 20 stóp oraz Słabe światło przez kolejne 20 stóp.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 2. kręgu.</p>",
+            "description": "<p>Tworzysz sferę ognia o średnicy 5 stóp w niezajętej przestrzeni na ziemi w zasięgu. Utrzymuje się przez czas trwania czaru. Każda istota, która kończy swoją turę w obrębie 5 stóp od sfery, wykonuje [[/save ability=dex dc=@attributes.spell.dc]] rzut obronny, otrzymując 2k6 obrażeń od ognia przy porażce albo połowę tych obrażeń przy sukcesie.</p><p>Akcją dodatkową możesz przemieścić sferę o maksymalnie 30 stóp, tocząc ją po ziemi. Jeśli przemieścisz sferę w przestrzeń istoty, wykonuje ona rzut obronny przeciwko sferze, po czym sfera przestaje się poruszać w tej turze.</p><p>Gdy przemieszczasz sferę, możesz skierować ją ponad przeszkodami o wysokości do 5 stóp oraz przetoczyć ją skokiem nad dołami o szerokości do 10 stóp. Łatwopalne obiekty, które nie są noszone ani trzymane, zaczynają płonąć, jeśli dotknie ich sfera. Sfera emituje Jasne światło w promieniu 20 stóp oraz Słabe światło przez kolejne 20 stóp.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 2. kręgu.</p>",
             "materials": "kula wosku",
             "activities": {
                 "save": {
@@ -2061,7 +2061,7 @@
         },
         "Fly": {
             "name": "Lot",
-            "description": "<p>Dotykasz chętną istotę. Na czas trwania czaru cel zyskuje szybkość lotu wynoszącą 60 stóp (18m) i może unosić się w powietrzu. Gdy czar się kończy, cel spada, jeśli wciąż znajduje się w powietrzu, chyba że potrafi zatrzymać upadek.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 3. kręgu.</p>",
+            "description": "<p>Dotykasz chętną istotę. Na czas trwania czaru cel zyskuje szybkość lotu wynoszącą 60 stóp (18m) i może unosić się w powietrzu. Gdy czar się kończy, cel spada, jeśli wciąż znajduje się w powietrzu, chyba że potrafi zatrzymać upadek.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 3. kręgu.</p>",
             "materials": "pióro",
             "effects": {
                 "Flight": {
@@ -2071,7 +2071,7 @@
         },
         "Fog Cloud": {
             "name": "Chmura mgły",
-            "description": "<p>Tworzysz Sferę mgły o promieniu 20 stóp, której środek znajduje się w punkcie w zasięgu. Sfera jest &amp;Reference[heavilyobscured]. Mgła utrzymuje się przez czas trwania czaru albo do chwili, gdy zostanie rozwiana przez silny wiatr (taki jak wywołany czarem <em>UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGustofWind]</em>).</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Promień mgły zwiększa się o 20 stóp za każdy krąg komórki czaru powyżej 1. kręgu.</p>"
+            "description": "<p>Tworzysz Sferę mgły o promieniu 20 stóp, której środek znajduje się w punkcie w zasięgu. Sfera jest &amp;Reference[heavilyobscured]. Mgła utrzymuje się przez czas trwania czaru albo do chwili, gdy zostanie rozwiana przez silny wiatr (taki jak wywołany czarem <em>UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGustofWind]</em>).</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Promień mgły zwiększa się o 20 stóp za każdy krąg komórki czaru powyżej 1. kręgu.</p>"
         },
         "Forbiddance": {
             "name": "Wyłączenie",
@@ -2145,7 +2145,7 @@
         },
         "Freedom of Movement": {
             "name": "Swoboda ruchu",
-            "description": "<p>Dotykasz chętną istotę. Na czas trwania czaru ruch celu nie jest ograniczany przez &amp;Reference[DifficultTerrain]{Trudny Teren}, a czary i inne efekty magiczne nie mogą zmniejszyć jego Szybkości ani spowodować, że otrzyma stan &amp;Reference[Paralyzed]{Sparaliżowany} lub &amp;Reference[Restrained]{Unieruchomiony}. Cel zyskuje również szybkość pływania równą swojej Szybkości.</p><p>Dodatkowo, cel może wydać 5 stóp ruchu, aby automatycznie uwolnić się z niemagicznych więzów, takich jak kajdany lub istota nakładająca na niego stan &amp;Reference[Grappled]{Pochwycony}.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 4. kręgu.</p><section class=\"secret\" id=\"secret-uwteEBj1fBNIf7KZ\"><p><strong>Notatka Foundry</strong></p><p>Aktywny efekt zapewniany przez aktywność <strong>Rzucenia</strong> czaru zwiększa szybkość pływania postaci do wartości „1”, co oznacza równość z jej Szybkością chodzenia, a także nadaje odporność na określone stany.</p></section>",
+            "description": "<p>Dotykasz chętną istotę. Na czas trwania czaru ruch celu nie jest ograniczany przez &amp;Reference[DifficultTerrain]{Trudny Teren}, a czary i inne efekty magiczne nie mogą zmniejszyć jego Szybkości ani spowodować, że otrzyma stan &amp;Reference[Paralyzed]{Sparaliżowany} lub &amp;Reference[Restrained]{Unieruchomiony}. Cel zyskuje również szybkość pływania równą swojej Szybkości.</p><p>Dodatkowo, cel może wydać 5 stóp ruchu, aby automatycznie uwolnić się z niemagicznych więzów, takich jak kajdany lub istota nakładająca na niego stan &amp;Reference[Grappled]{Pochwycony}.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 4. kręgu.</p><section class=\"secret\" id=\"secret-uwteEBj1fBNIf7KZ\"><p><strong>Notatka Foundry</strong></p><p>Aktywny efekt zapewniany przez aktywność <strong>Rzucenia</strong> czaru zwiększa szybkość pływania postaci do wartości „1”, co oznacza równość z jej Szybkością chodzenia, a także nadaje odporność na określone stany.</p></section>",
             "materials": "skórzany pasek",
             "effects": {
                 "Unrestricted Movement": {
@@ -2171,7 +2171,7 @@
         },
         "Gaseous Form": {
             "name": "Forma gazowa",
-            "description": "<p>Chętna istota, której dotykasz, zmienia kształt wraz ze wszystkim, co nosi i posiada, w mglisty obłok na czas trwania czaru. Czar kończy się na celu, jeśli jego Punkty Wytrzymałości spadną do 0 lub jeśli wykona Akcję Magii, aby samodzielnie zakończyć efekt.</p><p>W tej formie jedyną metodą poruszania się celu jest szybkość lotu wynosząca 10 stóp, a także może unosić się w powietrzu. Cel może wchodzić w przestrzeń zajmowaną przez inną istotę. Posiada &amp;Reference[damageResistance]{Odporność} na obrażenia obuchowe, kłute i cięte; ma &amp;Reference[Immunity]{Niewrażliwość} na stan &amp;Reference[prone]{Powalony}; oraz &amp;Reference[Advantage]{Ułatwienie} w rzutach obronnych na Siłę, Zręczność i Kondycję. Cel może przechodzić przez wąskie otwory, ale traktuje ciecze tak, jakby były stałą powierzchnią.</p><p>Cel nie może mówić ani manipulować przedmiotami, a wszelkie przedmioty, które niósł lub trzymał, nie mogą być upuszczone, używane ani w żaden sposób interakcjonowane. Ponadto cel nie może atakować ani rzucać czarów.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 3. kręgu.</p>",
+            "description": "<p>Chętna istota, której dotykasz, zmienia kształt wraz ze wszystkim, co nosi i posiada, w mglisty obłok na czas trwania czaru. Czar kończy się na celu, jeśli jego Punkty Wytrzymałości spadną do 0 lub jeśli wykona Akcję Magii, aby samodzielnie zakończyć efekt.</p><p>W tej formie jedyną metodą poruszania się celu jest szybkość lotu wynosząca 10 stóp, a także może unosić się w powietrzu. Cel może wchodzić w przestrzeń zajmowaną przez inną istotę. Posiada &amp;Reference[damageResistance]{Odporność} na obrażenia obuchowe, kłute i cięte; ma &amp;Reference[Immunity]{Niewrażliwość} na stan &amp;Reference[prone]{Powalony}; oraz &amp;Reference[Advantage]{Ułatwienie} w rzutach obronnych na Siłę, Zręczność i Kondycję. Cel może przechodzić przez wąskie otwory, ale traktuje ciecze tak, jakby były stałą powierzchnią.</p><p>Cel nie może mówić ani manipulować przedmiotami, a wszelkie przedmioty, które niósł lub trzymał, nie mogą być upuszczone, używane ani w żaden sposób interakcjonowane. Ponadto cel nie może atakować ani rzucać czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 3. kręgu.</p>",
             "materials": "trochę gazy",
             "effects": {
                 "Gaseous Form": {
@@ -2201,7 +2201,7 @@
         },
         "Geas": {
             "name": "Geas",
-            "description": "<p>Wydajesz werbalne polecenie istocie, którą widzisz w zasięgu, nakazując jej wykonanie jakiejś usługi lub powstrzymanie się od działania bądź aktywności, zgodnie z twoją decyzją. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[Charmed]{Zauroczony} na czas trwania czaru. Cel automatycznie odnosi sukces, jeśli nie rozumie twojego polecenia.</p><p>Gdy jest Zauroczony, istota otrzymuje [[/damage 5d10 type=psychic]] obrażeń psychicznych, jeśli działa w sposób bezpośrednio sprzeczny z twoim poleceniem. Obrażenia te może otrzymać nie częściej niż raz dziennie.</p><p>Możesz wydać dowolne polecenie, o ile nie skutkuje ono pewną śmiercią. Jeśli nakażesz istocie działanie samobójcze, czar się kończy.</p><p>Czary <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRemoveCurs]{Zdjęcie Klątwy}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]{Większe Przywrócenie}</em> lub <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWish000000]{Życzenie}</em> kończą działanie tego czaru.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Jeśli użyjesz komórki czaru 7. lub 8. kręgu, czas trwania wynosi 365 dni. Jeśli użyjesz komórki czaru 9. kręgu, czar trwa, dopóki nie zostanie zakończony jednym z wyżej wymienionych czarów.</p>",
+            "description": "<p>Wydajesz werbalne polecenie istocie, którą widzisz w zasięgu, nakazując jej wykonanie jakiejś usługi lub powstrzymanie się od działania bądź aktywności, zgodnie z twoją decyzją. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[Charmed]{Zauroczony} na czas trwania czaru. Cel automatycznie odnosi sukces, jeśli nie rozumie twojego polecenia.</p><p>Gdy jest Zauroczony, istota otrzymuje [[/damage 5d10 type=psychic]] obrażeń psychicznych, jeśli działa w sposób bezpośrednio sprzeczny z twoim poleceniem. Obrażenia te może otrzymać nie częściej niż raz dziennie.</p><p>Możesz wydać dowolne polecenie, o ile nie skutkuje ono pewną śmiercią. Jeśli nakażesz istocie działanie samobójcze, czar się kończy.</p><p>Czary <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRemoveCurs]{Zdjęcie Klątwy}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]{Większe Przywrócenie}</em> lub <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWish000000]{Życzenie}</em> kończą działanie tego czaru.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Jeśli użyjesz komórki czaru 7. lub 8. kręgu, czas trwania wynosi 365 dni. Jeśli użyjesz komórki czaru 9. kręgu, czar trwa, dopóki nie zostanie zakończony jednym z wyżej wymienionych czarów.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "none"
@@ -2221,7 +2221,7 @@
         },
         "Giant Insect": {
             "name": "Olbrzymie owady",
-            "description": "<p>Przywołujesz olbrzymiego stonogę, pająka lub osę (wybranego w momencie rzucania czaru). Pojawia się on w niezajętej przestrzeni, którą widzisz w zasięgu, i używa statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobGiantInsec]{Olbrzymiego Owada}</strong>. Wybrana forma określa niektóre szczegóły w jego statystykach. Istota znika, gdy jej Punkty Wytrzymałości spadną do 0 lub gdy czar się zakończy.</p><p>Istota jest twoim sojusznikiem i sprzymierzeńcem twoich sojuszników. W walce dzieli z tobą Inicjatywę, ale wykonuje swoją turę natychmiast po tobie. Wykonuje twoje werbalne polecenia (nie wymaga to Akcji). Jeśli nie wydasz żadnych poleceń, wykonuje Akcję &amp;Reference[Dodge]{Unik} i porusza się tak, aby unikać niebezpieczeństwa.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Użyj kręgu komórki czaru jako kręgu czaru w bloku statystyk.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobGiantInsec statblock caption=false]</p>"
+            "description": "<p>Przywołujesz olbrzymiego stonogę, pająka lub osę (wybranego w momencie rzucania czaru). Pojawia się on w niezajętej przestrzeni, którą widzisz w zasięgu, i używa statystyk <strong>@UUID[Compendium.dnd-players-handbook.actors.Actor.phbmobGiantInsec]{Olbrzymiego Owada}</strong>. Wybrana forma określa niektóre szczegóły w jego statystykach. Istota znika, gdy jej Punkty Wytrzymałości spadną do 0 lub gdy czar się zakończy.</p><p>Istota jest twoim sojusznikiem i sprzymierzeńcem twoich sojuszników. W walce dzieli z tobą Inicjatywę, ale wykonuje swoją turę natychmiast po tobie. Wykonuje twoje werbalne polecenia (nie wymaga to Akcji). Jeśli nie wydasz żadnych poleceń, wykonuje Akcję &amp;Reference[Dodge]{Unik} i porusza się tak, aby unikać niebezpieczeństwa.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Użyj kręgu komórki czaru jako kręgu czaru w bloku statystyk.</p><p>@Embed[Compendium.dnd-players-handbook.actors.Actor.phbmobGiantInsec statblock caption=false]</p>"
         },
         "Glibness": {
             "name": "Elokwencja",
@@ -2234,12 +2234,12 @@
         },
         "Globe of Invulnerability": {
             "name": "Sfera niepodatności",
-            "description": "<p>Nieruchoma, migocząca bariera pojawia się w promieniu 10 stóp wokół ciebie i pozostaje na czas trwania czaru.</p><p>Każdy czar 5. kręgu lub niższego rzucony spoza bariery nie może wpłynąć na nic znajdującego się wewnątrz niej. Taki czar może celować w istoty i obiekty wewnątrz bariery, ale nie ma na nie żadnego efektu. Podobnie, obszar wewnątrz bariery jest wykluczony z obszarów działania takich czarów.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Bariera blokuje czary o 1 krąg wyższe za każdą komórkę czaru powyżej 6. kręgu.</p><p><strong>Blokowane poziomy czarów:</strong> [[@item.level - 1]] i niższe</p>",
+            "description": "<p>Nieruchoma, migocząca bariera pojawia się w promieniu 10 stóp wokół ciebie i pozostaje na czas trwania czaru.</p><p>Każdy czar 5. kręgu lub niższego rzucony spoza bariery nie może wpłynąć na nic znajdującego się wewnątrz niej. Taki czar może celować w istoty i obiekty wewnątrz bariery, ale nie ma na nie żadnego efektu. Podobnie, obszar wewnątrz bariery jest wykluczony z obszarów działania takich czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Bariera blokuje czary o 1 krąg wyższe za każdą komórkę czaru powyżej 6. kręgu.</p><p><strong>Blokowane poziomy czarów:</strong> [[@item.level - 1]] i niższe</p>",
             "materials": "szklany paciorek"
         },
         "Glyph of Warding": {
             "name": "Glif strażniczy",
-            "description": "<p>Wypisujesz glif, który później uwalnia magiczny efekt. Możesz umieścić go na powierzchni (takiej jak stół lub fragment podłogi) albo wewnątrz obiektu, który można zamknąć (np. książki lub kufra), aby ukryć glif. Glif może obejmować obszar nie większy niż 10 stóp średnicy. Jeśli powierzchnia lub obiekt zostanie przeniesiony o więcej niż 10 stóp od miejsca, w którym rzuciłeś ten czar, glif zostaje zniszczony, a czar kończy się bez aktywacji.</p><p>Glif jest niemal niewidoczny i wymaga udanego testu [[/check ability=wis skill=prc dc=@attributes.spelldc]] przeciwko ST rzutu obronnego twoich czarów, aby go dostrzec.</p><p>Podczas inskrypcji glifu określasz jego wyzwalacz oraz wybierasz, czy jest to wybuchowa runa, czy glif czaru, zgodnie z poniższym opisem.</p><p><strong>Ustawienie Wyzwalacza.</strong> Decydujesz, co aktywuje glif w momencie rzucania czaru. W przypadku glifów zapisanych na powierzchni częstymi wyzwalaczami są dotknięcie lub nadepnięcie na glif, usunięcie innego obiektu go zakrywającego lub zbliżenie się na określoną odległość. W przypadku glifów umieszczonych w obiekcie typowymi wyzwalaczami są otwarcie tego obiektu lub zobaczenie glifu. Po aktywacji glifu czar się kończy.</p><p>Możesz doprecyzować wyzwalacz tak, aby aktywowały go tylko istoty określonych typów (np. glif może działać tylko na Aberracje). Możesz również ustawić warunki dla istot, które nie aktywują glifu, np. tych, które wypowiedzą określone hasło.</p><p><strong>Wybuchowa Runa.</strong> Po aktywacji glif eksploduje magiczną energią w promieniu 20 stóp od jego środka. Każda istota w tym obszarze wykonuje rzut obronny na Zręczność [[/save ability=dex dc=@attributes.spelldc]]. W przypadku niepowodzenia istota otrzymuje 5k8 obrażeń od wybranego typu: [[/damage (@item.level + 2)d8 type=acid]]{Kwasu}, [[/damage (@item.level + 2)d8 type=cold]]{Zimna}, [[/damage (@item.level + 2)d8 type=fire]]{Ognia}, [[/damage (@item.level + 2)d8 type=lightning]]{Elektryczności} lub [[/damage (@item.level + 2)d8 type=thunder]]{Dźwięku} (wybór następuje w momencie tworzenia glifu). W przypadku sukcesu istota otrzymuje połowę tych obrażeń.</p><p><strong>Glif Czarów.</strong> Możesz przechować w glifie przygotowany czar 3. kręgu lub niższego, rzucając go jako część tworzenia glifu. Czar musi mieć pojedynczy cel lub działać na obszar. Rzucony w ten sposób czar nie wywołuje natychmiastowego efektu.</p><p>Kiedy glif zostaje aktywowany, przechowany czar zaczyna działać. Jeśli czar ma cel, jest nim istota, która aktywowała glif. Jeśli czar działa na obszar, obszar ten zostaje wycentrowany na tej istocie. Jeśli czar przyzywa wrogie istoty lub tworzy szkodliwe obiekty lub pułapki, pojawiają się one jak najbliżej intruza i atakują go. Jeśli czar wymaga Koncentracji, trwa on przez pełny czas swojej aktywacji.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia wybuchowej runy zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 3. Jeśli tworzysz glif czaru, możesz przechować w nim dowolny czar o poziomie równym lub niższym niż poziom komórki czaru użytej do rzucenia <em>Glifu Strażniczego</em>.</p><section class=\"secret\" id=\"secret-S9SAlMniIN14fjKi\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Wybuchowej Runy</strong> pozwala wybrać typ obrażeń w oknie rzutu.</p></section>",
+            "description": "<p>Wypisujesz glif, który później uwalnia magiczny efekt. Możesz umieścić go na powierzchni (takiej jak stół lub fragment podłogi) albo wewnątrz obiektu, który można zamknąć (np. książki lub kufra), aby ukryć glif. Glif może obejmować obszar nie większy niż 10 stóp średnicy. Jeśli powierzchnia lub obiekt zostanie przeniesiony o więcej niż 10 stóp od miejsca, w którym rzuciłeś ten czar, glif zostaje zniszczony, a czar kończy się bez aktywacji.</p><p>Glif jest niemal niewidoczny i wymaga udanego testu [[/check ability=wis skill=prc dc=@attributes.spelldc]] przeciwko ST rzutu obronnego twoich czarów, aby go dostrzec.</p><p>Podczas inskrypcji glifu określasz jego wyzwalacz oraz wybierasz, czy jest to wybuchowa runa, czy glif czaru, zgodnie z poniższym opisem.</p><p><strong>Ustawienie Wyzwalacza.</strong> Decydujesz, co aktywuje glif w momencie rzucania czaru. W przypadku glifów zapisanych na powierzchni częstymi wyzwalaczami są dotknięcie lub nadepnięcie na glif, usunięcie innego obiektu go zakrywającego lub zbliżenie się na określoną odległość. W przypadku glifów umieszczonych w obiekcie typowymi wyzwalaczami są otwarcie tego obiektu lub zobaczenie glifu. Po aktywacji glifu czar się kończy.</p><p>Możesz doprecyzować wyzwalacz tak, aby aktywowały go tylko istoty określonych typów (np. glif może działać tylko na Aberracje). Możesz również ustawić warunki dla istot, które nie aktywują glifu, np. tych, które wypowiedzą określone hasło.</p><p><strong>Wybuchowa Runa.</strong> Po aktywacji glif eksploduje magiczną energią w promieniu 20 stóp od jego środka. Każda istota w tym obszarze wykonuje rzut obronny na Zręczność [[/save ability=dex dc=@attributes.spelldc]]. W przypadku niepowodzenia istota otrzymuje 5k8 obrażeń od wybranego typu: [[/damage (@item.level + 2)d8 type=acid]]{Kwasu}, [[/damage (@item.level + 2)d8 type=cold]]{Zimna}, [[/damage (@item.level + 2)d8 type=fire]]{Ognia}, [[/damage (@item.level + 2)d8 type=lightning]]{Elektryczności} lub [[/damage (@item.level + 2)d8 type=thunder]]{Dźwięku} (wybór następuje w momencie tworzenia glifu). W przypadku sukcesu istota otrzymuje połowę tych obrażeń.</p><p><strong>Glif Czarów.</strong> Możesz przechować w glifie przygotowany czar 3. kręgu lub niższego, rzucając go jako część tworzenia glifu. Czar musi mieć pojedynczy cel lub działać na obszar. Rzucony w ten sposób czar nie wywołuje natychmiastowego efektu.</p><p>Kiedy glif zostaje aktywowany, przechowany czar zaczyna działać. Jeśli czar ma cel, jest nim istota, która aktywowała glif. Jeśli czar działa na obszar, obszar ten zostaje wycentrowany na tej istocie. Jeśli czar przyzywa wrogie istoty lub tworzy szkodliwe obiekty lub pułapki, pojawiają się one jak najbliżej intruza i atakują go. Jeśli czar wymaga Koncentracji, trwa on przez pełny czas swojej aktywacji.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia wybuchowej runy zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 3. Jeśli tworzysz glif czaru, możesz przechować w nim dowolny czar o poziomie równym lub niższym niż poziom komórki czaru użytej do rzucenia <em>Glifu Strażniczego</em>.</p><section class=\"secret\" id=\"secret-S9SAlMniIN14fjKi\"><p><strong>Notatka Foundry</strong></p><p>Aktywność <strong>Wybuchowej Runy</strong> pozwala wybrać typ obrażeń w oknie rzutu.</p></section>",
             "materials": "sproszkowany diament warty 200+ SZ, który czar zużywa",
             "activities": {
                 "Spell Glyph": {
@@ -2263,7 +2263,7 @@
         },
         "Grasping Vine": {
             "name": "Chwytne pnącze",
-            "description": "<p>Przywołujesz pnącze, które wyrasta z powierzchni w niezajętej przestrzeni, którą widzisz w zasięgu. Pnącze trwa przez czas działania czaru.</p><p>Wykonaj atak wręcz zaklęciem przeciwko istocie znajdującej się w promieniu 30 stóp od pnącza. W przypadku trafienia cel otrzymuje 4k8 obrażeń obuchowych i zostaje przyciągnięty do 30 stóp w kierunku pnącza. Jeśli cel jest Ogromny lub mniejszy, otrzymuje stan &amp;Reference[Grappled]{Pochwycony} (ST ucieczki równe twojemu ST rzutu obronnego przeciwko czarom). Pnącze może pochwycić tylko jedną istotę naraz, a ty możesz spowodować, że pnącze ją uwolni (nie wymaga Akcji).</p><p>Jako Akcję Dodatkową w swoich kolejnych turach możesz powtórzyć atak przeciwko istocie znajdującej się w promieniu 30 stóp od pnącza.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Liczba istot, które pnącze może pochwycić, zwiększa się o jeden za każdą komórkę czaru powyżej 4. kręgu.</p><p>Łączna liczba istot, które mogą zostać Pochwycone: [[@item.level - 3]]</p><h3>Testy Ucieczki</h3><p>[[/check ability=str skill=ath dc=@attributes.spelldc]]</p><p>[[/check ability=dex skill=acr dc=@attributes.spelldc]]</p>"
+            "description": "<p>Przywołujesz pnącze, które wyrasta z powierzchni w niezajętej przestrzeni, którą widzisz w zasięgu. Pnącze trwa przez czas działania czaru.</p><p>Wykonaj atak wręcz zaklęciem przeciwko istocie znajdującej się w promieniu 30 stóp od pnącza. W przypadku trafienia cel otrzymuje 4k8 obrażeń obuchowych i zostaje przyciągnięty do 30 stóp w kierunku pnącza. Jeśli cel jest Ogromny lub mniejszy, otrzymuje stan &amp;Reference[Grappled]{Pochwycony} (ST ucieczki równe twojemu ST rzutu obronnego przeciwko czarom). Pnącze może pochwycić tylko jedną istotę naraz, a ty możesz spowodować, że pnącze ją uwolni (nie wymaga Akcji).</p><p>Jako Akcję Dodatkową w swoich kolejnych turach możesz powtórzyć atak przeciwko istocie znajdującej się w promieniu 30 stóp od pnącza.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Liczba istot, które pnącze może pochwycić, zwiększa się o jeden za każdą komórkę czaru powyżej 4. kręgu.</p><p>Łączna liczba istot, które mogą zostać Pochwycone: [[@item.level - 3]]</p><h3>Testy Ucieczki</h3><p>[[/check ability=str skill=ath dc=@attributes.spelldc]]</p><p>[[/check ability=dex skill=acr dc=@attributes.spelldc]]</p>"
         },
         "Grease": {
             "name": "Tłuszcz",
@@ -2366,7 +2366,7 @@
         },
         "Guiding Bolt": {
             "name": "Pocisk wiodący",
-            "description": "<p>Rzucasz pocisk światła w kierunku istoty w zasięgu. Wykonaj atak dystansowy zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 4k6 obrażeń od Światłości, a następny test ataku przeciwko niemu przed końcem swojej następnej tury ma &Reference[Advantage]{Ułatwienie}.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+            "description": "<p>Rzucasz pocisk światła w kierunku istoty w zasięgu. Wykonaj atak dystansowy zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 4k6 obrażeń od Światłości, a następny test ataku przeciwko niemu przed końcem swojej następnej tury ma &Reference[Advantage]{Ułatwienie}.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
             "effects": {
                 "Guiding Bolt": {
                     "name": "Pocisk wiodący",
@@ -2386,7 +2386,7 @@
         },
         "Hail of Thorns": {
             "name": "Grad cierni",
-            "description": "<p>Gdy trafiasz istotę, ten czar tworzy deszcz cierni wyrastających z twojej broni dystansowej lub amunicji. Cel ataku oraz każda istota w promieniu 5 stóp od niego muszą wykonać rzut obronny na Zręczność. W przypadku niepowodzenia otrzymują 1k10 obrażeń kłutych, a w przypadku sukcesu połowę tej wartości.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k10 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+            "description": "<p>Gdy trafiasz istotę, ten czar tworzy deszcz cierni wyrastających z twojej broni dystansowej lub amunicji. Cel ataku oraz każda istota w promieniu 5 stóp od niego muszą wykonać rzut obronny na Zręczność. W przypadku niepowodzenia otrzymują 1k10 obrażeń kłutych, a w przypadku sukcesu połowę tej wartości.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k10 za każdą komórkę czaru powyżej 1. kręgu.</p>",
             "activation": "Natychmiast po trafieniu istoty bronią dystansową",
             "activationCondition": "Natychmiast po trafieniu istoty bronią dystansową",
             "activities": {
@@ -2446,15 +2446,15 @@
         },
         "Heal": {
             "name": "Uleczenie",
-            "description": "<p>Wybierasz istotę, którą widzisz w zasięgu. Pozytywna energia przepływa przez cel, przywracając mu 70 Punktów Wytrzymałości. Czar dodatkowo kończy efekty stanów &amp;Reference[Blinded]{Oślepiony}, &amp;Reference[Deafened]{Ogłuchły} i &amp;Reference[Poisoned]{Zatruty} na celu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Leczenie zwiększa się o 10 Punktów Wytrzymałości za każdą komórkę czaru powyżej 6. kręgu.</p>"
+            "description": "<p>Wybierasz istotę, którą widzisz w zasięgu. Pozytywna energia przepływa przez cel, przywracając mu 70 Punktów Wytrzymałości. Czar dodatkowo kończy efekty stanów &amp;Reference[Blinded]{Oślepiony}, &amp;Reference[Deafened]{Ogłuchły} i &amp;Reference[Poisoned]{Zatruty} na celu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 10 Punktów Wytrzymałości za każdą komórkę czaru powyżej 6. kręgu.</p>"
         },
         "Healing Word": {
             "name": "Kojące słowo",
-            "description": "<p>Istota wybrana przez ciebie, którą widzisz w zasięgu, odzyskuje Punkty Wytrzymałości równe 2k4 + twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Leczenie zwiększa się o 2k4 za każdą komórkę czaru powyżej 1. kręgu.</p>"
+            "description": "<p>Istota wybrana przez ciebie, którą widzisz w zasięgu, odzyskuje Punkty Wytrzymałości równe 2k4 + twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdą komórkę czaru powyżej 1. kręgu.</p>"
         },
         "Heat Metal": {
             "name": "Rozgrzanie metalu",
-            "description": "<p>Wybierasz wykonany z metalu przedmiot, taki jak metalowa broń lub zbroja ciężka lub średnia, który widzisz w zasięgu. Sprawiasz, że przedmiot rozgrzewa się do czerwoności. Każda istota mająca fizyczny kontakt z przedmiotem otrzymuje 2k8 obrażeń od ognia w momencie rzucenia czaru. Dopóki czar trwa, możesz w każdej swojej kolejnej turze użyć Akcji dodatkowej, aby ponownie zadać te obrażenia, jeśli przedmiot znajduje się w zasięgu.</p><p>Jeśli istota trzyma lub nosi ten przedmiot i otrzymuje od niego obrażenia, musi wykonać rzut obronny na Kondycję. W przypadku niepowodzenia istota musi upuścić przedmiot, jeśli jest to możliwe. Jeśli nie upuści przedmiotu, ma &Reference[Disadvantage]{Utrudnienie} w testach ataku i testach cech do początku swojej następnej tury.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 2. kręgu.</p>",
+            "description": "<p>Wybierasz wykonany z metalu przedmiot, taki jak metalowa broń lub zbroja ciężka lub średnia, który widzisz w zasięgu. Sprawiasz, że przedmiot rozgrzewa się do czerwoności. Każda istota mająca fizyczny kontakt z przedmiotem otrzymuje 2k8 obrażeń od ognia w momencie rzucenia czaru. Dopóki czar trwa, możesz w każdej swojej kolejnej turze użyć Akcji dodatkowej, aby ponownie zadać te obrażenia, jeśli przedmiot znajduje się w zasięgu.</p><p>Jeśli istota trzyma lub nosi ten przedmiot i otrzymuje od niego obrażenia, musi wykonać rzut obronny na Kondycję. W przypadku niepowodzenia istota musi upuścić przedmiot, jeśli jest to możliwe. Jeśli nie upuści przedmiotu, ma &Reference[Disadvantage]{Utrudnienie} w testach ataku i testach cech do początku swojej następnej tury.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 2. kręgu.</p>",
             "materials": "kawałek żelaza i płomień",
             "activities": {
                 "On Damage Save": {
@@ -2477,7 +2477,7 @@
         },
         "Hellish Rebuke": {
             "name": "Piekielna reprymenda",
-            "description": "<p>Istota, która zadała ci obrażenia, zostaje natychmiastowo otoczona zielonymi płomieniami. Wykonuje rzut obronny na Zręczność. W przypadku niepowodzenia otrzymuje 2k10 obrażeń od Ognia, a w przypadku sukcesu połowę tej wartości.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k10 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+            "description": "<p>Istota, która zadała ci obrażenia, zostaje natychmiastowo otoczona zielonymi płomieniami. Wykonuje rzut obronny na Zręczność. W przypadku niepowodzenia otrzymuje 2k10 obrażeń od Ognia, a w przypadku sukcesu połowę tej wartości.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k10 za każdą komórkę czaru powyżej 1. kręgu.</p>",
             "activation": "otrzymując obrażenia od istoty, którą widzisz w odległości do 60 stóp od siebie",
             "activationCondition": "otrzymując obrażenia od istoty, którą widzisz w odległości do 60 stóp od siebie",
             "activities": {
@@ -2509,7 +2509,7 @@
         },
         "Heroism": {
             "name": "Heroizm",
-            "description": "<p>Chętna istota, której dotykasz, zostaje napełniona odwagą. Dopóki czar trwa, istota ma &Reference[Immunity]{Niewrażliwość} na stan &Reference[Frightened]{Przerażony} i na początku każdej swojej tury zyskuje Tymczasowe Punkty Wytrzymałości równe twojemu modyfikatorowi cechy zaklinania.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 1. kręgu.</p>",
+            "description": "<p>Chętna istota, której dotykasz, zostaje napełniona odwagą. Dopóki czar trwa, istota ma &Reference[Immunity]{Niewrażliwość} na stan &Reference[Frightened]{Przerażony} i na początku każdej swojej tury zyskuje Tymczasowe Punkty Wytrzymałości równe twojemu modyfikatorowi cechy zaklinania.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 1. kręgu.</p>",
             "effects": {
                 "Bravery": {
                     "name": "Odwaga",
@@ -2519,7 +2519,7 @@
         },
         "Hex": {
             "name": "Urok",
-            "description": "<p>Naznaczasz klątwą istotę, którą widzisz w zasięgu. Dopóki czar trwa, zadajesz dodatkowe 1k6 obrażeń nekrotycznych celowi, gdy trafisz go testem ataku. Dodatkowo, wybierz jedną cechę, gdy rzucasz czar. Cel ma &Reference[Disadvantage]{Utrudnienie} w testach cechy wykonywanych przy użyciu wybranej cechy.</p><p>Jeśli cel spadnie do 0 Punktów Wytrzymałości przed zakończeniem czaru, możesz wykonać Akcję Dodatkową w późniejszej turze, aby nałożyć klątwę na nową istotę.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Twoja Koncentracja może trwać dłużej dzięki komórce czaru 2. kręgu (do 4 godzin), 3–4. kręgu (do 8 godzin) lub 5+ kręgu (24 godziny).</p>",
+            "description": "<p>Naznaczasz klątwą istotę, którą widzisz w zasięgu. Dopóki czar trwa, zadajesz dodatkowe 1k6 obrażeń nekrotycznych celowi, gdy trafisz go testem ataku. Dodatkowo, wybierz jedną cechę, gdy rzucasz czar. Cel ma &Reference[Disadvantage]{Utrudnienie} w testach cechy wykonywanych przy użyciu wybranej cechy.</p><p>Jeśli cel spadnie do 0 Punktów Wytrzymałości przed zakończeniem czaru, możesz wykonać Akcję Dodatkową w późniejszej turze, aby nałożyć klątwę na nową istotę.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Twoja Koncentracja może trwać dłużej dzięki komórce czaru 2. kręgu (do 4 godzin), 3–4. kręgu (do 8 godzin) lub 5+ kręgu (24 godziny).</p>",
             "materials": "skamieniałe oko traszki",
             "activities": {
                 "Bonus Hex Damage": {
@@ -2563,7 +2563,7 @@
         },
         "Hold Monster": {
             "name": "Unieruchomienie potwora",
-            "description": "<p>Wybierasz istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &Reference[Paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 5. kręgu.</p>",
+            "description": "<p>Wybierasz istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &Reference[Paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 5. kręgu.</p>",
             "materials": "prosty kawałek żelaza",
             "activities": {
                 "save": {
@@ -2579,7 +2579,7 @@
         },
         "Hold Person": {
             "name": "Unieruchomienie osoby",
-            "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać dodatkowego Humanoida za każdą komórkę czaru powyżej 2. kręgu.</p>",
+            "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkowego Humanoida za każdą komórkę czaru powyżej 2. kręgu.</p>",
             "materials": "prosty kawałek żelaza",
             "activities": {
                 "save": {
@@ -2618,7 +2618,7 @@
         },
         "Hunger of Hadar": {
             "name": "Głód Hadara",
-            "description": "<p>Otwierasz przejście do Odległej Dziedziny, regionu opanowanego przez niewypowiedziane koszmary. Pojawia się Sfera &amp;Reference[Darkness] o promieniu 20 stóp, skupiona na punkcie w zasięgu i trwająca przez czas trwania czaru. Sfera jest &amp;Reference[DifficultTerrain] i wypełniona dziwnymi szeptami oraz mlaskającymi odgłosami, słyszalnymi do 30 stóp. Żadne światło, magiczne ani inne, nie może oświetlić tego obszaru, a istoty całkowicie w nim znajdujące się mają stan &amp;Reference[Blinded].</p><p>Każda istota, która rozpoczyna turę w obszarze, otrzymuje 2k6 obrażeń od zimna. Każda istota, która kończy tam turę, musi wykonać udany Rzut Obrony na Zręczność lub otrzyma 2k6 obrażeń od kwasu od obcych macek.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu. </strong>Obrażenia od zimna lub kwasu (do wyboru) zwiększają się o 1k6 za każdy Krąg Czaru powyżej 3.</p>",
+            "description": "<p>Otwierasz przejście do Odległej Dziedziny, regionu opanowanego przez niewypowiedziane koszmary. Pojawia się Sfera &amp;Reference[Darkness] o promieniu 20 stóp, skupiona na punkcie w zasięgu i trwająca przez czas trwania czaru. Sfera jest &amp;Reference[DifficultTerrain] i wypełniona dziwnymi szeptami oraz mlaskającymi odgłosami, słyszalnymi do 30 stóp. Żadne światło, magiczne ani inne, nie może oświetlić tego obszaru, a istoty całkowicie w nim znajdujące się mają stan &amp;Reference[Blinded].</p><p>Każda istota, która rozpoczyna turę w obszarze, otrzymuje 2k6 obrażeń od zimna. Każda istota, która kończy tam turę, musi wykonać udany Rzut Obrony na Zręczność lub otrzyma 2k6 obrażeń od kwasu od obcych macek.</p><p><strong>Użycie komórki czaru wyższego kręgu. </strong>Obrażenia od zimna lub kwasu (do wyboru) zwiększają się o 1k6 za każdy Krąg Czaru powyżej 3.</p>",
             "materials": "marynowana macka",
             "activities": {
                 "Open Gateway": {
@@ -2635,7 +2635,7 @@
         },
         "Hunter's Mark": {
             "name": "Znak łowcy",
-            "description": "<p>Magicznie oznaczasz jedno stworzenie, które możesz zobaczyć w zasięgu, jako swoją zdobycz. Do momentu zakończenia działania czaru zadajesz celowi dodatkowe [[/damage]] obrażenia za każdym razem, gdy trafisz je Testem Ataku. Masz również Ułatwienie do wszystkich Testów [[/check ability=wis skill=prc]] lub [[/check ability=wis skill=sur]], które wykonujesz, aby je odnaleźć.</p><p>Jeśli cel spadnie do 0 Punktów Wytrzymałości przed zakończeniem działania czaru, możesz wykonać Akcję Dodatkową, aby przenieść znak na nowe stworzenie, które możesz zobaczyć w zasięgu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Twoja Koncentracja może trwać dłużej przy użyciu komórki czaru poziomu 3–4 (do 8 godzin) lub 5+ (do 24 godzin).</p>",
+            "description": "<p>Magicznie oznaczasz jedno stworzenie, które możesz zobaczyć w zasięgu, jako swoją zdobycz. Do momentu zakończenia działania czaru zadajesz celowi dodatkowe [[/damage]] obrażenia za każdym razem, gdy trafisz je Testem Ataku. Masz również Ułatwienie do wszystkich Testów [[/check ability=wis skill=prc]] lub [[/check ability=wis skill=sur]], które wykonujesz, aby je odnaleźć.</p><p>Jeśli cel spadnie do 0 Punktów Wytrzymałości przed zakończeniem działania czaru, możesz wykonać Akcję Dodatkową, aby przenieść znak na nowe stworzenie, które możesz zobaczyć w zasięgu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Twoja Koncentracja może trwać dłużej przy użyciu komórki czaru poziomu 3–4 (do 8 godzin) lub 5+ (do 24 godzin).</p>",
             "activities": {
                 "Bonus Mark Damage": {
                     "name": "Dodatkowe obrażenia znaku"
@@ -2674,7 +2674,7 @@
         },
         "Ice Knife": {
             "name": "Lodowy nóż",
-            "description": "<p>Tworzysz odłamek lodu i rzucasz go w kierunku jednej istoty w zasięgu. Wykonaj atak dystansowy zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 1k10 obrażeń kłutych. Trafienie lub nie, odłamek następnie wybucha. Cel oraz każda istota w promieniu 5 stóp od niego musi wykonać rzut obronny na Zręczność, w przeciwnym razie otrzymują 2k6 obrażeń od zimna.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia od zimna zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+            "description": "<p>Tworzysz odłamek lodu i rzucasz go w kierunku jednej istoty w zasięgu. Wykonaj atak dystansowy zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 1k10 obrażeń kłutych. Trafienie lub nie, odłamek następnie wybucha. Cel oraz każda istota w promieniu 5 stóp od niego musi wykonać rzut obronny na Zręczność, w przeciwnym razie otrzymują 2k6 obrażeń od zimna.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia od zimna zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
             "materials": "kropla wody lub kawałek lodu",
             "activities": {
                 "Shard Explosion": {
@@ -2685,7 +2685,7 @@
         },
         "Ice Storm": {
             "name": "Burza lodu",
-            "description": "<p>Grad spada w Walcu o promieniu 20 stóp i wysokości 40 stóp z centrum w punkcie w zasięgu. Każda istota w Walcu wykonuje rzut obronny na Zręczność. Istota otrzymuje 2k10 obrażeń obuchowych i 4k6 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p>Gradziny zamieniają grunt w Walcu w &amp;Reference[DifficultTerrain]{Trudny Teren} do końca swojej następnej tury.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia obuchowe zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 4.</p>",
+            "description": "<p>Grad spada w Walcu o promieniu 20 stóp i wysokości 40 stóp z centrum w punkcie w zasięgu. Każda istota w Walcu wykonuje rzut obronny na Zręczność. Istota otrzymuje 2k10 obrażeń obuchowych i 4k6 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p>Gradziny zamieniają grunt w Walcu w &amp;Reference[DifficultTerrain]{Trudny Teren} do końca swojej następnej tury.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia obuchowe zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 4.</p>",
             "materials": "rękawiczka z jednym palcem",
             "activities": {
                 "save": {
@@ -2747,7 +2747,7 @@
         },
         "Inflict Wounds": {
             "name": "Zadawanie ran",
-            "description": "<p>Istota, którą dotykasz, wykonuje rzut obronny na Kondycję, otrzymując 2k10 obrażeń nekrotycznych przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 1.</p>",
+            "description": "<p>Istota, którą dotykasz, wykonuje rzut obronny na Kondycję, otrzymując 2k10 obrażeń nekrotycznych przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 1.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
@@ -2756,7 +2756,7 @@
         },
         "Insect Plague": {
             "name": "Plaga owadów",
-            "description": "<p>Rój szarańczy wypełnia Sferę o promieniu 20 stóp z centrum w punkcie, który wybierasz w zasięgu. Sfera pozostaje przez czas trwania, a jej obszar jest o &amp;Reference[LightlyObscured]{Ograniczonej widoczności} i &amp;Reference[DifficultTerrain]{Trudnym Terenie}.</p><p>Gdy rój się pojawia, każda istota w nim wykonuje rzut obronny na Kondycję, otrzymując 4k10 obrażeń kłutych przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie. Istota wykonuje ten rzut także, gdy wchodzi w obszar czaru po raz pierwszy w turze lub kończy w nim swoją turę. Istota wykonuje ten rzut tylko raz na turę.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 5.</p>",
+            "description": "<p>Rój szarańczy wypełnia Sferę o promieniu 20 stóp z centrum w punkcie, który wybierasz w zasięgu. Sfera pozostaje przez czas trwania, a jej obszar jest o &amp;Reference[LightlyObscured]{Ograniczonej widoczności} i &amp;Reference[DifficultTerrain]{Trudnym Terenie}.</p><p>Gdy rój się pojawia, każda istota w nim wykonuje rzut obronny na Kondycję, otrzymując 4k10 obrażeń kłutych przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie. Istota wykonuje ten rzut także, gdy wchodzi w obszar czaru po raz pierwszy w turze lub kończy w nim swoją turę. Istota wykonuje ten rzut tylko raz na turę.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 5.</p>",
             "materials": "szarańcza",
             "activities": {
                 "save": {
@@ -2766,7 +2766,7 @@
         },
         "Invisibility": {
             "name": "Niewidzialność",
-            "description": "<p>Istota, którą dotykasz, otrzymuje stan &amp;Reference[invisible apply=false]{Niewidzialny} do końca czaru. Czar kończy się wcześniej natychmiast po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>",
+            "description": "<p>Istota, którą dotykasz, otrzymuje stan &amp;Reference[invisible apply=false]{Niewidzialny} do końca czaru. Czar kończy się wcześniej natychmiast po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>",
             "materials": "rzęsa w kleju arabskim",
             "effects": {
                 "Invisible": {
@@ -2777,7 +2777,7 @@
         },
         "Jallarzi's Storm of Radiance": {
             "name": "Burza światłości Jallarzi",
-            "description": "<p>Uwalniasz burzę migającego światła i Szalejącego grzmotu w Walcu o promieniu 10 stóp i wysokości 40 stóp z centrum w punkcie, który widzisz w zasięgu. Będąc w tym obszarze, istoty mają stany &amp;Reference[Blinded apply=false]{Oślepiony} oraz &amp;Reference[Deafened apply=false]{Ogłuchły} i nie mogą rzucać czarów z komponentem Werbalnym.</p><p>Gdy burza się pojawia, każda istota w niej wykonuje rzut obronny na Kondycję, otrzymując 2k10 obrażeń od światłości i 2k10 obrażeń od dźwięku przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie. Istota wykonuje ten rzut także, gdy wchodzi w obszar czaru po raz pierwszy w turze lub kończy w nim swoją turę. Istota wykonuje ten rzut tylko raz na turę.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia od światłości i od dźwięku zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 5.</p>",
+            "description": "<p>Uwalniasz burzę migającego światła i Szalejącego grzmotu w Walcu o promieniu 10 stóp i wysokości 40 stóp z centrum w punkcie, który widzisz w zasięgu. Będąc w tym obszarze, istoty mają stany &amp;Reference[Blinded apply=false]{Oślepiony} oraz &amp;Reference[Deafened apply=false]{Ogłuchły} i nie mogą rzucać czarów z komponentem Werbalnym.</p><p>Gdy burza się pojawia, każda istota w niej wykonuje rzut obronny na Kondycję, otrzymując 2k10 obrażeń od światłości i 2k10 obrażeń od dźwięku przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie. Istota wykonuje ten rzut także, gdy wchodzi w obszar czaru po raz pierwszy w turze lub kończy w nim swoją turę. Istota wykonuje ten rzut tylko raz na turę.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia od światłości i od dźwięku zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 5.</p>",
             "materials": "szczypta fosforu",
             "activities": {
                 "save": {
@@ -2793,7 +2793,7 @@
         },
         "Jump": {
             "name": "Skok",
-            "description": "<p>Dotykasz chętnej istoty. Raz w każdej ze swoich tur, dopóki czar trwa, ta istota może skoczyć do 30 stóp (9m), wydając 10 stóp (3m) ruchu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
+            "description": "<p>Dotykasz chętnej istoty. Raz w każdej ze swoich tur, dopóki czar trwa, ta istota może skoczyć do 30 stóp (9m), wydając 10 stóp (3m) ruchu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
             "materials": "tylna noga pasikonika",
             "effects": {
                 "Jump": {
@@ -2856,7 +2856,7 @@
         },
         "Lightning Arrow": {
             "name": "Piorunostrzał",
-            "description": "<p>Gdy twój atak trafia lub chybia cel, broń lub amunicja, której używasz, przekształca się w piorun. Zamiast otrzymać jakiekolwiek obrażenia lub inne efekty od ataku, cel otrzymuje 4k8 obrażeń od elektryczności przy trafieniu lub połowę tych obrażeń przy chybieniu. Następnie każda istota w promieniu 10 stóp od celu wykonuje rzut obronny na Zręczność, otrzymując 2k8 obrażeń od elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p>Następnie broń lub amunicja wraca do swojej normalnej formy.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia dla obu efektów czaru zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 3.</p>",
+            "description": "<p>Gdy twój atak trafia lub chybia cel, broń lub amunicja, której używasz, przekształca się w piorun. Zamiast otrzymać jakiekolwiek obrażenia lub inne efekty od ataku, cel otrzymuje 4k8 obrażeń od elektryczności przy trafieniu lub połowę tych obrażeń przy chybieniu. Następnie każda istota w promieniu 10 stóp od celu wykonuje rzut obronny na Zręczność, otrzymując 2k8 obrażeń od elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p>Następnie broń lub amunicja wraca do swojej normalnej formy.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia dla obu efektów czaru zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 3.</p>",
             "activation": "Natychmiast po trafieniu lub chybieniu celu atakiem dystansowym przy użyciu broni",
             "activationCondition": "Natychmiast po trafieniu lub chybieniu celu atakiem dystansowym przy użyciu broni",
             "activities": {
@@ -2867,7 +2867,7 @@
         },
         "Lightning Bolt": {
             "name": "Piorun",
-            "description": "<p>Uderzenie pioruna tworzące Prostą o długości 100 stóp i szerokości 5 stóp wystrzeliwuje od ciebie w wybranym przez ciebie kierunku. Każda istota w Prostej wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>",
+            "description": "<p>Uderzenie pioruna tworzące Prostą o długości 100 stóp i szerokości 5 stóp wystrzeliwuje od ciebie w wybranym przez ciebie kierunku. Każda istota w Prostej wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>",
             "materials": "kawałek futra i kryształowy pręt",
             "activities": {
                 "save": {
@@ -2892,7 +2892,7 @@
         },
         "Longstrider": {
             "name": "Szybkonogi",
-            "description": "<p>Dotykasz istoty. Szybkość celu zwiększa się o 10 stóp do zakończenia czaru.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz obrać za cel jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1. kręgu.</p>",
+            "description": "<p>Dotykasz istoty. Szybkość celu zwiększa się o 10 stóp do zakończenia czaru.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz obrać za cel jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1. kręgu.</p>",
             "materials": "szczypta ziemi",
             "effects": {
                 "Longstrider": {
@@ -2918,7 +2918,7 @@
         },
         "Magic Circle": {
             "name": "Krąg magii",
-            "description": "<p>Tworzysz Walec o promieniu 10 stóp i wysokości 20 stóp z magicznej energii, którego centrum znajduje się na punkcie na ziemi, który widzisz w zasięgu. Świecące runy pojawiają się tam, gdzie Walec przecina podłogę lub inną powierzchnię.</p><p>Wybierz jeden lub więcej z następujących typów istot: Niebianie, Żywiołaki, Fey, Plugawce lub Nieumarli. Krąg wpływa na istotę wybranego typu w następujący sposób:</p><ul><li>Istota nie może dobrowolnie wejść do Walca za pomocą niemagicznych środków. Jeśli istota próbuje użyć teleportacji lub podróży międzyplanarnej, by to zrobić, musi najpierw wykonać rzut obronny na Charyzmę.</li><li>Istota ma Utrudnienie w testach ataku przeciwko celom wewnątrz Walca.</li><li>Cele wewnątrz Walca nie mogą zostać opętane ani otrzymać stanu &amp;Reference[charmed apply=false]{Zauroczony} lub &amp;Reference[frightened apply=false]{Przerażony} od tej istoty.</li></ul><p>Za każdym razem, gdy rzucasz ten czar, możesz sprawić, że jego magia działa w odwrotnym kierunku, uniemożliwiając istocie wybranego typu opuszczenie Walca i chroniąc cele na zewnątrz.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Czas trwania zwiększa się o 1 godzinę za każdy krąg komórki czaru powyżej 3.</p>",
+            "description": "<p>Tworzysz Walec o promieniu 10 stóp i wysokości 20 stóp z magicznej energii, którego centrum znajduje się na punkcie na ziemi, który widzisz w zasięgu. Świecące runy pojawiają się tam, gdzie Walec przecina podłogę lub inną powierzchnię.</p><p>Wybierz jeden lub więcej z następujących typów istot: Niebianie, Żywiołaki, Fey, Plugawce lub Nieumarli. Krąg wpływa na istotę wybranego typu w następujący sposób:</p><ul><li>Istota nie może dobrowolnie wejść do Walca za pomocą niemagicznych środków. Jeśli istota próbuje użyć teleportacji lub podróży międzyplanarnej, by to zrobić, musi najpierw wykonać rzut obronny na Charyzmę.</li><li>Istota ma Utrudnienie w testach ataku przeciwko celom wewnątrz Walca.</li><li>Cele wewnątrz Walca nie mogą zostać opętane ani otrzymać stanu &amp;Reference[charmed apply=false]{Zauroczony} lub &amp;Reference[frightened apply=false]{Przerażony} od tej istoty.</li></ul><p>Za każdym razem, gdy rzucasz ten czar, możesz sprawić, że jego magia działa w odwrotnym kierunku, uniemożliwiając istocie wybranego typu opuszczenie Walca i chroniąc cele na zewnątrz.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Czas trwania zwiększa się o 1 godzinę za każdy krąg komórki czaru powyżej 3.</p>",
             "materials": "sól i sproszkowane srebro warte 100+ SZ, które czar zużywa",
             "activities": {
                 "save": {
@@ -2960,7 +2960,7 @@
         },
         "Magic Missile": {
             "name": "Magiczny pocisk",
-            "description": "<p>Tworzysz trzy świecące pociski magicznej mocy. Każdy pocisk uderza w istotę, którą wybierzesz i widzisz w zasięgu. Pocisk zadaje 1k4 + 1 obrażeń od mocy swojemu celowi. Wszystkie pociski uderzają jednocześnie, a ty możesz skierować je, by trafiły jedną istotę lub kilka.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Czar tworzy jeden dodatkowy pocisk za każdy krąg komórki czaru powyżej 1.</p><p>[[2 + @item.level]]{[[lookup @item.level]] pociski poziomu}</p>"
+            "description": "<p>Tworzysz trzy świecące pociski magicznej mocy. Każdy pocisk uderza w istotę, którą wybierzesz i widzisz w zasięgu. Pocisk zadaje 1k4 + 1 obrażeń od mocy swojemu celowi. Wszystkie pociski uderzają jednocześnie, a ty możesz skierować je, by trafiły jedną istotę lub kilka.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Czar tworzy jeden dodatkowy pocisk za każdy krąg komórki czaru powyżej 1.</p><p>[[2 + @item.level]]{[[lookup @item.level]] pociski poziomu}</p>"
         },
         "Magic Mouth": {
             "name": "Magiczne usta",
@@ -2969,7 +2969,7 @@
         },
         "Magic Weapon": {
             "name": "Magiczna broń",
-            "description": "<p>Dotykasz niemagicznej broni. Do końca czaru ta broń staje się magiczną bronią z premią +1 do testów ataku i rzutów na obrażenia. Czar kończy się wcześniej, jeśli rzucisz go ponownie.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Premia wzrasta do +2 przy komórce czaru o kręgu 3–5. Premia wzrasta do +3 przy komórce czaru o kręgu 6+.</p>",
+            "description": "<p>Dotykasz niemagicznej broni. Do końca czaru ta broń staje się magiczną bronią z premią +1 do testów ataku i rzutów na obrażenia. Czar kończy się wcześniej, jeśli rzucisz go ponownie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Premia wzrasta do +2 przy komórce czaru o kręgu 3–5. Premia wzrasta do +3 przy komórce czaru o kręgu 6+.</p>",
             "effects": {
                 "Magic Weapon +1": {
                     "name": "Broń magiczna +1",
@@ -3000,7 +3000,7 @@
         },
         "Major Image": {
             "name": "Większy obraz",
-            "description": "<p>Tworzysz obraz obiektu, istoty lub innego widocznego zjawiska, które nie jest większe niż Sześcian o boku 20 stóp. Obraz pojawia się w miejscu, które widzisz w zasięgu, i trwa przez czas trwania. Wydaje się rzeczywisty, włącznie z dźwiękami, zapachami i temperaturą odpowiednimi dla przedstawionej rzeczy, ale nie może zadawać obrażeń ani wywoływać stanów.</p><p>Jeśli znajdujesz się w zasięgu iluzji, możesz wykonać Akcję Magii, by przesunąć obraz w inne miejsce w zasięgu. Gdy obraz zmienia lokalizację, możesz zmienić jego wygląd tak, by jego ruchy wydawały się naturalne dla obrazu. Na przykład, jeśli tworzysz obraz istoty i przesuwasz go, możesz zmienić obraz tak, by wyglądał, jakby szedł. Podobnie możesz sprawić, by iluzja wydawała różne dźwięki w różnym czasie, na przykład prowadząc rozmowę.</p><p>Fizyczna interakcja z obrazem ujawnia, że jest iluzją, ponieważ rzeczy mogą przez niego przenikać. Istota, która wykonuje akcję Badanie, by zbadać obraz, może ustalić, że jest to iluzja, wykonując udany test [[/check ability=int skill=inv dc=@attributes.spelldc]] przeciwko twojemu ST rzutu obronnego na czary. Jeśli istota rozpozna iluzję za to, czym jest, może widzieć przez obraz, a jego inne cechy sensoryczne stają się dla niej słabe.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Czar trwa, aż zostanie rozproszony, bez potrzeby Koncentracji, jeśli rzucony z komórką czaru o kręgu 4+.</p>",
+            "description": "<p>Tworzysz obraz obiektu, istoty lub innego widocznego zjawiska, które nie jest większe niż Sześcian o boku 20 stóp. Obraz pojawia się w miejscu, które widzisz w zasięgu, i trwa przez czas trwania. Wydaje się rzeczywisty, włącznie z dźwiękami, zapachami i temperaturą odpowiednimi dla przedstawionej rzeczy, ale nie może zadawać obrażeń ani wywoływać stanów.</p><p>Jeśli znajdujesz się w zasięgu iluzji, możesz wykonać Akcję Magii, by przesunąć obraz w inne miejsce w zasięgu. Gdy obraz zmienia lokalizację, możesz zmienić jego wygląd tak, by jego ruchy wydawały się naturalne dla obrazu. Na przykład, jeśli tworzysz obraz istoty i przesuwasz go, możesz zmienić obraz tak, by wyglądał, jakby szedł. Podobnie możesz sprawić, by iluzja wydawała różne dźwięki w różnym czasie, na przykład prowadząc rozmowę.</p><p>Fizyczna interakcja z obrazem ujawnia, że jest iluzją, ponieważ rzeczy mogą przez niego przenikać. Istota, która wykonuje akcję Badanie, by zbadać obraz, może ustalić, że jest to iluzja, wykonując udany test [[/check ability=int skill=inv dc=@attributes.spelldc]] przeciwko twojemu ST rzutu obronnego na czary. Jeśli istota rozpozna iluzję za to, czym jest, może widzieć przez obraz, a jego inne cechy sensoryczne stają się dla niej słabe.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Czar trwa, aż zostanie rozproszony, bez potrzeby Koncentracji, jeśli rzucony z komórką czaru o kręgu 4+.</p>",
             "materials": "kawałek runa",
             "activities": {
                 "Create Illusion": {
@@ -3015,7 +3015,7 @@
         },
         "Mass Cure Wounds": {
             "name": "Masowe leczenie ran",
-            "description": "<p>Fala uzdrawiającej energii rozchodzi się od punktu, który widzisz w zasięgu. Wybierz do sześciu istot w Sferze o promieniu 30 stóp z centrum w tym punkcie. Każdy cel odzyskuje Punkty Wytrzymałości równe 5k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Leczenie zwiększa się o 1k8 za każdy krąg komórki czaru powyżej 5.</p>"
+            "description": "<p>Fala uzdrawiającej energii rozchodzi się od punktu, który widzisz w zasięgu. Wybierz do sześciu istot w Sferze o promieniu 30 stóp z centrum w tym punkcie. Każdy cel odzyskuje Punkty Wytrzymałości równe 5k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 1k8 za każdy krąg komórki czaru powyżej 5.</p>"
         },
         "Mass Heal": {
             "name": "Masowe uleczenie",
@@ -3023,11 +3023,11 @@
         },
         "Mass Healing Word": {
             "name": "Masowe kojące słowo",
-            "description": "<p>Do sześciu istot wybranych przez ciebie, które widzisz w zasięgu, odzyskuje Punkty Wytrzymałości równe 2k4 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Leczenie zwiększa się o 1k4 za każdy krąg komórki czaru powyżej 3.</p>"
+            "description": "<p>Do sześciu istot wybranych przez ciebie, które widzisz w zasięgu, odzyskuje Punkty Wytrzymałości równe 2k4 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 1k4 za każdy krąg komórki czaru powyżej 3.</p>"
         },
         "Mass Suggestion": {
             "name": "Masowa sugestia",
-            "description": "<p>Zasugerujesz sposób działania — opisany w nie więcej niż 25 słowach — maksymalnie dwunastu istotom, które widzisz w zasięgu, a które mogą cię słyszeć i rozumieć. Sugestia musi brzmieć osiągalnie i nie może obejmować czegoś, co ewidentnie zadałoby obrażenia celom lub ich sojusznikom. Na przykład możesz powiedzieć: „Idźcie do wioski tą drogą i pomóżcie mieszkańcom zbierać plony do zachodu słońca.” Albo możesz powiedzieć: „Teraz nie czas na przemoc. Upuszczajcie broń i tańczcie! Przestańcie za godzinę.”</p><p>Każdy cel musi wykonać rzut obronny na Mądrość, inaczej otrzymuje stan &amp;Reference[Charmed apply=false]{Zauroczony} przez czas trwania lub dopóki ty lub twoi sojusznicy nie zadacie mu obrażeń. Każdy Zauroczony cel realizuje sugestię najlepiej, jak potrafi. Sugerowane działanie może trwać przez cały czas trwania, ale jeśli może zostać ukończone w krótszym czasie, czar kończy się dla celu po jego zakończeniu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Czas trwania jest dłuższy przy komórce czaru o kręgu 7 (10 dni), 8 (30 dni) lub 9 (366 dni).</p>",
+            "description": "<p>Zasugerujesz sposób działania — opisany w nie więcej niż 25 słowach — maksymalnie dwunastu istotom, które widzisz w zasięgu, a które mogą cię słyszeć i rozumieć. Sugestia musi brzmieć osiągalnie i nie może obejmować czegoś, co ewidentnie zadałoby obrażenia celom lub ich sojusznikom. Na przykład możesz powiedzieć: „Idźcie do wioski tą drogą i pomóżcie mieszkańcom zbierać plony do zachodu słońca.” Albo możesz powiedzieć: „Teraz nie czas na przemoc. Upuszczajcie broń i tańczcie! Przestańcie za godzinę.”</p><p>Każdy cel musi wykonać rzut obronny na Mądrość, inaczej otrzymuje stan &amp;Reference[Charmed apply=false]{Zauroczony} przez czas trwania lub dopóki ty lub twoi sojusznicy nie zadacie mu obrażeń. Każdy Zauroczony cel realizuje sugestię najlepiej, jak potrafi. Sugerowane działanie może trwać przez cały czas trwania, ale jeśli może zostać ukończone w krótszym czasie, czar kończy się dla celu po jego zakończeniu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Czas trwania jest dłuższy przy komórce czaru o kręgu 7 (10 dni), 8 (30 dni) lub 9 (366 dni).</p>",
             "materials": "język węża",
             "activities": {
                 "save": {
@@ -3062,7 +3062,7 @@
         },
         "Melf's Acid Arrow": {
             "name": "Kwasowa strzała Melfa",
-            "description": "<p>Migocząca zielona strzała pędzi ku celowi w zasięgu i rozpryskuje się w fontannie kwasu. Wykonaj dystansowy atak czarem przeciwko celowi. Przy trafieniu cel otrzymuje 4k4 obrażeń od kwasu i 2k4 obrażeń od kwasu na końcu swojej następnej tury. Przy chybieniu strzała ochlapuje cel kwasem, zadając połowę początkowych obrażeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia (zarówno początkowe, jak i późniejsze) zwiększają się o 1k4 za każdy krąg komórki czaru powyżej 2.</p>",
+            "description": "<p>Migocząca zielona strzała pędzi ku celowi w zasięgu i rozpryskuje się w fontannie kwasu. Wykonaj dystansowy atak czarem przeciwko celowi. Przy trafieniu cel otrzymuje 4k4 obrażeń od kwasu i 2k4 obrażeń od kwasu na końcu swojej następnej tury. Przy chybieniu strzała ochlapuje cel kwasem, zadając połowę początkowych obrażeń.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia (zarówno początkowe, jak i późniejsze) zwiększają się o 1k4 za każdy krąg komórki czaru powyżej 2.</p>",
             "materials": "sproszkowany liść rabarbaru",
             "activities": {
                 "Cast and Attack": {
@@ -3124,7 +3124,7 @@
         },
         "Mind Spike": {
             "name": "Myślowy cierń",
-            "description": "<p>Wbijasz kolec psionicznej energii w umysł jednej istoty, którą widzisz w zasięgu. Cel wykonuje rzut obronny na Mądrość, otrzymując 3k8 obrażeń psychicznych przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie. Przy nieudanym rzucie zawsze znasz lokalizację celu do końca czaru, ale tylko wtedy, gdy obaj jesteście na tym samym planie egzystencji. Gdy posiadasz tę wiedzę, cel nie może się przed tobą ukryć, a jeśli ma stan &amp;Reference[invisible apply=false]{Niewidzialny}, nie odnosi z tego stanu korzyści przeciwko tobie.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 2.</p>",
+            "description": "<p>Wbijasz kolec psionicznej energii w umysł jednej istoty, którą widzisz w zasięgu. Cel wykonuje rzut obronny na Mądrość, otrzymując 3k8 obrażeń psychicznych przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie. Przy nieudanym rzucie zawsze znasz lokalizację celu do końca czaru, ale tylko wtedy, gdy obaj jesteście na tym samym planie egzystencji. Gdy posiadasz tę wiedzę, cel nie może się przed tobą ukryć, a jeśli ma stan &amp;Reference[invisible apply=false]{Niewidzialny}, nie odnosi z tego stanu korzyści przeciwko tobie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 2.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
@@ -3206,7 +3206,7 @@
         },
         "Modify Memory": {
             "name": "Podmiana wspomnień",
-            "description": "<p>Próbujesz przeformułować wspomnienia innej istoty. Jedna istota, którą widzisz w zasięgu, wykonuje rzut obronny na Mądrość. Jeśli walczysz z tą istotą, ma ona &amp;Reference[Advantage]{Ułatwienie} w rzucie. W przypadku niepowodzenia cel otrzymuje stan &amp;Reference[Charmed]{Zauroczony} na czas trwania czaru. Podczas bycia Zauroczoną w ten sposób, istota ma również stan &amp;Reference[Incapacitated]{Obezwładniony} i jest nieświadoma swojego otoczenia, choć może cię słyszeć. Jeśli otrzyma jakiekolwiek obrażenia lub zostanie celem innego czaru, czar się kończy, a wspomnienia nie zostają zmodyfikowane.</p><p>Podczas trwania tego czaru możesz wpłynąć na wspomnienia celu o zdarzeniu, które miało miejsce w ciągu ostatnich 24 godzin i trwało nie dłużej niż 10 minut. Możesz trwale usunąć wszystkie wspomnienia o tym zdarzeniu, pozwolić celowi przypomnieć sobie to zdarzenie z pełną klarownością, zmienić szczegóły wspomnienia o tym zdarzeniu lub stworzyć wspomnienie o innym zdarzeniu.</p><p>Aby wspomnienia mogły zostać zmienione, musisz rozmawiać z celem, opisując, jak jego wspomnienia zostaną zmodyfikowane, a cel musi rozumieć twój język, aby zmodyfikowane wspomnienia miały wpływ. Jego umysł wypełni luki w szczegółach twojego opisu. Jeśli czar zakończy się, zanim skończysz opisywać zmodyfikowane wspomnienia, pamięć istoty nie zostanie zmieniona. W przeciwnym razie zmodyfikowane wspomnienia zostaną wchłonięte, gdy czar się zakończy.</p><p>Zmienione wspomnienie niekoniecznie wpływa na zachowanie istoty, szczególnie jeśli wspomnienie kłóci się z naturalnymi skłonnościami, nastawieniem lub przekonaniami istoty. Nielogiczne zmienione wspomnienie, takie jak fałszywe wspomnienie, jak bardzo istota cieszyła się pływaniem w kwasie, jest traktowane jako zły sen. Mistrz Gry może uznać zmodyfikowane wspomnienie za zbyt nonsensowne, by miało jakikolwiek wpływ na istotę.</p><p>Czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRemoveCurs]{Zdjęcie Klątwy}</em> lub <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]{Większe Przywrócenie}</em> rzucony na cel przywraca prawdziwą pamięć istoty.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz zmienić wspomnienia celu o zdarzeniu, które miało miejsce do 7 dni temu (komórka czaru 6. poziomu), 30 dni temu (komórka czaru 7. poziomu), 365 dni temu (komórka czaru 8. poziomu) lub w dowolnym momencie w przeszłości istoty (komórka czaru 9. poziomu).</p>",
+            "description": "<p>Próbujesz przeformułować wspomnienia innej istoty. Jedna istota, którą widzisz w zasięgu, wykonuje rzut obronny na Mądrość. Jeśli walczysz z tą istotą, ma ona &amp;Reference[Advantage]{Ułatwienie} w rzucie. W przypadku niepowodzenia cel otrzymuje stan &amp;Reference[Charmed]{Zauroczony} na czas trwania czaru. Podczas bycia Zauroczoną w ten sposób, istota ma również stan &amp;Reference[Incapacitated]{Obezwładniony} i jest nieświadoma swojego otoczenia, choć może cię słyszeć. Jeśli otrzyma jakiekolwiek obrażenia lub zostanie celem innego czaru, czar się kończy, a wspomnienia nie zostają zmodyfikowane.</p><p>Podczas trwania tego czaru możesz wpłynąć na wspomnienia celu o zdarzeniu, które miało miejsce w ciągu ostatnich 24 godzin i trwało nie dłużej niż 10 minut. Możesz trwale usunąć wszystkie wspomnienia o tym zdarzeniu, pozwolić celowi przypomnieć sobie to zdarzenie z pełną klarownością, zmienić szczegóły wspomnienia o tym zdarzeniu lub stworzyć wspomnienie o innym zdarzeniu.</p><p>Aby wspomnienia mogły zostać zmienione, musisz rozmawiać z celem, opisując, jak jego wspomnienia zostaną zmodyfikowane, a cel musi rozumieć twój język, aby zmodyfikowane wspomnienia miały wpływ. Jego umysł wypełni luki w szczegółach twojego opisu. Jeśli czar zakończy się, zanim skończysz opisywać zmodyfikowane wspomnienia, pamięć istoty nie zostanie zmieniona. W przeciwnym razie zmodyfikowane wspomnienia zostaną wchłonięte, gdy czar się zakończy.</p><p>Zmienione wspomnienie niekoniecznie wpływa na zachowanie istoty, szczególnie jeśli wspomnienie kłóci się z naturalnymi skłonnościami, nastawieniem lub przekonaniami istoty. Nielogiczne zmienione wspomnienie, takie jak fałszywe wspomnienie, jak bardzo istota cieszyła się pływaniem w kwasie, jest traktowane jako zły sen. Mistrz Gry może uznać zmodyfikowane wspomnienie za zbyt nonsensowne, by miało jakikolwiek wpływ na istotę.</p><p>Czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRemoveCurs]{Zdjęcie Klątwy}</em> lub <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterRes]{Większe Przywrócenie}</em> rzucony na cel przywraca prawdziwą pamięć istoty.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz zmienić wspomnienia celu o zdarzeniu, które miało miejsce do 7 dni temu (komórka czaru 6. poziomu), 30 dni temu (komórka czaru 7. poziomu), 365 dni temu (komórka czaru 8. poziomu) lub w dowolnym momencie w przeszłości istoty (komórka czaru 9. poziomu).</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
@@ -3221,7 +3221,7 @@
         },
         "Moonbeam": {
             "name": "Księżycowy promień",
-            "description": "<p>Okrągły, srebrzysty promień bladego światła spada w cylindrze o promieniu 5 stóp i wysokości 40 stóp, którego środek znajduje się w wybranym punkcie w zasięgu. Dopóki czar trwa, Cylindr wypełnia Słabe światło, a ty możesz wykonać Akcję Magii w kolejnych turach, aby przesunąć Cylindr o maksymalnie 60 stóp.</p><p>Gdy Cylindr pojawi się, każda istota w jego obrębie wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia istota otrzymuje 2k10 obrażeń od światłości, a jeśli istota była zmiennokształtna (na przykład wskutek czaru <em>Polimorfia</em>), wraca do swojej prawdziwej formy i nie może ponownie się zmienić, dopóki nie opuści Cylindra. W przypadku sukcesu istota otrzymuje tylko połowę obrażeń. Istota wykonuje ten rzut także, gdy obszar czaru wejdzie w jej przestrzeń, a także gdy wchodzi w obszar czaru lub kończy turę w jego obrębie. Istota wykonuje ten rzut tylko raz na turę.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k10 za każdą komórkę czaru powyżej 2. kręgu.</p>",
+            "description": "<p>Okrągły, srebrzysty promień bladego światła spada w cylindrze o promieniu 5 stóp i wysokości 40 stóp, którego środek znajduje się w wybranym punkcie w zasięgu. Dopóki czar trwa, Cylindr wypełnia Słabe światło, a ty możesz wykonać Akcję Magii w kolejnych turach, aby przesunąć Cylindr o maksymalnie 60 stóp.</p><p>Gdy Cylindr pojawi się, każda istota w jego obrębie wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia istota otrzymuje 2k10 obrażeń od światłości, a jeśli istota była zmiennokształtna (na przykład wskutek czaru <em>Polimorfia</em>), wraca do swojej prawdziwej formy i nie może ponownie się zmienić, dopóki nie opuści Cylindra. W przypadku sukcesu istota otrzymuje tylko połowę obrażeń. Istota wykonuje ten rzut także, gdy obszar czaru wejdzie w jej przestrzeń, a także gdy wchodzi w obszar czaru lub kończy turę w jego obrębie. Istota wykonuje ten rzut tylko raz na turę.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k10 za każdą komórkę czaru powyżej 2. kręgu.</p>",
             "materials": "liść księżycowego nasiona",
             "activities": {
                 "save": {
@@ -3300,7 +3300,7 @@
         },
         "Otiluke's Freezing Sphere": {
             "name": "Mrożąca sfera Otiluke’a",
-            "description": "<p>Zimna kula strzela od ciebie w wybrany punkt w zasięgu, gdzie wybucha w sferze o promieniu 60 stóp. Każda istota w tym obszarze wykonuje rzut obronny na Kondycję, otrzymując 10k6 obrażeń od zimna w przypadku niepowodzenia, lub połowę tej wartości w przypadku sukcesu.</p><p>Jeśli kula uderzy w zbiornik wodny, zamraża wodę na głębokość 6 cali (15cm) na obszarze 30 stóp kwadratowych. Lód ten utrzymuje się przez 1 minutę. Istoty, które pływały na powierzchni zamarzniętej wody, zostają uwięzione w lodzie i otrzymują stan &amp;Reference[Restrained]{Unieruchomiony}. Uwięziona istota może wykonać akcję, aby wykonać test [[/check ability=str skill=ath dc=@attributes.spelldc]] przeciwko twojemu rzutowi obronnemu, aby się uwolnić.</p><p>Po zakończeniu rzucania czaru możesz powstrzymać się od wypuszczenia kuli. Jeśli to zrobisz, kula wielkości pocisku procy, chłodna w dotyku, pojawia się w twojej ręce. W dowolnym momencie ty lub istota, której przekażesz kulę, możecie ją rzucić (do 40 stóp, czyli 12m) lub wystrzelić za pomocą procy (na normalny zasięg procy). Kula rozpada się przy uderzeniu, powodując ten sam efekt, co normalne użycie czaru. Możesz również położyć kulę na ziemi, nie rozbijając jej. Po 1 minucie, jeśli kula nie została wcześniej rozbita, eksploduje.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 6. kręgu.</p>",
+            "description": "<p>Zimna kula strzela od ciebie w wybrany punkt w zasięgu, gdzie wybucha w sferze o promieniu 60 stóp. Każda istota w tym obszarze wykonuje rzut obronny na Kondycję, otrzymując 10k6 obrażeń od zimna w przypadku niepowodzenia, lub połowę tej wartości w przypadku sukcesu.</p><p>Jeśli kula uderzy w zbiornik wodny, zamraża wodę na głębokość 6 cali (15cm) na obszarze 30 stóp kwadratowych. Lód ten utrzymuje się przez 1 minutę. Istoty, które pływały na powierzchni zamarzniętej wody, zostają uwięzione w lodzie i otrzymują stan &amp;Reference[Restrained]{Unieruchomiony}. Uwięziona istota może wykonać akcję, aby wykonać test [[/check ability=str skill=ath dc=@attributes.spelldc]] przeciwko twojemu rzutowi obronnemu, aby się uwolnić.</p><p>Po zakończeniu rzucania czaru możesz powstrzymać się od wypuszczenia kuli. Jeśli to zrobisz, kula wielkości pocisku procy, chłodna w dotyku, pojawia się w twojej ręce. W dowolnym momencie ty lub istota, której przekażesz kulę, możecie ją rzucić (do 40 stóp, czyli 12m) lub wystrzelić za pomocą procy (na normalny zasięg procy). Kula rozpada się przy uderzeniu, powodując ten sam efekt, co normalne użycie czaru. Możesz również położyć kulę na ziemi, nie rozbijając jej. Po 1 minucie, jeśli kula nie została wcześniej rozbita, eksploduje.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 6. kręgu.</p>",
             "materials": "miniaturowa kryształowa kula",
             "activities": {
                 "Cast and Fire": {
@@ -3409,7 +3409,7 @@
         },
         "Phantasmal Killer": {
             "name": "Urojony zabójca",
-            "description": "<p>Sięgasz do koszmarów istoty, którą widzisz w zasięgu, i tworzysz iluzję jej najgłębszych lęków, widoczną tylko dla niej. Cel wykonuje Rzut Obrony na Mądrość. Przy nieudanym rzucie cel otrzymuje 4k10 obrażeń psychicznych i ma Utrudnienie do Testów Cech oraz Testów Ataku przez czas trwania czaru. Przy udanym rzucie cel otrzymuje połowę obrażeń, a czar się kończy.</p><p>Przez czas trwania czaru cel wykonuje Rzut Obrony [[/save ability=wis dc=@attributes.spell.dc]] na końcu każdej swojej tury. Przy nieudanym rzucie ponownie otrzymuje obrażenia psychiczne. Przy udanym rzucie czar się kończy.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu. </strong>Obrażenia zwiększają się o 1k10 za każdy Krąg Czaru powyżej 4.</p><section id=\"secret-mEqeb4gkG1Itpvh3\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Powiązany Efekt Aktywny nie obejmuje zmian zapewniających Utrudnienie do Testów Ataku i należy je zastosować ręcznie.</p></section>",
+            "description": "<p>Sięgasz do koszmarów istoty, którą widzisz w zasięgu, i tworzysz iluzję jej najgłębszych lęków, widoczną tylko dla niej. Cel wykonuje Rzut Obrony na Mądrość. Przy nieudanym rzucie cel otrzymuje 4k10 obrażeń psychicznych i ma Utrudnienie do Testów Cech oraz Testów Ataku przez czas trwania czaru. Przy udanym rzucie cel otrzymuje połowę obrażeń, a czar się kończy.</p><p>Przez czas trwania czaru cel wykonuje Rzut Obrony [[/save ability=wis dc=@attributes.spell.dc]] na końcu każdej swojej tury. Przy nieudanym rzucie ponownie otrzymuje obrażenia psychiczne. Przy udanym rzucie czar się kończy.</p><p><strong>Użycie komórki czaru wyższego kręgu. </strong>Obrażenia zwiększają się o 1k10 za każdy Krąg Czaru powyżej 4.</p><section id=\"secret-mEqeb4gkG1Itpvh3\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Powiązany Efekt Aktywny nie obejmuje zmian zapewniających Utrudnienie do Testów Ataku i należy je zastosować ręcznie.</p></section>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
@@ -3437,7 +3437,7 @@
         },
         "Planar Binding": {
             "name": "Sferalne wiązanie",
-            "description": "<p>Próbujesz związać Celestiala, Żywiołaka, Feya lub Plugawcę do swojej służby. Stworzenie musi znajdować się w zasięgu przez cały czas rzucania czaru. (Zwykle istota jest najpierw przywoływana do środka odwróconej wersji czaru <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMagicCircl]{Krąg magii}</em>, aby je uwięzić, podczas gdy ten czar jest rzucany.) Po zakończeniu rzucania czaru, cel musi wykonać rzut obronny na Charyzmę. W przypadku niepowodzenia, istota zostaje związana do służenia ci przez czas trwania czaru. Jeśli stworzenie zostało przywołane lub stworzone przez inny czar, czas trwania tego czaru jest wydłużany, aby pasował do czasu trwania tego czaru.</p><p>Związana istota musi wykonywać twoje rozkazy najlepiej jak potrafi. Możesz nakazać istocie towarzyszyć ci w wyprawie, pilnować jakiegoś miejsca lub dostarczyć wiadomość. Jeśli istota jest wroga, stara się wypaczyć twoje rozkazy, aby osiągnąć swoje własne cele. Jeśli istota w pełni wykona twoje rozkazy przed zakończeniem czaru, podróżuje do ciebie, aby poinformować cię o tym, jeśli jesteś na tej samej sferze. Jeśli jesteś na innej sferze, wraca do miejsca, w którym ją związałeś, i pozostaje tam do zakończenia czaru.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Czas trwania zwiększa się wraz z użyciem komórki czaru 6. kręgu (10 dni), 7. (30 dni), 8. (180 dni) i 9. (366 dni).</p>",
+            "description": "<p>Próbujesz związać Celestiala, Żywiołaka, Feya lub Plugawcę do swojej służby. Stworzenie musi znajdować się w zasięgu przez cały czas rzucania czaru. (Zwykle istota jest najpierw przywoływana do środka odwróconej wersji czaru <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMagicCircl]{Krąg magii}</em>, aby je uwięzić, podczas gdy ten czar jest rzucany.) Po zakończeniu rzucania czaru, cel musi wykonać rzut obronny na Charyzmę. W przypadku niepowodzenia, istota zostaje związana do służenia ci przez czas trwania czaru. Jeśli stworzenie zostało przywołane lub stworzone przez inny czar, czas trwania tego czaru jest wydłużany, aby pasował do czasu trwania tego czaru.</p><p>Związana istota musi wykonywać twoje rozkazy najlepiej jak potrafi. Możesz nakazać istocie towarzyszyć ci w wyprawie, pilnować jakiegoś miejsca lub dostarczyć wiadomość. Jeśli istota jest wroga, stara się wypaczyć twoje rozkazy, aby osiągnąć swoje własne cele. Jeśli istota w pełni wykona twoje rozkazy przed zakończeniem czaru, podróżuje do ciebie, aby poinformować cię o tym, jeśli jesteś na tej samej sferze. Jeśli jesteś na innej sferze, wraca do miejsca, w którym ją związałeś, i pozostaje tam do zakończenia czaru.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Czas trwania zwiększa się wraz z użyciem komórki czaru 6. kręgu (10 dni), 7. (30 dni), 8. (180 dni) i 9. (366 dni).</p>",
             "materials": "klejnot warty 1 000+ SZ, który czar zużywa",
             "activities": {
                 "save": {
@@ -3533,7 +3533,7 @@
         },
         "Prayer of Healing": {
             "name": "Uzdrawiająca modlitwa",
-            "description": "<p>Do pięciu wybranych przez ciebie istot, które pozostają w zasięgu przez cały czas rzucania czaru, zyskuje korzyści z &amp;Reference[shortrest]{Krótkiego odpoczynku} i odzyskuje również 2k8 Punktów wytrzymałości. Istota nie może ponownie zostać objęta działaniem tego czaru, dopóki nie ukończy Długiego odpoczynku.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu. </strong>Liczba przywracanych Punktów wytrzymałości zwiększa się o 1k8 za każdy krąg komórki czaru powyżej 2. kręgu.</p>",
+            "description": "<p>Do pięciu wybranych przez ciebie istot, które pozostają w zasięgu przez cały czas rzucania czaru, zyskuje korzyści z &amp;Reference[shortrest]{Krótkiego odpoczynku} i odzyskuje również 2k8 Punktów wytrzymałości. Istota nie może ponownie zostać objęta działaniem tego czaru, dopóki nie ukończy Długiego odpoczynku.</p><p><strong>Użycie komórki czaru wyższego kręgu. </strong>Liczba przywracanych Punktów wytrzymałości zwiększa się o 1k8 za każdy krąg komórki czaru powyżej 2. kręgu.</p>",
             "effects": {
                 "Healed by Prayer": {
                     "name": "Uzdrowiony przez modlitwę",
@@ -3771,7 +3771,7 @@
         },
         "Ray of Sickness": {
             "name": "Promień zatrucia",
-            "description": "<p>Wystrzeliwujesz zielonkawy promień w kierunku istoty w zasięgu. Wykonaj dystansowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 2k8 obrażeń od trucizn i zyskuje stan &amp;Reference[Poisoned]{Zatruty} do końca swojej następnej tury.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+            "description": "<p>Wystrzeliwujesz zielonkawy promień w kierunku istoty w zasięgu. Wykonaj dystansowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 2k8 obrażeń od trucizn i zyskuje stan &amp;Reference[Poisoned]{Zatruty} do końca swojej następnej tury.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 1. kręgu.</p>",
             "effects": {
                 "Poisoned": {
                     "name": "Zatruty"
@@ -3940,7 +3940,7 @@
         },
         "Scorching Ray": {
             "name": "Wypalający promień",
-            "description": "<p>Rzucasz trzy ogniste promienie. Możesz skierować je na jeden cel w zasięgu lub na kilka. Wykonaj dystansowy test ataku zaklęciem dla każdego promienia. W przypadku trafienia cel otrzymuje 2k6 obrażeń od ognia.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Tworzysz jeden dodatkowy promień za każdą komórkę czaru powyżej 2. kręgu.</p><p>[[@item.level + 1]]{Łączna Liczba Promieni}</p>"
+            "description": "<p>Rzucasz trzy ogniste promienie. Możesz skierować je na jeden cel w zasięgu lub na kilka. Wykonaj dystansowy test ataku zaklęciem dla każdego promienia. W przypadku trafienia cel otrzymuje 2k6 obrażeń od ognia.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Tworzysz jeden dodatkowy promień za każdą komórkę czaru powyżej 2. kręgu.</p><p>[[@item.level + 1]]{Łączna Liczba Promieni}</p>"
         },
         "Scrying": {
             "name": "Wizja",
@@ -3993,7 +3993,7 @@
         },
         "Searing Smite": {
             "name": "Palące ugodzenie",
-            "description": "<p>Gdy trafisz cel, otrzymuje on dodatkowe 1k6 obrażeń od ognia w wyniku ataku. Na początku każdej ze swoich tur, aż do zakończenia czaru, cel otrzymuje 1k6 obrażeń od ognia, a następnie wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia czar trwa dalej. W przypadku sukcesu czar się kończy.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Wszystkie obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+            "description": "<p>Gdy trafisz cel, otrzymuje on dodatkowe 1k6 obrażeń od ognia w wyniku ataku. Na początku każdej ze swoich tur, aż do zakończenia czaru, cel otrzymuje 1k6 obrażeń od ognia, a następnie wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia czar trwa dalej. W przypadku sukcesu czar się kończy.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Wszystkie obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
             "activation": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
             "activationCondition": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
             "activities": {
@@ -4078,7 +4078,7 @@
         },
         "Shatter": {
             "name": "Trzask",
-            "description": "<p>Głośny dźwięk eksploduje z wybranego przez ciebie punktu w zasięgu. Każda istota znajdująca się w sferze o promieniu 10 stóp, której centrum jest ten punkt, wykonuje rzut obronny na Kondycję, otrzymując 3k8 obrażeń od dźwięku w przypadku niepowodzenia lub połowę tej wartości w przypadku sukcesu. Konstruktor ma Utrudnienie w tym rzucie.</p><p>Niemagiczny przedmiot, który nie jest noszony ani trzymany, również otrzymuje obrażenia, jeśli znajduje się w obszarze działania czaru.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 2. kręgu.</p>",
+            "description": "<p>Głośny dźwięk eksploduje z wybranego przez ciebie punktu w zasięgu. Każda istota znajdująca się w sferze o promieniu 10 stóp, której centrum jest ten punkt, wykonuje rzut obronny na Kondycję, otrzymując 3k8 obrażeń od dźwięku w przypadku niepowodzenia lub połowę tej wartości w przypadku sukcesu. Konstruktor ma Utrudnienie w tym rzucie.</p><p>Niemagiczny przedmiot, który nie jest noszony ani trzymany, również otrzymuje obrażenia, jeśli znajduje się w obszarze działania czaru.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 2. kręgu.</p>",
             "materials": "odłamek miki",
             "activities": {
                 "save": {
@@ -4148,7 +4148,7 @@
         },
         "Shining Smite": {
             "name": "Lśniące ugodzenie",
-            "description": "<p>Cel trafiony tym uderzeniem otrzymuje dodatkowe 2k6 obrażeń od światłości z tego ataku. Do zakończenia czaru cel emituje &amp;Reference[BrightLight] w promieniu 5 stóp, testy ataku przeciwko niemu mają Ułatwienie, a cel nie może czerpać korzyści ze stanu &amp;Reference[Invisible].</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 2. kręgu.</p>",
+            "description": "<p>Cel trafiony tym uderzeniem otrzymuje dodatkowe 2k6 obrażeń od światłości z tego ataku. Do zakończenia czaru cel emituje &amp;Reference[BrightLight] w promieniu 5 stóp, testy ataku przeciwko niemu mają Ułatwienie, a cel nie może czerpać korzyści ze stanu &amp;Reference[Invisible].</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 2. kręgu.</p>",
             "activation": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
             "activationCondition": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
             "effects": {
@@ -4288,7 +4288,7 @@
         },
         "Spider Climb": {
             "name": "Pajęcza wspinaczka",
-            "description": "<p>Do momentu zakończenia czaru jedna chętna istota, której dotkniesz, zyskuje zdolność poruszania się w górę, w dół oraz po pionowych powierzchniach i sufitach, pozostawiając ręce wolne. Cel zyskuje także szybkość wspinaczki równą swojej szybkości poruszania się.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 2. kręgu.</p><section class=\"secret\" id=\"secret-4LoECjSnyIsXFdKY\"><p><strong>Notatka Foundry</strong></p><p>Aktywny efekt zapewniany przez aktywność <strong>Rzucenia</strong> podnosi szybkość wspinaczki postaci do wartości „1”, wskazując jej równoważność z szybkością chodzenia.</p></section>",
+            "description": "<p>Do momentu zakończenia czaru jedna chętna istota, której dotkniesz, zyskuje zdolność poruszania się w górę, w dół oraz po pionowych powierzchniach i sufitach, pozostawiając ręce wolne. Cel zyskuje także szybkość wspinaczki równą swojej szybkości poruszania się.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 2. kręgu.</p><section class=\"secret\" id=\"secret-4LoECjSnyIsXFdKY\"><p><strong>Notatka Foundry</strong></p><p>Aktywny efekt zapewniany przez aktywność <strong>Rzucenia</strong> podnosi szybkość wspinaczki postaci do wartości „1”, wskazując jej równoważność z szybkością chodzenia.</p></section>",
             "materials": "kropla bitumu i pająk",
             "effects": {
                 "Spider Climb": {
@@ -4303,7 +4303,7 @@
         },
         "Spirit Guardians": {
             "name": "Duchowi strażnicy",
-            "description": "<p>Ochronne duchy krążą wokół ciebie w emanacji o promieniu 15 stóp przez cały czas działania czaru. Jeśli jesteś dobry lub neutralny, ich spektralna forma wygląda na anielską lub fey (twój wybór). Jeśli jesteś zły, mają demoniczny wygląd.</p><p>Gdy rzucasz ten czar, możesz wyznaczyć istoty, które nie będą nim dotknięte. Szybkość wszystkich innych istot w obrębie emanacji zostaje zmniejszona o połowę, a za każdym razem, gdy emanacja wejdzie w obszar istoty, istota znajdzie się w jej obszar lub zakończy w niej swoją turę, musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje 3k8 obrażeń od światłości (jeśli jesteś dobry lub neutralny) lub 3k8 obrażeń nekrotycznych (jeśli jesteś zły). W przypadku sukcesu otrzymuje połowę tych obrażeń. Istota wykonuje ten rzut obronny tylko raz na turę.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 3. kręgu.</p>",
+            "description": "<p>Ochronne duchy krążą wokół ciebie w emanacji o promieniu 15 stóp przez cały czas działania czaru. Jeśli jesteś dobry lub neutralny, ich spektralna forma wygląda na anielską lub fey (twój wybór). Jeśli jesteś zły, mają demoniczny wygląd.</p><p>Gdy rzucasz ten czar, możesz wyznaczyć istoty, które nie będą nim dotknięte. Szybkość wszystkich innych istot w obrębie emanacji zostaje zmniejszona o połowę, a za każdym razem, gdy emanacja wejdzie w obszar istoty, istota znajdzie się w jej obszar lub zakończy w niej swoją turę, musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje 3k8 obrażeń od światłości (jeśli jesteś dobry lub neutralny) lub 3k8 obrażeń nekrotycznych (jeśli jesteś zły). W przypadku sukcesu otrzymuje połowę tych obrażeń. Istota wykonuje ten rzut obronny tylko raz na turę.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 3. kręgu.</p>",
             "materials": "zwoje modlitwy",
             "activities": {
                 "Cast and Save": {
@@ -4320,7 +4320,7 @@
         },
         "Spiritual Weapon": {
             "name": "Duchowa broń",
-            "description": "<p>Tworzysz unoszącą się, spektralną siłę przypominającą wybraną przez ciebie broń, która trwa przez cały czas działania czaru. Siła pojawia się w zasięgu w wybranym przez ciebie miejscu, a następnie możesz natychmiast wykonać jeden wręczowy atak zaklęciem przeciwko istocie znajdującej się w odległości 5 stóp od niej. W przypadku trafienia cel otrzymuje obrażenia od mocy równe 1k8 + twój modyfikator zdolności rzucania czarów.</p><p>Jako Akcję Dodatkową w swoich kolejnych turach możesz przesunąć siłę o maksymalnie 20 stóp i ponowić atak przeciwko istocie w odległości 5 stóp od niej.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 2. kręgu.</p>"
+            "description": "<p>Tworzysz unoszącą się, spektralną siłę przypominającą wybraną przez ciebie broń, która trwa przez cały czas działania czaru. Siła pojawia się w zasięgu w wybranym przez ciebie miejscu, a następnie możesz natychmiast wykonać jeden wręczowy atak zaklęciem przeciwko istocie znajdującej się w odległości 5 stóp od niej. W przypadku trafienia cel otrzymuje obrażenia od mocy równe 1k8 + twój modyfikator zdolności rzucania czarów.</p><p>Jako Akcję Dodatkową w swoich kolejnych turach możesz przesunąć siłę o maksymalnie 20 stóp i ponowić atak przeciwko istocie w odległości 5 stóp od niej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 2. kręgu.</p>"
         },
         "Staggering Smite": {
             "name": "Wstrząsające ugodzenie",
@@ -4693,7 +4693,7 @@
         },
         "Tasha's Hideous Laughter": {
             "name": "Ohydny śmiech Tashy",
-            "description": "<p>Jedna istota twojego wyboru, którą widzisz w zasięgu, wykonuje rzut obronny na Mądrość. W przypadku niepowodzenia ma stany &amp;Reference[prone apply=false]{Powalony} i &amp;Reference[incapacitated apply=false]{Obezwładniony} przez czas trwania czaru. W tym czasie niepohamowanie się śmieje, jeśli potrafi się śmiać, i nie może zakończyć stanu Powalony na sobie.</p><p>Na końcu każdej z jej tur i za każdym razem, gdy otrzyma obrażenia, wykonuje kolejny rzut obronny [[/save ability=wis dc=@attributes.spelldc]]. Cel ma Ułatwienie na rzucie, jeśli rzut obronny jest wywołany przez obrażenia. W przypadku sukcesu czar kończy się.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę na każdy poziom komórki czaru powyżej 1.</p>",
+            "description": "<p>Jedna istota twojego wyboru, którą widzisz w zasięgu, wykonuje rzut obronny na Mądrość. W przypadku niepowodzenia ma stany &amp;Reference[prone apply=false]{Powalony} i &amp;Reference[incapacitated apply=false]{Obezwładniony} przez czas trwania czaru. W tym czasie niepohamowanie się śmieje, jeśli potrafi się śmiać, i nie może zakończyć stanu Powalony na sobie.</p><p>Na końcu każdej z jej tur i za każdym razem, gdy otrzyma obrażenia, wykonuje kolejny rzut obronny [[/save ability=wis dc=@attributes.spelldc]]. Cel ma Ułatwienie na rzucie, jeśli rzut obronny jest wywołany przez obrażenia. W przypadku sukcesu czar kończy się.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę na każdy poziom komórki czaru powyżej 1.</p>",
             "materials": "tarta i pióro",
             "activities": {
                 "save": {
@@ -4778,7 +4778,7 @@
         },
         "Thunderous Smite": {
             "name": "Grzmiące ugodzenie",
-            "description": "<p>Twój cios brzmi grzmotem, który jest słyszalny w promieniu 300 stóp od ciebie, a cel otrzymuje dodatkowe 2k6 obrażeń od dźwięku grzmotu. Dodatkowo, jeśli cel jest istotą, musi zdać rzut obronny na Siłę lub zostać odepchnięty o 10 stóp od ciebie i otrzymać stan &amp;Reference[prone]{Powalony}.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy poziom komórki czaru powyżej 1.</p>",
+            "description": "<p>Twój cios brzmi grzmotem, który jest słyszalny w promieniu 300 stóp od ciebie, a cel otrzymuje dodatkowe 2k6 obrażeń od dźwięku grzmotu. Dodatkowo, jeśli cel jest istotą, musi zdać rzut obronny na Siłę lub zostać odepchnięty o 10 stóp od ciebie i otrzymać stan &amp;Reference[prone]{Powalony}.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy poziom komórki czaru powyżej 1.</p>",
             "activation": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
             "activationCondition": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
             "activities": {
@@ -4796,7 +4796,7 @@
         },
         "Thunderwave": {
             "name": "Fala gromu",
-            "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
+            "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
@@ -4933,7 +4933,7 @@
         },
         "Vampiric Touch": {
             "name": "Wampiryczny dotyk",
-            "description": "<p>Dotyk twojej ręki otoczonej cieniem może wysysać siłę życiową z innych, aby uleczyć twoje rany. Wykonaj dystansowy test ataku zaklęciem przeciwko jednej istocie w zasięgu. W przypadku trafienia cel otrzymuje 3k6 obrażeń nekrotycznych, a ty odzyskujesz Punkty Wytrzymałości równe połowie zadanych obrażeń nekrotycznych.</p><p>Do momentu zakończenia czaru możesz ponownie wykonać atak w każdej swojej turze jako Akcję Magii, celując w tę samą istotę lub inną.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy poziom komórki czaru powyżej 3.</p>"
+            "description": "<p>Dotyk twojej ręki otoczonej cieniem może wysysać siłę życiową z innych, aby uleczyć twoje rany. Wykonaj dystansowy test ataku zaklęciem przeciwko jednej istocie w zasięgu. W przypadku trafienia cel otrzymuje 3k6 obrażeń nekrotycznych, a ty odzyskujesz Punkty Wytrzymałości równe połowie zadanych obrażeń nekrotycznych.</p><p>Do momentu zakończenia czaru możesz ponownie wykonać atak w każdej swojej turze jako Akcję Magii, celując w tę samą istotę lub inną.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy poziom komórki czaru powyżej 3.</p>"
         },
         "Vicious Mockery": {
             "name": "Zjadliwe szyderstwo",
@@ -4952,7 +4952,7 @@
         },
         "Vitriolic Sphere": {
             "name": "Żrąca kula",
-            "description": "<p>Wskazujesz miejsce w zasięgu, a świecąca kula o średnicy 1 stopy (30 cm) z kwasem pędzi w to miejsce i wybucha w Sferze o promieniu 6 metrów (20 stóp). Każda istota w tym obszarze wykonuje rzut obronny na Zręczność. W przypadku nieudanego rzutu, istota otrzymuje 10k4 obrażeń od kwasu oraz dodatkowe [[/damage 5k4 type=acid]] obrażenia od kwasu na końcu swojej następnej tury. W przypadku udanego rzutu, istota otrzymuje jedynie połowę początkowych obrażeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Początkowe obrażenia wzrastają o 2k4 za każdy poziom komórki czaru wyższego niż 4.</p>",
+            "description": "<p>Wskazujesz miejsce w zasięgu, a świecąca kula o średnicy 1 stopy (30 cm) z kwasem pędzi w to miejsce i wybucha w Sferze o promieniu 6 metrów (20 stóp). Każda istota w tym obszarze wykonuje rzut obronny na Zręczność. W przypadku nieudanego rzutu, istota otrzymuje 10k4 obrażeń od kwasu oraz dodatkowe [[/damage 5k4 type=acid]] obrażenia od kwasu na końcu swojej następnej tury. W przypadku udanego rzutu, istota otrzymuje jedynie połowę początkowych obrażeń.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Początkowe obrażenia wzrastają o 2k4 za każdy poziom komórki czaru wyższego niż 4.</p>",
             "materials": "kropla żółci",
             "activities": {
                 "save": {
@@ -4971,7 +4971,7 @@
         },
         "Wall of Fire": {
             "name": "Ściana ognia",
-            "description": "<p>Tworzysz ścianę ognia na solidnej powierzchni w zasięgu. Ściana może mieć długość do 18 metrów (60 stóp), wysokość 6 metrów (20 stóp) i grubość 30 cm (1 stopa), lub być pierścieniem o średnicy do 6 metrów (20 stóp), wysokości 6 metrów (20 stóp) i grubości 30 cm (1 stopa). Ściana jest nieprzezroczysta i trwa przez czas trwania czaru.</p><p>Gdy ściana pojawia się, każda istota w jej obszarze wykonuje rzut obronny na Zręczność, otrzymując 5k8 obrażeń od ognia w przypadku nieudanego rzutu lub połowę tej liczby w przypadku udanego.</p><p>Jedna strona ściany, wybrana przez ciebie przy rzucaniu tego czaru, zadaje 5k8 obrażeń od ognia każdej istocie, która kończy swoją turę w odległości 3 metrów (10 stóp) od tej strony lub wewnątrz ściany. Istota otrzymuje te same obrażenia, gdy po raz pierwszy wchodzi w ścianę w swojej turze lub kończy w niej swoją turę. Druga strona ściany nie zadaje żadnych obrażeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia wzrastają o 1k8 za każdy poziom komórki czaru wyższego niż 4.</p>",
+            "description": "<p>Tworzysz ścianę ognia na solidnej powierzchni w zasięgu. Ściana może mieć długość do 18 metrów (60 stóp), wysokość 6 metrów (20 stóp) i grubość 30 cm (1 stopa), lub być pierścieniem o średnicy do 6 metrów (20 stóp), wysokości 6 metrów (20 stóp) i grubości 30 cm (1 stopa). Ściana jest nieprzezroczysta i trwa przez czas trwania czaru.</p><p>Gdy ściana pojawia się, każda istota w jej obszarze wykonuje rzut obronny na Zręczność, otrzymując 5k8 obrażeń od ognia w przypadku nieudanego rzutu lub połowę tej liczby w przypadku udanego.</p><p>Jedna strona ściany, wybrana przez ciebie przy rzucaniu tego czaru, zadaje 5k8 obrażeń od ognia każdej istocie, która kończy swoją turę w odległości 3 metrów (10 stóp) od tej strony lub wewnątrz ściany. Istota otrzymuje te same obrażenia, gdy po raz pierwszy wchodzi w ścianę w swojej turze lub kończy w niej swoją turę. Druga strona ściany nie zadaje żadnych obrażeń.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia wzrastają o 1k8 za każdy poziom komórki czaru wyższego niż 4.</p>",
             "materials": "kawałek węgla drzewnego",
             "activities": {
                 "Create Wall": {
@@ -4999,7 +4999,7 @@
         },
         "Wall of Ice": {
             "name": "Ściana lodu",
-            "description": "<p>Tworzysz ścianę lodu na solidnej powierzchni w zasięgu. Możesz uformować ją w hemisferyczną kopułę lub kulę o promieniu do 10 stóp albo stworzyć płaską powierzchnię złożoną z maksymalnie dziesięciu paneli o wymiarach 10 stóp na 10 stóp (3m na 3m). Każdy panel musi stykać się z przynajmniej jednym innym panelem. W każdej formie ściana ma grubość 1 stopy (30 cm) i trwa przez czas działania czaru.</p><p>Jeśli ściana przecina przestrzeń zajmowaną przez istotę w chwili pojawienia się, istota zostaje wypchnięta na jedną stronę ściany (ty wybierasz, na którą) i wykonuje rzut obronny na Zręczność, otrzymując 10k6 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p>Ściana jest obiektem, który może zostać uszkodzony i tym samym przebity. Ma KP 12 i 30 Punktów Wytrzymałości na każde 10 stóp sekcji, posiada Niewrażliwość na obrażenia od zimna, trucizn i psychiczne oraz Podatność na obrażenia od ognia. Zmniejszenie sekcji 10 stóp ściany do 0 Punktów Wytrzymałości niszczy ją i pozostawia w miejscu, które zajmowała, warstwę lodowatego powietrza.</p><p>Istota przechodząca przez warstwę lodowatego powietrza po raz pierwszy w turze wykonuje rzut obronny na Kondycję, otrzymując 5k6 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zadawane przez ścianę w chwili pojawienia się zwiększają się o 2k6, a obrażenia od przejścia przez warstwę lodowatego powietrza zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 6.</p>",
+            "description": "<p>Tworzysz ścianę lodu na solidnej powierzchni w zasięgu. Możesz uformować ją w hemisferyczną kopułę lub kulę o promieniu do 10 stóp albo stworzyć płaską powierzchnię złożoną z maksymalnie dziesięciu paneli o wymiarach 10 stóp na 10 stóp (3m na 3m). Każdy panel musi stykać się z przynajmniej jednym innym panelem. W każdej formie ściana ma grubość 1 stopy (30 cm) i trwa przez czas działania czaru.</p><p>Jeśli ściana przecina przestrzeń zajmowaną przez istotę w chwili pojawienia się, istota zostaje wypchnięta na jedną stronę ściany (ty wybierasz, na którą) i wykonuje rzut obronny na Zręczność, otrzymując 10k6 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p>Ściana jest obiektem, który może zostać uszkodzony i tym samym przebity. Ma KP 12 i 30 Punktów Wytrzymałości na każde 10 stóp sekcji, posiada Niewrażliwość na obrażenia od zimna, trucizn i psychiczne oraz Podatność na obrażenia od ognia. Zmniejszenie sekcji 10 stóp ściany do 0 Punktów Wytrzymałości niszczy ją i pozostawia w miejscu, które zajmowała, warstwę lodowatego powietrza.</p><p>Istota przechodząca przez warstwę lodowatego powietrza po raz pierwszy w turze wykonuje rzut obronny na Kondycję, otrzymując 5k6 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zadawane przez ścianę w chwili pojawienia się zwiększają się o 2k6, a obrażenia od przejścia przez warstwę lodowatego powietrza zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 6.</p>",
             "materials": "kawałek kwarcu",
             "targetAffects": "stała powierzchnia",
             "activities": {
@@ -5034,7 +5034,7 @@
         },
         "Wall of Thorns": {
             "name": "Ściana cierni",
-            "description": "<p>Tworzysz ścianę splątanych zarośli pełnych ostrych jak igły cierni. Ściana pojawia się w zasięgu na solidnej powierzchni i trwa przez czas działania czaru. Możesz wybrać, czy ściana ma mieć do 60 stóp długości, 10 stóp wysokości i 5 stóp grubości, czy też formę koła o średnicy 20 stóp, wysokości do 20 stóp i grubości 5 stóp. Ściana blokuje linię wzroku.</p><p>Gdy ściana się pojawia, każda istota w jej obszarze wykonuje rzut obronny na Zręczność, otrzymując 7k8 obrażeń kłutych przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p>Istota może poruszać się przez ścianę, choć powoli i boleśnie. Za każdy 1 stopę (30 cm), którą istota przemierzy przez ścianę, musi zużyć 4 stopy (1,2m) ruchu. Ponadto, gdy istota po raz pierwszy w turze wejdzie w przestrzeń w ścianie lub zakończy tam swoją turę, wykonuje rzut obronny na Zręczność, otrzymując 7k8 obrażeń ciętych przy nieudanym rzucie lub połowę tych obrażeń przy udanym. Istota wykonuje ten rzut obronny tylko raz na turę.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Oba typy obrażeń zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 6.</p>",
+            "description": "<p>Tworzysz ścianę splątanych zarośli pełnych ostrych jak igły cierni. Ściana pojawia się w zasięgu na solidnej powierzchni i trwa przez czas działania czaru. Możesz wybrać, czy ściana ma mieć do 60 stóp długości, 10 stóp wysokości i 5 stóp grubości, czy też formę koła o średnicy 20 stóp, wysokości do 20 stóp i grubości 5 stóp. Ściana blokuje linię wzroku.</p><p>Gdy ściana się pojawia, każda istota w jej obszarze wykonuje rzut obronny na Zręczność, otrzymując 7k8 obrażeń kłutych przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p>Istota może poruszać się przez ścianę, choć powoli i boleśnie. Za każdy 1 stopę (30 cm), którą istota przemierzy przez ścianę, musi zużyć 4 stopy (1,2m) ruchu. Ponadto, gdy istota po raz pierwszy w turze wejdzie w przestrzeń w ścianie lub zakończy tam swoją turę, wykonuje rzut obronny na Zręczność, otrzymując 7k8 obrażeń ciętych przy nieudanym rzucie lub połowę tych obrażeń przy udanym. Istota wykonuje ten rzut obronny tylko raz na turę.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Oba typy obrażeń zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 6.</p>",
             "materials": "garść cierni",
             "activities": {
                 "Create Wall": {
@@ -5166,7 +5166,7 @@
         },
         "Witch Bolt": {
             "name": "Wiedźmi pocisk",
-            "description": "<p>Promień trzaskającej energii pędzi w stronę istoty w zasięgu, tworząc ciągły łuk błyskawic między tobą a celem. Wykonaj dystansowy test ataku czarem przeciwko niej. W przypadku trafienia cel otrzymuje 2k12 obrażeń od elektryczności.</p><p>W każdej z twoich kolejnych tur możesz użyć Akcji dodatkowej, aby automatycznie zadać celowi 1k12 obrażeń od elektryczności, nawet jeśli pierwszy atak chybił.</p><p>Czar kończy się, jeśli cel kiedykolwiek znajdzie się poza zasięgiem czaru lub jeśli ma &amp;Reference[totalcover]{Całkowita osłona} od ciebie.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Początkowe obrażenia zwiększają się o 1k12 za każdy krąg komórki czaru powyżej 1.</p>",
+            "description": "<p>Promień trzaskającej energii pędzi w stronę istoty w zasięgu, tworząc ciągły łuk błyskawic między tobą a celem. Wykonaj dystansowy test ataku czarem przeciwko niej. W przypadku trafienia cel otrzymuje 2k12 obrażeń od elektryczności.</p><p>W każdej z twoich kolejnych tur możesz użyć Akcji dodatkowej, aby automatycznie zadać celowi 1k12 obrażeń od elektryczności, nawet jeśli pierwszy atak chybił.</p><p>Czar kończy się, jeśli cel kiedykolwiek znajdzie się poza zasięgiem czaru lub jeśli ma &amp;Reference[totalcover]{Całkowita osłona} od ciebie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Początkowe obrażenia zwiększają się o 1k12 za każdy krąg komórki czaru powyżej 1.</p>",
             "materials": "gałązka uderzona piorunem",
             "activities": {
                 "Bonus Action Damage": {
@@ -5205,7 +5205,7 @@
         },
         "Wrathful Smite": {
             "name": "Gniewne ugodzenie",
-            "description": "<p>Cel otrzymuje dodatkowe 1k6 obrażeń nekrotycznych od ataku i musi zdać rzut obronny na Mądrość, w przeciwnym razie uzyskuje stan &amp;Reference[Frightened apply=false]{Przerażony} do czasu zakończenia czaru. Na końcu każdej ze swoich tur przerażony cel powtarza rzut obronny, kończąc czar na sobie w przypadku powodzenia.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu. </strong>Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
+            "description": "<p>Cel otrzymuje dodatkowe 1k6 obrażeń nekrotycznych od ataku i musi zdać rzut obronny na Mądrość, w przeciwnym razie uzyskuje stan &amp;Reference[Frightened apply=false]{Przerażony} do czasu zakończenia czaru. Na końcu każdej ze swoich tur przerażony cel powtarza rzut obronny, kończąc czar na sobie w przypadku powodzenia.</p><p><strong>Użycie komórki czaru wyższego kręgu. </strong>Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
             "activation": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
             "activationCondition": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
             "activities": {
