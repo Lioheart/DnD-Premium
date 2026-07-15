@@ -2423,7 +2423,7 @@
         },
         "Haste": {
             "name": "Przyspieszenie",
-            "description": "<p>Wybierasz chętną istotę, którą widzisz w zasięgu. Dopóki czar trwa, szybkość celu zostaje podwojona, otrzymuje premię +2 do Klasy Pancerza, ma &amp;Reference[Advantage]{Ułatwienie} w rzutach obronnych na Zręczność i zyskuje dodatkową akcję w każdej swojej turze. Ta dodatkowa akcja może być wykorzystana tylko do wykonania Akcji Atak (jedynie jeden atak), Sprint, Odstąpienie, Ukrycie się lub Użycie Obiektu.</p><p>Gdy czar się kończy, cel otrzymuje stan &amp;Reference[Incapacitated]{Obezwładniony} i ma Szybkość równą 0 do końca swojej następnej tury, gdyż ogarnia go fala letargii.</p>",
+            "description": "<p>Wybierz przychylną istotę, którą widzisz w zasięgu. Do zakończenia czaru Szybkość celu zostaje podwojona, zyskuje on premię +2 do KP, ma Ułatwienie w rzutach obronnych na Zręczność oraz zyskuje dodatkową Akcję w każdej swojej turze. Tę Akcję może wykorzystać wyłącznie do wykonania Akcji ataku (tylko jeden atak), Sprintu, Odstąpienia, Ukrycia się albo Akcji użycia obiektu.</p><p>Gdy czar się kończy, cel ma stan &amp;Reference[Incapacitated apply=false], a jego Szybkość wynosi 0 do końca jego następnej tury, gdy ogarnia go fala letargu.</p>",
             "materials": "wiórek z korzenia lukrecji",
             "activities": {
                 "Cast": {
