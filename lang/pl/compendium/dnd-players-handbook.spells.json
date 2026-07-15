@@ -4148,7 +4148,7 @@
         },
         "Shining Smite": {
             "name": "Lśniące ugodzenie",
-            "description": "<p>Cel trafiony uderzeniem otrzymuje dodatkowe 2k6 obrażeń od światłości. Do momentu zakończenia czaru cel emituje &amp;Reference[BrightLight]{Jasne Światło} w promieniu 5 stóp, ataki przeciwko niemu mają Premię, a on sam nie może korzystać ze stanu &amp;Reference[Invisible]{Niewidzialny}.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 2. kręgu.</p>",
+            "description": "<p>Cel trafiony tym uderzeniem otrzymuje dodatkowe 2k6 obrażeń od światłości z tego ataku. Do zakończenia czaru cel emituje &amp;Reference[BrightLight] w promieniu 5 stóp, testy ataku przeciwko niemu mają Ułatwienie, a cel nie może czerpać korzyści ze stanu &amp;Reference[Invisible].</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 2. kręgu.</p>",
             "activation": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
             "activationCondition": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
             "effects": {
