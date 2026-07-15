@@ -2414,7 +2414,7 @@
         },
         "Harm": {
             "name": "Krzywda",
-            "description": "<p>Uwalniasz jadowitą magię na istotę, którą widzisz w zasięgu. Cel wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia otrzymuje 14k6 obrażeń nekrotycznych, a jego maksymalne Punkty Wytrzymałości zostają zmniejszone o wartość równą otrzymanym obrażeniom nekrotycznym. W przypadku udanego rzutu obronnego cel otrzymuje tylko połowę tych obrażeń. Ten czar nie może zmniejszyć maksymalnych Punktów Wytrzymałości celu poniżej 1.</p>",
+            "description": "<p>Wyzwalasz zjadliwą magię na istotę, którą widzisz w zasięgu. Cel wykonuje rzut obronny na Kondycję. Przy porażce otrzymuje 14k6 obrażeń nekrotycznych, a jego maksymalne Punkty wytrzymałości zostają zredukowane o wartość równą otrzymanym obrażeniom nekrotycznym. Przy sukcesie otrzymuje jedynie połowę tych obrażeń. Ten czar nie może zredukować maksymalnych Punktów wytrzymałości celu do wartości niższej niż 1.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
