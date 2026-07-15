@@ -3091,7 +3091,7 @@
         },
         "Meteor Swarm": {
             "name": "Rój meteorytów",
-            "description": "<p>Płonące kule ognia spadają na ziemię w czterech różnych punktach, które widzisz w zasięgu. Każda istota w Sferze o promieniu 40 stóp z centrum w każdym z tych punktów wykonuje rzut obronny na Zręczność. Istota otrzymuje 20k6 obrażeń od ognia i 20k6 obrażeń obuchowych przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie. Istota w obszarze więcej niż jednej ognistych Sfer jest dotknięta tylko raz.</p><p>Niemagiczny obiekt, który nie jest noszony ani trzymany, również otrzymuje obrażenia, jeśli znajduje się w obszarze czaru, i zaczyna płonąć, jeśli jest łatwopalny.</p>",
+            "description": "<p>Płonące kule ognia spadają na ziemię w czterech różnych punktach, które widzisz w zasięgu. Wokół każdego z tych punktów powstaje Sfera o promieniu 40 stóp. Każda istota znajdująca się w którejkolwiek z tych Sfer wykonuje rzut obronny na Zręczność. Przy porażce otrzymuje 20k6 obrażeń od ognia i 20k6 obrażeń obuchowych, a przy sukcesie połowę tych obrażeń. Istota znajdująca się w obszarze więcej niż jednej ognistej Sfery zostaje objęta tym efektem tylko raz.</p><p>Niemagiczny obiekt, który nie jest noszony ani trzymany, również otrzymuje te obrażenia, jeśli znajduje się w obszarze czaru, a jeśli jest łatwopalny, zaczyna płonąć.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
