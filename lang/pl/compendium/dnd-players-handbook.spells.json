@@ -4208,7 +4208,7 @@
         },
         "Sleep": {
             "name": "Uśpienie",
-            "description": "<p>Każda wybrana przez ciebie istota w sferze o promieniu 5 stóp, której centrum znajduje się w wybranym punkcie w zasięgu, musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[incapacitated apply=false]{Obezwładniony} do końca swojej następnej tury, po czym musi powtórzyć rzut obronny. Jeśli cel nie powiedzie się w drugim rzucie, otrzymuje stan &amp;Reference[unconscious]{Nieprzytomny} na czas działania czaru. Czar kończy się na celu, jeśli otrzyma on obrażenia lub jeśli ktoś w odległości 5 stóp od niego wykona akcję, aby wybudzić go z efektu czaru.</p><p>Istoty, które nie śpią, takie jak elfy, lub które mają Niewrażliwość na stan Wyczerpany, automatycznie odnoszą sukces w rzutach obronnych przeciwko temu czarowi.</p>",
+            "description": "<p>Każda wybrana przez ciebie istota w Sferze o promieniu 5 stóp, której środek znajduje się w punkcie w zasięgu, musi odnieść sukces w rzucie obronnym na Mądrość albo ma stan &amp;Reference[incapacitated apply=false] do końca swojej następnej tury, kiedy to musi powtórzyć rzut obronny. Jeśli cel poniesie porażkę w drugim rzucie obronnym, ma stan &amp;Reference[unconscious] przez czas trwania czaru. Działanie czaru na cel kończy się, jeśli otrzyma on obrażenia albo ktoś w obrębie 5 stóp od niego wykona Akcję, aby wyrwać go spod działania czaru.</p><p>Istoty, które nie śpią, takie jak elfy, albo mają Niepodatność na stan Wyczerpania, automatycznie odnoszą sukces w rzutach obronnych przeciwko temu czarowi.</p>",
             "materials": "szczypta piasku lub płatków róży",
             "activities": {
                 "save": {
