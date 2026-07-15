@@ -4703,7 +4703,7 @@
             "effects": {
                 "Uncontrollable Laughter": {
                     "name": "Niekontrolowany śmiech",
-                    "description": "<p>Ma stany &amp;Reference[prone apply=false] i &amp;Reference[incapacitated apply=false] przez czas trwania czaru. W tym czasie śmieje się niekontrolowanie, jeśli potrafi się śmiać, i nie może zakończyć stanu Prone na sobie.</p><p>Na końcu każdej swojej tury i za każdym razem, gdy otrzyma obrażenia, wykonuje kolejny rzut obronny [[/save ability=wis dc=@attributes.spell.dc]]. Cel ma Ułatwienie do rzutu, jeśli rzut jest wywołany obrażeniami. Przy udanym rzucie czar kończy działanie.</p>"
+                    "description": "<p>ma stany &amp;Reference[prone apply=false] i &amp;Reference[incapacitated apply=false] przez czas trwania czaru. W tym czasie śmieje się w niekontrolowany sposób, jeśli jest zdolny do śmiechu, i nie może samodzielnie zakończyć stanu Powalony.</p><p>Na końcu każdej swojej tury oraz za każdym razem, gdy otrzymuje obrażenia, wykonuje kolejny [[/save ability=wis dc=@attributes.spell.dc]] rzut obronny. Cel ma Ułatwienie w tym rzucie obronnym, jeśli został on wywołany otrzymaniem obrażeń. Przy sukcesie czar się kończy.</p>"
                 }
             }
         },
