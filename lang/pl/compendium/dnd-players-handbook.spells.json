@@ -1898,7 +1898,7 @@
         },
         "Feign Death": {
             "name": "Pozór śmierci",
-            "description": "<p>Dotykasz przychylną istotę i wprowadzasz ją w stan kataleptyczny, nieodróżnialny od śmierci.</p><p>Na czas trwania czaru cel wydaje się martwy podczas oględzin i dla czarów wykrywających jego stan. Otrzymuje stany &amp;Reference[blinded]{Oślepiony} i &amp;Reference[incapacitated]{Obezwładniony}, a jego Szybkość wynosi 0.</p><p>Cel ma również &amp;Reference[damageResistance]{Odporność} na wszystkie obrażenia poza obrażeniami psychicznymi oraz &amp;Reference[Immunity]{Niewrażliwość} na stan &amp;Reference[Poisoned]{Zatruty}.</p>",
+            "description": "<p>Dotykasz przychylnej istoty i wprowadzasz ją w stan kataleptyczny, nieodróżnialny od śmierci.</p><p>Dopóki czar trwa, cel sprawia wrażenie martwego przy oględzinach z zewnątrz oraz dla czarów służących do ustalenia jego stanu. Cel otrzymuje stany &amp;Reference[blinded apply=false] i &amp;Reference[incapacitated apply=false], a jego Szybkość wynosi 0.</p><p>Cel ma również Odporność na wszystkie obrażenia poza obrażeniami psychicznymi oraz jest Niepodatny na stan Zatruty.</p>",
             "materials": "szczypta cmentarnego pyłu",
             "effects": {
                 "Cataleptic": {
