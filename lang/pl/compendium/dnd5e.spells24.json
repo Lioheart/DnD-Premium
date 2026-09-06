@@ -475,7 +475,7 @@
         },
         "Barkskin": {
             "name": "Korowa skóra",
-            "description": "<p>Dotykasz chętnej istoty. Dopóki czar się nie zakończy, skóra celu przybiera wygląd kory, a cel ma Klasę Pancerza 17, jeśli jego KP jest niższe.</p>",
+            "description": "<p>Dotykasz przychylnej istoty. Dopóki czar się nie zakończy, skóra celu przybiera wygląd kory, a cel ma Klasę Pancerza 17, jeśli jego KP jest niższe.</p>",
             "materials": "garść kory",
             "effects": {
                 "Bark-like Skin": {
@@ -1352,7 +1352,7 @@
         },
         "Dragon's Breath": {
             "name": "Smocze zionięcie",
-            "description": "<p>Dotykasz jednej chętnej istoty i wybierasz Kwas, Zimno, Ogień, Elektryczność lub Truciznę. Dopóki czar trwa, cel może wykonać Akcję Magii, by wypuścić Stożek o długości 15 stóp. Każda istota w tym obszarze wykonuje rzut obronny na Zręczność, otrzymując 3k6 obrażeń wybranego typu przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 2.</p>",
+            "description": "<p>Dotykasz jednej przychylnej istoty i wybierasz Kwas, Zimno, Ogień, Elektryczność lub Truciznę. Dopóki czar trwa, cel może wykonać Akcję Magii, by wypuścić Stożek o długości 15 stóp. Każda istota w tym obszarze wykonuje rzut obronny na Zręczność, otrzymując 3k6 obrażeń wybranego typu przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 2.</p>",
             "activities": {
                 "Cast": {
                     "name": "Rzucanie"
@@ -2500,7 +2500,7 @@
         },
         "Jump": {
             "name": "Skok",
-            "description": "<p>Dotykasz chętnej istoty. Raz w każdej ze swoich tur, dopóki czar trwa, ta istota może skoczyć do 30 stóp (9m), wydając 10 stóp (3m) ruchu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
+            "description": "<p>Dotykasz przychylnej istoty. Raz w każdej ze swoich tur, dopóki czar trwa, ta istota może skoczyć do 30 stóp (9m), wydając 10 stóp (3m) ruchu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
             "materials": "tylna noga pasikonika",
             "effects": {
                 "Jump": {
@@ -3290,7 +3290,7 @@
         },
         "Resistance": {
             "name": "Odporność",
-            "description": "<p>Dotykasz chętnej istoty i wybierasz jeden typ obrażeń: od kwasu, obuchowe, od zimna, od ognia, od elektryczności, nekrotyczne, kłute, od trucizn, od światłości, cięte lub od dźwięku. Gdy istota otrzyma obrażenia wybranego typu przed zakończeniem czaru, zmniejsza całkowitą otrzymaną wartość obrażeń o 1k4. Istota może skorzystać z tego czaru tylko raz na turę.</p>",
+            "description": "<p>Dotykasz przychylnej istoty i wybierasz jeden typ obrażeń: od kwasu, obuchowe, od zimna, od ognia, od elektryczności, nekrotyczne, kłute, od trucizn, od światłości, cięte lub od dźwięku. Gdy istota otrzyma obrażenia wybranego typu przed zakończeniem czaru, zmniejsza całkowitą otrzymaną wartość obrażeń o 1k4. Istota może skorzystać z tego czaru tylko raz na turę.</p>",
             "activities": {
                 "utility": {
                     "roll": "Redukcja obrażeń"
@@ -4279,7 +4279,7 @@
         },
         "Warding Bond": {
             "name": "Ochronna więź",
-            "description": "<p>Dotykasz innej chętnej istoty i tworzysz mistyczne połączenie między tobą a celem, które trwa do zakończenia czaru. Dopóki cel znajduje się w odległości 60 stóp od ciebie, zyskuje premię +1 do KP i rzutów obronnych, a także ma &amp;Reference[damageresistance]{Odporność} na wszystkie obrażenia. Ponadto za każdym razem, gdy otrzymuje obrażenia, ty otrzymujesz taką samą ilość obrażeń.</p><p>Czar kończy się, jeśli twoje Punkty Wytrzymałości spadną do 0 lub jeśli ty i cel zostaniecie rozdzieleni na więcej niż 60 stóp. Kończy się również, jeśli czar zostanie rzucony ponownie na którąkolwiek z połączonych istot.</p>",
+            "description": "<p>Dotykasz innej przychylnej istoty i tworzysz mistyczne połączenie między tobą a celem, które trwa do zakończenia czaru. Dopóki cel znajduje się w odległości 60 stóp od ciebie, zyskuje premię +1 do KP i rzutów obronnych, a także ma &amp;Reference[damageresistance]{Odporność} na wszystkie obrażenia. Ponadto za każdym razem, gdy otrzymuje obrażenia, ty otrzymujesz taką samą ilość obrażeń.</p><p>Czar kończy się, jeśli twoje Punkty Wytrzymałości spadną do 0 lub jeśli ty i cel zostaniecie rozdzieleni na więcej niż 60 stóp. Kończy się również, jeśli czar zostanie rzucony ponownie na którąkolwiek z połączonych istot.</p>",
             "materials": "para platynowych pierścieni wartych po 50+ SZ każdy, które ty i cel musicie nosić przez cały czas trwania czaru",
             "effects": {
                 "Bonded": {
