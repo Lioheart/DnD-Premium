@@ -1321,7 +1321,7 @@
         },
         "Destructive Wave": {
             "name": "Fala zniszczenia",
-            "description": "<p>Destrukcyjna energia rozchodzi się od ciebie w promieniu 30 stóp. Każda wybrana przez ciebie istota w tym obszarze wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia cel otrzymuje 5k6 obrażeń od dźwięku oraz 5k6 obrażeń od światłości lub nekrotycznych (twój wybór) i zostaje &Reference[Prone]{Powalony}. W przypadku udanego rzutu obronnego cel otrzymuje tylko połowę tych obrażeń.</p>",
+            "description": "<p>Niszczycielska energia rozchodzi się od ciebie falami w Emanacji o promieniu 30 stóp. Każda wybrana przez ciebie istota w Emanacji wykonuje rzut obronny na Kondycję. Przy nieudanym rzucie cel otrzymuje 5k6 obrażeń od dźwięku oraz 5k6 obrażeń od światłości lub nekrotycznych (wedle twojego wyboru) i otrzymuje stan &amp;Reference[Prone]. Przy udanym rzucie cel otrzymuje tylko połowę tych obrażeń.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
