@@ -1283,7 +1283,7 @@
             "effects": {
                 "Protection from Death": {
                     "name": "Ochrona przed śmiercią",
-                    "description": "<p>Za pierwszym razem, gdy cel miałby spaść do 0 Punktów wytrzymałości przed końcem działania czaru, zamiast tego spada do 1 Punktu wytrzymałości, a czar kończy działanie.</p><p>Jeśli czar nadal działa, gdy cel zostaje poddany efektowi, który natychmiast by go zabił bez zadawania obrażeń, efekt ten jest zignorowany wobec celu, a czar kończy działanie.</p>"
+                    "description": "<p>Za pierwszym razem, gdy cel miałby spaść do 0 Punktów wytrzymałości przed końcem działania czaru, zamiast tego spada do 1 Punktu wytrzymałości, a czar kończy działanie.</p><p>Jeśli czar nadal obowiązuje w chwili, gdy cel zostaje poddany efektowi, który zabiłby go natychmiast bez zadawania obrażeń, ten efekt zostaje wobec celu anulowany, a czar kończy działanie.</p>"
                 }
             }
         },
