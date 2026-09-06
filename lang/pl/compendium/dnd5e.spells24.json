@@ -396,7 +396,7 @@
         },
         "Arcanist's Magic Aura": {
             "name": "Magiczna aura arkanisty",
-            "description": "<p>Dotykając, nakładasz iluzję na chętną istotę lub przedmiot, który nie jest noszony ani trzymany. Istota zyskuje efekt Maski poniżej, a przedmiot zyskuje efekt Fałszywej Aury poniżej. Efekt trwa przez czas trwania czaru. Jeśli rzucisz ten czar na ten sam cel każdego dnia przez 30 dni, iluzja trwa aż do jej rozproszenia.</p><p><strong>Maska (Istota). </strong>Wybierz typ istoty inny niż rzeczywisty typ celu. Czarami i innymi efektami magicznymi cel traktowany jest jak istota wybranego typu.</p><p><strong>Fałszywa Aura (Przedmiot). </strong>Zmieniając sposób, w jaki cel wygląda dla czarów i efektów magicznych wykrywających magiczne aury, takich jak <em>Wykrycie Magii</em>, możesz sprawić, że niemagiczny przedmiot będzie wyglądał na magiczny, sprawić, że przedmiot magiczny będzie wyglądał na niemagiczny, lub zmienić aurę przedmiotu, tak by wyglądała, jakby należała do wybranej przez ciebie szkoły magii.</p>",
+            "description": "<p>Dotykając, nakładasz iluzję na przychylną istotę lub przedmiot, który nie jest noszony ani trzymany. Istota zyskuje efekt Maski poniżej, a przedmiot zyskuje efekt Fałszywej Aury poniżej. Efekt trwa przez czas trwania czaru. Jeśli rzucisz ten czar na ten sam cel każdego dnia przez 30 dni, iluzja trwa aż do jej rozproszenia.</p><p><strong>Maska (Istota). </strong>Wybierz typ istoty inny niż rzeczywisty typ celu. Czarami i innymi efektami magicznymi cel traktowany jest jak istota wybranego typu.</p><p><strong>Fałszywa Aura (Przedmiot). </strong>Zmieniając sposób, w jaki cel wygląda dla czarów i efektów magicznych wykrywających magiczne aury, takich jak <em>Wykrycie Magii</em>, możesz sprawić, że niemagiczny przedmiot będzie wyglądał na magiczny, sprawić, że przedmiot magiczny będzie wyglądał na niemagiczny, lub zmienić aurę przedmiotu, tak by wyglądała, jakby należała do wybranej przez ciebie szkoły magii.</p>",
             "materials": "mały kwadrat jedwabiu",
             "effects": {
                 "Masked": {
@@ -1195,7 +1195,7 @@
         },
         "Dimension Door": {
             "name": "Drzwi przez wymiary",
-            "description": "<p>Teleportujesz się do miejsca w zasięgu. Pojawiasz się dokładnie w wybranym punkcie. Może to być miejsce, które widzisz, które sobie wyobrażasz lub które opiszesz, podając odległość i kierunek, na przykład „200 stóp prosto w dół” lub „300 stóp w górę na północny zachód pod kątem 45 stopni”.</p><p>Możesz również teleportować jedną chętną istotę. Istota ta musi znajdować się w promieniu 5 stóp od ciebie w momencie teleportacji i pojawia się w przestrzeni w promieniu 5 stóp od miejsca docelowego.</p><p>Jeśli ty, teleportowana istota lub oboje mielibyście pojawić się w miejscu zajętym przez inną istotę lub całkowicie wypełnionym przez jeden lub więcej obiektów, ty i każda istota podróżująca z tobą otrzymujecie po 4k6 obrażeń od mocy, a teleportacja kończy się niepowodzeniem.</p>"
+            "description": "<p>Teleportujesz się do miejsca w zasięgu. Pojawiasz się dokładnie w wybranym punkcie. Może to być miejsce, które widzisz, które sobie wyobrażasz lub które opiszesz, podając odległość i kierunek, na przykład „200 stóp prosto w dół” lub „300 stóp w górę na północny zachód pod kątem 45 stopni”.</p><p>Możesz również teleportować jedną przychylną istotę. Istota ta musi znajdować się w promieniu 5 stóp od ciebie w momencie teleportacji i pojawia się w przestrzeni w promieniu 5 stóp od miejsca docelowego.</p><p>Jeśli ty, teleportowana istota lub oboje mielibyście pojawić się w miejscu zajętym przez inną istotę lub całkowicie wypełnionym przez jeden lub więcej obiektów, ty i każda istota podróżująca z tobą otrzymujecie po 4k6 obrażeń od mocy, a teleportacja kończy się niepowodzeniem.</p>"
         },
         "Disguise Self": {
             "name": "Przebranie siebie",
@@ -1784,7 +1784,7 @@
         },
         "Fly": {
             "name": "Lot",
-            "description": "<p>Dotykasz chętną istotę. Na czas trwania czaru cel zyskuje szybkość lotu wynoszącą 60 stóp (18m) i może unosić się w powietrzu. Gdy czar się kończy, cel spada, jeśli wciąż znajduje się w powietrzu, chyba że potrafi zatrzymać upadek.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 3. kręgu.</p>",
+            "description": "<p>Dotykasz przychylną istotę. Na czas trwania czaru cel zyskuje szybkość lotu wynoszącą 60 stóp (18m) i może unosić się w powietrzu. Gdy czar się kończy, cel spada, jeśli wciąż znajduje się w powietrzu, chyba że potrafi zatrzymać upadek.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 3. kręgu.</p>",
             "materials": "pióro",
             "effects": {
                 "Flight": {
@@ -1827,7 +1827,7 @@
         },
         "Foresight": {
             "name": "Profetyzm",
-            "description": "<p>Dotykasz chętną istotę i obdarzasz ją ograniczoną zdolnością widzenia w najbliższą przyszłość. Na czas trwania czaru cel ma &Reference[Advantage]{Ułatwienie} w testach k20, a inne istoty mają &Reference[Disadvantage]{Utrudnienie} w testach ataku przeciwko niemu. Czar kończy się wcześniej, jeśli rzucisz go ponownie.</p>",
+            "description": "<p>Dotykasz przychylną istotę i obdarzasz ją ograniczoną zdolnością widzenia w najbliższą przyszłość. Na czas trwania czaru cel ma &Reference[Advantage]{Ułatwienie} w testach k20, a inne istoty mają &Reference[Disadvantage]{Utrudnienie} w testach ataku przeciwko niemu. Czar kończy się wcześniej, jeśli rzucisz go ponownie.</p>",
             "materials": "pióro kolibra",
             "activities": {
                 "Bestow Foresight": {
@@ -2014,7 +2014,7 @@
         },
         "Guidance": {
             "name": "Wskazówki",
-            "description": "<p>Dotykasz chętną istotę i wybierasz umiejętność. Dopóki czar trwa, istota dodaje 1k4 do każdego testu wykonywanego z użyciem wybranej umiejętności.</p>",
+            "description": "<p>Dotykasz przychylną istotę i wybierasz umiejętność. Dopóki czar trwa, istota dodaje 1k4 do każdego testu wykonywanego z użyciem wybranej umiejętności.</p>",
             "effects": {
                 "Acrobatic Guidance": {
                     "name": "Wskazówki akrobatyki"
