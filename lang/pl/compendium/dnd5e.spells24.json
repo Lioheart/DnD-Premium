@@ -1499,7 +1499,7 @@
         },
         "Entangle": {
             "name": "Oplątanie",
-            "description": "<p>Chwytające rośliny wyrastają z ziemi na obszarze kwadratu o boku 20 stóp w zasięgu. Przez czas trwania te rośliny zamieniają grunt w obszarze w &amp;Reference[difficultterrain]{Trudny Teren}. Znikają, gdy czar się kończy.</p><p>Każda istota (oprócz ciebie) w obszarze, gdy rzucasz czar, musi wykonać rzut obronny na Siłę, inaczej otrzymuje stan &amp;Reference[restrained apply=false]{Unieruchomiony} do końca czaru. Unieruchomiona istota może wykonać akcję, by wykonać test [[/check ability=str skill=ath dc=@attributes.spelldc]] przeciwko twojemu ST rzutu obronnego na czary. Przy sukcesie uwalnia się od chwytających roślin i nie jest już przez nie Unieruchomiona.</p>",
+            "description": "<p>Chwytne rośliny wyrastają z ziemi na obszarze kwadratu o boku 20 stóp w zasięgu. Dopóki czar trwa, rośliny te zamieniają grunt na tym obszarze w &amp;Reference[difficultterrain]. Znikają, gdy czar się kończy.</p><p>Każda istota (oprócz ciebie) znajdująca się w tym obszarze w chwili rzucenia czaru musi wykonać rzut obronny na Siłę, w przeciwnym razie otrzymuje stan &amp;Reference[restrained apply=false], dopóki czar nie dobiegnie końca. Unieruchomiona istota może wykonać akcję, by wykonać test [[/check ability=str skill=ath dc=@attributes.spell.dc]] przeciwko twojemu St rzutu przeciw czarom. Przy sukcesie uwalnia się od chwytnych roślin i nie jest już przez nie Unieruchomiona.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
