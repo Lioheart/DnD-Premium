@@ -1416,7 +1416,7 @@
         },
         "Eldritch Blast": {
             "name": "Nieziemskie uderzenie",
-            "description": "<p>Ciskasz promieniem trzaskającej energii. Wykonaj dystansowy atak czarem przeciwko jednej istocie lub obiektowi w zasięgu. Przy trafieniu cel otrzymuje 1k10 obrażeń od mocy.</p><p><strong>Ulepszenie sztuczki.</strong> Czar tworzy dwa promienie na 5. poziomie, trzy promienie na 11. poziomie i cztery promienie na 17. poziomie. Możesz skierować promienie na ten sam cel lub na różne cele. Wykonaj osobny test ataku dla każdego promienia.</p><p>[[(floor((@details.level+1)/6)+1)]]{Całkowita Liczba Promieni}</p>"
+            "description": "<p>Ciskasz promieniem trzaskającej energii. Wykonaj dystansowy atak czarem przeciwko jednej istocie lub obiektowi w zasięgu. Przy trafieniu cel otrzymuje 1k10 obrażeń od mocy.</p><p><strong>Ulepszenie sztuczki.</strong> Na 5. poziomie czar tworzy dwa promienie, na 11. poziomie trzy promienie, a na 17. poziomie cztery promienie. Możesz skierować promienie w ten sam cel albo w różne cele. Wykonaj osobny test ataku dla każdego promienia.</p><p>[[(floor((@details.level+1)/6)+1)]]{Całkowita liczba promieni}</p>"
         },
         "Elementalism": {
             "name": "Elementalizm",
