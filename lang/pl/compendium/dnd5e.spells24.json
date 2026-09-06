@@ -1493,7 +1493,7 @@
             "effects": {
                 "Ensnared": {
                     "name": "Spętany",
-                    "description": "<p><span style=\"font-family:Signika, sans-serif\">Cel otrzymuje stan &amp;Reference[restrained apply=false] do momentu zakończenia działania czaru.</span></p><p><span style=\"font-family:Signika, sans-serif\">Podczas stanu Unieruchomiony cel otrzymuje [[/damage 1k6 type=piercing]] (plus 1k6 za każdy Krąg Czaru powyżej 1) obrażeń kłutych na początku każdej swojej tury. Cel lub istota w jego zasięgu może wykonać Akcję, aby przeprowadzić Test [[/check ability=str skill=ath]] przeciwko ST twojego rzutu obronnego na czar. W przypadku sukcesu czar się kończy.</span></p>"
+                    "description": "<p><span style=\"font-family:Signika, sans-serif\">Cel otrzymuje stan &amp;Reference[restrained apply=false], dopóki czar nie dobiegnie końca.</span></p><p><span style=\"font-family:Signika, sans-serif\">Dopóki cel jest Unieruchomiony, otrzymuje [[/damage 1d6 type=piercing]] (plus 1k6 za każdy krąg komórki czaru powyżej 1) obrażeń kłutych na początku każdej swojej tury. Cel lub istota znajdująca się w jego zasięgu może wykonać akcję, by wykonać test [[/check ability=str skill=ath]] przeciwko twojemu St rzutu przeciw czarom. Przy sukcesie czar się kończy.</span></p>"
                 }
             }
         },
