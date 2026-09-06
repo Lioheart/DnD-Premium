@@ -2155,7 +2155,7 @@
         },
         "Friends": {
             "name": "Przyjaźń",
-            "description": "<p>Magicznie emanujesz poczuciem przyjaźni wobec jednej istoty, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[Charmed]{Zauroczony} na czas trwania czaru. Cel automatycznie odnosi sukces, jeśli nie jest Humanoidem, jeśli z nim walczysz lub jeśli rzuciłeś ten czar na niego w ciągu ostatnich 24 godzin.</p><p>Czar kończy się wcześniej, jeśli cel otrzyma obrażenia, jeśli wykonasz test ataku, zadasz obrażenia lub zmusisz kogokolwiek do wykonania rzutu obronnego. Gdy czar się kończy, cel wie, że został przez ciebie Zauroczony.</p>",
+            "description": "<p>Magicznie emanujesz poczuciem przyjaźni wobec jednej istoty, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[Charmed apply=false] na czas trwania czaru. Cel automatycznie zdaje ten rzut, jeśli nie jest Humanoidem, jeśli z nim walczysz, albo jeśli rzuciłeś już na niego ten czar w ciągu ostatnich 24 godzin.</p><p>Czar kończy się przedwcześnie, jeśli cel otrzyma obrażenia albo jeśli wykonasz test ataku, zadasz obrażenia lub zmusisz kogokolwiek do wykonania rzutu obronnego. Gdy czar się kończy, cel dowiaduje się, że zostało go przez ciebie Zauroczone.</p>",
             "materials": "trochę makijażu",
             "activities": {
                 "save": {
