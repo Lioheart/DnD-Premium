@@ -2121,7 +2121,7 @@
         },
         "Fount of Moonlight": {
             "name": "Źródło blasku księżyca",
-            "description": "<p>Chłodne światło otacza twoje ciało na czas trwania czaru, emitując Jasne Światło w promieniu 20 stóp oraz Słabe Światło w dodatkowym promieniu 20 stóp.</p><p>Dopóki czar trwa, masz Odporność na obrażenia od światłości, a twoje ataki wręcz zadają dodatkowe 2k6 obrażeń od światłości przy trafieniu.</p><p>Dodatkowo, natychmiast po otrzymaniu obrażeń od istoty, którą widzisz w promieniu 60 stóp, możesz wykorzystać Reakcję, aby zmusić tę istotę do wykonania rzutu obronnego na Kondycję [[/save ability=con dc=@attributes.spelldc]]. W przypadku niepowodzenia istota otrzymuje stan &amp;Reference[Blinded]{Oślepiony} do końca swojej następnej tury.</p>",
+            "description": "<p>Chłodne światło otacza twoje ciało przez czas trwania czaru, emitując Jasne światło w promieniu 20 stóp oraz Słabe światło na kolejne 20 stóp.</p><p>Dopóki czar trwa, masz Odporność na obrażenia od światłości, a twoje ataki wręcz zadają przy trafieniu dodatkowe 2k6 obrażeń od światłości.</p><p>Dodatkowo, natychmiast po otrzymaniu obrażeń od widocznej dla ciebie istoty w promieniu 60 stóp, możesz wykorzystać Reakcję, by zmusić tę istotę do wykonania rzutu obronnego [[/save ability=con dc=@attributes.spell.dc]]. Przy nieudanym rzucie istota otrzymuje stan &amp;Reference[Blinded apply=false] do końca twojej następnej tury.</p>",
             "activities": {
                 "Blinding Reaction": {
                     "name": "Oślepiająca reakcja",
