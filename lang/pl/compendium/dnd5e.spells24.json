@@ -571,7 +571,7 @@
         },
         "Black Tentacles": {
             "name": "Czarne macki",
-            "description": "<p>Wijące się, hebanowe macki wypełniają kwadrat o boku 20 stóp na ziemi, który widzisz w zasięgu. Przez czas trwania te macki zamieniają grunt w tym obszarze w &amp;Reference[DifficultTerrain]{Trudny Teren}.</p><p>Każda istota w tym obszarze wykonuje rzut obronny na Siłę. Przy nieudanym rzucie otrzymuje 3k6 obrażeń obuchowych i ma stan &amp;Reference[Restrained apply=false]{Unieruchomiony} do końca czaru. Istota wykonuje ten rzut także, jeśli wchodzi w obszar lub kończy w nim swoją turę. Istota wykonuje ten rzut tylko raz na turę.</p><p>Unieruchomiona istota może wykonać akcję, by wykonać test [[/check ability=str skill=ath dc=@attributes.spelldc]] przeciwko twojemu ST rzutu obronnego na czary, kończąc ten stan na sobie przy sukcesie.</p>",
+            "description": "<p>Wijące się, hebanowe macki wypełniają kwadrat o boku 20 stóp na ziemi, którą widzisz w zasięgu. Dopóki czar trwa, macki te zamieniają grunt na tym obszarze w &amp;Reference[DifficultTerrain].</p><p>Każda istota w tym obszarze wykonuje rzut obronny na Siłę. Przy nieudanym rzucie otrzymuje 3k6 obrażeń obuchowych i otrzymuje stan &amp;Reference[Restrained apply=false], dopóki czar nie dobiegnie końca. Istota wykonuje ten rzut również wtedy, gdy znajdzie się w tym obszarze lub zakończy w nim swoją turę. Istota wykonuje ten rzut nie więcej niż raz na turę.</p><p>Unieruchomiona istota może wykonać akcję, by wykonać test [[/check ability=str skill=ath dc=@attributes.spell.dc]] przeciwko twojemu St rzutu przeciw czarom — udany rzut kończy ten stan na niej samej.</p>",
             "materials": "macka",
             "activities": {
                 "save": {
