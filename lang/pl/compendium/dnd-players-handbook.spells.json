@@ -1269,7 +1269,7 @@
             "effects": {
                 "Darkvision": {
                     "name": "Widzenie w ciemności",
-                    "description": "<p>Przez czas trwania chętna istota, którą dotkniesz, ma &amp;Reference[Widzenie w ciemności] o zasięgu 150 stóp.</p>"
+                    "description": "<p>Przez czas trwania przychylna istota, którą dotkniesz, ma &amp;Reference[Widzenie w ciemności] o zasięgu 150 stóp.</p>"
                 }
             }
         },
@@ -1567,7 +1567,7 @@
         },
         "Dream": {
             "name": "Sen",
-            "description": "<p>Obierasz za cel istotę, którą znasz i która znajduje się na tej samej sferze egzystencji. Ty albo chętna istota, której dotykasz, wchodzicie w stan transu, aby działać jako posłaniec snów. Dopóki trwa trans, posłaniec ma stan &amp;Reference[Incapacitated apply=false] i ma Szybkość 0.</p><p>Jeśli cel śpi, posłaniec pojawia się w snach celu i może rozmawiać z celem, dopóki ten pozostaje uśpiony, przez cały czas trwania czaru. Posłaniec może także kształtować otoczenie snu, tworząc krajobrazy, obiekty i inne obrazy. Posłaniec może w dowolnym momencie wyjść z transu, kończąc czar. Po przebudzeniu cel doskonale pamięta sen.</p><p>Jeśli cel nie śpi, gdy rzucasz czar, posłaniec o tym wie i może albo zakończyć trans (a wraz z nim czar), albo poczekać, aż cel zaśnie, po czym wejdzie w jego sny.</p><p>Możesz sprawić, że posłaniec będzie dla celu przerażający. Jeśli to zrobisz, posłaniec może przekazać wiadomość liczącą nie więcej niż dziesięć słów, a następnie cel wykonuje rzut obronny na Mądrość. Przy nieudanym rzucie cel nie odnosi korzyści ze swojego odpoczynku, a po przebudzeniu otrzymuje 3k6 obrażeń psychicznych.</p>",
+            "description": "<p>Obierasz za cel istotę, którą znasz i która znajduje się na tej samej sferze egzystencji. Ty albo przychylna istota, której dotykasz, wchodzicie w stan transu, aby działać jako posłaniec snów. Dopóki trwa trans, posłaniec ma stan &amp;Reference[Incapacitated apply=false] i ma Szybkość 0.</p><p>Jeśli cel śpi, posłaniec pojawia się w snach celu i może rozmawiać z celem, dopóki ten pozostaje uśpiony, przez cały czas trwania czaru. Posłaniec może także kształtować otoczenie snu, tworząc krajobrazy, obiekty i inne obrazy. Posłaniec może w dowolnym momencie wyjść z transu, kończąc czar. Po przebudzeniu cel doskonale pamięta sen.</p><p>Jeśli cel nie śpi, gdy rzucasz czar, posłaniec o tym wie i może albo zakończyć trans (a wraz z nim czar), albo poczekać, aż cel zaśnie, po czym wejdzie w jego sny.</p><p>Możesz sprawić, że posłaniec będzie dla celu przerażający. Jeśli to zrobisz, posłaniec może przekazać wiadomość liczącą nie więcej niż dziesięć słów, a następnie cel wykonuje rzut obronny na Mądrość. Przy nieudanym rzucie cel nie odnosi korzyści ze swojego odpoczynku, a po przebudzeniu otrzymuje 3k6 obrażeń psychicznych.</p>",
             "materials": "garść piasku",
             "activities": {
                 "save": {
@@ -3652,7 +3652,7 @@
         },
         "Protection from Energy": {
             "name": "Ochrona przed energią",
-            "description": "<div><p>Przez cały czas trwania czaru, chętna istota której dotkniesz zyskuje Odporność na jeden wybrany przez ciebie typ obrażeń: od kwasu, od zimna, od ognia, od elektryczności lub od błyskawic.</p></div>",
+            "description": "<div><p>Przez cały czas trwania czaru, przychylna istota której dotkniesz zyskuje Odporność na jeden wybrany przez ciebie typ obrażeń: od kwasu, od zimna, od ognia, od elektryczności lub od błyskawic.</p></div>",
             "effects": {
                 "Acid Protection": {
                     "name": "Ochrona przed kwasem"
@@ -4288,7 +4288,7 @@
         },
         "Spider Climb": {
             "name": "Pajęcza wspinaczka",
-            "description": "<p>Do momentu zakończenia czaru jedna chętna istota, której dotkniesz, zyskuje zdolność poruszania się w górę, w dół oraz po pionowych powierzchniach i sufitach, pozostawiając ręce wolne. Cel zyskuje także szybkość wspinaczki równą swojej szybkości poruszania się.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 2. kręgu.</p><section class=\"secret\" id=\"secret-4LoECjSnyIsXFdKY\"><p><strong>Notatka Foundry</strong></p><p>Aktywny efekt zapewniany przez aktywność <strong>Rzucenia</strong> podnosi szybkość wspinaczki postaci do wartości „1”, wskazując jej równoważność z szybkością chodzenia.</p></section>",
+            "description": "<p>Do momentu zakończenia czaru jedna przychylna istota, której dotkniesz, zyskuje zdolność poruszania się w górę, w dół oraz po pionowych powierzchniach i sufitach, pozostawiając ręce wolne. Cel zyskuje także szybkość wspinaczki równą swojej szybkości poruszania się.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 2. kręgu.</p><section class=\"secret\" id=\"secret-4LoECjSnyIsXFdKY\"><p><strong>Notatka Foundry</strong></p><p>Aktywny efekt zapewniany przez aktywność <strong>Rzucenia</strong> podnosi szybkość wspinaczki postaci do wartości „1”, wskazując jej równoważność z szybkością chodzenia.</p></section>",
             "materials": "kropla bitumu i pająk",
             "effects": {
                 "Spider Climb": {
@@ -4376,7 +4376,7 @@
         },
         "Stoneskin": {
             "name": "Kamienna skóra",
-            "description": "<p>Do momentu zakończenia czaru jedna chętna istota, której dotkniesz, zyskuje &amp;Reference[damageresistance]{Odporność} na obrażenia obuchowe, kłute i cięte.</p>",
+            "description": "<p>Do momentu zakończenia czaru jedna przychylna istota, której dotkniesz, zyskuje &amp;Reference[damageresistance]{Odporność} na obrażenia obuchowe, kłute i cięte.</p>",
             "materials": "diamentowy pył wart 100+ GP, który czar zużywa",
             "effects": {
                 "Stoneskin": {
@@ -4878,7 +4878,7 @@
         },
         "True Seeing": {
             "name": "Prawdziwe widzenie",
-            "description": "<p>Przez czas trwania czaru chętna istota, którą dotkniesz ma Prawdziwe Widzenie w zasięgu 120 stóp.</p>",
+            "description": "<p>Przez czas trwania czaru przychylna istota, którą dotkniesz ma Prawdziwe Widzenie w zasięgu 120 stóp.</p>",
             "materials": "grzybowy proszek warty 25+ SZ, który czar zużywa",
             "activities": {
                 "Grant Truesight": {
