@@ -1514,7 +1514,7 @@
         },
         "Enthrall": {
             "name": "Fascynacja",
-            "description": "<p>Tkasz rozpraszający ciąg słów, zmuszając wybrane przez ciebie istoty, które widzisz w zasięgu, do wykonania rzutu obronnego na Mądrość. Każda istota, z którą walczysz ty lub twoi towarzysze, automatycznie zdaje ten rzut. Przy nieudanym rzucie cel otrzymuje karę -10 do testów Mądrości (Percepcja) i Pasywnej Percepcji, dopóki czar trwa.</p>",
+            "description": "<p>Tkasz rozpraszający ciąg słów, zmuszając wybrane przez ciebie istoty, które widzisz w zasięgu, do wykonania rzutu obronnego na Mądrość. Każda istota walcząca z tobą lub twoimi towarzyszami automatycznie zdaje ten rzut. Przy nieudanym rzucie cel otrzymuje karę −10 do testów Mądrości (Percepcja) i Pasywnej percepcji, dopóki czar trwa.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
