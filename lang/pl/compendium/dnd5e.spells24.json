@@ -1694,7 +1694,7 @@
         },
         "Fire Shield": {
             "name": "Tarcza ognia",
-            "description": "<p>Delikatne płomienie oplatają twoje ciało przez czas trwania, emitując Jasne Światło w promieniu 10 stóp oraz Słabe Światło w dodatkowym promieniu 10 stóp.</p><p>Płomienie zapewniają ci tarczę ciepła lub tarczę chłodu, według twojego wyboru. Tarcza ciepła daje ci Odporność na obrażenia od zimna, a tarcza chłodu daje ci Odporność na obrażenia od ognia.</p><p>Dodatkowo, gdy istota w odległości 5 stóp od ciebie trafi cię testem ataku wręcz, tarcza wybucha płomieniem. Atakujący otrzymuje [[/damage 2d8 type=fire]] obrażeń od ognia z tarczy ciepła albo [[/damage 2d8 type=cold]] obrażeń od zimna z tarczy chłodu.</p>",
+            "description": "<p>Delikatne płomienie oplatają twoje ciało przez czas trwania czaru, emitując Jasne światło w promieniu 10 stóp oraz Słabe światło na kolejne 10 stóp.</p><p>Płomienie zapewniają ci ciepłą tarczę albo zimną tarczę, wedle twojego wyboru. Ciepła tarcza daje ci Odporność na obrażenia od zimna, a zimna tarcza daje ci Odporność na obrażenia od ognia.</p><p>Dodatkowo, gdy istota w odległości 5 stóp od ciebie trafi cię testem ataku wręcz, tarcza wybucha płomieniem. Atakujący otrzymuje [[/damage 2d8 type=fire]] obrażeń od ognia z ciepłej tarczy albo [[/damage 2d8 type=cold]] obrażeń od zimna z zimnej tarczy.</p>",
             "materials": "kawałek fosforu lub świetlik",
             "effects": {
                 "Warm Shield": {
