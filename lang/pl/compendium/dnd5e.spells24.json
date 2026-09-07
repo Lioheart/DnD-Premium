@@ -2000,7 +2000,7 @@
         },
         "Guardian of Faith": {
             "name": "Strażnik wiary",
-            "description": "<p>W niezajętej przestrzeni, którą widzisz w zasięgu, pojawia się Duży spektralny strażnik i unosi się tam przez czas trwania czaru. Strażnik zajmuje tę przestrzeń, jest niewrażliwy na obrażenia i przybiera formę odpowiednią dla twojego bóstwa lub panteonu.</p><p>Każdy wróg, który po raz pierwszy w turze wejdzie w obszar 10 stóp od strażnika lub rozpocznie tam swoją turę, musi wykonać rzut obronny na Zręczność. W przypadku niepowodzenia otrzymuje 20 obrażeń od światłości, a w przypadku sukcesu połowę tej wartości. Strażnik znika, gdy zada łącznie 60 obrażeń.</p>",
+            "description": "<p>W niezajętej przestrzeni, którą widzisz w zasięgu, pojawia się Duży spektralny strażnik i unosi się tam przez czas trwania czaru. Strażnik zajmuje tę przestrzeń, jest niewrażliwy na obrażenia i przybiera formę odpowiednią dla twojego bóstwa lub panteonu.</p><p>Każdy wróg, który po raz pierwszy w ciągu tury przemieści się do przestrzeni w promieniu 10 stóp od strażnika lub rozpocznie tam swoją turę, musi wykonać rzut obronny na Zręczność, w przeciwnym razie otrzymuje 20 obrażeń od światłości, a przy udanym rzucie połowę tej wartości. Strażnik znika, gdy łącznie zada 60 obrażeń.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
