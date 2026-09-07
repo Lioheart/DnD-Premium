@@ -1976,7 +1976,7 @@
         },
         "Grease": {
             "name": "Tłuszcz",
-            "description": "<p>Niepalny tłuszcz pokrywa ziemię na obszarze kwadratu o boku 10 stóp, którego środek znajduje się w wybranym punkcie w zasięgu, zamieniając go w &amp;Reference[difficultterrain]{Trudny Teren} na czas trwania czaru.</p><p>Gdy tłuszcz się pojawia, każda istota stojąca w jego obszarze musi wykonać rzut obronny na Zręczność. W przypadku niepowodzenia otrzymuje stan &amp;Reference[prone]{Powalony}. Istota, która wejdzie w obszar lub zakończy w nim swoją turę, również musi wykonać ten rzut obronny albo upaść Powalona.</p>",
+            "description": "<p>Niepalny tłuszcz pokrywa ziemię na obszarze kwadratu o boku 10 stóp, którego środek znajduje się w wybranym punkcie w zasięgu, zamieniając go na czas trwania czaru w &amp;Reference[difficultterrain].</p><p>Gdy tłuszcz się pojawia, każda istota stojąca w jego obszarze musi wykonać rzut obronny na Zręczność, w przeciwnym razie otrzymuje stan &amp;Reference[prone]. Istota, która znajdzie się w tym obszarze lub zakończy w nim swoją turę, musi wykonać ten sam rzut obronny, w przeciwnym razie również pada Powalona.</p>",
             "materials": "kawałek skórki wieprzowej lub masła",
             "activities": {
                 "save": {
