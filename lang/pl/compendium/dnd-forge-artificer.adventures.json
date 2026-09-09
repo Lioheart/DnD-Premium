@@ -70,13 +70,13 @@
                             }
                         },
                         "Sticky Shield": {
-                            "name": "Sticky Shield",
+                            "name": "Lepka tarcza",
                             "description": {
                                 "value": "<p class=\"feature\"><em>Trigger:</em> A creature misses the [[lookup @name lowercase]] with a melee attack roll using a weapon. <em>Response—Strength Saving Throw:</em> DC [[lookup @save.dc.value activity=A8a55LxaAvNmIUnj]], the triggering creature.</p><p><em>Failure:</em> The attack’s weapon sticks to the [[lookup @name lowercase]]’s shield. If the target doesn’t let go of the weapon, the target has the &amp;Reference[Grappled apply=false] condition while the weapon is stuck (escape DC [[lookup @skills.ath.passive]]). While stuck, the weapon can’t be used. The target can take an action to make a [[/check ath dc=@skills.ath.passive format=long]], freeing the weapon on a success.</p>"
                             }
                         },
                         "Sticky Net": {
-                            "name": "Sticky Net",
+                            "name": "Lepka sieć",
                             "description": {
                                 "value": "<p><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.formula activity=MxEs7KnCVGemObHx]], one [[lookup @target.affects.special activity=MxEs7KnCVGemObHx]] [[lookup @target.affects.type activity=MxEs7KnCVGemObHx]] the kuo-toa can see within [[lookup @range.value activity=MxEs7KnCVGemObHx]] feet.</p><p><em>Failure:</em> The target has the &amp;Reference[Restrained apply=false] condition until the net is destroyed (AC 10; HP 5; Immunity to Bludgeoning, Poison, and Psychic damage). A creature can take an action to make a [[/skill ath 10]] check to free itself or another creature in a net within 5 feet, destroying the net on a success.</p>"
                             }
@@ -135,7 +135,7 @@
                         "Destructive Wave": {
                             "name": "Fala zniszczenia",
                             "description": {
-                                "value": "<p>Destrukcyjna energia rozchodzi się od ciebie w promieniu 30 stóp. Każda wybrana przez ciebie istota w tym obszarze wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia cel otrzymuje 5k6 obrażeń od dźwięku oraz 5k6 obrażeń od światłości lub nekrotycznych (twój wybór) i zostaje &Reference[Prone]{Powalony}. W przypadku udanego rzutu obronnego cel otrzymuje tylko połowę tych obrażeń.</p>"
+                                "value": "<p>Niszczycielska energia rozchodzi się od ciebie falami w Emanacji o promieniu 30 stóp. Każda wybrana przez ciebie istota w Emanacji wykonuje rzut obronny na Kondycję. Przy nieudanym rzucie cel otrzymuje 5k6 obrażeń od dźwięku oraz 5k6 obrażeń od światłości lub nekrotycznych (wedle twojego wyboru) i otrzymuje stan &amp;Reference[Prone]. Przy udanym rzucie cel otrzymuje tylko połowę tych obrażeń.</p>"
                             }
                         },
                         "Divination": {
@@ -147,13 +147,13 @@
                         "Hold Monster": {
                             "name": "Unieruchomienie potwora",
                             "description": {
-                                "value": "<p>Wybierasz istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &Reference[Paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 5. kręgu.</p>"
+                                "value": "<p>Wybierasz istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &Reference[Paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 5. kręgu.</p>"
                             }
                         },
                         "Scrying": {
                             "name": "Wizja",
                             "description": {
-                                "value": "<p>Możesz widzieć i słyszeć istotę, którą wybierzesz, pod warunkiem że znajduje się na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, który jest modyfikowany (patrz poniższe tabele) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przeciwko czemu wykonuje rzut, odczuwa jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Drugoręczna (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Pierwszoręczna (spotkałeś cel)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz …</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia</td><td>−10</td></tr></tbody></table><p>W przypadku udanego rzutu obronnego cel nie jest dotknięty efektem czaru i nie możesz ponownie użyć tego czaru na nim przez 24 godziny.</p><p>W przypadku nieudanego rzutu czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Możesz widzieć i słyszeć przez sensor tak, jakbyś tam był. Sensor porusza się wraz z celem, pozostając w odległości 10 stóp od niego przez cały czas działania czaru. Jeśli coś może zobaczyć sensor, pojawia się on jako świetlista kula wielkości pięści.</p><p>Zamiast wybrać istotę, możesz wybrać miejsce, które widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje tam nieruchomy.</p>"
+                                "value": "<p>Widzisz i słyszysz wybraną przez siebie istotę, pod warunkiem że znajduje się ona na tej samej sferze egzystencji co ty. Cel wykonuje rzut obronny na Mądrość, modyfikowany (patrz tabele poniżej) w zależności od tego, jak dobrze go znasz i jaki masz z nim fizyczny związek. Cel nie wie, przed czym się broni — czuje jedynie niepokój.</p><table><thead><tr><td>Twoja wiedza o celu jest…</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Ze słyszenia (słyszałeś o celu)</td><td>+5</td></tr><tr><td>Z pierwszej ręki (spotkałeś cel osobiście)</td><td>+0</td></tr><tr><td>Rozległa (dobrze znasz cel)</td><td>−5</td></tr></tbody></table><table><thead><tr><td>Posiadasz…</td><td>Modyfikator rzutu</td></tr></thead><tbody><tr><td>Zdjęcie lub inną podobiznę celu</td><td>−2</td></tr><tr><td>Ubranie lub inny przedmiot należący do celu</td><td>−4</td></tr><tr><td>Część ciała, kosmyk włosów lub fragment paznokcia celu</td><td>−10</td></tr></tbody></table><p>Przy udanym rzucie obronnym cel pozostaje nietknięty, a ty nie możesz ponownie użyć na nim tego czaru przez 24 godziny.</p><p>Przy nieudanym rzucie czar tworzy Niewidzialny, niematerialny sensor w promieniu 10 stóp od celu. Widzisz i słyszysz przez ten sensor, tak jakbyś sam się tam znajdował. Sensor porusza się wraz z celem, utrzymując odległość do 10 stóp od niego przez cały czas trwania czaru. Jeśli ktoś zdoła dostrzec sensor, widzi go jako świetlistą kulę wielkości twojej pięści.</p><p>Zamiast celować w istotę, możesz obrać za cel miejsce, które wcześniej widziałeś. W takim przypadku sensor pojawia się w tym miejscu i pozostaje nieruchomy.</p>"
                             }
                         },
                         "Tongues": {
