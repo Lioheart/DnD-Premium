@@ -2645,7 +2645,7 @@
         },
         "Magic Weapon": {
             "name": "Magiczna broń",
-            "description": "<p>Dotykasz niemagicznej broni. Do końca czaru ta broń staje się magiczną bronią z premią +1 do testów ataku i rzutów na obrażenia. Czar kończy się wcześniej, jeśli rzucisz go ponownie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Premia wzrasta do +2 przy komórce czaru o kręgu 3–5. Premia wzrasta do +3 przy komórce czaru o kręgu 6+.</p>",
+            "description": "<p>Dotykasz niemagicznej broni. Dopóki czar trwa, ta broń staje się magiczną bronią z premią +1 do testów ataku i rzutów obrażeń. Czar kończy się przedwcześnie, jeśli rzucisz go ponownie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Premia wzrasta do +2 przy komórce czaru 3.–5. kręgu. Premia wzrasta do +3 przy komórce czaru 6. kręgu lub wyższego.</p>",
             "effects": {
                 "Magic Weapon +1": {
                     "name": "Broń magiczna +1",
@@ -2691,7 +2691,7 @@
         },
         "Mass Cure Wounds": {
             "name": "Masowe leczenie ran",
-            "description": "<p>Fala uzdrawiającej energii rozchodzi się od punktu, który widzisz w zasięgu. Wybierz do sześciu istot w Sferze o promieniu 30 stóp z centrum w tym punkcie. Każdy cel odzyskuje Punkty Wytrzymałości równe 5k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 1k8 za każdy krąg komórki czaru powyżej 5.</p>"
+            "description": "<p>Fala uzdrawiającej energii rozchodzi się od punktu, który widzisz w zasięgu. Wybierz do sześciu istot w Sferze o promieniu 30 stóp, skupionej na tym punkcie. Każdy cel odzyskuje Punkty wytrzymałości w liczbie równej 5k8 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 1k8 za każdy krąg komórki czaru powyżej 5.</p>"
         },
         "Mass Heal": {
             "name": "Masowe uleczenie",
