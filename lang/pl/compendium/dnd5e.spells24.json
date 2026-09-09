@@ -2695,7 +2695,7 @@
         },
         "Mass Heal": {
             "name": "Masowe uleczenie",
-            "description": "<p>Strumień uzdrawiającej energii wypływa od ciebie do istot wokół ciebie. Przywracasz do 700 Punktów Wytrzymałości, rozdzielając je według własnego uznania między dowolną liczbę istot, które widzisz w zasięgu. Istoty uzdrowione tym czarem mają również usunięte stany &amp;Reference[Blinded]{Oślepiony}, &amp;Reference[Deafened]{Ogłuchły} oraz &amp;Reference[Poisoned]{Zatruty}.</p><section id=\"secret-B4SsHM2Uk0rl4qtz\" class=\"secret\"><p>Notatka Foundry</p><p>Aktywność <strong>Leczenie</strong> jest skonfigurowana, by przywrócić 700 Punktów Wytrzymałości wybranej istocie. Pula leczenia tego czaru powinna być rozdzielona między docelowe istoty ręcznie.</p></section>"
+            "description": "<p>Strumień uzdrawiającej energii wypływa od ciebie do otaczających cię istot. Przywracasz do 700 Punktów wytrzymałości, rozdzielając je według własnego uznania między dowolną liczbę istot, które widzisz w zasięgu. Istotom uzdrowionym tym czarem znoszone są również stany &amp;Reference[Blinded], &amp;Reference[Deafened] oraz &amp;Reference[Poisoned].</p><section id=\"secret-B4SsHM2Uk0rl4qtz\" class=\"secret\"><p>Notatka foundry</p><p>Aktywność <strong>Leczenie</strong> jest skonfigurowana tak, by przywracać 700 Punktów wytrzymałości wybranej istocie. Pulę leczenia tego czaru należy rozdzielić między docelowe istoty ręcznie.</p></section>"
         },
         "Mass Healing Word": {
             "name": "Masowe kojące słowo",
@@ -2719,7 +2719,7 @@
         },
         "Maze": {
             "name": "Labirynt",
-            "description": "<p>Wypędzasz istotę, którą widzisz w zasięgu, do labiryntowej demisfery. Cel pozostaje tam przez czas trwania lub dopóki nie ucieknie z labiryntu.</p><p>Cel może wykonać akcję Badanie, by spróbować uciec. Gdy to robi, wykonuje test Inteligencji (Badanie) o ST 20. Jeśli się powiedzie, ucieka, a czar się kończy.</p><p>Gdy czar się kończy, cel pojawia się ponownie w miejscu, które opuścił, lub, jeśli to miejsce jest zajęte, w najbliższej wolnej przestrzeni.</p>",
+            "description": "<p>Wypędzasz istotę, którą widzisz w zasięgu, do labiryntowej demisfery. Cel pozostaje tam przez czas trwania czaru lub dopóki nie ucieknie z labiryntu.</p><p>Cel może podjąć Akcję nauki, by spróbować uciec. Gdy to zrobi, wykonuje test Inteligencji (Śledztwo) o St 20. Jeśli mu się powiedzie, ucieka, a czar się kończy.</p><p>Gdy czar się kończy, cel pojawia się ponownie w przestrzeni, którą opuścił, lub, jeśli jest ona zajęta, w najbliższej niezajętej przestrzeni.</p>",
             "activities": {
                 "Banish to Maze": {
                     "name": "Wygnanie do labiryntu"
