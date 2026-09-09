@@ -2470,7 +2470,7 @@
         },
         "Invisibility": {
             "name": "Niewidzialność",
-            "description": "<p>Istota, którą dotykasz, otrzymuje stan &amp;Reference[invisible apply=false]{Niewidzialny} do końca czaru. Czar kończy się wcześniej natychmiast po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>",
+            "description": "<p>Istota, której dotkniesz, otrzymuje stan &amp;Reference[invisible apply=false], dopóki czar nie dobiegnie końca. Czar kończy się przedwcześnie zaraz po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>",
             "materials": "rzęsa w kleju arabskim",
             "effects": {
                 "Invisible": {
