@@ -3,20 +3,20 @@
     "folders": {
         "Backgrounds": "Pochodzenia",
         "Channeled Spirits": "Channeled Spirits",
-        "College of Spirits": "College of Spirits",
+        "College of Spirits": "Kolegium Dusz",
         "Dark Gift": "Mroczny dar",
         "Feats": "Atuty",
-        "Grave Domain": "Grave Domain",
-        "Hollow Warden": "Hollow Warden",
+        "Grave Domain": "Domena grobu",
+        "Hollow Warden": "Strażnik Pustki",
         "Origin": "Początek",
-        "Phantom": "Phantom",
+        "Phantom": "Fantom",
         "Reanimator": "Reanimator",
-        "Shadow Sorcery": "Shadow Sorcery",
+        "Shadow Sorcery": "Cienista magia",
         "Species": "Gatunki",
         "Strange Modifications": "Strange Modifications",
         "Subclasses": "Podklasy",
         "Traits": "Cechy",
-        "Undead Patron": "Undead Patron"
+        "Undead Patron": "Patron Nieumarły"
     },
     "entries": {
         "Aberrant Anatomy": {
@@ -51,7 +51,7 @@
             "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwHowlA3f2I58L3 inline]</p><p><em>Disadvantage on attack rolls is not automated.</em></p>"
         },
         "Avenger Spirit": {
-            "name": "Avenger Spirit",
+            "name": "Duchowy mściciel",
             "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSAvengerSpv2 inline]</p>"
         },
         "Beasts of Ill Omen": {
@@ -98,9 +98,9 @@
             }
         },
         "College of Spirits": {
-            "name": "College of Spirits",
+            "name": "Kolegium Dusz",
             "description": {
-                "value": "<p class=\"meta\"><em>Call Forth Spirits from Beyond the Grave</em></p><p>Bards of the College of Spirits conjure legendary spirits to change the world. But such entities are capricious, and what a Bard summons isn’t always entirely under their control.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.CollegeofSpirits]{Subclass Details}</em></p>"
+                "value": "<p class=\"meta\"><em>Przywołaj duchy spoza grobu</em></p><p>Bardowie z Kolegium Dusz przywołują legendarne duchy, aby zmienić świat. Jednak takie byty są kapryśne i to, co przywołuje bard, nie zawsze znajduje się całkowicie pod jego kontrolą.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.CollegeofSpirits]</em></p>"
             }
         },
         "Coward Spirit": {
@@ -174,7 +174,7 @@
             "description": "<p>You have &amp;Reference[Blindsight] with a range of 15 feet.</p>"
         },
         "Eyes of the Dark": {
-            "name": "Eyes of the Dark",
+            "name": "Oczy ciemności",
             "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwSSPowerofShNG inline]</p>"
         },
         "Feral Pounce": {
@@ -241,9 +241,9 @@
             "name": "Pochwycony"
         },
         "Grave Domain": {
-            "name": "Grave Domain",
+            "name": "Domena grobu",
             "description": {
-                "value": "<p><em>Embody Deific Forces of Death</em></p><p>The Grave Domain concerns itself with the boundary between life and death. To those who tap into this domain’s power, death is a natural and inevitable part of the multiverse. Such Clerics seek to destroy undead and shepherd spirits.</p><p>The magic of this domain also allows these Clerics to stave off death for a time. But this is merely a delay of death, not a denial of it, for the grave will always claim its due.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.GraveDomainCleri]{Subclass Details}</em></p>"
+                "value": "<p><em>Ucieleśniaj boskie siły śmierci</em></p><p>Domena Grobu zajmuje się granicą między życiem a śmiercią. Dla tych, którzy czerpią z mocy tej domeny, śmierć jest naturalną i nieuchronną częścią wieloświata. Tacy klerycy starają się niszczyć nieumarłych i przeprowadzać duchy.</p><p>Magia tej domeny pozwala również tym klerykom na pewien czas powstrzymać śmierć. Jest to jednak jedynie opóźnienie śmierci, a nie jej zaprzeczenie, bowiem grób zawsze upomni się o swoje.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.GraveDomainCleri]</em></p>"
             }
         },
         "Grave Domain Spells": {
@@ -263,21 +263,21 @@
             "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSEmpoweredtO inline]</p>"
         },
         "Haunted One": {
-            "name": "Haunted One",
+            "name": "Nawiedzony",
             "description": {
-                "value": "<p><strong>Ability Scores:</strong> Constitution, Wisdom, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwSurvivor2zrM3]{Survivor} or a @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwFeats00000000.JournalEntryPage.yEsfCxTXqE0ZGQ3B]{Dark Gift feat} of your choice.</p><p><strong>Skill Proficiencies:</strong> Arcana and Survival</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of Gaming Set</em></p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) Gaming Set (same as above), Crowbar, Holy Water (1 flask), Mirror, Oil (2 flasks), Signal Whistle, Tinderbox, Traveler’s Clothes, 5 Torches, Waterskin, and 14 GP; or (B) 50 GP</p><p>You are haunted by the events of your past. Whether it was a lone terrible incident or an accumulation of painful moments, you bear the unshakable weight of what happened to you. You’ve tried to bury it and run away from it, to no avail; it can’t be slain with a sword or banished via magic. Nevertheless, you persist.</p>"
+                "value": "<p><strong>Wartości cech:</strong> Kondycja, Mądrość, Charyzma</p><p><strong>Atut:</strong> @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwSurvivor2zrM3] lub wybrany przez ciebie atut Mrocznego daru @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwFeats00000000.JournalEntryPage.yEsfCxTXqE0ZGQ3B].</p><p><strong>Umiejętności:</strong> Wiedza tajemna i Sztuka przetrwania</p><p><strong>Biegłość w narzędziach:</strong> <em>Wybierz jeden rodzaj zestawu do gry</em></p><p><strong>Wyposażenie:</strong> <em>Wybierz A lub B:</em> (A) zestaw do gry (jak wyżej), łom, woda święcona (1 butelka), lusterko, olej (2 butelki), gwizdek, zestaw do rozpalania ognia, ubranie podróżnika, 5 pochodni, bukłak i 14 sz; lub (B) 50 sz</p><p>Nawiedzają cię wydarzenia z przeszłości. Niezależnie od tego, czy było to jedno przerażające wydarzenie, czy nagromadzenie bolesnych chwil, dźwigasz niezłomny ciężar tego, co ci się przydarzyło. Próbowałeś to pogrzebać i uciec od tego, na próżno; nie da się tego zgładzić mieczem ani wypędzić za pomocą magii. Mimo to trwasz.</p>"
             }
         },
         "Hexblood": {
-            "name": "Hexblood",
+            "name": "Wiedźmiokrwisty",
             "description": {
                 "value": "<p>Hexbloods are individuals infused with fey magic as a result of eldritch energy or mysterious witchcraft. Many hexbloods are transformed into such beings after making a deal with a powerful hag, but other strange forces can result in the birth of a hexblood. A hexblood’s strange fey power manifests as eerie clairvoyance and beguiling magic.</p><h4 class=\"entry\">Hexblood Traits</h4><p><strong>Creature Type:</strong> Fey</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p>As a Hexblood, you have these special traits.</p><p><span class=\"inline-entry\"><strong>Darkvision.</strong></span> You have Darkvision with a range of 60 feet.</p><p><span class=\"inline-entry\"><strong>Eerie Token.</strong></span> @Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwEerieTokenSri inline]</p><p><span class=\"inline-entry\"><strong>Hex Magic.</strong></span> You always have the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDisguiseSe]{Disguise Self}</em> and <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHex0000000]{Hex} </em>spells prepared. You can cast each spell once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select this species).</p>"
             }
         },
         "Hollow Warden": {
-            "name": "Hollow Warden",
+            "name": "Strażnik Pustki",
             "description": {
-                "value": "<p class=\"meta\"><em>Draw on the Might of Ancient Wild Terrors</em></p><p>Legends tell that the most ancient and bloodthirsty terrors lurk deep within the old places of the earth. Hollow Wardens venerate and draw power from such beings, transforming themselves into merciless and monstrous guardians that stalk jagged coastlines, steep mountain crags, and other dark and wild places.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.HollowWardenRang]{Subclass Details}</em></p>"
+                "value": "<p class=\"meta\"><em>Czerp z potęgi pradawnych, dzikich koszmarów</em></p><p>Legendy głoszą, że najstarsze i najbardziej krwiożercze koszmary kryją się głęboko w starych zakątkach ziemi. Strażnicy Pustki czczą takie istoty i czerpią z nich moc, przeistaczając się w bezlitosnych i potwornych strażników, którzy przemierzają poszarpane wybrzeża, strome turnie górskie oraz inne mroczne i dzikie miejsca.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.HollowWardenRang]</em></p>"
             }
         },
         "Hollow Warden Spells": {
@@ -313,9 +313,9 @@
             "description": "<p>You have the &amp;Reference[Incapacitated apply=false] condition until the end of your next turn. While you are Incapacitated in this way, your Speed is halved.</p>"
         },
         "Investigator": {
-            "name": "Investigator",
+            "name": "Śledczy",
             "description": {
-                "value": "<p><strong>Ability Scores:</strong> Intelligence, Wisdom, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwSharpEyev8PBf]{Sharp Eye} or a @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwFeats00000000.JournalEntryPage.yEsfCxTXqE0ZGQ3B]{Dark Gift feat} of your choice.</p><p><strong>Skill Proficiencies:</strong> Insight and Investigation</p><p><strong>Tool Proficiency:</strong> Disguise Kit</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) Disguise Kit, Manacles, Shovel, Traveler’s Clothes, 3 Vials, and 16 GP; or (B) 50 GP</p><p>You relentlessly seek the truth. Perhaps you witnessed something remarkable or terrible and now desire to unravel its mystery, or maybe you’re motivated by universal justice and honesty. Whether the cases you’re embroiled in are local crimes or eldritch conspiracies, you’re driven to reveal what others would keep hidden.</p>"
+                "value": "<p><strong>Wartości cech:</strong> Inteligencja, Mądrość, Charyzma</p><p><strong>Atut:</strong> @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwSharpEyev8PBf] lub wybrany przez ciebie atut Mrocznego Daru @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwFeats00000000.JournalEntryPage.yEsfCxTXqE0ZGQ3B].</p><p><strong>Umiejętności:</strong> Intuicja i Śledztwo</p><p><strong>Biegłość w narzędziach:</strong> Zestaw do charakteryzacji</p><p><strong>Wyposażenie:</strong> <em>Wybierz A lub B:</em> (A) zestaw do charakteryzacji, kajdany, łopata, ubranie podróżnika, 3 fiolki i 16 sz; lub (B) 50 sz</p><p>Nieustannie poszukujesz prawdy. Być może byłeś świadkiem czegoś niezwykłego lub okropnego i teraz pragniesz rozwikłać tę tajemnicę, albo kieruje tobą uniwersalna sprawiedliwość i uczciwość. Niezależnie od tego, czy sprawy, w które się wplątujesz, to lokalne zbrodnie, czy pradawne spiski, kieruje cię pragnienie ujawnienia tego, co inni woleliby zachować w tajemnicy.</p>"
             }
         },
         "Invisible": {
@@ -367,15 +367,15 @@
             }
         },
         "Mist Walker": {
-            "name": "Mist Walker",
+            "name": "Przemierzający Mgły",
             "description": {
                 "value": "<p>You know how to slip through the Mists’ grasp, but this freedom comes at a price: If you remain in one area for too long, the Mists find you and drain your life force. You gain the following features.</p><p><span class=\"inline-entry\"><strong>Domain Traveler.</strong></span> When you enter the Mists intent on reaching a specific domain, you are treated as if you possess a @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwTheLandoftheM.JournalEntryPage.MistTalismansC63]{Mist talisman} keyed to that domain. To use this feature, you must know the name of the domain you have chosen as your destination, but you don’t need to have previously visited that land. This trait doesn’t allow you to bypass domain borders closed by a Darklord’s will.</p><p><span class=\"inline-entry\"><strong>Mist Walk.</strong></span> When you take damage or fail a saving throw to avoid or end the Grappled or Restrained condition, you can take a Reaction and teleport up to 15 feet to an unoccupied space you can see. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p><span class=\"inline-entry\"><strong>Poisoned Roots.</strong></span> When you finish a Long Rest, the world around you in a 10-mile radius becomes a siphon that leeches away at your vitality. Whenever you finish a Short Rest in that area, make a Constitution saving throw (DC 13 plus your Proficiency Bonus). On a failed save, you get no benefits from finishing that rest.</p>"
             }
         },
         "Mist Wanderer": {
-            "name": "Mist Wanderer",
+            "name": "Wędrowiec Mgieł",
             "description": {
-                "value": "<p><strong>Ability Scores:</strong> Dexterity, Constitution, Wisdom</p><p><strong>Feat:</strong> A @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwFeats00000000.JournalEntryPage.yEsfCxTXqE0ZGQ3B]{Dark Gift feat} of your choice (see “Feats” later in this chapter; @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwMistWalkerlge]{Mist Walker} is recommended)</p><p><strong>Skill Proficiencies:</strong> Survival and Stealth</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of Artisan’s Tools</em></p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) Artisan’s Tools (same as above), Lamp, Oil (5 flasks), Pouch, Rope, Tinderbox, Traveler’s Clothes, and 30 GP; or (B) 50 GP</p><p>You once knew your home. But one day, the Mists rose and drew you into a Domain of Dread. Ever since, you have wandered between domains, braving the mercurial Mists as you search for a way home. Your time in these cursed realms has changed you, yet you find solace in communities of fellow wanderers throughout the Mists.</p>"
+                "value": "<p><strong>Wartości cech:</strong> Zręczność, Kondycja, Mądrość</p><p><strong>Atut:</strong> Wybrany przez ciebie atut Mrocznego Daru @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwFeats00000000.JournalEntryPage.yEsfCxTXqE0ZGQ3B] (patrz „Atuty” w dalszej części tego rozdziału; zalecany jest @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwMistWalkerlge])</p><p><strong>Umiejętności:</strong> Sztuka przetrwania i Skradanie się</p><p><strong>Biegłość w narzędziach:</strong> <em>Wybierz jeden rodzaj narzędzi rzemieślniczych</em></p><p><strong>Wyposażenie:</strong> <em>Wybierz A lub B:</em> (A) narzędzia rzemieślnicze (jak wyżej), lampa, olej (5 butelek), torba, lina, zestaw do rozpalania ognia, ubranie podróżnika i 30 sz; lub (B) 50 sz</p><p>Kiedyś znałeś swój dom. Ale pewnego dnia podniosły się Mgły i wciągnęły cię w Domenę Grozy. Od tamtej pory wędrujesz między domenami, stawiając czoła zmiennym Mgłom w poszukiwaniu drogi do domu. Czas spędzony w tych przeklętych krainach zmienił cię, a mimo to znajdujesz ukojenie w społecznościach innych wędrowców przemierzających Mgły.</p>"
             }
         },
         "Moist": {
@@ -415,15 +415,15 @@
             }
         },
         "Phantom": {
-            "name": "Phantom",
+            "name": "Fantom",
             "description": {
-                "value": "<p class=\"meta\"><em>Embrace Death and Wield Ghostly Power</em></p><p>Some Rogues traverse the veil between life and death, shepherding opponents to the grave and slipping through the world as undetectable as a spirit. In these pursuits, a Rogue might discover a mystical connection to death itself. Such an individual becomes immersed in negative energy, infusing their strikes with deathly energy and stealing knowledge from souls who have passed on. Thieves’ guilds value Rogues of this persuasion as highly effective information gatherers and spies.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.PhantomRogueBU0w]{Subclass Details}</em></p>"
+                "value": "<p class=\"meta\"><em>Obejmij śmierć i władaj upiorną mocą</em></p><p>Niektórzy łotrowie przemierzają zasłonę między życiem a śmiercią, odprowadzając przeciwników do grobu i przemykając przez świat tak niewykrywalni jak duch. W tych dążeniach łotr może odkryć mistyczne połączenie z samą śmiercią. Taka jednostka zanurza się w negatywnej energii, nasycając swoje uderzenia energią śmierci i kradnąc wiedzę duszom, które odeszły. Gildie złodziei cenią łotrów tego pokroju jako wysoce skutecznych zbieraczy informacji i szpiegów.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.PhantomRogueBU0w]</em></p>"
             }
         },
         "Power of Shadow": {
-            "name": "Power of Shadow",
+            "name": "Moc cienia",
             "description": {
-                "value": "<p>You gain the following benefits.</p><p><span class=\"inline-entry\"><strong>Eyes of the Dark.</strong></span> You have Darkvision with a range of 120 feet and Blindsight with a range of 10 feet. In addition, if a spell you cast creates an area of Darkness, you can see normally through that spell’s Darkness.</p><p><span class=\"inline-entry\"><strong>Strength of the Grave.</strong></span> If you would drop to 0 Hit Points and not die outright, you can make a [[/save]]{Charisma saving throw} (DC 5 plus the damage taken). On a successful save, your Hit Points instead [[/heal]]{change to a number} equal to your Charisma modifier plus your Sorcerer level. After you succeed on this save, you can’t use this benefit again until you finish a Long Rest.</p>"
+                "value": "<p>Zyskujesz następujące korzyści.</p><p><span class=\"inline-entry\"><strong>Oczy ciemności.</strong></span> Zyskujesz Widzenie w ciemności na odległość 120 stóp oraz Ślepowidzenie na odległość 10 stóp. Dodatkowo, jeśli rzucony przez ciebie czar tworzy obszar ciemności, widzisz w normalny sposób przez ciemność spowodowaną tym czarem.</p><p><span class=\"inline-entry\"><strong>Siła znad grobu.</strong></span> Jeśli twoje Punkty wytrzymałości miałyby spaść do 0 i nie zginąłbyś natychmiast, możesz wykonać rzut obronny na Charyzmę (ST wynosi 5 plus otrzymane obrażenia). W przypadku udanego rzutu obronnego twoje Punkty wytrzymałości zmieniają się zamiast tego na wartość równą twojemu modyfikatorowi Charyzmy plus twój Poziom zaklinacza. Po udanym rzucie obronnym nie możesz ponownie skorzystać z tej korzyści, dopóki nie ukończysz Długiego odpoczynku.</p>"
             }
         },
         "Priest Spirit": {
@@ -447,7 +447,7 @@
         "Reanimator": {
             "name": "Reanimator",
             "description": {
-                "value": "<p class=\"meta\"><em>Reassemble Corpses and Raise the Dead</em></p><p>Reanimators defy the laws of nature in pursuit of gruesome experiments. These grim Artificers stitch together servants from disparate corpses, use foul magic to strengthen the living, and transform the art of necromancy into a terrifying science.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.ReanimatorArtifi]{Subclass Details}</em></p>"
+                "value": "<p class=\"meta\"><em>Składaj zwłoki i wskrzeszaj zmarłych</em></p><p>Reanimatorzy sprzeciwiają się prawom natury w pogoni za makabrycznymi eksperymentami. Ci ponurzy wynalazcy zszywają sługi z rozmaitych zwłok, używają złowrogiej magii do wzmacniania żywych i przekształcają sztukę nekromancji w przerażającą naukę.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.ReanimatorArtifi]</em></p>"
             }
         },
         "Reanimator Spells": {
@@ -463,7 +463,7 @@
             }
         },
         "Reborn": {
-            "name": "Reborn",
+            "name": "Odrodzony",
             "description": {
                 "value": "<p>Reborn are individuals who have died yet inexplicably still live. Some reborn exhibit the scars of fatal ends, their ashen flesh or bloodless veins making it clear that they’ve escaped death. Other reborn are marvels of magic or science, being stitched together from disparate beings or bearing mysterious minds in manufactured bodies. Whatever their origins, reborn know a new life and seek experiences and answers all their own.</p><h4 class=\"entry\">Reborn Traits</h4><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p>As a Reborn, you have these special traits.</p><p><span class=\"inline-entry\"><strong>Escaped Death.</strong></span> @Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwEscapedDeatXY inline]</p><p><span class=\"inline-entry\"><strong>Everlasting.</strong></span> @Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwEverlasting7o inline]</p><p><span class=\"inline-entry\"><strong>Knowledge from a Past Life.</strong></span> @Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwKnowledgefraL inline]</p><p><span class=\"inline-entry\"><strong>Strange Endurance.</strong></span> You have Resistance to one of the following damage types of your choice: Cold, Necrotic, or Poison.</p>"
             }
@@ -490,7 +490,7 @@
             }
         },
         "Second Skin": {
-            "name": "Second Skin",
+            "name": "Druga skóra",
             "description": {
                 "value": "<p>There is another side of you that most people never see: a beast, a terrifying avenger, or a walking nightmare. You gain the following features.</p><p><strong>Alternate Form.</strong> You always have the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAlterSelf0]{Alter Self}</em> spell prepared. You can cast it without a spell slot or spell components, and you must finish a Long Rest before you can cast it in this way again. You can also cast it using spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this feat).</p><p>When you cast <em>Alter Self</em> without a spell slot using this feature, it doesn’t require Concentration.</p><p><strong>Involuntary Change.</strong> Certain circumstances can involuntarily trigger your transformation. When you select this feat, roll on the Change Catalyst table to determine what triggers your change.</p><p>After you experience the catalyst, at the start of your next turn, make a [[/save]]{Charisma saving throw} (DC 13 plus your Proficiency Bonus). On a failed save, you immediately use Alternate Form to cast [[/item activity=ZrjtFFSbJZTj8Cfm]]{Alter Self} without a spell slot. If you’ve already expended the use of that feature, you instead have the &amp;Reference[Stunned apply=false] condition until the start of your next turn.</p><p>@Embed[Compendium.dnd-ravenloft-horrors-within.tables.RollTable.rhwChangeCatalys rollable resultLabel=\"Catalyst\" classes=\"caption-top\"]{Change Catalyst}</p>"
             }
@@ -508,9 +508,9 @@
             }
         },
         "Shadow Sorcery": {
-            "name": "Shadow Sorcery",
+            "name": "Cienista magia",
             "description": {
-                "value": "<p class=\"meta\"><em>Bend Doom and Darkness to Your Will</em></p><p>Your innate magic comes from the most nebulous and inscrutable forces of the Shadowfell or from other regions of supernatural darkness. You might trace your lineage to an entity from such a place, or perhaps you were exposed to the sinister energy of a shadow dragon and were transformed by it. Your shadowy magic allows you to command darkness, undeath, and woe.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.ShadowSorcerySor]{Subclass Details}</em></p>"
+                "value": "<p class=\"meta\"><em>Nagnij zagładę i ciemność do swojej woli</em></p><p>Twoja wrodzona magia pochodzi z najbardziej mglistych i nieprzeniknionych sił Shadowfell lub z innych regionów nadnaturalnej ciemności. Możesz wywodzić swoje pochodzenie od istoty z takiego miejsca lub być może zostałeś wystawiony na działanie złowrogiej energii cienistego smoka i uległeś jej przemianie. Twoja cienista magia pozwala ci kontrolować ciemność, nieumarłość i niedolę.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.ShadowSorcerySor]</em></p>"
             }
         },
         "Shadow Spells": {
@@ -553,9 +553,9 @@
             }
         },
         "Spirit Medium": {
-            "name": "Spirit Medium",
+            "name": "Medium spirytystyczne",
             "description": {
-                "value": "<p><strong>Ability Scores:</strong> Constitution, Intelligence, Wisdom</p><p><strong>Feat:</strong> A @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwFeats00000000.JournalEntryPage.yEsfCxTXqE0ZGQ3B]{Dark Gift feat} of your choice (@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwGatheredWhisp]{Gathered Whispers} is recommended)</p><p><strong>Skill Proficiencies:</strong> Insight and Religion</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of Gaming Set</em></p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) Dagger, Gaming Set (same as above), Basket, Bell, 8 Candles, Ink, Ink Pen, Paper (5 sheets), Tinderbox, Traveler’s Clothes, and 32 GP; or (B) 50 GP</p><p>Through strange rituals and fateful encounters, you’ve discovered that you bear a unique connection to the spirits of the dead and damned. Your body is a conduit for such spirits, granting you prescient insight from beyond. But these spirits’ intentions aren’t always innocent, and their gifts come at a haunting cost.</p>"
+                "value": "<p><strong>Wartości cech:</strong> Kondycja, Inteligencja, Mądrość</p><p><strong>Atut:</strong> Wybrany przez ciebie atut Mrocznego daru @UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwFeats00000000.JournalEntryPage.yEsfCxTXqE0ZGQ3B] (zalecany jest @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwGatheredWhisp])</p><p><strong>Umiejętności:</strong> Intuicja i Religia</p><p><strong>Biegłość w narzędziach:</strong> <em>Wybierz jeden rodzaj zestawu do gry</em></p><p><strong>Wyposażenie:</strong> <em>Wybierz A lub B:</em> (A) sztylet, zestaw do gry (jak wyżej), kosz, dzwonek, 8 świec, atrament, pióro do pisania, papier (5 arkuszy), zestaw do rozpalania ognia, ubranie podróżnika i 32 sz; lub (B) 50 sz</p><p>Przez dziwne rytuały i brzemienne w skutki spotkania odkryłeś, że posiadasz wyjątkową więź z duchami zmarłych i potępionych. Twoje ciało stanowi nośnik dla takich duchów, zapewniając ci prorocze wglądy z zaświatów. Jednak intencje tych duchów nie zawsze są niewinne, a ich dary wiążą się z nawiedzającą ceną.</p>"
             }
         },
         "Spirits from Beyond": {
@@ -581,7 +581,7 @@
             }
         },
         "Survivor": {
-            "name": "Ocaleniec",
+            "name": "Ocalały",
             "description": {
                 "value": "<p>You gain the following benefits.</p><p><strong>Hypervigilance.</strong> Whenever you roll Initiative, you can reroll the d20 if the number rolled is 9 or lower. You must use the new roll.</p><p><span class=\"inline-entry\"><strong>Steel Yourself.</strong></span> When you fail a saving throw to avoid or end the Charmed or Frightened condition, you can take a Reaction to add a bonus to the roll, potentially causing it to succeed. The bonus is equal to your Proficiency Bonus.</p><p>Once you take this Reaction, you can’t do so again until you finish a Long Rest.</p>"
             }
@@ -606,7 +606,7 @@
             }
         },
         "Touch of Death": {
-            "name": "Touch of Death",
+            "name": "Dotyk Śmierci",
             "description": {
                 "value": "<p>Deathly power resides within you, bursting out at the slightest provocation. You gain the following features.</p><p><span class=\"inline-entry\"><strong>Death Touch.</strong></span> You learn the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplChillTouch]{Chill Touch}</em> spell and can cast it without spell components. Necrotic damage you deal with this spell ignores Resistance. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this feat).</p><p><span class=\"inline-entry\"><strong>Pull of the Grave.</strong></span> You have Disadvantage on Death Saving Throws.</p>"
             }
@@ -624,9 +624,9 @@
             }
         },
         "Undead Patron": {
-            "name": "Undead Patron",
+            "name": "Patron Nieumarły",
             "description": {
-                "value": "<p class=\"meta\"><em>Defy Death for Profane Power</em></p><p>You’ve made a pact with a creature that defies the cycle of life and death: a powerful lich, a vampire, or another entity of undeath. Having once been mortal, these ancient patrons know firsthand the paths of ambition and the routes past the doors of death. They eagerly share this profane knowledge and other secrets with those who work their will among the living.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.UndeadPatronWarl]{Subclass Details}</em></p>"
+                "value": "<p class=\"meta\"><em>Przeciwstaw się śmierci dla plugawej mocy</em></p><p>Zawarłeś pakt z istotą, która sprzeciwia się cyklowi życia i śmierci: potężnym liszem, wampirem lub innym bytem nieumarłych. Będąc kiedyś śmiertelnikami, ci starożytni patroni znają z autopsji ścieżki ambicji oraz drogi prowadzące za drzwi śmierci. Chętnie dzielą się tą plugawą wiedzą i innymi sekretami z tymi, którzy wypełniają ich wolę wśród żywych.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.UndeadPatronWarl]</em></p>"
             }
         },
         "Undead Spells": {
@@ -662,7 +662,7 @@
             "description": "<p>You have the &amp;Reference[stunned apply=false] condition until the end of your next turn.</p>"
         },
         "Watchers": {
-            "name": "Watchers",
+            "name": "Patrzący",
             "description": {
                 "value": "<p>Something unnatural is always watching you, taking the form of scurrying vermin and other eerie creatures. You gain the following features.</p><p><span class=\"inline-entry\"><strong>Borrowed Eyes.</strong></span> You always have the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBeastSense]{Beast Sense}</em> and <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpeakwithA]{Speak with Animals}</em> spells prepared. You can cast each spell without a spell slot, and you must finish a Long Rest before you can cast it in this way again. You can also cast these spells using spell slots you have of the appropriate level.</p><p><span class=\"inline-entry\"><strong>Heightened Suspicion.</strong></span> Whenever you take the Search action, you can roll [[/r 1d4]] and add the number rolled to any ability check made as part of that action.</p><p><span class=\"inline-entry\"><strong>Incessant Watchers.</strong></span> You have Disadvantage on saving throws made against the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplScrying000]{Scrying}</em> spell.</p><p>In addition, immediately after you make a D20 Test and roll a 1 on the d20, paranoia threatens to overwhelm you. Make a [[/save]]{Wisdom saving throw} (DC 13 plus your Proficiency Bonus). On a failed save, you have Disadvantage on D20 Tests for 1 minute. You can repeat the save at the end of each of your turns, ending the effect early on a success.</p>"
             }
