@@ -97,7 +97,7 @@
             }
         },
         "Arcane Jolt": {
-            "name": "Arcane Jolt",
+            "name": "Magiczny wstrząs",
             "description": {
                 "value": "<p>When either you hit a target with an attack roll using a magic weapon or your @UUID[Compendium.dnd-forge-artificer.actors.Actor.efaSteelDefender]{Steel Defender} hits a target, you can channel magical energy through the strike to create one of the following effects:</p><p><em><strong>Destructive Energy</strong></em>. The target takes an extra 2d6 Force damage.</p><p><em><strong>Restorative Energy</strong></em>. Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring 2d6 Hit Points to it.</p><p>You can use this energy a number of times equal to your Intelligence modifier (minimum of once), but you can do so no more than once per turn. You regain all expended uses when you finish a Long Rest.</p>"
             }
@@ -242,15 +242,15 @@
             }
         },
         "Beasthide": {
-            "name": "Beasthide",
+            "name": "Dzika skóra",
             "description": {
-                "value": "<p>You gain [[/healing 1d6 temp]]{1d6} additional Temporary Hit Points. While shifted, you have a +1 bonus to your Armor Class.</p>"
+                "value": "<p>Zyskujesz [[/healing 1d6 temp]]{1k6} dodatkowych Tymczasowych punktów wytrzymałości. Podczas przemiany masz premię +1 do KP.</p>"
             }
         },
         "Bestial Instincts": {
-            "name": "Bestial Instincts",
+            "name": "Instynkty bestii",
             "description": {
-                "value": "<p>Channeling the beast within, you gain proficiency in one of the following skills of your choice: Acrobatics, Athletics, Intimidation, or Survival.</p>"
+                "value": "<p>Czerpiąc z drzemiącej w tobie bestii, zyskujesz Biegłość w jednej z następujących wybranych umiejętności: Akrobatyce, Atletyce, Zastraszaniu lub Sztuce przetrwania.</p>"
             }
         },
         "Blinded": {
@@ -327,7 +327,7 @@
         "Changeling Instincts": {
             "name": "Instynkty odmieńca",
             "description": {
-                "value": "<p>Thanks to your connection to the fey realm, you gain proficiency in two of the following skills of your choice: Deception, Insight, Intimidation, Performance, or Persuasion.</p>"
+                "value": "<p>Dzięki więzi z krainą Fey zyskujesz Biegłość w dwóch wybranych umiejętnościach spośród następujących: Oszustwo, Intuicja, Zastraszanie, Występy lub Perswazja.</p>"
             }
         },
         "Chemical Mastery": {
@@ -352,7 +352,7 @@
             "name": "Odporność na zimno"
         },
         "Common magic item that isn’t a Potion, a Scroll, or cursed": {
-            "name": "Common magic item that isn’t a Potion, a Scroll, or cursed",
+            "name": "Powszechny magiczny przedmiot, który nie jest Miksturą, Zwojem i nie jest przeklęty",
             "description": {
                 "value": "<p>You can learn this option multiple times and must select a different item each time; each item selected counts as a different plan.</p><p>@Embed[Compendium.dnd-forge-artificer.book.JournalEntry.efaAppendixFound.JournalEntryPage.mF1U5S8M2t81ZF2Y classes=\"hide-in-embed\" caption=false cite=false]{Using Category Plans}</p>"
             }
@@ -368,17 +368,17 @@
         },
         "Comprehension and Telepathy": {
             "name": "Zrozumienie i Telepatia",
-            "description": "<p>Each chosen creature also gains the benefits of the spell for the duration. In addition, for the duration of the spell, you and the chosen creatures can communicate telepathically with each other while within 1 mile of each other.</p>"
+            "description": "<p>Każda wybrana istota również zyskuje korzyści z czaru przez czas jego trwania. Ponadto przez czas trwania czaru ty i wybrane istoty możecie komunikować się ze sobą telepatycznie, dopóki znajdujecie się w odległości nie większej niż 1 mila od siebie.</p>"
         },
         "Construct Resilience": {
-            "name": "Construct Resilience",
+            "name": "Odporność konstruktu",
             "description": {
-                "value": "<p>You have Resistance to Poison damage. You also have Advantage on saving throws to avoid or end the &amp;Reference[Poisoned apply=false] condition.</p>"
+                "value": "<p>Masz Odporność na obrażenia od trucizny. Masz również Ułatwienie w rzutach obronnych wykonywanych w celu uniknięcia lub zakończenia stanu &amp;Reference[Poisoned apply=false].</p>"
             }
         },
         "Courier's Speed": {
             "name": "Courier's Speed",
-            "description": "<p>Your Speed increases by 5 feet.</p>"
+            "description": "<p>Twoja Szybkość zwiększa się o 5 stóp.</p>"
         },
         "Cunning Intuition": {
             "name": "Cunning Intuition",
@@ -387,7 +387,7 @@
         "Cure Wounds (Greater Mark)": {
             "name": "Cure Wounds (Greater Mark)",
             "description": {
-                "value": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>"
+                "value": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>"
             }
         },
         "Dagger of Venom": {
@@ -427,7 +427,7 @@
         },
         "Dual Mind": {
             "name": "Dwoisty umysł",
-            "description": "<p>You have Advantage on Wisdom and Charisma saving throws.</p>"
+            "description": "<p>Masz Ułatwienie w rzutach obronnych na Mądrość i Charyzmę.</p>"
         },
         "Eldritch Cannon": {
             "name": "Mistyczne działo",
@@ -476,15 +476,15 @@
             }
         },
         "Fey Ancestry": {
-            "name": "Rodowód fey",
+            "name": "Rodowód Fey",
             "description": {
-                "value": "<p>You have Advantage on saving throws you make to avoid or end the &amp;Reference[Charmed apply=false] condition.</p>"
+                "value": "<p>Masz Ułatwienie w rzutach obronnych wykonywanych w celu uniknięcia lub zakończenia stanu &amp;Reference[Charmed apply=false].</p>"
             }
         },
         "Fey Gift": {
-            "name": "Fey Gift",
+            "name": "Dar Fey",
             "description": {
-                "value": "<p>You know the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFriends000]{Friends} cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Cleric, Druid, or Wizard spell list.</p><section class=\"secret\" id=\"secret-Vk9Zq8BeTGRuuapD\"><p><strong>Foundry Note</strong></p><p>The Friends spell is offered to you automatically. Refer to @UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaAppendixFound.JournalEntryPage.V2entjsFRymITxop]{How to Modify Your Choices} to learn how to select a different cantrip.</p></section>"
+                "value": "<p>Znasz sztuczkę @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFriends000]. Za każdym razem, gdy ukończysz Długi odpoczynek, możesz zastąpić ją inną sztuczką z listy czarów Kleryka, Druida lub Czarodzieja.</p><section class=\"secret\" id=\"secret-Vk9Zq8BeTGRuuapD\"><p><strong>Notatka foundry</strong></p><p>Czar Przyjaźń jest przyznawany automatycznie. Aby dowiedzieć się, jak wybrać inną sztuczkę, zapoznaj się z @UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaAppendixFound.JournalEntryPage.V2entjsFRymITxop].</p></section>"
             }
         },
         "Fire Resistance": {
@@ -641,7 +641,7 @@
         "Gust of Wind (Greater Mark)": {
             "name": "Gust of Wind (Greater Mark)",
             "description": {
-                "value": "<p>Silny podmuch wiatru o długości 60 stóp i szerokości 10 stóp wystrzeliwuje od ciebie w wybranym kierunku na czas trwania czaru. Każda istota w linii musi wykonać rzut obronny na Siłę. W przypadku niepowodzenia zostaje odepchnięta o 15 stóp od ciebie wzdłuż linii. Istota, która zakończy swoją turę w linii, musi ponownie wykonać ten rzut.</p><p>Każda istota w linii musi wydawać 2 stopy (0,5m) ruchu na każdy 1 stopę (0,3m) przemieszczenia się w twoim kierunku.</p><p>Podmuch rozprasza gazy i opary, a także gasi świece i podobne niezabezpieczone płomienie w obszarze. Powoduje, że chronione płomienie, takie jak te w lampionach, migoczą dziko i mają 50% szans na zgaśnięcie.</p><p>Jako Akcję Dodatkową w swoich kolejnych turach możesz zmienić kierunek, w którym wieje linia wiatru.</p>"
+                "value": "<p>Silny podmuch wiatru w Prostej o długości 60 stóp i szerokości 10 stóp wieje od ciebie w wybranym przez ciebie kierunku przez czas trwania czaru. Każda istota w Prostej musi wykonać rzut obronny na Siłę, w przeciwnym razie zostaje odepchnięta o 15 stóp od ciebie wzdłuż Prostej. Istota, która zakończy swoją turę w Prostej, musi wykonać ten sam rzut.</p><p>Każda istota w Prostej musi zużyć 2 stopy ruchu na każdą 1 stopę przemieszczenia się w twoim kierunku.</p><p>Podmuch rozprasza gazy i opary, a także gasi świece i podobne niezabezpieczone płomienie w tym obszarze. Sprawia, że osłonięte płomienie, takie jak te w lampionach, migoczą dziko, a szansa na ich zgaśnięcie wynosi 50 procent.</p><p>Akcją dodatkową w kolejnych turach możesz zmienić kierunek, w którym Prosta wieje od ciebie.</p>"
             }
         },
         "Half Cover": {
@@ -772,7 +772,7 @@
         "Infiltrator: Dampening Field": {
             "name": "Infiltrator: Dampening Field",
             "description": {
-                "value": "<p>You have Advantage on Dexterity (Stealth) checks. If the armor imposes Disadvantage on such checks, the Advantage and Disadvantage cancel each other, as normal.</p>"
+                "value": "<p>Masz Ułatwienie w testach Zręczności (Skradanie się). Jeśli pancerz nakłada Utrudnienie na takie testy, Ułatwienie i Utrudnienie znoszą się wzajemnie, jak zwykle.</p>"
             }
         },
         "Infiltrator: Lightning Launcher": {
@@ -784,7 +784,7 @@
         "Infiltrator: Powered Steps": {
             "name": "Infiltrator: Powered Steps",
             "description": {
-                "value": "<p>Your Speed increases by 5 feet.</p>"
+                "value": "<p>Twoja Szybkość zwiększa się o 5 stóp.</p>"
             }
         },
         "Ingenious Movement": {
@@ -800,14 +800,14 @@
             }
         },
         "Integrated Protection": {
-            "name": "Integrated Protection",
+            "name": "Zintegrowana ochrona",
             "description": {
-                "value": "<p>You gain a +1 bonus to your Armor Class. In addition, armor you have donned can’t be removed against your will while you’re alive.</p>"
+                "value": "<p>Zyskujesz premię +1 do KP. Ponadto dopóki żyjesz, noszony przez ciebie pancerz nie może zostać zdjęty wbrew twojej woli.</p>"
             }
         },
         "Intuitive Motion": {
             "name": "Intuitive Motion",
-            "description": "<p>When you make a Strength (Athletics) or Dexterity (Acrobatics) check, 1d4 is automatically added to the ability check.</p>"
+            "description": "<p>Gdy wykonujesz test Siły (Atletyka) lub Zręczności (Akrobatyka), do wyniku testu cechy automatycznie dodajesz 1k4.</p>"
         },
         "Kalashtar": {
             "name": "Kalashtar",
@@ -818,7 +818,7 @@
         "Khoravar": {
             "name": "Khoravar",
             "description": {
-                "value": "<p>Over the course of centuries, those descended from both humans and elves have developed their own communities and traditions in Khorvaire. The rise of House Lyrandar and House Medani has strengthened this identity. Members of these communities call themselves Khoravar, an Elvish term meaning “children of Khorvaire,” as they dislike the term “half-elf.”</p><p>Many Khoravar espouse the idea of being “the bridge between,” believing they are called to facilitate communication and cooperation between members of different cultures or species. Khoravar who follow this philosophy often become bards, diplomats, mediators, or translators. Others, fascinated by their distant connection to the Fey, seek to build bridges between the Material Plane and the Feywild of Thelanis. These Khoravar often become druids or warlocks with archfey patrons.</p><hr /><h3>Khoravar Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 4–6 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p>As a Khoravar, you have these special traits.</p><p><em><strong>Darkvision.</strong></em> You have Darkvision with a range of 60 feet.</p><p><em><strong>Fey Ancestry.</strong></em> You have Advantage on saving throws you make to avoid or end the &amp;Reference[Charmed apply=false] condition.</p><p><em><strong>Fey Gift.</strong></em> You know the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFriends000]{Friends} cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Cleric, Druid, or Wizard spell list.</p><p><em><strong>Lethargy Resilience.</strong></em> When you fail a saving throw to avoid or end the &amp;Reference[Unconscious apply=false] condition, you can succeed instead. Once you use this trait, you can’t do so again until you finish [[/r 1d4]] Long Rests.</p><p><em><strong>Skill Versatility.</strong></em> You gain proficiency in one skill or with one tool of your choice. Whenever you finish a Long Rest, you can replace it with another skill or tool proficiency.</p>"
+                "value": "<p>Na przestrzeni wieków potomkowie ludzi i elfów stworzyli w Khorvaire własne społeczności i tradycje. Rozwój Rodu Lyrandar i Rodu Medani umocnił tę tożsamość. Członkowie tych społeczności nazywają siebie Khoravarami — w języku elfickim określenie to oznacza „dzieci Khorvaire” — ponieważ nie lubią określenia „półelf”.</p><p>Wielu Khoravarów wyznaje ideę bycia „pomostem między światami”, wierząc, że ich powołaniem jest ułatwianie komunikacji i współpracy między przedstawicielami różnych kultur lub gatunków. Khoravarowie kierujący się tą filozofią często zostają bardami, dyplomatami, mediatorami lub tłumaczami. Inni, zafascynowani swoim odległym pokrewieństwem z Fey, starają się tworzyć pomosty między Sferą materialną a Feywild Thelanis. Tacy Khoravarowie często zostają druidami lub czarownikami, których patronami są Arcyfey.</p><hr /><h3>Cechy Khoravarów</h3><p><strong>Typ istoty:</strong> Humanoid</p><p><strong>Rozmiar:</strong> Średni (około 4–6 stóp wzrostu) lub Mały (około 2–4 stóp wzrostu), wybierany podczas wyboru tego gatunku</p><p><strong>Szybkość:</strong> 30 stóp</p><p>Jako Khoravar masz następujące szczególne cechy.</p><p><em><strong>Widzenie w ciemności.</strong></em> Masz Widzenie w ciemności o zasięgu 60 stóp.</p><p><em><strong>Rodowód Fey.</strong></em> Masz Ułatwienie w rzutach obronnych wykonywanych w celu uniknięcia lub zakończenia stanu &amp;Reference[Charmed apply=false].</p><p><em><strong>Dar Fey.</strong></em> Znasz sztuczkę @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFriends000]. Za każdym razem, gdy kończysz Długi odpoczynek, możesz zastąpić tę sztuczkę inną sztuczką z listy czarów Kleryka, Druida lub Maga.</p><p><em><strong>Odporność na letarg.</strong></em> Gdy poniesiesz porażkę w rzucie obronnym wykonywanym w celu uniknięcia lub zakończenia stanu &amp;Reference[Unconscious apply=false], możesz zamiast tego odnieść sukces. Po użyciu tej cechy nie możesz użyć jej ponownie, dopóki nie ukończysz [[/r 1d4]] Długich odpoczynków.</p><p><em><strong>Wszechstronność umiejętności.</strong></em> Zyskujesz Biegłość w jednej wybranej umiejętności lub w posługiwaniu się jednym wybranym narzędziem. Za każdym razem, gdy kończysz Długi odpoczynek, możesz zastąpić tę Biegłość wybierając Biegłość w innej umiejętności lub w posługiwaniu się innym narzędziem.</p>"
             }
         },
         "Lantern of Revealing": {
@@ -828,9 +828,9 @@
             }
         },
         "Lethargy Resilience": {
-            "name": "Lethargy Resilience",
+            "name": "Odporność na letarg",
             "description": {
-                "value": "<p>When you fail a saving throw to avoid or end the &amp;Reference[Unconscious apply=false] condition, you can succeed instead. Once you use this trait, you can’t do so again until you finish [[/r 1d4]] Long Rests.</p><section class=\"secret\" id=\"secret-c9HeWY8TaCWgQDt3\"><p><strong>Foundry Note</strong></p><p>Tracking recovery of this feature must be done manually.</p></section>"
+                "value": "<p>Gdy nie zdasz rzutu obronnego wykonywanego w celu uniknięcia lub zakończenia stanu &amp;Reference[Unconscious apply=false], możesz zamiast tego uznać ten rzut za zdany. Po użyciu tej cechy nie możesz zrobić tego ponownie, dopóki nie ukończysz [[/r 1d4]] Długich odpoczynków.</p><section class=\"secret\" id=\"secret-c9HeWY8TaCWgQDt3\"><p><strong>Notatka foundry</strong></p><p>Odzyskanie możliwości użycia tej cechy należy śledzić ręcznie.</p></section>"
             }
         },
         "Lightning Resistance": {
@@ -840,9 +840,9 @@
             "name": "Związane umysły"
         },
         "Longtooth": {
-            "name": "Longtooth",
+            "name": "Długozęby",
             "description": {
-                "value": "<p>When you shift and as a Bonus Action on your other turns while shifted, you can use your elongated fangs to make an Unarmed Strike. If you hit with this Unarmed Strike and deal damage, you can deal Piercing damage equal to 1d6 plus your Strength modifier, instead of the normal damage of an Unarmed Strike.</p><section id=\"secret-TK4HRP9toZoeANdT\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature implements the Unarmed Strike.</p></section>"
+                "value": "<p>Gdy się przemieniasz, a także Akcją dodatkową w swoich kolejnych turach podczas przemiany, możesz użyć wydłużonych kłów, aby wykonać Uderzenie bez broni. Jeśli trafisz tym Uderzeniem bez broni i zadasz obrażenia, możesz zadać obrażenia kłute równe 1k6 + twój modyfikator z Siły zamiast zwykłych obrażeń Uderzenia bez broni.</p><section id=\"secret-TK4HRP9toZoeANdT\" class=\"secret\"><p><strong>Notatka foundry</strong></p><p>Ta cecha obsługuje Uderzenie bez broni.</p></section>"
             }
         },
         "Magic Item Adept": {
@@ -957,12 +957,12 @@
         "Mental Discipline": {
             "name": "Dyscyplina umysłu",
             "description": {
-                "value": "<p>You have Resistance to Psychic damage.</p>"
+                "value": "<p>Masz Odporność na obrażenia psychiczne.</p>"
             }
         },
         "Mind Link": {
             "name": "Więź umysłów",
-            "description": "<p>You have telepathy with a range in feet equal to 10 times your level.</p>"
+            "description": "<p>Masz zdolność telepatii na odległość w stopach równą dziesięciokrotności twojego poziomu.</p>"
         },
         "Mind Sharpener": {
             "name": "Mind Sharpener",
@@ -1040,13 +1040,13 @@
             }
         },
         "Resilience": {
-            "name": "Resilience"
+            "name": "Odporność"
         },
         "Resilience +1": {
-            "name": "Resilience +1"
+            "name": "Odporność +1"
         },
         "Resilience +2": {
-            "name": "Resilience +2"
+            "name": "Odporność +2"
         },
         "Resilience Elixir": {
             "name": "Resilience Elixir",
@@ -1137,25 +1137,25 @@
             "description": "<p>When you make a Wisdom (Insight or Perception) check, 1d4 is automatically added to the ability check.</p>"
         },
         "Sentry's Rest": {
-            "name": "Sentry's Rest",
+            "name": "Spoczynek wartownika",
             "description": {
-                "value": "<p>You don’t need to sleep, and magic can’t put you to sleep. You can finish a Long Rest in 6 hours if you spend those hours in an inactive, motionless state. During this time, you appear inert but remain conscious.</p>"
+                "value": "<p>Nie musisz spać, a magia nie może cię uśpić. Możesz ukończyć Długi odpoczynek w ciągu 6 godzin, jeśli spędzisz ten czas w nieaktywnym, nieruchomym stanie. W tym czasie wyglądasz na bezwładnego, ale zachowujesz świadomość.</p>"
             }
         },
         "Severed from Dreams": {
             "name": "Odcięty od snów",
             "description": {
-                "value": "<p>You can’t be the target of the <em>Dream</em> spell. In addition, when you finish a Long Rest, you gain proficiency in one skill of your choice. This proficiency lasts until you finish another Long Rest.</p><section class=\"secret\" id=\"secret-P7LFXCBWFeKX5vM5\"><p><strong>Foundry Note</strong></p><p>Refer to @UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaAppendixFound.JournalEntryPage.V2entjsFRymITxop]{How to Modify Your Choices} to change your proficiency.</p></section>"
+                "value": "<p>Nie możesz zostać obrany za cel czaru <em>Sen</em>. Ponadto po ukończeniu Długiego odpoczynku zyskujesz Biegłość w jednej wybranej umiejętności. Ta Biegłość utrzymuje się do ukończenia kolejnego Długiego odpoczynku.</p><section class=\"secret\" id=\"secret-P7LFXCBWFeKX5vM5\"><p><strong>Notatka foundry</strong></p><p>Aby zmienić wybraną Biegłość, zapoznaj się z @UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaAppendixFound.JournalEntryPage.V2entjsFRymITxop].</p></section>"
             }
         },
         "Shape-Shifted": {
             "name": "Zmieniony kształt",
-            "description": "<p>While shape-shifted with this trait, you have Advantage on Charisma checks.</p>"
+            "description": "<p>Podczas przemiany za pomocą tej cechy masz Ułatwienie w testach Charyzmy.</p>"
         },
         "Shape-Shifter": {
             "name": "Zmiennokształtny",
             "description": {
-                "value": "<p>As an action, you can shape-shift to change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height and weight and can change your size between Medium and Small. You can make yourself appear as a member of another playable species, though none of your game statistics change. You can’t duplicate the appearance of an individual you’ve never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. This trait doesn’t change your clothing and equipment.</p><p>While shape-shifted with this trait, you have Advantage on Charisma checks.</p><p>You stay in the new form until you take an action to revert to your true form.</p><section class=\"secret\" id=\"secret-3t1HExONrsHfU6vl\"><p><strong>Foundry Note</strong></p><p>This feature includes a <strong>Transform</strong> activity which can be used to open the Compendium Browser and select an Actor whose appearance you would like to copy. You can also drag an Actor onto your character sheet and select <strong>Appearance Only</strong> as the transformation type or manually adjust your token.</p><p>This feature includes a <strong>Shape-Shifted</strong> Active Effect which can be activated when you're shifted and grants advantage on all Charisma checks.</p></section>"
+                "value": "<p>Akcją możesz zmienić kształt, modyfikując swój wygląd i głos. Określasz szczegóły tych zmian, w tym swoją kolorystykę, długość włosów i płeć. Możesz również dostosować swój wzrost i masę oraz zmienić swój rozmiar między Średnim a Małym. Możesz upodobnić się do przedstawiciela innego grywalnego gatunku, ale żadna z twoich statystyk w grze się nie zmienia. Nie możesz odtworzyć wyglądu osoby, której nigdy nie widziałeś, i musisz przyjąć formę o takim samym podstawowym układzie kończyn jak twój. Ta cecha nie zmienia twojego ubioru ani wyposażenia.</p><p>Podczas przemiany za pomocą tej cechy masz Ułatwienie w testach Charyzmy.</p><p>Pozostajesz w nowej formie, dopóki nie użyjesz Akcji, aby powrócić do swojej prawdziwej formy.</p><section class=\"secret\" id=\"secret-3t1HExONrsHfU6vl\"><p><strong>Notatka foundry</strong></p><p>Ta cecha zawiera aktywność <strong>Transformacja</strong>, której można użyć do otwarcia Przeglądarki kompendium i wybrania Aktora, którego wygląd chcesz skopiować. Możesz również przeciągnąć Aktora na kartę swojej postaci i wybrać <strong>Tylko wygląd</strong> jako typ transformacji albo ręcznie dostosować swój token.</p><p>Ta cecha zawiera Aktywny efekt <strong>Zmieniony kształt</strong>, który można aktywować podczas przemiany i który zapewnia Ułatwienie we wszystkich testach Charyzmy.</p></section>"
             }
         },
         "Shield +1": {
@@ -1171,34 +1171,34 @@
             }
         },
         "Shield, +2": {
-            "name": "Shield, +2",
+            "name": "Tarcza, +2",
             "description": {
                 "value": "<p>@Embed[Compendium.dnd-dungeon-masters-guide.equipment.Item.dmgShield12or300 caption=false classes=\"hide-secrets\"]</p><p>@Embed[Compendium.dnd-forge-artificer.book.JournalEntry.efaAppendixFound.JournalEntryPage.2uGa93dXu7RhlZq9 caption=false cite=false classes=\"hide-in-embed\"]{Using Template Plans}</p>"
             }
         },
         "Shifted: Beasthide": {
-            "name": "Shifted: Beasthide",
-            "description": "<p>While shifted, you have a +1 bonus to your Armor Class.</p>"
+            "name": "Przemieniony: Dzika skóra",
+            "description": "<p>Podczas przemiany masz premię +1 do KP.</p>"
         },
         "Shifted: Swiftstride": {
-            "name": "Shifted: Swiftstride"
+            "name": "Przemieniony: Szybkostopy"
         },
         "Shifter": {
             "name": "Zmienny",
             "description": {
-                "value": "<p>Shifters—sometimes called “weretouched”—descend from people who contracted full or partial lycanthropy. Humanoids with a bestial aspect, shifters can’t change shape fully, but they can enhance their animalistic features temporarily in a process they call “shifting.”</p><p>Shifters resemble humans in height and build but are typically more lithe and flexible. Their facial features have a bestial cast, often with large eyes and pointed ears; most shifters also possess prominent canine teeth. They grow fur-like hair on nearly every part of their bodies. While a shifter’s appearance might remind an onlooker of an animal, the shifter remains clearly identifiable as a Humanoid even when at their most feral.</p><hr /><h3>Shifter Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:</strong> Medium (about 4–7 feet tall) or Small (about 2–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p>As a Shifter, you have these special traits.</p><p><em><strong>Bestial Instincts.</strong></em> Channeling the beast within, you gain proficiency in one of the following skills of your choice: Acrobatics, Athletics, Intimidation, or Survival.</p><p><em><strong>Darkvision.</strong></em> You have Darkvision with a range of 60 feet.</p><p><em><strong>Shifting.</strong></em> As a Bonus Action, you can shape-shift to assume a more bestial appearance. This transformation lasts for 1 minute or until you revert to your normal appearance as a Bonus Action. When you shift, you gain Temporary Hit Points equal to 2 times your Proficiency Bonus. You can shift a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p>Whenever you shift, you gain the benefit of one of the following options (choose when you select this species):</p><p><strong>Beasthide.</strong> You gain [[/healing 1d6 temp]]{1d6} additional Temporary Hit Points. While shifted, you have a +1 bonus to your Armor Class.</p><p><strong>Longtooth.</strong> When you shift and as a Bonus Action on your other turns while shifted, you can use your elongated fangs to make an Unarmed Strike. If you hit with this Unarmed Strike and deal damage, you can deal Piercing damage equal to 1d6 plus your Strength modifier, instead of the normal damage of an Unarmed Strike.</p><p><strong>Swiftstride.</strong> While you are shifted, your Speed increases by 10 feet. Additionally, you can move up to 10 feet as a Reaction when a creature ends its turn within 5 feet of you. This reactive movement doesn’t provoke Opportunity Attacks.</p><p><strong>Wildhunt.</strong> While shifted, you have Advantage on Wisdom checks. Additionally, no creature within 30 feet of you can have Advantage on an attack roll against you unless you have the Incapacitated condition.</p>"
+                "value": "<p>Zmienni — czasami nazywani „dotkniętymi likantropią” — wywodzą się od ludzi, którzy zostali naznaczeni pełną lub częściową likantropią. Jako Humanoidzi o zwierzęcych cechach Zmienni nie potrafią całkowicie zmieniać kształtu, lecz mogą tymczasowo uwydatniać swoje zwierzęce cechy w procesie, który nazywają „przemianą”.</p><p>Zmienni przypominają ludzi wzrostem i budową ciała, ale zazwyczaj są smuklejsi i bardziej gibcy. Ich rysy twarzy mają zwierzęcy charakter, często obejmujący duże oczy i spiczaste uszy; większość Zmiennych ma również wydatne kły. Niemal całe ich ciała porastają włosy przypominające sierść. Choć wygląd Zmiennego może przywodzić na myśl zwierzę, nawet w swojej najbardziej dzikiej postaci pozostaje on wyraźnie rozpoznawalny jako Humanoid.</p><hr /><h3>Cechy Zmiennych</h3><p><strong>Typ istoty:</strong> Humanoid</p><p><strong>Rozmiar:</strong> Średni (około 4–7 stóp wzrostu) lub Mały (około 2–4 stóp wzrostu), wybierany podczas wyboru tego gatunku</p><p><strong>Szybkość:</strong> 30 stóp</p><p>Jako Zmienny masz następujące szczególne cechy.</p><p><em><strong>Instynkty bestii.</strong></em> Czerpiąc z drzemiącej w tobie bestii, zyskujesz Biegłość w jednej z następujących wybranych umiejętności: Akrobatyce, Atletyce, Zastraszaniu lub Sztuce przetrwania.</p><p><em><strong>Widzenie w ciemności.</strong></em> Masz Widzenie w ciemności o zasięgu 60 stóp.</p><p><em><strong>Przemiana.</strong></em> Akcją dodatkową możesz zmienić kształt, przybierając bardziej zwierzęcy wygląd. Przemiana trwa 1 minutę albo do chwili, gdy Akcją dodatkową powrócisz do swojego zwykłego wyglądu. Gdy się przemieniasz, zyskujesz Tymczasowe punkty wytrzymałości równe dwukrotności swojej Premii z biegłości. Możesz przemienić się tyle razy, ile wynosi twoja Premia z biegłości, a wszystkie zużyte użycia odzyskujesz po ukończeniu Długiego odpoczynku.</p><p>Za każdym razem, gdy się przemieniasz, zyskujesz korzyść z jednej z poniższych opcji, wybranej podczas wyboru tego gatunku:</p><p><strong>Dzika skóra.</strong> Zyskujesz [[/healing 1d6 temp]]{1k6} dodatkowych Tymczasowych punktów wytrzymałości. Podczas przemiany masz premię +1 do KP.</p><p><strong>Długozęby.</strong> Gdy się przemieniasz oraz Akcją dodatkową w swoich późniejszych turach podczas przemiany możesz użyć wydłużonych kłów, aby wykonać Uderzenie bez broni. Jeśli trafisz tym Uderzeniem bez broni i zadasz obrażenia, możesz zadać obrażenia kłute równe 1k6 + twój modyfikator z Siły zamiast zwykłych obrażeń Uderzenia bez broni.</p><p><strong>Szybkostopy.</strong> Podczas przemiany twoja Szybkość zwiększa się o 10 stóp. Ponadto Reakcją możesz przemieścić się o maksymalnie 10 stóp, gdy istota zakończy swoją turę w obrębie 5 stóp od ciebie. Ten ruch nie prowokuje Ataków okazyjnych.</p><p><strong>Dziki łów.</strong> Podczas przemiany masz Ułatwienie w testach Mądrości. Ponadto żadna istota w obrębie 30 stóp od ciebie nie może mieć Ułatwienia w teście ataku przeciwko tobie, chyba że masz stan Obezwładniony.</p>"
             }
         },
         "Shifting": {
-            "name": "Zmiana",
+            "name": "Przemiana",
             "description": {
-                "value": "<p>As a Bonus Action, you can shape-shift to assume a more bestial appearance. This transformation lasts for 1 minute or until you revert to your normal appearance as a Bonus Action. When you shift, you gain Temporary Hit Points equal to 2 times your Proficiency Bonus. You can shift a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p>Whenever you shift, you gain the benefit of one of the following options (choose when you select this species):</p><p><strong>Beasthide.</strong> You gain [[/healing 1d6 temp]]{1d6} additional Temporary Hit Points. While shifted, you have a +1 bonus to your Armor Class.</p><p><strong>Longtooth.</strong> When you shift and as a Bonus Action on your other turns while shifted, you can use your elongated fangs to make an Unarmed Strike. If you hit with this Unarmed Strike and deal damage, you can deal Piercing damage equal to 1d6 plus your Strength modifier, instead of the normal damage of an Unarmed Strike.</p><p><strong>Swiftstride.</strong> While you are shifted, your Speed increases by 10 feet. Additionally, you can move up to 10 feet as a Reaction when a creature ends its turn within 5 feet of you. This reactive movement doesn’t provoke Opportunity Attacks.</p><p><strong>Wildhunt.</strong> While shifted, you have Advantage on Wisdom checks. Additionally, no creature within 30 feet of you can have Advantage on an attack roll against you unless you have the &amp;Reference[Incapacitated apply=false] condition.</p>"
+                "value": "<p>Akcją dodatkową możesz zmienić kształt, przybierając bardziej zwierzęcy wygląd. Ta przemiana trwa 1 minutę albo do chwili, gdy Akcją dodatkową powrócisz do swojego zwykłego wyglądu. Gdy się przemieniasz, zyskujesz Tymczasowe punkty wytrzymałości równe dwukrotności swojej Premii z biegłości. Możesz przemienić się tyle razy, ile wynosi twoja Premia z biegłości, a wszystkie zużyte użycia odzyskujesz po ukończeniu Długiego odpoczynku.</p><p>Za każdym razem, gdy się przemieniasz, zyskujesz korzyść z jednej z poniższych opcji, wybranej podczas wyboru tego gatunku:</p><p><strong>Dzika skóra.</strong> Zyskujesz [[/healing 1d6 temp]]{1k6} dodatkowych Tymczasowych punktów wytrzymałości. Podczas przemiany masz premię +1 do KP.</p><p><strong>Długozęby.</strong> Gdy się przemieniasz oraz Akcją dodatkową w swoich późniejszych turach podczas przemiany możesz użyć wydłużonych kłów, aby wykonać Uderzenie bez broni. Jeśli trafisz tym Uderzeniem bez broni i zadasz obrażenia, możesz zadać obrażenia kłute równe 1k6 + twój modyfikator z Siły zamiast zwykłych obrażeń Uderzenia bez broni.</p><p><strong>Szybkostopy.</strong> Podczas przemiany twoja Szybkość zwiększa się o 10 stóp. Ponadto Reakcją możesz przemieścić się o maksymalnie 10 stóp, gdy istota zakończy swoją turę w obrębie 5 stóp od ciebie. Ten ruch nie prowokuje Ataków okazyjnych.</p><p><strong>Dziki łów.</strong> Podczas przemiany masz Ułatwienie w testach Mądrości. Ponadto żadna istota w obrębie 30 stóp od ciebie nie może mieć Ułatwienia w teście ataku przeciwko tobie, chyba że masz stan &amp;Reference[Incapacitated apply=false].</p>"
             }
         },
         "Skill Versatility": {
-            "name": "Skill Versatility",
+            "name": "Wszechstronność umiejętności",
             "description": {
-                "value": "<p>You gain proficiency in one skill or with one tool of your choice. Whenever you finish a Long Rest, you can replace it with another skill or tool proficiency.</p><section class=\"secret\" id=\"secret-gFTgZHI8vGGu2fgI\"><p><strong>Foundry Note</strong></p><p>Refer to @UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaAppendixFound.JournalEntryPage.V2entjsFRymITxop]{How to Modify Your Choices} to learn how to select another skill or proficiency.</p></section>"
+                "value": "<p>Zyskujesz Biegłość w jednej wybranej umiejętności albo w używaniu jednego wybranego rodzaju narzędzi. Za każdym razem, gdy ukończysz Długi odpoczynek, możesz zastąpić ją Biegłością w innej umiejętności lub w używaniu innego rodzaju narzędzi.</p><section class=\"secret\" id=\"secret-gFTgZHI8vGGu2fgI\"><p><strong>Notatka foundry</strong></p><p>Aby dowiedzieć się, jak wybrać inną Biegłość w umiejętności lub narzędziu, zapoznaj się z @UUID[Compendium.dnd-forge-artificer.book.JournalEntry.efaAppendixFound.JournalEntryPage.V2entjsFRymITxop].</p></section>"
             }
         },
         "Soul of Artifice": {
@@ -1208,9 +1208,9 @@
             }
         },
         "Specialized Design": {
-            "name": "Specialized Design",
+            "name": "Wyspecjalizowana konstrukcja",
             "description": {
-                "value": "<p>You gain one skill proficiency and one tool proficiency of your choice.</p>"
+                "value": "<p>Zyskujesz Biegłość w jednej wybranej umiejętności oraz Biegłość w używaniu jednego wybranego rodzaju narzędzi.</p>"
             }
         },
         "Spell-Refueling Ring": {
@@ -1263,9 +1263,9 @@
             }
         },
         "Swiftstride": {
-            "name": "Swiftstride",
+            "name": "Szybkostopy",
             "description": {
-                "value": "<p>While you are shifted, your Speed increases by 10 feet. Additionally, you can move up to 10 feet as a Reaction when a creature ends its turn within 5 feet of you. This reactive movement doesn’t provoke Opportunity Attacks.</p><section class=\"secret\" id=\"secret-QhkutwNeb069UVH4\"><p><strong>Foundry Note</strong></p><p>This feature can be used in place of the <strong>Shifting</strong> feature. It includes its temporary hit points, an Active Effect which increases your walking speed, and consumes a use of that feature.</p></section>"
+                "value": "<p>Podczas przemiany twoja Szybkość zwiększa się o 10 stóp. Ponadto Reakcją możesz przemieścić się o maksymalnie 10 stóp, gdy istota zakończy swoją turę w obrębie 5 stóp od ciebie. Ten ruch nie prowokuje Ataków okazyjnych.</p><section class=\"secret\" id=\"secret-QhkutwNeb069UVH4\"><p><strong>Notatka foundry</strong></p><p>Tej cechy można użyć zamiast cechy <strong>Przemiana</strong>. Obejmuje ona przyznawane przez nią Tymczasowe punkty wytrzymałości oraz Aktywny efekt zwiększający twoją Szybkość chodzenia, a także zużywa jedno użycie tej cechy.</p></section>"
             }
         },
         "Thunder Resistance": {
@@ -1447,7 +1447,7 @@
         "Warforged": {
             "name": "Zbrojnokuty",
             "description": {
-                "value": "<p>Warforged are mechanical beings built as weapons to fight in the Last War. An unexpected breakthrough produced sentient beings made from wood and metal that nevertheless can feel pain and emotion.</p><p>Warforged comprise a blend of organic and inorganic materials. Rootlike cords infused with alchemical fluids serve as their muscles, wrapped around a framework of steel, darkwood, or stone. Armored plates form a protective outer shell and reinforce joints. The more a warforged cultivates their individuality, the more likely they are to modify their body, seeking out an artificer to customize the look of their face, limbs, and plating.</p><hr /><h3>Warforged Traits</h3><p><strong>Creature Type:</strong> Construct</p><p><strong>Size:</strong> Medium (about 6–8 feet tall) or Small (about 3–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p>As a Warforged, you have these special traits.</p><p><em><strong>Construct Resilience.</strong></em> You have Resistance to Poison damage. You also have Advantage on saving throws to avoid or end the &amp;Reference[Poisoned apply=false] condition.</p><p><em><strong>Integrated Protection.</strong></em> You gain a +1 bonus to your Armor Class. In addition, armor you have donned can’t be removed against your will while you’re alive.</p><p><em><strong>Sentry’s Rest.</strong></em> You don’t need to sleep, and magic can’t put you to sleep. You can finish a Long Rest in 6 hours if you spend those hours in an inactive, motionless state. During this time, you appear inert but remain conscious.</p><p><em><strong>Specialized Design.</strong></em> You gain one skill proficiency and one tool proficiency of your choice.</p><p><em><strong>Tireless.</strong></em> You don’t gain &amp;Reference[Exhaustion apply=false] levels from dehydration, malnutrition, or suffocation.</p>"
+                "value": "<p>Zbrojnokuci to mechaniczne istoty zbudowane jako broń do walki w Ostatniej Wojnie. Nieoczekiwany przełom doprowadził do powstania świadomych istot wykonanych z drewna i metalu, które mimo to odczuwają ból i emocje.</p><p>Ciała Zbrojnokutych łączą materiały organiczne i nieorganiczne. Przypominające korzenie sploty, wypełnione alchemicznymi płynami, pełnią funkcję mięśni oplatających szkielet ze stali, ciemnodrzewa lub kamienia. Płyty pancerza tworzą ochronną zewnętrzną powłokę i wzmacniają stawy. Im bardziej Zbrojnokuty rozwija swoją indywidualność, tym chętniej modyfikuje własne ciało, szukając wynalazcy, który dostosuje wygląd jego twarzy, kończyn i płyt pancerza.</p><hr /><h3>Cechy Zbrojnokutych</h3><p><strong>Typ istoty:</strong> Konstrukt</p><p><strong>Rozmiar:</strong> Średni (około 6–8 stóp wzrostu) lub Mały (około 3–4 stóp wzrostu), wybierany podczas wyboru tego gatunku</p><p><strong>Szybkość:</strong> 30 stóp</p><p>Jako Zbrojnokuty masz następujące szczególne cechy.</p><p><em><strong>Odporność konstruktu.</strong></em> Masz Odporność na obrażenia od trucizny. Masz również Ułatwienie w rzutach obronnych wykonywanych w celu uniknięcia lub zakończenia stanu &amp;Reference[Poisoned apply=false].</p><p><em><strong>Zintegrowana ochrona.</strong></em> Zyskujesz premię +1 do KP. Ponadto dopóki żyjesz, noszony przez ciebie pancerz nie może zostać zdjęty wbrew twojej woli.</p><p><em><strong>Spoczynek wartownika.</strong></em> Nie musisz spać, a magia nie może cię uśpić. Możesz ukończyć Długi odpoczynek w ciągu 6 godzin, jeśli spędzisz ten czas w nieaktywnym, nieruchomym stanie. W tym czasie wyglądasz na bezwładnego, ale zachowujesz świadomość.</p><p><em><strong>Wyspecjalizowana konstrukcja.</strong></em> Zyskujesz Biegłość w jednej wybranej umiejętności oraz w posługiwaniu się jednym wybranym narzędziem.</p><p><em><strong>Niestrudzony.</strong></em> Nie zyskujesz poziomów &amp;Reference[Exhaustion apply=false] wskutek odwodnienia, niedożywienia ani duszenia się.</p>"
             }
         },
         "Weapon +1": {
@@ -1479,9 +1479,9 @@
             "description": "<p>When you make an Intelligence (Nature) or Wisdom (Animal Handling) check, 1d4 is automatically added to the ability check.</p>"
         },
         "Wildhunt": {
-            "name": "Wildhunt",
+            "name": "Dziki łów",
             "description": {
-                "value": "<p>While shifted, you have Advantage on Wisdom checks. Additionally, no creature within 30 feet of you can have Advantage on an attack roll against you unless you have the &amp;Reference[Incapacitated apply=false] condition.</p>"
+                "value": "<p>Podczas przemiany masz Ułatwienie w testach Mądrości. Ponadto żadna istota w obrębie 30 stóp od ciebie nie może mieć Ułatwienia w teście ataku przeciwko tobie, chyba że masz stan &amp;Reference[Incapacitated apply=false].</p>"
             }
         },
         "Windwright's Intuition": {
