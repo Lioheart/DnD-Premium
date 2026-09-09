@@ -2283,7 +2283,7 @@
         },
         "Hold Person": {
             "name": "Unieruchomienie osoby",
-            "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkowego Humanoida za każdą komórkę czaru powyżej 2. kręgu.</p>",
+            "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[paralyzed apply=false] na czas trwania czaru. Na końcu każdej swojej tury cel powtarza ten rzut obronny, a udany rzut kończy działanie czaru na nim samym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jednego dodatkowego Humanoida za każdy krąg komórki czaru powyżej 2.</p>",
             "materials": "prosty kawałek żelaza",
             "activities": {
                 "save": {
