@@ -2267,7 +2267,7 @@
         },
         "Hold Monster": {
             "name": "Unieruchomienie potwora",
-            "description": "<p>Wybierasz istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &Reference[Paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 5. kręgu.</p>",
+            "description": "<p>Wybierasz istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[Paralyzed apply=false] na czas trwania czaru. Na końcu każdej swojej tury cel powtarza ten rzut obronny, a udany rzut kończy działanie czaru na nim samym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 5.</p>",
             "materials": "prosty kawałek żelaza",
             "activities": {
                 "save": {
