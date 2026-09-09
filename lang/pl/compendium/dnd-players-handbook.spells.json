@@ -2856,7 +2856,7 @@
         },
         "Lightning Arrow": {
             "name": "Piorunostrzał",
-            "description": "<p>Gdy twój atak trafia lub chybia cel, broń lub amunicja, której używasz, przekształca się w piorun. Zamiast otrzymać jakiekolwiek obrażenia lub inne efekty od ataku, cel otrzymuje 4k8 obrażeń od elektryczności przy trafieniu lub połowę tych obrażeń przy chybieniu. Następnie każda istota w promieniu 10 stóp od celu wykonuje rzut obronny na Zręczność, otrzymując 2k8 obrażeń od elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p>Następnie broń lub amunicja wraca do swojej normalnej formy.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia dla obu efektów czaru zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 3.</p>",
+            "description": "<p>Gdy twój atak trafia lub chybia celu, broń lub amunicja, której używasz, przekształca się w piorun. Zamiast otrzymać jakiekolwiek obrażenia lub inne efekty ataku, cel otrzymuje 4k8 obrażeń od Elektryczności przy trafieniu lub połowę tych obrażeń przy chybieniu. Następnie każda istota w promieniu 10 stóp od celu wykonuje rzut obronny na Zręczność, otrzymując 2k8 obrażeń od Elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p>Broń lub amunicja wraca wtedy do swojej normalnej postaci.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia obu efektów czaru zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 3.</p>",
             "activation": "Natychmiast po trafieniu lub chybieniu celu atakiem dystansowym przy użyciu broni",
             "activationCondition": "Natychmiast po trafieniu lub chybieniu celu atakiem dystansowym przy użyciu broni",
             "activities": {
@@ -2867,7 +2867,7 @@
         },
         "Lightning Bolt": {
             "name": "Piorun",
-            "description": "<p>Uderzenie pioruna tworzące Prostą o długości 100 stóp i szerokości 5 stóp wystrzeliwuje od ciebie w wybranym przez ciebie kierunku. Każda istota w Prostej wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>",
+            "description": "<p>Uderzenie pioruna tworzące Prostą o długości 100 stóp i szerokości 5 stóp wystrzeliwuje od ciebie w wybranym przez ciebie kierunku. Każda istota w Prostej wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od Elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>",
             "materials": "kawałek futra i kryształowy pręt",
             "activities": {
                 "save": {
