@@ -129,7 +129,7 @@
     },
     "entries": {
         "Aberrant Spirit": {
-            "name": "Aberrant Spirit",
+            "name": "Duchowe wynaturzenie",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonAber caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -158,7 +158,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -176,9 +176,9 @@
                     }
                 },
                 "Eye Ray (Beholderkin Only)": {
-                    "name": "Eye Ray (Beholderkin Only)",
+                    "name": "Promień z oczu (tylko krewniak obserwatora)",
                     "description": "<p><em>Rzut Ataku Dystansowego:</em> Premia równa twojemu modyfikatorowi ataku czarem, zasięg 150 ft. <em>Trafienie:</em> 1k8 + 3 + krąg czaru obrażeń psychicznych.</p>",
-                    "requirements": "Beholderkin Only"
+                    "requirements": "Tylko krewniak obserwatora"
                 },
                 "Psychic Slam (Mind Flayer Only)": {
                     "name": "Psychic Slam (Mind Flayer Only)",
@@ -188,18 +188,18 @@
             }
         },
         "Air Elemental Spirit": {
-            "name": "Air Elemental Spirit",
-            "tokenName": "Elemental Spirit",
+            "name": "Duchowy żywiołak powietrza",
+            "tokenName": "Duchowy żywiołak",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonElem caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
                 "Amorphous Form": {
-                    "name": "Amorphous Form",
-                    "description": "<p> The spirit can move through a space as narrow as 1 inch wide without it counting as Difficult Terrain.</p>"
+                    "name": "Bezpostaciowa forma",
+                    "description": "<p>Duch może przemieszczać się przez przestrzeń o szerokości zaledwie 1 cala, nie traktując jej jako Trudnego terenu.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków [[/item Walnięcie]] równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -208,7 +208,7 @@
                 },
                 "Slam": {
                     "name": "Walnięcie",
-                    "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d10 + 4 + the spell’s level Lightning damage.</p>"
+                    "description": "<p><em>Test ataku wręcz:</em> Premia równa twojemu modyfikatorowi ataku czarem, zasięg 5 stóp. <em>Trafienie:</em> 1k10 + 4 + krąg czaru obrażeń od elektryczności.</p>"
                 }
             }
         },
@@ -222,7 +222,7 @@
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The ape makes two [[/item Fist]] attacks.</p>",
+                    "description": "<p>Małpa człekokształtna wykonuje dwa ataki [[/item Pięść]].</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -231,11 +231,11 @@
                 },
                 "Fist": {
                     "name": "Pięść",
-                    "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Bludgeoning damage.</p>"
+                    "description": "<p><em>Test ataku wręcz: </em>+5, zasięg 5 stóp. <em>Trafienie:</em> 5 (1k4 + 3) obrażeń obuchowych.</p>"
                 },
                 "Rock": {
                     "name": "Kamień",
-                    "description": "<p><em>Ranged Attack Roll: </em>+5, range 25/50 ft. <em>Hit:</em> 10 (2d6 + 3) Bludgeoning damage.</p>"
+                    "description": "<p><em>Test ataku dystansowego: </em>+5, zasięg 25/50 stóp. <em>Trafienie:</em> 10 (2k6 + 3) obrażeń obuchowych.</p>"
                 }
             }
         },
@@ -245,11 +245,11 @@
             "items": {
                 "Move": {
                     "name": "Przesuń",
-                    "description": "<p>As a Bonus Action, you can move the eye up to 30 feet in any direction. A solid barrier blocks the eye’s movement, but the eye can pass through an opening as small as 1 inch in diameter.</p>",
+                    "description": "<p>Akcją dodatkową możesz przemieścić oko o maksymalnie 30 stóp w dowolnym kierunku. Stała przeszkoda blokuje ruch oka, ale oko może przejść przez otwór o średnicy zaledwie 1 cala.</p>",
                     "activities": {
                         "utility": {
-                            "condition": "Bonus Action used by summoner",
-                            "activationCondition": "Bonus Action used by summoner"
+                            "condition": "Akcja dodatkowa użyta przez przywoływacza",
+                            "activationCondition": "Akcja dodatkowa użyta przez przywoływacza"
                         }
                     }
                 }
@@ -262,14 +262,14 @@
             }
         },
         "Avenger Spirit": {
-            "name": "Avenger Spirit",
-            "tokenName": "Celestial Spirit",
+            "name": "Duchowy mściciel",
+            "tokenName": "Duchowy niebianin",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCele caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -277,12 +277,12 @@
                     }
                 },
                 "Radiant Bow": {
-                    "name": "Radiant Bow",
-                    "description": "<p> <em>Ranged Attack Roll</em>: Bonus equals your spell attack modifier, range 600 ft. <em>Hit:</em> 2d6 + 2 + the spell’s level Radiant damage.</p>"
+                    "name": "Świetlisty łuk",
+                    "description": "<p> <em>Test ataku dystansowego</em>: Premia równa twojemu modyfikatorowi ataku czarem, zasięg 600 stóp. <em>Trafienie:</em> 2k6 + 2 + krąg czaru obrażeń od światłości.</p>"
                 },
                 "Healing Touch": {
-                    "name": "Healing Touch",
-                    "description": "<p> The spirit touches another creature. The target regains Hit Points equal to 2d8 + the spell’s level.</p>"
+                    "name": "Uzdrawiający dotyk",
+                    "description": "<p>Duch dotyka innej istoty. Cel odzyskuje liczbę Punktów wytrzymałości równą 2k8 + krąg czaru.</p>"
                 }
             }
         },
@@ -581,7 +581,7 @@
                 },
                 "Vicious Mockery": {
                     "name": "Zjadliwe szyderstwo",
-                    "description": "<p>Wypuszczasz serię obelg, splecionych z subtelnymi zaklęciami, w kierunku jednej istoty, którą możesz zobaczyć lub usłyszeć w zasięgu. Cel musi pomyślnie zdać rzut obronny Mądrości, inaczej otrzyma 1k6 obrażeń psychicznych i ma Utrudnienie na następny test ataku, który wykona przed końcem swojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k6 na poziomach 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
+                    "description": "<p>Wypuszczasz serię obelg, splecionych z subtelnymi zaklęciami, w kierunku jednej istoty, którą możesz zobaczyć lub usłyszeć w zasięgu. Cel musi pomyślnie zdać rzut obronny Mądrości, inaczej otrzyma 1k6 obrażeń psychicznych i ma Utrudnienie na następny test ataku, który wykona przed końcem swojej następnej tury.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k6 na poziomach 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "none"
@@ -596,7 +596,7 @@
                 },
                 "Charm Person": {
                     "name": "Zauroczenie osoby",
-                    "description": "<p>Jeden humanoid, którego widzisz w zasięgu, musi wykonać rzut obronny na Mądrość. Wykonuje go z Ułatwieniem, jeśli walczy z tobą lub twoimi sojuszników. W przypadku porażki ma stan &Reference[charmed apply=false]{Zauroczony} do czasu zakończenia czaru lub do momentu, w którym ty lub twoi sojusznicy zadacie mu obrażenia. Zauroczona istota jest wobec ciebie Przyjazna. Kiedy działanie czaru dobiega końca, cel wie, że został przez ciebie Zauroczony.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wskazać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
+                    "description": "<p>Jeden humanoid, którego widzisz w zasięgu, musi wykonać rzut obronny na Mądrość. Wykonuje go z Ułatwieniem, jeśli walczy z tobą lub twoimi sojuszników. W przypadku porażki ma stan &Reference[charmed apply=false]{Zauroczony} do czasu zakończenia czaru lub do momentu, w którym ty lub twoi sojusznicy zadacie mu obrażenia. Zauroczona istota jest wobec ciebie Przyjazna. Kiedy działanie czaru dobiega końca, cel wie, że został przez ciebie Zauroczony.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wskazać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
@@ -626,7 +626,7 @@
                 },
                 "Dissonant Whispers": {
                     "name": "Fałszywe podszepty",
-                    "description": "<p>Jedna wybrana przez ciebie istota, którą widzisz w zasięgu, słyszy w swoim umyśle dysonansową melodię. Cel wykonuje rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje 3k6 obrażeń psychicznych i musi natychmiast wykorzystać swoją Reakcję, jeśli jest dostępna, aby oddalić się od ciebie najbezpieczniejszą możliwą trasą. W przypadku udanego rzutu obronnego cel otrzymuje tylko połowę tych obrażeń.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+                    "description": "<p>Jedna wybrana przez ciebie istota, którą widzisz w zasięgu, słyszy w swoim umyśle niezgrabną melodię. Cel wykonuje rzut obronny na Mądrość. Przy nieudanym rzucie otrzymuje 3k6 obrażeń psychicznych i musi natychmiast wykorzystać swoją Reakcję, jeśli jest dostępna, by oddalić się od ciebie najbardziej bezpieczną z dostępnych tras. Przy udanym rzucie cel otrzymuje tylko połowę tych obrażeń.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
@@ -635,7 +635,7 @@
                 },
                 "Healing Word": {
                     "name": "Kojące słowo",
-                    "description": "<p>Istota wybrana przez ciebie, którą widzisz w zasięgu, odzyskuje Punkty Wytrzymałości równe 2k4 + twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Leczenie zwiększa się o 2k4 za każdą komórkę czaru powyżej 1. kręgu.</p>"
+                    "description": "<p>Istota wybrana przez ciebie, którą widzisz w zasięgu, odzyskuje Punkty Wytrzymałości równe 2k4 + twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdą komórkę czaru powyżej 1. kręgu.</p>"
                 },
                 "Bedroll": {
                     "name": "Śpiwór",
@@ -733,7 +733,7 @@
                 },
                 "Chill Touch": {
                     "name": "Przeszywający dotyk",
-                    "description": "<p>Tchnij chłód grobu, w cel znajdujący się w zasięgu wykonując test ataku wręcz czarem. Przy trafieniu cel otrzymuje 1k10 obrażeń nekrotycznych i nie może odzyskać Punktów Wytrzymałości do końca twojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k10, gdy osiągniesz poziomy 5 (2k10), 11 (3k10) i 17 (4k10).</p>",
+                    "description": "<p>Tchnij chłód grobu, w cel znajdujący się w zasięgu wykonując test ataku wręcz czarem. Przy trafieniu cel otrzymuje 1k10 obrażeń nekrotycznych i nie może odzyskać Punktów Wytrzymałości do końca twojej następnej tury.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k10, gdy osiągniesz poziomy 5 (2k10), 11 (3k10) i 17 (4k10).</p>",
                     "effects": {
                         "Blocked Healing": {
                             "name": "Zablokowane leczenie",
@@ -858,14 +858,14 @@
             }
         },
         "Beholderkin Spirit": {
-            "name": "Beholderkin Spirit",
-            "tokenName": "Aberrant Spirit",
+            "name": "Duchowy krewniak obserwatora",
+            "tokenName": "Duchowe wynaturzenie",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonAber caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -884,8 +884,8 @@
             }
         },
         "Bestial Air Spirit": {
-            "name": "Bestial Air Spirit",
-            "tokenName": "Bestial Spirit",
+            "name": "Duchowa bestia powietrza",
+            "tokenName": "Duchowa bestia",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonBeas caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -909,8 +909,8 @@
             }
         },
         "Bestial Land Spirit": {
-            "name": "Bestial Land Spirit",
-            "tokenName": "Bestial Spirit",
+            "name": "Duchowa bestia lądu",
+            "tokenName": "Duchowa bestia",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonBeas caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -935,7 +935,7 @@
             }
         },
         "Bestial Spirit": {
-            "name": "Bestial Spirit",
+            "name": "Duchowa bestia",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonBeas caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -970,8 +970,8 @@
             }
         },
         "Bestial Water Spirit": {
-            "name": "Bestial Water Spirit",
-            "tokenName": "Bestial Spirit",
+            "name": "Duchowa bestia wody",
+            "tokenName": "Duchowa bestia",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonBeas caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -1138,7 +1138,7 @@
             }
         },
         "Celestial Spirit": {
-            "name": "Celestial Spirit",
+            "name": "Duchowy niebianin",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCele caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -1152,7 +1152,7 @@
                     }
                 },
                 "Radiant Bow (Avenger Only)": {
-                    "name": "Radiant Bow (Avenger Only)",
+                    "name": "Świetlisty łuk (tylko mściciel)",
                     "description": "<p><em>Ranged Attack Roll</em>: Bonus equals your spell attack modifier, range 600 ft. <em>Hit:</em> 2d6 + 2 + the spell’s level Radiant damage.</p>"
                 },
                 "Radiant Mace (Defender Only)": {
@@ -1166,13 +1166,13 @@
                     }
                 },
                 "Healing Touch": {
-                    "name": "Healing Touch",
-                    "description": "<p> The spirit touches another creature. The target regains Hit Points equal to 2d8 + the spell’s level.</p>"
+                    "name": "Uzdrawiający dotyk",
+                    "description": "<p>Duch dotyka innej istoty. Cel odzyskuje liczbę Punktów Wytrzymałości równą 2k8 + krąg czaru.</p>"
                 }
             }
         },
         "Celestial Steed": {
-            "name": "Celestial Steed",
+            "name": "Niebiański wierzchowiec",
             "tokenName": "Nieziemski wierzchowiec",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplFindSteed0 caption=false]</p>",
             "alignment": "Neutralny",
@@ -1187,20 +1187,20 @@
                     "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 plus the spell’s level of Radiant damage.</p>"
                 },
                 "Healing Touch": {
-                    "name": "Healing Touch",
+                    "name": "Uzdrawiający dotyk",
                     "description": "<p> One creature within 5 feet of the steed regains a number of Hit Points equal to 2d8 plus the spell’s level.</p>"
                 }
             }
         },
         "Clay Construct Spirit": {
-            "name": "Clay Construct Spirit",
-            "tokenName": "Construct Spirit",
+            "name": "Duchowy gliniany konstrukt",
+            "tokenName": "Duchowy konstrukt",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCons caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków [[/item Walnięcie]] równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -1343,7 +1343,7 @@
                 },
                 "Guidance": {
                     "name": "Wskazówki",
-                    "description": "<p>Dotykasz chętną istotę i wybierasz umiejętność. Dopóki czar trwa, istota dodaje 1k4 do każdego testu wykonywanego z użyciem wybranej umiejętności.</p>",
+                    "description": "<p>Dotykasz przychylną istotę i wybierasz umiejętność. Dopóki czar trwa, istota dodaje 1k4 do każdego testu wykonywanego z użyciem wybranej umiejętności.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -1408,7 +1408,7 @@
                 },
                 "Sacred Flame": {
                     "name": "Święty płomień",
-                    "description": "<p>Światłość przypominająca płomień spada na istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Zręczność. W przypadku niepowodzenia otrzymuje 1k8 obrażeń od światłości. Cel nie korzysta z osłony Połowicznej ani Trzy Czwarte podczas tego rzutu.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
+                    "description": "<p>Światłość przypominająca płomień spada na istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Zręczność. W przypadku niepowodzenia otrzymuje 1k8 obrażeń od światłości. Cel nie korzysta z osłony Połowicznej ani Trzy Czwarte podczas tego rzutu.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie",
@@ -1427,7 +1427,7 @@
                 },
                 "Bless": {
                     "name": "Błogosławieństwo",
-                    "description": "<p>Błogosławisz do trzech istot w zasięgu. Za każdym razem, gdy cel wykonuje Test ataku lub rzut obronny przed zakończeniem czaru, dodaje on 1k4 do wyniku tego rzutu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 1.</p>",
+                    "description": "<p>Błogosławisz do trzech istot w zasięgu. Za każdym razem, gdy cel wykonuje Test ataku lub rzut obronny przed zakończeniem czaru, dodaje on 1k4 do wyniku tego rzutu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 1.</p>",
                     "materials": "Święty Symbol wart 5+ GP",
                     "effects": {
                         "Blessed": {
@@ -1438,7 +1438,7 @@
                 },
                 "Cure Wounds": {
                     "name": "Leczenie ran",
-                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>"
+                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>"
                 },
                 "Guiding Bolt": {
                     "name": "Pocisk wiodący",
@@ -1735,7 +1735,7 @@
             }
         },
         "Construct Spirit": {
-            "name": "Construct Spirit",
+            "name": "Duchowy konstrukt",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCons caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -1837,14 +1837,14 @@
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplDancingLig caption=false]</p>"
         },
         "Defender Spirit": {
-            "name": "Defender Spirit",
-            "tokenName": "Celestial Spirit",
+            "name": "Duchowy obrońca",
+            "tokenName": "Duchowy niebianin",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCele caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -1864,14 +1864,14 @@
                     }
                 },
                 "Healing Touch": {
-                    "name": "Healing Touch",
-                    "description": "<p> The spirit touches another creature. The target regains Hit Points equal to 2d8 + the spell’s level.</p>"
+                    "name": "Uzdrawiający dotyk",
+                    "description": "<p>Duch dotyka innej istoty. Cel odzyskuje liczbę Punktów Wytrzymałości równą 2k8 + krąg czaru.</p>"
                 }
             }
         },
         "Demon Spirit": {
-            "name": "Demon Spirit",
-            "tokenName": "Fiendish Spirit",
+            "name": "Duchowy demon",
+            "tokenName": "Duchowy czart",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFien caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -1893,7 +1893,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -1907,8 +1907,8 @@
             }
         },
         "Devil Spirit": {
-            "name": "Devil Spirit",
-            "tokenName": "Fiendish Spirit",
+            "name": "Duchowy diabeł",
+            "tokenName": "Duchowy czart",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFien caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -1922,7 +1922,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -1959,7 +1959,7 @@
             }
         },
         "Draconic Spirit": {
-            "name": "Draconic Spirit",
+            "name": "Duchowy smok",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonDrag caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -2139,7 +2139,7 @@
                 },
                 "Druidcraft": {
                     "name": "Druidzkie sztuczki",
-                    "description": "<p>Szeptając do duchów natury, tworzysz jeden z poniższych efektów w zasięgu.</p><p><strong>Czujnik pogody.</strong> Tworzysz Mały, nieszkodliwy efekt sensoryczny, który przewiduje, jaka będzie pogoda w twojej lokalizacji przez najbliższe 24 godziny. Efekt może objawiać się jako złota kula dla bezchmurnego nieba, chmura dla deszczu, spadające płatki śniegu dla śniegu i tak dalej. Ten efekt trwa przez 1 rundę.</p><p><strong>Kwitnienie.</strong> Natychmiast sprawiasz, że kwiat rozkwita, strąk nasienny się otwiera lub pączek liścia zakwita.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz nieszkodliwy efekt sensoryczny, taki jak spadające liście, widmowe tańczące wróżki, łagodny powiew, dźwięk zwierzęcia lub słaby zapach skunksa. Efekt musi zmieścić się w Sześcianie o boku 5 stóp.</p><p><strong>Zabawa z ogniem.</strong> Zapalasz lub gasisz świecę, pochodnię albo ognisko.</p>",
+                    "description": "<p>Szeptem zwracasz się do duchów natury i tworzysz jeden z poniższych efektów w zasięgu.</p><p><strong>Czujnik pogody.</strong> Tworzysz Maleńki, nieszkodliwy efekt sensoryczny, który przepowiada, jaka będzie pogoda w twojej lokalizacji przez najbliższe 24 godziny. Efekt może przybrać postać złotej kuli dla bezchmurnego nieba, chmury dla deszczu, opadających płatków śniegu dla śniegu i tak dalej. Efekt utrzymuje się przez 1 rundę.</p><p><strong>Rozkwit.</strong> Sprawiasz, że kwiat natychmiast rozkwita, strąk nasienny się otwiera albo pączek liścia rozwija się.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz nieszkodliwy efekt zmysłowy, taki jak opadające liście, widmowe tańczące wróżki, łagodny powiew wiatru, dźwięk wydawany przez zwierzę lub słaby zapach skunksa. Efekt musi zmieścić się w Sześcianie o boku 5 stóp.</p><p><strong>Zabawa z ogniem.</strong> Zapalasz albo gasisz świecę, pochodnię lub ognisko.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -2148,7 +2148,7 @@
                 },
                 "Produce Flame": {
                     "name": "Wywołanie płomienia",
-                    "description": "<p>Migoczący płomień pojawia się w twojej dłoni i pozostaje tam przez cały czas działania czaru. Płomień nie emituje ciepła ani niczego nie podpala, a także rzuca &Reference[BrightLight]{Jasne Światło} w promieniu 20 stóp oraz &Reference[DimLight]{Słabe Światło} na dodatkowe 20 stóp. Czar kończy się, jeśli rzucisz go ponownie.</p><p>Do momentu zakończenia czaru możesz wykonać Akcję Magii, aby rzucić płomień w istotę lub obiekt w odległości do 60 stóp od ciebie. Wykonaj dystansowy test ataku zaklęciem. W przypadku trafienia cel otrzymuje 1k8 obrażeń od ognia.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
+                    "description": "<p>Migoczący płomień pojawia się w twojej dłoni i pozostaje tam przez cały czas działania czaru. Płomień nie emituje ciepła ani niczego nie podpala, a także rzuca &Reference[BrightLight]{Jasne Światło} w promieniu 20 stóp oraz &Reference[DimLight]{Słabe Światło} na dodatkowe 20 stóp. Czar kończy się, jeśli rzucisz go ponownie.</p><p>Do momentu zakończenia czaru możesz wykonać Akcję Magii, aby rzucić płomień w istotę lub obiekt w odległości do 60 stóp od ciebie. Wykonaj dystansowy test ataku zaklęciem. W przypadku trafienia cel otrzymuje 1k8 obrażeń od ognia.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -2176,11 +2176,11 @@
                 },
                 "Cure Wounds": {
                     "name": "Leczenie ran",
-                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>"
+                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>"
                 },
                 "Faerie Fire": {
                     "name": "Blask faerie",
-                    "description": "<p>Obiekty w sześcianie o boku 20 stóp w zasięgu są obrysowane niebieskim, zielonym lub fioletowym światłem (do twojego wyboru). Każda istota w sześcianie jest również obrysowana, jeśli nie powiedzie jej się rzut obronny na Zręczność. Przez czas trwania obiekty i objęte efektem istoty emitują &amp;Reference[dimlight]{Słabe światło} w promieniu 10 stóp i nie mogą czerpać korzyści ze stanu Niewidzialny.</p><p>Testy ataku przeciwko objętej efektem istocie lub obiektowi mają Ułatwienie, jeśli atakujący może je widzieć.</p>",
+                    "description": "<p>Obiekty w Sześcianie o boku 20 stóp w zasięgu zostają obrysowane niebieskim, zielonym lub fioletowym światłem (wedle twojego wyboru). Każda istota w Sześcianie zostaje również obrysowana, jeśli nie powiedzie jej się rzut obronny na Zręczność. Dopóki czar trwa, obiekty i istoty objęte tym efektem emitują &amp;Reference[dimlight] w promieniu 10 stóp i nie mogą korzystać ze stanu Niewidzialny.</p><p>Testy ataku przeciwko istocie lub obiektowi objętym tym efektem mają Ułatwienie, jeśli atakujący może je widzieć.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
@@ -2195,7 +2195,7 @@
                 },
                 "Thunderwave": {
                     "name": "Fala gromu",
-                    "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
+                    "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
@@ -2293,7 +2293,7 @@
                 },
                 "Speak with Animals": {
                     "name": "Rozmawianie ze zwierzętami",
-                    "description": "<p>Przez cały czas działania czaru możesz rozumieć i werbalnie komunikować się z Bestiami, a także używać dowolnych opcji umiejętności Akcji Wpływu wobec nich.</p><p>Większość Bestii ma niewiele do powiedzenia na tematy niezwiązane z przetrwaniem lub towarzystwem, ale przynajmniej mogą przekazać ci informacje o pobliskich miejscach i potworach, w tym o wszystkim, co zaobserwowały w ciągu ostatniego dnia.</p>",
+                    "description": "<p>Przez czas trwania czaru możesz rozumieć Bestie i komunikować się z nimi werbalnie, a także używać wobec nich dowolnej opcji umiejętności dostępnej w ramach Akcji wpływu.</p><p>Większość Bestii ma niewiele do powiedzenia na tematy niezwiązane z przetrwaniem lub towarzystwem, ale przynajmniej mogą przekazać ci informacje o pobliskich miejscach i potworach, w tym o wszystkim, co dostrzegły w ciągu ostatniego dnia.</p>",
                     "effects": {
                         "Bestial Communication": {
                             "name": "Bestialska komunikacja"
@@ -2316,14 +2316,14 @@
             "name": "Duplicate"
         },
         "Earth Elemental Spirit": {
-            "name": "Earth Elemental Spirit",
-            "tokenName": "Elemental Spirit",
+            "name": "Duchowy żywiołak ziemi",
+            "tokenName": "Duchowy żywiołak",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonElem caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków [[/item Walnięcie]] równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -2337,18 +2337,18 @@
             }
         },
         "Elemental Spirit": {
-            "name": "Elemental Spirit",
+            "name": "Duchowy żywiołak",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonElem caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
                 "Amorphous Form (Air, Fire, and Water Only)": {
                     "name": "Amorphous Form (Air, Fire, and Water Only)",
-                    "description": "<p> The spirit can move through a space as narrow as 1 inch wide without it counting as Difficult Terrain.</p>",
+                    "description": "<p>Duch może przemieszczać się przez przestrzeń o szerokości zaledwie 1 cala, nie traktując jej jako Trudnego terenu.</p>",
                     "requirements": "Air, Fire, and Water Only"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków [[/item Walnięcie]] równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -2431,7 +2431,7 @@
             }
         },
         "Fey Spirit": {
-            "name": "Fey Spirit",
+            "name": "Duchowy Fey",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFey0 caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -2460,7 +2460,7 @@
             }
         },
         "Fey Steed": {
-            "name": "Fey Steed",
+            "name": "Wierzchowiec Fey",
             "tokenName": "Nieziemski wierzchowiec",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplFindSteed0 caption=false]</p>",
             "alignment": "Neutralny",
@@ -2486,7 +2486,7 @@
             }
         },
         "Fiend Steed": {
-            "name": "Fiend Steed",
+            "name": "Czarci wierzchowiec",
             "tokenName": "Nieziemski wierzchowiec",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplFindSteed0 caption=false]</p>",
             "alignment": "Neutralny",
@@ -2517,7 +2517,7 @@
             }
         },
         "Fiendish Spirit": {
-            "name": "Fiendish Spirit",
+            "name": "Duchowy czart",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFien caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -2786,18 +2786,18 @@
             }
         },
         "Fire Elemental Spirit": {
-            "name": "Fire Elemental Spirit",
-            "tokenName": "Elemental Spirit",
+            "name": "Duchowy żywiołak ognia",
+            "tokenName": "Duchowy żywiołak",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonElem caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
                 "Amorphous Form": {
-                    "name": "Amorphous Form",
-                    "description": "<p> The spirit can move through a space as narrow as 1 inch wide without it counting as Difficult Terrain.</p>"
+                    "name": "Bezpostaciowa forma",
+                    "description": "<p>Duch może przemieszczać się przez przestrzeń o szerokości zaledwie 1 cala, nie traktując jej jako Trudnego terenu.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków [[/item Walnięcie]] równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -2816,7 +2816,7 @@
             "items": {
                 "Flames": {
                     "name": "Flames",
-                    "description": "<p>You create a 5-foot-diameter sphere of fire in an unoccupied space on the ground within range. It lasts for the duration. Any creature that ends its turn within 5 feet of the sphere makes a Dexterity saving throw, taking 2d6 Fire damage on a failed save or half as much damage on a successful one.</p>",
+                    "description": "<p>Tworzysz Sferę ognia o średnicy 5 stóp w niezajętej przestrzeni na ziemi w zasięgu. Utrzymuje się przez czas trwania czaru. Każda istota, która kończy swoją turę w obrębie 5 stóp od Sfery, wykonuje rzut obronny na Zręczność, otrzymując 2k6 obrażeń od ognia przy porażce albo połowę tych obrażeń przy sukcesie.</p>",
                     "activities": {
                         "save": {
                             "condition": "Any creature ends its turn within range",
@@ -2866,8 +2866,8 @@
             }
         },
         "Fuming Fey Spirit": {
-            "name": "Fuming Fey Spirit",
-            "tokenName": "Fey Spirit",
+            "name": "Duchowy wściekły Fey",
+            "tokenName": "Duchowy Fey",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFey0 caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -2900,8 +2900,8 @@
             "description": "<p><strong>Speed:</strong> 4 mph</p><p><strong>Crew:</strong> 80</p><p><strong>Passengers:</strong> —</p><p><strong>Cargo (Tons):</strong> 150</p><p><strong>AC:</strong> 15</p><p><strong>HP:</strong> 500</p><p><strong>Damage Threshold:</strong> 20</p><p><strong>Cost:</strong> 30,000 GP</p>"
         },
         "Ghostly Spirit": {
-            "name": "Ghostly Spirit",
-            "tokenName": "Undead Spirit",
+            "name": "Widmowy duch",
+            "tokenName": "Duchowy nieumarły",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonUnde caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -2911,7 +2911,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -3398,8 +3398,8 @@
             }
         },
         "Metal Construct Spirit": {
-            "name": "Metal Construct Spirit",
-            "tokenName": "Construct Spirit",
+            "name": "Duchowy metalowy konstrukt",
+            "tokenName": "Duchowy konstrukt",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCons caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -3416,7 +3416,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków [[/item Walnięcie]] równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -3431,7 +3431,7 @@
         },
         "Mind Flayer Spirit": {
             "name": "Mind Flayer Spirit",
-            "tokenName": "Aberrant Spirit",
+            "tokenName": "Duchowe wynaturzenie",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonAber caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -3449,7 +3449,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -3463,8 +3463,8 @@
             }
         },
         "Mirthful Fey Spirit": {
-            "name": "Mirthful Fey Spirit",
-            "tokenName": "Fey Spirit",
+            "name": "Duchowy wesoły Fey",
+            "tokenName": "Duchowy Fey",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFey0 caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -3537,11 +3537,11 @@
                 },
                 "Fire Bolt": {
                     "name": "Ognisty pocisk",
-                    "description": "<p>Ciskasz iskrę ognia w istotę lub obiekt w zasięgu. Wykonaj test ataku dystansowego czarem przeciwko celowi. Przy trafieniu cel otrzymuje 1k10 obrażeń od ognia. Podatny na podpalenie obiekt trafiony tym czarem zaczyna się palić, o ile nie jest noszony ani trzymany.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia wzrastają o 1k10, gdy osiągniesz poziomy 5 (2k10), 11 (3k10) i 17 (4k10).</p>"
+                    "description": "<p>Ciskasz iskrę ognia w istotę lub obiekt w zasięgu. Wykonaj test ataku dystansowego czarem przeciwko celowi. Przy trafieniu cel otrzymuje 1k10 obrażeń od ognia. Łatwopalny obiekt trafiony tym czarem zaczyna płonąć, jeśli nie jest noszony ani trzymany.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k10, gdy osiągniesz poziomy 5. (2k10), 11. (3k10) i 17. (4k10).</p>"
                 },
                 "Sleep": {
                     "name": "Uśpienie",
-                    "description": "<p>Każda wybrana przez ciebie istota w sferze o promieniu 5 stóp, której centrum znajduje się w wybranym punkcie w zasięgu, musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[incapacitated apply=false]{Obezwładniony} do końca twojej następnej tury, po czym musi powtórzyć rzut obronny. Jeśli cel nie powiedzie się w drugim rzucie, otrzymuje stan &amp;Reference[unconscious]{Nieprzytomny} na czas działania czaru. Czar kończy się na celu, jeśli otrzyma on obrażenia lub jeśli ktoś w odległości 5 stóp od niego wykona akcję, aby wybudzić go z efektu czaru.</p><p>Istoty, które nie śpią, takie jak elfy, lub które mają Niewrażliwość na stan Wyczerpany, automatycznie odnoszą sukces w rzutach obronnych przeciwko temu czarowi.</p>",
+                    "description": "<p>Każda wybrana przez ciebie istota w Sferze o promieniu 5 stóp, której środek znajduje się w punkcie w zasięgu, musi odnieść sukces w rzucie obronnym na Mądrość albo ma stan &amp;Reference[incapacitated apply=false] do końca swojej następnej tury, kiedy to musi powtórzyć rzut obronny. Jeśli cel poniesie porażkę w drugim rzucie obronnym, ma stan &amp;Reference[unconscious] przez czas trwania czaru. Działanie czaru na cel kończy się, jeśli otrzyma on obrażenia albo ktoś w obrębie 5 stóp od niego wykona Akcję, aby wyrwać go spod działania czaru.</p><p>Istoty, które nie śpią, takie jak elfy, albo mają Niepodatność na stan Wyczerpania, automatycznie odnoszą sukces w rzutach obronnych przeciwko temu czarowi.</p>",
                     "materials": "szczypta piasku lub płatków róży",
                     "activities": {
                         "Free Cast (1/day)": {
@@ -3820,7 +3820,7 @@
                     }
                 },
                 "Healing Touch": {
-                    "name": "Healing Touch",
+                    "name": "Uzdrawiający dotyk",
                     "description": "<p> One creature within 5 feet of the steed regains a number of Hit Points equal to 2d8 plus the spell’s level.</p>",
                     "requirements": "Celestial Only"
                 }
@@ -3918,7 +3918,7 @@
                 },
                 "Heroism": {
                     "name": "Heroizm",
-                    "description": "<p>Chętna istota, której dotykasz, zostaje napełniona odwagą. Dopóki czar trwa, istota ma &Reference[Immunity]{Niewrażliwość} na stan &Reference[Frightened]{Przerażony} i na początku każdej swojej tury zyskuje Tymczasowe Punkty Wytrzymałości równe twojemu modyfikatorowi cechy zaklinania.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 1. kręgu.</p>",
+                    "description": "<p>Przychylna istota, której dotkniesz, zostaje napełniona odwagą. Dopóki czar trwa, istota jest Niepodatna na stan Przerażony i na początku każdej swojej tury zyskuje Tymczasowe punkty wytrzymałości równe twojemu modyfikatorowi cechy bazowej rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Bravery": {
                             "name": "Odwaga",
@@ -3928,7 +3928,7 @@
                 },
                 "Searing Smite": {
                     "name": "Palące ugodzenie",
-                    "description": "<p>Gdy trafisz cel, otrzymuje on dodatkowe 1k6 obrażeń od ognia w wyniku ataku. Na początku każdej ze swoich tur, aż do zakończenia czaru, cel otrzymuje 1k6 obrażeń od ognia, a następnie wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia czar trwa dalej. W przypadku sukcesu czar się kończy.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Wszystkie obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+                    "description": "<p>Gdy trafisz cel, otrzymuje on dodatkowe 1k6 obrażeń od ognia w wyniku ataku. Na początku każdej ze swoich tur, aż do zakończenia czaru, cel otrzymuje 1k6 obrażeń od ognia, a następnie wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia czar trwa dalej. W przypadku sukcesu czar się kończy.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Wszystkie obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
                     "activation": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
                     "activationCondition": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
                     "activities": {
@@ -4099,8 +4099,8 @@
             }
         },
         "Putrid Spirit": {
-            "name": "Putrid Spirit",
-            "tokenName": "Undead Spirit",
+            "name": "Gnijący duch",
+            "tokenName": "Duchowy nieumarły",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonUnde caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -4125,7 +4125,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -4290,7 +4290,7 @@
                 },
                 "Elf, Wood": {
                     "name": "Elf, Leśny",
-                    "description": "<p>Created by the god Corellon, the first elves could change their forms at will. They lost this ability when Corellon cursed them for plotting with the deity Lolth, who tried and failed to usurp Corellon’s dominion. When Lolth was cast into the Abyss, most elves renounced her and earned Corellon’s forgiveness, but that which Corellon had taken from them was lost forever.</p><p>No longer able to shape-shift at will, the elves retreated to the Feywild, where their sorrow was deepened by that plane’s influence. Over time, curiosity led many of them to explore other planes of existence, including worlds in the Material Plane.</p><p>Elves have pointed ears and lack facial and body hair. They live for around 750 years, and they don’t sleep but instead enter a trance when they need to rest. In that state, they remain aware of their surroundings while immersing themselves in memories and meditations.</p><p>An environment subtly transforms elves after they inhabit it for a millennium or more, and it grants them certain kinds of magic. Drow, high elves, and wood elves are examples of elves who have been transformed thus.</p><h3 data-anchor=\"wood-elves\">Wood Elves</h3><p>Wood elves carry the magic of primeval forests within themselves. They are known by many other names, including wild elves, green elves, and forest elves. Grugach are reclusive wood elves of the Greyhawk setting, while the Kagonesti and the Tairnadal are wood elves of the Dragonlance and Eberron settings, respectively.</p><h3 data-anchor=\"elf-traits\">Elf Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size: </strong>Medium (about 5–6 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p>As an Elf, you have these special traits.</p><p><strong>Darkvision. </strong>You have Darkvision with a range of 60 feet.</p><p><strong>Elven Lineage. </strong>You are part of a lineage that grants you supernatural abilities.</p><p>When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).</p><h3>Wood Elf Lineage Features</h3><table><thead><tr><td><p>Level 1</p></td><td><p>Level 3</p></td><td><p>Level 5</p></td></tr></thead><tbody><tr><td><p>Your Speed increases to 35 feet. You also know the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDruidcraft]{Druidcraft} cantrip.</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLongstride]{Longstrider}</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPasswithou]{Pass without Trace}</p></td></tr></tbody></table><p><strong>Fey Ancestry.</strong> You have Advantage on saving throws you make to avoid or end the Charmed condition.</p><p><strong>Keen Senses.</strong> You have proficiency in the Insight, Perception, or Survival skill.</p><p><strong>Trance.</strong> You don’t need to sleep, and magic can’t put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.</p>"
+                    "description": "<p>Stworzeni przez boga Corellona, pierwsi elfowie mogli dowolnie zmieniać swoje formy. Stracili tę zdolność, gdy Corellon przeklął ich za spiskowanie z bóstwem Lolth, które bezskutecznie próbowało przejąć dominację Corellona. Gdy Lolth została strącona do Otchłani, większość elfów wyrzekła się jej i zyskała przebaczenie Corellona, ale to, co Corellon im odebrał, przepadło na zawsze.</p><p>Nie mogąc już zmieniać kształtów wedle woli, elfowie wycofali się do Feywildu, gdzie ich smutek pogłębił wpływ tej sfery. Z czasem ciekawość skłoniła wielu z nich do eksploracji innych sfer egzystencji, w tym światów w tym Sferze materialnej.</p><p>Elfy mają spiczaste uszy i brak zarostu na twarzy oraz ciele. Żyją około 750 lat i nie śpią, lecz wpadają w trans, gdy potrzebują odpoczynku. W tym stanie pozostają świadomi otoczenia, jednocześnie zanurzając się we wspomnieniach i medytacjach.</p><p>Środowisko subtelnie przekształca elfów, gdy zamieszkują je przez tysiąclecie lub dłużej, obdarzając ich określonymi rodzajami magii. Drowy, wysokie elfowie i leśne elfowie to przykłady elfów przemienionych w ten sposób.</p><h3 data-anchor=\"wood-elves\">Leśne elfy</h3><p>Elfowie leśni noszą w sobie magię pierwotnych lasów. Znani są pod wieloma innymi imionami, w tym dzikie elfowie, zielone elfowie i leśne elfowie. Grugach to samotni elfowie leśni z settingu Greyhawk, natomiast Kagonesti i Tairnadal to elfowie leśni z settingów Dragonlance i Eberron.</p><h3 data-anchor=\"elf-traits\">Cechy Elfów</h3><p><strong>Typ Istoty:</strong> Humanoid</p><p><strong>Rozmiar:</strong> Średni (około 5–6 stóp wzrostu)</p><p><strong>Szybkość:</strong> 30 stóp</p><p>Jako Elf posiadasz te specjalne cechy.</p><p><strong>Widzenie w ciemności.</strong> Posiadasz Widzenie w ciemności o zasięgu 60 stóp.</p><p><strong>Rodowód Elfów.</strong> Jesteś częścią rodu, który obdarza cię nadnaturalnymi zdolnościami.</p><p>Gdy osiągniesz poziomy postaci 3 i 5, poznajesz czar wyższego kręgu, jak pokazano w tabeli. Zawsze masz ten czar przygotowany. Możesz rzucić go raz bez użycia komórki czaru, a zdolność do rzucenia go w ten sposób odzyskuje się po zakończeniu Długiego Odpoczynku. Możesz także rzucić ten czar, używając dowolnych komórek czarów odpowiedniego kręgu, które posiadasz. Inteligencja, Mądrość lub Charyzma to twoja cecha zaklinania dla czarów rzucanych z tej cechy (wybierz cechę, gdy wybierasz rodowód).</p><table><caption>Cechy Rodowodu Leśnych elfów</caption><thead><tr><td>Poziom 1</td><td>Poziom 3</td><td>Poziom 5</td></tr></thead><tbody><tr><td>Twoja Szybkość wzrasta do 35 stóp. Znasz także sztuczkę @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDruidcraft]{Druidzkie sztuczki}.</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLongstride]{Szybkonogi}</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPasswithou]{Przejście bez śladu}</td></tr></tbody></table><p><strong>Rodowód Fey</strong> Masz Ułatwienie w rzutach obronnych przeciwko stanowi Zauroczony lub jego zakończeniu.</p><p><strong>Wyostrzone zmysły.</strong> Posiadasz biegłość w umiejętności Intuicja, Percepcja lub Sztuka przetrwania.</p><p><strong>Trans.</strong> Nie musisz spać, a magia nie może cię uśpić. Możesz zakończyć Długi Odpoczynek w 4 godziny, jeśli spędzisz ten czas w transowej medytacji, podczas której zachowujesz świadomość.</p>"
                 },
                 "Fey Ancestry": {
                     "name": "Rodowód fey",
@@ -4309,7 +4309,7 @@
                 },
                 "Elven Lineage, Wood Elf": {
                     "name": "Elfi Rodowód, Leśny Elf",
-                    "description": "<p>You are part of a lineage that grants you supernatural abilities.</p><p>When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).</p><h3>Wood Elf Lineage Features</h3><table><thead><tr><td><p>Level 1</p></td><td><p>Level 3</p></td><td><p>Level 5</p></td></tr></thead><tbody><tr><td><p>Your Speed increases to 35 feet. You also know the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDruidcraft]{Druidcraft} cantrip.</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLongstride]{Longstrider}</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPasswithou]{Pass without Trace}</p></td></tr></tbody></table><section class=\"secret\" id=\"secret-9CEnkbCgcLTJ03JL\"><p><strong>Foundry Note</strong></p><p>You will automatically be granted the relevant features and spells when you select the species and as you level up.</p></section>",
+                    "description": "<p>Należysz do linii, która zapewnia ci nadprzyrodzone zdolności.</p><p>Gdy osiągniesz 3. i 5. poziom postaci, uczysz się czaru wyższego kręgu, jak pokazano w tabeli. Zawsze masz ten czar przygotowany. Możesz rzucić go raz bez użycia komórki czaru, a zdolność ta odnawia się po zakończeniu Długiego Odpoczynku. Możesz również rzucać ten czar, używając dowolnych posiadanych komórek czaru odpowiedniego poziomu. Inteligencja, Mądrość lub Charyzma jest twoją cechą bazową rzucania czarów dla zaklęć rzucanych za pomocą tej cechy (wybierz cechę przy wyborze linii).</p><table><caption>Cechy Linii Leśnego Elfa</caption><thead><tr><td>Poziom 1</td><td>Poziom 3</td><td>Poziom 5</td></tr></thead><tbody><tr><td>Twoja Szybkość zwiększa się do 35 stóp. Znasz także sztuczkę @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDruidcraft]{Druidyczne Rzemiosło}.</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLongstride]{Długonogi}</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPasswithou]{Przemieszczanie się bez Śladu}</td></tr></tbody></table><section class=\"secret\" id=\"secret-9CEnkbCgcLTJ03JL\"><p><strong>Notatka Foundry</strong></p><p>Odpowiednie cechy i czary zostaną automatycznie przyznane po wybraniu rasy oraz podczas awansu na kolejne poziomy.</p></section>",
                     "requirements": "Elf, Leśny"
                 },
                 "Studded Leather Armor": {
@@ -4337,7 +4337,7 @@
                 },
                 "Cure Wounds": {
                     "name": "Leczenie ran",
-                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>"
+                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>"
                 },
                 "Ensnaring Strike": {
                     "name": "Pętające uderzenie",
@@ -4355,7 +4355,7 @@
                     "effects": {
                         "Ensnared": {
                             "name": "Spętany",
-                            "description": "<p><span style=\"font-family:Signika, sans-serif\">Cel otrzymuje stan &amp;Reference[restrained apply=false] do momentu zakończenia działania czaru.</span></p><p><span style=\"font-family:Signika, sans-serif\">Podczas stanu Unieruchomiony cel otrzymuje [[/damage 1k6 type=piercing]] (plus 1k6 za każdy Krąg Czaru powyżej 1) obrażeń kłutych na początku każdej swojej tury. Cel lub istota w jego zasięgu może wykonać Akcję, aby przeprowadzić Test [[/check ability=str skill=ath]] przeciwko ST twojego rzutu obronnego na czar. W przypadku sukcesu czar się kończy.</span></p>"
+                            "description": "<p><span style=\"font-family:Signika, sans-serif\">Cel otrzymuje stan &amp;Reference[restrained apply=false], dopóki czar nie dobiegnie końca.</span></p><p><span style=\"font-family:Signika, sans-serif\">Dopóki cel jest Unieruchomiony, otrzymuje [[/damage 1d6 type=piercing]] (plus 1k6 za każdy krąg komórki czaru powyżej 1) obrażeń kłutych na początku każdej swojej tury. Cel lub istota znajdująca się w jego zasięgu może wykonać akcję, by wykonać test [[/check ability=str skill=ath]] przeciwko twojemu St rzutu przeciw czarom. Przy sukcesie czar się kończy.</span></p>"
                         }
                     }
                 },
@@ -4431,7 +4431,7 @@
                 },
                 "Druidcraft": {
                     "name": "Druidzkie sztuczki",
-                    "description": "<p>Szeptając do duchów natury, tworzysz jeden z poniższych efektów w zasięgu.</p><p><strong>Czujnik pogody.</strong> Tworzysz Mały, nieszkodliwy efekt sensoryczny, który przewiduje, jaka będzie pogoda w twojej lokalizacji przez najbliższe 24 godziny. Efekt może objawiać się jako złota kula dla bezchmurnego nieba, chmura dla deszczu, spadające płatki śniegu dla śniegu i tak dalej. Ten efekt trwa przez 1 rundę.</p><p><strong>Kwitnienie.</strong> Natychmiast sprawiasz, że kwiat rozkwita, strąk nasienny się otwiera lub pączek liścia zakwita.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz nieszkodliwy efekt sensoryczny, taki jak spadające liście, widmowe tańczące wróżki, łagodny powiew, dźwięk zwierzęcia lub słaby zapach skunksa. Efekt musi zmieścić się w Sześcianie o boku 5 stóp.</p><p><strong>Zabawa z ogniem.</strong> Zapalasz lub gasisz świecę, pochodnię albo ognisko.</p>"
+                    "description": "<p>Szeptem zwracasz się do duchów natury i tworzysz jeden z poniższych efektów w zasięgu.</p><p><strong>Czujnik pogody.</strong> Tworzysz Maleńki, nieszkodliwy efekt sensoryczny, który przepowiada, jaka będzie pogoda w twojej lokalizacji przez najbliższe 24 godziny. Efekt może przybrać postać złotej kuli dla bezchmurnego nieba, chmury dla deszczu, opadających płatków śniegu dla śniegu i tak dalej. Efekt utrzymuje się przez 1 rundę.</p><p><strong>Rozkwit.</strong> Sprawiasz, że kwiat natychmiast rozkwita, strąk nasienny się otwiera albo pączek liścia rozwija się.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz nieszkodliwy efekt zmysłowy, taki jak opadające liście, widmowe tańczące wróżki, łagodny powiew wiatru, dźwięk wydawany przez zwierzę lub słaby zapach skunksa. Efekt musi zmieścić się w Sześcianie o boku 5 stóp.</p><p><strong>Zabawa z ogniem.</strong> Zapalasz albo gasisz świecę, pochodnię lub ognisko.</p>"
                 },
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
@@ -4447,7 +4447,7 @@
                 },
                 "Hunter's Mark": {
                     "name": "Znak łowcy",
-                    "description": "<p>Magicznie oznaczasz jedno stworzenie, które możesz zobaczyć w zasięgu, jako swoją zdobycz. Do momentu zakończenia działania czaru zadajesz celowi dodatkowe [[/damage]] obrażenia za każdym razem, gdy trafisz je Testem Ataku. Masz również Ułatwienie do wszystkich Testów [[/check ability=wis skill=prc]] lub [[/check ability=wis skill=sur]], które wykonujesz, aby je odnaleźć.</p><p>Jeśli cel spadnie do 0 Punktów Wytrzymałości przed zakończeniem działania czaru, możesz wykonać Akcję Dodatkową, aby przenieść znak na nowe stworzenie, które możesz zobaczyć w zasięgu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Twoja Koncentracja może trwać dłużej przy użyciu komórki czaru poziomu 3–4 (do 8 godzin) lub 5+ (do 24 godzin).</p>",
+                    "description": "<p>Magicznie oznaczasz jedno stworzenie, które możesz zobaczyć w zasięgu, jako swoją zdobycz. Do momentu zakończenia działania czaru zadajesz celowi dodatkowe [[/damage]] obrażenia za każdym razem, gdy trafisz je Testem Ataku. Masz również Ułatwienie do wszystkich Testów [[/check ability=wis skill=prc]] lub [[/check ability=wis skill=sur]], które wykonujesz, aby je odnaleźć.</p><p>Jeśli cel spadnie do 0 Punktów Wytrzymałości przed zakończeniem działania czaru, możesz wykonać Akcję Dodatkową, aby przenieść znak na nowe stworzenie, które możesz zobaczyć w zasięgu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Twoja Koncentracja może trwać dłużej przy użyciu komórki czaru poziomu 3–4 (do 8 godzin) lub 5+ (do 24 godzin).</p>",
                     "activities": {
                         "Bonus Mark Damage": {
                             "name": "Dodatkowe obrażenia znaku"
@@ -4470,7 +4470,7 @@
                 },
                 "izIQozlC7oAKscet": {
                     "name": "Znak łowcy",
-                    "description": "<p>Magicznie oznaczasz jedno stworzenie, które możesz zobaczyć w zasięgu, jako swoją zdobycz. Do momentu zakończenia działania czaru zadajesz celowi dodatkowe [[/damage]] obrażenia za każdym razem, gdy trafisz je Testem Ataku. Masz również Ułatwienie do wszystkich Testów [[/check ability=wis skill=prc]] lub [[/check ability=wis skill=sur]], które wykonujesz, aby je odnaleźć.</p><p>Jeśli cel spadnie do 0 Punktów Wytrzymałości przed zakończeniem działania czaru, możesz wykonać Akcję Dodatkową, aby przenieść znak na nowe stworzenie, które możesz zobaczyć w zasięgu.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Twoja Koncentracja może trwać dłużej przy użyciu komórki czaru poziomu 3–4 (do 8 godzin) lub 5+ (do 24 godzin).</p>",
+                    "description": "<p>Magicznie oznaczasz jedno stworzenie, które możesz zobaczyć w zasięgu, jako swoją zdobycz. Do momentu zakończenia działania czaru zadajesz celowi dodatkowe [[/damage]] obrażenia za każdym razem, gdy trafisz je Testem Ataku. Masz również Ułatwienie do wszystkich Testów [[/check ability=wis skill=prc]] lub [[/check ability=wis skill=sur]], które wykonujesz, aby je odnaleźć.</p><p>Jeśli cel spadnie do 0 Punktów Wytrzymałości przed zakończeniem działania czaru, możesz wykonać Akcję Dodatkową, aby przenieść znak na nowe stworzenie, które możesz zobaczyć w zasięgu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Twoja Koncentracja może trwać dłużej przy użyciu komórki czaru poziomu 3–4 (do 8 godzin) lub 5+ (do 24 godzin).</p>",
                     "activities": {
                         "Bonus Mark Damage": {
                             "name": "Dodatkowe obrażenia znaku"
@@ -4786,14 +4786,14 @@
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplLeomundsSe caption=false]</p>"
         },
         "Skeletal Spirit": {
-            "name": "Skeletal Spirit",
-            "tokenName": "Undead Spirit",
+            "name": "Szkieletowy duch",
+            "tokenName": "Duchowy nieumarły",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonUnde caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -4822,7 +4822,7 @@
         },
         "Slaad Spirit": {
             "name": "Slaad Spirit",
-            "tokenName": "Aberrant Spirit",
+            "tokenName": "Duchowe wynaturzenie",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonAber caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -4839,7 +4839,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -4898,7 +4898,7 @@
                 },
                 "Elf, Drow": {
                     "name": "Elf, Drow",
-                    "description": "<p>Created by the god Corellon, the first elves could change their forms at will. They lost this ability when Corellon cursed them for plotting with the deity Lolth, who tried and failed to usurp Corellon’s dominion. When Lolth was cast into the Abyss, most elves renounced her and earned Corellon’s forgiveness, but that which Corellon had taken from them was lost forever.</p><p>No longer able to shape-shift at will, the elves retreated to the Feywild, where their sorrow was deepened by that plane’s influence. Over time, curiosity led many of them to explore other planes of existence, including worlds in the Material Plane.</p><p>Elves have pointed ears and lack facial and body hair. They live for around 750 years, and they don’t sleep but instead enter a trance when they need to rest. In that state, they remain aware of their surroundings while immersing themselves in memories and meditations.</p><p>An environment subtly transforms elves after they inhabit it for a millennium or more, and it grants them certain kinds of magic. Drow, high elves, and wood elves are examples of elves who have been transformed thus.</p><h3 data-anchor=\"drow\">Drow</h3><p>Drow typically dwell in the Underdark and have been shaped by it. Some drow individuals and societies avoid the Underdark altogether yet carry its magic. In the Eberron setting, for example, drow dwell in rainforests and cyclopean ruins on the continent of Xen’drik.</p><h3 data-anchor=\"elf-traits\">Elf Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size: </strong>Medium (about 5–6 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p>As an Elf, you have these special traits.</p><p><strong>Darkvision. </strong>You have Darkvision with a range of 60 feet.</p><p><strong>Elven Lineage. </strong>You are part of a lineage that grants you supernatural abilities.</p><p>When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).</p><h3>Drow Lineage Features</h3><table><thead><tr><td><p>Level 1</p></td><td><p>Level 3</p></td><td><p>Level 5</p></td></tr></thead><tbody><tr><td><p>The range of your Darkvision increases to 120 feet. You also know the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDancingLig]{Dancing Lights} cantrip.</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFaerieFire]{Faerie Fire}</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]{Darkness}</p></td></tr></tbody></table><p><strong>Fey Ancestry.</strong> You have Advantage on saving throws you make to avoid or end the &amp;Reference[Charmed] condition.</p><p><strong>Keen Senses.</strong> You have proficiency in the Insight, Perception, or Survival skill.</p><p><strong>Trance.</strong> You don’t need to sleep, and magic can’t put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.</p><div><p></p></div>"
+                    "description": "<p>Stworzeni przez boga Corellona, pierwsi elfowie potrafili dowolnie zmieniać swoją formę. Utracili tę zdolność, gdy Corellon ich przeklął za spiskowanie z bóstwem Lolth, która próbowała, lecz nie zdołała, przejąć jego władzę. Gdy Lolth została strącona w Otchłań, większość elfów ją odrzuciła i uzyskała przebaczenie Corellona, lecz to, co im odebrał, było stracone na zawsze.</p><p>Pozbawieni umiejętności dowolnej przemiany, elfowie wycofali się do Feywild, gdzie ich rozpacz została spotęgowana przez wpływ tej sfery. Z czasem jednak ciekawość skłoniła wielu z nich do eksploracji innych planów istnienia, w tym światów na Sferze materialnej.</p><p>Elfowie mają spiczaste uszy oraz nie posiadają owłosienia na twarzy i ciele. Żyją około 750 lat i nie śpią - zamiast tego wchodzą w trans, gdy muszą odpocząć. W tym stanie pozostają świadomi swojego otoczenia, zanurzając się w wspomnieniach i medytacjach.</p><p>Środowisko subtelnie wpływa na elfów, zmieniając ich po zamieszkaniu w danym miejscu przez tysiąc lub więcej lat i obdarzając ich specyficzną magią. Przykładami takich zmian są mroczne elfy (drowy), wysokie elfy i leśne elfy.</p><h3 data-anchor=\"drow\">Mroczne Elfy (Drowy)</h3><p>Drowy zazwyczaj zamieszkują Podmrok i zostały przez niego ukształtowane. Niektóre drowy i społeczności całkowicie unikają Podmroku, lecz nadal noszą w sobie jego magię. W świecie Eberron na przykład drowy żyją w lasach deszczowych i cyklopich ruinach na kontynencie Xen’drik.</p><h3 data-anchor=\"elf-traits\">Cechy Elfa</h3><p><strong>Typ Stworzenia:</strong> Humanoid</p><p><strong>Rozmiar: </strong>Średni (około 5–6 stóp wzrostu)</p><p><strong>Szybkość:</strong> 30 stóp</p><p>Jako Elf posiadasz następujące cechy.</p><p><strong>Widzenie w ciemności.</strong> Posiadasz Widzenie w ciemności o zasięgu 60 stóp.</p><p><strong>Elfia linia krwi.</strong> Należysz do linii, która zapewnia ci nadprzyrodzone zdolności.</p><p>Gdy osiągniesz 3. i 5. poziom postaci, uczysz się czaru wyższego kręgu, jak pokazano w tabeli. Zawsze masz ten czar przygotowany. Możesz rzucić go raz bez użycia komórki czaru, a zdolność ta odnawia się po zakończeniu Długiego Odpoczynku. Możesz również rzucać ten czar, używając dowolnych posiadanych komórek czaru odpowiedniego poziomu. Inteligencja, Mądrość lub Charyzma jest twoją cechą bazową rzucania czarów dla zaklęć rzucanych za pomocą tej cechy (wybierz cechę przy wyborze linii).</p><table><caption>Cechy Linii krwi Drowów</caption><thead><tr><td>Poziom 1</td><td>Poziom 3</td><td>Poziom 5</td></tr></thead><tbody><tr><td>Zasięg twojego Widzenia w Ciemności zwiększa się do 120 stóp. Znasz także sztuczkę @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDancingLig]{Tańczące Światła}.</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFaerieFire]{Blask Faerie}</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]{Ciemność}</td></tr></tbody></table><p><strong>Rodowód Fey.</strong> Masz Ułatwienie do rzutów obronnych wykonywanych w celu uniknięcia lub zakończenia stanu Zauroczony.</p><p><strong>Wyostrzone Zmysły.</strong> Masz biegłość w umiejętności Intuicja, Percepcja lub Sztuka Przetrwania.</p><p><strong>Trans.</strong> Nie musisz spać, a magia nie może cię uśpić. Możesz zakończyć Długi Odpoczynek w 4 godziny, jeśli spędzisz ten czas w transie medytacyjnym, podczas którego pozostajesz świadomy otoczenia.</p>"
                 },
                 "Fey Ancestry": {
                     "name": "Rodowód fey",
@@ -4952,7 +4952,7 @@
                 },
                 "Light": {
                     "name": "Światło",
-                    "description": "<p>Dotykasz jednego obiektu o rozmiarze Dużym lub mniejszym, który nie jest noszony ani trzymany przez kogoś innego. Do końca czaru obiekt emituje Jasne Światło w promieniu 20 stóp (6m) i Słabe Światło na dodatkowe 20 stóp (6m). Światło może mieć kolor, jaki wybierzesz.</p><p>Przykrycie obiektu czymś nieprzezroczystym blokuje światło. Czar kończy się, jeśli rzucisz go ponownie.</p>",
+                    "description": "<p>Dotykasz jednego Dużego lub mniejszego obiektu, który nie jest noszony ani trzymany przez kogoś innego. Do zakończenia czaru obiekt emituje Jasne światło w promieniu 20 stóp oraz Słabe Światło przez kolejne 20 stóp. Światło może mieć wybrany przez ciebie kolor.</p><p>Przykrycie obiektu czymś nieprzezroczystym blokuje światło. Czar kończy się, jeśli rzucisz go ponownie.</p>",
                     "materials": "świetlik lub fosforyzujący mech",
                     "activities": {
                         "Cast": {
@@ -4971,7 +4971,7 @@
                 },
                 "Shocking Grasp": {
                     "name": "Porażający uścisk",
-                    "description": "<p>Błyskawica wystrzeliwuje od ciebie do istoty, którą próbujesz dotknąć. Wykonaj wręczowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 1k8 obrażeń od elektryczności i nie może wykonywać Ataków Okazyjnych do początku swojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
+                    "description": "<p>Błyskawica przeskakuje od ciebie ku istocie, której próbujesz dotknąć. Wykonaj test ataku wręcz czarem przeciwko celowi. Przy trafieniu cel otrzymuje 1k8 obrażeń od elektryczności i nie może wykonywać Ataków Okazyjnych do początku swojej następnej tury.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8, gdy osiągniesz poziomy 5. (2k8), 11. (3k8) i 17. (4k8).</p>",
                     "effects": {
                         "Shocked": {
                             "name": "Porażony",
@@ -4981,7 +4981,7 @@
                 },
                 "Sorcerous Burst": {
                     "name": "Wybuch mocy",
-                    "description": "<p>Rzucasz magiczną energię w jedną istotę lub obiekt w zasięgu. Wykonaj dystansowy test ataku przeciwko celowi. W przypadku trafienia cel otrzymuje 1k8 obrażeń wybranego przez ciebie typu: od kwasu, od zimna, od ognia, od elektryczności, od trucizn, psychicznych lub od dźwięku.</p><p>Jeśli w wyniku rzutu na k8 wypadnie 8, możesz rzucić kolejną k8 i dodać jej wynik do obrażeń. Podczas rzucania tego czaru maksymalna liczba k8, które możesz dodać do obrażeń, jest równa twojemu modyfikatorowi cechy zaklinania.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>"
+                    "description": "<p>Ciskasz magiczną energię w jedną istotę lub obiekt w zasięgu. Wykonaj test ataku dystansowego przeciwko celowi. Przy trafieniu cel otrzymuje 1k8 obrażeń wybranego przez ciebie typu: od kwasu, od zimna, od ognia, od elektryczności, od trucizny, psychicznych albo od dźwięku.</p><p>Jeśli podczas rzutu k8 dla tego czaru wyrzucisz 8, możesz rzucić kolejną k8 i dodać wynik do obrażeń. Maksymalna liczba tych k8, które możesz dodać do obrażeń czaru podczas jego rzucania, jest równa twojemu modyfikatorowi Cechy bazowej.</p><p><strong>Ulepszenie sztuczki. </strong>Obrażenia zwiększają się o 1k8, gdy osiągniesz poziomy 5. (2k8), 11. (3k8) i 17. (4k8).</p>"
                 },
                 "Detect Magic": {
                     "name": "Wykrycie magii",
@@ -4999,7 +4999,7 @@
                 },
                 "Burning Hands": {
                     "name": "Płonące dłonie",
-                    "description": "<p>Cienka płachta płomieni wystrzeliwuje z ciebie. Każda istota w Stożku o długości 15 stóp musi wykonać rzut obronny na Zręczność. W przypadku porażki otrzymuje ona 3k6 obrażeń od ognia, a w przypadku sukcesu połowę tych obrażeń.</p><p>Łatwopalne obiekty w Stożku, które nie są noszone ani niesione, zaczynają płonąć.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
+                    "description": "<p>Cienka płachta płomieni wystrzeliwuje z ciebie. Każda istota w Stożku o długości 15 stóp musi wykonać rzut obronny na Zręczność. W przypadku porażki otrzymuje ona 3k6 obrażeń od ognia, a w przypadku sukcesu połowę tych obrażeń.</p><p>Łatwopalne obiekty w Stożku, które nie są noszone ani niesione, zaczynają płonąć.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
@@ -5231,8 +5231,8 @@
             }
         },
         "Stone Construct Spirit": {
-            "name": "Stone Construct Spirit",
-            "tokenName": "Construct Spirit",
+            "name": "Duchowy kamienny konstrukt",
+            "tokenName": "Duchowy konstrukt",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCons caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -5254,7 +5254,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków [[/item Walnięcie]] równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -5310,8 +5310,8 @@
             }
         },
         "Tricksy Fey Spirit": {
-            "name": "Tricksy Fey Spirit",
-            "tokenName": "Fey Spirit",
+            "name": "Duchowy psotny Fey",
+            "tokenName": "Duchowy Fey",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFey0 caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -5340,14 +5340,14 @@
             }
         },
         "Undead Spirit": {
-            "name": "Undead Spirit",
+            "name": "Duchowy nieumarły",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonUnde caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
                 "Festering Aura (Putrid Only)": {
-                    "name": "Festering Aura (Putrid Only)",
+                    "name": "Ropiejąca aura (tylko gnijący)",
                     "description": "<p><em>Constitution Saving Throw:</em> DC equals your spell save DC, any creature (other than you) that starts its turn within a 5-foot Emanation originating from the spirit. <em>Failure:</em> The creature has the &amp;Reference[Poisoned apply=false] condition until the start of its next turn.</p>",
-                    "requirements": "Putrid Only",
+                    "requirements": "Tylko gnijący",
                     "activities": {
                         "save": {
                             "condition": "any other creature that starts its turn within range",
@@ -5388,12 +5388,12 @@
                     }
                 },
                 "Grave Bolt (Skeletal Only)": {
-                    "name": "Grave Bolt (Skeletal Only)",
+                    "name": "Grobowy pocisk (tylko szkieletowy)",
                     "description": "<p><em>Ranged Attack Roll:</em> Bonus equals your spell attack modifier, range 150 ft. <em>Hit:</em> 2d4 + 3 + the spell’s level Necrotic damage.</p>",
-                    "requirements": "Skeletal Only"
+                    "requirements": "Tylko szkieletowy"
                 },
                 "Rotting Claw (Putrid Only)": {
-                    "name": "Rotting Claw (Putrid Only)",
+                    "name": "Gnijące pazury (tylko gnijący)",
                     "description": "<p><em>Melee Attack Roll:</em> Bonus: equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d6 + 3 + the spell’s level Slashing damage. If the target has the &amp;Reference[poisoned apply=false] condition, it has the &amp;Reference[paralyzed apply=false] condition until the end of its next turn.</p>",
                     "effects": {
                         "Paralyzed": {
@@ -5488,7 +5488,7 @@
                 },
                 "Mending": {
                     "name": "Naprawa",
-                    "description": "<p>Ten czar naprawia pojedyncze pęknięcie lub rozdarcie w obiekcie, którego dotykasz, takim jak zerwane ogniwo łańcucha, dwie połówki złamanego klucza, rozdarty płaszcz lub przeciekający bukłak na wino. Dopóki pęknięcie lub rozdarcie nie przekracza 1 stopy (30cm) w żadnym wymiarze, naprawiasz je, nie pozostawiając śladu wcześniejszego uszkodzenia.</p><p>Ten czar może fizycznie naprawić magiczny przedmiot, ale nie może przywrócić magii takiemu obiektowi.</p>",
+                    "description": "<p>Ten czar naprawia pojedyncze pęknięcie lub rozdarcie w dotykanym przez ciebie obiekcie, takim jak zerwane ogniwo łańcucha, dwie części złamanego klucza, rozdarty płaszcz albo przeciekający bukłak na wino. O ile pęknięcie lub rozdarcie nie przekracza 1 stopy w żadnym wymiarze, naprawiasz je, nie pozostawiając śladu wcześniejszego uszkodzenia.</p><p>Ten czar może fizycznie naprawić magiczny przedmiot, ale nie może przywrócić mu magicznych właściwości.</p>",
                     "materials": "dwa kamienie magnetyczne",
                     "activities": {
                         "Cast": {
@@ -5523,7 +5523,7 @@
                 },
                 "Sacred Flame": {
                     "name": "Święty płomień",
-                    "description": "<p>Światłość przypominająca płomień spada na istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Zręczność. W przypadku niepowodzenia otrzymuje 1k8 obrażeń od światłości. Cel nie korzysta z osłony Połowicznej ani Trzy Czwarte podczas tego rzutu.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
+                    "description": "<p>Światłość przypominająca płomień spada na istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Zręczność. W przypadku niepowodzenia otrzymuje 1k8 obrażeń od światłości. Cel nie korzysta z osłony Połowicznej ani Trzy Czwarte podczas tego rzutu.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie",
@@ -5533,7 +5533,7 @@
                 },
                 "Bane": {
                     "name": "Zguba",
-                    "description": "<p>Do trzech wybranych przez ciebie istot, które widzisz w zasięgu, musi wykonać rzut obronny na Charyzmę. Za każdym razem, gdy cel, któremu nie powiódł się ten rzut, wykonuje test ataku lub rzut obronny przed zakończeniem czaru, musi odjąć 1k4 od testu ataku lub rzutu obronnego.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 1.</p>",
+                    "description": "<p>Do trzech wybranych przez ciebie istot, które widzisz w zasięgu, musi wykonać rzut obronny na Charyzmę. Za każdym razem, gdy cel, któremu nie powiódł się ten rzut, wykonuje test ataku lub rzut obronny przed zakończeniem czaru, musi odjąć 1k4 od testu ataku lub rzutu obronnego.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg powyżej 1.</p>",
                     "materials": "kropla krwi",
                     "activities": {
                         "Cast": {
@@ -5554,7 +5554,7 @@
                 },
                 "Eldritch Blast": {
                     "name": "Nieziemskie uderzenie",
-                    "description": "<p>Ciskasz promieniem trzaskającej energii. Wykonaj dystansowy atak czarem przeciwko jednej istocie lub obiektowi w zasięgu. Przy trafieniu cel otrzymuje 1k10 obrażeń od mocy.</p><p><strong>Ulepszenie Sztuczki.</strong> Czar tworzy dwa promienie na 5. poziomie, trzy promienie na 11. poziomie i cztery promienie na 17. poziomie. Możesz skierować promienie na ten sam cel lub na różne cele. Wykonaj osobny test ataku dla każdego promienia.</p><p>[[(floor((@details.level+1)/6)+1)]]{Całkowita Liczba Promieni}</p>"
+                    "description": "<p>Ciskasz promieniem trzaskającej energii. Wykonaj dystansowy atak czarem przeciwko jednej istocie lub obiektowi w zasięgu. Przy trafieniu cel otrzymuje 1k10 obrażeń od mocy.</p><p><strong>Ulepszenie sztuczki.</strong> Na 5. poziomie czar tworzy dwa promienie, na 11. poziomie trzy promienie, a na 17. poziomie cztery promienie. Możesz skierować promienie w ten sam cel albo w różne cele. Wykonaj osobny test ataku dla każdego promienia.</p><p>[[(floor((@details.level+1)/6)+1)]]{Całkowita liczba promieni}</p>"
                 },
                 "Blade Ward": {
                     "name": "Osłona przed orężem",
@@ -5568,7 +5568,7 @@
                 },
                 "Charm Person": {
                     "name": "Zauroczenie osoby",
-                    "description": "<p>Jeden humanoid, którego widzisz w zasięgu, musi wykonać rzut obronny na Mądrość. Wykonuje go z Ułatwieniem, jeśli walczy z tobą lub twoimi sojuszników. W przypadku porażki ma stan &Reference[charmed apply=false]{Zauroczony} do czasu zakończenia czaru lub do momentu, w którym ty lub twoi sojusznicy zadacie mu obrażenia. Zauroczona istota jest wobec ciebie Przyjazna. Kiedy działanie czaru dobiega końca, cel wie, że został przez ciebie Zauroczony.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Możesz wskazać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
+                    "description": "<p>Jeden humanoid, którego widzisz w zasięgu, musi wykonać rzut obronny na Mądrość. Wykonuje go z Ułatwieniem, jeśli walczy z tobą lub twoimi sojuszników. W przypadku porażki ma stan &Reference[charmed apply=false]{Zauroczony} do czasu zakończenia czaru lub do momentu, w którym ty lub twoi sojusznicy zadacie mu obrażenia. Zauroczona istota jest wobec ciebie Przyjazna. Kiedy działanie czaru dobiega końca, cel wie, że został przez ciebie Zauroczony.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wskazać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
@@ -5583,7 +5583,7 @@
                 },
                 "Hex": {
                     "name": "Urok",
-                    "description": "<p>Naznaczasz klątwą istotę, którą widzisz w zasięgu. Dopóki czar trwa, zadajesz dodatkowe 1k6 obrażeń nekrotycznych celowi, gdy trafisz go testem ataku. Dodatkowo, wybierz jedną cechę, gdy rzucasz czar. Cel ma &Reference[Disadvantage]{Utrudnienie} w testach cechy wykonywanych przy użyciu wybranej cechy.</p><p>Jeśli cel spadnie do 0 Punktów Wytrzymałości przed zakończeniem czaru, możesz wykonać Akcję Dodatkową w późniejszej turze, aby nałożyć klątwę na nową istotę.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Twoja Koncentracja może trwać dłużej dzięki komórce czaru 2. kręgu (do 4 godzin), 3–4. kręgu (do 8 godzin) lub 5+ kręgu (24 godziny).</p>",
+                    "description": "<p>Naznaczasz klątwą istotę, którą widzisz w zasięgu. Dopóki czar trwa, zadajesz dodatkowe 1k6 obrażeń nekrotycznych celowi, gdy trafisz go testem ataku. Dodatkowo, wybierz jedną cechę, gdy rzucasz czar. Cel ma &Reference[Disadvantage]{Utrudnienie} w testach cechy wykonywanych przy użyciu wybranej cechy.</p><p>Jeśli cel spadnie do 0 Punktów Wytrzymałości przed zakończeniem czaru, możesz wykonać Akcję Dodatkową w późniejszej turze, aby nałożyć klątwę na nową istotę.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Twoja Koncentracja może trwać dłużej dzięki komórce czaru 2. kręgu (do 4 godzin), 3–4. kręgu (do 8 godzin) lub 5+ kręgu (24 godziny).</p>",
                     "materials": "skamieniałe oko traszki",
                     "activities": {
                         "Bonus Hex Damage": {
@@ -5643,7 +5643,7 @@
                 },
                 "Find Familiar": {
                     "name": "Znalezienie chowańca",
-                    "description": "<p>Zyskujesz usługę chowańca, ducha, który przybiera wybraną przez ciebie formę zwierzęcą: <strong>Nietoperz</strong>, <strong>Kot</strong>, <strong>Żaba</strong>, <strong>Jastrząb</strong>, <strong>Jaszczurka</strong>, <strong>Ośmiornica</strong>, <strong>Sowa</strong>, <strong>Szczur</strong>, <strong>Kruk</strong>, <strong>Pająk</strong>, <strong>Łasica</strong> lub inna Bestia o Stopniu Wyzwania 0. Pojawiając się w niezajętym obszarze w zasięgu, chowaniec ma statystyki wybranej formy (patrz dodatek B), choć jest Niebianinem, Fey lub Czartem (według twojego wyboru) zamiast Bestii. Twój chowaniec działa niezależnie od ciebie, ale podporządkowuje się twoim rozkazom.</p><p><strong>Telepatyczne Połączenie.</strong> Gdy twój chowaniec znajduje się w odległości 100 stóp od ciebie, możesz komunikować się z nim telepatycznie. Dodatkowo, Akcją dodatkową, możesz widzieć oczami chowańca i słyszeć to, co on słyszy, do początku twojej następnej tury, zyskując korzyści z wszelkich specjalnych zmysłów, jakie posiada.</p><p>Ponadto, gdy rzucasz czar o zasięgu dotyku, twój chowaniec może dostarczyć ten dotyk. Chowaniec musi znajdować się w odległości 100 stóp od ciebie i musi wykonać Reakcję, aby dostarczyć dotyk, gdy rzucasz czar.</p><p><strong>Walka.</strong> Chowaniec jest sojusznikiem dla ciebie i twoich sprzymierzeńców. Rzuca własną Inicjatywą i działa w swojej turze. Chowaniec nie może atakować, ale może wykonywać inne akcje jak zwykle.</p><p><strong>Zniknięcie Chowańca.</strong> Gdy chowaniec spadnie do 0 Punktów Wytrzymałości, znika. Pojawia się ponownie, gdy rzucisz ten czar jeszcze raz. Akcją Magii możesz tymczasowo odesłać chowańca do kieszonkowego wymiaru. Alternatywnie, możesz odesłać go na zawsze. Akcją Magii, gdy jest tymczasowo odesłany, możesz sprawić, że pojawi się ponownie w niezajętym obszarze w odległości 30 stóp od ciebie. Za każdym razem, gdy chowaniec spadnie do 0 Punktów Wytrzymałości lub zniknie w kieszonkowym wymiarze, pozostawia w swoim miejscu wszystko, co nosił lub niósł.</p><p><strong>Tylko Jeden Chowaniec.</strong> Nie możesz mieć więcej niż jednego chowańca naraz. Jeśli rzucisz ten czar, mając już chowańca, zamiast tego sprawiasz, że przyjmuje nową, kwalifikującą się formę.</p>",
+                    "description": "<p>Zyskujesz posługę chowańca, ducha przybierającego wybraną przez ciebie formę zwierzęcą: <strong>Nietoperz</strong>, <strong>Kot</strong>, <strong>Żaba</strong>, <strong>Jastrząb</strong>, <strong>Jaszczurka</strong>, <strong>Ośmiornica</strong>, <strong>Sowa</strong>, <strong>Szczur</strong>, <strong>Kruk</strong>, <strong>Pająk</strong>, <strong>Łasica</strong> lub inna Bestia o Stopniu wyzwania 0. Pojawiając się w niezajętej przestrzeni w zasięgu, chowaniec ma statystyki wybranej formy (patrz dodatek B), lecz zamiast Bestią jest Niebianinem, Fey lub Czartem (wedle twojego wyboru). Twój chowaniec działa niezależnie od ciebie, ale podporządkowuje się twoim rozkazom.</p><p><strong>Więź telepatyczna.</strong> Dopóki twój chowaniec znajduje się w odległości 100 stóp od ciebie, możesz komunikować się z nim telepatycznie. Dodatkowo Akcją dodatkową możesz do początku swojej następnej tury widzieć oczami chowańca i słyszeć to, co on słyszy, korzystając przy tym z ewentualnych specjalnych zmysłów, jakie posiada.</p><p>Ponadto, gdy rzucasz czar o zasięgu dotyku, twój chowaniec może dostarczyć ten dotyk za ciebie. Chowaniec musi wówczas znajdować się w odległości 100 stóp od ciebie i musi wykorzystać Reakcję, by dostarczyć dotyk w chwili rzucania czaru.</p><p><strong>Walka.</strong> Chowaniec jest sojusznikiem twoim i twoich sprzymierzeńców. Rzuca własną Inicjatywę i działa we własnej turze. Nie może atakować, ale może normalnie wykonywać inne akcje.</p><p><strong>Zniknięcie chowańca.</strong> Gdy chowaniec spadnie do 0 Punktów wytrzymałości, znika. Pojawia się ponownie, gdy rzucisz ten czar jeszcze raz. Akcją magii możesz tymczasowo odesłać chowańca do kieszonkowego wymiaru, albo odesłać go na zawsze. Gdy chowaniec jest tymczasowo odesłany, Akcją magii możesz sprawić, że pojawi się ponownie w niezajętej przestrzeni w odległości 30 stóp od ciebie. Za każdym razem, gdy chowaniec spadnie do 0 Punktów wytrzymałości albo zniknie w kieszonkowym wymiarze, pozostawia w zajmowanej przez siebie przestrzeni wszystko, co nosił lub niósł.</p><p><strong>Tylko jeden chowaniec.</strong> Nie możesz mieć więcej niż jednego chowańca naraz. Jeśli rzucisz ten czar, mając już chowańca, sprawiasz zamiast tego, że przyjmuje on nową, odpowiednią formę.</p>",
                     "materials": "płonące kadzidło warte 10+ GP, które czar zużywa",
                     "activities": {
                         "summon": {
@@ -5657,7 +5657,7 @@
                 },
                 "Toll the Dead": {
                     "name": "Żałobny dzwon",
-                    "description": "<p>Wskazujesz na jedną istotę, którą widzisz w zasięgu, a pojedynczy dźwięk żałosnego dzwonu jest słyszalny w promieniu 3m (10 stóp) od celu. Cel musi zdać rzut obronny na Mądrość, inaczej otrzymuje 1k8 obrażeń nekrotycznych. Jeśli cel ma brakujące Punkty Wytrzymałości, zamiast tego otrzymuje 1k12 obrażeń nekrotycznych.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o jeden rzut kością, gdy osiągniesz poziomy 5 (2k8 lub 2k12), 11 (3k8 lub 3k12) i 17 (4k8 lub 4k12).</p>",
+                    "description": "<p>Wskazujesz na jedną istotę, którą widzisz w zasięgu, a pojedynczy dźwięk żałosnego dzwonu jest słyszalny w promieniu 3m (10 stóp) od celu. Cel musi zdać rzut obronny na Mądrość, inaczej otrzymuje 1k8 obrażeń nekrotycznych. Jeśli cel ma brakujące Punkty Wytrzymałości, zamiast tego otrzymuje 1k12 obrażeń nekrotycznych.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o jeden rzut kością, gdy osiągniesz poziomy 5 (2k8 lub 2k12), 11 (3k8 lub 3k12) i 17 (4k8 lub 4k12).</p>",
                     "activities": {
                         "Healthy Target": {
                             "name": "Zdrowy cel",
@@ -5675,7 +5675,7 @@
                 },
                 "Mind Sliver": {
                     "name": "Myślowy odłamek",
-                    "description": "<p>Próbujesz chwilowo rozszczepić umysł jednej istoty, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Inteligencję, inaczej otrzymuje 1k6 obrażeń psychicznych i odejmuje 1k4 od następnego rzutu obronnego, który wykona przed końcem twojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k6, gdy osiągniesz poziomy 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
+                    "description": "<p>Próbujesz chwilowo rozszczepić umysł jednej istoty, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Inteligencję, inaczej otrzymuje 1k6 obrażeń psychicznych i odejmuje 1k4 od następnego rzutu obronnego, który wykona przed końcem twojej następnej tury.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k6, gdy osiągniesz poziomy 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "none"
@@ -5690,7 +5690,7 @@
                 },
                 "Guidance": {
                     "name": "Wskazówki",
-                    "description": "<p>Dotykasz chętną istotę i wybierasz umiejętność. Dopóki czar trwa, istota dodaje 1k4 do każdego testu wykonywanego z użyciem wybranej umiejętności.</p>",
+                    "description": "<p>Dotykasz przychylną istotę i wybierasz umiejętność. Dopóki czar trwa, istota dodaje 1k4 do każdego testu wykonywanego z użyciem wybranej umiejętności.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -5827,18 +5827,18 @@
             "description": "<p><strong>Speed:</strong> 2 1/2 mph</p><p><strong>Crew:</strong> 60</p><p><strong>Passengers:</strong> 60</p><p><strong>Cargo (Tons):</strong> 200</p><p><strong>AC:</strong> 15</p><p><strong>HP:</strong> 500</p><p><strong>Damage Threshold:</strong> 20</p><p><strong>Cost:</strong> 25,000 GP</p>"
         },
         "Water Elemental Spirit": {
-            "name": "Water Elemental Spirit",
-            "tokenName": "Elemental Spirit",
+            "name": "Duchowy żywiołak wody",
+            "tokenName": "Duchowy żywiołak",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonElem caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
                 "Amorphous Form": {
-                    "name": "Amorphous Form",
-                    "description": "<p> The spirit can move through a space as narrow as 1 inch wide without it counting as Difficult Terrain.</p>"
+                    "name": "Bezpostaciowa forma",
+                    "description": "<p>Duch może przemieszczać się przez przestrzeń o szerokości zaledwie 1 cala, nie traktując jej jako Trudnego terenu.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków [[/item Walnięcie]] równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -5929,7 +5929,7 @@
                 },
                 "Light": {
                     "name": "Światło",
-                    "description": "<p>Dotykasz jednego obiektu o rozmiarze Dużym lub mniejszym, który nie jest noszony ani trzymany przez kogoś innego. Do końca czaru obiekt emituje Jasne Światło w promieniu 20 stóp (6m) i Słabe Światło na dodatkowe 20 stóp (6m). Światło może mieć kolor, jaki wybierzesz.</p><p>Przykrycie obiektu czymś nieprzezroczystym blokuje światło. Czar kończy się, jeśli rzucisz go ponownie.</p>",
+                    "description": "<p>Dotykasz jednego Dużego lub mniejszego obiektu, który nie jest noszony ani trzymany przez kogoś innego. Do zakończenia czaru obiekt emituje Jasne światło w promieniu 20 stóp oraz Słabe Światło przez kolejne 20 stóp. Światło może mieć wybrany przez ciebie kolor.</p><p>Przykrycie obiektu czymś nieprzezroczystym blokuje światło. Czar kończy się, jeśli rzucisz go ponownie.</p>",
                     "materials": "świetlik lub fosforyzujący mech",
                     "activities": {
                         "Cast": {
@@ -5954,7 +5954,7 @@
                 },
                 "Ray of Frost": {
                     "name": "Promień mrozu",
-                    "description": "<p>Lodowaty promień biało-niebieskiego światła mknie w kierunku istoty w zasięgu. Wykonaj dystansowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia otrzymuje on 1k8 obrażeń od zimna, a jego szybkość zostaje zmniejszona o 10 stóp do początku twojej następnej tury.</p><p><strong>Ulepszenie Sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
+                    "description": "<p>Lodowaty promień biało-niebieskiego światła mknie w kierunku istoty w zasięgu. Wykonaj dystansowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia otrzymuje on 1k8 obrażeń od zimna, a jego szybkość zostaje zmniejszona o 10 stóp do początku twojej następnej tury.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
                     "effects": {
                         "Reduced Movement": {
                             "name": "Ograniczony ruch",
@@ -5994,7 +5994,7 @@
                 },
                 "Mage Armor": {
                     "name": "Zbroja maga",
-                    "description": "<p>Dotykasz chętnej istoty, która nie nosi zbroi. Do końca czaru podstawowa KP celu wynosi 13 plus jego modyfikator Zręczności. Czar kończy się wcześniej, jeśli cel założy zbroję.</p>",
+                    "description": "<p>Dotykasz przychylnej istoty, która nie nosi pancerza. Do zakończenia czaru bazowa KP celu wynosi 13 + jego modyfikator ze Zręczności. Czar kończy się wcześniej, jeśli cel założy pancerz.</p>",
                     "materials": "kawałek wytartej skóry",
                     "activities": {
                         "Cast": {
@@ -6010,7 +6010,7 @@
                 },
                 "Magic Missile": {
                     "name": "Magiczny pocisk",
-                    "description": "<p>Tworzysz trzy świecące pociski magicznej mocy. Każdy pocisk uderza w istotę, którą wybierzesz i widzisz w zasięgu. Pocisk zadaje 1k4 + 1 obrażeń od mocy swojemu celowi. Wszystkie pociski uderzają jednocześnie, a ty możesz skierować je, by trafiły jedną istotę lub kilka.</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Czar tworzy jeden dodatkowy pocisk za każdy krąg komórki czaru powyżej 1.</p><p>[[2 + @item.level]]{[[lookup @item.level]] pociski poziomu}</p>",
+                    "description": "<p>Tworzysz trzy świecące pociski magicznej mocy. Każdy pocisk uderza w istotę, którą wybierzesz i widzisz w zasięgu. Pocisk zadaje 1k4 + 1 obrażeń od mocy swojemu celowi. Wszystkie pociski uderzają jednocześnie, a ty możesz skierować je, by trafiły jedną istotę lub kilka.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Czar tworzy jeden dodatkowy pocisk za każdy krąg komórki czaru powyżej 1.</p><p>[[2 + @item.level]]{[[lookup @item.level]] pociski poziomu}</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -6019,7 +6019,7 @@
                 },
                 "Sleep": {
                     "name": "Uśpienie",
-                    "description": "<p>Każda wybrana przez ciebie istota w sferze o promieniu 5 stóp, której centrum znajduje się w wybranym punkcie w zasięgu, musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[incapacitated apply=false]{Obezwładniony} do końca twojej następnej tury, po czym musi powtórzyć rzut obronny. Jeśli cel nie powiedzie się w drugim rzucie, otrzymuje stan &amp;Reference[unconscious]{Nieprzytomny} na czas działania czaru. Czar kończy się na celu, jeśli otrzyma on obrażenia lub jeśli ktoś w odległości 5 stóp od niego wykona akcję, aby wybudzić go z efektu czaru.</p><p>Istoty, które nie śpią, takie jak elfy, lub które mają Niewrażliwość na stan Wyczerpany, automatycznie odnoszą sukces w rzutach obronnych przeciwko temu czarowi.</p>",
+                    "description": "<p>Każda wybrana przez ciebie istota w Sferze o promieniu 5 stóp, której środek znajduje się w punkcie w zasięgu, musi odnieść sukces w rzucie obronnym na Mądrość albo ma stan &amp;Reference[incapacitated apply=false] do końca swojej następnej tury, kiedy to musi powtórzyć rzut obronny. Jeśli cel poniesie porażkę w drugim rzucie obronnym, ma stan &amp;Reference[unconscious] przez czas trwania czaru. Działanie czaru na cel kończy się, jeśli otrzyma on obrażenia albo ktoś w obrębie 5 stóp od niego wykona Akcję, aby wyrwać go spod działania czaru.</p><p>Istoty, które nie śpią, takie jak elfy, albo mają Niepodatność na stan Wyczerpania, automatycznie odnoszą sukces w rzutach obronnych przeciwko temu czarowi.</p>",
                     "materials": "szczypta piasku lub płatków róży",
                     "activities": {
                         "save": {
@@ -6035,7 +6035,7 @@
                 },
                 "Thunderwave": {
                     "name": "Fala gromu",
-                    "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie Komórki Czaru Wyższego Kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
+                    "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
@@ -6127,8 +6127,8 @@
             }
         },
         "Yugoloth Spirit": {
-            "name": "Yugoloth Spirit",
-            "tokenName": "Fiendish Spirit",
+            "name": "Duchowy yugoloth ",
+            "tokenName": "Duchowy czart",
             "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonFien caption=false]</p>",
             "alignment": "Neutralny",
             "items": {
@@ -6138,7 +6138,7 @@
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
-                    "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+                    "description": "<p>Duch wykonuje liczbę ataków równą połowie kręgu tego czaru (zaokrąglając w dół).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Liczba ataków}</p>",
                     "activities": {
                         "Activate": {
                             "name": "Aktywacja"
@@ -6178,25 +6178,25 @@
         }
     },
     "folders": {
-        "Aberrant Spirits": "Aberrant Spirits",
+        "Aberrant Spirits": "Duchowe wynaturzenia",
         "Animated Objects": "Animowane obiekty",
-        "Bestial Spirits": "Bestial Spirits",
+        "Bestial Spirits": "Duchowe bestie",
         "Celestial Spirits": "Celestial Spirits",
         "Companions": "Towarzysze",
         "Conjurations": "Istoty wyczarowane",
         "Conjured Elementals": "Wyczarowane żywiołaki",
-        "Construct Spirits": "Construct Spirits",
+        "Construct Spirits": "Duchowe konstrukty",
         "Creatures": "Istoty",
-        "Elemental Spirits": "Elemental Spirits",
+        "Elemental Spirits": "Duchowe żywiołaki",
         "Example Characters": "Przykładowe postacie",
-        "Fey Spirits": "Fey Spirits",
-        "Fiendish Spirits": "Fiendish Spirits",
+        "Fey Spirits": "Duchowe Fey",
+        "Fiendish Spirits": "Duchowe czarty",
         "Giant Insects": "Giant Insects",
         "Otherworldly Steeds": "Nieziemskie wierzchowce",
         "Primal Companions": "Pierwotni towarzysze",
         "Summon Templates": "Summon Templates",
         "Summons": "Istoty przywołane",
-        "Undead Spirits": "Undead Spirits",
+        "Undead Spirits": "Duchowi nieumarli",
         "Vehicles": "Pojazdy"
     }
 }
