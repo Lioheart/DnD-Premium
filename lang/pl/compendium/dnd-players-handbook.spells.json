@@ -3256,7 +3256,7 @@
         },
         "Mordenkainen's Sword": {
             "name": "Miecz Mordenkainena",
-            "description": "<p>Tworzysz widmowy miecz, który unosi się w zasięgu. Czar trwa przez czas jego trwania.</p><p>Kiedy miecz się pojawia, wykonujesz atak czarem w walce wręcz przeciwko celowi w odległości 5 stóp od miecza. W przypadku trafienia, cel otrzymuje obrażenia od mocy równe 4k12 plus modyfikator zdolności rzucania czarów.</p><p>W kolejnych turach możesz wykonać Akcję Dodatkową, aby przesunąć miecz o maksymalnie 30 stóp w wybrane przez ciebie miejsce, które widzisz, i powtórzyć atak przeciwko temu samemu celowi lub innemu.</p>",
+            "description": "<p>Tworzysz widmowy miecz, który unosi się w zasięgu. Utrzymuje się przez czas trwania czaru.</p><p>Gdy miecz się pojawia, wykonujesz atak wręcz czarem przeciwko celowi w odległości 5 stóp od miecza. Przy trafieniu cel otrzymuje obrażenia od Mocy równe 4k12 plus twój modyfikator cechy bazowej.</p><p>W kolejnych turach możesz Akcją dodatkową przesunąć miecz o maksymalnie 30 stóp w widoczne przez ciebie miejsce i powtórzyć atak przeciwko temu samemu celowi lub innemu.</p>",
             "materials": "miniaturowy miecz wart 250+ GP",
             "activities": {
                 "Create Spectral Sword": {
@@ -3289,7 +3289,7 @@
         },
         "Nystul's Magic Aura": {
             "name": "Magiczna aura Nystula",
-            "description": "<p>Dotykając, nakładasz iluzję na przychylną istotę lub przedmiot, który nie jest noszony ani trzymany. Istota zyskuje efekt Maski poniżej, a przedmiot zyskuje efekt Fałszywej Aury poniżej. Efekt trwa przez czas trwania czaru. Jeśli rzucisz ten czar na ten sam cel każdego dnia przez 30 dni, iluzja trwa aż do jej rozproszenia.</p><p><strong>Maska (Istota). </strong>Wybierz typ istoty inny niż rzeczywisty typ celu. Czarami i innymi efektami magicznymi cel traktowany jest jak istota wybranego typu.</p><p><strong>Fałszywa Aura (Przedmiot). </strong>Zmieniając sposób, w jaki cel wygląda dla czarów i efektów magicznych wykrywających magiczne aury, takich jak <em>Wykrycie Magii</em>, możesz sprawić, że niemagiczny przedmiot będzie wyglądał na magiczny, sprawić, że przedmiot magiczny będzie wyglądał na niemagiczny, lub zmienić aurę przedmiotu, tak by wyglądała, jakby należała do wybranej przez ciebie szkoły magii.</p>",
+            "description": "<p>Dotykiem nakładasz iluzję na przychylną istotę lub obiekt, który nie jest noszony ani trzymany. Istota zyskuje opisany poniżej efekt Maski, a obiekt zyskuje opisany poniżej efekt Fałszywej aury. Efekt utrzymuje się przez czas trwania czaru. Jeśli rzucisz ten czar na ten sam cel codziennie przez 30 dni, iluzja utrzymuje się aż do rozproszenia.</p><p><strong>Maska (istota).</strong> Wybierz typ istoty inny niż rzeczywisty typ celu. Czary i inne efekty magiczne traktują cel tak, jakby był istotą wybranego typu.</p><p><strong>Fałszywa aura (obiekt).</strong> Zmieniasz sposób, w jaki cel jest postrzegany przez czary i efekty magiczne wykrywające magiczne aury, takie jak <em>Wykrycie magii</em>. Możesz sprawić, że niemagiczny obiekt będzie wyglądał na magiczny, że magiczny przedmiot będzie wyglądał na niemagiczny, albo zmienić aurę obiektu tak, by wyglądała, jakby należała do wybranej przez ciebie szkoły magii.</p>",
             "materials": "mały kwadrat jedwabiu",
             "effects": {
                 "Masked": {
