@@ -2658,7 +2658,7 @@
         },
         "Hypnotic Pattern": {
             "name": "Hipnotyczny wzór",
-            "description": "<p>Tworzysz skręcający wzór kolorów w sześcianie o wymiarach 30 stóp w zasięgu. Wzór pojawia się na chwilę i znika. Każda istota w obszarze, która widzi wzór, musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[charmed]{Zauroczony} na czas trwania czaru. Podczas bycia Zauroczoną, istota ma stan &amp;Reference[incapacitated]{Obezwładniony} oraz Szybkość równą 0.</p><p>Czar kończy się dla istoty objętej jego działaniem, jeśli otrzyma ona jakiekolwiek obrażenia lub jeśli ktoś inny użyje akcji, aby wyrwać ją z tego odrętwienia.</p>",
+            "description": "<p>Tworzysz wijący się wzór kolorów w Sześcianie o boku 30 stóp w zasięgu. Wzór pojawia się na chwilę i znika. Każda istota w tym obszarze, która widzi wzór, musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[charmed apply=false] na czas trwania czaru. Dopóki jest Zauroczona, istota ma stan &amp;Reference[incapacitated apply=false] oraz Szybkość równą 0.</p><p>Czar kończy się dla istoty objętej jego działaniem, jeśli otrzyma ona jakiekolwiek obrażenia lub jeśli ktoś inny wykorzysta akcję, by otrząsnąć ją z tego odrętwienia.</p>",
             "materials": "szczypta konfetti",
             "activities": {
                 "save": {
