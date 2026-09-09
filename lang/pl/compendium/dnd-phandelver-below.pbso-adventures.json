@@ -2739,7 +2739,7 @@
                             "text": "<h2>@UUID[Actor.bwtkdzavdNHISgp4]</h2><figure class=\"flex-left size-two\"><img src=\"modules/dnd-phandelver-below/assets/portraits/quasit.webp\" /></figure><section class=\"bio\"><p>Quasits infest the Lower Planes. Physically weak, they keep to the shadows to plot mischief and wickedness. More powerful demons use quasits as spies and messengers when they aren’t devouring them or pulling them apart to pass the time.</p><p>A quasit can assume animal forms, but in its true form it looks like a 2-foot-tall green humanoid with a barbed tail and horns. The quasit has clawed fingers and toes, and these claws can deliver an irritating poison. It prefers to be &amp;Reference[invisible] when it attacks.</p></section><h2 class=\"float-clear\">References</h2><p><strong>Redbrands' Hideout:</strong> @UUID[JournalEntry.pbsoRedbrandsHid.JournalEntryPage.7a8bh0HomdlNyHw9]</p>"
                         },
                         "Twig Blight": {
-                            "name": "Twig Blight",
+                            "name": "Gałęziowa skaza",
                             "text": "<h2>@UUID[Actor.pbsoTwigBlight00]</h2><figure class=\"flex-left size-two\"><img src=\"modules/dnd-phandelver-below/assets/portraits/twig-blight-01.webp\" /></figure><section class=\"bio\"><p>A twig blight is an awakened plant that resembles a woody shrub that can pull its roots free of the ground. Its branches twist together to form a humanoid-looking body with a head and limbs.</p><hr /><p>Twig blights can root in soil, which they do when living prey are scarce. While rooted, they resemble woody shrubs. When it pulls its roots free of the ground to move, a twig blight’s branches twist together to form a humanoid-looking body with a head and limbs.</p><p>Twig blights seek out campsites and watering holes, rooting there to set up ambushes for potential victims coming to drink or rest. Huddled together in groups, twig blights blend in with an area’s natural vegetation or with piles of debris or firewood.</p><p>Given how dry they are, twig blights are particularly susceptible to fire.</p></section><h2 class=\"float-clear\">References</h2><p><strong>Ruins of Thundertree:</strong> @UUID[JournalEntry.pbsoRuinsOfThund.JournalEntryPage.LpJoXMy8iDEWcDu1]</p><p><strong>Ruins of Thundertree:</strong> @UUID[JournalEntry.pbsoRuinsOfThund.JournalEntryPage.lV7dsdOfeoEAPnK3]</p><p><strong>Ruins of Thundertree:</strong> @UUID[JournalEntry.pbsoRuinsOfThund.JournalEntryPage.YDPtsSj1aArP6AIQ]</p><p><strong>Ruins of Thundertree:</strong> @UUID[JournalEntry.pbsoRuinsOfThund.JournalEntryPage.nYCqB2O9TTHBj9R1]</p><p><strong>Ruins of Thundertree:</strong> @UUID[JournalEntry.pbsoRuinsOfThund.JournalEntryPage.njaV93RVjyrsewmk]</p>"
                         },
                         "Ash Zombie": {
@@ -4677,7 +4677,7 @@
                         "Fire Bolt": {
                             "name": "Ognisty pocisk",
                             "description": {
-                                "value": "<p>You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.</p><p>This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>"
+                                "value": "<p>Ciskasz iskrę ognia w istotę lub obiekt w zasięgu. Wykonaj test ataku dystansowego czarem przeciwko celowi. Przy trafieniu cel otrzymuje 1k10 obrażeń od ognia. Łatwopalny obiekt trafiony tym czarem zapala się, jeśli nie jest noszony ani trzymany.</p><p>Obrażenia zadawane przez ten czar zwiększają się o 1k10, gdy osiągniesz 5. poziom (2k10), 11. poziom (3k10) i 17. poziom (4k10).</p>"
                             }
                         },
                         "Light": {
@@ -5025,8 +5025,8 @@
                     }
                 },
                 "Twig Blight": {
-                    "name": "Twig Blight",
-                    "tokenName": "Twig Blight",
+                    "name": "Gałęziowa skaza",
+                    "tokenName": "Gałęziowa skaza",
                     "items": {
                         "False Appearance": {
                             "name": "False Appearance",
@@ -5125,7 +5125,7 @@
                             }
                         },
                         "Rejuvenation": {
-                            "name": "Rejuvenation",
+                            "name": "Odrodzenie",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-PAPEgJNg9Hf6dCLP\"><p>If the flameskull is destroyed, it regains all its hit points in 1 hour unless holy water is sprinkled on its remains or a @UUID[Compendium.dnd5e.spells.Item.15Fa6q1nH27XfbR8]{dispel magic} or @UUID[Compendium.dnd5e.spells.Item.XZhdgVK3cLoxNCQl]{remove curse} spell is cast on them.</p></section><p>If it dies, the flameskull returns to life in [[/gmroll 1d6]] days and regains all its<strong> hit points</strong>.</p>"
                             }
@@ -5242,7 +5242,7 @@
                     "tokenName": "Mormesk",
                     "items": {
                         "Create Specter": {
-                            "name": "Create Specter",
+                            "name": "Stworzenie widma",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-kCI5tSH17b9JEo2e\"><p>The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently.</p><p>The target's spirit rises as a @UUID[Compendium.dnd-phandelver-below.pbso-bestiary.Actor.PuPo4H4Dcxigf0fY]{specter} in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.</p></section><p>The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space.</p>"
                             }
@@ -5642,7 +5642,7 @@
                             }
                         },
                         "Unarmed Strike": {
-                            "name": "Atak bez broni",
+                            "name": "Uderzenie bez broni",
                             "description": {
                                 "value": "<section id=\"secret-sSfY2XF0EY9XNyHm\" class=\"secret\"><p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage plus 3 (1d6) psychic damage.</p></section><p>The goblin makes an unarmed strike.</p>"
                             }
@@ -6908,7 +6908,7 @@
                             }
                         },
                         "Unarmed Strike": {
-                            "name": "Atak bez broni",
+                            "name": "Uderzenie bez broni",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-sSfY2XF0EY9XNyHm\"><p><em>Melee Weapon Attack:</em> +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 10 (3d6) psychic damage.</p></section><p>The mutate makes an unarmed strike.</p>"
                             }
@@ -6992,7 +6992,7 @@
                             }
                         },
                         "Dreadful Glare": {
-                            "name": "Złowrogie spojrzenie",
+                            "name": "Straszliwe spojrzenie",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-brWqnTRJmIubygpP\"><p>The mummy targets one creature it can see within 60 ft. of it. If the target can see the mummy, it must succeed on a <strong>DC 11 Wisdom</strong> saving throw against this magic or become &amp;Reference[frightened]{frightened} until the end of the mummy's next turn.</p><p>If the target fails the saving throw by 5 or more, it is also &amp;Reference[paralyzed]{paralyzed} for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours.</p></section><p>The mummy targets one creature it can see within 60 ft. of it. If the target can see the mummy, it must make a <strong>Wisdom</strong> saving throw against this magic.</p>"
                             }
@@ -7025,7 +7025,7 @@
                             }
                         },
                         "Unarmed Strike": {
-                            "name": "Atak bez broni",
+                            "name": "Uderzenie bez broni",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-sSfY2XF0EY9XNyHm\"><p><em>Melee Weapon Attack:</em> +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 10 (3d6) psychic damage.</p></section><p>The mutate makes an unarmed strike.</p>"
                             }
@@ -7214,7 +7214,7 @@
                             }
                         },
                         "Rejuvenation": {
-                            "name": "Rejuvenation",
+                            "name": "Odrodzenie",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-57VWJ6gSU99TLk9R\"><p>When the revenant’s body is destroyed, its soul lingers. After 24 hours, the soul inhabits and animates another humanoid corpse on the same plane of existence and regains all its hit points. While the soul is bodiless, a @UUID[Compendium.dnd5e.spells.Item.3okM6Gn63zzEULkz]{wish} spell can be used to force the soul to go to the afterlife and not return.</p></section><p>If it dies, the revenant returns to life in [[/r 1d6]] days and regains all its<strong> hit points</strong>.</p>"
                             }
@@ -7529,7 +7529,7 @@
                             }
                         },
                         "Create Specter": {
-                            "name": "Create Specter",
+                            "name": "Stworzenie widma",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-kCI5tSH17b9JEo2e\"><p>The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently.</p><p>The target's spirit rises as a @UUID[Compendium.dnd-phandelver-below.pbso-bestiary.Actor.PuPo4H4Dcxigf0fY]{specter} in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.</p></section><p>The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space.</p>"
                             }
@@ -8066,7 +8066,7 @@
                     "tokenName": "Bełkoczący paszczowiec",
                     "items": {
                         "Aberrant Ground": {
-                            "name": "Aberrant Ground",
+                            "name": "Niepewny grunt",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-YLIoZlytEGqabA7H\"><p>The ground in a <strong>10-foot radius</strong> around the mouther is doughlike difficult terrain.</p><p>Each creature that starts its turn in that area must succeed on a <strong>DC 10 Strength saving throw</strong> or have its speed reduced to 0 until the start of its next turn.</p></section><p>The ground in a <strong>10-foot radius</strong> around the mouther is doughlike &amp;Reference[difficult-terrain]{difficult terrain}. make a <strong>Strength</strong> saving throw.</p>"
                             }
@@ -8090,7 +8090,7 @@
                             }
                         },
                         "Blinding Spittle": {
-                            "name": "Blinding Spittle",
+                            "name": "Oślepiające plunięcie",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-LgonEm4uN0kcjIu7\"><p>The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact.</p><p>Each creature within 5 feet of the flash must succeed on a <strong>DC 13 Dexterity</strong> saving throw or be &amp;Reference[blinded]{blinded} until the end of the mouther's next turn.</p></section><p>The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must make a <strong>Dexterity</strong> saving throw.</p>"
                             }
@@ -9436,7 +9436,7 @@
                         "Fire Bolt": {
                             "name": "Ognisty pocisk",
                             "description": {
-                                "value": "<p>You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.</p><p>This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>"
+                                "value": "<p>Ciskasz iskrę ognia w istotę lub obiekt w zasięgu. Wykonaj test ataku dystansowego czarem przeciwko celowi. Przy trafieniu cel otrzymuje 1k10 obrażeń od ognia. Łatwopalny obiekt trafiony tym czarem zapala się, jeśli nie jest noszony ani trzymany.</p><p>Obrażenia zadawane przez ten czar zwiększają się o 1k10, gdy osiągniesz 5. poziom (2k10), 11. poziom (3k10) i 17. poziom (4k10).</p>"
                             }
                         },
                         "Mage Hand": {
@@ -10307,7 +10307,7 @@
                             }
                         },
                         "Lightning Storm": {
-                            "name": "Lightning Storm",
+                            "name": "Burza z piorunami",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-Md3g7j8didy7O9fD\"><p>The kraken magically creates three bolts of lightning, each of which can strike a target the kraken can see within 120 feet of it. A target must make a DC 23 Dexterity saving throw, taking 22 (4d10) lightning damage on a failed save, or half as much damage on a successful one.</p></section><p>The kraken magically creates three bolts of lightning, each of which can strike a target the kraken can see within 120 feet of it. A target must make a <strong>Dexterity</strong> saving throw.</p>"
                             }
@@ -10429,7 +10429,7 @@
                         "Fire Bolt": {
                             "name": "Ognisty pocisk",
                             "description": {
-                                "value": "<p>You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.</p><p>This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>"
+                                "value": "<p>Ciskasz iskrę ognia w istotę lub obiekt w zasięgu. Wykonaj test ataku dystansowego czarem przeciwko celowi. Przy trafieniu cel otrzymuje 1k10 obrażeń od ognia. Łatwopalny obiekt trafiony tym czarem zapala się, jeśli nie jest noszony ani trzymany.</p><p>Obrażenia zadawane przez ten czar zwiększają się o 1k10, gdy osiągniesz 5. poziom (2k10), 11. poziom (3k10) i 17. poziom (4k10).</p>"
                             }
                         },
                         "Light": {
@@ -10965,7 +10965,7 @@
                             }
                         },
                         "Rejuvenation": {
-                            "name": "Rejuvenation",
+                            "name": "Odrodzenie",
                             "description": {
                                 "value": "<section class=\"secret\" id=\"secret-JsaOX7SKoV6KB45b\"><p>If it dies, the naga returns to life in 1d6 days and regains all its<strong> hit points</strong>. Only a @UUID[Compendium.dnd5e.spells.Item.3okM6Gn63zzEULkz]{wish} spell can prevent this trait from functioning.</p></section><p>If it dies, the naga returns to life in 1d6 days and regains all its<strong> hit points</strong>.</p>"
                             }
@@ -11263,7 +11263,7 @@
                         "Fire Bolt": {
                             "name": "Ognisty pocisk",
                             "description": {
-                                "value": "<p>You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.</p><p>This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>"
+                                "value": "<p>Ciskasz iskrę ognia w istotę lub obiekt w zasięgu. Wykonaj test ataku dystansowego czarem przeciwko celowi. Przy trafieniu cel otrzymuje 1k10 obrażeń od ognia. Łatwopalny obiekt trafiony tym czarem zapala się, jeśli nie jest noszony ani trzymany.</p><p>Obrażenia zadawane przez ten czar zwiększają się o 1k10, gdy osiągniesz 5. poziom (2k10), 11. poziom (3k10) i 17. poziom (4k10).</p>"
                             }
                         },
                         "Light": {
