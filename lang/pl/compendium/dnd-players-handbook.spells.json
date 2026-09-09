@@ -3043,7 +3043,7 @@
         },
         "Maze": {
             "name": "Labirynt",
-            "description": "<p>Wypędzasz istotę, którą widzisz w zasięgu, do labiryntowej demisfery. Cel pozostaje tam przez czas trwania lub dopóki nie ucieknie z labiryntu.</p><p>Cel może wykonać akcję Badanie, by spróbować uciec. Gdy to robi, wykonuje test Inteligencji (Badanie) o ST 20. Jeśli się powiedzie, ucieka, a czar się kończy.</p><p>Gdy czar się kończy, cel pojawia się ponownie w miejscu, które opuścił, lub, jeśli to miejsce jest zajęte, w najbliższej wolnej przestrzeni.</p>",
+            "description": "<p>Wypędzasz istotę, którą widzisz w zasięgu, do labiryntowej demisfery. Cel pozostaje tam przez czas trwania czaru lub dopóki nie ucieknie z labiryntu.</p><p>Cel może podjąć Akcję nauki, by spróbować uciec. Gdy to zrobi, wykonuje test Inteligencji (Śledztwo) o St 20. Jeśli mu się powiedzie, ucieka, a czar się kończy.</p><p>Gdy czar się kończy, cel pojawia się ponownie w przestrzeni, którą opuścił, lub, jeśli jest ona zajęta, w najbliższej niezajętej przestrzeni.</p>",
             "activities": {
                 "Banish to Maze": {
                     "name": "Wygnanie do labiryntu"
