@@ -109,22 +109,22 @@
             "description": "<p>The [[lookup @name lowercase]]{monster} needn't spend extra movement to move a creature it is grappling.</p>"
         },
         "Aberrant Ground": {
-            "name": "Aberrant Ground",
+            "name": "Niepewny grunt",
             "description": "<p>The ground in a [[lookup @target.template.size activity=zVznqPXgYjETqpQz]]-foot Emanation originating from the [[lookup @name]]{monster} is &amp;Reference[Difficult Terrain].</p>",
             "activities": {
                 "Place Emanation": {
-                    "name": "Place Emanation"
+                    "name": "Umieść emanację"
                 }
             }
         },
         "Abyssal Glaive": {
-            "name": "Abyssal Glaive",
+            "name": "Otchłanna glewia",
             "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Acid Absorption": {
             "name": "Wchłanianie kwasu",
             "description": "<p>Whenever the [[lookup @name lowercase]]{monster} is subjected to &amp;Reference[Acid] damage, it takes no damage and instead regains a number of Hit Points equal to the Acid damage dealt.</p>",
-            "requirements": "Subjected to Acid damage",
+            "requirements": "Poddany obrażeniom od kwasu",
             "effects": {
                 "Acid Absorption": {
                     "name": "Wchłanianie kwasu",
@@ -273,7 +273,7 @@
         "Aversion to Fire": {
             "name": "Wstręt do ognia",
             "description": "<p>If the [[lookup @name lowercase]]{monster} takes Fire damage, it has Disadvantage on attack rolls and ability checks until the end of its next turn.</p>",
-            "requirements": "Takes Fire damage",
+            "requirements": "Otrzymuje obrażenia od ognia",
             "effects": {
                 "Averse": {
                     "name": "Wstręt",
@@ -409,7 +409,7 @@
             "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Blazing Light": {
-            "name": "Blazing Light",
+            "name": "Płonące światło",
             "description": "<p>The [[lookup @name lowercase]]{monster} uses Spellcasting to cast <em>[[/item Scorching Ray]]</em></p>"
         },
         "Blinding Breath": {
@@ -442,7 +442,7 @@
             }
         },
         "Blinding Spittle": {
-            "name": "Blinding Spittle",
+            "name": "Oślepiające plunięcie",
             "description": "<p><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=JfU8KFZkAJxWtrhk]], each creature in a [[lookup @target.template.size activity=JfU8KFZkAJxWtrhk]]-foot-radius Sphere centered on a point within [[lookup @range.value activity=JfU8KFZkAJxWtrhk]] feet. <em>Failure:</em> [[/damage average]] damage, and the target has the &amp;Reference[Blinded apply=false] condition until the end of the [[lookup @name lowercase]]{monster}'s next turn.</p>",
             "activities": {
                 "save": {
@@ -494,7 +494,7 @@
             }
         },
         "Boulder Toss": {
-            "name": "Boulder Toss",
+            "name": "Rzut głazem",
             "description": "<p>The [[lookup @name lowercase]]{monster} hurls a boulder at a point it can see within [[lookup @range.value activity=jpC3fk7LJlhH4CDr]] feet.</p><p><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=jpC3fk7LJlhH4CDr]], each creature in a [[lookup @target.template.size activity=jpC3fk7LJlhH4CDr]]-foot-radius Sphere centered on that point.</p><p><em>Failure:</em> [[/damage average]]. If the target is a Large or smaller creature, it has the &amp;Reference[Prone] condition.</p><p><em>Success:</em> Half damage only.</p>",
             "activities": {
                 "save": {
@@ -545,7 +545,7 @@
             },
             "effects": {
                 "Deafened and Disadvantaged": {
-                    "name": "Deafened and Disadvantaged",
+                    "name": "Ogłuchły i z Utrudnieniem",
                     "description": "<p>Cel ma stan &amp;Reference[Deafened apply=false] do początku następnej tury użytkownika. Będąc Ogłuchły, cel ma także Utrudnienie w testach cech i testach ataku.</p>"
                 }
             }
@@ -566,7 +566,7 @@
             }
         },
         "Celestial Restoration": {
-            "name": "Celestial Restoration",
+            "name": "Niebiańskie przywrócenie",
             "description": "<p>If the [[lookup @name lowercase]]{monster} dies, it returns to life in [[/r 1d6#Days]] days and regains all its Hit Points unless <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDispelEvil]</em> is cast on its remains.</p>"
         },
         "Chain": {
@@ -580,7 +580,7 @@
             }
         },
         "Channel Negative Energy": {
-            "name": "Channel Negative Energy",
+            "name": "Fala negatywnej energii",
             "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Charge": {
@@ -598,7 +598,7 @@
             "description": "<p>[[/attack extended]]. [[/damage average extended]]. If the target is a Medium or smaller creature, the [[lookup @name lowercase]]{monster} pulls the target 5 feet straight toward itself.</p>"
         },
         "Charging Horn": {
-            "name": "Charging Horn",
+            "name": "Szarżujący róg",
             "description": "<p>The [[lookup @name lowercase]]{monster} moves up to half its Speed without provoking &amp;Reference[Opportunity Attacks], and it makes one [[/item Radiant Horn]] attack.</p>",
             "activities": {
                 "Expend Use": {
@@ -663,7 +663,7 @@
             }
         },
         "Cold Gale": {
-            "name": "Cold Gale",
+            "name": "Lodowaty podmuch",
             "description": "<p><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=pVs8BTVDNh54CZ0a]], each creature in a [[lookup @target.template.size activity=pVs8BTVDNh54CZ0a]]-foot-long, [[lookup @target.template.width activity=pVs8BTVDNh54CZ0a]]-foot-wide Line.</p><p><em>Failure:</em> [[/damage average]] damage, and the target is pushed up to 30 feet straight away from the [[lookup @name lowercase]]{monster}.</p><p><em>Success:</em> Half damage only.</p><p><em>Failure or Success:</em> The [[lookup @name lowercase]]{monster} can't take this action again until the start of its next turn.</p>",
             "activities": {
                 "save": {
@@ -775,7 +775,7 @@
             "description": "<p class=\"feature\">While within 30 feet of at least two hag allies, the [[lookup @name lowercase]]{monster} can cast one of the following spells, requiring no Material components, using the spell's normal casting time, and using Intelligence as the spellcasting ability (spell save DC [[lookup @abilities.int.dc]]): <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplAugury0000]{Augury}</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplFindFamili]{Find Familiar}</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplIdentify00]{Identify}</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplLocateObje]{Locate Object}</em>, <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplScrying000]{Scrying}</em>, or <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplUnseenServ]{Unseen Servant}</em>. The [[lookup @name lowercase]]{monster} must finish a Long Rest before using this trait to cast that spell again.</p>"
         },
         "Create Specter": {
-            "name": "Create Specter",
+            "name": "Stworzenie widma",
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} targets a Humanoid corpse within [[lookup @range.value activity=ypIQdXr13u7LATUP]] feet of itself that has been dead for no longer than 1 minute. The target's spirit rises as a <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmSpecter0000000]{Specter}</strong> in the space of its corpse or in the nearest unoccupied space. The specter is under the [[lookup @name lowercase]]{monster}'s control. The [[lookup @name lowercase]]{monster} can have no more than seven specters under its control at a time.</p>",
             "activities": {
                 "Spirit Rises": {
@@ -921,11 +921,11 @@
             }
         },
         "Deflect Missile": {
-            "name": "Deflect Missile",
+            "name": "Odbijanie pocisków",
             "description": "<p class=\"feature\"><em>Trigger:</em> The [[lookup @name lowercase]]{monster} is [[lookup @activation.condition activity=9T8cNbSBVACrrmRI]].</p><p class=\"feature\"><em>Response:</em> The [[lookup @name lowercase]]{monster} reduces the damage it takes from the attack by [[/healing average]], and if that damage is reduced to 0, the [[lookup @name lowercase]]{monster} can redirect some of the attack's force.</p><p class=\"feature\"><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=x0MjUmnv2OPAbm6y]], one [[lookup @target.affects.type activity=x0MjUmnv2OPAbm6y]] the [[lookup @name lowercase]]{monster} can see within [[lookup @range.value activity=x0MjUmnv2OPAbm6y]] feet. </p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage.</p>",
             "activities": {
                 "Reduce Damage": {
-                    "name": "Reduce Damage",
+                    "name": "Obniżone obrażenia",
                     "condition": "trafiony testem ataku dystansowego i otrzymuje od niego obrażenia obuchowe, kłute lub cięte",
                     "activationCondition": "trafiony testem ataku dystansowego i otrzymuje od niego obrażenia obuchowe, kłute lub cięte"
                 },
@@ -941,7 +941,7 @@
             "requirements": "Umrze poza Otchłanią"
         },
         "Destroy Metal": {
-            "name": "Destroy Metal",
+            "name": "Zniszczenie metalu",
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} [[lookup @range.special activity=GDJtelEYYTgc9jwr]] within [[lookup @range.value activity=GDJtelEYYTgc9jwr]] feet of itself [[lookup @target.affects.special activity=GDJtelEYYTgc9jwr]]. The touch destroys a [[lookup @target.template.size activity=GDJtelEYYTgc9jwr]]-[[lookup @target.template.units activity=GDJtelEYYTgc9jwr]] [[lookup @target.template.type capitalize activity=GDJtelEYYTgc9jwr]] of the [[lookup @target.affects.type activity=GDJtelEYYTgc9jwr]].</p>",
             "activities": {
                 "Expend Use": {
@@ -1004,7 +1004,7 @@
             }
         },
         "Draconic Origin": {
-            "name": "Draconic Origin",
+            "name": "Smocze pochodzenie",
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} is related to a type of dragon associated with one of the following damage types (DM's choice): Acid, Cold, Fire, Lightning, or Poison. This choice affects other aspects of the stat block.</p><section class=\"secret\" id=\"secret-9qS4XvlccQjIsypM\"><p><strong>Foundry Note</strong></p><p>This feature provides an Active Effect to manage <strong>Damage Resistances</strong> in the character sheet's Effects tab. The resistances outlined will need to be manually enabled/disabled.</p></section>",
             "effects": {
                 "Acid Resistance": {
@@ -1026,7 +1026,7 @@
         },
         "Dragon's Breath": {
             "name": "Smocze zionięcie",
-            "description": "<p class=\"feature\"><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=YfxQb5tcONgLb2nD]], each [[lookup @target.affects.type activity=YfxQb5tcONgLb2nD]] in a [[lookup @target.template.size activity=YfxQb5tcONgLb2nD]]-foot Cone.</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage of the type chosen for the Draconic Origin trait.</p><p class=\"feature\"><em>Success:</em> Half damage.</p>",
+            "description": "<p class=\"feature\"><em>Rzut obronny na Zręczność:</em> ST [[lookup @save.dc.value activity=YfxQb5tcONgLb2nD]], każda istota typu [[lookup @target.affects.type activity=YfxQb5tcONgLb2nD]] w Stożku o długości [[lookup @target.template.size activity=YfxQb5tcONgLb2nD]] stóp.</p><p class=\"feature\"><em>Porażka:</em> [[/damage average]] obrażeń typu wybranego dla cechy Smocze pochodzenie.</p><p class=\"feature\"><em>Sukces:</em> Połowa obrażeń.</p>",
             "activities": {
                 "Save": {
                     "name": "Obrona",
@@ -1035,7 +1035,7 @@
             }
         },
         "Draining Kiss": {
-            "name": "Draining Kiss",
+            "name": "Wycieńczający pocałunek",
             "description": "<p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=kFyuof0SS3nohP0f]], one [[lookup @target.affects.type activity=kFyuof0SS3nohP0f]] Charmed by the [[lookup @name lowercase]]{monster} within [[lookup @range.value activity=kFyuof0SS3nohP0f]] feet.</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage.</p><p class=\"feature\"><em>Success:</em> Half damage.</p><p class=\"feature\"><em>Failure or Success:</em> The target's Hit Point maximum decreases by an amount equal to the damage taken.</p>",
             "activities": {
                 "Save": {
@@ -1054,7 +1054,7 @@
                     "chatFlavor": "Przy trafieniu: wartość SIŁ celu zmniejsza się"
                 },
                 "Shadow Rises": {
-                    "name": "Shadow Rises"
+                    "name": "Powstanie cienia"
                 },
                 "STR Score -1d4": {
                     "name": "Wartość SIŁ -1k4",
@@ -1069,7 +1069,7 @@
             }
         },
         "Dread Command": {
-            "name": "Dread Command",
+            "name": "Złowrogi rozkaz",
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} casts <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCommand000]{Command}</em> (level 2 version), using the same spellcasting ability as Spellcasting. The [[lookup @name lowercase]]{monster} can't take this action again until the start of its next turn.</p>",
             "activities": {
                 "Command": {
@@ -1078,7 +1078,7 @@
             }
         },
         "Dreadful Glare": {
-            "name": "Złowrogie spojrzenie",
+            "name": "Straszliwe spojrzenie",
             "description": "<p class=\"feature\"><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=8LmlZfevSQkOxGSN]], one [[lookup @target.affects.type activity=8LmlZfevSQkOxGSN]] the [[lookup @name lowercase]]{monster} can see within [[lookup @range.value activity=8LmlZfevSQkOxGSN]] feet. <em>Failure:</em> The target has the &amp;Reference[Frightened apply=false] condition until the end of the [[lookup @name lowercase]]{monster}'s next turn. <em>Success:</em> The target is immune to this [[lookup @name lowercase]]{monster}'s Dreadful Glare for 24 hours.</p>",
             "activities": {
                 "Save": {
@@ -1163,7 +1163,7 @@
         },
         "Enthralling Panache": {
             "name": "Enthralling Panache",
-            "description": "<p class=\"feature\"><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=66IPjaLIJqqwvmrL]], [[lookup @target.affects.labels.statblock activity=66IPjaLIJqqwvmrL]] the [[lookup @name lowercase]]{monster} can see within [[lookup @range.value activity=66IPjaLIJqqwvmrL]] feet.</p><p class=\"feature\"><em>Failure:</em> The target has the &amp;Reference[Charmed apply=false] condition until the start of the [[lookup @name lowercase]]{monster}'s next turn.</p>",
+            "description": "<p class=\"feature\"><em>Rzut obronny na Mądrość:</em> St [[lookup @save.dc.value activity=66IPjaLIJqqwvmrL]], [[lookup @target.affects.labels.statblock activity=66IPjaLIJqqwvmrL]], którego [[lookup @name lowercase]] widzi w obrębie [[lookup @range.value activity=66IPjaLIJqqwvmrL]] stóp.</p><p class=\"feature\"><em>Porażka:</em> Cel otrzymuje stan &amp;Reference[Charmed apply=false] do początku następnej tury [[lookup @name lowercase]].</p>",
             "activities": {
                 "Save": {
                     "name": "Obrona",
@@ -1217,7 +1217,7 @@
             "description": "<p class=\"feature\">If the [[lookup @name lowercase]]{monster} is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the [[lookup @name lowercase]]{monster} instead takes no damage if it succeeds on the save and only half damage if it fails. It can't use this trait if it has the Incapacitated condition.</p>"
         },
         "Exalted Restoration": {
-            "name": "Exalted Restoration",
+            "name": "Wyniosłe przywrócenie",
             "description": "<p class=\"feature\">If the [[lookup @name lowercase]]{monster} dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Hit Points somewhere in Mount Celestia.</p>"
         },
         "Fear Aura": {
@@ -1237,7 +1237,7 @@
             }
         },
         "Fetid Cloud": {
-            "name": "Fetid Cloud",
+            "name": "Cuchnąca chmura",
             "description": "<p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=vRnhmBCQqIwIlfS4]], each creature in a [[lookup @target.template.size activity=vRnhmBCQqIwIlfS4]]-foot Emanation originating from the [[lookup @name lowercase]]{monster}.</p><p class=\"feature\"><em>Failure:</em> The target has the &amp;Reference[Poisoned apply=false] condition until the end of its next turn. While Poisoned, the creature can take either an action or a Bonus Action on its turn, not both, and it can't take Reactions.</p>",
             "activities": {
                 "save": {
@@ -1257,7 +1257,7 @@
             "requirements": "Umrze poza Gehenną"
         },
         "Fiendish Touch": {
-            "name": "Fiendish Touch",
+            "name": "Czarci dotyk",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Fiery Bolt": {
@@ -1528,7 +1528,7 @@
             },
             "effects": {
                 "Disadv.: Attacks": {
-                    "name": "Disadv.: Attacks",
+                    "name": "Utrudn.: Ataki",
                     "description": "<p>Cel ma Utrudnienie do następnego testu ataku, który wykona przed końcem swojej następnej tury.</p>"
                 }
             }
@@ -1642,7 +1642,7 @@
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a flammable object that isn't being worn or carried, it starts burning.</p>"
         },
         "Ice Spear": {
-            "name": "Ice Spear",
+            "name": "Lodowa włócznia",
             "description": "<p class=\"feature\">[[/attack extended]].</p><p class=\"feature\"><em>Hit:</em> [[/damage average]] damage. Until the end of its next turn, the target can't take a &amp;Reference[Bonus Action] or &amp;Reference[Reaction], its Speed decreases by 10 feet, and it can move or take one action on its turn, not both.</p><p class=\"feature\"><em>Hit or Miss:</em> The spear magically returns to the [[lookup @name lowercase]]{monster}'s hand immediately after a ranged attack.</p>",
             "effects": {
                 "Speed -10": {
@@ -1656,7 +1656,7 @@
             "description": "<p>The [[lookup @name lowercase]]{monster} can move across and climb icy surfaces without needing to make an ability check. Additionally, &amp;Reference[Difficult Terrain] composed of ice or snow doesn't cost it extra movement.</p>"
         },
         "Ice Wall": {
-            "name": "Ice Wall",
+            "name": "Lodowa ściana",
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} casts <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWallofIce0]{Wall of Ice}</em> (level 8 version), requiring no spell components and using Intelligence as the spellcasting ability (spell save DC [[lookup @abilities.int.dc]]).</p>"
         },
         "Ignited Illumination": {
@@ -1685,7 +1685,7 @@
             "description": "<p>The [[lookup @name lowercase]]{monster} can move through other creatures and objects as if they were &amp;Reference[Difficult Terrain]. It takes [[/damage 1d10 average type=force]] damage if it ends its turn inside an object.</p>"
         },
         "Incubus Form": {
-            "name": "Incubus Form",
+            "name": "Forma inkuba",
             "description": "<p class=\"feature\">When the [[lookup @name lowercase]]{monster} finishes a Long Rest, it can shape-shift into an <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmIncubus0000000]{Incubus}</strong>, using that stat block instead of this one.</p>",
             "activities": {
                 "Incubus": {
@@ -1714,7 +1714,7 @@
             }
         },
         "Infernal Sting": {
-            "name": "Infernal Sting",
+            "name": "Piekielne żądło",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target has the &amp;Reference[Poisoned apply=false] condition until the start of the [[lookup @name lowercase]]{monster}'s next turn. While Poisoned, the target can't regain Hit Points.</p>",
             "effects": {
                 "Poisoned": {
@@ -1724,7 +1724,7 @@
             }
         },
         "Infernal Tail": {
-            "name": "Infernal Tail",
+            "name": "Piekielny ogon",
             "description": "<p class=\"feature\"><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=tJYeyUk3iPYJq9xM]], one [[lookup @target.affects.type activity=tJYeyUk3iPYJq9xM]] the [[lookup @name lowercase]]{monster} can see within [[lookup @range.value activity=tJYeyUk3iPYJq9xM]] [[lookup @range.units activity=tJYeyUk3iPYJq9xM]].</p><p class=\"feature\"><em>Failure:</em> [[/damage average activity=tJYeyUk3iPYJq9xM]] damage, and the target receives an infernal wound if it doesn't have one. While wounded, the target loses [[/damage average activity=zZfCQ0IeJZCjPLzE]] Hit Points at the start of each of its turns. The wound closes after [[lookup @duration.value activity=tJYeyUk3iPYJq9xM]] [[lookup @duration.units activity=tJYeyUk3iPYJq9xM]], after a spell restores Hit Points to the target, or after the target or a creature within 5 feet of it takes an action to stanch the wound, doing so by succeeding on a [[/check dc=17 ability=wis skill=med format=long]].</p>",
             "activities": {
                 "Save": {
@@ -1834,7 +1834,7 @@
             }
         },
         "Lightning Storm": {
-            "name": "Lightning Storm",
+            "name": "Burza z piorunami",
             "description": "<p class=\"feature\"><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=YVri6iuieFUUiO1d]], each creature in a [[lookup @target.template.size activity=YVri6iuieFUUiO1d]]-foot-radius, [[lookup @target.template.height activity=YVri6iuieFUUiO1d]]-feet-high Cylinder originating from a point the [[lookup @name lowercase]]{monster} can see within [[lookup @range.value activity=YVri6iuieFUUiO1d]] feet.</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage.</p><p class=\"feature\"><em>Success:</em> Half damage.</p>",
             "activities": {
                 "Save": {
@@ -1931,7 +1931,7 @@
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} can mimic simple sounds it has heard, such as a whisper or chitter. A hearer can discern the sounds are imitations with a successful [[/check format=long]].</p>"
         },
         "Mind Invasion": {
-            "name": "Mind Invasion",
+            "name": "Inwazja umysłu",
             "description": "<p class=\"feature\">The dragon uses [[/item Spellcasting]] to cast <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMindSpike0]{Mind Spike}</em> (level 3 version).</p>"
         },
         "Mind Jolt": {
@@ -2032,7 +2032,7 @@
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} has five heads. Whenever the [[lookup @name lowercase]]{monster} takes 25 damage or more on a single turn, one of its heads dies. The [[lookup @name lowercase]]{monster} dies if all its heads are dead. At the end of each of its turns when it has at least one living head, the [[lookup @name lowercase]]{monster} grows two heads for each of its heads that died since its last turn, unless it has taken Fire damage since its last turn. The [[lookup @name lowercase]]{monster} regains 20 Hit Points when it grows new heads.</p>"
         },
         "Necrotic Bow": {
-            "name": "Necrotic Bow",
+            "name": "Nekrotyczny łuk",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Necrotic Ray": {
@@ -2040,7 +2040,7 @@
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Necrotic Strike": {
-            "name": "Necrotic Strike",
+            "name": "Nekrotyczne uderzenie",
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} makes one Rotting Fist or Channel Negative Energy attack.</p>",
             "activities": {
                 "Expend Use": {
@@ -2049,7 +2049,7 @@
             }
         },
         "Necrotic Sword": {
-            "name": "Necrotic Sword",
+            "name": "Nekrotyczny miecz",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Needle Sword": {
@@ -2075,7 +2075,7 @@
         "Nightmare Haunting": {
             "name": "Zesłanie koszmarów",
             "description": "<p class=\"feature\">While on the Ethereal Plane, the [[lookup @name lowercase]]{monster} casts <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplDream00000]{Dream}</em>, using the same spellcasting ability as Spellcasting. Only the [[lookup @name lowercase]]{monster} can serve as the spell's messenger, and the target must be a [[lookup @target.affects.type activity=4GGGVhvLSrHgHdb9]] the [[lookup @name lowercase]]{monster} can see [[lookup @target.affects.special activity=4GGGVhvLSrHgHdb9]]. The spell fails and is wasted if the target is under the effect of the <em>@UUID[Compendium.dnd5e.spells24.Item.phbEvilAndGoodPr]{Protection from Evil and Good}</em> spell or within a <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicCircl]{Magic Circle}</em> spell.</p><p class=\"feature\">If the target takes damage from the <em>Dream</em> spell, the target's Hit Point maximum decreases by an amount equal to that damage. If the spell kills the target, its soul is trapped in the [[lookup @name lowercase]]{monster}'s soul bag, and the target can't be raised from the dead until its soul is released.</p>",
-            "requirements": "Requires Soul Bag",
+            "requirements": "Wymaga torby dusz",
             "activities": {
                 "cast": {
                     "target": "w Sferze materialnej"
@@ -2107,7 +2107,7 @@
             }
         },
         "Noxious Miasma": {
-            "name": "Noxious Miasma",
+            "name": "Toksyczne wyziewy",
             "description": "<p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=Blm8nddvCOH69bL8]], each [[lookup @target.affects.type activity=Blm8nddvCOH69bL8]] in a [[lookup @target.template.size activity=Blm8nddvCOH69bL8]]-foot-radius Sphere centered on a point the [[lookup @name lowercase]]{monster} can see within [[lookup @range.value activity=Blm8nddvCOH69bL8]] feet.</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage, and the target takes a −2 penalty to AC until the end of its next turn.</p><p class=\"feature\"><em>Failure or Success:</em> The [[lookup @name lowercase]]{monster} can't take this action again until the start of its next turn.</p>",
             "activities": {
                 "Save": {
@@ -2123,7 +2123,7 @@
             }
         },
         "Ocean Spear": {
-            "name": "Ocean Spear",
+            "name": "Oceaniczna włócznia",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a creature, its Speed decreases by 10 feet until the end of its next turn. <em>Hit or Miss:</em> The spear magically returns to the [[lookup @name lowercase]]{monster}'s hand immediately after a ranged attack.</p>",
             "effects": {
                 "Speed: -10 feet": {
@@ -2133,7 +2133,7 @@
             }
         },
         "Onslaught": {
-            "name": "Onslaught",
+            "name": "Natarcie",
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} moves up to half its Speed, and it makes one Claw or Tail attack.</p>",
             "activities": {
                 "Expend Use": {
@@ -2442,7 +2442,7 @@
             }
         },
         "Quick Grapple": {
-            "name": "Quick Grapple",
+            "name": "Szybkie pochwycenie",
             "description": "<p class=\"feature\"><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=aDWVHpJgsNPPNrDs]], [[lookup @target.affects.special activity=aDWVHpJgsNPPNrDs]] the [[lookup @name lowercase]]{monster} can see within [[lookup @target.template.size activity=aDWVHpJgsNPPNrDs]] [[lookup @target.template.units activity=aDWVHpJgsNPPNrDs]]. <em>Failure:</em> The target has the &amp;Reference[Grappled] condition (escape DC [[lookup @skills.ath.passive]]).</p>",
             "activities": {
                 "Save": {
@@ -2590,7 +2590,7 @@
             }
         },
         "Restless Touch": {
-            "name": "Restless Touch",
+            "name": "Niespokojny dotyk",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target is cursed for 24 hours or until the [[lookup @name lowercase]]{monster} dies. Until the curse ends, the target gains no benefit from finishing Short Rests.</p>",
             "effects": {
                 "Cursed": {
@@ -2615,7 +2615,7 @@
             }
         },
         "Ritual Sickle": {
-            "name": "Ritual Sickle",
+            "name": "Rytualny sierp",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Roar": {
@@ -2704,7 +2704,7 @@
             }
         },
         "Scorching Sands": {
-            "name": "Scorching Sands",
+            "name": "Palące piaski",
             "description": "<p class=\"feature\"><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=g5fxAWhrpwohtETl]], [[lookup @target.affects.labels.statblock activity=g5fxAWhrpwohtETl]] the [[lookup @name lowercase]]{monster} can see within [[lookup @range.value activity=g5fxAWhrpwohtETl]] feet.</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage, and the target's Speed is halved until the end of its next turn.</p><p class=\"feature\"><em>Failure or Success:</em> The [[lookup @name lowercase]]{monster} can't take this action again until the start of its next turn.</p>",
             "activities": {
                 "Save": {
@@ -2907,7 +2907,7 @@
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} uses Spellcasting to cast <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplShatter000]{Shatter}</em>. The [[lookup @name lowercase]]{monster} can't take this action again until the start of its next turn.</p>"
         },
         "Soul Bag": {
-            "name": "Soul Bag",
+            "name": "Torba dusz",
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} has a soul bag. While holding or carrying the bag, the [[lookup @name lowercase]]{monster} can use its Nightmare Haunting action.</p><p class=\"feature\">The bag has AC 15, HP 20, and Resistance to all damage. The bag turns to dust if reduced to 0 Hit Points. If the bag is destroyed, any souls the bag is holding are released. The [[lookup @name lowercase]]{monster} can create a new bag after 7 days.</p>"
         },
         "Speak with Beasts and Plants": {
@@ -3014,11 +3014,11 @@
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Storm Blade": {
-            "name": "Storm Blade",
+            "name": "Burzowe ostrze",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Storm Bolt": {
-            "name": "Storm Bolt",
+            "name": "Burzowy pocisk",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a Large or smaller creature, it has the &amp;Reference[Prone apply=false] condition.</p>",
             "effects": {
                 "Prone": {
@@ -3028,7 +3028,7 @@
             }
         },
         "Storm Sword": {
-            "name": "Storm Sword",
+            "name": "Burzowy miecz",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Stunning Screech": {
@@ -3139,7 +3139,7 @@
             }
         },
         "Tail Spike": {
-            "name": "Tail Spike",
+            "name": "Kolce ogonowe",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Tail Stinger": {
@@ -3260,7 +3260,7 @@
             }
         },
         "Thunderous Bellow": {
-            "name": "Thunderous Bellow",
+            "name": "Grzmiący ryk",
             "description": "<p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=RWBqtTjGSlEgQWCl]], [[lookup @target.affects.special activity=RWBqtTjGSlEgQWCl]] in a [[lookup @target.template.size activity=RWBqtTjGSlEgQWCl]]-[[lookup @target.template.units activity=RWBqtTjGSlEgQWCl]]. [[lookup @target.template.type capitalize activity=RWBqtTjGSlEgQWCl]].</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage, and the target has the &amp;Reference[Deafened apply=false] and &amp;Reference[Frightened apply=false] conditions until the end of its next turn.</p><p class=\"feature\"><em>Success:</em> Half damage only.</p>",
             "activities": {
                 "Save": {
@@ -3271,13 +3271,13 @@
             },
             "effects": {
                 "Deafened & Frightened": {
-                    "name": "Deafened & Frightened",
+                    "name": "Ogłuchły i Przerażony",
                     "description": "<p>Cel otrzymuje stany &amp;Reference[Deafened apply=false] i &amp;Reference[Frightened apply=false] do końca swojej następnej tury.</p>"
                 }
             }
         },
         "Thunderous Mace": {
-            "name": "Thunderous Mace",
+            "name": "Grzmiąca buława",
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Thunderous Slam": {
@@ -3354,7 +3354,7 @@
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} can pinpoint the location of precious metals and stones within 60 feet of itself.</p>"
         },
         "Tree Club": {
-            "name": "Tree Club",
+            "name": "Drzewna pałka",
             "description": "<p>[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Wielką lub mniejszą istotą, otrzymuje stan &amp;Reference[Prone apply=false].</p>",
             "effects": {
                 "Prone": {
@@ -3374,7 +3374,7 @@
             }
         },
         "Troll Spawn": {
-            "name": "Troll Spawn",
+            "name": "Trolli pomiot",
             "description": "<p class=\"feature\">The limb uncannily has the same senses as a whole [[lookup @name lowercase]]{monster}. If the limb isn't destroyed within 24 hours, roll [[/r 1d12#On a 12, the limb turns into a troll]]{roll 1d12}. On a 12, the limb turns into a <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmTroll000000000]{Troll}</strong>. Otherwise, the limb withers away.</p>",
             "activities": {
                 "Troll": {
@@ -3433,7 +3433,7 @@
             }
         },
         "Unsettling Visage": {
-            "name": "Unsettling Visage",
+            "name": "Niepokojące oblicze",
             "description": "<p class=\"feature\"><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=USxIbGZPLvfPnnoI]], each [[lookup @target.affects.type activity=USxIbGZPLvfPnnoI]] in a [[lookup @target.template.size activity=USxIbGZPLvfPnnoI]]-foot Emanation originating from the [[lookup @name lowercase]]{monster} that can see the [[lookup @name lowercase]]{monster}.</p><p class=\"feature\"><em>Failure:</em> The target has the &amp;Reference[Frightened apply=false] condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After [[lookup @duration.value activity=USxIbGZPLvfPnnoI]] [[lookup @duration.units activity=USxIbGZPLvfPnnoI]], it succeeds automatically.</p>",
             "activities": {
                 "Save": {
@@ -3515,11 +3515,11 @@
             "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Vine Lash": {
-            "name": "Vine Lash",
+            "name": "Smagnięcie pnączem",
             "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Vine Staff": {
-            "name": "Vine Staff",
+            "name": "Kostur z pnączy",
             "description": "<p>[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "Vortex": {
@@ -3558,7 +3558,7 @@
             },
             "effects": {
                 "Attack: Advantage": {
-                    "name": "Attack: Advantage",
+                    "name": "Atak: Ułatwienie",
                     "description": "<p>Cel ma Ułatwienie w testach ataku do początku następnej tury udzielającego.</p>"
                 }
             }
@@ -3694,7 +3694,7 @@
             }
         },
         "Whirlwind of Sand": {
-            "name": "Whirlwind of Sand",
+            "name": "Wir piasku",
             "description": "<p class=\"feature\"><em>Trigger:</em> The [[lookup @name lowercase]]{monster} is hit by an attack roll. <em>Response:</em> The [[lookup @name lowercase]]{monster} adds 2 to its AC against the attack, possibly causing the attack to miss, and the [[lookup @name lowercase]]{monster} teleports up to [[lookup @range.value activity=EsBmMUQMO4b0g6Yw]] [[lookup @range.units activity=EsBmMUQMO4b0g6Yw]]. [[lookup @target.affects.special activity=EsBmMUQMO4b0g6Yw]]. Each creature of its choice that it can see within [[lookup @target.template.size activity=EsBmMUQMO4b0g6Yw]] [[lookup @target.template.units activity=EsBmMUQMO4b0g6Yw]]. of its destination space has the &amp;Reference[Blinded apply=false] condition until the end of the [[lookup @name lowercase]]{monster}'s next turn.</p>",
             "activities": {
                 "Expend Use": {
@@ -3737,7 +3737,7 @@
             "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]].</p>"
         },
         "World-Shaking Movement": {
-            "name": "World-Shaking Movement",
+            "name": "Ruch wstrząsający światem",
             "description": "<p class=\"feature\">The [[lookup @name lowercase]]{monster} moves up to its Speed. At the end of this movement, the [[lookup @name lowercase]]{monster} creates an instantaneous shock wave in a [[lookup @target.template.size activity=g4W0ovZxBeUrZKb8]]-[[lookup @target.template.units activity=g4W0ovZxBeUrZKb8]]. Emanation originating from itself. Creatures in that area lose &amp;Reference[Concentration] and, if Medium or smaller, have the &amp;Reference[Prone apply=false] condition. The [[lookup @name lowercase]]{monster} can't take this action again until the start of its next turn.</p>",
             "activities": {
                 "Expend Use": {
