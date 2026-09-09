@@ -2914,7 +2914,7 @@
         },
         "Mage Hand": {
             "name": "Magiczna dłoń",
-            "description": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń utrzymuje się przez czas trwania czaru. Znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Rzucając ten czar, możesz użyć dłoni, by manipulować obiektem, otworzyć niezamknięte drzwi lub pojemnik, schować lub wyciągnąć przedmiot z otwartego pojemnika albo wylać zawartość fiolki.</p><p>Akcją magii w kolejnych turach możesz ponownie w ten sposób sterować dłonią. W ramach tej akcji możesz przemieścić dłoń o maksymalnie 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów.</p>"
+            "description": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń utrzymuje się przez czas trwania czaru. Znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Rzucając ten czar, możesz użyć dłoni, by manipulować obiektem, otworzyć niezamknięte drzwi lub pojemnik, schować lub wyciągnąć przedmiot z otwartego pojemnika albo wylać zawartość fiolki.</p><p>Akcją magii w kolejnych turach możesz ponownie użyć dłoni w ten sam sposób. W ramach tej akcji możesz przemieścić dłoń o maksymalnie 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (5 kg).</p>"
         },
         "Magic Circle": {
             "name": "Krąg magii",
@@ -2960,7 +2960,7 @@
         },
         "Magic Missile": {
             "name": "Magiczny pocisk",
-            "description": "<p>Tworzysz trzy świecące pociski magicznej mocy. Każdy pocisk uderza w istotę, którą wybierzesz i widzisz w zasięgu. Pocisk zadaje 1k4 + 1 obrażeń od mocy swojemu celowi. Wszystkie pociski uderzają jednocześnie, a ty możesz skierować je, by trafiły jedną istotę lub kilka.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Czar tworzy jeden dodatkowy pocisk za każdy krąg komórki czaru powyżej 1.</p><p>[[2 + @item.level]]{[[lookup @item.level]] pociski poziomu}</p>"
+            "description": "<p>Tworzysz trzy świecące pociski magicznej mocy. Każdy pocisk uderza w wybraną przez ciebie istotę, którą widzisz w zasięgu. Pocisk zadaje 1k4 + 1 obrażeń od Mocy swojemu celowi. Wszystkie pociski uderzają jednocześnie, a ty możesz skierować je tak, by trafiły jedną istotę lub kilka.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Czar tworzy jeden dodatkowy pocisk za każdy krąg komórki czaru powyżej 1.</p><p>[[2 + @item.level]]{Pociski na kręgu [[lookup @item.level]]}</p>"
         },
         "Magic Mouth": {
             "name": "Magiczne usta",
