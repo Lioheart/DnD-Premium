@@ -2636,7 +2636,7 @@
         },
         "Magic Missile": {
             "name": "Magiczny pocisk",
-            "description": "<p>Tworzysz trzy świecące pociski magicznej mocy. Każdy pocisk uderza w istotę, którą wybierzesz i widzisz w zasięgu. Pocisk zadaje 1k4 + 1 obrażeń od mocy swojemu celowi. Wszystkie pociski uderzają jednocześnie, a ty możesz skierować je, by trafiły jedną istotę lub kilka.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Czar tworzy jeden dodatkowy pocisk za każdy krąg komórki czaru powyżej 1.</p><p>[[2 + @item.level]]{[[lookup @item.level]] pociski poziomu}</p>"
+            "description": "<p>Tworzysz trzy świecące pociski magicznej mocy. Każdy pocisk uderza w wybraną przez ciebie istotę, którą widzisz w zasięgu. Pocisk zadaje 1k4 + 1 obrażeń od Mocy swojemu celowi. Wszystkie pociski uderzają jednocześnie, a ty możesz skierować je tak, by trafiły jedną istotę lub kilka.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Czar tworzy jeden dodatkowy pocisk za każdy krąg komórki czaru powyżej 1.</p><p>[[2 + @item.level]]{Pociski na kręgu [[lookup @item.level]]}</p>"
         },
         "Magic Mouth": {
             "name": "Magiczne usta",
