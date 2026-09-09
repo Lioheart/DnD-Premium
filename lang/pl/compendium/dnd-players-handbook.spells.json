@@ -2595,7 +2595,7 @@
         },
         "Holy Aura": {
             "name": "Święta aura",
-            "description": "<p>Dopóki czar trwa, emitujesz aurę w promieniu 30 stóp. W obrębie tej aury, istoty wybrane przez ciebie mają &amp;Reference[Advantage]{Ułatwienie} w wszystkich rzutach obronnych, a inne istoty mają &amp;Reference[Disadvantage]{Utrudnienie} w testach ataku przeciwko nim. Dodatkowo, gdy Czart lub Nieumarły trafi istotę objętą aurą atakiem wręcz, napastnik musi wykonać rzut obronny na Kondycję. W przypadku niepowodzenia otrzymuje stan &amp;Reference[Blinded]{Oślepiony} do końca swojej następnej tury.</p>",
+            "description": "<p>Dopóki czar trwa, roztaczasz wokół siebie aurę w Emanacji o promieniu 30 stóp. W obrębie tej aury wybrane przez ciebie istoty mają Ułatwienie we wszystkich rzutach obronnych, a inne istoty mają Utrudnienie w testach ataku przeciwko nim. Dodatkowo, gdy Czart lub Nieumarły trafi objętą aurą istotę testem ataku wręcz, napastnik musi wykonać rzut obronny na Kondycję, w przeciwnym razie otrzymuje stan &amp;Reference[Blinded apply=false] do końca swojej następnej tury.</p>",
             "materials": "relikwiarz warty 1 000+ SZ",
             "activities": {
                 "Create Aura": {
@@ -2618,7 +2618,7 @@
         },
         "Hunger of Hadar": {
             "name": "Głód Hadara",
-            "description": "<p>Otwierasz przejście do Odległej Dziedziny, regionu opanowanego przez niewypowiedziane koszmary. Pojawia się Sfera &amp;Reference[Darkness] o promieniu 20 stóp, skupiona na punkcie w zasięgu i trwająca przez czas trwania czaru. Sfera jest &amp;Reference[DifficultTerrain] i wypełniona dziwnymi szeptami oraz mlaskającymi odgłosami, słyszalnymi do 30 stóp. Żadne światło, magiczne ani inne, nie może oświetlić tego obszaru, a istoty całkowicie w nim znajdujące się mają stan &amp;Reference[Blinded].</p><p>Każda istota, która rozpoczyna turę w obszarze, otrzymuje 2k6 obrażeń od zimna. Każda istota, która kończy tam turę, musi wykonać udany Rzut Obrony na Zręczność lub otrzyma 2k6 obrażeń od kwasu od obcych macek.</p><p><strong>Użycie komórki czaru wyższego kręgu. </strong>Obrażenia od zimna lub kwasu (do wyboru) zwiększają się o 1k6 za każdy Krąg Czaru powyżej 3.</p>",
+            "description": "<p>Otwierasz przejście do Odległej dziedziny, regionu zamieszkanego przez niewysłowione koszmary. Pojawia się Sfera &amp;Reference[Darkness] o promieniu 20 stóp, skupiona na punkcie w zasięgu i utrzymująca się przez czas trwania czaru. Sfera jest &amp;Reference[DifficultTerrain] i wypełniona dziwnymi szeptami oraz mlaskającymi odgłosami, słyszalnymi z odległości do 30 stóp. Żadne światło, magiczne czy inne, nie może oświetlić tego obszaru, a istoty znajdujące się w nim w całości mają stan &amp;Reference[Blinded].</p><p>Każda istota, która rozpoczyna swoją turę w tym obszarze, otrzymuje 2k6 obrażeń od Zimna. Każda istota, która kończy tam swoją turę, musi wykonać udany rzut obronny na Zręczność, w przeciwnym razie otrzymuje 2k6 obrażeń od Kwasu zadanych przez nieziemskie macki.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia od Zimna lub Kwasu (wedle twojego wyboru) zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>",
             "materials": "marynowana macka",
             "activities": {
                 "Open Gateway": {
