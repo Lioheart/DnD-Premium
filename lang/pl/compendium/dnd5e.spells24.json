@@ -3221,7 +3221,7 @@
         },
         "Ray of Enfeeblement": {
             "name": "Promień osłabienia",
-            "description": "<p>Promień osłabiającej energii wystrzeliwuje od ciebie w kierunku istoty w zasięgu. Cel musi wykonać rzut obronny na Kondycję. W przypadku udanego rzutu cel ma Utrudnienie w następnym teście ataku, który wykona do początku twojej następnej tury.</p><p>W przypadku nieudanego rzutu cel ma Utrudnienie w testach opartych na Sile w rzutach K20 przez cały czas działania czaru. W tym czasie również odejmuje 1k8 od wszystkich swoich rzutów na obrażenia. Cel powtarza rzut obronny na końcu każdej ze swoich tur, kończąc działanie czaru w przypadku sukcesu.</p>",
+            "description": "<p>Promień osłabiającej energii wystrzeliwuje od ciebie w kierunku istoty w zasięgu. Cel musi wykonać rzut obronny na Kondycję. Przy udanym rzucie cel ma Utrudnienie w następnym teście ataku, który wykona przed początkiem twojej następnej tury.</p><p>Przy nieudanym rzucie cel ma przez czas trwania czaru Utrudnienie w testach K20 opartych na Sile. Przez ten czas odejmuje też 1k8 od wszystkich swoich rzutów obrażeń. Cel powtarza ten rzut obronny na końcu każdej swojej tury, a udany rzut kończy działanie czaru.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
