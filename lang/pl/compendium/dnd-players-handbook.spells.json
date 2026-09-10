@@ -3501,7 +3501,7 @@
         },
         "Power Word Heal": {
             "name": "Słowo mocy Ulecz",
-            "description": "<p>Fala energii uzdrawiającej ogarnia jedną istotę, którą widzisz w zasięgu. Cel odzyskuje wszystkie swoje Punkty Wytrzymałości. Jeśli istota ma stan &amp;Reference[Charmed], &amp;Reference[Frightened], &amp;Reference[Paralyzed], &amp;Reference[Poisoned] lub &amp;Reference[Stunned], stan ten kończy się. Jeśli istota ma stan &amp;Reference[Prone], może użyć swojej Reakcji, aby wstać.</p><section id=\"secret-TZTRxIEOucKFdjFi\" class=\"secret\"><p>Notatka Foundry</p><p>Aktywność <strong>Pełne Leczenie</strong> jest skonfigurowana, aby uzdrowić 1,000 Punktów Wytrzymałości, tak aby pojedyncza istota mogła zostać całkowicie uzdrowiona.</p></section>",
+            "description": "<p>Fala energii uzdrawiającej ogarnia jedną istotę, którą widzisz w zasięgu. Cel odzyskuje wszystkie swoje Punkty wytrzymałości. Jeśli istota ma stan &amp;Reference[Charmed], &amp;Reference[Frightened], &amp;Reference[Paralyzed], &amp;Reference[Poisoned] lub &amp;Reference[Stunned], stan ten ustaje. Jeśli istota ma stan &amp;Reference[Prone], może wykorzystać swoją Reakcję, by wstać.</p><section id=\"secret-TZTRxIEOucKFdjFi\" class=\"secret\"><p>Notatka foundry</p><p>Aktywność <strong>Pełne leczenie</strong> jest skonfigurowana tak, by uzdrawiać 1000 Punktów wytrzymałości, dzięki czemu dowolna pojedyncza istota może zostać uzdrowiona w pełni.</p></section>",
             "activities": {
                 "Heal Fully": {
                     "name": "Pełne uzdrowienie"
@@ -3519,7 +3519,7 @@
         },
         "Power Word Stun": {
             "name": "Słowo mocy Stój",
-            "description": "<p>Przytłaczasz umysł jednej istoty, którą widzisz w zasięgu. Jeśli cel ma 150 Punktów Wytrzymałości lub mniej, ma stan Ogłuszenia. W przeciwnym razie jego Szybkość wynosi 0 do początku swojej następnej tury.</p><p>Cel z &amp;Reference[Stunned apply=false] wykonuje rzut obronny na Kondycję [[/save ability=con dc=@attributes.spelldc]] na końcu każdej z jego tur, kończąc stan na sukcesie.</p>",
+            "description": "<p>Przytłaczasz umysł jednej istoty, którą widzisz w zasięgu. Jeśli cel ma 150 Punktów wytrzymałości lub mniej, otrzymuje stan &amp;Reference[Stunned apply=false]. W przeciwnym razie jego Szybkość wynosi 0 do początku twojej następnej tury.</p><p>Cel z tym stanem wykonuje rzut obronny [[/save ability=con dc=@attributes.spell.dc]] na końcu każdej swojej tury, a udany rzut kończy działanie stanu na nim samym.</p>",
             "effects": {
                 "Stunned": {
                     "name": "Ogłuszony",
