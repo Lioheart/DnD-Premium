@@ -3610,7 +3610,7 @@
         },
         "Produce Flame": {
             "name": "Wywołanie płomienia",
-            "description": "<p>Migoczący płomień pojawia się w twojej dłoni i pozostaje tam przez cały czas działania czaru. Płomień nie emituje ciepła ani niczego nie podpala, a także rzuca &Reference[BrightLight]{Jasne Światło} w promieniu 20 stóp oraz &Reference[DimLight]{Słabe Światło} na dodatkowe 20 stóp. Czar kończy się, jeśli rzucisz go ponownie.</p><p>Do momentu zakończenia czaru możesz wykonać Akcję Magii, aby rzucić płomień w istotę lub obiekt w odległości do 60 stóp od ciebie. Wykonaj dystansowy test ataku zaklęciem. W przypadku trafienia cel otrzymuje 1k8 obrażeń od ognia.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
+            "description": "<p>Migoczący płomień pojawia się w twojej dłoni i pozostaje tam przez czas trwania czaru. Płomień nie daje ciepła ani niczego nie podpala, a także rzuca &amp;Reference[BrightLight] w promieniu 20 stóp oraz &amp;Reference[DimLight] na kolejne 20 stóp. Czar kończy się, jeśli rzucisz go ponownie.</p><p>Dopóki czar trwa, możesz Akcją magii rzucić ogniem w istotę lub obiekt w odległości do 60 stóp od ciebie. Wykonaj dystansowy atak czarem. Przy trafieniu cel otrzymuje 1k8 obrażeń od Ognia.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8, gdy osiągniesz poziom 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
             "activities": {
                 "Cast": {
                     "name": "Rzucanie"
