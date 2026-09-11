@@ -3409,7 +3409,7 @@
         },
         "Sanctuary": {
             "name": "Sanktuarium",
-            "description": "<div><p>Obejmujesz ochroną istotę w zasięgu. Dopóki czar trwa, każda istota, która obiera chronioną istotę za cel testu ataku lub czaru zadającego obrażenia, musi wykonać udany [[/save ability=wis dc=@attributes.spell.dc format=long]], w przeciwnym razie musi wybrać nowy cel albo traci atak lub czar. Ten czar nie chroni chronionej istoty przed obszarami działania. Czar kończy się, jeśli chroniona istota wykona test ataku, rzuci czar lub zada obrażenia.</p></div>",
+            "description": "<div><p>Obejmujesz ochroną istotę w zasięgu. Dopóki czar trwa, każda istota, która obiera chronioną istotę za cel testu ataku lub czaru zadającego obrażenia, musi odnieść sukces w [[/save ability=wis dc=@attributes.spell.dc format=long]]{rzucie obronnym na Mądrość}, w przeciwnym razie musi wybrać nowy cel albo traci atak lub czar. Ten czar nie chroni chronionej istoty przed obszarami działania. Czar kończy się, jeśli chroniona istota wykona test ataku, rzuci czar lub zada obrażenia.</p></div>",
             "materials": "odłamek szkła z lustra",
             "activities": {
                 "Cast": {
@@ -3429,7 +3429,7 @@
         },
         "Scorching Ray": {
             "name": "Wypalający promień",
-            "description": "<p>Rzucasz trzy ogniste promienie. Możesz skierować je na jeden cel w zasięgu lub na kilka. Wykonaj dystansowy test ataku zaklęciem dla każdego promienia. W przypadku trafienia cel otrzymuje 2k6 obrażeń od ognia.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Tworzysz jeden dodatkowy promień za każdą komórkę czaru powyżej 2. kręgu.</p><p>[[@item.level + 1]]{Łączna Liczba Promieni}</p>"
+            "description": "<p>Rzucasz trzy ogniste promienie. Możesz skierować je na jeden cel w zasięgu lub na kilka. Wykonaj dystansowy atak czarem dla każdego promienia. Przy trafieniu cel otrzymuje 2k6 obrażeń od Ognia.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Tworzysz jeden dodatkowy promień za każdy krąg komórki czaru powyżej 2.</p><p>[[@item.level + 1]]{Łączna liczba promieni}</p>"
         },
         "Scrying": {
             "name": "Wizja",
