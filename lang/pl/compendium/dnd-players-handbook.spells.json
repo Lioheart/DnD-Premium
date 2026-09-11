@@ -5166,7 +5166,7 @@
         },
         "Witch Bolt": {
             "name": "Wiedźmi pocisk",
-            "description": "<p>Promień trzaskającej energii pędzi w stronę istoty w zasięgu, tworząc ciągły łuk błyskawic między tobą a celem. Wykonaj dystansowy test ataku czarem przeciwko niej. W przypadku trafienia cel otrzymuje 2k12 obrażeń od elektryczności.</p><p>W każdej z twoich kolejnych tur możesz użyć Akcji dodatkowej, aby automatycznie zadać celowi 1k12 obrażeń od elektryczności, nawet jeśli pierwszy atak chybił.</p><p>Czar kończy się, jeśli cel kiedykolwiek znajdzie się poza zasięgiem czaru lub jeśli ma &amp;Reference[totalcover]{Całkowita osłona} od ciebie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Początkowe obrażenia zwiększają się o 1k12 za każdy krąg komórki czaru powyżej 1.</p>",
+            "description": "<p>Promień trzaskającej energii mknie ku istocie w zasięgu, tworząc trwały łuk błyskawicy między tobą a celem. Wykonaj dystansowy atak czarem przeciwko niej. Przy trafieniu cel otrzymuje 2k12 obrażeń od Elektryczności.</p><p>W każdej ze swoich kolejnych tur możesz Akcją dodatkową automatycznie zadać celowi 1k12 obrażeń od Elektryczności, nawet jeśli pierwszy atak chybił.</p><p>Czar kończy się, jeśli cel choćby na chwilę znajdzie się poza zasięgiem czaru albo zyska wobec ciebie &amp;Reference[totalcover].</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Początkowe obrażenia zwiększają się o 1k12 za każdy krąg komórki czaru powyżej 1.</p>",
             "materials": "gałązka uderzona piorunem",
             "activities": {
                 "Bonus Action Damage": {
@@ -5182,7 +5182,7 @@
         },
         "Word of Radiance": {
             "name": "Słowo blasku",
-            "description": "<p>Płonąca światłość wybucha z ciebie w Emanacji o zasięgu 5 stóp. Każda wybrana przez Ciebie istota, którą widzisz w jej zasięgu, musi zdać rzut obronny na Kondycję, w przeciwnym razie otrzymuje 1k6 obrażeń od światłości.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k6, gdy osiągniesz poziomy 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
+            "description": "<p>Płonąca światłość rozbłyska wokół ciebie w Emanacji o promieniu 5 stóp. Każda wybrana przez ciebie istota, którą w niej widzisz, musi zdać rzut obronny na Kondycję, w przeciwnym razie otrzymuje 1k6 obrażeń od Światłości.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k6, gdy osiągniesz poziom 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
             "materials": "żeton w kształcie rozbłysku słońca",
             "activities": {
                 "save": {
@@ -5192,7 +5192,7 @@
         },
         "Word of Recall": {
             "name": "Słowo powrotu",
-            "description": "<p>Ty i maksymalnie pięć przychylnych istot w odległości 5 stóp od ciebie natychmiast teleportujecie się do wcześniej wyznaczonego sanktuarium. Ty i wszelkie istoty, które teleportują się z tobą, pojawiacie się w najbliższej wolnej przestrzeni od miejsca, które wyznaczyłeś, przygotowując swoje sanktuarium (patrz poniżej). Jeśli rzucisz ten czar bez wcześniejszego przygotowania sanktuarium, czar nie działa.</p><p>Musisz wyznaczyć lokalizację, taką jak świątynia, jako sanktuarium, rzucając ten czar w tym miejscu.</p>",
+            "description": "<p>Ty i maksymalnie pięć przychylnych istot w odległości 5 stóp od ciebie natychmiast teleportujecie się do wcześniej wyznaczonego sanktuarium. Ty oraz wszelkie istoty, które teleportują się razem z tobą, pojawiacie się w najbliższej niezajętej przestrzeni od miejsca, które wskazałeś, przygotowując swoje sanktuarium (patrz niżej). Jeśli rzucisz ten czar bez wcześniejszego przygotowania sanktuarium, nie wywoła on żadnego efektu.</p><p>Sanktuarium ustanawiasz, rzucając ten czar w wybranej lokalizacji, takiej jak świątynia.</p>",
             "targetAffects": "ty i pięć innych istot",
             "activities": {
                 "Teleport to Sanctuary": {
