@@ -5205,7 +5205,7 @@
         },
         "Wrathful Smite": {
             "name": "Gniewne ugodzenie",
-            "description": "<p>Cel otrzymuje dodatkowe 1k6 obrażeń nekrotycznych od ataku i musi zdać rzut obronny na Mądrość, w przeciwnym razie uzyskuje stan &amp;Reference[Frightened apply=false]{Przerażony} do czasu zakończenia czaru. Na końcu każdej ze swoich tur przerażony cel powtarza rzut obronny, kończąc czar na sobie w przypadku powodzenia.</p><p><strong>Użycie komórki czaru wyższego kręgu. </strong>Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
+            "description": "<p>Cel otrzymuje dodatkowe 1k6 obrażeń Nekrotycznych w wyniku ataku i musi zdać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[frightened apply=false], dopóki czar nie dobiegnie końca. Na końcu każdej swojej tury Przerażony cel powtarza ten rzut obronny, a udany rzut kończy działanie czaru na nim samym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
             "activation": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
             "activationCondition": "natychmiast po trafieniu istoty bronią białą lub Uderzeniem bez broni",
             "activities": {
