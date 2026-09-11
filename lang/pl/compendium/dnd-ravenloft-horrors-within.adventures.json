@@ -94,7 +94,7 @@
                         "Thaumaturgy": {
                             "name": "Taumaturgia",
                             "description": {
-                                "value": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>"
+                                "value": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>"
                             }
                         },
                         "Stench": {
@@ -432,7 +432,7 @@
                         "Invisibility": {
                             "name": "Niewidzialność",
                             "description": {
-                                "value": "<p>Istota, którą dotykasz, otrzymuje stan &amp;Reference[invisible apply=false]{Niewidzialny} do końca czaru. Czar kończy się wcześniej natychmiast po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>"
+                                "value": "<p>Istota, której dotkniesz, otrzymuje stan &amp;Reference[invisible apply=false], dopóki czar nie dobiegnie końca. Czar kończy się przedwcześnie zaraz po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>"
                             }
                         },
                         "Light": {
@@ -450,7 +450,7 @@
                         "Prestidigitation": {
                             "name": "Kuglarstwo",
                             "description": {
-                                "value": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć aktywne maksymalnie trzy jego nienatychmiastowe efekty jednocześnie.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt sensoryczny, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 27 litrów.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak do 27 litrów nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że kolor, mały znak lub symbol pojawia się na obiekcie albo powierzchni na 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w dłoni. Trwa on do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>"
+                                "value": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy jego nienatychmiastowe efekty.</p><p><strong>Efekt zmysłowy.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt zmysłowy, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa z ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 1 stopę sześcienną.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak maksymalnie 1 stopie sześciennej nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że na obiekcie albo powierzchni pojawia się kolor, mały znak lub symbol, utrzymujący się przez 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w twojej dłoni. Utrzymuje się do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>"
                             }
                         },
                         "Fly": {
@@ -462,13 +462,13 @@
                         "Lightning Bolt": {
                             "name": "Piorun",
                             "description": {
-                                "value": "<p>Uderzenie pioruna tworzące Prostą o długości 100 stóp i szerokości 5 stóp wystrzeliwuje od ciebie w wybranym przez ciebie kierunku. Każda istota w Prostej wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>"
+                                "value": "<p>Uderzenie pioruna tworzące Prostą o długości 100 stóp i szerokości 5 stóp wystrzeliwuje od ciebie w wybranym przez ciebie kierunku. Każda istota w Prostej wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od Elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>"
                             }
                         },
                         "Cone of Cold": {
                             "name": "Stożek zimna",
                             "description": {
-                                "value": "<p>Uwolniasz podmuch zimnego powietrza. Każda istota w Stożku o zasięgu 60 stóp, rozpoczynającym się od ciebie, wykonuje rzut obronny na Kondycję, otrzymując 8k8 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym. Istota zabita przez ten czar staje się zamarzniętą statuą, dopóki nie odtaje.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 5.</p>"
+                                "value": "<p>Uwalniasz podmuch lodowatego powietrza. Każda istota w Stożku o długości 60 stóp, wychodzącym od ciebie, wykonuje rzut obronny na Kondycję, otrzymując 8k8 obrażeń od Zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym. Istota zabita przez ten czar zamienia się w zamarzniętą statuę, dopóki nie odtaje.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 5.</p>"
                             }
                         },
                         "Mind Blank": {
@@ -492,7 +492,7 @@
                         "Mage Hand": {
                             "name": "Magiczna dłoń",
                             "description": {
-                                "value": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń trwa przez czas trwania. Dłoń znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Gdy rzucasz czar, możesz użyć dłoni do manipulowania obiektem, otwarcia niezamkniętych drzwi lub pojemnika, schowania lub wyciągnięcia przedmiotu z otwartego pojemnika albo przelania zawartości fiolki.</p><p>Akcją Magii w twoich kolejnych turach możesz ponownie kontrolować dłoń w ten sposób. W ramach tej akcji możesz przemieścić dłoń do 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (4,5 kg).</p>"
+                                "value": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń utrzymuje się przez czas trwania czaru. Znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Rzucając ten czar, możesz użyć dłoni, by manipulować obiektem, otworzyć niezamknięte drzwi lub pojemnik, schować lub wyciągnąć przedmiot z otwartego pojemnika albo wylać zawartość fiolki.</p><p>Akcją magii w kolejnych turach możesz ponownie użyć dłoni w ten sam sposób. W ramach tej akcji możesz przemieścić dłoń o maksymalnie 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (5 kg).</p>"
                             }
                         }
                     },
@@ -635,7 +635,7 @@
                         "Invisibility": {
                             "name": "Niewidzialność",
                             "description": {
-                                "value": "<p>Istota, którą dotykasz, otrzymuje stan &amp;Reference[invisible apply=false]{Niewidzialny} do końca czaru. Czar kończy się wcześniej natychmiast po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>"
+                                "value": "<p>Istota, której dotkniesz, otrzymuje stan &amp;Reference[invisible apply=false], dopóki czar nie dobiegnie końca. Czar kończy się przedwcześnie zaraz po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>"
                             }
                         },
                         "Light": {
@@ -647,7 +647,7 @@
                         "Prestidigitation": {
                             "name": "Kuglarstwo",
                             "description": {
-                                "value": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć aktywne maksymalnie trzy jego nienatychmiastowe efekty jednocześnie.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt sensoryczny, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 27 litrów.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak do 27 litrów nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że kolor, mały znak lub symbol pojawia się na obiekcie albo powierzchni na 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w dłoni. Trwa on do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>"
+                                "value": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy jego nienatychmiastowe efekty.</p><p><strong>Efekt zmysłowy.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt zmysłowy, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa z ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 1 stopę sześcienną.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak maksymalnie 1 stopie sześciennej nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że na obiekcie albo powierzchni pojawia się kolor, mały znak lub symbol, utrzymujący się przez 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w twojej dłoni. Utrzymuje się do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>"
                             }
                         },
                         "Mage Hand": {
@@ -677,13 +677,13 @@
                         "Cone of Cold": {
                             "name": "Stożek zimna",
                             "description": {
-                                "value": "<p>Uwolniasz podmuch zimnego powietrza. Każda istota w Stożku o zasięgu 60 stóp, rozpoczynającym się od ciebie, wykonuje rzut obronny na Kondycję, otrzymując 8k8 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym. Istota zabita przez ten czar staje się zamarzniętą statuą, dopóki nie odtaje.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 5.</p>"
+                                "value": "<p>Uwalniasz podmuch lodowatego powietrza. Każda istota w Stożku o długości 60 stóp, wychodzącym od ciebie, wykonuje rzut obronny na Kondycję, otrzymując 8k8 obrażeń od Zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym. Istota zabita przez ten czar zamienia się w zamarzniętą statuę, dopóki nie odtaje.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 5.</p>"
                             }
                         },
                         "Lightning Bolt": {
                             "name": "Piorun",
                             "description": {
-                                "value": "<p>Uderzenie pioruna tworzące Prostą o długości 100 stóp i szerokości 5 stóp wystrzeliwuje od ciebie w wybranym przez ciebie kierunku. Każda istota w Prostej wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>"
+                                "value": "<p>Uderzenie pioruna tworzące Prostą o długości 100 stóp i szerokości 5 stóp wystrzeliwuje od ciebie w wybranym przez ciebie kierunku. Każda istota w Prostej wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od Elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>"
                             }
                         },
                         "Teleport": {
@@ -770,7 +770,7 @@
                         "Hypnotic Pattern": {
                             "name": "Hipnotyczny wzór",
                             "description": {
-                                "value": "<p>Tworzysz skręcający wzór kolorów w sześcianie o wymiarach 30 stóp w zasięgu. Wzór pojawia się na chwilę i znika. Każda istota w obszarze, która widzi wzór, musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[charmed]{Zauroczony} na czas trwania czaru. Podczas bycia Zauroczoną, istota ma stan &amp;Reference[incapacitated]{Obezwładniony} oraz Szybkość równą 0.</p><p>Czar kończy się dla istoty objętej jego działaniem, jeśli otrzyma ona jakiekolwiek obrażenia lub jeśli ktoś inny użyje akcji, aby wyrwać ją z tego odrętwienia.</p>"
+                                "value": "<p>Tworzysz wijący się wzór kolorów w Sześcianie o boku 30 stóp w zasięgu. Wzór pojawia się na chwilę i znika. Każda istota w tym obszarze, która widzi wzór, musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[charmed apply=false] na czas trwania czaru. Dopóki jest Zauroczona, istota ma stan &amp;Reference[incapacitated apply=false] oraz Szybkość równą 0.</p><p>Czar kończy się dla istoty objętej jego działaniem, jeśli otrzyma ona jakiekolwiek obrażenia lub jeśli ktoś inny wykorzysta akcję, by otrząsnąć ją z tego odrętwienia.</p>"
                             }
                         }
                     },
@@ -851,13 +851,13 @@
                         "Mage Hand": {
                             "name": "Magiczna dłoń",
                             "description": {
-                                "value": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń trwa przez czas trwania. Dłoń znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Gdy rzucasz czar, możesz użyć dłoni do manipulowania obiektem, otwarcia niezamkniętych drzwi lub pojemnika, schowania lub wyciągnięcia przedmiotu z otwartego pojemnika albo przelania zawartości fiolki.</p><p>Akcją Magii w twoich kolejnych turach możesz ponownie kontrolować dłoń w ten sposób. W ramach tej akcji możesz przemieścić dłoń do 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (4,5 kg).</p>"
+                                "value": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń utrzymuje się przez czas trwania czaru. Znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Rzucając ten czar, możesz użyć dłoni, by manipulować obiektem, otworzyć niezamknięte drzwi lub pojemnik, schować lub wyciągnąć przedmiot z otwartego pojemnika albo wylać zawartość fiolki.</p><p>Akcją magii w kolejnych turach możesz ponownie użyć dłoni w ten sam sposób. W ramach tej akcji możesz przemieścić dłoń o maksymalnie 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (5 kg).</p>"
                             }
                         },
                         "Prestidigitation": {
                             "name": "Kuglarstwo",
                             "description": {
-                                "value": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć aktywne maksymalnie trzy jego nienatychmiastowe efekty jednocześnie.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt sensoryczny, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 27 litrów.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak do 27 litrów nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że kolor, mały znak lub symbol pojawia się na obiekcie albo powierzchni na 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w dłoni. Trwa on do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>"
+                                "value": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy jego nienatychmiastowe efekty.</p><p><strong>Efekt zmysłowy.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt zmysłowy, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa z ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 1 stopę sześcienną.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak maksymalnie 1 stopie sześciennej nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że na obiekcie albo powierzchni pojawia się kolor, mały znak lub symbol, utrzymujący się przez 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w twojej dłoni. Utrzymuje się do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>"
                             }
                         },
                         "Fireball": {
@@ -869,13 +869,13 @@
                         "Invisibility": {
                             "name": "Niewidzialność",
                             "description": {
-                                "value": "<p>Istota, którą dotykasz, otrzymuje stan &amp;Reference[invisible apply=false]{Niewidzialny} do końca czaru. Czar kończy się wcześniej natychmiast po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>"
+                                "value": "<p>Istota, której dotkniesz, otrzymuje stan &amp;Reference[invisible apply=false], dopóki czar nie dobiegnie końca. Czar kończy się przedwcześnie zaraz po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>"
                             }
                         },
                         "Cone of Cold": {
                             "name": "Stożek zimna",
                             "description": {
-                                "value": "<p>Uwolniasz podmuch zimnego powietrza. Każda istota w Stożku o zasięgu 60 stóp, rozpoczynającym się od ciebie, wykonuje rzut obronny na Kondycję, otrzymując 8k8 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym. Istota zabita przez ten czar staje się zamarzniętą statuą, dopóki nie odtaje.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 5.</p>"
+                                "value": "<p>Uwalniasz podmuch lodowatego powietrza. Każda istota w Stożku o długości 60 stóp, wychodzącym od ciebie, wykonuje rzut obronny na Kondycję, otrzymując 8k8 obrażeń od Zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym. Istota zabita przez ten czar zamienia się w zamarzniętą statuę, dopóki nie odtaje.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 5.</p>"
                             }
                         },
                         "Fly": {
@@ -1831,7 +1831,7 @@
                         "Thaumaturgy": {
                             "name": "Taumaturgia",
                             "description": {
-                                "value": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>"
+                                "value": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>"
                             }
                         },
                         "Flame Strike": {
@@ -1855,7 +1855,7 @@
                         "Zone of Truth": {
                             "name": "Strefa prawdy",
                             "description": {
-                                "value": "<p>Tworzysz magiczną strefę, która chroni przed oszustwem w Sferze o promieniu 15 stóp, skupionej na punkcie w zasięgu. Do czasu zakończenia czaru istota, która po raz pierwszy w turze wejdzie w obszar działania czaru lub rozpocznie w nim swoją turę, wykonuje rzut obronny na Charyzmę. W przypadku niepowodzenia istota nie może świadomie kłamać, przebywając w promieniu strefy. Wiesz, czy istota zdała, czy nie zdała ten rzut obronny.</p><p>Istota objęta działaniem czaru jest świadoma jego efektu i może unikać odpowiedzi na pytania, na które normalnie odpowiedziałaby kłamstwem. Taka istota może być wymijająca, ale musi mówić prawdę.</p>"
+                                "value": "<p>Tworzysz magiczną strefę chroniącą przed oszustwem w Sferze o promieniu 15 stóp, skupionej na punkcie w zasięgu. Dopóki czar trwa, istota, która po raz pierwszy w ciągu tury znajdzie się w obszarze czaru lub rozpocznie w nim swoją turę, wykonuje rzut obronny na Charyzmę. Przy nieudanym rzucie nie może świadomie kłamać, przebywając w zasięgu strefy. Wiesz, czy dana istota zdała ten rzut, czy nie.</p><p>Istota objęta działaniem czaru jest świadoma jego działania i może unikać odpowiadania na pytania, na które normalnie odpowiedziałaby kłamstwem. Taka istota może być wymijająca, musi jednak mówić prawdę.</p>"
                             }
                         },
                         "Divine Aid": {
@@ -1879,13 +1879,13 @@
                         "Healing Word": {
                             "name": "Kojące słowo",
                             "description": {
-                                "value": "<p>Istota wybrana przez ciebie, którą widzisz w zasięgu, odzyskuje Punkty Wytrzymałości równe 2k4 + twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdą komórkę czaru powyżej 1. kręgu.</p>"
+                                "value": "<p>Wybrana przez ciebie istota, którą widzisz w zasięgu, odzyskuje Punkty wytrzymałości w liczbie równej 2k4 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdy krąg komórki czaru powyżej 1.</p>"
                             }
                         },
                         "Lesser Restoration": {
                             "name": "Mniejsze przywrócenie",
                             "description": {
-                                "value": "<p>Dotykasz istoty i kończysz jeden stan który posiada: &amp;Reference[blinded]{Oślepiony}, &amp;Reference[deafened]{Ogłuchły}, &amp;Reference[paralyzed]{Sparaliżowany} lub &amp;Reference[poisoned]{Zatruty}.</p>"
+                                "value": "<p>Dotykasz istoty i znosisz jeden z jej stanów: &amp;Reference[blinded], &amp;Reference[deafened], &amp;Reference[paralyzed] lub &amp;Reference[poisoned].</p>"
                             }
                         },
                         "Ancient Papyrus Scroll": {
@@ -1945,7 +1945,7 @@
                         "Thaumaturgy": {
                             "name": "Taumaturgia",
                             "description": {
-                                "value": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>"
+                                "value": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>"
                             }
                         },
                         "Animate Dead": {
@@ -2086,13 +2086,13 @@
                         "Mage Hand": {
                             "name": "Magiczna dłoń",
                             "description": {
-                                "value": "<p>Widmowa, unosząca się dłoń pojawia się w wybranym przez ciebie punkcie w zasięgu. Dłoń utrzymuje się przez czas trwania czaru. Znika, jeśli kiedykolwiek znajdzie się dalej niż 30 stóp od ciebie albo jeśli ponownie rzucisz ten czar.</p><p>Gdy rzucasz czar, możesz użyć dłoni, aby manipulować obiektem, otworzyć niezamknięte na klucz drzwi lub pojemnik, schować przedmiot w otwartym pojemniku lub go z niego wyjąć albo wylać zawartość fiolki.</p><p>Akcją magii w swoich późniejszych turach możesz ponownie sterować dłonią w ten sposób. W ramach tej Akcji możesz przemieścić dłoń o maksymalnie 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani przenosić więcej niż 10 funtów.</p>"
+                                "value": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń utrzymuje się przez czas trwania czaru. Znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Rzucając ten czar, możesz użyć dłoni, by manipulować obiektem, otworzyć niezamknięte drzwi lub pojemnik, schować lub wyciągnąć przedmiot z otwartego pojemnika albo wylać zawartość fiolki.</p><p>Akcją magii w kolejnych turach możesz ponownie użyć dłoni w ten sam sposób. W ramach tej akcji możesz przemieścić dłoń o maksymalnie 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (5 kg).</p>"
                             }
                         },
                         "Power Word Stun": {
                             "name": "Słowo mocy Stój",
                             "description": {
-                                "value": "<p>Przytłaczasz umysł jednej istoty, którą widzisz w zasięgu. Jeśli cel ma 150 Punktów Wytrzymałości lub mniej, ma stan Ogłuszenia. W przeciwnym razie jego Szybkość wynosi 0 do początku twojej następnej tury.</p><p>Cel z &amp;Reference[Stunned apply=false] wykonuje rzut obronny na Kondycję [[/save ability=con dc=@attributes.spelldc]] na końcu każdej z jego tur, kończąc stan na sukcesie.</p>"
+                                "value": "<p>Przytłaczasz umysł jednej istoty, którą widzisz w zasięgu. Jeśli cel ma 150 Punktów wytrzymałości lub mniej, otrzymuje stan &amp;Reference[Stunned apply=false]. W przeciwnym razie jego Szybkość wynosi 0 do początku twojej następnej tury.</p><p>Cel z tym stanem wykonuje rzut obronny [[/save ability=con dc=@attributes.spell.dc]] na końcu każdej swojej tury, a udany rzut kończy działanie stanu na nim samym.</p>"
                             }
                         },
                         "Animate Dead": {
@@ -2104,7 +2104,7 @@
                         "Sunburst": {
                             "name": "Słoneczny blask",
                             "description": {
-                                "value": "<p>Olśniewające światło słoneczne błyska w Sferze o promieniu 18m (60 stóp) centrum w punkcie, który wybierzesz w zasięgu. Każda istota w Sferze wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia istota otrzymuje 12k6 obrażeń od światłości i otrzymuje stan &amp;Reference[Blinded apply=false]{Oślepiony} przez 1 minutę. W przypadku sukcesu otrzymuje tylko połowę obrażeń.</p><p>Istota oślepiona przez ten czar wykonuje kolejny rzut obronny na Kondycję na końcu każdej ze swoich tur, kończąc efekt na sobie w przypadku sukcesu.</p><p>Czar ten rozprasza &amp;Reference[Darkness]{Ciemność} w obszarze, który został stworzony przez jakikolwiek czar.</p>"
+                                "value": "<p>Rozbłysk olśniewającego światła słonecznego rozświetla Sferę o promieniu 60 stóp, skupioną na punkcie, który wybierzesz w zasięgu. Każda istota w Sferze wykonuje rzut obronny na Kondycję, w przeciwnym razie otrzymuje 12k6 obrażeń od Światłości i stan &amp;Reference[Blinded apply=false] na 1 minutę. Przy udanym rzucie otrzymuje tylko połowę tych obrażeń.</p><p>Istota Oślepiona przez ten czar wykonuje kolejny [[/save ability=con dc=@attributes.spell.dc format=long]]{rzut obronny na Kondycję} na końcu każdej swojej tury, a udany rzut kończy ten efekt na niej samej.</p><p>Ten czar rozprasza &amp;Reference[Darkness] w swoim obszarze, niezależnie od tego, jaki czar ją stworzył.</p>"
                             }
                         },
                         "Magic Resistance": {
@@ -2173,13 +2173,13 @@
                         "Healing Word": {
                             "name": "Kojące słowo",
                             "description": {
-                                "value": "<p>Istota wybrana przez ciebie, którą widzisz w zasięgu, odzyskuje Punkty Wytrzymałości równe 2k4 + twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdą komórkę czaru powyżej 1. kręgu.</p>"
+                                "value": "<p>Wybrana przez ciebie istota, którą widzisz w zasięgu, odzyskuje Punkty wytrzymałości w liczbie równej 2k4 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdy krąg komórki czaru powyżej 1.</p>"
                             }
                         },
                         "Lesser Restoration": {
                             "name": "Mniejsze przywrócenie",
                             "description": {
-                                "value": "<p>Dotykasz istoty i kończysz jeden stan który posiada: &amp;Reference[blinded]{Oślepiony}, &amp;Reference[deafened]{Ogłuchły}, &amp;Reference[paralyzed]{Sparaliżowany} lub &amp;Reference[poisoned]{Zatruty}.</p>"
+                                "value": "<p>Dotykasz istoty i znosisz jeden z jej stanów: &amp;Reference[blinded], &amp;Reference[deafened], &amp;Reference[paralyzed] lub &amp;Reference[poisoned].</p>"
                             }
                         },
                         "Light": {
@@ -2191,7 +2191,7 @@
                         "Thaumaturgy": {
                             "name": "Taumaturgia",
                             "description": {
-                                "value": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>"
+                                "value": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>"
                             }
                         },
                         "Spirit Guardians": {
@@ -2251,7 +2251,7 @@
                         "Thaumaturgy": {
                             "name": "Taumaturgia",
                             "description": {
-                                "value": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>"
+                                "value": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>"
                             }
                         }
                     },
@@ -2551,7 +2551,7 @@
                         "Mage Hand": {
                             "name": "Magiczna dłoń",
                             "description": {
-                                "value": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń trwa przez czas trwania. Dłoń znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Gdy rzucasz czar, możesz użyć dłoni do manipulowania obiektem, otwarcia niezamkniętych drzwi lub pojemnika, schowania lub wyciągnięcia przedmiotu z otwartego pojemnika albo przelania zawartości fiolki.</p><p>Akcją Magii w twoich kolejnych turach możesz ponownie kontrolować dłoń w ten sposób. W ramach tej akcji możesz przemieścić dłoń do 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (4,5 kg).</p>"
+                                "value": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń utrzymuje się przez czas trwania czaru. Znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Rzucając ten czar, możesz użyć dłoni, by manipulować obiektem, otworzyć niezamknięte drzwi lub pojemnik, schować lub wyciągnąć przedmiot z otwartego pojemnika albo wylać zawartość fiolki.</p><p>Akcją magii w kolejnych turach możesz ponownie użyć dłoni w ten sam sposób. W ramach tej akcji możesz przemieścić dłoń o maksymalnie 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (5 kg).</p>"
                             }
                         },
                         "Minor Illusion": {
@@ -2563,7 +2563,7 @@
                         "Water Breathing": {
                             "name": "Oddychanie pod wodą",
                             "description": {
-                                "value": "<p>Ten czar daje maksymalnie dziesięciu chętnym istotom twojego wyboru w zasięgu zdolność oddychania pod wodą do czasu zakończenia czaru. Dotknięte istoty zachowują również swój normalny sposób oddychania.</p>"
+                                "value": "<p>Ten czar daje maksymalnie dziesięciu wybranym przez ciebie przychylnym istotom w zasięgu zdolność oddychania pod wodą, dopóki czar nie dobiegnie końca. Dotknięte nim istoty zachowują przy tym swój normalny sposób oddychania.</p>"
                             }
                         },
                         "Detect Thoughts": {
@@ -2581,13 +2581,13 @@
                         "Hold Person": {
                             "name": "Unieruchomienie osoby",
                             "description": {
-                                "value": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkowego Humanoida za każdą komórkę czaru powyżej 2. kręgu.</p>"
+                                "value": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[paralyzed apply=false] na czas trwania czaru. Na końcu każdej swojej tury cel powtarza ten rzut obronny, a udany rzut kończy działanie czaru na nim samym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jednego dodatkowego Humanoida za każdy krąg komórki czaru powyżej 2.</p>"
                             }
                         },
                         "Lightning Bolt": {
                             "name": "Piorun",
                             "description": {
-                                "value": "<p>Uderzenie pioruna tworzące Prostą o długości 100 stóp i szerokości 5 stóp wystrzeliwuje od ciebie w wybranym przez ciebie kierunku. Każda istota w Prostej wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>"
+                                "value": "<p>Uderzenie pioruna tworzące Prostą o długości 100 stóp i szerokości 5 stóp wystrzeliwuje od ciebie w wybranym przez ciebie kierunku. Każda istota w Prostej wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od Elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>"
                             }
                         }
                     },
@@ -3323,7 +3323,7 @@
                         "Hold Person": {
                             "name": "Unieruchomienie osoby",
                             "description": {
-                                "value": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkowego Humanoida za każdą komórkę czaru powyżej 2. kręgu.</p>"
+                                "value": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[paralyzed apply=false] na czas trwania czaru. Na końcu każdej swojej tury cel powtarza ten rzut obronny, a udany rzut kończy działanie czaru na nim samym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jednego dodatkowego Humanoida za każdy krąg komórki czaru powyżej 2.</p>"
                             }
                         },
                         "Dispel Magic": {
@@ -3389,7 +3389,7 @@
                         "Thaumaturgy": {
                             "name": "Taumaturgia",
                             "description": {
-                                "value": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>"
+                                "value": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>"
                             }
                         }
                     },
@@ -3774,7 +3774,7 @@
                         "Locate Animals or Plants": {
                             "name": "Odnalezienie zwierząt lub roślin",
                             "description": {
-                                "value": "<p>Opisz lub nazwij określony rodzaj Bestii, istoty Roślinnej lub niemagicznej rośliny. Dowiadujesz się o kierunku i odległości do najbliższej istoty lub rośliny tego rodzaju w promieniu 5 mil (8km), jeśli takie są obecne.</p>"
+                                "value": "<p>Opisz lub nazwij konkretny gatunek Bestii, Rośliny albo niemagicznej rośliny. Poznajesz kierunek i odległość do najbliższego przedstawiciela tego gatunku w promieniu 5 mil, o ile w ogóle jakiś tam jest.</p>"
                             }
                         },
                         "Magic Circle": {
@@ -3786,7 +3786,7 @@
                         "Protection from Poison": {
                             "name": "Ochrona przed trucizną",
                             "description": {
-                                "value": "<p>Dotykasz istoty i usuwasz z niej stan &amp;Reference[Poisoned]{Zatruty}. Przez cały czas działania czaru cel ma Premię do rzutów obronnych, aby uniknąć lub zakończyć stan Zatruty, oraz zyskuje Odporność na obrażenia od trucizn.</p>"
+                                "value": "<p>Dotykasz istoty i znosisz na niej stan &amp;Reference[poisoned]. Dopóki czar trwa, cel ma Ułatwienie w rzutach obronnych mających na celu uniknięcie lub zakończenie stanu Zatruty, a także ma Odporność na obrażenia od Trucizny.</p>"
                             }
                         },
                         "Component Pouch": {
@@ -3804,7 +3804,7 @@
                         "Healing Word": {
                             "name": "Kojące słowo",
                             "description": {
-                                "value": "<p>Istota wybrana przez ciebie, którą widzisz w zasięgu, odzyskuje Punkty Wytrzymałości równe 2k4 + twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdą komórkę czaru powyżej 1. kręgu.</p>"
+                                "value": "<p>Wybrana przez ciebie istota, którą widzisz w zasięgu, odzyskuje Punkty wytrzymałości w liczbie równej 2k4 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdy krąg komórki czaru powyżej 1.</p>"
                             }
                         }
                     },
@@ -4767,13 +4767,13 @@
                         "Healing Word": {
                             "name": "Kojące słowo",
                             "description": {
-                                "value": "<p>Istota wybrana przez ciebie, którą widzisz w zasięgu, odzyskuje Punkty Wytrzymałości równe 2k4 + twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdą komórkę czaru powyżej 1. kręgu.</p>"
+                                "value": "<p>Wybrana przez ciebie istota, którą widzisz w zasięgu, odzyskuje Punkty wytrzymałości w liczbie równej 2k4 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdy krąg komórki czaru powyżej 1.</p>"
                             }
                         },
                         "Lesser Restoration": {
                             "name": "Mniejsze przywrócenie",
                             "description": {
-                                "value": "<p>Dotykasz istoty i kończysz jeden stan który posiada: &amp;Reference[blinded]{Oślepiony}, &amp;Reference[deafened]{Ogłuchły}, &amp;Reference[paralyzed]{Sparaliżowany} lub &amp;Reference[poisoned]{Zatruty}.</p>"
+                                "value": "<p>Dotykasz istoty i znosisz jeden z jej stanów: &amp;Reference[blinded], &amp;Reference[deafened], &amp;Reference[paralyzed] lub &amp;Reference[poisoned].</p>"
                             }
                         },
                         "Light": {
@@ -4785,7 +4785,7 @@
                         "Thaumaturgy": {
                             "name": "Taumaturgia",
                             "description": {
-                                "value": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>"
+                                "value": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>"
                             }
                         },
                         "Spirit Guardians": {
@@ -4899,7 +4899,7 @@
                         "Mage Hand": {
                             "name": "Magiczna dłoń",
                             "description": {
-                                "value": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń trwa przez czas trwania. Dłoń znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Gdy rzucasz czar, możesz użyć dłoni do manipulowania obiektem, otwarcia niezamkniętych drzwi lub pojemnika, schowania lub wyciągnięcia przedmiotu z otwartego pojemnika albo przelania zawartości fiolki.</p><p>Akcją Magii w twoich kolejnych turach możesz ponownie kontrolować dłoń w ten sposób. W ramach tej akcji możesz przemieścić dłoń do 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (4,5 kg).</p>"
+                                "value": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń utrzymuje się przez czas trwania czaru. Znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Rzucając ten czar, możesz użyć dłoni, by manipulować obiektem, otworzyć niezamknięte drzwi lub pojemnik, schować lub wyciągnąć przedmiot z otwartego pojemnika albo wylać zawartość fiolki.</p><p>Akcją magii w kolejnych turach możesz ponownie użyć dłoni w ten sam sposób. W ramach tej akcji możesz przemieścić dłoń o maksymalnie 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (5 kg).</p>"
                             }
                         },
                         "Minor Illusion": {
@@ -4917,7 +4917,7 @@
                         "Invisibility": {
                             "name": "Niewidzialność",
                             "description": {
-                                "value": "<p>Istota, którą dotykasz, otrzymuje stan &amp;Reference[invisible apply=false]{Niewidzialny} do końca czaru. Czar kończy się wcześniej natychmiast po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>"
+                                "value": "<p>Istota, której dotkniesz, otrzymuje stan &amp;Reference[invisible apply=false], dopóki czar nie dobiegnie końca. Czar kończy się przedwcześnie zaraz po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>"
                             }
                         },
                         "Major Image": {
@@ -4929,7 +4929,7 @@
                         "Plane Shift": {
                             "name": "Sferalny przeskok",
                             "description": {
-                                "value": "<p>Ty oraz do ośmiu przychylnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>"
+                                "value": "<p>Ty oraz do ośmiu przychylnych istot, które złączą ręce w kręgu, zostajecie przeniesieni na inną sferę istnienia. Możesz określić miejsce docelowe w ogólnych słowach, takich jak Miasto Mosiądzu na Sferze żywiołu ognia lub pałac Dispatera na drugim poziomie Dziewięciu piekieł, a wtedy pojawiacie się w tym miejscu lub w jego pobliżu, zgodnie z decyzją MP.</p><p>Alternatywnie, jeśli znasz sekwencję sygili kręgu teleportacyjnego na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie przeniesione przez ciebie istoty, pojawiają się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>"
                             }
                         }
                     },
@@ -5016,13 +5016,13 @@
                         "Mage Hand": {
                             "name": "Magiczna dłoń",
                             "description": {
-                                "value": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń trwa przez czas trwania. Dłoń znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Gdy rzucasz czar, możesz użyć dłoni do manipulowania obiektem, otwarcia niezamkniętych drzwi lub pojemnika, schowania lub wyciągnięcia przedmiotu z otwartego pojemnika albo przelania zawartości fiolki.</p><p>Akcją Magii w twoich kolejnych turach możesz ponownie kontrolować dłoń w ten sposób. W ramach tej akcji możesz przemieścić dłoń do 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (4,5 kg).</p>"
+                                "value": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń utrzymuje się przez czas trwania czaru. Znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Rzucając ten czar, możesz użyć dłoni, by manipulować obiektem, otworzyć niezamknięte drzwi lub pojemnik, schować lub wyciągnąć przedmiot z otwartego pojemnika albo wylać zawartość fiolki.</p><p>Akcją magii w kolejnych turach możesz ponownie użyć dłoni w ten sam sposób. W ramach tej akcji możesz przemieścić dłoń o maksymalnie 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (5 kg).</p>"
                             }
                         },
                         "Prestidigitation": {
                             "name": "Kuglarstwo",
                             "description": {
-                                "value": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć aktywne maksymalnie trzy jego nienatychmiastowe efekty jednocześnie.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt sensoryczny, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 27 litrów.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak do 27 litrów nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że kolor, mały znak lub symbol pojawia się na obiekcie albo powierzchni na 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w dłoni. Trwa on do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>"
+                                "value": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy jego nienatychmiastowe efekty.</p><p><strong>Efekt zmysłowy.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt zmysłowy, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa z ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 1 stopę sześcienną.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak maksymalnie 1 stopie sześciennej nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że na obiekcie albo powierzchni pojawia się kolor, mały znak lub symbol, utrzymujący się przez 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w twojej dłoni. Utrzymuje się do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>"
                             }
                         },
                         "Contact Other Plane": {
@@ -6060,13 +6060,13 @@
                         "Scorching Ray": {
                             "name": "Wypalający promień",
                             "description": {
-                                "value": "<p>Rzucasz trzy ogniste promienie. Możesz skierować je na jeden cel w zasięgu lub na kilka. Wykonaj dystansowy test ataku zaklęciem dla każdego promienia. W przypadku trafienia cel otrzymuje 2k6 obrażeń od ognia.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Tworzysz jeden dodatkowy promień za każdą komórkę czaru powyżej 2. kręgu.</p><p>[[@item.level + 1]]{Łączna Liczba Promieni}</p>"
+                                "value": "<p>Rzucasz trzy ogniste promienie. Możesz skierować je na jeden cel w zasięgu lub na kilka. Wykonaj dystansowy atak czarem dla każdego promienia. Przy trafieniu cel otrzymuje 2k6 obrażeń od Ognia.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Tworzysz jeden dodatkowy promień za każdy krąg komórki czaru powyżej 2.</p><p>[[@item.level + 1]]{Łączna liczba promieni}</p>"
                             }
                         },
                         "Thaumaturgy": {
                             "name": "Taumaturgia",
                             "description": {
-                                "value": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>"
+                                "value": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>"
                             }
                         },
                         "Fireball": {
@@ -6252,7 +6252,7 @@
                         "Plane Shift": {
                             "name": "Sferalny przeskok",
                             "description": {
-                                "value": "<p>Ty oraz do ośmiu przychylnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>"
+                                "value": "<p>Ty oraz do ośmiu przychylnych istot, które złączą ręce w kręgu, zostajecie przeniesieni na inną sferę istnienia. Możesz określić miejsce docelowe w ogólnych słowach, takich jak Miasto Mosiądzu na Sferze żywiołu ognia lub pałac Dispatera na drugim poziomie Dziewięciu piekieł, a wtedy pojawiacie się w tym miejscu lub w jego pobliżu, zgodnie z decyzją MP.</p><p>Alternatywnie, jeśli znasz sekwencję sygili kręgu teleportacyjnego na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie przeniesione przez ciebie istoty, pojawiają się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>"
                             }
                         },
                         "Modify Memory": {
