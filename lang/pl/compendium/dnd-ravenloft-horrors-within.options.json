@@ -2,12 +2,12 @@
     "label": "Opcje",
     "folders": {
         "Backgrounds": "Pochodzenia",
-        "Channeled Spirits": "Channeled Spirits",
+        "Channeled Spirits": "Wywołane duchy",
         "College of Spirits": "Kolegium Dusz",
         "Dark Gift": "Mroczny dar",
         "Feats": "Atuty",
         "Grave Domain": "Domena grobu",
-        "Hollow Warden": "Strażnik Pustki",
+        "Hollow Warden": "Pusty strażnik",
         "Origin": "Początek",
         "Phantom": "Fantom",
         "Reanimator": "Reanimator",
@@ -26,12 +26,12 @@
             }
         },
         "Ancient Armor": {
-            "name": "Ancient Armor"
+            "name": "Starożytna zbroja"
         },
         "Ancient Might": {
-            "name": "Ancient Might",
+            "name": "Starożytna potęga",
             "description": {
-                "value": "<p>You become wholly suffused with the wild’s ancient and terrible power, granting you the following benefits.</p><p><span class=\"inline-entry\"><strong>Ominous Strikes.</strong></span> When you hit a creature that has the &amp;Reference[Frightened apply=false] condition with an attack roll, that attack deals extra damage equal to your Wisdom modifier.</p><p><span class=\"inline-entry\"><strong>Persistent Wrath.</strong></span> If you’re reduced to 0 Hit Points but not killed outright while transformed using @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwHWWrathofth3C]{Wrath of the Wild,} you can surge with wild power. Your Hit Points instead change to a number equal to twice your Ranger level. Once you use this feature, you can’t do so again until you finish a Long Rest. You can also expend a level 4+ spell slot (no action required) to restore your use of this feature.</p><p><span class=\"inline-entry\"><strong>Timeless.</strong></span> You have Immunity to the &amp;Reference[Exhaustion apply=false] condition.</p><section id=\"secret-Bm2dNq2IvXUldXDR\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Ominous Strikes</strong> active effect should be toggled as needed depending on the attack target.</p></section>"
+                "value": "<p>Zostajesz całkowicie przesiąknięty pradawną i straszliwą mocą dziczy, zyskując dzięki temu następujące korzyści.</p><p><span class=\"inline-entry\"><strong>Złowieszcze uderzenia.</strong></span> Gdy trafisz Atakiem istotę mającą stan &amp;Reference[Frightened apply=false], zadajesz jej dodatkowe obrażenia równe twojemu modyfikatorowi Mądrości.</p><p><span class=\"inline-entry\"><strong>Nieustanny gniew.</strong></span> Jeśli podczas przemiany wywołanej @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwHWWrathofth3C]{Gniewem dziczy} twoje Punkty wytrzymałości spadłyby do 0, ale nie giniesz od razu, zamiast tego spływa na ciebie fala dzikiej mocy, a twoje Punkty wytrzymałości zmieniają się na wartość równą podwojonemu poziomowi Łowcy. Gdy użyjesz tej zdolności, nie możesz zrobić tego ponownie, dopóki nie ukończysz Długiego odpoczynku. Możesz też zużyć komórkę czaru 4. kręgu lub wyższego (nie wymaga akcji), aby odzyskać możliwość jej użycia.</p><p><span class=\"inline-entry\"><strong>Ponadczasowość.</strong></span> Masz niepodatność na stan &amp;Reference[Exhaustion apply=false].</p><section id=\"secret-Bm2dNq2IvXUldXDR\" class=\"secret\"><p><strong>Notatka foundry</strong></p><p>Aktywny efekt zdolności <strong>Złowieszcze uderzenia</strong> należy przełączać zależnie od celu ataku.</p></section>"
             }
         },
         "Arcane Conduit": {
@@ -41,14 +41,14 @@
             }
         },
         "Arsonist Spirit": {
-            "name": "Arsonist Spirit",
+            "name": "Duchowy podpalacz",
             "description": {
-                "value": "The target makes a Dexterity saving throw, taking Fire damage equal to four rolls of your Bardic Inspiration die on a failed save or half as much damage on a successful one."
+                "value": "Cel wykonuje rzut obronny na Zręczność, otrzymując obrażenia od Ognia równe czterem rzutom Kością bardowskiej inspiracji w razie nieudanego rzutu, lub połowę tych obrażeń w razie udanego."
             }
         },
         "Attack and Save Disadvantage": {
-            "name": "Attack and Save Disadvantage",
-            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwHowlA3f2I58L3 inline]</p><p><em>Disadvantage on attack rolls is not automated.</em></p>"
+            "name": "Utrudnienie ataków i rzutów obronnych",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwHowlA3f2I58L3 inline]</p><p><em>Utrudnienie w Testach ataku nie jest zautomatyzowane.</em></p>"
         },
         "Avenger Spirit": {
             "name": "Duchowy mściciel",
@@ -61,9 +61,9 @@
             }
         },
         "Beloved Spirit": {
-            "name": "Beloved Spirit",
+            "name": "Duchowy umiłowany",
             "description": {
-                "value": "<p>The target [[/heal]]{regains Hit Points} equal to a roll of your Bardic Inspiration die plus your Charisma modifier.</p>"
+                "value": "<p>Cel [[/heal]]{odzyskuje Punkty wytrzymałości} w liczbie równej wynikowi rzutu kością bardowskiej inspiracji powiększonemu o twój modyfikator Charyzmy.</p>"
             }
         },
         "Bloated": {
@@ -76,15 +76,15 @@
             "name": "Bloated Size and Burst"
         },
         "Brute Spirit": {
-            "name": "Brute Spirit",
+            "name": "Duchowy brutal",
             "description": {
-                "value": "<p>Each creature of your choice in a 30-foot Emanation originating from the target makes a [[/save]]{Strength saving throw.} On a failed save, a creature takes [[/damage]]{Thunder damage} equal to three rolls of your Bardic Inspiration die and has the &amp;Reference[Prone] condition. On a successful save, a creature takes half as much damage only.</p>"
+                "value": "<p>Każda wybrana przez ciebie istota w Emanacji o promieniu 30 stóp wokół celu wykonuje [[/save]]{rzut obronny na Siłę}. W razie nieudanego rzutu istota otrzymuje [[/damage]]{obrażenia od Dźwięku} równe trzem rzutom Kością bardowskiej inspiracji oraz ma stan &amp;Reference[Prone]. W razie udanego rzutu istota otrzymuje jedynie połowę tych obrażeń.</p>"
             }
         },
         "Channeler": {
-            "name": "Channeler",
+            "name": "Guślarz",
             "description": {
-                "value": "<p>You learn how to contact spirits beyond the grave, letting their power and knowledge flow through you. You gain the following benefits.</p><p><span class=\"inline-entry\"><strong>Guiding Whispers.</strong></span> You know the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGuidance00]{Guidance}</em> cantrip. It has a range of 60 feet when you cast it.</p><p><span class=\"inline-entry\"><strong>Spiritual Focus.</strong></span> You employ tools that aid you in channeling spirits. You gain a Gaming Set (@UUID[Compendium.dnd-players-handbook.equipment.Item.phbgstPlayingcar]{playing cards}). You have proficiency with this Gaming Set, and you can use it or one of the following items as a Spellcasting Focus for your Bard spells: Arcane Focus (@UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcCrystal000]{crystal} or @UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcOrb0000000]{orb}), @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCandle00000]{Candle}, or @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInkPen00000]{Ink Pen}.</p>"
+                "value": "<p>Uczysz się jak nawiązać kontakt z duchami zza grobu, pozwalając, aby ich moc i wiedza przepływały przez ciebie. Otrzymujesz następujące korzyści.</p><p><span class=\"inline-entry\"><strong>Wiodące podszepty.</strong></span> Znasz sztuczkę <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGuidance00]</em>. Gdy ją rzucasz, jej zasięg wynosi 60 stóp.</p><p><span class=\"inline-entry\"><strong>Duchowy fokus.</strong></span> Posługujesz się narzędziami, które pomagają ci w przewodzeniu duchom. Otrzymujesz Zestaw do gry (@UUID[Compendium.dnd-players-handbook.equipment.Item.phbgstPlayingcar]). Zyskujesz w nim biegłość i możesz używać go – lub jednego z poniższych przedmiotów – jako Magicznego fokusu dla swoich czarów barda: Fokus magii wtajemniczeń (@UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcCrystal000] lub @UUID[Compendium.dnd-players-handbook.equipment.Item.phbafcOrb0000000]), @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCandle00000] lub @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagInkPen00000].</p>"
             }
         },
         "Charmed": {
@@ -92,9 +92,9 @@
             "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSTricksterO6 inline]</p>"
         },
         "Circle of Mortality": {
-            "name": "Circle of Mortality",
+            "name": "Krąg śmiertelności",
             "description": {
-                "value": "<p>You can manipulate the balance between life and death, granting you the following benefits.</p><p><strong>Pull of Death.</strong> Once per turn, when you deal damage to a creature that’s missing any Hit Points by casting a spell or by hitting with an attack roll, that creature takes an extra [[/damage]]{1d4 Necrotic} damage. This extra damage increases to 1d6 when you reach Cleric level 11.</p><p><strong>Return to Life.</strong> You can cast <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSparetheDy]{Spare the Dying}</em> as a Bonus Action.</p><p>Additionally, when you would normally roll one or more dice to restore Hit Points to a creature at 0 Hit Points with a spell or Channel Divinity, don’t roll those dice for the healing; instead, use the highest number possible for each die. For example, instead of restoring 2d4 Hit Points to a creature at 0 Hit Points with a spell, you restore 8.</p>"
+                "value": "<p>Potrafisz manipulować równowagą między życiem a śmiercią, zyskując dzięki temu następujące korzyści.</p><p><strong>Zew śmierci.</strong> Raz na turę, gdy zadasz obrażenia istocie, której brakuje choć jednego Punktu wytrzymałości, rzucając czar lub trafiając Testem ataku, istota ta otrzymuje dodatkowe [[/damage]]{1k4 obrażeń Nekrotycznych}. Te dodatkowe obrażenia wzrastają do 1k6, gdy osiągniesz poziom Kleryka 11.</p><p><strong>Powrót do życia.</strong> Możesz rzucić <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSparetheDy]</em> Akcją Dodatkową.</p><p>Dodatkowo, gdy miałbyś normalnie rzucić jedną lub więcej kośćmi, aby przywrócić Punkty wytrzymałości istocie znajdującej się na 0 Punktów wytrzymałości za pomocą czaru lub Aktu wiary, nie rzucasz tymi kośćmi do leczenia — zamiast tego przyjmujesz dla każdej kości najwyższą możliwą wartość. Na przykład zamiast przywrócić 2k4 Punktów wytrzymałości istocie na 0 Punktów wytrzymałości za pomocą czaru, przywracasz 8.</p>"
             }
         },
         "College of Spirits": {
@@ -104,18 +104,18 @@
             }
         },
         "Coward Spirit": {
-            "name": "Coward Spirit",
+            "name": "Duchowy tchórz",
             "description": {
-                "value": "<p>The target and each creature of your choice in a 30-foot Emanation originating from the target must succeed on a [[/save]]{Wisdom saving throw} or have the &amp;Reference[Frightened apply=false] condition until the start of your next turn. While a creature is Frightened, its Speed is halved (round down), and it can take either an action or a Bonus Action, not both.</p>"
+                "value": "<p>Cel oraz każda wybrana przez ciebie istota w Emanacji o promieniu 30 stóp, której źródłem jest cel, musi wykonać [[/save]]{rzut obronny na Mądrość}, w przeciwnym wypadku ma stan &amp;Reference[Frightened apply=false] do początku twojej następnej tury. Dopóki istota jest Przerażona, jej Szybkość jest zmniejszona o połowę (zaokrąglając w dół), i może wykonać albo akcję, albo Akcję dodatkową, ale nie obie.</p>"
             }
         },
         "Cursed (Path to the Grave)": {
-            "name": "Cursed (Path to the Grave)",
-            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSPathtotheCb inline]</p><p><em>Disadvantage on attack rolls is not automated.</em></p>"
+            "name": "Przeklęty (Ścieżka do grobu)",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSPathtotheCb inline]</p><p><em>Utrudnienie w Testach ataku nie jest zautomatyzowane.</em></p>"
         },
         "D20 Test Advantage": {
-            "name": "D20 Test Advantage",
-            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSFortuneTeZz inline]</p><p><em>Advantage on attack rolls is not automated.</em></p>"
+            "name": "Ułatwienie testu K20",
+            "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSFortuneTeZz inline]</p><p><em>Ułatwienie w Testach ataku nie jest zautomatyzowane.</em></p>"
         },
         "Death Burst Improvement": {
             "name": "Death Burst Improvement",
@@ -134,9 +134,9 @@
             }
         },
         "Divine Reaper": {
-            "name": "Divine Reaper",
+            "name": "Boski żniwiarz",
             "description": {
-                "value": "<p>Your deep connection to this domain renders you a hallowed harbinger of death, granting you the following benefits.</p><p><span class=\"inline-entry\"><strong>Enhanced Necromancy.</strong></span> When you cast a spell of level 5 or lower from the Necromancy school that targets one creature, or when you cast a spell from the @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSGraveDomaZF]{Grave Domain Spells} table, you can expend a use of Channel Divinity to target a second creature within the spell’s range. If the spell requires costly or consumed Material components, you must provide Material components for each target.</p><p><span class=\"inline-entry\"><strong>Keeper of Souls.</strong></span> When an enemy dies within 60 feet of you, you or one creature you can see within 60 feet of yourself [[/heal]]{regains Hit Points} equal to twice your Cleric level. You can’t use this feature if you have the Incapacitated condition. Once you use this feature, you can’t use it again until you finish a Short or Long Rest, unless you expend a level 6+ spell slot (no action required) to restore your use of it.</p>"
+                "value": "<p>Twoja głęboka więź z tą domeną czyni cię uświęconym zwiastunem śmierci, dzięki czemu zyskujesz następujące korzyści.</p><p><span class=\"inline-entry\"><strong>Wzmocniona nekromancja.</strong></span> Gdy rzucisz czar 5. kręgu lub niższego ze szkoły Nekromancji, którego celem jest jedna istota, lub gdy rzucisz czar z tabeli @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSGraveDomaZF]{Czary Domeny grobu}, możesz wykorzystać jedno użycie Aktu wiary, aby objąć nim drugi cel w zasięgu tego czaru. Jeśli czar wymaga kosztownych lub zużywanych komponentów materialnych, musisz zapewnić komponenty materialne dla każdego celu.</p><p><span class=\"inline-entry\"><strong>Strażnik dusz.</strong></span> Gdy wróg zginie w promieniu 60 stóp od ciebie, ty lub inna istota, którą widzisz, w promieniu 60 stóp od siebie [[/heal]]{odzyskuje Punkty wytrzymałości} równe dwukrotności twojego poziomu Kleryka. Nie możesz skorzystać z tej zdolności, jeśli masz stan Obezwładniony. Gdy użyjesz tej zdolności, nie możesz zrobić tego ponownie, dopóki nie ukończysz Krótkiego lub Długiego odpoczynku, chyba że zużyjesz komórkę czaru 6. kręgu lub wyższego (nie wymaga akcji), aby odzyskać możliwość jej użycia.</p>"
             }
         },
         "Echoing Soul": {
@@ -152,9 +152,9 @@
             }
         },
         "Empowered Channeling": {
-            "name": "Empowered Channeling",
+            "name": "Wzmocnione gusła",
             "description": {
-                "value": "<p>Your ability to channel spirits improves. You gain the following benefits.</p><p><span class=\"inline-entry\"><strong>Power from Beyond.</strong></span> Once per turn, when you cast a Bard spell with a spell slot that deals damage or restores Hit Points, roll 1d6. You gain a bonus equal to the number rolled to one of the spell’s damage rolls or to the total Hit Points the spell restores.</p><p><span class=\"inline-entry\"><strong>Spiritual Manifestation.</strong></span> You always have the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritGuar]{Spirit Guardians}</em> spell prepared. You can cast the spell once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest.</p><p>Whenever you cast the spell, you can modify it so the spirits also guard against worldly threats. When you cast the spell in this way, you and allies within the spell’s Emanation have Half Cover. Once you modify the spell in this way, you can’t do so again until you finish a Short or Long Rest.</p>"
+                "value": "<p>Pogłębia się Twoja więź z duchami. Zyskujesz następujące korzyści.</p><p><span class=\"inline-entry\"><strong>Moc z Zaświatów.</strong></span> Raz na turę, gdy rzucisz czar Barda przy użyciu komórki czaru, który zadaje obrażenia lub przywraca Punkty wytrzymałości, rzuć 1k6. Zyskujesz premię równą wynikowi rzutu do jednego z rzutów obrażeń tego czaru lub do całkowitej liczby Punktów wytrzymałości przywracanych przez ten czar.</p><p><span class=\"inline-entry\"><strong>Duchowe objawienie.</strong></span> Zawsze masz przygotowany czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpiritGuar]</em>. Możesz raz rzucić ten czar bez użycia komórki czaru, a zdolność tę odzyskujesz po zakończeniu Długiego odpoczynku.</p><p>Ilekroć rzucasz ten czar, możesz go zmodyfikować tak, aby duchy chroniły również przed przyziemnymi zagrożeniami. Gdy rzucisz czar w ten sposób, ty i sojusznicy znajdujący się w Emanacji tego czaru macie Połowiczną osłonę. Możesz skorzystać z tej modyfikacji tylko raz, dopóki nie zakończysz Krótkiego lub Długiego odpoczynku.</p>"
             }
         },
         "Escaped Death": {
@@ -205,9 +205,9 @@
             "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwUPFormofDreOJ inline]</p><hr /><p><span class=\"inline-entry\"><strong>Necrotic Resilience.</strong></span> While using your Form of Dread, you have Immunity to Necrotic damage.</p><hr /><p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwUPSuperiorDCk inline]</p>"
         },
         "Fortune Teller Spirit": {
-            "name": "Fortune Teller Spirit",
+            "name": "Duchowy wróżbita",
             "description": {
-                "value": "The target has Advantage on D20 Tests until the start of your next turn."
+                "value": "Cel ma Ułatwienie w Testach k20 do początku twojej następnej tury."
             }
         },
         "Frightened": {
@@ -243,13 +243,13 @@
         "Grave Domain": {
             "name": "Domena grobu",
             "description": {
-                "value": "<p><em>Ucieleśniaj boskie siły śmierci</em></p><p>Domena Grobu zajmuje się granicą między życiem a śmiercią. Dla tych, którzy czerpią z mocy tej domeny, śmierć jest naturalną i nieuchronną częścią wieloświata. Tacy klerycy starają się niszczyć nieumarłych i przeprowadzać duchy.</p><p>Magia tej domeny pozwala również tym klerykom na pewien czas powstrzymać śmierć. Jest to jednak jedynie opóźnienie śmierci, a nie jej zaprzeczenie, bowiem grób zawsze upomni się o swoje.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.GraveDomainCleri]</em></p>"
+                "value": "<p><em>Ucieleśniaj boskie siły śmierci</em></p><p>Domena Grobu zajmuje się granicą między życiem a śmiercią. Dla tych, którzy czerpią z mocy tej domeny, śmierć jest naturalną i nieuchronną częścią wieloświata. Tacy klerycy starają się niszczyć nieumarłych i prowadzić duchy zmarłych na spoczynek.</p><p>Magia tej domeny pozwala też tym klerykom przez pewien czas powstrzymywać śmierć. Jest to jednak jedynie opóźnienie śmierci, a nie jej zaprzeczenie, bowiem grób zawsze upomni się o swoje.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.GraveDomainCleri]</em></p>"
             }
         },
         "Grave Domain Spells": {
-            "name": "Grave Domain Spells",
+            "name": "Czary Domeny grobu",
             "description": {
-                "value": "<p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Grave Domain Spells table, you thereafter always have the listed spells prepared.</p><table><caption><p>Grave Domain Spells</p></caption><thead><tr><th scope=\"col\"><p>Cleric Level</p></th><th scope=\"col\"><p>Spells</p></th></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectEvil]{Detect Evil and Good}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFalseLife0]{False Life}</em>,<br class=\"TODO\" /><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGentleRepo]{Gentle Repose}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofEnfee]{Ray of Enfeeblement}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSparetheDy]{Spare the Dying}</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRevivify00]{Revivify}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplVampiricTo]{Vampiric Touch}</em></p></td></tr><tr><td><p>7</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBlight0000]{Blight}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDeathWard0]{Death Ward}</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelEvil]{Dispel Evil and Good}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRaiseDead0]{Raise Dead}</em></p></td></tr></tbody></table>"
+                "value": "<p>Twoja więź z tą boską domeną sprawia, że zawsze masz przygotowane pewne czary. Gdy osiągniesz poziom Kleryka wskazany w tabeli Czary Domeny grobu, od tego momentu zawsze masz przygotowane wymienione tam czary.</p><table><caption><p>Czary Domeny grobu</p></caption><thead><tr><th scope=\"col\"><p>Poziom Kleryka</p></th><th scope=\"col\"><p>Czary</p></th></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectEvil]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFalseLife0]</em>,<br class=\"TODO\" /><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGentleRepo]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofEnfee]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSparetheDy]</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRevivify00]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplVampiricTo]</em></p></td></tr><tr><td><p>7</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBlight0000]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDeathWard0]</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelEvil]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRaiseDead0]</em></p></td></tr></tbody></table>"
             }
         },
         "Grave Touched": {
@@ -275,15 +275,15 @@
             }
         },
         "Hollow Warden": {
-            "name": "Strażnik Pustki",
+            "name": "Pusty strażnik",
             "description": {
-                "value": "<p class=\"meta\"><em>Czerp z potęgi pradawnych, dzikich koszmarów</em></p><p>Legendy głoszą, że najstarsze i najbardziej krwiożercze koszmary kryją się głęboko w starych zakątkach ziemi. Strażnicy Pustki czczą takie istoty i czerpią z nich moc, przeistaczając się w bezlitosnych i potwornych strażników, którzy przemierzają poszarpane wybrzeża, strome turnie górskie oraz inne mroczne i dzikie miejsca.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.HollowWardenRang]</em></p>"
+                "value": "<p class=\"meta\"><em>Czerp z potęgi pradawnych, dzikich koszmarów</em></p><p>Legendy głoszą, że najstarsze i najbardziej krwiożercze koszmary kryją się głęboko w starych zakątkach ziemi. Puści strażnicy czczą takie istoty i czerpią z nich moc, przeistaczając się w bezlitosnych i potwornych strażników, którzy przemierzają poszarpane wybrzeża, strome turnie górskie oraz inne mroczne i dzikie miejsca.</p><p class=\"hide-in-embed\"><em>@UUID[Compendium.dnd-ravenloft-horrors-within.book.JournalEntry.rhwSubclasses000.JournalEntryPage.HollowWardenRang]</em></p>"
             }
         },
         "Hollow Warden Spells": {
-            "name": "Hollow Warden Spells",
+            "name": "Czary Pustego strażnika",
             "description": {
-                "value": "<p>When you reach a Ranger level specified in the Hollow Warden Spells table, you thereafter always have the listed spell prepared.</p><table><caption><p>Hollow Warden Spells</p></caption><thead><tr><th scope=\"col\"><p>Ranger Level</p></th><th scope=\"col\"><p>Spell</p></th></tr></thead><tbody><tr><td><p>3</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWrathfulSm]{Wrathful Smite}</p></td></tr><tr><td><p>5</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAlterSelf0]{Alter Self}</p></td></tr><tr><td><p>9</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPhantomSte]{Phantom Steed}</p></td></tr><tr><td><p>13</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDominateBe]{Dominate Beast}</p></td></tr><tr><td><p>17</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSteelWindS]{Steel Wind Strike}</p></td></tr></tbody></table>"
+                "value": "<p>Gdy osiągniesz poziom Łowcy podany w tabeli Czary Pustego strażnika, od tej pory zawsze masz przygotowany wskazany czar.</p><table><caption><p>Czary Pustego strażnika</p></caption><thead><tr><th scope=\"col\"><p>Poziom Łowcy</p></th><th scope=\"col\"><p>Czar</p></th></tr></thead><tbody><tr><td><p>3</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWrathfulSm]</p></td></tr><tr><td><p>5</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAlterSelf0]</p></td></tr><tr><td><p>9</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPhantomSte]</p></td></tr><tr><td><p>13</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDominateBe]</p></td></tr><tr><td><p>17</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSteelWindS]</p></td></tr></tbody></table>"
             }
         },
         "Howl": {
@@ -293,9 +293,9 @@
             }
         },
         "Hungering Might": {
-            "name": "Hungering Might",
+            "name": "Wygłodniała potęga",
             "description": {
-                "value": "<p>You gain a bonus to Constitution saving throws equal to your Wisdom modifier (minimum of +1).</p><p>In addition, once per turn when you hit a creature with an attack roll while you are transformed using Wrath of the Wild, you regain a number of Hit Points equal to [[/heal 1d10+@abilities.wis.mod]]{1d10 plus your Wisdom modifier,} provided you are Bloodied when you hit.</p><section class=\"secret\" id=\"secret-hDX4eM19PNuyru5y\"><p><strong>Foundry Note</strong></p><p>The once per turn healing activity is found on @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwHWWrathofth3C]{Wrath of the Wild} as a level-gated activity, <strong>Hungering Might</strong>.</p></section>"
+                "value": "<p>Zyskujesz premię do rzutów obronnych na Kondycję równą twojemu modyfikatorowi Mądrości (minimum +1).</p><p>Dodatkowo, jeśli podczas przemiany wywołanej Gniewem dziczy trafisz istotę Testem ataku, będąc przy tym Zakrwawiony, raz na turę odzyskujesz liczbę Punktów wytrzymałości równą [[/heal 1d10+@abilities.wis.mod]]{1k10 plus modyfikator Mądrości,}.</p><section class=\"secret\" id=\"secret-hDX4eM19PNuyru5y\"><p><strong>Foundry Note</strong></p><p>The once per turn healing activity is found on @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwHWWrathofth3C]{Gniew dziczy} as a level-gated activity, <strong>Wygłodniała potęga</strong>.</p></section>"
             }
         },
         "Improved Reanimation": {
@@ -385,9 +385,9 @@
             }
         },
         "Mystical Connection": {
-            "name": "Mystical Connection",
+            "name": "Mistyczna więź",
             "description": {
-                "value": "<p>You gain mastery over the spirits you call forth. Whenever you roll on the Spirits from Beyond table, you can roll the die twice and choose which of the two effects to bestow. If you roll the same number on both dice, you can instead choose any effect on the table.</p>"
+                "value": "<p>Zyskujesz władzę nad duchami, które wywołujesz. Za każdym razem, gdy rzucasz na tabeli Duchy z Zaświatów, możesz rzucić Kością bardowskiej inspiracji dwukrotnie i wybrać, którego z dwóch duchów wywołujesz. Jeśli na obu kościach wypadnie ta sama liczba, możesz zamiast tego wywołać dowolnego ducha z tabeli.</p>"
             }
         },
         "Necrotic Husk": {
@@ -409,9 +409,9 @@
             "description": "<p><em>Disadvantage on attack rolls is not automated.</em></p>"
         },
         "Path to the Grave": {
-            "name": "Path to the Grave",
+            "name": "Ścieżka do grobu",
             "description": {
-                "value": "<p>As a Bonus Action, you present your Holy Symbol and expend a use of Channel Divinity to curse one creature you can see within 30 feet of yourself until the start of your next turn. While cursed, the creature has Disadvantage on attack rolls and saving throws.</p><p>When you or an ally you can see hits the cursed target with an attack roll, you can end the curse early (no action required) to make the attack deal extra [[/damage]]{Necrotic or Radiant damage} (your choice) equal to your Cleric level.</p>"
+                "value": "<p>Akcją dodatkową prezentujesz swój Święty symbol i wykorzystujesz jedno użycie Aktu wiary, aby przekląć istotę, którą widzisz, w promieniu 30 stóp od siebie, aż do początku twojej następnej tury. Podczas trwania klątwy istota ma Utrudnienie do Testów ataku i Rzutów obronnych.</p><p>Gdy ty lub sojusznik, którego widzisz, trafi Testem ataku przeklęty cel, możesz przedwcześnie zakończyć klątwę (nie wymaga akcji), aby ten atak zadał dodatkowe [[/damage]]{obrażenia Nekrotyczne lub od Światłości} (do wyboru) równe twojemu poziomowi Kleryka.</p>"
             }
         },
         "Phantom": {
@@ -427,16 +427,16 @@
             }
         },
         "Priest Spirit": {
-            "name": "Priest Spirit",
+            "name": "Duchowy kapłan",
             "description": {
-                "value": "<p>The target [[/heal]]{regains Hit Points} equal to two rolls of your Bardic Inspiration die, and one of the following conditions of your choice ends on the target: &amp;Reference[Blinded apply=false], &amp;Reference[Charmed apply=false], &amp;Reference[Deafened apply=false], &amp;Reference[Paralyzed apply=false], &amp;Reference[Poisoned apply=false], or &amp;Reference[Stunned apply=false].</p>"
+                "value": "<p>Cel [[/heal]]{odzyskuje Punkty wytrzymałości} w liczbie równej sumie dwóch rzutów kością bardowskiej inspiracji oraz kończy się na nim jeden z następujących stanów według twojego wyboru: &amp;Reference[Blinded apply=false], &amp;Reference[Charmed apply=false], &amp;Reference[Deafened apply=false], &amp;Reference[Paralyzed apply=false], &amp;Reference[Poisoned apply=false] lub &amp;Reference[Stunned apply=false].</p>"
             }
         },
         "Prone": {
             "name": "Powalony"
         },
         "Pull of the Grave": {
-            "name": "Pull of the Grave"
+            "name": "Zew śmierci"
         },
         "Reanimated Companion": {
             "name": "Reanimated Companion",
@@ -478,15 +478,15 @@
             "name": "Remote Viewing (Incapacitated)"
         },
         "Renegade Spirit": {
-            "name": "Renegade Spirit",
+            "name": "Duchowy renegat",
             "description": {
-                "value": "The target can immediately take a Reaction to teleport up to 30 feet to an unoccupied space it can see."
+                "value": "Cel może natychmiast Reakcją teleportować się na dystans do 30 stóp, do niezajętego miejsca, które widzi."
             }
         },
         "Rot and Violence": {
-            "name": "Rot and Violence",
+            "name": "Zgnilizna i przemoc",
             "description": {
-                "value": "<p>Your dedication to wild eldritch beings alters you further. When transformed using @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwHWWrathofth3C]{Wrath of the Wild}, you gain the following additional benefits.</p><p><span class=\"inline-entry\"><strong>Menacing Aura.</strong></span> When a creature fails its saving throw against your Unnerving Aura, it also can’t regain Hit Points or take Reactions until the start of your next turn.</p><p><span class=\"inline-entry\"><strong>Strangling Roots.</strong></span> When you hit a creature with an attack roll using a weapon, you can activate the &amp;Reference[weaponMastery=sap]{Sap} or &amp;Reference[weaponMastery=slow]{Slow} mastery property in addition to a different mastery property you’re using with that weapon.</p>"
+                "value": "<p>Twoje oddanie dzikim, nieziemskim bytom zmienia cię jeszcze bardziej. Gdy jesteś przemieniony dzięki @UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwHWWrathofth3C]{Gniewowi dziczy}, zyskujesz następujące dodatkowe korzyści.</p><p><span class=\"inline-entry\"><strong>Groźna aura.</strong></span> Gdy istota nie zda rzutu obronnego przeciwko twojej Niepokojącej aurze, dodatkowo nie może odzyskiwać Punktów wytrzymałości ani wykonywać Reakcji do początku twojej następnej tury.</p><p><span class=\"inline-entry\"><strong>Dławiące korzenie.</strong></span> Gdy trafisz istotę Atakiem bronią, możesz aktywować właściwość mistrzowską &amp;Reference[weaponMastery=sap] lub &amp;Reference[weaponMastery=slow] oprócz innej właściwości mistrzowskiej, której już używasz z tą bronią.</p>"
             }
         },
         "Second Skin": {
@@ -496,15 +496,15 @@
             }
         },
         "Sentinel at Death's Door": {
-            "name": "Sentinel at Death's Door",
+            "name": "Wartownik u progu śmierci",
             "description": {
-                "value": "<p>When you or a Bloodied creature you can see within 60 feet of yourself is hit with an attack roll, you can take a Reaction to halve that attack’s damage (round down). If the triggering attack roll was a Critical Hit, any effects triggered by a Critical Hit are canceled.</p><p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>"
+                "value": "<p>Gdy ty lub Zakrwawiona istota, którą widzisz, w promieniu 60 stóp od siebie zostanie trafiona Testem ataku, możesz Reakcją zmniejszyć obrażenia z tego ataku o połowę (zaokrąglając w dół). Jeśli wyzwalający Test ataku był Trafieniem krytycznym, wszelkie efekty wywołane Trafieniem krytycznym zostają anulowane.</p><p>Możesz skorzystać z tej zdolności tyle razy, ile wynosi twój modyfikator Mądrości (minimum raz). Odzyskujesz wszystkie zużyte użycia, gdy kończysz Długi odpoczynek.</p>"
             }
         },
         "Shade Spirit": {
-            "name": "Shade Spirit",
+            "name": "Duchowy cień",
             "description": {
-                "value": "<p>The target has the Invisible condition until the end of its next turn or until the target makes an attack roll, deals damage, or casts a spell. When the invisibility ends, each creature in a 5-foot Emanation originating from the target must succeed on a [[/save]]{Constitution saving throw} or take [[/damage]]{Necrotic damage} equal to two rolls of your Bardic Inspiration die.</p>"
+                "value": "<p>Cel ma stan Niewidzialny do końca swojej następnej tury lub dopóki nie wykona testu ataku, nie zada obrażeń, albo nie rzuci czaru. Gdy niewidzialność się kończy, każde stworzenie w Emanacji o promieniu 5 stóp, której źródłem jest cel, musi wykonać [[/save]]{rzut obronny na Kondycję}, w przeciwnym wypadku otrzymuje [[/damage]]{obrażenia nekrotyczne} równe dwóm rzutom kością bardowskiej inspiracji.</p>"
             }
         },
         "Shadow Sorcery": {
@@ -532,9 +532,9 @@
             }
         },
         "Sharpshooter Spirit": {
-            "name": "Sharpshooter Spirit",
+            "name": "Duchowy strzelec wyborowy",
             "description": {
-                "value": "<p>The target takes [[/damage]]{Force damage} equal to a roll of your Bardic Inspiration die plus your Charisma modifier.</p>"
+                "value": "<p>Cel otrzymuje [[/damage]]{obrażenia od mocy} w liczbie równej wynikowi rzutu kością bardowskiej inspiracji powiększonemu o twój modyfikator Charyzmy.</p>"
             }
         },
         "Soul Trinkets": {
@@ -559,9 +559,9 @@
             }
         },
         "Spirits from Beyond": {
-            "name": "Spirits from Beyond",
+            "name": "Duchy z Zaświatów",
             "description": {
-                "value": "<p>You can call forth spirits of the dead to empower you and your allies. When you take a Bonus Action to give a creature a Bardic Inspiration die, you can call forth the powers of a random spirit. To determine the spirit you channel, roll the Bardic Inspiration die and refer to the Spirits from Beyond table. The spirit remains channeled until you unleash it or until you finish a Short or Long Rest.</p><p><span class=\"inline-entry\"><strong>Controlled Channeling.</strong></span> As a Bonus Action, you can expend a use of your Bardic Inspiration and channel a specific spirit. When you do so, choose the spirit from the Spirits from Beyond table rather than rolling. The chosen spirit’s corresponding number must be less than or equal to the highest number on your Bardic Inspiration die; for example, if your Bardic Inspiration die is a d8, you can choose to channel any spirit up to (and including) the Shade.</p><p><span class=\"inline-entry\"><strong>Unleashing a Spirit.</strong></span> As a Magic action, you can unleash one of your channeled spirits. Choose one creature you can see within 30 feet of yourself as the spirit’s target. The spirit then takes effect; if a spirit’s effect requires a saving throw, the DC equals your Bard spell save DC.</p><table><caption><p>Spirits from Beyond</p></caption><thead><tr><th scope=\"col\"><p>Bardic Insp. Die</p></th><th scope=\"col\"><p>Spirit and Unleash Effect</p></th></tr></thead><tbody><tr><td><p>1</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSBelovedSp2V]{Beloved}</p></td></tr><tr><td><p>2</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSSharpshooGM]{Sharpshooter}</p></td></tr><tr><td><p>3</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSAvengerSpv2]{Avenger}</p></td></tr><tr><td><p>4</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSRenegadeSXD]{Renegade}</p></td></tr><tr><td><p>5</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSFortuneTeZz]{Fortune Teller}</p></td></tr><tr><td><p>6</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSWayfarerSqp]{Wayfarer}</p></td></tr><tr><td><p>7</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSTricksterO6]{Trickster}</p></td></tr><tr><td><p>8</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSShadeSpirvt]{Shade}</p></td></tr><tr><td><p>9</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSArsonistSF5]{Arsonist}</p></td></tr><tr><td><p>10</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSCowardSpi34]{Coward}</p></td></tr><tr><td><p>11</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSBruteSpir1q]{Brute}</p></td></tr><tr><td><p>12</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSPriestSpi36]{Priest}</p></td></tr></tbody></table>"
+                "value": "<p>Możesz wywoływać duchy zmarłych, aby wzmacniały ciebie i twoich sojuszników. Gdy Akcją dodatkową przyznajesz stworzeniu Kość bardowskiej inspiracji, możesz jednocześnie wywołać moc losowego ducha. Aby ustalić, jakiego ducha wywołujesz, rzuć Kością bardowskiej inspiracji i sprawdź wynik w tabeli Duchy z Zaświatów. Duch pozostaje wywołany, dopóki go nie uwolnisz albo nie zakończysz Krótkiego lub Długiego odpoczynku.</p><p><span class=\"inline-entry\"><strong>Panowanie nad gusłami.</strong></span> Akcją dodatkową możesz wykorzystać jedno użycie Kości bardowskiej inspiracji, aby wywołać konkretnego ducha. Wybierasz wtedy ducha z tabeli Duchy z Zaświatów zamiast rzucać kością. Numer wybranego ducha musi być mniejszy lub równy najwyższej wartości na twojej Kości bardowskiej inspiracji; na przykład, jeśli twoja Kość bardowskiej inspiracji to k8, możesz wywołać dowolnego ducha aż do Cienia włącznie.</p><p><span class=\"inline-entry\"><strong>Uwolnienie ducha.</strong></span> Akcją magii możesz uwolnić jednego z wywołanych przez siebie duchów. Wybierz jedno widoczne dla ciebie stworzenie w promieniu 30 stóp od siebie jako cel ducha. Duch natychmiast wywołuje swój efekt; jeśli efekt ducha wymaga rzutu obronnego, ST jest równa Twojej St rzutu przeciw czarom Barda.</p><table><caption><p>Duchy z Zaświatów</p></caption><thead><tr><th scope=\"col\"><p>Kość bard. inspiracji</p></th><th scope=\"col\"><p>Duch i efekt uwolnienia</p></th></tr></thead><tbody><tr><td><p>1</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSBelovedSp2V]{Umiłowany}</p></td></tr><tr><td><p>2</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSSharpshooGM]{Strzelec wyborowy}</p></td></tr><tr><td><p>3</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSAvengerSpv2]{Mściciel}</p></td></tr><tr><td><p>4</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSRenegadeSXD]{Renegat}</p></td></tr><tr><td><p>5</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSFortuneTeZz]{Wróżbita}</p></td></tr><tr><td><p>6</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSWayfarerSqp]{Wędrowiec}</p></td></tr><tr><td><p>7</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSTricksterO6]{Oszust}</p></td></tr><tr><td><p>8</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSShadeSpirvt]{Cień}</p></td></tr><tr><td><p>9</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSArsonistSF5]{Podpalacz}</p></td></tr><tr><td><p>10</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSCowardSpi34]{Tchórz}</p></td></tr><tr><td><p>11</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSBruteSpir1q]{Brutal}</p></td></tr><tr><td><p>12</p></td><td><p>@UUID[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSPriestSpi36]{Kapłan}</p></td></tr></tbody></table>"
             }
         },
         "Strange Modifications": {
@@ -612,9 +612,9 @@
             }
         },
         "Trickster Spirit": {
-            "name": "Trickster Spirit",
+            "name": "Duchowy oszust",
             "description": {
-                "value": "The target makes a Wisdom saving throw. On a failed save, the target takes Psychic damage equal to two rolls of your Bardic Inspiration die and has the Charmed condition until the start of your next turn. On a successful save, the target takes half as much damage only."
+                "value": "Cel wykonuje rzut obronny na Mądrość. W razie nieudanego rzutu cel otrzymuje obrażenia psychiczne równe dwóm rzutom kością bardowskiej inspiracji oraz zostaje Zauroczony do początku twojej następnej tury. W razie udanego rzutu cel otrzymuje jedynie połowę tych obrażeń."
             }
         },
         "Umbral Form": {
@@ -668,7 +668,7 @@
             }
         },
         "Wayfarer Spirit": {
-            "name": "Wayfarer Spirit",
+            "name": "Duchowy wędrowiec",
             "description": "<p>@Embed[Compendium.dnd-ravenloft-horrors-within.options.Item.rhwCSWayfarerSqp inline]</p>"
         },
         "Whispers of the Dead": {
@@ -678,9 +678,9 @@
             }
         },
         "Wrath of the Wild": {
-            "name": "Wrath of the Wild",
+            "name": "Gniew dziczy",
             "description": {
-                "value": "<p>You draw power from the strange and ancient horrors of the land, causing you to sprout unnatural growths, such as bloody antlers or putrid fangs, or causing your shadow to lengthen or twist around you. As a Bonus Action, you can expend a use of @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgrFavoredEne]{Favored Enemy} to transform into a ghastly form, gaining the following benefits for 1 minute or until you have the Incapacitated condition, die, or end the transformation (no action required).</p><p><span class=\"inline-entry\"><strong>Ancient Armor.</strong></span> You gain a +1 bonus to AC, as your body is wreathed in rotten bark and beastly bristles. This bonus increases to +2 when you reach Ranger level 11.</p><p><span class=\"inline-entry\"><strong>Prowling Retribution.</strong></span> Immediately after a creature you can see within 5 feet of yourself deals damage to you or one of your allies, you can make an Opportunity Attack against that creature.</p><p><span class=\"inline-entry\"><strong>Unnerving Aura.</strong></span> When you transform and at the start of each of your subsequent turns, each creature of your choice in a 10-foot Emanation originating from you makes a [[/save]]{Wisdom saving throw} against your spell save DC. On a failed save, a creature has the &amp;Reference[Frightened apply=false] condition until the start of your next turn.</p><section id=\"secret-t81C5kFgKQPazEcf\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Prowling Retribution</strong> benefit is not automated.</p></section>"
+                "value": "<p>Czerpiesz moc z dziwnych i pradawnych koszmarów tej krainy, co sprawia, że wyrastają ci nienaturalne narośla, takie jak krwawe poroże czy cuchnące kły, a twój cień wydłuża się i skręca wokół ciebie. Akcją dodatkową możesz wykorzystać jedno użycie @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgrFavoredEne], aby przemienić się w upiorną postać, zyskując poniższe korzyści na 1 minutę lub dopóki nie masz stanu Obezwładniony, nie zginiesz, albo nie zakończysz przemiany (nie wymaga akcji).</p><p><span class=\"inline-entry\"><strong>Pradawna zbroja.</strong></span> Zyskujesz premię +1 do KP, ponieważ twoje ciało owija zbutwiała kora i zwierzęca szczecina. Premia ta wzrasta do +2, gdy osiągniesz poziom Łowcy 11.</p><p><span class=\"inline-entry\"><strong>Przyczajona odpłata.</strong></span> Natychmiast po tym, jak widoczna dla ciebie istota w promieniu 5 stóp od ciebie zada obrażenia tobie lub jednemu z twoich sojuszników, możesz wykonać Atak okazyjny przeciw tej istocie.</p><p><span class=\"inline-entry\"><strong>Niepokojąca aura.</strong></span> Gdy się przemieniasz oraz na początku każdej swojej kolejnej tury, każda wybrana przez ciebie istota w Emanacji o promieniu 10 stóp wokół ciebie wykonuje [[/save]]{rzut obronny na Mądrość} przeciwko twojej St rzutu przeciw czarom. W razie nieudanego rzutu istota ma stan &amp;Reference[Frightened apply=false] do początku twojej następnej tury.</p><section id=\"secret-t81C5kFgKQPazEcf\" class=\"secret\"><p><strong>Notatka foundry</strong></p><p><strong>Przyczajona odpłata</strong> nie jest zautomatyzowana.</p></section>"
             }
         }
     },
