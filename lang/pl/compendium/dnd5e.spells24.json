@@ -438,7 +438,7 @@
         },
         "Awaken": {
             "name": "Przebudzenie",
-            "description": "<p>Tkając zaklęcie, podążasz magicznymi ścieżkami wewnątrz drogocennego kamienia szlachetnego, a następnie dotykasz celu. Cel musi być Bestią lub Rośliną o Inteligencji 3 lub niższej, albo zwyczajną rośliną, która nie jest istotą. Cel zyskuje Inteligencję o wartości 10 oraz zdolność mówienia w jednym znanym ci języku. Jeśli cel jest zwyczajną rośliną, staje się on istotą typu Roślina i zyskuje zdolność poruszania swoimi kończynami, korzeniami, pnączami czy gałęziami, a także otrzymuje zmysły zbliżone do ludzkich. MP wybiera statystyki odpowiednie dla przebudzonej Rośliny, takie jak statystyki dla<strong>@UUID[Compendium.dnd5e.monsters.Actor.gaSTr7DFZJLmgI2J]</strong> lub <strong>@UUID[Compendium.dnd5e.monsters.Actor.UR2gWLFHmFwG7ReH]</strong> w <em>Księdze Potworów</em>.</p><p>Przebudzony cel zyskuje stan &Reference[Charmed]{Zauroczony} na 30 dni lub do momentu, w którym otrzyma on obrażenia od ciebie lub twoich sojuszników. Po zakończeniu tego stanu przebudzona istota sama decyduje o swoim nastawieniu wobec ciebie.</p>",
+            "description": "<p>Podczas rzucania czaru wyznaczasz magiczne ścieżki wewnątrz drogocennego kamienia szlachetnego, a następnie dotykasz celu. Celem musi być istota typu Bestia lub Roślina o Inteligencji 3 lub niższej, albo zwyczajna roślina, która istotą nie jest. Cel zyskuje Inteligencję o wartości 10 oraz zdolność mówienia w jednym ze znanych ci języków. Jeśli cel był zwyczajną rośliną, staje się istotą typu Roślina i zyskuje zdolność poruszania swoimi kończynami, korzeniami, pnączami, czułkami i temu podobnymi, a także zmysły zbliżone do ludzkich. MP dobiera statystyki odpowiednie dla przebudzonej Rośliny, takie jak statystyki <strong>@UUID[Compendium.dnd5e.monsters.Actor.gaSTr7DFZJLmgI2J]</strong> lub <strong>@UUID[Compendium.dnd5e.monsters.Actor.UR2gWLFHmFwG7ReH]</strong> z <em>Podręcznika potworów</em>.</p><p>Przebudzony cel otrzymuje stan &amp;Reference[Charmed] na 30 dni lub dopóki ty bądź twoi sojusznicy nie zadacie mu obrażeń. Gdy ten stan ustaje, przebudzona istota sama decyduje o swoim nastawieniu wobec ciebie.</p>",
             "materials": "agat warty 1 000+ SZ, który czar zużywa"
         },
         "Bane": {
@@ -3047,7 +3047,7 @@
         },
         "Prismatic Spray": {
             "name": "Pryzmatyczny rozprysk",
-            "description": "<p>Osiem promieni światła błyska od ciebie w stożku o zasięgu 60 stóp. Każda istota w tym stożku wykonuje rzut obronny na Zręczność. Dla każdego celu rzuć 1k8, aby określić, który kolorowy promień go dotyka, korzystając z tabeli „Pryzmatyczne Promienie”.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.phbPrismaticRays rollable=true caption=false]{Pryzmatyczne Promienie}</p>",
+            "description": "<p>Osiem promieni światła wystrzeliwuje od ciebie w Stożku o długości 60 stóp. Każda istota w Stożku wykonuje rzut obronny na Zręczność. Dla każdego celu rzuć 1k8, by określić, promień jakiego koloru go dosięgnie, sprawdzając wynik w tabeli Pryzmatyczne promienie.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.phbPrismaticRays rollable=true caption=false]</p>",
             "activities": {
                 "Cast": {
                     "name": "Rzucanie",
