@@ -4401,7 +4401,7 @@
         },
         "Zone of Truth": {
             "name": "Strefa prawdy",
-            "description": "<p>Tworzysz magiczną strefę, która chroni przed oszustwem w Sferze o promieniu 15 stóp, skupionej na punkcie w zasięgu. Do czasu zakończenia czaru istota, która po raz pierwszy w turze wejdzie w obszar działania czaru lub rozpocznie w nim swoją turę, wykonuje rzut obronny na Charyzmę. W przypadku niepowodzenia istota nie może świadomie kłamać, przebywając w promieniu strefy. Wiesz, czy istota zdała, czy nie zdała ten rzut obronny.</p><p>Istota objęta działaniem czaru jest świadoma jego efektu i może unikać odpowiedzi na pytania, na które normalnie odpowiedziałaby kłamstwem. Taka istota może być wymijająca, ale musi mówić prawdę.</p>",
+            "description": "<p>Tworzysz magiczną strefę chroniącą przed oszustwem w Sferze o promieniu 15 stóp, skupionej na punkcie w zasięgu. Dopóki czar trwa, istota, która po raz pierwszy w ciągu tury znajdzie się w obszarze czaru lub rozpocznie w nim swoją turę, wykonuje rzut obronny na Charyzmę. Przy nieudanym rzucie nie może świadomie kłamać, przebywając w zasięgu strefy. Wiesz, czy dana istota zdała ten rzut, czy nie.</p><p>Istota objęta działaniem czaru jest świadoma jego działania i może unikać odpowiadania na pytania, na które normalnie odpowiedziałaby kłamstwem. Taka istota może być wymijająca, musi jednak mówić prawdę.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
@@ -4410,7 +4410,7 @@
             "effects": {
                 "Cannot Lie": {
                     "name": "Niezdolny do kłamstwa",
-                    "description": "<p>Przy nieudanym rzucie obronnym istota nie może mówić świadomego kłamstwa w obrębie promienia. Wiesz, czy istota odniosła sukces, czy nie.</p><p>Dotknięta istota jest świadoma czaru i może unikać odpowiadania na pytania, na które normalnie odpowiedziałaby kłamstwem. Taka istota może być wymijająca, ale musi mówić prawdę.</p>"
+                    "description": "<p>Przy nieudanym rzucie istota nie może świadomie kłamać, przebywając w zasięgu strefy. Wiesz, czy dana istota zdała ten rzut, czy nie.</p><p>Dotknięta istota jest świadoma działania czaru i może unikać odpowiadania na pytania, na które normalnie odpowiedziałaby kłamstwem. Taka istota może być wymijająca, musi jednak mówić prawdę.</p>"
                 }
             }
         }
