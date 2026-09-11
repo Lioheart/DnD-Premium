@@ -4778,7 +4778,7 @@
         },
         "Thunderous Smite": {
             "name": "Grzmiące ugodzenie",
-            "description": "<p>Twój cios brzmi grzmotem, który jest słyszalny w promieniu 300 stóp od ciebie, a cel otrzymuje dodatkowe 2k6 obrażeń od dźwięku grzmotu. Dodatkowo, jeśli cel jest istotą, musi zdać rzut obronny na Siłę lub zostać odepchnięty o 10 stóp od ciebie i otrzymać stan &amp;Reference[prone]{Powalony}.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy poziom komórki czaru powyżej 1.</p>",
+            "description": "<p>Twój cios rozbrzmiewa grzmotem słyszalnym w promieniu 300 stóp od ciebie, a cel otrzymuje dodatkowe 2k6 obrażeń od Dźwięku w wyniku ataku. Dodatkowo, jeśli cel jest istotą, musi zdać rzut obronny na Siłę, w przeciwnym razie zostaje odepchnięty o 10 stóp od ciebie i otrzymuje stan &amp;Reference[prone apply=false].</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
             "activation": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
             "activationCondition": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
             "activities": {
