@@ -4170,7 +4170,7 @@
         },
         "Silence": {
             "name": "Cisza",
-            "description": "<p>Przez cały czas działania czaru żaden dźwięk nie może być tworzony ani przechodzić przez sferę o promieniu 20 stóp, której centrum znajduje się w wybranym przez ciebie punkcie w zasięgu. Każda istota lub obiekt całkowicie znajdujący się wewnątrz sfery zyskuje Niewrażliwość na obrażenia od dźwięku, a istoty otrzymują stan &amp;Reference[deafened apply=false]{Ogłuchły}, dopóki pozostają wewnątrz. Rzucenie czaru, który zawiera komponent Werbalny, jest tam niemożliwe.</p>",
+            "description": "<p>Dopóki czar trwa, żaden dźwięk nie może powstać wewnątrz Sfery o promieniu 20 stóp, skupionej na wybranym przez ciebie punkcie w zasięgu, ani przez nią przeniknąć. Każda istota lub obiekt znajdujący się w całości wewnątrz Sfery ma Niepodatność na obrażenia od Dźwięku, a istoty otrzymują stan &amp;Reference[deafened apply=false], dopóki pozostają w niej w całości. Rzucenie tam czaru zawierającego komponent Werbalny jest niemożliwe.</p>",
             "effects": {
                 "Silenced": {
                     "name": "Wyciszony",
