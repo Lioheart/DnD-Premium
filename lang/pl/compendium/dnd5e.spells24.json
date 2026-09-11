@@ -3480,7 +3480,7 @@
         },
         "Searing Smite": {
             "name": "Palące ugodzenie",
-            "description": "<p>Gdy trafisz cel, otrzymuje on dodatkowe 1k6 obrażeń od ognia w wyniku ataku. Na początku każdej ze swoich tur, aż do zakończenia czaru, cel otrzymuje 1k6 obrażeń od ognia, a następnie wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia czar trwa dalej. W przypadku sukcesu czar się kończy.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Wszystkie obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+            "description": "<p>Gdy trafisz cel, otrzymuje on dodatkowe 1k6 obrażeń od Ognia w wyniku ataku. Na początku każdej swojej tury, dopóki czar trwa, cel otrzymuje 1k6 obrażeń od Ognia, a następnie wykonuje rzut obronny na Kondycję. Przy nieudanym rzucie czar trwa dalej. Przy udanym rzucie czar się kończy.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Wszystkie obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
             "activation": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
             "activities": {
                 "Start of Turn Save": {
