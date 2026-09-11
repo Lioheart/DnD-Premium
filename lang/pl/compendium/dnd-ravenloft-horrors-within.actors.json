@@ -273,7 +273,7 @@
                 },
                 "Power Word Stun": {
                     "name": "Słowo mocy Stój",
-                    "description": "<p>Przytłaczasz umysł jednej istoty, którą widzisz w zasięgu. Jeśli cel ma 150 Punktów Wytrzymałości lub mniej, ma stan Ogłuszenia. W przeciwnym razie jego Szybkość wynosi 0 do początku twojej następnej tury.</p><p>Cel z &amp;Reference[Stunned apply=false] wykonuje rzut obronny na Kondycję [[/save ability=con dc=@attributes.spelldc]] na końcu każdej z jego tur, kończąc stan na sukcesie.</p>",
+                    "description": "<p>Przytłaczasz umysł jednej istoty, którą widzisz w zasięgu. Jeśli cel ma 150 Punktów wytrzymałości lub mniej, otrzymuje stan &amp;Reference[Stunned apply=false]. W przeciwnym razie jego Szybkość wynosi 0 do początku twojej następnej tury.</p><p>Cel z tym stanem wykonuje rzut obronny [[/save ability=con dc=@attributes.spell.dc]] na końcu każdej swojej tury, a udany rzut kończy działanie stanu na nim samym.</p>",
                     "effects": {
                         "Stunned": {
                             "name": "Ogłuszony",
@@ -312,7 +312,7 @@
                 },
                 "Sunburst": {
                     "name": "Słoneczny blask",
-                    "description": "<p>Olśniewające światło słoneczne błyska w Sferze o promieniu 18m (60 stóp) centrum w punkcie, który wybierzesz w zasięgu. Każda istota w Sferze wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia istota otrzymuje 12k6 obrażeń od światłości i otrzymuje stan &amp;Reference[Blinded apply=false]{Oślepiony} przez 1 minutę. W przypadku sukcesu otrzymuje tylko połowę obrażeń.</p><p>Istota oślepiona przez ten czar wykonuje kolejny rzut obronny na Kondycję na końcu każdej ze swoich tur, kończąc efekt na sobie w przypadku sukcesu.</p><p>Czar ten rozprasza &amp;Reference[Darkness]{Ciemność} w obszarze, który został stworzony przez jakikolwiek czar.</p>",
+                    "description": "<p>Rozbłysk olśniewającego światła słonecznego rozświetla Sferę o promieniu 60 stóp, skupioną na punkcie, który wybierzesz w zasięgu. Każda istota w Sferze wykonuje rzut obronny na Kondycję, w przeciwnym razie otrzymuje 12k6 obrażeń od Światłości i stan &amp;Reference[Blinded apply=false] na 1 minutę. Przy udanym rzucie otrzymuje tylko połowę tych obrażeń.</p><p>Istota Oślepiona przez ten czar wykonuje kolejny [[/save ability=con dc=@attributes.spell.dc format=long]]{rzut obronny na Kondycję} na końcu każdej swojej tury, a udany rzut kończy ten efekt na niej samej.</p><p>Ten czar rozprasza &amp;Reference[Darkness] w swoim obszarze, niezależnie od tego, jaki czar ją stworzył.</p>",
                     "materials": "kawałek kamienia słonecznego",
                     "activities": {
                         "save": {
@@ -516,7 +516,7 @@
                 },
                 "Invisibility": {
                     "name": "Niewidzialność",
-                    "description": "<p>Istota, którą dotykasz, otrzymuje stan &amp;Reference[invisible apply=false]{Niewidzialny} do końca czaru. Czar kończy się wcześniej natychmiast po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>",
+                    "description": "<p>Istota, której dotkniesz, otrzymuje stan &amp;Reference[invisible apply=false], dopóki czar nie dobiegnie końca. Czar kończy się przedwcześnie zaraz po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>",
                     "materials": "rzęsa w kleju arabskim",
                     "effects": {
                         "Invisible": {
@@ -530,7 +530,7 @@
                 },
                 "Lightning Bolt": {
                     "name": "Piorun",
-                    "description": "<p>Uderzenie pioruna tworzące Prostą o długości 100 stóp i szerokości 5 stóp wystrzeliwuje od ciebie w wybranym przez ciebie kierunku. Każda istota w Prostej wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>",
+                    "description": "<p>Uderzenie pioruna tworzące Prostą o długości 100 stóp i szerokości 5 stóp wystrzeliwuje od ciebie w wybranym przez ciebie kierunku. Każda istota w Prostej wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od Elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>",
                     "materials": "kawałek futra i kryształowy pręt",
                     "activities": {
                         "save": {
@@ -554,7 +554,7 @@
                 },
                 "Prestidigitation": {
                     "name": "Kuglarstwo",
-                    "description": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć aktywne maksymalnie trzy jego nienatychmiastowe efekty jednocześnie.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt sensoryczny, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 27 litrów.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak do 27 litrów nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że kolor, mały znak lub symbol pojawia się na obiekcie albo powierzchni na 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w dłoni. Trwa on do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>",
+                    "description": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy jego nienatychmiastowe efekty.</p><p><strong>Efekt zmysłowy.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt zmysłowy, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa z ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 1 stopę sześcienną.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak maksymalnie 1 stopie sześciennej nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że na obiekcie albo powierzchni pojawia się kolor, mały znak lub symbol, utrzymujący się przez 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w twojej dłoni. Utrzymuje się do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -612,7 +612,7 @@
                 },
                 "Plane Shift": {
                     "name": "Sferalny przeskok",
-                    "description": "<p>Ty oraz do ośmiu przychylnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
+                    "description": "<p>Ty oraz do ośmiu przychylnych istot, które złączą ręce w kręgu, zostajecie przeniesieni na inną sferę istnienia. Możesz określić miejsce docelowe w ogólnych słowach, takich jak Miasto Mosiądzu na Sferze żywiołu ognia lub pałac Dispatera na drugim poziomie Dziewięciu piekieł, a wtedy pojawiacie się w tym miejscu lub w jego pobliżu, zgodnie z decyzją MP.</p><p>Alternatywnie, jeśli znasz sekwencję sygili kręgu teleportacyjnego na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie przeniesione przez ciebie istoty, pojawiają się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
                     "targetAffects": "ty oraz do ośmiu przychylnych ci istot",
                     "activities": {
@@ -716,7 +716,7 @@
                 },
                 "Power Word Kill": {
                     "name": "Słowo mocy Giń",
-                    "description": "<p>Przymuszasz jedną istotę, którą widzisz w zasięgu, do śmierci. Jeśli cel ma 100 Punktów Wytrzymałości lub mniej, umiera. W przeciwnym razie otrzymuje 12k12 obrażeń Psychicznych.</p>",
+                    "description": "<p>Skazujesz jedną istotę, którą widzisz w zasięgu, na śmierć. Jeśli cel ma 100 Punktów wytrzymałości lub mniej, umiera. W przeciwnym razie otrzymuje 12k12 obrażeń Psychicznych.</p>",
                     "activities": {
                         "Compel to Die": {
                             "name": "Przymus śmierci"
@@ -1007,7 +1007,7 @@
                 },
                 "Hold Person": {
                     "name": "Unieruchomienie osoby",
-                    "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkowego Humanoida za każdą komórkę czaru powyżej 2. kręgu.</p>",
+                    "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[paralyzed apply=false] na czas trwania czaru. Na końcu każdej swojej tury cel powtarza ten rzut obronny, a udany rzut kończy działanie czaru na nim samym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jednego dodatkowego Humanoida za każdy krąg komórki czaru powyżej 2.</p>",
                     "materials": "prosty kawałek żelaza",
                     "activities": {
                         "save": {
@@ -1393,7 +1393,7 @@
                 },
                 "Plane Shift": {
                     "name": "Sferalny przeskok",
-                    "description": "<p>Ty oraz do ośmiu przychylnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
+                    "description": "<p>Ty oraz do ośmiu przychylnych istot, które złączą ręce w kręgu, zostajecie przeniesieni na inną sferę istnienia. Możesz określić miejsce docelowe w ogólnych słowach, takich jak Miasto Mosiądzu na Sferze żywiołu ognia lub pałac Dispatera na drugim poziomie Dziewięciu piekieł, a wtedy pojawiacie się w tym miejscu lub w jego pobliżu, zgodnie z decyzją MP.</p><p>Alternatywnie, jeśli znasz sekwencję sygili kręgu teleportacyjnego na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie przeniesione przez ciebie istoty, pojawiają się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
                     "targetAffects": "ty oraz do ośmiu przychylnych ci istot",
                     "activities": {
@@ -1948,7 +1948,7 @@
                 },
                 "Lightning Bolt": {
                     "name": "Piorun",
-                    "description": "<p>Uderzenie pioruna tworzące Prostą o długości 100 stóp i szerokości 5 stóp wystrzeliwuje od ciebie w wybranym przez ciebie kierunku. Każda istota w Prostej wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>",
+                    "description": "<p>Uderzenie pioruna tworzące Prostą o długości 100 stóp i szerokości 5 stóp wystrzeliwuje od ciebie w wybranym przez ciebie kierunku. Każda istota w Prostej wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od Elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>",
                     "materials": "kawałek futra i kryształowy pręt",
                     "activities": {
                         "save": {
@@ -2150,7 +2150,7 @@
                 },
                 "Locate Animals or Plants": {
                     "name": "Odnalezienie zwierząt lub roślin",
-                    "description": "<p>Opisz lub nazwij określony rodzaj Bestii, istoty Roślinnej lub niemagicznej rośliny. Dowiadujesz się o kierunku i odległości do najbliższej istoty lub rośliny tego rodzaju w promieniu 5 mil (8km), jeśli takie są obecne.</p>",
+                    "description": "<p>Opisz lub nazwij konkretny gatunek Bestii, Rośliny albo niemagicznej rośliny. Poznajesz kierunek i odległość do najbliższego przedstawiciela tego gatunku w promieniu 5 mil, o ile w ogóle jakiś tam jest.</p>",
                     "materials": "futro z psa gończego",
                     "effects": {
                         "Spell Changes": {
@@ -2175,7 +2175,7 @@
                 },
                 "Protection from Poison": {
                     "name": "Ochrona przed trucizną",
-                    "description": "<p>Dotykasz istoty i usuwasz z niej stan &amp;Reference[Poisoned]{Zatruty}. Przez cały czas działania czaru cel ma Premię do rzutów obronnych, aby uniknąć lub zakończyć stan Zatruty, oraz zyskuje Odporność na obrażenia od trucizn.</p>",
+                    "description": "<p>Dotykasz istoty i znosisz na niej stan &amp;Reference[poisoned]. Dopóki czar trwa, cel ma Ułatwienie w rzutach obronnych mających na celu uniknięcie lub zakończenie stanu Zatruty, a także ma Odporność na obrażenia od Trucizny.</p>",
                     "effects": {
                         "Poison Protection": {
                             "name": "Ochrona przed trucizną",
@@ -2196,7 +2196,7 @@
                 },
                 "Healing Word": {
                     "name": "Kojące słowo",
-                    "description": "<p>Istota wybrana przez ciebie, którą widzisz w zasięgu, odzyskuje Punkty Wytrzymałości równe 2k4 + twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+                    "description": "<p>Wybrana przez ciebie istota, którą widzisz w zasięgu, odzyskuje Punkty wytrzymałości w liczbie równej 2k4 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdy krąg komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -2205,7 +2205,7 @@
                 },
                 "oNmk6YrrbOdios3l": {
                     "name": "Kojące słowo",
-                    "description": "<p>Istota wybrana przez ciebie, którą widzisz w zasięgu, odzyskuje Punkty Wytrzymałości równe 2k4 + twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+                    "description": "<p>Wybrana przez ciebie istota, którą widzisz w zasięgu, odzyskuje Punkty wytrzymałości w liczbie równej 2k4 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdy krąg komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -2751,7 +2751,7 @@
                 },
                 "Invisibility": {
                     "name": "Niewidzialność",
-                    "description": "<p>Istota, którą dotykasz, otrzymuje stan &amp;Reference[invisible apply=false]{Niewidzialny} do końca czaru. Czar kończy się wcześniej natychmiast po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>",
+                    "description": "<p>Istota, której dotkniesz, otrzymuje stan &amp;Reference[invisible apply=false], dopóki czar nie dobiegnie końca. Czar kończy się przedwcześnie zaraz po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>",
                     "materials": "rzęsa w kleju arabskim",
                     "effects": {
                         "Invisible": {
@@ -2775,7 +2775,7 @@
                 },
                 "Prestidigitation": {
                     "name": "Kuglarstwo",
-                    "description": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć aktywne maksymalnie trzy jego nienatychmiastowe efekty jednocześnie.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt sensoryczny, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 27 litrów.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak do 27 litrów nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że kolor, mały znak lub symbol pojawia się na obiekcie albo powierzchni na 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w dłoni. Trwa on do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>",
+                    "description": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy jego nienatychmiastowe efekty.</p><p><strong>Efekt zmysłowy.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt zmysłowy, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa z ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 1 stopę sześcienną.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak maksymalnie 1 stopie sześciennej nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że na obiekcie albo powierzchni pojawia się kolor, mały znak lub symbol, utrzymujący się przez 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w twojej dłoni. Utrzymuje się do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -2832,7 +2832,7 @@
                 },
                 "Cone of Cold": {
                     "name": "Stożek zimna",
-                    "description": "<p>Uwolniasz podmuch zimnego powietrza. Każda istota w Stożku o zasięgu 60 stóp, rozpoczynającym się od ciebie, wykonuje rzut obronny na Kondycję, otrzymując 8k8 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym. Istota zabita przez ten czar staje się zamarzniętą statuą, dopóki nie odtaje.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 5.</p>",
+                    "description": "<p>Uwalniasz podmuch lodowatego powietrza. Każda istota w Stożku o długości 60 stóp, wychodzącym od ciebie, wykonuje rzut obronny na Kondycję, otrzymując 8k8 obrażeń od Zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym. Istota zabita przez ten czar zamienia się w zamarzniętą statuę, dopóki nie odtaje.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 5.</p>",
                     "materials": "mały kryształowy lub szklany stożek",
                     "activities": {
                         "save": {
@@ -2847,7 +2847,7 @@
                 },
                 "Lightning Bolt": {
                     "name": "Piorun",
-                    "description": "<p>Uderzenie pioruna tworzące Prostą o długości 100 stóp i szerokości 5 stóp wystrzeliwuje od ciebie w wybranym przez ciebie kierunku. Każda istota w Prostej wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>",
+                    "description": "<p>Uderzenie pioruna tworzące Prostą o długości 100 stóp i szerokości 5 stóp wystrzeliwuje od ciebie w wybranym przez ciebie kierunku. Każda istota w Prostej wykonuje rzut obronny na Zręczność, otrzymując 8k6 obrażeń od Elektryczności przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>",
                     "materials": "kawałek futra i kryształowy pręt",
                     "activities": {
                         "save": {
@@ -3099,7 +3099,7 @@
                 },
                 "Hold Monster": {
                     "name": "Unieruchomienie potwora",
-                    "description": "<p>Wybierasz istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &Reference[Paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 5. kręgu.</p>",
+                    "description": "<p>Wybierasz istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[Paralyzed apply=false] na czas trwania czaru. Na końcu każdej swojej tury cel powtarza ten rzut obronny, a udany rzut kończy działanie czaru na nim samym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 5.</p>",
                     "materials": "prosty kawałek żelaza",
                     "activities": {
                         "save": {
@@ -3941,7 +3941,7 @@
                 },
                 "Hold Person": {
                     "name": "Unieruchomienie osoby",
-                    "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkowego Humanoida za każdą komórkę czaru powyżej 2. kręgu.</p>",
+                    "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[paralyzed apply=false] na czas trwania czaru. Na końcu każdej swojej tury cel powtarza ten rzut obronny, a udany rzut kończy działanie czaru na nim samym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jednego dodatkowego Humanoida za każdy krąg komórki czaru powyżej 2.</p>",
                     "materials": "prosty kawałek żelaza",
                     "activities": {
                         "save": {
@@ -4159,7 +4159,7 @@
                 },
                 "Thaumaturgy": {
                     "name": "Taumaturgia",
-                    "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
+                    "description": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>",
                     "effects": {
                         "Booming Voice": {
                             "name": "Grzmiący głos",
@@ -4323,7 +4323,7 @@
                 },
                 "Hold Person": {
                     "name": "Unieruchomienie osoby",
-                    "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkowego Humanoida za każdą komórkę czaru powyżej 2. kręgu.</p>",
+                    "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[paralyzed apply=false] na czas trwania czaru. Na końcu każdej swojej tury cel powtarza ten rzut obronny, a udany rzut kończy działanie czaru na nim samym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jednego dodatkowego Humanoida za każdy krąg komórki czaru powyżej 2.</p>",
                     "materials": "prosty kawałek żelaza",
                     "activities": {
                         "save": {
@@ -4410,7 +4410,7 @@
                 },
                 "Plane Shift": {
                     "name": "Sferalny przeskok",
-                    "description": "<p>Ty oraz do ośmiu przychylnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
+                    "description": "<p>Ty oraz do ośmiu przychylnych istot, które złączą ręce w kręgu, zostajecie przeniesieni na inną sferę istnienia. Możesz określić miejsce docelowe w ogólnych słowach, takich jak Miasto Mosiądzu na Sferze żywiołu ognia lub pałac Dispatera na drugim poziomie Dziewięciu piekieł, a wtedy pojawiacie się w tym miejscu lub w jego pobliżu, zgodnie z decyzją MP.</p><p>Alternatywnie, jeśli znasz sekwencję sygili kręgu teleportacyjnego na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie przeniesione przez ciebie istoty, pojawiają się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
                     "targetAffects": "ty oraz do ośmiu przychylnych ci istot",
                     "activities": {
@@ -4650,7 +4650,7 @@
                 },
                 "Hold Person": {
                     "name": "Unieruchomienie osoby",
-                    "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkowego Humanoida za każdą komórkę czaru powyżej 2. kręgu.</p>",
+                    "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[paralyzed apply=false] na czas trwania czaru. Na końcu każdej swojej tury cel powtarza ten rzut obronny, a udany rzut kończy działanie czaru na nim samym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jednego dodatkowego Humanoida za każdy krąg komórki czaru powyżej 2.</p>",
                     "materials": "prosty kawałek żelaza",
                     "activities": {
                         "save": {
@@ -4935,7 +4935,7 @@
                 },
                 "Ray of Sickness": {
                     "name": "Promień zatrucia",
-                    "description": "<p>Wystrzeliwujesz zielonkawy promień w kierunku istoty w zasięgu. Wykonaj dystansowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 2k8 obrażeń od trucizn i zyskuje stan &amp;Reference[Poisoned]{Zatruty} do końca twojej następnej tury.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+                    "description": "<p>Wystrzeliwujesz zielonkawy promień w kierunku istoty w zasięgu. Wykonaj dystansowy atak czarem przeciwko celowi. Przy trafieniu cel otrzymuje 2k8 obrażeń od Trucizny i otrzymuje stan &amp;Reference[poisoned] do końca twojej następnej tury.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -4977,7 +4977,7 @@
                 },
                 "Invisibility": {
                     "name": "Niewidzialność",
-                    "description": "<p>Istota, którą dotykasz, otrzymuje stan &amp;Reference[invisible apply=false]{Niewidzialny} do końca czaru. Czar kończy się wcześniej natychmiast po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>",
+                    "description": "<p>Istota, której dotkniesz, otrzymuje stan &amp;Reference[invisible apply=false], dopóki czar nie dobiegnie końca. Czar kończy się przedwcześnie zaraz po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>",
                     "materials": "rzęsa w kleju arabskim",
                     "effects": {
                         "Invisible": {
@@ -5834,7 +5834,7 @@
                 },
                 "Cure Wounds": {
                     "name": "Leczenie ran",
-                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>",
+                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty wytrzymałości w liczbie równej 2k8 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -5873,7 +5873,7 @@
                 },
                 "Sanctuary": {
                     "name": "Sanktuarium",
-                    "description": "<div><p>Obejmujesz ochroną istotę w zasięgu. Do zakończenia czaru każda istota, która obiera chronioną istotę za cel testu ataku lub czaru zadającego obrażenia, musi odnieść sukces w [[/save ability=wis dc=@attributes.spell.dc format=long]]{Rzucie obronnym na Mądrość}. W przeciwnym razie musi wybrać nowy cel albo jej atak lub czar przepada. Ten czar nie chroni objętej nim istoty przed obszarami działania. Czar kończy się, jeśli chroniona istota wykona test ataku, rzuci czar lub zada obrażenia.</p></div>",
+                    "description": "<div><p>Obejmujesz ochroną istotę w zasięgu. Dopóki czar trwa, każda istota, która obiera chronioną istotę za cel testu ataku lub czaru zadającego obrażenia, musi odnieść sukces w [[/save ability=wis dc=@attributes.spell.dc format=long]]{rzucie obronnym na Mądrość}, w przeciwnym razie musi wybrać nowy cel albo traci atak lub czar. Ten czar nie chroni chronionej istoty przed obszarami działania. Czar kończy się, jeśli chroniona istota wykona test ataku, rzuci czar lub zada obrażenia.</p></div>",
                     "materials": "odłamek szkła z lustra",
                     "activities": {
                         "Cast": {
@@ -5901,7 +5901,7 @@
                 },
                 "LmwaY1SOGCD9XHoI": {
                     "name": "Leczenie ran",
-                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>",
+                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty wytrzymałości w liczbie równej 2k8 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -5940,7 +5940,7 @@
                 },
                 "V9WWkAzG3ZyiNq42": {
                     "name": "Sanktuarium",
-                    "description": "<div><p>Obejmujesz ochroną istotę w zasięgu. Do zakończenia czaru każda istota, która obiera chronioną istotę za cel testu ataku lub czaru zadającego obrażenia, musi odnieść sukces w [[/save ability=wis dc=@attributes.spell.dc format=long]]{Rzucie obronnym na Mądrość}. W przeciwnym razie musi wybrać nowy cel albo jej atak lub czar przepada. Ten czar nie chroni objętej nim istoty przed obszarami działania. Czar kończy się, jeśli chroniona istota wykona test ataku, rzuci czar lub zada obrażenia.</p></div>",
+                    "description": "<div><p>Obejmujesz ochroną istotę w zasięgu. Dopóki czar trwa, każda istota, która obiera chronioną istotę za cel testu ataku lub czaru zadającego obrażenia, musi odnieść sukces w [[/save ability=wis dc=@attributes.spell.dc format=long]]{rzucie obronnym na Mądrość}, w przeciwnym razie musi wybrać nowy cel albo traci atak lub czar. Ten czar nie chroni chronionej istoty przed obszarami działania. Czar kończy się, jeśli chroniona istota wykona test ataku, rzuci czar lub zada obrażenia.</p></div>",
                     "materials": "odłamek szkła z lustra",
                     "activities": {
                         "Cast": {
@@ -7569,7 +7569,7 @@
                 },
                 "Transport via Plants": {
                     "name": "Podróż przez rośliny",
-                    "description": "<p>Ten czar tworzy magiczną więź między dużą lub większą nieożywioną rośliną w zasięgu a inną rośliną, w dowolnej odległości, na tej samej sferze istnienia. Musisz przynajmniej raz widzieć lub dotknąć rośliny docelowej. Przez czas trwania czaru każda istota może wejść w roślinę docelową i wyjść z rośliny przeznaczenia, wykorzystując 5 stóp ruchu.</p>",
+                    "description": "<p>Ten czar tworzy magiczną więź między Dużą lub większą nieożywioną rośliną w zasięgu a inną rośliną, znajdującą się w dowolnej odległości na tej samej sferze egzystencji. Musisz wcześniej zobaczyć lub choć raz dotknąć rośliny docelowej. Dopóki czar trwa, każda istota może wejść w roślinę wejściową i wyjść z rośliny docelowej, wykorzystując 5 stóp ruchu.</p>",
                     "targetAffects": "Duża lub większa nieożywiona roślina",
                     "effects": {
                         "Spell Changes": {
