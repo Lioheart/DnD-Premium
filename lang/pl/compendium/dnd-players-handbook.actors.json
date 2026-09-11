@@ -581,7 +581,7 @@
                 },
                 "Vicious Mockery": {
                     "name": "Zjadliwe szyderstwo",
-                    "description": "<p>Wypuszczasz serię obelg, splecionych z subtelnymi zaklęciami, w kierunku jednej istoty, którą możesz zobaczyć lub usłyszeć w zasięgu. Cel musi pomyślnie zdać rzut obronny Mądrości, inaczej otrzyma 1k6 obrażeń psychicznych i ma Utrudnienie na następny test ataku, który wykona przed końcem swojej następnej tury.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k6 na poziomach 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
+                    "description": "<p>Wypuszczasz serię obelg, splecionych z subtelnymi zaklęciami, w kierunku jednej istoty, którą widzisz lub słyszysz w zasięgu. Cel musi zdać rzut obronny na Mądrość, w przeciwnym razie otrzymuje 1k6 obrażeń Psychicznych i ma Utrudnienie w następnym teście ataku, który wykona przed końcem swojej następnej tury.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k6, gdy osiągniesz poziom 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "none"
@@ -635,7 +635,7 @@
                 },
                 "Healing Word": {
                     "name": "Kojące słowo",
-                    "description": "<p>Istota wybrana przez ciebie, którą widzisz w zasięgu, odzyskuje Punkty Wytrzymałości równe 2k4 + twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdą komórkę czaru powyżej 1. kręgu.</p>"
+                    "description": "<p>Wybrana przez ciebie istota, którą widzisz w zasięgu, odzyskuje Punkty wytrzymałości w liczbie równej 2k4 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdy krąg komórki czaru powyżej 1.</p>"
                 },
                 "Bedroll": {
                     "name": "Śpiwór",
@@ -702,7 +702,7 @@
                 },
                 "Thaumaturgy": {
                     "name": "Taumaturgia",
-                    "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
+                    "description": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -1343,7 +1343,7 @@
                 },
                 "Guidance": {
                     "name": "Wskazówki",
-                    "description": "<p>Dotykasz przychylną istotę i wybierasz umiejętność. Dopóki czar trwa, istota dodaje 1k4 do każdego testu wykonywanego z użyciem wybranej umiejętności.</p>",
+                    "description": "<p>Dotykasz przychylnej istoty i wybierasz umiejętność. Dopóki czar trwa, istota dodaje 1k4 do każdego testu cechy wykonywanego z użyciem wybranej umiejętności.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -1408,7 +1408,7 @@
                 },
                 "Sacred Flame": {
                     "name": "Święty płomień",
-                    "description": "<p>Światłość przypominająca płomień spada na istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Zręczność. W przypadku niepowodzenia otrzymuje 1k8 obrażeń od światłości. Cel nie korzysta z osłony Połowicznej ani Trzy Czwarte podczas tego rzutu.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
+                    "description": "<p>Płomienista światłość spada na istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Zręczność, w przeciwnym razie otrzymuje 1k8 obrażeń od Światłości. Podczas tego rzutu cel nie korzysta z osłony Połowicznej ani Trzy czwarte.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8, gdy osiągniesz poziom 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie",
@@ -1418,7 +1418,7 @@
                 },
                 "Thaumaturgy": {
                     "name": "Taumaturgia",
-                    "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
+                    "description": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -1438,7 +1438,7 @@
                 },
                 "Cure Wounds": {
                     "name": "Leczenie ran",
-                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>"
+                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty wytrzymałości w liczbie równej 2k8 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>"
                 },
                 "Guiding Bolt": {
                     "name": "Pocisk wiodący",
@@ -2148,7 +2148,7 @@
                 },
                 "Produce Flame": {
                     "name": "Wywołanie płomienia",
-                    "description": "<p>Migoczący płomień pojawia się w twojej dłoni i pozostaje tam przez cały czas działania czaru. Płomień nie emituje ciepła ani niczego nie podpala, a także rzuca &Reference[BrightLight]{Jasne Światło} w promieniu 20 stóp oraz &Reference[DimLight]{Słabe Światło} na dodatkowe 20 stóp. Czar kończy się, jeśli rzucisz go ponownie.</p><p>Do momentu zakończenia czaru możesz wykonać Akcję Magii, aby rzucić płomień w istotę lub obiekt w odległości do 60 stóp od ciebie. Wykonaj dystansowy test ataku zaklęciem. W przypadku trafienia cel otrzymuje 1k8 obrażeń od ognia.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
+                    "description": "<p>Migoczący płomień pojawia się w twojej dłoni i pozostaje tam przez czas trwania czaru. Płomień nie daje ciepła ani niczego nie podpala, a także rzuca &amp;Reference[BrightLight] w promieniu 20 stóp oraz &amp;Reference[DimLight] na kolejne 20 stóp. Czar kończy się, jeśli rzucisz go ponownie.</p><p>Dopóki czar trwa, możesz Akcją magii rzucić ogniem w istotę lub obiekt w odległości do 60 stóp od ciebie. Wykonaj dystansowy atak czarem. Przy trafieniu cel otrzymuje 1k8 obrażeń od Ognia.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8, gdy osiągniesz poziom 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -2176,7 +2176,7 @@
                 },
                 "Cure Wounds": {
                     "name": "Leczenie ran",
-                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>"
+                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty wytrzymałości w liczbie równej 2k8 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>"
                 },
                 "Faerie Fire": {
                     "name": "Blask faerie",
@@ -2195,7 +2195,7 @@
                 },
                 "Thunderwave": {
                     "name": "Fala gromu",
-                    "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
+                    "description": "<p>Uwalniasz falę grzmiącej energii. Każda istota w Sześcianie o boku 15 stóp, wychodzącym od ciebie, wykonuje rzut obronny na Kondycję. Przy nieudanym rzucie istota otrzymuje 2k8 obrażeń od Dźwięku i zostaje odepchnięta o 10 stóp od ciebie. Przy udanym rzucie istota otrzymuje tylko połowę tych obrażeń.</p><p>Dodatkowo nieprzymocowane obiekty znajdujące się w całości w Sześcianie zostają odepchnięte o 10 stóp od ciebie, a grzmiący huk słychać w promieniu 300 stóp.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 1.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
@@ -3533,7 +3533,7 @@
                 },
                 "Mage Hand": {
                     "name": "Magiczna dłoń",
-                    "description": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń trwa przez czas trwania. Dłoń znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Gdy rzucasz czar, możesz użyć dłoni do manipulowania obiektem, otwarcia niezamkniętych drzwi lub pojemnika, schowania lub wyciągnięcia przedmiotu z otwartego pojemnika albo przelania zawartości fiolki.</p><p>Akcją Magii w twoich kolejnych turach możesz ponownie kontrolować dłoń w ten sposób. W ramach tej akcji możesz przemieścić dłoń do 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (4,5 kg).</p>"
+                    "description": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń utrzymuje się przez czas trwania czaru. Znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Rzucając ten czar, możesz użyć dłoni, by manipulować obiektem, otworzyć niezamknięte drzwi lub pojemnik, schować lub wyciągnąć przedmiot z otwartego pojemnika albo wylać zawartość fiolki.</p><p>Akcją magii w kolejnych turach możesz ponownie użyć dłoni w ten sam sposób. W ramach tej akcji możesz przemieścić dłoń o maksymalnie 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (5 kg).</p>"
                 },
                 "Fire Bolt": {
                     "name": "Ognisty pocisk",
@@ -3928,7 +3928,7 @@
                 },
                 "Searing Smite": {
                     "name": "Palące ugodzenie",
-                    "description": "<p>Gdy trafisz cel, otrzymuje on dodatkowe 1k6 obrażeń od ognia w wyniku ataku. Na początku każdej ze swoich tur, aż do zakończenia czaru, cel otrzymuje 1k6 obrażeń od ognia, a następnie wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia czar trwa dalej. W przypadku sukcesu czar się kończy.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Wszystkie obrażenia zwiększają się o 1k6 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+                    "description": "<p>Gdy trafisz cel, otrzymuje on dodatkowe 1k6 obrażeń od Ognia w wyniku ataku. Na początku każdej swojej tury, dopóki czar trwa, cel otrzymuje 1k6 obrażeń od Ognia, a następnie wykonuje rzut obronny na Kondycję. Przy nieudanym rzucie czar trwa dalej. Przy udanym rzucie czar się kończy.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Wszystkie obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 1.</p>",
                     "activation": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
                     "activationCondition": "Natychmiast po trafieniu celu bronią białą lub Uderzeniem bez broni",
                     "activities": {
@@ -4337,7 +4337,7 @@
                 },
                 "Cure Wounds": {
                     "name": "Leczenie ran",
-                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>"
+                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty wytrzymałości w liczbie równej 2k8 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>"
                 },
                 "Ensnaring Strike": {
                     "name": "Pętające uderzenie",
@@ -4447,7 +4447,7 @@
                 },
                 "Hunter's Mark": {
                     "name": "Znak łowcy",
-                    "description": "<p>Magicznie oznaczasz jedno stworzenie, które możesz zobaczyć w zasięgu, jako swoją zdobycz. Do momentu zakończenia działania czaru zadajesz celowi dodatkowe [[/damage]] obrażenia za każdym razem, gdy trafisz je Testem Ataku. Masz również Ułatwienie do wszystkich Testów [[/check ability=wis skill=prc]] lub [[/check ability=wis skill=sur]], które wykonujesz, aby je odnaleźć.</p><p>Jeśli cel spadnie do 0 Punktów Wytrzymałości przed zakończeniem działania czaru, możesz wykonać Akcję Dodatkową, aby przenieść znak na nowe stworzenie, które możesz zobaczyć w zasięgu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Twoja Koncentracja może trwać dłużej przy użyciu komórki czaru poziomu 3–4 (do 8 godzin) lub 5+ (do 24 godzin).</p>",
+                    "description": "<p>Magicznie oznaczasz jedną istotę, którą widzisz w zasięgu, jako swoją zdobycz. Dopóki czar trwa, zadajesz celowi dodatkowe [[/damage]] obrażeń za każdym razem, gdy trafisz go testem ataku. Masz również Ułatwienie w każdym teście [[/check ability=wis skill=prc]] lub [[/check ability=wis skill=sur]], który wykonujesz, by go odnaleźć.</p><p>Jeśli cel spadnie do 0 Punktów wytrzymałości przed zakończeniem działania czaru, możesz Akcją dodatkową przenieść znak na nową istotę, którą widzisz w zasięgu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Twoja Koncentracja może trwać dłużej przy użyciu komórki czaru 3.–4. kręgu (do 8 godzin) lub 5. kręgu lub wyższego (do 24 godzin).</p>",
                     "activities": {
                         "Bonus Mark Damage": {
                             "name": "Dodatkowe obrażenia znaku"
@@ -4470,7 +4470,7 @@
                 },
                 "izIQozlC7oAKscet": {
                     "name": "Znak łowcy",
-                    "description": "<p>Magicznie oznaczasz jedno stworzenie, które możesz zobaczyć w zasięgu, jako swoją zdobycz. Do momentu zakończenia działania czaru zadajesz celowi dodatkowe [[/damage]] obrażenia za każdym razem, gdy trafisz je Testem Ataku. Masz również Ułatwienie do wszystkich Testów [[/check ability=wis skill=prc]] lub [[/check ability=wis skill=sur]], które wykonujesz, aby je odnaleźć.</p><p>Jeśli cel spadnie do 0 Punktów Wytrzymałości przed zakończeniem działania czaru, możesz wykonać Akcję Dodatkową, aby przenieść znak na nowe stworzenie, które możesz zobaczyć w zasięgu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Twoja Koncentracja może trwać dłużej przy użyciu komórki czaru poziomu 3–4 (do 8 godzin) lub 5+ (do 24 godzin).</p>",
+                    "description": "<p>Magicznie oznaczasz jedną istotę, którą widzisz w zasięgu, jako swoją zdobycz. Dopóki czar trwa, zadajesz celowi dodatkowe [[/damage]] obrażeń za każdym razem, gdy trafisz go testem ataku. Masz również Ułatwienie w każdym teście [[/check ability=wis skill=prc]] lub [[/check ability=wis skill=sur]], który wykonujesz, by go odnaleźć.</p><p>Jeśli cel spadnie do 0 Punktów wytrzymałości przed zakończeniem działania czaru, możesz Akcją dodatkową przenieść znak na nową istotę, którą widzisz w zasięgu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Twoja Koncentracja może trwać dłużej przy użyciu komórki czaru 3.–4. kręgu (do 8 godzin) lub 5. kręgu lub wyższego (do 24 godzin).</p>",
                     "activities": {
                         "Bonus Mark Damage": {
                             "name": "Dodatkowe obrażenia znaku"
@@ -4962,7 +4962,7 @@
                 },
                 "Prestidigitation": {
                     "name": "Kuglarstwo",
-                    "description": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć aktywne maksymalnie trzy jego nienatychmiastowe efekty jednocześnie.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt sensoryczny, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 27 litrów.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak do 27 litrów nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że kolor, mały znak lub symbol pojawia się na obiekcie albo powierzchni na 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w dłoni. Trwa on do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>",
+                    "description": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy jego nienatychmiastowe efekty.</p><p><strong>Efekt zmysłowy.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt zmysłowy, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa z ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 1 stopę sześcienną.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak maksymalnie 1 stopie sześciennej nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że na obiekcie albo powierzchni pojawia się kolor, mały znak lub symbol, utrzymujący się przez 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w twojej dłoni. Utrzymuje się do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -5498,7 +5498,7 @@
                 },
                 "Prestidigitation": {
                     "name": "Kuglarstwo",
-                    "description": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć aktywne maksymalnie trzy jego nienatychmiastowe efekty jednocześnie.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt sensoryczny, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 27 litrów.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak do 27 litrów nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że kolor, mały znak lub symbol pojawia się na obiekcie albo powierzchni na 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w dłoni. Trwa on do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>",
+                    "description": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy jego nienatychmiastowe efekty.</p><p><strong>Efekt zmysłowy.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt zmysłowy, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa z ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 1 stopę sześcienną.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak maksymalnie 1 stopie sześciennej nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że na obiekcie albo powierzchni pojawia się kolor, mały znak lub symbol, utrzymujący się przez 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w twojej dłoni. Utrzymuje się do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -5523,7 +5523,7 @@
                 },
                 "Sacred Flame": {
                     "name": "Święty płomień",
-                    "description": "<p>Światłość przypominająca płomień spada na istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Zręczność. W przypadku niepowodzenia otrzymuje 1k8 obrażeń od światłości. Cel nie korzysta z osłony Połowicznej ani Trzy Czwarte podczas tego rzutu.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
+                    "description": "<p>Płomienista światłość spada na istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Zręczność, w przeciwnym razie otrzymuje 1k8 obrażeń od Światłości. Podczas tego rzutu cel nie korzysta z osłony Połowicznej ani Trzy czwarte.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8, gdy osiągniesz poziom 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie",
@@ -5583,7 +5583,7 @@
                 },
                 "Hex": {
                     "name": "Urok",
-                    "description": "<p>Naznaczasz klątwą istotę, którą widzisz w zasięgu. Dopóki czar trwa, zadajesz dodatkowe 1k6 obrażeń nekrotycznych celowi, gdy trafisz go testem ataku. Dodatkowo, wybierz jedną cechę, gdy rzucasz czar. Cel ma &Reference[Disadvantage]{Utrudnienie} w testach cechy wykonywanych przy użyciu wybranej cechy.</p><p>Jeśli cel spadnie do 0 Punktów Wytrzymałości przed zakończeniem czaru, możesz wykonać Akcję Dodatkową w późniejszej turze, aby nałożyć klątwę na nową istotę.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Twoja Koncentracja może trwać dłużej dzięki komórce czaru 2. kręgu (do 4 godzin), 3–4. kręgu (do 8 godzin) lub 5+ kręgu (24 godziny).</p>",
+                    "description": "<p>Rzucasz klątwę na istotę, którą widzisz w zasięgu. Dopóki czar trwa, zadajesz celowi dodatkowe 1k6 obrażeń nekrotycznych za każdym razem, gdy trafisz go testem ataku. Dodatkowo, rzucając czar, wybierz jedną cechę. Cel ma Utrudnienie w testach wybranej cechy.</p><p>Jeśli cel spadnie do 0 Punktów wytrzymałości przed zakończeniem czaru, możesz Akcją dodatkową w kolejnej turze nałożyć klątwę na nową istotę.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Twoja Koncentracja może trwać dłużej dzięki komórce czaru 2. kręgu (do 4 godzin), 3.–4. kręgu (do 8 godzin) lub 5. kręgu lub wyższego (24 godziny).</p>",
                     "materials": "skamieniałe oko traszki",
                     "activities": {
                         "Bonus Hex Damage": {
@@ -5657,7 +5657,7 @@
                 },
                 "Toll the Dead": {
                     "name": "Żałobny dzwon",
-                    "description": "<p>Wskazujesz na jedną istotę, którą widzisz w zasięgu, a pojedynczy dźwięk żałosnego dzwonu jest słyszalny w promieniu 3m (10 stóp) od celu. Cel musi zdać rzut obronny na Mądrość, inaczej otrzymuje 1k8 obrażeń nekrotycznych. Jeśli cel ma brakujące Punkty Wytrzymałości, zamiast tego otrzymuje 1k12 obrażeń nekrotycznych.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o jeden rzut kością, gdy osiągniesz poziomy 5 (2k8 lub 2k12), 11 (3k8 lub 3k12) i 17 (4k8 lub 4k12).</p>",
+                    "description": "<p>Wskazujesz na jedną istotę, którą widzisz w zasięgu, a w promieniu 10 stóp od celu rozlega się pojedynczy dźwięk żałobnego dzwonu. Cel musi zdać rzut obronny na Mądrość, w przeciwnym razie otrzymuje 1k8 obrażeń Nekrotycznych. Jeśli celowi brakuje choćby części Punktów wytrzymałości, zamiast tego otrzymuje 1k12 obrażeń Nekrotycznych.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o jedną kość, gdy osiągniesz poziom 5 (2k8 lub 2k12), 11 (3k8 lub 3k12) i 17 (4k8 lub 4k12).</p>",
                     "activities": {
                         "Healthy Target": {
                             "name": "Zdrowy cel",
@@ -5675,7 +5675,7 @@
                 },
                 "Mind Sliver": {
                     "name": "Myślowy odłamek",
-                    "description": "<p>Próbujesz chwilowo rozszczepić umysł jednej istoty, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Inteligencję, inaczej otrzymuje 1k6 obrażeń psychicznych i odejmuje 1k4 od następnego rzutu obronnego, który wykona przed końcem twojej następnej tury.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k6, gdy osiągniesz poziomy 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
+                    "description": "<p>Próbujesz na chwilę rozdrobnić umysł jednej istoty, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Inteligencję, w przeciwnym razie otrzymuje 1k6 obrażeń psychicznych i odejmuje 1k4 od następnego rzutu obronnego, który wykona przed końcem twojej następnej tury.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k6, gdy osiągniesz poziom 5 (2k6), 11 (3k6) i 17 (4k6).</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "none"
@@ -5690,7 +5690,7 @@
                 },
                 "Guidance": {
                     "name": "Wskazówki",
-                    "description": "<p>Dotykasz przychylną istotę i wybierasz umiejętność. Dopóki czar trwa, istota dodaje 1k4 do każdego testu wykonywanego z użyciem wybranej umiejętności.</p>",
+                    "description": "<p>Dotykasz przychylnej istoty i wybierasz umiejętność. Dopóki czar trwa, istota dodaje 1k4 do każdego testu cechy wykonywanego z użyciem wybranej umiejętności.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -5950,11 +5950,11 @@
                 },
                 "Mage Hand": {
                     "name": "Magiczna dłoń",
-                    "description": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń trwa przez czas trwania. Dłoń znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Gdy rzucasz czar, możesz użyć dłoni do manipulowania obiektem, otwarcia niezamkniętych drzwi lub pojemnika, schowania lub wyciągnięcia przedmiotu z otwartego pojemnika albo przelania zawartości fiolki.</p><p>Akcją Magii w twoich kolejnych turach możesz ponownie kontrolować dłoń w ten sposób. W ramach tej akcji możesz przemieścić dłoń do 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (4,5 kg).</p>"
+                    "description": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń utrzymuje się przez czas trwania czaru. Znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Rzucając ten czar, możesz użyć dłoni, by manipulować obiektem, otworzyć niezamknięte drzwi lub pojemnik, schować lub wyciągnąć przedmiot z otwartego pojemnika albo wylać zawartość fiolki.</p><p>Akcją magii w kolejnych turach możesz ponownie użyć dłoni w ten sam sposób. W ramach tej akcji możesz przemieścić dłoń o maksymalnie 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (5 kg).</p>"
                 },
                 "Ray of Frost": {
                     "name": "Promień mrozu",
-                    "description": "<p>Lodowaty promień biało-niebieskiego światła mknie w kierunku istoty w zasięgu. Wykonaj dystansowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia otrzymuje on 1k8 obrażeń od zimna, a jego szybkość zostaje zmniejszona o 10 stóp do początku twojej następnej tury.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8 na poziomach 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
+                    "description": "<p>Lodowaty promień biało-niebieskiego światła mknie w kierunku istoty w zasięgu. Wykonaj dystansowy atak czarem przeciwko celowi. Przy trafieniu cel otrzymuje 1k8 obrażeń od Zimna, a jego Szybkość zostaje zmniejszona o 10 stóp do początku twojej następnej tury.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8, gdy osiągniesz poziom 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
                     "effects": {
                         "Reduced Movement": {
                             "name": "Ograniczony ruch",
@@ -6010,7 +6010,7 @@
                 },
                 "Magic Missile": {
                     "name": "Magiczny pocisk",
-                    "description": "<p>Tworzysz trzy świecące pociski magicznej mocy. Każdy pocisk uderza w istotę, którą wybierzesz i widzisz w zasięgu. Pocisk zadaje 1k4 + 1 obrażeń od mocy swojemu celowi. Wszystkie pociski uderzają jednocześnie, a ty możesz skierować je, by trafiły jedną istotę lub kilka.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Czar tworzy jeden dodatkowy pocisk za każdy krąg komórki czaru powyżej 1.</p><p>[[2 + @item.level]]{[[lookup @item.level]] pociski poziomu}</p>",
+                    "description": "<p>Tworzysz trzy świecące pociski magicznej mocy. Każdy pocisk uderza w wybraną przez ciebie istotę, którą widzisz w zasięgu. Pocisk zadaje 1k4 + 1 obrażeń od Mocy swojemu celowi. Wszystkie pociski uderzają jednocześnie, a ty możesz skierować je tak, by trafiły jedną istotę lub kilka.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Czar tworzy jeden dodatkowy pocisk za każdy krąg komórki czaru powyżej 1.</p><p>[[2 + @item.level]]{Pociski na kręgu [[lookup @item.level]]}</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -6035,7 +6035,7 @@
                 },
                 "Thunderwave": {
                     "name": "Fala gromu",
-                    "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
+                    "description": "<p>Uwalniasz falę grzmiącej energii. Każda istota w Sześcianie o boku 15 stóp, wychodzącym od ciebie, wykonuje rzut obronny na Kondycję. Przy nieudanym rzucie istota otrzymuje 2k8 obrażeń od Dźwięku i zostaje odepchnięta o 10 stóp od ciebie. Przy udanym rzucie istota otrzymuje tylko połowę tych obrażeń.</p><p>Dodatkowo nieprzymocowane obiekty znajdujące się w całości w Sześcianie zostają odepchnięte o 10 stóp od ciebie, a grzmiący huk słychać w promieniu 300 stóp.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 1.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
