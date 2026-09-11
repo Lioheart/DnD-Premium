@@ -3925,7 +3925,7 @@
         },
         "Sunburst": {
             "name": "Słoneczny blask",
-            "description": "<p>Olśniewające światło słoneczne błyska w Sferze o promieniu 18m (60 stóp) centrum w punkcie, który wybierzesz w zasięgu. Każda istota w Sferze wykonuje rzut obronny na Kondycję. W przypadku niepowodzenia istota otrzymuje 12k6 obrażeń od światłości i otrzymuje stan &amp;Reference[Blinded apply=false]{Oślepiony} przez 1 minutę. W przypadku sukcesu otrzymuje tylko połowę obrażeń.</p><p>Istota oślepiona przez ten czar wykonuje kolejny rzut obronny na Kondycję na końcu każdej ze swoich tur, kończąc efekt na sobie w przypadku sukcesu.</p><p>Czar ten rozprasza &amp;Reference[Darkness]{Ciemność} w obszarze, który został stworzony przez jakikolwiek czar.</p>",
+            "description": "<p>Rozbłysk olśniewającego światła słonecznego rozświetla Sferę o promieniu 60 stóp, skupioną na punkcie, który wybierzesz w zasięgu. Każda istota w Sferze wykonuje rzut obronny na Kondycję, w przeciwnym razie otrzymuje 12k6 obrażeń od Światłości i stan &amp;Reference[Blinded apply=false] na 1 minutę. Przy udanym rzucie otrzymuje tylko połowę tych obrażeń.</p><p>Istota Oślepiona przez ten czar wykonuje kolejny [[/save ability=con dc=@attributes.spell.dc format=long]]{rzut obronny na Kondycję} na końcu każdej swojej tury, a udany rzut kończy ten efekt na niej samej.</p><p>Ten czar rozprasza &amp;Reference[Darkness] w swoim obszarze, niezależnie od tego, jaki czar ją stworzył.</p>",
             "materials": "kawałek kamienia słonecznego",
             "activities": {
                 "save": {
