@@ -4663,7 +4663,7 @@
         },
         "Synaptic Static": {
             "name": "Szum synaptyczny",
-            "description": "<p>Wybuchasz energię psychiczną w punkcie w zasięgu. Każda istota w Sferze o promieniu 6m (20 stóp) centrum w tym punkcie wykonuje rzut obronny na Inteligencję, otrzymując 8k6 obrażeń psychicznych przy niepowodzeniu lub połowę obrażeń przy sukcesie.</p><p>W przypadku niepowodzenia, cel ma także zamieszane myśli przez 1 minutę. W tym czasie odejmuje [[/r 1d6]] od wszystkich swoich testów ataku i testów zdolności, jak również od rzutów obronnych na Kondycję w celu utrzymania Koncentracji. Cel wykonuje [[/save ability=int dc=@attributes.spelldc format=long]] na końcu każdej ze swoich tur, kończąc efekt na sobie w przypadku sukcesu.</p>",
+            "description": "<p>Wywołujesz wybuch energii psychicznej w punkcie w zasięgu. Każda istota w Sferze o promieniu 20 stóp, skupionej na tym punkcie, wykonuje rzut obronny na Inteligencję, otrzymując 8k6 obrażeń Psychicznych przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p>Przy nieudanym rzucie cel ma też zamącony umysł przez 1 minutę. W tym czasie odejmuje [[/r 1d6]] od wszystkich swoich testów ataku i testów cechy, a także od rzutów obronnych na Kondycję wykonywanych w celu utrzymania Koncentracji. Cel wykonuje [[/save ability=int dc=@attributes.spell.dc format=long]] na końcu każdej swojej tury, a udany rzut kończy ten efekt na nim samym.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
