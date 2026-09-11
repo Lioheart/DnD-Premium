@@ -234,7 +234,7 @@
                 },
                 "Thunderwave": {
                     "name": "Fala gromu",
-                    "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
+                    "description": "<p>Uwalniasz falę grzmiącej energii. Każda istota w Sześcianie o boku 15 stóp, wychodzącym od ciebie, wykonuje rzut obronny na Kondycję. Przy nieudanym rzucie istota otrzymuje 2k8 obrażeń od Dźwięku i zostaje odepchnięta o 10 stóp od ciebie. Przy udanym rzucie istota otrzymuje tylko połowę tych obrażeń.</p><p>Dodatkowo nieprzymocowane obiekty znajdujące się w całości w Sześcianie zostają odepchnięte o 10 stóp od ciebie, a grzmiący huk słychać w promieniu 300 stóp.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 1.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
@@ -248,7 +248,7 @@
                 },
                 "Cure Wounds": {
                     "name": "Leczenie ran",
-                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>",
+                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty wytrzymałości w liczbie równej 2k8 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -257,7 +257,7 @@
                 },
                 "Invisibility": {
                     "name": "Niewidzialność",
-                    "description": "<p>Istota, którą dotykasz, otrzymuje stan &amp;Reference[invisible apply=false]{Niewidzialny} do końca czaru. Czar kończy się wcześniej natychmiast po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>",
+                    "description": "<p>Istota, której dotkniesz, otrzymuje stan &amp;Reference[invisible apply=false], dopóki czar nie dobiegnie końca. Czar kończy się przedwcześnie zaraz po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>",
                     "materials": "rzęsa w kleju arabskim",
                     "effects": {
                         "Invisible": {
@@ -428,7 +428,7 @@
                 },
                 "efaSynapticStati": {
                     "name": "Szum synaptyczny",
-                    "description": "<p>Wybuchasz energię psychiczną w punkcie w zasięgu. Każda istota w Sferze o promieniu 6m (20 stóp) centrum w tym punkcie wykonuje rzut obronny na Inteligencję, otrzymując 8k6 obrażeń psychicznych przy niepowodzeniu lub połowę obrażeń przy sukcesie.</p><p>W przypadku niepowodzenia, cel ma także zamieszane myśli przez 1 minutę. W tym czasie odejmuje [[/r 1d6]] od wszystkich swoich testów ataku i testów zdolności, jak również od rzutów obronnych na Kondycję w celu utrzymania Koncentracji. Cel wykonuje [[/save ability=int dc=@attributes.spelldc format=long]] na końcu każdej ze swoich tur, kończąc efekt na sobie w przypadku sukcesu.</p>",
+                    "description": "<p>Wywołujesz wybuch energii psychicznej w punkcie w zasięgu. Każda istota w Sferze o promieniu 20 stóp, skupionej na tym punkcie, wykonuje rzut obronny na Inteligencję, otrzymując 8k6 obrażeń Psychicznych przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p>Przy nieudanym rzucie cel ma też zamącony umysł przez 1 minutę. W tym czasie odejmuje [[/r 1d6]] od wszystkich swoich testów ataku i testów cechy, a także od rzutów obronnych na Kondycję wykonywanych w celu utrzymania Koncentracji. Cel wykonuje [[/save ability=int dc=@attributes.spell.dc format=long]] na końcu każdej swojej tury, a udany rzut kończy ten efekt na nim samym.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
@@ -965,7 +965,7 @@
                 },
                 "Cure Wounds": {
                     "name": "Leczenie ran",
-                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>",
+                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty wytrzymałości w liczbie równej 2k8 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -974,7 +974,7 @@
                 },
                 "Lesser Restoration": {
                     "name": "Mniejsze przywrócenie",
-                    "description": "<p>Dotykasz istoty i kończysz jeden stan który posiada: &amp;Reference[blinded]{Oślepiony}, &amp;Reference[deafened]{Ogłuchły}, &amp;Reference[paralyzed]{Sparaliżowany} lub &amp;Reference[poisoned]{Zatruty}.</p>",
+                    "description": "<p>Dotykasz istoty i znosisz jeden z jej stanów: &amp;Reference[blinded], &amp;Reference[deafened], &amp;Reference[paralyzed] lub &amp;Reference[poisoned].</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -1234,7 +1234,7 @@
                 },
                 "Thaumaturgy": {
                     "name": "Taumaturgia",
-                    "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
+                    "description": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -1280,7 +1280,7 @@
                 },
                 "Hold Monster": {
                     "name": "Unieruchomienie potwora",
-                    "description": "<p>Wybierasz istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &Reference[Paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 5. kręgu.</p>",
+                    "description": "<p>Wybierasz istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[Paralyzed apply=false] na czas trwania czaru. Na końcu każdej swojej tury cel powtarza ten rzut obronny, a udany rzut kończy działanie czaru na nim samym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 5.</p>",
                     "materials": "prosty kawałek żelaza",
                     "activities": {
                         "save": {
@@ -1353,7 +1353,7 @@
                 },
                 "Tongues": {
                     "name": "Języki",
-                    "description": "<p>Ten czar daje istocie, którą dotkniesz, zdolność rozumienia każdego mówionego lub migowego języka, który słyszy lub widzi. Co więcej, gdy cel komunikuje się przez mówienie lub miganie, każda istota, która zna przynajmniej jeden język, może ją zrozumieć, jeśli ta istota może usłyszeć mowę lub zobaczyć miganie.</p>",
+                    "description": "<p>Ten czar daje istocie, którą dotkniesz, zdolność rozumienia każdego mówionego lub migowego języka, który usłyszy lub zobaczy. Co więcej, gdy cel komunikuje się mową lub migami, każda istota znająca przynajmniej jeden język może ją zrozumieć, jeśli tylko usłyszy tę mowę lub zobaczy te migi.</p>",
                     "materials": "miniaturowy ziggurat",
                     "effects": {
                         "Universal Communication": {
@@ -1667,7 +1667,7 @@
                 },
                 "Thunderwave": {
                     "name": "Fala gromu",
-                    "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
+                    "description": "<p>Uwalniasz falę grzmiącej energii. Każda istota w Sześcianie o boku 15 stóp, wychodzącym od ciebie, wykonuje rzut obronny na Kondycję. Przy nieudanym rzucie istota otrzymuje 2k8 obrażeń od Dźwięku i zostaje odepchnięta o 10 stóp od ciebie. Przy udanym rzucie istota otrzymuje tylko połowę tych obrażeń.</p><p>Dodatkowo nieprzymocowane obiekty znajdujące się w całości w Sześcianie zostają odepchnięte o 10 stóp od ciebie, a grzmiący huk słychać w promieniu 300 stóp.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 1.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
@@ -1693,7 +1693,7 @@
                 },
                 "KcXB2hCdh3VPjZre": {
                     "name": "Skok",
-                    "description": "<p>Dotykasz przychylnej istoty. Raz w każdej ze swoich tur, dopóki czar trwa, ta istota może skoczyć do 30 stóp (9m), wydając 10 stóp (3m) ruchu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
+                    "description": "<p>Dotykasz przychylnej istoty. Raz w każdej swojej turze, dopóki czar trwa, ta istota może skoczyć na odległość do 30 stóp, wydając 10 stóp ruchu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 1.</p>",
                     "materials": "tylna noga pasikonika",
                     "effects": {
                         "Jump": {
@@ -1870,7 +1870,7 @@
                 },
                 "iQYHFES4dazIxbN7": {
                     "name": "Wskazówki",
-                    "description": "<p>Dotykasz przychylną istotę i wybierasz umiejętność. Dopóki czar trwa, istota dodaje 1k4 do każdego testu wykonywanego z użyciem wybranej umiejętności.</p>",
+                    "description": "<p>Dotykasz przychylnej istoty i wybierasz umiejętność. Dopóki czar trwa, istota dodaje 1k4 do każdego testu cechy wykonywanego z użyciem wybranej umiejętności.</p>",
                     "effects": {
                         "Acrobatic Guidance": {
                             "name": "Wskazówki akrobatyki"
@@ -1952,7 +1952,7 @@
                 },
                 "phwjZ3VTAMIPckDb": {
                     "name": "Widzenie niewidzialnego",
-                    "description": "<p>Przez cały czas działania czaru widzisz istoty i obiekty posiadające stan &amp;Reference[invisible apply=false]{Niewidzialny}, jakby były widoczne, oraz możesz patrzeć na sferę Eteryczną. Istoty i obiekty znajdujące się tam wydają się widmowe.</p>",
+                    "description": "<p>Dopóki czar trwa, widzisz istoty i obiekty mające stan &amp;Reference[invisible apply=false], jakby były widoczne, a także widzisz w głąb Sfery eterycznej. Znajdujące się tam istoty i obiekty wydają się widmowe.</p>",
                     "materials": "szczypta talku",
                     "effects": {
                         "See Invisibility": {
@@ -2094,7 +2094,7 @@
                 },
                 "Healing Word": {
                     "name": "Kojące słowo",
-                    "description": "<p>Istota wybrana przez ciebie, którą widzisz w zasięgu, odzyskuje Punkty Wytrzymałości równe 2k4 + twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+                    "description": "<p>Wybrana przez ciebie istota, którą widzisz w zasięgu, odzyskuje Punkty wytrzymałości w liczbie równej 2k4 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdy krąg komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -2103,7 +2103,7 @@
                 },
                 "Thaumaturgy": {
                     "name": "Taumaturgia",
-                    "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
+                    "description": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -2117,7 +2117,7 @@
                 },
                 "Hold Person": {
                     "name": "Unieruchomienie osoby",
-                    "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkowego Humanoida za każdą komórkę czaru powyżej 2. kręgu.</p>",
+                    "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[paralyzed apply=false] na czas trwania czaru. Na końcu każdej swojej tury cel powtarza ten rzut obronny, a udany rzut kończy działanie czaru na nim samym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jednego dodatkowego Humanoida za każdy krąg komórki czaru powyżej 2.</p>",
                     "materials": "prosty kawałek żelaza",
                     "activities": {
                         "save": {
@@ -2136,7 +2136,7 @@
                 },
                 "Tongues": {
                     "name": "Języki",
-                    "description": "<p>Ten czar daje istocie, którą dotkniesz, zdolność rozumienia każdego mówionego lub migowego języka, który słyszy lub widzi. Co więcej, gdy cel komunikuje się przez mówienie lub miganie, każda istota, która zna przynajmniej jeden język, może ją zrozumieć, jeśli ta istota może usłyszeć mowę lub zobaczyć miganie.</p>",
+                    "description": "<p>Ten czar daje istocie, którą dotkniesz, zdolność rozumienia każdego mówionego lub migowego języka, który usłyszy lub zobaczy. Co więcej, gdy cel komunikuje się mową lub migami, każda istota znająca przynajmniej jeden język może ją zrozumieć, jeśli tylko usłyszy tę mowę lub zobaczy te migi.</p>",
                     "materials": "miniaturowy ziggurat",
                     "effects": {
                         "Universal Communication": {
@@ -2328,7 +2328,7 @@
                 },
                 "Pass without Trace": {
                     "name": "Przejście bez śladu",
-                    "description": "<p>Emitujesz aurę ukrywającą w promieniu 30 stóp przez czas trwania czaru. Będąc w aurze, ty oraz każda istota, którą wybierzesz, zyskujecie premię +10 do testów [[/check ability=dex skill=ste]] i nie zostawiacie śladów.</p>",
+                    "description": "<p>Dopóki czar trwa, roztaczasz wokół siebie maskującą aurę w Emanacji o promieniu 30 stóp. Ty oraz każda wybrana przez ciebie istota, dopóki jesteście w tej aurze, macie premię +10 do [[/check ability=dex skill=ste]]{testów Zręczności (Skradanie się)} i nie zostawiacie śladów.</p>",
                     "materials": "popiół ze spalonej jemioły",
                     "effects": {
                         "Concealed": {
@@ -2393,7 +2393,7 @@
                 },
                 "Message": {
                     "name": "Wiadomość",
-                    "description": "<p>Wskazujesz na istotę w zasięgu i szepczesz wiadomość. Cel (i tylko cel) słyszy wiadomość i może odpowiedzieć szeptem, który tylko ty możesz usłyszeć.</p><p>Możesz rzucić ten czar przez lite obiekty, jeśli znasz cel i wiesz, że znajduje się za barierą. Magiczna cisza; 1 stopa (30cm) kamienia, metalu lub drewna; lub cienka warstwa ołowiu blokują czar.</p>",
+                    "description": "<p>Wskazujesz na istotę w zasięgu i szepczesz wiadomość. Cel (i tylko cel) słyszy tę wiadomość i może odpowiedzieć szeptem, który słyszysz tylko ty.</p><p>Możesz rzucić ten czar przez lite obiekty, jeśli znasz cel i wiesz, że znajduje się za przeszkodą. Magiczna cisza, 1 stopa kamienia, metalu lub drewna bądź cienka warstwa ołowiu blokują ten czar.</p>",
                     "materials": "drut miedziany",
                     "effects": {
                         "Spell Changes": {
@@ -2440,7 +2440,7 @@
                 },
                 "euhAuFV7hXJ5acYP": {
                     "name": "Wiadomość",
-                    "description": "<p>Wskazujesz na istotę w zasięgu i szepczesz wiadomość. Cel (i tylko cel) słyszy wiadomość i może odpowiedzieć szeptem, który tylko ty możesz usłyszeć.</p><p>Możesz rzucić ten czar przez lite obiekty, jeśli znasz cel i wiesz, że znajduje się za barierą. Magiczna cisza; 1 stopa (30cm) kamienia, metalu lub drewna; lub cienka warstwa ołowiu blokują czar.</p>",
+                    "description": "<p>Wskazujesz na istotę w zasięgu i szepczesz wiadomość. Cel (i tylko cel) słyszy tę wiadomość i może odpowiedzieć szeptem, który słyszysz tylko ty.</p><p>Możesz rzucić ten czar przez lite obiekty, jeśli znasz cel i wiesz, że znajduje się za przeszkodą. Magiczna cisza, 1 stopa kamienia, metalu lub drewna bądź cienka warstwa ołowiu blokują ten czar.</p>",
                     "materials": "drut miedziany",
                     "effects": {
                         "Spell Changes": {
@@ -2658,7 +2658,7 @@
                 },
                 "Message": {
                     "name": "Wiadomość",
-                    "description": "<p>Wskazujesz na istotę w zasięgu i szepczesz wiadomość. Cel (i tylko cel) słyszy wiadomość i może odpowiedzieć szeptem, który tylko ty możesz usłyszeć.</p><p>Możesz rzucić ten czar przez lite obiekty, jeśli znasz cel i wiesz, że znajduje się za barierą. Magiczna cisza; 1 stopa (30cm) kamienia, metalu lub drewna; lub cienka warstwa ołowiu blokują czar.</p>",
+                    "description": "<p>Wskazujesz na istotę w zasięgu i szepczesz wiadomość. Cel (i tylko cel) słyszy tę wiadomość i może odpowiedzieć szeptem, który słyszysz tylko ty.</p><p>Możesz rzucić ten czar przez lite obiekty, jeśli znasz cel i wiesz, że znajduje się za przeszkodą. Magiczna cisza, 1 stopa kamienia, metalu lub drewna bądź cienka warstwa ołowiu blokują ten czar.</p>",
                     "materials": "drut miedziany",
                     "effects": {
                         "Spell Changes": {
@@ -2688,7 +2688,7 @@
                 },
                 "tEOCi3DngucuvTNO": {
                     "name": "Wiadomość",
-                    "description": "<p>Wskazujesz na istotę w zasięgu i szepczesz wiadomość. Cel (i tylko cel) słyszy wiadomość i może odpowiedzieć szeptem, który tylko ty możesz usłyszeć.</p><p>Możesz rzucić ten czar przez lite obiekty, jeśli znasz cel i wiesz, że znajduje się za barierą. Magiczna cisza; 1 stopa (30cm) kamienia, metalu lub drewna; lub cienka warstwa ołowiu blokują czar.</p>",
+                    "description": "<p>Wskazujesz na istotę w zasięgu i szepczesz wiadomość. Cel (i tylko cel) słyszy tę wiadomość i może odpowiedzieć szeptem, który słyszysz tylko ty.</p><p>Możesz rzucić ten czar przez lite obiekty, jeśli znasz cel i wiesz, że znajduje się za przeszkodą. Magiczna cisza, 1 stopa kamienia, metalu lub drewna bądź cienka warstwa ołowiu blokują ten czar.</p>",
                     "materials": "drut miedziany",
                     "effects": {
                         "Spell Changes": {
@@ -2734,7 +2734,7 @@
                 },
                 "Thaumaturgy": {
                     "name": "Taumaturgia",
-                    "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
+                    "description": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -2755,7 +2755,7 @@
                 },
                 "NV8IJuF8Rdvo2kIk": {
                     "name": "Taumaturgia",
-                    "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
+                    "description": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -2781,7 +2781,7 @@
                 },
                 "efaThaumaturgy00": {
                     "name": "Taumaturgia",
-                    "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
+                    "description": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>",
                     "effects": {
                         "Booming Voice": {
                             "name": "Grzmiący głos",
@@ -2794,7 +2794,7 @@
                 },
                 "Fm3khihTk3Ttz8cP": {
                     "name": "Wiedźmi pocisk",
-                    "description": "<p>Promień trzaskającej energii pędzi w stronę istoty w zasięgu, tworząc ciągły łuk błyskawic między tobą a celem. Wykonaj dystansowy test ataku czarem przeciwko niej. W przypadku trafienia cel otrzymuje 2k12 obrażeń od elektryczności.</p><p>W każdej z twoich kolejnych tur możesz użyć Akcji dodatkowej, aby automatycznie zadać celowi 1k12 obrażeń od elektryczności, nawet jeśli pierwszy atak chybił.</p><p>Czar kończy się, jeśli cel kiedykolwiek znajdzie się poza zasięgiem czaru lub jeśli ma &amp;Reference[totalcover]{Całkowita osłona} od ciebie.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Początkowe obrażenia zwiększają się o 1k12 za każdy krąg komórki czaru powyżej 1.</p>",
+                    "description": "<p>Promień trzaskającej energii mknie ku istocie w zasięgu, tworząc trwały łuk błyskawicy między tobą a celem. Wykonaj dystansowy atak czarem przeciwko niej. Przy trafieniu cel otrzymuje 2k12 obrażeń od Elektryczności.</p><p>W każdej ze swoich kolejnych tur możesz Akcją dodatkową automatycznie zadać celowi 1k12 obrażeń od Elektryczności, nawet jeśli pierwszy atak chybił.</p><p>Czar kończy się, jeśli cel choćby na chwilę znajdzie się poza zasięgiem czaru albo zyska wobec ciebie &amp;Reference[totalcover].</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Początkowe obrażenia zwiększają się o 1k12 za każdy krąg komórki czaru powyżej 1.</p>",
                     "materials": "gałązka uderzona piorunem",
                     "activities": {
                         "Bonus Action Damage": {
@@ -3203,7 +3203,7 @@
                 },
                 "Ice Storm": {
                     "name": "Burza lodu",
-                    "description": "<p>Grad spada w Walcu o promieniu 20 stóp i wysokości 40 stóp z centrum w punkcie w zasięgu. Każda istota w Walcu wykonuje rzut obronny na Zręczność. Istota otrzymuje 2k10 obrażeń obuchowych i 4k6 obrażeń od zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym rzucie.</p><p>Gradziny zamieniają grunt w Walcu w &amp;Reference[DifficultTerrain]{Trudny Teren} do końca twojej następnej tury.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia obuchowe zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 4.</p>",
+                    "description": "<p>Grad spada w Walcu o promieniu 20 stóp i wysokości 40 stóp, skupionym na punkcie w zasięgu. Każda istota w Walcu wykonuje rzut obronny na Zręczność. Istota otrzymuje 2k10 obrażeń obuchowych i 4k6 obrażeń od Zimna przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p>Gradziny zamieniają grunt w Walcu w &amp;Reference[DifficultTerrain] do końca twojej następnej tury.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia obuchowe zwiększają się o 1k10 za każdy krąg komórki czaru powyżej 4.</p>",
                     "materials": "rękawiczka z jednym palcem",
                     "activities": {
                         "save": {
@@ -3325,7 +3325,7 @@
                 },
                 "Ray of Sickness": {
                     "name": "Promień zatrucia",
-                    "description": "<p>Wystrzeliwujesz zielonkawy promień w kierunku istoty w zasięgu. Wykonaj dystansowy test ataku zaklęciem przeciwko celowi. W przypadku trafienia cel otrzymuje 2k8 obrażeń od trucizn i zyskuje stan &amp;Reference[Poisoned]{Zatruty} do końca twojej następnej tury.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+                    "description": "<p>Wystrzeliwujesz zielonkawy promień w kierunku istoty w zasięgu. Wykonaj dystansowy atak czarem przeciwko celowi. Przy trafieniu cel otrzymuje 2k8 obrażeń od Trucizny i otrzymuje stan &amp;Reference[poisoned] do końca twojej następnej tury.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -3334,7 +3334,7 @@
                 },
                 "Thaumaturgy": {
                     "name": "Taumaturgia",
-                    "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
+                    "description": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -3343,7 +3343,7 @@
                 },
                 "Cure Wounds": {
                     "name": "Leczenie ran",
-                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty Wytrzymałości w liczbie równej 2k8 plus twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>",
+                    "description": "<p>Istota, którą dotkniesz, odzyskuje Punkty wytrzymałości w liczbie równej 2k8 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k8 za każdy krąg komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -3352,7 +3352,7 @@
                 },
                 "Hold Person": {
                     "name": "Unieruchomienie osoby",
-                    "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkowego Humanoida za każdą komórkę czaru powyżej 2. kręgu.</p>",
+                    "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[paralyzed apply=false] na czas trwania czaru. Na końcu każdej swojej tury cel powtarza ten rzut obronny, a udany rzut kończy działanie czaru na nim samym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jednego dodatkowego Humanoida za każdy krąg komórki czaru powyżej 2.</p>",
                     "materials": "prosty kawałek żelaza",
                     "activities": {
                         "save": {
@@ -3371,7 +3371,7 @@
                 },
                 "Protection from Poison": {
                     "name": "Ochrona przed trucizną",
-                    "description": "<p>Dotykasz istoty i usuwasz z niej stan &amp;Reference[Poisoned]{Zatruty}. Przez cały czas działania czaru cel ma Premię do rzutów obronnych, aby uniknąć lub zakończyć stan Zatruty, oraz zyskuje Odporność na obrażenia od trucizn.</p>",
+                    "description": "<p>Dotykasz istoty i znosisz na niej stan &amp;Reference[poisoned]. Dopóki czar trwa, cel ma Ułatwienie w rzutach obronnych mających na celu uniknięcie lub zakończenie stanu Zatruty, a także ma Odporność na obrażenia od Trucizny.</p>",
                     "effects": {
                         "Poison Protection": {
                             "name": "Ochrona przed trucizną",
