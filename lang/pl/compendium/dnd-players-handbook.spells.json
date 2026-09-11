@@ -4796,7 +4796,7 @@
         },
         "Thunderwave": {
             "name": "Fala gromu",
-            "description": "<p>Wypuszczasz falę grzmotliwego ładunku energetycznego. Każda istota w sześcianie o boku 4,5m (15 stóp) wychodzącym od ciebie musi zdać rzut obronny na Kondycję. W przypadku nieudanego rzutu, istota otrzymuje 2k8 obrażeń od dźwięku grzmotu i zostaje odepchnięta o 3m (10 stóp) od ciebie. W przypadku udanego rzutu, istota otrzymuje połowę obrażeń.</p><p>Dodatkowo, nieprzymocowane obiekty, które znajdują się w całości w sześcianie, są odepchnięte o 3m (10 stóp) od ciebie, a grzmiący huk jest słyszalny w promieniu 90m (300 stóp).</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy poziom komórki czaru powyżej 1.</p>",
+            "description": "<p>Uwalniasz falę grzmiącej energii. Każda istota w Sześcianie o boku 15 stóp, wychodzącym od ciebie, wykonuje rzut obronny na Kondycję. Przy nieudanym rzucie istota otrzymuje 2k8 obrażeń od Dźwięku i zostaje odepchnięta o 10 stóp od ciebie. Przy udanym rzucie istota otrzymuje tylko połowę tych obrażeń.</p><p>Dodatkowo nieprzymocowane obiekty znajdujące się w całości w Sześcianie zostają odepchnięte o 10 stóp od ciebie, a grzmiący huk słychać w promieniu 300 stóp.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 1.</p>",
             "activities": {
                 "save": {
                     "damageOnSave": "połowa"
