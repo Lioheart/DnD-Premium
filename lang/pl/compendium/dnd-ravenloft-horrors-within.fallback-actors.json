@@ -296,7 +296,7 @@
                 },
                 "Teleport": {
                     "name": "Teleportacja",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] teleports up to [[lookup @range.value activity=dnoRMdFzhUUku26D]] [[lookup @range.units activity=dnoRMdFzhUUku26D]]. to an unoccupied space it can see.</p>",
+                    "description": "<p class=\"feature\">[[lookup @name]] teleportuje się o maksymalnie [[lookup @range.value activity=dnoRMdFzhUUku26D]] [[lookup @range.units activity=dnoRMdFzhUUku26D]] do niezajętej przestrzeni, którą widzi.</p>",
                     "activities": {
                         "Expend Use": {
                             "name": "Wykorzystaj użycie"
@@ -392,7 +392,7 @@
                 },
                 "Mage Hand": {
                     "name": "Magiczna dłoń",
-                    "description": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń trwa przez czas trwania. Dłoń znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Gdy rzucasz czar, możesz użyć dłoni do manipulowania obiektem, otwarcia niezamkniętych drzwi lub pojemnika, schowania lub wyciągnięcia przedmiotu z otwartego pojemnika albo przelania zawartości fiolki.</p><p>Akcją Magii w twoich kolejnych turach możesz ponownie kontrolować dłoń w ten sposób. W ramach tej akcji możesz przemieścić dłoń do 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (4,5 kg).</p>",
+                    "description": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń utrzymuje się przez czas trwania czaru. Znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Rzucając ten czar, możesz użyć dłoni, by manipulować obiektem, otworzyć niezamknięte drzwi lub pojemnik, schować lub wyciągnąć przedmiot z otwartego pojemnika albo wylać zawartość fiolki.</p><p>Akcją magii w kolejnych turach możesz ponownie użyć dłoni w ten sam sposób. W ramach tej akcji możesz przemieścić dłoń o maksymalnie 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (5 kg).</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -401,7 +401,7 @@
                 },
                 "Prestidigitation": {
                     "name": "Kuglarstwo",
-                    "description": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć aktywne maksymalnie trzy jego nienatychmiastowe efekty jednocześnie.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt sensoryczny, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 27 litrów.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak do 27 litrów nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że kolor, mały znak lub symbol pojawia się na obiekcie albo powierzchni na 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w dłoni. Trwa on do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>",
+                    "description": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy jego nienatychmiastowe efekty.</p><p><strong>Efekt zmysłowy.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt zmysłowy, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa z ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 1 stopę sześcienną.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak maksymalnie 1 stopie sześciennej nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że na obiekcie albo powierzchni pojawia się kolor, mały znak lub symbol, utrzymujący się przez 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w twojej dłoni. Utrzymuje się do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -548,7 +548,7 @@
                 },
                 "Thaumaturgy": {
                     "name": "Taumaturgia",
-                    "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
+                    "description": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -619,7 +619,7 @@
                 },
                 "Zone of Truth": {
                     "name": "Strefa prawdy",
-                    "description": "<p>Tworzysz magiczną strefę, która chroni przed oszustwem w Sferze o promieniu 15 stóp, skupionej na punkcie w zasięgu. Do czasu zakończenia czaru istota, która po raz pierwszy w turze wejdzie w obszar działania czaru lub rozpocznie w nim swoją turę, wykonuje rzut obronny na Charyzmę. W przypadku niepowodzenia istota nie może świadomie kłamać, przebywając w promieniu strefy. Wiesz, czy istota zdała, czy nie zdała ten rzut obronny.</p><p>Istota objęta działaniem czaru jest świadoma jego efektu i może unikać odpowiedzi na pytania, na które normalnie odpowiedziałaby kłamstwem. Taka istota może być wymijająca, ale musi mówić prawdę.</p>",
+                    "description": "<p>Tworzysz magiczną strefę chroniącą przed oszustwem w Sferze o promieniu 15 stóp, skupionej na punkcie w zasięgu. Dopóki czar trwa, istota, która po raz pierwszy w ciągu tury znajdzie się w obszarze czaru lub rozpocznie w nim swoją turę, wykonuje rzut obronny na Charyzmę. Przy nieudanym rzucie nie może świadomie kłamać, przebywając w zasięgu strefy. Wiesz, czy dana istota zdała ten rzut, czy nie.</p><p>Istota objęta działaniem czaru jest świadoma jego działania i może unikać odpowiadania na pytania, na które normalnie odpowiedziałaby kłamstwem. Taka istota może być wymijająca, musi jednak mówić prawdę.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
@@ -628,7 +628,7 @@
                     "effects": {
                         "Cannot Lie": {
                             "name": "Niezdolny do kłamstwa",
-                            "description": "<p>Przy nieudanym rzucie obronnym istota nie może mówić świadomego kłamstwa w obrębie promienia. Wiesz, czy istota odniosła sukces, czy nie.</p><p>Dotknięta istota jest świadoma czaru i może unikać odpowiadania na pytania, na które normalnie odpowiedziałaby kłamstwem. Taka istota może być wymijająca, ale musi mówić prawdę.</p>"
+                            "description": "<p>Przy nieudanym rzucie istota nie może świadomie kłamać, przebywając w zasięgu strefy. Wiesz, czy dana istota zdała ten rzut, czy nie.</p><p>Dotknięta istota jest świadoma działania czaru i może unikać odpowiadania na pytania, na które normalnie odpowiedziałaby kłamstwem. Taka istota może być wymijająca, musi jednak mówić prawdę.</p>"
                         },
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -664,7 +664,7 @@
                 },
                 "Healing Word": {
                     "name": "Kojące słowo",
-                    "description": "<p>Istota wybrana przez ciebie, którą widzisz w zasięgu, odzyskuje Punkty Wytrzymałości równe 2k4 + twój modyfikator zdolności rzucania czarów.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdą komórkę czaru powyżej 1. kręgu.</p>",
+                    "description": "<p>Wybrana przez ciebie istota, którą widzisz w zasięgu, odzyskuje Punkty wytrzymałości w liczbie równej 2k4 plus twój modyfikator cechy bazowej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Leczenie zwiększa się o 2k4 za każdy krąg komórki czaru powyżej 1.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -673,7 +673,7 @@
                 },
                 "Lesser Restoration": {
                     "name": "Mniejsze przywrócenie",
-                    "description": "<p>Dotykasz istoty i kończysz jeden stan który posiada: &amp;Reference[blinded]{Oślepiony}, &amp;Reference[deafened]{Ogłuchły}, &amp;Reference[paralyzed]{Sparaliżowany} lub &amp;Reference[poisoned]{Zatruty}.</p>",
+                    "description": "<p>Dotykasz istoty i znosisz jeden z jej stanów: &amp;Reference[blinded], &amp;Reference[deafened], &amp;Reference[paralyzed] lub &amp;Reference[poisoned].</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -942,7 +942,7 @@
         },
         "Blob of Annihilation": {
             "name": "Plama anihilacji",
-            "description": "<h1>Blob of Annihilation</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.eOmRGDXv0BqCZbVA caption=false cite=false classes=\"no-embed mm\"]</p>",
+            "description": "<h1>Plama anihilacji</h1><p>@Embed[Compendium.dnd-monster-manual.content.JournalEntry.mmAppendixMonste.JournalEntryPage.eOmRGDXv0BqCZbVA caption=false cite=false classes=\"no-embed mm\"]</p>",
             "alignment": "Neutralny Zły",
             "items": {
                 "Legendary Resistance": {
@@ -1018,7 +1018,7 @@
                 },
                 "Decay": {
                     "name": "Rozkład",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] deals [[/damage average]] damage [[lookup @target.affects.special activity=Seq1WbVdQNorBsTL]]. The [[lookup @name lowercase]] can’t take this action again until the start of its next turn.</p>",
+                    "description": "<p class=\"feature\">[[lookup @name]] zadaje [[/damage average]] obrażeń [[lookup @target.affects.special activity=Seq1WbVdQNorBsTL]]. [[lookup @name]] nie może wykonać ponownie tej Akcji aż do początku swojej następnej tury.</p>",
                     "activities": {
                         "Damage: Engulfed Creatures": {
                             "name": "Damage: Engulfed Creatures",
@@ -1066,7 +1066,7 @@
                 },
                 "z817Et9IPt6qHawH": {
                     "name": "Duchowa broń",
-                    "description": "<p>Tworzysz unoszącą się, spektralną siłę przypominającą wybraną przez ciebie broń, która trwa przez cały czas działania czaru. Siła pojawia się w zasięgu w wybranym przez ciebie miejscu, a następnie możesz natychmiast wykonać jeden wręczowy atak zaklęciem przeciwko istocie znajdującej się w odległości 5 stóp od niej. W przypadku trafienia cel otrzymuje obrażenia od mocy równe 1k8 + twój modyfikator zdolności rzucania czarów.</p><p>Jako Akcję Dodatkową w swoich kolejnych turach możesz przesunąć siłę o maksymalnie 20 stóp i ponowić atak przeciwko istocie w odległości 5 stóp od niej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdą komórkę czaru powyżej 2. kręgu.</p>",
+                    "description": "<p>Tworzysz unoszącą się, spektralną moc przypominającą wybraną przez ciebie broń, która utrzymuje się przez czas trwania czaru. Pojawia się ona w zasięgu, w wybranym przez ciebie miejscu, a następnie możesz natychmiast wykonać jeden atak wręcz czarem przeciwko istocie znajdującej się w odległości 5 stóp od niej. Przy trafieniu cel otrzymuje obrażenia od Mocy równe 1k8 plus twój modyfikator cechy bazowej.</p><p>Akcją dodatkową w kolejnych turach możesz przesunąć tę moc o maksymalnie 20 stóp i powtórzyć atak przeciwko istocie w odległości 5 stóp od niej.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 2.</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -1090,7 +1090,7 @@
                 },
                 "Thaumaturgy": {
                     "name": "Taumaturgia",
-                    "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
+                    "description": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -1118,7 +1118,7 @@
                 },
                 "Hold Person": {
                     "name": "Unieruchomienie osoby",
-                    "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &amp;Reference[paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkowego Humanoida za każdą komórkę czaru powyżej 2. kręgu.</p>",
+                    "description": "<p>Wybierasz Humanoida, którego widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[paralyzed apply=false] na czas trwania czaru. Na końcu każdej swojej tury cel powtarza ten rzut obronny, a udany rzut kończy działanie czaru na nim samym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jednego dodatkowego Humanoida za każdy krąg komórki czaru powyżej 2.</p>",
                     "materials": "prosty kawałek żelaza",
                     "activities": {
                         "save": {
@@ -1148,7 +1148,7 @@
                 },
                 "Elemental Restoration": {
                     "name": "Żywiołowe przywrócenie",
-                    "description": "<p class=\"feature\">If the [[lookup @name lowercase]] dies outside the Elemental Plane of Earth, its body dissolves into dirt, and it gains a new body in [[/r 1d4]] days, reviving with all its Hit Points somewhere on the Plane of Earth.</p>",
+                    "description": "<p class=\"feature\">Jeśli [[lookup @name lowercase]] umrze poza Sferą Żywiołu Ziemi, jego ciało rozpuszcza się w ziemi, a po [[/r 1d4]] dniach zyskuje nowe ciało, odradzając się ze wszystkimi swoimi Punktami Wytrzymałości w jakimś miejscu na Sferze Żywiołu Ziemi.</p>",
                     "requirements": "umiera poza Sferą Żywiołu Ziemi"
                 },
                 "Magic Resistance": {
@@ -1167,7 +1167,7 @@
                 },
                 "Wish": {
                     "name": "Życzenie",
-                    "description": "<p><em>Życzenie</em> to najpotężniejszy czar, jaki może rzucić śmiertelnik. Wypowiadając słowa na głos, możesz zmienić samą rzeczywistość.</p><p>Podstawowym zastosowaniem tego czaru jest powielenie dowolnego innego czaru o poziomie 8 lub niższym. Jeśli użyjesz go w ten sposób, nie musisz spełniać żadnych wymagań do rzucenia tamtego czaru, w tym kosztownych komponentów. Czar po prostu działa.</p><p>Alternatywnie możesz wywołać jeden z następujących efektów według własnego wyboru:</p><p><strong>Tworzenie Obiektu.</strong> Tworzysz jeden obiekt o wartości do 25 000 sz, który nie jest magicznym przedmiotem. Obiekt nie może przekraczać 300 stóp w żadnym wymiarze i pojawia się w wolnej przestrzeni, którą widzisz na ziemi.</p><p><strong>Natychmiastowe Zdrowie.</strong> Pozwalasz sobie i maksymalnie dwudziestu istotom, które widzisz, odzyskać wszystkie Punkty Wytrzymałości, a także kończysz wszystkie efekty na nich wymienione w czarze <em>Większe Przywrócenie</em>.</p><p><strong>Odporność.</strong> Dajesz maksymalnie dziesięciu istotom, które widzisz, Odporność na jeden wybrany przez ciebie typ obrażeń. Ta Odporność jest trwała.</p><p><strong>Odporność na Czary.</strong> Dajesz maksymalnie dziesięciu istotom, które widzisz, odporność na pojedynczy czar lub inny magiczny efekt przez 8 godzin.</p><p><strong>Nagła Nauka.</strong> Zastępujesz jeden ze swoich atutów innym atutem, do którego jesteś uprawniony. Tracisz wszystkie korzyści starego atutu i zyskujesz korzyści nowego. Nie możesz zastąpić atutu, który jest warunkiem wstępnym dla innych twoich atutów lub cech.</p><p><strong>Powtórka Rzutu.</strong> Cofasz jedno niedawne wydarzenie, zmuszając do ponownego rzutu dowolnym rzutem kością wykonanym w ostatniej rundzie (w tym w twojej ostatniej turze). Rzeczywistość dostosowuje się do nowego wyniku. Na przykład czar <em>Życzenie</em> może cofnąć nieudany rzut obronny sojusznika lub Trafienie Krytyczne wroga. Możesz zmusić, by ponowny rzut został wykonany z Ułatwieniem lub Utrudnieniem, i decydujesz, czy użyć ponownego rzutu, czy oryginalnego wyniku.</p><p><strong>Przekształcenie Rzeczywistości.</strong> Możesz zażyczyć sobie czegoś, co nie jest uwzględnione w innych efektach. Aby to zrobić, przedstaw swoje życzenie MG tak precyzyjnie, jak to możliwe. MG ma dużą swobodę w decydowaniu, co się dzieje w takim przypadku; im większe życzenie, tym większa szansa, że coś pójdzie nie tak. Ten czar może po prostu nie zadziałać, efekt, którego pragniesz, może zostać osiągnięty tylko częściowo, lub możesz ponieść nieprzewidziane konsekwencje w wyniku sformułowania życzenia. Na przykład zażyczenie śmierci złoczyńcy może przenieść cię w czasie do okresu, gdy ten złoczyńca już nie żyje, skutecznie usuwając cię z gry. Podobnie zażyczenie legendarnego magicznego przedmiotu lub Artefaktu może natychmiast teleportować cię do obecnego właściciela tego przedmiotu. Jeśli twoje życzenie zostanie spełnione i jego efekty mają konsekwencje dla całej społeczności, regionu lub świata, prawdopodobnie przyciągniesz potężnych wrogów. Jeśli twoje życzenie wpłynie na boga, boskie sługi tego boga mogą natychmiast interweniować, aby temu zapobiec lub skłonić cię do sformułowania życzenia w określony sposób. Jeśli twoje życzenie miałoby zniszczyć wieloświat, zagrozić Miastu Sigil lub w jakikolwiek sposób wpłynąć na Panią Bólu, przez chwilę widzisz jej obraz w swoim umyśle; ona potrząsa głową, a twoje życzenie nie udaje się.</p><p>Napięcie związane z rzuceniem <em>Życzenia</em> w celu uzyskania jakiegokolwiek efektu innego niż powielenie innego czaru osłabia cię. Po zniesieniu tego napięcia za każdym razem, gdy rzucisz czar, zanim zakończysz Długi Odpoczynek, otrzymujesz 1k10 obrażeń nekrotycznych za każdy poziom tamtego czaru. Tych obrażeń nie można w żaden sposób zmniejszyć ani zapobiec. Ponadto twój wynik Siły staje się 3 na 2k4 dni. Za każdy z tych dni, który spędzisz na odpoczynku i lekkiej aktywności, pozostały czas regeneracji zmniejsza się o 2 dni. Wreszcie istnieje [[/r 1d3cs1]]{33 procent szans}, że nie będziesz w stanie ponownie rzucić <em>Życzenia</em>, jeśli doświadczysz tego napięcia.</p>",
+                    "description": "<p><em>Życzenie</em> to najpotężniejszy czar, jaki może rzucić śmiertelnik. Wypowiadając słowa na głos, możesz odmienić samą rzeczywistość.</p><p>Podstawowym zastosowaniem tego czaru jest powielenie dowolnego innego czaru 8. kręgu lub niższego. Jeśli użyjesz go w ten sposób, nie musisz spełniać żadnych wymogów, by rzucić tamten czar, w tym kosztownych komponentów. Czar po prostu zaczyna działać.</p><p>Alternatywnie możesz wywołać jeden z poniższych efektów.</p><p><strong>Stworzenie obiektu.</strong> Tworzysz jeden obiekt o wartości do 25 000 sz, który nie jest magicznym przedmiotem. Obiekt nie może przekraczać 300 stóp w żadnym wymiarze i pojawia się w niezajętej przestrzeni, którą widzisz na ziemi.</p><p><strong>Natychmiastowe zdrowie.</strong> Pozwalasz sobie i maksymalnie dwudziestu istotom, które widzisz, odzyskać wszystkie Punkty wytrzymałości, a także znosisz na nich wszystkie efekty wymienione w opisie czaru <em>Większe przywrócenie</em>.</p><p><strong>Odporność.</strong> Dajesz maksymalnie dziesięciu istotom, które widzisz, Odporność na jeden wybrany przez ciebie typ obrażeń. Ta Odporność jest trwała.</p><p><strong>Niepodatność na czary.</strong> Dajesz maksymalnie dziesięciu istotom, które widzisz, Niepodatność na pojedynczy czar lub inny magiczny efekt na 8 godzin.</p><p><strong>Nagła nauka.</strong> Zastępujesz jeden ze swoich atutów innym atutem, do którego jesteś uprawniony. Tracisz wszystkie korzyści dawnego atutu i zyskujesz korzyści nowego. Nie możesz zastąpić atutu, który jest warunkiem koniecznym dla innych twoich atutów lub cech.</p><p><strong>Powtórka rzutu.</strong> Cofasz jedno niedawne zdarzenie, zmuszając do powtórzenia dowolnego rzutu kością wykonanego w ciągu ostatniej rundy (w tym w twojej ostatniej turze). Rzeczywistość dostosowuje się do nowego wyniku. Na przykład <em>Życzenie</em> może cofnąć nieudany rzut obronny sojusznika albo Trafienie krytyczne wroga. Możesz sprawić, że powtórzony rzut zostanie wykonany z Ułatwieniem lub Utrudnieniem, i decydujesz, czy skorzystać z nowego wyniku, czy zachować oryginalny.</p><p><strong>Przekształcenie rzeczywistości.</strong> Możesz zażyczyć sobie czegoś, co nie zostało ujęte w żadnym z pozostałych efektów. Aby to zrobić, przedstaw swoje życzenie MP tak precyzyjnie, jak to możliwe. To MP w dużej mierze decyduje, co się wtedy wydarzy — im większe życzenie, tym większa szansa, że coś pójdzie nie tak. Ten czar może po prostu zawieść, pragnięty efekt może się urzeczywistnić tylko częściowo, albo możesz ponieść nieprzewidziane konsekwencje wynikające ze sposobu, w jaki sformułowałeś życzenie. Na przykład zażyczenie sobie śmierci złoczyńcy może przenieść cię w czasie do okresu, gdy ten złoczyńca już nie żyje, skutecznie usuwając cię z gry. Podobnie zażyczenie sobie legendarnego magicznego przedmiotu lub Artefaktu może natychmiast przenieść cię tam, gdzie znajduje się obecny właściciel tego przedmiotu. Jeśli twoje życzenie zostanie spełnione, a jego skutki dotkną całej społeczności, regionu czy świata, prawdopodobnie ściągniesz na siebie potężnych wrogów. Jeśli twoje życzenie miałoby wpłynąć na jakiegoś boga, boscy słudzy tego boga mogą natychmiast interweniować, by temu zapobiec albo skłonić cię do sformułowania życzenia w określony sposób. Jeśli twoje życzenie miałoby unicestwić sam wieloświat, zagrozić Miastu Sigil albo w jakikolwiek sposób dotknąć Pani Bólu, na chwilę ujrzysz w swoim umyśle jej obraz; ona potrząśnie głową, a twoje życzenie zawiedzie.</p><p>Rzucenie <em>Życzenia</em> w celu wywołania jakiegokolwiek efektu innego niż powielenie innego czaru wiąże się z napięciem, które cię osłabia. Gdy raz go doświadczysz, za każdym razem, gdy rzucisz jakikolwiek czar przed zakończeniem Długiego odpoczynku, otrzymujesz 1k10 obrażeń Nekrotycznych za każdy krąg tego czaru. Tych obrażeń nie można w żaden sposób zmniejszyć ani im zapobiec. Ponadto twoja wartość Siły spada do 3 na 2k4 dni. Za każdy z tych dni, który spędzisz na odpoczynku, nie robiąc nic ponad lekką aktywność, pozostały czas regeneracji skraca się o 2 dni. Wreszcie istnieje [[/r 1d3cs1]]{33-procentowa szansa}, że nie zdołasz nigdy więcej rzucić <em>Życzenia</em>, jeśli doświadczysz tego napięcia.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie",
@@ -1205,7 +1205,7 @@
                 },
                 "Earth Burst": {
                     "name": "Wybuch ziemi",
-                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. <em>Hit or Miss:</em> Earth explodes from the target’s space, creating the following effect.</p><p><em>Dexterity Saving Throw:</em> DC [[lookup @save.dc.value activity=TS5RHvq56ByTxHGi]], each [[lookup @target.affects.type activity=TS5RHvq56ByTxHGi]] in a [[lookup @target.template.size activity=TS5RHvq56ByTxHGi]]-foot Emanation originating from and including the target.</p><p><em>Failure:</em> [[/damage average activity=TS5RHvq56ByTxHGi]] damage.</p>",
+                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. <em>Trafienie lub chybienie:</em> Z przestrzeni celu wybucha ziemia, wywołując następujący efekt.</p><p><em>Rzut obronny na Zręczność:</em> ST [[lookup @save.dc.value activity=TS5RHvq56ByTxHGi]], każda istota typu [[lookup @target.affects.type activity=TS5RHvq56ByTxHGi]] w Emanacji o promieniu [[lookup @target.template.size activity=TS5RHvq56ByTxHGi]] stóp, której źródłem jest cel i która go obejmuje.</p><p><em>Porażka:</em> [[/damage average activity=TS5RHvq56ByTxHGi]] obrażeń.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "none"
@@ -1276,7 +1276,7 @@
                 },
                 "Invisibility": {
                     "name": "Niewidzialność",
-                    "description": "<p>Istota, którą dotykasz, otrzymuje stan &amp;Reference[invisible apply=false]{Niewidzialny} do końca czaru. Czar kończy się wcześniej natychmiast po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>",
+                    "description": "<p>Istota, której dotkniesz, otrzymuje stan &amp;Reference[invisible apply=false], dopóki czar nie dobiegnie końca. Czar kończy się przedwcześnie zaraz po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>",
                     "materials": "rzęsa w kleju arabskim",
                     "effects": {
                         "Invisible": {
@@ -1323,7 +1323,7 @@
                 },
                 "Plane Shift": {
                     "name": "Sferalny przeskok",
-                    "description": "<p>Ty oraz do ośmiu przychylnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
+                    "description": "<p>Ty oraz do ośmiu przychylnych istot, które złączą ręce w kręgu, zostajecie przeniesieni na inną sferę istnienia. Możesz określić miejsce docelowe w ogólnych słowach, takich jak Miasto Mosiądzu na Sferze żywiołu ognia lub pałac Dispatera na drugim poziomie Dziewięciu piekieł, a wtedy pojawiacie się w tym miejscu lub w jego pobliżu, zgodnie z decyzją MP.</p><p>Alternatywnie, jeśli znasz sekwencję sygili kręgu teleportacyjnego na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie przeniesione przez ciebie istoty, pojawiają się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
                     "targetAffects": "ty oraz do ośmiu przychylnych ci istot",
                     "activities": {
@@ -1339,7 +1339,7 @@
                 },
                 "Tongues": {
                     "name": "Języki",
-                    "description": "<p>Ten czar daje istocie, którą dotkniesz, zdolność rozumienia każdego mówionego lub migowego języka, który słyszy lub widzi. Co więcej, gdy cel komunikuje się przez mówienie lub miganie, każda istota, która zna przynajmniej jeden język, może ją zrozumieć, jeśli ta istota może usłyszeć mowę lub zobaczyć miganie.</p>",
+                    "description": "<p>Ten czar daje istocie, którą dotkniesz, zdolność rozumienia każdego mówionego lub migowego języka, który usłyszy lub zobaczy. Co więcej, gdy cel komunikuje się mową lub migami, każda istota znająca przynajmniej jeden język może ją zrozumieć, jeśli tylko usłyszy tę mowę lub zobaczy te migi.</p>",
                     "materials": "miniaturowy ziggurat",
                     "effects": {
                         "Universal Communication": {
@@ -1389,7 +1389,7 @@
                 },
                 "Dread Scythe": {
                     "name": "Złowroga kosa",
-                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the target can’t regain Hit Points until the end of its next turn.</p>",
+                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], a cel nie może odzyskiwać Punktów Wytrzymałości do końca swojej następnej tury.</p>",
                     "effects": {
                         "Healing Restriction": {
                             "name": "Ograniczenie leczenia",
@@ -1407,7 +1407,7 @@
                 },
                 "Spirit Wail": {
                     "name": "Duchowe zawodzenie",
-                    "description": "<p class=\"feature\"><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=5JzDfoXBTiCay7OP]], each [[lookup @target.affects.type activity=5JzDfoXBTiCay7OP]] in a [[lookup @target.template.size activity=5JzDfoXBTiCay7OP]]-foot Emanation originating from the [[lookup @name lowercase]].</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage, and the creature has the &amp;Reference[Frightened apply=false] condition until the end of its next turn.</p><p class=\"feature\"><em>Success:</em> Half damage only.</p>",
+                    "description": "<p class=\"feature\"><em>Rzut obronny na Mądrość:</em> ST [[lookup @save.dc.value activity=5JzDfoXBTiCay7OP]], każdy [[lookup @target.affects.type activity=5JzDfoXBTiCay7OP]] w Emanacji o promieniu [[lookup @target.template.size activity=5JzDfoXBTiCay7OP]] stóp, której źródłem jest [[lookup @name lowercase]].</p><p class=\"feature\"><em>Porażka:</em> [[/damage average]] obrażeń, a istota ma stan &amp;Reference[Frightened apply=false] do końca swojej następnej tury.</p><p class=\"feature\"><em>Sukces:</em> Tylko połowa obrażeń.</p>",
                     "activities": {
                         "Save": {
                             "name": "Obrona",
@@ -1433,7 +1433,7 @@
                 },
                 "Thaumaturgy": {
                     "name": "Taumaturgia",
-                    "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
+                    "description": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -1622,7 +1622,7 @@
                 },
                 "Displacement": {
                     "name": "Przemieszczenie",
-                    "description": "<p class=\"feature\">Attack rolls against the [[lookup @name lowercase]] have Disadvantage, since it projects an illusion that makes it appear to be near its actual location. This trait is suppressed while the [[lookup @name lowercase]] has the Incapacitated condition.</p>"
+                    "description": "<p class=\"feature\">Testy ataku przeciwko [[lookup @name lowercase]] mają Utrudnienie, ponieważ wytwarza iluzję, przez którą wydaje się znajdować w pobliżu swojego rzeczywistego położenia. Ta cecha nie działa, gdy [[lookup @name lowercase]] ma stan Obezwładniony.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -1672,7 +1672,7 @@
                 },
                 "Elemental Claw": {
                     "name": "Elemental Claw",
-                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]] ([[lookup @name lowercase]]'s choice). If the target is a Medium or smaller creature, the cultist moves the target up to 10 feet straight toward or away from itself.</p>",
+                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]] (wedle wyboru [[lookup @name lowercase]]). Jeśli cel jest Średnią lub mniejszą istotą, kultysta przesuwa cel o maksymalnie 10 stóp po linii prostej ku sobie albo od siebie.</p>",
                     "activities": {
                         "attack": {
                             "chatFlavor": "Przy trafieniu: cel porusza się o 10 stóp od istoty."
@@ -1681,11 +1681,11 @@
                 },
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC [[lookup @attributes.spell.dc]]):</p><p class=\"feature-trait\"><strong>At Will:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplElementali]{Elementalism}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMageHand00]{Mage Hand}</em></p>"
+                    "description": "<p class=\"feature\">[[lookup @name]] rzuca jeden z poniższych czarów, używając Mądrości jako Cechy bazowej (ST rzutu obronnego przeciw czarom [[lookup @attributes.spell.dc]]):</p><p class=\"feature-trait\"><strong>Do woli:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplElementali]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMageHand00]</em></p>"
                 },
                 "Elemental Absorption": {
                     "name": "Absorbcja żywiołów",
-                    "description": "<p class=\"feature\"><em>Trigger:</em> The [[lookup @name lowercase]] [[lookup @activation.condition activity=5HvUimjPYvPVM4g7]]. <em>Response:</em> The [[lookup @name lowercase]] gives itself Resistance to that instance of damage and gains [[/healing temp]].</p><section id=\"secret-me52mQIKaehg7iLh\" class=\"secret\"><p><span class=\"s1\"><strong>Foundry Note</strong></span></p><p class=\"p2\">This feature also provides an <strong>Active Effect (AE)</strong> that will modify this creature's <strong>damage resistances</strong>. You can enable the damage resistance of your choice in the character sheet's effects tab.</p></section>",
+                    "description": "<p class=\"feature\"><em>Wyzwalacz:</em> [[lookup @name]] [[lookup @activation.condition activity=5HvUimjPYvPVM4g7]]. <em>Odpowiedź:</em> [[lookup @name]] zapewnia sobie Odporność na ten przypadek obrażeń i zyskuje [[/healing temp]].</p><section id=\"secret-me52mQIKaehg7iLh\" class=\"secret\"><p><span class=\"s1\"><strong>Notatka Foundry</strong></span></p><p class=\"p2\">Ta zdolność zapewnia również <strong>Aktywny Efekt (AE)</strong>, który zmodyfikuje <strong>odporności tej istoty na obrażenia</strong>. Możesz włączyć wybraną odporność na obrażenia w zakładce efektów karty postaci.</p></section>",
                     "activities": {
                         "heal": {
                             "condition": "otrzymuje obrażenia od kwasu, zimna, ognia, elektryczności lub dźwięku",
@@ -1735,7 +1735,7 @@
                 },
                 "Mage Hand": {
                     "name": "Magiczna dłoń",
-                    "description": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń trwa przez czas trwania. Dłoń znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Gdy rzucasz czar, możesz użyć dłoni do manipulowania obiektem, otwarcia niezamkniętych drzwi lub pojemnika, schowania lub wyciągnięcia przedmiotu z otwartego pojemnika albo przelania zawartości fiolki.</p><p>Akcją Magii w twoich kolejnych turach możesz ponownie kontrolować dłoń w ten sposób. W ramach tej akcji możesz przemieścić dłoń do 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (4,5 kg).</p>",
+                    "description": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń utrzymuje się przez czas trwania czaru. Znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Rzucając ten czar, możesz użyć dłoni, by manipulować obiektem, otworzyć niezamknięte drzwi lub pojemnik, schować lub wyciągnąć przedmiot z otwartego pojemnika albo wylać zawartość fiolki.</p><p>Akcją magii w kolejnych turach możesz ponownie użyć dłoni w ten sam sposób. W ramach tej akcji możesz przemieścić dłoń o maksymalnie 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (5 kg).</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -1791,7 +1791,7 @@
                 },
                 "Scorching Ray": {
                     "name": "Wypalający promień",
-                    "description": "<p>Rzucasz trzy ogniste promienie. Możesz skierować je na jeden cel w zasięgu lub na kilka. Wykonaj dystansowy test ataku zaklęciem dla każdego promienia. W przypadku trafienia cel otrzymuje 2k6 obrażeń od ognia.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Tworzysz jeden dodatkowy promień za każdą komórkę czaru powyżej 2. kręgu.</p><p>[[@item.level + 1]]{Łączna Liczba Promieni}</p>",
+                    "description": "<p>Rzucasz trzy ogniste promienie. Możesz skierować je na jeden cel w zasięgu lub na kilka. Wykonaj dystansowy atak czarem dla każdego promienia. Przy trafieniu cel otrzymuje 2k6 obrażeń od Ognia.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Tworzysz jeden dodatkowy promień za każdy krąg komórki czaru powyżej 2.</p><p>[[@item.level + 1]]{Łączna liczba promieni}</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -1800,7 +1800,7 @@
                 },
                 "Thaumaturgy": {
                     "name": "Taumaturgia",
-                    "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
+                    "description": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -1884,7 +1884,7 @@
             "items": {
                 "Undead Restoration": {
                     "name": "Przywrócenie Nieumarłego",
-                    "description": "<p class=\"feature\">If the [[lookup @name lowercase]] dies, it revives 24 hours later unless <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelEvil]{Dispel Evil and Good}</em> is cast on its remains. If it revives, it animates another group of corpses elsewhere on the same plane of existence; it now looks different but uses the same stat block and returns with all its Hit Points.</p>"
+                    "description": "<p class=\"feature\">Jeśli [[lookup @name lowercase]] umrze, powraca do życia 24 godziny później, chyba że czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelEvil]</em> zostanie rzucony na jego pozostałości. Jeśli powróci do życia, ożywia inną grupę zwłok gdzie indziej na tej samej sferze egzystencji; wygląda teraz inaczej, ale używa tego samego bloku statystyk i powraca ze wszystkimi swoimi Punktami Wytrzymałości.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -1897,7 +1897,7 @@
                 },
                 "Suffocate": {
                     "name": "Duszenie",
-                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. If the target is a Large or smaller creature, it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]). Until the grapple ends, the target is &amp;Reference[suffocating apply=false]{suffocating}. The [[lookup @name lowercase]] can have up to two targets Grappled in this way at a time.</p>",
+                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Jeśli cel jest Dużą lub mniejszą istotą, ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]). Dopóki pochwycenie trwa, cel się dusi &amp;Reference[suffocating apply=false]. [[lookup @name]] może mieć w ten sposób Pochwycone maksymalnie dwa cele naraz.</p>",
                     "activities": {
                         "Escape Check": {
                             "name": "Test ucieczki"
@@ -1952,7 +1952,7 @@
                 },
                 "Paralyzing Tentacles": {
                     "name": "Paraliżujące macki",
-                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage extended]]. If the target is a [[lookup @target.affects.special activity=MEc8vUTPipCkqjyq]] [[lookup @target.affects.type activity=MEc8vUTPipCkqjyq]], it has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]) from two of ten tentacles. The target is also subjected to the following effect.</p><p><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.formula activity=MEc8vUTPipCkqjyq]].</p><p><em>Failure:</em> The target has the &amp;Reference[Poisoned apply=false] condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically, While Poisoned, the target has the &amp;Reference[Paralyzed apply=false] condition.</p>",
+                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage extended]]. Jeśli cel jest [[lookup @target.affects.special activity=MEc8vUTPipCkqjyq]] [[lookup @target.affects.type activity=MEc8vUTPipCkqjyq]], ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]) wskutek pochwycenia przez dwie z dziesięciu macek. Cel zostaje również poddany następującemu efektowi.</p><p><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.formula activity=MEc8vUTPipCkqjyq]].</p><p><em>Porażka:</em> Cel ma stan &amp;Reference[Poisoned apply=false] i powtarza rzut obronny na końcu każdej swojej tury, kończąc na sobie ten efekt przy sukcesie. Po 1 minucie automatycznie odnosi sukces. Będąc Zatruty, cel ma stan &amp;Reference[Paralyzed apply=false].</p>",
                     "activities": {
                         "save": {
                             "target": "Średnia lub mniejsza",
@@ -2031,7 +2031,7 @@
             "items": {
                 "Blight Seeds": {
                     "name": "Nasiona skazy",
-                    "description": "<p>When it finishes a Long Rest, the blight expels [[/r 1d6#Seeds expelled]] seeds into unoccupied spaces on the ground within 30 feet of itself. After 24 hours, the seeds become creatures under the blight’s control. Roll 1d8 for each seed to determine the creature it becomes:</p><p>@Embed[Compendium.dnd-monster-manual.tables.RollTable.mmBlightSeedCrea rollable classes=\"caption-top\"]</p>",
+                    "description": "<p>Po ukończeniu Długiego Odpoczynku skaza wyrzuca [[/r 1d6#Seeds expelled]] nasion do niezajętych przestrzeni na ziemi w obrębie 30 stóp od siebie. Po 24 godzinach nasiona stają się istotami pod kontrolą skazy. Rzuć 1k8 za każde nasiono, aby określić, w jaką istotę się przemienia:</p><p>@Embed[Compendium.dnd-monster-manual.tables.RollTable.mmBlightSeedCrea rollable classes=\"caption-top\"]</p>",
                     "requirements": "Zakończy Długi odpoczynek"
                 },
                 "Multiattack": {
@@ -2081,7 +2081,7 @@
             "items": {
                 "Haunted Zone": {
                     "name": "Haunted Zone",
-                    "description": "<p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=xmF8v1o2HyVyepb6]], any [[lookup @target.affects.type activity=xmF8v1o2HyVyepb6]] [[lookup @target.affects.special activity=xmF8v1o2HyVyepb6]] while inside the [[lookup @name lowercase]]’s space.</p><p><em>Failure:</em> The spell fails and is wasted.</p>",
+                    "description": "<p class=\"feature\"><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=xmF8v1o2HyVyepb6]], każda istota typu [[lookup @target.affects.type activity=xmF8v1o2HyVyepb6]] [[lookup @target.affects.special activity=xmF8v1o2HyVyepb6]] znajdująca się w przestrzeni [[lookup @name lowercase]].</p><p><em>Porażka:</em> Czar nie działa i zostaje zmarnowany.</p>",
                     "activities": {
                         "save": {
                             "target": "który rzuca czar",
@@ -2092,7 +2092,7 @@
                 },
                 "Undead Restoration": {
                     "name": "Przywrócenie Nieumarłego",
-                    "description": "<p class=\"feature\">If the [[lookup @name lowercase]] dies, it revives 24 hours later unless <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelEvil]{Dispel Evil and Good}</em> is cast on its remains. If it revives, it animates another Gargantuan object or structure elsewhere on the same plane of existence; it now looks different but uses the same stat block and returns with all its Hit Points.</p>"
+                    "description": "<p class=\"feature\">Jeśli [[lookup @name lowercase]] umrze, powraca do życia 24 godziny później, chyba że czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelEvil]</em> zostanie rzucony na jego pozostałości. Jeśli powróci do życia, ożywia inny Gigantyczny obiekt albo inną Gigantyczną konstrukcję gdzie indziej na tej samej sferze egzystencji; wygląda teraz inaczej, ale używa tego samego bloku statystyk i powraca ze wszystkimi swoimi Punktami Wytrzymałości.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -2105,7 +2105,7 @@
                 },
                 "Object Slam": {
                     "name": "Walnięcie obiektem",
-                    "description": "<p class=\"feature\"><em>Melee or Ranged Attack Roll:</em> [[/attack]] (with Advantage if the target is inside the [[lookup @name lowercase]]’s space), reach [[lookup @item.range.reach]] ft. or range [[lookup @item.range.value]]/[[lookup @item.range.long]] ft. <em>Hit:</em> [[/damage average]] damage.</p>"
+                    "description": "<p class=\"feature\"><em>Test ataku wręcz lub dystansowego:</em> [[/attack]] (z Ułatwieniem, jeśli cel znajduje się w przestrzeni [[lookup @name lowercase]]), zasięg [[lookup @item.range.reach]] stóp albo zasięg [[lookup @item.range.value]]/[[lookup @item.range.long]] stóp. <em>Trafienie:</em> [[/damage average]] obrażeń.</p>"
                 },
                 "Invitation": {
                     "name": "Zaproszenie",
@@ -2132,7 +2132,7 @@
             "items": {
                 "Telepathic Bond": {
                     "name": "Telepatia",
-                    "description": "<p class=\"feature\">While the [[lookup @name lowercase]] is on the same plane of existence as its master, the two of them can communicate telepathically with each other.</p>"
+                    "description": "<p class=\"feature\">Dopóki [[lookup @name]] znajduje się w tej samej sferze egzystencji co jego pan, oboje mogą komunikować się ze sobą telepatycznie.</p>"
                 },
                 "Bite": {
                     "name": "Ugryzienie",
@@ -2203,7 +2203,7 @@
                 },
                 "Detect Intelligence": {
                     "name": "Wykrycie inteligencji",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] magically senses the location of any creature within 300 feet of itself that has an Intelligence score of 3 or higher, regardless of interposing barriers.</p>"
+                    "description": "<p class=\"feature\">[[lookup @name]] magicznie wyczuwa położenie każdej istoty w obrębie 300 stóp od siebie, która ma Inteligencję 3 lub wyższą, niezależnie od znajdujących się pomiędzy nimi przeszkód.</p>"
                 },
                 "Claw": {
                     "name": "Pazury",
@@ -2211,7 +2211,7 @@
                 },
                 "Devour Intellect": {
                     "name": "Pożarcie intelektu",
-                    "description": "<p class=\"feature\"><em>Intelligence Saving Throw:</em> DC [[lookup @save.dc.value activity=7LNepwMsw4xbXyRk]], one [[lookup @target.affects.type activity=7LNepwMsw4xbXyRk]] the [[lookup @name lowercase]] can see within [[lookup @range.value activity=7LNepwMsw4xbXyRk]] feet.</p><p><em>Failure:</em> [[/damage average]] damage, and the target has the &amp;Reference[Stunned apply=false] condition until the end of the [[lookup @name lowercase]]’s next turn.</p>",
+                    "description": "<p class=\"feature\"><em>Rzut obronny na Inteligencję:</em> ST [[lookup @save.dc.value activity=7LNepwMsw4xbXyRk]], jeden [[lookup @target.affects.type activity=7LNepwMsw4xbXyRk]], którego [[lookup @name lowercase]] widzi w obrębie [[lookup @range.value activity=7LNepwMsw4xbXyRk]] stóp.</p><p><em>Porażka:</em> [[/damage average]] obrażeń, a cel ma stan &amp;Reference[Stunned apply=false] do końca następnej tury [[lookup @name lowercase]].</p>",
                     "activities": {
                         "Save": {
                             "name": "Obrona",
@@ -2260,7 +2260,7 @@
                 },
                 "Invisibility": {
                     "name": "Niewidzialność",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] has the &amp;Reference[Invisible apply=false] condition.</p>"
+                    "description": "<p class=\"feature\">[[lookup @name]] ma stan &amp;Reference[Invisible apply=false].</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -2277,7 +2277,7 @@
                 },
                 "Vortex": {
                     "name": "Wir",
-                    "description": "<p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=cZy0VYbCVY8aRB4z]], one [[lookup @target.affects.special activity=cZy0VYbCVY8aRB4z]] in the [[lookup @name lowercase]]’s space.</p><p><em>Failure:</em> [[/damage average activity=cZy0VYbCVY8aRB4z]] damage, and the target has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]). Until the grapple ends, the target can’t cast spells with a Verbal component and takes [[/damage average activity=kDz92inkRCjGrPiz]] damage at the start of each of the [[lookup @name lowercase]]’s turns.</p>",
+                    "description": "<p class=\"feature\"><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=cZy0VYbCVY8aRB4z]], jeden [[lookup @target.affects.special activity=cZy0VYbCVY8aRB4z]] w przestrzeni [[lookup @name lowercase]].</p><p><em>Porażka:</em> [[/damage average activity=cZy0VYbCVY8aRB4z]] obrażeń, a cel ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]). Do zakończenia pochwycenia cel nie może rzucać czarów z komponentem Werbalnym i otrzymuje [[/damage average activity=kDz92inkRCjGrPiz]] obrażeń na początku każdej tury [[lookup @name lowercase]].</p>",
                     "activities": {
                         "Save": {
                             "name": "Obrona",
@@ -2403,7 +2403,7 @@
                 },
                 "Strange Scepter": {
                     "name": "Dziwne berło",
-                    "description": "<p class=\"feature\"><em>Melee or Ranged Attack Roll:</em> [[/attack]], reach [[lookup @item.range.reach]] ft. or range [[lookup @item.range.value]] ft. [[/damage average extended]].</p>"
+                    "description": "<p class=\"feature\"><em>Test ataku wręcz lub dystansowego:</em> [[/attack]], zasięg [[lookup @item.range.reach]] stóp albo zasięg [[lookup @item.range.value]] stóp. [[/damage average extended]].</p>"
                 },
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
@@ -2428,7 +2428,7 @@
                 },
                 "Thaumaturgy": {
                     "name": "Taumaturgia",
-                    "description": "<p>Manifestujesz drobne cudowne zjawisko w zasięgu. Tworzysz jeden z poniższych efektów w zasięgu. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne do trzech z jego 1-minutowych efektów.</p><p><strong>Zmienione Oczy.</strong> Zmieniasz wygląd swoich oczu przez 1 minutę.</p><p><strong>Gromki Głos.</strong> Twój głos staje się trzykrotnie głośniejszy niż normalnie przez 1 minutę. Przez czas trwania czaru masz Ułatwienie na testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa Ognia.</strong> Powodujesz, że płomienie migoczą, stają się jaśniejsze, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna Dłoń.</strong> Natychmiastowo powodujesz, że odblokowane drzwi lub okno otwierają się lub zamykają z hukiem.</p><p><strong>Urojony Dźwięk.</strong> Tworzysz natychmiastowy dźwięk, który pochodzi z wybranego punktu w zasięgu, na przykład grzmotu, krzyku kruka lub złowrogich szeptów.</p><p><strong>Drżenie.</strong> Powodujesz bezpieczne drżenie ziemi przez 1 minutę.</p>",
+                    "description": "<p>Wywołujesz drobny cud w zasięgu. Tworzysz jeden z poniższych efektów. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy z jego jednominutowych efektów.</p><p><strong>Zmienione oczy.</strong> Zmieniasz wygląd swoich oczu na 1 minutę.</p><p><strong>Donośny głos.</strong> Twój głos staje się przez 1 minutę nawet trzykrotnie głośniejszy niż zwykle. Dopóki efekt trwa, masz Ułatwienie w testach [[/check ability=cha skill=itm]].</p><p><strong>Zabawa z ogniem.</strong> Sprawiasz, że płomienie migoczą, jaśnieją, przygasają lub zmieniają kolor przez 1 minutę.</p><p><strong>Niewidzialna dłoń.</strong> Natychmiast sprawiasz, że odblokowane drzwi lub okno gwałtownie się otwierają albo zatrzaskują.</p><p><strong>Widmowy dźwięk.</strong> Tworzysz natychmiastowy dźwięk dobiegający z wybranego przez ciebie punktu w zasięgu, na przykład grzmot, krzyk kruka lub złowrogie szepty.</p><p><strong>Drżenia.</strong> Wywołujesz nieszkodliwe drżenia ziemi przez 1 minutę.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -2474,7 +2474,7 @@
                 },
                 "Hold Monster": {
                     "name": "Unieruchomienie potwora",
-                    "description": "<p>Wybierasz istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość. W przypadku niepowodzenia otrzymuje stan &Reference[Paralyzed]{Sparaliżowany} na czas trwania czaru. Na końcu każdej z tur celu, wykonuje on ponownie rzut, kończąc czar na sobie w przypadku sukcesu.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać dodatkową istotę za każdą komórkę czaru powyżej 5. kręgu.</p>",
+                    "description": "<p>Wybierasz istotę, którą widzisz w zasięgu. Cel musi wykonać rzut obronny na Mądrość, w przeciwnym razie otrzymuje stan &amp;Reference[Paralyzed apply=false] na czas trwania czaru. Na końcu każdej swojej tury cel powtarza ten rzut obronny, a udany rzut kończy działanie czaru na nim samym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 5.</p>",
                     "materials": "prosty kawałek żelaza",
                     "activities": {
                         "save": {
@@ -2547,7 +2547,7 @@
                 },
                 "Tongues": {
                     "name": "Języki",
-                    "description": "<p>Ten czar daje istocie, którą dotkniesz, zdolność rozumienia każdego mówionego lub migowego języka, który słyszy lub widzi. Co więcej, gdy cel komunikuje się przez mówienie lub miganie, każda istota, która zna przynajmniej jeden język, może ją zrozumieć, jeśli ta istota może usłyszeć mowę lub zobaczyć miganie.</p>",
+                    "description": "<p>Ten czar daje istocie, którą dotkniesz, zdolność rozumienia każdego mówionego lub migowego języka, który usłyszy lub zobaczy. Co więcej, gdy cel komunikuje się mową lub migami, każda istota znająca przynajmniej jeden język może ją zrozumieć, jeśli tylko usłyszy tę mowę lub zobaczy te migi.</p>",
                     "materials": "miniaturowy ziggurat",
                     "effects": {
                         "Universal Communication": {
@@ -2720,7 +2720,7 @@
                 },
                 "Plane Shift": {
                     "name": "Sferalny przeskok",
-                    "description": "<p>Ty oraz do ośmiu przychylnych istot, które trzymają się za ręce w kręgu, zostajecie przeniesieni do innej sfery istnienia. Możesz określić ogólne miejsce docelowe, takie jak Miasto Mosiądzu na Sferze Żywiołu Ognia lub pałac Dispatera na drugim poziomie Dziewięciu Piekieł, a pojawiacie się w tym miejscu lub w jego pobliżu, według decyzji Mistrza Gry.</p><p>Alternatywnie, jeśli znasz sekwencję sygili teleportacyjnego kręgu na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie istoty, które przeniosłeś, pojawią się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
+                    "description": "<p>Ty oraz do ośmiu przychylnych istot, które złączą ręce w kręgu, zostajecie przeniesieni na inną sferę istnienia. Możesz określić miejsce docelowe w ogólnych słowach, takich jak Miasto Mosiądzu na Sferze żywiołu ognia lub pałac Dispatera na drugim poziomie Dziewięciu piekieł, a wtedy pojawiacie się w tym miejscu lub w jego pobliżu, zgodnie z decyzją MP.</p><p>Alternatywnie, jeśli znasz sekwencję sygili kręgu teleportacyjnego na innej sferze istnienia, ten czar może przenieść cię do tego kręgu. Jeśli krąg teleportacyjny jest zbyt mały, by pomieścić wszystkie przeniesione przez ciebie istoty, pojawiają się one w najbliższych niezajętych przestrzeniach obok kręgu.</p>",
                     "materials": "rozwidlony metalowy pręt warty 250+ SZ, dostrojony do sfery egzystencji",
                     "targetAffects": "ty oraz do ośmiu przychylnych ci istot",
                     "activities": {
@@ -2791,7 +2791,7 @@
             "items": {
                 "Confer Fire Resistance": {
                     "name": "Udzielenie odporności na ogień",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] can grant Resistance to Fire damage to a rider while it is on the [[lookup @name lowercase]].</p>",
+                    "description": "<p class=\"feature\">[[lookup @name]] może zapewnić jeźdźcowi Odporność na obrażenia od ognia, gdy ten znajduje się na [[lookup @name lowercase]].</p>",
                     "effects": {
                         "Resistance: Fire": {
                             "name": "Odporność: Ogień",
@@ -2809,7 +2809,7 @@
                 },
                 "Ethereal Stride": {
                     "name": "Eteryczny krok",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] and up to [[lookup @target.affects.labels.statblock activity=0EfvhIXAIPlYUiNE]] within [[lookup @range.value activity=0EfvhIXAIPlYUiNE]] [[lookup @range.units activity=0EfvhIXAIPlYUiNE]]. of it teleport to the Ethereal Plane from the Material Plane or vice versa.</p>",
+                    "description": "<p class=\"feature\">[[lookup @name]] oraz maksymalnie [[lookup @target.affects.labels.statblock activity=0EfvhIXAIPlYUiNE]] znajdujących się w obrębie [[lookup @range.value activity=0EfvhIXAIPlYUiNE]] [[lookup @range.units activity=0EfvhIXAIPlYUiNE]] od niego teleportują się ze Sfery Materialnej do Sfery Eterycznej albo odwrotnie.</p>",
                     "activities": {
                         "Expend Use": {
                             "name": "Wykorzystaj użycie"
@@ -2853,7 +2853,7 @@
                 },
                 "Majestic Song": {
                     "name": "Majestatyczna pieśń",
-                    "description": "<p class=\"feature\"><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=6TeipSZlJHOJTSZQ]], each [[lookup @target.affects.type activity=6TeipSZlJHOJTSZQ]] in a [[lookup @target.template.size activity=6TeipSZlJHOJTSZQ]]-foot-radius Sphere centered on a point within [[lookup @range.value activity=6TeipSZlJHOJTSZQ]] feet.</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage, and the target has the &amp;Reference[Charmed apply=false] or &amp;Reference[Frightened apply=false] condition ([[lookup @name lowercase]]’s choice) until the end of the [[lookup @name lowercase]]’s next turn.</p><p class=\"feature\"><em>Success:</em> Half damage only.</p>",
+                    "description": "<p class=\"feature\"><em>Rzut obronny na Mądrość:</em> ST [[lookup @save.dc.value activity=6TeipSZlJHOJTSZQ]], każda [[lookup @target.affects.type activity=6TeipSZlJHOJTSZQ]] w Sferze o promieniu [[lookup @target.template.size activity=6TeipSZlJHOJTSZQ]] stóp, wyśrodkowanej na punkcie w obrębie [[lookup @range.value activity=6TeipSZlJHOJTSZQ]] stóp.</p><p class=\"feature\"><em>Porażka:</em> [[/damage average]] obrażeń, a cel ma stan &amp;Reference[Charmed apply=false] albo &amp;Reference[Frightened apply=false] (wybór [[lookup @name lowercase]]) do końca następnej tury [[lookup @name lowercase]].</p><p class=\"feature\"><em>Sukces:</em> Tylko połowa obrażeń.</p>",
                     "activities": {
                         "Save": {
                             "name": "Obrona",
@@ -2873,11 +2873,11 @@
                 },
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC [[lookup @attributes.spell.dc]]):</p><p class=\"feature-trait\"><strong>At Will:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMageHand00]{Mage Hand}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMinorIllus]{Minor Illusion}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPrestidigi]{Prestidigitation}</em></p><p class=\"feature-trait\"><strong>1/Day Each:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMajorImage]{Major Image}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplProjectIma]{Project Image}</em></p>"
+                    "description": "<p class=\"feature\">[[lookup @name]] rzuca jeden z następujących czarów bez potrzeby użycia komponentów Materialnych, używając Charyzmy jako Cechy bazowej (ST rzutu obronnego przeciw czarom [[lookup @attributes.spell.dc]]):</p><p class=\"feature-trait\"><strong>Do woli:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMageHand00]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMinorIllus]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPrestidigi]</em></p><p class=\"feature-trait\"><strong>1/dzień każdy:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMajorImage]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplProjectIma]</em></p>"
                 },
                 "Warding Charm": {
                     "name": "Warding Charm",
-                    "description": "<p class=\"feature\"><em>Trigger:</em> A creature hits the [[lookup @name lowercase]] with an attack roll.</p><p class=\"feature\"><em>Response—Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=zTaurVqDcUSvviyB]], the triggering creature.</p><p class=\"feature\"><em>Failure:</em> The attack roll misses the [[lookup @name lowercase]], and the target has the &amp;Reference[Charmed apply=false] condition until the end of the [[lookup @name lowercase]]’s next turn.</p>",
+                    "description": "<p class=\"feature\"><em>Wyzwalacz:</em> Istota trafia [[lookup @name lowercase]] testem ataku.</p><p class=\"feature\"><em>Odpowiedź—Rzut obronny na Mądrość:</em> ST [[lookup @save.dc.value activity=zTaurVqDcUSvviyB]], istota wyzwalająca.</p><p class=\"feature\"><em>Porażka:</em> Atak zamiast tego chybia [[lookup @name lowercase]], a cel ma stan &amp;Reference[Charmed apply=false] do końca następnej tury [[lookup @name lowercase]].</p>",
                     "activities": {
                         "Save": {
                             "name": "Obrona",
@@ -2895,7 +2895,7 @@
                 },
                 "Mage Hand": {
                     "name": "Magiczna dłoń",
-                    "description": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń trwa przez czas trwania. Dłoń znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Gdy rzucasz czar, możesz użyć dłoni do manipulowania obiektem, otwarcia niezamkniętych drzwi lub pojemnika, schowania lub wyciągnięcia przedmiotu z otwartego pojemnika albo przelania zawartości fiolki.</p><p>Akcją Magii w twoich kolejnych turach możesz ponownie kontrolować dłoń w ten sposób. W ramach tej akcji możesz przemieścić dłoń do 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (4,5 kg).</p>",
+                    "description": "<p>Widmowa, unosząca się dłoń pojawia się w punkcie, który wybierzesz w zasięgu. Dłoń utrzymuje się przez czas trwania czaru. Znika, jeśli kiedykolwiek znajdzie się w odległości większej niż 30 stóp od ciebie lub jeśli rzucisz ten czar ponownie.</p><p>Rzucając ten czar, możesz użyć dłoni, by manipulować obiektem, otworzyć niezamknięte drzwi lub pojemnik, schować lub wyciągnąć przedmiot z otwartego pojemnika albo wylać zawartość fiolki.</p><p>Akcją magii w kolejnych turach możesz ponownie użyć dłoni w ten sam sposób. W ramach tej akcji możesz przemieścić dłoń o maksymalnie 30 stóp.</p><p>Dłoń nie może atakować, aktywować magicznych przedmiotów ani unieść więcej niż 10 funtów (5 kg).</p>",
                     "effects": {
                         "Spell Changes": {
                             "name": "Zmiany czaru"
@@ -2927,7 +2927,7 @@
                 },
                 "Prestidigitation": {
                     "name": "Kuglarstwo",
-                    "description": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć aktywne maksymalnie trzy jego nienatychmiastowe efekty jednocześnie.</p><p><strong>Efekt sensoryczny.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt sensoryczny, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 27 litrów.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak do 27 litrów nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że kolor, mały znak lub symbol pojawia się na obiekcie albo powierzchni na 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w dłoni. Trwa on do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>",
+                    "description": "<p>Tworzysz magiczny efekt w zasięgu. Wybierz efekt z poniższych opcji. Jeśli rzucisz ten czar wielokrotnie, możesz mieć jednocześnie aktywne maksymalnie trzy jego nienatychmiastowe efekty.</p><p><strong>Efekt zmysłowy.</strong> Tworzysz natychmiastowy, nieszkodliwy efekt zmysłowy, taki jak deszcz iskier, podmuch wiatru, ciche nuty muzyczne lub dziwny zapach.</p><p><strong>Zabawa z ogniem.</strong> Natychmiast zapalasz lub gasisz świecę, pochodnię albo małe ognisko.</p><p><strong>Oczyszczenie lub zabrudzenie.</strong> Natychmiast oczyszczasz lub brudzisz obiekt o objętości nie większej niż 1 stopę sześcienną.</p><p><strong>Pomniejsza sensacja.</strong> Schładzasz, ogrzewasz lub nadajesz smak maksymalnie 1 stopie sześciennej nieożywionej materii na 1 godzinę.</p><p><strong>Magiczny znak.</strong> Sprawiasz, że na obiekcie albo powierzchni pojawia się kolor, mały znak lub symbol, utrzymujący się przez 1 godzinę.</p><p><strong>Pomniejsze tworzenie.</strong> Tworzysz niemagiczny drobiazg lub iluzoryczny obraz mieszczący się w twojej dłoni. Utrzymuje się do końca twojej następnej tury. Drobiazg nie może zadawać obrażeń i nie ma wartości pieniężnej.</p>",
                     "activities": {
                         "Cast": {
                             "name": "Rzucanie"
@@ -3072,7 +3072,7 @@
                 },
                 "Undead Restoration": {
                     "name": "Przywrócenie Nieumarłego",
-                    "description": "<p class=\"feature\">If the [[lookup @name lowercase]] dies, it revives 24 hours later in a different body unless <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelEvil]{Dispel Evil and Good}</em> is cast on its corpse. If it revives, it animates a Humanoid corpse elsewhere on the same plane of existence; it now looks different but uses the same stat block and returns with all its Hit Points.</p>"
+                    "description": "<p class=\"feature\">Jeśli [[lookup @name lowercase]] umrze, odradza się 24 godziny później w innym ciele, chyba że na jego zwłoki zostanie rzucony czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelEvil]</em>. Jeśli się odrodzi, ożywia zwłoki Humanoida gdzieś indziej na tej samej sferze egzystencji; wygląda teraz inaczej, ale używa tego samego statbloku i wraca ze wszystkimi swoimi Punktami Wytrzymałości.</p>"
                 },
                 "Multiattack": {
                     "name": "Atak wielokrotny",
@@ -3267,7 +3267,7 @@
                 },
                 "Protection": {
                     "name": "Ochrona",
-                    "description": "<p class=\"feature\"><em>Trigger:</em> An attack roll hits the wearer of the [[lookup @name lowercase]]’s amulet while the wearer is within 5 feet of the [[lookup @name lowercase]].</p><p class=\"feature\"><em>Response:</em> The wearer gains a +5 bonus to AC, including against the triggering attack and possibly causing it to miss, until the start of the [[lookup @name lowercase]]’s next turn.</p>",
+                    "description": "<p class=\"feature\"><em>Wyzwalacz:</em> Test ataku trafia noszącego amulet [[lookup @name lowercase]], gdy noszący znajduje się w obrębie 5 stóp od [[lookup @name lowercase]].</p><p class=\"feature\"><em>Odpowiedź:</em> Noszący zyskuje premię +5 do KP, także przeciwko atakowi wyzwalającemu, co może sprawić, że chybi, do początku następnej tury [[lookup @name lowercase]].</p>",
                     "activities": {
                         "utility": {
                             "condition": "Test ataku trafia noszącego amulet należący do tarczownika, jeśli znajduje się on w zasięgu 5 stóp od niego. ",
@@ -3316,7 +3316,7 @@
                 },
                 "Smoke Bomb": {
                     "name": "Bomba dymna",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] throws a bomb to a point it can see within [[lookup @range.value activity=nk7wJnUtROO1cY4W]] feet of itself.</p><p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=nk7wJnUtROO1cY4W]], each creature in a [[lookup @target.template.size activity=nk7wJnUtROO1cY4W]]-foot-radius [[lookup @target.template.type capitalize activity=nk7wJnUtROO1cY4W]] centered on that point.</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage, and the target has the &amp;Reference[Blinded apply=false] condition until the end of the [[lookup @name lowercase]]’s next turn.</p><p class=\"feature\"><em>Success:</em> Half damage only.</p>",
+                    "description": "<p class=\"feature\">[[lookup @name]] rzuca bombę w punkt, który widzi w obrębie [[lookup @range.value activity=nk7wJnUtROO1cY4W]] stóp od siebie.</p><p class=\"feature\"><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=nk7wJnUtROO1cY4W]], każda istota w [[lookup @target.template.type capitalize activity=nk7wJnUtROO1cY4W]] o promieniu [[lookup @target.template.size activity=nk7wJnUtROO1cY4W]] stóp, której środkiem jest ten punkt.</p><p class=\"feature\"><em>Porażka:</em> [[/damage average]] obrażeń, a cel ma stan &amp;Reference[Blinded apply=false] do końca następnej tury [[lookup @name lowercase]].</p><p class=\"feature\"><em>Sukces:</em> Tylko połowa obrażeń.</p>",
                     "activities": {
                         "save": {
                             "damageOnSave": "połowa"
@@ -3372,7 +3372,7 @@
                 },
                 "Slow": {
                     "name": "Spowolnienie",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] casts the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSlow000000]{Slow}</em> spell, requiring no spell components and using Constitution as the spellcasting ability (spell save DC [[lookup @attributes.spell.dc]]).</p>"
+                    "description": "<p class=\"feature\">[[lookup @name]] rzuca czar <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSlow000000]</em> bez potrzeby użycia komponentów czaru, używając Kondycji jako Cechy bazowej (ST rzutu obronnego przeciw czarom [[lookup @attributes.spell.dc]]).</p>"
                 },
                 "rHwlDG85kUcrUFdg": {
                     "name": "Spowolnienie",
@@ -3541,7 +3541,7 @@
                 },
                 "Mercurial Whip": {
                     "name": "Mercurial Whip",
-                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], and the [[lookup @name lowercase]] can teleport the target up to 10 feet to an unoccupied space the [[lookup @name lowercase]] can see that isn’t in the air.</p>",
+                    "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]], a [[lookup @name lowercase]] może teleportować cel o maksymalnie 10 stóp do niezajętej przestrzeni, którą [[lookup @name lowercase]] widzi i która nie znajduje się w powietrzu.</p>",
                     "activities": {
                         "attack": {
                             "chatFlavor": "Przy trafieniu: Może teleportować się do niezajętej przestrzeni oddalonej o 10 stóp."
@@ -3550,7 +3550,7 @@
                 },
                 "Hypnotic Gaze": {
                     "name": "Hipnotyzujące spojrzenie",
-                    "description": "<p class=\"feature\"><em>Wisdom Saving Throw:</em> DC [[lookup @save.dc.value activity=Sc5RbdImboeEd4zt]], each [[lookup @target.affects.type activity=Sc5RbdImboeEd4zt]] in a [[lookup @target.template.size activity=Sc5RbdImboeEd4zt]]-foot [[lookup @target.template.type capitalize activity=Sc5RbdImboeEd4zt]].</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage, and the target has the &amp;Reference[Stunned apply=false] condition until the start of the [[lookup @name lowercase]]’s next turn.</p><p class=\"feature\"><em>Success:</em> The target is immune to this [[lookup @name lowercase]]’s Hypnotic Gaze for 24 hours.</p>",
+                    "description": "<p class=\"feature\"><em>Rzut obronny na Mądrość:</em> ST [[lookup @save.dc.value activity=Sc5RbdImboeEd4zt]], każda istota typu [[lookup @target.affects.type activity=Sc5RbdImboeEd4zt]] w [[lookup @target.template.size activity=Sc5RbdImboeEd4zt]]-stopowym [[lookup @target.template.type capitalize activity=Sc5RbdImboeEd4zt]].</p><p class=\"feature\"><em>Porażka:</em> [[/damage average]] obrażeń, a cel ma stan &amp;Reference[Stunned apply=false] do początku następnej tury [[lookup @name lowercase]].</p><p class=\"feature\"><em>Sukces:</em> Cel jest niewrażliwy na Hipnotyczne spojrzenie [[lookup @name lowercase]] przez 24 godziny.</p>",
                     "activities": {
                         "Save": {
                             "name": "Obrona",
@@ -3566,11 +3566,11 @@
                 },
                 "Spellcasting": {
                     "name": "Rzucanie czarów",
-                    "description": "<p class=\"feature\"><em><strong>Spellcasting.</strong></em> The ultroloth casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save [[lookup @attributes.spell.dc]]):</p><p class=\"feature-trait\"><strong>At Will:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAlterSelf0]{Alter Self}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplClairvoyan]{Clairvoyance}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectMagi]{Detect Magic}</em></p><p class=\"feature-trait\"><strong>1/Day Each:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDimensionD]{Dimension Door}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireball00]{Fireball}</em> (level 5 version), <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWallofFire]{Wall of Fire}</em></p>"
+                    "description": "<p class=\"feature\"><em><strong>Rzucanie czarów.</strong></em> Ultroloth rzuca jeden z następujących czarów bez potrzeby użycia komponentów Materialnych, używając Inteligencji jako Cechy bazowej (ST rzutu obronnego przeciw czarom [[lookup @attributes.spell.dc]]):</p><p class=\"feature-trait\"><strong>Do woli:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAlterSelf0]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplClairvoyan]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectMagi]</em></p><p class=\"feature-trait\"><strong>1/dzień każdy:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDimensionD], @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireball00]</em> (wersja na 5. kręgu), <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWallofFire]</em></p>"
                 },
                 "Fiendish Guile": {
                     "name": "Czarcia przebiegłość",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] casts <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelMagi]{Dispel Magic}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplInvisibili]{Invisibility}</em> (self only), <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMistyStep0]{Misty Step}</em>, or <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSuggestion]{Suggestion}</em>, requiring no Material components and using the same spellcasting ability as Spellcasting.</p>"
+                    "description": "<p class=\"feature\">[[lookup @name]] rzuca <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDispelMagi]</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplInvisibili]</em> (tylko na siebie), <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMistyStep0]</em> albo <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSuggestion]</em> bez potrzeby użycia komponentów Materialnych, używając tej samej Cechy bazowej co Rzucanie czarów.</p>"
                 },
                 "Dispel Magic": {
                     "name": "Rozproszenie magii",
@@ -3583,7 +3583,7 @@
                 },
                 "Invisibility": {
                     "name": "Niewidzialność",
-                    "description": "<p>Istota, którą dotykasz, otrzymuje stan &amp;Reference[invisible apply=false]{Niewidzialny} do końca czaru. Czar kończy się wcześniej natychmiast po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz wybrać jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>",
+                    "description": "<p>Istota, której dotkniesz, otrzymuje stan &amp;Reference[invisible apply=false], dopóki czar nie dobiegnie końca. Czar kończy się przedwcześnie zaraz po tym, jak cel wykona test ataku, zada obrażenia lub rzuci czar.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Możesz objąć czarem jedną dodatkową istotę za każdy krąg komórki czaru powyżej 2.</p>",
                     "materials": "rzęsa w kleju arabskim",
                     "effects": {
                         "Invisible": {
@@ -3721,7 +3721,7 @@
                 },
                 "Wall of Fire": {
                     "name": "Ściana ognia",
-                    "description": "<p>Tworzysz ścianę ognia na solidnej powierzchni w zasięgu. Ściana może mieć długość do 18 metrów (60 stóp), wysokość 6 metrów (20 stóp) i grubość 30 cm (1 stopa), lub być pierścieniem o średnicy do 6 metrów (20 stóp), wysokości 6 metrów (20 stóp) i grubości 30 cm (1 stopa). Ściana jest nieprzezroczysta i trwa przez czas trwania czaru.</p><p>Gdy ściana pojawia się, każda istota w jej obszarze wykonuje rzut obronny na Zręczność, otrzymując 5k8 obrażeń od ognia w przypadku nieudanego rzutu lub połowę tej liczby w przypadku udanego.</p><p>Jedna strona ściany, wybrana przez ciebie przy rzucaniu tego czaru, zadaje 5k8 obrażeń od ognia każdej istocie, która kończy swoją turę w odległości 3 metrów (10 stóp) od tej strony lub wewnątrz ściany. Istota otrzymuje te same obrażenia, gdy po raz pierwszy wchodzi w ścianę w swojej turze lub kończy w niej swoją turę. Druga strona ściany nie zadaje żadnych obrażeń.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia wzrastają o 1k8 za każdy poziom komórki czaru wyższego niż 4.</p>",
+                    "description": "<p>Tworzysz ścianę ognia na solidnej powierzchni w zasięgu. Ściana może mieć długość do 60 stóp, wysokość 20 stóp i grubość 1 stopy, albo formę pierścienia o średnicy do 20 stóp, wysokości 20 stóp i grubości 1 stopy. Ściana jest nieprzezroczysta i utrzymuje się przez czas trwania czaru.</p><p>Gdy ściana się pojawia, każda istota w jej obszarze wykonuje rzut obronny na Zręczność, otrzymując 5k8 obrażeń od Ognia przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p>Jedna strona ściany, wybrana przez ciebie w chwili rzucania tego czaru, zadaje 5k8 obrażeń od Ognia każdej istocie, która kończy swoją turę w odległości 10 stóp od tej strony albo wewnątrz ściany. Istota otrzymuje te same obrażenia, gdy po raz pierwszy w ciągu tury znajdzie się w ścianie lub zakończy w niej swoją turę. Druga strona ściany nie zadaje żadnych obrażeń.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 4.</p>",
                     "materials": "kawałek węgla drzewnego",
                     "activities": {
                         "Create Wall": {
@@ -3801,7 +3801,7 @@
                 },
                 "NhHw43UmTDY3KiJ3": {
                     "name": "Głód Hadara",
-                    "description": "<p>Otwierasz przejście do Odległej Dziedziny, regionu opanowanego przez niewypowiedziane koszmary. Pojawia się Sfera &amp;Reference[Darkness] o promieniu 20 stóp, skupiona na punkcie w zasięgu i trwająca przez czas trwania czaru. Sfera jest &amp;Reference[DifficultTerrain] i wypełniona dziwnymi szeptami oraz mlaskającymi odgłosami, słyszalnymi do 30 stóp. Żadne światło, magiczne ani inne, nie może oświetlić tego obszaru, a istoty całkowicie w nim znajdujące się mają stan &amp;Reference[Blinded].</p><p>Każda istota, która rozpoczyna turę w obszarze, otrzymuje 2k6 obrażeń od zimna. Każda istota, która kończy tam turę, musi wykonać udany Rzut Obrony na Zręczność lub otrzyma 2k6 obrażeń od kwasu od obcych macek.</p><p><strong>Użycie komórki czaru wyższego kręgu. </strong>Obrażenia od zimna lub kwasu (do wyboru) zwiększają się o 1k6 za każdy Krąg Czaru powyżej 3.</p>",
+                    "description": "<p>Otwierasz przejście do Odległej dziedziny, regionu zamieszkanego przez niewysłowione koszmary. Pojawia się Sfera &amp;Reference[Darkness] o promieniu 20 stóp, skupiona na punkcie w zasięgu i utrzymująca się przez czas trwania czaru. Sfera jest &amp;Reference[DifficultTerrain] i wypełniona dziwnymi szeptami oraz mlaskającymi odgłosami, słyszalnymi z odległości do 30 stóp. Żadne światło, magiczne czy inne, nie może oświetlić tego obszaru, a istoty znajdujące się w nim w całości mają stan &amp;Reference[Blinded].</p><p>Każda istota, która rozpoczyna swoją turę w tym obszarze, otrzymuje 2k6 obrażeń od Zimna. Każda istota, która kończy tam swoją turę, musi wykonać udany rzut obronny na Zręczność, w przeciwnym razie otrzymuje 2k6 obrażeń od Kwasu zadanych przez nieziemskie macki.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia od Zimna lub Kwasu (wedle twojego wyboru) zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 3.</p>",
                     "materials": "marynowana macka",
                     "activities": {
                         "Open Gateway": {
@@ -4149,7 +4149,7 @@
                 },
                 "Constrict": {
                     "name": "Duszenie",
-                    "description": "<p><em>Strength Saving Throw:</em><span class=\"Heading-4\"> </span>DC [[lookup @save.dc.value activity=IgOMjRxAt7UISkJq]], one [[lookup @target.affects.special activity=IgOMjRxAt7UISkJq]] creature the [[lookup @name lowercase]] can see within [[lookup @range.value activity=IgOMjRxAt7UISkJq]] feet.</p><p><em>Failure:</em> [[/damage average]] damage. The target has the &amp;Reference[Grappled apply=false] condition (escape DC [[lookup @skills.ath.passive]]), and it has the &amp;Reference[Restrained apply=false] condition until the grapple ends.</p><p><em>Success</em>: Half damage only.</p>",
+                    "description": "<p><em>Rzut obronny na Siłę:</em><span class=\"Heading-4\"> </span>ST [[lookup @save.dc.value activity=IgOMjRxAt7UISkJq]], jedna [[lookup @target.affects.special activity=IgOMjRxAt7UISkJq]] istota, którą [[lookup @name lowercase]] widzi w obrębie [[lookup @range.value activity=IgOMjRxAt7UISkJq]] stóp.</p><p><em>Porażka:</em> [[/damage average]] obrażeń. Cel ma stan &amp;Reference[Grappled apply=false] (uwolnienie ST [[lookup @skills.ath.passive]]) oraz stan &amp;Reference[Restrained apply=false] do zakończenia pochwycenia.</p><p><em>Sukces</em>: Tylko połowa obrażeń.</p>",
                     "activities": {
                         "save": {
                             "target": "Duża lub mniejsza",
@@ -4169,7 +4169,7 @@
                 },
                 "Poison Spray": {
                     "name": "Trujący rozprysk",
-                    "description": "<p class=\"feature\"><em>Constitution Saving Throw:</em> DC [[lookup @save.dc.value activity=Ab1fnEh4JGShDFte]], each [[lookup @target.affects.type activity=Ab1fnEh4JGShDFte]] in a [[lookup @target.template.size activity=Ab1fnEh4JGShDFte]]-foot [[lookup @target.template.type capitalize activity=Ab1fnEh4JGShDFte]].</p><p class=\"feature\"><em>Failure:</em> [[/damage average]] damage, and the target has the &amp;Reference[Poisoned apply=false] condition until the end of the [[lookup @name lowercase]] ’s next turn. While Poisoned, the target has the &amp;Reference[Blinded apply=false] condition.</p><p class=\"feature\"><em>Success:</em> Half damage only.</p>",
+                    "description": "<p class=\"feature\"><em>Rzut obronny na Kondycję:</em> ST [[lookup @save.dc.value activity=Ab1fnEh4JGShDFte]], każda istota typu [[lookup @target.affects.type activity=Ab1fnEh4JGShDFte]] w [[lookup @target.template.type capitalize activity=Ab1fnEh4JGShDFte]] o rozmiarze [[lookup @target.template.size activity=Ab1fnEh4JGShDFte]] stóp.</p><p class=\"feature\"><em>Porażka:</em> [[/damage average]] obrażeń, a cel ma stan &amp;Reference[Poisoned apply=false] do końca następnej tury [[lookup @name lowercase]]. Będąc Zatruty, cel ma stan &amp;Reference[Blinded apply=false].</p><p class=\"feature\"><em>Sukces:</em> Tylko połowa obrażeń.</p>",
                     "activities": {
                         "Save": {
                             "name": "Obrona",
@@ -4185,11 +4185,11 @@
                 },
                 "Spellcasting  (Yuan-ti Form Only)": {
                     "name": "Rzucanie czarów (tylko forma Yuan-Ti)",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC [[lookup @attributes.spell.dc]]):</p><p class=\"feature-trait\"><strong>At Will:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAnimalFrie]{Animal Friendship}</em> (snakes only)</p><p class=\"feature-trait\"><strong>3/Day:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSuggestion]{Suggestion}</em></p>"
+                    "description": "<p class=\"feature\">[[lookup @name]] rzuca jeden z poniższych czarów bez potrzeby użycia komponentów Materialnych, używając Mądrości jako Cechy bazowej (ST rzutu obronnego przeciw czarom [[lookup @attributes.spell.dc]]):</p><p class=\"feature-trait\"><strong>Do woli:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplAnimalFrie]</em> (tylko węże)</p><p class=\"feature-trait\"><strong>3/dzień:</strong> <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSuggestion]</em></p>"
                 },
                 "Shape-Shift": {
                     "name": "Zmiana kształtu",
-                    "description": "<p class=\"feature\">The [[lookup @name lowercase]] shape-shifts into a Large snake or returns to its true form. The [[lookup @name lowercase]]'s game statistics are the same in each form, except where noted. Any equipment it is wearing or carrying isn’t transformed.</p>",
+                    "description": "<p class=\"feature\">[[lookup @name]] zmienia kształt, przyjmując postać Dużego węża, albo wraca do swojej prawdziwej postaci. [[lookup @name]] ma w każdej postaci te same statystyki gry, z wyjątkiem wskazanych różnic. Noszone lub trzymane przez niego wyposażenie nie ulega przemianie.</p>",
                     "activities": {
                         "Expend Use": {
                             "name": "Wykorzystaj użycie"
