@@ -4047,7 +4047,7 @@
         },
         "Time Stop": {
             "name": "Zatrzymanie czasu",
-            "description": "<p>Na chwilę zatrzymujesz upływ czasu dla wszystkich oprócz siebie. Czas nie upływa dla innych istot, podczas gdy ty wykonujesz 1k4 + 1 tury pod rząd, w trakcie których możesz normalnie wykonywać akcje i poruszać się.</p><p>Czar kończy się, jeśli jedna z akcji, które wykonasz w tym czasie, lub jakiekolwiek efekty, które stworzysz, wpłyną na istotę inną niż ty lub obiekt noszony lub przenoszony przez kogoś innego niż ty. Dodatkowo, czar kończy się, jeśli przemieścisz się w miejsce oddalone o więcej niż 300m (1 000 stóp) od miejsca, w którym rzuciłeś ten czar.</p>",
+            "description": "<p>Na chwilę zatrzymujesz upływ czasu dla wszystkich prócz siebie. Dla innych istot czas się zatrzymuje, podczas gdy ty wykonujesz 1k4 + 1 tur pod rząd, w trakcie których możesz normalnie wykonywać akcje i się poruszać.</p><p>Czar kończy się, jeśli jedna z akcji, które wykonasz w tym czasie, lub którykolwiek ze stworzonych przez ciebie efektów wpłynie na istotę inną niż ty albo na obiekt noszony lub niesiony przez kogoś innego niż ty. Dodatkowo czar kończy się, jeśli przemieścisz się w miejsce oddalone o więcej niż 1000 stóp od lokalizacji, w której go rzuciłeś.</p>",
             "activities": {
                 "utility": {
                     "roll": "Kolejne tury"
