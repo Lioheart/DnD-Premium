@@ -305,7 +305,7 @@
             "targetAffects": "wielki lub mniejszy",
             "activities": {
                 "Cast": {
-                    "name": "Rzucanie"
+                    "name": "Rzucenie"
                 },
                 "Antipathy Save": {
                     "name": "Obrona antypatii",
@@ -359,7 +359,7 @@
             "description": "<p>Czerpiesz ze swojej energii życiowej, aby uleczyć odniesione rany. Wydaj jedną lub dwie swoje niewykorzystane Kości Wytrzymałości i rzuć nimi; odzyskujesz liczbę PW równą sumie wyników na kościach powiększonej o twój modyfikator cechy bazowej rzucania czarów. Kości te zostają w ten sposób wydane.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Liczba Kości Wytrzymałości, które możesz wydać, zwiększa się o 1 za każdy krąg czaru powyżej 2.</p><section id=\"secret-boiIVpDiaDqivdaw\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Aktywności <strong>Wykorzystaj Kości Wytrzymałości</strong> są skonfigurowane tak, aby zużywać minimum 2 Kości Wytrzymałości, dodając twój modyfikator tylko raz.</p><p>Jeśli chcesz wykorzystać <em>pojedynczą</em> Kość Wytrzymałości, proszę odjąć, rzucić i uleczyć się ręcznie.</p></section><p></p>",
             "activities": {
                 "Cast": {
-                    "name": "Rzucanie",
+                    "name": "Rzucenie",
                     "roll": "Rzuć największą Kością Wytrzymałości"
                 },
                 "Expend d6 Hit Dice": {
@@ -382,7 +382,7 @@
             "materials": "odłamek niebieskiego szkła",
             "activities": {
                 "Cast": {
-                    "name": "Rzucanie"
+                    "name": "Rzucenie"
                 },
                 "Frost Damage": {
                     "name": "Obrażenia od mrozu",
@@ -1030,7 +1030,7 @@
                     "name": "Dodatkowe obrażenia od ataku"
                 },
                 "Cast": {
-                    "name": "Rzucanie"
+                    "name": "Rzucenie"
                 }
             }
         },
@@ -1049,7 +1049,7 @@
             "description": "<p>Przywołujesz duchy natury, które krążą wokół ciebie w obszarze Emanacji o promieniu 10 stóp przez cały czas trwania czaru. Za każdym razem, gdy Emanacja wejdzie w przestrzeń istoty, którą widzisz, a także za każdym razem, gdy widziana przez ciebie istota wejdzie w obszar Emanacji lub zakończy tam swoją turę, możesz zmusić ją do wykonania rzutu obronnego na Mądrość. W przypadku niepowodzenia istota otrzymuje 5k8 obrażeń od mocy, a w przypadku sukcesu połowę tych obrażeń. Istota może wykonać ten rzut obronny tylko raz na turę.</p><p>Dodatkowo, możesz wykonać akcję &amp;Reference[Disengage] Akcją dodatkową przez czas trwania czaru.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k8 za każdy krąg komórki czaru powyżej 4.</p>",
             "activities": {
                 "Cast": {
-                    "name": "Rzucanie",
+                    "name": "Rzucenie",
                     "damageOnSave": "połowa"
                 },
                 "Disengage": {
@@ -1168,7 +1168,7 @@
                     "damageOnSave": "none"
                 },
                 "Cast": {
-                    "name": "Rzucanie"
+                    "name": "Rzucenie"
                 }
             }
         },
@@ -1425,7 +1425,7 @@
                     "targetAffects": "Niebianin, Żywiołak, Fey, Czart lub Nieumarły"
                 },
                 "Cast": {
-                    "name": "Rzucanie"
+                    "name": "Rzucenie"
                 }
             }
         },
@@ -1466,7 +1466,7 @@
                     "name": "Obrażenia nieświętego stworzenia"
                 },
                 "Cast": {
-                    "name": "Rzucanie"
+                    "name": "Rzucenie"
                 }
             }
         },
@@ -1544,7 +1544,7 @@
             "description": "<p>Dotykasz jednej przychylnej istoty i wybierasz Kwas, Zimno, Ogień, Elektryczność lub Truciznę. Dopóki czar trwa, cel może Akcją magii wypuścić Stożek o długości 15 stóp. Każda istota w tym obszarze wykonuje rzut obronny na Zręczność, otrzymując 3k6 obrażeń wybranego typu przy nieudanym rzucie lub połowę tych obrażeń przy udanym.</p><p><strong>Użycie komórki czaru wyższego kręgu.</strong> Obrażenia zwiększają się o 1k6 za każdy krąg komórki czaru powyżej 2.</p>",
             "activities": {
                 "Cast": {
-                    "name": "Rzucanie"
+                    "name": "Rzucenie"
                 },
                 "Exhale": {
                     "name": "Wydech",
@@ -1591,7 +1591,7 @@
             "materials": "pęknięty kamień",
             "activities": {
                 "Cast": {
-                    "name": "Rzucanie",
+                    "name": "Rzucenie",
                     "damageOnSave": "połowa"
                 },
                 "End of Turn Fissures": {
@@ -2130,7 +2130,7 @@
                     "damageOnSave": "połowa"
                 },
                 "Cast": {
-                    "name": "Rzucanie"
+                    "name": "Rzucenie"
                 }
             },
             "effects": {
@@ -2427,7 +2427,7 @@
             "materials": "wiórek z korzenia lukrecji",
             "activities": {
                 "Cast": {
-                    "name": "Rzucanie"
+                    "name": "Rzucenie"
                 },
                 "Apply Lethargy": {
                     "name": "Nałóż letarg"
@@ -3388,7 +3388,7 @@
             "materials": "kawałek runa",
             "activities": {
                 "Cast": {
-                    "name": "Rzucanie",
+                    "name": "Rzucenie",
                     "damageOnSave": "none"
                 },
                 "Phantasm Damage": {
@@ -3550,7 +3550,7 @@
             "description": "<p>Osiem promieni światła błyska od ciebie w stożeku o długości 60 stóp. Każda istota w stożku wykonuje rzut obronny na Zręczność. Dla każdego celu, rzuć 1k8, aby określić, który kolor promienia go dotknie, sprawdzając tabelę Pryzmatycznych promieni.</p><p>@Embed[Compendium.dnd-players-handbook.tables.RollTable.phbPrismaticRays rollable=true caption=false]{Pryzmatyczne promienie}</p>",
             "activities": {
                 "Cast": {
-                    "name": "Rzucanie",
+                    "name": "Rzucenie",
                     "damageOnSave": "połowa"
                 },
                 "Indigo Save (Con)": {
@@ -3613,7 +3613,7 @@
             "description": "<p>Migoczący płomień pojawia się w twojej dłoni i pozostaje tam przez czas trwania czaru. Płomień nie daje ciepła ani niczego nie podpala, a także rzuca &amp;Reference[BrightLight] w promieniu 20 stóp oraz &amp;Reference[DimLight] na kolejne 20 stóp. Czar kończy się, jeśli rzucisz go ponownie.</p><p>Dopóki czar trwa, możesz Akcją magii rzucić ogniem w istotę lub obiekt w odległości do 60 stóp od ciebie. Wykonaj dystansowy atak czarem. Przy trafieniu cel otrzymuje 1k8 obrażeń od Ognia.</p><p><strong>Ulepszenie sztuczki.</strong> Obrażenia zwiększają się o 1k8, gdy osiągniesz poziom 5 (2k8), 11 (3k8) i 17 (4k8).</p>",
             "activities": {
                 "Cast": {
-                    "name": "Rzucanie"
+                    "name": "Rzucenie"
                 },
                 "Hurl Fire": {
                     "name": "Rzucanie ognia"
@@ -3860,7 +3860,7 @@
             "materials": "diament warty 1 000+ SZ, który czar zużywa",
             "activities": {
                 "Cast": {
-                    "name": "Rzucanie"
+                    "name": "Rzucenie"
                 },
                 "Taxing Cast": {
                     "name": "Wyczerpujące rzucenie"
@@ -3924,7 +3924,7 @@
             "materials": "odłamek szkła z lustra",
             "activities": {
                 "Cast": {
-                    "name": "Rzucanie"
+                    "name": "Rzucenie"
                 },
                 "Save on Target": {
                     "name": "Rzut obronny na celu",
@@ -4592,7 +4592,7 @@
             "materials": "kołczan warty 1+ SZ",
             "activities": {
                 "Cast": {
-                    "name": "Rzucanie"
+                    "name": "Rzucenie"
                 },
                 "Cast and Enchant": {
                     "name": "Rzuć i Zaurocz"
@@ -4678,7 +4678,7 @@
         },
         "Tasha's Bubbling Cauldron": {
             "name": "Bulgoczący kocioł Tashy",
-            "description": "<p>Tworzysz kocioł na nóżkach wypełniony bulgoczącym płynem. Kocioł pojawia się w niezajętej przestrzeni na ziemi w odległości do 5 stóp od ciebie i trwa przez cały czas działania czaru. Kociołek nie może zostać przeniesiony i znika, gdy czar się kończy, razem z bulgoczącym płynem w środku.</p><p>Płyn w kotle naśladuje właściwości Zwykłego lub Niezwykłego eliksiru według twojego wyboru (takiego jak <em>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPotionofHea]</em>). Jako Akcję Dodatkową ty lub sprzymierzeniec możecie sięgnąć do kotła i wyciągnąć jeden eliksir tego typu. Eliksir znajduje się w fiolce, która znika po spożyciu eliksiru. Kocioł może wyprodukować liczbę takich eliksirów równą twojemu modyfikatorowi cechy zaklinania (minimum 1). Gdy ostatni z tych eliksirów zostanie wyciągnięty z kotła, kocioł znika, a czar się kończy.</p><p>Eliksiry uzyskane z kotła, które nie zostały spożyte, znikają, gdy ponownie rzucisz ten czar.</p><section id=\"secret-qrXgiTRMAIHRBFCQ\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ograniczona liczba użyć tego czaru reprezentuje liczbę eliksirów pozostałych w kotle, która jest resetowana przez aktywność <strong>Tworzenie kotła</strong>.</p><p>Opcjonalna aktywność <strong>Wyciąganie Eliksiru</strong> spali jedno użycie kotła.</p></section>",
+            "description": "<p>Przywołujesz kocioł na nóżkach, wypełniony bulgoczącym płynem. Kocioł pojawia się w niezajętej przestrzeni na ziemi, w odległości do 5 stóp od ciebie, i utrzymuje się przez czas trwania czaru. Nie można go przenieść, a gdy czar się kończy, znika razem z bulgoczącym płynem w środku.</p><p>Płyn w kotle naśladuje właściwości wybranego przez ciebie Zwykłego lub Niezwykłego eliksiru (takiego jak <em>@UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPotionofHea]</em>). Akcją dodatkową ty lub sprzymierzeniec możecie sięgnąć do kotła i wyciągnąć jeden eliksir tego rodzaju. Eliksir znajduje się w fiolce, która znika po jego spożyciu. Kocioł może wyprodukować liczbę takich eliksirów równą twojemu modyfikatorowi cechy bazowej (minimum 1). Gdy ostatni z tych eliksirów zostanie wyjęty z kotła, kocioł znika, a czar się kończy.</p><p>Eliksiry uzyskane z kotła, które nie zostały spożyte, znikają, gdy rzucisz ten czar ponownie.</p><section id=\"secret-qrXgiTRMAIHRBFCQ\" class=\"secret\"><p><strong>Notatka foundry</strong></p><p>Ograniczone użycia tego czaru odzwierciedlają liczbę eliksirów pozostałych w kotle, którą resetuje aktywność <strong>Stworzenie kotła</strong>.</p><p>Opcjonalna aktywność <strong>Wyjęcie eliksiru</strong> zużywa jedno użycie kotła.</p></section>",
             "materials": "pozłacana chochla warta 500+ SZ",
             "activities": {
                 "Create Cauldron": {
