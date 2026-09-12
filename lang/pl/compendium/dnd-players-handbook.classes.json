@@ -153,7 +153,7 @@
                 "save": {
                     "target": "Którego widzisz",
                     "targetAffects": "Którego widzisz",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -515,7 +515,7 @@
                     "name": "Aura grozy",
                     "condition": "Ilekroć wróg rozpoczyna swoją turę w twojej Aurze Ochrony",
                     "activationCondition": "Ilekroć wróg rozpoczyna swoją turę w twojej Aurze Ochrony",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 },
                 "Restore Use": {
                     "name": "Przywrócenie użycia"
@@ -780,7 +780,7 @@
                     "name": "Zniewalająca reakcja",
                     "condition": "Natychmiast po tym, jak istota, którą widzisz, trafi cię testem ataku",
                     "activationCondition": "Natychmiast po tym, jak istota, którą widzisz, trafi cię testem ataku",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -792,7 +792,7 @@
                 "save": {
                     "condition": "Po rzuceniu czaru zaklinania lub iluzji przy użyciu komórki czaru",
                     "activationCondition": "Po rzuceniu czaru zaklinania lub iluzji przy użyciu komórki czaru",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 },
                 "Recharge with Inspiration": {
                     "name": "Odnowa dzięki Inspiracji"
@@ -812,7 +812,7 @@
             "description": "<p>Magia Feywild chroni twój umysł. Masz Ułatwienie w rzutach obronnych, aby uniknąć lub zakończyć stan Zauroczony lub Przerażony.</p><p>Dodatkowo, ilekroć ty lub istota, którą widzisz w odległości 120 stóp od siebie, odniesie sukces w rzucie obronnym, aby uniknąć lub zakończyć stan Zauroczony lub Przerażony, możesz Reakcją zmusić inną istotę, którą widzisz w odległości 120 stóp od siebie, do wykonania rzutu obronnego z Roztropności przeciwko twojemu ST rzutu przeciw czarom. Przy nieudanym rzucie cel staje się &amp;Reference[Charmed] lub &amp;Reference[Frightened] (twój wybór) na 1 minutę. Cel powtarza rzut na końcu każdej swojej tury, kończąc efekt przy udanym rzucie.</p>",
             "activities": {
                 "save": {
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -905,7 +905,7 @@
                 "save": {
                     "condition": "Ilekroć stworzenie, które widzisz, rozpoczyna swoją turę w odległości do 30 stóp od ciebie, gdy jesteś w Szale",
                     "activationCondition": "Ilekroć stworzenie, które widzisz, rozpoczyna swoją turę w odległości do 30 stóp od ciebie, gdy jesteś w Szale",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -1206,7 +1206,7 @@
                 "save": {
                     "condition": "Gdy tworzysz więź telepatyczną, używając Przebudzonego umysłu",
                     "activationCondition": "Gdy tworzysz więź telepatyczną, używając Przebudzonego umysłu",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 },
                 "Regain Use": {
                     "name": "Odzyskaj użycie"
@@ -1552,7 +1552,7 @@
                     "name": "Trucizna",
                     "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
                     "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 },
                 "Trip": {
                     "name": "Podcięcie",
@@ -1560,7 +1560,7 @@
                     "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
                     "target": "Duży lub mniejszy",
                     "targetAffects": "Duży lub mniejszy",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 },
                 "Cunning Sneak Attack": {
                     "name": "Chytry ukradkowy atak",
@@ -1733,19 +1733,19 @@
                     "name": "Otępienie",
                     "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
                     "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 },
                 "Knock Out": {
                     "name": "Znokautowanie",
                     "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
                     "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 },
                 "Obscure": {
                     "name": "Oślepienie",
                     "condition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
                     "activationCondition": "Kiedy zadasz obrażenia z Ukradkowego ataku",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -2245,7 +2245,7 @@
                     "target": "trafiony obrażeniami od żywiołów nasyconym uderzeniem",
                     "targetAffects": "trafiony obrażeniami od żywiołów nasyconym uderzeniem",
                     "range": "popchnięta albo przyciągnięta do 10 stóp",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 },
                 "Activate Attunement": {
                     "name": "Aktywacja Harmonii"
@@ -2277,7 +2277,7 @@
             "activities": {
                 "Burst": {
                     "name": "Wybuch",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -3395,7 +3395,7 @@
             "requirements": "Ścieżka berserkera",
             "activities": {
                 "save": {
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 },
                 "Recharge with Rage": {
                     "name": "Odnowa w szale"
@@ -3531,7 +3531,7 @@
             "requirements": "Krąg Ziemi",
             "activities": {
                 "save": {
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -3832,7 +3832,7 @@
                     "target": "wybrana przez ciebie",
                     "targetAffects": "wybrana przez ciebie",
                     "range": "przestrzeni, którą właśnie opuściłeś",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 },
                 "cast": {
                     "condition": "Po otrzymaniu obrażeń",
@@ -3999,7 +3999,7 @@
             "description": "<p>Akcją magii możesz zużyć jedno użycie swojego Aktu wiary, aby przywołać spektralne pnącza wokół pobliskich istot. Każda wybrana przez Ciebie istota, którą widzisz w promieniu 15 stóp, musi wykonać rzut obronny na Siłę. W przypadku niepowodzenia zyskuje stan &Reference[Restrained] na 1 minutę. Unieruchomiona istota powtarza rzut obronny na końcu każdej swojej tury, kończąc efekt na sobie w przypadku sukcesu.</p><section id=\"secret-0hFWoWfW8qGxYckC\" class=\"secret\"><p><strong>Notatka Foundry</strong></p><p>Ta funkcja zawiera Aktywny Efekt, który nakłada stan &Reference[Restrained].</p></section>",
             "activities": {
                 "save": {
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -4196,13 +4196,13 @@
                     "name": "Popchnięcie",
                     "condition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów",
                     "activationCondition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 },
                 "Topple": {
                     "name": "Obalenie",
                     "condition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów",
                     "activationCondition": "Za każdym razem, gdy trafisz istotę atakiem przyznanym przez twój Grad ciosów",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -4797,7 +4797,7 @@
                     "name": "Zakończenie wibracji",
                     "condition": "Kiedy wykonujesz Akcję Ataku w swojej turze",
                     "activationCondition": "Kiedy wykonujesz Akcję Ataku w swojej turze",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 },
                 "Instill Vibrations": {
                     "name": "Wzbudzenie wibracji",
@@ -4817,7 +4817,7 @@
             "requirements": "Domena światła",
             "activities": {
                 "save": {
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -4951,7 +4951,7 @@
             "requirements": "Barbarzyńca",
             "activities": {
                 "save": {
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -4981,13 +4981,13 @@
                     "name": "Rozdarcie umysłu (Darmowe)",
                     "condition": "Kiedy zadasz obrażenia z Ukrytego ataku swoimi Psychicznymi ostrzami",
                     "activationCondition": "Kiedy zadasz obrażenia z Ukrytego ataku swoimi Psychicznymi ostrzami",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 },
                 "Rend Mind": {
                     "name": "Rozdarcie umysłu",
                     "condition": "Kiedy zadasz obrażenia z Ukrytego ataku swoimi Psychicznymi ostrzami",
                     "activationCondition": "Kiedy zadasz obrażenia z Ukrytego ataku swoimi Psychicznymi ostrzami",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -5484,7 +5484,7 @@
                     "name": "Złodziej zaklęć",
                     "condition": "Natychmiast po tym, jak istota rzuci czar, który cię wskazuje jako cel lub obejmuje cię swoim obszarem działania",
                     "activationCondition": "Natychmiast po tym, jak istota rzuci czar, który cię wskazuje jako cel lub obejmuje cię swoim obszarem działania",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -5506,7 +5506,7 @@
                     "name": "Masowy strach",
                     "condition": "Kiedy używasz efektu Przerażającego uderzenia",
                     "activationCondition": "Kiedy używasz efektu Przerażającego uderzenia",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             }
         },
@@ -5579,7 +5579,7 @@
                     "condition": "Po teleportacji",
                     "activationCondition": "Po teleportacji",
                     "range": "przestrzeni, którą właśnie opuściłeś",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -5634,7 +5634,7 @@
                 "save": {
                     "condition": "Raz na turę, gdy trafisz istotę bronią Mnicha lub Uderzeniem bez broni",
                     "activationCondition": "Raz na turę, gdy trafisz istotę bronią Mnicha lub Uderzeniem bez broni",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -6126,7 +6126,7 @@
                 "Grapple/Shove": {
                     "name": "Pochwycenie/Pchnięcie",
                     "chatFlavor": "Próba pochwycenia lub popchnięcia",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -6165,11 +6165,11 @@
                     "name": "Rzut obronny przed majestatem",
                     "condition": "istota trafi cię testem ataku po raz pierwszy w danej turze",
                     "activationCondition": "istota trafi cię testem ataku po raz pierwszy w danej turze",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 },
                 "Assume Majestic Presence": {
                     "name": "Przybranie majestatycznej prezencji",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -6425,7 +6425,7 @@
             "activities": {
                 "Warping Implosion": {
                     "name": "Zniekształcająca implozja",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             }
         },
