@@ -774,7 +774,7 @@
                     "name": "Uderzenie tarczą",
                     "condition": "Jeśli trafisz istotę bronią do walki wręcz znajdującą się w odległości 5 stóp od ciebie w ramach Akcji Atak",
                     "activationCondition": "Jeśli trafisz istotę bronią do walki wręcz znajdującą się w odległości 5 stóp od ciebie w ramach Akcji Atak",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             },
             "effects": {
@@ -867,19 +867,19 @@
                     "name": "Telekinetyczne pchnięcie: Inteligencja",
                     "target": "Widzisz",
                     "targetAffects": "Widzisz",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 },
                 "Telekinetic Shove: Wisdom": {
                     "name": "Telekinetyczne pchnięcie: Mądrość",
                     "target": "Widzisz",
                     "targetAffects": "Widzisz",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 },
                 "Telekinetic Shove: Charisma": {
                     "name": "Telekinetyczne pchnięcie: Charyzma",
                     "target": "Widzisz",
                     "targetAffects": "Widzisz",
-                    "damageOnSave": "połowa"
+                    "damageOnSave": "half"
                 }
             }
         },
